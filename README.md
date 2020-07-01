@@ -9,7 +9,7 @@
 (ex. `students` > `4th` > `joonsikyang` 폴더 생성)
 - 해당 폴더에 기존에 작업했던 `img`, `js`, `css` 폴더를 복사 붙여넣기 해주세요.
 - 이렇게 폴더 및 파일 구조 세팅이 완료되면 작업을 진행합니다.
-- 작업 중간 중간 commit 잘 남기고, 완료 시 origin master로 push 후 PR 요청까지 완료해주세요.
+- 작업 중간 중간 commit 잘 남기고, 완료 시 origin master로 push 후 PR 까지 완료해주세요.
 - 리뷰 내용은 반영해서 코드 수정하고 다시 push 해주세요.
 - 해당 branch가 merge되면 미션 완료입니다.
 
