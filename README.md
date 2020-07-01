@@ -1,5 +1,7 @@
 # westagram-frontend
 
+> 디테일한 가이드는 guide 폴더에 있는 md 파일 내용 확인해주세요.
+
 ## 초기 세팅 및 진행 방법
 - master 브랜치를 기준으로 `feature/본인이름` 브랜치를 만들어주세요. (ex. `feature/joonsikyang`)
 - 해당 브랜치의 `students > 기수` 폴더에 본인 이름의 폴더를 만들어주세요. 
