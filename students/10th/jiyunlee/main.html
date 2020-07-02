@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>weStagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/ad7e0d573f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navContent">
+        <div class="leftLogo">
+          <!-- 태그 안의 속성 우선순위 생각할 것!!! class 이름, symantic tag 사용 -->
+          <!-- % 말고 px로 바꾸기 -->
+          <!-- 블로깅 : 단순 개념 말고 어떤 걸 알게 됐는지 쓰기 -->
+          <a href="main.html"><img id="textlogo" src="img/logo_text.png" width="103px"></a>
+        </div>
+        <div class="middleSearch">
+          <input class="searchBox" type="search" 
+            placeholder="&#xF002; 검색" 
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = '&#xF002; 검색'" />
+
+        </div>
+        <div class="rightMenu">
+          <div class="menuBtn">
+            <a href="#"><svg class="_8-yf5 " fill="#262626" height="22" width="22" viewBox="0 0 48 48" width="22"><path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path></svg></a>
+            <a href="#"><svg class="_8-yf5 " fill="#262626" height="22" width="22" viewBox="0 0 48 48" width="22"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg></a>
+            <a href="#"><svg class="_8-yf5 " fill="#262626" height="22" width="22" viewBox="0 0 48 48" width="22"><path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path></svg></a>
+            <a href="#"><svg class="_8-yf5 " fill="#262626" height="22" width="22" viewBox="0 0 48 48" width="22"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg></a>
+            <a href="#"><img src="img/me.jpg"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="mainContent">
+        <div class="feedsColumn">
+          <div class="feeds">
+            <div class="fixLeft">
+              <div class="storySection">
+                <div class="storyList">
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/avengers.jpg">
+                      <div class="storyProfile">avengers</div>
+                    </div>
+                  </div>
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/marvel.jpg">
+                      <div class="storyProfile">marvel</div>
+                    </div>
+                  </div>
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/robert.jpg">
+                      <div class="storyProfile">robertdowneyjr</div>
+                    </div>
+                  </div>
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/tom.jpg">
+                      <div class="storyProfile">tomholland2013</div>
+                    </div>
+                  </div>
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/chris.jpg">
+                      <div class="storyProfile">chrishemsworth</div>
+                    </div>
+                  </div>
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/scarlett.jpg">
+                      <div class="storyProfile">scarlett.johansson.fc</div>
+                    </div>
+                  </div>
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/me.jpg">
+                      <div class="storyProfile">limosum91</div>
+                    </div>
+                  </div>
+                  <div class="storyBox">
+                    <div class="borders">
+                      <img src="img/wecode.jpg">
+                      <div class="storyProfile">wecode_bootcamp</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <article>
+                <div class="contentprofile">
+                  <a href="#" id="idpic"><img id="contentprofile-pic" src="img/me.jpg" width="36px"></a>
+                  <a href="#" id="idspan"><span><strong>limosum91</strong></span></a>
+                  <a href="#" id="idmore"><img id="more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" width="30px"></a>
+                </div>
+                <div class="pictures">
+                  <img src="img/spiderman.jpeg">
+                </div>
+                <div class="viewersBtn">
+
+                    <svg class="heart" viewBox="0 0 48 48"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                    <svg class="emptyHeart" viewBox="0 0 48 48"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+
+                  <svg class="commentIcon" viewBox="0 0 48 48"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
+                  <svg class="shareIcon" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+                  <svg id="bookMark" class="_8-yf5 " viewBox="0 0 48 48"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
+                </div>
+
+                <div class="content">
+                  <div class="likes">
+                    <img id="likepic" src="img/tom.jpg" width="20px">
+                    <span id="likeId"><strong>tomholland2013</strong></span>
+                    <span>님 <strong>외 3명</strong>이 좋아합니다.</span>
+                  </div>
+                  <div class="texts">
+                    <p><strong>limosum91</strong></p>
+                    <p>Spiderman NewUniverse!</p>
+                  </div>
+                  <div class="commentsList">
+                    <ul class="commentsFrame">
+                      <li id="firstC"><strong>limosum91</strong><span>첫번째 피드 댓글</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="comments">
+                  <form class="createComment" autocomplete="off">
+                    <input id="inputComment" type="text" placeholder="댓글 달기...">
+                    <button id="commentBtn" onclick="addComments()" disabled>게시</button>
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="feeds">
+            <article>
+              <div class="contentprofile">
+                <a href="#" id="idpic"><img id="contentprofile-pic" src="img/me.jpg" width="36px"></a>
+                <a href="#" id="idspan"><span><strong>limosum91</strong></span></a>
+                <a href="#" id="idmore"><img id="more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" width="30px"></a>
+              </div>
+              <div class="pictures">
+                <img src="img/tonyStark.png">
+              </div>
+              <div class="viewersBtn">
+                <svg class="likeIcon" viewBox="0 0 48 48"><path class= "likePath" d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                <svg class="commentIcon" viewBox="0 0 48 48"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
+                <svg class="shareIcon" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+                <svg id="bookMark" class="_8-yf5 " viewBox="0 0 48 48"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
+              </div>
+
+              <div class="content">
+                <div class="likes">
+                  <img id="likepic" src="img/robert.jpg" width="20px">
+                  <span id="likeId"><strong>robertdowneyjr</strong></span>
+                  <span>님 <strong>외 3명</strong>이 좋아합니다.</span>
+                </div>
+                <div class="texts">
+                  <p><strong>limosum91</strong></p>
+                  <p>Love Tony Stark!</p>
+                </div>
+                <div class="commentsList">
+                  <ul class="commentsFrame">
+                    <li id="firstC"><strong>limosum91</strong><span>두번째 피드 댓글</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="comments">
+                <form class="createComment" autocomplete="off">
+                  <input id="inputComment" type="text" placeholder="댓글 달기...">
+                  <button id="commentBtn" onclick="addComments()" disabled>게시</button>
+                </form>
+              </div>
+            </article>
+          </div>
+        </div>
+  
+        <div class="mainRight">
+          <div class="fixRight">
+            <div class="rightProfile">
+              <a href="#"><img id="rightProfile-pic" src="img/me.jpg" width="50px"></a>
+              <a href="#"><p><strong>limosum91</strong></p></a>
+            </div> 
+            <div class="recommend">
+              <div class="recommendTitle">
+                <span>회원님을 위한 추천</span>
+                <input class="seeAll "type="button" value="모두 보기"></li></br></br>
+              </div>
+              <div class="recommendList">
+                <div class="recommendProfile">
+                  <img src="img/tom.jpg" width="30px">
+                  <div class="userText">
+                    <p class="userid">tomholland2013</p>
+                    <p class="secondLine">robertdowneyjr 님 외 1명이...</p>
+                  </div>
+                  <input class="follow" type="button" value="팔로우"></br>
+                </div>
+                <div class="recommendProfile">
+                  <img src="img/robert.jpg" width="30px">
+                  <div class="userText">
+                    <p class="userid">robertdowneyjr</p>
+                    <p class="secondLine">tomholland2013 님 외 4명이...</p>
+                  </div>
+                  <input class="follow" type="button" value="팔로우"></br>
+                </div>
+                <div class="recommendProfile">
+                  <img src="img/marvel.jpg" width="30px">
+                  <div class="userText">
+                    <p class="userid">marvel</p>
+                    <p class="secondLine">tomholland2013 님 외 2명이...</p>
+                  </div>
+                  <input class="follow" type="button" value="팔로우"></br>
+                </div>
+                <div class="recommendProfile">
+                  <img src="img/avengers.jpg" width="30px">
+                  <div class="userText">
+                    <p class="userid">avengers</p>
+                    <p class="secondLine">tomholland2013 님 외 1명이...</p>
+                  </div>
+                  <input class="follow" type="button" value="팔로우"></br>
+                </div>
+              </div>
+            </div>
+            <div class="source">
+              <p class="sitemap">소개 ∙ 도움말홍보 ∙ 센터 ∙ API ∙ 채용 ∙ 정보 ∙ 개인정보처리방침약관 ∙ 위치 ∙ 인기 계정 ∙ 해시태그 ∙ 언어</p>
+              <p class="instagram">© 2020 INSTAGRAM FROM FACEBOOK</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
