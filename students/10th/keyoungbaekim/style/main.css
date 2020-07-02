@@ -1,0 +1,347 @@
+body{
+    height: 1200px;
+}
+
+nav {
+    top:0px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #ffffff;
+}
+
+.navContainer {
+    width: 975px;
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navLogo img {
+    width: 103px;
+    height: 29px;
+}
+
+.navSearch{
+    width: 215px;
+    height: 28px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border: 0.5px solid #dbdbdb;
+}
+
+.searchIcon{
+    margin: auto 0;
+    width: 16px;
+    height: 16px;
+}
+
+.navSearchInput{
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.navSearchInput::placeholder{
+    font-size: 13px;
+    color: #c9c9c9;
+}
+
+.navSearchInput:focus{
+    display: flex;
+    text-align: left;
+    /* background-color: #0095f6; */
+    /* justify-content: left; */
+}
+
+.navMenuIcon{
+    display: flex;
+}
+
+.navIconImg{
+    margin: 0 10px;
+    width: 22px;
+    height: 22px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+
+.mainContainer {
+    display: flex;
+    width: 975px;
+    margin-top: 90px;
+}
+
+.feeds {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    /* margin-right: 28px; */
+    width: 614px;
+    /* height: 100%; */
+}
+
+.feeds header {
+    display: flex;
+    /* justify-content: space-around;  */
+    align-items: center; 
+    padding: 16px;
+} 
+
+.profileImgConatainer {
+    display: flex;
+    width: 32px;
+    height: 32px;
+}
+
+.profileImgConatainer {
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+
+.feedsProfileTitle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.feedsProfileTitle a:first-child {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.feedsProfileTitle a:last-child {
+    font-size: 12px;
+}
+
+.dotImgConatainer {
+    margin-left: auto;
+}
+
+.feedsComment {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dbdbdb;
+    /* margin: px; */
+}
+
+.repleBtn {
+    display: flex;
+    height: 40px;
+}
+
+.repleBtnLeft{
+    width: 24px;
+    height: 24px;
+    margin: 16px 8px;
+}
+
+.repleBtnLeft:first-child {
+    margin-left: 18px;
+}
+
+.bookmark{
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+    margin-left: auto;
+}
+
+.listComments {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 16px;
+    font-size: 14px;
+}
+
+.listComments h4{
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.listComments p{
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.myCommentList{
+    display: flex;
+    flex-direction: column;
+}
+
+.myCommentList div{
+    display: flex;
+}
+
+.myCommentList div p{
+    margin: 0 5px;
+}
+
+.likeBtnContainer:last-child{
+    margin-bottom: 16px;
+}
+
+.silverText{
+    font-size: 14px;
+    margin: 6px 0;
+    color: #808080;
+}
+
+.commentBtn{
+    cursor: pointer;
+    border: none;
+    background-color: #00ff0000;
+    float: right;
+}
+
+.writeComment{
+    display: flex;
+    height: 56px;
+}
+
+.commentInput{
+    border: none;
+    font-size: 14px;
+    outline: none;
+    margin-left: 16px;
+    width: 100%;
+}
+
+.commentBtn{
+    width: 60px;
+    border: none;
+    background-color: #00ff0000;
+    color: #B2DFFC;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.asideFixed aside{
+    position: fixed;
+    width: 325px;
+    margin: 5px 12px;
+}
+
+.profileRow{
+    display: flex;
+}
+
+.imgRound{
+    width: 56px;
+    height: 56px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.profileColumn{
+    display: flex;
+    margin: 0 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profileColumn p{
+    font-size: 14px;
+    margin: 3px;
+}
+
+.profileColumn p:first-child{
+    font-size: 14px;
+
+}
+
+.profileColumn p:last-child{
+    color: #808080;
+    font-size: 12px;
+}
+
+.recommendationsMembers{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    border: 0.5px solid #dbdbdb;
+}
+
+.MembersProfiles{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.MembersProfiles p{
+    color: #808080;
+    font-weight: bold;
+    font-size: 14px;
+    margin: auto 0;
+}
+
+.MembersProfiles button{
+    margin-left: auto;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    background-color: #00ff0000;
+    cursor: pointer;
+}
+
+.MembersListContainer{
+    margin: 10px;
+    /* height: 256px; */
+}
+
+.memberContainer{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 4px 0;
+}
+
+.round{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.memberName{
+    margin: auto 13px;
+    font-size: 12px;
+}
+
+.memberName p{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #808080;
+}
+
+.followBtnContainer{
+    margin-left: auto;
+    float: right;
+}
+
+.followBtn{
+    font-size: 13px;
+    border: #00ff0000;
+    background-color: #00ff0000;
+    color: #0095f6;
+    font-weight: bold;
+}

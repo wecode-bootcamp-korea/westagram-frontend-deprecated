@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.loginContanier {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 350px;
+    height: 442px;
+    margin-top: 150px;
+    border: 1px solid #dbdbdb;
+}
+
+.titleLogo {
+    margin: 50px auto 0;
+}
+
+.login {
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.loginInput{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FAFAFA;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.loginBtn {
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #B2DFFC;
+    border: 1px ;
+    border-radius: 5px;
+}
+
+.findPw{
+    margin: 90px auto 0;
+}
+
+.findPwText{
+    font-size: 16px;
+    color: #385185;
+}
