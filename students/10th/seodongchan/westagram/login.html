@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="js/login.js"></script>
+
+    <div class="top">
+      <div class="main">
+        <div class="main-top">
+          <img src="img/logo_text.png" style="width: 50%;" />
+        </div>
+        <div class="main-body">
+          <input id="email" placeholder="이메일을 입력하시오" />
+          <input type="password" id="password" placeholder="비밀번호" />
+          <button onclick="login_onclick()">로그인</button>
+        </div>
+        <div class="main-footer">
+          <p onclick="">
+            비밀번호를 잊어버리셨나요?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const password = document.getElementById("password");
+
+    password.addEventListener("keyup", function () {
+      const emailData = document.getElementById("email");
+
+      let isBtnActive = emailData.value !== "" && password.value !== "";
+      let loginBtn = document.querySelector(".main-body button");
+
+      loginBtn
+        ? (loginBtn.style.backgroundColor = "#0095f6")
+        : (loginBtn.style.backgroundColor = "skyblue");
+    });
+  </script>
+</html>
