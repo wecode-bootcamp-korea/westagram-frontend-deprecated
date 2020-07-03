@@ -27,6 +27,9 @@ function init() {
     input.addEventListener("submit", () => {
       feedCommentTxt.forEach((commentPost, commentIndex) => {
         if (inputIndex === commentIndex) {
+          if (!commentPost.value) {
+            return e.preventDefault();
+          }
           const li = document.createElement("li");
           const span = document.createElement("span");
           const delBtn = document.createElement("button");
