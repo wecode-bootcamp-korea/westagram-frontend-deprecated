@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+}
+
+nav { 
+  display : flex;
+  border-bottom: solid 0.1px #dbdbdb;
+  justify-content: center;
+  height : 100%;
+  max-height: 54px;
+  height : 54px;
+}
+
+.icons ul li svg,img{
+  display : flex;
+  justify-content: space-around;
+  width : 22px;
+  height : 22px;
+}
