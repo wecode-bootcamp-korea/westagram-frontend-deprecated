@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="navContainer">
+        <ul class="navLogo">
+          <li class="navLogoImage">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
+              alt="imgLogo"
+            />
+          </li>
+          <li class="navLogoBetween"><span>|</span></li>
+          <li class="navLogotext">
+            <img src="img/logo_text.png" alt="imgText" />
+          </li>
+        </ul>
+        <input type="text" class="navSearch" placeholder="검색" />
+        <ul class="navMenu">
+          <li class="navMenuIcon-quest">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+              alt="imgQuest"
+            />
+          </li>
+          <li class="navMenuIcon-heart">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              alt="imgHeart"
+            />
+          </li>
+          <li class="navMenuIcon-Mypage">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+              alt="imgMyPage"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Main-->
+    <main>
+      <section class="mainContainer">
+        <!-- Main Feeds -->
+        <div class="feeds">
+          <article class="feed">
+            <div class="feedHead">
+              <div class="meta">
+                <div class="profileImage">
+                  <img
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/16122754_946946655406374_308312921673302016_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=2kizZdjP9j4AX_XGy76&oh=d83395a02927599ff703f4a0d2f22cb7&oe=5F28DB88"
+                    alt="imgProfile"
+                  />
+                </div>
+                <div class="profileInfo">
+                  <div class="userName">
+                    juuuuungq
+                  </div>
+                  <div class="location">
+                    wecode
+                  </div>
+                </div>
+              </div>
+              <div class="feedHeadBtn">
+                <img
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+                  alt="imgBtn"
+                />
+              </div>
+            </div>
+            <div class="feedMain">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/104294868_893779644430427_1895765650398576491_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=ObYtLllPYloAX_akic-&oh=53a3d7d160c4a69ac741a7c298770ae2&oe=5F27A88A"
+                alt="imgFeed"
+              />
+            </div>
+            <div class="socialContainer">
+              <div class="socialBtns">
+                <div class="socialLeftBtns">
+                  <button class="likeBtn">
+                    <img
+                      class="like"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                      alt="like"
+                    />
+                  </button>
+                  <button class="speechBubbleBtn">
+                    <img
+                      class="speechBubble"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                      alt="speechBubble"
+                    />
+                  </button>
+                  <button class="shareBtn">
+                    <img
+                    class="share"
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                    alt="share"
+                    />
+                  </button>
+                </div>
+                <div class="socialRightBts">
+                  <button class="bookMarkBtn">
+                    <img
+                      class="bookMark"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+                      alt="bookMark"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="LikeNumberAndUsers">좋아요 129348712890347개</div>
+              <div class="contents">
+                <div id="userId">juuuuungq</div>
+              </div>
+              <div class="replyInfo"></div>
+              <div class="feedTime">1시간 전</div>
+              <div class="replyInput">
+                <form method="POST">
+                  <textarea
+                    class="reply"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="댓글 달기..."
+                    style="height: 18px;"
+                  ></textarea>
+                  <button class="replyUpBtn" type="submit" disabled="">게시</button>
+                </form>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Main-right -->
+        <div class="main-right">
+          <div class="userMeta">
+            <div class="userProfileImage">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/16122754_946946655406374_308312921673302016_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=2kizZdjP9j4AX_XGy76&oh=d83395a02927599ff703f4a0d2f22cb7&oe=5F28DB88"
+                alt="imgProfile"
+              />
+            </div>
+            <div class="userProfileIdAndName">
+              <div class="profileId">juuuuungq</div>
+              <div class="profileName">JungQ</div>
+            </div>
+          </div>
+          <div class="otherUserRecommandContainer">
+            <div class="otherUserRecommand">
+              <div class="recommandMent">회원님을 위한 추천</div>
+              <div class="recommandLook">모두 보기</div>
+            </div>
+            <div class="otherUsers">
+              <div class="otherUser">
+                <div class="otherUserProfile">
+                  <div class="otherUserProfilePhoto">
+                    <img alt="yeonvely_l님의 프로필 사진" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/106487369_292905268521266_2396620409669469982_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=ZSa3_HdY4poAX9v17FY&amp;oh=d058514b719a1779af7d22e03199a34d&amp;oe=5F28C5BF">
+                  </div>
+                  <div class="otherUserProfileMeta">
+                    <div class="otherUserProfileName">yeonvely_l</div>
+                    <div class="otherUserRelationInformaion">instargram 신규 가입</div>
+                  </div>
+                </div>
+                <div class="otherUserFollow">팔로우</div>
+              </div>
+              <div class="otherUser">
+                <div class="otherUserProfile">
+                  <div class="otherUserProfilePhoto">
+                    <img alt="yj_960716님의 프로필 사진" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/69545257_586602352089947_3419853785156026368_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=Zrm9A7thPZ4AX-OynM_&amp;oh=d2f8d9e16e10afdfd49c82009bafdb93&amp;oe=5F25C47B">
+                  </div>
+                  <div class="otherUserProfileMeta">
+                    <div class="otherUserProfileName">yj_960716</div>
+                    <div class="otherUserRelationInformaion">회원님을 위한 추천</div>
+                  </div>
+                </div>
+                <div class="otherUserFollow">팔로우</div>
+              </div>
+              </div>
+              <div class="otherUser">
+                <div class="otherUserProfile">
+                  <div class="otherUserProfilePhoto">
+                    <img alt="dduhany님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/35321853_2206608866292375_2563935475295322112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=7O_35JeKV0IAX9j6XhD&amp;oh=c41b2e21850bc148a18ce40fbf3e0fb2&amp;oe=5F28E0F4">
+                  </div>
+                  <div class="otherUserProfileMeta">
+                    <div class="otherUserProfileName">dduhany</div>
+                    <div class="otherUserRelationInformaion">dauuuum님 외 2명이 팔로우합니다</div>
+                  </div>
+                </div>
+                <div class="otherUserFollow">팔로우</div>
+              </div>
+              </div>
+              <div class="otherUser">
+                <div class="otherUserProfile">
+                  <div class="otherUserProfilePhoto">
+                    <img alt="real_stone88님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64695595_2643926085617455_3627935158121791488_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=uJfDuBc2fjoAX9FIET8&amp;oh=28eec91a020a75ac140eabdf9b8593cf&amp;oe=5F2704CA">
+                  </div>
+                  <div class="otherUserProfileMeta">
+                    <div class="otherUserProfileName">real_stone88</div>
+                    <div class="otherUserRelationInformaion">hyukjunman님 외 4명이 팔로우합니다</div>
+                  </div>
+                </div>
+                <div class="otherUserFollow">팔로우</div>
+              </div>
+              </div>
+              <div class="otherUser">
+                <div class="otherUserProfile">
+                  <div class="otherUserProfilePhoto">
+                    <img alt="dev_mecode님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/105544564_728265507974880_1056574803090625650_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=KcSBZv71ilMAX_EkBf-&amp;oh=40477bfc007d6b444313258135aaefea&amp;oe=5F271EE5">
+                  </div>
+                  <div class="otherUserProfileMeta">
+                    <div class="otherUserProfileName">dev_mecode</div>
+                    <div class="otherUserRelationInformaion">Instagram 신규 가입</div>
+                  </div>
+                </div>
+                <div class="otherUserFollow">팔로우</div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <p></p>
+            <p></p>
+          </footer>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

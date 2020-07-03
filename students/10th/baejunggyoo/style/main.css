@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  height: 54px;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1122px;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+}
+
+.navContainer ul {
+  display: flex;
+  padding: 0;
+}
+
+.navContainer ul li img {
+  width: 25px;
+  margin: 0 10px;
+  box-sizing: content-box;
+}
+
+.navContainer span {
+  font-size: 32px;
+  font-weight: lighter;
+}
+nav ul .navLogotext img {
+  width: 103px;
+  height: 29px;
+}
+
+nav .navSearch {
+  width: 230px;
+  height: 30px;
+  text-align: center;
+  color: lightgray;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+}
+
+nav .navSearch::placeholder {
+  color: #b0b1b3;
+}
+
+/* Main */
+
+main {
+  background-color: #fafafa;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.mainContainer {
+  display: flex;
+}
+
+/* Feeds */
+.feeds {
+  width: 614px;
+  height: max-content;
+  border: 1px solid #dbdbdb;
+  margin: 0 28px 0 0;
+}
+
+/* Feed head */
+.feedHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 614px;
+  height: 60px;
+}
+
+.feedHead .meta {
+  display: flex;
+}
+
+.profileImage {
+  margin-right: 20px;
+}
+
+.profileImage img {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.profileInfo .userName {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.profileInfo .location {
+  font-size: 12px;
+}
+.feedHeadBtn img {
+  width: 16px;
+}
+
+.feedMain img {
+  max-width: 614px;
+  width: 100%;
+}
+
+/* Feed Social */
+.socialBtns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.socialBtns button {
+  all: unset;
+  cursor: pointer;
+  padding: 8px;
+}
+.socialBtns img {
+  width: 24px;
+}
+
+.LikeNumberAndUsers {
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.contents {
+  padding: 0 16px;
+}
+
+.contents #userId {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.feedTime {
+  padding: 0 16px;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.replyInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-top: 1px solid #dbdbdb;
+  height: 56px;
+}
