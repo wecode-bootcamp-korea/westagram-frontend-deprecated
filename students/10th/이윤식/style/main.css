@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 .root{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .nav{
     position: fixed;
