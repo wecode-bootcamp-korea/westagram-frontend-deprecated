@@ -1,7 +1,7 @@
-const commentForm = document.querySelector(".writing__form");
-const commentInput = document.querySelector(".writing__input");
-const commentBtn = document.querySelector(".writing__btn");
-const commentlist = document.querySelector(".comments__display");
+const commentForm = document.querySelectorAll(".writing__form");
+const commentInput = document.querySelectorAll(".writing__input");
+const commentBtn = document.querySelectorAll(".writing__btn");
+const commentlist = document.querySelectorAll(".comments__display");
 const userId = document.querySelector(".my-id");
 const searchInput = document.querySelector(".search-input");
 const searchCancle = document.querySelector(".searchIcon-cancel");
@@ -98,37 +98,40 @@ function handleCloseModal() {
   searchInput.value = "";
 }
 
-function handleBtn() {
-  if (commentInput.value.length >= 1) {
-    commentBtn.style.color = "#0095f6";
-  } else {
-    commentBtn.style.color = "#cce6fd";
+function uploadComments() {
+  for (let i = 0; i < commentForm.length; i++) {
+    commentInput[i].addEventListener('keyup', function() {
+      if(commentInput[i].value.length > 0){
+        commentBtn[i].style.color = "#0095f6";
+      } else {
+        commentBtn[i].style.color = "#cce6fd";
+      }
+    });
+    commentForm[i].addEventListener('submit', function() {
+      event.preventDefault();
+      const li = document.createElement("li");
+      const textBox = document.createElement("div");
+      const iconBox = document.createElement("div");
+      const commentUserId = document.createElement("span");
+      const commentText = document.createElement("span");
+      const heartIcon = document.createElement("i");
+      commentUserId.innerText = userId.innerText;
+      commentText.innerText = commentInput[i].value;
+      commentUserId.className = "texts__username user__id";
+      commentText.className = "texts__contents";
+      heartIcon.className = "far fa-heart";
+      textBox.className = "comment__texts";
+      iconBox.className = "comment__heart-btn";
+      li.className = "comment";
+      textBox.append(commentUserId);
+      textBox.append(commentText);
+      iconBox.append(heartIcon);
+      li.append(textBox);
+      li.append(iconBox);
+      commentlist[i].append(li);
+      commentInput[i].value = "";
+    })
   }
-}
-
-function handleCommentUpload(event) {
-  event.preventDefault();
-  const li = document.createElement("li");
-  const textBox = document.createElement("div");
-  const iconBox = document.createElement("div");
-  const commentUserId = document.createElement("span");
-  const commentText = document.createElement("span");
-  const heartIcon = document.createElement("i");
-  commentUserId.innerText = userId.innerText;
-  commentText.innerText = commentInput.value;
-  commentUserId.className = "texts__username user__id";
-  commentText.className = "texts__contents";
-  heartIcon.className = "far fa-heart";
-  textBox.className = "comment__texts";
-  iconBox.className = "comment__heart-btn";
-  li.className = "comment";
-  textBox.append(commentUserId);
-  textBox.append(commentText);
-  iconBox.append(heartIcon);
-  li.append(textBox);
-  li.append(iconBox);
-  commentlist.append(li);
-  commentInput.value = "";
 }
 
 function handleFeedClickHeart() {
@@ -138,11 +141,10 @@ function handleFeedClickHeart() {
 
 function init() {
   sliceUserId();
+  uploadComments();
   searchInput.addEventListener("keyup", handleOpenModal);
   searchInput.addEventListener("focusout", handleCloseModal);
   searchCancle.addEventListener("click", handleCloseModal);
-  commentInput.addEventListener("keyup", handleBtn);
-  commentForm.addEventListener("submit", handleCommentUpload);
 }
 
 init();
