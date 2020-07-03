@@ -17,17 +17,17 @@ body{
 
 .box1 {
     width: 350px;
-    height: 380px;
-    border: 1px solid rgb(219, 219, 219);
-    padding: 10px 0;
+    height: 380px;    
     margin-bottom: 10px;
+    padding: 10px 0;
+    border: 1px solid rgb(219, 219, 219);
     background-color: white;
 }
 .box2 {
     display: flex;
+    margin: 0 auto 10px;
     padding: 10px 0;
     font-size: 14px;
-    margin: 0 auto 10px;
     border: 1px solid rgb(219, 219, 219);
     background-color: white;
 }
@@ -42,10 +42,14 @@ body{
     text-decoration: none;
     background-color: white;
 }
+
 .box3{
     display: flex;
-    font-size: 14px;
     margin-bottom: 10px;
+    font-size: 14px;
+}
+.facebook{
+    width: 16px;
 }
 .box3 span{
     width: 310px;
@@ -55,48 +59,44 @@ body{
 }
 
 .box4{
-    display: flex;
     width: 350px;
+    text-align: center;
 }
-
-.box4 div{
+.imageBox{
+    display: flex;
     margin: 0 auto;
 }
 
-
-
+.downloadLink{
+    height: 40px;
+}
 
 .logo {
     display: block;
     margin: 22px auto 12px;    
-    background-color: white;
-    
+    background-color: white;   
 }
-
 
 /* flex > between */
 
 #inputLogin {
-    text-align: center;
     margin-top: 30px;
+    text-align: center;
     background-color: white;
 }
 
 input {
-    border-radius: 3px;
     width: 250px;
     height: 35px;
     margin: 2px auto;
     padding-left: 15px;
     justify-content: center;
     border: 0.3px solid rgb(222, 223, 224);
+    border-radius: 3px;
     font-size: 14px;
     background-color:rgb(247, 247, 247);
 }
-
-
 button {
-    border-radius: 3px;
     width: 269px;
     height: 30px;
     margin-top: 15px;
@@ -108,20 +108,17 @@ button {
 
 .or{
     display: flex;
-    align-items: center;
     width: 268px;
     height: 15px;
     margin: 15px auto 14px;
-    background-color: white;
-}
-
-.or *{
+    align-items: center;
     background-color: white;
 }
 .or span{
+    margin: 0 18px;
     color:#8e8e8e;
     font-size: 13px;
-    margin: 0 18px;
+    background-color: white;
 }
 hr{
     width: 100px;
@@ -129,38 +126,22 @@ hr{
     color:#8e8e8e;
 }
 
-
-
-
 .loginIssue {
     display: block;
     margin-top: 40px;
-    text-align: center;
     color: #385185;    
     font-size: 13px;
+    text-align: center;
     background-color: white;
 }
-
 .loginIssue *{
     color: #385185;
-    background-color: white;
     text-decoration: none;
+    background-color: white;
 }
-
 .loginIssue span{
     font-size: 14px;
 }
-
 .loginIssue p{
     font-size: 12px;
-}
-
-.facebook img{
-    display: flex;
-    align-items: center;
-}
-
-.facebook a{
-    display: flex;
-    align-items: center;
 }

@@ -2,97 +2,109 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 i *{
     font-family: FontAwesome;
 }
+
 body{
     margin: 0;
 }
 
-
 /* navigation bar */
+
 nav{
     position: fixed;
-    top: 0px;
-    height: 54px;
-    width: 100%;
-    background-color: white;
-    border-bottom: 0.5px solid lightgrey;
-    z-index: 10;
     display: flex;
-
+    width: 100%;
+    height: 54px;
+    top: 0px;
+    border-bottom: 0.5px solid lightgrey;
+    background-color: white;
+    z-index: 10;
 }
+
 .navContent {
     display: flex;
     width: 975px;
     margin: 0 auto;
     padding : 0 20px;
     align-items: center; 
-    justify-content: center;
 }
+
 .leftLogo{
     flex: 1;
 }
+
+.textlogo{
+    width: 103px;
+}
+
 .middleSearch{
-    flex: 1;
     display: flex;
+    flex: 1;
     justify-content: center;
 }
+
 .rightMenu{
     flex: 1;
 }
-
 
 .middleSearch input{
     position: relative;
     width: 215px;
     height: 28px;
-    border-radius: 3px;
-    border: 0.2px solid rgb(220, 220, 220);
-    outline: none;
-    background-color: rgb(246, 246, 246);
+    text-align: center;
     font-family: FontAwesome;
     font-style: normal;
     font-size: 13px;
-    text-align: center;
+    border: 0.2px solid rgb(220, 220, 220);
+    outline: none;
+    border-radius: 3px;
+    background-color: rgb(246, 246, 246);
 }
+
 .middleSearch input:focus{
-    text-align: left;
     padding-left: 10px;
+    text-align: left;
 }
-
-
 
 .menuBtn{
     display: flex;
     float: right;
     margin-left: 15px;
 }
+
 .menuBtn a{
     width: 22px;
     height: 22px;
     margin-left: 22px;
 }
-.menuBtn a img{
-    border-radius: 100%;
+
+.menuBtn a svg{
     width: 22px;
     height: 22px;
 }
 
-
+.menuBtn a img{
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}
 
 /* main */
 
 main {
-    margin-top: 54px;
     width: 100%;
+    margin-top: 54px;
     background-color: rgb(250, 250, 250);
 }
+
 .mainContent{
     display: flex;
-    padding-top: 30px;
     width: 935px;
     margin: 0 auto;
+    padding-top: 30px;
 }
 
 .feedsColumn{
@@ -101,28 +113,30 @@ main {
 }
 
 .feeds{
+    display: flex;
     width: 614px;
     margin-right: 28px;
     margin-bottom: 28px;
-    display: flex;
 }
-.storySection{
+
+.storyFrame{
     width: 614px;
     height: 116px;
-    padding: 16px 0;
-    background-color: white;
-    border: 0.2px solid rgb(220, 220, 220);
     margin-bottom: 24px;
+    padding: 16px 0;
+    border: 0.2px solid rgb(220, 220, 220);
+    background-color: white;
 }
-.storyList{
+
+.storyOverflow{
     display: flex;
+    margin: 0 1px;
     padding: 0 20px;
     overflow-x: scroll;
     overflow-y: hidden;
-    margin: 0 1px;
 }
 
-.storyBox{
+.eachStoryBox{
     height: 100px;
     width: 66px;
     margin-right: 20px;
@@ -130,25 +144,24 @@ main {
 
 .borders{
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 66px;
     height: 66px;
     padding: 2px;
-    border-radius: 50%; 
-    display: flex;
-    background: linear-gradient(rgb(255, 0, 106),rgb(255, 145, 0)); 
-    flex-direction: column;
     align-items: center;
     color: #262626;
     font-size: 12px;
-
+    border-radius: 50%; 
+    background: linear-gradient(rgb(255, 0, 106),rgb(255, 145, 0)); 
 }
-.storyList div img{
+
+.storyOverflow div img{
     width: 62px;
     height: 62px;
-    border-radius: 100%;
-    border: 2px solid white;
     margin-bottom: 6px;
+    border: 2px solid white;
+    border-radius: 100%;
 }
 
 .storyProfile{
@@ -161,27 +174,26 @@ main {
     white-space: nowrap;
 }
 
-
 .feeds article{
     width: 614px;
     height: auto;
     border: 0.2px solid rgb(220, 220, 220);
     background-color: white;
 }
+
 .main-right {
     width: 293px;
 }
 
 /* 여기서부터 main.feeds 내부 */
-
 /* 프로필 표시 범위 */
 
 .contentprofile{
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     width: 613px;
     height: 60px;
+    margin: 0 auto;
     padding: 16px;
     align-items: center;
 }
@@ -190,18 +202,22 @@ main {
     text-decoration: none;
     justify-content: center;
 }
-#idpic{
-	flex-shrink: 0;
-	width: 50px;
-}
-#idspan{
-    flex-grow: 1;
-}
-#idmore{
-    flex-grow: 1;
 
+.idpic img{
+	flex-shrink: 0;
+    width: 36px;
+    margin-right: 10px;
 }
-#contentprofile-pic{
+
+.idspan{
+    flex-grow: 1;
+}
+
+.idmore{
+    flex-grow: 1;
+}
+
+.contentprofile-pic{
     float: left;
     flex-basis: content;
     border-radius: 100px; 
@@ -211,43 +227,41 @@ main {
     color: black;
 }
 
-#more{
+.more{
     float: right;
+    width: 22px
 }
 
 /* 사진 */
-
 .pictures img{
     width: 100%;
 }
 
 /* 리액션 버튼 */
-
 .viewersBtn {
     display: flex;
-    padding: 0 8px;
     margin-top: 4px;
+    padding: 0 8px;
 }
-.viewersBtn svg{
-    margin: 8px;
+
+.leftIcon{
+    flex-shrink: 0;
+}
+
+.leftIcon svg{
     width: 24px;
     height: 24px;
+    margin: 8px;
 }
 
-.emptyHeart{    
-    position: absolute;
-    visibility: visible;
+.bookMark{
+    flex-grow: 1;
 }
 
-.heart{
-    position: relative;
-    visibility: hidden;
-    fill : rgb(237, 73, 86);
-}
-
-
-#bookMark{
-    margin-left: auto;
+.bookMark svg{
+    width: 24px;
+    height: 24px;
+    margin: 8px;
 }
 
 /* 진짜 내용 */
@@ -257,55 +271,115 @@ main {
     width: 582px;
     margin: 0 auto;
 }
-.content div *{
-    margin-top: 4px;
-    align-items: center;
+
+.texts{
+    margin-top: 0;
+}
+
+.paragraph{
+    display: inline-block;
+    width: 540px;  
+    max-width: 400px;
+    line-height: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.moreBtn{
+    color: rgb(148, 155, 161);
+    padding: 0;
+    outline: none;
+    background-color: white;
+    border-style: none;
+}
+
+.firstC{
+    margin-top: 10px;
 }
 .comments{
     width: 613px;
-    border: 0.2px solid rgb(220, 223, 224);
     margin-top: 10px;
+    border: 0.2px solid rgb(220, 223, 224);
 }
 
-.likes img{
-    border-radius: 100%;
+.likes{
+    margin-bottom: 5;
 }
+.likes img{
+    width: 20px;
+    border-radius: 100%; 
+}
+
 .comments input{
-    padding: 16px;
     width: 558px;
-    border-radius: 0;
+    padding: 16px;
     border-style: none;
 }
+
 form *{
     outline: none;
 }
 
 .createComment{
     display: flex;
+    margin: 0;
+    overflow-y: scroll;
 }
 
-#commentBtn{
-    background-color: white;
+.inputComment{
+    min-width: 543px;
+    max-width: 543px;
+    min-height: 56px;
+    max-height: 80px;
+    padding-top:20px;
+    padding-left: 20px;
+    resize: none;
+
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.commentBtn{
+    margin-left: 4px;
     color: lightblue;
     border-style: none;
-    margin-left: 4px;
+    background-color: white;
 }
 
 .commentsList{
     list-style: none;
 }
+
 .commentsList ul{
     margin: 0;
-    list-style: none;
     padding-inline-start: 0;
+    list-style: none;
 }
+
 .commentsList ul li span {
     margin-left: 5px;
+}
+
+.commentsFrame li{
+    display: flex;
+    align-items: center;
+    word-break:break-all;
+}
+
+.deleteBtn{
+    width: 30px;
+    background-color: white;
+    border-style: none;
+    text-align: right;
+    outline: none;
+    color: rgb(192, 192, 192);
 }
 
 .mainRight{
     width: 293px;
 }
+
 .fixRight{
     position: fixed;
 }
@@ -322,17 +396,17 @@ form *{
     color: black;
 }
 
-#rightProfile-pic{ 
+.rightProfile-pic{ 
     float: left;
-    width: 55px;
-    border-radius: 100px; 
+    width: 50px;
     margin-top: 2%;
     margin-left: 5%;
+    border-radius: 100px; 
 }
 
 .rightProfile p{
-    display: inline-block;
     position: relative;
+    display: inline-block;
     padding-top: 20px;
     padding-left: 5%;
 }
@@ -347,30 +421,34 @@ form *{
 }
 
 .recommendProfile img{
-    border-radius: 100%;
     width: 32px;
     height: 32px;
     margin: 0 5px;
+    border-radius: 100%;
 }
+
 .userText{
     width: 206px;
 }
+
 .userid{
     font-size: 14px;
     font-weight: bold;
 }
+
 .secondLine{
     font-size: 12px;
     color: rgb(192, 192, 192);
 }
+
 .follow{
     float: right;
-    border-style: none;
-    background-color: rgb(250, 250, 250);
     color: rgb(38, 167, 218);
     font-weight: bold;
-    outline: none;
     font-size: 14px;
+    border-style: none;
+    outline: none;
+    background-color: rgb(250, 250, 250);
 }
 
 .recommendTitle {
@@ -379,23 +457,26 @@ form *{
     justify-content: space-between;
     align-items: center;
 }
+
 .recommendTitle span{
     color: rgb(148, 155, 161);
     font-size: 13px;
 }
+
 .recommendTitle input {
     border-style: none;
-    background-color: rgb(250, 250, 250);
+
     color: rgb(0, 0, 0);
     float: right;
     outline: none;
     font-size: 12px;
+    background-color: rgb(250, 250, 250);
 }
 
 .recommend{
-    overflow: hidden;
-    margin: 20px 0;
     width: 293px;
+    margin: 20px 0;
+    overflow: hidden;
 }
 
 .recommendList{
@@ -410,17 +491,19 @@ form *{
 
 .source{
     flex: auto;
+    width: 293px;
     margin-top: 20px;
-    width: 293px;
 }
+
 .sitemap {
-    font-size: 13px;
     width: 293px;
+    font-size: 13px;
     color:rgb(192, 192, 192);
 }
+
 .instagram {
-    font-size: 13px;
     width: 293px;
+    font-size: 13px;
     color:rgb(192, 192, 192);
 }
 

@@ -1,26 +1,25 @@
-const inputComment = document.getElementById("inputComment");
-const commentBtn = document.getElementById("commentBtn");
-
+const inputComment = document.getElementsByClassName("inputComment");
+const commentBtn = document.getElementsByClassName("commentBtn");
 
 // ACTIVATE BUTTON
 
-function activateBtn() {
-    if (inputComment.value !== ""){
-        commentBtn.style.color= "rgb(38, 167, 218)";
-        commentBtn.disabled = false;
-    } else {
-        commentBtn.style.color="lightblue";
-        commentBtn.disabled = true;
-    }
+function activateCommentBtn(num) {
+    (inputComment[num].value !== "")
+    ? (commentBtn[num].style.color= "rgb(38, 167, 218)",
+    commentBtn[num].disabled = false)
+    : (commentBtn[num].style.color="lightblue",
+    commentBtn[num].disabled = true)
 }
-inputComment.addEventListener("keyup", activateBtn);
 
-
+for(let i = 0; i < inputComment.length; i++){    
+    inputComment[i].addEventListener('keyup', () => activateCommentBtn(i)) ; 
+}
 
 // ADD COMMENTS
-
-function showComments(comment){
-    const firstComment = document.getElementById('firstC');
+function showComments(comment, j){
+    event.preventDefault();
+    inputComment[j].value="";
+    const commentsFrame = document.getElementsByClassName('commentsFrame')[j];
     let eachComment = document.createElement('li');
     let commentId = document.createElement('strong');
     let commentValue = document.createElement('span');
@@ -32,20 +31,6 @@ function showComments(comment){
     commentId.classList.add('commentId');
     commentValue.classList.add('commentValue');
     deleteBtn.classList.add('deleteBtn');
-   
-    const btnStyle = {
-        width: '30px',
-        backgroundColor: 'white',
-        borderStyle: 'none',
-        textAlign: 'right',
-        outline: 'none',
-        color: 'rgb(192, 192, 192)',
-
-    }
-    const eachCommentStyle = {
-        display: 'flex',
-        alginItems: 'center'
-    }
 
     commentId.innerText = "limosum91";
     commentValue.innerText = comment + '\n';
@@ -54,30 +39,28 @@ function showComments(comment){
     commentValue.style.flexGrow = '1';
     deleteBtn.style.flexGrow = '1';
 
-    Object.assign(deleteBtn.style, btnStyle);
-    Object.assign(eachComment.style, eachCommentStyle);
-
-    firstComment.after(eachComment);
     eachComment.appendChild(commentId);
     eachComment.appendChild(commentValue);
     eachComment.appendChild(deleteBtn);
-    event.preventDefault();
-    inputComment.value = "";
-
-    // 댓글 줄바꿈
-    if (comment.length > 50) {
-        breakLine += showComments(comment.substring(50));
-        return comment.substring(0,50);
-    } else {
-        return comment;
-    }
-
+    commentsFrame.appendChild(eachComment);
 }
 
-function addComments(){
-    console.log("good");
-    showComments(inputComment.value);
-    inputComment.value="";
+for(let j = 0; j < inputComment.length; j++){    
+    commentBtn[j].addEventListener('click', () => showComments(inputComment[j].value, j));
 }
 
+const moreBtn =  document.getElementsByClassName('moreBtn');
+const paragraph= document.getElementsByClassName("paragraph");
 
+function seeMore(num){
+    moreBtn[num].style.display = "none";
+    paragraph[num].style.maxWidth= "640px";
+    paragraph[num].style.lineHeight= "auto";
+    paragraph[num].style.whiteSpace= "normal";
+    paragraph[num].style.overflow= "visible";
+    
+    
+}
+for(let k = 0; k < paragraph.length; k++){    
+    moreBtn[k].addEventListener('click', () => seeMore(k));
+}
