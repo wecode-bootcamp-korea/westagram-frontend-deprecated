@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    width: 350px;
+    height: 380px;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerImg{
+    margin: auto;
+}
+
+.containerImg img {
+    width: 175px;
+    height: 51px;
+}
+
+.inputBox{
+/*     width: 348px;
+    height: 263px; */
+    text-align: center;
+}
+
+.idStyle {
+    width: 268px;
+    height: 38px;
+    margin-top: 7px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 16px 7px;
+    font-size: 12px;
+    outline-color: #dbdbdb;
+    outline-width: 0px;
+}
+
+.pwStyle {
+    width: 268px;
+    height: 38px;
+    margin-top: 7px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 16px 7px;
+    font-size: 12px;
+    outline-color: #dbdbdb;
+    outline-width: 0px;
+}
+
+.button {
+    width: 268px;
+    height: 30px;
+    margin-top: 9px;
+    border: 0px solid white;
+    border-radius: 5px;
+    background-color: #0095F6;
+    font-size: 14px;
+    color: white;
+    opacity: 0.4;
+}
+
+input:hover {
+    border: 1px solid #dbdbdb;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.findPw {
+    font-size: 12px;
+    margin: 105px 0 20px;
+    color: #00376b;
+}

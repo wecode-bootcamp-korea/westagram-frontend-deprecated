@@ -1,0 +1,329 @@
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 1280px;
+    height: 54px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: white;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 975px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.leftLogo {
+    display: flex;
+}
+
+.instarIcon {
+    width: 29px;
+    height: 29px;
+    margin-right: 5px;
+}
+
+.wall {
+    width: 1px;
+    height: 29px;
+    background-color: black;
+    margin-right: 5px;
+}
+
+.instarLogo {
+    width: 103px;
+    height: 29px;
+    margin-top: 3px;
+    margin-right: 80px;
+}
+
+.searchBox {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8e8e8e;
+    outline-color: #dbdbdb;
+    outline-width: 0px;
+}
+
+.rightLogo {
+    width: 222px;
+    height: 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tripleLogo {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+}
+
+.main {
+    width: 1280px;
+    max-height: 12000px;
+    margin-top: 53px;
+    margin-left: -10px;
+    background-color: #fafafa;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 975px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feed {
+    width: 614px;
+    background-color: white;
+}
+
+.feed header {
+    height: 60px;
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+}
+
+.profileImgBox {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImg {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+.headerInformation {
+    width: 536px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+}
+
+.namePlace {
+    flex-direction: column;
+}
+
+.threeDotPlace {
+    height: 24px;
+    margin: auto 0;
+}
+
+.threeDotPlace .threeDot {
+    height: 24px;
+}
+
+.article {
+    border-right: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+}
+
+.post {
+    width: 100%;
+    max-height: 800px;
+}
+
+.articleIcon {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.likeNumber {
+    height: 18px;
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.articleButton {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    margin-left: -3px;
+    background-color: white;
+}
+
+.articleIconImg {
+    width: 24px;
+    height: 24px;
+}
+
+.likePeople {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.likePersonImgBox {
+    width: 25px;
+    height: 25px;
+    border: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.likePersonImg {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+.commentLog {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 16px;
+    margin: 10px 0;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+}
+
+a {
+    font-size: 14px;
+    color: #262626;
+}
+
+.commentBox {
+    width: 100%;
+    height: 56px;
+    padding: 0 10px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.comment {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline-color: #dbdbdb;
+    outline-width: 0px;
+}
+
+.upLoadComment {
+    width: 26px;
+    height: 100%;
+    padding: 0px;
+    align-items: center;
+    border: 0;
+    background-color: white;
+    opacity: 0.4;
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mainRight {
+    position: fixed;
+    top: 110px;
+    left: 814px;
+    width: 293px;
+}
+
+.myAccount {
+    height: 56px;
+}
+
+.myAccountImgBox {
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.myAccountImg {
+    width: 56px;
+    height: 56px;
+    border: 0;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+.myAccountExplain {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.recommand {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.recommandBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommandAccountBox {
+    width: 100%;
+    height: 48px;
+    margin-top: 15px;
+}
+
+.recommandImgBox {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.recommandImg {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 70%;
+    object-fit: cover;
+}
+
+.recommandAccount {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.recommandAccountExplain {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.follow {
+    align-items: center;
+}
