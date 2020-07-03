@@ -120,13 +120,14 @@ nav .nav__search-bar {
   border-radius: 50%;
 }
 
-.nav__icons .nav__icon i{
-  font-size: 22px;
+.nav__icons .nav__icon svg{
+  width: 22px;
+  height: 22px;
 }
 
 .search-modal {
   width: 241px;
-  height: 362px;
+  max-height: 362px;
   position: absolute;
   top: 55px;
   right: 0 auto;
@@ -148,6 +149,11 @@ nav .nav__search-bar {
 
 .search-modal li:not(:last-child) {
   border-bottom: 1px solid #dbdbdb;;
+}
+
+.search-modal li:hover {
+  background-color: #fafafa;
+  cursor: pointer;
 }
 
 .search-modal .modal__img-box {
@@ -318,13 +324,14 @@ nav .nav__search-bar {
   justify-content: space-between;
 }
 
-.text-box__interaction i {
-  margin-right: 18px;
-  font-size: 24px;
+.text-box__interaction svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
-.text-box__interaction i:last-child {
+.text-box__interaction svg:last-child {
   margin-right: 0;
 }
 
