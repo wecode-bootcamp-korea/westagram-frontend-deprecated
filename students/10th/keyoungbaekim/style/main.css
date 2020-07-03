@@ -1,4 +1,4 @@
-body{
+body {
     height: 1200px;
 }
 
@@ -24,54 +24,54 @@ nav {
     align-items: center;
 }
 
-.navLogo img {
+.navLogoImg {
     width: 103px;
     height: 29px;
 }
 
-.navSearch{
+.navSearch {
     width: 215px;
     height: 28px;
-    padding: 1px;
     display: flex;
     justify-content: center;
     justify-items: center;
-    border: 0.5px solid #dbdbdb;
+    padding: 1px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
 }
 
-.searchIcon{
-    margin: auto 0;
-    width: 16px;
-    height: 16px;
+.navSearch i {
+    width: 40%;
+    margin: auto 3px;
+    color: #c9c9c9;
+    text-align: right;
 }
 
-.navSearchInput{
+.fas {
+    text-align: center;
     border: none;
     outline: none;
-    text-align: center;
     background-color: #FAFAFA;
 }
 
-.navSearchInput::placeholder{
+.fas::placeholder {
     font-size: 13px;
     color: #c9c9c9;
 }
 
-.navSearchInput:focus{
+.fas:focus {
     display: flex;
     text-align: left;
-    /* background-color: #0095f6; */
-    /* justify-content: left; */
 }
 
-.navMenuIcon{
+.navMenuIcon {
     display: flex;
 }
 
-.navIconImg{
-    margin: 0 10px;
+.navIconImg {
     width: 22px;
     height: 22px;
+    margin: 0 10px;
 }
 
 main {
@@ -81,8 +81,8 @@ main {
 }
 
 .mainContainer {
-    display: flex;
     width: 975px;
+    display: flex;
     margin-top: 90px;
 }
 
@@ -90,24 +90,75 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-    /* margin-right: 28px; */
     width: 614px;
-    /* height: 100%; */
 }
 
-.feeds header {
+.story {
+    height: 100px;
     display: flex;
-    /* justify-content: space-around;  */
-    align-items: center; 
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.storyUl {
+    list-style: none;
+}
+
+.storyList {
+    float: left;
+    vertical-align: middle;
+    margin: 0 6px;
+}
+
+.storyListName {
+    width: 70px;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.storyCircleBorder {
+    width: 60px;
+    height: 60px;
+    border-top: 2px solid #D82B7E;
+    border-right: 2px solid #D82B7E;
+    border-bottom: 2px solid #F99D4B;
+    border-left: 2px solid #F99D4B;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.storyImgContainer {
+    width: 56px;
+    height: 56px;
+    margin: 2px;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.storyImg {
+    width: 100%;
+    height: 100%;
+}
+
+.feedsBorder {
+    margin: 24px 0 36px; 
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.feedsHeader {
+    display: flex;
+    align-items: center;
     padding: 16px;
 } 
 
 .profileImgConatainer {
-    display: flex;
     width: 32px;
     height: 32px;
+    display: flex;
 }
 
 .profileImgConatainer {
@@ -131,6 +182,8 @@ main {
 }
 
 .dotImgConatainer {
+    width: 24px;
+    height: 24px;
     margin-left: auto;
 }
 
@@ -138,25 +191,31 @@ main {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #dbdbdb;
-    /* margin: px; */
 }
 
-.repleBtn {
-    display: flex;
+.commentBtnList {
     height: 40px;
+    display: flex;
 }
 
-.repleBtnLeft{
+.commentBtnContatiner {
     width: 24px;
     height: 24px;
-    margin: 16px 8px;
+    margin: 8px;
 }
 
-.repleBtnLeft:first-child {
+.commentBtnContatiner:first-child {
     margin-left: 18px;
 }
 
-.bookmark{
+.commentIconBtn {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    background-color: #00ff0000;
+}
+
+.bookmark {
     width: 24px;
     height: 24px;
     margin: 8px;
@@ -166,8 +225,8 @@ main {
 .listComments {
     display: flex;
     flex-direction: column;
-    margin: 12px 16px;
     font-size: 14px;
+    margin: 8px 16px;
 }
 
 .listComments h4{
@@ -177,7 +236,7 @@ main {
 
 .listComments p{
     font-size: 14px;
-    margin: 2px 0;
+    margin: 4px 0;
 }
 
 .myCommentList{
@@ -187,6 +246,7 @@ main {
 
 .myCommentList div{
     display: flex;
+    margin: 2px 0;
 }
 
 .myCommentList div p{
@@ -204,23 +264,23 @@ main {
 }
 
 .commentBtn{
-    cursor: pointer;
+    float: right;
     border: none;
     background-color: #00ff0000;
-    float: right;
+    cursor: pointer;
 }
 
 .writeComment{
-    display: flex;
     height: 56px;
+    display: flex;
 }
 
 .commentInput{
+    width: 100%;
     border: none;
     font-size: 14px;
     outline: none;
     margin-left: 16px;
-    width: 100%;
 }
 
 .commentBtn{
@@ -233,115 +293,106 @@ main {
     cursor: pointer;
 }
 
-.asideFixed aside{
-    position: fixed;
+.asideFixed {
     width: 325px;
-    margin: 5px 12px;
+    position: fixed;
+    margin: 24px 12px 5px 24px;
 }
 
-.profileRow{
+.profileRow {
     display: flex;
 }
 
-.imgRound{
+.imgRound {
     width: 56px;
     height: 56px;
     border-radius: 70%;
     overflow: hidden;
 }
 
-.profileColumn{
+.profileColumn {
     display: flex;
     margin: 0 10px;
     flex-direction: column;
     justify-content: center;
 }
 
-.profileColumn p{
+.profileNickname {
     font-size: 14px;
     margin: 3px;
 }
 
-.profileColumn p:first-child{
+.profileNickname:first-child {
     font-size: 14px;
-
 }
 
-.profileColumn p:last-child{
-    color: #808080;
+.profileNickname:last-child {
     font-size: 12px;
+    color: #808080;
 }
 
-.recommendationsMembers{
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem;
-    border: 0.5px solid #dbdbdb;
-}
-
-.MembersProfiles{
+.recommendationContainer {
     display: flex;
     flex-direction: row;
     margin-top: 16px;
 }
 
-.MembersProfiles p{
+.recommendationTitle {
     color: #808080;
-    font-weight: bold;
     font-size: 14px;
+    font-weight: bold;
     margin: auto 0;
 }
 
-.MembersProfiles button{
+.recommendationBtn {
     margin-left: auto;
+    border: none;
     font-size: 12px;
     font-weight: bold;
-    border: none;
     background-color: #00ff0000;
     cursor: pointer;
 }
 
-.MembersListContainer{
-    margin: 10px;
-    /* height: 256px; */
+.followContainer {
+    padding: 10px 0 10px 10px;
 }
 
-.memberContainer{
-    display: flex;
-    align-items: center;
+.followMemberContainer {
     height: 48px;
     padding: 4px 0;
+    display: flex;
+    align-items: center;
 }
 
-.round{
-    display: flex;
-    justify-content: center;
+.roundImg {
     width: 30px;
     height: 30px;
+    display: flex;
+    justify-content: center;
     border-radius: 70%;
     overflow: hidden;
 }
 
-.memberName{
+.followMemberName {
     margin: auto 13px;
     font-size: 12px;
 }
 
-.memberName p{
+.grayText {
     margin-top: 5px;
     font-size: 12px;
     color: #808080;
 }
 
-.followBtnContainer{
-    margin-left: auto;
+.followBtnContainer {
     float: right;
+    margin-left: auto;
 }
 
-.followBtn{
-    font-size: 13px;
+.followBtn {
     border: #00ff0000;
-    background-color: #00ff0000;
     color: #0095f6;
+    background-color: #00ff0000;
+    font-size: 13px;
     font-weight: bold;
 }

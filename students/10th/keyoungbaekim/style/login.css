@@ -1,15 +1,15 @@
 main {
-    display: flex;
     height: 100%;
+    display: flex;
     justify-content: center;
 }
 
 .loginContanier {
+    width: 350px;
+    height: 442px;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    width: 350px;
-    height: 442px;
     margin-top: 150px;
     border: 1px solid #dbdbdb;
 }
@@ -18,14 +18,14 @@ main {
     margin: 50px auto 0;
 }
 
-.login {
+.inputContainer {
     width: 268px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
 
-.loginInput{
+.loginInputId, .loginInputPw{
     margin-top: 10px;
     padding: 10px;
     background-color: #FAFAFA;
