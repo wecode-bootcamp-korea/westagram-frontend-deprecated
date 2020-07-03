@@ -1,3 +1,4 @@
+const inputForm = document.querySelector("#input-user-info");
 const userInfoValue = document.querySelectorAll(".userinfo");
 const loginBtn = document.querySelector("#loginBtn");
 const wrongPw = document.querySelector(".wrong");
@@ -22,9 +23,10 @@ function handleLoginBtnColor() {
   }
 }
 
-function handleClick() {
-  loginBtn.addEventListener("click", function () {
-    for (let j = 0; j < userInfoValue.length; j++) {
+function handleSubmit() {
+  for (let i = 0; i < userInfoValue.length; i++) {
+    inputForm.addEventListener("submit", function (e) {
+      e.preventDefault();
       if (
         userInfoValue[0].value === loginInfo.id &&
         userInfoValue[1].value === loginInfo.pw
@@ -33,13 +35,13 @@ function handleClick() {
       } else {
         wrongPw.style.visibility = "visible";
       }
-    }
-  });
+    });
+  }
 }
 
 function init() {
   handleLoginBtnColor();
-  handleClick();
+  handleSubmit();
 }
 
 init();
