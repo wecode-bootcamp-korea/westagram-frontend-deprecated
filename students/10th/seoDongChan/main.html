@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <style type="text/css"></style>
+  </head>
+
+  <body>
+    <script src="js/main.js"></script>
+    <script type="text/javascript"></script>
+    <div>
+      <nav class="nav">
+        <div class="nav-content">
+          <div class="nav-content-first">
+            <img
+              class="nav-content-icon"
+              alt="nav-content-icon"
+              src="img/icon_text.png"
+            />
+            <p class="nav-content-first-slice">|</p>
+            <img
+              class="nav-content-logo"
+              alt="nav-content-logo"
+              src="img/logo_text.png"
+            />
+          </div>
+          <div class="nav-content-search">
+            <input type="text" placeholder="검색어 입력" />
+            <img
+              src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
+            />
+          </div>
+          <div class="nav-content-final">
+            <img
+              class="nav-content-final-img"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+            />
+            <img
+              class="nav-content-final-img"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+            />
+            <img
+              class="nav-content-final-img"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+            />
+            <img
+              class="nav-content-final-img"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+            />
+
+            <div class="nav-content-final-profile">
+              <img src="img/hansohee_board1.jpg" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="div-center" id="div-center">
+          <div class="div-center-left">
+            <div class="story">
+              <div class="story-list-container">
+                <div class="story-profile-outside">
+                  <div class="story-profile-inside">
+                    <img src="img/hansohee.png" />
+                  </div>
+                </div>
+                <div class="story-profile-outside">
+                  <div class="story-profile-inside">
+                    <img src="img/hansohee.png" />
+                  </div>
+                </div>
+                <div class="story-profile-outside">
+                  <div class="story-profile-inside">
+                    <img src="img/hansohee.png" />
+                  </div>
+                </div>
+                <div class="story-profile-outside">
+                  <div class="story-profile-inside">
+                    <img src="img/hansohee.png" />
+                  </div>
+                </div>
+                <div class="story-profile-outside">
+                  <div class="story-profile-inside">
+                    <img src="img/hansohee.png" />
+                  </div>
+                </div>
+                <div class="story-profile-outside">
+                  <div class="story-profile-inside">
+                    <img src="img/hansohee.png" />
+                  </div>
+                </div>
+                <div class="story-profile-outside">
+                  <div class="story-profile-inside">
+                    <img src="img/hansohee.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--   게시글 내용 부분 -->
+            <div class="post">
+              <!-- 게시글 위 -->
+              <div class="post-nav">
+                <div class="post-nav-left">
+                  <div class="post-nav-profile">
+                    <img src="img/hansohee.png" />
+                  </div>
+                  <div>
+                    <p class="post-nav-profile-p">
+                      sdc337dc
+                    </p>
+                  </div>
+                </div>
+                <div class="post-nav-option">
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+                  />
+                </div>
+              </div>
+              <!-- 게시글 중간 -->
+              <div class="post-picture-container">
+                <img src="img/hansohee_board1.jpg" />
+              </div>
+              <!-- 게시글 아래 -->
+              <div class="post-footer-container" id="post-footer-container">
+                <div class="post-footer-nav">
+                  <div class="post-footer-nav-left">
+                    <img
+                      id="posts-heart"
+                      onclick="onclick_heart();"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                    />
+                    <p id="posts-heart-value">
+                      false
+                    </p>
+                    <img
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                    />
+                    <img
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                    />
+                  </div>
+                  <div class="post-footer-nav-right">
+                    <img
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+                    />
+                  </div>
+                </div>
+                <div class="post-footer-content" id="post-footer-content">
+                  <div class="post-comment-container">
+                    <div class="post-comment-profile">
+                      <img src="img/hansohee.png" />
+                    </div>
+                    <span class="post-comment-span-border">
+                      sdc337dc
+                    </span>
+                    <span class="post-comment-span-normal">님</span>
+                    <span class="post-comment-span-border">외 10명</span>
+                    <span class="post-comment-span-normal">이 좋아합니다.</span>
+                  </div>
+                  <div>
+                    <ul class="post-comment-ul" id="post-comment-ul">
+                      <li class="post-comment-li">
+                        <span class="post-comment-span-border">sdc3737dc</span>
+                        <span class="post-comment-span-normal">이쁘심</span>
+                        <span class="post-comment-span-more">더보기</span>
+                      </li>
+                      <li class="post-comment-li">
+                        <span class="post-comment-span-border">xoohee</span>
+                        <span class="post-comment-span-normal">여신님</span>
+                      </li>
+                      <li class="post-comment-li">
+                        <span class="post-comment-span-border">SSe_5</span>
+                        <span class="post-comment-span-normal">알고 있음</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="post-comment-input-container">
+                  <input type="text" id="comment" placeholder="댓글 달기..." />
+                  <button type="button" onclick="onclick_comment();">
+                    게시
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-center-right">
+            <!-- 광고 부분 -->
+            <div class="my-story">
+              <div class="story-profile-inside">
+                <div>
+                  <img src="img/wecode_hansohee.jpg" />
+                </div>
+              </div>
+              <div id="div-center-right-ad-2">
+                <div style="height: 20px;">
+                  <p id="div-center-right-ad-2-row1">
+                    wecode_bootcamp
+                  </p>
+                </div>
+                <div style="height: 35px;">
+                  <p id="div-center-right-ad-2-row2">
+                    weCode|위코드
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 추천 부분 -->
+            <div class="div-center-right-content">
+              <div id="div-center-right-recommend-row-1">
+                <p id="div-center-right-recommend-row-1-p">
+                  회원님을 위한 추천
+                </p>
+                <p id="div-center-right-recommend-row-1-p2">
+                  모두보기
+                </p>
+              </div>
+              <div id="div-center-right-recommend-row-2">
+                <ul>
+                  <li>
+                    <div class="div-center-right-recommend-row-2-1">
+                      <div class="div-center-right-recommend-profile">
+                        <img src="img/wecode_hansohee.jpg" />
+                      </div>
+                      <div>
+                        <p class="div-center-right-recommend-profile-id">
+                          sohee
+                        </p>
+                        <p class="div-center-right-recommend-profile-time">
+                          xohheee외 2명이...
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="div-center-right-recommend-profile-follow">
+                        팔로우
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="div-center-right-recommend-row-2-1">
+                      <div class="div-center-right-recommend-profile">
+                        <img src="img/hansohee.png" />
+                      </div>
+                      <div>
+                        <p class="div-center-right-recommend-profile-id">
+                          sohee
+                        </p>
+                        <p class="div-center-right-recommend-profile-time">
+                          sdc337dc외 2명이...
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="div-center-right-recommend-profile-follow">
+                        팔로우
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="div-center-right-recommend-row-2-1">
+                      <div class="div-center-right-recommend-profile">
+                        <img src="img/hansohee_board1.jpg" />
+                      </div>
+                      <div>
+                        <p class="div-center-right-recommend-profile-id">
+                          sohee
+                        </p>
+                        <p class="div-center-right-recommend-profile-time">
+                          sdcssss외 2명이...
+                        </p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="div-center-right-recommend-profile-follow">
+                        팔로우
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 마지막 부분 -->
+            <div id="div-center-right-comment">
+              <p>
+                Instagram 정보, 지원, 홍보 센터, API 채용 정보,
+                개인정보처리방침, 약관디렉터리, 프로필, 해시태그, 언어
+              </p>
+              <p>ⓒ 2019 INSTAGRAM</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
