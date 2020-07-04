@@ -217,9 +217,14 @@ header {
 }
 
 .comment-box {
+  display: block;
+  padding-top: 10px;
+}
+
+.each-comment {
   width: 582px;
   height: 18px;
-  padding: 10px 0;
+  padding: 11px 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -229,6 +234,11 @@ header {
 .content-id {
   font-weight: bold;
   padding-right: 5px;
+}
+
+.show-comment-all {
+  font-size: 16px;
+  color: grey;
 }
 
 .like-heart {
@@ -242,6 +252,7 @@ header {
 
 .time-stamp {
   font-size: 5px;
+  padding-top: 5px;
   padding-bottom: 10px;
   color: grey;
 }
@@ -322,11 +333,15 @@ header {
 .recommend-text-left {
   width: 248.08px;
   height: 18px;
+  font-size: 14px;
+  color: grey;
 }
 
 .recommend-text-right {
   width: 44.92px;
   height: 14px;
+  font-size: 12px;
+  color: black;
 }
 
 .padding-side-group {
@@ -398,15 +413,6 @@ header {
   width: 31.14px;
   font-size: 12px;
   color: #4eb3f8;
-}
-
-.grey-font {
-  font-size: 14px;
-  color: grey;
-}
-
-.black-font {
-  font-size: 12px;
 }
 
 .side-underInfo {

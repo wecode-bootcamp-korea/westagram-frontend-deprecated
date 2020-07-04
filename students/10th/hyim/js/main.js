@@ -1,4 +1,4 @@
-let commentBox = document.querySelector(".comment");
+let commentBox = document.querySelector(".comment-box");
 // let defaultHeartBtn = document.querySelector(".submit-content-heart");
 
 const form = document.querySelector("#submit-comment-container");
@@ -23,21 +23,6 @@ function createSmallHeart() {
   return imgDivContainer;
 }
 
-function hideComment() {
-  if (commentContainer.length > 2) {
-    console.log("2개 이상 코멘트가 생겼어! 숨기러가자");
-    for (let i = 0; i < commentContainer.length - 2; i++) {
-      //여기 i값을 설정해서 어떤 코멘트를 남길지 선택할 수 있음
-      commentContainer[i].style.display = "none"; //댓글 가려주는 코드
-      countComment.innerText = "댓글" + commentContainer.length; //"댓글 수 4" 이런 식으로 보여줄 수 있도록 내용 수정
-      commentBox.append(countComment); //만든 "댓글 수 4"를 코멘크 박스라는 코멘트와 게시글을 감싸는 div에 삽입
-      viewCommentAll.innerText = " 모두 보기"; //
-      viewCommentAll.addEventListener("click", showCommentAll);
-      commentBox.append(viewCommentAll);
-    }
-  }
-}
-
 //코멘크 아이콘
 function addComment(event) {
   let newId = document.createElement("span");
@@ -46,21 +31,20 @@ function addComment(event) {
   let newDiv = document.createElement("div");
   let newContent = newCommentValue.value; //form태그의 value를 가져옴
   newId.innerHTML = myId.innerText; //프로필에서 내 id를 가져옴
-  newId.className = "comment-id";
-  newComment.innerHTML = newContent;
+  newId.className = "comment-id"; //글씨 bold설정을 위한 className부여
+  newComment.innerHTML = newContent; //가져온 form태그의 value할당
   blank.innerText = " ";
   newDiv.append(newId);
   newDiv.append(blank);
   newDiv.append(newComment);
   newDiv.append(createSmallHeart()); //코멘트 마다 새로 달리는 하트 만드는 함수 불러옴
-  newDiv.className = "comment-box";
+  newDiv.className = "each-comment"; //각 코멘트를 감싸는 div의 클래스
   newDiv.id = num++;
   commentBox.appendChild(newDiv);
-  // hideComment();
+  hideComment();
+  // window.addEventListener("submit", hideComment);
   event.preventDefault();
 }
-
-window.addEventListener("submit", hideComment);
 
 let colored = 0;
 //코멘트 하트 색깔 바꾸는 함수(eventlistner에서 호출됨)
