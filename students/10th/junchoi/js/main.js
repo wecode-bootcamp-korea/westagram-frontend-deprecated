@@ -1,14 +1,14 @@
 const faker = window.faker;
 
 // right fixed aside position handling
+const rightFixed = document.querySelector('.main-right');
 window.addEventListener('load', () => {
   const space = Math.floor((window.innerWidth - 895) / 2);
   rightFixed.style.left = `${space + 895 - 293}px`;
   rightFixed.style.right = `${space}px`
-  rightFixed.style.visibility = 'visible'
+  rightFixed.classList.add('loaded');
 });
 
-const rightFixed = document.querySelector('.main-right');
 window.addEventListener('resize', () => {
   const space = Math.floor((window.innerWidth - 895) / 2);
   rightFixed.style.left = `${space + 895 - 293}px`;
@@ -16,32 +16,31 @@ window.addEventListener('resize', () => {
 });
 
 // generate fake stories by using faker.js library
-const mainStoriesTag = document.querySelector('.main-stories');
+const mainStories = document.querySelector('.main-stories');
 
 const makeStories = () => {
   const thumnail = faker.image.avatar();
   const userName = faker.internet.userName();
 
-  const storyItemTag = document.createElement('div');
-  storyItemTag.className = "story-item";
+  const storyItem = document.createElement('div');
+  storyItem.className = "story-item";
 
-  const storyImageBorderTag = document.createElement('div');
-  storyImageBorderTag.className = "story-image-border";
+  const storyImageBorder = document.createElement('div');
+  storyImageBorder.className = "story-image-border";
 
-  const stroyImageTag = document.createElement('img');
-  stroyImageTag.src = thumnail;
+  const storyImageTag = document.createElement('img');
+  storyImageTag.src = thumnail;
 
   const storyId = document.createElement('div');
   storyId.className = "story-id";
   storyId.innerText = userName.slice(0, 6);
 
-  storyImageBorderTag.appendChild(stroyImageTag);
-  storyItemTag.appendChild(storyImageBorderTag);
-  storyItemTag.appendChild(storyId);
-  mainStoriesTag.appendChild(storyItemTag);
+  storyImageBorder.appendChild(storyImageTag);
+  storyItem.appendChild(storyImageBorder);
+  storyItem.appendChild(storyId);
+  mainStories.appendChild(storyItem);
 
 };
-
 
 const myRepeat = (func, times) => {
   let i = 1;
@@ -54,60 +53,50 @@ const myRepeat = (func, times) => {
 myRepeat(makeStories, 20);
 
 // post button active/inactive handling
-const commentInputs = document.querySelectorAll('.comment > input');
-const postButtons = document.querySelectorAll('.comment .post');
+const commentInputs = [...document.querySelectorAll('.comment > input')];
+const postButtons = [...document.querySelectorAll('.comment .post')];
 
 commentInputs.forEach((commentInput, commentInputIndex) => {
-
   commentInput.addEventListener('keyup', () => {
     commentInputs.forEach(() => {
       const commentInputValue = commentInput.value;
 
-      postButtons.forEach((postButton, postButtonIndex) => {
-        if (postButtonIndex === commentInputIndex) {
-          commentInputValue.length >= 1
-            ? postButton.classList.add('active')
-            : postButton.classList.remove('active');
-        }
-      })
-    })
-  });
-})
+      const currentPostButton = postButtons.find((postButton, postButtonIndex) => postButtonIndex === commentInputIndex);
+      commentInputValue.length >= 1
+        ? currentPostButton.classList.add('active')
+        : currentPostButton.classList.remove('active');
+
+     })
+  })
+});
 
 // comments form submit handling
-const commentForms = document.querySelectorAll('.comment');
-const commentsBox = document.querySelectorAll('.comments');
+const commentForms = [...document.querySelectorAll('.comment')];
+const commentsBoxes = [...document.querySelectorAll('.comments')];
 
 commentForms.forEach((commentForm, commentFormIndex) => {
-
   commentForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    commentInputs.forEach((commentInput, commentInputIndex) => {
-      if (commentInputIndex === commentFormIndex) {
-        if (commentInput.value.length === 0) return; // 바로 return 한다.
-    
-        const commentTag = document.createElement('div');
-        const user = document.createElement('div');
-        user.className = "userId";
-        user.innerText = faker.internet.userName();
-    
-        const content = document.createElement('div');
-        content.className = "content";
-        content.innerText= commentInput.value;
-    
-        commentTag.appendChild(user);
-        commentTag.appendChild(content);
-    
-        commentsBox.forEach((comments, commentsBoxIndex) => { // 같은 commentBox에 댓글이 달리게 한다.
-          if (commentsBoxIndex === commentFormIndex) {
-            comments.appendChild(commentTag);
-          }
-        })
+    const currentCommentInput = commentInputs.find((commentInput, commentInputIndex) => commentInputIndex === commentFormIndex);
+    if (currentCommentInput.value.length === 0) return false;
 
-        commentInput.value = "";
-      }
-    })
+    const comment = document.createElement('div');
+    const user = document.createElement('div');
+    user.className = "user-id";
+    user.innerText = faker.internet.userName();
+
+    const content = document.createElement('div');
+    content.className = "content";
+    content.innerText= currentCommentInput.value;
+
+    comment.appendChild(user);
+    comment.appendChild(content);
+
+    const currentCommentBox = commentsBoxes.find((commentBox, commentBoxIndex) => commentBoxIndex === commentFormIndex);
+    currentCommentBox.appendChild(comment);
+
+    currentCommentInput.value = ""
   });
 })
 

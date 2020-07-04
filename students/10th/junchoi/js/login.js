@@ -1,9 +1,9 @@
-const input = document.querySelector('.login-input');
-const loginButton = document.querySelector('.login-input > button');
+const inputBox = document.querySelector('.login-input-box');
+const loginButton = document.querySelector('.login-input-box > button');
 
-input.addEventListener('keyup', () => {
-  const id = document.querySelector('.login-input .id').value;
-  const pw = document.querySelector('.login-input .pw').value;
+inputBox.addEventListener('keyup', () => {
+  const id = document.querySelector('.login-input-box .id').value;
+  const pw = document.querySelector('.login-input-box .pw').value;
 
   const isButtonActive = id.length >= 1 && pw.length >= 1;
   isButtonActive 

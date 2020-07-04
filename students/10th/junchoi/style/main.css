@@ -1,6 +1,6 @@
 body {
-  background-color: #FAFAFA;
   margin: 0;
+  background-color: #FAFAFA;
 }
 
 .header {
@@ -10,22 +10,19 @@ body {
   top: 0;
   right: 0;
   left: 0;
-
+  height: 54px;
+  z-index: 1;
   background-color: #FFFFFF;
   border: 1px solid rgba(var(--b6a,219,219,219),1);
   border-radius: 1px;
-  height: 54px;
-
-  z-index: 1;
 }
 
 .navbar {
-  width: 935px;
-  padding: 0 20px;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 935px;
+  padding: 0 20px;
 }
 
 .navbar-left {
@@ -48,17 +45,17 @@ body {
 }
 
 .navbar-item.searchbar .icon {
-  font-size: 14px;
-  color: #C4C5C6;
   position: absolute;
   left: 78px;
+  color: #C4C5C6;
+  font-size: 14px;
 }
 
 .navbar-item.searchbar .text {
-  font-size:14px;
-  color: #C4C5C6;
   position: absolute;
   left: 95px;
+  color: #C4C5C6;
+  font-size:14px;
 }
 
 .navbar-item.searchbar .icon.focused {
@@ -70,18 +67,18 @@ body {
 }
 
 .navbar-item.searchbar > input {
-  border: 1px solid rgba(var(--ca6,219,219,219),1);
-  border-radius: 2px;
   width: 215px;
   height: 29px;
-  background-color: #FAFAFA;
   padding-left: 30px;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(var(--ca6,219,219,219),1);
+  border-radius: 2px;
 }
 
 .navbar-item.icons {
   display: flex;
-  width: 360px;
   justify-content: space-between;
+  width: 360px;
 }
 
 .navbar-item.icons .fixed {
@@ -107,20 +104,19 @@ main {
 } 
 
 .main-content {
-  width: 895px;
-  margin-top: 85px;
   display: flex;
   flex-direction: column;
+  width: 895px;
+  margin-top: 85px;
 } 
 
 .main-stories {
   width: 580px;
   height: 120px;
   margin: 0px 28px 34px 0px;
-
+  background-color: #FFFFFF;
   border: 1px solid rgba(var(--b6a,219,219,219),1);
   border-radius: 3px;
-  background-color: #FFFFFF;
 }
 
 .main-stories {
@@ -148,13 +144,13 @@ main {
 }
 
 .story-item .story-image-border {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 64px;
+  height: 64px;
   background-image: linear-gradient(145deg, red, orange);
+  border-radius: 50%;
 }
 
 .story-item .story-image-border > img {
@@ -172,7 +168,6 @@ main {
 
 .main-feeds {
   width: 580px;
-  height: 2000px;
   margin-right: 28px;
 }
 
@@ -181,17 +176,20 @@ main {
 }
 
 .main-right {
-  visibility: hidden;
+  width: 293px;
   position : fixed;
   top: 90px;
-  
-  width: 293px;
+  visibility: hidden;
+}
+
+.main-right.loaded {
+  visibility: visible;
 }
 
 .current-user {
   display: flex;
-  margin-left: 10px;
   align-items: center; 
+  margin-left: 10px;
 }
 
 .current-user > img {
@@ -203,8 +201,8 @@ main {
 }
 
 .current-user .id {
-  font-size: 14px;
   padding-left: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #262626;
   cursor: pointer;
@@ -232,9 +230,9 @@ main {
 
 .suggestion-content {
   display: flex;
-  padding-left: 5px;
   align-items: center;
   justify-content: space-between;
+  padding-left: 5px;
   margin-top: 10px;
 }
 
@@ -248,26 +246,26 @@ main {
 
 .suggestion-content .text {
   width: 205px;
-  cursor: pointer;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 .suggestion-content .text .id {
-  color: #262626;
+  margin-bottom: 3px;
   font-weight: 600;
   font-size: 14px;
-  margin-bottom: 3px;
+  color: #262626;
 }
 
 .suggestion-content .text .info {
-  color: #8E8E8E;  
   font-size: 12px;
+  color: #8E8E8E;  
 }
 
 .suggestion-content .follow {
   font-size: 12px;
-  color: #0095f6;
   font-weight: 600;
+  color: #0095f6;
   cursor: pointer;
 }
 
@@ -278,10 +276,10 @@ main {
 }
 
 .feed {
+  margin-bottom: 40px;
+  background-color: #FFFFFF;
   border: 1px solid rgba(var(--b6a,219,219,219),1);
   border-radius: 3px;
-  background-color: #FFFFFF;
-  margin-bottom: 40px;
 }
 
 .feed .head {
@@ -331,10 +329,9 @@ main {
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-
 }
 
-.feed .userId{
+.feed .user-id{
   padding: 5px 20px;
   font-size: 14px;
   font-weight: 600;
@@ -348,8 +345,8 @@ main {
 }
 
 .feed .paragraph {
-  font-size: 14px;
   padding: 0 20px;
+  font-size: 14px;
   line-height: 130%;
 }
 
@@ -357,30 +354,29 @@ main {
   padding: 5px 20px;
 }
 
-.feed .comments .userId {
+.feed .comments .user-id {
   padding: 0;
 }
 
 .feed .comments .content {
-  font-size: 14px;
   padding: 3px 0px 0px 10px;
+  font-size: 14px;
 }
 
 .feed .time {
+  padding: 10px 20px;
   font-size: 10px;
   color: #8E8E8E;
-  padding: 10px 20px;
   line-height: 130%;
-
 }
 
 .feed .comment {
   display: flex;
-  padding: 0 20px;
-  border-top: 1px solid rgba(var(--ca6,219,219,219),1);
-  height: 56px;
   justify-content: center;
   align-items: center;
+  height: 56px;
+  padding: 0 20px;
+  border-top: 1px solid rgba(var(--ca6,219,219,219),1);
 }
 
 .feed .text {
@@ -393,34 +389,25 @@ main {
 .feed .comment .post {
   background: none;
   border: none;
-  cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   color: #C4E0FD;
   pointer-events: none;
+  cursor: pointer;
 } 
 
 .feed .comment .post.active {
   background: none;
-  color: #0095f6;
   border: none;
-  cursor: pointer;
   font-weight: 600;
   font-size: 14px;
+  color: #0095f6;
   pointer-events: visible;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 920px) {
-  .main-content {
-    width: 600px;
-  }
-
-  .main-right{
+  .main-right.loaded{
     visibility: hidden;
-  }
-
-  .main-feeds-right-space {
-    width: 0;
-    /* visibility: hidden; */
   }
 }
