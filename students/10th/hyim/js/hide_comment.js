@@ -13,7 +13,7 @@ function hideComment() {
       viewCommentAll.innerText = " 모두 보기";
       viewCommentAll.addEventListener("click", showCommentAll);
       showAllContainer.append(viewCommentAll);
-      showAllContainer.className = "show-comment-all"; //스타일 적용을 위한 className부여
+      showAllContainer.className = "show-comment-all"; //스타일 적용을 위한 className
       commentBox.prepend(showAllContainer);
     }
   }
