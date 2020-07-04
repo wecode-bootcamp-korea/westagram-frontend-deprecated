@@ -11,45 +11,40 @@
     <!-- Navigation -->
     <nav>
       <div class="navContainer">
-        <ul class="navLogo">
-          <li class="navLogoImage">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
-              alt="imgLogo"
-            />
-          </li>
-          <li class="navLogoBetween"><span>|</span></li>
-          <li class="navLogotext">
+        <div class="navLogo">
+          <div class="navLogotext">
             <img src="img/logo_text.png" alt="imgText" />
-          </li>
-        </ul>
+          </div>
+        </div>
         <input type="text" class="navSearch" placeholder="검색" />
-        <ul class="navMenu">
-          <li class="navMenuIcon-quest">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-              alt="imgQuest"
-            />
-          </li>
-          <li class="navMenuIcon-heart">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-              alt="imgHeart"
-            />
-          </li>
-          <li class="navMenuIcon-Mypage">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-              alt="imgMyPage"
-            />
-          </li>
-        </ul>
+        <div class="navMenuContainer">
+          <ul class="navMenu">
+            <li class="navMenuIcon-home">
+              <svg aria-label="홈" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M45.3 48H30c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2-4.6-4.6-4.6s-4.6 2-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.5-.6 2.1 0l21.5 21.5c.4.4.6 1.1.3 1.6 0 .1-.1.1-.1.2v22.8c.1.8-.6 1.5-1.4 1.5zm-13.8-3h12.3V23.4L24 3.6l-20 20V45h12.3V34.2c0-4.3 3.3-7.6 7.6-7.6s7.6 3.3 7.6 7.6V45z"></path></svg>
+            </li>
+            <li class="navMenuIcon-direct">
+              <svg aria-label="Direct" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l13.2 13c.5.4 1.1.6 1.7.3l16.6-8c.7-.3 1.6-.1 2 .5.4.7.2 1.6-.5 2l-15.6 9.9c-.5.3-.8 1-.7 1.6l4.6 19c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.5-.5.5-1.1.2-1.6z"></path></svg>
+            </li>
+            <li class="navMenuIcon-quest">
+              <svg aria-label="사람 찾기" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path></svg>
+            </li>
+            <li class="navMenuIcon-heart">
+              <svg aria-label="활동 피드" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+            </li>
+            <li class="navMenuIcon-Mypage">
+              <img alt="juuuuungq님의 프로필 사진" class="_6q-tv" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/16122754_946946655406374_308312921673302016_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=2kizZdjP9j4AX_XGy76&amp;oh=99eda90986ef6c08ee1b66ac41ce8350&amp;oe=5F26B68B">
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Main-->
     <main>
       <section class="mainContainer">
         <!-- Main Feeds -->
+        <div class="storyContainer">
+
+        </div>
         <div class="feeds">
           <article class="feed">
             <div class="feedHead">
@@ -101,9 +96,9 @@
                   </button>
                   <button class="shareBtn">
                     <img
-                    class="share"
-                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
-                    alt="share"
+                      class="share"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                      alt="share"
                     />
                   </button>
                 </div>
@@ -122,9 +117,12 @@
                 <div id="userId">juuuuungq</div>
               </div>
               <div class="replyInfo"></div>
+              <div class="replyContainer">
+
+              </div>
               <div class="feedTime">1시간 전</div>
               <div class="replyInput">
-                <form method="POST">
+                <form class="replyForm" method="POST">
                   <textarea
                     class="reply"
                     name=""
@@ -134,7 +132,9 @@
                     placeholder="댓글 달기..."
                     style="height: 18px;"
                   ></textarea>
-                  <button class="replyUpBtn" type="submit" disabled="">게시</button>
+                  <button class="replyUpBtn" type="submit" disabled="" oneclick="replyCreate()">
+                    <span class="btnText">게시</span>
+                  </button>
                 </form>
               </div>
             </div>
@@ -163,11 +163,15 @@
               <div class="otherUser">
                 <div class="otherUserProfile">
                   <div class="otherUserProfilePhoto">
-                    <img alt="yeonvely_l님의 프로필 사진" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/106487369_292905268521266_2396620409669469982_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=ZSa3_HdY4poAX9v17FY&amp;oh=d058514b719a1779af7d22e03199a34d&amp;oe=5F28C5BF">
+                    <img
+                      alt="yeonvely_l님의 프로필 사진"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/106487369_292905268521266_2396620409669469982_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=ZSa3_HdY4poAX9v17FY&amp;oh=d058514b719a1779af7d22e03199a34d&amp;oe=5F28C5BF"
+                    />
                   </div>
                   <div class="otherUserProfileMeta">
                     <div class="otherUserProfileName">yeonvely_l</div>
-                    <div class="otherUserRelationInformaion">instargram 신규 가입</div>
+                    <div class="otherUserRelationInformaion">instargram 신규 가입
+                    </div>
                   </div>
                 </div>
                 <div class="otherUserFollow">팔로우</div>
@@ -175,20 +179,26 @@
               <div class="otherUser">
                 <div class="otherUserProfile">
                   <div class="otherUserProfilePhoto">
-                    <img alt="yj_960716님의 프로필 사진" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/69545257_586602352089947_3419853785156026368_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=Zrm9A7thPZ4AX-OynM_&amp;oh=d2f8d9e16e10afdfd49c82009bafdb93&amp;oe=5F25C47B">
+                    <img
+                      alt="yj_960716님의 프로필 사진"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/69545257_586602352089947_3419853785156026368_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=Zrm9A7thPZ4AX-OynM_&amp;oh=d2f8d9e16e10afdfd49c82009bafdb93&amp;oe=5F25C47B"
+                    />
                   </div>
                   <div class="otherUserProfileMeta">
                     <div class="otherUserProfileName">yj_960716</div>
-                    <div class="otherUserRelationInformaion">회원님을 위한 추천</div>
+                    <div class="otherUserRelationInformaion">회원님을 위한 추천
+                    </div>
                   </div>
                 </div>
                 <div class="otherUserFollow">팔로우</div>
               </div>
-              </div>
               <div class="otherUser">
                 <div class="otherUserProfile">
                   <div class="otherUserProfilePhoto">
-                    <img alt="dduhany님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/35321853_2206608866292375_2563935475295322112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=7O_35JeKV0IAX9j6XhD&amp;oh=c41b2e21850bc148a18ce40fbf3e0fb2&amp;oe=5F28E0F4">
+                    <img
+                      alt="dduhany님의 프로필 사진"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/35321853_2206608866292375_2563935475295322112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=7O_35JeKV0IAX9j6XhD&amp;oh=c41b2e21850bc148a18ce40fbf3e0fb2&amp;oe=5F28E0F4"
+                    />
                   </div>
                   <div class="otherUserProfileMeta">
                     <div class="otherUserProfileName">dduhany</div>
@@ -197,11 +207,13 @@
                 </div>
                 <div class="otherUserFollow">팔로우</div>
               </div>
-              </div>
               <div class="otherUser">
                 <div class="otherUserProfile">
                   <div class="otherUserProfilePhoto">
-                    <img alt="real_stone88님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64695595_2643926085617455_3627935158121791488_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=uJfDuBc2fjoAX9FIET8&amp;oh=28eec91a020a75ac140eabdf9b8593cf&amp;oe=5F2704CA">
+                    <img
+                      alt="real_stone88님의 프로필 사진"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64695595_2643926085617455_3627935158121791488_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=uJfDuBc2fjoAX9FIET8&amp;oh=28eec91a020a75ac140eabdf9b8593cf&amp;oe=5F2704CA"
+                    />
                   </div>
                   <div class="otherUserProfileMeta">
                     <div class="otherUserProfileName">real_stone88</div>
@@ -210,11 +222,13 @@
                 </div>
                 <div class="otherUserFollow">팔로우</div>
               </div>
-              </div>
               <div class="otherUser">
                 <div class="otherUserProfile">
                   <div class="otherUserProfilePhoto">
-                    <img alt="dev_mecode님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/105544564_728265507974880_1056574803090625650_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=KcSBZv71ilMAX_EkBf-&amp;oh=40477bfc007d6b444313258135aaefea&amp;oe=5F271EE5">
+                    <img
+                      alt="dev_mecode님의 프로필 사진"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/105544564_728265507974880_1056574803090625650_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=KcSBZv71ilMAX_EkBf-&amp;oh=40477bfc007d6b444313258135aaefea&amp;oe=5F271EE5"
+                    />
                   </div>
                   <div class="otherUserProfileMeta">
                     <div class="otherUserProfileName">dev_mecode</div>
@@ -223,9 +237,7 @@
                 </div>
                 <div class="otherUserFollow">팔로우</div>
               </div>
-              </div>
             </div>
-          </div>
           <footer>
             <p></p>
             <p></p>
