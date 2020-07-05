@@ -1,38 +1,32 @@
-<!-- 관련있는것끼리 순서맞게
-불필요한 엔터 삭제
-자식의 높이에 따라 부모는 바뀌지 않을때 height 준다 (안주면 자식에 )
-img alt 를 더 우선적 정보 / src보다
-inline 하지마라
-.nav img:last-child {} (class없이)
-html 순서에 css 순서맞게 -->
-
-
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>repl.it</title>
+  <title>westagram</title>
   <link href="style/common.css" rel="stylesheet" type="text/css" />
   <link href="style/main.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
   <nav class="nav">
     <div class="nav-icons">
       <div class="nav-left">
-        <img class="logo-sign" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png">
-        <img class="logo-text" src="img/logo_text.png">
+        <img class="logo-sign" alt="instagram-logoImg"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png">
+        <img class="logo-text" alt="instagram-logo" src="img/logo_text.png">
       </div>
       <div class="nav-middle">
-        <img id="search-img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+        <img id="search-img" alt="searchImg"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
         <input id="search" type="text" placeholder="Search" onfocus="eraseImg()" onfocusout="showImg()">
       </div>
       <div class="nav-right">
-        <img class="nav-find" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
-        <img class="nav-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-        <img class="nav-home" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+        <img class="nav-find" alt="findImg"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+        <img class="nav-heart" alt="heartImg"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+        <img class="nav-home" alt="homeImg"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
       </div>
     </div>
   </nav>
@@ -51,18 +45,20 @@ html 순서에 css 순서맞게 -->
             <p class="header-id">claire_bbo</p>
             <p class="header-location">서울 어딘가</p>
           </div>
-          <img class="profile-dots" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+          <img class="profile-dots" alt="dots"
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
         </header>
-        <img class="article-pic" src="img/liz.jpg">
+        <img class="article-pic" alt="lizImg" src="img/liz.jpg">
         <footer>
           <div class="footer-left">
-            <img class="article-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-            <img class="article-balloon"
+            <img class="article-heart" alt="heartImg"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img class="article-balloon" alt="balloonImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
             <img class="article-share" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
           </div>
           <div class="footer-right">
-            <img class="article-bookmark"
+            <img class="article-bookmark" alt="bookmarkImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
           </div>
           </di>
@@ -70,33 +66,67 @@ html 순서에 css 순서맞게 -->
         <div class="footer-text">
           <p class="comment-bold">97 likes</p>
           <span class="comment-bold">claire_bbo</span>
-          <span class="comment-regular">&nbsp;&nbsp;My
-            precious baby 🐶👻💕</span>
+          <span class="comment-regular">&nbsp;&nbsp;My precious baby 🐶👻💕</span>
           <span class="comment-blue">#dogstagram #puppy #ilovedogs</span>
-          <button class="footer-btn" onclick="showAndHide()">View 3 more comments</button>
-          <div class="hidden-comment" style='display: none;'>
-            <span class="comment-id">claire_bbo</span>
-            <span class="comment-content">&nbsp;&nbsp;예쁜 내 새꾸</span>
-            <img class="comment-heart"
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
-            <span class="comment-id">naririn_kim</span>
-            <span class="comment-content">&nbsp;&nbsp;리즈 만나보고 싶어~</span>
-            <img class="comment-heart"
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
-            <span class="comment-id">minjuuuuuya</span>
-            <span class="comment-content">&nbsp;&nbsp;산책가즈아아</span>
-            <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+          <button class="footer-btn">View 3 more comments</button>
+          <div class="hidden-comment">
+            <div class="comment-line">
+              <div class="line-left">
+                <span class="comment-id">claire_bbo</span>
+                <span class="comment-content">&nbsp;&nbsp;예쁜 내 새꾸</span>
+              </div>
+              <div class="line-right">
+                <img class="comment-delete" alt="deleteImg" src="img/close-button.png">
+                <img class="comment-heart" alt="heartImg"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
+              </div>
+            </div>
+            <div class="comment-line">
+              <div class="line-left">
+                <span class="comment-id">naririn_kim</span>
+                <span class="comment-content">&nbsp;&nbsp;리즈 만나보고 싶어~</span>
+              </div>
+              <div class="line-right">
+                <img class="comment-delete" alt="deleteImg" src="img/close-button.png">
+                <img class="comment-heart" alt="heartImg"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
+              </div>
+            </div>
+            <div class="comment-line">
+              <div class="line-left">
+                <span class="comment-id">minjuuuuuya</span>
+                <span class="comment-content">&nbsp;&nbsp;산책가즈아아</span>
+              </div>
+              <div class="line-right">
+                <img class="comment-delete" alt="deleteImg" src="img/close-button.png">
+                <img class="comment-heart"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+              </div>
+            </div>
           </div>
-          <div id="shown-comment">
-            <span class="comment-id">yeadore__j</span>
-            <span class="comment-content">&nbsp;&nbsp;우리 강아지랑 얼른 같이 보자
-              🙌</span>
-            <img class="comment-heart"
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
-            <span class="comment-id">dyo.neee</span>
-            <span class="comment-content">&nbsp;&nbsp;엄청 귀여워!!🥰</span>
-            <img class="comment-heart"
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
+          <div class="shown-comment">
+            <div class="comment-line">
+              <div class="line-left">
+                <span class="comment-id">yeadore__j</span>
+                <span class="comment-content">&nbsp;&nbsp;우리 강아지랑 얼른 같이 보자 🙌</span>
+              </div>
+              <div class="line-right">
+                <img class="comment-delete" alt="deleteImg" src="img/close-button.png">
+                <img class="comment-heart" alt="heartImg"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
+              </div>
+            </div>
+            <div class="comment-line">
+              <div class="line-left">
+                <span class="comment-id">dyo.neee</span>
+                <span class="comment-content">&nbsp;&nbsp;엄청 귀여워!!🥰</span>
+              </div>
+              <div class="line-right">
+                <img class="comment-delete" alt="deleteImg" src="img/close-button.png">
+                <img class="comment-heart"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
+              </div>
+            </div>
           </div>
         </div>
         <div class="write-comment">
@@ -117,50 +147,58 @@ html 순서에 css 순서맞게 -->
             <p class="header-id">c__l__o</p>
             <p class="header-location">Sicily, Italy</p>
           </div>
-          <img class="profile-dots" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+          <img class="profile-dots" alt="dots"
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
         </header>
-        <img class="article-pic"
+        <img class="article-pic" alt="c__l__o"
           src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/106262813_289277349099881_8389144474537401093_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=sl14QC2Ew1QAX-yfkk1&oh=b7d23d857031362380c74108274d9839&oe=5F280C34">
-
         <footer>
           <div class="footer-left">
-            <img class="article-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-            <img class="article-balloon"
+            <img class="article-heart" alt="heartImg"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img class="article-balloon" alt="balloonImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
-            <img class="article-share" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
+            <img class="article-share" alt="shareImg"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
           </div>
           <div class="footer-right">
-            <img class="article-bookmark"
+            <img class="article-bookmark" alt="bookmarkImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
           </div>
           </di>
         </footer>
         <div class="footer-text">
           <p class="comment-bold">41,338 Likes</p>
-          <span class="comment-bold">c__l__o</span><span class="comment-regular">&nbsp;&nbsp;Villa
-            Saraceni at Scala dei Turchi, Sicily, Italy 🍋 Patio of home designed in collaboration between
-            <span class="comment-blue">@charlottetaylr</span> & <span class="comment-blue">@creamatelier</span>🍋
-            via<span class="comment-blue">@charlottetaylr @maison_de_sable</span>June 2020</span><br>
-
-          <button class="footer-btn" onclick="showAndHide()">View 2 more comments</button><br>
-          <div class="hidden-comment" style='display: none;'>
-            <span class="comment-id">beatrice</span><span class="comment-content">&nbsp;&nbsp;OMG 😍😍😍</span>
-            <img class="comment-heart"
+          <span class="comment-bold">c__l__o</span>
+          <span class="comment-regular">&nbsp;&nbsp;Villa Saraceni at Scala dei Turchi, Sicily, Italy 🍋 Patio of home
+            designed in collaboration between
+            <span class="comment-blue">@charlottetaylr</span>
+            &
+            <span class="comment-blue">@creamatelier</span>🍋
+            via
+            <span class="comment-blue">@charlottetaylr @maison_de_sable</span>
+            June 2020</span><br>
+          <button class="footer-btn">View 2 more comments</button><br>
+          <div class="hidden-comment">
+            <span class="comment-id">beatrice</span>
+            <span class="comment-content">&nbsp;&nbsp;OMG 😍😍😍</span>
+            <img class="comment-heart" alt="heartImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
-
-            <span class="comment-id">brufes</span><span class="comment-content">&nbsp;&nbsp;where is it?</span>
-            <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <span class="comment-id">brufes</span>
+            <span class="comment-content">&nbsp;&nbsp;where is it?</span>
+            <img class="comment-heart" alt="heartImg"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
           </div>
-          <div id="shown-comment">
-            <span class="comment-id">flavio</span><span class="comment-content">&nbsp;&nbsp;take me there 🙌</span>
-            <img class="comment-heart"
+          <div class="shown-comment">
+            <span class="comment-id">flavio</span>
+            <span class="comment-content">&nbsp;&nbsp;take me there 🙌</span>
+            <img class="comment-heart" alt="heartImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
-            <span class="comment-id">imkhong</span><span class="comment-content">&nbsp;&nbsp;nice render</span>
-            <img class="comment-heart"
+            <span class="comment-id">imkhong</span>
+            <span class="comment-content">&nbsp;&nbsp;nice render</span>
+            <img class="comment-heart" alt="heartImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
           </div>
-
-
         </div>
         <div class="write-comment">
           <input class="write" type="text" placeholder="Add a comment...">
@@ -170,7 +208,7 @@ html 순서에 css 순서맞게 -->
       <article class="article">
         <header class="article-header">
           <div class="circle">
-            <img class="profile"
+            <img class="profile" alt="myexterior"
               src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/11875466_390435371165383_1348837967_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=yRyDV7tCFCEAX8cbmPj&oh=50e6c205811bc28fc51b1ad8926c7aae&oe=5F273C2E"
               alt="myexterior" />
             <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
@@ -181,39 +219,41 @@ html 순서에 css 순서맞게 -->
             <p class="header-id">myexterior</p>
             <p class="header-location">Utah</p>
           </div>
-          <img class="profile-dots" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+          <img class="profile-dots" alt="dots"
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
         </header>
         <img class="article-pic" alt="myexterior"
           src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/105033894_3174277899326720_6453038383660757303_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=AYcnnsKCEm0AX958nIP&oh=6e090e526d1d0a58af4faca28180b202&oe=5F26A243">
-
         <footer>
           <div class="footer-left">
-            <img class="article-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-            <img class="article-balloon"
+            <img class="article-heart" alt="heartImg"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img class="article-balloon" alt="balloonImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
-            <img class="article-share" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
+            <img class="article-share" alt="shareImg"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
           </div>
           <div class="footer-right">
-            <img class="article-bookmark"
+            <img class="article-bookmark" alt="bookmarkImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
           </div>
           </di>
         </footer>
         <div class="footer-text">
           <p style="font-weight:700;font-size:14px;">6,152 likes</p>
-          <span class="comment-bold">myexterior</span><span class="comment-regular">&nbsp;&nbsp;Pedaling in Utah, USA
-            🇺🇸 📸 by </span><span class="comment-blue">@giveusthisdane</span>
-
-          <div id="shown-comment">
-            <span class="comment-id">briobooob</span><span class="comment-content">&nbsp;&nbsp;🙌</span>
-            <img class="comment-heart"
+          <span class="comment-bold">myexterior</span>
+          <span class="comment-regular">&nbsp;&nbsp;Pedaling in Utah, USA 🇺🇸 📸 by </span>
+          <span class="comment-blue">@giveusthisdane</span>
+          <div class="shown-comment">
+            <span class="comment-id">briobooob</span>
+            <span class="comment-content">&nbsp;&nbsp;🙌</span>
+            <img class="comment-heart" alt="heartImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
-            <span class="comment-id">linvinkdi</span><span class="comment-content">&nbsp;&nbsp;bucketlist</span>
-            <img class="comment-heart"
+            <span class="comment-id">linvinkdi</span>
+            <span class="comment-content">&nbsp;&nbsp;bucketlist</span>
+            <img class="comment-heart" alt="heartImg"
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"><br>
           </div>
-
-
         </div>
         <div class="write-comment">
           <input class="write" type="text" placeholder="Add a comment...">
@@ -221,120 +261,124 @@ html 순서에 css 순서맞게 -->
         </div>
       </article>
     </div>
-
     <div class="right">
       <div class="fixed-right">
         <div class="right-top">
-          <div class="right-myinfo">
-            <img class="profile2"
-              src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/73401881_420319365543860_3290750899349094400_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=dtt6Q9uYjBYAX-5gkEw&oh=f987dea1c32537b1ea9860a60fc3c961&oe=5F248A3F"
-              alt="clairepic" />
-          </div>
+          <img class="profile2" alt="clairepic"
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/73401881_420319365543860_3290750899349094400_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=dtt6Q9uYjBYAX-5gkEw&oh=f987dea1c32537b1ea9860a60fc3c961&oe=5F248A3F" />
           <div class="info-name">
-            <p style="font-weight:700;font-size:14px;">claire_bbo</p>
-            <p style="margin-top:-8px;font-size:12px;color:#8e8e8e;">우니</p>
+            <p class="info-bold">claire_bbo</p>
+            <p class="info-regular">우니</p>
           </div>
         </div>
-
         <div class="right-middle">
           <div class="story">
-            <p style="font-size:14px;color:#8e8e8e;">Story</p>
-            <p style="font-size:14px;cursor:pointer;">See All</p>
+            <p class="story-gray">Story</p>
+            <p class="story-black">See All</p>
           </div>
-          <div class="story-list" style="overflow:scroll;">
-            <div class="list-0">
+          <div class="story-list">
+            <div class="list">
               <div class="list-0-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/91933099_242760747110457_2301125283991781376_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=RhYECgssqc0AX-ijLYB&oh=02c940d76ec484efa3c9bffd5a27e55a&oe=5F24C8BA">
               </div>
-              <div class="list-0-name">
-                <span style="font-weight:700;font-size:14px;">chrishemsworth</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">3 mins ago</span>
+              <div class="info-name">
+                <span class="list-bold">chrishemsworth</span>
+                <span class="list-time">3 mins ago</span>
               </div>
             </div>
-            <div class="list-1">
+            <div class="list">
               <div class="list-1-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/103927395_279933413388055_7014141356963020575_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=YkVHztDY1tMAX_ipRsh&oh=bfc5310cf3e5852f2c0322fad9a7726e&oe=5F226CCF">
               </div>
-              <div class="list-1-name">
-                <span style="font-weight:700;font-size:14px;">yeadore__j</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">10 mins ago</span>
+              <div class="info-name">
+                <span class="list-bold">yeadore__j</span>
+                <span class="list-time">10 mins ago</span>
               </div>
             </div>
-            <div class="list-2">
+            <div class="list">
               <div class="list-2-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/10831982_1390494691245014_1335334768_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=iezad05nF2cAX86dUvy&oh=306c34bd31a6e1eddba90bce7a656f5e&oe=5F2373C9">
               </div>
-              <div class="list-2-name">
-                <span style="font-weight:700;font-size:14px;">minjuuuuuya</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">2 hours ago</span>
+              <div class="info-name">
+                <span class="list-bold">minjuuuuuya</span>
+                <span class="list-time">2 hours ago</span>
               </div>
             </div>
-            <div class="list-3">
+            <div class="list">
               <div class="list-3-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/11184497_939322362774294_515938496_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=P9zgDs9LZFEAX_Ag3Ck&oh=2941fd49fa8b198220438bf7ad21b57b&oe=5F25424E">
               </div>
-              <div class="list-3-name">
-                <span style="font-weight:700;font-size:14px;">naririn_kim</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">3 hours ago</span>
+              <div class="info-name">
+                <span class="list-bold">naririn_kim</span>
+                <span class="list-time">3 hours ago</span>
               </div>
             </div>
-            <div class="list-4">
+            <div class="list">
               <div class="list-4-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/34695344_256870385061560_5956479796799078400_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=YFuVWUfvjPkAX-MHM5k&oh=13e504386b965602747c79f37c27e360&oe=5F255F70">
               </div>
-              <div class="list-4-name">
-                <span style="font-weight:700;font-size:14px;">youdongbu</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">5 hours ago</span>
+              <div class="info-name">
+                <span class="list-bold">youdongbu</span>
+                <span class="list-time">5 hours ago</span>
+              </div>
+            </div>
+            <div class="list">
+              <div class="list-5-pic">
+                <img class="profile3"
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/49763690_1973016329419801_3387167812723146752_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=o-LW94OT-0EAX_FS17R&oh=065f060ac07fdc2c255fef6c8e2c92e9&oe=5F28AF3A">
+              </div>
+              <div class="info-name">
+                <span class="list-bold">lilothehusky</span>
+                <span class="list-time">7 hours ago</span>
               </div>
             </div>
           </div>
         </div>
-
         <div class="right-bottom">
           <div class="story">
-            <p style="font-size:14px;color:#8e8e8e;">Suggestions For You</p>
-            <p style="font-size:14px;cursor:pointer;">See All</p>
+            <p class="story-gray">Suggestions For You</p>
+            <p class="follow-blck">See All</p>
           </div>
           <div class="story-list">
-            <div class="list-1">
+            <div class="list">
               <div class="list-1-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/72849146_503857400454178_4891687894369959936_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=TSAX7C5w5JAAX85oRjv&oh=831293a455bb56e73227d616a549fa0f&oe=5F24A5F8">
               </div>
-              <div class="list-1-name">
-                <span style="font-weight:700;font-size:14px;">dogadored</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">Followed by naririn_kim + 10 more</span>
+              <div class="info-name">
+                <span class="list-bold">dogadored</span>
+                <span class="list-gray">Followed by naririn_kim + 10 more</span>
               </div>
               <div class="list-follow">
                 <span>Follow</span>
               </div>
             </div>
-            <div class="list-2">
+            <div class="list">
               <div class="list-2-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/66156283_454384931807975_81041325591363584_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=-1vN5UkhVHIAX9MUVBD&oh=f13a25e4375bd34f6a0f20a11ca6afc5&oe=5F23BA5C">
               </div>
-              <div class="list-2-name">
-                <span style="font-weight:700;font-size:14px;">__travel__diaries__</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">Followed by yeadore__j + 5 more</span>
+              <div class="info-name">
+                <span class="list-bold">__travel__diaries__</span>
+                <span class="list-gray">Followed by yeadore__j + 5 more</span>
               </div>
               <div class="list-follow">
                 <span>Follow</span>
               </div>
             </div>
-            <div class="list-3">
+            <div class="list">
               <div class="list-3-pic">
                 <img class="profile3"
                   src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/22220716_287769958404970_2784261280330940416_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=66zrgXBcT24AX8OFbzl&oh=dc371a2500a9eb2fe1ea4ebf0e2c1c52&oe=5F25AFB8">
               </div>
-              <div class="list-3-name">
-                <span style="font-weight:700;font-size:14px;">maksimmrvicaofficial</span>
-                <span style="display:block;font-size:12px;color:#8e8e8e;">Followed by liz_bbo + 3 more</span>
+              <div class="info-name">
+                <span class="list-bold">maksimmrvicaofficial</span>
+                <span class="list-gray">Followed by liz_bbo + 3 more</span>
               </div>
               <div class="list-follow">
                 <span>Follow</span>
@@ -342,24 +386,15 @@ html 순서에 css 순서맞게 -->
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="right-info">
-        <span>About · Help · Press · API · Jobs · Privacy · Terms ·<br>
-          Locations · Top Accounts · Hashtags · Language</span><br><br>
-        <span>ⓒ 2020 INSTAGRAM FROM FACEBOOK</span>
+        <div class="right-info">
+          <span>About · Help · Press · API · Jobs · Privacy · Terms ·<br>
+            Locations · Top Accounts · Hashtags · Language</span><br><br>
+          <span>ⓒ 2020 INSTAGRAM FROM FACEBOOK</span>
+        </div>
       </div>
     </div>
-
-
-
   </div>
-
-
-
   </div>
-
   <script src="js/main.js"></script>
 </body>
-
 </html>

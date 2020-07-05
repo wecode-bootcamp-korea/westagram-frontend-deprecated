@@ -1,49 +1,66 @@
-var writeComment = document.querySelectorAll('.write');
-
-var btn = document.querySelectorAll('.article-btn');
-let targetDiv = document.getElementById('shown-comment');
-let searchImg = document.getElementById('search-img');
-let keyword = document.getElementById('search');
-let sign = document.getElementsByClassName("logo-sign")[0];
+let logoSign = document.getElementsByClassName("logo-sign")[0];
 let logotxt = document.getElementsByClassName("logo-text")[0];
+let searchImg = document.getElementById('search-img');
+let searchKeyword = document.getElementById('search');
+let commentLine = document.getElementsByClassName('comment-line');
+let deleteBtn = document.getElementsByClassName('comment-delete');
+let postBtn = document.getElementsByClassName('article-btn');
+let showCommentBtn = document.getElementsByClassName('footer-btn');
+let hiddenComments = document.getElementsByClassName('hidden-comment');
+let writeComment = document.getElementsByClassName('write');
+let commentContainer = document.getElementsByClassName('shown-comment');
 
+// reload page
+function reload() {
+    window.location.reload();
+}
+logoSign.addEventListener("click", reload);
+logotxt.addEventListener("click", reload);
 
-//class로 바꾸면 안됨. [0]붙여주면 처음 div만 적용됨
-function showAndHide() {
-    var comments = document.get('.hidden-comment');
-    for (let i= 0; i < 3; i++) {
-        if (comments[i].style.display == 'none') {
-            comments[i].style.display = 'block';
-        } else {
-            comments[i].style.display = 'none';
-        }
-    }
+// show and hide search img
+function eraseImg() {
+    searchImg.style.display = "none";
+}
+function showImg() {
+    searchImg.style.display = "flex";
 }
 
-var activatePost = function () {
-    for (let i = 0; i<4; i++){
-    if (writeComment[i].value.length !== 0) {
-        btn[i].style.color = '#0095f6';
-    } else {
-        btn[i].style.color = '#c0e0fd';
-    }
-    
-}
-};
-writeComment.addEventListener('keyup', activatePost);
-
-btn.addEventListener('click', addComment);
-writeComment.addEventListener("keyup", function (e) {
+// search keyword
+searchKeyword.addEventListener('keyup', (e)=> {
     if (e.keyCode === 13) {
-        addComment();
+        window.open("https://www.instagram.com/explore/tags/" + searchKeyword.value, '_blank');
     }
-});
+})
 
+//erase comments -- error 해결해야함
+for (let l = 0; l < deleteBtn.length; l++) {
+    function eraseComment(num) {
+        console.log(num);
+        commentLine[num].parentElement.removeChild(commentLine[num]);
+        // commentLine[num].remove(); 해도 안됨
+    }
+    deleteBtn[l].addEventListener('click', () => eraseComment(l));
+}
 
-function addComment(e) {
-    if (writeComment.value.length !== 0) {
+// show hidden comments
+function showAndHide(num) {
+    hiddenComments[num].style.display = ((hiddenComments[num].style.display == 'block') ? 'none' : 'block');
+    showCommentBtn[num].innerHTML = ((hiddenComments[num].style.display == 'block') ? 'View comments' : 'Hide comments');
+}
+for (let k = 0; k < showCommentBtn.length; k++) {
+    showCommentBtn[k].addEventListener("click", () => showAndHide(k));
+}
+
+// activate comment button
+function activatePost(num) {
+    postBtn[num].style.color = ((writeComment[num].value.length !== 0) ? '#0095f6' : '#c0e0fd');
+}
+
+// add comments
+function addComment(num) {
+    if (writeComment[num].value.length !== 0) {
         let newDiv = document.createElement("div");
-        targetDiv.appendChild(newDiv);
+        commentContainer[num].appendChild(newDiv);
 
         let firstSpan = document.createElement("span");
         firstSpan.setAttribute("class", "comment-id");
@@ -53,41 +70,24 @@ function addComment(e) {
         commentImg.setAttribute("class", "comment-heart");
         commentImg.setAttribute("src", "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
 
-
         let secondSpan = document.createElement("span");
         secondSpan.setAttribute("class", "comment-content");
-        secondSpan.innerHTML += writeComment.value;
+        secondSpan.innerHTML += writeComment[num].value;
 
         newDiv.appendChild(firstSpan);
         newDiv.appendChild(secondSpan);
         newDiv.appendChild(commentImg);
 
-        writeComment.value = "";
+        writeComment[num].value = "";
         return;
     }
 }
-
-
-function eraseImg() {
-    searchImg.style.display = "none";
+for (let i = 0; i < writeComment.length; i++) {
+    writeComment[i].addEventListener('keyup', () => activatePost(i));
+    postBtn[i].addEventListener('click', () => addComment(i));
+    writeComment[i].addEventListener("keyup", (e)=> {
+        if (e.keyCode === 13) {
+            addComment(i);
+        }
+    });
 }
-
-function showImg() {
-    searchImg.style.display = "flex";
-}
-
-
-keyword.addEventListener('keyup', function (e) {
-    if (e.keyCode === 13) {
-        window.open("https://www.instagram.com/explore/tags/" + keyword.value, '_blank');
-    }
-
-})
-
-
-function reload() {
-    window.location.reload();
-}
-
-sign.addEventListener("click", reload);
-logotxt.addEventListener("click", reload);

@@ -3,6 +3,7 @@ nav {
     height:53px;
     top:0px;
     position:fixed;
+    z-index:2;
     display: flex;
     border: 1px solid #e5e5e5;
     border-width:0px 0px 1px;
@@ -16,6 +17,7 @@ nav {
     display: flex;
     align-items: center;
 }
+
 .nav-left {
     display: flex;
     margin-top:7px;
@@ -36,6 +38,7 @@ nav {
     margin: auto;
     position: relative;
 }
+
 #search-img{
     width: 12px;
     top: 8px;
@@ -64,7 +67,6 @@ nav {
 }
 
 .main {
-    width:1444px;
     padding: 90px 252px;
     display: flex;
     align-items: stretch;
@@ -75,16 +77,17 @@ article {
     width:614px;
     border: 1px solid #e5e5e5;
     background-color: #ffffff;
+    margin-bottom:60px;
 }
 
 .article-header {
     display: flex;
-    height:60px;
+    height:72px;
     position:relative;
 }
 
 .circle{
-    widows: 80px;
+    width: 80px;
     height:80px;
     margin-left:-10px;
     position:relative;
@@ -92,8 +95,8 @@ article {
 
 .profile {
     width:32px;
-    left:42px;
-    top:31px;
+    left:40px;
+    top:40px;
     position:absolute;
     transform:translate(-50%, -50%);
     border-radius:50%;
@@ -124,8 +127,7 @@ svg{
 }
 
 .article-name {
-    margin-top: -2px;
-    margin-left: 72px;
+    margin-top: 7px;
 }
 
 .header-id {
@@ -183,9 +185,11 @@ footer {
     font-size:14px;
     margin-bottom:7px;
 }
+
 .comment-regular {
     font-size:14px;
 }
+
 .comment-blue {
     font-size:14px;
     color:#01376a;
@@ -204,28 +208,47 @@ footer {
     outline:none;
 }
 
+.hidden-comment {
+    display: none;
+}
+
+.comment-line {
+    display:flex;
+    justify-content: space-between;
+}
+
+.line-right {
+    display: flex;
+    align-items: center;
+}
+
+.comment-delete {
+    width:12px;
+}
+
 .comment-id {
     font-weight:700;
     font-size:14px;
- }
+}
 
  .comment-content {
      font-size:14px;
- }
+}
 
  .comment-heart {
-    width: 14px;
+    width: 15px;
+    margin-left:6px;
     float: right;
- }
+}
 
 .write-comment {
     width:600px;
     height:56px;
+    margin-top:4px;
+    padding:0px 16px;
     display:flex;
     justify-content: space-between;
     align-items:center;
-    margin-top:4px;
-    padding:0px 16px;
     border: 1px solid #e5e5e5;
     border-width: 1px 0px 0px;
 }
@@ -233,15 +256,19 @@ footer {
 .write {
     border:none;
 }
+
 .write:focus{
     outline:none;
 }
+
 .article-btn {
-    border:none;
+    font-weight: 700;
     color: #c0e0fd;
     background-color:transparent;
+    border: none;
     cursor:pointer;
 }
+
 .article-btn:focus {
     outline:none;
 }
@@ -262,56 +289,108 @@ footer {
     padding:15px;
     background-color: #fafafa;
 }
-  
-  .profile2 {
+
+.profile2 {
     width:60px;
     border-radius:50%;
-  }
-  .profile3 {
-    width:40px;
-    border-radius:50%;
-  }
+}
+   
+.info-name {
+    margin-left:12px;
+}
 
-  .info-name, .list-0-name, .list-1-name, .list-2-name, .list-3-name, .list-4-name {
-      margin-left:12px;
-  }
-  .right-middle {
-      border:1px solid #e5e5e5;
-      width:300px;
-      height:300px;
-      background-color: #ffffff;
-  }
+.info-bold {
+    font-weight:700;
+    font-size:14px;
+}
 
-  .right-bottom {
-      width:300px;
-      border:1px solid #e5e5e5;
-      height:210px;
-      margin-top:20px;
-      background-color: #ffffff;
-  }
+.info-regular {
+    margin-top:-8px;
+    font-size:12px;
+    color:#8e8e8e;
+}
 
-  .story{
+.right-middle {
+    width:300px;
+    height:270px;
+    border:1px solid #e5e5e5;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+.story{
     display:flex;
     justify-content: space-between;
     padding: 0px 24px;
-  }
+}
 
-  .list-0, .list-1, .list-2, .list-3, .list-4 {
+.story-gray {
+    font-size:14px;
+    color:#8e8e8e;
+}
+
+.story-black{
+    font-size:14px;
+    cursor:pointer;
+}
+
+.list {
     display:flex;
     padding: 3px 22px;
   }
+.list-bold {
+    font-weight:700;
+    font-size:14px;
+}
+
+.list-time{
+    font-size:12px;
+    color:#8e8e8e;
+    display:block;
+}
+
+.profile3 {
+    width:40px;
+    border-radius:50%;
+}
+
+.right-bottom {
+    width:300px;
+    height:210px;
+    margin-top:20px;
+    border:1px solid #e5e5e5;
+    background-color: #ffffff;
+}
+
+.follow-black {
+    font-size:14px;
+    cursor:pointer;
+}
+
  .list-follow {
     margin-top:6px;
     font-weight:700;
     font-size:12px;
     color:#0095f6;
- }
+}
+ 
+ .list-gray {
+    font-size:12px;
+    color:#8e8e8e;
+    display:block;
+}
+
  .right-info {
      margin:10px;
- }
- .right-info span {
+}
+
+.right-info span {
     font-size:11px;
     color:#cacaca;
- }
+}
+
+
+
+
 
 

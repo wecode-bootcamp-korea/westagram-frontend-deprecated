@@ -1,68 +1,86 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-.login-page {
-    width: 340px;
-    margin: auto;
-    margin-top: 100px;
-
-}
 .login-box {
-    border : 1px solid;
-    height:430px;
     width: 340px;
-    text-align: center;
-   
-}
-input {
-    width: 100%;
-    display: block;
+    height:430px;
     margin: auto;
-    font-size:12px;
-    padding: 9px 0 7px 8px;
-    line-height: 18px;
-    margin-bottom:6px;
+    margin-top:100px;
+    text-align: center;
+    border : 1px solid;
 }
+
 .login-logo {
     margin-top: 10%;
 }
+
 .login-info {
     width: 250px;
-    display: block;
     margin: 0 auto;
     margin-top: 10%;
-    
 }
-#btn {
+
+input {
+    width: 100%;
+    line-height: 18px;
+    font-size:11px;
+    display: block;
+    margin-bottom:6px;
+    padding: 9px 0 7px 8px;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.pw-container {
+    display:flex;
+}
+
+.showPw {
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 200px;
+    margin-top: 10px;
+    position: absolute;
+    cursor:pointer;
+}
+
+button {
     width:100%;
+    font-size: 14px;
+    font-weight:900;
+    line-height: 20px;
+    margin-top:20px;
+    padding: 5px 9px;
     color: white;
     background-color: #c0dffd;
-    border-radius: 4px;
     border : 1px solid transparent;
-    font-size: 15px;
-    line-height: 20px;
-    padding: 5px 9px;
-    margin-top:20px;
+    border-radius: 4px;
 }
+
 .login-bottom{
+    font-size : 12px;
+    font-weight: 900;
+    color: #8e8e8e;
     display: flex;
-    margin: 20px 32px 10px 35px;
-    font-size : 14px;
-    
+    margin: 20px 32px 10px 35px;   
 }
+
 .login-fb {
+    font-size: 14px;
+    font-weight:900;
+    margin-top: 33px;
+    margin-bottom: 23px;
     color: #385185;
     display: block;
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 14px;
+}
+
+.fb-img {
+    width:14px;
 }
 
 .login-pw {
+    font-size: 12px;
+    font-weight:600;
+    color:#44668e;
     display: block;
     cursor:pointer;
-    font-size: 14px;
-     
 }

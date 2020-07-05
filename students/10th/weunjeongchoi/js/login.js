@@ -1,19 +1,26 @@
-// //1. id, pw 에 각각 한 글자 이상 써야 버튼이 활성화 되도록 해주세요.
-// - 원래 연한 파란색이었다가 -> 활성화 되면 파란색으로!
+let loginName = document.getElementById('id');
+let loginPw = document.getElementById('pw');
+let loginBtn = document.getElementById('btn');
+let showPw = document.getElementsByClassName('showPw');
 
-
-var lgName = document.getElementById('id');
-var lgPw = document.getElementById('pw');
-var lgBtn = document.getElementById('btn');
-
-var activateBtn = function () {
-    if (lgName.value.length !== 0 && lgPw.value.length !==0) {
-        lgBtn.style.backgroundColor = 'blue';
+// activate login button
+let activateBtn = function () {
+    if (loginName.value.length !== 0 && loginPw.value.length !== 0) {
+        loginBtn.style.backgroundColor = '#055cb1';
+    } else {
+        loginBtn.style.backgroundColor = '#c0dffd';
     }
 };
+[loginName, loginPw].forEach(function(el) {
+    el.addEventListener('keyup', activateBtn)
+});
 
-lgName.addEventListener('keyup', activateBtn);
-lgPw.addEventListener('keyup', activateBtn);
-
-
+// show password in text type
+showPw[0].addEventListener('click', function (){
+    if(loginPw.type === 'password') {
+        loginPw.type = 'text';
+    } else {
+        loginPw.type = 'password';
+    }
+});
 
