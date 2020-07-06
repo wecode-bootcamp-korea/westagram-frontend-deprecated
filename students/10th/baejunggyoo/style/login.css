@@ -24,6 +24,7 @@ body {
 .loginLogo {
   margin-top: 50px;
 }
+
 .loginBox {
   display: flex;
   flex-direction: column;

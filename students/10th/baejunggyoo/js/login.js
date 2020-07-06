@@ -1,13 +1,12 @@
-const thisIsInput = document.querySelector('.loginBox');
+const inputBox = document.querySelector('.loginBox');
 
-thisIsInput.addEventListener('keyup', function () {
+inputBox.addEventListener('keyup', function () {
   const thisIsBtn = document.querySelector('.loginBtn');
   const loginInputId = document.querySelector('.loginInputId');
   const loginInputPw = document.querySelector('.loginInputPw');
 
-  if (loginInputId.value !== '' && loginInputPw.value !== '') {
-    thisIsBtn.style.backgroundColor = 'blue';
-  } else {
-    thisIsBtn.style.backgroundColor = '#c0e0fe';
-  }
+  loginInputId.value !== '' && loginInputPw.value !== ''
+    ? thisIsBtn.style.backgroundColor = 'blue' : thisIsBtn.style.backgroundColor = '#c0e0fe';
 });
+
+

@@ -12,6 +12,7 @@ nav {
   background-color: #ffffff;
   height: 54px;
 }
+
 .navContainer {
   display: flex;
   justify-content: space-between;
@@ -167,6 +168,29 @@ main {
   margin-bottom: 8px;
 }
 
+.replyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 0 16px;
+}
+
+.replyBox {
+  display: flex;
+  justify-content: space-between;
+  height: 18px;
+  font-size: 14px;
+}
+
+.replyUser {
+  font-weight: bold;
+}
+
+.replyMsg {
+  margin-left: 3px;
+}
+
 .replyInput {
   display: flex;
   justify-content: space-between;
@@ -203,6 +227,7 @@ main {
   font-size: 14px;
 }
 
+/* Main-right */
 .main-right {
   width: 293px;
   height: 738px;
