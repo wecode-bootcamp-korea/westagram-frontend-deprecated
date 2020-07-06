@@ -23,8 +23,13 @@
 }
 /* NAV */
 nav{
-    border-bottom: 1px solid var(--grey-light-color);
+    width: 100%;
     height: 54px;
+    border-bottom: 1px solid var(--grey-light-color);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
 }
 
 .navContainer {
@@ -84,6 +89,10 @@ nav{
 }
 
 /* Main */
+main {
+    background-color: rgb(250,250,250);
+}
+
 .mainContainer {
     width: 935px;
     margin : 0 auto;
@@ -92,8 +101,9 @@ nav{
 
 .feedsContainer {
     width: 614px;
-    margin-top: 40px;
+    margin-top: 80px;
     border : 1px solid var(--grey-light-color);
+    background-color: white;
 }
 
 .feedHeader {
@@ -120,6 +130,7 @@ nav{
 }
 .feedPic img {
     width : 100%;
+    height: 614px;
 }
 
 .feedLogo {
@@ -219,7 +230,7 @@ input:focus {
 
 .mainRight {
     width : 293px;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-left: 28px;
 }
 
@@ -252,7 +263,7 @@ input:focus {
     padding : 10px;
     margin-top: 12px;
     border: 1px solid var(--grey-light-color);
-    overflow: hidden;
+    overflow : scroll;
 }
 
 .recommendationBox {
