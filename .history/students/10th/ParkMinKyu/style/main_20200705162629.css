@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+/*/여기부터 nav/*/ /*/여기부터 nav/*/ /*/여기부터 nav/*/
+
+.nav {
+  height: 55px;
+}
+
+.nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-concent {
+  display: flex;
+  justify-content: space-between;
+  width: 975px;
+  height: 54px;
+}
+
+.r-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 360px;
+}
+.r-nav-icon {
+  display: flex;
+}
+.r-nav-icon img {
+  width: 22px;
+  margin: 15px;
+}
+
+img.logo-insta {
+  height: 29px;
+  width: 103px;
+  margin-left: 10px;
+}
+.l-nav {
+  align-items: center;
+  display: flex;
+  width: 360px;
+}
+
+input {
+  text-align: center;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+  background-color: #fafafa;
+  border: 1px solid darkgray;
+  padding: 7px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+/*/여기까지 nav/*/ /*/여기까지 nav/*/ /*/여기까지 nav/*/
+
+.main-content {
+}
+
+.feeds {
+  margin: 0 485px;
+  padding-top: 30px;
+  width: 935px;
+  height: 19891.4px;
+}
+
+.article {
+  margin-right: 28px;
+  width: 614px;
+  height: 19891.4px;
+}
+
+.profile-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  border: solid black 1px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  padding: 16px 0;
+  width: 612px;
+  height: 118px;
+  font: inherit; /*이게뭔지 찾아보기*/
+}
+
+.profile-box-pic {
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  border: 3px solid yellow;
+}
+
+.profile-box-name {
+  font-size: medium;
+  text-align: center;
+}
+
+.feeds-top {
+  display: flex;
+  padding: 16px;
+  border: 1px solid;
+  width: 614px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fedds-top-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+}
+
+.feeds-profile {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.feeds-top-name-dot {
+  display: flex;
+  width: 536px;
+  height: 26px;
+  margin-left: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dot-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+}

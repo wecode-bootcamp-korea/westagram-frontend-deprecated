@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+/*/여기부터 nav/*/ /*/여기부터 nav/*/ /*/여기부터 nav/*/
+
+.nav {
+  height: 55px;
+}
+
+.nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-concent {
+  display: flex;
+  justify-content: space-between;
+  width: 975px;
+  height: 54px;
+}
+
+.r-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 360px;
+}
+.r-nav-icon {
+  display: flex;
+}
+.r-nav-icon img {
+  width: 22px;
+  margin: 15px;
+}
+
+img.logo-insta {
+  height: 29px;
+  width: 103px;
+  margin-left: 10px;
+}
+.l-nav {
+  align-items: center;
+  display: flex;
+  width: 360px;
+}
+
+input {
+  text-align: center;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+  background-color: #fafafa;
+  border: 1px solid darkgray;
+  padding: 7px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+/*/여기까지 nav/*/ /*/여기까지 nav/*/ /*/여기까지 nav/*/
+
+.main-content {
+}
+
+.feeds {
+}
+
+.article {
+}
+
+.profile-box {
+  border: solid red 1px;
+}
