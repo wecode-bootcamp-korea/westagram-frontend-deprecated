@@ -1,0 +1,150 @@
+body {
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 22$;
+    margin: 1% auto;
+    padding: 1rem 3rem;
+}
+
+.wrapper h1{
+    font-family: Lucida Handwriting;
+    text-align: center;
+}
+
+
+.form{
+    padding-top: 2rem;
+}
+
+input{
+    width: 100%;
+    margin-top: 2%;
+    padding: 12px 4px
+    color: gray;
+    background-color: #f4f4f4;
+    border: none;
+}
+
+.btn {
+    width: 102%;
+    padding: 10px 4px;
+    margin-top: 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: #C4E0FB;
+    color: #fff;
+}
+
+h5{
+    text-align: center;
+    color: gray;
+}
+
+.fb{
+    text-align: center;
+    font-weight: bold;
+    color: #4267B2;
+}
+
+
+.forgot{
+    text-align: center;
+    padding-top: 3%;
+}
+
+.wrapper2{
+    background-color: #fff;
+    width: 22%;
+    margin: auto;
+    padding: 0.6rem 3rem;
+}
+
+.signup{
+    color: #3A98F0;
+    font-weight: bold;
+}
+
+
+
+/*여기부터임*/
+input {
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-top-left-radius: 10px; /* 왼쪽 위 */
+  border-top-right-radius: 10px; /* 오른쪽 위 */
+  border-bottom-right-radius: 10px; /* 오른쪽 아래 */
+  border-bottom-left-radius: 10px; /* 왼쪽 아래 */
+}
+
+
+
+
+.login-container {
+    /*padding: 50px 10px 50px 10px;*/
+    margin-top: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    display: flex;
+    max-height: 800px;
+    max-width: 500px;
+    /*height: 50vh;*/
+    border: 2px solid lightgray;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    
+    padding: 2px;
+    border-radius: 10px;
+    border-color: lightgray;
+    text-align: center;
+}
+
+input{
+    height: 30px;
+}
+
+
+.forgetpw {
+        color: #00376b;
+        color: rgba(var(--fe0,0,55,107),1);
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+.button {
+    width: 360px; 
+    background-color:#CEECF5;
+    color: white;
+    height: 40px;
+    border-color: #CEECF5;
+    }
+
+
+.instagram {
+  margin-bottom: 20px;
+  padding: 100px 20px 20px 20px;
+}

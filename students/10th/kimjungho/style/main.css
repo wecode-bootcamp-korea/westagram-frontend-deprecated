@@ -1,0 +1,248 @@
+body {
+    margin: 0px;
+  }
+  nav {
+    border-bottom : 1px solid #e6e6e8; 
+    padding : 30px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    /*z-index: 999;*/
+    background-color: white;;
+  }
+  
+  main {
+   display: flex;
+   justify-content: center;
+   padding-top: 120px;
+  }
+  
+  #browser {
+   background-color: #f8f7fa;
+  }
+  
+  .rightBorder {
+    margin-right: 15px;
+  }
+  
+  #navFind {
+    font-size: 16px;
+    border-radius: 2px;
+    border: 1px solid #dfdfeb;
+    padding: 5px 15px;
+    text-align: center;
+    background-color: #ebebf2;
+    width: 13%;
+    margin-right: 15%;
+  }
+  
+  .smallImg {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  #instagram {
+    width: 130px;
+    height: 38px;
+    border-left: 1px solid black;
+    padding-left: 15px;
+    margin-right: 15%;
+  }
+  
+  #main-left {
+    position: relative;
+    border: 1px solid white;
+    width: 630px;
+    top : 35px;
+    float: left;
+  }
+  
+  div.user {
+    background-color: white;
+    display: flex;
+  }
+  
+
+  #main-right {
+    position: relative;
+    top: 35px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #typeComment {
+    border-top: 1px solid #e6e6e8;
+  }
+  
+  #iu {
+    width: 630px;
+    height: 650px;
+  }
+  
+  .wecodeImg {
+    border-radius: 50%;
+    width: 7%;
+    height: 7%;
+    margin: 10px 15px 7px 10px;
+  }
+  
+  .circleDetail {
+    border-radius: 60%;
+    width: 4%;
+    height: 4%;
+    margin: 10px 15px 7px 8px;
+  }
+
+
+  /*점 3개*/
+  .circle2 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 15px 7px 20px;
+    position: relative;
+  }
+  
+  .threeDot {
+    width: 5%;
+    height: 5%;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-left: 65%;
+  }
+  /*점 3개*/
+
+  .story-right{
+      margin-left : 700px;
+  }
+
+  .dotRight {
+    margin-left: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .underIu {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+  
+  }
+  
+  .totalLike {
+    width: 100%;
+  }
+  
+  .commentUser {
+    padding-left: 15px; 
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .commentMsg {
+    padding-left: 10px;
+  }
+  
+  .commentTime {
+    padding: 3px 0px 7px 15px;
+    color: gray;
+    margin: 0px;
+  }
+  
+  #typeComment {
+    background-color: white;
+  }
+  
+  #typeComment input[type="text"] {
+    border-style: hidden;
+    font-size: medium;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 88%;
+    color: gray;
+   
+  }
+  
+  #typeComment button[type="submit"] {
+    float: right;
+    margin: 15px;
+    border-style: hidden;
+    color: #bfe0f2;
+    font-size: medium;
+    background-color: white;
+  }
+  
+  .deleteBtn {
+    display: absolute;
+    float: right;
+    border: none;
+    background-color: white;
+    margin-right: 20px;
+    font: medium;
+    color: tomato;
+  }
+  
+  .userId {
+    margin-bottom: 0px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .makeBorder {
+    border: 1px solid #e6e6e8;
+    width: 350px;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 30px 30px;
+    background-color: white;
+  }
+  
+  .timePassed {
+    margin-top: 0px;
+    color: gray;
+  }
+  
+  .follow {
+    font-weight: bold;
+    color: #3c81f0; 
+    position: absolute;
+    margin-left: 270px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .bind {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  
+  .wordGray {
+    margin-left: 25px;
+    color: gray;
+  }
+  
+  #white1 {
+    position: relative;
+    background-color: #f8f7fa;
+    left: 70px;
+    margin-top: 20px;
+}
+  }
+  .wordBlack {
+    margin-right: 20px;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  
