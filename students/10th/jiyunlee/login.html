@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>weStagram</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
-     <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="box">
       <div class="box1">
-        <img class="logo" src="img/logo_text.png" width="175px">
+        <img class="logo" src="img/logo_text.png" width="175px" />
         <form id="inputLogin" method="POST" action="main.html">
-          <input type="text" id="inputid" placeholder="전화번호, 사용자 이름 또는 이메일" autocomplete="off" onkeypress="pressEnter()">
-          <input type="password" id="inputpw" placeholder="비밀번호" onkeypress="pressEnter()">
-          <a class="btnLink" href="main.html"><button type="button" class="btn_login" disabled>로그인</button></a>
+          <input
+            type="text"
+            id="inputid"
+            placeholder="전화번호, 사용자 이름 또는 이메일"
+            autocomplete="off"
+            onkeypress="pressEnter()"
+          />
+          <input
+            type="password"
+            id="inputpw"
+            placeholder="비밀번호"
+            onkeypress="pressEnter()"
+          />
+          <a class="btnLink" href="main.html"
+            ><button type="button" class="btn_login" disabled>로그인</button></a
+          >
         </form>
         <div class="or">
-          <hr class="orLine">
+          <hr class="orLine" />
           <span>또는</span>
-          <hr class="orLine">
+          <hr class="orLine" />
         </div>
         <div class="loginIssue">
-          <div >
-            <img class="faceBook" src="img/facebook.jpg" width="16px">
-            <a href="#"><span><strong>Facebook</strong>으로 로그인</span></a>
+          <div>
+            <img class="faceBook" src="img/facebook.jpg" width="16px" />
+            <a href="#"
+              ><span><strong>Facebook</strong>으로 로그인</span></a
+            >
           </div>
           <a href="#" class="fgpw"><p>비밀번호를 잊으셨나요?</p></a>
         </div>
       </div>
       <div class="box2">
-        <span>계정이 없으신가요? <strong><a href="#" class="joinUs">가입하기</a></strong></span>
+        <span
+          >계정이 없으신가요?
+          <strong><a href="#" class="joinUs">가입하기</a></strong></span
+        >
       </div>
       <div class="box3">
         <span>앱을 다운로드하세요.</span>
       </div>
       <div class="box4">
         <div class="imgBox">
-          <img class="downloadLink" src="img/downloadIos.png">
-          <img class="downloadLink" src="img/downloadAndr.png">
+          <img class="downloadLink" src="img/downloadIos.png" />
+          <img class="downloadLink" src="img/downloadAndr.png" />
         </div>
       </div>
     </div>
