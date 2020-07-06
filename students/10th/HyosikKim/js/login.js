@@ -1,16 +1,12 @@
-const id = document.getElementById('id');
-const pw = document.getElementById('pw');
-
-let loginBtn = document.getElementById('login');
+const id = document.getElementsByClassName('id')[0];
+const pw = document.getElementsByClassName('pw')[0];
+const loginBtn = document.getElementsByClassName('login')[0];
+const loginContainer = document.getElementsByClassName('login-container')[0];
 
 changeLoginBtnColor = () => {
-    if((id.value.length && pw.value.length) >= 1){
-        loginBtn.style.backgroundColor = '#0095f6';
-    }else{
-        loginBtn.style.backgroundColor = '#b2dffc';
-    }
-}
+  (id.value.length && pw.value.length) >= 1
+    ? (loginBtn.style.backgroundColor = '#0095f6')
+    : (loginBtn.style.backgroundColor = '#b2dffc');
+};
 
-id.addEventListener('keyup', changeLoginBtnColor);
-pw.addEventListener('keyup', changeLoginBtnColor);
-
+loginContainer.addEventListener('keyup', changeLoginBtnColor);
