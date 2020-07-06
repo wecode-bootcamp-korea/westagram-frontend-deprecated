@@ -1,7 +1,6 @@
 const username = document.querySelector(".side-myid");
 const replyBar = document.querySelectorAll(".chat");
 const inputReply = document.querySelectorAll(".input-box");
-console.log(inputReply);
 const combtn = document.querySelectorAll(".combtn");
 const comForm = document.querySelectorAll(".comment");
 
@@ -26,7 +25,6 @@ function inputComment() {
     });
   }
 }
-inputComment();
 
 function changeBtnColor() {
   for (let i = 0; i < inputReply.length; i++) {
@@ -41,7 +39,6 @@ function changeBtnColor() {
     });
   }
 }
-changeBtnColor();
 
 function useNavInput() {
   const navInput = document.querySelector(".search-box");
@@ -61,11 +58,9 @@ function useNavInput() {
     })
   );
 }
-useNavInput();
 
 const heart = document.querySelectorAll(".heart");
 const fillHeart = document.querySelectorAll(".fill-heart");
-//const heartWrap = document.querySelectorAll(".heart-btn");
 
 function changeHeart() {
   for (let i = 0; i < heart.length; i++) {
@@ -75,7 +70,6 @@ function changeHeart() {
     });
   }
 }
-changeHeart();
 
 function breakHeart() {
   for (let i = 0; i < heart.length; i++) {
@@ -85,9 +79,13 @@ function breakHeart() {
     });
   }
 }
-breakHeart();
 
-// if ((fillHeart.style.visibility = "visible")) {
-//   fillHeart.style.visibility = "hidden";
-//   heart.style.visibility = "visible";
-// }
+init();
+
+function init() {
+  inputComment();
+  changeBtnColor();
+  useNavInput();
+  changeHeart();
+  breakHeart();
+}
