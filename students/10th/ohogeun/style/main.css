@@ -55,20 +55,22 @@ nav {
     right: 125px;
 }
 
-.searchText {
-    position: absolute;
-    right: 95px;
-    font-size: 13px;
-    color: #8E8E8E;
+.searchImgFocus {
+    left: 5px;
 }
 
 .search {
     width: 215px;
-    margin-left: 20px;
+    margin: 0 20px;
     font-size: 13px;
     border: none;
     outline: none;
     background-color: #FAFAFA;
+    text-align:center;
+}
+
+.searchFocus {
+    text-align:left;
 }
 
 .navIconBox {
@@ -252,7 +254,6 @@ nav {
     display: flex;
     align-items: center;
     position: relative;
-
 }
 
 .commentInput {
@@ -260,6 +261,7 @@ nav {
     height: 19px;
     border: none;
     outline: none;
+    background-color: #FAFAFA;
 }
 
 .button {

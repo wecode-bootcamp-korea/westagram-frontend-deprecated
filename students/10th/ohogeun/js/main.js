@@ -4,37 +4,26 @@ let num = 0;
 const button = document.getElementsByClassName('button')[0];
 
 search.addEventListener('focus', function(){
-    const searchText = document.getElementsByClassName('searchText')[0];
-    const searchImg = document.getElementsByClassName('searchImg')[0];
-    
-    searchText.style.display = "none";
-    searchImg.style.left = "5px";
-    search.placeholder = "검색"
-    
+    const searchImg = document.getElementsByClassName('searchImg')[0];   
+    searchImg.classList.add("searchImgFocus")
+    search.classList.add("searchFocus")
+    console.log("a")
 });
 
 search.addEventListener('focusout', function(){
-    const searchText = document.getElementsByClassName('searchText')[0];
     const searchImg = document.getElementsByClassName('searchImg')[0];
-    
-    searchText.style.display = "inline";
-    searchImg.style.left = "80px";
-    search.placeholder = "";
-    search.value = "";
-
+    searchImg.classList.remove("searchImgFocus")
+    search.classList.remove("searchFocus")
   });
 
 commentInput.addEventListener('keyup', function(key){
     const div = document.createElement('div');
     const spanName = document.createElement('span');
     const spanComment = document.createElement('span');
-    const img = document.createElement('img');
-    
+    const img = document.createElement('img');   
     let commentLast = document.getElementsByClassName('commentBox')[num];
     let value = document.getElementsByClassName('commentInput')[0].value;
-
-    
-
+   
     if(key.keyCode  === 13 && value) {
         spanName.className = "name";
         spanName.innerHTML = "hoho";
@@ -54,8 +43,7 @@ button.addEventListener('click', function(){
     const div = document.createElement('div');
     const spanName = document.createElement('span');
     const spanComment = document.createElement('span');
-    const img = document.createElement('img');
-    
+    const img = document.createElement('img');   
     let commentLast = document.getElementsByClassName('commentBox')[num];
     let value = document.getElementsByClassName('commentInput')[0].value;
 

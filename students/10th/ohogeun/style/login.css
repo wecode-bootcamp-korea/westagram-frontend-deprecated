@@ -37,13 +37,13 @@ button{
     background-color: #B2DFFC;
     color: white;
     font-weight: bold;
-    border: none;
     font-size: 17px;
+    border: none;
 }
 
 .forgetPw{
     margin-top: 125px;
     font-size: 14px;
-    color: #00376B;
     font-weight: bold;
+    color: #00376B;
  }
