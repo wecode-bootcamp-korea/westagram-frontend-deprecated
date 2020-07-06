@@ -17,7 +17,7 @@
     padding: 5px
 } 
 
-.nav_contaner{
+.nav_container{
     width: 975px;
     display: flex;
     justify-content: space-between;
@@ -103,7 +103,7 @@ article{
   flex-direction: column;
 }
 
-.coment-container{
+.comment-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,7 +111,7 @@ article{
     border-top: 1px solid rgb(200,200,200);
 }
 
-.coment{
+.comment{
     width: 560px;
     font-size: 15px;
     border: none;
@@ -119,7 +119,7 @@ article{
     padding: 5px;
     color: rgb(142,142,142);
 }
-.coment-button{
+.comment-button{
     all: unset;
     font-size: 15px;
     font-weight: bold;
@@ -279,13 +279,11 @@ article{
   font-size: 13px;
   color:#c7c7c7;
  }
-
- 
  
  @media (max-width: 1200px){
-  .nav_contaner{
+  .nav_container{
     width: 700px;
   }
   .sidebar_container{
-  display: none;
+    display: none;
   }

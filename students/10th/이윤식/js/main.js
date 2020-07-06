@@ -1,8 +1,8 @@
-const thisIsButton = document.querySelector('.coment-button');
-const comment = document.querySelector('.coment')
-const comment_controler = document.querySelector('.commnet-plus');
+const commnetButton = document.querySelector('.comment-button');
+const comment = document.querySelector('.comment')
+const commentControler = document.querySelector('.commnet-plus');
 
-function commentHandler(e) {
+function addEnterComment(e) {
     if(event.keyCode == 13){
         let divtag = document.createElement('div')
         let divtag2 = document.createElement('div')
@@ -17,7 +17,7 @@ function commentHandler(e) {
         buttontag.innerHTML = "삭제"
         spantag1.innerHTML = "Wecode"
         spantag2.innerHTML = comment.value
-        comment_controler.appendChild(divtag)
+        commentControler.appendChild(divtag)
         divtag.appendChild(divtag2)
         divtag2.appendChild(spantag1)
         divtag2.appendChild(spantag2)
@@ -29,7 +29,7 @@ function commentHandler(e) {
         });
     }
 }
-    function commnetclickHandler(){
+    function addClickComment(){
         let commnetDivtag = document.createElement('div')
         let commnetDivtag2 = document.createElement('div')
         let commnetSpantag1 = document.createElement('span')
@@ -43,13 +43,13 @@ function commentHandler(e) {
         commnetButtontag.innerHTML = "삭제"
         commnetSpantag1.innerHTML = "Wecode"
         commnetSpantag2.innerHTML = comment.value
-        comment_controler.appendChild(commnetDivtag)
+        commentControler.appendChild(commnetDivtag)
         commnetDivtag.appendChild(commnetDivtag2)
         commnetDivtag2.appendChild(commnetSpantag1)
         commnetDivtag2.appendChild(commnetSpantag2)
         commnetDivtag.appendChild(commnetButtontag)
-        spantag2.innerHTML = ""
+        comment.value = ""
     }
 
-comment.addEventListener('keyup', commentHandler);
-thisIsButton.addEventListener('click', commnetclickHandler);
+comment.addEventListener('keyup', addEnterComment);
+commnetButton.addEventListener('click', addClickComment);

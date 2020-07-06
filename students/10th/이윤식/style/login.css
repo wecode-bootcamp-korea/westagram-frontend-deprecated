@@ -8,7 +8,7 @@
     margin: 100px auto 0;
 }
 
-.contaner{
+.container{
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -18,11 +18,12 @@
     border: 1px solid rgba(000,000,000,0.2);   
 }
 
-.logo-contaner{
+.logo-container{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .logo{
     width: 150px;
     height: 60px;
@@ -30,11 +31,13 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.login-contaner{
+
+.login-container{
     display: flex;
     flex-direction: column;
     font-size: 18px;
 }
+
 input{
     margin-bottom: 7px;
     background-color: #FAFAFA;
@@ -54,7 +57,7 @@ input{
     margin-top: 10px;
 }
 
-.footer{
+.forgot-pw{
     margin-top: 70px;
     margin-bottom: -15px;
     font-size: 10px;
@@ -62,6 +65,3 @@ input{
     font-weight: bold;
     color: #00376B;
 }
-
-
-
