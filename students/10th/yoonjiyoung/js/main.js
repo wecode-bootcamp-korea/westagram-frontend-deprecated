@@ -1,6 +1,6 @@
 const navLogo = document.querySelector(".nav__logo-img");
 const navSearch = document.querySelector(".nav__search");
-const navSearchVal = document.querySelector(".nav__search-input");
+const navSearchInput = document.querySelector(".nav__search-input");
 
 const feedForms = document.querySelectorAll(".feed__comment");
 let feedComments = document.querySelectorAll(".js-feedCommentList");
@@ -79,7 +79,7 @@ function init() {
   });
   navSearch.addEventListener("submit", () => {
     window.open(
-      "https://www.instagram.com/explore/tags/" + navSearchVal.value,
+      "https://www.instagram.com/explore/tags/" + navSearchInput.value,
       "_blank"
     );
   });

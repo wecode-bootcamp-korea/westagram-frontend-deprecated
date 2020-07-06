@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: "Arial";
 }
+
 a {
   text-decoration: none;
 }
@@ -28,6 +29,7 @@ body {
 .login__logo {
   margin-bottom: 40px;
 }
+
 .login__input {
   display: flex;
   flex-direction: column;
