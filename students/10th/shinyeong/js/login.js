@@ -4,9 +4,8 @@ const inputPw = form.querySelector('.form__password');
 const loginBtn = form.querySelector('button');
 const link = form.querySelector('.button-link');
 
-function handleSignIn() {
-    const keyCode = window.event.keyCode;
-    if (keyCode === 13 && (inputId.value && inputPw.value)) {
+function handleSignIn(e) {
+    if (e.keyCode === 13 && (inputId.value && inputPw.value)) {
         form.submit();
     } else {
         if (inputId.value && inputPw.value) {
