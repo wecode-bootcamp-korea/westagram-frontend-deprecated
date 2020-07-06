@@ -1,31 +1,15 @@
+const loginBox = document.querySelectorAll(".loginInput");
 
-function idPasswordComparison() {
-    const keyupPwValue = keyupPw.value;
-    const keyupIdValue = keyupId.value;
+idPwComparison = () => {
+  let activeBtn = document.getElementsByClassName("loginBtn")[0];
+  loginBox[0].value !== "" && loginBox[1].value !== ""
+    ? ((activeBtn.disabled = false),
+      (activeBtn.style.cursor = "pointer"),
+      (activeBtn.style.backgroundColor = "#0095F6"))
+    : ((activeBtn.disabled = true),
+      (activeBtn.style.cursor = "default"),
+      (activeBtn.style.backgroundColor = "#B2DFFC"));
+};
 
-    if(keyupPwValue !== "" && keyupIdValue !== ""){
-        let activeBtn = document.getElementsByClassName('loginBtn')[0];
-        activeBtn.disabled = false;
-        activeBtn.style = "cursor:pointer";
-        activeBtn.style.backgroundColor = "#0095F6";
-    }else{
-        let activeBtn = document.getElementsByClassName('loginBtn')[0];
-        activeBtn.disabled = true;
-        activeBtn.style = "cursor:default";
-        activeBtn.style.backgroundColor = "#B2DFFC";
-    }
-}
-
-const keyupId = document.getElementsByClassName('loginInputId')[0];
-const keyupPw = document.getElementsByClassName('loginInputPw')[0];
-keyupId.addEventListener('keyup', function(){
-    idPasswordComparison();
-});
-keyupPw.addEventListener('keyup', function(){
-    idPasswordComparison();
-});
-
-
-
-
-
+loginBox[0].addEventListener("keyup", idPwComparison);
+loginBox[1].addEventListener("keyup", idPwComparison);
