@@ -76,13 +76,11 @@ function handleSearchIcon() {
   );
 }
 
-function init() {
+(function init() {
   shortenId();
   handleComment();
   handleCommentBtnColor();
   handleHeartColor();
   handleFillheartColor();
   handleSearchIcon();
-}
-
-init();
+})();
