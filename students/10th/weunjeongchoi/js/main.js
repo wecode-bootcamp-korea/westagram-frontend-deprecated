@@ -32,16 +32,6 @@ searchKeyword.addEventListener('keyup', (e)=> {
     }
 })
 
-//erase comments -- error 해결해야함
-for (let l = 0; l < deleteBtn.length; l++) {
-    function eraseComment(num) {
-        console.log(num);
-        commentLine[num].parentElement.removeChild(commentLine[num]);
-        // commentLine[num].remove(); 해도 안됨
-    }
-    deleteBtn[l].addEventListener('click', () => eraseComment(l));
-}
-
 // show hidden comments
 function showAndHide(num) {
     hiddenComments[num].style.display = ((hiddenComments[num].style.display == 'block') ? 'none' : 'block');
