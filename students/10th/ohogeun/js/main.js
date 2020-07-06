@@ -7,7 +7,6 @@ search.addEventListener('focus', function(){
     const searchImg = document.getElementsByClassName('searchImg')[0];   
     searchImg.classList.add("searchImgFocus")
     search.classList.add("searchFocus")
-    console.log("a")
 });
 
 search.addEventListener('focusout', function(){
