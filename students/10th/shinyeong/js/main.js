@@ -101,11 +101,9 @@ function handleCloseModal() {
 function uploadComments() {
   for (let i = 0; i < commentForm.length; i++) {
     commentInput[i].addEventListener('keyup', function() {
-      if(commentInput[i].value.length > 0){
-        commentBtn[i].style.color = "#0095f6";
-      } else {
-        commentBtn[i].style.color = "#cce6fd";
-      }
+      commentInput[i].value.length > 0 ? 
+        commentBtn[i].style.color = "#0095f6" : commentBtn[i].style.color = "#cce6fd"
+
     });
     commentForm[i].addEventListener('submit', function() {
       event.preventDefault();
@@ -139,12 +137,10 @@ function handleFeedClickHeart() {
   redHeartIcon.style.visibility = "visible";
 }
 
-function init() {
+(function init() {
   sliceUserId();
   uploadComments();
   searchInput.addEventListener("keyup", handleOpenModal);
   searchInput.addEventListener("focusout", handleCloseModal);
   searchCancle.addEventListener("click", handleCloseModal);
-}
-
-init();
+}) ();
