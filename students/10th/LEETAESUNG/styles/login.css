@@ -2,12 +2,12 @@ body {
     margin: 0;
 }
 
-.all {
+.idBox {
     display: flex;
     justify-content: center;
 }
 
-.main {
+.idBoxContainer {
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     width: 350px;
     height: 380px;
@@ -26,13 +26,11 @@ body {
     height: 51px;
 }
 
-.inputBox{
-/*     width: 348px;
-    height: 263px; */
+.inputContainer{
     text-align: center;
 }
 
-.idStyle {
+.idInput {
     width: 268px;
     height: 38px;
     margin-top: 7px;
@@ -45,7 +43,7 @@ body {
     outline-width: 0px;
 }
 
-.pwStyle {
+.pwInput {
     width: 268px;
     height: 38px;
     margin-top: 7px;

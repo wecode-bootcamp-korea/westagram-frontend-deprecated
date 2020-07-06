@@ -1,19 +1,21 @@
-const colorChange = document.getElementsByClassName('commentBox')[0];
-const upLoad = document.getElementsByClassName('comment')[0];
+const buttonInput = document.getElementsByClassName('commentBox')[0];
+const post = document.getElementsByClassName('comment')[0];
 
-colorChange.addEventListener('keyup', function() {
+buttonInput.addEventListener('keyup', function() {
     const content = document.getElementsByClassName('comment')[0].value;
     const but = document.getElementsByClassName('upLoadComment')[0];
 
-    if (content.length >= 1) {
+    /* if (content.length >= 1) {
         but.style.opacity = "1";
     } else if (content.length === 0) {
         but.style.opacity = "0.4";
-    }
+    } */
+
+    but.style.opacity = content.length >= 1 ? "1" : "0.4"
 });
 
 const commentInput = document.getElementsByClassName('comment')[0];
-upLoad.addEventListener('keyup', function(event) {
+post.addEventListener('keyup', function(event) {
     const content = commentInput.value;
     const but = document.getElementsByClassName('upLoadComment')[0];
 
