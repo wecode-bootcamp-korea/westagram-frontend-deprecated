@@ -2,7 +2,7 @@
 const likeBtn = document.querySelector(".like-feed");
 let flag;
 
-function submitLike() {
+function handleLikeFeed() {
   flag = likeBtn.id;
   if (flag == 1) {
     likeBtn.src =
@@ -14,4 +14,4 @@ function submitLike() {
   }
 }
 
-likeBtn.addEventListener("click", submitLike);
+likeBtn.addEventListener("click", handleLikeFeed);

@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   height: 100vh;
   display: flex;
@@ -17,13 +13,12 @@ body {
 }
 
 .container {
-  width: 400px;
-  height: 500px;
   border: thin solid lightgray;
+  padding: 5px;
 }
 
 .input-box {
-  height: 35%;
+  height: 175px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -31,16 +26,17 @@ body {
 }
 
 .forget-pw {
-  height: 35%;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
 .box {
-  width: 80%;
-  height: 32%;
-  margin: 0 auto;
+  width: 318.39px;
+  height: 56px;
+  margin: 0 50px;
+  padding: 0 5px;
   border-radius: 5px;
   border: thin solid lightgray;
   background-color: #fafafa;
@@ -48,7 +44,7 @@ body {
 
 .input-box button {
   margin-top: 10px;
-  height: 25%;
+  height: 43.75px;
   opacity: 10;
   background-color: #b3dffd;
   color: white;

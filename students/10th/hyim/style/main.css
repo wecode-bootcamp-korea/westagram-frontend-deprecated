@@ -62,7 +62,7 @@ main {
   background-color: #fafafa;
 }
 
-.main-div {
+.wrapper {
   width: 935px;
   padding-top: 30px;
   margin: 0 auto;
@@ -88,11 +88,11 @@ article {
   overflow-x: scroll;
 }
 
-ul {
+.story ul {
   display: flex;
 }
 
-li {
+.story li {
   width: 80px;
   height: 80px;
   padding: 0px 4px;
@@ -109,7 +109,7 @@ li {
   background: linear-gradient(to left, orange, red);
 }
 
-.user-img img {
+.story-border img {
   width: 56px;
   height: 56px;
   margin-top: 2.48px;
@@ -302,6 +302,9 @@ header {
 }
 
 .side-user-img img {
+  width: 61px;
+  height: 61px;
+  border-radius: 100%;
   border: 1px solid green;
 }
 
@@ -418,4 +421,24 @@ header {
 .side-underInfo {
   font-size: 11px;
   color: grey;
+}
+
+.quick-menu {
+  display: inline-block;
+  padding: 0;
+  text-align: start;
+}
+
+.quick-menu li {
+  display: inline;
+}
+
+.quick-menu li:after {
+  content: "﹒";
+  letter-spacing: 0.2px;
+  background: center center no-repeat;
+}
+
+.quick-menu li:last-child::after {
+  content: "";
 }
