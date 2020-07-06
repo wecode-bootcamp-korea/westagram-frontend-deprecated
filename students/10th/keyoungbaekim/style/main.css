@@ -47,6 +47,10 @@ nav {
     text-align: right;
 }
 
+.searchIconContainer {
+    margin: auto 0;
+}
+
 .fas {
     text-align: center;
     border: none;

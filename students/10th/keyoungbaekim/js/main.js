@@ -83,3 +83,18 @@ commentIconBtn.addEventListener('click', event => {
             .src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
     }
 });
+
+const searchInput = document.getElementsByClassName('fas searchInput')[0];
+const iconAddSearch = document.getElementsByClassName('searchIconContainer')[0];
+
+focusNavSearch = () => {
+    searchInput.placeholder = "검색";
+
+    const  searchIcon = document.createElement('i');
+    iconAddSearch.appendChild(searchIcon).classList.add('fas', 'fa-search');
+}
+
+searchInput.addEventListener("blur", () => {
+    searchInput.placeholder = " 검색";
+    document.getElementsByClassName('fas', 'fa-search')[0].remove();
+});
