@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hyostagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet"> <!--CDN 링크-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/instaFavicon.ico">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-position">
+          <img class="img-cam" alt="카메라" onclick="javascript:location.href='main.html'" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png">
+          <div class="vertical-line"></div>
+          <img class="img-logo" alt="로고" onclick="javascript:location.href='main.html'" src="img/logo_text.png">
+        </div>
+        <div class="nav-position nav-mid">
+          <i class="fas fa-search" id="magnify"></i>
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+        <div class="nav-position">
+          <div class="nav__right-container">
+            <img alt="나침반" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+            <img alt="하트" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img alt="상반신" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="main-container">
+        <div class="feeds">
+          <article>
+              <div class="article__header">
+                <div class="article__header__left">
+                  <img alt="프로필사진" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/66802565_354441191910711_5735933316343791616_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=kE0g-dkaAqcAX91uAsH&amp;oh=0eb08605ca4d032074e9808b46fc0a1f&amp;oe=5F23FBD4">
+                  <div class="header-id name">canon_mj</div>
+                </div>
+                <div class="article__header__right">
+                   <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="쓰리닷">
+                </div> 
+              </div>
+              <div class="article-picture">
+                <img src="https://media.vlpt.us/images/devmin/post/519de033-a1a0-414c-ba3c-92193ae01d4c/H53A6662.jpg" alt="사진">
+              </div>
+              <div class="article__center">
+                <div class="article__center-icon">
+                  <div class="article__center-icon__left">
+                    <button class="heart-button">
+                      <svg x="50%" y="50%" class="changeHeart" width="24" height="24" aria-label="Unlike" class="_8-yf5 " fill="white" stroke="#262626"  stroke-width="3" viewBox="0 0 48 48"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                    </button>
+                    <img class="article-icon" alt="말풍선" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+                    <img class="article-icon" alt="공유" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
+                  </div>
+                  <div class="article__center-icon__right">
+                    <img class="article-icon" alt="북마크" src= "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
+                  </div>
+                </div>
+                <div class="like">
+                  <img class="like-picture" alt="좋아요 프사" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=jUj_89RJjeIAX_XJyCT&oh=030d7af2545a4862c9f69492598c086b&oe=5F2400A0">
+                  <div class="like-who">
+                    <span class="name">wecode</span>님 
+                    <span class="name">외 10명</span>이 좋아합니다
+                  </div>
+                </div>
+                <div class="comments">
+                  <div class="comment">
+                    <div class="comment-container">
+                      <span class="name">canon_mj</span>
+                      <span class="comment-text">위코드에서 진행한 코드 클래스...</span>
+                      <span class="comment-text grey">더 보기</span>
+                    </div>
+                  </div>
+                  <div>
+                  </div>
+                  <div class="comment">
+                    <div class="comment-container">
+                      <span class="name">neceosecius</span>
+                      <span class="comment-text">거봐 좋았잖아~~~~~</span>
+                    </div>
+                    <div class="comment-icon-container">
+                      <button class="dot"><img alt="쓰리닷" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"></button>
+                      <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="댓글하트"></img>
+                    </div> 
+                  </div>
+                </div>
+                <div class="ago grey">방금 전</div>
+              </div>
+              <div class="border-bottom-line"></div>
+              <div class="add-comment">
+                  <div class="grey">
+                    <input type="text" class="add-input" placeholder="댓글 달기...">
+                  </div>
+                  <button class="add-btn">게시</button>
+               </div>
+          </article>
+          <article>
+            <div class="article__header">
+              <div class="article__header__left">
+                <img alt="프로필사진" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/92861059_2667400006814306_5574150608497147904_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=bSkRBPbPuj8AX_Is-WS&oh=1d974fc43bf6ff07c16a91d8541c5231&oe=5F27CBED">
+                <div class="header-id name">kkong150109</div>
+              </div>
+              <div class="article__header__right">
+                 <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="쓰리닷">
+              </div> 
+            </div>
+            <div class="article-picture">
+              <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/92268303_211469443469638_3713567905355449607_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=amm3vmsPrnkAX_8hc0m&oh=20d7bf0f07e8a2bcbd53a78d6b00de1a&oe=5F27A965" alt="사진">
+            </div>
+            <div class="article__center">
+              <div class="article__center-icon">
+                <div class="article__center-icon__left">
+                  <button class="heart-button">
+                    <svg x="50%" y="50%" class="changeHeart" width="24" height="24" aria-label="Unlike" class="_8-yf5 " fill="white" stroke="#262626"  stroke-width="3" viewBox="0 0 48 48"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                  </button>
+                  <img class="article-icon" alt="말풍선" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+                  <img class="article-icon" alt="공유" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
+                </div>
+                <div class="article__center-icon__right">
+                  <img class="article-icon" alt="북마크" src= "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
+                </div>
+              </div>
+              <div class="like">
+                <img class="like-picture" alt="좋아요 프사" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/15306097_265287643886576_1327359277756579840_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=8JPgE47nuG8AX8AVlTY&oh=7e62d317a1a0a9394becce5f490e1ec2&oe=5F2A072B">
+                <div class="like-who">
+                  <span class="name">jojungsuk</span>님 
+                  <span class="name">외 234명</span>이 좋아합니다
+                </div>
+              </div>
+              <div class="comments">
+                <div class="comment">
+                  <div class="comment-container">
+                    <span class="name">cha</span>
+                    <span class="comment-text">언니 이뻐요!!</span>
+                    <span class="comment-text grey">더 보기</span>
+                  </div>
+                </div>
+                <div>
+                </div>
+                <div class="comment">
+                  <div class="comment-container">
+                    <span class="name">heis</span>
+                    <span class="comment-text">공블리~~</span>
+                  </div>
+                  <div class="comment-icon-container">
+                    <button class="dot"><img alt="쓰리닷" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"></button>
+                    <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="댓글하트"></img>
+                  </div> 
+                </div>
+              </div>
+              <div class="ago grey">방금 전</div>
+            </div>
+            <div class="border-bottom-line"></div>
+            <div class="add-comment">
+                <div class="grey">
+                  <input type="text" class="add-input" placeholder="댓글 달기...">
+                </div>
+                <button class="add-btn">게시</button>
+             </div>
+        </article>
+        <article>
+          <div class="article__header">
+            <div class="article__header__left">
+              <img alt="프로필사진" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/92861059_2667400006814306_5574150608497147904_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=bSkRBPbPuj8AX_Is-WS&oh=1d974fc43bf6ff07c16a91d8541c5231&oe=5F27CBED">
+              <div class="header-id name">kkong150109</div>
+            </div>
+            <div class="article__header__right">
+               <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="쓰리닷">
+            </div> 
+          </div>
+          <div class="article-picture">
+            <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/92223715_530270607682278_4260799490678654366_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=EfFYDPsyJtUAX_NBISd&oh=bdb5c958e7300d7580a7c6d5f8f8fa49&oe=5F280434" alt="사진">
+          </div>
+          <div class="article__center">
+            <div class="article__center-icon">
+              <div class="article__center-icon__left">
+                <button class="heart-button">
+                  <svg x="50%" y="50%" class="changeHeart" width="24" height="24" aria-label="Unlike" class="_8-yf5 " fill="white" stroke="#262626"  stroke-width="3" viewBox="0 0 48 48"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                </button>
+                <img class="article-icon" alt="말풍선" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+                <img class="article-icon" alt="공유" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
+              </div>
+              <div class="article__center-icon__right">
+                <img class="article-icon" alt="북마크" src= "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
+              </div>
+            </div>
+            <div class="like">
+              <img class="like-picture" alt="좋아요 프사" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/105365279_3520222574663213_8532879881338910739_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=XV1N_EW270EAX-d_sfA&oh=6eb3a71aa3ae08d38a50a2d891a1bc6f&oe=5F290878">
+              <div class="like-who">
+                <span class="name">lilyiu_</span>님 
+                <span class="name">외 876명</span>이 좋아합니다
+              </div>
+            </div>
+            <div class="comments">
+              <div class="comment">
+                <div class="comment-container">
+                  <span class="name">h_sick</span>
+                  <span class="comment-text">누나 나 죽어ㅠㅠ</span>
+                  <span class="comment-text grey">더 보기</span>
+                </div>
+              </div>
+              <div>
+              </div>
+              <div class="comment">
+                <div class="comment-container">
+                  <span class="name">whoami</span>
+                  <span class="comment-text">옷 어디꺼에요?</span>
+                </div>
+                <div class="comment-icon-container">
+                  <button class="dot"><img alt="쓰리닷" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"></button>
+                  <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="댓글하트"></img>
+                </div> 
+              </div>
+            </div>
+            <div class="ago grey">방금 전</div>
+          </div>
+          <div class="border-bottom-line"></div>
+          <div class="add-comment">
+              <div class="grey">
+                <input type="text" class="add-input" placeholder="댓글 달기...">
+              </div>
+              <button class="add-btn">게시</button>
+           </div>
+      </article>
+        </div>
+        <div class="main-right">
+          <div class="main-right-container">
+            <div class="main-right__up">
+              <img class="main-right__up-picture" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=jUj_89RJjeIAX_XJyCT&oh=030d7af2545a4862c9f69492598c086b&oe=5F2400A0" alt="오른쪽 맨위">
+              <div class="main-right__up-text">
+                <div class="main-right__up-text__up">wecode_bootcamp</div>
+                <div class="main-right__up-text__down grey">WeCode | 위코드</div>
+              </div>
+            </div>
+            <div class="main-right__side">
+              <div class="new-story-container">
+                <div class="new-story up-title">
+                  <div class="grey">스토리</div>
+                  <div class="see-all">모두 보기</div>
+                </div>
+                <div class="stories-container">
+                  <div class="story-picture-arrange">
+                    <img class="story-picture pink" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/90409533_144402273573087_8287250594335293440_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=of2kH6t5ECkAX8suTRl&oh=403b5158c814c3b3413587c290da99e8&oe=5F23D048" alt="스토리사진">
+                    <div>
+                      <div class="bold name">bluemoon_b730</div>
+                      <div class="ago grey">16분 전</div>
+                    </div>
+                  </div>
+                  <div class="story-picture-arrange">
+                    <img class="story-picture pink" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/13385907_1595554607440755_381632740_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=qmdYylUDbi8AX9DbWr_&oh=e88549d8af43d3ddf2dc954ef623538e&oe=5F249911" alt="스토리사진">
+                    <div>
+                      <div class="bold name">kimdogil_93</div>
+                      <div class="ago grey">3시간 전</div>
+                    </div>
+                  </div>
+                  <div class="story-picture-arrange">
+                    <img class="story-picture pink" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/79194355_2428660997385420_6868379062583164928_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=4j4mkfZbtZgAX_zGCkH&oh=af07bbaefeb8453ce77e01d66fe07ed4&oe=5F23E9D9" alt="스토리사진">
+                    <div>
+                      <div class="bold name">jinseong_94</div>
+                      <div class="ago grey">20시간 전</div>
+                    </div>
+                  </div>
+                  <div class="story-picture-arrange">
+                    <img class="story-picture pink" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/31086476_415295505602780_7420942707045957632_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=wO4BClaj2t8AX_e96tx&oh=a2633353ca3b6f4c3df96b1fa96e421a&oe=5F24D99A" alt="스토리사진">
+                    <div>
+                      <div class="bold name">ddoobuckk</div>
+                      <div class="ago grey">23시간 전</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recommend-container">
+                <div class="new-story up-title">
+                  <div class="grey">회원님을 위한 추천</div>
+                  <div class="see-all">모두 보기</div>
+                </div>
+                <div class="recommend story-picture-arrange">
+                  <div class="recLeft">
+                    <div class="story-picture-arrange">
+                      <img class="story-picture" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/84027902_122982959117281_7411487645781458944_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=uUIYe3rioWgAX8usFSX&oh=70e642e9ef6b0cc4d14385597458eb24&oe=5F235282" alt="스토리사진">
+                      <div>
+                        <div class="bold name">whdwlsdn</div>
+                        <div class="ago grey">_legend_a님 외 2명이 ...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="follow">팔로우</div>
+                </div>
+                <div class="recommend story-picture-arrange">
+                  <div class="recLeft">
+                    <div class="story-picture-arrange">
+                      <img class="story-picture" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/97158673_560465147955273_5002363931663007744_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=RyT78ibKm8MAX_yqC4j&oh=0ec92cee3ac5ebe42c382d7fcf0e232f&oe=5F2354E1" alt="스토리사진">
+                      <div>
+                        <div class="bold name">sungjayjung</div>
+                        <div class="ago grey">ringo.in.seoul님 외 12...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="follow">팔로우</div>
+                </div>
+                <div class="recommend story-picture-arrange">
+                  <div class="recLeft">
+                    <div class="story-picture-arrange">
+                      <img class="story-picture" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/101407942_284301782705159_7040340391949762560_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=4ENJjzOwW9IAX_l6rGF&oh=a68a9b7dae232ec2e58cc93b38ded0f8&oe=5F24488E" alt="스토리사진">
+                      <div>
+                        <div class="bold name">jinseong_94</div>
+                        <div class="ago grey">jimmylee1220님 외 1...</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="follow">팔로우</div>
+                </div>  
+                </div>
+              </div>
+              <div class="info">
+                <div>Instagram 정보ㆍ지원ㆍ홍보 센터 ㆍAPIㆍ</div>
+                <div>채용 정보ㆍ개인정보처리방침ㆍ약관ㆍ</div>
+                <div>디렉터리ㆍ프로필ㆍ해시태그ㆍ언어</div>
+              </div>
+              <div class="year info">© 2020 INSTAGRAM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

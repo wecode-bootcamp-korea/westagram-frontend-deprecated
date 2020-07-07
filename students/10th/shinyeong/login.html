@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/0459a0c576.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/login.js"></script>
+    <title>Instagram__LogIn</title>
+  </head>
+  <body>
+    <main>
+      <div class="phones">
+        <div class="phones__box">
+          <div class="phones__black-phone">
+            <header class="phone__header">
+              <div class="header__camera">
+                <div class="camera__small-dot"></div>
+              </div>
+              <div class="header__speaker"></div>
+            </header>
+            <div class="phone__screen">
+              <header class="screen__header">
+                <div class="header__alert"></div>
+                <div class="header__search">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search" />
+                </div>
+              </header>
+              <div class="screen__main">
+                <img class="main__bg-img" src="images/img1.jpg" />
+                <img class="main__bg-img" src="images/img2.jpg" />
+              </div>
+              <div class="screen__nav">
+                <ul class="screen__nav-list">
+                  <li class="nav-list__item">
+                    <i class="fas fa-home"></i>
+                  </li>
+                  <li class="nav-list__item">
+                    <i class="fas fa-search"></i>
+                  </li>
+                  <li class="nav-list__item">
+                    <i class="fas fa-camera"></i>
+                  </li>
+                  <li class="nav-list__item">
+                    <i class="far fa-heart"></i>
+                  </li>
+                  <li class="nav-list__item">
+                    <i class="fas fa-user"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="phones__white-phone">
+            <div class="phone">
+              <header class="phone__header">
+                <div class="phone__header-column">
+                  <div class="header-dot"></div>
+                </div>
+                <div class="phone__header-column bottom">
+                  <div class="header__speaker">
+                    <div class="header__camera"></div>
+                  </div>
+                </div>
+              </header>
+              <div class="phone__screen-box">
+                <div class="phone__screen">
+                  <div class="screen__header">
+                    <span class="header__text">Cancel</span>
+                  </div>
+                  <div class="screen__main">
+                    <div class="main__img">
+                      <i class="fas fa-redo"></i>
+                      <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="main__button">
+                      <div class="button__camera"></div>
+                    </div>
+                  </div>
+                  <nav class="screen__nav">
+                    <ul class="screen__nav-list">
+                      <li class="nav-item">Library</li>
+                      <li class="nav-item camera">Camera</li>
+                      <li class="nav-item">Video</li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <footer class="phone__home-btn">
+                <div class="home-btn"></div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <section class="content__sign-in content-box">
+          <header class="sign-in__header insta__logo">
+            <img src="images/logo_text.png" alt="instagram logo" />
+          </header>
+          <form class="sign-in__form" action="main.html">
+            <input
+              type="email"
+              class="form__email"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+            />
+            <input
+              type="password"
+              class="form__password"
+              placeholder="비밀번호"
+            />
+            <a class="button-link" disabled>
+              <button class="signIn__login" type="button">로그인</button>
+            </a>
+          </form>
+          <div class="sign-in__or">
+            <div class="or__line"></div>
+            <span class="or__Text"> 또는 </span>
+            <div class="or__line"></div>
+          </div>
+          <div class="sign-in__facebookLogIn">
+            <i class="fab fa-facebook-square"></i>
+            <span class="facebookLogIn__text">Facebook으로 로그인</span>
+          </div>
+          <a href="#" class="sign-in__forgot">비밀번호를 잊으셨나요?</a>
+        </section>
+        <section class="content__sign-up content-box">
+          <span class="signUp__text">계정이 없으신가요?</span>
+          <a href="#" class="signUp__link">가입하기</a>
+        </section>
+        <section class="downloads">
+          <div class="downloads__text">앱을 다운로드하세요.</div>
+          <div class="downloads__link">
+            <div class="link__appStore link">
+              <i class="fab fa-apple"></i>
+              <span class="appStore__column-text"
+                >AppStore에서<br />다운로드 하기</span
+              >
+            </div>
+            <div class="link__googlePlay link">
+              <i class="fab fa-google-play"></i>
+              <div class="link__googlePlay-column">
+                <span class="column__text-top">다운로드하기</span>
+                <span class="column__text-bottom">Google Play</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer__box">
+      <nav class="footer__column">
+        <ul class="nav__list">
+          <li class="list__item">
+            <a href="#"></a>
+            <span>소개</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>도움말</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>홍보 센터</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>API</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>채용 정보</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>개인정보처리방침</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>약관</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>위치</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>인기 계정</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>해시태그</span>
+          </li>
+          <li class="list__item">
+            <a href="#"></a>
+            <span>언어</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__column">
+        <span class="footer__copyright">ⓒ 2020 INSTAGRAM FROM FACEBOOK</span>
+      </div>
+    </footer>
+  </body>
+</html>
