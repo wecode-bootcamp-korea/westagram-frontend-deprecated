@@ -26,6 +26,7 @@ main {
 }
 
 .loginInput {
+  width: 245px;
   margin-top: 10px;
   padding: 10px;
   background-color: #fafafa;

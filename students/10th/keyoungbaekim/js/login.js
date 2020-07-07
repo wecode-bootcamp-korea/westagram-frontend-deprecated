@@ -11,5 +11,9 @@ idPwComparison = () => {
       (activeBtn.style.backgroundColor = "#B2DFFC"));
 };
 
-loginBox[0].addEventListener("keyup", idPwComparison);
-loginBox[1].addEventListener("keyup", idPwComparison);
+const clickInputContainer = document.getElementsByClassName(
+  "clickInputContainer"
+)[0];
+
+clickInputContainer.addEventListener("keyup", idPwComparison);
+// loginBox[1].addEventListener("keyup", idPwComparison);
