@@ -6,10 +6,8 @@
     --red-color : #ff0000;
     --grey-dark-color : #909090;
     --grey-light-color : #e0e0e0;
-
-    /* Size */
-    --padding : 12px;
-    --avatar-size : 36px;
+    --grey-medium-color :  rgb(250,250,250);
+    --white-blue-color : rgb(178,223,252);
 
     /* Font Size */
     --font-large : 18px;
@@ -33,10 +31,10 @@ body{
     height: 100vh;
 }
 
-.wrapper {
+.loginWrapper {
     margin : 0 auto;
     border : 1.5px solid var(--grey-light-color);
-    background-color: white;
+    background-color : var(--white-color);
     width: 348px;
     height: 355px;
     display : flex;
@@ -58,7 +56,7 @@ body{
 }
 
 /* .container */
-.container {
+.loginInfoBox {
     display : flex;
     flex-direction: column;
     width: 270px;
@@ -66,31 +64,31 @@ body{
     margin-bottom: 40px;
 }
 
-.container input {
+.loginInfoBox input {
     padding-bottom: 5px;
 }
 
-.container .login {
+.login {
     height:40px; 
     width: 100%;
     border-radius: 3px;
     border: 1px solid var(--grey-light-color);
-    background-color: rgb(250,250,250);
+    background-color: var(--grey-medium-color);
     justify-content: center;
     font-size: 12px;
     font-weight: bold;
     color : var(--grey-dark-color);
 }
 
-.container .contents {
+.contents {
     margin-bottom:10px;
     padding-top : 5px;
     padding-left: 10px;
 }
 
-.login.btn {
+.btn {
     font-size: 15px;
-    background-color: rgb(178,223,252);
+    background-color: var(--white-blue-color);
     color : var(--white-color);
     margin-top: 8px;
     

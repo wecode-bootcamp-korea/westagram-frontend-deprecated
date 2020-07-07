@@ -6,7 +6,10 @@
     --red-color : #ff0000;
     --grey-dark-color : #909090;
     --grey-light-color : #e0e0e0;
-
+    --grey-medium-color : rgb(250,250,250);
+    --white-blue-color : rgb(178,223,252);
+    --uploadBtn-color : rgb(135,206,235);
+    --followBtn-color : rgb(0,149,246);
 
     /* Font Size */
     --font-large : 18px;
@@ -21,7 +24,7 @@
     box-sizing: border-box;
     list-style: none;
 }
-/* NAV */
+
 nav{
     width: 100%;
     height: 54px;
@@ -29,7 +32,7 @@ nav{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 .navContainer {
@@ -56,7 +59,7 @@ nav{
 .navFind {
     width: 215px;
     height: 28px;
-    background-color: rgb(250,250,250);
+    background-color: var(--grey-medium-color);
     border: 1.3px solid var(--grey-light-color);
     border-radius: 3px;
     padding : 7px;
@@ -88,9 +91,8 @@ nav{
     margin-left: 22px;
 }
 
-/* Main */
 main {
-    background-color: rgb(250,250,250);
+    background-color: var(--grey-medium-color);
 }
 
 .mainContainer {
@@ -103,7 +105,7 @@ main {
     width: 614px;
     margin-top: 80px;
     border : 1px solid var(--grey-light-color);
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 .feedHeader {
@@ -186,7 +188,7 @@ main {
 
 button {
     border: none; 
-    background-color: white;
+    background-color: var(--white-color)
     color : var(--grey-dark-color);
     font-size : var(--font-small);
 }
@@ -225,7 +227,7 @@ input:focus {
 
 .feedComment button {
     width: 30px;
-    color : rgba(135,206,235,0.8)
+    color : rgb(135,206,235)
 }
 
 .mainRight {
@@ -238,6 +240,7 @@ input:focus {
     display: flex;
     align-items: center;
 }
+
 .myProfileBox img {
     width: 56px;
     border-radius: 50%;
@@ -305,7 +308,6 @@ input:focus {
 .storyPics img {
     width: 40px;
     border-radius: 50%;
-    border-color: ;
 }
 
 .recommendationBox .storyPics .picsInfo {
@@ -323,7 +325,7 @@ input:focus {
 }
 
 .storyPics li button {
-    color : rgb(0,149,246);
+    color : var(--followBtn-color);
     font-size : var(--font-small);
     font-weight: bold;
 }

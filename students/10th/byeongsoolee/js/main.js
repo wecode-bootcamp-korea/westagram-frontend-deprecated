@@ -1,25 +1,30 @@
-const thisIsComment = document.getElementsByClassName('commentBox')[0];
-const thisIsButton = document.getElementsByClassName('commentBtn')[0];
-const thisIsReplyBox = document.getElementsByClassName('replyContent')[0];
-const thisIsMyId = document.getElementById('myId');
+const comment = document.getElementsByClassName('commentBox')[0];
+const button = document.getElementsByClassName('commentBtn')[0];
+const replyBox = document.getElementsByClassName('replyContent')[0];
+const myId = document.getElementById('myId');
 
-thisIsComment.addEventListener('keydown',function(e) {
+comment.addEventListener('keydown',function(e) {
     let commentContents = document.getElementsByClassName('commentBox')[0].value;
     let creatingDiv = document.createElement('div'); 
     if(commentContents.length !== 0 && e.keyCode === 13) {
-        thisIsReplyBox.appendChild(creatingDiv);
+        replyBox.appendChild(creatingDiv);
         creatingDiv.innerHTML = `hm_Son7 ${commentContents}`;
         document.getElementsByClassName('commentBox')[0].value = null;
-} 
+    }
+    else if (commentContents.length === 0 && e.keyCode === 13) {
+        alert("comment를 입력해주세요!")
+    }
 })
-
-thisIsButton.addEventListener('click',function() {
+button.addEventListener('click',function() {
     let commentContents = document.getElementsByClassName('commentBox')[0].value;
     let creatingDiv = document.createElement('div'); 
     if(commentContents.length !== 0) {
-        thisIsReplyBox.appendChild(creatingDiv);
+        replyBox.appendChild(creatingDiv);
         creatingDiv.innerHTML = `hm_Son7 ${commentContents}`;
         document.getElementsByClassName('commentBox')[0].value = null;
 }
+    else if (commentContents.length === 0) {
+        alert("comment를 입력해주세요!")
+    }
 })
 
