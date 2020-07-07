@@ -3,8 +3,10 @@ let countComment = document.createElement("span"); //댓글 수를 보여주는 
 let viewCommentAll = document.createElement("span"); //"모두 보기"
 let showAllContainer = document.createElement("div");
 
+let checkCommentState = true;
+
 function hideComment() {
-  if (commentContainer.length > 2) {
+  if (commentContainer.length > 2 && checkCommentState) {
     for (let i = 0; i < commentContainer.length - 2; i++) {
       //루프 안 i값의 범위를 조정해서 어떤 코멘트를 남길지 선택할 수 있음
       commentContainer[i].style.display = "none"; //댓글 가려주는 코드
@@ -20,6 +22,7 @@ function hideComment() {
 }
 
 function showCommentAll() {
+  checkCommentState = false;
   countComment.parentElement.removeChild(countComment);
   viewCommentAll.parentElement.removeChild(viewCommentAll);
   for (let i = 0; i < commentContainer.length - 2; i++) {
