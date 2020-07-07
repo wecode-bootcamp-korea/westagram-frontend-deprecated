@@ -353,14 +353,18 @@ header {
   vertical-align: baseline;
 }
 
-.button_more {
+.more_comment {
+  font-size: 13px;
+  font-weight: 600;
+}
+/* .button_more {
   background: 0 0;
   border: 0;
   cursor: pointer;
   line-height: inherit;
   margin: 0;
   padding: 0;
-}
+} */
 
 .div_time_ago {
   display: block;
