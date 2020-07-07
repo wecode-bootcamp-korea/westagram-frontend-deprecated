@@ -1,15 +1,15 @@
-body {
+  body {
     margin: 0px;
   }
 
-nav {
+  nav {
     border-bottom : 1px solid white; 
     padding : 30px;
     display: flex;
     justify-content: center;
     position: fixed;
-    width: 100%;
-    
+    top: 0;
+    width: 100%;    
     background-color: white;
   }
   
@@ -19,7 +19,7 @@ nav {
      justify-content: center;
   }
   
-  #browser {
+  .browser {
    background-color: #f8f7fa;
   }
   
@@ -39,10 +39,8 @@ nav {
     }
   
   input {
-      background-image : url('img/searchreal.png'); 
-      background-position:top right; 
-      background-repeat:no-repeat;
-      }
+      background: url('img/searcharea1.png') no-repeat top right;      
+  }
 
 
   .imgWecode {
@@ -71,7 +69,6 @@ nav {
     background-color: white;
     display: flex;
     justify-content: flex-end;
-   /* wecode외 좋아합니다 */
   }
   
 
@@ -102,10 +99,8 @@ nav {
     width: 8%;
     height: 4%;
     margin: 10px 15px 7px 8px;
-  } /* wecode님 외 좋아합니다 마크 */
+  }
 
-
-  /*점 3개*/
   .circle2 {
     border-radius: 50%;
     width: 50px;
@@ -121,8 +116,7 @@ nav {
     margin-right: 15px;
     margin-top: 0px;
     margin-left: 65%;
-  }
-  /*점 3개*/
+  } 
 
   .story-right{
       margin-left : 700px;
@@ -220,8 +214,7 @@ nav {
     align-items: center;
     padding: 10px;
     background-color: white;
-    width: 97%;
-   
+    width: 97%;   
   }
   
   .bind {
@@ -241,9 +234,8 @@ nav {
     left: 2px;
     margin-top: 20px;
     margin-left: 60%;
-    float: right;
-}
   }
+
   .wordBlack {
     margin-right: 20px;
   }
@@ -251,5 +243,3 @@ nav {
   .white {
     background-color: white;
   }
-  
-  
