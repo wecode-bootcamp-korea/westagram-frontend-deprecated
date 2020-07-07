@@ -15,19 +15,20 @@
     </div>
       <div class = "login-form">
         <div>
-          <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" style="width:350px;">
+          <input id="userId" class="input" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" style="width:350px;">
         </div>
         <div>
-          <input type="text" placeholder="비밀번호" style="width:350px;">
+          <input id="userPw" class="input" type="password" placeholder="비밀번호" style="width:350px;">
         </div>
         <div>
-          <button class="button">로그인
+          <button id="logIn" type="submit" style="width: 350px" class="button">로그인
           </button>
         </div>                                                                                                   
-        <div class="forgetpw">
+        <div id="forget" class="forgetpw">
           <a href="https://www.instagram.com/accounts/password/reset/">비밀번호를 잊으셨나요?
         </a>
-      </div>         
+      </div>
+       <script src="js/login.js"></script>
     </div>
   </body>
 </html>
