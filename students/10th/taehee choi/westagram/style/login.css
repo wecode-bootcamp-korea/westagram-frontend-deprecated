@@ -9,9 +9,9 @@
     border: 1px solid lightgrey;
     border-radius: 2px;
     padding: 10px 25px;
+    margin: 20px auto;
     width: 350px;
     height: 450px;
-    margin: 20px auto;
 }
 
 .logo {
@@ -23,8 +23,8 @@
 .login_id , .login_pw {
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 4px;
     border: 1px solid lightgray;
+    border-radius: 4px;
     background-color:ivory;
     font-size: 15px;
 }
