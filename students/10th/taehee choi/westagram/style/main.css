@@ -19,14 +19,14 @@ nav {
     width: 200px;
 }
 
-img#insta_logo {
+.insta_logo {
     width: 103px;
     height: 29px;
     border-left: 1.5px solid gray;
     padding-left: 10px;
 }
 
-#icon_camera {
+.icon_camera {
     width: 22px;
     height: 22px;
     margin-right: 10px;
