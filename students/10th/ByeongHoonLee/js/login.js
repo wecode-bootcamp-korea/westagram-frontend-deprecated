@@ -8,14 +8,14 @@ idPwForm.addEventListener("keyup", function () {
   let inputPwValue = inputPw.value;
   let inputIdValue = inputId.value;
 
-  inputIdValue !== "" && inputPwValue !== "" ? loginButton.style.backgroundColor = "#0095f6"
-    : loginButton.style.backgroundColor = "rgba(0, 149, 246, 0.3)";
-}
-//   if (inputIdValue !== "" && inputPwValue !== "") {
-//     loginButton.style.backgroundColor = "#0095f6";//어두운
-//   } else {
-//     loginButton.style.backgroundColor = "rgba(0, 149, 246, 0.3)";//밝은
-//   }
+  loginButton.style.backgroundColor = (inputIdValue && inputPwValue) ?
+    "#0095f6" : "rgba(0, 149, 246, 0.3)";
+});
+  // if (inputIdValue && inputPwValue) {
+  //   loginButton.style.backgroundColor = "#0095f6";//어두운
+  // } else {
+  //   loginButton.style.backgroundColor = "rgba(0, 149, 246, 0.3)";//밝은
+  // }
 // });
 
 
