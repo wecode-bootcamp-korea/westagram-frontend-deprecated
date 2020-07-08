@@ -17,6 +17,17 @@ nav {
     border-right: 1px solid black;
 }
 
+.logo_mini_img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo_bar_img {
+    width: 150px;
+    height: 50px;
+}
+
+
 .logo_bar {
     padding-left: 8px;
 }
@@ -26,15 +37,9 @@ nav {
     height: 30px;
     width: 300px;
     text-align: center;
-    /* position: relative; */
 }
 
-/* .point-1 {
-    width: 40px;
-    height: 20px;
-    left: 530px;
-    position: absolute;
-} */
+
 
 .menu {
     display: flex;
@@ -46,18 +51,19 @@ nav {
 }
 
 .padding_box {
-    padding-top: 30px;
-    margin: 0 87.5px;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    margin: 0 87.5px;
+    padding-top: 30px;
     background-color: #fafafa;
 }
 
 .main {
     width: 600px;
     height: 10000px;
-    border: 5px solid black; /*수정할 요소 있음.*/
+    border: hidden;
     margin-right: 28px;
+
 }
 
 .button_bar {
@@ -66,7 +72,6 @@ nav {
     background-color: #ffffff;
     margin-bottom: 24px;
     padding: 16px 0;
-    box-sizing: border-box;
     border: 1px solid #dbdbdb;
 }
 
@@ -117,15 +122,6 @@ nav {
     flex-direction: column;
     justify-content: ;
 }
-/*  왜인지 작동안함...
-.contents {
-    width: 600px;
-    height: 600px;
-} */
-
-
-
-
 
 .section_top {
     width: 600px;
@@ -196,6 +192,11 @@ nav {
     background-color: rgba(0,0,0,0); 
     color: skyblue; 
     padding: 5px;
+}
+
+.img_size {
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -303,7 +304,6 @@ nav {
     width: 55px;
     height: 14px;
     font-size: 12px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: -2px 0 -3px;
     color: #262626;
     font-weight: bold;

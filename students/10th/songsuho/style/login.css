@@ -46,6 +46,17 @@ body {
     margin: 5px 0;
 }
 
+
+.idInput {
+    width: 260px;
+}
+
+.pwInput {
+    width: 260px;
+}
+
+
+
 button {
     width: 268px;
     height: 30px;
