@@ -179,7 +179,7 @@ nav {
     box-sizing: border-box;
 }
 
-textarea {
+.comment_Input {
     width: 540px;
     height: 18px;
     border-style: none;
@@ -187,7 +187,7 @@ textarea {
     background-color: #fafafa;
 }
 
-.comment_push {
+.comment_Push {
     width: 50px;
     height: 35px;
     padding: 0;
