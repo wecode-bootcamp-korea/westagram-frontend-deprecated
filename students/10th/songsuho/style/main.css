@@ -50,6 +50,12 @@ nav {
     padding-top: 30px;
 }
 
+.img_size {
+    width: 30px;
+    height: 30px;
+}
+
+/*=================================================nav =================================*/
 .padding_box {
     display: flex;
     justify-content: center;
@@ -194,10 +200,6 @@ nav {
     padding: 5px;
 }
 
-.img_size {
-    width: 30px;
-    height: 30px;
-}
 
 
 /* =======================================메인 끝 ====================================*/
