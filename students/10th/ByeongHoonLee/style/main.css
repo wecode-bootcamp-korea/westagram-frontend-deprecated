@@ -1,56 +1,56 @@
-*{
+* {
   margin: 0;
 }
 body {
   /* background-color: #f3f0f0; */
 }
 
-nav { 
-  display : flex;
+nav {
+  display: flex;
   position: fixed;
-  top : 0;
+  top: 0;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   border-bottom: solid 0.1px #dbdbdb;
-  width : 100%;
+  width: 100%;
   max-height: 54px;
-  height : 100%;
+  height: 100%;
   background-color: white;
 }
 
 .all_icons {
-  display : flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  height : 54px;
+  height: 54px;
   max-width: 975px;
-  width :100%;
-  padding : 0 20px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .all_icons div {
   width: 300px;
 }
 
-.text_logo img{
-  width : 103px;
-  height : 29px;
+.text_logo img {
+  width: 103px;
+  height: 29px;
 }
 
 .input_search_div {
-  display : flex;
-  align-items : center;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  width : 215px;
-  height : 28px;
+  width: 215px;
+  height: 28px;
 }
 
 .input_search {
-  width : 199px;
-  height : 18px;
+  width: 199px;
+  height: 18px;
   text-align: center;
-  border : solid 0.1px #dbdbdb;
+  border: solid 0.1px #dbdbdb;
   border-radius: 2.5px;
 }
 
@@ -59,11 +59,12 @@ nav {
   text-indent: 20px;
 }
 
-.icons ul li img,svg{
-  display : flex;
+.icons ul li img,
+svg {
+  display: flex;
   justify-content: space-between;
-  width : 22px;
-  height : 22px;
+  width: 22px;
+  height: 22px;
 }
 
 .icons ul li img {
@@ -71,7 +72,7 @@ nav {
 }
 
 .icons ul {
-  display : flex;
+  display: flex;
   /* flex-flow: row; */
   list-style: none;
   justify-content: flex-end;
@@ -79,31 +80,31 @@ nav {
 }
 
 .icons li {
-  margin-left : 25px;
+  margin-left: 25px;
 }
 
 main {
   padding-top: 84px;
-  display : flex;
+  display: flex;
   flex-direction: column;
-  width : 100%;
+  width: 100%;
   background-color: #f3f0f0;
 }
 
 .section_main {
   display: flex;
   flex-direction: column;
- justify-content: center;
- flex-grow : 1;
- 
- width : 100%;
+  justify-content: center;
+  flex-grow: 1;
 
- max-width: 614px;
-  margin : 0 auto;
+  width: 100%;
+
+  max-width: 614px;
+  margin: 0 auto;
   /* padding-top: 30px; */
 }
 
-.wrap_story_feeds{
+.wrap_story_feeds {
   float: left;
   margin-right: 28px;
   max-width: 614px;
@@ -111,37 +112,36 @@ main {
 }
 
 /* story 라인 */
-.wrap_story_border { 
-  display : block ;
-  border : solid 1px #dbdbdb;
+.wrap_story_border {
+  display: block;
+  border: solid 1px #dbdbdb;
   border-radius: 3px;
-  margin : 0px 0px 24px;
-  padding : 16px 0px;
+  margin: 0px 0px 24px;
+  padding: 16px 0px;
   max-width: 614px;
-  width : 614px;
-  height : 118px;
+  width: 614px;
+  height: 118px;
   background-color: white;
 }
 
 .wrap_story_images_box {
-  display : flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 614px;
-  width:100%;
-  max-height : 118px;
-  height : 100%;
-  
+  width: 100%;
+  max-height: 118px;
+  height: 100%;
 }
 
 .story_icons {
-  display : flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding : 0px 4px;
+  padding: 0px 4px;
   max-width: 80px;
   height: 122px;
   width: 80px;
@@ -149,7 +149,7 @@ main {
 }
 
 .story_icons ul {
-  padding : 0;
+  padding: 0;
 }
 
 .story_icons li {
@@ -157,7 +157,7 @@ main {
 }
 
 .story_icons img {
-  width:56px;
+  width: 56px;
   height: 56px;
   border-radius: 50%;
 }
@@ -169,9 +169,9 @@ main {
 article {
   max-width: 614px;
   max-height: 847px;
-  width:614px;
+  width: 614px;
   height: 847px;
-  border : solid 1px #dbdbdb;
+  border: solid 1px #dbdbdb;
   border-bottom: none;
   border-radius: 3px;
   margin-bottom: 60px;
@@ -179,30 +179,30 @@ article {
 }
 
 header {
-  display : flex;
-  flex-direction:col ;
+  display: flex;
+  flex-direction: col;
   align-items: center;
-  padding : 16px;
-  max-width : 582px;
+  padding: 16px;
+  max-width: 582px;
   max-height: 27px;
-  width : 582px;
-  height : 27px;
+  width: 582px;
+  height: 27px;
 }
 
 .header_img {
-  max-width : 32px;
+  max-width: 32px;
   max-height: 32px;
   width: 32px;
   height: 32px;
 }
 
-.header_img img{
- max-width : 32px;
- max-height: 32px;
- border-radius: 50%;
+.header_img img {
+  max-width: 32px;
+  max-height: 32px;
+  border-radius: 50%;
 }
 
-.id_place_button{
+.id_place_button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -217,9 +217,8 @@ header {
   width: 536px;
   height: 41px;
   margin-left: 14px;
-  font-size: 15.13px; 
+  font-size: 15.13px;
 }
-
 
 .feed_img {
   width: 614px;
@@ -228,7 +227,7 @@ header {
   max-height: 614px;
 }
 
-.feed_img img{
+.feed_img img {
   width: 614px;
   height: 614px;
   max-width: 614px;
@@ -236,48 +235,48 @@ header {
 }
 
 .bottom_box {
-  display : flex;
+  display: flex;
   flex-direction: column;
-  width : 614px;
+  width: 614px;
   height: 155px;
-  border : solid 1px #dbdbdb;
+  border: solid 1px #dbdbdb;
 }
 
 .wrap_like_msg_icons {
   display: flex;
   flex-direction: row;
-  max-width : 582px;
+  max-width: 582px;
   max-height: 40px;
   width: 582px;
   height: 40px;
-  padding : 0px 16px;
+  padding: 0px 16px;
 }
 
 .wrap_like_msg_icons button {
-  display : flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width:40px;
+  width: 40px;
   height: 40px;
-  padding : 8px;
-  border : 0;
-  background : 0 0;
+  padding: 8px;
+  border: 0;
+  background: 0 0;
 }
 
 .wrap_like_msg_icons svg {
-  width : 24px;
-  height : 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .span_flag {
-  margin-left : auto ; 
-  margin-right : -10px;
+  margin-left: auto;
+  margin-right: -10px;
 }
 
 .section_like_count {
-  width : 582px;
+  width: 582px;
   height: 18px;
-  padding : 0px 16px;
+  padding: 0px 16px;
   margin-bottom: 8px;
 }
 
@@ -285,12 +284,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width : 582px;
+  width: 582px;
   height: 18px;
 }
 
 .like_id {
-  display : inline;
+  display: inline;
   position: relative;
 }
 
@@ -299,35 +298,35 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-left: 5px;
-  margin-left:-5px;
+  margin-left: -5px;
 }
 
 .like_others {
-  display :inline;
-  padding :0;
-  position : relative;
+  display: inline;
+  padding: 0;
+  position: relative;
   border: 0;
   font-weight: 600;
   text-align: center;
   text-overflow: ellipsis;
   text-transform: inherit;
-  width : auto;
+  width: auto;
   user-select: none;
   background: 0 0;
 }
 
-.div_wrap_screen_comment{ 
-  display : flex;
+.div_wrap_screen_comment {
+  display: flex;
   justify-content: flex-start;
-  padding : 0px 16px;
+  padding: 0px 16px;
   flex: 0 0 auto;
-  width : 582px;
+  width: 582px;
   height: 40px;
 }
 
 .div_screen_comment {
   margin-bottom: 4px;
-  width : 582px;
+  width: 582px;
   height: 36px;
 }
 
@@ -374,25 +373,25 @@ header {
 
 .div_time_ago time {
   font-size: 10px;
-  font-weight:400;
-  color:rgb(142, 142, 142);
-  letter-spacing: .2px;
+  font-weight: 400;
+  color: rgb(142, 142, 142);
+  letter-spacing: 0.2px;
 }
 
 .section_comment {
   display: flex;
   align-items: center;
-  border : solid 1px #dbdbdb;
-  width : 582px;
+  border: solid 1px #dbdbdb;
+  width: 582px;
   height: 55px;
-  padding :0px 16px;
+  padding: 0px 16px;
   margin-top: 4px;
   border-top: 1px;
   background-color: white;
 }
 
 .div_comment {
-  width : 582px;
+  width: 582px;
   height: 18px;
 }
 
@@ -407,54 +406,25 @@ header {
   flex-grow: 1;
   font-size: inherit;
   outline: 0;
-  padding:0;
-  resize:none;
+  padding: 0;
+  resize: none;
   max-height: 80px;
   height: 18px;
   background: 0 0;
   border: 0;
-} 
+}
 
 .button_upload_comment {
-  position :relative;
-  opacity: .3;
+  position: relative;
+  opacity: 0.3;
   pointer-events: none;
-  color: rgba(var(--d69,0,149,246),1);
-  border : 0;
-  padding  : 0;
+  color: rgba(var(--d69, 0, 149, 246), 1);
+  border: 0;
+  padding: 0;
   background: 0 0;
   font-weight: 600;
-  font-size : 14px;
+  font-size: 14px;
   line-height: 18px;
-  text-align: center;  
-  width : auto;
-}
-
-.absolute_main_right {
-  display : flex;
-  flex-direction: column;
-  
-  max-width: 293px;
-  height: 0;
-  right: 0;
-  margin:0;
-  padding:0;
-  width: 100%;
-}
-
-.wrap_main_mainRight {
-  display: flex;
-  justify-content: center;
-}
-.main_right {
-  position: fixed;
-  left:10;
-  top:88px;
-  height: 100vh;
-  margin-bottom: 30px;
-  padding:0;
-  max-width:293px;
-  width:100%;
-  right:0;
-  background-color: violet;
+  text-align: center;
+  width: auto;
 }

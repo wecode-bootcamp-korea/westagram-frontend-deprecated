@@ -14,25 +14,24 @@ main {
 }
 
 .login_screen {
-  border:0.5px solid #dbdbdb;
+  border: 0.5px solid #dbdbdb;
   background-color: white;
-  width : 350px;
-  height : 380px;
+  width: 350px;
+  height: 380px;
 }
 
 .logo_img {
-  margin-top : 20px;
-  display : flex;
+  margin-top: 20px;
+  display: flex;
   justify-content: center;
 }
 
 .id_pw_form {
-  display : flex;
-  /* flex-flow : wrap; */
+  display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content : center;
-  margin : 8px 0px;
+  justify-content: center;
+  margin: 8px 0px;
 }
 
 .id_pw_form input {
@@ -43,40 +42,35 @@ main {
 
 .id_input {
   margin-top: 30px;
-  margin-bottom : 5px;
+  margin-bottom: 5px;
 }
 
 input {
-  display : flex;
-  flex-flow : wrap;
+  display: flex;
+  flex-flow: wrap;
   justify-content: center;
-  width : 258px;
+  width: 258px;
   height: 36px;
-  border : 0;
+  border: 0;
 }
 
 button {
-  width : 268px;
+  width: 268px;
   height: 30px;
-  border : 0;
+  border: 0;
   background-color: rgba(0, 149, 246, 0.3);
-  color : #fff;
+  color: #fff;
 }
 
-/* 공부 :focus  */
-/* 로그인 button 눌렀을때 반응 {
-  outline:none; = 버튼눌렀을때 테두리에 색깔 생기는거 삭제 */
 button:focus {
-  outline:none;
+  outline: none;
 }
 
 .forgot_pw {
-  display : flex;
+  display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 120px;
-  color : rgb(0, 55, 107);
+  color: rgb(0, 55, 107);
   font-size: 12px;
 }
-
-
