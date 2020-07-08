@@ -1,0 +1,534 @@
+body {
+  position: relative;
+}
+
+nav {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.nav{
+  width: 935px;
+  min-width: 650px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav__logo {
+  width: 150px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__logo .insta__logo {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+nav .nav__search-bar {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav__search-box {
+  position: relative;
+}
+
+.nav__search-bar input {
+  width: 215px;
+  height: 30px;
+  padding: 0 25px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  text-align: center;
+  outline: none;
+}
+
+.nav__search-bar input::placeholder {
+  color: rgba(172, 164, 164, 0.938);
+}
+
+.nav__search-bar input:focus {
+  text-align: start;
+}
+
+.nav__search-bar input:focus ~ .searchIcon-center {
+  visibility: hidden;
+}
+
+.nav__search-bar input:focus ~ .searchIcon-focus,
+.nav__search-bar input:focus ~ .searchIcon-cancel {
+  visibility: visible;
+}
+
+.nav__search-bar i {
+  font-size: 12px;
+  color: rgb(201, 194, 194);
+}
+
+.searchIcon-center {
+  position: absolute;
+  top: 9px;
+  left: 80px;
+}
+
+.searchIcon-focus {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  visibility: hidden;
+}
+
+.searchIcon-cancel {
+  position: absolute;
+  right: 8px;
+  top: 9px;
+  color: #C7C7C7;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.nav .nav__icons {
+  flex: 1;
+}
+
+.nav__icons ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__icons li:not(:first-child) {
+  margin-left: 22px;
+}
+
+.nav__icon .user__img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.nav__icons .nav__icon svg{
+  width: 22px;
+  height: 22px;
+}
+
+.search-modal {
+  width: 241px;
+  max-height: 362px;
+  position: absolute;
+  top: 55px;
+  right: 0 auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  visibility: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+.search-modal li {
+  width: 100%;
+  height: 67px;
+  padding: 8px 14px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.search-modal li:not(:last-child) {
+  border-bottom: 1px solid #dbdbdb;;
+}
+
+.search-modal li:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.search-modal .modal__img-box {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+.search-modal .modal__text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.search-modal img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.search-modal .text-box__user-name {
+  margin-top: 5px;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.main {
+  width: 935px;
+  margin-top: 50px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+}
+
+.main .main__left {
+  width: 614px;
+}
+
+.main__left .stories {
+  height: 115px;
+  padding: 16px 0px 16px 15px;
+  margin-bottom: 24px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.stories::-webkit-scrollbar { 
+  display: none; 
+}
+
+
+.stories .stories__list {
+  display: flex;
+}
+
+.stories__list .story {
+  width: 70px;
+  height: 80px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story .story__mark {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.stories .mark__line {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #cb368f, #f99f5b);
+}
+
+.stories .user__img {
+  width: 62px;
+  height: 62px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.story .user__id {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.feed {
+  width: 614px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.feed .feed__header {
+  height: 60px;
+  padding: 15px;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed__header .header__user {
+  display: flex;
+  align-items: center;
+}
+
+.feed__header .header__user img {
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+  border-radius: 50%;
+}
+
+.user__img {
+  border: 1px solid #dbdbdb;
+}
+
+.user__id {
+  font-weight: 600;
+}
+
+.feed__header .header__icon img {
+  height: 20px;
+  width: 20px;
+}
+
+.feed .feed__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed__main .main__img {
+  width: 613px;
+  height: 614px;
+}
+
+.feed__main .main__text-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.feed__main .main__text-box span:not(.about__like-user) {
+  margin-bottom: 5px;
+}
+
+.main__text-box .text-box__interaction {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-box__interaction svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.text-box__interaction svg:last-child {
+  margin-right: 0;
+}
+
+.main__text-box .text-box__like-preview {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.text-box__like-preview img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.main__text-box .text-box__text-preview {
+  display: flex;
+}
+
+.text-preview__contents,
+.texts__contents {
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.text-box__comments .comment {
+  margin: 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment:last-child {
+  margin-bottom: 5px;
+}
+
+.comment .comment__texts {
+  display: flex;
+  align-items: center;
+}
+
+.comment__heart-btn i {
+  cursor: pointer;
+}
+
+.text-box__comments .comment__time {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.feed .feed__comment-writing {
+  height: 56px;
+  padding: 20px 16px;
+  margin-top: 10px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.feed__comment-writing .writing__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed__comment-writing input {
+  width: 557px;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+}
+
+.writing__form button {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  color: #cce6fd;
+  padding: 0;
+}
+
+.main .main__right {
+  width: 295px;
+  position: absolute;
+  right: 0;
+}
+
+.main__right .main__right-box {
+  position: fixed;
+  width: 300px;
+}
+
+.main__right .user-information {
+  width: 300px;
+  height: 100px;
+  padding: 20px 5px;
+  display: flex;
+}
+
+.user-information img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-information .user__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user__name {
+  margin-top: 8px;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.main__right .recommends {
+  width: 290px;
+  height: 255px;
+  margin-bottom: 15px;
+  border: none;
+}
+
+.recommends .recommends__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommends__header .title {
+  font-weight: 600;
+  opacity: 0.4;
+}
+
+.recommends__header .viewAll {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.recommends__list .user__list {
+  margin-top: 10px;
+}
+
+.recommends__list .user__list li {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommends__list .user__list li:first-child {
+  margin-top: 15px;
+}
+
+.user__about .user__id {
+  margin-bottom: 5px;
+}
+
+.user__list .recommends__user {
+  display: flex;
+}
+
+.recommends__user .user__img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.recommends__user .user__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.user__about .user__state {
+  opacity: 0.5;
+}
+
+.user__list .follow {
+  font-weight: 600;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.main__right .aside__footer {
+  font-size: 11px;
+  opacity: 0.3;
+}
+
+.link__list ul {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.link__list li {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}

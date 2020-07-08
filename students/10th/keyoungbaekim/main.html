@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>my westagram</title>
+    <link href="style/common.css?ver=1" rel="stylesheet" type="text/css" />
+    <link href="style/main.css?ver=1" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/0e0e369926.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navContainer">
+        <div class="navLogo">
+          <img class="navLogoImg" alt="text logo" src="img/logo_text.png" />
+        </div>
+        <label class="navSearch">
+          <div class="searchIconContainer"></div>
+          <input
+            class="fas searchInput"
+            type="text"
+            onfocus="focusNavSearch()"
+            placeholder="&#xf002; 검색"
+          />
+        </label>
+        <div class="navMenuIcon">
+          <div class="navIconImg">
+            <svg class="menu__svg" viewBox="0 0 48 48">
+              <path
+                d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"
+                id="a"
+              ></path>
+              <path
+                d="M45.3 48H30c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2-4.6-4.6-4.6s-4.6 2-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.5-.6 2.1 0l21.5 21.5c.4.4.6 1.1.3 1.6 0 .1-.1.1-.1.2v22.8c.1.8-.6 1.5-1.4 1.5z m-13.8-3h12.3V23.4L24 3.6l-20 20V45h12.3V34.2c0-4.3 3.3-7.6 7.6-7.6s7.6 3.3 7.6 7.6V45z"
+                id="b"
+              ></path>
+            </svg>
+          </div>
+          <div class="navIconImg">
+            <svg
+              aria-label="Direct"
+              class="_8-yf5"
+              fill="#262626"
+              height="22"
+              viewBox="0 0 48 48"
+              width="22"
+            >
+              <path
+                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+              ></path>
+            </svg>
+          </div>
+          <div class="navIconImg">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+              alt="탐색"
+            />
+          </div>
+          <div class="navIconImg">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              alt="하트"
+            />
+          </div>
+          <div class="navIconImg">
+            <img
+              alt="마이 페이지"
+              src="https://instagram.fssa18-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fssa18-1.fna.fbcdn.net&_nc_ohc=VuHrdWdZLhYAX-Pkyf2&oh=0291c0ab19bde77329c8a4f2196b31b7&oe=5F237E8F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="mainContainer">
+        <article class="feeds">
+          <div class="story">
+            <ul class="storyUl">
+              <li class="storyList">
+                <div class="storyCircleBorder">
+                  <div class="storyImgContainer">
+                    <img
+                      alt="suuu___hyeon님의 프로필 사진"
+                      class="storyImg"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/105963957_1393173017539178_4111915575513971530_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=A3RgJBYYg-UAX9mHHo9&amp;oh=485fb072355614a7f22c5ed007a5de0c&amp;oe=5F28A2CC"
+                    />
+                  </div>
+                </div>
+                <p class="storyListName">suuu_hyeon</p>
+              </li>
+              <li class="storyList">
+                <div class="storyCircleBorder">
+                  <div class="storyImgContainer">
+                    <img
+                      alt="chriseriksen8님의 프로필 사진"
+                      class="storyImg"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/83582979_2480329358884950_3387355197851303936_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=IAepNaEonk0AX_57fZF&amp;oh=4ddf0331ec83e1ec270a028ef09ad8c1&amp;oe=5F288F5B"
+                    />
+                  </div>
+                </div>
+                <p class="storyListName">chriseriksen8</p>
+              </li>
+              <li class="storyList">
+                <div class="storyCircleBorder">
+                  <div class="storyImgContainer">
+                    <img
+                      alt="iamzlatanibrahimovic님의 프로필 사진"
+                      class="storyImg"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/78854221_2560721244149785_8273416642113830912_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=uvx9llc42MEAX9fiQTf&amp;oh=404c31b9ac4e244ec71e0b740b7301cf&amp;oe=5F266A8C"
+                    />
+                  </div>
+                </div>
+                <p class="storyListName">iamzlatanib...</p>
+              </li>
+              <li class="storyList">
+                <div class="storyCircleBorder">
+                  <div class="storyImgContainer">
+                    <img
+                      alt="d_degeaofficial님의 프로필 사진"
+                      class="storyImg"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/67595298_482797968964751_2859843668129349632_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=Z6YrdDNt88AAX_uV8QX&amp;oh=5c4d6b5cac880b1bcb8fa691a791f3de&amp;oe=5F26FE63"
+                    />
+                  </div>
+                </div>
+                <p class="storyListName">d_degeaoffi...</p>
+              </li>
+              <li class="storyList">
+                <div class="storyCircleBorder">
+                  <div class="storyImgContainer">
+                    <img
+                      alt="suckyun__님의 프로필 사진"
+                      class="storyImg"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/102697334_259838728663931_7894723640914550925_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=CCEzdC4IeYkAX9peEqC&amp;oh=5885509e330aa79a732611c5043f12ed&amp;oe=5F277BCB"
+                    />
+                  </div>
+                </div>
+                <p class="storyListName">suckun__</p>
+              </li>
+            </ul>
+          </div>
+          <article class="feedsBorder">
+            <section class="feedsHeader">
+              <div class="profileImgConatainer">
+                <img
+                  class="feedsProfileImg"
+                  alt="profileImg"
+                  src="img/tottenham (1).png"
+                />
+              </div>
+              <div class="feedsProfileTitle">
+                <a>spursoffical</a>
+                <a>London, United Kingdom</a>
+              </div>
+              <div class="dotImgConatainer">
+                <img
+                  alt="dot"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+                />
+              </div>
+            </section>
+            <section class="feedsImg">
+              <img alt="feeds img" src="img/totten.PNG" />
+            </section>
+            <section class="feedsComment">
+              <div class="commentBtnList">
+                <div class="commentBtnContatiner">
+                  <button class="commentIconBtn">
+                    <img
+                      id="heartImg"
+                      alt="하트"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                    />
+                  </button>
+                </div>
+                <div class="commentBtnContatiner">
+                  <button class="commentIconBtn">
+                    <img
+                      alt="말풍선"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                    />
+                  </button>
+                </div>
+                <div class="commentBtnContatiner">
+                  <button class="commentIconBtn">
+                    <img
+                      alt="공유"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                    />
+                  </button>
+                </div>
+                <div class="bookmark">
+                  <button class="commentIconBtn">
+                    <img
+                      alt="북마크"
+                      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="listComments">
+                <h4 class="likeNumber"><strong>좋아요 133,165개</strong></h4>
+                <p class="normalText">
+                  <strong>spursoffical</strong> 🏴󠁧󠁢󠁥󠁮󠁧󠁿 𝗛𝗞𝟭𝟬 x 𝗦𝗕𝟮𝟯 🇳🇱
+                </p>
+                <p class="silverText">댓글 108개 모두 보기</p>
+                <p class="normalText">
+                  <strong>giffertliwang </strong>@followforfootballpredictions
+                  don't do that, don't give me hope
+                </p>
+                <p class="normalText"><strong>jeedory </strong>🌪🌪</p>
+                <div class="myCommentList"></div>
+              </div>
+            </section>
+            <section class="writeComment">
+              <input
+                class="commentInput"
+                name="inputWriteComment"
+                type="text"
+                placeholder="댓글 달기..."
+              />
+              <button class="commentBtn" name="inputSubmitBtn" type="submit">
+                게시
+              </button>
+            </section>
+          </article>
+        </article>
+        <div class="fixedContainer">
+          <aside class="asideFixed">
+            <div class="profileRow">
+              <div class="imgRound">
+                <img
+                  class="profileImg"
+                  alt="profileImage"
+                  src="https://instagram.fupg5-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fupg5-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=DIgFI0CojBoAX8ktimW&oh=b6b9709dc6b44c69d7c4cfb6ca38d9c7&oe=5F27730F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+                />
+              </div>
+              <div class="profileColumn">
+                <p class="profileNickname">rudqo_723</p>
+                <p class="profileNickname">김경배</p>
+              </div>
+            </div>
+            <div class="recommendationContainer">
+              <p class="recommendationTitle">회원님을 위한 추천</p>
+              <button class="recommendationBtn">모두 보기</button>
+            </div>
+            <div class="followContainer">
+              <div class="followMemberContainer">
+                <div class="roundImg">
+                  <img
+                    alt="byunginsta님의 프로필 사진"
+                    class="_6q-tv"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/27574121_174383499843652_3342958743682809856_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=v8nsX3ASsykAX_5eOts&amp;oh=97bfb51ed5ae073125af406a01187363&amp;oe=5F23D84A"
+                  />
+                </div>
+                <div class="followMemberName">
+                  <a>byunginsta</a>
+                  <p class="grayText">회원님을 팔로우합니다</p>
+                </div>
+                <div class="followBtnContainer">
+                  <button class="followBtn">팔로우</button>
+                </div>
+              </div>
+              <div class="followMemberContainer">
+                <div class="roundImg">
+                  <img
+                    alt="hy_jmj님의 프로필 사진"
+                    class="_6q-tv"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/29738812_782249245298923_5274794755220307968_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=mUZbJVAuqTAAX8gLELC&amp;oh=52e17e14b99c03684ddc0783cc9781bc&amp;oe=5F23CE9D"
+                  />
+                </div>
+                <div class="followMemberName">
+                  <a>hy_jmj</a>
+                  <p class="grayText">회원님을 팔로우합니다</p>
+                </div>
+                <div class="followBtnContainer">
+                  <button class="followBtn">팔로우</button>
+                </div>
+              </div>
+              <div class="followMemberContainer">
+                <div class="roundImg">
+                  <img
+                    alt="yongbum_93님의 프로필 사진"
+                    class="_6q-tv"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/84419607_1079291175752528_2997473120580796416_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=S664Mm7-ALgAX-GZjjh&amp;oh=eb98edeef9021b8941b061c7875fbb53&amp;oe=5F250309"
+                  />
+                </div>
+                <div class="followMemberName">
+                  <a>yongbum_93</a>
+                  <p class="grayText">회원님을 팔로우합니다</p>
+                </div>
+                <div class="followBtnContainer">
+                  <button class="followBtn">팔로우</button>
+                </div>
+              </div>
+            </div>
+            <div class="followMemberName">
+              <p class="grayText">소개 도움말 홍보 센터 API 채용 정보</p>
+              <p class="grayText">
+                개인정보처리방침 약관 위치 인기 계정 해시태그 언어
+              </p>
+              <br />
+              <p class="grayText">© 2020 INSTAGRAM FROM FACEBOOK</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

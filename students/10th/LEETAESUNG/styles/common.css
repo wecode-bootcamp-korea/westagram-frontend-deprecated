@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.font {
+    font-size: 14px;
+    color: #262626;
+}
+
+.mainBold {
+    font-weight: 900;
+}
+
+.subBold {
+    font-weight: 600;
+}
+
+.subFont {
+    font-size: 12px;
+    color: #262626;
+}
+
+.likePeopleFont {
+    margin-left: -5px;
+    font-size: 14px;
+    color: #262626;
+}
+
+.mainFont {
+    font-size: 14px;
+    color: #8E8E8E;
+}
+
+.mainSubFont {
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.followButton{
+    font-size: 12px;
+    font-weight: 600;
+    color: #0095f6;
+}
+
+Button:hover {
+    cursor: pointer;
+}
