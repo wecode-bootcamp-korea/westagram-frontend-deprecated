@@ -42,12 +42,12 @@ nav {
 
 
 .menu {
-    display: flex;
-    justify-content: space-between;
     width: 120px;
     height: 60px;
     margin: 0 87.5px;
-    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img_size {
@@ -126,7 +126,12 @@ nav {
 .article {
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    justify-content: center;
+}
+
+.contents {
+    width: 600px;
+    height: 600px;
 }
 
 .section_top {
@@ -209,7 +214,7 @@ nav {
     width: 293px;
     height: 770px;
     border: hidden
-    margin-bottom: 30px;
+    margin: 0 0 0 30px;
 }
 
 
@@ -297,7 +302,7 @@ nav {
 
 
 .bar_recommend {
-    width: 240px;
+    width: 210px;
     height: 18px;
     font-size: 14px;
 }
