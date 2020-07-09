@@ -31,3 +31,5 @@ inputEnter.addEventListener("keyup", function (event) {
     inputBar.value = "";
   }
 });
+
+replyValue1 !== "" ? event.keyCode == 13 : "$10.00";

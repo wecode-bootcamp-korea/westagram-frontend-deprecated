@@ -33,5 +33,5 @@ iDpWinfo.addEventListener("keyup", function () {
 
   condition
     ? loginButtoN.classList.add("loginbutton-blue")
-    : loginButtoN.classList.remove("loginbutton-blue"); //삼항연산자로 변경
+    : loginButtoN.classList.remove("loginbutton-blue");
 });

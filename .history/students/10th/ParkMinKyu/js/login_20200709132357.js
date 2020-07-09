@@ -24,14 +24,14 @@ iDpWinfo.addEventListener("keyup", function () {
   let pwValue = loginPW.value;
   const condition = idValue !== "" && pwValue !== "";
 
-  // if (idValue !== "" && pwValue !== "") {
-  //   loginButtoN.classList.add("loginbutton-blue");
-  //   // loginButtoN.style.backgroundColor = "#0095F6";
-  // } else {
-  //   loginButtoN.classList.remove("loginbutton-blue"); //리무브
-  // }
+  if (idValue !== "" && pwValue !== "") {
+    loginButtoN.classList.add("loginbutton-blue");
+    // loginButtoN.style.backgroundColor = "#0095F6";
+  } else {
+    loginButtoN.classList.remove("loginbutton-blue"); //리무브
+  }
 
   condition
     ? loginButtoN.classList.add("loginbutton-blue")
-    : loginButtoN.classList.remove("loginbutton-blue"); //삼항연산자로 변경
+    : loginButtoN.classList.remove("loginbutton-blue");
 });

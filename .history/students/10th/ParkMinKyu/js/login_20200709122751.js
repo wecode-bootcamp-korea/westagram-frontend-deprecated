@@ -22,16 +22,15 @@ loginBtn.addEventListener("click", function () {
 iDpWinfo.addEventListener("keyup", function () {
   let idValue = loginID.value;
   let pwValue = loginPW.value;
-  const condition = idValue !== "" && pwValue !== "";
+  let a = loginButtoN.classList.add("loginbutton-blue");
+  let b = loginButtoN.classList.remove("loginbutton-blue");
 
-  // if (idValue !== "" && pwValue !== "") {
-  //   loginButtoN.classList.add("loginbutton-blue");
-  //   // loginButtoN.style.backgroundColor = "#0095F6";
-  // } else {
-  //   loginButtoN.classList.remove("loginbutton-blue"); //리무브
-  // }
+  /* if (idValue !== "" && pwValue !== "") {
+    loginButtoN.classList.add("loginbutton-blue");
+    // loginButtoN.style.backgroundColor = "#0095F6";
+  } else {
+    loginButtoN.classList.remove("loginbutton-blue"); //리무브
+  } */
 
-  condition
-    ? loginButtoN.classList.add("loginbutton-blue")
-    : loginButtoN.classList.remove("loginbutton-blue"); //삼항연산자로 변경
+  idValue > 0 ? (pwValue > 0 ? a : b) : b;
 });

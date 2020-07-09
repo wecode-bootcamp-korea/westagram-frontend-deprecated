@@ -5,8 +5,8 @@ const loginButtoN = document.getElementsByClassName("loginbutton")[0];
 const iDpWinfo = document.getElementsByClassName("login")[0];
 
 loginBtn.addEventListener("click", function () {
-  const id = loginID.value;
-  const password = loginPW.value;
+  const id = document.getElementsByClassName("loginId")[0].value;
+  const password = document.getElementsByClassName("loginPw")[0].value;
 
   if (!id) {
     alert("아이디를 입력해주세요!");
@@ -22,16 +22,10 @@ loginBtn.addEventListener("click", function () {
 iDpWinfo.addEventListener("keyup", function () {
   let idValue = loginID.value;
   let pwValue = loginPW.value;
-  const condition = idValue !== "" && pwValue !== "";
-
-  // if (idValue !== "" && pwValue !== "") {
-  //   loginButtoN.classList.add("loginbutton-blue");
-  //   // loginButtoN.style.backgroundColor = "#0095F6";
-  // } else {
-  //   loginButtoN.classList.remove("loginbutton-blue"); //리무브
-  // }
-
-  condition
-    ? loginButtoN.classList.add("loginbutton-blue")
-    : loginButtoN.classList.remove("loginbutton-blue"); //삼항연산자로 변경
+  if (idValue !== "" && pwValue !== "") {
+    loginButtoN.classList.add("loginbutton-blue");
+    // loginButtoN.style.backgroundColor = "#0095F6";
+  } else {
+    loginButtoN.classList.remove("loginbutton-blue"); //리무브
+  }
 });

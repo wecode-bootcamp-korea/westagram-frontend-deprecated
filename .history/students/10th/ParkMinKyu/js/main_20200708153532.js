@@ -12,13 +12,14 @@ button.addEventListener("click", function () {
     reply.appendChild(replyText);
     replyBox.appendChild(reply);
     inputBar.value = "";
+    return;
   }
 });
 
 const inputEnter = document.getElementsByClassName("reply-input-bar")[0];
-inputEnter.addEventListener("keyup", function (event) {
-  /*함수안에 envent 쓴이유*/
-
+inputEnter.addEventListener("keyup", function (
+  event
+) /*함수안에 envent 쓴이유*/ {
   let reply1 = document.createElement("li");
   let replyText1 = document.createElement("span");
   let replyValue1 = inputBar.value;
@@ -29,5 +30,6 @@ inputEnter.addEventListener("keyup", function (event) {
     reply1.appendChild(replyText1);
     replyBox.appendChild(reply1);
     inputBar.value = "";
+    return;
   }
 });

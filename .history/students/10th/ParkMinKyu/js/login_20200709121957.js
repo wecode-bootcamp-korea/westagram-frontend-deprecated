@@ -22,7 +22,8 @@ loginBtn.addEventListener("click", function () {
 iDpWinfo.addEventListener("keyup", function () {
   let idValue = loginID.value;
   let pwValue = loginPW.value;
-  const condition = idValue !== "" && pwValue !== "";
+  let reMove = loginButtoN.classList.remove("loginbutton-blue");
+  let addColor = loginButtoN.classList.add("loginbutton-blue");
 
   // if (idValue !== "" && pwValue !== "") {
   //   loginButtoN.classList.add("loginbutton-blue");
@@ -31,7 +32,5 @@ iDpWinfo.addEventListener("keyup", function () {
   //   loginButtoN.classList.remove("loginbutton-blue"); //리무브
   // }
 
-  condition
-    ? loginButtoN.classList.add("loginbutton-blue")
-    : loginButtoN.classList.remove("loginbutton-blue"); //삼항연산자로 변경
+  idValue !== "" ? (pwValue !== "" ? addColor : reMove) : reMove;
 });
