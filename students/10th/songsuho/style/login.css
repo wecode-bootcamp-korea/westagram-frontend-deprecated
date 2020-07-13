@@ -1,0 +1,78 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: rgba(var(--b3f,250,250,250),1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle {
+    width: 350px;
+    height: 370px;
+    background-color: white;
+    margin-top: 12px;
+    border: 1px solid rgb(201, 201, 201);
+    border-width: 15px 7px 5px 10px;
+}
+
+.login {
+    height: 250px;
+    text-align: center;
+}
+
+.box {
+    margin: 22px 86px 12px;
+    width: 175px;
+    height: 51px;
+}
+
+.id {
+    margin-bottom: 6px;
+}
+
+
+.bar {
+    width: 300px;
+    height: 20px;
+    background-color: #fafafa;
+    padding: 9 0 7 8;
+    border-radius: 5px;
+    border: 1px solid gray;
+    border-width: 1px;
+    margin: 5px 0;
+}
+
+
+.idInput {
+    width: 260px;
+}
+
+.pwInput {
+    width: 260px;
+}
+
+
+
+button {
+    width: 268px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: hidden;
+    background-color: powderblue;
+    color: white;
+}
+
+.call {
+    width: 348px;
+    height: 18px;
+    color: #00376b;
+    font-size: 12px;
+}
+
+.require {
+    margin-top: 100px;
+}
