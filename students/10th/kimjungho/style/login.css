@@ -1,0 +1,55 @@
+   input {
+     margin: 0 auto;
+     border: 1px solid lightgray;
+     border-radius: 10px;
+     width: 350px;
+   }
+
+   .login-container {
+      margin : 300px auto;  
+      display: flex;
+      max-height: 800px;
+      max-width: 500px;      
+      border: 2px solid lightgray;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   }
+    
+  .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+  
+  div {
+      padding: 2px;
+      border-radius: 10px;
+      border-color: lightgray;
+      text-align: center;
+   }
+  
+  input{
+      height: 30px;
+   }
+    
+  .forgetpw {
+      color: rgba(var(--fe0,0,55,107),1);
+      font-size: 12px;
+      line-height: 14px;
+      margin: 80px auto;
+      text-align: center;
+   }
+  
+  .button {
+      width: 360px; 
+      background-color:#CEECF5;
+      color: white;
+      height: 40px;
+      border-color: #CEECF5
+   }
+  
+  .instagram {
+      margin-bottom: 20px;
+      padding: 100px 20px 20px 20px;
+   }
