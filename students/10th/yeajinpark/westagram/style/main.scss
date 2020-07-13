@@ -2,51 +2,15 @@ nav {
     width: 100vw;
     height: 60px;
     border-bottom: 1px solid #dbdbdb;
-    /* background-color: yellow; */
-}
-.nav-container {
-    width: 935px;
-    height:60px;
-    margin: 0 auto;
-    background-color:red;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logos{
-    width:300px;
-    height:30px;
-    background-color: green;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.logos img {
-    margin-right:10px;
-    max-height:100%;
-    object-fit: cover;
-}
-.icons {
-    width:300px;
-    height:40px;
-    background-color: yellow;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;R
-}
-.icons img {
-    max  
 }
 
 .line {
-    margin-right: 10px;
-    border-left: 0.5px solid #dbdbdb;
+    border-left: 0.5px solid gray;
     height: 30px;
     display: inline-block;
 }   
 
-/*.imagelogo {
+.imagelogo {
    object-fit: cover;
    height: 30px;
    margin-top: 15px;
@@ -87,6 +51,7 @@ textarea {
   margin-top: -32px;
 }
 
+
 .explore {
     object-fit: cover;
     height: 30px;
@@ -110,5 +75,5 @@ textarea {
 
 .feedpic {
     margin-top: 150px;
-} */
+}
 

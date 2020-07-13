@@ -1,4 +1,3 @@
-
 body {
     margin: 0 auto;
     display: flex;
@@ -19,7 +18,6 @@ body {
     justify-content: center;
 }
 
-
 input {
     width: 263px;
     height: 38px;
@@ -32,7 +30,6 @@ input {
     text-align: left;
     padding-left: 8px;
 }
-
 
 button {
     width: 263px;
