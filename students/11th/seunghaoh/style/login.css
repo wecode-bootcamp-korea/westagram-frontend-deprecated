@@ -5,17 +5,11 @@
   --grey-medium-color: #dbdbdb;
   --grey-dark-color: #8e8e8e;
   --skyblue-color: #b2dffc;
-
-  /* font size */
-  --font-small: 12px;
-  --font-medium: 13px;
-  --font-large: 16px;
 }
 
 html,
 body {
   height: 100%;
-  width: 100%;
 }
 
 body {
@@ -26,59 +20,57 @@ body {
 }
 
 .container {
-  width: 350px;
-  height: 380px;
-  background-color: var(--white-color);
-  border: 1px solid var(--grey-medium-color);
-  border-radius: 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 350px;
+  height: 380px;
   padding: 10px;
+  border: 1px solid var(--grey-medium-color);
+  border-radius: 1px;
+  background-color: var(--white-color);
 }
 
 /* header */
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 header img {
-  height: 50.9896px;
   width: 175px;
-  margin: 22px 86px 12px 86px;
-  margin-bottom: 24px;
+  height: 51px;
+  margin: 22px auto 36px auto;
 }
 
 /* main */
 main {
   display: flex;
   flex-direction: column;
-  width: 350px;
   align-items: center;
+  width: 100%;
 }
 
 input {
-  background-color: var(--grey-light-color);
-  height: 36px;
   width: 250px;
+  height: 36px;
   padding: 9px 8px 7px 8px;
+  margin-bottom: 6px;
   border-radius: 3px;
   border: 1px solid var(--grey-medium-color);
-  font-size: var(--font-medium);
-}
-
-input:nth-child(1) {
-  margin-bottom: 6px;
-}
-
-input:nth-child(2) {
-  margin-bottom: 8px;
+  font-size: 13px;
+  background-color: var(--grey-light-color);
 }
 
 main button {
+  width: 250px;
   margin: 8px 40px;
   padding: 5px 9px;
-  width: 250px;
-  background-color: var(--skyblue-color);
   border: 0 none;
   border-radius: 4px;
-  font-size: var(--font-medium);
+  font-size: 13px;
+  background-color: var(--skyblue-color);
   color: var(--white-color);
   font-weight: bold;
 }
@@ -91,13 +83,14 @@ footer {
   width: 100%;
 }
 
+/* footer_askLoginOption */
 .askLoginOption {
-  margin: 10px 40px 18px 40px;
-  width: 250px;
-  height: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 250px;
+  height: 18px;
+  margin: 10px 40px 18px 40px;
 }
 
 .line {
@@ -108,75 +101,35 @@ footer {
 
 .askText {
   color: var(--grey-dark-color);
-  font-size: var(--font-medium);
-
+  font-size: 13px;
   font-weight: bold;
-  display: flex;
 }
 
+/* footer_facebook log in */
 footer button {
-  border: none;
-  background-color: var(--white-color);
-  margin: 8px 40px;
   display: flex;
   align-items: center;
+  margin: 8px 40px;
+  border: none;
+  background-color: var(--white-color);
 }
 
 .facebookLogo {
-  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png");
-  background-repeat: no-repeat;
-  background-position: -414px -259px;
   height: 16px;
   width: 16px;
-  display: inline-block;
   margin-right: 8px;
+  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png");
+  background-position: -414px -259px;
 }
 
-.facebookText {
+.facebookLoginText {
   color: #385185;
   font-weight: bold;
 }
 
-.askForgotPwd {
-  color: #00376b;
-  font-size: 12px;
+.askForgotPassword {
   margin-top: 12px;
-  margin-bottom: 20px;
-}
-/*
-.container main .or {
-  width: 266px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container main .or .text {
-  font-size: 13px;
-  font-weight: 600;
-  color: #8e8e8e;
-  line-height: 26px;
-  margin: 0px 18px;
-}
-
-.container main .or .line {
-  border-top: 1px solid #dbdbdb;
-  width: 102px;
-  height: 1px;
-}
-
-
-.facebookLogIn {
-  border: 0;
-  color: white;
-}
-
-
-footer {
+  margin-bottom: 10px;
   color: #00376b;
   font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 20px;
 }
-*/
