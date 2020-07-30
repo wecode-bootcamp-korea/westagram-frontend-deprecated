@@ -1,11 +1,24 @@
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
   background: rgb(250, 250, 250);
 }
 
 main {
-  flex-direction: row;
+  display: flex;
+  align-items: center;
+  height: 90%;
+}
+
+article {
+  display: flex;
+  align-items: center;
   justify-content: center;
   max-width: 935px;
+  width: 100%;
+  height: 100%;
   margin: 30px auto 0;
   padding-bottom: 44px;
 }
@@ -37,6 +50,8 @@ main {
 }
 
 .interaction_container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 350px;
   width: 100%;
@@ -54,6 +69,8 @@ main {
 }
 
 .login_container .logo {
+  display: flex;
+  justify-content: center;
   margin: 22px auto 36px;
 }
 
@@ -73,6 +90,7 @@ main {
 }
 
 .login_form .input_container {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -150,6 +168,7 @@ main {
 
 .login_button button {
   display: block;
+  width: 100%;
   box-sizing: border-box;
   padding: 5px 9px;
   border: 1px solid transparent;
@@ -167,6 +186,7 @@ main {
 }
 
 .login_form .or {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -247,7 +267,6 @@ main {
 }
 
 .download_container {
-  margin: 10px 20px;
   font-size: 14px;
   color: rgb(38, 38, 38);
   line-height: 18px;
@@ -255,11 +274,11 @@ main {
 }
 
 .download_text {
-  margin-bottom: 10px;
+  margin: 10px 20px 20px;
 }
 
 .download_links {
-  flex-direction: row;
+  display: flex;
   justify-content: center;
   margin: 10px 0;
 }
@@ -275,11 +294,14 @@ main {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   padding: 0 20px;
 }
 
 footer .info_container {
-  flex-direction: row;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
@@ -292,6 +314,7 @@ footer .info_container {
 }
 
 footer .info_lists {
+  display: inline-block;
   margin-bottom: 3px;
 }
 
@@ -306,5 +329,6 @@ footer .info_text {
 }
 
 footer .copyright {
+  display: block;
   color: rgb(142, 142, 142);
 }
