@@ -66,14 +66,7 @@ article.forEach((ele)=>{
   const ul = ele.getElementsByTagName('ul'); // get ul
   const commentBtn = ele.getElementsByClassName('commentBtn')[0]; // get buttton
   const comment = ele.getElementsByClassName('comment')[0]; // get textarea
-  commentBtn.addEventListener('click',appendComment);
-  comment.addEventListener('keydown',(e) => {
-    let enter = e.keyCode? e.keyCode : e.which;
-    if(enter === 13){
-      appendComment();
-    }
-  })
-  function appendComment() {
+  const appendComment = function() {
     let newCommentValue = comment.value; // get textarea Value
     const commentbox = document.createElement('li'); //li tag make
     const commentListLeft = document.createElement('div');//div tag make
@@ -91,9 +84,19 @@ article.forEach((ele)=>{
     commentbox.appendChild(commentListLeft); // div > li
     commentbox.appendChild(heart) // heart > li
     ul[0].appendChild(commentbox); // li > ul
-    comment.value = "";
+    comment.value = ""; // reset textarea value
   }
+
+  commentBtn.addEventListener('click',appendComment);
+  comment.addEventListener('keydown',(e) => {
+    let enter = e.keyCode? e.keyCode : e.which;
+    if(enter === 13){
+      appendComment();
+    }
+  })
 })
+
+
 
 
 

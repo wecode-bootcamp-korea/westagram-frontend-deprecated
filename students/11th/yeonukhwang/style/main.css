@@ -463,3 +463,9 @@ rightSection을 고정하는 로직을 알아보기 위해 주석으로 남겨 �
     display:none;
   }
 }
+
+@media screen and (max-width: 550px){
+  .search{
+    display:none;
+  }
+}
