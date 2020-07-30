@@ -81,7 +81,7 @@ article.forEach((ele)=>{
     const newComment = document.createElement('span');// span tag make
     const heart = document.createElement('img'); // img tag make
     newComment.innerHTML = `&nbsp${newCommentValue}`;
-    heart.setAttribute('src','/img/heart.png');
+    heart.setAttribute('src','./img/heart.png');
     heart.setAttribute('alt','like-to-comment');
     commentAuthor.setAttribute('class', 'name')
     commentListLeft.setAttribute('class','commentListLeft');
