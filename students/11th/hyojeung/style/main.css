@@ -1,0 +1,411 @@
+/* nav */
+.navbox{
+  width: 100%;
+  height: 58px;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;}
+
+.nav{
+  width: 1000px;
+  height: 58px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logobox{
+  display: flex;
+  align-items: center;
+}
+
+.logoline{
+  width: 2px;
+  height: 25px;
+  background-color: #000;
+  margin: 0 15px 0 9px;
+}
+
+.logoimg img{vertical-align: bottom;}
+
+.searchbox input{
+  width: 215px;
+  height: 28px;
+  background-color: #fafafa;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  color: #a9aaad;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-align: center;
+  /* icon넣기 */
+  background-image: url(../img/searcicon.png);
+  background-repeat: no-repeat;
+  background-position: 80px center;
+  background-size: 10px;
+}
+
+.gnbbox{
+  display: flex;
+  align-items: center;
+}
+
+.gnbbox .gnbicon{
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.gnbbox .gnbicon:last-child{
+  margin-right: 0px;
+}
+
+.gnbbox .gnbicon img{
+  max-width: 80%;
+}
+
+
+/* article */
+.mainbox{
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+
+.articlebox{
+  width: 614px;
+  /*height: 950px;*/
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  margin-right: 45px;
+}
+
+.articletop{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 10px 0 10px;
+}
+
+.articletop .forname{
+  font-size: 15px;
+  font-weight: 600;
+  color: #383838;
+  margin-left: 5px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.articletop .fomproimg{
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-image: url(../img/fomprofile.jpg);
+  background-size: cover;
+  margin-right: 10px;
+
+}
+
+.articletop .minimenu{
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.articletop .minimenu img{
+  max-width: 50%;
+}
+
+.middleicon{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 15px 0 15px;
+  position: relative;
+}
+
+.middleicon .icon1{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.middleicon .icon1:last-child{
+  position: absolute;
+  right: 10px;
+  margin-right: 0px;
+}
+
+
+
+.middleicon .icon1 img{
+  max-width: 80%;
+}
+
+.middletext{
+  padding: 7px 15px 0px;
+}
+
+.boldtext{
+  color: #262626;
+  font-size: 14px;
+  /*letter-spacing: -1px;*/
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.boldtextimg{
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-image: url(../img/my_profile.jpg);
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.maintext{
+  position: relative;
+  font-size: 14.5px;
+  font-weight: 100;
+  padding: 0;
+}
+
+.maintext.marginbt{
+  margin-bottom: 5px;
+}
+
+.maintext #moretext{
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+
+.maintext .likebtn{
+  position: absolute;
+  top: 4px;
+  right: -7px;
+  cursor: pointer;
+}
+
+.maintext .likebtn img{
+  max-width: 50%;
+}
+
+
+.namebold{
+  float: left;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+#morebtn{
+  color:#8e8e8e;
+  cursor: pointer;
+}
+
+.timetext{
+  font-size: 10px;
+  letter-spacing: .2px;
+  color: #8e8e8e;
+  padding: 0 0 0 15px;
+}
+
+.bottom{
+  width: 100%;
+  height: 56px;
+  display: flex;
+  padding: 15px;
+  margin-top: 7px;
+  border-top: 1px solid #efefef;
+}
+
+.bottom #commentinput{
+  width: 554px;
+  font-size: 14px;
+  color: #a8a8a8;
+  border: none;
+}
+
+.bottom #commentbtn{
+  font-weight: bold;
+  color: #b7e1fc;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* aside */
+.asidebox{
+  width: 293px;
+}
+
+.profile{
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profileimg{
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  background-image: url(../img/my_profile.jpg);
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.profileid a{
+  font-size: 15px;
+  font-weight: 600;
+  color: #262626;
+  text-decoration: none;
+}
+
+.profilename{
+  font-size: 13px;
+  line-height: 21px;
+  color: #8e8e8e;
+}
+
+.storeybox{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 15px;
+}
+
+.storeyboxtop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 0px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.storeyboxtop .storeyboxtitle{
+  color: #8e8e8e;
+}
+
+.storeyboxtop li:last-child{
+  cursor: pointer;
+}
+
+.profile2{
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 5px 20px 15px;
+  position: relative;
+}
+
+.profileimg2{
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  background-image: url(../img/profileimg_1.png);
+  background-size: cover;
+  margin-right: 15px;
+}
+
+.profileid2 a{
+  font-size: 15px;
+  font-weight: 600;
+  color: #262626;
+  text-decoration: none;
+}
+
+.profiletime{
+  font-size: 13px;
+  line-height: 21px;
+  color: #8e8e8e;
+}
+
+.followtext{
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 21px;
+  color: #8e8e8e;
+}
+
+.follow{
+  position: absolute;
+  right: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.issuebox{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 15px;
+}
+
+.issueboxtop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px 0px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.issueboxtop .issueboxtitle{
+  color: #8e8e8e;
+}
+
+.issueboxtop li:last-child{
+  cursor: pointer;
+}
+
+/* footer */
+
+.footerbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.footerbox ul{
+  font-size: 11px;
+  color: #c7c7c7;
+}
+
+.footerbox ul li{
+  list-style: inside;
+  float: left;
+  margin-right: 5px;
+}
+
+.footerbox ul li:first-child{
+  list-style: none;
+}
+
+.footerbox span{
+  font-size: 11px;
+  color: #c7c7c7;
+  margin-top: 10px;
+}
