@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fafafa;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background-color: #ffffff;
+  width: 350px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  position: relative;
+}
+
+img {
+  margin: 22px auto 36px;
+  width: 175px;
+  height: 51px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-align: center;
+}
+
+.write {
+  width: 100%;
+  height: 100%;
+  padding: 9px 0px 7px 8px;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 3px;
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+}
+
+.parentWrite {
+  width: 268px;
+  height: 38px;
+  display: flex;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.parentWrite2 {
+  margin-bottom: 14px;
+}
+
+.tinyDiv {
+  padding-right: 8px;
+  position: absolute;
+  right: 0;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+.login {
+  width: 100%;
+  color: white;
+  font-weight: 600;
+}
+
+button {
+  width: 268px;
+  height: 30px;
+  background-color: rgba(0, 149, 246, 0.3);
+  border: none;
+  border-radius: 4px;
+}
+
+a {
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  width: 100%;
+}

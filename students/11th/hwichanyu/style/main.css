@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+nav {
+  height: 54px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+  display: flex;
+  justify-content: center;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 935px;
+  margin: 0 20px;
+}
+
+section {
+  height: 100%;
+  width: 935px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.feeds {
+  height: 100%;
+  width: 614px;
+  margin-right: 28px;
+}
+
+.main-right {
+  height: 100%;
+  width: 293px;
+}
+.instagram {
+  width: 103px;
+  height: 29px;
+}
+
+.newIcon {
+  width: 22px;
+  height: 22px;
+}
