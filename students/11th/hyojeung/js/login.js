@@ -1,4 +1,4 @@
-/* logion foucs */
+/* Login foucs */
 const idname = document.getElementById('idname');
 const password = document.getElementById('password');
 
