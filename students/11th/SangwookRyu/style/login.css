@@ -1,0 +1,72 @@
+  .login-scene {
+      border: 1px solid #dbdbdb;
+      border-radius: 1px;
+      width: 350px;
+      height: 380px;
+      margin: 100px auto;
+      padding: 10px 0;
+      background-color: white;
+  }
+
+  .section1 {
+
+  }
+
+  .logo-img {
+    background-image: url("/img/logo_text.png");
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 51px;
+    background-size: 100%;
+    margin: 22px 86.5px 12px auto;
+}
+  .section2 {
+    width: 348px;
+    height:263px;
+  }
+
+  .login-container {
+    width: 268px;
+    margin: 40px auto;
+}
+
+#login-id, #password{
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    padding: 9px  7px 8px;
+    margin: 3px auto;
+    width: 268px;
+    height: 36px;
+    font-size: 12px;
+    outline: none;
+}
+
+#login-button {
+    width: 268px;
+    height: 30px;
+    margin: 10px auto;
+    background-color: #0095f6;
+    border: 1px solid #0095f6;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    cursor:pointer;
+}
+
+#login-button:disabled {
+    background-color: #c0d7f3;
+    border: 1px solid #c0d7f3;
+    cursor: default;
+}
+  .section3 {
+    text-align: center;
+  }
+  .forget-pw {
+    position: relative;
+    top: -55px;
+    text-decoration: none;
+    color: #00376b;
+    font-size: 13px;
+  }

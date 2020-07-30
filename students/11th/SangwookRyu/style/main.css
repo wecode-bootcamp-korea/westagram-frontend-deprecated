@@ -1,0 +1,262 @@
+/*네비게이션*/
+.nav {
+    max-width: 100%;
+    height: 54px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-inside {
+    max-width: 975px;
+    height: 54px;
+    background-color: white;
+    margin: 0 auto;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+}
+
+.icon-img {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png");
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto 8px;
+    cursor:pointer;
+}
+
+.line {
+    list-style: none;
+    border-left: 1px solid black;
+    height: 30px;
+    margin: auto 8px;
+}
+
+.logo-img {
+    background-image: url("wecode/westagram-frontend/img/logo_text.png");
+    width: 100px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto 8px;
+    cursor:pointer;
+}
+
+.search {
+    margin: auto;
+}
+.search-bar {
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #fafafa;
+    width: 215px;
+    height: 28px;
+    padding: 7px;
+    text-align: center;
+}
+.search-bar::placeholder {
+    color: #8e8e8e;
+}
+
+.buttons {
+    display: flex;
+    margin: auto 0;
+}
+
+.button-nav-explore {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    cursor:pointer;
+}
+
+.button-nav-heart {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+    cursor:pointer;
+}
+
+.button-nav-profile {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+/*메인*/
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.feed {
+    width: 614px;
+    height:1000px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+}
+
+.section-user {
+    width: 614px;
+    height: 60px;
+    border: 1px solid #dbdbdb;
+    padding: 16px;
+    display: flex;
+}
+
+.profile-uploader-img {
+    width: 32px;
+    height: 32px;
+    background-image: url("wecode/westagram-frontend/img/Olga_Scheps_piano_4.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor:pointer;
+    position: relative;
+    top: -2px;
+}
+.profile-uploader-text {
+    font-weight: bold;
+    font-size: 14px;
+    color: #262626;
+    padding-left: 16px;
+    margin: auto 0;
+    cursor:pointer;
+}
+
+.dots {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png");
+    width: 40px;
+    height: 40px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -5px;
+    left: 430px;
+    cursor: pointer;
+}
+
+.section-photo {
+    width: 614px;
+    height: 614px;
+    background-image: url("wecode/westagram-frontend/students/11th/SangwookRyu/img/olga_scheps.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor:pointer;
+}
+
+.section-buttons {
+    width: 614px;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+}
+
+.button-heart {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto 8px;
+    padding: 8px;
+    cursor:pointer;
+}
+
+.button-comment {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto 8px;
+    padding: 8px;
+    cursor:pointer;
+}
+
+.button-share {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto 8px;
+    padding: 8px;
+    cursor:pointer;
+}
+
+.button-bookmark {
+    background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png");
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: auto 8px;
+    padding: 8px;
+    position: relative;
+    left: 445px;
+    cursor:pointer;
+}
+
+.section-like {
+    width: 614px;
+    height: 20px;
+    border: 1px solid #dbdbdb;
+    text-indent: 10px;
+}
+
+.section-like span {
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.section-comment {
+    width: 614px;
+    height: 28px;
+    border: 1px solid #dbdbdb;
+    text-indent: 10px;
+}
+
+.owner {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.owner-comment {
+    font-size: 14px;
+}
+
+.show-more-comment {
+    width: 614px;
+    height: 20px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+}
+.section-comment-time {
+    width: 614px;
+    height: 19px;
+    border: 1px solid #dbdbdb;
+}
+
+.section-comment-write {
+    width: 614px;
+    height: 56px;
+    border: 1px solid #dbdbdb;
+}
+/*메인오른쪽*/
+.main-right {
+    width: 293px;
+    height:400px;
+    border: 1px solid #dbdbdb;
+}
