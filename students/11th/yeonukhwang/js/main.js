@@ -60,6 +60,7 @@
 // 2. 아티클에 forEach문을 이용해서 각각 추가
 // 3. 그러면 document가 아니라 querySelector를 이용해서, comment, textarea value, Ul tag를 받고,
 // 4. 아티클 본문에다가 합쳐진 것을 추가하면 된다
+// 부모태그를 인덱스태그로 받고, 데이터를 받고 추가하는 대상을 인덱스넘버로 다시 변수설정??
 
 const articlelist = document.getElementsByClassName('feed');
 const article = Array.from(articlelist);
@@ -116,7 +117,7 @@ article.forEach((ele)=>{
 
 
 
-// 부모태그를 인덱스태그로 받고, 데이터를 받고 추가하는 대상을 인덱스넘버로 다시 변수설정??
+
 
 
 

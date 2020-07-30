@@ -1,4 +1,3 @@
-/* 변수 */
 :root{ 
   --gray-color:#8E8E8E;;
   --light-gray-color:#C7C7C7;
@@ -10,95 +9,114 @@
   --border-color:rgb(219, 219, 219);
   --border-radius-container:3px;
 }
-/* 스타일링 */
-*{
-  box-sizing: border-box;
-}
+
+/* Style */
 body{
-  background-color: rgb(250,250,250);
+  background-color: var(--background-color);
 }
+
 main{
-  display:flex;
   max-width: 1012px;
-  justify-content: center;
-  align-items: center;
   margin: 61px auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
-img{
-  height: 100%;
-}
+
 section{
   max-width: 506px;
   height: 506px;
   margin: 20px;
 }
+
+img{
+  height: 100%;
+}
+
 section div, form{
   width: 100%;
 }
-.main__left{
+
+.leftSection{
   width: 454px;
   height: 618px;
 }
-.main__right{
+
+.rightSection{
+  position: relative;
   width: 350px;
   height: 380px;
+  padding:30px 0 40px 0;
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   background-color: rgb(255,255,255);
-  padding:30px 40px 15px 40px;
   border: 1px solid rgba(var(--b6a,219,219,219),1);
   border-radius: 1px;
 }
-.right__logo, .right__forgetpw{
+
+.rightLogo, .forgetpw{
   text-align: center;
 }
-#text-logo{
-  width: 60%;
+
+.rightLogo{
+  margin-top: 30px;
 }
-.right__login{
+
+.rightLogo img{
+  width: 50%;
+}
+
+.rightLogin{
+  margin-top: 40px;
+  font-size: 14px;
   display:flex;
   flex-direction: column;
-  font-size: 14px;
-  margin-top: 37px;
+  text-align: center;
 }
-.login-input-wrap{
+
+.rightLoginItem{
   margin: 5px;
 }
 
-.login-button{
+.receiveLogin{
+  width: 268px;
+  height: 36px;
+  padding: 10px;
+  border: 1px solid rgba(219,219,219,1);
+  border-radius: 3px;
+  background-color: rgba(250,250,250,250);
+}
+
+.loginBtn{
+  width: 268px;
+  height: 30px;
+  padding: 0;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  color: white;
+  background-color: var(--blue-color);
+  opacity: 0.3;
+  border-radius: 4px;
+}
+
+.loginBtn-active{
   width: 268px;
   padding: 0;
   background-color: var(--blue-color);
-  opacity: 0.3;
+  opacity: 1;
   height: 30px;
   border: 1px solid transparent;
   color: white;
   border-radius: 4px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
-.login-text{
-  width: 268px;
-  padding: 0;
-  box-sizing: border-box;
-  height: 36px;
-  background-color: rgba(250,250,250,250);
-  border: 1px solid rgba(var(--ca6,219,219,219),1);
-  padding: 10px;
-  border-radius: 3px;
-}
-
-
-
-.right__forgetpw{
+.forgetpw{
   font-size: 12px;
   position: absolute;
-  bottom: 35px;
-  color: rgba(var(--fe0,0,55,107),1);
-}
-
-#main-container{
-  min-width: 1000px;
+  bottom: 20px;
+  color: rgba(0,55,107,1); 
 }

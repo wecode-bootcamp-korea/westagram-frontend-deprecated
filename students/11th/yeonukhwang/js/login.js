@@ -1,16 +1,21 @@
-const button = document.getElementsByClassName('login-button')[0];
+const button = document.getElementsByClassName('loginBtn')[0];
 const id = document.getElementById('id');
 const pw = document.getElementById('password');
+const input = document.getElementsByClassName('rightLogin')[0];
 
-const changeBtnOpacity = () => {
+const changeBtnStatus = () => {
   const idV = id.value;
   const pwV = pw.value;
-  if(idV.length > 0 && pwV.length > 0){
-    button.setAttribute('style','opacity:1')
+  if(idV.length&&pwV.length){
+    button.setAttribute('class','loginBtn-active')
+    button.disabled = false;
   }else{
-    button.setAttribute('style','opacity:0.3')
+    button.setAttribute('class','loginBtn');
+    button.disabled = true;
   }
 }
 
-id.addEventListener('keyup',changeBtnOpacity)
-pw.addEventListener('keyup',changeBtnOpacity)
+input.addEventListener('keyup',changeBtnStatus);
+
+
+
