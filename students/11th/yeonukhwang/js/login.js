@@ -1,7 +1,7 @@
-const button = document.getElementsByClassname('loginBtn')[0];
+const button = document.getElementsByClassName('loginBtn')[0];
 const id = document.getElementById('id');
 const pw = document.getElementById('password');
-const input = document.getElementsByClassname('rightLogin')[0];
+const form = document.getElementsByClassName('rightLogin')[0];
 
 const changeBtnStatus = () => {
   const idV = id.value;
@@ -15,7 +15,7 @@ const changeBtnStatus = () => {
   }
 }
 
-input.addEventListener('keyup',changeBtnStatus);
+form.addEventListener('keyup',changeBtnStatus);
 
 
 
