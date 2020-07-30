@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Westagram</title>
+      <link href="style/common.css" rel="stylesheet" type="text/css"/>
+      <link href="style/main.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="navHeader">
+      <nav>
+        <div class="logo-wrap">
+          <div class="logo">
+            <img src="/img/logo.png" alt="Instagram-logo">
+          </div>
+          <div class="hline"></div>
+          <div class="text-logo">
+            <img src="/img/logo_text.png" alt="Instagram-text-logo">
+          </div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="검색">
+        </div>
+        <ul class="icon-lists">
+          <li class="icon"><img src="img/compass.png" alt="compass-icon" class="icon"></li>
+          <li class="icon"><img src="img/heart.png" alt="heart-icon" class="icon"></li>
+          <li class="icon"><img src="/img/mypage.png" alt="Profile-icon" class="icon"></li>
+          <li class="icon"><img src="img/avatar-yeonuk.jpg" alt="avatarOfYeonuk" class="icon"></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- main-left -->
+      <section class="feedSection">
+        <article class="feed">
+          <header class="feedHeader">
+            <div class="avatar">
+              <img src="/img/avatar-yeonuk.jpg" alt="avatar">
+            </div>
+            <div class="FriendsName">
+              <div class="Names">
+                <span class="Name">YeonukHwang</span>
+                <span class="location">위워크 선릉 2호점</span>
+              </div>
+              <button><img src="./img/threedots.png" alt="menubutton"></button>
+            </div>
+          </header>
+          <div class="feedMain">
+            <img src="/img/feedimg.jpeg" alt="">
+          </div>
+          <div class="feedBottom">
+            <div class="bottomIconWrapper">
+              <div class="leftIcon">
+                <img src="/img/heart.png" alt="heart-icon" class="icon">
+                <img src="/img/commentbubble.png" alt="comment-bubble-icon" class="icon">
+                <img src="/img/share.png" alt="share-icon" class="icon"></button>
+              </div>
+              <div class="rightIcon">
+                <img src="/img/bookmark.png" alt="bookmark-icon" class="icon">
+              </div>
+            </div>
+            <div class="bottomLike">
+              <img src="/img/avatar-yeonuk.jpg" alt="avatar-who-click-like" class="avatar">
+              <a href="" class="linkToPeople">Yeonuk</a><span>님&nbsp;</span><a href="" class="likeList">외&nbsp;10명</a><span>이&nbsp좋아합니다</span>
+            </div>
+            <div class="bottomComment">
+              <div class="description">
+                <a href="" class="linkToPeople">Hwang</a><span>&nbsp;위워크 첫날</span><span>&nbsp; ...<button>더 보기</button></span>
+              </div>
+              <ul class="commentList">
+                <li>
+                  <div class=commentListLeft>
+                    <a href="" class="linkToPeople">Yeonuk</a>
+                    <span>&nbsp이게 왜 안되지?</span>
+                  </div>
+                  <img src="/img/heart.png" alt="like-to-comment">
+                </li>
+                <li>
+                  <div class=commentListLeft>
+                    <a href="" class="linkToPeople">YehuemChoi</a>
+                    <span>&nbsp코드를 한번 볼까요??</span>
+                  </div>
+                  <img src="/img/heart.png" alt="like-to-comment">
+                </li>
+              </ul>
+            </div>
+            <span class="timeToLastComment">42분 전</span>
+            <div class="writeComment">
+              <form onsubmit="return false;"> 
+                <textarea name="comment" class="comment" placeholder="댓글 달기..."></textarea>
+                <button class='commentBtn'>게시</button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="feed">
+          <header class="feedHeader">
+            <div class="avatar">
+              <img src="/img/avatar-yeonuk.jpg" alt="avatar">
+            </div>
+            <div class="FriendsName">
+              <div class="Names">
+                <span class="Name">YeonukHwang</span>
+                <span class="location">서울시 어딘가</span>
+              </div>
+              <button><img src="./img/threedots.png" alt="menubutton"></button>
+            </div>
+          </header>
+          <div class="feedMain">
+            <img src="./img/feed2.png" alt="">
+          </div>
+          <div class="feedBottom">
+            <div class="bottomIconWrapper">
+              <div class="leftIcon">
+                <img src="/img/heart.png" alt="heart-icon" class="icon">
+                <img src="/img/commentbubble.png" alt="comment-bubble-icon" class="icon">
+                <img src="/img/share.png" alt="share-icon" class="icon"></button>
+              </div>
+              <div class="rightIcon">
+                <img src="/img/bookmark.png" alt="bookmark-icon" class="icon">
+              </div>
+            </div>
+            <div class="bottomLike">
+              <img src="/img/avatar-yeonuk.jpg" alt="avatar-who-click-like" class="avatar">
+              <a href="" class="linkToPeople">Yeonuk</a><span>님&nbsp;</span><a href="" class="likeList">외&nbsp;10명</a><span>이&nbsp좋아합니다</span>
+            </div>
+            <div class="bottomComment">
+              <div class="description">
+                <a href="" class="linkToPeople">Hwang</a><span>&nbsp;고양WE</span><span>&nbsp; ...<button>더 보기</button></span>
+              </div>
+              <ul class="commentList">
+                <li>
+                  <div class=commentListLeft>
+                    <a href="" class="linkToPeople">Yeonuk</a>
+                    <span>&nbsp 저녁 뭐 먹을까요?</span>
+                  </div>
+                  <img src="/img/heart.png" alt="like-to-comment">
+                </li>
+                <li>
+                  <div class=commentListLeft>
+                    <a href="" class="linkToPeople">Sanghoon</a>
+                    <span>&nbsp 김밥천국 가시죠</span>
+                  </div>
+                  <img src="/img/heart.png" alt="like-to-comment">
+                </li>
+              </ul>
+            </div>
+            <span class="timeToLastComment">2시간 전</span>
+              <div class="writeComment">
+                <form onsubmit="return false;"> 
+                  <textarea name="comment" class="comment" placeholder="댓글 달기..."></textarea>
+                  <button class='commentBtn'>게시</button>
+                </form>
+              </div>
+            </div>
+        </article>
+        <article class="feed">
+          <header class="feedHeader">
+            <div class="avatar">
+              <img src="/img/avatar-yeonuk.jpg" alt="avatar">
+            </div>
+            <div class="FriendsName">
+              <div class="Names">
+                <span class="Name">YeonukHwang</span>
+                <span class="location">서울시 어딘가</span>
+              </div>
+              <button><img src="./img/threedots.png" alt="menubutton"></button>
+            </div>
+          </header>
+          <div class="feedMain">
+            <img src="./img/ssalguksoo.JPG" alt="">
+          </div>
+          <div class="feedBottom">
+            <div class="bottomIconWrapper">
+              <div class="leftIcon">
+                <img src="/img/heart.png" alt="heart-icon" class="icon">
+                <img src="/img/commentbubble.png" alt="comment-bubble-icon" class="icon">
+                <img src="/img/share.png" alt="share-icon" class="icon"></button>
+              </div>
+              <div class="rightIcon">
+                <img src="/img/bookmark.png" alt="bookmark-icon" class="icon">
+              </div>
+            </div>
+            <div class="bottomLike">
+              <img src="/img/avatar-yeonuk.jpg" alt="avatar-who-click-like" class="avatar">
+              <a href="" class="linkToPeople">Yeonuk</a><span>님&nbsp;</span><a href="" class="likeList">외&nbsp;10명</a><span>이&nbsp좋아합니다</span>
+            </div>
+            <div class="bottomComment">
+              <div class="description">
+                <a href="" class="linkToPeople">Hwang</a><span>&nbsp;오늘은 쌀국수</span><span>&nbsp; ...<button>더 보기</button></span>
+              </div>
+              <ul class="commentList">
+                <li>
+                  <div class=commentListLeft>
+                    <a href="" class="linkToPeople">Yeonuk</a>
+                    <span>&nbsp 저녁 뭐 먹을까요?</span>
+                  </div>
+                  <img src="/img/heart.png" alt="like-to-comment">
+                </li>
+                <li>
+                  <div class=commentListLeft>
+                    <a href="" class="linkToPeople">Sanghoon</a>
+                    <span>&nbsp 어메이 가시죠</span>
+                  </div>
+                  <img src="/img/heart.png" alt="like-to-comment">
+                </li>
+              </ul>
+            </div>
+            <span class="timeToLastComment">2시간 전</span>
+              <div class="writeComment">
+                <form onsubmit="return false;"> 
+                  <textarea name="comment" class="comment" placeholder="댓글 달기..."></textarea>
+                  <button class='commentBtn'>게시</button>
+                </form>
+              </div>
+            </div>
+        </article>
+      </section>
+      <!-- main-right -->
+      <div class="rightSectionWrapper">
+        <section class="rightSection">
+          <!-- right-header -->
+          <header>
+            <div class="bigAvatar">
+              <img src="/img/avatar-yeonuk.jpg" alt="avatarOfYeonuk">
+            </div>
+            <div class="myInfo">
+              <span class="Name">yeonukHwang</span>
+              <span class="description">황연욱 / 개발자</span>
+            </div>
+          </header>
+          <!-- right-storyList -->
+          <div class="storyContainer">
+            <div class="storyheader">
+              <div class="storyname">스토리</div>
+              <div class="seeAll">모두 보기</div>
+            </div>
+            <ul class="storyList">
+              <li class="story">
+                <div class="avatar">
+                  <img src="/img/storypp1.jpg" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">James</span>
+                  <span class="description">16분전</span>
+                </div>
+              </li>
+              <li class="story">
+                <div class="avatar">
+                  <img src="img/storypp2.jpg" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">Jane</span>
+                  <span class="description">32분전</span>
+                </div>
+              </li>
+              <li class="story">
+                <div class="avatar">
+                  <img src="/img/storypp3.jpg" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">John</span>
+                  <span class="description">1시간 전</span>
+                </div>
+              </li>
+              <li class="story">
+                <div class="avatar">
+                  <img src="/img/storypp4.jpg" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">Nick</span>
+                  <span class="description">2시간 전</span>
+                </div>
+              </li>
+              <li class="story">
+                <div class="avatar">
+                  <img src="/img/storypp5.jpg" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">sala</span>
+                  <span class="description">2시간 전</span>
+                </div>
+              </li>
+              <li class="story">
+                <div class="avatar">
+                  <img src="img/logo.png" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">Instagram</span>
+                  <span class="description">3시간 전</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- right-RecommendList -->
+          <div class="storyContainer">
+            <div class="storyheader">
+              <div class="storyname">회원님을 위한 추천</div>
+              <div class="seeAll">모두 보기</div>
+            </div>
+            <ul class="storyList">
+              <li class="story">
+                <div class="avatar">
+                  <img src="img/wecodeimg.png" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">Wecode-bootcamp</span>
+                  <span class="description">wecode님 외 39명이 좋아합니다.</span>
+                </div>
+                <button>팔로우</button>
+              </li>
+              <li class="story">
+                <div class="avatar">
+                  <img src="img/javacsript.png" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">Front-End</span>
+                  <span class="description">백엔드 외 25명이 좋아합니다.</span>
+                </div>
+                <button>팔로우</button>
+              </li>
+              <li class="story">
+                <div class="avatar">
+                  <img src="img/backend.jpg" alt="avatar">
+                </div>
+                <div class="FriendsName">
+                  <span class="Name">Back-End</span>
+                  <span class="description">프론트엔드 외 14명이 좋아합니다</span>
+                </div>
+                <button>팔로우</button>
+              </li>
+            </ul>
+          </div>
+          <!-- right-footer -->
+          <footer class="copyright">
+            <div>Instagram 정보·지원·홍보 센터·API·채용정보·<br>개인정보처리방침·약관·디렉터리·프로필·해시태그·언어</div>
+            <div>© 2020 Instagram</div>
+          </footer>
+        </section>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
