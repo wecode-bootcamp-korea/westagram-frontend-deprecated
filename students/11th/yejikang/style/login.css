@@ -3,7 +3,6 @@ body {
   height: 100%;
 }
 
-/* 지금은 main이랑 .container 가 크기가 동일함   */
 main {
   height: 100%;
 }
@@ -16,7 +15,6 @@ main {
   background-color: #fafafa;
 }
 
-/* 로그인화면을 감싸고 있는 container  테두리 있는부분(border) */
 .loginContainer {
   width: 350px;
   height: 380px;
@@ -25,17 +23,15 @@ main {
   background-color: #ffffff;
 }
 
-/* 로고, 이미지  */
-.loginContainer .logo {
+.logo {
   text-align: center;
 }
 
-.loginContainer .logo img {
+.logo img {
   margin: 32px auto 12px;
 }
 
-/* 로그인 폼 (아이디,비밀번호, 버튼 , 비밀번호 찾기 )  */
-.loginContainer .loginForm {
+.loginForm {
   width: 348px;
   height: 250px;
   display: flex;
@@ -44,7 +40,6 @@ main {
   position: relative;
 }
 
-/* 로그인 폼 - 1. 아이디, 2.비밀번호 input 칸 */
 .loginForm input {
   width: 268px;
   height: 36px;
@@ -55,8 +50,7 @@ main {
   background-color: #fafafa;
 }
 
-/* 로그인폼 - 로그인하기 버튼 */
-.loginForm button {
+.loginBtn {
   width: 268px;
   height: 30px;
   margin: 8px 0px;
@@ -66,8 +60,16 @@ main {
   font-weight: bold;
 }
 
+.loginBtn:hover:enabled {
+  cursor: pointer;
+}
+
+.loginBtn:enabled{
+  background-color: #0095F6; 
+}
+
 /* 로그인폼 - 비밀번호 찾기 링크  */
-.loginForm .lostPassword {
+.lostPassword {
   position: absolute;
   bottom: 0px;
 }

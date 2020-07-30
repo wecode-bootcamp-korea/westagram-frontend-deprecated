@@ -1,15 +1,20 @@
-const loginForm = document.getElementsByClassName('login-form');
+const loginButton = document.querySelector('.loginBtn');
+const loginForm = document.querySelector('.loginForm');
+const userId=document.querySelector('.user-id');
+const userPw = document.querySelector('.user-pw');
 
+function init(){
+    loginButton.disabled = true;
+}
 
+init();
 
-function changeLoginButtonColor () {
-    
-    let loginId = loginForm.querySelector('input').value;
-    
-    
+function setEnabledButton() {
+     loginButton.disabled =  (userId.value && userPw.value)? false : true ; 
+}
 
-} 
+loginForm.addEventListener('keyup',setEnabledButton);
 
-
-// #3897F0
-function init();
+loginButton.addEventListener('click', function(){
+     console.log(userId.value,userPw.value);   
+});
