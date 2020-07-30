@@ -1,5 +1,5 @@
 // let commentBtn = document.getElementById('commentBtn'); //get commentbtn
-// let txt = document.getElementsByClassName('comment')[0]; // get input 
+// let txt = document.getElementsByClassname('comment')[0]; // get input 
 // function appendComment() {
 //   let commentbox = document.createElement('li'); //li tag make
 //   let commentListLeft = document.createElement('div');//div tag make
@@ -8,11 +8,11 @@
 //   let heart = document.createElement('img'); // img tag make
 //   let txt = document.getElementById('comment');
 //   let commentValue = document.getElementById('comment').value; // get textarea value 
-//   let commentList = document.getElementsByClassName('commentList')[0]; // get Ul tag
+//   let commentList = document.getElementsByClassname('commentList')[0]; // get Ul tag
 //   comment.innerHTML = `&nbsp${commentValue}`; // insert comment into span
 //   heart.setAttribute('src','/img/heart.png');
 //   heart.setAttribute('alt','like-to-comment');
-//   commentAuthor.setAttribute('class', 'linkToPeople')
+//   commentAuthor.setAttribute('class', 'name')
 //   commentAuthor.innerHTML = 'sotonghaeyo' // make author name, default , 나중에 로그인 한 사람으로 바꾸자
 //   commentListLeft.appendChild(commentAuthor); // a > div
 //   commentListLeft.appendChild(comment); // span > div
@@ -30,13 +30,10 @@
 //   }
 // });
 
-
-
-
 // // for Each
-// const ul = article[i].getElementsByTagName('ul'); // get ul
-// const commentBtn = article[i].getElementsByTagName('button')[0]; // get buttton
-// const comment = article[i].getElementsByTagName('textarea')[0]; // get textarea
+// const ul = article[i].getElementsByTagname('ul'); // get ul
+// const commentBtn = article[i].getElementsByTagname('button')[0]; // get buttton
+// const comment = article[i].getElementsByTagname('textarea')[0]; // get textarea
 // let newCommentValue = comment.value; // get textarea Value
 // const commentbox = document.createElement('li'); //li tag make
 // const commentListLeft = document.createElement('div');//div tag make
@@ -46,7 +43,7 @@
 // newComment.innerHTML = `&nbsp${newCommentValue}`; // 
 // heart.setAttribute('src','/img/heart.png');
 // heart.setAttribute('alt','like-to-comment');
-// commentAuthor.setAttribute('class', 'linkToPeople')
+// commentAuthor.setAttribute('class', 'name')
 // commentListLeft.setAttribute('class','commentListLeft');
 // commentAuthor.innerHTML = 'sotonghaeyo' // make author name, default , 나중에 로그인 한 아이디로 바꾸는 로직 추가
 // commentListLeft.appendChild(commentAuthor); // a > div
@@ -66,16 +63,15 @@ const articlelist = document.getElementsByClassName('feed');
 const article = Array.from(articlelist);
 
 article.forEach((ele)=>{
-  console.log(ele);
   const ul = ele.getElementsByTagName('ul'); // get ul
-  const commentBtn = ele.getElementsByTagName('button')[2]; // get buttton
-  const comment = ele.getElementsByTagName('textarea')[0]; // get textarea
+  const commentBtn = ele.getElementsByClassName('commentBtn')[0]; // get buttton
+  const comment = ele.getElementsByClassName('comment')[0]; // get textarea
   commentBtn.addEventListener('click',appendComment);
   comment.addEventListener('keydown',(e) => {
     let enter = e.keyCode? e.keyCode : e.which;
     if(enter === 13){
-    appendComment();
-  }
+      appendComment();
+    }
   })
   function appendComment() {
     let newCommentValue = comment.value; // get textarea Value
@@ -84,12 +80,12 @@ article.forEach((ele)=>{
     const commentAuthor = document.createElement('a');//a tag make
     const newComment = document.createElement('span');// span tag make
     const heart = document.createElement('img'); // img tag make
-    newComment.innerHTML = `&nbsp${newCommentValue}`; // 
+    newComment.innerHTML = `&nbsp${newCommentValue}`;
     heart.setAttribute('src','/img/heart.png');
     heart.setAttribute('alt','like-to-comment');
-    commentAuthor.setAttribute('class', 'linkToPeople')
+    commentAuthor.setAttribute('class', 'name')
     commentListLeft.setAttribute('class','commentListLeft');
-    commentAuthor.innerHTML = 'sotonghaeyo' // make author name, default , 나중에 로그인 한 아이디로 바꾸는 로직 추가
+    commentAuthor.innerHTML = 'sotonghaeyo' // make author default name, 나중에 로그인 한 아이디로 바꾸는 로직 추가하면 좋을 듯
     commentListLeft.appendChild(commentAuthor); // a > div
     commentListLeft.appendChild(newComment); // span > div
     commentbox.appendChild(commentListLeft); // div > li

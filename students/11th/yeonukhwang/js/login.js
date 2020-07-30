@@ -1,7 +1,7 @@
-const button = document.getElementsByClassName('loginBtn')[0];
+const button = document.getElementsByClassname('loginBtn')[0];
 const id = document.getElementById('id');
 const pw = document.getElementById('password');
-const input = document.getElementsByClassName('rightLogin')[0];
+const input = document.getElementsByClassname('rightLogin')[0];
 
 const changeBtnStatus = () => {
   const idV = id.value;

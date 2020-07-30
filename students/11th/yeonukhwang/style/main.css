@@ -11,169 +11,177 @@
   --border-radius-container:3px;
 }
 /* Global */
-*{
-  font-size: 14px;
-}
-.feedSection{
-  height: 100%;
-  width: 613px;
-}
-.Name{
-  font-size: 14px;
-  font-weight: var(--font-bold);
-}
-.Name:hover{
-  cursor: pointer;
-}
-
 img{
   height: 100%;
 }
-.avatar img{
-  width: 32px;
-  height: 32px;
-}
+
 html{
   height: 100%;
 }
+
 body{
+  position: relative;
   max-width: 1020px;
   height: 100%;
-  position: relative;
   margin: 20px auto;
   background-color: var(--background-color);
 }
+
 /* navbar */
-.navHeader{
-  border-bottom: 1px solid rgb(219, 219, 219);
-  display: flex;
-  align-items: center;
+.mainHeader{
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
   height: 54px;
   padding: 5px 10px;
-  background-color: var(--white-color);
   text-align: center;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--border-color);
 }
-.logo, .text-logo{
-  height: 100%;
-}
-.navHeader nav{
+
+header nav{
   width: 100%;
   max-width: 935px;
+  height: 30px;
   margin: 0 auto;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  height: 30px;
 }
-nav .logo-wrap{
-  display:flex;
-  align-items: center;
+
+nav div{
   height: 100%;
 }
 
-nav .logo-wrap .hline{
+nav .logoContainer{
+  display:flex;
+  align-items: center;
+}
+
+nav .logoContainer .hline{
   width: 2px;
-  align-self: stretch;
-  background-color: var(--black-color);
   margin: 0 10px;
+  background-color: var(--black-color);
 }
 
 nav .search{
-  height: 100%;
   width: 200px;
 }
+
 nav .search input{
   width: 100%;
   height: 100%;
 }
+
 nav .search input::placeholder{
+  text-align: center;
   font-size: 14px;
   color: var(--light-gray-color);
-  text-align: center;
 }
 
-.navHeader .icon-lists{
-  align-self: strech;
+header .icon-lists{
   display: flex;
-  align-items: center;
-  height: 30px;
+  height: 100%;
 }
 
-.navHeader .icon{
+header .icon{
   height: 100%;
+  margin-right: 15px;
+}
+
+header .icon img{
   border-radius: 50%;
-  padding-right: 15px;
 }
-.navHeader .icon:last-child{
-  padding-right: 0px;
+
+header .icon:last-child{
+  margin-right: 0px;
 }
+
 /* main */
 main{
   position: relative;
-  max-width: 935px;
   display: flex;
-  margin: 0 auto;
-  margin-top: 54px;
-  padding-top: 30px;
+  max-width: 935px;
   height: 100%;
+  margin: 0 auto;
+  margin-top: 84px;
 }
+
 /* feed */
+.feedSection{
+  height: 100%;
+  width: 613px;
+}
+
 .feed{
-  background-color: var(--white-color);
   max-width: 614px;
-  margin-right: 28px;
-  border: 1px solid rgb(219, 219, 219);;
-  border-radius: 3px;
   margin-bottom: 60px;
+  margin-right: 28px;
+  border: 1px solid var(--border-color);;
+  border-radius: 3px;
+  background-color: var(--white-color);
 }
 
 /* feed-header */
 .feed .feedHeader{
-  display: flex;
-  height: 60px;
-  justify-content: flex-start;
   position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
 }
 
+/* story, recommend에도 적용하는 속성*/
 .feed .feedHeader .avatar{
   height: 100%;
   padding: 16px;
 }
 
-.feed .feedHeader .avatar img{
+.avatar img{
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 }
 
-.feed .feedHeader .FriendsName{
+.name{
+  font-weight: var(--font-bold);
+  color: var(--black-color);
+}
+
+.name:hover{
+  cursor: pointer;
+}
+
+/* story, recommend에도 적용하는 속성 끝*/
+
+.feed .feedHeader .friendsname{
   width: 100%;
+  padding: 16px;
+  padding-left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  padding-left: 0px;
 }
 
-.feed .feedHeader .FriendsName .Names{
+.feed .feedHeader .friendsname .names{
   display: flex;
   flex-direction: column;
 }
-.feed .feedHeader .FriendsName .Names span{
+
+.feed .feedHeader .friendsname .names span{
   padding: 2px;
 }
 
-.Names .location{
+.names .location{
   font-size: 12px;
 }
 
-
 .feed .feedHeader button{
-  background-color: var(--white-color);
   border: none;
+  background-color: var(--white-color);
 }
 
 .feed .feedHeader button img{
@@ -193,40 +201,45 @@ main{
 /* feedBottom */
 /* feedBottom-Icon */
 .bottomIconWrapper{
-  display: flex;;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 4px;
   padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.bottomIconWrapper div{
+  height: 40px;
+}
+
 .bottomIconWrapper .leftIcon{
   display: flex;
   align-items: center;
-  height: 40px;
 }
+
 .bottomIconWrapper img{
   width: 24px;
   height: 24px;
   margin: 8px;
 }
+
 .bottomIconWrapper img:first-child{
   margin-left: 0px;
 }
+
 /* feedBottom-bottomLike */
 .bottomLike{
-  display: flex;
   width: 100%;
   padding: 0 16px;
   margin-bottom: 8px;
+  display: flex;
   align-items: center;
-  font-size: 14px;
 }
 
 .bottomLike img{
   width: 20px;
-  height: 20px;
-  border-radius: 50%;
   margin-right: 5px;
+  border-radius: 50%;
 }
 
 .bottomLike a{
@@ -237,6 +250,7 @@ main{
 .bottomComment{
   padding: 0 16px;
 }
+
 .bottomComment a{
   font-weight: var(--font-bold);
   color: var(--black-color);
@@ -246,41 +260,36 @@ main{
   height: 18px;
 }
 
-.bottomComment ul{
-  margin-top: 5px;
-}
-
 .description span:last-child{
   color: var(--light-gray-color);
 }
 
 .description button{
-  background-color: var(--white-color);
+  margin-left: 3px;
   font-size: 14px;
   color: var(--light-gray-color);
-  margin-left: 3px;
+  background-color: var(--white-color);
+}
+
+.bottomComment ul{
+  margin-top: 5px;
 }
 
 .commentList li{
+  margin-bottom: 6px;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6px;
 }
 
 .timeToLastComment{
-  font-size: 10px;
-  color: var(--light-gray-color);
+  display: inline-block;
   margin-bottom: 10px;
   padding: 16px;
   padding-top: 0;
   padding-bottom: 0;
-  display: inline-block;
-}
-
-.commentListLeft a{
-  font-weight: var(--font-bold);
-  color: var(--black-color);
+  font-size: 10px;
+  color: var(--light-gray-color);
 }
 
 .commentList li img{
@@ -288,55 +297,71 @@ main{
   height: 12px;
   margin-right: 14px;
 }
+
 /* writeComment */
 .writeComment{
   padding: 0 16px;
   height: 56px;
   display: flex;
   align-items: center;
-  border-top: 1px solid rgb(239, 239, 239);
+  border-top: 1px solid var(--border-color);
 }
 
 .writeComment form{
   height: 18px;
-  display: flex;
   width: 100%;
   padding: 0 ;
+  display: flex;
 }
 
 .writeComment form textarea, .writeComment form button{
   height: 100%;
 }
+
 .writeComment form textarea{
+  width: 90%;
+  padding: 0;
+  border: none;
   overflow: auto;
   outline: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   resize: none;
-  border: none;
-  padding: 0;
-  width: 90%;
-  font-size: 14px;
   background: none;
 }
+
 .writeComment form button{
   width: 10%;
   min-width: 24px;
-  white-space: nowrap;
+  margin-right: 14px;
   color: var(--blue-color);
-  background: none;
-  opacity: 0.3;
   font-size: 14px;
   text-align: right;
-  margin-right: 14px;
+  white-space: nowrap;
+  opacity: 0.3;
+  background: none;
 }
+
 /* rightSection */
 
-/* header */
-.rightSection{
-  max-width: 293px;
+
+.rightSectionWrapper{
+  position: absolute;
+  right: 270px;
 }
+
+/* main{
+position: relative;
+} 상단에 메인에 적용시킨 사항이지만, relative, absolute, fixed를 같이 사용해
+rightSection을 고정하는 로직을 알아보기 위해 주석으로 남겨 둠 */
+
+.rightSection{
+  position: fixed;
+  width: 268px;
+}
+
+/* right-header */
 
 .rightSection .description{
   font-size: 12px;
@@ -346,9 +371,9 @@ main{
 }
 
 .rightSection header{
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .bigAvatar img{
@@ -357,6 +382,7 @@ main{
   border-radius: 50%;
   margin-right: 10px;
 }
+
 .myInfo{
   display: flex;
   flex-direction: column;
@@ -369,27 +395,27 @@ main{
 
 /* story */
 .storyContainer{
+  margin-bottom: 16px;
+  font-weight: var(--font-bold);
   border: 1px solid var(--border-color);
   border-radius:var(--border-radius-container);
-  margin-bottom: 16px;
   background-color: var(--white-color);
-  font-weight: var(--font-bold);
 }
 
 .storyheader{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: 8px 0;
   padding:8px;
   padding-top: 0;
   padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .storyname{
   font-size: 14px;
-  color: var(--light-gray-color);
   font-weight: 400;
+  color: var(--light-gray-color);
 }
 
 .seeAll{
@@ -402,58 +428,34 @@ main{
 }
 
 .storyList .story{
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
 }
 
 .storyList .story img{
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
   margin-right: 10px;
 }
 
-.storyContainer .FriendsName{
+.storyContainer .friendsname{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.story{
-  margin-bottom: 8px;
-}
-
-.FriendsName{
-  display: flex;
-  width: 100%;
-}
-
 .story button{
+  margin-left: 20px;
   font-size: 12px;
   font-weight: var(--font-bold);
   color: var(--blue-color);
-  background-color: var(--white-color);
   white-space: nowrap;
-  margin-left: 20px;
+  background-color: var(--white-color);
 }
 
 .copyright{
   font-size: 12px;
   color: var(--light-gray-color);
-}
-
-
-main{
-  position: relative;
-}
-.rightSectionWrapper{
-  position: absolute;
-  right: 270px;
-}
-
-.rightSection{
-  position: fixed;
-  width: 268px;
 }
 
 @media screen and (max-width: 900px){
