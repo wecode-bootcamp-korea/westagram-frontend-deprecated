@@ -1,0 +1,182 @@
+:root {
+  /* color */
+  --white-color: white;
+  --grey-light-color: #fafafa;
+  --grey-medium-color: #dbdbdb;
+  --grey-dark-color: #8e8e8e;
+  --skyblue-color: #b2dffc;
+
+  /* font size */
+  --font-small: 12px;
+  --font-medium: 13px;
+  --font-large: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-light-color);
+}
+
+.container {
+  width: 350px;
+  height: 380px;
+  background-color: var(--white-color);
+  border: 1px solid var(--grey-medium-color);
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+/* header */
+header img {
+  height: 50.9896px;
+  width: 175px;
+  margin: 22px 86px 12px 86px;
+  margin-bottom: 24px;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+}
+
+input {
+  background-color: var(--grey-light-color);
+  height: 36px;
+  width: 250px;
+  padding: 9px 8px 7px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--grey-medium-color);
+  font-size: var(--font-medium);
+}
+
+input:nth-child(1) {
+  margin-bottom: 6px;
+}
+
+input:nth-child(2) {
+  margin-bottom: 8px;
+}
+
+main button {
+  margin: 8px 40px;
+  padding: 5px 9px;
+  width: 250px;
+  background-color: var(--skyblue-color);
+  border: 0 none;
+  border-radius: 4px;
+  font-size: var(--font-medium);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.askLoginOption {
+  margin: 10px 40px 18px 40px;
+  width: 250px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  width: 100px;
+  height: 1px;
+  border-top: 1px solid var(--grey-medium-color);
+}
+
+.askText {
+  color: var(--grey-dark-color);
+  font-size: var(--font-medium);
+
+  font-weight: bold;
+  display: flex;
+}
+
+footer button {
+  border: none;
+  background-color: var(--white-color);
+  margin: 8px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.facebookLogo {
+  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png");
+  background-repeat: no-repeat;
+  background-position: -414px -259px;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.facebookText {
+  color: #385185;
+  font-weight: bold;
+}
+
+.askForgotPwd {
+  color: #00376b;
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+/*
+.container main .or {
+  width: 266px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container main .or .text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e8e8e;
+  line-height: 26px;
+  margin: 0px 18px;
+}
+
+.container main .or .line {
+  border-top: 1px solid #dbdbdb;
+  width: 102px;
+  height: 1px;
+}
+
+
+.facebookLogIn {
+  border: 0;
+  color: white;
+}
+
+
+footer {
+  color: #00376b;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+*/
