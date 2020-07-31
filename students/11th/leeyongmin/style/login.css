@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid rgba(178, 178, 178, 0.6);
+  border-radius: 5px;
+}
+.login-img {
+  width: 300px;
+  height: 100px;
+  margin: 50px auto 50px;
+  background-image: url("../img/logo_text.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.login-id,
+.login-password {
+  width: 70%;
+  height: 40px;
+  margin: 0 auto 10px auto;
+}
+
+.login-id input,
+.login-password input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(178, 178, 178, 0.6);
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+.login-button {
+  width: 70%;
+  height: 40px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #c0dcfc;
+  color: white;
+  font-weight: bold;
+}
+
+.login-button button:hover {
+  border: none;
+  background-color: #0095f6;
+  cursor: pointer;
+}
+
+.login-fotgetPw {
+  width: 70%;
+  height: 40px;
+  margin: 100px auto 0;
+}
+
+.login-fotgetPw button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: white;
+  color: #4e668c;
+  font-weight: bold;
+}
+.login-fotgetPw button:hover {
+  cursor: pointer;
+}
