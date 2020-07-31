@@ -30,7 +30,7 @@
 
 .logoimg img{vertical-align: bottom;}
 
-.searchbox input{
+.searchbox #search{
   width: 215px;
   height: 28px;
   background-color: #fafafa;

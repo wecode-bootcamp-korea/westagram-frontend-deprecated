@@ -2,7 +2,7 @@
 const idname = document.getElementById('idname');
 const password = document.getElementById('password');
 
-idname.addEventListener('keyup', function(e) {
+idname.addEventListener('keyup', function() {
   let idValue = idname.value;
   let passwordValue = password.value;
 
@@ -13,7 +13,7 @@ idname.addEventListener('keyup', function(e) {
   }
 });
 
-password.addEventListener('keyup', function(e) {
+password.addEventListener('keyup', function() {
   let idValue = idname.value;
   let passwordValue = password.value;
   
@@ -24,7 +24,7 @@ password.addEventListener('keyup', function(e) {
   }
 });
 
-/* login alert */
+/* Login alert */
 const loginBtn = document.getElementById('loginButton');
 
 loginBtn.addEventListener('click', function() {
@@ -41,5 +41,3 @@ loginBtn.addEventListener('click', function() {
     location.href = "main.html";
   }
 });
-
-

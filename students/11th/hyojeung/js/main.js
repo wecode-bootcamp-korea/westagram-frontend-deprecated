@@ -1,8 +1,7 @@
-/* morebtn */
+/* Morebtn */
 const moerButton = document.getElementById('morebtn');
 
 moerButton.addEventListener('click', function() {
-  //alert('click');
   const moreText = document.getElementById('moretext');
 
   moreText.style.width = '100%';
@@ -13,12 +12,10 @@ moerButton.addEventListener('click', function() {
   moerButton.style.display = 'none';
 });
 
-
-/* comment */
+/* Comment(click) */
 const commentBtn = document.getElementById('commentbtn');
 
 commentBtn.addEventListener('click', function (){
-  //alert('click');
   let commentValue = document.getElementById('commentinput').value;
   const commetbox = document.getElementsByClassName('middletext')[0];
   let commentUl = document.createElement('ul');
@@ -52,8 +49,41 @@ commentBtn.addEventListener('click', function (){
 
 });
 
+/* Comment(keyup) */
+const commentEnter = document.getElementById('commentinput');
 
-/* like btn */
+commentEnter.addEventListener('keydown', function(e) {
+  const keyCode = e.keyCode;
+  let commentValue = document.getElementById('commentinput').value;
+  const commetbox = document.getElementsByClassName('middletext')[0];
+  let commentUl = document.createElement('ul');
+  let commentTitle = document.createElement('li');
+  let commentText = document.createElement('li')
+  let commentImg = document.createElement('li');
+  let commentLike = document.createElement('img');
+
+  if(commentValue.length >= 1 && keyCode == 13){
+    commentUl.className = "maintext";
+
+    commentTitle.innerHTML = "ovv__0703";
+    commentTitle.className = "namebold";
+  
+    commentText.innerHTML = `${commentValue}`;
+  
+    commentLike.setAttribute ("src","img/icon5_fom.png");
+    commentImg.className = "likebtn";
+  
+    commentUl.appendChild(commentTitle);
+    commentUl.appendChild(commentText);
+    commentUl.appendChild(commentImg);
+    commentImg.appendChild(commentLike);
+    commetbox.appendChild(commentUl);
+  
+    document.getElementById('commentinput').value = "";
+  }
+});
+
+/* Like btn */
 let heartBtn = 0;
 function changehHeart(){
   if(heartBtn == 0){
