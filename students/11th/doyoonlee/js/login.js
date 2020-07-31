@@ -8,7 +8,7 @@ function handleBtnColor() {
     }
     else {
         button.style.backgroundColor = "#C0DFFD";
-        button.setAttribute("disabled", ""); // 이 부분 disabled 추가가 안됩니다. 
+        button.setAttribute("disabled", "#"); 
     }
 }
 

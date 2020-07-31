@@ -7,7 +7,7 @@ body {
     width: 100%;
 }
 
-/* -- nav bar -- */
+/* -- Nav bar -- */
 .navbar_back {
     width: 100%;
     height: 55px;
@@ -34,7 +34,7 @@ body {
     height: 30px;
 }
 
-/* -- nav searchbar -- */
+/* -- Nav Searchbar -- */
 .searchbar_box {
     border: 1px solid green;
     width: 200px;
@@ -51,7 +51,7 @@ body {
     top: 5px;
 }
 
-/* -- nav icon -- */
+/* -- Nav Icon -- */
 .profile {
     width: 25px;
     height: auto;
@@ -70,9 +70,9 @@ body {
 }
 
 /* --  Main Start --  */
+
 .main_box {
     background-color: palegoldenrod;
-    display: flex;
 }
 
 
@@ -126,7 +126,7 @@ body {
     height: 100px;
 }
 
-/* recommend Start */
+/* -- Recommend Start -- */
 .recommend {
     width: 100%; 
     height: 100vh;
@@ -148,12 +148,6 @@ body {
     height: 600px;
     font-size: 0.8rem;
     background-color: rgb(113, 214, 214);
-}
-
-.follow_recommend {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .follow_recommend {
