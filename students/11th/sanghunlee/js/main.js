@@ -2,12 +2,12 @@ const commentBtn = document.querySelector(".commentSubmitButton");
 let  commentInput = document.querySelector(".commentInputTextarea");
 
 const plusComment = ()=>{  
-    let feedCommentInput = document.querySelector(".commentInputTextarea").value;
+    let feedCommentInput = commentInput.value;
     let feedCommentId = "hun__hoon"
     const commentDiv = document.getElementById("addComment");
     const addDivComment = document.createElement("div");
-    const addSpanComment = document.createElement("span");
     const addSpanId = document.createElement("span");
+    const addSpanComment = document.createElement("span");
 
     commentDiv.appendChild(addDivComment);
     addDivComment.appendChild(addSpanId);
@@ -15,7 +15,6 @@ const plusComment = ()=>{
     addSpanComment.className ="feedAddedComment"
     addSpanId.innerHTML = feedCommentId;
     addSpanComment.innerHTML = feedCommentInput;
-
     commentInput.value = "";
 };
 
@@ -25,14 +24,13 @@ const plusCommentEnter = (e) => {
     };
 }
 
-
 commentInput.addEventListener('keydown', plusCommentEnter);
 commentBtn.addEventListener('click', plusComment);
 
 let himg = document.getElementsByClassName("heartimg");
 
 const pushLikeBtn = () =>{
-    const heartimg = document.getElementsByClassName("heartimg")[0];
+    const heartimg = himg[0];
     if (heartimg.src === "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"){
         heartimg.src = "./img/redherat.jpeg"
         }
