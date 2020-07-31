@@ -451,6 +451,7 @@ textarea {
 button {
   padding: 0;
   border-width: 0;
+  background-color: white;
 }
 
 :-webkit-any-link {

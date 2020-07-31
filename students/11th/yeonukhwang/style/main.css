@@ -282,6 +282,22 @@ main {
   margin-right: 14px;
 }
 
+.commentListRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentListRight .commentLikeBtn {
+  margin-right: 3px;
+}
+
+.commentListRight .commentDeleteBtn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
 /* writeComment */
 .writeComment {
   padding: 0 16px;
