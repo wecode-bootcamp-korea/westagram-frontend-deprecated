@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WEstagram - Login</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div>
+      <!-- Login Section start -->
+      <section class="login_whole">
+        <div class="login_box">
+          <div>
+            <div class="logo_box">
+              <img src="./img/logo_text.png"/>
+            </div>
+            <!-- form start -->
+            <form class="form">
+              <div class="input_box">
+                <div class="user_input">
+                  <input class="user_id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                </div>
+                <div class="user_input">
+                  <input class="user_pw" type="password" placeholder="비밀번호">       
+                </div>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/accounts/onetap/?next=%2F">
+                  <input class="button" type="button" value="로그인" disabled> 
+                </a>
+              </div>
+            </form>
+            <!-- Small text start -->
+            <div class="or_box">
+              <div class="or_line"></div>
+              <div class="or_text">또는</div>
+              <div class="or_line"></div>
+            </div>
+            <div class="fb_box">
+              <img alt="fb_logo" class="fb_img" src="./img/fb_logo.png">
+              <span class="fb_text">Facebook으로 로그인</span>
+            </div>
+            <aside class="forgot">
+              <a href="https://www.instagram.com/accounts/password/reset/">
+                비밀번호를 잊으셨나요?
+              </a>
+            </aside>
+          </div>
+      </section>
+  
+      <!-- join box -->
+      <section class="join_box">
+        <div class="join_innerbox">
+          <div class="grey_text">
+            계정이 없으신가요?
+          </div>
+          <div>
+            <a href="https://www.instagram.com/accounts/emailsignup/">
+              가입하기
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

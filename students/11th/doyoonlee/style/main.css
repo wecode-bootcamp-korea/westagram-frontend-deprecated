@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* -- nav bar -- */
+.navbar_back {
+    width: 100%;
+    height: 55px;
+    background-color: pink;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_box {
+    border: 3px solid blueviolet;
+    width: 50%;
+    max-width: 940px;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: auto;
+    height: 30px;
+}
+
+/* -- nav searchbar -- */
+.searchbar_box {
+    border: 1px solid green;
+    width: 200px;
+    height: 28px;
+    background-color: white;
+    position: relative;
+    display: flex;
+}
+
+.searchbar_box img {
+    height: 15px;
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+
+/* -- nav icon -- */
+.profile {
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.icons {
+    width: 200px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons img {
+    height: 25px;
+}
+
+/* --  Main Start --  */
+.main_box {
+    background-color: palegoldenrod;
+    display: flex;
+}
+
+
+/* --  Story --  */
+
+.story_box1 {
+   background-color: slategray;
+   width: 615px;
+   height: 120px;
+}
+
+.story_box2 {
+    border: 2px solid red;
+    width: 85px;
+    height: 100px;
+}
+
+.story_profile img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+/* --  Feed --  */
+
+.feed_box {
+    background-color: tan;
+    width: 615px;
+    height: 900px;
+}
+
+.feed_profile {
+    border: 2px solid springgreen;
+    width: 615px;
+    height: 60px;
+}
+
+.feed_profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.feed_img {
+    width: 615px;
+    height: auto;
+}
+
+.comment {
+    border: 2px solid peru;
+    height: 100px;
+}
+
+/* recommend Start */
+.recommend {
+    width: 100%; 
+    height: 100vh;
+}
+
+.recommend_box {
+    width: 350px;
+    border: 2px solid goldenrod;
+}
+
+.rec_myprofile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.side_me {
+    width: 450px;
+    height: 600px;
+    font-size: 0.8rem;
+    background-color: rgb(113, 214, 214);
+}
+
+.follow_recommend {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.follow_recommend {
+    width: 200px;
+}
+

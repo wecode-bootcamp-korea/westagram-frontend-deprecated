@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login_whole {
+    display: flex;
+    align-items: center;
+}
+
+.login_box {
+    display: flex;
+    width: 380px;
+    height: 390px;
+    margin: 0;
+    background-color: #ffffff;
+    border: 0.75px solid rgb(225, 225, 225);
+}
+
+.logo_box {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_box img {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+/* id, password input */
+
+.input_box {
+    margin-top: 30px;
+}
+
+.user_input {
+    display: flex;
+    margin: 0 40px 7px 40px;
+}
+
+.user_id, .user_pw {
+    width: 300px;
+    height: 43px;
+    text-indent: 10px;
+    border: 0.75px solid rgb(225, 225, 225);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    background-color: #FFFFFF;
+    color: black;
+} 
+
+.button {
+    margin: 10px 40px 10px 40px;
+    width: 300px;
+    height: 33px;
+    border-radius: 5px;
+    border: 0px solid white;
+    font-weight: 700;
+    color: white;
+    background-color: #C0DFFD;
+}
+
+/* 또는 */
+
+.or_box {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.or_text {
+    width: 50px;
+    font-size: 0.9rem;
+    text-indent: 12px;
+    color: rgb(150, 150, 150);
+}
+
+.or_line {
+    position: relative;
+    width: 123px;
+    height: 1px;
+    background-color: rgb(150, 150, 150);
+    top: 12px;
+}
+
+/* Facebook으로 로그인 */
+
+.fb_box {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    cursor: pointer;
+    height: 20px;
+}
+
+.fb_box span {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(2, 56, 106);
+}
+
+.fb_img {
+    width: 22px;
+    height: auto;
+    margin-right: 7px;
+}
+
+.fb_text {
+    text 
+}
+
+
+/* 비밀번호를 잊으셨나요? */
+
+.forgot {
+    text-align: center;
+    margin-top: 7px;
+}
+
+
+/* 계정이 없으신가요? */
+
+.join_box {
+    width: 380px;
+    height: 70px;
+    margin-top: 12px;
+    background-color: #ffffff;
+    border: 0.75px solid rgb(225, 225, 225);
+}
+
+.join_innerbox {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey_text {
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+}
+
+aside a:link, aside a:visited  {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgb(2, 56, 106);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    padding-left: 5px;
+    font-weight: 500;
+    color: rgb(26, 150, 244);
+}
