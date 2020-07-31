@@ -6,7 +6,7 @@ const form = document.getElementsByClassName("rightLogin")[0];
 const changeBtnStatus = () => {
   const idV = id.value;
   const pwV = pw.value;
-  if (idV.length && pwV.length) {
+  if (idV.includes("@") && pwV.length >= 5) {
     button.setAttribute("class", "loginBtn-active");
     button.disabled = false;
   } else {

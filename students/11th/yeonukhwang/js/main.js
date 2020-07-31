@@ -37,11 +37,13 @@ article.forEach((ele) => {
     commentbox.appendChild(commentListLeft); // leftdiv > li
     commentbox.appendChild(commentListRight); // rightdiv > li
     ul[0].appendChild(commentbox); // li > ul
-    // - 추가된 댓글 삭제 -
     comment.value = ""; // reset textarea value
+
+    // - 추가된 댓글 삭제 -
     deleteBtn.addEventListener("click", () => {
       commentbox.remove();
-    }); // '댓글삭제 기능 구현 중, 기존 댓글에만 적용되는 것 발견, 댓글 생성함수에 deletebtn에 eventelisner를 호출하는 방식으로 해결, 한개의 event에 다 담아버릴 수 있는 방법은 없을까??
+    }); //
+
     // - 추가된 댓글 좋아요 -
     let commentClickCount = 0;
     heart.addEventListener("click", () => {
@@ -54,6 +56,7 @@ article.forEach((ele) => {
       }
     });
   };
+
   // - 댓글 추가 -
   commentBtn.addEventListener("click", appendComment);
   comment.addEventListener("keydown", (e) => {
@@ -90,6 +93,7 @@ article.forEach((ele) => {
     }
     likeCount.textContent = likeCountNum;
   });
+
   // - 기존 댓글 좋아요 -
   const commentLikeBtnList = Array.from(
     ele.getElementsByClassName("commentLikeBtn")
