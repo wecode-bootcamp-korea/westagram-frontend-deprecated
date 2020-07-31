@@ -1,0 +1,176 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-width: 935px;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    margin: 20px 0 0 30px;
+}
+
+.instaLogo {
+    width: 175px;
+    height: 60px;
+    margin: 30px 86px 40px 86px;
+}
+
+.login {
+    height: 380px;
+    width: 350px;
+}
+
+.loginContentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+.loginContentWrapper button {
+    width: 270px;
+    height: 30px;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 8px;
+    color: #E7F0FE;
+    background-color: #C0DFFD;
+}
+
+.loginContentWrapper input {
+    width: 270px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    outline: none;
+}
+
+.loginContentWrapper input:focus {
+    border-color: gray;
+}
+
+.loginContentWrapper button {
+    border: 0;
+}
+
+.inputPw {
+    margin: 10px 0px;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.or span {
+    margin: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(var(--f52, 142, 142, 142), 1);
+}
+
+.slashLine {
+    width: 107px;
+    height: 1px;
+    background-color: #DBDBDB;
+}
+
+.withFacebook {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    color: #385185;
+}
+
+.withFacebook div {
+    display: flex;
+    margin: 15px 0 25px 0;
+}
+
+.withFacebook a {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+a:visited {
+    color: #385185;
+}
+
+.withFacebook img {
+    margin-right: 5px;
+}
+
+.SignUpBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 60px;
+    margin-top: 15px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+
+}
+
+.getApp {
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.appLogo {
+    margin-top: 5px;
+}
+
+.appLogo img {
+    width: 135px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    width: 100vw;
+    min-width: 935px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: #00376b;
+
+}
+
+li {
+    margin: 0px 3px;
+}
