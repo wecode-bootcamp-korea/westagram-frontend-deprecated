@@ -1,0 +1,500 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 54px;
+    margin: 0 auto;
+    background-color: #fafafa;;
+    padding: 20px;
+    border-bottom: 1px solid#dbdbdb;
+}
+
+.navMargin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 975px;
+    height: 100%;
+
+}
+
+.feeds{
+    margin-left: 10%;
+}
+
+.logoText{
+    width: 103px;
+    height: 29px;
+}
+
+.navLeft .imgText{
+    width: 22px;
+    height: 22px;
+}
+
+.navLeft .imgLogo{
+    width: 103px;
+    height: 29px;
+}
+
+/*검색창 */
+.box{
+    display: flex;
+    position: relative;
+    width: 215px;
+    height: 28px;
+    padding: 7px;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.search-bar{
+    width: 100%;
+    height: 28px;
+    padding: 3px 10px 3px 26px;
+}
+
+.search_icon{
+    height: 10px;
+    width: 10px;
+}
+
+.container-1{
+   background-color: #fafafa;
+   width: 201px;
+   height: 18px;
+   position: absolute;
+   text-align: center;
+   font-size: 14px;
+   cursor: text;
+   color: #8e8e8e;
+}
+
+.container-2{
+    display: inline;
+}
+
+
+
+.vl{
+    border-left: 2px solid black;
+    height: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navLeft{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navIcon img{
+    width: 22px;
+    height: 22px;
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.search{
+    background-image: "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png";
+  
+}
+
+/* 본문 margin box*/
+.mainFull{
+    display: flex;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    height: 927px;
+    width: 100%;
+    padding-top: 50px;
+
+}
+
+.mainCenter{
+    display: flex;
+    margin: 0 auto;
+}
+
+/* 좌측 게시글 */
+
+.leftSection{
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    height: 918px;
+    width: 616px;
+    margin-left: 245px;
+    margin-right: 28px;
+}
+
+.headSection{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+
+.headerImg{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.headerImg img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.hederId{
+    margin-left: 14px;
+    width: 450px;
+    cursor: pointer;
+}
+
+
+.moreBtn{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.moreBtn img{
+    width: 16px;
+    height: 16px;
+}
+
+.moreSide{
+    padding: 8px;
+}
+
+
+.mainImg{
+    width: 100%;
+    height: 614px;
+}
+
+.mainImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 좋아요, 댓글, 북마크 섹션 */
+.like_container{
+    width: 100%;
+    height: 242px;
+}
+
+.likeSection{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    margin: 4px 0 0;
+    padding: 0 16px;
+}
+
+.likeIcon{
+    display: flex;
+}
+
+.likeIcon button{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.likeIcon img{
+    width: 24px;
+    height: 24px;
+}
+
+.likeBlank{
+    width: 500px;
+    height: 40px;
+}
+
+.bookMark{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.bookMark img{
+    width: 24px;
+    height: 24px;
+}
+
+/* 좋아요 count */
+.likeCount{
+    display: flex;
+    align-items: center;
+    height: 18px;
+    width: 100%;
+    background-color: white;
+    margin: 0 0 8px;
+    padding: 0 16px;
+}
+
+.likeCountBtn{
+    background-color: white;
+    width: 80px;
+}
+
+.likeCount button{
+    font-size: 14px;
+    height: 18px;
+    border: none;
+    padding: 0;
+}
+
+/* comment 영역 */
+.commentArea{
+    width: 100%;
+    height: 88px;
+    padding: 0 16px;
+    background-color: white;
+}
+
+.commentFirstLine{
+    font-size: 14px;
+    height: 18px;
+    margin-bottom: 4px;
+}
+
+.commentFirstLine button{
+    border: none;
+    height: 18px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    color:rgba(var(--f52,142,142,142),1);;
+}
+
+
+.moreComment{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.otherComment{
+    font-size: 14px;
+}
+.otherComment li{
+    margin-bottom: 4px;
+}
+
+.commentTime{
+    width: 100%;
+    height: 20px;
+    font-size: 10px;
+    padding: 0 0 0 16px;
+    margin: 0 0 4px;
+}
+
+.inputComment{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    border-top:1px solid #dbdbdb;
+    margin: 4px 0 0;
+    padding: 0 16px;
+}
+
+.inputCenterPosition{
+    margin: 0 auto;
+}
+
+
+.inputArea{
+    width: 541px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.upload{
+    height: 18px;
+    border: none;
+    background-color: white;
+    color: #0095f6;
+    opacity: .3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 우측 프로필 */
+.right_profile{
+    width: 293px;
+    height: 500px;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    margin-right: 245px;
+}
+
+.profile_top{
+    display: flex;
+    align-items: center;
+}
+
+.profile_Id{
+    font-size: 14px;
+}
+.my_Id{
+    font-size: 12px;
+}
+
+
+.profile_pic img{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+.info_me{
+    margin-left: 20px;
+}
+
+.story_head{
+    margin: 0 0 12px -16px;
+    width: 325px;
+    height: 291px;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    padding: 4px 16px;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+}
+
+.recommend{
+    padding: 4px 16px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.story_word{
+    font-size: 14px;
+    font-weight: 600;
+    color: #8e8e8e;
+}
+
+.recommend a{
+    font-size: 12px;
+}
+
+.story_pic{
+    padding: 8px;
+}
+
+.story_array{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 스토리 모두보기 */
+.story_pic img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.profile_Id{
+    font-size: 14px;
+}
+.story_Id{
+    font-size: 12px;
+}
+
+.story_follow{
+    font-size: 12px;
+    width: 50px;
+    height: 18px;
+    color: #0095f6;
+    outline: none;
+    font-weight: 600;
+}
+
+.story_array button{
+    border: none;
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+
+.recommend_head{
+    margin: 0 0 12px -16px;
+    width: 325px;
+    height: 191px;
+    background-color: rgba(var(--b3f,250,250,250),1)omato;
+    padding: 4px 16px;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;;
+}
+
+.insta_end{
+    width: 100%;
+    height: 106px;
+    background-color:rgba(var(--b3f,250,250,250),1);
+}
+
+.insta_info{
+    width: 100%;
+    height: 39px;
+    background-color:rgba(var(--b3f,250,250,250),1);
+    margin-bottom: 16px;
+}
+
+.insta_info li{
+    font-size: 12px;
+    list-style: none;
+    float: left;
+    margin-left: 2.75px;
+}
+
+.insta_info ul{
+    padding: 0;
+    margin: 0 0 3px;
+}
+
+.insta_info li a{
+    color: #c7c7c7;
+}
+
+.made_by{
+    font-size: 11px;
+    color: #c7c7c7;
+}
