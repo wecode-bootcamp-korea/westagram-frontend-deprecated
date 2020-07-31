@@ -69,7 +69,7 @@ nav {
 .navLeftBoxIcon {
     display: flex;
     align-items: center;
-    width: 35px;
+    width: 30px;
     height: 30px;
 }
 
@@ -116,8 +116,6 @@ nav {
     border-radius: 100%;
     padding: 2px
 }
-
-
 
 .storyBoard li span {
     margin-top: 5px;
@@ -277,12 +275,33 @@ nav {
     font-size: 15px;
 }
 
+.plusCommentWrapper {
+    margin: 0;
+    padding: 0;
+}
 
+.plusCommentWrapper li {
+    font-size: 15px;
+}
 
+.plusFeedComment {
+    margin-left: 20px;
+}
 
-.main_feed_article_peoples_header_leftplace {
-    margin-top: 5px;
-    font-size: 13px;
+.plusCommentDeleteBtn {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.plusCommentLike {
+    width: 10px;
+    height: 10px;
+}
+
+.plusTypedComment {
+    display: flex;
+    justify-content: space-between;
 }
 
 .circle {
@@ -394,4 +413,10 @@ ul li {
     font-size: 12px;
     font-weight: 700;
     color: #0095f6;
+}
+
+@media(max-width: 1024px) {
+    .sideBar {
+        display: none;
+    }
 }

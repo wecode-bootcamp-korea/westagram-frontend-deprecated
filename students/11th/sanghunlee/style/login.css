@@ -170,3 +170,31 @@ ul {
 li {
     margin: 0px 3px;
 }
+
+@media(max-width:875px) {
+    .MainImage {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* nav ul {
+        min-width: 360px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        height: 75px;
+    }
+
+    li {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-bottom: 7px;
+        margin-right: 16px;
+        text-shadow: 0 0
+    } */
+}
