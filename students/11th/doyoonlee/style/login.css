@@ -9,7 +9,6 @@ body {
     justify-content: center;
 }
 
-
 .login_whole {
     display: flex;
     align-items: center;
@@ -115,10 +114,6 @@ body {
     width: 22px;
     height: auto;
     margin-right: 7px;
-}
-
-.fb_text {
-    text 
 }
 
 
