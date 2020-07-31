@@ -1,0 +1,62 @@
+* {
+    box-sizing : border-box; /*박스크기 컨트롤 default*/
+}
+
+.loginGroup {
+    position : relative;
+    width : 350px;
+}
+
+.loginBoard {
+    position : relative;
+    display : flex;
+    flex-wrap : wrap;
+    align-content: flex-start;
+    height : 380px;
+    padding : 10px 40px 10px 40px;
+
+    border : 1px solid gray;
+    background-color : white;
+}
+
+.loginBoard img {
+    width : 175px;
+    height : 53px;
+    margin : 0 auto;
+    margin-top : 22px;
+    margin-bottom : 12px;
+
+}
+
+.loginPart {
+    width : 100%;
+    height : 263px;
+}
+
+.inputPart {
+    position : relative;
+    height : 82px;
+    display : flex;
+    flex-wrap : wrap;
+    align-content : space-between;
+    margin-top : 24px;
+}
+
+.inputPart input {
+    width : 100%;
+    height : 36px;
+    padding : 9px 0 7px 8px;
+}
+
+.loginButton {
+    width : 100%;
+    height : 30px;
+    margin-top : 14px;
+
+    border : none;
+    border-radius : 3px;
+    background-color : #b9dcfd;
+    font-size : 14px;
+    font-style: bold;
+    color : white;
+}
