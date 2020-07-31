@@ -1,0 +1,140 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 350px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.inner_container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.insta-img{
+    margin: auto;
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.login-form{
+    width: 100%;
+}
+
+.login-id, .login-pw{
+    height: 38px;
+    margin: 3px 0;
+    border: 1px solid rgb(219, 219, 219);
+    background: rgb(250, 250, 250);
+    position: relative;
+    border-radius: 3px;
+}
+
+.login-id span, .login-pw span{
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    padding: 9px 0 7px 8px;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transition: all 50ms linear;
+}
+
+.login-id input, .login-pw input{
+    height: 100%;
+    border: none;
+    padding: 9px 0 7px 8px;
+    background: rgb(250, 250, 250);
+    position: absolute;
+}
+
+.login-id input:focus, .login-pw input:focus{
+    outline: none;
+}
+
+.login-pw div{
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    padding-right: 8px;
+}
+
+.show-pw{
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0;
+    display: none;
+    outline: none;
+}
+
+.btn-login{
+    height: 30px;
+    padding: 5px 9px;
+    background: rgb(178, 223, 252);
+    color: white;
+    border-style: none;
+    margin: 15px 0;
+    font-weight: bold;
+    outline: none;
+}
+
+.login-form input, .btn-login{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.line-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(142, 142, 142);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.line{
+    width: 39%;
+    height: 1px;
+    background: rgb(219, 219, 219);
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(56, 81, 133);
+}
+
+.facebook img{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.facebook div{
+    padding-bottom: 3px;
+}
+
+.forgot-pw{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: rgb(0, 55, 107);
+}
