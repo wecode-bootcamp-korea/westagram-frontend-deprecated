@@ -6,20 +6,19 @@ let changeButtonStatus = (validationCheckFunction, inputName, value) => {
 
 let isIdAndPasswordMinOnce = (() => {
   const validationFlag = {
-    'username': false,
-    'password': false
+    username: false,
+    password: false
   }
   return (inputName, value) => {
-    if (value) validationFlag[inputName] = false;
-    else validationFlag[inputName] = true;
-
-    return validationFlag['username'] && validationFlag['password'];
+    if (value) validationFlag[inputName] = true;
+    else validationFlag[inputName] = false;
+    return validationFlag.username && validationFlag.password;
   }
 })();
 
 let loginForm = document.querySelector('.login_form');
 
-loginForm.addEventListener('keydown', ({
+loginForm.addEventListener('keyup', ({
   target: {
     name,
     value
