@@ -1,25 +1,9 @@
-
-:root{
-  --gray-color:#8E8E8E;;
-  --light-gray-color:#C7C7C7;
-  --black-color:#262626;
-  --blue-color:#0095f6;
-  --font-bold:600;
-  --white-color:#FFFFFF;
-  --background-color:#FAFAFA;
-  --border-color:rgb(219, 219, 219);
-  --border-radius-container:3px;
-}
 /* Global */
-img{
+img {
   height: 100%;
 }
 
-html{
-  height: 100%;
-}
-
-body{
+body {
   position: relative;
   max-width: 1020px;
   height: 100%;
@@ -28,7 +12,7 @@ body{
 }
 
 /* navbar */
-.mainHeader{
+.mainHeader {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -43,66 +27,66 @@ body{
   border-bottom: 1px solid var(--border-color);
 }
 
-header nav{
+header nav {
   width: 100%;
   max-width: 935px;
   height: 30px;
   margin: 0 auto;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav div{
+nav div {
   height: 100%;
 }
 
-nav .logoContainer{
-  display:flex;
+nav .logoContainer {
+  display: flex;
   align-items: center;
 }
 
-nav .logoContainer .hline{
+nav .logoContainer .hline {
   width: 2px;
   margin: 0 10px;
   background-color: var(--black-color);
 }
 
-nav .search{
+nav .search {
   width: 200px;
 }
 
-nav .search input{
+nav .search input {
   width: 100%;
   height: 100%;
 }
 
-nav .search input::placeholder{
+nav .search input::placeholder {
   text-align: center;
   font-size: 14px;
   color: var(--light-gray-color);
 }
 
-header .icon-lists{
+header .icon-lists {
   display: flex;
   height: 100%;
 }
 
-header .icon{
+header .icon {
   height: 100%;
   margin-right: 15px;
 }
 
-header .icon img{
+header .icon img {
   border-radius: 50%;
 }
 
-header .icon:last-child{
+header .icon:last-child {
   margin-right: 0px;
 }
 
 /* main */
-main{
+main {
   position: relative;
   display: flex;
   max-width: 935px;
@@ -112,22 +96,22 @@ main{
 }
 
 /* feed */
-.feedSection{
+.feedSection {
   height: 100%;
   width: 613px;
 }
 
-.feed{
+.feed {
   max-width: 614px;
   margin-bottom: 60px;
   margin-right: 28px;
-  border: 1px solid var(--border-color);;
+  border: 1px solid var(--border-color);
   border-radius: 3px;
   background-color: var(--white-color);
 }
 
 /* feed-header */
-.feed .feedHeader{
+.feed .feedHeader {
   position: relative;
   height: 60px;
   display: flex;
@@ -135,29 +119,29 @@ main{
 }
 
 /* story, recommend에도 적용하는 속성*/
-.feed .feedHeader .avatar{
+.feed .feedHeader .avatar {
   height: 100%;
   padding: 16px;
 }
 
-.avatar img{
+.avatar img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
 
-.name{
+.name {
   font-weight: var(--font-bold);
   color: var(--black-color);
 }
 
-.name:hover{
+.name:hover {
   cursor: pointer;
 }
 
 /* story, recommend에도 적용하는 속성 끝*/
 
-.feed .feedHeader .friendsname{
+.feed .feedHeader .friendsname {
   width: 100%;
   padding: 16px;
   padding-left: 0px;
@@ -166,41 +150,41 @@ main{
   align-items: center;
 }
 
-.feed .feedHeader .friendsname .names{
+.feed .feedHeader .friendsname .names {
   display: flex;
   flex-direction: column;
 }
 
-.feed .feedHeader .friendsname .names span{
+.feed .feedHeader .friendsname .names span {
   padding: 2px;
 }
 
-.names .location{
+.names .location {
   font-size: 12px;
 }
 
-.feed .feedHeader button{
+.feed .feedHeader button {
   border: none;
   background-color: var(--white-color);
 }
 
-.feed .feedHeader button img{
+.feed .feedHeader button img {
   height: 16px;
   width: 16px;
 }
 
 /* feed-Main */
-.feedMain{
+.feedMain {
   width: 100%;
 }
 
-.feedMain img{
+.feedMain img {
   width: 100%;
 }
 
 /* feedBottom */
 /* feedBottom-Icon */
-.bottomIconWrapper{
+.bottomIconWrapper {
   margin-top: 4px;
   padding: 0 16px;
   display: flex;
@@ -208,27 +192,27 @@ main{
   align-items: center;
 }
 
-.bottomIconWrapper div{
+.bottomIconWrapper div {
   height: 40px;
 }
 
-.bottomIconWrapper .leftIcon{
+.bottomIconWrapper .leftIcon {
   display: flex;
   align-items: center;
 }
 
-.bottomIconWrapper img{
+.bottomIconWrapper img {
   width: 24px;
   height: 24px;
   margin: 8px;
 }
 
-.bottomIconWrapper img:first-child{
+.bottomIconWrapper img:first-child {
   margin-left: 0px;
 }
 
 /* feedBottom-bottomLike */
-.bottomLike{
+.bottomLike {
   width: 100%;
   padding: 0 16px;
   margin-bottom: 8px;
@@ -236,53 +220,53 @@ main{
   align-items: center;
 }
 
-.bottomLike img{
+.bottomLike img {
   width: 20px;
   margin-right: 5px;
   border-radius: 50%;
 }
 
-.bottomLike a{
+.bottomLike a {
   font-weight: var(--font-bold);
   color: var(--black-color);
 }
 /* feedBottomComment  */
-.bottomComment{
+.bottomComment {
   padding: 0 16px;
 }
 
-.bottomComment a{
+.bottomComment a {
   font-weight: var(--font-bold);
   color: var(--black-color);
 }
 
-.description{
+.description {
   height: 18px;
 }
 
-.description span:last-child{
+.description span:last-child {
   color: var(--light-gray-color);
 }
 
-.description button{
+.description button {
   margin-left: 3px;
   font-size: 14px;
   color: var(--light-gray-color);
   background-color: var(--white-color);
 }
 
-.bottomComment ul{
+.bottomComment ul {
   margin-top: 5px;
 }
 
-.commentList li{
+.commentList li {
   margin-bottom: 6px;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.timeToLastComment{
+.timeToLastComment {
   display: inline-block;
   margin-bottom: 10px;
   padding: 16px;
@@ -292,14 +276,14 @@ main{
   color: var(--light-gray-color);
 }
 
-.commentList li img{
+.commentList li img {
   width: 12px;
   height: 12px;
   margin-right: 14px;
 }
 
 /* writeComment */
-.writeComment{
+.writeComment {
   padding: 0 16px;
   height: 56px;
   display: flex;
@@ -307,18 +291,19 @@ main{
   border-top: 1px solid var(--border-color);
 }
 
-.writeComment form{
+.writeComment form {
   height: 18px;
   width: 100%;
-  padding: 0 ;
+  padding: 0;
   display: flex;
 }
 
-.writeComment form textarea, .writeComment form button{
+.writeComment form textarea,
+.writeComment form button {
   height: 100%;
 }
 
-.writeComment form textarea{
+.writeComment form textarea {
   width: 90%;
   padding: 0;
   border: none;
@@ -331,7 +316,7 @@ main{
   background: none;
 }
 
-.writeComment form button{
+.writeComment form button {
   width: 10%;
   min-width: 24px;
   margin-right: 14px;
@@ -345,8 +330,7 @@ main{
 
 /* rightSection */
 
-
-.rightSectionWrapper{
+.rightSectionWrapper {
   position: absolute;
   right: 270px;
 }
@@ -356,55 +340,55 @@ position: relative;
 } 상단에 메인에 적용시킨 사항이지만, relative, absolute, fixed를 같이 사용해
 rightSection을 고정하는 로직을 알아보기 위해 주석으로 남겨 둠 */
 
-.rightSection{
+.rightSection {
   position: fixed;
   width: 268px;
 }
 
 /* right-header */
 
-.rightSection .description{
+.rightSection .description {
   font-size: 12px;
   color: var(--light-gray-color);
   font-weight: 400;
   white-space: nowrap;
 }
 
-.rightSection header{
+.rightSection header {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.bigAvatar img{
+.bigAvatar img {
   width: 46px;
   height: 46px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.myInfo{
+.myInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.myInfo span{
+.myInfo span {
   padding: 2px 0;
 }
 
 /* story */
-.storyContainer{
+.storyContainer {
   margin-bottom: 16px;
   font-weight: var(--font-bold);
   border: 1px solid var(--border-color);
-  border-radius:var(--border-radius-container);
+  border-radius: var(--border-radius-container);
   background-color: var(--white-color);
 }
 
-.storyheader{
+.storyheader {
   margin: 8px 0;
-  padding:8px;
+  padding: 8px;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
@@ -412,39 +396,39 @@ rightSection을 고정하는 로직을 알아보기 위해 주석으로 남겨 �
   align-items: center;
 }
 
-.storyname{
+.storyname {
   font-size: 14px;
   font-weight: 400;
   color: var(--light-gray-color);
 }
 
-.seeAll{
+.seeAll {
   font-size: 12px;
   cursor: pointer;
 }
 
-.storyList{
+.storyList {
   padding: 8px;
 }
 
-.storyList .story{
+.storyList .story {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
 }
 
-.storyList .story img{
+.storyList .story img {
   margin-right: 10px;
 }
 
-.storyContainer .friendsname{
+.storyContainer .friendsname {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.story button{
+.story button {
   margin-left: 20px;
   font-size: 12px;
   font-weight: var(--font-bold);
@@ -453,19 +437,19 @@ rightSection을 고정하는 로직을 알아보기 위해 주석으로 남겨 �
   background-color: var(--white-color);
 }
 
-.copyright{
+.copyright {
   font-size: 12px;
   color: var(--light-gray-color);
 }
 
-@media screen and (max-width: 900px){
-  .rightSection{
-    display:none;
+@media screen and (max-width: 900px) {
+  .rightSection {
+    display: none;
   }
 }
 
-@media screen and (max-width: 550px){
-  .search{
-    display:none;
+@media screen and (max-width: 550px) {
+  .search {
+    display: none;
   }
 }

@@ -1,95 +1,85 @@
-:root{ 
-  --gray-color:#8E8E8E;;
-  --light-gray-color:#C7C7C7;
-  --black-color:#262626;
-  --blue-color:#0095f6;
-  --font-bold:600;
-  --white-color:#FFFFFF;
-  --background-color:#FAFAFA;
-  --border-color:rgb(219, 219, 219);
-  --border-radius-container:3px;
-}
-
 /* Style */
-body{
+body {
   background-color: var(--background-color);
 }
 
-main{
+main {
   max-width: 1012px;
   margin: 61px auto;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-section{
+section {
   max-width: 506px;
   height: 506px;
   margin: 20px;
 }
 
-img{
+img {
   height: 100%;
 }
 
-section div, form{
+section div,
+form {
   width: 100%;
 }
 
-.leftSection{
+.leftSection {
   width: 454px;
   height: 618px;
 }
 
-.rightSection{
+.rightSection {
   position: relative;
   width: 350px;
   height: 380px;
-  padding:30px 0 40px 0;
+  padding: 30px 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgb(255,255,255);
-  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   border-radius: 1px;
 }
 
-.rightLogo, .forgetpw{
+.rightLogo,
+.forgetpw {
   text-align: center;
 }
 
-.rightLogo{
+.rightLogo {
   margin-top: 30px;
 }
 
-.rightLogo img{
+.rightLogo img {
   width: 50%;
 }
 
-.rightLogin{
+.rightLogin {
   margin-top: 40px;
   font-size: 14px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.rightLoginItem{
+.rightLoginItem {
   margin: 5px;
 }
 
-.receiveLogin{
+.receiveLogin {
   width: 268px;
   height: 36px;
   padding: 10px;
-  border: 1px solid rgba(219,219,219,1);
+  border: 1px solid rgba(219, 219, 219, 1);
   border-radius: 3px;
-  background-color: rgba(250,250,250,250);
+  background-color: rgba(250, 250, 250, 250);
 }
 
-.loginBtn{
+.loginBtn {
   width: 268px;
   height: 30px;
   padding: 0;
@@ -101,7 +91,7 @@ section div, form{
   border-radius: 4px;
 }
 
-.loginBtn-active{
+.loginBtn-active {
   width: 268px;
   padding: 0;
   background-color: var(--blue-color);
@@ -114,9 +104,9 @@ section div, form{
   cursor: pointer;
 }
 
-.forgetpw{
+.forgetpw {
   font-size: 12px;
   position: absolute;
   bottom: 20px;
-  color: rgba(0,55,107,1); 
+  color: rgba(0, 55, 107, 1);
 }
