@@ -1,12 +1,28 @@
-const inputarea = document.querySelector('.inputArea');
-const upload = document.querySelector('.upload');
-const otherComment = document.querySelector('.otherComment');
+const input_area = document.querySelector('.input_area');
+const upload_btn = document.querySelector('.upload_btn');
+const comment_section_user_text = document.querySelector('.comment_section_user_text');
+const search_bar_container = document.querySelector('.search_bar_container');
 
-upload.addEventListener('click',function(){
-    let comment_list = document.createElement("LI");
-    let new_comment = document.createTextNode(inputarea.value);
-    comment_list.appendChild(new_comment);
-    otherComment.appendChild(comment_list);
+upload_btn.addEventListener('click',function(){
+    let tag_a = document.createElement("a");
+    let text = document.createTextNode("WeCode");
+    let tag_list=document.createElement('li');
+    let tag_span = document.createTextNode(' '+input_area.value);
 
-    
+    if(input_area.value.length==0){
+        alert("댓글을 입력해주세요");
+    }else{    
+        tag_a.setAttribute('href',"#")
+        tag_a.appendChild(text);
+        tag_list.appendChild(tag_a);
+        tag_list.appendChild(tag_span);
+        comment_section_user_text.appendChild(tag_list);
+        input_area.value="";
+    }
 })
+
+search_bar_container.addEventListener("click",function(){
+    search_bar_container.remove();
+})
+
+
