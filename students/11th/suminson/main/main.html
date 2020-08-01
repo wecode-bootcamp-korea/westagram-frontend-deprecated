@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <title> Instagram Clone</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo-area">
+            <a href=""><i class="fab fa-instagram" style="font-size: 30px"></i></a>
+            <a href="#"><img class="logo-img" alt="logo" src="imgs/logo_text.png"></a>
+        </div>
+        <div class="search-section sb">
+            <input type="text" class="search" placeholder="검색">
+            <span class="search-icon"><i class="fas fa-search" style="font-size: 18px"></i></span>
+        </div>
+        <div class="user-actions">
+            <div class="actions">
+                <a href="#" class="act-li">
+                    <svg aria-label="홈" class="act" viewBox="0 0 48 48">
+                        <path
+                            d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="act-li">
+                    <svg aria-label="Direct" class="act" viewBox="0 0 48 48">
+                        <path
+                            d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="act-li">
+                    <svg aria-label="사람 찾기" class="act" viewBox="0 0 48 48">
+                        <path clip-rule="evenodd"
+                            d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <a href="#" class="act-li">
+                    <svg aria-label="활동 피드" class="act" viewBox="0 0 48 48">
+                        <path
+                            d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="act-li">
+                    <img alt="styleson_6님의 프로필 사진" class="act" data-testid="user-avatar" draggable="false"
+                        src="https://instagram.ftlv6-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.ftlv6-1.fna.fbcdn.net&amp;_nc_ohc=F5b1RhRE1tkAX_GSfK4&amp;oh=2437941a7cabdf937dd9c6d03b281641&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="stories">
+            <ul>
+                <li>
+                    <img alt="c_woo3님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/78939715_486785935265767_3657652118447194112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=B7EO8wdAGRUAX-7Nqht&amp;oh=8fa906b9dd86fb50000b8c9076ab6dd3&amp;oe=5F4C2E9A">
+                    <span>정우성</span>
+                </li>
+                <li>
+                    <img alt="c_woo3님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/78939715_486785935265767_3657652118447194112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=B7EO8wdAGRUAX-7Nqht&amp;oh=8fa906b9dd86fb50000b8c9076ab6dd3&amp;oe=5F4C2E9A">
+                    <span>한가인</span>
+                </li>
+                <li>
+                    <img alt="c_woo3님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/78939715_486785935265767_3657652118447194112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=B7EO8wdAGRUAX-7Nqht&amp;oh=8fa906b9dd86fb50000b8c9076ab6dd3&amp;oe=5F4C2E9A">
+                    <span>김사랑</span>
+                </li>
+                <li>
+                    <img alt="c_woo3님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/78939715_486785935265767_3657652118447194112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=B7EO8wdAGRUAX-7Nqht&amp;oh=8fa906b9dd86fb50000b8c9076ab6dd3&amp;oe=5F4C2E9A">
+                    <span>이병현</span>
+                </li>
+                <li>
+                    <img alt="c_woo3님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/78939715_486785935265767_3657652118447194112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=B7EO8wdAGRUAX-7Nqht&amp;oh=8fa906b9dd86fb50000b8c9076ab6dd3&amp;oe=5F4C2E9A">
+                    <span>김우빈</span>
+                </li>
+                <li>
+                    <img alt="c_woo3님의 프로필 사진" class="_6q-tv" data-testid="user-avatar" draggable="false"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/78939715_486785935265767_3657652118447194112_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=B7EO8wdAGRUAX-7Nqht&amp;oh=8fa906b9dd86fb50000b8c9076ab6dd3&amp;oe=5F4C2E9A">
+                    <span>신민아</span>
+                </li>
+            </ul>
+        </div>
+        <article class="section">
+            <div class="section-top">
+                <div class="section-title">
+                    <div class="profile-pic">
+                        <a href="#">
+                            <img alt="신예은님의 프로필 사진" class="picture" data-testid="user-avatar" draggable="false"
+                                src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="#" class="profile-tag">신예은</a>
+                    </div>
+                </div>
+                <div class="opt">
+                    <a href="#" class="options">
+                        <div class="op"></div>
+                        <div class="op"></div>
+                        <div class="op"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="upload">
+                <img class="upload-img" src="https://www.sisamagazine.co.kr/news/photo/201905/197528_188819_0337.png"
+                    alt="shinyeeun">
+            </div>
+            <div class="upload-react">
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="활동 피드" viewBox="0 0 48 48">
+                            <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="댓글 달기" viewBox="0 0 48 48">
+                            <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                fill-rule="evenodd"></path>
+                        </svg> </a>
+                </button class="u-react-li">
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="Direct" viewBox="0 0 48 48">
+                            <path
+                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="저장" viewBox="0 0 48 48">
+                            <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+            </div>
+            <div class="liked">
+                <p class="liked-count">
+                    <button class="others">좋아요 121개</button>
+                </p>
+            </div>
+            <ul class="upload-exlist">
+                <li class="upload-explain">
+                    <a href="#" class="likes">신예은</a>
+                    <span class="post-link">와 이거 언제 다 해..</span>
+                </li>
+                <li class="upload-explain liked">
+                    <a class="likes comment" href="#">댓글 16개 모두 보기</a>
+                </li>
+                <li class="upload-explain">
+                    <a href="#" class="likes">김수현</a>
+                    <span class="post-link">언젠가 하겠지..</span>
+                </li>
+                <li class="upload-explain">
+                    <a href="#" class="likes">수민</a>
+                    <span class="post-link">파이팅~</span>
+                </li>
+            </ul>
+            <div class="time-stamp liked">
+                18 시간 전
+            </div>
+            <div class="submit">
+                <div class="">
+                    <form class="sub" method="POST">
+                        <input class="textInput" type="text" placeholder="댓글 달기…">
+                        <span class="textContent"></span>
+                        </input>
+                        <button class="button u-react-li">게시</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <article class="section section2">
+            <div class="section-top">
+                <div class="section-title">
+                    <div class="profile-pic">
+                        <a href="#">
+                            <img alt="김수현님의 프로필 사진" class="picture" data-testid="user-avatar" draggable="false"
+                                src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="#" class="profile-tag">김수현</a>
+                    </div>
+                </div>
+                <div class="opt">
+                    <a href="#" class="options">
+                        <div class="op"></div>
+                        <div class="op"></div>
+                        <div class="op"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="upload">
+                <img class="upload-img" src="https://topclass.chosun.com/news_img/1708/1708_008_5.jpg">
+            </div>
+            <div class="upload-react">
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="활동 피드" viewBox="0 0 48 48">
+                            <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="댓글 달기" viewBox="0 0 48 48">
+                            <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z">
+                            </path>
+                        </svg>
+                    </a>
+                </button class="u-react-li">
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="메시지" viewBox="0 0 48 48">
+                            <path
+                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="저장" viewBox="0 0 48 48">
+                            <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+            </div>
+            <div class="liked">
+                <p class="liked-count">
+                    <button class="others">좋아요 96개</button>
+                </p>
+            </div>
+            <ul class="upload-exlist">
+                <li class="upload-explain">
+                    <a href="#" class="likes">김수현</a>
+                    <span class="post-link">아아아아아아아아아아아앙아아아아아</span>
+                </li>
+                <li class="upload-explain liked">
+                    <a class="likes comment" href="#">댓글 12개 모두 보기</a>
+                </li>
+                <li class="upload-explain">
+                    <a href="#" class="likes">신예은</a>
+                    <span class="post-link">오오오오오오옹ㅇ오옹</span>
+                </li>
+                <li class="upload-explain">
+                    <a href="#" class="likes">배수지</a>
+                    <span class="post-link">우우우우우우우우우우우우우웅</span>
+                </li>
+            </ul>
+            <div class="time-stamp  liked">
+                12 시간 전
+            </div>
+            <div class="submit">
+                <div class="">
+                    <form class="sub" method="POST">
+                        <input class="textInput" type="text" placeholder="댓글 달기…">
+                        </input>
+                        <button class="button u-react-li">게시</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <article class="section section3">
+            <div class="section-top">
+                <div class="section-title">
+                    <div class="profile-pic">
+                        <a href="#">
+                            <img alt="홍종현님의 프로필 사진" class="picture" data-testid="user-avatar" draggable="false"
+                                src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                        </a>
+                    </div>
+                    <div class="profile">
+                        <a href="#" class="profile-tag">홍종현</a>
+                    </div>
+                </div>
+                <div class="opt">
+                    <a href="#" class="options">
+                        <div class="op"></div>
+                        <div class="op"></div>
+                        <div class="op"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="upload">
+                <img class="upload-img"
+                    src="https://cdnweb01.wikitree.co.kr/webdata/editor/201502/11/img_20150211153553_2b11fb90.jpg">
+            </div>
+            <div class="upload-react">
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="활동 피드" viewBox="0 0 48 48">
+                            <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="댓글 달기" viewBox="0 0 48 48">
+                            <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                fill-rule="evenodd"></path>
+                        </svg> </a>
+                </button class="u-react-li">
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="Direct" viewBox="0 0 48 48">
+                            <path
+                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+                <button class="u-react-li">
+                    <a href="#">
+                        <svg aria-label="저장" viewBox="0 0 48 48">
+                            <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                            </path>
+                        </svg>
+                    </a>
+                </button>
+            </div>
+            <div class="liked">
+                <p class="liked-count">
+                    <button class="others">좋아요 293개</button>
+                </p>
+            </div>
+            <ul class="upload-exlist">
+                <li class="upload-explain">
+                    <a href="#" class="likes">홍종현</a>
+                    <span class="post-link">날씨 좋아~~~~</span>
+                </li>
+                <li class="upload-explain liked">
+                    <a class="likes comment" href="#">댓글 21개 모두 보기</a>
+                </li>
+                <li class="upload-explain">
+                    <a href="#" class="likes">최예나</a>
+                    <span class="post-link">비 오는데?</span>
+                </li>
+                <li class="upload-explain">
+                    <a href="#" class="likes">신동엽</a>
+                    <span class="post-link">막걸리 파전 ㄱㄱ</span>
+                </li>
+            </ul>
+            <div class="time-stamp liked">
+                22시간 전
+            </div>
+            <div class="submit">
+                <div class="">
+                    <form class="sub" method="POST">
+                        <input class="textInput" type="text" placeholder="댓글 달기…">
+                        </input>
+                        <button class="button u-react-li">게시</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+        <div class="aside-section">
+            <div class="aside1">
+                <div class="aside1-profile">
+                    <a href="#">
+                        <img alt="styleson_6님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                            draggable="false"
+                            src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                        <div class="user">
+                            <a href="#" class="account">
+                                <span class="nickname">
+                                    styleson_6
+                                </span>
+                                <span class="username">
+                                    손수민
+                                </span>
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <div class="aside2">
+                <div class="aside2-top">
+                    <div class="aside2-top1">
+                        스토리
+                    </div>
+                    <div class="aside2-top2">
+                        <a href="#">모두 보기</a>
+                    </div>
+                </div>
+                <div class="aside2-body">
+                    <div class="story">
+                        <div class="profile-pic">
+                            <a href="#">
+                                <img alt="유재석님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link">
+                                <a href="#">유재석</a>
+                            </span>
+                            <span class="time-stamp">
+                                3시간 전
+                            </span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <a href="#">
+                                <img alt="박명수님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link">
+                                <a href="#">박명수</a>
+                            </span>
+                            <span class="time-stamp">
+                                1시간 전
+                            </span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <a href="#">
+                                <img alt="강호동님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link">
+                                <a href="#">강호동</a>
+                            </span>
+                            <span class="time-stamp">
+                                13시간 전
+                            </span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <a href="#">
+                                <img alt="이광수님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link">
+                                <a href="#">이광수</a>
+                            </span>
+                            <span class="time-stamp">
+                                6시간 전
+                            </span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <a href="#">
+                                <img alt="강호동님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link">
+                                <a href="#">이승기</a>
+                            </span>
+                            <span class="time-stamp">
+                                4시간 전
+                            </span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <a href="#">
+                                <img alt="손나은님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link">
+                                <a href="#">손나은</a>
+                            </span>
+                            <span class="time-stamp">
+                                19시간 전
+                            </span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="profile-pic">
+                            <a href="#">
+                                <img alt="송은우님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link">
+                                <a href="#">송은우</a>
+                            </span>
+                            <span class="time-stamp">
+                                5시간 전
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside3">
+                <div class="aside3-top">
+                    <div class="aside3-top1">
+                        회원님을 위한 추천
+                    </div>
+                    <div class="aside3-top2">
+                        <a href="#">모두 보기</a>
+                    </div>
+                </div>
+                <div class="aside3-body">
+                    <div class="suggestions">
+                        <div class="suggest-pic">
+                            <a href="#">
+                                <img alt="김지수님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link s-link">
+                                <a href="#">김지수</a>
+                            </span>
+                            <span class="time-stamp">
+                                인스타그램 신규 가입
+                            </span>
+                        </div>
+                        <button class="follow">
+                            <a href="#">팔로우</a>
+                        </button>
+                    </div>
+                    <div class="suggestions">
+                        <div class="suggest-pic">
+                            <a href="#">
+                                <img alt="이새롬님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link s-link">
+                                <a href="#">이새롬</a>
+                            </span>
+                            <span class="time-stamp">
+                                인스타그램 신규 가입
+                            </span>
+                        </div>
+                        <button class="follow">
+                            <a href="#">팔로우</a>
+                        </button>
+                    </div>
+                    <div class="suggestions">
+                        <div class="suggest-pic">
+                            <a href="#">
+                                <img alt="배수지님의 프로필 사진" class="aside1-profile" data-testid="user-avatar"
+                                    draggable="false"
+                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&amp;_nc_ohc=F5b1RhRE1tkAX-qrf0b&amp;oh=edc5b5c91f8dce9b0916eac22b1c8ce0&amp;oe=5F4B0B8F&amp;ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2">
+                            </a>
+                        </div>
+                        <div class="profile-info">
+                            <span class="profile-link s-link">
+                                <a href="#">배수지</a>
+                            </span>
+                            <span class="time-stamp">
+                                인스타그램 신규 가입
+                            </span>
+                        </div>
+                        <button class="follow">
+                            <a href="#">팔로우</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="main2.js"></script>
+</body>
+
+</html>

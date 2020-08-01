@@ -1,0 +1,173 @@
+#container {
+    /* 문서를 기준으로 가운데에 배치 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#wrap {
+    background-color: white;
+    display: flex;
+}
+
+#wrap > h1 {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}
+
+.login-box {
+    border: 1px solid lightgrey;
+    padding-bottom: 2em;
+}
+
+.phone-wrap {
+    background-image: url(https://instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    width: 454px;
+    height: 618px;
+    display: block;
+    margin-right: 2em;
+    position: relative;
+}
+
+.phone-innerImage-pos {
+    position: absolute;
+    margin: 99px 0 0 151px;
+}
+
+.phone-innerImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.login-logo {
+    width: 175px;
+    height: 51px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    margin-left: 75px;
+}
+
+.login-form > input {
+    width: 258px;
+    height: 20px;
+    background-color: #f5f1f1;
+    border: 1px solid #ccc;
+    /* 배경 이미지를 이용해 아이콘(18x18)을 표시하기 위해 왼쪽에 여백 설정 */
+    padding: 8px 8px 7px 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login-form > input:first-child {
+    margin-bottom: 0.5em;
+    outline: none;
+}
+
+.login-form > input:nth-child(2) {
+    margin-bottom: 1.2em;
+    outline: none;
+}
+
+.button-login {
+    width: 276px;
+    height: 30px;
+    color: white;
+    background-color: #B2DFFC;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.wrap2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.fab-area {
+    margin-bottom: 20px;
+}
+
+.fab-area > i {
+    font-size: 16px;
+    color: #385185;
+}
+
+.underline {
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    color: lightgrey;
+}
+
+.underline:first-child {
+    margin-left: 2.3em;
+}
+
+.underline:last-child {
+    margin-right: 2.3em;
+}
+
+#forget > a {
+    color: white;
+}
+
+#signup {
+    width: 348px;
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid lightgrey;
+    color: #aaa;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#signup > span > a {
+    text-decoration: none;
+}
+
+div.fab-area, div.forgot {
+    text-align: center;
+}
+
+div > a {
+    text-decoration: none;
+    color: navy;
+}
+
+.download > p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.download > div {
+    display: flex;
+    justify-content: center;
+}
+
+.download > div > a > img {
+    margin-top: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.download > div > a > img:first-child {
+    margin-right: 10px;
+}
+
+.download > div > a > img:last-child {
+    margin-left: 10px;
+}
+
+
+
+
+
