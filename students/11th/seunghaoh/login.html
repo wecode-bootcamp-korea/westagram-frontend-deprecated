@@ -3,38 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>westagram</title>
+    <title>westagram_login</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
     <link href="style/login.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="container">
-      <!-- header -->
-      <header>
-        <img alt="instagram logo image" src="img/logo_text.png" />
-      </header>
-      <!-- main -->
-      <main>
-        <input
-          type="inputText"
-          placeholder="전화번호, 사용자 이름 또는 이메일"
-        />
-        <input type="password" placeholder="비밀번호" />
-        <button>로그인</button>
-      </main>
-      <!-- footer -->
-      <footer>
-        <div class="askLoginOption">
-          <div class="line"></div>
-          <div class="askText">또는</div>
-          <div class="line"></div>
+      <div class="loginBox">
+        <div class="logo">
+          <img alt="instagram logo image" src="img/logo_text.png" />
         </div>
-        <button>
-          <span class="facebookLogo"></span>
-          <span class="facebookLoginText">Facebook으로 로그인</span>
-        </button>
-        <div class="askForgotPassword">비밀번호를 잊으셨나요?</div>
-      </footer>
+        <form action="">
+          <input
+            class="inputId"
+            type="text"
+            placeholder="전화번호, 사용자 이름 또는 이메일"
+          />
+          <input class="inputPw" type="password" placeholder="비밀번호" />
+          <button class="loginBtn">
+            로그인
+          </button>
+        </form>
+        <div class="loginOption">
+          <div class="askLoginOption">
+            <div class="line"></div>
+            <div class="askText">또는</div>
+            <div class="line"></div>
+          </div>
+          <button>
+            <span class="facebookLogo"></span>
+            <span class="facebookLoginText">Facebook으로 로그인</span>
+          </button>
+          <div class="askForgotPassword">비밀번호를 잊으셨나요?</div>
+        </div>
+      </div>
     </div>
     <script src="js/login.js"></script>
   </body>
