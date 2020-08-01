@@ -91,6 +91,14 @@ main {
 .nav-right-item {
     margin: 0 10px;
 }
+
+.nav-profile {
+    width: 22px;
+    height: 22px;
+    border-radius: 70%;
+    background: url(https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/13768284_1670405186613346_1275285357_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=E_gctfZc58MAX93sp83&oh=45433d23d4cbd9b26c6b1fd73a584686&oe=5F49206E)no-repeat center;
+    background-size: 100%;
+}
 .nav-icon-1:first-child {
     border-right: 3px solid black;
 }
@@ -285,6 +293,7 @@ main {
     padding: 8px;
     border: none;
     outline: none;
+    cursor: pointer;
     background-color: white;
 }
 button.heart {
@@ -418,8 +427,8 @@ button.reply-btn-off {
 .recom-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 0 16px;
     margin-bottom: 8px;
 }
 
@@ -430,11 +439,13 @@ button.reply-btn-off {
 
 .recom-header-1 {
     width: 212.27px;
+    margin: 0;
     font-size: 1.4rem;
     color: rgba(var(--f52,142,142,142),1);
 }
 
 .recom-header-link{
+    margin: 0;
     white-space: nowrap;
     font-size: 1.2rem;
     color: rgba(var(--f75,38,38,38),1);
