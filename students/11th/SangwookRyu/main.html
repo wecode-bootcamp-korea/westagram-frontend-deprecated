@@ -8,57 +8,154 @@
      <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav-inside">
-        <div class="icon-img"></div>
-        <div class="line"></div>
-        <div class="logo-img"></div>
-        <div class="search"><input class="search-bar" type="text" placeholder="검색"></div>
-        <div class="buttons">
-          <div class="button-nav-explore"></div>
-          <div class="button-nav-heart"></div>
-          <div class="button-nav-profile"></div>
+    <!--navigation-->
+    <div class="navbox">
+      <nav class="nav">
+        <div class="logobox">
+          <div class="logo1"><img alt = "icon-instagram" src ="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"></div>
+          <div class="line"></div>
+          <div class="logo2"><img alt = "logo-instagram" src ="/img/logo_text.png"></div>
+        </div>
+        <div class="searchbox">
+          <input class="search" type="search" placeholder="검색">
+        </div>
+        <div class="btnbox">
+          <div class="btn-explore"><img alt="explore"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"></div>
+          <div class="btn-heart"><img alt="heart"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"></div>
+          <div class="btn-profile"><img alt="profile"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"></div>
+        </div>
+      </nav>
+    </div>
+    <!--article-->
+    <section class="mainbox">
+      <article class="articlebox">
+        <header class="articlehead">
+          <div class="profile">
+          <img class="profileicon" alt="profile icon" src="/students/11th/SangwookRyu/img/Olga_Scheps_piano_4.png">
+          <div class="userid">Olga Scheps</div>
+        </div>
+          <img class="btn-option" alt="more option" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+
+
+
+
+
+        </header>
+        <div class="articlephoto">
+          <img alt="photo" src="/students/11th/SangwookRyu/img/summer.jpg" >
+        </div>
+        <div class="articlebtn">
+          <img alt="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+          <img alt="comment" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+          <img alt="share" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
+          <img class="btn-bookmark" alt="bookmark" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
+        </div>
+        <div class="contentbox">
+          <div class="contents">
+            <div class="likesinfo">
+              좋아요&nbsp;<span class="likescount">1913개</span>
+            </div>
+            <div class="commentbox">
+              <div class="writerid">Olga Scheps</div>&nbsp;Hello summer ☺🌻💙<br>
+              <a href="">#sun</a> <a href="">#portrait</a></div>
+                <div class="viewerid">l.oconnor2</div>&nbsp;❤️❤️❤️❤️
+                <div class="posttime">5일 전</div>
+        </div>
+        <div id="addcommentbox">
+          <textarea id="writecomment" name="writecomment" placeholder="댓글 달기..."></textarea>
+          <button id="addcomment" disabled>게시</button>
         </div>
       </div>
-    </nav>
-    <main class="main">
-      <div class="feed">
-        <div class="section-user">
-          <div class="profile-uploader-img"></div>
-          <div class="profile-uploader-text">Olga Scheps</div>
-          <div class="dots"></div>
-        </div>
-        <div class="section-photo"></div>
-        <div class="section-buttons">
-          <div class="button-heart"></div>
-          <div class="button-comment"></div>
-          <div class="button-share"></div>
-          <div class="button-bookmark"></div>
-        </div>
-        <div class="section-like"><span>좋아요 84개</span></div>
-        <div class="section-comment">
-          <div class="owner-comment">
-            <span class="owner">Olga Scheps</span>
-            Hello summer 🌻💙
+      </article>
+      <aside class="asidebox">
+        <div class="asidehead">
+          <div class="profile">
+            <img class="profileicon" alt="profile icon" src="/students/11th/SangwookRyu/img/Olga_Scheps_piano_4.png">
+            <div class="userid">Olga Scheps</div>
           </div>
-          <div class="users-comment"></div>
         </div>
-        <div class="section-comment-write"></div>
-    </div>
-      <div class="main-right"></div>
-
-  </main>
-    <footer class="footer">
-      
-    </footer>
-
-
-
-
-
-
-
-
+        <div class="asidecontents">
+          <ul class="recommend">
+            <li>
+              <div class="userprofile">
+                <img class="profileicon" alt="profile icon" src="/students/11th/SangwookRyu/img/sideprofile1.gif">
+                <div class="profileside">
+                <div class="profileid">Henri Matisse</div>
+                <p>회원님을 위한 추천</p>
+                </div>
+                <div class="btnfollow">팔로우</div>
+              </div>
+            </li>
+            <li>
+              <div class="userprofile">
+                <img class="profileicon" alt="profile icon" src="/students/11th/SangwookRyu/img/sideprofile2.png">
+                <div class="profileside">
+                <div class="profileid">Silksong</div>
+                </div>
+                <div class="btnfollow">팔로우</div>
+              </div>
+            </li>
+            <li>
+              <div class="userprofile">
+                <img class="profileicon" alt="profile icon" src="/students/11th/SangwookRyu/img/sideprofile3.jpg">
+                <div class="profileside">
+                <div class="profileid">Schubert</div>
+                <p>회원님을 위한 추천</p>
+                </div>
+                <div class="btnfollow">팔로우</div>
+              </div>
+            </li>
+            <li>
+              <div class="userprofile">
+                <img class="profileicon" alt="profile icon" src="/students/11th/SangwookRyu/img/sideprofile4.png">
+                <div class="profileside">
+                <div class="profileid">Gucci</div>
+                <p>회원님을 위한 추천</p>
+                </div>
+                <div class="btnfollow">팔로우</div>
+              </div>
+            </li>
+            <li>
+              <div class="userprofile">
+                <img class="profileicon" alt="profile icon" src="/students/11th/SangwookRyu/img/sideprofile5.png">
+                <div class="profileside">
+                <div class="profileid">GitHub</div>
+                <p>회원님을 위한 추천</p>
+                </div>
+                <div class="btnfollow">팔로우</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <!--footer-->
+        <footer class="asidefooter">
+          <ul class="info">
+            <li>소개</li>
+            <li>·</li>
+            <li>도움말</li>
+            <li>·</li>
+            <li>홍보 센터</li>
+            <li>·</li>
+            <li>API</li>
+            <li>·</li>
+            <li>채용 정보</li>
+            <li>·</li>
+            <li>개인정보처리방침</li>
+            <li>·</li>
+            <li>약관</li>
+            <li>·</li>
+            <li>위치</li>
+            <li>·</li>
+            <li>인기 계정</li>
+            <li>·</li>
+            <li>해시태그</li>
+            <li>·</li>
+            <li>언어</li>
+          </ul>
+          <div class="copyright">© 2020 INSTAGRAM FROM FACEBOOK</div>
+        </footer>
+      </aside>
+    </section>
 
     <script src="js/main.js"></script>
   </body>
