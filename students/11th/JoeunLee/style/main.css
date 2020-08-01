@@ -2,13 +2,16 @@
     box-sizing: border-box;
 }
 body {
-    padding-top: 54px;
-    background-color: rgba(250,250,250,1)
+    background-color: rgba(250,250,250,1);
+    padding-top: 50px;
+    margin: 0;
 }
 button {
-    padding: 0;
     border: none;
+    outline: none;
     background: none;
+    padding: 0;
+    cursor: pointer; /*disabled일 때 어떻게 포인터 없앨까*/    
 }
 a {
     font: 14px;
@@ -16,6 +19,8 @@ a {
     font-weight: 600;
     color: rgba(38,38,38,1);
     text-decoration: none;
+}
+.appliedMargin {
     margin: 0 0 0 14px;
 }
 .navOuterContainer {
@@ -45,7 +50,7 @@ a {
     height: 28px;
     border: solid 1px rgba(219,219,219,1);
     border-radius: 3px;
-    background: rgba(250,250,250,1);
+    background-color: rgba(250,250,250,1);
 }
 .navMid input {
     width: 100%;
@@ -59,27 +64,61 @@ a {
 .navRight {
     display: flex;
     align-items: center; /*안 먹는 느낌?*/
-} 
+}
 .navIcon {
-    margin-left: 22px;
+    margin-left: 5px;
 }
 .navIcon img {
     width: 22px;
     height: 22px;
 }
-.navIcon img:last-child {
+.navIcon img:last-of-type {
     border-radius: 50%;
 }
-.feedsInnerContainer {
-    width: 650px;
+.feedsOuterContainer {
+    width: 935px;
+    margin: 0 auto;
+}
+.feedsContainer {
+    width: 935px;
     display: flex;
     justify-content: center;
+    margin: 0 35.5px;
     padding-top: 30px;
 }
-.feedsContents{
-    width: 600px;
+.feedsStoryBox {
+    width: 614px;
+    height: 118px;
     border: 1px solid rgba(219,219,219,1);
     border-radius: 3px;
+    background-color: #FFFFFF;
+    padding: 16px 0;
+    margin: 0 0  24px;
+    overflow: scroll;
+}
+.feedsStoryList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.feedsStoryListIdBox {
+    text-align: center;
+    margin: 0 12px;
+}
+.feedsStoryListIdBox img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.feedsStoryListId {
+    font-size: 12px;
+}
+.feedsContents {
+    width: 614px;
+    border: 1px solid rgba(219,219,219,1);
+    border-radius: 3px;
+    margin: 0 28px 0 0;
 }
 .feedsContents img {
     width: 100%;
@@ -89,7 +128,6 @@ a {
     height: 60px;
     display: flex;
     align-items: center;
-    background: #FFFFFF;
     padding: 16px;
     position: relative;
 }
@@ -103,7 +141,7 @@ a {
 }
 .feedsTopDots {
     position: absolute;
-    top: 14px; /*안 쓰면*/
+    top: 14px; /*안 쓰면 왜 내려갈까..연구해보자*/
     right: 0;
     padding: 8px;
 }
@@ -111,31 +149,36 @@ a {
     width: 20px;
     height: 20px;
 }
-.replyIconBox{
+.feedsTopLocation {
+    font-size: 12px;
+}
+.replySection {
+    background-color: #FFFFFF;
+}
+.replyIconBar{
     width: 100%;
     height: 40px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background: #FFFFFF;
     padding: 0 16px;
-    position: relative;
 }
-.replyIcon img{
+.replyIconLeft img, .replyIconRight img{
     width: 24px;
     height: 24px;
-    margin: 8px;
+    margin-right: 16px;
+    /*인스타처럼 img size는 24px, padding 0 16px을 주면 이미지가 작아지고
+    img size 40, padding 8px을 주면 왼쪽 정렬이 조금 안맞는 문제가 있음. 생각해보자
+    마지막 아이콘만 옆으로 오른쪽 정렬에 맞출 방법도 생각해보자.*/
 }
-/* .replyIcon img:last-child() {
-    position: absolute;
-    right: 0;
-} */
-/* 
 .replyLikes {
-    width: 614px;
+    width: 100%;
     height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
     padding: 0 16px;
     margin: 0 0 8px;
-    font-size: 14px;
 }
 .replyLikes img {
     width: 20px;
@@ -143,39 +186,34 @@ a {
     border-radius: 50%;
 }
 .replyListBox{
-    display: flex;
-    flex-direction: column;
     padding: 0 16px;
 }
-.replyListBoxInside {
-    width: 614e px;
-    font-size: 14px;
+.replyContents, .replyNumber, .reply {
+    margin-bottom: 4px;
 }
-.reply-contents a {
-    width: 582px;
-    height: 18px;
-    color: #262626;
-    text-decoration: none;
-    font-weight: 600;
-    padding-left: 5px;
-    margin-left: -5px;
+.replyNumber a {
+    font-size: 14px;
+    color: rgba(0,55,107,1);
+}
+.replyNumber a:active {
+    color: rgba(142,142,142,1);
 }
 .reply {
-    width: 570px;
-    height: 18px;
+    position: relative;
 }
-.reply a {
-    margin: 0 0 0 -5px;
-    padding: 0 0 0 5px;
+.reply span {
+    font-size: 14px;
 }
 .reply img {
     width: 12px;
     height: 12px;
+    position: absolute;
+    right: 0;
 }
 .replyTime {
-    width: 600px;
+    width: 100%;
     height: 19px;
-    margin: 0 0 4px;
+    padding: 0 16px;
 }
 .replyTime time {
     font-size: 10px;
@@ -183,103 +221,126 @@ a {
 .replyTypeBox {
     width: 100%;
     height: 56px;
-    padding: 0 16px;
+    border-top: 1px solid rgba(219,219,219,1);
+    background: #FFFFFF;
     margin: 4px 0 0 0;
-    border: 1px solid black;
-    background: white;
+    padding: 0 16px;
+}
+.replyTypeLine {
+    display: flex;
 }
 .replyTypeBox textarea {
-    width: 543.766px;
+    width: 540px;
     height: 18px;
     border: 0;
-}
-.replyTypeBox textarea {
+    margin: 19px 0;
+    resize: none;
     outline: none;
 }
-
-
-
-
-
-
-
-.main-right {
+.replyUploadBtn {
+    color: rgba(0,149,246,.3);
+}
+.mainRight {
     width: 293px;
     height: 689px;
+    padding: 0;
     margin: 0 0 30px;
 }
-.main-right-top {
+.mainRightTop {
     display: flex;
     align-items: center;
     padding: 0 0 0 5px;
-    margin-bottom: 10px;
     margin-top: 18px;
+    margin-bottom: 10px;
 }
-.main-right-top img {
+.mainRightTop img {
     width: 56px;
     height: 56px;
     border-radius: 50%;
 }
-.main-right-top-id {
-    margin-left: 20px;
+.mainRightTopId {
+    font-size: 14px;
+    margin: 0 0 0 20px;
 }
-.main-right-recommend {
+.mainRightName {
+    margin: 0 0 2px;
+}
+.mainRightNick {
+    color: rgba(142,142,142,1);
+    font-size: 12px;
+}
+.recommendContainer{
     width: 325px;
-    height: 291px;
     margin: 0 0 12px -16px;
 }
-.main-right-recommend-top {
+.recommendTop {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 4px 16px;
     margin: 12px 0 0;
 }
-.main-right-recommendLists {
-    padding: 8px 0 0 0;
+.recommendTopRight {
+    color: rgba(142,142,142,1);
+    font-size: 14px;
 }
-.main-right-recommendList {
+.recommendTop a {
+    font-size: 12px;
+}
+.recommendListBox {
+    margin-bottom: 20px;
+}
+.recommendList {
     display: flex;
+    justify-content: space-between;
     padding: 8px 16px;
 }
-.main-right-recommendList img {
+.recommendListRight {
+    display: flex;
+}
+.recommendList img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    margin-right: 12px;
 }
-.main-right-recommendList-name a {
+.recommendListName a {
     color: rgba(38,38,38,1);
     text-decoration: none;
     font-weight: 600;
     padding-left: 5px;
     margin-left: -5px;
 }
-.main-right-recommendList-name-info {
-    color: #8e8e8e;
+.recommendListInfo {
     color: rgba(142,142,142,1);
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    margin: -2px 0 -3px;
+    margin: 2px 0 -3px;
 }
+.recommendList button {
+    color: rgba(0,149,246,1);
+    font-weight: 600;
+}
+
 .extraInfo {
-    width: 293px;
-    height: 106px;
+    width: 100%;
+    padding: 0 16px;
 }
 .extraInfo ul {
     list-style-type: none;
-    width: 100%;
-    height: 36px;
-    margin: 0 0 3px;
+    padding: 0;
+    margin: 0 0 20px;
 }
 .extraInfo ul li::after {
     content: '\00B7';
-    margin: 0 .25em 0 .25em;
-}
-.extraInfo li {
-    display: inline-block;
     color: rgba(199,199,199,1);
+    margin: 0;
+}
+.extraInfo ul li {
     font-size: 11px;
     font-weight: 400;
-    line-height: 13px;
+    display: inline-block;
 }
 .extraInfo ul li a {
     text-decoration: none;
@@ -287,4 +348,9 @@ a {
 }
 .extraInfo ul li a:visited {
     text-decoration: none;
-} */
+}
+.extraInfo span {
+    font-size: 11px;
+    letter-spacing: .5px;
+    color: rgba(199,199,199,1);
+}
