@@ -1,0 +1,42 @@
+#login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  border: 2px solid var(--color-light-white);
+}
+
+.logo-img {
+  margin-top: 52px;
+  margin-bottom: -48px;
+  padding: 24px;
+}
+
+.login__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  width: 320px;
+  height: 320px;
+  margin-bottom: 48px;
+}
+
+.login__main__idPw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 256px;
+  height: 80px;
+
+  margin-bottom: 24px;
+}
+
+.login__footer a {
+  color: #0c3f70;
+  font-weight: var(--weight-bold);
+}
