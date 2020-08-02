@@ -373,6 +373,7 @@ button.author,
   max-height: 80px;
   padding: 0;
   border: 0;
+  overflow: hidden;
   outline: none;
   resize: none;
 }
