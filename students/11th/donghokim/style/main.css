@@ -204,6 +204,7 @@ article .option_button {
 }
 
 article .image_slider_view {
+  position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -226,7 +227,7 @@ article .image_slider_view .image_slider_lists .image_content img {
 .image_slider_view .left_button,
 .image_slider_view .right_button {
   position: absolute;
-  top: 42%;
+  top: 50%;
   padding: 0;
   outline: 0;
   border: 0;
