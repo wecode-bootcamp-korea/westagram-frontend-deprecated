@@ -4,15 +4,22 @@ const changeButtonStatus = (validationCheckFunction, inputName, value) => {
   else loginButton.disabled = true;
 };
 
-const isIdAndPasswordMinOnce = (() => {
+const validationFunctions = (() => {
   const validationFlag = {
     username: false,
     password: false
   }
-  return (inputName, value) => {
-    if (value) validationFlag[inputName] = true;
-    else validationFlag[inputName] = false;
-    return validationFlag.username && validationFlag.password;
+  return {
+    isIdAndPasswordMinOnce: function (inputName, value) {
+      if (value) validationFlag[inputName] = true;
+      else validationFlag[inputName] = false;
+      return validationFlag.username && validationFlag.password;
+    },
+    isIdHasAtAndPasswordMinFive: function (inputName, value) {
+      if (inputName === 'username' && value.includes('@')) validationFlag[inputName] = true;
+      if (inputName === 'password' && value.length > 4) validationFlag[inputName] = true;
+      return validationFlag.username && validationFlag.password;
+    }
   }
 })();
 
@@ -23,4 +30,4 @@ loginForm.addEventListener('keyup', ({
     name,
     value
   }
-}) => changeButtonStatus(isIdAndPasswordMinOnce, name, value));
+}) => changeButtonStatus(validationFunctions.isIdHasAtAndPasswordMinFive, name, value));
