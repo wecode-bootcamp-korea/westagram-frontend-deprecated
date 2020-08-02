@@ -1,9 +1,9 @@
 const input_id = document.querySelector('.input_id');
 const input_password = document.querySelector('.password');
 const btn = document.querySelector('.loginBtn');
+const login_input_container = document.querySelector('.login_input_container');
 
-[input_id,input_password].map(item =>{
-    item.addEventListener("keyup", function(){
+login_input_container.addEventListener("keyup", function(){
         let checkString ="";
         let input_id_length = input_id.value.length;
         let input_password_length = input_password.value.length;
@@ -15,4 +15,3 @@ const btn = document.querySelector('.loginBtn');
             btn.style.backgroundColor="rgba(0,149,246,.3)"
         );
     });
-})

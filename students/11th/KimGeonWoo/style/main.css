@@ -57,10 +57,6 @@ ul{
     height: 29px;
 }
 
-.feeds{
-    margin-left: 10%;
-}
-
 .logoText{
     width: 103px;
     height: 29px;
@@ -84,20 +80,20 @@ ul{
 }
 
 .search_icon{
-    height: 10px;
     width: 10px;
+    height: 10px;
 }
 
 .search_bar_container{
-   background-color: #fafafa;
-   width: 215px;
-   height: 28px;
-   position: absolute;
-   text-align: center;
-   font-size: 14px;
-   cursor: text;
-   border: 1px solid #dbdbdb;
-   color: #8e8e8e;
+    position: absolute;
+    text-align: center;
+    width: 215px;
+    height: 28px;
+    font-size: 14px;
+    cursor: text;
+    border: 1px solid #dbdbdb;
+    color: #8e8e8e;
+    background-color: #fafafa;
 }
 
 .search_bar_gui{
@@ -112,31 +108,30 @@ ul{
 }
 /* 본문 margin box*/
 .total_contents{
-    display: flex;
-    background-color: rgba(var(--b3f,250,250,250),1);
-    height: 927px;
     width: 100%;
+    height: 927px;
     padding-top: 50px;
+    background-color: rgba(250,250,250,1);
 }
 
 .total_contents_container{
     display: flex;
+    width: 935px;
     margin: 0 auto;
 }
 /* 좌측 게시글 */
 .feed{
-    background-color: white;
-    border: 1px solid #dbdbdb;
-    height: 918px;
     width: 616px;
-    margin-left: 245px;
+    height: 918px;
     margin-right: 28px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
 }
 
 .feed_header_container{
+    display: flex;
     width: 100%;
     height: 60px;
-    display: flex;
 }
 
 .feed_header_gui_container{
@@ -146,14 +141,14 @@ ul{
 }
 
 .feed_header_gui_container img{
-    border-radius: 50%;
     width: 32px;
     height: 32px;
+    border-radius: 50%;
 }
 
 .feed_header_id_text{
-    margin-left: 14px;
     width: 450px;
+    margin-left: 14px;
     cursor: pointer;
 }
 
@@ -162,13 +157,13 @@ ul{
 }
 
 .see_more_deatils_btn{
-    background-color: white;
     width: 40px;
     height: 40px;
     padding: 8px;
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: white;
 }
 
 .see_more_deatils_btn img{
@@ -195,11 +190,11 @@ ul{
 
 .like_share_Section{
     display: flex;
-    background-color: white;
     width: 100%;
     height: 40px;
     margin: 4px 0 0;
     padding: 0 16px;
+    background-color: white;
 }
 
 .like_share_icon{
@@ -209,11 +204,11 @@ ul{
 .like_share_icon button{
     width: 40px;
     height: 40px;
-    background-color: white;
+    padding: 0;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 0;
+    background-color: white;
 }
 
 .like_share_icon img{
@@ -230,9 +225,9 @@ ul{
     width: 40px;
     height: 40px;
     border: none;
-    background-color: white;
     outline: none;
     cursor: pointer;
+    background-color: white;
 }
 
 .book_mark img{
@@ -246,32 +241,32 @@ ul{
     align-items: center;
     height: 18px;
     width: 100%;
-    background-color: white;
     margin: 0 0 8px;
     padding: 0 16px;
+    background-color: white;
 }
 
 .like_count_btn{
-    background-color: white;
     width: 80px;
-    font-size: 14px;
     height: 18px;
-    border: none;
     padding: 0;
+    font-size: 14px;
+    border: none;
+    background-color: white;
 }
 /* comment 영역 */
 .comment_section{
     width: 100%;
     height: 88px;
     padding: 0 25px;
-    background-color: white;
     overflow: auto;
+    background-color: white;
 }
 
 .comment_section_my_text{
-    font-size: 14px;
     height: 18px;
     margin-bottom: 4px;
+    font-size: 14px;
 }
 
 .comment_section_my_text a{
@@ -279,12 +274,12 @@ ul{
 }
 
 .comment_section_my_text button{
-    border: none;
     height: 18px;
-    background-color: white;
     outline: none;
     cursor: pointer;
+    border: none;
     color:rgba(142,142,142,1);
+    background-color: white;
 }
 
 .comment_section_user_text{
@@ -311,10 +306,10 @@ ul{
     align-items: center;
     width: 100%;
     height: 56px;
-    background-color: white;
-    border-top:1px solid #dbdbdb;
     margin: 4px 0 0;
     padding: 0 16px;
+    border-top:1px solid #dbdbdb;
+    background-color: white;
 }
 
 .input_comment_section_container{
@@ -334,18 +329,18 @@ ul{
 .upload_btn{
     height: 18px;
     border: none;
-    background-color: white;
-    color: #0095f6;
     opacity: .3;
     font-weight: 600;
     cursor: pointer;
+    background-color: white;
+    color: #0095f6;
 }
 /* 우측 프로필 */
 .profile_section{
     width: 293px;
     height: 500px;
-    background-color: rgb(250,250,250,1);
     margin-right: 245px;
+    background-color: rgb(250,250,250,1);
 }
 
 .profile_section_header{
@@ -354,10 +349,10 @@ ul{
 }
 
 .profile_pic img{
-    height: 56px;
     width: 56px;
-    border-radius: 50%;
+    height: 56px;
     margin-top: 4px;
+    border-radius: 50%;
 }
 
 .profile_section_my_id_container{
@@ -372,9 +367,9 @@ ul{
 }
 /*추천 스토리*/
 .recommend_story{
-    margin: 0 0 12px -16px;
     width: 325px;
     height: 291px;
+    margin: 0 0 12px -16px;
     padding: 4px 16px;
     overflow: hidden;
     border: 1px solid #dbdbdb;
@@ -435,37 +430,37 @@ ul{
     font-size: 12px;
     width: 50px;
     height: 18px;
-    color: #0095f6;
     outline: none;
     font-weight: 600;
+    color: #0095f6;
 }
 
 .recommend_profile_list button{
     border: none;
-    background-color: rgba(var(--b3f,250,250,250),1);
+    background-color: rgba(250,250,250,1);
 }
 
 .recommend_head{
-    margin: 0 0 12px -16px;
     width: 325px;
     height: 191px;
-    background-color: rgba(var(--b3f,250,250,250),1)omato;
+    margin: 0 0 12px -16px;
     padding: 4px 16px;
     overflow: hidden;
-    border: 1px solid #dbdbdb;;
+    border: 1px solid #dbdbdb;
+    background-color: rgba(250,250,250,1);
 }
 
 .insta_info_container{
     width: 100%;
     height: 106px;
-    background-color:rgba(var(--b3f,250,250,250),1);
+    background-color:rgba(250,250,250,1);
 }
 
 .insta_info{
     width: 100%;
     height: 39px;
-    background-color:rgba(var(--b3f,250,250,250),1);
     margin-bottom: 16px;
+    background-color:rgba(250,250,250,1);
 }
 
 .insta_info li{
@@ -487,4 +482,14 @@ ul{
 .insta_company_info{
     font-size: 11px;
     color: #c7c7c7;
+}
+
+@media screen and (max-width: 1000px){
+    .profile_section{
+        display: none;
+    }
+
+    .feed{
+        margin: 0 auto;
+    }    
 }
