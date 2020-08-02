@@ -8,29 +8,26 @@
     <link href="style/common.css" rel="stylesheet" type="text/css" />
     <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
-  <body style="background-color: #fafafa;">
+  <body>
     <header>
       <nav class="navBar">
         <div class="homeIcons">
           <img class="iconStyle" src="img/logo.png" alt="instaIcon" />
-          <div
-            style="
-              width: 2px;
-              height: 35px;
-              margin: 0 15px;
-              background-color: #5e5e5e;
-            "
-          ></div>
+          <div class="hLine"></div>
           <img
             class="instaMainImg"
             src="img/logo_text.png"
             alt="instaMainImg"
           />
         </div>
-        <div class="WrapNavTextBar">
-          <input class="navTextBar" type="text" placeholder="검색" />
+        <div class="wrapNavTextBar">
+          <div class="navTextBarCon">
+            <span class="searchImgInText"></span>
+            <input class="navTextBar" type="text" placeholder="검색" />
+            <span class="searchXBtn"></span>
+          </div>
           <div class="searchIconBox">
-            <div class="searchIconBox2">
+            <div>
               <span class="searchImg"></span>
               <span class="searchText">검색</span>
             </div>
@@ -45,6 +42,84 @@
         </div>
       </nav>
     </header>
+    <nav class="wrapSearchBox hiddenSearchBox">
+      <div class="searchBox">
+        <div class="WrapSearchList">
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/gnlcks.png" alt="profileImg" />
+              <div>
+                <a>you_hchan</a>
+                <p>유휘찬</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/ckdtlr.png" alt="profileImg" />
+              <div>
+                <a>rnjsckdtlr_dd</a>
+                <p>권창식</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/tkdrn.png" alt="profileImg" />
+              <div>
+                <a>ohsan9_539</a>
+                <p>오상구</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/profile.png" alt="profileImg" />
+              <div>
+                <a>ma_sang_1</a>
+                <p>마상원</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/gnlcks.png" alt="profileImg" />
+              <div>
+                <a>you_hchan</a>
+                <p>유휘찬</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/ckdtlr.png" alt="profileImg" />
+              <div>
+                <a>rnjsckdtlr_dd</a>
+                <p>권창식</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/tkdrn.png" alt="profileImg" />
+              <div>
+                <a>ohsan9_539</a>
+                <p>오상구</p>
+              </div>
+            </div>
+          </div>
+          <div class="searchProfile">
+            <div class="wrapProfile">
+              <img src="img/profile.png" alt="profileImg" />
+              <div>
+                <a>ma_sang_1</a>
+                <p>마상원</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
     <main>
       <div class="wrapMain">
         <section class="feeds">
@@ -88,28 +163,36 @@
                 alt="profile"
               />
               <div>
-                <a href="">bn_sj2013</a>님
-                <a class="peopleCount" href="">외 1,398명</a>이 좋아합니다.
+                <a>bn_sj2013</a>님
+                <a>외 <span class="peopleCount">928</span>명</a>이 좋아합니다.
               </div>
             </div>
             <div>
-              <ul style="padding: 0 10px; margin: 0;">
-                <li style="margin-bottom: 8px;">
-                  <a href="">ye_heumheummm</a>두부야 안뇨오옹
+              <ul class="commentListContainer">
+                <div class="feedContents">
+                  <a>ye_heumheummm</a>두부야 안뇨오옹
+                </div>
+                <li>
+                  <a>bn_sj2013</a>와...진짜 스피츠 너무 귀여워 ㅠㅠ
+                  <span class="commentIcons">
+                    <img
+                      class="commentHeart colorHeart"
+                      src="img/heart.png"
+                      alt="heart"
+                    />
+                    <span class="searchXBtn"></span>
+                  </span>
                 </li>
                 <li>
-                  <a href="">bn_sj2013</a>와...진짜 스피츠 너무 귀여워 ㅠㅠ<img
-                    class="commentHeart colorHeart"
-                    src="img/heart.png"
-                    alt="heart"
-                  />
-                </li>
-                <li>
-                  <a href="">sanghun</a>솜사탕같다<img
-                    class="commentHeart colorHeart"
-                    src="img/heart.png"
-                    alt="heart"
-                  />
+                  <a href="">sanghun</a>솜사탕같다
+                  <span class="commentIcons">
+                    <img
+                      class="commentHeart colorHeart"
+                      src="img/heart.png"
+                      alt="heart"
+                    />
+                    <span class="searchXBtn"></span>
+                  </span>
                 </li>
               </ul>
               <div class="feedTime">6시간전</div>
@@ -165,27 +248,35 @@
               />
               <div>
                 <a href="">dlwlrma</a>님
-                <a class="peopleCount" href="">외 2,371명</a>이 좋아합니다.
+                <a>외 <span class="peopleCount">971</span>명</a>이 좋아합니다.
               </div>
             </div>
             <div>
-              <ul style="padding-left: 10px; margin: 0;">
-                <li style="margin-bottom: 8px;">
+              <ul class="commentListContainer">
+                <div class="feedContents">
                   <a href="">ye_heumheummm</a>고래야 안녕ㅎㅎ
+                </div>
+                <li>
+                  <a href="">dlwlrma</a>맥도날드??
+                  <span class="commentIcons">
+                    <img
+                      class="commentHeart colorHeart"
+                      src="img/heart.png"
+                      alt="heart"
+                    />
+                    <span class="searchXBtn"></span>
+                  </span>
                 </li>
                 <li>
-                  <a href="">dlwlrma</a>맥도날드??<img
-                    class="commentHeart colorHeart"
-                    src="img/heart.png"
-                    alt="heart"
-                  />
-                </li>
-                <li>
-                  <a href="">yeonukhwang</a>11기가 역대급이지 ㅋㅋㅋㅋ<img
-                    class="commentHeart colorHeart"
-                    src="img/heart.png"
-                    alt="heart"
-                  />
+                  <a href="">yeonukhwang</a>11기가 역대급이지 ㅋㅋㅋㅋ
+                  <span class="commentIcons">
+                    <img
+                      class="commentHeart colorHeart"
+                      src="img/heart.png"
+                      alt="heart"
+                    />
+                    <span class="searchXBtn"></span>
+                  </span>
                 </li>
               </ul>
               <div class="feedTime">12시간전</div>
@@ -214,67 +305,11 @@
                 <div>스토리</div>
                 <div><a class="storyAll">모두 보기</a></div>
               </div>
-              <div class="wrapProfile1">
-                <img src="img/yeonuk.png" alt="profileImg" />
-                <div>
-                  <a>yeonukhwang</a>
-                  <p>1분전</p>
-                </div>
-              </div>
-              <div class="wrapProfile2">
-                <img src="img/sanghun.png" alt="profileImg" />
-                <div>
-                  <a>sanghun</a>
-                  <p>28분전</p>
-                </div>
-              </div>
-              <div class="wrapProfile3">
-                <img src="img/dlwlrma.png" alt="profileImg" />
-                <div>
-                  <a>dlwlrma</a>
-                  <p>6시간전</p>
-                </div>
-              </div>
-              <div class="wrapProfile4">
-                <img src="img/bsjun.png" alt="profileImg" />
-                <div>
-                  <a>bn_sj2013</a>
-                  <p>7시간전</p>
-                </div>
-              </div>
             </div>
             <div class="storyRecomWrap">
               <div class="storyRecomStyle">
                 <div>회원님을 위한 추천</div>
                 <div><a class="storyAll">모두 보기</a></div>
-              </div>
-              <div class="wrapProfile1">
-                <img src="img/gnlcks.png" alt="profileImg" />
-                <div>
-                  <a>you_hchan</a>
-                  <p>유휘찬</p>
-                </div>
-              </div>
-              <div class="wrapProfile2">
-                <img src="img/ckdtlr.png" alt="profileImg" />
-                <div>
-                  <a>rnjsckdtlr_dd</a>
-                  <p>권창식</p>
-                </div>
-              </div>
-              <div class="wrapProfile3">
-                <img src="img/tkdrn.png" alt="profileImg" />
-                <div>
-                  <a>ohsan9_539</a>
-                  <p>오상구</p>
-                </div>
-              </div>
-              <div class="wrapProfile4">
-                <img src="img/profile.png" alt="profileImg" />
-                <div>
-                  <a>ma_sang_1</a>
-                  <p>마상원</p>
-                </div>
               </div>
             </div>
             <div class="copyRight">
