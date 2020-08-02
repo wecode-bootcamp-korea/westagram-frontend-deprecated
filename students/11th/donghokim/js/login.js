@@ -16,8 +16,14 @@ const validationFunctions = (() => {
       return validationFlag.username && validationFlag.password;
     },
     isIdHasAtAndPasswordMinFive: function (inputName, value) {
-      if (inputName === 'username' && value.includes('@')) validationFlag[inputName] = true;
-      if (inputName === 'password' && value.length > 4) validationFlag[inputName] = true;
+      if (inputName === 'username') {
+        if (value.includes('@')) validationFlag[inputName] = true;
+        else validationFlag[inputName] = false;
+      }
+      if (inputName === 'password') {
+        if (value.length > 4) validationFlag[inputName] = true;
+        else validationFlag[inputName] = false;
+      }
       return validationFlag.username && validationFlag.password;
     }
   }
