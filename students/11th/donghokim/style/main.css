@@ -387,6 +387,11 @@ button.author,
   color: rgb(0, 149, 246);
 }
 
+.comment_input .submit:disabled {
+  color: rgba(0, 149, 246, .3);
+  pointer-events: none;
+}
+
 .main_right {
   max-width: 293px;
   width: 100%;
