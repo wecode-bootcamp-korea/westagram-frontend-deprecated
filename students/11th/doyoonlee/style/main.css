@@ -6,6 +6,18 @@
 body {
     width: 100%;
 }
+7
+button {
+    color: rgb(26, 150, 244);
+    background-color: rgba(255, 255, 255, 0);
+    border: 0 solid white;
+}
+
+h3 {
+    font-size: 0.6 rem;
+    font-weight: 500;
+}
+
 
 /* -- Nav bar -- */
 .navbar_back {
@@ -17,6 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .navbar_box {
@@ -36,12 +49,12 @@ body {
 
 /* -- Nav Searchbar -- */
 .searchbar_box {
-    border: 1px solid green;
-    width: 200px;
-    height: 28px;
-    background-color: white;
     position: relative;
-    display: flex;
+    display: flex;  
+    width: 220px;
+    height: 25px;
+    background-color: white;
+    border-radius: 2px;
 }
 
 .searchbar_box img {
@@ -49,51 +62,64 @@ body {
     position: absolute;
     left: 30px;
     top: 5px;
+    
 }
 
-/* -- Nav Icon -- */
-.profile {
-    width: 25px;
-    height: auto;
-    border-radius: 50%;
-}
-
+/* -- Nav Icon, image -- */
 .icons {
-    width: 200px;
+    width: 150px;
     height: 25px;
     display: flex;
     justify-content: space-between;
 }
 
 .icons img {
-    height: 25px;
+    height: 23px;
+    border: 0;
+    border-radius: 100%;
 }
 
 /* --  Main Start --  */
 
-.main_box {
-    background-color: palegoldenrod;
+.whole_box {
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* --  Story --  */
 
-.story_box1 {
+.story_section {
    background-color: slategray;
    width: 615px;
    height: 120px;
+   display: flex;
+   justify-content: space-around;
 }
 
-.story_box2 {
-    border: 2px solid red;
-    width: 85px;
-    height: 100px;
+.story_innerbox {
+    border: 2px solid black;
+    width: 80px;
+    height: 115px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.story_profile img {
+.story_profile{
+    display: flex;
+    justify-content: center;
     width: 55px;
     height: 55px;
+    border: 0;
     border-radius: 50%;
+}
+
+.story_section p {
+    width: 80px;
+    height: 150px;
+    border: 8px solid green;
 }
 
 /* --  Feed --  */
@@ -108,17 +134,69 @@ body {
     border: 2px solid springgreen;
     width: 615px;
     height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 .feed_profile img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    margin-right: 8px;
 }
 
 .feed_img {
     width: 615px;
     height: auto;
+}
+
+/* -- Comment -- */
+.comment_box {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid teal;
+}
+
+.explanation {
+    border: 2px solid white;
+}
+
+.comment_icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.icons_left {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.comment_inputbox {
+    height: 50px;
+    position: relative;
+}
+
+.comments_loaded {
+    list-style-type: none;
+    border: 1px solid cornflowerblue;   
+}
+
+.comment_input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: silver;
+}
+
+.comment_button {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .comment {
@@ -128,8 +206,11 @@ body {
 
 /* -- Recommend Start -- */
 .recommend {
-    width: 100%; 
+    width: 350px; 
     height: 100vh;
+    font-size: 0.8rem;
+    color: rgb(100, 100, 100);
+    background-color: rgb(113, 214, 214);
 }
 
 .recommend_box {
@@ -143,14 +224,19 @@ body {
     border-radius: 50%;
 }
 
-.side_me {
-    width: 450px;
-    height: 600px;
-    font-size: 0.8rem;
-    background-color: rgb(113, 214, 214);
-}
-
 .follow_recommend {
-    width: 200px;
+    width: 250px;
 }
 
+.follow_profile {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+}
+
+.follow_box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
