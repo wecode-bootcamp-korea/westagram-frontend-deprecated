@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 
 const commentInputBox = document.querySelector('.comment-box');
 const newCommentBox = document.querySelector('.content__text');
@@ -7,12 +7,10 @@ const commentUsername = document.querySelector('.content__id');
 const commentFirstClass = document.querySelector('.info__comment');
 
 commentInputBox.addEventListener('keyup', (e) => {
-  const postBtn = document.querySelector('.postBtn');
-  if (commentInputBox.value !== '') {
-    postBtn.style.color = '#2980b9';
-  } else {
-    postBtn.style.color = '#bbdefb';
-  }
+  const postBtn = document.querySelector('.post-btn');
+  commentInputBox.value !== ''
+    ? (postBtn.style.color = '#2980b9')
+    : (postBtn.style.color = '#bbdefb');
 });
 
 commentInputBox.addEventListener('keypress', (e) => {

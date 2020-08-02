@@ -1,29 +1,25 @@
 #login {
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: 430px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 24px;
-  left: 24px;
+  margin: 0 auto;
+  margin-top: 60px;
   border: 2px solid var(--color-light-white);
 }
 
 .logo-img {
-  margin-top: 52px;
-  margin-bottom: -48px;
+  margin-top: 28px;
   padding: 24px;
 }
 
 .login__main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 32px;
-  width: 320px;
+  padding: 24px;
   height: 320px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .login__main__idPw {
@@ -33,6 +29,10 @@
   width: 256px;
   height: 80px;
 
+  margin-bottom: 12px;
+}
+
+.login__footer {
   margin-bottom: 24px;
 }
 

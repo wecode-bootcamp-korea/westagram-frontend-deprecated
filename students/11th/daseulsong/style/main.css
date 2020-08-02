@@ -4,10 +4,6 @@ body {
 
 /* header section */
 
-header {
-  width: 100%;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -72,7 +68,7 @@ header .icons li img {
   height: 24px;
 }
 
-.icons .redDot {
+.icons .red-dot {
   width: 3px;
   height: 3px;
   background-color: red;
@@ -199,8 +195,8 @@ main {
   margin-bottom: 8px;
 }
 
-.seeMore,
-.uploadTime {
+.see-more,
+.upload-time {
   color: var(--color-light-grey);
 }
 
@@ -221,17 +217,17 @@ main {
   resize: none;
 }
 
-.postBtn {
+.post-btn {
   color: var(--color-light-blue);
   padding: 15px 15px 0px 0px;
 }
 
 .comment__content,
-.uploadTime {
+.upload-time {
   margin-left: 15px;
 }
 
-.uploadTime {
+.upload-time {
   font-weight: lighter;
   font-size: var(--font-micro);
 }
@@ -331,7 +327,7 @@ main {
   font-weight: var(--weight-semi-bold);
 }
 
-.seeAll {
+.see-all {
   font-weight: var(--weight-semi-bold);
 }
 
@@ -343,7 +339,7 @@ main {
   margin-right: 12px;
 }
 
-.followBtn {
+.follow-btn {
   color: var(--color-blue);
   margin-top: 8px;
 }
