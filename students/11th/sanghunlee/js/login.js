@@ -11,6 +11,7 @@ const btnColorChangeid = () => {
         btn.style.backgroundColor = "blue";
         btn.appendChild(makeLink);
         btn.disabled = false;
+        btn.style.cursor = "pointer";
     }
     else if(idInput.length>=1 && pwInput.length>=1){
         btn.style.backgroundColor ="blue";
@@ -23,4 +24,3 @@ const btnColorChangeid = () => {
 }
 id.addEventListener("keyup",btnColorChangeid);
 pw.addEventListener("keyup",btnColorChangeid);
-/*logic 완성*/

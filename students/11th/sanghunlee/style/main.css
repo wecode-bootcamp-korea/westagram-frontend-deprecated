@@ -73,7 +73,6 @@ nav {
     height: 30px;
 }
 
-
 .navLeftLogo {
     width: 100px;
     height: 28px;
@@ -148,7 +147,6 @@ nav {
     margin-top: 30px;
 }
 
-
 .feedButtons {
     display: flex;
     justify-content: space-between;
@@ -213,7 +211,7 @@ nav {
 .feedPostingTime {
     margin-left: 5px;
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: #dbdbdb;
 }
 
@@ -239,7 +237,6 @@ nav {
     border: 0;
     padding: 1px;
 }
-
 
 .feedButtonsWrapper {
     display: flex;
@@ -284,14 +281,18 @@ nav {
     font-size: 15px;
 }
 
-.plusFeedComment {
-    margin-left: 20px;
+.likeDeleteButton {
+    display: inline-block;
+}
+
+.commentDeleteButton {
+    border: 0;
+    background-color: white;
 }
 
 .plusCommentDeleteBtn {
     width: 10px;
     height: 10px;
-    margin-left: 10px;
 }
 
 .plusCommentLike {
@@ -302,6 +303,23 @@ nav {
 .plusTypedComment {
     display: flex;
     justify-content: space-between;
+    text-overflow: ;
+}
+
+.plusTypedComment div:nth-child(1) {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.plusTypedComment div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plusFeedComment {
+    margin-left: 25px;
+    overflow-wrap: anywhere;
 }
 
 .circle {

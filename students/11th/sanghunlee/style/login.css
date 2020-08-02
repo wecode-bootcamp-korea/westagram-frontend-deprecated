@@ -45,6 +45,7 @@ article {
     border-radius: 8px;
     color: #E7F0FE;
     background-color: #C0DFFD;
+    cursor: default;
 }
 
 .loginContentWrapper input {
@@ -122,7 +123,6 @@ a:visited {
     margin-top: 15px;
     border: 1px solid #DBDBDB;
     background-color: #FFFFFF;
-
 }
 
 .getApp {
@@ -180,21 +180,3 @@ li {
         display: flex;
         flex-direction: column;
     }
-
-    /* nav ul {
-        min-width: 360px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        height: 75px;
-    }
-
-    li {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-bottom: 7px;
-        margin-right: 16px;
-        text-shadow: 0 0
-    } */
-}
