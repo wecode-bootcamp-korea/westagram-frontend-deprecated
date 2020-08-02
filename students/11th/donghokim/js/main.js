@@ -41,9 +41,13 @@ for (let feedInput of feedsInput) {
     target
   }) => {
     if (keyCode === 13) {
-      const commentsContainer = feedInput.parentNode.querySelector('.comments_container');
-      addComment(commentsContainer, nickname, target.value);
-      target.value = '';
+      if (target.value === '\n') {
+        target.value = '';
+      } else {
+        const commentsContainer = feedInput.parentNode.querySelector('.comments_container');
+        addComment(commentsContainer, nickname, target.value);
+        target.value = '';
+      }
     }
     changeStatus(feedInput.querySelector('.submit'), isInput, target.value);
   });
