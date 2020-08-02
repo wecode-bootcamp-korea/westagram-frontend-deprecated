@@ -11,7 +11,6 @@ button {
     outline: none;
     background: none;
     padding: 0;
-    cursor: pointer; /*disabled일 때 어떻게 포인터 없앨까*/    
 }
 a {
     font: 14px;
@@ -80,9 +79,11 @@ a {
     width: 935px;
     display: flex;
     justify-content: center;
-    float: left;
     margin: 0 35.5px;
     padding-top: 30px;
+}
+.feedsIndderContainer {
+    float: left;
 }
 .feedsStoryBox {
     width: 614px;
@@ -153,7 +154,7 @@ a {
 .replySection {
     background-color: #FFFFFF;
 }
-.replyIconBar{
+.replyIconBar {
     width: 100%;
     height: 40px;
     display: flex;
@@ -161,13 +162,16 @@ a {
     align-items: center;
     padding: 0 16px;
 }
-.replyIconLeft img, .replyIconRight img{
+.replyIconLeft img {
     width: 24px;
     height: 24px;
     margin-right: 16px;
     /*인스타처럼 img size는 24px, padding 0 16px을 주면 이미지가 작아지고
-    img size 40, padding 8px을 주면 왼쪽 정렬이 조금 안맞는 문제가 있음. 생각해보자
-    마지막 아이콘만 옆으로 오른쪽 정렬에 맞출 방법도 생각해보자.*/
+    img size 40, padding 8px을 주면 왼쪽 정렬이 조금 안맞는 문제가 있음. 생각해보자*/
+}
+.replyIconRight img {
+    width: 24px;
+    height: 24px;
 }
 .replyLikes {
     width: 100%;
