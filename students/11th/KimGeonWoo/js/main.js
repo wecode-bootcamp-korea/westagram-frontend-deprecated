@@ -18,5 +18,3 @@ upload_btn.addEventListener('click',function(){
 search_bar_container.addEventListener("click",function(){
     search_bar_container.remove();
 })
-
-
