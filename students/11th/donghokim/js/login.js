@@ -1,10 +1,10 @@
-let changeButtonStatus = (validationCheckFunction, inputName, value) => {
+const changeButtonStatus = (validationCheckFunction, inputName, value) => {
   let loginButton = document.querySelector('.login_button button');
   if (validationCheckFunction(inputName, value)) loginButton.disabled = false;
   else loginButton.disabled = true;
 };
 
-let isIdAndPasswordMinOnce = (() => {
+const isIdAndPasswordMinOnce = (() => {
   const validationFlag = {
     username: false,
     password: false
@@ -16,7 +16,7 @@ let isIdAndPasswordMinOnce = (() => {
   }
 })();
 
-let loginForm = document.querySelector('.login_form');
+const loginForm = document.querySelector('.login_form');
 
 loginForm.addEventListener('keyup', ({
   target: {
