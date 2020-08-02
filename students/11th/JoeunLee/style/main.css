@@ -34,6 +34,7 @@ a {
     z-index: 1;
     position: fixed;
     top: 0;
+    padding: 0 110px;
 }
 .navInnerContainer {
     width: 100%;
@@ -75,14 +76,11 @@ a {
 .navIcon img:last-of-type {
     border-radius: 50%;
 }
-.feedsOuterContainer {
-    width: 935px;
-    margin: 0 auto;
-}
 .feedsContainer {
     width: 935px;
     display: flex;
     justify-content: center;
+    float: left;
     margin: 0 35.5px;
     padding-top: 30px;
 }
@@ -118,7 +116,7 @@ a {
     width: 614px;
     border: 1px solid rgba(219,219,219,1);
     border-radius: 3px;
-    margin: 0 28px 0 0;
+    margin: 0 28px 60px 0;
 }
 .feedsContents img {
     width: 100%;
@@ -201,6 +199,9 @@ a {
 .reply {
     position: relative;
 }
+.reply a {
+    margin-right: 2px;
+}
 .reply span {
     font-size: 14px;
 }
@@ -220,7 +221,6 @@ a {
 }
 .replyTypeBox {
     width: 100%;
-    height: 56px;
     border-top: 1px solid rgba(219,219,219,1);
     background: #FFFFFF;
     margin: 4px 0 0 0;
@@ -243,6 +243,8 @@ a {
 .mainRight {
     width: 293px;
     height: 689px;
+    position: fixed;
+    left: 820px;
     padding: 0;
     margin: 0 0 30px;
 }
