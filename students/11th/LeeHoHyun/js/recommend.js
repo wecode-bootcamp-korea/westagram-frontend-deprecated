@@ -32,11 +32,7 @@ const friendsArr = [
         following: 'ham님이 팔로우합니다',
         isFollow: '팔로우'
     },
-]
-
-for(let i = 0; i < 5; i++){
-    recommend_friends_con.appendChild(makeRecommends(friendsArr[i]));
-}
+];
 
 function makeRecommends(friend){
     const recommend_friend = document.createElement('div');
@@ -70,4 +66,8 @@ function makeRecommends(friend){
     recommend_friend.appendChild(recommend_friend_is_follow_con);
 
     return recommend_friend;
+}
+
+for(let i = 0; i < 5; i++){
+    recommend_friends_con.appendChild(makeRecommends(friendsArr[i]));
 }

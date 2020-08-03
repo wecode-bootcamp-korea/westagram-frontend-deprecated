@@ -14,105 +14,12 @@ const search = document.querySelector('.search');
 const search_icon_con = search.children[0];
 const search_txt = document.querySelector('.search-txt');
 
-const like_num = document.querySelector('.like').children[0];
+const like_num_span = document.querySelector('.like').children[0];
 let likeNum = 1000;
 
-like_num.innerHTML = `좋아요 ${numAddComma(likeNum)}개`;
+like_num_span.innerHTML = `좋아요 ${numAddComma(likeNum)}개`;
 
 const reply_text = document.querySelector('.reply-text');
-
-reply_text.addEventListener('keydown', (e) => {
-    if(e.key === 'Enter'){
-        const reply_writer_id = document.querySelector('.right-profile-id').children[0].innerHTML;
-
-        e.preventDefault();
-        replies.push({id: reply_writer_id, text: reply_text.value});
-        reply_text.value = '';
-        loadReply();
-    }
-});
-
-reply_text.addEventListener('keyup', (e) => {
-    if(e.target.value === ''){
-        btn_posting.style.color = 'rgb(179, 223, 252)';
-        btn_posting.disabled = 'disabled';
-    }
-    else{
-        btn_posting.style.color = 'rgb(0, 149, 246)';
-        btn_posting.disabled = '';
-    }
-});
-
-search_input.addEventListener('focus', () => {
-    search.style.justifyContent = 'flex-start';
-    search_input.placeholder = '';
-    search_txt.style.zIndex = '-1';
-    search_input.value = search_txt.innerHTML;
-});
-
-search_input.addEventListener('blur', () => {
-    search.style.justifyContent = 'center';
-    if(search_input.value === ''){
-        search_input.placeholder = '검색';
-        search.style.width = '170px';
-        search_txt.innerHTML = '';
-    }
-    else{
-        search_txt.innerHTML = search_input.value;
-        search_input.value = '';
-        search_txt.style.zIndex = '1';
-        search.style.width = 'auto';
-    }
-});
-
-for(let e of recommend_friend_follow){
-    changeFollowColor(e);
-
-    e.addEventListener('click', (e) => {
-        e.target.innerHTML = e.target.innerHTML === '팔로우' ? '팔로잉' : '팔로우';
-        
-        changeFollowColor(e.target);
-    })
-}
-
-// 추천 친구 팔로우 상태에 따른 text 색
-function changeFollowColor(e){
-    e.style.color = e.innerHTML === '팔로우' ? 'rgb(0, 149, 246)' : 'black';
-}
-
-heart.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    if(e.target.src === "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"){
-        e.target.src = "./img/red_heart.png";
-        likeNum += 1;
-        like_num.innerHTML = `좋아요 ${numAddComma(likeNum)}개`;
-    }
-    else{
-        e.target.src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
-        likeNum -= 1;
-        like_num.innerHTML = `좋아요 ${numAddComma(likeNum)}개`;
-    }
-});
-
-btn_posting.addEventListener('click', (e) => {
-    if(reply_text.value !== ''){
-        const reply = {
-            id: 'hemtory',
-            text: reply_text.value
-        };
-    
-        replies.push(reply);
-    
-        reply_text.value = '';
-        
-        loadReply();
-        replyNumRefresh();
-    
-        btn_posting.style.color = 'rgb(179, 223, 252)';
-        btn_posting.disabled = 'disabled';
-    }
-});
 
 // 숫자에 comma 붙이기
 function numAddComma(num) {
@@ -178,6 +85,100 @@ function replyNumRefresh(){
 
     reply_num.innerHTML = `댓글 ${replies.length}개 보기`;
 }
+
+// 추천 친구 팔로우 상태에 따른 text 색
+function changeFollowColor(e){
+    e.style.color = e.innerHTML === '팔로우' ? 'rgb(0, 149, 246)' : 'black';
+}
+
+for(let el of recommend_friend_follow){
+    changeFollowColor(el);
+
+    el.addEventListener('click', (e) => {
+        e.target.innerHTML = e.target.innerHTML === '팔로우' ? '팔로잉' : '팔로우';
+        
+        changeFollowColor(e.target);
+    })
+}
+
+reply_text.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter'){
+        e.preventDefault();
+        
+        const reply_writer_id = document.querySelector('.right-profile-id').children[0].innerHTML;
+
+        replies.push({id: reply_writer_id, text: reply_text.value});
+        reply_text.value = '';
+        loadReply();
+    }
+});
+
+reply_text.addEventListener('keyup', (e) => {
+    if(e.target.value === ''){
+        btn_posting.style.color = 'rgb(179, 223, 252)';
+        btn_posting.disabled = 'disabled';
+    }
+    else{
+        btn_posting.style.color = 'rgb(0, 149, 246)';
+        btn_posting.disabled = '';
+    }
+});
+
+search_input.addEventListener('focus', () => {
+    search.style.justifyContent = 'flex-start';
+    search_input.placeholder = '';
+    search_txt.style.zIndex = '-1';
+    search_input.value = search_txt.innerHTML;
+});
+
+search_input.addEventListener('blur', () => {
+    search.style.justifyContent = 'center';
+    if(search_input.value === ''){
+        search_input.placeholder = '검색';
+        search.style.width = '170px';
+        search_txt.innerHTML = '';
+    }
+    else{
+        search_txt.innerHTML = search_input.value;
+        search_input.value = '';
+        search_txt.style.zIndex = '1';
+        search.style.width = 'auto';
+    }
+});
+
+heart.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if(e.target.src === "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"){
+        e.target.src = "./img/red_heart.png";
+        likeNum += 1;
+        like_num_span.innerHTML = `좋아요 ${numAddComma(likeNum)}개`;
+    }
+    else{
+        e.target.src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
+        likeNum -= 1;
+        like_num_span.innerHTML = `좋아요 ${numAddComma(likeNum)}개`;
+    }
+});
+
+btn_posting.addEventListener('click', (e) => {
+    if(reply_text.value !== ''){
+        const reply = {
+            id: 'hemtory',
+            text: reply_text.value
+        };
+    
+        replies.push(reply);
+    
+        reply_text.value = '';
+        
+        loadReply();
+        replyNumRefresh();
+    
+        btn_posting.style.color = 'rgb(179, 223, 252)';
+        btn_posting.disabled = 'disabled';
+    }
+});
 
 loadReply();
 replyNumRefresh();
