@@ -5,37 +5,46 @@
 
 body {
     width: 100%;
+    position: relative;
+    margin: 0;
 }
-7
+
 button {
     color: rgb(26, 150, 244);
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(103, 51, 51, 0);
     border: 0 solid white;
 }
 
-h3 {
-    font-size: 0.6 rem;
-    font-weight: 500;
+p {
+    font-size: 0.8rem;
+    line-height: 120%;
 }
 
+li {
+    font-size: 0.85rem;
+}
+
+.comment_box p {
+    display: inline;
+}
 
 /* -- Nav bar -- */
 .navbar_back {
     width: 100%;
     height: 55px;
-    background-color: pink;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(210, 210, 210);
 }
 
 .navbar_box {
-    border: 3px solid blueviolet;
     width: 50%;
-    max-width: 940px;
+    width: 900px;
     min-width: 600px;
     display: flex;
     align-items: center;
@@ -45,29 +54,30 @@ h3 {
 .logo {
     width: auto;
     height: 30px;
+    transform: translateY(10);
 }
 
 /* -- Nav Searchbar -- */
 .searchbar_box {
     position: relative;
-    display: flex;  
-    width: 220px;
+    width: 200px;
     height: 25px;
-    background-color: white;
+    background-color: #FAFAFA;
     border-radius: 2px;
+    border: 1px solid rgb(210, 210, 210);
 }
 
 .searchbar_box img {
-    height: 15px;
+    height: 10px;
     position: absolute;
-    left: 30px;
-    top: 5px;
-    
+    left: 40px;
+    top: 7px;
+    opacity: 0.3;
 }
 
 /* -- Nav Icon, image -- */
 .icons {
-    width: 150px;
+    width: 200px;
     height: 25px;
     display: flex;
     justify-content: space-between;
@@ -82,60 +92,71 @@ h3 {
 /* --  Main Start --  */
 
 .whole_box {
-    background-color: salmon;
     display: flex;
     justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAFAFA;
 }
 
 
 /* --  Story --  */
 
 .story_section {
-   background-color: slategray;
    width: 615px;
    height: 120px;
    display: flex;
    justify-content: space-around;
+   margin-top: 25px;
+   border-radius: 3px;
+   background-color: #FFFFFF;
+   border: 1px solid rgb(210, 210, 210);
 }
 
 .story_innerbox {
-    border: 2px solid black;
-    width: 80px;
-    height: 115px;
-    padding-top: 10px;
+    border: 0 solid black;
+    width: 100px;
+    height: 100%;
+    padding-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.story_profile{
+.profile_box {
     display: flex;
     justify-content: center;
-    width: 55px;
-    height: 55px;
+}
+
+.story_profile{
+    width: 60px;
+    height: 60px;
     border: 0;
     border-radius: 50%;
 }
 
 .story_section p {
-    width: 80px;
-    height: 150px;
-    border: 8px solid green;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
 }
 
 /* --  Feed --  */
 
 .feed_box {
-    background-color: tan;
     width: 615px;
-    height: 900px;
+    height: 815px;
+    margin-top: 10px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(210, 210, 210);
 }
 
 .feed_profile {
-    border: 2px solid springgreen;
     width: 615px;
     height: 60px;
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
 
 .feed_profile img {
@@ -143,6 +164,16 @@ h3 {
     height: 35px;
     border-radius: 50%;
     margin-right: 8px;
+}
+
+.feed_profile p {
+    font-size: 0.65rem;
+    line-height: 170%;
+}
+
+.feed_profile strong {
+    font-size: 0.75rem;
+    color: rgb(30, 30, 30);
 }
 
 .feed_img {
@@ -153,8 +184,7 @@ h3 {
 /* -- Comment -- */
 .comment_box {
     width: 100%;
-    padding: 15px;
-    border: 2px solid teal;
+    padding: 10px;
 }
 
 .explanation {
@@ -164,6 +194,7 @@ h3 {
 .comment_icons {
     width: 100%;
     display: flex;
+    position: relative;
     justify-content: space-between;
     margin-top: 10px;
 }
@@ -174,6 +205,21 @@ h3 {
     width: 100px;
 }
 
+.do_like {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.undo_like {
+    visibility: hidden;
+    z-index: 50;
+}
+
+.bubble {
+    transform: translate(-5px);
+}
+
 .comment_inputbox {
     height: 50px;
     position: relative;
@@ -181,14 +227,13 @@ h3 {
 
 .comments_loaded {
     list-style-type: none;
-    border: 1px solid cornflowerblue;   
 }
 
 .comment_input {
     width: 100%;
     height: 100%;
     border: 0;
-    background-color: silver;
+    border-top: 1px solid rgb(210, 210, 210);
 }
 
 .comment_button {
@@ -200,32 +245,54 @@ h3 {
 }
 
 .comment {
-    border: 2px solid peru;
     height: 100px;
+}
+
+.comments_loaded {
+    position: relative;
+}
+
+.delete {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 3px;
+    top: 5px;
 }
 
 /* -- Recommend Start -- */
 .recommend {
-    width: 350px; 
-    height: 100vh;
+    width: 320px; 
+    height: 400px;
+    padding: 20px 30px 0 30px;
     font-size: 0.8rem;
     color: rgb(100, 100, 100);
-    background-color: rgb(113, 214, 214);
+    background-color: rgba(255, 255, 255, 0);
+    position: sticky;
+    top: 40px;
 }
 
 .recommend_box {
-    width: 350px;
-    border: 2px solid goldenrod;
+    width: 100%;
+    height: 100%;
+}
+
+.rec_myprofile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .rec_myprofile img {
-    width: 80px;
-    height: 80px;
+    width: 58px;
+    height: 58px;
+    border: 0;
     border-radius: 50%;
 }
 
-.follow_recommend {
-    width: 250px;
+.rec_text {
+    margin-left: 10px;
+    font-size: 0.75rem;
 }
 
 .follow_profile {
@@ -233,10 +300,56 @@ h3 {
     height: 30px;
     border: 0;
     border-radius: 50%;
+
 }
 
-.follow_box {
+.follow_box1 {
     position: relative;
     display: flex;
     justify-content: space-between;
+    top: 10px;
 }
+
+.follow_recommend {
+    width: 190px;
+    margin-left: 10px;
+}
+
+.follow_box1 button {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: rgb(30, 30, 30);
+}
+
+.follow_box2 {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.follow_box2 p {
+    font-size: 0.65rem;
+    line-height: 120%;
+    margin: 0;
+}
+
+.follow_box2 strong {
+    font-size: 0.75rem;
+    color: rgb(50, 50, 50);
+}
+
+.follow_box2 button {
+    background-color: rgba(255, 255, 255, 0);
+    width: 50px;
+    font-weight: 500;
+    font-size: 0.7rem;
+    color: rgb(26, 150, 244);
+    border: 0 solid white;
+}
+
+.follow_box2 button:focus {
+    outline: none;
+}
+
