@@ -1,13 +1,9 @@
-const buttonOnOffPw = document.getElementById('login-container');
+const btnOnOffPw = document.getElementsByClassName('login-container')[0];
 
-buttonOnOffPw.addEventListener('keyup', function(e) {
-  const pw = document.getElementById('password').value;
-  const id = document.getElementById('login-id').value;
-  let btn = document.getElementById('login-button');
-  if (id.length > 0 && pw.length > 0) {
-    btn.disabled = false;
-  }
-  else {
-    btn.disabled = true;
-  }
+btnOnOffPw.addEventListener('keyup', function() {
+  const id = document.getElementsByClassName('login-id')[0].value;
+  const pw = document.getElementsByClassName('password')[0].value;
+  let btn = document.getElementsByClassName('login-button')[0];
+
+  btn.disabled = id.length && pw.length > 0 ? false : true;
 });

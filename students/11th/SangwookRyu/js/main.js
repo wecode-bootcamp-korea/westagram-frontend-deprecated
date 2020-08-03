@@ -1,13 +1,10 @@
-const buttonOnOffComment = document.getElementById('writecomment');
+const btnOnOffComment = document.getElementsByClassName('write-comment')[0];
 
-buttonOnOffComment.addEventListener('keyup', function(e) {
-  const comment = document.getElementById('writecomment').value;
-  let btn = document.getElementById('addcomment');
-  
-  if (comment.length > 0) {
-    btn.disabled = false;
-  }
-  else {
-    btn.disabled = true;
-  }
+btnOnOffComment.addEventListener('keyup', function() {
+  const comment = document.getElementsByClassName('write-comment')[0].value;
+  const btn = document.getElementsByClassName('add-comment')[0];
+
+  btn.disabled = comment.length > 0 ? false : true;
+  console.log("hello");
+
 });

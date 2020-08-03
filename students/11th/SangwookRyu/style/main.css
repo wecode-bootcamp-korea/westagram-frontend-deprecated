@@ -1,5 +1,5 @@
 /* nav */
-.navbox {
+.nav-box {
     width: 100%;
     height: 54px;
     border-bottom: 1px solid #dbdbdb;
@@ -21,7 +21,7 @@
     background-color: white;
 }
 
-.logobox, .searchbox, .btnbox {
+.logo-box, .search-box, .btn-box {
     display: flex;
     max-width: auto;
     margin: auto 0;
@@ -69,14 +69,14 @@ input.search:focus {
     color: #262626;
 }
 
-.btnbox img {
+.btn-box img {
     width: 22px;
     margin-left: 24px;
     cursor:pointer;
 }
 
 /* article */
-.mainbox {
+.main-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,7 +85,7 @@ input.search:focus {
     margin: 90px auto;
 }
 
-.articlebox {
+.article-box {
     display: flex;
     flex-direction: column;
     width: 616px;
@@ -94,7 +94,7 @@ input.search:focus {
     background-color: white;
 }
 
-.articlehead {
+.article-head {
     display: flex;
     width: 614px;
     height: 60px;
@@ -106,14 +106,14 @@ input.search:focus {
     padding-left: 15px;
 }
 
-.profileicon {
+.profile-icon {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.userid {
+.user-id {
     margin: auto 0;
     padding-left: 10px;
     font-size: 14px;
@@ -128,22 +128,22 @@ input.search:focus {
     cursor: pointer;
 }
 
-.articlephoto {
+.article-photo {
     width: 614px;
     height: auto;
 }
 
-.articlephoto img {
+.article-photo img {
     width: 614px;
 }
-.articlebtn {
+.article-btn {
     display: flex;
     width: 614px;
     height: 40px;
     padding: 12px 8px 8px 8px;
 }
 
-.articlebtn img:not(.btn-bookmark) {
+.article-btn img:not(.btn-bookmark) {
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -157,7 +157,7 @@ input.search:focus {
     margin: auto 2px auto auto;
 }
 
-.contentbox {
+.content-box {
     width: 614px;
     height: auto;
     font-size: 14px;
@@ -168,7 +168,7 @@ input.search:focus {
     padding: 5px 0px 0px 15px;
 }
 
-.likesinfo {
+.likes-info {
     width: 100px;
     font-size: 14px;
     font-weight: 600;
@@ -177,11 +177,11 @@ input.search:focus {
     cursor: pointer;
 }
 
-.commentbox {
+.comment-box {
     line-height: 20px;
 }
 
-.writerid {
+.writer-id {
     display: inline;
     font-size: 14px;
     font-weight: 600;
@@ -189,7 +189,7 @@ input.search:focus {
     cursor: pointer;
 }
 
-.viewerid {
+.viewer-id {
     display: inline;
     font-size: 14px;
     font-weight: 600;
@@ -197,18 +197,18 @@ input.search:focus {
     cursor: pointer;
 }
 
-.posttime {
+.post-time {
     font-size: 10px;
     color: #828282;
     margin: 8px 0 8px 0;
 }
-#addcommentbox {
+.add-comment-box {
     display: flex;
     flex-direction: row;
     border-top: 1px solid #efefef;
 }
 
-#writecomment {
+.write-comment {
     width: 575px;
     height: 56px;
     padding: 16px;
@@ -218,12 +218,12 @@ input.search:focus {
     border: none;
 }
 
-#writecomment::placeholder {
+.write-comment::placeholder {
     color: #888888;
     font-size: 14px;
 }
 
-#addcomment {
+.add-comment {
     position: relative;
     left: -10px;
     width: auto;
@@ -238,12 +238,12 @@ input.search:focus {
     color: #0095f6;
 }
 
-#addcomment:disabled {
+.add-comment:disabled {
     cursor: default;
     color: #c5def9;
 }
 /* aside */
-.asidebox {
+.aside-box {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -252,18 +252,18 @@ input.search:focus {
     margin-left: 650px;
 }
 
-.asidehead {
+.aside-head {
     width: 293px;
     height: 56px;
     margin: 20px 0 0 -15px;
 }
 
-.asidehead .profileicon {
+.aside-head .profile-icon {
     width: 56px;
     height: 56px;
 }
 
-.asidecontents {
+.aside-contents {
     width: 293px;
     height: auto;
 }
@@ -274,32 +274,29 @@ input.search:focus {
     margin: 20px 0 0 -15px;
 }
 
-.userprofile {
+.user-profile {
     display: flex;
     padding: 8px 16px;
 }
 
-.userprofile img {
-}
-
-.profileside {
+.profile-side {
     text-indent: 10px;
 }
 
-.profileid {
+.profile-id {
     font-size: 14px;
     font-weight: bold;
     color: #262626;
     cursor: pointer;
 }
 
-.userprofile p {
+.user-profile p {
     line-height: 23px;
     font-size: 12px;
     color: #8e8e8e;
 }
 
-.btnfollow {
+.btn-follow {
     font-size: 12px;
     color: #0095f6;
     margin: auto 5px auto auto;
@@ -307,17 +304,17 @@ input.search:focus {
     cursor: pointer;
 }
 
-.asidefooter {
+.aside-footer {
     width: 290px;
     padding: 15px 0 0 0;
 }
-.asidefooter ul, li {
+.aside-footer ul, li {
     display: inline;
     font-size: 11px;
     color: #c7c7c7;
 }
 
-.asidefooter li {
+.aside-footer li {
     cursor: pointer;
 }
 

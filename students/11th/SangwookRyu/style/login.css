@@ -17,12 +17,12 @@
     background-size: cover;
   }
 
-  #login-container {
+  .login-container {
     width: 268px;
     margin: 40px auto;
   }
 
-  #login-id, #password {
+  .login-id, .password {
     width: 268px;
     height: 36px;
     padding: 9px  7px 8px;
@@ -34,7 +34,7 @@
     background-color: #FAFAFA;
   }
 
-  #login-button {
+  .login-button {
     width: 268px;
     height: 30px;
     margin: 10px auto;
@@ -47,7 +47,7 @@
     background-color: #0095f6;
   }
 
-  #login-button:disabled {
+  .login-button:disabled {
     border: 1px solid #c0d7f3;
     background-color: #c0d7f3;
     cursor: default;
