@@ -27,7 +27,7 @@ input:focus {
   outline: none;
 }
 
-.frame {
+.navFrame {
   max-width: 935px;
   width: 100%;
   display: flex;
@@ -35,7 +35,7 @@ input:focus {
   margin: 0 20px;
 }
 
-.iconPart {
+.navLogoPart {
   width: 200px;
   display: flex;
 }
@@ -55,7 +55,7 @@ input:focus {
   margin-left: 10px;
 }
 
-.searchPart {
+.navSearchPart {
   width: 199px;
   height: 100%;
   display: flex;
@@ -76,7 +76,7 @@ input::placeholder {
   opacity: 0.4;
 }
 
-.inTheMenu {
+.navIconPart {
   width: 222px;
   height: 52px;
   display: flex;
@@ -84,7 +84,7 @@ input::placeholder {
   justify-content: space-between;
 }
 
-.inTheMenu img {
+.navIconPart img {
   width: 22px;
   height: 22px;
 }
@@ -107,7 +107,7 @@ section {
   padding-top: 30px;
 }
 
-.feeds {
+.feedsFrame {
   width: 614px;
   height: 100%;
   margin-right: 28px;
@@ -145,7 +145,7 @@ section {
   left: 3px;
 }
 
-.feedsTopText {
+.feedsTopImgName {
   top: 68px;
   position: relative;
   font-size: 12px;
@@ -171,7 +171,7 @@ section {
   position: relative;
 }
 
-.feedPhoto {
+.feedWriterIcon {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -490,14 +490,14 @@ section {
     display: none;
   }
 
-  .bigFrame {
+  .mainFrame {
     display: flex;
     justify-content: center;
   }
 }
 
 @media only screen and (max-width: 950px) {
-  .bigFrame {
+  .mainFrame {
     width: 700px;
   }
 }
