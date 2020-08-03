@@ -1,8 +1,9 @@
+let signIn = document.querySelector('.loginFormWrap');
 let inputId = document.querySelector('.inputId');
 let inputPw = document.querySelector('.inputPw');
 let btn = document.querySelector('.loginBoxBtn');
 
-// 버튼 활성화 //
+// 버튼 제어 //
 const btnOn = () => {
     if (inputId.value && inputPw.value) {
     btn.disabled = false; 
@@ -13,12 +14,7 @@ const btnOn = () => {
     btn.disabled = 'disabled';
     btn.classList = 'btn-off';
     btn.classList.remove = 'btn-active';
-}
+    }
 };
 
-inputId.addEventListener('keydown', function(){
-    btnOn();
-})
-inputPw.addEventListener('keydown', function(){
-    btnOn();
-});
+signIn.addEventListener('keyup', btnOn);

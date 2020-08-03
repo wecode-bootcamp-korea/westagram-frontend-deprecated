@@ -338,11 +338,6 @@ button.share {
     font-size: 1.4rem;
 }
 
-.main-text-userReply div {
-    display: contents;
-    font-size: 1.4rem;
-}
-
 .main-text-upTime {
     height: 16px;
     padding-left: 16px;
@@ -541,9 +536,46 @@ font-size: 1.2rem;
     line-height: 13px;
 }
 
-
-
 .right-nav-item-li:not(:last-child)::after {
     content: '\00B7';
     margin: 0 .25em 0 .25em;
     }
+
+.main-text-userReply {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#userReply {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 18px;
+    margin: 2px 0;
+    font-size: 1.4rem;
+}
+
+.userId {
+    margin: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.userReply {
+    margin: 0;
+    margin-left: 3px;
+    font-size: 1.4rem;
+}
+
+#userReplyBtn {
+    margin: 0;
+    margin-left: auto;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
