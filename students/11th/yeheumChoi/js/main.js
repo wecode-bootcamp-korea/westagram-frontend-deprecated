@@ -12,7 +12,7 @@ sectionList.forEach((section) => {
   )[0];
   const commentListContainer = section.getElementsByTagName("ul")[0];
   const submitComment = () => {
-    if (commentInput.value === "") {
+    if (!commentInput.value) {
       return;
     }
 
@@ -49,7 +49,7 @@ sectionList.forEach((section) => {
   //enter로 댓글 넣기
   commentInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter" && commentInput.value !== "") {
-      event.preventDefault();
+      e.preventDefault();
       submitComment();
     }
   });
@@ -171,8 +171,8 @@ const searchIconTextContainer = document.getElementsByClassName(
   "searchText"
 )[0];
 
-WrapNavText.addEventListener("mouseenter", (e) => (isCursorEntered = true));
-WrapNavText.addEventListener("mouseleave", (e) => (isCursorEntered = false));
+WrapNavText.addEventListener("mouseenter", () => (isCursorEntered = true));
+WrapNavText.addEventListener("mouseleave", () => (isCursorEntered = false));
 
 searchIcon.addEventListener("click", () => {
   WrapNavText.setAttribute("style", "z-index: 10;");
@@ -254,9 +254,7 @@ navText.addEventListener("focusin", () => {
 });
 
 function toggleHiddenSearchBox() {
-  if (navText.value.length > 0) {
-    SearchBox.classList.remove("hiddenSearchBox");
-  } else {
-    SearchBox.classList.add("hiddenSearchBox");
-  }
+  navText.value.length > 0
+    ? SearchBox.classList.remove("hiddenSearchBox")
+    : SearchBox.classList.add("hiddenSearchBox");
 }
