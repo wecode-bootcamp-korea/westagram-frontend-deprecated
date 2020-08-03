@@ -15,7 +15,7 @@ const btnColorChangeid = () => {
     }
     else if(idInput.length>=1 && pwInput.length>=1){
         btn.style.backgroundColor ="blue";
-        btn.disabled = true;
+        btn.disabled = false;
     }
     else{
         btn.style.backgroundColor = "#C0DFFD";
