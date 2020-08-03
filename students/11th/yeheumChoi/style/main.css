@@ -91,6 +91,13 @@ input::placeholder {
   margin-bottom: 60px;
 }
 
+.feedLikeImg {
+  width: 25px;
+  height: 25px;
+  border-radius: 70%;
+  margin: 8px;
+}
+
 main {
   margin-top: 80px;
 }

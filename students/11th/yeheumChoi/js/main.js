@@ -229,10 +229,10 @@ const mediaQ = window.matchMedia("(max-width: 1024px)");
 
 mediaQ.addListener((e) => {
   if (e.matches) {
-    asideWrapNav[0].setAttribute("style", "display: none;");
+    asideWrapNav[0].classList.add("hiddenSearchBox");
     wrapMain[0].classList.add("changeMain");
   } else {
-    asideWrapNav[0].setAttribute("style", "display: intial");
+    asideWrapNav[0].classList.remove("hiddenSearchBox");
     wrapMain[0].classList.remove("changeMain");
   }
 });
