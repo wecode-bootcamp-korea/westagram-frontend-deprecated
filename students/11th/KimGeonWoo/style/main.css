@@ -111,7 +111,7 @@ ul{
     width: 100%;
     height: 927px;
     padding-top: 50px;
-    background-color: rgba(250,250,250,1);
+    background-color: #fafafa;
 }
 
 .total_contents_container{
@@ -278,7 +278,7 @@ ul{
     outline: none;
     cursor: pointer;
     border: none;
-    color:rgba(142,142,142,1);
+    color:#8E8E8E;
     background-color: white;
 }
 
@@ -340,7 +340,7 @@ ul{
     width: 293px;
     height: 500px;
     margin-right: 245px;
-    background-color: rgb(250,250,250,1);
+    background-color: #FAFAFA;
 }
 
 .profile_section_header{
@@ -437,7 +437,7 @@ ul{
 
 .recommend_profile_list button{
     border: none;
-    background-color: rgba(250,250,250,1);
+    background-color: #FAFAFA;
 }
 
 .recommend_head{
@@ -447,20 +447,20 @@ ul{
     padding: 4px 16px;
     overflow: hidden;
     border: 1px solid #dbdbdb;
-    background-color: rgba(250,250,250,1);
+    background-color: #FAFAFA;
 }
 
 .insta_info_container{
     width: 100%;
     height: 106px;
-    background-color:rgba(250,250,250,1);
+    background-color:#FAFAFA;
 }
 
 .insta_info{
     width: 100%;
     height: 39px;
     margin-bottom: 16px;
-    background-color:rgba(250,250,250,1);
+    background-color:#FAFAFA;
 }
 
 .insta_info li{
