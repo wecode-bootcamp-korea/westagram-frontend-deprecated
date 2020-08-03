@@ -1,15 +1,5 @@
-const isInput = (() => {
-  let inputFlag = false;
-  return (value) => {
-    if (value) inputFlag = true;
-    else inputFlag = false;
-    return inputFlag;
-  }
-})();
-
-const changeStatus = (button, validationCheckFunction, value) => {
-  if (validationCheckFunction(value)) button.disabled = false;
-  else button.disabled = true;
+const changeStatus = (button, value) => {
+  button.disabled = value ? false : true;
 }
 
 const addComment = (commentsContainer, nickname, text) => {
@@ -49,7 +39,7 @@ for (let feedInput of feedsInput) {
         target.value = '';
       }
     }
-    changeStatus(feedInput.querySelector('.submit'), isInput, target.value);
+    changeStatus(feedInput.querySelector('.submit'), target.value);
   });
 
   feedInput.querySelector('.submit').addEventListener('click', (e) => {
@@ -58,6 +48,6 @@ for (let feedInput of feedsInput) {
     const commentInput = feedInput.querySelector('textarea');
     addComment(commentsContainer, nickname, commentInput.value);
     commentInput.value = '';
-    changeStatus(feedInput.querySelector('.submit'), isInput, commentInput.value);
+    changeStatus(feedInput.querySelector('.submit'), commentInput.value);
   })
 }
