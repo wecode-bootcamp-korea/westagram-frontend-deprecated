@@ -10,6 +10,7 @@ main {
 section {
   position: relative;
   display: flex;
+  justify-content: center;
   padding-top: 30px;
   margin: 0 auto;
   max-width: 935px;
@@ -392,6 +393,12 @@ button.author,
 .comment_input .submit:disabled {
   color: rgba(0, 149, 246, .3);
   pointer-events: none;
+}
+
+@media screen and (max-width: 999px) {
+  .main_right {
+    display: none;
+  }
 }
 
 .main_right {
