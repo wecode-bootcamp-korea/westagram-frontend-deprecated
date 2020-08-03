@@ -29,33 +29,19 @@ function numAddComma(num) {
  // 댓글 li 만들기
 function addReply(reply){
     const li = document.createElement('li');
-    const span_id = document.createElement('span');
-    const span_reply = document.createElement('span');
-    const span_heartIcon = document.createElement('span');
+    
+    li.innerHTML = `
+            <span class="span-id" style="margin-right: 5px;">${reply.id}</span>
+            <span class-"span-reply">${reply.text}</span>
+            <span>
+                <img class="span-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            </span>`.trim();
 
-    span_id.classList.add('insta-id');
-    span_id.innerHTML = reply.id;
-    span_id.style.marginRight = '5px';
-
-    li.appendChild(span_id);
-
-    span_reply.innerHTML = reply.text;
-
-    li.appendChild(span_reply);
-
-    span_heartIcon.innerHTML = '';
-    const img = document.createElement('img');
-    img.src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
-    img.addEventListener('click', (e) => {
+    ul.addEventListener('click', (e) => {
         e.preventDefault();
     
         e.target.src = e.target.src === "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" ? "./img/red_heart.png" : "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
     });
-    
-    span_heartIcon.appendChild(img);
-
-    li.appendChild(span_heartIcon);
-
     ul.appendChild(li);
 }
 
@@ -113,6 +99,9 @@ reply_text.addEventListener('keydown', (e) => {
 
         loadReply(ul, replies);
         replyNumRefresh(replies);
+        
+        btn_posting.style.color = 'rgb(179, 223, 252)';
+        btn_posting.disabled = 'disabled';
     }
 });
 
@@ -165,9 +154,11 @@ heart.addEventListener('click', (e) => {
 });
 
 btn_posting.addEventListener('click', (e) => {
+    const reply_writer_id = document.querySelector('.right-profile-id').children[0].innerHTML;
+
     if(reply_text.value !== ''){
         const reply = {
-            id: 'hemtory',
+            id: reply_writer_id,
             text: reply_text.value
         };
     

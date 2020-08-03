@@ -209,18 +209,23 @@ article header{
     position: relative;
 }
 
+.reply-list img{
+    width: 12px;
+    height: 12px;
+}
+
 .insta-id{
     font-weight: bold;
 }
 
-.reply-list li span:last-child{
-    position: absolute;
-    right: 0;
+.span-id{
+    margin-right: 5px;
+    font-weight: bold;
 }
 
-.reply-list img{
-    width: 12px;
-    height: 12px;
+.span-heart{
+    position: absolute;
+    right: 0;
 }
 
 .upload-time{
