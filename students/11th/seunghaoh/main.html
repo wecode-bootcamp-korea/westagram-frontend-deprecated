@@ -3,155 +3,425 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
+    <title>westagram_main</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
     <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/d7786bb13c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!-- navbar -->
-    <nav>
-      <div class="navbar">
-        <!-- logo -->
-        <div class="logo">
-          <div class="imgLogo">
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
-              alt="instagram image logo"
-            />
+    <div class="container">
+      <!-- navbar -->
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <img alt="instagram text logo" src="img/logo_text.png" />
           </div>
-          <div class="textLogo">
-            <img src="img/logo_text.png" alt="instagram text logo" />
+          <div class="searchbar">
+            <span class="searchbarIcon"></span
+            ><span class="searchbarText">검색</span>
           </div>
-        </div>
-        <!-- searchbar -->
-        <div class="searchbar">
-          <div class="searchIcon"></div>
-          <input type="text" placeholder="검색" />
-        </div>
-        <!-- icons -->
-        <div class="icons">
-          <ul>
-            <li>
-              <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-                alt="Explore icon"
-              />
-            </li>
-            <li>
-              <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-                alt="Like icon"
-              />
-            </li>
-            <li>
-              <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-                alt="MyPage icon"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- main -->
-    <main>
-      <section class="feed">
-        <section class="leftFeed">
-          <section class="storyFeed"></section>
-          <section class="mainFeed">
-            <header>
-              <div class="profileInfo">
-                <div class="profileImg">
-                  <img
-                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/67299396_504157176796579_4275483623538294784_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=roZFaBUZKi8AX__-Enl&oh=62388384d30440f932f8e98b6d0c2e25&oe=5F4B773B"
-                    alt="profile image"
-                  />
-                </div>
-                <div class="profileName">our_studio</div>
-              </div>
-              <button>
+          <div class="icons">
+            <ul>
+              <li>
                 <img
-                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
-                  alt="more button"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+                  alt="Explore icon"
                 />
-              </button>
-            </header>
-            <div class="photo">
-              <img
-                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/116155571_283494886085063_9100505239867308234_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=FrE2xrtZAXMAX97z-qb&oh=d9cad64db397c93de2f4b5283639cc27&oe=5F4A427D"
-                alt="main image"
-              />
-            </div>
-            <div class="info">
-              <div class="icons">
+              </li>
+              <li>
+                <img
+                  alt="Like icon"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                />
+              </li>
+              <li>
+                <img
+                  alt="MyPage icon"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- main -->
+      <div class="main">
+        <div class="mainSection">
+          <section class="leftSection">
+            <!-- storyFeed -->
+            <section class="storyFeed">
+              <ul>
+                <li></li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <div class="profileImgRing">
+                      <div class="profileImg">
+                        <img
+                          alt="profile image"
+                          src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/107521631_200882431346807_6526225303910186282_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=9IE_0YaMnwMAX9RVyWr&oh=d8521d59181d5b18af8d8cce437278cf&oe=5F4EAED3"
+                        />
+                      </div>
+                    </div>
+                    <span class="profileName">in.thecity</span>
+                  </button>
+                </li>
+              </ul>
+            </section>
+            <!-- mainFeed -->
+            <div class="mainFeed">
+              <header>
+                <img
+                  alt="profile image"
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/101791828_1391739064351630_4158820053942272000_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=giRctUiqubUAX8nBiFq&oh=bf2660c8e1471bfc357f4fa56ace5605&oe=5F4F1572"
+                />
+                <span class="profileName">in.thecity</span>
+                <button><i class="fas fa-ellipsis-h"></i></button>
+              </header>
+              <div class="feedImg">
+                <img
+                  alt="feed image"
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/116467241_713097226210559_7023283828145293253_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=Jjb87iYEFH4AX82rhHm&oh=6d845970a88858076a562ab8a3b6cb4e&oe=5F4FC1B4"
+                />
+              </div>
+              <div class="iconBox">
                 <div class="rightIcons">
-                  <img
-                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-                    alt="like icon"
-                  />
-                  <img
-                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
-                    alt="comment icon"
-                  />
-                  <img
-                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
-                    alt="share icon"
-                  />
+                  <button>
+                    <svg
+                      aria-label="좋아요"
+                      class="_8-yf5"
+                      fill="#262626"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button>
+                    <svg
+                      aria-label="댓글 달기"
+                      class="_8-yf5"
+                      fill="#262626"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <button>
+                    <svg
+                      aria-label="게시물 공유"
+                      class="_8-yf5"
+                      fill="#262626"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                      ></path>
+                    </svg>
+                  </button>
                 </div>
-                <div class="leftIcons">
-                  <img
-                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
-                    alt="bookmark icon"
-                  />
+                <div class="leftIcon">
+                  <button>
+                    <svg
+                      aria-label="저장"
+                      class="_8-yf5"
+                      fill="#262626"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"
+                      ></path>
+                    </svg>
+                  </button>
                 </div>
               </div>
-              <div class="likeDscrp">
-                kunis_lovely_vintage_home님 여러 명이 좋아합니다
-              </div>
-              <div class="textBox">
-                <div class="profileName">our_studio</div>
-                <div class="text">
-                  타일테이블은 제작처에서 열심히
-                  제작중이에요 :) (어마어마한 작업량🤭) 잦은 비
-                  소식으로 배송기간이 조금 지연 되어서 넘
-                  속상하지만 ㅠㅠ 더 좋은 제품을
-                  만들어서 보내드리려고 밤샘으로
-                  제작해드리고 있어요 ☺️ 조금만 기다려
-                  주세요 :) . .
+              <div class="commentBox">
+                <div class="likeInfo">
+                  <strong>tjsdud236</strong>님 <strong>여러 명</strong>이
+                  좋아합니다
                 </div>
-              </div>
-              <div class="commentsCount">댓글 10개 모두 보기</div>
-              <div class="comments">
-                <div class="profileName">our_studio</div>
-                <div class="comment"></div>
-                <div class="likeIcon">
-                  <img
-                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-                    alt="like icon"
-                  />
+                <div class="myComment">
+                  <span class="myProfileName">in.thecity</span>
+                  &nbsp;
+                  <span class="myCommentText">love love love</span>
                 </div>
-              </div>
-              <div class="time">9시간 전</div>
-              <div class="leaveComment">
+                <div class="countComment">댓글 8개 모두 보기</div>
+                <div class="comment">
+                  <span class="profileName">victoriamisu</span>
+                  &nbsp;
+                  <span class="commentText">Dream ♥</span>
+                  <span class="likeIcon">
+                    <svg
+                      aria-label="좋아요"
+                      class="_8-yf5"
+                      fill="#262626"
+                      height="12"
+                      viewBox="0 0 48 48"
+                      width="12"
+                    >
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="comment">
+                  <span class="profileName">shecurveofficial</span>
+                  &nbsp;
+                  <span class="commentText">💛</span>
+                  <span class="likeIcon">
+                    <svg
+                      aria-label="좋아요"
+                      class="_8-yf5"
+                      fill="#262626"
+                      height="12"
+                      viewBox="0 0 48 48"
+                      width="12"
+                    >
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                      ></path>
+                    </svg>
+                </div>
+                <div class="timeSpent">
+                  1시간 전
+                </div>
+              </div> 
+              <form class="leaveCommentBox">
                 <textarea
-                  name="comment"
-                  id=""
-                  cols="30"
-                  rows="10"
-                  value="댓글 달기..."
-                ></textarea
-                ><button></button>
+                  placeholder="댓글 달기..."
+                  autocomplete="off"
+                  autocorrect="off"
+                ></textarea>
+                <button>게시</button>
+              </form> 
+            </div> 
+          </section>
+          <section class="rightsectionBox">
+            <div class="rightSection">
+              <div class="myProfile">
+                <a href="https://www.instagram.com/ottosh2i/">
+                  <img
+                    alt="ottsh2i님의 프로필 사진"
+                    src="https://instagram.fdel5-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fdel5-1.fna.fbcdn.net&_nc_ohc=PUxEnx_n8rEAX9q61cO&oh=2602b081d4615592940a2aacf524cc39&oe=5F4F000F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+                  />
+                </a>
+                <div class="profileInfo">
+                  <span class="profileName">ottosh2i</span>
+                  <span class="profileDiscription">^0^</span>
+                </div>
+              </div>
+              <div class="recommendation">
+                <div class="recommendationTitle">
+                  <span class="recommendationText">회원님을 위한 추천</span>
+                  <button>모두 보기</button>
+                </div>
+                <div class="recommendationList">
+                  <div class="recommendationElement">
+                    <div class="recommendationElementDiscrption">
+                      <img
+                        alt="seo_hyunning_님의 프로필 사진"
+                        src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90086883_643718473148076_8558385123748216832_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=OYZVE3031KQAX9rwyia&amp;oh=2ac5ea4e3da21201a806a1a2c7a253e1&amp;oe=5F4E7D21"
+                      />
+                      <span>
+                        <div class="userName">seo_hyunning_</div>
+                        <div class="followInfo">
+                          moongsy님이 팔로우합니다
+                        </div>
+                      </span>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                  <div class="recommendationElement">
+                    <div class="recommendationElementDiscrption">
+                      <img
+                        alt="seo_hyunning_님의 프로필 사진"
+                        src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90086883_643718473148076_8558385123748216832_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=OYZVE3031KQAX9rwyia&amp;oh=2ac5ea4e3da21201a806a1a2c7a253e1&amp;oe=5F4E7D21"
+                      />
+                      <span>
+                        <div class="userName">seo_hyunning_</div>
+                        <div class="followInfo">
+                          moongsy님이 팔로우합니다
+                        </div>
+                      </span>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                  <div class="recommendationElement">
+                    <div class="recommendationElementDiscrption">
+                      <img
+                        alt="seo_hyunning_님의 프로필 사진"
+                        src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90086883_643718473148076_8558385123748216832_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=OYZVE3031KQAX9rwyia&amp;oh=2ac5ea4e3da21201a806a1a2c7a253e1&amp;oe=5F4E7D21"
+                      />
+                      <span>
+                        <div class="userName">seo_hyunning_</div>
+                        <div class="followInfo">
+                          moongsy님이 팔로우합니다
+                        </div>
+                      </span>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                  <div class="recommendationElement">
+                    <div class="recommendationElementDiscrption">
+                      <img
+                        alt="seo_hyunning_님의 프로필 사진"
+                        src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90086883_643718473148076_8558385123748216832_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=OYZVE3031KQAX9rwyia&amp;oh=2ac5ea4e3da21201a806a1a2c7a253e1&amp;oe=5F4E7D21"
+                      />
+                      <span>
+                        <div class="userName">seo_hyunning_</div>
+                        <div class="followInfo">
+                          moongsy님이 팔로우합니다
+                        </div>
+                      </span>
+                    </div>
+                    <button>팔로우</button>
+                  </div>
+                </div>
+              </div>
+              <div class="footer">
+                <ul>
+                  <li><a href=""></a>소개</li>
+                  <li><a href=""></a>도움말</li>
+                  <li><a href=""></a>홍보 센터</li>
+                  <li><a href=""></a>API</li>
+                  <li><a href=""></a>채용 정보</li>
+                  <br />
+                  <li><a href=""></a>개인정보처리방침</li>
+                  <li><a href=""></a>약관</li>
+                  <li><a href=""></a>위치</li>
+                  <li><a href=""></a>인기 계정</li>
+                  <li><a href=""></a>해시태그</li>
+                  <li><a href=""></a>언어</li>
+                </ul>
+                <div class="copyright">
+                  © 2020 INSTAGRAM FROM FACEBOOK
+                </div>
               </div>
             </div>
           </section>
-        </section>
-        <section class="rightFeed">
-          <section class="myProfile"></section>
-          <section class="recommendation"></section>
-        </section>
-      </section>
-    </main>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
