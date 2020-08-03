@@ -6,13 +6,14 @@ let ul = document.querySelector('.comments_loaded');
 function addComment() {
     let inputValue = input.value;
     let li = document.createElement('li'); 
-    li.innerHTML = inputValue; 
+    li.innerHTML = inputValue;
+    li.className = 'comments'; 
     ul.appendChild(li); 
-    let img = document.createElement('img');
-    console.log(img);
-    img.setAttribute('src', './img/close.svg');
-    img.className = 'delete';
-    li.appendChild(img);
+    let delBtn = document.createElement('img');
+    delBtn.className = 'delete';
+    delBtn.setAttribute('src', './img/close.svg');
+    delBtn.setAttribute('onclick', 'rmComment()');
+    li.appendChild(delBtn);
     input.value="";
 }
 
@@ -21,27 +22,25 @@ button.addEventListener('click', addComment);
 input.addEventListener('keyup', function(e){
     if(e.keyCode === 13){
         let inputValue = input.value;
-        let ul = document.querySelector('.comments_loaded');
         let li = document.createElement('li'); 
         li.innerHTML = inputValue; 
+        li.className = 'comments'; 
         ul.appendChild(li);
-        let img = document.createElement('img');
-        img.setAttribute('src', './img/close.svg');
-        img.className = 'delete';
-        li.appendChild(img);
+        let delBtn = document.createElement('img');
+        delBtn.className = 'delete';
+        delBtn.setAttribute('src', './img/close.svg');
+        delBtn.setAttribute('onclick', 'rmComment()');
+        li.appendChild(delBtn);
         input.value="";
     } 
 });
 
 function rmComment() {
-        let li = document.getElementsByClassName('li');
-        let img = document.getElementsByClassName('img');
-        li.removeChild(img);
+        let li = document.querySelector('.comments');
+        let delBtn = document.querySelector('.delete');
+        li.removeChild(delBtn);
 }
 
-
-img.addEventListener('click', rmComment);
-console.log(img);
 
 
 
