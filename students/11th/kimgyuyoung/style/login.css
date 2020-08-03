@@ -1,62 +1,173 @@
+/* 전체 설정 */
 * {
-    box-sizing : border-box; /*박스크기 컨트롤 default*/
+    box-sizing : border-box;
 }
-
-.loginGroup {
-    position : relative;
+/* 2020-07-31일자 인스타그램 로그인화면 큰 틀*/
+/* 여기서부터 로그인영역 CSS입니다. */
+.loginContainer {
+    display : flex;
+    align-self : center;
+    flex-wrap : wrap;
     width : 350px;
+    height : 100%;
+    margin : 0 auto;
 }
 
-.loginBoard {
+.loginBackground {
     position : relative;
     display : flex;
     flex-wrap : wrap;
-    align-content: flex-start;
+    justify-content: center;
     height : 380px;
     padding : 10px 40px 10px 40px;
 
-    border : 1px solid gray;
+    border : 1px solid #dedede;
     background-color : white;
 }
 
-.loginBoard img {
-    width : 175px;
-    height : 53px;
-    margin : 0 auto;
-    margin-top : 22px;
-    margin-bottom : 12px;
-
+.signupContainer {
+    width : 100%;
+    height : 63px;
+    margin-top : 10px;
+    padding : 10px 0 10px 0;
+    
+    background-color : #f0f0f0;
 }
 
-.loginPart {
+.downloadContainer {
     width : 100%;
+    height : 102px;
+ 
+    background-color : #fafafa;
+}
+
+.loginBackground img {
+    width : 175px;
+    height : 53px;
+    margin : 22px 0 12px 0;
+}
+
+.loginInteractivePart {
     height : 263px;
 }
 
 .inputPart {
-    position : relative;
-    height : 82px;
+
     display : flex;
     flex-wrap : wrap;
     align-content : space-between;
-    margin-top : 24px;
+    height : 82px;
+    margin : 24px 0 6px 0;
 }
 
-.inputPart input {
+.inputBoard {
+    position : relative;
     width : 100%;
-    height : 36px;
+    height : 38px;
     padding : 9px 0 7px 8px;
+
+    font-size : 13px;
+    border : 1px solid #dedede;
+    border-radius : 3px;
+    background-color: #fafafa;
+}
+
+input {
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 38px;
+    padding : 9px 0 7px 8px;
+
+    border : none;
+    background-color:transparent;
+}
+
+.showBtn {
+    position : absolute;
+    right : 5px;
+    top : 8px;
+
+    font-size : 14px;
+    font-weight : bold;
+    color : #252e48;
+    border : none;
+    background-color : transparent;
 }
 
 .loginButton {
     width : 100%;
     height : 30px;
-    margin-top : 14px;
+    margin : 8px 0 8px 0;
 
     border : none;
-    border-radius : 3px;
+    border-radius : 4px;
     background-color : #b9dcfd;
     font-size : 14px;
-    font-style: bold;
+    font-weight: 800;
     color : white;
+}
+
+.otherLogin {
+    display : flex;
+    justify-content: center;
+    flex-wrap : wrap;
+}
+
+.OR {
+    margin : 10px 0 18px 0;
+}
+
+.OR span {
+    text-align : center;
+
+    font-size : 13px;
+    font-family : sans-serif;
+    font-weight : bold;
+    color : #838383;
+}
+
+.facebookLoginBtn {
+    width : 100%;
+    height : 20.5px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+
+    background-color : white;
+    border : none;
+}
+
+.facebookLoginBtn span {
+    font-weight : bold;
+    color : #3b589d;
+}
+
+.facebookLoginBtn img {
+    margin : 0 8px 0 0;
+    width : 16px;
+    height : 16px;
+}
+
+.forgotPw {
+    margin-top : 12px;
+    font-size : 12px;
+}
+
+button:focus {
+    outline : none;
+}
+
+button, .forgotPw {
+    cursor: pointer;
+}
+
+.OR span {
+    cursor: default;
+}
+
+input:focus {
+    outline : none;
+    border : 1px solid #838383;
 }

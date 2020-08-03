@@ -8,22 +8,37 @@
   <link href="style/login.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <script src="js/login.js"></script>
-  <div class="loginGroup">
-    <div class="loginBoard">
+  <div class="loginContainer">
+    <div class="loginBackground">
       <img alt="instagramTextLogo" src="img/logo_text.png" />
-      <div class="loginPart">
+      <div class="loginInteractivePart">
         <div class="inputPart">
-          <input type="text" placeholder="Phone number, username or, email">
-          <input type="password" placeholder="Password">
+          <div class="inputBoard">
+            <div class="inputBoardIdText">Phone number, username or, email</div>
+            <input type="text" class="inputId">
+          </div>
+          <div class="inputBoard">
+            <div class="inputBoardPwText">Password</div>
+            <input type="password" class="inputPw">
+            <button class="showBtn"></button>
+          </div>
         </div>
-        <button class="loginButton">Login</button>
+        <button class="loginButton">Log In</button>
         <div class="otherLogin">
-
+          <div class="OR">
+            <div></div>
+            <span class="test">OR</span>
+            <div></div>
+          </div>
+          <button onclick="location.href='www.facebook.com/login/device-based/regular/login'" class="facebookLoginBtn">
+            <img alt="facebooklogo" src="img/facebook logo.jpg"/>
+            <span>Log in with Facebook</span>
+          </button>
+          <a class="forgotPw" herf="https://www.instagram.com/accounts/password/reset/">Forgot password?</a>
         </div>
       </div>
     </div>
   </div>
+  <script src="js/login.js"></script>
 </body>
-
 </html>
