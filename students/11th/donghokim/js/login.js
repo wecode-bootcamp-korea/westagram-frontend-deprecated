@@ -1,39 +1,19 @@
-const changeButtonStatus = (validationCheckFunction, inputName, value) => {
-  let loginButton = document.querySelector('.login_button button');
-  if (validationCheckFunction(inputName, value)) loginButton.disabled = false;
-  else loginButton.disabled = true;
-};
-
-const validationFunctions = (() => {
-  const validationFlag = {
-    username: false,
-    password: false
-  }
-  return {
-    isIdAndPasswordMinOnce: function (inputName, value) {
-      if (value) validationFlag[inputName] = true;
-      else validationFlag[inputName] = false;
-      return validationFlag.username && validationFlag.password;
-    },
-    isIdHasAtAndPasswordMinFive: function (inputName, value) {
-      if (inputName === 'username') {
-        if (value.includes('@')) validationFlag[inputName] = true;
-        else validationFlag[inputName] = false;
-      }
-      if (inputName === 'password') {
-        if (value.length > 4) validationFlag[inputName] = true;
-        else validationFlag[inputName] = false;
-      }
-      return validationFlag.username && validationFlag.password;
-    }
-  }
-})();
-
 const loginForm = document.querySelector('.login_form');
 
-loginForm.addEventListener('keyup', ({
-  target: {
-    name,
-    value
+const changeButtonStatus = (validationCheckFunction) => {
+  const loginButton = loginForm.querySelector('.login_button button'),
+    idValue = loginForm.querySelector(`input[name='username']`).value,
+    passwordValue = loginForm.querySelector(`input[name='password']`).value;
+  loginButton.disabled = !validationCheckFunction(idValue, passwordValue);
+};
+
+const validationFunctions = {
+  isIdAndPasswordMinOnce: function (idValue, passwordValue) {
+    return idValue && passwordValue;
+  },
+  isIdHasAtAndPasswordMinFive: function (idValue, passwordValue) {
+    return idValue.includes('@') && passwordValue.length > 4;
   }
-}) => changeButtonStatus(validationFunctions.isIdHasAtAndPasswordMinFive, name, value));
+};
+
+loginForm.addEventListener('keyup', () => changeButtonStatus(validationFunctions.isIdAndPasswordMinOnce));
