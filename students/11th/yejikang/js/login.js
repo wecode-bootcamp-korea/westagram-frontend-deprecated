@@ -1,13 +1,11 @@
 const loginButton = document.querySelector('.loginBtn');
 const loginForm = document.querySelector('.loginForm');
-const userId=document.querySelector('.user-id');
-const userPw = document.querySelector('.user-pw');
+const userId=document.querySelector('.userId');
+const userPw = document.querySelector('.userPw');
 
-function init(){
+const init = (function () {
     loginButton.disabled = true;
-}
-
-init();
+})();
 
 function setEnabledButton() {
      loginButton.disabled =  (userId.value && userPw.value)? false : true ; 
