@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginBody {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 800px;
+}
+
+.article_container {
+    margin: 30px auto 0;
+    padding-bottom: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 935px;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.phoneImgBox {
+    margin-top: 10px;
+    margin-left: -35px;
+    margin-right: 5px;
+    width: 420px;
+    height: 618px;
+    background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.formArticle {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    width: 350px;
+    height: 618px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox {
+    margin: 0 0 10px;
+    padding: 10px 0;
+    position: relative;
+    width: 350px;
+    height: 380px;
+    border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    background-color: rgb(255, 255, 255);
+}
+
+.formLogo {
+    margin: 22px 86.5px 12px;
+    width: 175px;
+    height: 51px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+    background-position: 0 -130px;
+}
+
+.inputUserName {
+    margin: 15px 40px 15px 40px;
+    padding: 9px 0px 7px 8px;
+    width: 268px;
+    height: 36px;
+    border: 1px solid rgb(219, 219, 219);
+    background-color: #fafafa;
+    border-radius: 3px;
+    outline: none;
+}
+
+.inputPassWord {
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 8px;
+    padding: 9px 0px 7px 8px;
+    width: 268px;
+    height: 36px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    background-color: #fafafa;
+    outline: none;
+}
+
+.loginButtonBox {
+    margin-bottom: 20px;
+    width: 348px;
+    height: 44px;
+}
+
+.loginButton {
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 8px;
+    padding: 5px 9px;
+    justify-content: flex-start;
+    width: 268px;
+    height: 30px;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(191, 223, 253);
+    border: none;
+    color: white;
+}
+
+.formLineDrawing {
+    width: 268px;
+    height: 15x;
+    margin: 10px 40px 18px;
+    display: flex;
+}
+
+.formUnderLine {
+    background-color: rgb(219, 219, 219);
+    height: 1px;
+    position: relative;
+    top: .45em;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.formTextUnderLine {
+    margin: 0 18px;
+    color: rgba(var(--f52, 142, 142, 142), 1);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.facebookLoginBtn {
+    margin-bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 340px;
+    height: 30px;
+}
+
+.facebookLogin {
+    margin-top: 10px 8px;
+    top: 3px;
+    position: relative;
+    display: inline-block;
+    width: 268px;
+    height: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.facebookImg {
+    width: 16px;
+    height: 16px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png);
+    margin-right: 8px;
+    background-position: -705px -665px;
+    background-size: -441px -410px;
+    position: relative;
+    top: 3px;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+}
+
+.facebookText {
+    border: 0;
+    color: rgb(55, 80, 132);
+    display: inline;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resetPassword {
+    margin-bottom: 40px;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(var(--fe0, 0, 55, 107), 1);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(var(--fe0, 0, 55, 107), 1);
+}
+
+.account {
+    border: 1px solid rgb(219, 219, 219);
+    width: 348px;
+    height: 63px;
+    display: block;
+    color: rgba(var(--i1d, 38, 38, 38), 1);
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10 0x;
+    margin: -3px, 0, 4px;
+    line-height: 18px;
+    padding: 10px 0px;
+}
+
+.account p {
+    width: 318px;
+    height: 18px;
+    margin: 15px;
+    color: rgb(142, 142, 142);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.account_join {
+    color: rgb(87, 173, 249);
+    padding: 0;
+    text-align: center;
+}
+
+.appDownClick {
+    margin: 0 auto;
+    width: 300px;
+    height: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.appDownBox {
+    margin-top: 30px;
+    width: 350px;
+    height: 102px;
+    text-align: center;
+}
+
+.appDownBox img {
+    width: 136px;
+    height: 40px;
+    margin: 10px 8px 0px 0px;
+    cursor: pointer;
+}
+
+.footerSheet {
+    padding: 0 20px;
+}
+
+.footerContainer {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    height: 104px;
+    max-width: 1012px;
+    justify-content: center;
+}
+
+.footerListS {
+    display: flex;
+    list-style: none;
+    margin: 0px 16px 3px 0px;
+    padding: 30px 0px;
+    align-items: center;
+}
+
+.footerList {
+    font-size: 12px;
+    margin: 0px 16px 3px 0px;
+    color: rgb(0, 55, 107);
+}
+
+.footerCopyLight {
+    display: flex;
+    width: 227.73px;
+    height: 28px;
+    padding: 42px 0px;
+    color: rgb(142, 142, 142);
+    margin: 0 auto;
+}
