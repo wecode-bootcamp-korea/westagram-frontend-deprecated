@@ -315,18 +315,18 @@ footer .info_container {
   text-transform: uppercase;
 }
 
-footer .info_lists {
+footer ul {
   display: inline-block;
   margin-bottom: 3px;
 }
 
-footer .info_list {
+footer ul li {
   display: inline-block;
   margin-right: 16px;
   margin-bottom: 7px;
 }
 
-footer .info_text {
+footer ul li a {
   color: rgb(0, 55, 107)
 }
 

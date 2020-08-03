@@ -197,7 +197,7 @@ article header .user_info_container .location {
   white-space: nowrap;
 }
 
-article .option_button {
+article header .option_button {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -338,6 +338,14 @@ button.author,
   border: 0;
   outline: none;
   background: transparent;
+}
+
+.comment_container .option_button {
+  opacity: 0;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  transition: opacity;
 }
 
 .time_stamp_container {
@@ -515,11 +523,11 @@ button.author,
   margin-bottom: 16px;
 }
 
-.info_nav .info_lists {
+.info_nav ul {
   margin-bottom: 3px;
 }
 
-.info_lists .info_list {
+.info_nav ul li {
   display: inline-block;
   font-size: 11px;
   font-weight: 400;
@@ -527,12 +535,12 @@ button.author,
   color: rgb(199, 199, 199);
 }
 
-.info_list .info_text {
+.info_nav ul li a {
   color: inherit;
   text-decoration: none;
 }
 
-.info_list:not(:last-child)::after {
+.info_nav ul li:not(:last-child)::after {
   content: ' ∙ ';
 }
 
