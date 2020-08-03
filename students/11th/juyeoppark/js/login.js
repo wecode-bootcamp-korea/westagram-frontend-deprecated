@@ -1,3 +1,4 @@
+// login page id/pw 입력 시 login 버튼 활성화
 const loginContent = document.querySelector('.login_content');
 const loginId = document.querySelector('.login_input-id');
 const loginPw = document.querySelector('.login_input-pw');
