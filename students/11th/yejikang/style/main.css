@@ -253,6 +253,21 @@ main section {
     margin-bottom: 4px; 
 }
 
+.commentItem{
+    display: flex;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.commentHeartBtn {
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+}
+
 .articleTimeInfo {
     margin-bottom: 4px;
     padding: 0 9px;
@@ -273,6 +288,10 @@ main section {
 .inputComment {
     width:557.77px;
     height: 18px;
+}
+
+.commentId {
+    margin-right: 8px;
 }
 
 .commentForm button {
