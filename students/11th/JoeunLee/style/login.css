@@ -1,16 +1,13 @@
-* {
-    box-sizing: border-box;
-}
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(250,250,250,1);
+    background-color: rgb(250,250,250);
 }
 .outerContainer {
     display: flex;
     justify-content: center;
-    align-items: center; /* 화면의 수직 정렬을 하고 싶음 */
-    margin-top: 10%; /* 바꾸자 */
+    align-items: center;
+    margin-top: 10%;
 }
 .innerContainer {
     width: 350px;
@@ -18,11 +15,12 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 1px solid rgba(219,219,219,1);
+    border: 1px solid rgb(219,219,219);
     border-radius: 1px;
     padding: 10px 0;
     background-color: #FFFFFF;
 }
+
 .siteName {
     width: 175px;
     height: 51px;
@@ -32,36 +30,36 @@ body {
     width: 258px;
     height: 36px;
     line-height: 36px;
-    text-align: start;
     font: 400 13.3333px Arial;
-    border: 1px solid rgba(219,219,219,1);
+    border: 1px solid rgb(219,219,219);
     border-radius: 3px;
     padding: 9px 8px 7px 8px;
     margin: 0 0 6px;
-    background-color: rgba(250,250,250,1);
+    background-color: rgb(250,250,250);
 }
 .loginId input:focus, .loginPsw input:focus {
-    outline: 1px solid rgba(168,168,168,1);
-    box-shadow: 0 0 0 1px rgba(168,168,168,1);
+    outline: 1px solid rgb(168,168,168);
+    box-shadow: 0 0 0 1px rgb(168,168,168);
 }
 .loginBtn button {
     width: 258px;
     height: 30px;
     line-height: 18px;
     text-align: center;
-    font: bold 14px inherit; /* bold 혹은 border 적용 안됨 */
+    font: bold 14px inherit;
     color: #FFFFFF;
     border: 0;
     border-radius: 4px;
     margin: 8px 0;
     background-color: rgba(0,149,246,.3);
 }
+
 .findPsw {
     width: 348px;
     height: 14px;
     line-height: 14px;
-    font-size: 12px; /* font: normal 12px inherit; 적용 안됨 */
-    color: rgba(0,55,107,1);
+    font-size: 12px;
+    color: rgb(0,55,107);
     cursor: pointer;
     text-decoration: none;
     position: relative;
