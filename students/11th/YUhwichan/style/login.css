@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.loginContainer {
+  width: 350px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 10px 0px;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background-color: #ffffff;
+}
+
+.userInfo {
+  width: 268px;
+  height: 38px;
+  display: flex;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.write {
+  width: 100%;
+  height: 100%;
+  padding: 9px 0px 7px 8px;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 3px;
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+}
+
+.userPw {
+  margin-bottom: 14px;
+}
+
+.loginBtn {
+  width: 100%;
+  font-weight: 600;
+  color: white;
+}
+
+img {
+  width: 175px;
+  height: 51px;
+  margin: 22px auto 36px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+button {
+  width: 268px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 149, 246, 0.3);
+}
+
+a {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+}
+
+/* .tinyDiv {
+  padding-right: 8px;
+  position: absolute;
+  right: 0;
+} */
