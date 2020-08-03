@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     background-color: #FAFAFA;
 }
@@ -357,6 +361,8 @@ ul li {
 .sideBarMylogo img {
     border: 0px solid;
     border-radius: 100%;
+    width: 56px;
+    height: 56px;
 }
 
 .sideBarMylogo a {
@@ -388,6 +394,8 @@ ul li {
 }
 
 .SuggestionsPersonPicture img {
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
 }
 

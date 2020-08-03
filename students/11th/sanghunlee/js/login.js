@@ -5,11 +5,10 @@ const btnColorChangeid = () => {
     const idInput = id.value;
     const pwInput = pw.value;
     const btn = document.querySelector(".loginBtn"); 
-    const makeLink = document.createElement("a");
 
     if(idInput.length >=5 && pwInput.length >=5 && idInput.search("@") !=-1){
         btn.style.backgroundColor = "blue";
-        btn.appendChild(makeLink);
+        btn.innerHTML = "<a>Log in</a>";
         btn.disabled = false;
         btn.style.cursor = "pointer";
     }
@@ -22,5 +21,4 @@ const btnColorChangeid = () => {
         btn.disabled = true;
     }
 }
-id.addEventListener("keyup",btnColorChangeid);
-pw.addEventListener("keyup",btnColorChangeid);
+id&&pw.addEventListener("keyup",btnColorChangeid);

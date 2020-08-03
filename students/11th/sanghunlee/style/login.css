@@ -1,4 +1,12 @@
-.wrapper {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.mainContentWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -17,10 +25,20 @@ article {
     margin: 20px 0 0 30px;
 }
 
+.MainImage {
+    width: 400px;
+    height: 580px;
+}
+
 .instaLogo {
     width: 175px;
     height: 60px;
     margin: 30px 86px 40px 86px;
+}
+
+.facebookLogo {
+    width: 16px;
+    height: 16px;
 }
 
 .login {
@@ -50,11 +68,10 @@ article {
 
 .loginContentWrapper input {
     width: 270px;
-    height: 35px;
     padding: 10px;
     border: 1px solid #DBDBDB;
     border-radius: 2px;
-    background-color: #FFFFFF;
+    background-color: #FAFAFA;
     outline: none;
 }
 
@@ -98,12 +115,13 @@ article {
 
 .withFacebook div {
     display: flex;
-    margin: 15px 0 25px 0;
+    margin: 15px 0 10px 0;
 }
 
 .withFacebook a {
     font-size: 12px;
     margin-bottom: 15px;
+    text-decoration: none;
 }
 
 a:visited {
@@ -123,6 +141,10 @@ a:visited {
     margin-top: 15px;
     border: 1px solid #DBDBDB;
     background-color: #FFFFFF;
+}
+
+.SignUpBox a {
+    text-decoration: none;
 }
 
 .getApp {
@@ -168,6 +190,7 @@ ul {
 }
 
 li {
+    list-style: none;
     margin: 0px 3px;
 }
 
