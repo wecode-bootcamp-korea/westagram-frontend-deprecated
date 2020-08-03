@@ -66,7 +66,6 @@ nav > div > div > img {
 main {
   max-width: 1200px;
   margin: 100px auto 0 auto;
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -88,13 +87,11 @@ main {
 
 .first-feeds-user {
   display: flex;
-
   align-items: center;
 }
 .first-feeds-user-profile {
   width: 10%;
   height: auto;
-
   margin: 20px;
 }
 
@@ -104,9 +101,8 @@ main {
   border-radius: 50%;
 }
 .first-feeds-user-name {
-  font-weight: bold;
   width: 90%;
-  /* width: calc(90%-110px); */
+  font-weight: bold;
 }
 
 .first-feeds-user-threeDots {
@@ -122,8 +118,8 @@ main {
   justify-content: space-between;
 }
 .first-feeds-icons img {
-  padding: 5px;
   width: 40px;
+  padding: 5px;
   cursor: pointer;
 }
 .first-feeds-likes {
@@ -153,7 +149,6 @@ main {
   text-overflow: ellipsis;
   white-space: nowrap;
   /*word-break: break-all;*/
-
   margin: 0;
 }
 
@@ -165,8 +160,6 @@ main {
 .first-feeds-text > span:nth-child(3) {
   color: rgba(178, 178, 178);
   margin-left: 20px;
-  /* position: absolute;
-  right: 10px; */
   cursor: pointer;
 }
 .first-feeds-text > span:nth-child(3):hover {
