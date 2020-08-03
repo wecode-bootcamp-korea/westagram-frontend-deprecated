@@ -7,177 +7,212 @@
     <link href="style/common.css" rel="stylesheet" type="text/css" />
     <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
-      <!-- 네비게이션 -->
-      <div class="navbox">
-        <nav class="nav">
-          <div class="logobox">
-              <div><img alt="logo" src="img/logoicon_nav.png" width="40"/></div>
-              <div class="logoline"></div>
-              <div class="logoimg"><a href="main.html"><img alt="logo" src="img/logo_nav.png" /></a></div>
-            </ul>
-          </div>
-
-          <div class="searchbox">
-            <input type="text" id="search" placeholder="검색" />
-          </div>
-
-          <div class="gnbbox">
-            <div class="gnbicon"><img alt="explore" src="img/icon2_nav.png"/></div>
-            <div class="gnbicon"><img alt="like" src="img/icon3_nav.png"/></div>
-            <div class="gnbicon"><img alt="profile" src="img/icon4_nav.png"/></div>
-          </div>
-        </nav>
-        <!-- 메인 -->
-        <div class="mainbox">
-          <article class="articlebox">
-            <div class="articletop">
-                  <div class="fomproimg"></div>
-                  <span class="forname">chyapchyap_cake</span>
-                  <div class="minimenu"><img alt="menu" src="img/menu_1.png"/></div>
-            </div>
-
-                <div class="middleimg">
-                  <img src="img/fomimg.jpg" width="612"/>
-                </div>
-
-                <div class="middleicon">
-                  <div class="icon1" onclick="changehHeart()"><img id="heartImg" src="img/icon1_fom.png"/></div>
-                  <div class="icon1"><img alt="texticon" src="img/icon2_fom.png" /></div>
-                  <div class="icon1"><img alt="directicon" src="img/icon3_fom.png" /></div>
-                  <div class="icon1"><img alt="keepicon" src="img/icon4_fom.png" /></div>
-                </div>
-
-                <div class="middletext">
-                  <div class="boldtext">
-                    <div class="boldtextimg"></div>
-                    <b>aineworld</b>님 외 <b>10</b>명이 좋아합니다
-                  </div>
-                  <ul class="maintext marginbt">
-                    <li class="namebold">canon_mj</li>
-                    <li id="moretext">보틀케이크 큰사이즈2개,작은사이즈15개 나왔어요✨
-예약판매는 어렵습니다 선착순으로 판매할게요 현재 작업이 많아 주문케이크 상담 답장 못 드리고 있어요 작업이 끝난 저녁쯤 순차적으로 답장 드릴게요🙏</li>
-                    <li id="morebtn">더 보기</li>
-                  </ul>
-
-                </div>
-                <span class="timetext">42분 전</span>
-                <div class="bottom">
-                  <input type="text" id="commentinput" placeholder="댓글 달기...."/>
-                  <input type ="button" id="commentbtn" value="게시" />
-                </div>
-          </article>
-        <!-- article완료 / aside시작  -->
-        <aside class="asidebox">
-          <div class="profile">
-              <div class="profileimg"></div>
-            <ul class="profiletext">
-              <li class="profileid"><a href="#">ovv__0703</a></li>
-              <li class="profilename">ㅎㅈ</li>
-            </ul>
-          </div>
-
-          <div class="storeybox">
-            <ul class="storeyboxtop">
-              <li class="storeyboxtitle">스토리</li>
-              <li>모두 보기</li>
-            </ul>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">s_yeong_ee</a></li>
-                <li class="profiletime">16분 전</li>
-              </ul>
-            </div>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">epelcuration</a></li>
-                <li class="profiletime">3시간 전</li>
-              </ul>
-            </div>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">luckysukyw</a></li>
-                <li class="profiletime">20시간 전</li>
-              </ul>
-            </div>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">_seul.ki</a></li>
-                <li class="profiletime">36시간 전</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="issuebox">
-            <ul class="issueboxtop">
-              <li class="issueboxtitle">회원님을 위한 추천</li>
-              <li>모두 보기</li>
-            </ul>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">s_yeong_ee</a></li>
-                <li class="followtext">curationd외 2명이 알고있습니다.</li>
-              </ul>
-              <div class="follow">팔로우</div>
-            </div>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">epelcuration</a></li>
-                <li class="followtext">ckysud님 외 4명이 알고있습니다.</li>
-              </ul>
-              <div class="follow">팔로우</div>
-            </div>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">luckysukyw</a></li>
-                <li class="followtext">luc님 외 4명이 알고있습니다.</li>
-              </ul>
-              <div class="follow">팔로우</div>
-            </div>
-
-            <div class="profile2">
-                <div class="profileimg2"></div>
-              <ul class="profiletext2">
-                <li class="profileid2"><a href="#">_seul.ki</a></li>
-                <li class="followtext">seul___님 외 4명이 알고있습니다.</li>
-              </ul>
-              <div class="follow">팔로우</div>
-            </div>
-            </div>
-            <div class="footerbox">
-              <ul>
-                <li>Instagram 정보</li>
-                <li>지원</li>
-                <li>홍보 센터</li>
-                <li>API</li>
-                <li>채용 정보</li>
-                <li>개인정보처리방침</li>
-                <li>약관</li>
-                <li>디렉터리</li>
-                <li>프로필</li>
-                <li>해시태그</li>
-                <li>언어</li>
-              </ul>
-
-              <span>ⓒ 2019 INSTAGRAM</span>
-          </div>
-        </aside>
+  <div class="navBox">
+    <nav class="nav">
+      <div class="logoBox">
+        <div>
+          <img alt="logo" src="img/logoicon_nav.png" width="40"/>
+        </div>
+        <div class="logoLine">
+        </div>
+        <div class="logoImg">
+          <a href="main.html">
+            <img alt="logo" src="img/logo_nav.png" />
+          </a>
         </div>
       </div>
-      <script src="js/main.js"></script>
-  </body>
+      <div class="searchBox">
+        <input type="text" id="search" placeholder="검색" />
+      </div>
+      <div class="gnbBox">
+        <div class="gnbIcon">
+          <img alt="explore" src="img/icon2_nav.png"/>
+        </div>
+        <div class="gnbIcon">
+          <img alt="like" src="img/icon3_nav.png"/>
+        </div>
+        <div class="gnbIcon">
+          <img alt="profile" src="img/icon4_nav.png"/>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+<div class="mainBox">
+  <article class="articleBox">
+    <div class="articleTop">
+      <div class="fomproImg">
+      </div>
+      <span class="forName">chyapchyap_cake</span>
+      <div class="miniMenu">
+        <img alt="menu" src="img/menu_1.png"/>
+      </div>
+    </div>
+    <div class="middleImg">
+      <img src="img/fomimg.jpg" width="612"/>
+    </div>
+    <div class="middleIcon">
+      <div class="icon1" onclick="changehHeart()">
+        <img id="heartImg" src="img/icon1_fom.png"/>
+      </div>
+      <div class="icon1">
+        <img alt="texticon" src="img/icon2_fom.png" />
+      </div>
+      <div class="icon1">
+        <img alt="directicon" src="img/icon3_fom.png" />
+      </div>
+      <div class="icon1">
+        <img alt="keepicon" src="img/icon4_fom.png" />
+      </div>
+    </div>
+    <div class="middleText">
+      <div class="boldText">
+      <div class="boldTextImg"></div>
+        <b>aineworld</b>님 외 <b>10</b>명이 좋아합니다
+      </div>
+      <ul class="mainText marginBt">
+        <li class="nameBold">canon_mj</li>
+        <li class="moreText">보틀케이크 큰사이즈2개,작은사이즈15개 나왔어요✨
+          예약판매는 어렵습니다 선착순으로 판매할게요 현재 작업이 많아 주문케이크 상담 답장 못 드리고 있어요 작업이 끝난 저녁쯤 순차적으로 답장 드릴게요🙏
+        </li>
+        <li class="moreBtn">더 보기</li>
+      </ul>
+    </div>
+    <span class="timeText">42분 전</span>
+    <div class="bottom">
+      <input type="text" class="commentInput" placeholder="댓글 달기...."/>
+      <input type ="button" class="commentBtn" value="게시" />
+    </div>
+  </article>
+
+  <aside class="asideBox">
+    <div class="profile">
+      <div class="profileImg">  
+      </div>
+      <ul class="profileText">
+        <li class="profileId">
+          <a href="#">ovv__0703</a>
+        </li>
+        <li class="profileName">ㅎㅈ</li>
+      </ul>
+    </div>
+    <div class="storyBox">
+      <ul class="storyBoxTop">
+        <li class="storyBoxTitle">스토리</li>
+        <li>모두 보기</li>
+      </ul>
+    <div class="profile2">
+      <div class="profileImg2">
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">s_yeong_ee</a>
+        </li>
+        <li class="profileTime">16분 전</li>
+      </ul>
+    </div>
+    <div class="profile2">
+      <div class="profileImg2">
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">epelcuration</a>
+        </li>
+        <li class="profileTime">3시간 전</li>
+      </ul>
+    </div>
+    <div class="profile2">
+      <div class="profileImg2">
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">luckysukyw</a>
+        </li>
+        <li class="profileTime">20시간 전</li>
+      </ul>
+    </div>
+    <div class="profile2">
+      <div class="profileImg2"> 
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">_seul.ki</a>
+        </li>
+        <li class="profileTime">36시간 전</li>
+      </ul>
+    </div>
+  </div>
+    <div class="issueBox">
+      <ul class="issueBoxTop">
+        <li class="issueBoxTitle">회원님을 위한 추천</li>
+        <li>모두 보기</li>
+      </ul>
+    <div class="profile2">
+      <div class="profileImg2">
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">s_yeong_ee</a>
+        </li>
+        <li class="followText">curationd외 2명이 알고있습니다.</li>
+      </ul>
+      <div class="follow">팔로우</div>
+    </div>
+    <div class="profile2">
+      <div class="profileImg2">
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">epelcuration</a>
+        </li>
+        <li class="followText">ckysud님 외 4명이 알고있습니다.</li>
+      </ul>
+      <div class="follow">팔로우</div>
+    </div>
+    <div class="profile2">
+      <div class="profileImg2">
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">luckysukyw</a>
+        </li>
+        <li class="followText">luc님 외 4명이 알고있습니다.</li>
+      </ul>
+      <div class="follow">팔로우</div>
+    </div>
+    <div class="profile2">
+      <div class="profileImg2">
+      </div>
+      <ul class="profileText2">
+        <li class="profileId2">
+          <a href="#">_seul.ki</a>
+        </li>
+        <li class="followText">seul___님 외 4명이 알고있습니다.</li>
+      </ul>
+      <div class="follow">팔로우</div>
+    </div>
+  </div>
+  <div class="footerBox">
+    <ul>
+      <li>Instagram 정보</li>
+      <li>지원</li>
+      <li>홍보 센터</li>
+      <li>API</li>
+      <li>채용 정보</li>
+      <li>개인정보처리방침</li>
+      <li>약관</li>
+      <li>디렉터리</li>
+      <li>프로필</li>
+      <li>해시태그</li>
+      <li>언어</li>
+    </ul>
+    <span>ⓒ 2019 INSTAGRAM</span>
+  </div>
+</aside>
+</div>
+    <script src="js/main.js"></script>
+</body>
 </html>

@@ -1,96 +1,97 @@
 /* Morebtn */
-const moerButton = document.getElementById('morebtn');
+const moreButton = document.getElementsByClassName('moreBtn')[0];
 
-moerButton.addEventListener('click', function() {
-  const moreText = document.getElementById('moretext');
+moreButton.addEventListener('click', function() {
+  const moreText = document.getElementsByClassName('moreText')[0];
 
   moreText.style.width = '100%';
   moreText.style.overFlow = 'visible';
   moreText.style.whiteSpace = 'normal';
   moreText.style.textOverFlow = 'normal';
   moreText.style.float = 'none';
-  moerButton.style.display = 'none';
+  moreButton.style.display = 'none';
 });
 
 /* Comment(click) */
-const commentBtn = document.getElementById('commentbtn');
+const commentBtn = document.getElementsByClassName('commentBtn')[0];
 
 commentBtn.addEventListener('click', function (){
-  let commentValue = document.getElementById('commentinput').value;
-  const commetbox = document.getElementsByClassName('middletext')[0];
+  let commentValue = document.getElementsByClassName('commentInput')[0];
+  let commentBox = document.getElementsByClassName('middleText')[0];
   let commentUl = document.createElement('ul');
   let commentTitle = document.createElement('li');
   let commentText = document.createElement('li')
   let commentImg = document.createElement('li');
   let commentLike = document.createElement('img');
 
-  if(commentValue.length == 0){
+  if(commentValue.value.length == 0){
     alert('내용을 입력해주세요');
     return;
   }
 
-  commentUl.className = "maintext";
+  commentUl.className = "mainText";
 
   commentTitle.innerHTML = "ovv__0703";
-  commentTitle.className = "namebold";
+  commentTitle.className = "nameBold";
 
-  commentText.innerHTML = `${commentValue}`;
+  commentText.innerHTML = commentValue.value;
 
   commentLike.setAttribute ("src","img/icon5_fom.png");
-  commentImg.className = "likebtn";
+  commentImg.className = "likeBtn";
 
   commentUl.appendChild(commentTitle);
   commentUl.appendChild(commentText);
   commentUl.appendChild(commentImg);
   commentImg.appendChild(commentLike);
-  commetbox.appendChild(commentUl);
+  commentBox.appendChild(commentUl);
 
-  document.getElementById('commentinput').value = "";
+  commentValue.value = "";
 
 });
 
 /* Comment(keyup) */
-const commentEnter = document.getElementById('commentinput');
+const commentEnter = document.getElementsByClassName('commentInput')[0];
 
 commentEnter.addEventListener('keydown', function(e) {
-  const keyCode = e.keyCode;
-  let commentValue = document.getElementById('commentinput').value;
-  const commetbox = document.getElementsByClassName('middletext')[0];
+  const {keyCode} = e;
+  let commentValue = document.getElementsByClassName('commentInput')[0];
+  let commentBox = document.getElementsByClassName('middleText')[0];
   let commentUl = document.createElement('ul');
   let commentTitle = document.createElement('li');
   let commentText = document.createElement('li')
   let commentImg = document.createElement('li');
   let commentLike = document.createElement('img');
 
-  if(commentValue.length >= 1 && keyCode == 13){
-    commentUl.className = "maintext";
+  if(commentValue.value.length >= 1 && keyCode == 13){
+    commentUl.className = "mainText";
 
     commentTitle.innerHTML = "ovv__0703";
-    commentTitle.className = "namebold";
+    commentTitle.className = "nameBold";
   
-    commentText.innerHTML = `${commentValue}`;
+    commentText.innerHTML = commentValue.value;
   
     commentLike.setAttribute ("src","img/icon5_fom.png");
-    commentImg.className = "likebtn";
+    commentImg.className = "likeBtn";
   
     commentUl.appendChild(commentTitle);
     commentUl.appendChild(commentText);
     commentUl.appendChild(commentImg);
     commentImg.appendChild(commentLike);
-    commetbox.appendChild(commentUl);
+    commentBox.appendChild(commentUl);
   
-    document.getElementById('commentinput').value = "";
+    commentValue.value = "";
   }
 });
 
 /* Like btn */
-let heartBtn = 0;
-function changehHeart(){
-  if(heartBtn == 0){
-    heartBtn = 1;
-    document.getElementById("heartImg").src = "img/icon1_fom_on.png";
-  }else{
+function changehHeart() {
+  let heartBtn = 0;
+  const heartImg = document.getElementById("heartImg")
+  if (heartBtn) {
     heartBtn = 0;
-    document.getElementById("heartImg").src = "img/icon1_fom.png";
+    heartImg.src = "img/icon1_fom.png";    
+  }else{
+    heartBtn = 1;
+    heartImg.src = "img/icon1_fom_on.png";
   }
 }

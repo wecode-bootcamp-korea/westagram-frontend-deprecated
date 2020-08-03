@@ -1,9 +1,10 @@
 /* nav */
-.navbox{
+.navBox{
   width: 100%;
   height: 58px;
   background-color: #fff;
-  border-bottom: 1px solid #dbdbdb;}
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 30px;}
 
 .nav{
   width: 1000px;
@@ -13,24 +14,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
 }
 
-.logobox{
+.logoBox{
   display: flex;
   align-items: center;
 }
 
-.logoline{
+.logoLine{
   width: 2px;
   height: 25px;
   background-color: #000;
   margin: 0 15px 0 9px;
 }
 
-.logoimg img{vertical-align: bottom;}
+.logoImg img{vertical-align: bottom;}
 
-.searchbox #search{
+.searchBox #search{
   width: 215px;
   height: 28px;
   background-color: #fafafa;
@@ -48,27 +48,25 @@
   background-size: 10px;
 }
 
-.gnbbox{
+.gnbBox{
   display: flex;
   align-items: center;
 }
 
-.gnbbox .gnbicon{
+.gnbBox .gnbIcon{
   margin-right: 15px;
   cursor: pointer;
 }
 
-.gnbbox .gnbicon:last-child{
+.gnbBox .gnbIcon:last-child{
   margin-right: 0px;
 }
 
-.gnbbox .gnbicon img{
+.gnbBox .gnbIcon img{
   max-width: 80%;
 }
-
-
 /* article */
-.mainbox{
+.mainBox{
   width: 1000px;
   margin: auto;
   display: flex;
@@ -77,15 +75,14 @@
   margin-bottom: 25px;
 }
 
-.articlebox{
+.articleBox{
   width: 614px;
-  /*height: 950px;*/
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-right: 45px;
 }
 
-.articletop{
+.articleTop{
   height: 60px;
   display: flex;
   align-items: center;
@@ -93,7 +90,7 @@
   padding: 10px 10px 0 10px;
 }
 
-.articletop .forname{
+.articleTop .forName{
   font-size: 15px;
   font-weight: 600;
   color: #383838;
@@ -102,7 +99,7 @@
   cursor: pointer;
 }
 
-.articletop .fomproimg{
+.articleTop .fomproImg{
   width: 32px;
   height: 32px;
   border-radius: 32px;
@@ -112,18 +109,18 @@
 
 }
 
-.articletop .minimenu{
+.articleTop .miniMenu{
   position: absolute;
   top: 16px;
   right: 6px;
   cursor: pointer;
 }
 
-.articletop .minimenu img{
+.articleTop .miniMenu img{
   max-width: 50%;
 }
 
-.middleicon{
+.middleIcon{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -131,37 +128,34 @@
   position: relative;
 }
 
-.middleicon .icon1{
+.middleIcon .icon1{
   margin-right: 10px;
   cursor: pointer;
 }
 
-.middleicon .icon1:last-child{
+.middleIcon .icon1:last-child{
   position: absolute;
   right: 10px;
   margin-right: 0px;
 }
 
-
-
-.middleicon .icon1 img{
+.middleIcon .icon1 img{
   max-width: 80%;
 }
 
-.middletext{
+.middleText{
   padding: 7px 15px 0px;
 }
 
-.boldtext{
+.boldText{
   color: #262626;
   font-size: 14px;
-  /*letter-spacing: -1px;*/
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.boldtextimg{
+.boldTextImg{
   width: 32px;
   height: 32px;
   border-radius: 32px;
@@ -170,18 +164,18 @@
   margin-right: 10px;
 }
 
-.maintext{
+.mainText{
   position: relative;
   font-size: 14.5px;
   font-weight: 100;
   padding: 0;
 }
 
-.maintext.marginbt{
+.mainText.marginBt{
   margin-bottom: 5px;
 }
 
-.maintext #moretext{
+.mainText .moreText{
   width: 70%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -189,31 +183,30 @@
   float: left;
 }
 
-.maintext .likebtn{
+.mainText .likeBtn{
   position: absolute;
   top: 4px;
   right: -7px;
   cursor: pointer;
 }
 
-.maintext .likebtn img{
+.mainText .likeBtn img{
   max-width: 50%;
 }
 
-
-.namebold{
+.nameBold{
   float: left;
   font-weight: 600;
   margin-right: 10px;
   margin-top: 0px;
 }
 
-#morebtn{
+.moreBtn{
   color:#8e8e8e;
   cursor: pointer;
 }
 
-.timetext{
+.timeText{
   font-size: 10px;
   letter-spacing: .2px;
   color: #8e8e8e;
@@ -229,24 +222,22 @@
   border-top: 1px solid #efefef;
 }
 
-.bottom #commentinput{
+.bottom .commentInput{
   width: 554px;
   font-size: 14px;
   color: #a8a8a8;
   border: none;
 }
 
-.bottom #commentbtn{
+.bottom .commentBtn{
   font-weight: bold;
   color: #b7e1fc;
   background-color: #fff;
   border: none;
   cursor: pointer;
 }
-
-
 /* aside */
-.asidebox{
+.asideBox{
   width: 293px;
 }
 
@@ -259,7 +250,7 @@
   margin-bottom: 25px;
 }
 
-.profileimg{
+.profileImg{
   width: 56px;
   height: 56px;
   border-radius: 56px;
@@ -268,27 +259,27 @@
   margin-right: 15px;
 }
 
-.profileid a{
+.profileId a{
   font-size: 15px;
   font-weight: 600;
   color: #262626;
   text-decoration: none;
 }
 
-.profilename{
+.profileName{
   font-size: 13px;
   line-height: 21px;
   color: #8e8e8e;
 }
 
-.storeybox{
+.storyBox{
   width: 100%;
   background-color: #fff;
   border: 1px solid #dcdcdc;
   margin-bottom: 15px;
 }
 
-.storeyboxtop{
+.storyBoxTop{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -298,11 +289,11 @@
   letter-spacing: -1px;
 }
 
-.storeyboxtop .storeyboxtitle{
+.storyBoxTop .storeyBoxTitle{
   color: #8e8e8e;
 }
 
-.storeyboxtop li:last-child{
+.storyBoxTop li:last-child{
   cursor: pointer;
 }
 
@@ -316,7 +307,7 @@
   position: relative;
 }
 
-.profileimg2{
+.profileImg2{
   width: 32px;
   height: 32px;
   border-radius: 32px;
@@ -325,20 +316,20 @@
   margin-right: 15px;
 }
 
-.profileid2 a{
+.profileId2 a{
   font-size: 15px;
   font-weight: 600;
   color: #262626;
   text-decoration: none;
 }
 
-.profiletime{
+.profileTime{
   font-size: 13px;
   line-height: 21px;
   color: #8e8e8e;
 }
 
-.followtext{
+.followText{
   width: 60%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -357,14 +348,14 @@
   cursor: pointer;
 }
 
-.issuebox{
+.issueBox{
   width: 100%;
   background-color: #fff;
   border: 1px solid #dcdcdc;
   margin-bottom: 15px;
 }
 
-.issueboxtop{
+.issueBoxTop{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -374,37 +365,36 @@
   letter-spacing: -1px;
 }
 
-.issueboxtop .issueboxtitle{
+.issueBoxTop .issueBoxTitle{
   color: #8e8e8e;
 }
 
-.issueboxtop li:last-child{
+.issueBoxTop li:last-child{
   cursor: pointer;
 }
 
 /* footer */
-
-.footerbox{
+.footerBox{
   display: flex;
   flex-direction: column;
 }
 
-.footerbox ul{
+.footerBox ul{
   font-size: 11px;
   color: #c7c7c7;
 }
 
-.footerbox ul li{
+.footerBox ul li{
   list-style: inside;
   float: left;
   margin-right: 5px;
 }
 
-.footerbox ul li:first-child{
+.footerBox ul li:first-child{
   list-style: none;
 }
 
-.footerbox span{
+.footerBox span{
   font-size: 11px;
   color: #c7c7c7;
   margin-top: 10px;

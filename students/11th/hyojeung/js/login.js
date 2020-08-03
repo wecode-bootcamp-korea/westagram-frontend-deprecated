@@ -1,43 +1,34 @@
 /* Login foucs */
-const idname = document.getElementById('idname');
-const password = document.getElementById('password');
+const idName = document.getElementsByClassName('idName')[0];
+const password = document.getElementsByClassName('password')[0];
+const loginBtn = document.getElementsByClassName('loginButton')[0];
 
-idname.addEventListener('keyup', function() {
-  let idValue = idname.value;
+function eventBtn(){
+  let idValue = idName.value;
   let passwordValue = password.value;
 
   if(idValue.length >= 1 && passwordValue.length >= 1){
-    document.getElementById('loginButton').style.backgroundColor = "#0095f6";
+    loginBtn.style.backgroundColor = "#0095f6";
   }else{
-    document.getElementById('loginButton').style.backgroundColor = "#b2dffc";
+    loginBtn.style.backgroundColor = "#b2dffc";
   }
-});
+}
 
-password.addEventListener('keyup', function() {
-  let idValue = idname.value;
-  let passwordValue = password.value;
-  
-  if(idValue.length >= 1 && passwordValue.length >= 1){
-    document.getElementById('loginButton').style.backgroundColor = "#0095f6";
-  }else{
-    document.getElementById('loginButton').style.backgroundColor = "#b2dffc";
-  }
-});
+idName.addEventListener('keyup', eventBtn);
+password.addEventListener('keyup', eventBtn);
 
 /* Login alert */
-const loginBtn = document.getElementById('loginButton');
-
 loginBtn.addEventListener('click', function() {
-  const idValue = document.getElementById('idname').value;
-  const passwordValue = document.getElementById('password').value;
+  let idValue = idName.value;
+  let passwordValue = password.value;
 
-  if(idValue.length == 0 && passwordValue.length == 0){
+  if(!idValue && !passwordValue){
     alert('아이디와 비밀번호를 입력해주세요');
-  }else if(idValue.length == 0 && passwordValue.length !== 0){
+  }else if(!idValue && passwordValue){
     alert('아이디를 입력해주세요');
-  }else if(idValue.length !== 0 && passwordValue.length == 0){
+  }else if(idValue && !passwordValue){
     alert('비밀번호를 입력해주세요');
-  }else if (idValue.length !== 0 && passwordValue.length !== 0){
+  }else if (idValue && passwordValue){
     location.href = "main.html";
   }
 });
