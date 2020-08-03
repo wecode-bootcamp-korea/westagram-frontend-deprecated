@@ -19,6 +19,7 @@ function addComment() {
 
 button.addEventListener('click', addComment); 
 
+
 input.addEventListener('keyup', function(e){
     if(e.keyCode === 13){
         let inputValue = input.value;
@@ -35,11 +36,7 @@ input.addEventListener('keyup', function(e){
     } 
 });
 
-function rmComment() {
-        let li = document.querySelector('.comments');
-        let delBtn = document.querySelector('.delete');
-        li.removeChild(delBtn);
-}
+
 
 
 
