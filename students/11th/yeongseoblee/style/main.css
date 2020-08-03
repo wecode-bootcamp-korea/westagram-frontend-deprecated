@@ -1,0 +1,632 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.topNav {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 53px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  background-color: white;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 975px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.navLogo {
+  margin: 0 auto 0 0;
+}
+
+.navSearch input {
+  width: 177px;
+  height: 20px;
+}
+
+.navBtnContainer {
+  margin: 0 0 0 auto;
+}
+
+.navBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 222px;
+  height: 22px;
+}
+
+.navBtn {
+  margin-left: 22px;
+}
+
+.navProfile img {
+  width: 22px;
+  border-radius: 50%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.feeds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 614px;
+  padding: 30px 28px 0 0;
+}
+
+.story {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  background-color: white;
+  width: 100%;
+  margin: 0 0 24px;
+  padding: 16px 0;
+}
+
+.story li {
+  position: relative;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.storyItems {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 72px;
+  padding: 0 10px;
+}
+
+.unreadStory {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png");
+  background-position: -65px -223px;
+  background-size: 440px 411px;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+}
+
+.storyBtn {
+  padding: 0;
+}
+
+.storyBtn img {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.storyId {
+  position: relative;
+  top: 66px;
+  font-size: 12px;
+  max-width: 74px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.storyFrame {
+  position: relative;
+  height: 84px;
+  overflow: auto;
+}
+
+.story ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+article {
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.uploader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  height: 27px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.headerProfilePic {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerProfilePic img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.headerUserName {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 550px;
+  margin-left: 14px;
+  align-items: center;
+}
+
+.headerUserName div {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.headerUserName div span {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.moreBtn {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+}
+
+.contents img {
+  width: 100%;
+}
+
+.contentsBottomContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 14px;
+}
+
+.icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: row;
+  padding: 0 16px;
+  margin-top: 4px;
+}
+
+.likeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.likeBtn button {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 0;
+  background: none;
+}
+
+.likeBtn button div {
+  width: 24px;
+  height: 24px;
+}
+
+.commentPostBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 0;
+  background: none;
+  font-weight: 600;
+  color: rgba(0, 149, 246, 0.3);
+  cursor: default;
+}
+
+.commentBtn button {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 0;
+  background: none;
+}
+
+.commentBtn button div {
+  width: 24px;
+  height: 24px;
+}
+
+.shareBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.shareBtn button {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 0;
+  background: none;
+}
+
+.shareBtn button div {
+  width: 24px;
+  height: 24px;
+}
+
+.saveBtn {
+  box-sizing: border-box;
+  padding: 8px 0 0 0;
+  height: 40px;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+}
+
+.mainRight {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 293px;
+  padding-top: 30px;
+}
+
+.divForSticky {
+  position: sticky;
+  top: 84px;
+  margin-bottom: 30px;
+}
+
+.likes {
+  display: flex;
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+.likes div span {
+  font-weight: 600;
+}
+
+.othersBtn {
+  font-weight: 600;
+  border: 0;
+  background: 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+.descriptionUserName {
+  font-weight: 600;
+}
+
+.descriptionMore {
+  border: 0;
+  background: none;
+  color: rgb(142, 142, 142);
+  cursor: pointer;
+}
+
+.viewAllComments a {
+  text-decoration: none;
+  color: #00376b;
+}
+
+.comments {
+  padding: 0 16px;
+}
+
+.commentNames {
+  font-weight: 600;
+}
+
+.userNameATags {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.commentLikes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentLikes button {
+  display: flex;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  background: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.delBtn {
+  font-size: 11px;
+  margin-right: 5px;
+}
+
+.delBtn:hover {
+  color: red;
+}
+
+.passedTime {
+  display: flex;
+
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding: 4px 16px;
+}
+
+.passedTime a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(142, 142, 142);
+  font-size: 10px;
+}
+
+.commentList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.commentList li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.nameAndComment {
+  display: flex;
+  justify-content: row;
+}
+
+.commentInput {
+  padding: 0 16px;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.commentInput div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.commentInput textarea {
+  resize: none;
+  width: 100%;
+  overflow: visible;
+  border: 0;
+}
+
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.userInfoContainer {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  padding-left: 5px;
+  margin: 18px 0 10px 0;
+}
+
+.userInfoPhoto img {
+  width: 56px;
+  border-radius: 50%;
+}
+
+.userIdAndName {
+  margin-left: 20px;
+}
+
+.userId a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+}
+
+.userName {
+  color: rgb(142, 142, 142);
+  font-size: 12px;
+}
+
+.suggestionHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.suggestions {
+  color: rgb(142, 142, 142);
+  font-size: 14px;
+}
+
+.suggestionSeeAll a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.suggestionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestionList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestionList li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.followSuggestions {
+  margin: 0 0 0 auto;
+}
+
+.followSuggestions button {
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.suggestedUserThumbnail {
+  border-radius: 50%;
+  width: 32px;
+  margin: 12px 12px 0 0;
+}
+
+.suggestedUserInfo {
+  font-size: 12px;
+}
+
+.suggestedUserId {
+  font-size: 14px;
+}
+
+.sideNavBar {
+  width: 100%;
+}
+
+.sideNavBar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.sideNavBar li {
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.sideNavBar li:not(:last-of-type)::after {
+  content: "\00B7";
+  margin-right: 0.25em;
+}
+
+.sideNavBar a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.sideNavBar span {
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 999px) {
+  .mainRight {
+    display: none;
+  }
+}
