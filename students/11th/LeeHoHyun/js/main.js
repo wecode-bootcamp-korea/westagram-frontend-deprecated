@@ -29,21 +29,21 @@ function numAddComma(num) {
  // 댓글 li 만들기
 function addReply(reply){
     const li = document.createElement('li');
-    const span1 = document.createElement('span');
-    const span2 = document.createElement('span');
-    const span3 = document.createElement('span');
+    const span_id = document.createElement('span');
+    const span_reply = document.createElement('span');
+    const span_heartIcon = document.createElement('span');
 
-    span1.classList.add('insta-id');
-    span1.innerHTML = reply.id;
-    span1.style.marginRight = '5px';
+    span_id.classList.add('insta-id');
+    span_id.innerHTML = reply.id;
+    span_id.style.marginRight = '5px';
 
-    li.appendChild(span1);
+    li.appendChild(span_id);
 
-    span2.innerHTML = reply.text;
+    span_reply.innerHTML = reply.text;
 
-    li.appendChild(span2);
+    li.appendChild(span_reply);
 
-    span3.innerHTML = '';
+    span_heartIcon.innerHTML = '';
     const img = document.createElement('img');
     img.src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
     img.addEventListener('click', (e) => {
@@ -52,38 +52,38 @@ function addReply(reply){
         e.target.src = e.target.src === "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" ? "./img/red_heart.png" : "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
     });
     
-    span3.appendChild(img);
+    span_heartIcon.appendChild(img);
 
-    li.appendChild(span3);
+    li.appendChild(span_heartIcon);
 
     ul.appendChild(li);
 }
 
 // 댓글 갱신되는 부분(2개만 보이게)
-function loadReply(){
-    while(ul.hasChildNodes()){
-        ul.removeChild(ul.firstChild);
+function loadReply(ulTag, arrReply){
+    while(ulTag.hasChildNodes()){
+        ulTag.removeChild(ulTag.firstChild);
     }
 
-    if(replies.length < 3){
-        replies.forEach((reply) => {
+    if(arrReply.length < 3){
+        arrReply.forEach((reply) => {
             addReply(reply);
         });
     }
     else{
-        const len = replies.length;
+        const len = arrReply.length;
 
         for(let i = 2; i > 0; i--){
-            addReply(replies[len - i]);
+            addReply(arrReply[len - i]);
         }
     }
 }
 
 // 댓글 개수 몇개인지 표시
-function replyNumRefresh(){
+function replyNumRefresh(arrReply){
     const reply_num = document.querySelector('.reply-num');
 
-    reply_num.innerHTML = `댓글 ${replies.length}개 보기`;
+    reply_num.innerHTML = `댓글 ${arrReply.length}개 보기`;
 }
 
 // 추천 친구 팔로우 상태에 따른 text 색
@@ -109,7 +109,10 @@ reply_text.addEventListener('keydown', (e) => {
 
         replies.push({id: reply_writer_id, text: reply_text.value});
         reply_text.value = '';
-        loadReply();
+        reply_text.blur();
+
+        loadReply(ul, replies);
+        replyNumRefresh(replies);
     }
 });
 
@@ -172,13 +175,13 @@ btn_posting.addEventListener('click', (e) => {
     
         reply_text.value = '';
         
-        loadReply();
-        replyNumRefresh();
+        loadReply(ul, replies);
+        replyNumRefresh(replies);
     
         btn_posting.style.color = 'rgb(179, 223, 252)';
         btn_posting.disabled = 'disabled';
     }
 });
 
-loadReply();
-replyNumRefresh();
+loadReply(ul, replies);
+replyNumRefresh(replies);
