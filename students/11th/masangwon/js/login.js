@@ -5,7 +5,6 @@ const inputPassWord = document.querySelector('.inputPassWord');
 inputPassWord.addEventListener('keyup', function () {
     if (inputUserName.value && inputPassWord.value) {
         loginButton.style.backgroundColor = 'rgb(53,149,246)';
-
     } else {
         loginButton.style.backgroundColor = 'rgb(191, 223, 253)';
     }

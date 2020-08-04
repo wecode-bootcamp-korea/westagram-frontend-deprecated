@@ -19,7 +19,7 @@ function paintList(text) {
     createList.appendChild(likeImg)
     commentList.appendChild(createList);
 }
-submitButton.addEventListener('click', function (e) {
+submitButton.addEventListener('click', function () {
     paintList(inputComment.value);
     inputComment.value = '';
 })

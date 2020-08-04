@@ -4,7 +4,19 @@
 }
 
 body {
+    position: relative;
     background-color: rgb(250, 250, 250);
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 section {
@@ -12,7 +24,6 @@ section {
     flex-direction: row;
     position: relative;
     margin: 0 auto;
-    padding-top: 50px;
     max-width: 935px;
     height: 1499px;
 }
@@ -35,15 +46,15 @@ section {
     justify-content: space-between;
 }
 
-.search_bar {
+.searchBar {
     display: flex;
     justify-content: center;
-    padding: 7px;
-    width: 218px;
+    padding: 8px;
+    width: 200px;
     height: 31px;
 }
 
-.search_bar input {
+.searchBar input {
     position: relative;
     width: 200px;
     height: 22px;
@@ -53,17 +64,17 @@ section {
     outline: none;
 }
 
-.search_bar img {
+.searchBar img {
     position: absolute;
     padding: 4px;
-    left: 52%;
+    left: 49%;
     width: 14px;
     height: 14px;
 }
 
 .instarLogContainer {
     background-size: -100px;
-    width: 350px;
+    width: 240px;
     height: 32px;
     padding: 7px;
 }
@@ -84,9 +95,8 @@ section {
 .navHeaderIcon {
     margin-top: 3px;
     display: flex;
-    width: 222px;
     height: 37px;
-    padding: 0 0 0 20px;
+    padding: 0 36px 0 20px;
 }
 
 .account_Home img {
@@ -197,7 +207,7 @@ section {
 }
 
 .sidebarBox {
-    padding: 20px;
+    margin-left: 20px;
     position: sticky;
     top: 50px;
     width: 280px;
@@ -232,7 +242,7 @@ section {
 .followBox {
     display: flex;
     position: relative;
-    width: 300px;
+    /* width: 280px; */
 }
 
 .followRcd {
@@ -271,16 +281,10 @@ section {
     display: flex;
     flex-direction: row;
     padding: 4px 10px 0px 10px;
-    width: 280px;
     height: 40px;
     font-size: 14px;
     line-height: 14px;
     font-weight: 600px;
-}
-
-.followBox {
-    display: flex;
-    margin-top: 10px;
 }
 
 .fallow_alignment {
@@ -315,9 +319,8 @@ section {
 
 .infoFollowBtn {
     margin-top: 5px;
-    width: 50px;
     height: 15px;
-    right: 5px;
+    right: 20px;
     position: absolute;
     display: flex;
     flex-direction: row;

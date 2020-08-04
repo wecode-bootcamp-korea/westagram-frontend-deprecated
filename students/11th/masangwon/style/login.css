@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
-.loginBody {
+main {
+    width: 100%;
+    height: 800px;
+}
+
+section {
     position: relative;
     margin: 0;
     padding: 0;
@@ -12,12 +17,7 @@
     height: 100%;
 }
 
-.mainContainer {
-    width: 100%;
-    height: 800px;
-}
-
-.article_container {
+article {
     margin: 30px auto 0;
     padding-bottom: 44px;
     display: flex;
@@ -134,7 +134,7 @@
 }
 
 .formTextUnderLine {
-    margin: 0 18px;
+    margin: 0 20px;
     color: rgba(var(--f52, 142, 142, 142), 1);
     font-size: 13px;
     font-weight: 600;
@@ -162,16 +162,16 @@
 }
 
 .facebookImg {
+    display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png);
+    background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png");
     margin-right: 8px;
-    background-position: -705px -665px;
-    background-size: -441px -410px;
+    background-position: -347px -329px;
+    background-size: 440px 411px;
     position: relative;
     top: 3px;
     cursor: pointer;
-    display: inline-block;
     outline: none;
 }
 
@@ -269,7 +269,7 @@ a {
     justify-content: center;
 }
 
-.footerListS {
+.footerLists {
     display: flex;
     list-style: none;
     margin: 0px 16px 3px 0px;
