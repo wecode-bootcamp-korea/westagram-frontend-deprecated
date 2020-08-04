@@ -7,16 +7,17 @@ body {
     background-color: rgb(250, 250, 250);
 }
 
-.story_box {
-    margin: 50px 0px 24px;
-    padding: 16 0px;
-    width: 614px;
-    height: 118px;
-    border: 1px solid rgb(219, 219, 219);
-    background-color: #ffffff;
+section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 935px;
+    height: 1499px;
 }
 
-.nav_bar {
+.navBar {
     position: fixed;
     width: 100%;
     height: 50px;
@@ -25,7 +26,7 @@ body {
     z-index: 10;
 }
 
-.nav_header {
+.navHeader {
     display: flex;
     margin: 0 auto;
     margin-top: 5px;
@@ -60,31 +61,27 @@ body {
     height: 14px;
 }
 
-.account_Home img {
-    border-radius: 30px;
-}
-
-.instar_log_container {
+.instarLogContainer {
     background-size: -100px;
     width: 350px;
     height: 32px;
     padding: 7px;
 }
 
-.instar_logo {
+.instarLogo {
     margin: 10 10px;
     width: 103px;
     height: 29px;
 }
 
-.nav_header_icon img {
+.navHeaderIcon img {
     display: flex;
     width: 22px;
     height: 22px;
     padding: 7px;
 }
 
-.nav_header_icon {
+.navHeaderIcon {
     margin-top: 3px;
     display: flex;
     width: 222px;
@@ -92,20 +89,13 @@ body {
     padding: 0 0 0 20px;
 }
 
+.account_Home img {
+    border-radius: 30px;
+}
+
 section {
     display: flex;
     flex-direction: row;
-}
-
-.sectionContainer {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 0 auto;
-    padding-top: 30px;
-    max-width: 935px;
-    height: 1499px;
-    /* background-color: rgb(255, 255, 255); */
 }
 
 .sectionBox {
@@ -212,6 +202,11 @@ section {
     top: 50px;
     width: 280px;
     height: 736px;
+    list-style: none;
+}
+
+.sidebarBox li {
+    list-style: none;
 }
 
 .sidebarContant {
@@ -241,6 +236,7 @@ section {
 }
 
 .followRcd {
+    list-style: none;
     margin-top: 20px;
     position: relative;
     margin-left: 10px;
@@ -267,6 +263,7 @@ section {
 
 .followList {
     padding-top: 8px;
+    list-style: none;
 }
 
 .followLists {
@@ -344,28 +341,28 @@ section {
     height: 24px;
 }
 
-.USER_NICKNAME {
+.userNickName {
     position: relative;
     font-weight: 600;
 }
 
-.USER_NEW {
+.useNew {
     font-size: 15px;
     font-weight: 600;
 }
 
-.USER_NEW span {
+.useNew span {
     margin-left: px;
     margin-right: 20px;
 }
 
-.USER_NEW {
+.useNew {
     font-size: 16px;
     padding: 0px 5px 0px 0px;
     position: relative;
 }
 
-.LIKE_IMG img {
+.likeImg img {
     position: absolute;
     right: 16px;
     width: 12px;
@@ -423,8 +420,8 @@ section {
 }
 
 .infoBarList1 {
-    padding: 5px;
     display: flex;
+    padding: 5px;
     font-size: 12px;
     list-style: none;
     color: #c7c7c7;
