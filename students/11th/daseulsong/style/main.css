@@ -125,13 +125,13 @@ main {
   border: 1px solid var(--color-grey);
 }
 
-.nav {
+.account__container {
   display: flex;
   justify-content: space-between;
   margin: 15px;
 }
 
-.nav .account {
+.account__container .account {
   margin-top: 7px;
 }
 
