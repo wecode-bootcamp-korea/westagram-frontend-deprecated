@@ -8,7 +8,7 @@ const commentUsername = document.querySelector('.contentId');
 const commentFirstClass = document.querySelector('.comment__container');
 
 // 댓글 버튼 색깔 이벤트
-commentInputBox.addEventListener('keyup', (e) => {
+commentInputBox.addEventListener('keyup', () => {
   const postBtn = document.querySelector('.postBtn');
   if (commentInputBox.value !== '') {
     postBtn.style.color = '#2980b9';
