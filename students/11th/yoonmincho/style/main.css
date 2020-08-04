@@ -2,11 +2,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto 132px;
     border-bottom: 1px solid #dbdbdb;
-    width: 1177px;
     height: 54px;
-    max-width: 100%;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -16,12 +14,14 @@ nav {
 .imagelogo {
    width: 22px;
    height: 22px;
+   margin-bottom: 6px;
 }
 
 .textlogo {
     width: 103px;
     height: 29px;
     margin-left: 8px;
+    margin-top: 12px;
 }
 
 .searchbox {
@@ -37,24 +37,29 @@ nav {
 .navrightcontainer img {
     width: 22px;
     height: 22px;
-    margin-left: 8px;
+    margin-left: 20px;
+}
+
+.navleftcontainer {
+    margin-left: 200px;
+}
+
+.navrightcontainer {
+    margin-right: 200px;
 }
 
 /* section */
 
 .mainContainer {
-    background-color: salmon;
     width: 935px;
     height: 2000px;
     display: flex;
     flex-direction: row;
-    border-top: 1px solid #dbdbdb;
     margin: 30px auto;
     padding-top: 30px;
 }
 
 .feedTop {
-    background-color: seagreen;
     height: 60px;
     position: relative;
     display: flex;
@@ -78,8 +83,7 @@ nav {
 .dots {
     width: 24px;
     height: 24px;
-    margin-left: 450px;
-    
+    margin-left: 450px;   
 }
 
 .feedImage img {
@@ -112,9 +116,9 @@ nav {
 }
 
 .feedBox {
-    background-color: slateblue;
     width: 600px;
-    height: 750px;
+    height: 976px;
+    border: 1px solid #dbdbdb;
 }
 
 .feedIcon {
@@ -130,14 +134,12 @@ nav {
 .infoId {
     font-weight: 600;
     font-size: 14px;
-    margin-left: 16px;
-   
+    margin-left: 16px; 
 }
 
 .infoComment {
     font-size: 14px;
     margin-left: 5px;
-
 }
 
 .feedInfoComment {
@@ -145,19 +147,17 @@ nav {
 }
 
 .mainRight {
-    background-color: red;
     width: 285px;
     height: 600px;
     position: fixed;
     margin-left: 650px;
 }
 
-.rightProfileContainer {
+.ProfileContainer {
     display: flex;
     align-items: center;
     width: 285px;
     height: 56px;
-    background-color: thistle;
 }
 
 .myProfile {
@@ -172,13 +172,14 @@ nav {
     margin-left: 10px;
 }
 
-.recommendForYou {
+.recommendNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 270px;
 }
 
-.recommend {
+.recommendForyou {
     font-size: 14px;
     font-weight: bold;
     color: #8e8e8e;;
@@ -190,15 +191,71 @@ nav {
     color: #262626;
 }
 
-.recommendList img {
+.recommendBox {
+    border-color: violet;   
+}
+
+.recommendBox img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin-top: 20px;
 }
 
-.recommendList {
+.eachRecommendList {
     display: flex;
-    flex-direction: column; 
+    align-items: center;
+}
+
+.recommendInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 321px;
+    height: 48px;
+    padding: 5px 16px;
+}
+
+.recommendText {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommendId {
+    font-weight: bold;
+}
+
+.whoFollows {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.followText {
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.recommendContainer {
+    margin-top: 30px;
+}
+
+.replyBox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 600px;
+    height: 56px;   
+}
+
+.reply {
+    width: 530px;
+    height: 56px;
+    resize: none;
+    border: none;
+}
+
+.enter {
+    border: none;
+    background-color: white;
 }
 
