@@ -1,0 +1,336 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(250, 250, 250);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 90%;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 935px;
+  width: 100%;
+  height: 100%;
+  margin: 30px auto 0;
+  padding-bottom: 44px;
+}
+
+.demo_container {
+  flex-basis: 454px;
+  height: 618px;
+  margin-right: -15px;
+  margin-left: -35px;
+  background-position: 0 0;
+  background-size: 454px 618px;
+  background-image: url('https://instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png');
+  background-repeat: no-repeat;
+}
+
+.demo_container .image_frame {
+  position: relative;
+  margin-top: 99px;
+  margin-left: 151px;
+}
+
+.image_frame .demo_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 427px;
+  width: 240px;
+  opacity: 1;
+}
+
+.interaction_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  margin-top: 12px;
+  color: rgb(38, 38, 38);
+}
+
+.login_container,
+.signup_container {
+  margin: 0 0 10px;
+  padding: 10px 0;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 1px;
+}
+
+.login_container .logo {
+  display: flex;
+  justify-content: center;
+  margin: 22px auto 36px;
+}
+
+.logo img {
+  height: 51px;
+  width: 175px;
+}
+
+.form_container {
+  margin-bottom: 10px;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_form .input_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 36px;
+  max-width: 268px;
+  width: 100%;
+  margin: 0 40px 6px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(250, 250, 250);
+  border-radius: 3px;
+  font-size: 14px;
+  color: rgb(38, 38, 38);
+  z-index: 10;
+}
+
+.label_container {
+  position: relative;
+  height: 36px;
+  cursor: default;
+}
+
+.label_transform {
+  transform: scale(.83333) translateY(-10px);
+}
+
+.label_container .placeholder {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+  color: rgb(142, 142, 142);
+  transform-origin: left;
+  transition: transform ease-out .1s;
+}
+
+.label_container input {
+  border: 0 solid transparent;
+  padding: 14px 0 2px 8px;
+  background-color: rgb(250, 250, 250);
+  overflow: hidden;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.label_container .password_mode {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-right: 8px;
+  margin-left: 8px;
+}
+
+.password_mode button {
+  padding-right: 8px;
+  border: 0;
+  outline: none;
+  background-color: rgb(250, 250, 250);
+  color: rgb(38, 38, 38);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login_form .login_button {
+  margin: 8px 40px;
+  max-width: 268px;
+  width: 100%;
+}
+
+.login_button button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 9px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: rgba(0, 149, 246, 1);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login_button button:disabled {
+  background: rgba(0, 149, 246, .3);
+  pointer-events: none;
+}
+
+.login_form .or {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 268px;
+  width: 100%;
+  margin: 10px 40px 18px;
+}
+
+.or .vertical_line {
+  height: 1px;
+  width: 39%;
+  background-color: #dbdbdb;
+}
+
+.or .or_text {
+  margin: 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  color: rgb(142, 142, 142);
+  text-transform: uppercase;
+}
+
+.alternative_login {
+  display: block;
+  margin: 8px 40px;
+}
+
+.alternative_login .facebook_login {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(0, 149, 246, 1);
+}
+
+.facebook_login .spriteFacebook {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  margin-right: 8px;
+  height: 16px;
+  width: 16px;
+  background: url('https://instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png');
+  background-size: 440px 411px;
+  background-position: -347px -329px;
+  background-repeat: no-repeat;
+}
+
+.facebook_login .login_text {
+  font-weight: 600;
+  color: #385185;
+}
+
+.find_password {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgb(0, 55, 107);
+  text-align: center;
+}
+
+.signup_container .text_container {
+  display: block;
+  margin: -3px 0 -4px;
+}
+
+.text_container .signup_text {
+  margin: 15px;
+  font-weight: 150;
+  font-size: 14px;
+  color: rgb(38, 38, 38);
+  text-align: center;
+}
+
+.signup_text a {
+  font-weight: 600;
+  color: rgba(0, 149, 246, 1);
+}
+
+.download_container {
+  font-size: 14px;
+  color: rgb(38, 38, 38);
+  line-height: 18px;
+  text-align: center;
+}
+
+.download_text {
+  margin: 10px 20px 20px;
+}
+
+.download_links {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.download_links .image_link {
+  color: rgb(0, 55, 107);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.download_links .image_link img {
+  height: 40px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+footer .info_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1012px;
+  padding: 38px 0;
+  margin: 0 auto;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer ul {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 7px;
+}
+
+footer ul li a {
+  color: rgb(0, 55, 107)
+}
+
+footer .copyright {
+  display: block;
+  color: rgb(142, 142, 142);
+}
