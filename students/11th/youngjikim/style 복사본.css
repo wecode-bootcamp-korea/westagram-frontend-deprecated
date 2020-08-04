@@ -1,0 +1,93 @@
+body{
+    background-color: rgba(var(--b3f,250,250,250),1); 
+}
+img{
+    width: 175px;
+    height: 51px;
+    
+}
+
+.instalogo{
+    display: flex;
+    justify-content: center;
+    height: 51px;
+    margin-top: 22px;
+    margin-bottom: 36px;
+} 
+
+
+input{
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    height: 38px;
+    width: 268px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: rgba(var(--i1d,38,38,38),1);
+    padding: 9px 8px 7px 8px;
+    
+    border-radius: 4px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  
+}
+.idmail{
+    background-color: #FAFAFa;
+}
+.password1{
+    background-color: #FAFAFa;
+}
+input[type="text"], input[type="password"]{
+    outline: none;
+}
+
+button{
+    width: 268px;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(var(--eca,255,255,255),1);
+    /* background-color: rgba(var(--d69,0,149,246),.3); */
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.loginButton{
+    background-color: rgba(var(--d69,0,149,246),.3); 
+}
+
+
+.boxfor-ent{
+    border:1px solid rgba(var(--b6a,219,219,219),1);
+    height:380px;
+    width:350px;
+    padding:10px 0 10px 0; 
+    background-color: white;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.idpw{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+p{ 
+    color: rgba(var(--fe0,0,55,107),1);
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center;
+    margin-top: 90px;
+}
+a{
+    text-decoration:none
+}
