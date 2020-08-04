@@ -14,6 +14,7 @@
     height: 250px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -60,7 +61,6 @@
     cursor: pointer;
 }
 
-/* footer */
 .password_link a {
     text-decoration: none;
     color: rgba(0, 55, 107, 1);

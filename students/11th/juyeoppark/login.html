@@ -16,18 +16,20 @@
 <body>
   <main id="login_page">
     <header class="login_header">
-      <img class="instagra_img" src="img/logo_text.png" alt="Instagram textimage">
+      <img class="instagram_img" alt="Instagram textimage" src="img/logo_text.png">
     </header>
     <section id="login_section">
-      <form class="login_content">
-        <input class="login_input-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-        <input class="login_input-pw" type="password" placeholder="비밀번호">
-      </form>
-      <button class="login_btn">로그인</button>
+      <div class="login_input">
+        <form class="login_content">
+          <input class="login_input-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+          <input class="login_input-pw" type="password" placeholder="비밀번호">
+        </form>
+        <button class="login_btn">로그인</button>
+      </div>
+      <div id="login_bottom">
+        <div class="password_link"><a href="#">비밀번호를 잊으셨나요?</a></div>
+      </div>
     </section>
-    <footer id="login_footer">
-      <div class="password_link"><a href="#">비밀번호를 잊으셨나요?</a></div>
-    </footer>
   </main>
   <script src="js/login.js"></script>
 </body>
