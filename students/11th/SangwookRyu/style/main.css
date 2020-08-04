@@ -197,6 +197,15 @@ input.search:focus {
     cursor: pointer;
 }
 
+.viewer-comment {
+    padding-left: 4px;
+    font-size: 14px;
+    color: #262626;
+}
+
+.new-line {
+    display: block;
+}
 .post-time {
     font-size: 10px;
     color: #828282;
