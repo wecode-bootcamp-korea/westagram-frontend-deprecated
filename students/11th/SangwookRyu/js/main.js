@@ -1,4 +1,4 @@
-const btnOnOffComment = document.getElementsByClassName('write-comment')[0];
+btnOnOffComment = document.getElementsByClassName('write-comment')[0];
 
 btnOnOffComment.addEventListener('keyup', function() {
   const comment = document.getElementsByClassName('write-comment')[0].value;
