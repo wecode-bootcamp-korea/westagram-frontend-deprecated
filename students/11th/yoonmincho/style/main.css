@@ -152,6 +152,14 @@ nav {
     margin-left: 650px;
 }
 
+.rightProfileContainer {
+    display: flex;
+    align-items: center;
+    width: 285px;
+    height: 56px;
+    background-color: thistle;
+}
+
 .myProfile {
     width: 56px;
     height: 56px;
@@ -160,22 +168,37 @@ nav {
 
 .myId {
     font-size: 14px;
-    font-weight: 400px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.recommendForYou {
     display: flex;
-    
-
+    align-items: center;
+    justify-content: space-between;
 }
 
-.rightProfile {
-    width: 288px;
-    height: 56px;
-}
-
-.recommandForYou {
+.recommend {
     font-size: 14px;
-    font-weight: 600px;
-    color: rgb(142, 142, 142);
+    font-weight: bold;
+    color: #8e8e8e;;
 }
 
+.showAll {
+    font-size: 12px;
+    font-weight: bold;
+    color: #262626;
+}
 
+.recommendList img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.recommendList {
+    display: flex;
+    flex-direction: column; 
+}
 
