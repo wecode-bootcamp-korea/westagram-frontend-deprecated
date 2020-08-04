@@ -1,0 +1,275 @@
+.navBackground {
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid lightgray;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 975px;
+    height: 54px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 1px lightgray;
+    background-color: white;
+}
+
+
+.logoBox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 103px;
+    height: 29px;
+}
+
+
+.searchBar {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    margin: 0 auto;
+    border: solid 1px lightgray;
+    background-color: #fafafa;
+}
+
+.navLists ul{
+    list-style: none;
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+.compass {
+    margin-left: 22px;
+}
+
+.follow {
+    margin-left: 22px;
+}
+
+.instaMain {
+    display: flex;
+    flex-direction: row;
+    width: 935px;
+    height: 2000px;
+    margin: 30px auto;
+}
+
+.feeds {
+    width: 614px;
+    height: 900px;
+    border: solid 1px lightgray;
+}
+
+.feedHeader {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: solid 1px lightgray;
+    padding: 16px;
+}
+
+.feedHeader img {
+    width: 24px;
+    height: 24px;
+ }
+
+ .profileLogo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+ }
+
+ .profileLogo {
+     display: flex;
+     align-items: center;
+ }
+
+ .nickName {
+     margin-left: 14px;
+     font-weight: 600;
+     font-size: 14px;
+ }
+ .userName {
+     display: flex;
+     justify-content: left;
+     width: 522px;
+     height: 33px;
+     /* margin-left: 14px; */
+ }
+
+ .dots {
+     margin-left: 34px;
+ }
+
+ .profile {
+     height: 600px;
+ }
+
+ .profile img {
+     width: 613px;
+     height: 600px;
+ }
+
+ .commentBox {
+     display: flex;
+     align-items: stretch;
+     flex-direction: column;
+     padding: 0;
+     height: 239px;
+     border-top: solid 1px lightgray;
+     border-bottom: solid 1px lightgray;
+     background-color: white;
+ }
+
+ .iconBox {
+     width: 100%;
+     height: 40px;
+     padding: 0 16px;
+     margin-top: 4px;
+     border-bottom: solid 1px lightgray;
+     display: flex;
+     justify-content: flex-start;
+ }
+
+ .iconBox img {
+     width: 22px;
+     height: 22px;
+     margin: 8px;
+ }
+
+ .likeBox {
+     height: 20px;
+     width: 100%;
+     background-color: lightgreen;
+     margin-bottom: 8px;
+ }
+
+ .comments {
+     width: 100%;
+     height: 84px;
+     background-color: lightgray;
+ }
+
+ .date {
+     width: 100%;
+     height: 19px;
+     padding-left: 16px;
+     margin-bottom: 4px;
+     background-color: lightskyblue;
+ }
+ 
+ .writeComments {
+     display: flex;
+     align-items: center;
+     padding: 0 16px;
+     height: 55px;
+     padding: 16px 0;
+ }
+
+ .commenting textarea {
+     width: 544px;
+     height: 18px;
+     border: none;
+     resize: none;
+     margin-left: 14px;
+ }
+
+ .enter button{
+    width: 47px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+    opacity: 0.3;
+    color: blue;
+    font-weight: bolder;
+ }
+ 
+ .main-right {
+    width: 285px;
+    position: fixed;
+    top: 0;
+    margin-top: 84px;
+    margin-left: 650px;
+ }
+
+.rightProfile {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding-left: 5px;
+}
+
+.rightProfile img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.myName {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.followBox {
+    width: 283px;
+    height: 291px;
+    margin-bottom: 12px;
+}
+
+.recommendBox {
+    margin-top: 25px;
+    height: 18px;
+    font-size: 14px;
+    padding: 4px 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+.seeAll {
+    margin-left: 95px;
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+}
+
+.followList {
+    display: flex;
+    width: 100%;
+    padding: 8 16px;
+    margin-top: 15px;
+}
+
+.followList img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 17px;
+}
+
+.userId {
+    font-weight: 600;
+}
+
+.recom {
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+.followfollow {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0095f6;
+}
+.userIdBox {
+    margin-left: 10px;
+}
