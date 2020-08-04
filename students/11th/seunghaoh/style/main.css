@@ -9,17 +9,12 @@
   --black-color: black;
 }
 
-html,
-body {
-  height: 100%;
-  background-color: var(--grey-light-color);
-}
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
+  background-color: var(--grey-light-color);
 }
 
 /* navbar */
@@ -233,6 +228,10 @@ header button i {
 }
 
 /* feedImg */
+.feedImg {
+  display: flex;
+}
+
 .feedImg img {
   width: 100%;
 }
@@ -247,7 +246,6 @@ header button i {
   display: flex;
   position: relative;
   align-items: center;
-  width: 613.75px;
   height: 39.97px;
   margin-top: 4px;
   padding: 0 16px;
@@ -327,7 +325,6 @@ header button i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 614px;
   height: 56px;
   margin-top: 4px;
   border-top: 1px solid var(--grey-medium-color);
@@ -335,22 +332,25 @@ header button i {
 }
 
 .leaveCommentBox textarea {
+  width: 100%;
   height: 18px;
   max-height: 80px;
   border: 0;
   outline: none;
   resize: none;
-  color: var(--grey-light-color);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
+  overflow: hidden;
 }
 
 .leaveCommentBox button {
+  width: 28px;
   border: 0;
   background-color: var(--white-color);
   color: var(--blue-color);
   opacity: 0.3;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* rightSection */
@@ -384,6 +384,11 @@ header button i {
 .myProfile .profileInfo .profileName {
   margin: 0 0 2px 0;
   padding: 2px;
+}
+
+.profileName {
+  font-weight: bold;
+  margin-right: 5px;
 }
 
 .recommendationTitle {

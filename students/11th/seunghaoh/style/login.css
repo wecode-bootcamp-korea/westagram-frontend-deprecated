@@ -7,16 +7,11 @@
   --blue-color: #0095f6;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   background-color: var(--grey-light-color);
 }
 
