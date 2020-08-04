@@ -1,0 +1,211 @@
+.full {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAFAFA;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+.midbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 935px;
+    width: 100%;
+    margin: 30px auto 0;
+    padding-bottom: 44px;
+}
+
+.phone {
+    display: flex;
+    align-self: center;
+    width: 454px;
+    height: 618px;
+    background-image: url(phone.png);
+    background-size: cover;
+}
+
+.loginContainor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 0px;
+    background-color: white;
+}
+
+.logo {
+    width : 175px;
+    height: 51px;
+    margin: 22px auto;
+}
+
+.loginInfo {
+    display: block;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    box-shadow: 0;
+    width : 266px;
+    height: 36px;
+    margin: 6px auto;
+    background-color: #FAFAFA;
+}
+
+input::placeholder {
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.loginButton {
+    display: block;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0;
+    width : 266px;
+    height : 30px;
+    font-size : 14px;
+    color : white;
+    font-weight: 600;
+    margin : 12px auto 8px;
+    padding: 0;
+    background-color: #C0DFFD;
+}
+
+.Or {
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    margin: 16px 0 18px;
+}
+
+.line {
+    position: relative;
+    display: inline-block;
+    width: 104.75px;
+    height: 1px;
+    top: -0.35em;
+    background-color: #DBDBDB;
+}
+
+.orText {
+    display: inline-block;
+    color: #8F8F8F;
+    font-size: 13px;
+    text-align: center;
+    margin: 0px 18px;
+    padding: 0px;
+}
+
+.facebookButton {
+    display: block;
+    border: 0;
+    box-shadow: 0;
+    font-size: 14px;
+    color: #375185;
+    font-weight: 600;
+    background-color: white;
+}
+
+.passwordSearch {
+    font-size: 12px;
+    color: #01376B;
+    margin-top: 12px;
+    margin-bottom: 12px
+}
+
+.signUp {
+    height: 63px;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+    text-align: center;
+    margin: 20px 0 10px;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.signUpText {
+    font-size: 14px;
+    color: #262626;
+    font-weight: 300;
+}
+
+.sighlink {
+    color: #0095F6;
+    font-weight: 600;
+}
+
+.download {
+    text-align: center;
+}
+
+.downloadtext {
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.downloadapp {
+    display: inline-block;
+    width: 136px;
+    height: 40px;
+}
+
+
+footer {
+    max-width: 1012px;
+    width: 100%;
+    height: 104px;
+    align-self: center;
+    text-align: right;
+    padding: 38px 10px;
+    overflow: hidden;
+}
+
+nav {
+    display: inline;
+}
+
+ul,li {
+    float: left;
+    list-style: none;
+}
+
+li {
+    margin: 0px 16px 7px 0px;
+}
+
+ul {
+    margin: 3px 16px 3px 0px;
+    padding: 0px;
+}
+
+.navlink {
+    color: #01376B;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.capylight {
+    font-size: 12px;
+    color: #8F8F8F;
+    font-weight: 600;
+}
