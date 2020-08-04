@@ -1,0 +1,181 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 132px;
+    border-bottom: 1px solid #dbdbdb;
+    width: 1177px;
+    height: 54px;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.imagelogo {
+   width: 22px;
+   height: 22px;
+}
+
+.textlogo {
+    width: 103px;
+    height: 29px;
+    margin-left: 8px;
+}
+
+.searchbox {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+}
+
+.navrightcontainer img {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+}
+
+/* section */
+
+.mainContainer {
+    background-color: salmon;
+    width: 935px;
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #dbdbdb;
+    margin: 30px auto;
+    padding-top: 30px;
+}
+
+.feedTop {
+    background-color: seagreen;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.feedProfile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+
+.feedId {
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 14px;
+}
+
+
+.dots {
+    width: 24px;
+    height: 24px;
+    margin-left: 450px;
+    
+}
+
+.feedImage img {
+    width: 600px;
+    height: 750px;
+}
+
+.feedImage {
+    margin-bottom: 5px;
+}
+.feedIcon img {
+    width: 24px;
+    height: 24px;
+}
+
+.heart {
+    margin-left: 16px;
+}
+
+.comment {
+    margin-left: 16px;
+}
+
+.share {
+    margin-left: 16px;
+}
+
+.bookmark {
+    margin-left: 430px;
+}
+
+.feedBox {
+    background-color: slateblue;
+    width: 600px;
+    height: 750px;
+}
+
+.feedIcon {
+    margin-bottom: 5px;
+}
+
+.infoLikes {
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+.infoId {
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 16px;
+   
+}
+
+.infoComment {
+    font-size: 14px;
+    margin-left: 5px;
+
+}
+
+.feedInfoComment {
+    margin-top: 6px;
+}
+
+.mainRight {
+    background-color: red;
+    width: 285px;
+    height: 600px;
+    position: fixed;
+    margin-left: 650px;
+}
+
+.myProfile {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.myId {
+    font-size: 14px;
+    font-weight: 400px;
+    display: flex;
+    
+
+}
+
+.rightProfile {
+    width: 288px;
+    height: 56px;
+}
+
+.recommandForYou {
+    font-size: 14px;
+    font-weight: 600px;
+    color: rgb(142, 142, 142);
+}
+
+
+

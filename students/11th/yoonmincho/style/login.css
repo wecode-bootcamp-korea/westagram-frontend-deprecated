@@ -1,0 +1,91 @@
+body {
+    background-color: #fafafa;
+}
+
+
+.container {    
+    width: 348px;
+    height: 358px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #dbdbdb;
+    background-color: rgba(var(--d87,255,255,255),1);
+}
+
+.loginbox{
+    width: 348px;
+    height: 263px;
+}
+
+.logo {
+    margin: 22px 86.5px 36px 86.5px;
+    width: 175px;
+    height: 51px;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    padding: 9px 0 7px 8px;
+    background-color: #fafafa;
+    width: 266px;
+    height: 36px;
+    border:1px solid lightgray;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.input1{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    width: 268px;
+    height: 38px;
+    margin: 0 40px 6px 40px;
+}
+
+.input2{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    width: 268px;
+    height: 38px;
+    margin: 0 40px 6px 40px;
+}
+
+.loginbutton{
+    width: 276px;
+    height: 30px;
+    padding: 5px 9px 5px 9px;
+    margin: 8px 40px 8px 40px;
+    border: 1px none;
+    border-radius: 4px;
+    background-color: rgba(0,149,246,.3);
+    color: white;
+    font-size: 14px;
+}
+
+.ifyouforgotcontainer{
+    text-align: center;
+    line-height: 14px;
+    margin-top: 81px;
+}
+.ifyouforgot{
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+    width: 348px;
+    height: 14px;
+}
+
+
+
+   
+
