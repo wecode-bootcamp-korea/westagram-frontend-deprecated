@@ -8,7 +8,6 @@ btnOnOffComment.addEventListener('keyup', function() {
 });
 
 const commentBtnClick = document.getElementsByClassName('add-comment')[0];
-
 commentBtnClick.addEventListener('click', function (){
   const commentValue = document.getElementsByClassName('write-comment')[0];
   const commentBox = document.getElementsByClassName('comment-box')[0];

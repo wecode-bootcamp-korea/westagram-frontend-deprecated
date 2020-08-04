@@ -7,3 +7,4 @@ btnOnOffPw.addEventListener('keyup', function() {
 
   btn.disabled = id.length && pw.length > 0 ? false : true;
 });
+g
