@@ -14,7 +14,7 @@ main {
   width: 350px;
   height: 380px;
   padding: 0 0 10px 0;
-  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border: 1px solid #DBDBDB;
   background-color: #ffffff;
 }
 
@@ -63,7 +63,6 @@ main {
   background-color: #0095F6; 
 }
 
-/* 로그인폼 - 비밀번호 찾기 링크  */
 .lostPassword {
   position: absolute;
   bottom: 0px;

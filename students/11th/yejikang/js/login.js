@@ -4,15 +4,11 @@ const userId=document.querySelector('.userId');
 const userPw = document.querySelector('.userPw');
 
 const init = (function () {
-    loginButton.disabled = true;
+  loginButton.disabled = true;
 })();
 
 function setEnabledButton() {
-     loginButton.disabled =  (userId.value && userPw.value)? false : true ; 
+	loginButton.disabled =  (userId.value && userPw.value)? false : true ; 
 }
 
 loginForm.addEventListener('keyup',setEnabledButton);
-
-loginButton.addEventListener('click', function(){
-     console.log(userId.value,userPw.value);   
-});

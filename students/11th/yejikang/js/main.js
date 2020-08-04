@@ -6,7 +6,7 @@ const inputComment = document.querySelector('.inputComment');
 const userId = "yejiii_95";  
 
 function addComment() {
-    if(inputComment.value.trim('').length===0) return;
+    if(!inputComment.value.trim('')) return;
 
     const commentBox = document.createElement('div');
     const userIdSpan = document.createElement('span');
@@ -16,7 +16,7 @@ function addComment() {
     userIdSpan.classList.add('infoBold','commentId');
     heartBtn.classList.add('commentHeartBtn', 'heart');
 
-    let id = document.createTextNode(userId);
+    const id = document.createTextNode(userId);
     userIdSpan.appendChild(id);
     commentBox.appendChild(userIdSpan);
 
@@ -29,8 +29,8 @@ function addComment() {
 
 commentBtn.addEventListener('click',addComment);
 
-inputComment.addEventListener('keyup',function(e){
-    if (e.keyCode == 13) {
+inputComment.addEventListener('keyup',function(e) {
+    if (e.keyCode === 13) {
         addComment();
     }
 });
