@@ -1,11 +1,138 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300:400,600');
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global --글로벌 변수 */
+
 :root {
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #fafafa;
-  --color-light-grey: #bdbdbd;
+  --color-grey: #bdbdbd;
   --color-blue: #419bf0;
   --color-light-blue: #bbdefb;
   --color-red: #ee4956;
@@ -26,6 +153,8 @@
   --size-border-radius: 4px;
 }
 
+/* Universal tags --공통적용사항 */
+
 * {
   box-sizing: border-box;
 }
@@ -42,8 +171,8 @@ body {
 }
 
 input {
-  background-color: var(--color-light-white);
-  border: 1px solid var(--color-light-grey);
+  background-color: var(--color-dark-white);
+  border: 1px solid var(--color-grey);
   border-radius: var(--size-border-radius);
   text-indent: 8px;
   padding: 7px;
@@ -52,7 +181,7 @@ input {
 button {
   background-color: var(--color-light-blue);
   color: var(--color-white);
-  border: 1px solid var(--color-light-grey);
+  border: 1px solid var(--color-grey);
   border-radius: var(--size-border-radius);
   padding: 7px;
   font-weight: var(--weight-semi-bold);
@@ -60,5 +189,5 @@ button {
 
 a {
   text-decoration: none;
-  color: var(--color-light-grey);
+  color: var(--color-grey);
 }

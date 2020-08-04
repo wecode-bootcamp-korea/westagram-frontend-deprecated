@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>main-page</title>
+    <title>instagram</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="style/reset.css" rel="stylesheet" type="text/css" />
     <link href="style/common.css" rel="stylesheet" type="text/css" />
     <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
@@ -21,9 +21,9 @@
     <header>
       <div class="header__container">
         <ul class="logo">
-          <li><i class="fab fa-instagram"></i></li>
-          <li><span>|</span></li>
-          <li><img alt="logo" src="img/logo_text.png" /></li>
+          <li>
+            <img src="./img/logo.png" />
+          </li>
         </ul>
         <div class="search">
           <input type="text" placeholder="검색" class="search__bar" />
@@ -35,21 +35,32 @@
           <div class="icons__list">
             <li>
               <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+                src="https://www.pinclipart.com/picdir/big/381-3811668_png-file-svg-instagram-home-icon-vector-clipart.png"
               />
-              <div class="red-dot"></div>
+            </li>
+            <li>
+              <button class="icons__list selected">
+                <img
+                  src="https://static.thenounproject.com/png/3084968-200.png"
+                />
+                <span class="icons__count">7</span>
+              </button>
             </li>
             <li>
               <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519779-90_Compass-512.png"
               />
-              <div class="red-dot"></div>
             </li>
             <li>
+              <img src="./img/heart.png" />
+            </li>
+            <li class="icon__list--account">
               <img
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+                alt="author__picture"
+                width="30px"
+                height="30px"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/101538364_247245499886357_4704375428469489664_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=6StllSwEDLUAX9VeDb0&oh=22e16107791e80cfdc5ff5dde09cfe29&oe=5F504E73"
               />
-              <div class="red-dot"></div>
             </li>
           </div>
         </ul>
@@ -61,14 +72,14 @@
           <div class="nav">
             <div class="account">
               <img
-                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=hP-c2Uo4n5QAX9NZzuo&oh=0c4321214092718d6a51518045467c34&oe=5F479920"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/101538364_247245499886357_4704375428469489664_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=6StllSwEDLUAX9VeDb0&oh=22e16107791e80cfdc5ff5dde09cfe29&oe=5F504E73"
               />
               <div class="account__info">
-                <span class="account__name">wecode_bootcamp</span>
-                <span class="account__location">WeCode - 위코드</span>
+                <span class="account__id">daseulsongme</span>
+                <span class="account__location">Meißen, Germany</span>
               </div>
             </div>
-            <div class="more-btn">
+            <div class="moreBtn">
               <img
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
               />
@@ -77,7 +88,7 @@
           <div class="mainImg-container">
             <div class="mainImg-container__img">
               <img
-                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/69617865_398158437764879_2405985854169009179_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=UE2G6VBEI5YAX9yGOSV&oh=e19bd8dc8e490ce202d41a6a935f4934&oe=5F492FE9"
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/24126641_312049249282777_4540700581370527744_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=OjJPOV-S6MoAX--XUik&oh=48edd76f44a21e9e577db76ef992b756&oe=5F50EB73"
                 class="mainImage"
               />
             </div>
@@ -104,63 +115,42 @@
               </ul>
               <div class="like">
                 <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/95487199_185290135875370_3869726896170205184_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=0zdLTTMUsWwAX8xRFxo&oh=4124928b822a621b5562489cefdba2ba&oe=5F4A1EB5"
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/102638893_2477296745828548_255469383460355571_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=2AyKfCfhd3YAX_CgjeM&oh=d5babe7e21f3733de18a8be086b325ab&oe=5F523ECE"
                 />
-                <span>wecode__founder님 외 4명이 좋아합니다</span>
+                <span>caomei101님 외 7명이 좋아합니다</span>
               </div>
               <ul class="metadata">
-                <li><span>wecode_bootcamp</span></li>
+                <li><span class="metadata__userName">daseulsongme</span></li>
                 <li>
                   <p>
-                    "위코드는 개발자 커뮤니티입니다."
+                    "Liebeskummer...💔 "
                   </p>
                 </li>
-                <li><span class="see-more">더 보기</span></li>
+                <li><span class="seeMore">더 보기</span></li>
               </ul>
             </div>
-            <div class="info__comment">
-              <ul class="comment__content">
-                <div class="content__left">
-                  <li>
-                    <span class="content__id">daseulsong</span>
-                  </li>
-                  <li>
-                    <p class="content__text">
-                      리액트⚛️ 제대로 배우고 싶어요..😌
-                    </p>
-                  </li>
+            <!-- comment part -->
+            <div class="comment__container">
+              <div class="infoComment">
+                <div class="contentLeft">
+                  <span class="contentId">natalie.zikmundova</span>
+                  <p class="contentText">
+                    Ich werde auf dich als reifere und verbesserte Person
+                    warten.
+                  </p>
                 </div>
-                <li>
-                  <span class="content__heart">
-                    <i class="far fa-heart"></i>
-                  </span>
-                </li>
-              </ul>
-              <ul class="comment__content">
-                <div class="content__left">
-                  <li>
-                    <span class="content__id">angela_merkel</span>
-                  </li>
-                  <li>
-                    <p class="content__text">
-                      10월은 언제 오나요.. 💔
-                    </p>
-                  </li>
-                </div>
-                <li>
-                  <span class="content__heart">
-                    <i class="far fa-heart"></i>
-                  </span>
-                </li>
-              </ul>
+                <span class="contentHeart">
+                  <i class="far fa-heart"></i>
+                </span>
+              </div>
             </div>
-            <span class="upload-time">54분 전</span>
+            <span class="uploadTime">54분 전</span>
             <section class="comment">
               <textarea
                 placeholder="댓글 달기..."
                 class="comment-box"
               ></textarea>
-              <a href="#" class="post-btn">게시</a>
+              <a href="#" class="postBtn">게시</a>
             </section>
           </div>
         </div>
@@ -169,11 +159,11 @@
             <li>
               <div class="author">
                 <img
-                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=hP-c2Uo4n5QAX9NZzuo&oh=0c4321214092718d6a51518045467c34&oe=5F479920"
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/101538364_247245499886357_4704375428469489664_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=6StllSwEDLUAX9VeDb0&oh=22e16107791e80cfdc5ff5dde09cfe29&oe=5F504E73"
                 />
                 <div class="account">
-                  <span class="account__name">wecode_bootcamp</span>
-                  <span class="account__location">WeCode | 위코드</span>
+                  <span class="account__id">daseulsongme</span>
+                  <span class="account__name">Daseul</span>
                 </div>
               </div>
             </li>
@@ -181,7 +171,7 @@
               <div class="story">
                 <div class="story__title">
                   <span class="story__title--grey">스토리</span>
-                  <span class="see-all">모두 보기</span>
+                  <span class="seeAll">모두 보기</span>
                 </div>
                 <ul class="account__list">
                   <li class="account">
@@ -189,7 +179,7 @@
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/116471741_2451918528436071_3403925877115793886_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=ChLig_-k9rwAX9-3Jng&oh=ad469588fee992ce0159af40fb60691a&oe=5F4A8827"
                     />
                     <div class="account__info">
-                      <span class="account__name">fishror23</span>
+                      <span class="account__id">fishror23</span>
                       <span class="account__time">2시간 전</span>
                     </div>
                   </li>
@@ -198,7 +188,7 @@
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/43913375_249044715959605_1668311000236949504_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=pl_eGaftj4kAX-ad4us&oh=cca0f205830e88371f237b908294341e&oe=5F4C7626"
                     />
                     <div class="account__info">
-                      <span class="account__name">junghyunjoo</span>
+                      <span class="account__id">junghyunjoo</span>
                       <span class="account__time">1시간 전</span>
                     </div>
                   </li>
@@ -207,7 +197,7 @@
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/80319706_631139287713292_159190102378020864_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=m0iyU1DREJQAX9TYmri&oh=d52ec427e622493193e52ca79d9c4bac&oe=5F4C926D"
                     />
                     <div class="account__info">
-                      <span class="account__name">khut0814</span>
+                      <span class="account__id">khut0814</span>
                       <span class="account__time">13분 전</span>
                     </div>
                   </li>
@@ -218,7 +208,7 @@
               <div class="recommend">
                 <div class="recommend__title">
                   <span class="recommend__title--grey">회원님을 위한 추천</span>
-                  <span class="see-all">모두 보기</span>
+                  <span class="seeAll">모두 보기</span>
                 </div>
                 <ul class="account__list">
                   <li class="account">
@@ -227,20 +217,20 @@
                     />
 
                     <div class="account__info">
-                      <span class="account__name">tjskdiw32</span>
+                      <span class="account__id">tjskdiw32</span>
                       <span class="account__follow">회원님을 팔로우합니다</span>
                     </div>
-                    <span class="follow-btn">팔로우</span>
+                    <span class="followBtn">팔로우</span>
                   </li>
                   <li class="account">
                     <img
                       src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/73407386_436742847280516_7688568694854647808_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=IZYaDgxMbOEAX-2BfiZ&oh=658e71a12ed01bf35d46a16fa2e2b217&oe=5F4C592C"
                     />
                     <div class="account__info">
-                      <span class="account__name">trueman89</span>
+                      <span class="account__id">trueman89</span>
                       <span class="account__follow">회원님을 팔로우합니다</span>
                     </div>
-                    <span class="follow-btn">팔로우</span>
+                    <span class="followBtn">팔로우</span>
                   </li>
                   <li class="account">
                     <img
@@ -248,10 +238,10 @@
                     />
 
                     <div class="account__info">
-                      <span class="account__name">smileday.wj</span>
+                      <span class="account__id">smileday.wj</span>
                       <span class="account__follow">회원님을 팔로우합니다</span>
                     </div>
-                    <span class="follow-btn">팔로우</span>
+                    <span class="followBtn">팔로우</span>
                   </li>
                 </ul>
               </div>
@@ -259,9 +249,9 @@
             <li>
               <div class="description">
                 <div class="tag1">
-                  <a href="#">instagram 정보</a>
+                  <a href="#">소개</a>
                   <span>&middot;</span>
-                  <a href="#">지원</a>
+                  <a href="#">도움말</a>
                   <span>&middot;</span>
                   <a href="#">홍보 센터</a>
                   <span>&middot;</span>
@@ -274,15 +264,15 @@
                   <span>&middot;</span>
                   <a href="#">약관</a>
                   <span>&middot;</span>
-                  <a href="#">디렉터리</a>
+                  <a href="#">위치</a>
                   <span>&middot;</span>
-                  <a href="#">프로필</a>
+                  <a href="#">인기 계정</a>
                   <span>&middot;</span>
                   <a href="#">해시태그</a>
                   <span>&middot;</span>
                   <a href="#">언어</a>
                 </div>
-                <div class="rights">© 2020 INSTAGRAM</div>
+                <div class="rights">© 2020 INSTAGRAM FROM FACEBOOK</div>
               </div>
             </li>
           </ul>

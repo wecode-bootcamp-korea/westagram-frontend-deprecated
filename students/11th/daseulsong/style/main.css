@@ -4,19 +4,21 @@ body {
 
 /* header section */
 
+header {
+  width: 100%;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
   width: 945px;
   margin: 0 auto;
-  margin-top: 24px;
-  margin-bottom: 15px;
+  margin-top: 17px;
 }
 
 .logo {
   display: flex;
-  margin-left: 30px;
-  margin-top: 8px;
+  margin-left: 24px;
   font-size: var(--font-medium);
 }
 
@@ -25,8 +27,8 @@ body {
 }
 
 .logo img {
-  width: 83px;
-  height: 27px;
+  width: 104px;
+  height: 50px;
 }
 
 .search {
@@ -35,15 +37,15 @@ body {
 
 .search__bar {
   text-align: center;
-  padding: 11px 39px;
-  color: var(--color-light-grey);
+  padding: 8px 42px;
+  margin-top: 8px;
 }
 
 .search__glass {
   position: absolute;
-  top: 10px;
+  top: 16px;
   right: 129px;
-  color: var(--color-light-grey);
+  color: var(--color-grey);
 }
 
 ul .icons {
@@ -52,6 +54,7 @@ ul .icons {
 
 header .icons {
   display: flex;
+  margin-right: 85px;
 }
 
 header .icons .icons__list {
@@ -68,20 +71,36 @@ header .icons li img {
   height: 24px;
 }
 
-.icons .red-dot {
-  width: 3px;
-  height: 3px;
-  background-color: red;
+.icon__list--account img {
   border-radius: 50%;
-  margin-top: 2px;
-  margin-left: 10px;
+}
+
+.icons__list .selected {
+  border-style: none;
+  background-color: var(--color-white);
+  position: relative;
+  bottom: 14px;
+}
+
+.icons__count {
+  font-weight: lighter;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 24px;
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  right: -4px;
 }
 
 /* main section */
 
 main {
   background-color: var(--color-dark-white);
-  border-top: 1px solid var(--color-light-grey);
+  border-top: 1px solid var(--color-grey);
   width: 100%;
   height: 100%;
 }
@@ -103,7 +122,7 @@ main {
   margin-top: 46px;
   margin-right: 38px;
   background-color: var(--color-white);
-  border: 1px solid var(--color-light-grey);
+  border: 1px solid var(--color-grey);
 }
 
 .nav {
@@ -137,13 +156,20 @@ main {
   margin-bottom: 11px;
 }
 
-.info__comment {
+.comment__container {
   overflow-y: scroll;
   height: 50px;
+  margin-left: 15px;
 }
 
-.info__comment::-webkit-scrollbar {
+.comment__container::-webkit-scrollbar {
   display: none;
+}
+
+.infoComment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .icons,
@@ -187,24 +213,34 @@ main {
   margin-bottom: 5px;
 }
 
+.metadata__userName {
+  font-weight: var(--weight-semi-bold);
+}
+
 .metadata li {
   margin-right: 8px;
+}
+
+.metadata p {
+  /* display: inline-block; */
 }
 
 .divide-line {
   margin-bottom: 8px;
 }
 
-.see-more,
-.upload-time {
-  color: var(--color-light-grey);
+.seeMore,
+.uploadTime {
+  color: var(--color-grey);
 }
+
+/* comment part */
 
 .comment {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  border-top: 1px solid var(--color-light-grey);
+  border-top: 1px solid var(--color-grey);
   vertical-align: top;
   vertical-align: bottom;
 }
@@ -217,23 +253,23 @@ main {
   resize: none;
 }
 
-.post-btn {
+.postBtn {
   color: var(--color-light-blue);
   padding: 15px 15px 0px 0px;
 }
 
 .comment__content,
-.upload-time {
+.uploadTime {
   margin-left: 15px;
 }
 
-.upload-time {
+.uploadTime {
   font-weight: lighter;
   font-size: var(--font-micro);
 }
 
 .comment__content,
-.content__left {
+.contentLeft {
   display: flex;
 }
 
@@ -242,11 +278,12 @@ main {
   margin-bottom: 5px;
 }
 
-.content__id {
+.contentId {
   margin-right: 8px;
+  font-weight: var(--weight-semi-bold);
 }
 
-.content__heart {
+.contentHeart {
   font-size: var(--font-small);
   margin-right: 13px;
 }
@@ -265,7 +302,7 @@ main {
 
 .main__right .story,
 .recommend {
-  border: 1px solid var(--color-light-grey);
+  border: 1px solid var(--color-grey);
 }
 
 .author {
@@ -289,14 +326,19 @@ main {
   border-radius: 50%;
 }
 
-.account .account__name {
+.account .account__id {
   font-weight: var(--weight-bold);
   margin-bottom: 7px;
 }
 
+.account .account__name {
+  font-weight: lighter;
+  color: var(--color-grey);
+}
+
 .account .account__location {
-  color: var(--color-light-grey);
-  font-weight: var(--weight-semi-bold);
+  font-weight: lighter;
+  font-size: var(--font-micro);
 }
 
 .account .account__info {
@@ -308,11 +350,13 @@ main {
 
 .account__follow,
 .account__time {
-  color: var(--color-light-grey);
+  font-size: var(--font-micro);
+  color: var(--color-grey);
 }
 
 .story__title,
 .recommend__title {
+  font-size: var(--font-small);
   display: flex;
   justify-content: space-between;
   margin: 12px;
@@ -320,14 +364,16 @@ main {
 
 .story__title--grey,
 .recommend__title--grey {
-  color: var(--color-light-grey);
+  color: var(--color-grey);
+  margin-top: -1px;
 }
 
 .recommend__title--grey {
   font-weight: var(--weight-semi-bold);
 }
 
-.see-all {
+.seeAll {
+  font-size: var(--font-micro);
   font-weight: var(--weight-semi-bold);
 }
 
@@ -339,17 +385,27 @@ main {
   margin-right: 12px;
 }
 
-.follow-btn {
+.followBtn {
   color: var(--color-blue);
   margin-top: 8px;
 }
 
 .rights {
+  font-size: smaller;
   margin-top: 20px;
-  color: var(--color-light-grey);
+  color: var(--color-grey);
 }
 
 .description {
   font-size: var(--font-small);
   font-weight: lighter;
+}
+
+.tag1,
+.tag2 {
+  font-size: smaller;
+}
+
+.tag1 {
+  margin-bottom: 8px;
 }
