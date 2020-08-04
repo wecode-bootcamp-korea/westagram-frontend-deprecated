@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0; 
+    font-family: -apple-system, system-ui;
+}
+a { color: #000; }
+body{
+    padding-top: 54px;
+}
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 54px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 935px;
+    height: 54px;
+    padding: 0 20px;
+}
+img.insta_logo{
+    width: 103px;
+    height: 29px;
+     
+}
+.serching{
+    border: 1px solid gray;
+}
+
+.navIcon{
+    display: flex;
+    justify-content: space-between;
+    width: 198px;
+    height: 22px;
+}
+
+.nav_logo{
+    fill:#262626;
+    height: 22px;
+    width: 22px;
+}
+.entire{
+    background-color: cornflowerblue;
+    height: 100%;
+}
+.mainCenter{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.feeds{
+    background-color: burlywood;
+    max-width: 614px;
+    width: 100%;
+    margin-right: 28px;
+}
+.story{
+    height: 84px;
+    border: 1px solid black;
+    padding:16px 0;
+    margin-bottom: 24px;
+}
+.head{
+    height: 60px;
+    padding: 16px;
+    border: 1px solid black;
+    display: flex;
+}
+.head_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 536px;
+    margin-left: 14px;
+}
+img.yoursImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.artcl_pic{
+    border: 1px solid black;
+    max-width: 614px;
+    width: 100%;
+    height: 614px;
+}
+img.picOffeed{
+    width: 614px;
+    height: 614px;
+}
+
+.artcl_commu{
+    height: 243px;
+    border: 1px solid black;
+}
+.commu_icon{
+    height: 40px;
+    padding: 0 16px 0 16px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liking{
+    padding: 8px;
+}
+
+.commu_like{
+    height: 20px;
+    padding: 0 16px 0 16px;
+    border: 1px solid black;
+}
+
+.main_right{
+    position: sticky;
+    top: 54px;
+    background-color: coral;
+    height: 100vh;
+    max-width: 293px;
+    width: 100%;
+
+    
+}
+.myInfo{
+    display: flex;
+    align-content: center;
+    height: 56px;
+    width: 293px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+.myId{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    color: rgba(var(--i1d,38,38,38),1);
+    font-weight: 600;
+    font-size: 14px;
+}
+img.pic_me{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.rec_text{
+    height: 21px;
+    padding: 4px 16px;
+    margin-top: 12px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.rec_text_forme{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: -3px 0 -4px;
+    color: rgba(var(--f52,142,142,142),1); 
+}
+.rec_text_all{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    margin: -2px 0 -3px;
+}
+.rec_item{
+    width: 289px;
+    padding: 8px 16px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.rec_detail{
+    max-width: 325px;
+    width: 100%;
+    height: 291px;
+    padding: 8px 0 8px 0;
+    border: 1px solid black;
+}
+.userID{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+.numberKnow{
+    color: rgba(var(--f52,142,142,142),1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+.follow{
+    display: flex;
+    align-items: center;
+}
+.follow a{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(var(--d69,0,149,246),1);
+}
+img.small_pic{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.resource_info{
+    height: 36px;
+    margin-bottom: 3px;
+    border: 1px solid black;
+}
+.resource_info_det a{
+    color: rgba(var(--edc,199,199,199),1);
+    font-size: 11px;
+    font-weight: 400;
+}
+.facebook{
+    color: rgba(var(--edc,199,199,199),1);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+}
