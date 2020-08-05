@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    background-color: #fff;
+    width: 350px;
+    height: 380px;
+    margin-bottom: 10px;
+}
+
+.namelogo {
+    width: 175px;
+    height: 51px;
+    background-size: 440px 411px;
+    background-position: 0 -129px;
+    margin: 22px 86.500px 12px 86.500px;
+}
+
+.intput-information{
+    width: 268px;
+    height: 200px;
+    
+    }
+/* .input-id, .input-pw {
+    
+    
+    
+    width: 100%;
+    height: 38px;
+    margin-bottom: 6px;
+    
+   
+} */
+/* .input-pw {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background: #fafafa;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 6px;
+} */
+input {
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    border-radius: 3px;
+    padding: 9px 0 7px 8px;
+    width: 100%;
+    height: 38px;
+    margin-bottom: 6px;
+    outline-color: rgba(var(--ca6,219,219,219),1);
+}
+
+button {
+    color: white;
+    /* border: 1px solid  rgba(0,149,246,.3); */
+    background-color: rgba(0,149,246,.3);
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 1;
+    width: 268px;
+    height: 30px;
+    padding: 5px 9px 5px 9px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+.forget {
+    margin-top: 30px;
+}
+
+.forget-pw a {
+    text-decoration: none;  
+    color: #00376b;  
+    font-size: 12px;
+    width: 100%;  
+}
+
+a:visited {
+    color: #00376b
+};
