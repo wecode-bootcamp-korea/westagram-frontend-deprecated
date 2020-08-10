@@ -37,7 +37,7 @@ body{
     border-radius: 3px;
 }
 
-.login-id span, .login-pw span{
+.login-id-span, .login-pw-span{
     font-size: 13px;
     color: rgb(119, 119, 119);
     padding: 9px 0 7px 8px;
@@ -47,12 +47,22 @@ body{
     transition: all 50ms linear;
 }
 
-.login-id input, .login-pw input{
+.login-span-change{
+    height: 50%;
+    font-size: 6px;
+    padding: 2px 0 0 8px;
+}
+
+.login-id-input, .login-pw-input{
     height: 100%;
     border: none;
     padding: 9px 0 7px 8px;
     background: rgb(250, 250, 250);
     position: absolute;
+}
+
+.login-input-change{
+    padding: 14px 0 0 8px;
 }
 
 .login-id input:focus, .login-pw input:focus{

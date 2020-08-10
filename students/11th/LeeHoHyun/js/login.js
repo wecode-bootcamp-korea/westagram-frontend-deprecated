@@ -13,17 +13,15 @@ btn_login.disabled = 'disabled';
 
 // login 버튼 활성화, 비활성화
 function btnLoginActive(id, pw, btn){
-    btn.style.background = (id.value.length > 0 && pw.value.length > 5) ? btn.style.background = 'rgb(0, 149, 246)' : btn.style.background = 'rgb(178, 223, 252)';
-    btn.disabled = (id.value.length > 0 && pw.value.length > 5) ? btn.disabled = '' : btn.disabled = 'disabled';
+    const isBtnActive = id.value.length > 0 && pw.value.length > 5;
+    btn.style.background = isBtnActive ? 'rgb(0, 149, 246)' : 'rgb(178, 223, 252)';
+    btn.disabled = isBtnActive ? '' : 'disabled';
 }
 
 // input에 값 넣을 때 text 위로 이동
 function keyDown(span, input){
-    span.style.heigth = '50%';
-    span.style.fontSize = '6px';
-    span.style.padding = '2px 0 0 8px';
-    input.style.fontSize = '12px';
-    input.style.padding = '14px 0 0 8px';
+    span.classList.add('login-span-change');
+    input.classList.add('login-input-change');
 }
 
 // input 태그 focus시 테두리 색 변경
@@ -33,10 +31,8 @@ function borderColorChange(div, color){
 
 // input 안에 text가 올라갔을 경우 원위치
 function returnDefault(span, input){
-    span.style.height = '100%';
-    span.style.fontSize = '13px';
-    span.style.padding = '9px 0 7px 8px';
-    input.style.padding = '9px 0 7px 8px';
+    span.classList.remove('login-span-change');
+    input.classList.remove('login-input-change');
 }
 
 login_id_input.addEventListener('focus', () => {
@@ -56,7 +52,6 @@ login_id_input.addEventListener('keyup', () => {
         btnLoginActive(login_id_input, login_pw_input, btn_login);
     }
 });
-
 
 login_id_input.addEventListener('blur', () => {
     borderColorChange(login_id, 'rgb(219, 219, 219)')
