@@ -18,7 +18,7 @@ function btnLoginActive(id, pw, btn){
     btn.disabled = isBtnActive ? '' : 'disabled';
 }
 
-// input에 값 넣을 때 text 위로 이동
+// input에 값 넣을 때 placeholder 위로 이동하는 효과
 function keyDown(span, input){
     span.classList.add('login-span-change');
     input.classList.add('login-input-change');
@@ -29,7 +29,7 @@ function borderColorChange(div, color){
     div.style.borderColor = color;
 }
 
-// input 안에 text가 올라갔을 경우 원위치
+// input 안에 placeholder가 올라갔을 경우 원위치되는 효과
 function returnDefault(span, input){
     span.classList.remove('login-span-change');
     input.classList.remove('login-input-change');
