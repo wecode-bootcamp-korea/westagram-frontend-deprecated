@@ -35,9 +35,12 @@ header {
   position: relative;
 }
 
-.search__bar {
+.search__bar::-webkit-input-placeholder {
   text-align: center;
-  padding: 8px 42px;
+}
+
+.search__bar {
+  padding: 7px 27px;
   margin-top: 8px;
 }
 
