@@ -142,7 +142,7 @@ margin: 10px 40px 18px;
     background-color: rgba(0, 149 ,246 ,.3);
 }
 
-.btn-active {
+.btnActive {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +157,7 @@ margin: 10px 40px 18px;
     background-color: rgb(0, 149, 246);
 }
 
-.btn-off {
+.btnOff {
     display: flex;
     justify-content: center;
     align-items: center;
