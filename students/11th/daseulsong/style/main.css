@@ -201,11 +201,11 @@ main {
   padding: 3px;
 }
 
-.like {
+.info__like {
   margin-bottom: 8px;
 }
 
-.like img {
+.info__like img {
   width: 18px;
   height: 18px;
   border-radius: 50%;
