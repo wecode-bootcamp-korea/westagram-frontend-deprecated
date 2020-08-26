@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  margin-bottom: 2px;
+  position: relative;
+  word-break: break-all;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul li a {
+  margin: 0 5px;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

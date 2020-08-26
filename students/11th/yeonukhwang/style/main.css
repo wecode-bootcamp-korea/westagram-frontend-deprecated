@@ -1,0 +1,471 @@
+/* Global */
+img {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  max-width: 1020px;
+  height: 100%;
+  margin: 20px auto;
+  background-color: var(--background-color);
+}
+
+/* navbar */
+.mainHeader {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 54px;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+header nav {
+  width: 100%;
+  max-width: 935px;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav div {
+  height: 100%;
+}
+
+nav .logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+nav .logoContainer .hline {
+  width: 2px;
+  margin: 0 10px;
+  background-color: var(--black-color);
+}
+
+nav .search {
+  width: 200px;
+}
+
+nav .search input {
+  width: 100%;
+  height: 100%;
+}
+
+nav .search input::placeholder {
+  text-align: center;
+  font-size: 14px;
+  color: var(--light-gray-color);
+}
+
+header .icon-lists {
+  display: flex;
+  height: 100%;
+}
+
+header .icon {
+  height: 100%;
+  margin-right: 15px;
+}
+
+header .icon img {
+  border-radius: 50%;
+}
+
+header .icon:last-child {
+  margin-right: 0px;
+}
+
+/* main */
+main {
+  position: relative;
+  display: flex;
+  max-width: 935px;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 84px;
+}
+
+/* feed */
+.feedSection {
+  height: 100%;
+  width: 613px;
+}
+
+.feed {
+  max-width: 614px;
+  margin-bottom: 60px;
+  margin-right: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  background-color: var(--white-color);
+}
+
+/* feed-header */
+.feed .feedHeader {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* story, recommend에도 적용하는 속성*/
+.feed .feedHeader .avatar {
+  height: 100%;
+  padding: 16px;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: var(--font-bold);
+  color: var(--black-color);
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+/* story, recommend에도 적용하는 속성 끝*/
+
+.feed .feedHeader .friendsname {
+  width: 100%;
+  padding: 16px;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed .feedHeader .friendsname .names {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed .feedHeader .friendsname .names span {
+  padding: 2px;
+}
+
+.names .location {
+  font-size: 12px;
+}
+
+.feed .feedHeader button {
+  border: none;
+  background-color: var(--white-color);
+}
+
+.feed .feedHeader button img {
+  height: 16px;
+  width: 16px;
+}
+
+/* feed-Main */
+.feedMain {
+  width: 100%;
+}
+
+.feedMain img {
+  width: 100%;
+}
+
+/* feedBottom */
+/* feedBottom-Icon */
+.bottomIconWrapper {
+  margin-top: 4px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomIconWrapper div {
+  height: 40px;
+}
+
+.bottomIconWrapper .leftIcon {
+  display: flex;
+  align-items: center;
+}
+
+.bottomIconWrapper img {
+  width: 24px;
+  height: 24px;
+  margin: 8px;
+}
+
+.bottomIconWrapper img:first-child {
+  margin-left: 0px;
+}
+
+/* feedBottom-bottomLike */
+.bottomLike {
+  width: 100%;
+  padding: 0 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomLike img {
+  width: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.bottomLike a {
+  font-weight: var(--font-bold);
+  color: var(--black-color);
+}
+/* feedBottomComment  */
+.bottomComment {
+  padding: 0 16px;
+}
+
+.bottomComment a {
+  font-weight: var(--font-bold);
+  color: var(--black-color);
+}
+
+.description {
+  height: 18px;
+}
+
+.description span:last-child {
+  color: var(--light-gray-color);
+}
+
+.description button {
+  margin-left: 3px;
+  font-size: 14px;
+  color: var(--light-gray-color);
+  background-color: var(--white-color);
+}
+
+.bottomComment ul {
+  margin-top: 5px;
+}
+
+.commentList li {
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeToLastComment {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 10px;
+  color: var(--light-gray-color);
+}
+
+.commentList li img {
+  width: 12px;
+  height: 12px;
+  margin-right: 14px;
+}
+
+.commentListRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentListRight .commentLikeBtn {
+  margin-right: 3px;
+}
+
+.commentListRight .commentDeleteBtn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+/* writeComment */
+.writeComment {
+  padding: 0 16px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.writeComment form {
+  height: 18px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+}
+
+.writeComment form textarea,
+.writeComment form button {
+  height: 100%;
+}
+
+.writeComment form textarea {
+  width: 90%;
+  padding: 0;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  background: none;
+}
+
+.writeComment form button {
+  width: 10%;
+  min-width: 24px;
+  margin-right: 14px;
+  color: var(--blue-color);
+  font-size: 14px;
+  text-align: right;
+  white-space: nowrap;
+  opacity: 0.3;
+  background: none;
+}
+
+/* rightSection */
+
+.rightSectionWrapper {
+  position: absolute;
+  right: 270px;
+}
+
+/* main{
+position: relative;
+} 상단에 메인에 적용시킨 사항이지만, relative, absolute, fixed를 같이 사용해
+rightSection을 고정하는 로직을 알아보기 위해 주석으로 남겨 둠 */
+
+.rightSection {
+  position: fixed;
+  width: 268px;
+}
+
+/* right-header */
+
+.rightSection .description {
+  font-size: 12px;
+  color: var(--light-gray-color);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.rightSection header {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.bigAvatar img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.myInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.myInfo span {
+  padding: 2px 0;
+}
+
+/* story */
+.storyContainer {
+  margin-bottom: 16px;
+  font-weight: var(--font-bold);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-container);
+  background-color: var(--white-color);
+}
+
+.storyheader {
+  margin: 8px 0;
+  padding: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storyname {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light-gray-color);
+}
+
+.seeAll {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.storyList {
+  padding: 8px;
+}
+
+.storyList .story {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.storyList .story img {
+  margin-right: 10px;
+}
+
+.storyContainer .friendsname {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story button {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: var(--font-bold);
+  color: var(--blue-color);
+  white-space: nowrap;
+  background-color: var(--white-color);
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--light-gray-color);
+}
+
+@media screen and (max-width: 900px) {
+  .rightSection {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .search {
+    display: none;
+  }
+}
