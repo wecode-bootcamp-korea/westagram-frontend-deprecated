@@ -1,0 +1,768 @@
+.body__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    overflow-x: hidden;
+}
+
+/* NAV */
+
+nav {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+}
+
+nav .nav__inner {
+    max-width: 935px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav .logo {
+    min-width: 100px;
+    width: 10%;
+    padding-left: 16px;
+}
+
+nav .logo li {
+    height: 30px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+nav .logo--img {
+    background: url('../img/logo.png') 0 center no-repeat;
+    background-size: contain;
+}
+
+nav .logo--text {
+    background: url('https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png')
+        0 0 no-repeat;
+    display: none;
+}
+
+nav .search-box {
+    width: 216px;
+    height: 30px;
+    position: relative;
+}
+
+nav .search-box__input {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+nav .search-box__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 0px;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #aaa;
+    pointer-events: none;
+}
+
+nav .search-box__text::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin-right: 6px;
+    margin-left: -24px;
+    transform: translate(-50%, -50%);
+    background: url('https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png') -398px -320px
+        no-repeat;
+}
+
+nav .search-box__input:focus ~ .result {
+    display: block;
+}
+
+nav .search-box .result {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    z-index: 999;
+
+    display: none;
+}
+
+nav .search-box .result__user {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+nav .search-box .result__photo {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+nav .search-box .result__text {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .search-box .result__user-name {
+    font-weight: bold;
+}
+
+nav .search-box .result__remark {
+    color: #aaa;
+}
+
+nav .menu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 16px;
+}
+
+nav .menu > li {
+    width: 26px;
+    height: 26px;
+    margin-left: 18px;
+    text-indent: -9999px;
+}
+
+nav .menu > li > a {
+    display: block;
+}
+
+nav .menu__direct-message {
+    position: relative;
+    background: url('../img/dm.png') 0 0 no-repeat;
+    background-size: contain;
+    top: 3px;
+    right: -2px;
+}
+
+nav .menu__direct-message::after {
+    content: '1';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: -8px;
+    right: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ed4956;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    text-indent: initial;
+    line-height: 2px;
+    pointer-events: none;
+}
+
+nav .menu__explore {
+    background: url('https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png')
+        0 0 no-repeat;
+    background-size: contain;
+}
+
+nav .menu__activity {
+    background: url('https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png')
+        0 0 no-repeat;
+    background-size: contain;
+}
+
+nav .menu__user {
+    position: relative;
+    background: url('https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png')
+        0 0 no-repeat;
+    background-size: contain;
+}
+
+nav .menu__sub-menu {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    top: 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+    transition: all 0.15s ease-in-out;
+    transform: translateY(-8%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+}
+
+nav .menu__sub-menu.clicked {
+    transition: none;
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: initial;
+}
+
+nav .menu__sub-menu::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    position: absolute;
+    top: -10px;
+    right: 3px;
+    display: block;
+    background: #fff;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+nav .menu__sub-menu li a {
+    text-indent: initial;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: block;
+    padding-left: 45px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+nav .menu__sub-menu li:last-child a {
+    padding-left: 16px;
+    border-top: 1px solid #ddd;
+}
+
+nav .menu__sub-menu .profile a::after {
+    content: '🙋‍♂️';
+}
+
+nav .menu__sub-menu .saved a::after {
+    content: '💾';
+}
+
+nav .menu__sub-menu .settings a::after {
+    content: '💻';
+}
+
+nav .menu__sub-menu li a::after {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* MAIN */
+
+main {
+    width: 935px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* MAIN __ FEEDS */
+
+main .feeds {
+    max-width: 600px;
+    width: 100vw;
+    margin-bottom: 30px;
+}
+
+/* MAIN __ FEEDS __ STORY */
+
+main .feeds .story-container {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    margin: 30px 0 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    overflow-y: scroll;
+}
+
+main .feeds .story {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .feeds .story__photo-wrap {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+main .feeds .story__photo {
+    width: 92%;
+    height: 92%;
+    border-radius: 50%;
+}
+
+main .feeds .story__gradient-bg {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 18px;
+    transform: translateX(-2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    border-radius: 50%;
+    z-index: 1;
+}
+
+main .feeds .story__photo-wrap:hover ~ .story__gradient-bg {
+    animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-2px) rotate(0);
+    }
+
+    100% {
+        transform: translateX(-2px) rotate(360deg);
+    }
+}
+
+main .feeds .story__username {
+    width: 86px;
+    display: block;
+    padding-top: 4px;
+    font-size: 12px;
+}
+
+/* MAIN __ FEEDS __ FEED */
+
+main .feeds .feed {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+main .feeds .feed header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+main .feeds .feed header .user {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main .feeds .feed header .user__photo {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    background: url('https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/88400663_293372621639241_2659297162449387520_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=dLYJrzMmlLkAX98ptz-&oh=50d4eeafdca1063460ebe515e0dfc3d8&oe=5F6E0327')
+        0 0 no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+main .feeds .feed header .user__name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main .feeds .feed header .user__photo,
+main .feeds .feed header .user__name,
+main .feeds .feed header .more {
+    cursor: pointer;
+}
+
+main .feeds .feed__photo {
+    width: 100%;
+}
+
+main .feeds .feed__icon {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+main .feeds .feed__icon--left {
+    display: flex;
+}
+
+main .feeds .feed__icon li a,
+main .feeds .feed__icon .bookmark-button a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .feeds .feed__icon .likes-button a {
+    background: url('../img/heart.png') no-repeat center center;
+    background-size: 70%;
+}
+main .feeds .feed__icon .comment-button a {
+    background: url('https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png')
+        no-repeat center center;
+    background-size: 70%;
+}
+main .feeds .feed__icon .direct-button a {
+    background: url('../img/dm.png') no-repeat center 65%;
+    background-size: 70%;
+}
+
+main .feeds .feed__icon .bookmark-button a {
+    background: url('https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png')
+        no-repeat center center;
+    background-size: 70%;
+}
+
+main .feeds .feed__text {
+    padding: 0 14px;
+}
+
+main .feeds .feed__text .likes-count {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .feeds .feed__text .post {
+    display: flex;
+}
+
+main .feeds .feed__text .comments-box-handler {
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+main .feeds .feed__text .comments {
+    height: 45px;
+    overflow: hidden;
+}
+
+main .feeds .feed__text .post li,
+main .feeds .feed__text .comments li {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+main .feeds .feed__text .post__user-name,
+main .feeds .feed__text .comment__user-name {
+    padding-right: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .feeds .feed__text .date {
+    font-size: 10px;
+    color: #aaa;
+    margin: 4px 0 10px;
+}
+
+main .feeds .feed__text .input {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-top: 6px;
+}
+
+main .feeds .feed__text .input input {
+    outline: 0;
+    border: 0;
+    width: calc(100% - 50px);
+    height: 100%;
+    border-top: 1px solid #ddd;
+}
+
+main .feeds .feed__text .input button {
+    outline: 0;
+    border: 0;
+    background: 0;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    color: #b2dffc;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: initial;
+}
+
+main .feeds .feed__text .input button.hasValue {
+    color: #0095f6;
+    cursor: pointer;
+}
+
+main .feeds .feed__text .comments .comment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .feeds .feed__text .comments .comment div {
+    display: flex;
+}
+
+main .feeds .feed__text .comments .like,
+main .feeds .feed__text .comments .delete-button {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .feeds .feed__text .comments .like {
+    margin-right: 10px;
+    background: url('../img/heart.png') 0 0 no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+main .feeds .feed__text .comments .delete-button {
+    margin-right: 10px;
+}
+
+/* MAIN __ MAIN-RIGHT */
+
+main .main-right {
+    width: calc(100% - 600px);
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+main .main-right .my-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .main-right .my-profile__photo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+main .main-right .my-profile__text span {
+    display: block;
+}
+
+main .main-right .my-profile__text__name {
+    font-weight: bold;
+    cursor: pointer;
+}
+main .main-right .my-profile__text__remark {
+    color: #aaa;
+    font-size: 14px;
+}
+
+main .main-right .suggestion-container header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+main .main-right .suggestion-container header span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main .main-right .suggestion-container header span:first-child {
+    color: #aaa;
+}
+
+main .main-right .suggestion-container header span:last-child {
+    cursor: pointer;
+}
+
+main .main-right .suggestion-container {
+    width: 100%;
+    height: 280px;
+}
+
+main .main-right .suggestion {
+    margin-top: 4px;
+    height: 240px;
+}
+
+main .main-right .suggestion li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+main .main-right .suggestion__photo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+main .main-right .suggestion__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .main-right .suggestion__text span {
+    display: block;
+    font-size: 12px;
+}
+
+main .main-right .suggestion__user-name {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .main-right .suggestion__follower {
+    width: 190px;
+    color: #aaa;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+main .main-right .suggestion__follow-button {
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* MAIN __ MAIN-right __ COPYRIGHT */
+
+main .main-right .site-map-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: #aaa;
+    font-size: 11px;
+}
+
+main .main-right .site-map {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+main .main-right .site-map li {
+    padding: 0 4px;
+}
+
+main .main-right .site-map li:first-child {
+    padding-left: 0;
+}
+
+main .main-right .copyright {
+    display: block;
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 640px) {
+    nav .logo,
+    nav .menu {
+        width: calc(50% - 108px);
+    }
+
+    nav .logo--img {
+        display: none;
+    }
+    nav .logo--text {
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) {
+    main .main-right {
+        display: none;
+    }
+}
