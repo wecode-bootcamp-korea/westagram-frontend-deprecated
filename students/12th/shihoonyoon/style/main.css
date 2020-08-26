@@ -1,0 +1,64 @@
+.content {
+    width: 100%;
+}
+
+nav {
+    border: 2px solid black;
+    height: 54px;
+    display: flex;
+    width: 100%
+}
+
+.main {
+    border: 2px solid black;
+}
+
+.div {
+    display: inline-block;
+}
+
+.feeds {
+    border: 2px solid black;
+    width: 60%;
+
+}
+
+.article {
+    border: 2px solid black;
+    width: 90%;
+}
+
+.rightOfMain { 
+    border: 2px solid black;
+    width: 30%;
+}
+
+.homeIcon{
+    background-image: url("img/home.png");
+}
+
+.icons {
+    list-style: none;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.searchBox {
+    width: 50%; 
+    height: 26px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.instagramWord {
+    width: 103px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}

@@ -1,0 +1,66 @@
+.content {
+    border: 2px solid #e6e6e6;
+    background-color: #FAFAFA;
+    border-radius: 1px;
+    position: relative;
+    width: 350px;
+    height: 380px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagramLogo {
+    text-align: center;
+}
+
+.loginIdInput {
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    width: 250px;
+    height: 20px;
+    padding: 9px 0 7px 8px;
+    margin: 0 auto 10px;
+    border-radius: 3px;
+    display: block;
+}
+
+.loginPasswordInput {
+    border: 1px solid #dbdbdb;
+    background-color: white ;
+    width: 250px;
+    height: 20px;
+    padding: 9px 0 7px 8px;
+    margin: 10px auto 0;
+    border-radius: 3px;
+    display: block; 
+}
+
+button {
+    border: 1px solid transparent;
+    background-color: blue;
+    opacity: 90%;
+    width: 268px;
+    height: 36px;
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 8px; 
+    border-radius: 3px; 
+    color: white;
+}
+
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.forgotPasswordHyperLink {
+    color: #00376B;
+    text-align: center;
+    margin-top: 80px;
+}
