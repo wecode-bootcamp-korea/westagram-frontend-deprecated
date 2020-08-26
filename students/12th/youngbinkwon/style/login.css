@@ -4,6 +4,9 @@
 
 body {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fafafa;
 }
 
@@ -155,6 +158,10 @@ footer {
   margin: 40px 120px;
   align-items: center;
   font-size: 14px;
+}
+
+.footerMenu {
+  margin-right: 12px;
 }
 
 footer ul {

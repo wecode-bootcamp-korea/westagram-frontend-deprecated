@@ -5,8 +5,16 @@ const profile = document.body.querySelector(".fa-user");
 
 // 프로필 아이콘 클릭시 함수
 const profileClick = () => {
-  document.body.querySelector(".popup").classList.toggle("show");
+  document.body.querySelector(".popup").classList.add("show");
 };
+
+// 프로필 아이콘 이외의 것을 클릭시 팝업 닫기
+document.addEventListener("click", function (e) {
+  let isClickInside = profile.contains(e.target);
+  if (!isClickInside) {
+    document.body.querySelector(".popup").classList.remove("show");
+  }
+});
 
 // 댓글 달기 함수
 const uploadComment = () => {

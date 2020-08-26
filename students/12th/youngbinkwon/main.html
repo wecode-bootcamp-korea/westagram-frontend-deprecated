@@ -13,48 +13,52 @@
   </head>
   <body>
     <nav>
-      <div class="logo">
-        <img
-          class="icon"
-          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
-        />
-        <div class="vl"></div>
-        <img class="textLogo" src="./img/logo_text.png" />
-      </div>
-      <div class="search">
-        <i class="fas fa-search"></i>
-        <input class="input-field" type="text" placeholder="검색" />
-      </div>
-      <div class="menus">
-        <ul>
-          <li>
-            <i class="fab fa-telegram-plane fa-lg"></i>
-          </li>
-          <li>
-            <i class="far fa-compass fa-lg"></i>
-          </li>
-          <li>
-            <i class="far fa-heart fa-lg"></i>
-          </li>
-          <li>
-            <div>
-              <i class="far fa-user fa-lg"></i>
-              <span class="popup">
-                <ul>
-                  <li>
-                    <i class="far fa-user-circle fa-lg"></i><span>프로필</span>
-                  </li>
-                  <li>
-                    <i class="far fa-bookmark fa-lg"></i><span>저장됨</span>
-                  </li>
-                  <li><i class="fas fa-cog fa-lg"></i>설정</li>
-                  <li>로그아웃</li>
-                </ul>
-              </span>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <section>
+        <div class="logo">
+          <img
+            class="icon"
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
+          />
+          <div class="vl"></div>
+          <img class="textLogo" src="./img/logo_text.png" />
+        </div>
+        <div class="search">
+          <!-- <i class="fas fa-search"></i> -->
+          <input class="input-field" type="text" placeholder="검색" />
+          <ul class="searchPopup"></ul>
+        </div>
+        <div class="menus">
+          <ul>
+            <li>
+              <i class="fab fa-telegram-plane fa-lg"></i>
+            </li>
+            <li>
+              <i class="far fa-compass fa-lg"></i>
+            </li>
+            <li>
+              <i class="far fa-heart fa-lg"></i>
+            </li>
+            <li>
+              <div>
+                <i class="far fa-user fa-lg"></i>
+                <span class="popup">
+                  <ul>
+                    <li>
+                      <i class="far fa-user-circle fa-lg"></i
+                      ><span>프로필</span>
+                    </li>
+                    <li>
+                      <i class="far fa-bookmark fa-lg"></i><span>저장됨</span>
+                    </li>
+                    <li><i class="fas fa-cog fa-lg"></i>설정</li>
+                    <li>로그아웃</li>
+                  </ul>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </nav>
     <main>
       <div class="feeds">
@@ -291,5 +295,6 @@
       </div>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/main_search.js"></script>
   </body>
 </html>
