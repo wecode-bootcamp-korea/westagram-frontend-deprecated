@@ -1,0 +1,420 @@
+/* 전체 페이지 레이아웃*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+
+/* nav layout */
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 250px;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: white;
+}
+
+/* nav logo layout */
+.logo {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vl {
+  height: 24px;
+  border-left: 1px solid black;
+}
+
+img.icon {
+  width: 24px;
+  height: 24px;
+}
+
+img.textLogo {
+  width: 103px;
+  height: 29px;
+}
+
+/* nav search layout */
+
+.search > input {
+  position: relative;
+  width: 215px;
+  border: 1px solid#dbdbdb;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.search i {
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  padding: 6px;
+}
+
+/* nav menus layout */
+
+.menus > ul {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.menus > ul > li {
+  list-style: none;
+}
+
+.menus > ul > li > img {
+  width: 18px;
+  height: 18px;
+}
+
+/* nav profile popup */
+.menus > ul > li:nth-child(4) {
+  position: relative;
+}
+
+.popup {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50px;
+  left: 50%;
+  width: 240px;
+  height: 140px;
+  background-color: #fff;
+  color: black;
+  border-radius: 6px;
+  padding: 16px 16px;
+  z-index: 1;
+  margin-left: -200px;
+}
+
+.popup ul {
+  padding: 0;
+}
+
+.popup li {
+  font-size: 12px;
+  margin: 18px 6px;
+  list-style: none;
+  display: flex;
+}
+
+/* .popup li > i {
+  margin-right: 12px;
+} */
+
+.popup.show {
+  visibility: visible;
+}
+
+/* main layout */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+.feeds {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid#dbdbdb;
+  margin-right: 15px;
+}
+
+.picture {
+  width: 614px;
+}
+
+/* main picture profile */
+.profile {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px 18px;
+}
+
+.profile > .left {
+  display: flex;
+  align-items: center;
+}
+
+.profile > .left > img {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  border-radius: 20px;
+}
+
+.profile > .left > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile > .right > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* main feed picture */
+.pictureMain img {
+  width: 614px;
+}
+
+/* common */
+.detail {
+  padding: 8px 12px;
+}
+
+.profileLoca,
+.profileLoca2 {
+  font-size: 12px;
+  color: #dbdbdb;
+}
+
+/* main picture likebar */
+.likeBar {
+  width: auto;
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.likeBar img {
+  width: 24px;
+  margin: 0 6px;
+}
+
+.likeBar > .left > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.likeBar > .left > ul > li {
+  list-style: none;
+}
+
+.likeBar > .left > ul > li:nth-child(1) {
+  margin-right: 8px;
+}
+
+/* 좋아요 누른 사람 구현 */
+
+.likedBy {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.likedBy img {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.likedBy .likeId,
+.likedBy .likeNumber {
+  font-weight: 700;
+}
+
+.fas.fa-heart {
+  color: red;
+}
+
+/* 댓글 */
+.comment {
+  width: auto;
+  margin: 12px 0;
+}
+
+.commentList {
+  margin: 0;
+  padding: 0;
+}
+
+.commentList > li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+/* 댓글 좋아요 */
+
+.comment .commentId {
+  font-weight: 700;
+}
+
+.commentLike {
+  width: 14px;
+}
+
+/* 댓글 업로드 : picture comment */
+.commentUpload {
+  height: 56px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.commentUpload > .commentDesc {
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.commentUpload > .commentBtn {
+  width: 50px;
+  background-color: white;
+  border: none;
+  color: #0095f6;
+}
+
+/* 업로드 시간 */
+.uploadTime > span {
+  color: gray;
+}
+
+/* main-right */
+
+.main-right {
+  width: 293px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  공통 : main right title */
+.rightTitle {
+  color: grey;
+}
+
+/*  공통 : main right see All */
+.seeAll {
+  font-weight: 500;
+}
+
+/* 공통 : main-right profile */
+.main-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* main-rioght에 있는 모든 간단 프로필 CSS*/
+.profileSimple {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileSimple img {
+  width: 48px;
+  height: 48px;
+  border-radius: 40px;
+}
+
+.profileSimple .left {
+  display: flex;
+  align-items: center;
+}
+
+.profileSimple > .left > .account {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.profileSimple .right {
+  font-size: 12px;
+}
+
+/* 섹션 별로 달라지는 profilesimple css */
+.myAccount .right {
+  display: none;
+}
+
+.story .right {
+  display: none;
+}
+
+.story .profileSimple,
+.recommend .profileSimple {
+  height: 55px;
+}
+
+.recommend .right {
+  color: #0095f6;
+}
+
+/* side story 공통 */
+.story {
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  height: 300px;
+  overflow: auto;
+}
+
+.story > .usersProfile,
+.recommend > .usersProfile {
+  margin-top: 12px;
+}
+
+.story > .storyTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* side recommend 공통*/
+
+.recommend {
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.recommend > .recommendTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* app info */
+
+.appInfo {
+  color: rgba(var(--edc, 199, 199, 199), 1);
+  font-size: 11px;
+}
+
+.appInfo > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.appInfo > ul > li {
+  list-style: none;
+}

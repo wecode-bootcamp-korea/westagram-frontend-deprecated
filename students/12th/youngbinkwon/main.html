@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>westagram main</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/d632da64a6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          class="icon"
+          src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
+        />
+        <div class="vl"></div>
+        <img class="textLogo" src="./img/logo_text.png" />
+      </div>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input class="input-field" type="text" placeholder="검색" />
+      </div>
+      <div class="menus">
+        <ul>
+          <li>
+            <i class="fab fa-telegram-plane fa-lg"></i>
+          </li>
+          <li>
+            <i class="far fa-compass fa-lg"></i>
+          </li>
+          <li>
+            <i class="far fa-heart fa-lg"></i>
+          </li>
+          <li>
+            <div>
+              <i class="far fa-user fa-lg"></i>
+              <span class="popup">
+                <ul>
+                  <li>
+                    <i class="far fa-user-circle fa-lg"></i><span>프로필</span>
+                  </li>
+                  <li>
+                    <i class="far fa-bookmark fa-lg"></i><span>저장됨</span>
+                  </li>
+                  <li><i class="fas fa-cog fa-lg"></i>설정</li>
+                  <li>로그아웃</li>
+                </ul>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="feeds">
+        <article>
+          <div class="picture profile">
+            <div class="left">
+              <img
+                src="https://www.pikpng.com/pngl/m/175-1752952_manchester-united-logo-png-man-utd-logo-hd.png"
+              />
+              <div>
+                <span class="profileName">Manchester_United</span>
+                <span class="profileLoca">Old Trafford</span>
+              </div>
+            </div>
+            <div class="right">
+              <img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+              />
+            </div>
+          </div>
+          <div class="picture pictureMain">
+            <img
+              src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/118177091_1840007686141341_3464894823004537788_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=f1NCeMu3dqQAX_LNyU3&oh=c9500b8f4cfc50a65fcd435fd88db451&oe=5F6CE4AD"
+            />
+          </div>
+          <section class="picture detail">
+            <section class="picture likeBar">
+              <div class="left">
+                <ul>
+                  <li>
+                    <span><i class="far fa-heart fa-lg"></i></span>
+                  </li>
+                  <li>
+                    <span>
+                      <img
+                        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                      />
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                    /></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="right">
+                <img
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+                />
+              </div>
+            </section>
+            <section class="picture likedBy">
+              <img src="./img/16.jpg" />
+              <p>
+                <span class="likeId">aineworld123</span>님
+                <span class="likeNumber">외 12명</span>이 좋아합니다
+              </p>
+            </section>
+            <section class="picture comment">
+              <ul class="commentList">
+                <li>
+                  <div>
+                    <span class="commentId">jellujoahhhhh</span>
+                    <span class="commentDetail"
+                      >Looking good. Manchester Utd.</span
+                    >
+                  </div>
+                  <div>
+                    <span><i class="far fa-heart"></i></span>
+                    <span><i class="fas fa-times"></i></span>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="commentId">biggest_fan9999</span>
+                    <span class="commentDetail"
+                      >Do better next year. buy sancho from Dortmund</span
+                    >
+                  </div>
+                  <div>
+                    <span><i class="far fa-heart"></i></span>
+                    <span><i class="fas fa-times"></i></span>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="picture uploadTime">
+              <span>42분 전</span>
+            </section>
+          </section>
+          <section class="picture commentUpload">
+            <input class="commentDesc" type="text" placeholder="댓글 달기..." />
+            <button class="commentBtn">게시</button>
+          </section>
+        </article>
+      </div>
+      <div class="main-right">
+        <section class="myAccount">
+          <div class="profileSimple">
+            <div class="left">
+              <img src="./img/4.jpg" />
+              <div class="account">
+                <span class="profileName">youngkwon315</span>
+                <span class="profileLoca">Seoul</span>
+              </div>
+            </div>
+            <div class="right">팔로우</div>
+          </div>
+        </section>
+        <section class="main-right story">
+          <div class="storyTitle">
+            <span class="rightTitle">스토리</span>
+            <span class="seeAll">모두 보기</span>
+          </div>
+          <div class="usersProfile">
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/1.jpg" />
+                <div class="account">
+                  <span class="profileName">yumyumyum12</span>
+                  <span class="profileLoca">20분 전</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/3.jpg" />
+                <div class="account">
+                  <span class="profileName">justmarried91</span>
+                  <span class="profileLoca">2시간 전</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/5.jpg" />
+                <div class="account">
+                  <span class="profileName">seoulcoex2020</span>
+                  <span class="profileLoca">3시간 전</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/6.jpg" />
+                <div class="account">
+                  <span class="profileName">minjaekimgg</span>
+                  <span class="profileLoca">5시간 전</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/7.jpg" />
+                <div class="account">
+                  <span class="profileName">parkminmin323</span>
+                  <span class="profileLoca">7시간 전</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/8.jpg" />
+                <div class="account">
+                  <span class="profileName">whatsupupup33</span>
+                  <span class="profileLoca">9시간 전</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+          </div>
+        </section>
+        <section class="main-right recommend">
+          <div class="recommendTitle">
+            <span class="rightTitle">회원님을 위한 추천</span>
+            <span class="seeAll">모두 보기</span>
+          </div>
+          <div class="usersProfile">
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/9.jpg" />
+                <div class="account">
+                  <span class="profileName">jellujoahhhhh</span>
+                  <span class="profileLoca">minjaekimgg님 외 2명이..</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/10.jpg" />
+                <div class="account">
+                  <span class="profileName">scubadubadu</span>
+                  <span class="profileLoca">minjaekimgg님 외 2명이..</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+            <div class="profileSimple">
+              <div class="left">
+                <img src="./img/11.jpg" />
+                <div class="account">
+                  <span class="profileName">leesukwonwon</span>
+                  <span class="profileLoca">minjaekimgg님 외 2명이..</span>
+                </div>
+              </div>
+              <div class="right">팔로우</div>
+            </div>
+          </div>
+        </section>
+        <div class="main-right appInfo">
+          <ul>
+            <li>Instagram 정보·</li>
+            <li>지원·</li>
+            <li>홍보 센터·</li>
+            <li>API·</li>
+            <li>채용 정보·</li>
+            <li>개인정보처리방침·</li>
+            <li>약관·</li>
+            <li>디렉터리·</li>
+            <li>프로필·</li>
+            <li>해시태그·</li>
+            <li>언어</li>
+          </ul>
+          <span class="copyright">© 2020 Instagram from Facebook</span>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
