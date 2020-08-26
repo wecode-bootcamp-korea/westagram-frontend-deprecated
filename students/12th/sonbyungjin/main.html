@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- 네비게이션 바 -->
+    <div class="navigation">
+      <img id="nav__logo" src="img/logo_text.png">
+      <input placeholder="검색">
+      <div class="navigation__icon">
+        <img class="nav__icon" src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+        <img class="nav__icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+        <img class="nav__icon" id="nav__icon--last" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+      </div>
+    </div>
+    <!-- 메인 -->
+    <div class="main"><!-- 시맨틱 태그 issue/ main -->
+      <!-- 메인 피드 -->
+      <div class="main__feeds">
+        <!-- 메인 게시물 -->
+        <div class="main__feeds__article"><!-- 시맨틱 태그 issue/ article -->
+          <div class="main__feeds__article--profile">
+            <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/75467465_760494361060022_4482914742750412800_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=GHN4JfOchncAX-sUPfk&amp;oh=47e17da34305777d108b91601fca475f&amp;oe=5F6C4FD4">
+            <div class="main__feeds__article--profile__name">
+              <span>nickName</span>
+            </div>
+            <img id="threeDot" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+          </div>
+          <div class="main__feeds__article--content">
+            <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/117663643_183667726491704_3403444492844321759_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_cat=108&amp;_nc_ohc=DqGUY0aejqkAX_w3NLP&amp;oh=cf517c499e9e6af4c7ea6b83a00f4c74&amp;oe=5F6F5004">
+          </div>
+          <!-- 사진 아래 -->
+          <div class="main__feeds__article__bottom">
+            <div class="main__feeds__article__bottom--icon">
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">            
+              <img id="bookmark" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
+            <div class="main__feeds__article__bottom--text">
+              <span>nickName</span>
+              <span>날씨 좋다</span>
+            </div>
+            <!-- 댓글 -->
+            <div class="main__feeds__article__bottom--comment">
+              <ul></ul>
+            </div>
+            </div>
+            <div class="main__feeds__article__bottom--input">
+              <input id="commentInput" type="text" placeholder="댓글 달기">
+              <button style="cursor: pointer;">게시</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 메인 오른쪽 -->
+      <div class="main__right">
+        <div class="main__right__profile">
+          <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/75467465_760494361060022_4482914742750412800_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=GHN4JfOchncAX-sUPfk&amp;oh=47e17da34305777d108b91601fca475f&amp;oe=5F6C4FD4">
+          <span>nickName</span>
+        </div>
+        <!-- 스토리 -->
+        <div class="main__right__story">
+          <div class="main__right__story--title">
+            <span>스토리</span>
+            <span>모두보기</span>
+          </div>
+          <div class="main__right__story--content">
+            <div class="main__right__story--content__1">
+              <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/106046866_287229479064900_5245434113441990290_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=5RXhuHpXuP8AX_zNzZh&amp;oh=0482efc5b34a5bdac52f991ae8467243&amp;oe=5F6C00AD">
+              <span>apple</span>
+              <span>5분</span>
+            </div>
+            <div class="main__right__story--content__2">
+              <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/95869113_375539980012446_7062494623536513024_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=1mqDLc6iwBMAX8XVW8Z&amp;oh=e342e517a16b1aaf664026ea4d1315df&amp;oe=5F6D001B">
+              <span>banana</span>
+              <span>10분</span>
+            </div>
+            <div class="main__right__story--content__3">
+              <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/100995649_681514449086431_6265792230376603648_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=HIrr-hfT-dUAX9qcMCo&amp;oh=97690b626993f8a2ac742aa2be8d0e12&amp;oe=5F6E9CD8">
+              <span>bottle</span>
+              <span>1시간</span>
+            </div>
+            <div>
+              <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/83920900_465776074302704_997959157581611008_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=IXAH43O2ZksAX9JWWw5&amp;oh=f9e63e111262aea67ca86d5d81e3d61c&amp;oe=5F6D684E">
+              <span>tumbler</span>
+              <span>2시간</span>              
+            </div>
+          </div>
+        </div>
+        <div class="main__right__recommend">
+          <div class="main__right__recommend--title">
+            <span>회원님을 위한 추천</span>
+            <span>모두보기</span>  
+          </div>
+          <div class="main__right__recommend--content">
+            <div class="main__right__recommend--content__1">
+              <div class="main__right__recommend--content__1__img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/73470507_2411874169130272_5049454623111249920_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=h_n1hcaVn1cAX_iWpcb&amp;oh=d39dd08621488b5ec291734cfcd812ce&amp;oe=5F6C34CD">              
+              </div>
+              <div class="main__right__recommend--content__1__p">
+                <p>sky</p>
+                <p>좋아요</p>
+              </div>
+              <div class="main__right__recommend--content__1__follow">
+                <span>팔로우</span>
+              </div>
+            </div>
+            <div class="main__right__recommend--content__2">
+              <div class="main__right__recommend--content__2__img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/52412125_271091327125786_3561435664081747968_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=C0xNkKKBk9MAX9Y4rAY&amp;oh=16a4bae605d706b2564ca2fbe626ac61&amp;oe=5F6F8702">
+              </div>
+              <div class="main__right__recommend--content__2__p">
+                <p>skkkky</p>
+                <p>좋아요오오</p>
+              </div>
+              <div class="main__right__recommend--content__2__follow">
+                <span>팔로우</span>
+              </div>
+            </div>
+            <div class="main__right__recommend--content__3">
+              <div class="main__right__recommend--content__3__img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/89683526_194036005213519_6581701729425817600_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=D8sdd0uB2FUAX_345ld&amp;oh=232759da8d6f06d76f707f993dc1ebbf&amp;oe=5F6F9DC8">
+              </div>
+              <div class="main__right__recommend--content__3__p">
+                <p>skyyyy</p>
+                <p>좋아아요</p>
+              </div>
+              <div class="main__right__recommend--content__3__follow">
+                <span>팔로우</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
