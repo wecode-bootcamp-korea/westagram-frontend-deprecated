@@ -29,8 +29,14 @@ function displayMatches() {
   const matchArray = findMatches(this.value, members);
   const html = matchArray
     .map((member) => {
+<<<<<<< HEAD
       const memberId = member.id;
       const memberDesc = member.desc;
+=======
+      const regex = new RegExp(this.value, "gi");
+      const memberId = member.id.replace(regex, this.value);
+      const memberDesc = member.desc.replace(regex, this.value);
+>>>>>>> 5b3822dd08216fcbb0fa82f0d50c20b009705a2b
       return `
             <li>
                 <span class="name">${memberId}</span>
@@ -39,8 +45,11 @@ function displayMatches() {
     })
     .join("");
   suggestions.innerHTML = html;
+<<<<<<< HEAD
 
   if (!searchInput.value) suggestions.innerHTML = "";
+=======
+>>>>>>> 5b3822dd08216fcbb0fa82f0d50c20b009705a2b
 }
 
 searchInput.addEventListener("change", displayMatches);
