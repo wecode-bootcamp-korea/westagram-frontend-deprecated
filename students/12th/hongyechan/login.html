@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="entire">
+    
+      <section class = "mainPage"> <!--아이폰 + 로그인 페이지-->
+        <section id = "leftPage">    
+          <img alt = "iPhone" src = "img/43cc71bb1b43.png"><!--아이폰 이미지-->
+        </section>
+        <section class = "rightPage">      
+          <article class = "loginPage">  <!--로고부터 비밀번호를 잊으셨나요까지-->
+            <div class = "logo and login" >    
+              <div class = "instagramImg"> <!--인스타그램 이미지파일-->
+                <img class="instagramLogo" alt = "instagram Logo" src = "img/logo_text.png">
+              </div>
+              <div id = "enterToLogin">       <!--이메일, 패스워드 넣는 창-->
+                <input type = "text" id = "account" name = "User Account" placeholder="전화번호, 사용자 이름 또는 이메일">
+                <input type = "password" id = "password" name= "User Password" placeholder="비밀번호">
+              </div>
+            </div>
+            <div>            <!--로그인 버튼-->
+              <button class="loginButton" type = "button">
+                <div class = "loginText">로그인</div>
+              </button>
+            </div>
+            <div class = "orBlock">           <!--또는-->
+              <div class = "orLine"></div>   
+                <div>또는</div>                 
+              <div class = "orLine"></div>
+            </div>
+            <div class = "button and a">      
+              <button class = "facebookButton" type="button">       <!--페이스북 로그인 또는 비밀번호를 잊으셨나요-->
+                <span><img class="facebookLogo" alt = "facebookLogo" src = "facebook-logo.png"></span>
+                <span>Facebook으로 로그인</span>  
+              </button>
+              <a class = "forget password" href="https://www.instagram.com/accounts/password/reset/">비밀번호를 잊으셨나요?</a>      
+            </div> 
+          </article>
+          
+          <article class = 'joinAndDownloadApp'>   <!--계정이 없으신가요, 앱을 다운로드하세요.-->
+            <div class = "signIn">          <!--계정이 없으신가요? 가입하기-->
+                <span>계정이 없으신가요?</span>
+                <a class = "join instagram" href="https://www.instagram.com/accounts/emailsignup/">가입하기</a>
+            </div>
+            
+            <div class = "downloadApp">          <!--앱을 다운로드 하세요.-->
+              <div class = "downloadText">앱을 다운로드하세요.</div>
+              <div class = "downloadAppImg">                              <!--이미지 2개 넣기-->
+                <div><img class = "appImg" alt= "앱스토어에서 다운로드 하기" src= "4a5c9d62d51b.png">
+                <img class = "appImg" alt= "구글플레이에서 다운로드 하기" src= "f155b664a93b.png">
+              </div>                         
+            </div>  
+          </article>    
+        </section>                  <!--두번째 큰 세션 끝-->
+      </section>                    <!--전체 세션 끝-->
+      <footer class = "footer">                      <!--footer-->
+        <ul class = "ul">
+          <li>소개</li>
+          <li>도움말</li>
+          <li>홍보센터</li>
+          <li>API</li>
+          <li>채용 정보</li>
+          <li>개인정보처리방침</li>
+          <li>약관</li>
+          <li>위치</li>
+          <li>인기 계정</li>
+          <li>해시태그</li>
+          <li>언어</li>  
+        </ul>
+        <div>© 2020 INSTAGRAM FROM FACEBOOK</div>
+      </footer>         
+    
+    <script src="js/login.js"></script>
+  </body>
+</html>

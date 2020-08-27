@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+.entire {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.mainPage {
+  display: flex;
+  width: 50%;
+  margin: 100px auto;
+}
+.leftPage {
+  width: 454px;
+  height: 618px;
+  margin: 0px -15px 0px -35px;
+}
+.rightPage {
+  width: 454px;
+  margin: 30px 0px 0px 0px;
+}
+.loginPage {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 1px;
+  background-color: rgba(var(--d87, 255, 255, 255), 1);
+  width: 350px;
+  height: 380px;
+}
+#account,
+#password {
+  display: block;
+  margin: 5px auto;
+  width: 258px;
+  height: 36px;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 3px;
+}
+.loginButton {
+  display: block;
+  margin: 15px auto;
+  width: 261px;
+  height: 30px;
+  background-color: skyblue;
+  border: 0 solid black;
+  border-radius: 5px;
+}
+button .loginText {
+  color: white;
+  font-weight: bold;
+}
+
+.orBlock {
+  weight: 268px;
+  height: 15px;
+  display: inline;
+  background-color: red;
+  
+}
+
+.orLine{
+    background-color: rgba(var(--b38,219,219,219),1);
+    height: 1px;
+}
+
+.signIn {
+  background-color: rgba(var(--d87, 255, 255, 255), 1);
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 1px;
+  width: 350px;
+  height: 63px;
+}
+.downloadApp {
+  width: 350px;
+  height: 165px;
+}
+
+.instagramImg {
+  text-align: center;
+  padding: 10px;
+}
+
+.instagramLogo {
+  margin: 10px 0px 0px 0px;
+  width: 175px;
+}
+
+.facebookLogo {
+  width: 30px;
+}
+.appImg {
+  width: 136px;
+}
+.downloadText {
+  text-align: center;
+}
