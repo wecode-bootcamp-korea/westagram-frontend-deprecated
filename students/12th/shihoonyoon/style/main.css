@@ -1,44 +1,18 @@
-.content {
-    width: 100%;
+nav {
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1)
 }
 
-.nav bar{
-    width: 100%;
+.bar {
+    max-width: 964px;
+    padding: 0 20px;
     height: 54px;
     display: flex;
-    position: fixed;
+    align-items: center;
     justify-content: center;
+    margin-left: 200px;
 }
 
-.main {
-    border: 2px solid black;
-}
-
-.div {
-    display: inline-block;
-}
-
-.feeds {
-    border: 2px solid black;
-    width: 60%;
-
-}
-
-.article {
-    border: 2px solid black;
-    width: 90%;
-}
-
-.rightOfMain { 
-    border: 2px solid black;
-    width: 30%;
-}
-
-.homeIcon{
-    background-image: url("img/home.png");
-}
-
-.icons {
+.nav-icons {
     list-style: none;
     vertical-align: middle;
     display: flex;
@@ -48,18 +22,82 @@
     margin-left: 300px;
 }
 
-.searchBox {
-    width: 200px; 
+.homeIcon, .messageIcon, .feedIcon, .likeIcon, .myPageIcon {
+    margin: 0 7px;
+}
+
+.nav-searchBox {
+    width: 300px; 
     height: 26px;
     box-sizing: content-box;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    margin-left: 200px;
+    border: solid 1px rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    background-image: url("../img/search.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    font-size: 14px;
+    text-align: center;
+    background-color: #FAFAFA;
 }
+
 
 .instagramWord {
     width: 103px;
+}
+
+.nav-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     vertical-align: middle;
+}
+
+.main {
+    width: 80%;
+}
+
+.feeds {
+    border: 2px solid black;
+    width: 50%;
+    margin-top: 20px;
+
+}
+
+.article {
+    border: 1px solid black;
+    width: 99%;
+    margin: auto;
+}
+
+.rightOfMain { 
+    border: 2px solid black;
+    width: 30%;
+}
+
+.div {
+    display: inline-block;
+}
+
+.feedTopBar {
+    display: flex;
+}
+
+.chelseaLogo {
+    width: 10%;
+}
+
+.chelseaAccount {
+    text-size-adjust: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 450px 0 10px;
+}
+
+.chelseaPlayer {
+    width: 100%;
 }

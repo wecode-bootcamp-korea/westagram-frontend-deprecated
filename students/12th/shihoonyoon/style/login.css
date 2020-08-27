@@ -1,15 +1,15 @@
 .content {
-    border: 2px solid #e6e6e6;
-    background-color: #FAFAFA;
-    border-radius: 1px;
-    position: relative;
     width: 350px;
     height: 380px;
     margin: auto;
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #FAFAFA;
+    border: 2px solid #e6e6e6;
+    border-radius: 1px;
 }
 
 .instagramLogo {
@@ -17,37 +17,37 @@
 }
 
 .loginIdInput {
-    border: 1px solid #dbdbdb;
-    background-color: white;
     width: 250px;
     height: 20px;
     padding: 9px 0 7px 8px;
     margin: 0 auto 10px;
-    border-radius: 3px;
     display: block;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
 }
 
 .loginPasswordInput {
-    border: 1px solid #dbdbdb;
-    background-color: white ;
     width: 250px;
     height: 20px;
-    padding: 9px 0 7px 8px;
     margin: 10px auto 0;
-    border-radius: 3px;
     display: block; 
+    padding: 9px 0 7px 8px;
+    background-color: white ;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
 }
 
 button {
-    border: 1px solid transparent;
-    background-color: blue;
-    opacity: 90%;
     width: 268px;
     height: 36px;
     margin-top: 8px;
     margin-right: 40px;
     margin-left: 40px;
     margin-bottom: 8px; 
+    background-color: #3897f0;
+    opacity: 90%;
+    border: 1px solid transparent;
     border-radius: 3px; 
     color: white;
 }
@@ -60,7 +60,7 @@ button[disabled]{
 }
 
 .forgotPasswordHyperLink {
-    color: #00376B;
     text-align: center;
     margin-top: 80px;
+    color: #00376B;
 }
