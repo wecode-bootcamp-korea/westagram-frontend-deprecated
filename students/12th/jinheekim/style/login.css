@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+#wrap {
+  background: #fafbfa;
+}
+.loginBox {
+  text-align: center;
+  width: 430px;
+  height: 480px;
+  margin: 0px 0px 10px;
+  padding: 10px 0px;
+  border: 1px solid #e8e8e8;
+  margin-top: 0px 0px 10px 0px;
+  border-width: 12px 12px 12px 1px;
+  border-color: #fafbfa #fafbfa #fafbfa #fafbfa;
+}
+img {
+  margin: 22px auto 12px;
+  margin-bottom: 30px;
+}
+ul input {
+  border-radius: 3px;
+  border: 1px solid #eff0ef;
+  background-color: #fafafa;
+  padding: 9px 0px 7px 8px;
+  height: 45px;
+  width: 300px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.loginBtn {
+  color: white;
+  background-color: #b2dffc;
+  font-weight: bold;
+  border: 0px;
+  outline: 0px;
+  margin-top: 11px;
+  font-size: 14px;
+}
+
+.findPwd {
+  margin-top: 130px;
+  text-align: center;
+  color: #114071;
+  font-size: 14px;
+  font-weight: bold;
+}
