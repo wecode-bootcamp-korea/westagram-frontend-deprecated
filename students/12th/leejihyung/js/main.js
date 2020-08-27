@@ -1,57 +1,53 @@
 const commentInput = document.getElementsByClassName('input-comment')[0];
 const commentBtn = document.getElementsByClassName('submit-comment')[0];
 const commentList = document.getElementsByClassName('comments')[0];
+const searchInput = document.getElementById('searchInput');
+const searchList = document.getElementsByClassName('search-list')[0];
+const resultBox = document.getElementsByClassName('search-result-box')[0];
 
 // 댓글 달기
 function addComment() {
     const newComment = document.createElement('li')
-    newComment.innerHTML = `<span><span class="point-span userID">thisisyourhyung</span>` + commentInput.value + `</span>`;
-
-    // 코멘트에 더해지는 버튼 생성
-    const commentBtns = document.createElement('div');
-
-    let deleteBtn = document.createElement('img');
-    deleteBtn.classList.add("comment-more");
-    deleteBtn.src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png";
-    deleteBtn.alt = "more";
-
-    let likeBtn = document.createElement('img');
-    likeBtn.classList.add("comment-heart");
-    likeBtn.src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png";
-    likeBtn.alt = "하트";
-
-    let likedBtn = document.createElement('img');
-    likedBtn.classList.add("comment-heart-liked");
-    likedBtn.src = "img/liked.png";
-    likedBtn.alt = "좋아요된하트";
-
-    let commentLike = document.createElement('div');
-    commentLike.classList.add("comment-like");
-
-    // 버튼에 함수 선언
-    deleteBtn.addEventListener('click', function() {
-        this.parentNode.parentNode.remove();
-    })
-
-    commentLike.addEventListener('click', () => {
-        if (likeBtn.style.display === 'none') {
-            likeBtn.style.display = 'inline-block';
-            likedBtn.style.display = 'none';
-        } else {
-            likeBtn.style.display = 'none';
-            likedBtn.style.display = 'inline-block';
-        }
-    })
-
-    // 코멘트에 버튼 추가
-    commentLike.appendChild(likeBtn);
-    commentLike.appendChild(likedBtn);
-    commentBtns.appendChild(deleteBtn);
-    commentBtns.appendChild(commentLike);
-    newComment.appendChild(commentBtns);
+    newComment.innerHTML = `
+        <span>
+            <span class="point-span userID">thisisyourhyung</span>${commentInput.value}
+        </span>
+            <div>
+                <img alt="more" class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+                <div class="comment-like">
+                    <img alt="하트" class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+                    <img alt="좋아요된하트" class="comment-heart-liked" src="img/liked.png">
+                </div>
+            </div>`;
     commentList.appendChild(newComment);
     commentInput.value = "";
     commentBtn.disabled = true;
+
+    const deleteBtn = document.querySelectorAll('.comment-more');
+    const commentLike = document.querySelectorAll('.comment-like');
+    console.log(commentLike.length);
+
+    // 버튼에 함수 선언
+    deleteBtn.forEach(function(event) {
+        event.addEventListener('click', function() {
+            this.parentNode.parentNode.remove();
+        });
+    })
+
+    commentLike.forEach(function(event) {
+        event.addEventListener('click', function() {
+            let likeBtn = this.querySelector('.comment-heart');
+            let likedBtn = this.querySelector('.comment-heart-liked');
+
+            if (likeBtn.style.display === 'none') {
+                likeBtn.style.display = 'inline-block';
+                likedBtn.style.display = 'none';
+            } else {
+                likeBtn.style.display = 'none';
+                likedBtn.style.display = 'inline-block';
+            }
+        })
+    })
 }
 
 commentBtn.addEventListener('click', function(){
@@ -84,8 +80,8 @@ deleteBtn.forEach(function(event) {
 let commentLike = document.querySelectorAll('.comment-like');
 commentLike.forEach(function(event) {
     event.addEventListener('click', function() {
-        var likeBtn = this.querySelector('.comment-heart');
-        var likedBtn = this.querySelector('.comment-heart-liked');
+        const likeBtn = this.querySelector('.comment-heart');
+        const likedBtn = this.querySelector('.comment-heart-liked');
 
         if (likeBtn.style.display === 'none') {
             likeBtn.style.display = 'inline-block';
@@ -94,11 +90,12 @@ commentLike.forEach(function(event) {
             likeBtn.style.display = 'none';
             likedBtn.style.display = 'inline-block';
         }
+        console.log("heart clicked!")
     })
 })
 
 // 계정 데이터 배열
-let userArray = [
+const userArray = [
                 {id: "todayis_wendy",
                 nickname: "Wendy",
                 picture: "https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/74914119_2349586052018182_981153319919550464_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=gFvrVFRXS4QAX_niWLz&oh=836ff9d75f3affb832016653d67d4cdd&oe=5F700D7A"},
@@ -135,12 +132,8 @@ let userArray = [
                 ]
 
 // 아이디 검색 기능
-const searchInput = document.getElementById('searchInput');
-const searchList = document.getElementsByClassName('search-list')[0];
-const resultBox = document.getElementsByClassName('search-result-box')[0];
-
 function matchSearch(value) {
-    let searchID = searchInput.value;
+    const searchID = searchInput.value;
     return value.indexOf(searchID) != -1;
 }
 
@@ -163,7 +156,7 @@ searchInput.addEventListener('focusout', function() {
 
 function showFilteredID(id) {
     resultBox.style.display = "flex";
-    var filteredUser = document.createElement('li');
+    const filteredUser = document.createElement('li');
     filteredUser.innerHTML = `
     <img class="img-profile" src=${id.picture} alt=${id.id}님의 프로필 사진">
     <div class="profile-text">
