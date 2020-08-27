@@ -1,0 +1,445 @@
+
+* {
+box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	display: table;
+	margin: auto;
+}
+
+body {
+	position: relative;
+  display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	font-size: 14px;
+	line-height:18px;
+	background-color: rgba(250,250,250);
+	min-height: 100%
+	margin: auto;
+}
+
+main {
+	position: relative;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	height: 100%;
+}
+
+article {
+  padding-bottom: 44px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-container {
+	position: relative;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	margin: 30px auto 0;
+	max-width: 935px;
+	padding-bottom: 44px;
+	width: 100%;
+	box-sizing: border-box;
+}
+/*###################################
+############# main left #############
+#####################################*/
+.main-left {
+	position: relative;
+	background-image: url("../img/log-in/main_slider_frame.png");
+	background-position: 0 0;
+	background-size: 454px 618px;
+	height: 618px;
+	width: 454px;
+	margin-left: -35px;
+	margin-right: -15px;
+	align-items: stretch;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-left__slider {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 99px 0 0 151px;
+	padding: 0;
+}
+
+.main-left__slider__img {
+	height: 427px;
+	width: 240px;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*###################################
+############# main right #############
+#####################################*/
+
+.main-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12px;
+  max-width: 350px;
+}
+
+.signin-box {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255,255,255);
+  border: 1px solid rgba(219,219,219);
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+	width: 348px;
+	height: 358px;
+	box-sizing: border-box;
+}
+
+.instalogo {
+	display: block:
+	margin: 20px auto 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+	background-size: contain;
+  height: 51px;
+  width: 175px;
+  background-image: url("../img/log-in/logo_text.png");
+}
+
+.form-container {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	padding: 0;
+
+}
+
+.userform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	align-content: stretch;
+	width: 100%;
+}
+
+.userform__inner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	align-content: stretch;
+	flex-direction: column;
+	margin-top: 24px;
+	width: 100%
+}
+
+.inner__margin {
+	margin: 0 40px 6px;
+}
+
+.signin__button__margin {
+	margin: 8px 40px;
+	width: 254px;
+}
+
+.signin__button__blue {
+	position: relative;
+	display: block;
+	background-color: rgba(0, 149, 246, .3);
+	outline: 0;
+	border: 0;
+	border-radius: 4px;
+	font-weight: 600;
+	padding: 5px 9px;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.inner__signin_or {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin: 10px 40px 18px;
+	padding: 0;
+	color: rgba(38, 38, 38, 1)
+}
+
+.text_or {
+	color: rgba(142, 142, 142, 1);
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 15px;
+	margin: 0 12px;
+	padding: 0;
+}
+
+.or_line {
+	position: relative;
+	width: 103px;
+	height: 1px;
+	top: .45em;
+	background-color: rgba(219, 219, 219, 1);
+	display: flex; //why?
+	margin: 0;
+	padding: 0;
+}
+
+.inner__facebook {
+	position: relative;
+	padding: 8px 40px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.inner__facebook__button {
+	display: inline;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: auto;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	font: 400 13.3333px Arial;
+	background: 0 0;
+	border: 0;
+	text-align: center;
+}
+
+.inner__facebook__icon {
+	display: inline-block;
+	position: relative;
+	margin-right: 8px;
+	top: 3px;
+	background-image: url("../img/log-in/mis_img.png");
+	background-repeat: no-repeat;
+	background-position: -414px -259px;
+	height: 16px;
+	width: 16px;
+}
+
+.inner__facebook__login {
+	color: #385185;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	text-align: center;
+	font-weight: 600;
+}
+
+.inner__forgotpassword {
+	color: rgba(0, 55, 107, 1);
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.signup__box {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 1);
+	border: 1px solid rgba(219, 219, 219, 1);
+	border-radius: 1px;
+	margin: 0 0 10px;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+
+.signup__text__container {
+	display: block;
+	color: rgba(142, 142, 142, 1);
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 18px;
+	margin: -3px 0 -4px;
+}
+
+.doyouhaveanaccount {
+	color: rgba(38, 38, 38, 1);
+	font-size: 14px;
+	margin: 15px;
+	text-align: center;
+}
+
+.signup__text__this {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: rgba(0, 149, 246, 1);
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.download-box {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+.download-box__text {
+	display: block;
+	color: rgba(38, 38, 38, 1);
+	font: inherit;
+	margin: 10px 20px;
+	padding: 0;
+	border: 0;
+	text-align: center;
+}
+
+.download-box__container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.download-box__container__a{
+	margin-right: 8px;
+}
+
+.download-box__container__image{
+	height: 40px;
+
+}
+
+.label__container {
+	border: 1px solid rgba(219, 219, 219, 1);
+}
+
+.inner__label {
+	position: relative;
+	display: flex;
+	height: 36px;
+	padding: 0;
+	margin: 0;
+}
+
+.inner__input {
+	background-color: rgb(250, 250, 250);
+	width: 250px;
+	font-size: 16px;
+	border: 0;
+	padding: 1px 2px;
+	display: inline-block;
+	font: 400 13.3333px Arial;
+}
+
+/*###################################
+############### footer ##############
+#####################################*/
+
+.footer-body {
+	position: relative;
+	padding: 0 20px;
+	background-color: rgba(250, 250, 250, 1);
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	font: inherit;
+	color: rgba(38, 38, 38, 1);
+}
+
+.footer-body__container {
+	position: relative;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 38px 0;
+	max-width: 1012px;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.footer-body__container__nav {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	font: inherit;
+}
+
+.footer__nav__ul {
+	margin-right: 16px;
+	margin-bottom: 3px;
+	list-style: none;
+	font: inherit;
+	display: block;
+}
+
+.footer__nav__li {
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-right: 16px;
+	font: inherit;
+}
+
+.footer__nav__link {
+	color: rgba(0, 55, 107, 1);
+	font: inherit;
+}
+
+.copyright {
+	color: rgba(142, 142, 142, 1);
+	font: inherit;
+	text-transform: uppercase;
+
+}

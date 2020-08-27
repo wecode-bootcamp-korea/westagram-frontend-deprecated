@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <article class="main-container">
+        <div class="main-left">
+          <div class="main-left__slider">
+            <img class="main-left__slider__img" src="./img/log-in/main_slider_img1.jpg" alt>
+            <img class="main-left__slider__img" src="./img/log-in/main_slider_img2.jpg" alt>
+            <img class="main-left__slider__img" src="./img/log-in/main_slider_img3.jpg" alt>
+            <img class="main-left__slider__img" src="./img/log-in/main_slider_img4.jpg" alt>
+            <img class="main-left__slider__img" src="./img/log-in/main_slider_img5.jpg" alt>
+          </div>
+        </div>
+
+        <div class="main-right">
+          <div class="signin-box">
+            <h1 class="instalogo" id="logo"></h1>
+            <div class="form-container">
+              <form class="userform" action="index.html" method="post">
+                <div class="userform__inner">
+                  <div class="inner__margin">
+                    <div class="label__container">
+                      <label for="id" class="inner__label">
+                        <input type="id" name="id" placeholder="전화번호, 사용자 이름 또는 이메일" class="inner__input" required>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="inner__margin">
+                    <div class="label__container">
+                      <label for="password" class="inner__label">
+                        <input type="password" name="password" placeholder="비밀번호" class="inner__input" required>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="signin__button__margin">
+                    <button class="signin__button__blue" type="button" name="button">
+                      <div class="signin__button__font">로그인</div>
+                    </button>
+                  </div>
+
+                  <div class="inner__signin_or">
+                    <div class="or_line"></div>
+                    <div class="text_or">또는</div>
+                    <div class="or_line"></div>
+                  </div>
+<!-- ID, PASSWORD, LOGIN 버튼 "또는" 라인 block -->
+                </div>
+                  <div class="inner__facebook">
+                    <button class="inner__facebook__button" type="button" name="button">
+                      <span class="inner__facebook__icon"></span>
+                      <span class="inner__facebook__login">Facebook으로 로그인</span>
+                    </button>
+                  </div>
+                  <a class="inner__forgotpassword" href="#">비밀번호를 잊으셨나요?</a>
+              </form>
+            </div>
+          </div>
+<!-- "비밀번호를 잊으셨나요?" block-->
+
+           <div class="signup__box">
+            <div class="signup__text__container">
+              <p class="doyouhaveanaccount">계정이 없으신가요?
+                <a href="#">
+                  <span class="signup__text__this">가입하기</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="download-box">
+            <p class="download-box__text">앱을 다운로드하세요.</p>
+            <div class="download-box__container">
+              <a class="download-box__container__a" href="#">
+                <img class="download-box__container__image" src="./img/log-in/apple_download.png" alt="App store에서 이용 가능">
+              </a>
+              <a class="download-box__container__a" href="#">
+                <img class="download-box__container__image" src="./img/log-in/android_download.png" alt="Google Play에서 이용 가능">
+              </a>
+            </div>
+          </div>
+<!-- "앱을 다운로드하세요." block-->
+        </div>
+      </article>
+    </main>
+    <footer class="footer-body">
+      <div class="footer-body__container">
+        <nav class="footer-body__container__nav">
+          <ul class="footer__nav__ul">
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">소개</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">도움말</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">홍보센터</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">API</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">채용정보</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">개인정보처리방침</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">약관</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">위치</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">인기계정</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">해시태그</a></li>
+            <li class="footer__nav__li"><a class="footer__nav__link" href="#" target="_blank">언어</a></li>
+          </ul>
+        </nav>
+        <span class="copyright">© 2020 Instagram from Facebook</span>
+      </div>
+    </footer>
+    <script src="js/login.js"></script>
+  </body>
+</html>
