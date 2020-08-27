@@ -1,0 +1,115 @@
+body {
+    margin: 0 auto;
+}
+
+nav {
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    width: 975px;
+    margin: 0 auto;
+}
+
+/* 메인 로고 이미지 */
+.nav-mainLogo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-mainLogo a {
+    height: 30px;
+}
+
+.nav-mainLogo a img {
+    width: 103px;
+}
+
+/* 메인 검색창 */
+.nav-searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 120px;
+}
+
+.nav-searchBox img {
+    position: absolute;
+    width: 10px;
+    left: 73px;
+}
+
+.nav-searchBox input {
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    font-size: 12px;
+    outline: none;
+    padding: 7px;
+}
+
+.nav-searchBox input::placeholder {
+    color: #909090;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav-searchBox input:focus::placeholder {
+    text-align: left;
+}
+
+.nav-searchBox input:focus::placeholder {
+    text-align: left;
+}
+
+/* 메뉴 */
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu li img {
+    display: flex;
+    width: 22px;
+    margin: 0 0 0 24px;
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 935px;
+    border: 1px solid red;
+    height: 1000px;
+    padding: 30px 0 0;
+}
+
+/* main-left */
+.main-left {
+    border: 1px solid green;
+    width: 614px;
+    margin: 0 28px 0 0;
+}
+
+.main-left .feeds {
+    width: 614px;
+    height: 118px;
+    border: 1px solid skyblue;
+    margin: 0 0 24px;
+    padding: 16px 0;
+}
+
+/* main-right */
+.main-right {
+    border: 1px solid blue;
+    width: 293px;
+}
