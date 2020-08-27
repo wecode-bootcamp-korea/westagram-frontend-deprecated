@@ -1,0 +1,90 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: aqua;
+    background-color: #FAFAFA;
+    /* flex-direction: column; */
+}
+
+.wrapLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: palevioletred; */
+    /* margin-top: 100px; */
+}
+
+.wrapLoginMain {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+    width: 350px;
+    height: 377.8px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+.signUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 62.6px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+
+.signUp a{
+    text-decoration: none; /* 링크 밑줄 삭제 */
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.downloadApp {
+    width: 350px;
+    height: 100.8px;
+    text-align: center;
+}
+
+.downloadApp p {
+    width: 310px;
+    height: 17.6px;
+    margin: 10px 20px;
+}
+
+.appstore_download {
+    width: 136px;
+    height: 40;
+}
+
+.googlePlay_download {
+    width: 134.28px;
+    height: 40;
+}
+
+
+/* hr {
+    border: none;
+    border-top: 1px solid #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: '또는';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+    
+} */
