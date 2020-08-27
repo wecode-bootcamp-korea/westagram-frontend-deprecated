@@ -27,7 +27,7 @@ nav > section {
   align-items: center;
 }
 
-/* nav logo layout */
+/* 로고 */
 .logo {
   width: 150px;
   display: flex;
@@ -49,8 +49,7 @@ img.textLogo {
   height: 29px;
 }
 
-/* nav search layout */
-
+/* 검색창 */
 .search > input {
   position: relative;
   width: 215px;
@@ -106,8 +105,7 @@ img.textLogo {
   visibility: visible;
 }
 
-/* nav menus layout */
-
+/* nav 우측메뉴 */
 .menus > ul {
   width: 150px;
   display: flex;
@@ -125,7 +123,7 @@ img.textLogo {
   height: 18px;
 }
 
-/* nav profile popup */
+/* nav 우측 프로필 팝업 */
 .menus > ul > li:nth-child(4) {
   position: relative;
 }
@@ -171,7 +169,7 @@ img.textLogo {
   visibility: visible;
 }
 
-/* main layout */
+/* 메인 레이아웃 */
 main {
   display: flex;
   flex-direction: row;
@@ -188,11 +186,7 @@ main {
   margin-right: 15px;
 }
 
-.picture {
-  width: 614px;
-}
-
-/* main picture profile */
+/* 피드 프로필 */
 .profile {
   height: 70px;
   display: flex;
@@ -224,16 +218,21 @@ main {
   height: 24px;
 }
 
-/* main feed picture */
+/* 피드 사진 */
+.picture {
+  width: 614px;
+}
+
 .pictureMain img {
   width: 614px;
 }
 
-/* common */
+/* 피드 하단 */
 .detail {
   padding: 8px 12px;
 }
 
+/* 계정 프로필 id와 세부사항 공통 */
 .profileLoca,
 .profileLoca2 {
   font-size: 12px;
@@ -268,7 +267,7 @@ main {
   margin-right: 8px;
 }
 
-/* 좋아요 누른 사람 구현 */
+/* 좋아요 누른 사람 */
 
 .likedBy {
   height: 24px;
@@ -310,7 +309,6 @@ main {
 }
 
 /* 댓글 좋아요 */
-
 .comment .commentId {
   font-weight: 700;
 }
@@ -319,7 +317,7 @@ main {
   width: 14px;
 }
 
-/* 댓글 업로드 : picture comment */
+/* 댓글 업로드 부분*/
 .commentUpload {
   height: 56px;
   background-color: white;
@@ -347,31 +345,44 @@ main {
   color: gray;
 }
 
-/* main-right */
-
+/* 우측 레이아웃 */
 .main-right {
   width: 293px;
   display: flex;
   flex-direction: column;
 }
-
-/*  공통 : main right title */
+/* main-right에 있는 스토리, 추천 제목 요소 */
 .rightTitle {
   color: grey;
 }
 
-/*  공통 : main right see All */
 .seeAll {
   font-weight: 500;
 }
 
-/* 공통 : main-right profile */
 .main-right {
   display: flex;
   flex-direction: column;
 }
 
-/* main-rioght에 있는 모든 간단 프로필 CSS*/
+/* main-right에 있는 모든 계정 프로필*/
+.myAccount .right {
+  display: none;
+}
+
+.story .right {
+  display: none;
+}
+
+.story .profileSimple,
+.recommend .profileSimple {
+  height: 55px;
+}
+
+.recommend .right {
+  color: #0095f6;
+}
+
 .profileSimple {
   height: 70px;
   display: flex;
@@ -400,25 +411,7 @@ main {
   font-size: 12px;
 }
 
-/* 섹션 별로 달라지는 profilesimple css */
-.myAccount .right {
-  display: none;
-}
-
-.story .right {
-  display: none;
-}
-
-.story .profileSimple,
-.recommend .profileSimple {
-  height: 55px;
-}
-
-.recommend .right {
-  color: #0095f6;
-}
-
-/* side story 공통 */
+/* 스토리 */
 .story {
   border: 1px solid #dbdbdb;
   padding: 10px;
@@ -438,8 +431,7 @@ main {
   justify-content: space-between;
 }
 
-/* side recommend 공통*/
-
+/* 회원님을 위한 추천 */
 .recommend {
   border: 1px solid #dbdbdb;
   padding: 10px;
@@ -451,8 +443,7 @@ main {
   justify-content: space-between;
 }
 
-/* app info */
-
+/* 하단 앱 정보 */
 .appInfo {
   color: rgba(var(--edc, 199, 199, 199), 1);
   font-size: 11px;

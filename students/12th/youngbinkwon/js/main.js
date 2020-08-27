@@ -3,7 +3,7 @@ const commentInput = document.body.querySelector(".commentDesc");
 const commentBtn = document.body.querySelector(".commentBtn");
 const profile = document.body.querySelector(".fa-user");
 
-// 프로필 아이콘 클릭시 함수
+// 프로필 아이콘 클릭시 팝업 함수
 const profileClick = () => {
   document.body.querySelector(".popup").classList.add("show");
 };
@@ -36,12 +36,13 @@ const uploadComment = () => {
   }
 };
 
-// 댓글 좋아요 기능 함수
+// 댓글 좋아요 버튼 업데이트 함수
 const commentLikeUpdate = () => {
   let likesArr = document.body.querySelectorAll(".fa-heart");
   return likesArr;
 };
 
+// 댓글 좋아요 함수
 const commentLike = (arr) => {
   //let isClicked = true;
 
@@ -67,13 +68,12 @@ const commentLike = (arr) => {
 const deleteComment = (arr) => {
   arr.forEach((el) => {
     el.addEventListener("click", function (e) {
-      console.log("deleted");
       el.parentNode.parentNode.parentNode.remove();
     });
   });
 };
 
-// 댓글 개수 업데이트 함수
+// 댓글 삭제 버튼 개수 업데이트 함수
 const commentDeleteUpdate = () => {
   let deletesArr = document.body.querySelectorAll(".fa-times");
   return deletesArr;
@@ -88,6 +88,7 @@ commentInput.addEventListener("keypress", function (e) {
 });
 profile.addEventListener("click", profileClick);
 
+// 페이지 로드시 실행되는 함수
 const init = () => {
   commentLike(commentLikeUpdate());
   deleteComment(commentDeleteUpdate());
