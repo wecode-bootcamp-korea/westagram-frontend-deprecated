@@ -1,20 +1,12 @@
 const idInput = document.getElementById('userID');
 const pwInput = document.getElementById('userPW');
-const loginInput = document.getElementsByClassName('container')[0];
+const loginInput = document.getElementsByClassName('login_container')[0];
 const loginBtn = document.getElementById('btn_login');
 const linkToMain = document.getElementsByTagName('a')[0];
 
-function idCheck() {
-    var hasAt = idInput.value.indexOf('@');
-    return hasAt !== -1 ? true : false;
-}
 
-function pwCheck() {
-    return pwInput.value.length >= 5 ? true : false;
-}
-
-loginInput.addEventListener('keyup', function(event) {
-    const completedInput = (idCheck() && pwCheck());
+loginInput.addEventListener('keyup', function() {
+    const completedInput = idInput.value.includes('@') && pwInput.value.length >= 5 ? true : false;
     loginBtn.disabled = completedInput ? false : true;
     linkToMain.href = completedInput ? "https://miajlee.github.io/westagram/main" : "#none"; 
 })
