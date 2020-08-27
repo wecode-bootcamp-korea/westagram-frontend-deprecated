@@ -12,10 +12,10 @@ body {
 
 /* 전체 페이지 레이아웃*/
 article {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
   margin: 30px auto 30px;
 }
 
