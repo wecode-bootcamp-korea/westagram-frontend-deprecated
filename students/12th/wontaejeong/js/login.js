@@ -1,4 +1,4 @@
-const slidePhotos = () => {
+(slidePhotos = () => {
     const slides = document.querySelectorAll('.slider li');
     let current = 0;
 
@@ -10,27 +10,18 @@ const slidePhotos = () => {
 
         current === slides.length - 1 ? (current = 0) : current++;
     }, 3000);
-};
+})();
 
-slidePhotos();
-
-const hasValue = () => {
+(hasValue = () => {
     const idInput = document.querySelector('input[type="text"]');
     const pwInput = document.querySelector('input[type="password"]');
     const submitButton = document.querySelector('button[type="submit"]');
+    const loginForm = document.querySelector('.sign-in__form');
 
-    const inputs = [idInput, pwInput];
-
-    inputs.forEach((input) => {
-        input.addEventListener('keyup', handleSubmitButtonClass);
-    });
+    loginForm.addEventListener('keyup', handleSubmitButtonClass);
 
     function handleSubmitButtonClass() {
-        const id = idInput.value;
-        const password = pwInput.value;
-
-        submitButton.className = id.includes('@') && password.length >= 5 ? 'right' : '';
+        submitButton.className =
+            idInput.value.includes('@') && pwInput.value.length >= 5 ? 'right' : '';
     }
-};
-
-hasValue();
+})();

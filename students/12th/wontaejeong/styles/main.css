@@ -351,7 +351,6 @@ main .feeds .story__gradient-bg {
     height: 64px;
     position: absolute;
     top: 18px;
-    transform: translateX(-2px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,11 +372,11 @@ main .feeds .story__photo-wrap:hover ~ .story__gradient-bg {
 
 @keyframes rotate {
     0% {
-        transform: translateX(-2px) rotate(0);
+        transform: rotate(0);
     }
 
     100% {
-        transform: translateX(-2px) rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -386,6 +385,7 @@ main .feeds .story__username {
     display: block;
     padding-top: 4px;
     font-size: 12px;
+    text-indent: 6px;
 }
 
 /* MAIN __ FEEDS __ FEED */
@@ -500,7 +500,8 @@ main .feeds .feed__text .comments-box-handler {
 }
 
 main .feeds .feed__text .comments {
-    height: 45px;
+    max-height: 40px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -584,6 +585,11 @@ main .feeds .feed__text .comments .like {
     background: url('../img/heart.png') 0 0 no-repeat;
     background-size: contain;
     cursor: pointer;
+}
+
+main .feeds .feed__text .comments .like.clicked {
+    background: url('../img/heart_clicked.png') no-repeat 0 0;
+    background-size: contain;
 }
 
 main .feeds .feed__text .comments .delete-button {
