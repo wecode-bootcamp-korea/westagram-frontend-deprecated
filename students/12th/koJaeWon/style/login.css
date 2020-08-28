@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.allWrap {
+  width: 100%;
+  height: 700px;
+  margin: 30 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wrap {
+  width: 350px;
+}
+
+.logInPage {
+  height: 360px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  background-color: white;
+}
+
+.logoImg {
+  width: 175px;
+  height: 51px;
+  margin: 22px auto 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 350px;
+  height: 360px;
+  margin-top: 20px;
+  position: absolute; 
+  text-align: center;
+}
+
+.userIn {
+  margin: 0 40px 6px;
+}
+
+.log, .pass {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.btn {
+  box-sizing: border-box;
+  margin: 15px 40px;
+}
+
+.logBtn {
+  width: 100%;
+  padding: 5px 9px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: rgba(var(--eca,255,255,255),1);
+  background-color: rgba(0,149,246,.3);
+}
+
+.forGot {
+  height: 80px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #00376b;
+}
+
+.account {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.account p {
+  width: 100%;
+  text-align: center;
+  color: gray;
+}
+
+.picWrap {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.downLoadPic {
+  width: 135px;
+  height: 40px;
+}
