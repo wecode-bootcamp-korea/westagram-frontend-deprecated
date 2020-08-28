@@ -44,20 +44,8 @@ const commentLikeUpdate = () => {
 
 // 댓글 좋아요 함수
 const commentLike = (arr) => {
-  //let isClicked = true;
-
   arr.forEach((el) => {
     el.addEventListener("click", function (e) {
-      // console.log("sdasd");
-      // if (isClicked) {
-      //   el.classList.remove("far");
-      //   el.classList.add("fas");
-      //   isClicked = false;
-      // } else {
-      //   el.classList.remove("fa-thumbs-down");
-      //   el.classList.add("fa-heart");
-      //   isClicked = true;
-      // }
       el.classList.toggle("far");
       el.classList.toggle("fas");
     });

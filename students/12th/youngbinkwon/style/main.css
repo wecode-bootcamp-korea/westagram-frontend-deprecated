@@ -1,8 +1,4 @@
 /* 전체 페이지 레이아웃*/
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   height: 100vh;
@@ -34,7 +30,7 @@ nav > section {
   justify-content: space-between;
 }
 
-.vl {
+.verticalLine {
   height: 24px;
   border-left: 1px solid black;
 }

@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   height: 100vh;
   display: flex;
@@ -11,7 +7,7 @@ body {
 }
 
 /* 전체 페이지 레이아웃*/
-article {
+.loginPage {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -122,7 +118,12 @@ article {
   margin-bottom: 40px;
 }
 
-.loginForm > input {
+.userInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInput > input {
   border: 1px solid#dbdbdb;
   border-radius: 5px;
   padding: 9px 0 7px 8px;
@@ -160,12 +161,9 @@ footer {
   font-size: 14px;
 }
 
-.footerMenu {
-  margin-right: 12px;
-}
-
 footer ul {
   width: 700px;
+  margin-right: 12px;
   padding: 0;
   display: flex;
   justify-content: space-between;

@@ -9,28 +9,30 @@
   </head>
   <body>
     <main>
-      <article class="loginPage">
+      <section class="loginPage">
         <div class="loginImage">
-          <img src="./img/loginimage1.jpg" />
-          <img src="./img/loginimage2.jpg" />
-          <img src="./img/loginImage3.jpg" />
+          <img alt="loginSlideImage1" src="./img/loginimage1.jpg" />
+          <img alt="loginSlideImage2" src="./img/loginimage2.jpg" />
+          <img alt="loginSlideImage3" src="./img/loginImage3.jpg" />
         </div>
         <section class="loginPanel">
           <section class="login">
             <div class="logo">
-              <img src="./img/logo_text.png" />
+              <img alt="instagramLogo" src="./img/logo_text.png" />
             </div>
             <form class="loginForm">
-              <input
-                class="userId"
-                type="text"
-                placeholder="전화번호, 사용자 이름 또는 이메일"
-              />
-              <input
-                class="userPassword"
-                type="password"
-                placeholder="비밀번호"
-              />
+              <div class="userInput">
+                <input
+                  class="userId"
+                  type="text"
+                  placeholder="전화번호, 사용자 이름 또는 이메일"
+                />
+                <input
+                  class="userPassword"
+                  type="password"
+                  placeholder="비밀번호"
+                />
+              </div>
               <button class="login_btn">로그인</button>
             </form>
             <div class="passwordFind">
@@ -43,28 +45,26 @@
           <section class="getApp">
             <p>Get the app.</p>
             <div class="appIcon">
-              <img src="./img/appIOS.png" />
-              <img src="./img/appAndroid.png" />
+              <img alt="app download icon" src="./img/appIOS.png" />
+              <img alt="app download icon2" src="./img/appAndroid.png" />
             </div>
           </section>
         </section>
-      </article>
-      <footer>
-        <section class="footerMenu">
-          <ul>
-            <li>ABOUT</li>
-            <li>HELP</li>
-            <li>PRESS</li>
-            <li>API</li>
-            <li>JOBS</li>
-            <li>PRIVACY</li>
-            <li>TERMS</li>
-            <li>LOCATIONS</li>
-            <li>TOP ACCOUNTS</li>
-            <li>HASHTAGS</li>
-            <li>LANGUAGE</li>
-          </ul>
-        </section>
+      </section>
+      <footer class="footerMenu">
+        <ul>
+          <li>ABOUT</li>
+          <li>HELP</li>
+          <li>PRESS</li>
+          <li>API</li>
+          <li>JOBS</li>
+          <li>PRIVACY</li>
+          <li>TERMS</li>
+          <li>LOCATIONS</li>
+          <li>TOP ACCOUNTS</li>
+          <li>HASHTAGS</li>
+          <li>LANGUAGE</li>
+        </ul>
         <span>© 2020 INSTAGRAM FROM FACEBOOK</span>
       </footer>
     </main>
