@@ -24,38 +24,144 @@
   </head>
   <body>
     <nav>
-      <div class="nav-container">
-        <div class="nav-mainLogo">
+      <div class="navContainer">
+        <div class="navMainLogo">
           <a href="main.html"><img src="img/logo_text.png" alt="main_logo"></a>
         </div>
-
-        <div class="nav-searchBox">
+        <div class="navSearchBox">
           <img src="img/search-icon.png" alt="search-icon">
           <input type="search" placeholder="검색">
         </div>
-
-        <ul class="nav-menu"> 
-          <li><img src="img/home.png" alt=""></li>
-          <li><img src="img/dm.png" alt=""></li>
-          <li><img src="img/explore.png" alt=""></li>
-          <li><img src="img/heart.png" alt=""></li>
-          <li><img src="img/profile.png" alt=""></li>
+        <ul class="navMenu"> 
+          <li>
+            <img alt="home" src="img/home.png">
+          </li>
+          <li>
+            <img alt="dm" src="img/dm.png">
+          </li>
+          <li>
+            <img alt="explore" src="img/explore.png">
+          </li>
+          <li>
+            <img alt="heart" src="img/heart.png">
+          </li>
+          <li>
+            <img alt="profile" src="img/profile.jpg">
+          </li>
         </ul>
       </div>
     </nav>
-
     <main>
-      <div class="main-left">
-        <article class="feeds">
-
-        </article>
-      </div>
-
-      <div class="main-right">
-
-      </div>
+      <article class="mainLeft">
+        <ul class="story">
+          <li>
+            <div class="imgWrap">
+              <img alt="wecode" src="img/story/wecode.jpg">
+            </div>
+            <div class="account">wecode_bootcamp</div>
+          </li>
+          <li>
+            <div class="imgWrap">
+              <img alt="여행에미치다" src="img/story/여행에미치다.jpg">
+            </div>
+            <div class="account">travelholic_insta</div>
+          </li>
+          <li>
+            <div class="imgWrap">
+              <img alt="광희" src="img/story/광희.jpg">
+            </div>
+            <div class="account">prince_kwanghee</div>
+          </li>
+          <li>
+            <div class="imgWrap">
+              <img alt="류준열" src="img/story/류준열.jpg">
+            </div>
+            <div class="account">ryujoonyeol</div>
+          </li>
+          <li>
+            <div class="imgWrap">
+              <img alt="유재석" src="img/story/유재석.jpg">
+            </div>
+            <div class="account">youjae_sukkk</div>
+          </li>
+          <li>
+            <div class="imgWrap">
+              <img alt="이광수" src="img/story/이광수.jpg">
+            </div>
+            <div class="account">leekwangsoo_prince</div>
+          </li>
+          <li>
+            <div class="imgWrap">
+              <img alt="이효리" src="img/story/이효리.jpg">
+            </div>
+            <div class="account">leehyori.leehyolee</div>
+          </li>
+        </ul>
+        <div class="feeds">
+          <div class="feedsHeader">
+            <div class="profile">
+              <div class="profileImg">
+                <img alt="wecode" src="img/story/wecode.jpg">
+              </div>
+              <div class="profileId">
+                wecode_bootcamp
+              </div> 
+            </div>
+            <div class="headerMenu">
+              <img alt="headerMenu" src="img/feedsHeaderMenu.png">
+            </div>
+          </div>
+          <div class="feedsBody">
+            <img alt="wecode12th" src="img/wecode12th.jpg">
+          </div>
+          <div class="socialMenu">
+          </div>
+          <div class="commentBox">
+            <div class="likeCountBar">
+            </div>
+            <div class="commentList">           
+            </div>
+            <div class="postTimeBar">
+            </div>
+            <div class="commentInput">
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside class="mainRight">
+        <div class="profileContainer">
+          <img alt="myProfile" src="img/profile.jpg">
+          <div class="profileInfo">
+            <div class="profileId">
+              92moon_sh
+            </div>
+            <div class="profileName">
+              문상호
+            </div>
+          </div>
+        </div>
+        <div class="recommendContainer">
+          <div class="recommendHeader">
+            <div>회원님을 위한 추천</div>
+            <div>모두 보기</div>
+          </div>
+          <div class="recommendList">
+            <div class="profileContainer">
+              <img alt="광희" src="img/story/광희.jpg">
+              <div class="textContainer">
+                <div class="profileId">prince_kwanghee</div>
+                <div class="relationship">powerbong9님 외 4명이 팔로우합니다</div>
+              </div>
+              <div class="followBtn">팔로우</div>
+            </div>
+            <div class="profileContainer"></div>
+            <div class="profileContainer"></div>
+            <div class="profileContainer"></div>
+            <div class="profileContainer"></div>
+          </div>
+        </div>
+      </aside>
     </main>
-
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -3,45 +3,48 @@ body {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
     border-bottom: 1px solid #DBDBDB;
 }
 
-.nav-container {
+.navContainer {
     display: flex;
-    justify-content: space-around;
-    width: 975px;
-    margin: 0 auto;
+    justify-content: space-between;
+    width: 935px;
+    padding: 0 20px;
 }
 
 /* 메인 로고 이미지 */
-.nav-mainLogo {
+.navMainLogo {
     display: flex;
     align-items: center;
 }
 
-.nav-mainLogo a {
+.navMainLogo a {
     height: 30px;
 }
 
-.nav-mainLogo a img {
+.navMainLogo a img {
     width: 103px;
 }
 
-/* 메인 검색창 */
-.nav-searchBox {
+/* nav 검색창 */
+.navSearchBox {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 0 0 0 120px;
+    margin-left: 120px;
 }
 
-.nav-searchBox img {
+.navSearchBox img {
     position: absolute;
     width: 10px;
     left: 73px;
 }
 
-.nav-searchBox input {
+.navSearchBox input {
     width: 215px;
     height: 28px;
     background-color: #FAFAFA;
@@ -52,34 +55,34 @@ nav {
     padding: 7px;
 }
 
-.nav-searchBox input::placeholder {
+.navSearchBox input::placeholder {
     color: #909090;
     font-weight: lighter;
     font-size: 14px;
     text-align: center;
 }
 
-.nav-searchBox input:focus::placeholder {
-    text-align: left;
-}
-
-.nav-searchBox input:focus::placeholder {
+.navSearchBox input:focus::placeholder {
     text-align: left;
 }
 
 /* 메뉴 */
-.nav-menu {
+.navMenu {
     display: flex;
 }
 
-.nav-menu li {
+.navMenu li {
     list-style: none;
 }
 
-.nav-menu li img {
-    display: flex;
+.navMenu li:nth-child(5) img {
+    border-radius: 100%;
+}
+
+.navMenu li img {
     width: 22px;
     margin: 0 0 0 24px;
+    cursor: pointer;
 }
 
 /* main */
@@ -88,28 +91,235 @@ main {
     justify-content: space-between;
     margin: 0 auto;
     width: 935px;
-    border: 1px solid red;
-    height: 1000px;
+    height: 1100px;
     padding: 30px 0 0;
 }
 
 /* main-left */
-.main-left {
-    border: 1px solid green;
+.mainLeft {
+    /* border: 1px solid green; */
     width: 614px;
-    margin: 0 28px 0 0;
+    margin-right: 28px;
 }
 
-.main-left .feeds {
+.mainLeft .story {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 614px;
-    height: 118px;
-    border: 1px solid skyblue;
+    height: 86px;
+    border: 1px solid #DBDBDB;
     margin: 0 0 24px;
     padding: 16px 0;
+    list-style: none;
+    background-color: #ffffff;
+}
+
+.mainLeft .story li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mainLeft .story li .imgWrap {
+    width: 62px;
+    height: 62px;
+    padding: 2px 0 0 2px;
+    border-radius: 100%;
+    background: radial-gradient(
+        circle at 0% 99%,
+        #FFC900 0%,
+        #FFAB00 20%,
+        #CC0C67 70%
+        );
+    }
+    
+.mainLeft .story li img {
+    width: 56px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+}
+    
+.mainLeft .story li .account {
+    font-size: 12px;
+    margin-top: 5px;
+    width: 68px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mainLeft .feeds .feedsHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 582px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.mainLeft .feeds .feedsHeader .profile {
+    display: flex;
+    justify-content: left;
+}
+
+.mainLeft .feeds .feedsHeader .profile .profileImg img {
+    width: 32px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsHeader .profile .profileId {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 7.5px;
+    padding: 7.5px 0 0 12px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsHeader .headerMenu img {
+    width: 24px;
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsBody {
+    width: 614px;
+    height: 614px;
+    background-color: #ffffff;
+    border: 1px solid #DBDBDB;
+}
+
+.mainLeft .feeds .feedsBody img {
+    width: 614px;
+}
+
+.mainLeft .feeds .socialMenu {
+    width: 582px;
+    height: 40px;
+    border: 1px solid blue;
+    padding: 0 16px;
+}
+
+.mainLeft .feeds .commentBox {
+    width: 614px;
+    height: 221px;
+    border: 1px solid red;
+}
+
+.mainLeft .feeds .commentBox .likeCountBar {
+    width: 614px;
+    height: 18px;
+    border: 1px solid gray;
+}
+
+.mainLeft .feeds .commentBox .commentList {
+    width: 614px;
+    height: 106px;
+    border: 1px solid red;
+}
+
+.mainLeft .feeds .commentBox .postTimeBar {
+    width: 614px;
+    height: 19px;
+    border: 1px solid black;
+}
+
+.mainLeft .feeds .commentBox .commentInput {
+    width: 614px;
+    height: 56px;
+    border: 1px solid green;
 }
 
 /* main-right */
-.main-right {
-    border: 1px solid blue;
+.mainRight {
     width: 293px;
 }
+
+.mainRight .profileContainer {
+    display: flex;
+    align-items: center;
+    width: 290px;
+    height: 45px;
+    margin-top: 16px;
+}
+
+.mainRight .profileContainer img {
+    width: 56px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.mainRight .profileContainer .profileInfo {
+    margin-left: 18px;
+}
+
+.mainRight .profileContainer .profileInfo .profileId {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mainRight .profileContainer .profileInfo .profileName {
+    font-size: 12px;
+    color: #8E8E8E;
+    margin-top: 3px;
+}
+
+.mainRight .recommendContainer {
+    width: 290px;
+    height: 291px;
+    border: 1px solid black;
+}
+
+.mainRight .recommendContainer .recommendHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.mainRight .recommendContainer .recommendHeader div:nth-child(1) {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8E8E8E;
+}
+
+.mainRight .recommendContainer .recommendHeader div:nth-child(2) {
+    font-size: 12px;
+    font-weight: bold;
+    color: #262626;
+    cursor: pointer;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer img {
+    width: 32px;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer .textContainer .profileId {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer .textContainer .relationship {
+    font-size: 12px;
+    color: #8E8E8E;
+    padding-right: 20px;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer .followBtn {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0095F6;
+}
+
+
+
+
