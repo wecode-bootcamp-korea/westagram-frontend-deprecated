@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+
 body{
   display: flex;
   justify-content: center;
@@ -22,6 +23,7 @@ body{
   width: 250px;  
   height: 30px;
 }
+
 .login__input input{
   display: block;
   margin: auto auto 10px;
@@ -29,6 +31,7 @@ body{
   border: 1px solid lightgray;
   border-radius: 5px;
 }
+
 .login__input button{
   border: none;
   color: white;
@@ -42,6 +45,7 @@ body{
   display: flex;
   align-items: center;
 }
+
 .login__input__line div {
   position: absolute;
   top: -10px;
@@ -49,6 +53,7 @@ body{
   height: 1px;
   border-top: 1px solid #ddd;
 }
+
 .login__input__line span{
   display: block;
   width: 50px;
@@ -57,14 +62,17 @@ body{
   transform: translate(-50%, -50%);
   background: #fff;
 }
+
 #facebook{
   position: relative;
   bottom: -5px;
   width: 30px;
 }
+
 .login__input__linktext{
   margin: 20px 0;
 }
+
 .login__input a{
   color: navy;
   text-decoration: none;
@@ -81,6 +89,7 @@ body{
   padding: 4% 0;
   text-align: center;
 }
+
 .account span{
   /* margin: 5% 0; */
   display: inline;
@@ -90,6 +99,8 @@ body{
   text-align: center;
   margin-top: 10px;
 }
+
 .advertisement img{
+  cursor: pointer;
   height: 50px;
 }

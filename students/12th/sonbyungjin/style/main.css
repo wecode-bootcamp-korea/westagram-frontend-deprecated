@@ -1,6 +1,7 @@
 :root{
     --color--lightgray: lightgray;
 }
+
 *{
     box-sizing: border-box;
 }
@@ -20,13 +21,16 @@ body{
     width: 100%;
     border-bottom:1px solid lightgray;
 }
+
 #nav__logo{
     height: 25px;
 }
+
 .nav__icon{
     height: 25px;
     margin: 0 10px;
 }
+
 .navigation input{
     text-align: center;
     margin: 15px 250px;
@@ -45,21 +49,25 @@ body{
 .main__feeds__article{
     border: 1px solid lightgray;
 }
+
 .main__feeds__article--profile{
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
+
 .main__feeds__article--profile img{
-    float: left;
     height: 40px;
     border-radius: 100%;
     margin: 5px;
 }
-#threeDot{
+
+.main__feeds__article--profile__name{
     position: absolute;
-    right: 0px;
+    left: 55px;
 }
+
 .main__feeds__article--content img{
     width: 100%;
 }
@@ -68,13 +76,16 @@ body{
     position: relative;
     padding: 0px 10px;
 }
+
 .main__feeds__article__bottom--icon img{
     height: 25px;
 }
+
 #bookmark{
     position: absolute;
     right: 10px;
 }
+
  .main__feeds__article__bottom--text span{
     position: relative;
     bottom: -5px;
@@ -84,11 +95,13 @@ body{
     list-style: none;
     padding: 0px;
 }
+
 .main__feeds__article__bottom--comment ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .main__feeds__article__bottom--comment ul li div{
     display: flex;
     align-items: center;
@@ -100,11 +113,13 @@ body{
     align-items: center;
     border: 1px solid lightgray;
 }
+
 .main__feeds__article__bottom--input input{
     border: none;
     height: 30px;
     width: 100%;
 }
+
 .main__feeds__article__bottom--input button{
     position: absolute;
     right: 2%;
@@ -113,7 +128,6 @@ body{
     color: white;
     background-color: lightblue;
 }
-
 /*오른쪽 메인 배너*/
 .main__right{
     padding-left: 20px;
@@ -125,12 +139,14 @@ body{
     align-items: center;
     margin-bottom: 10px;
 }
+
 .main__right__profile img{
     width: 50px;
     border-radius: 100%;
 }
+
 .main__right__profile span{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 /* 스토리 */
 .main__right__story{
@@ -139,24 +155,29 @@ body{
     width: 280px;
     margin-bottom: 10px;
 }
+
 .main__right__story--title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2%;
 }
+
 .main__right__story--title span {
     font-weight: bold;
 }
+
 .main__right__story--content div{
     margin: 10px;
 }
+
 .main__right__story--content div img{
     float: left;
     height: 40px;
     border-radius: 100%;
     margin-right: 10px;
 }
+
 .main__right__story--content div span{
     display: block;
 }
@@ -166,39 +187,47 @@ body{
     border-radius: 5px;
     width: 280px;
 }
+
 .main__right__recommend--title{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2%;
 }
+
 .main__right__recommend--title span {
     font-weight: bold;
 }
+
 .main__right__recommend--content__1{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .main__right__recommend--content__2{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .main__right__recommend--content__3{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .main__right__recommend--content img{
     height: 40px;
     border-radius: 100%;
     margin: 0 10px;
 }
+
 .main__right__recommend--content p{
     margin: 5px auto;
     width: 160px;
 }
+
 .main__right__recommend--content span{
     margin-right: 10px;
 }

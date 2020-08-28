@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <title>sonbyungjinWestagramLogin</title>
+    <!-- <link href="style/common.css" rel="stylesheet" type="text/css" /> -->
     <link href="style/login.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="login">
+    <form class="login">
       <!-- 로그인 입력 -->
+      <!-- class Name 수정 -->
       <div class="login__input">
         <img id='instagramLogo' alt="instagram_logo" src="img/logo_text.png">
         <input class="login__input__text" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
@@ -41,10 +42,10 @@
       <!-- 광고 -->
       <div class="advertisement">
         <p>앱을 다운로드하세요.</p>
-        <img alt="appstoreIcon" style="cursor: pointer;" onclick="javascript:newin=window.open('about:blank'); newin.location.href='https://apps.apple.com/app/instagram/id389801252?vt=lo'" src="./img/appstore.png">
-        <img alt="googleplayIcon" style="cursor: pointer;" onclick="javascript:newin=window.open('about:blank'); newin.location.href='https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3DC13899FA-7527-4501-8B59-C857E8CB1A00%26utm_content%3Dlo%26utm_medium%3Dbadge'" src="./img/googleplay.png">
+        <img alt="appstoreIcon" src="./img/appstore.png">
+        <img alt="googleplayIcon" src="./img/googleplay.png">
       </div>
-    </div>
+    </form>
     <script src="js/login.js"></script>
   </body>
 </html>
