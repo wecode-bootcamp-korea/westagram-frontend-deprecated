@@ -3,36 +3,54 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>instagram</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
-     <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="img/instagram_logo.png"/>
   </head>
   <body>
     <div class="wrapLogin">
       <div class="wrapLoginMain">
         <div class="logoImage">
-          <img src="img/logo_text.png" alt="instagram logo" width="175" height="51">
+          <img alt="instagram logo" src="img/logo_text.png" width="175" height="51">
         </div>
-        <form>
-          <input type="text" id="userAcount" name="userAcount" placeholder="전화번호, 사용자 이름 또는 이메일" style="width: 258px; height: 36px;">
-          <br>
-          <input type="password" id="userPassword" name="userPassword" placeholder="비밀번호" style="width: 258px; height: 36px;">
-          <br>
-          <input type="button" id="loginButton" value="로그인">  
-        </form>
-        <div>
-          <hr>
-          <p><span class="facebookLogo"></span><span>Facebook으로 로그인</span></p>
-          <a href="">비밀번호를 잊으셨나요?</a>
+        <div class="loginForm">
+          <form>
+            <input type="text" class="userAcount" name="userAcount" placeholder="전화번호, 사용자 이름 또는 이메일" style="width: 258px; height: 36px;">
+            <input type="password" class="userPassword" name="userPassword" placeholder="비밀번호" style="width: 258px; height: 36px;">
+            <input type="button" class="loginButton" value="로그인">  
+            <div class="divLine">
+              <div class="orLine"></div>
+              <div class="orText">
+                <p>또는</p>
+              </div>
+              <div class="orLine"></div>
+            </div>
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522mw95ip19b2f4n6uu4ga17cqpf81wkqhxwkx3d631yw5pp3jzo8ar%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dko_KR%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6897f3f7-7f10-4074-9982-030c410bd533&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522mw95ip19b2f4n6uu4ga17cqpf81wkqhxwkx3d631yw5pp3jzo8ar%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0">
+              <img src="img/facebook_logo.png" alt="facebook logo" width="15" height="15">
+              <span>Facebook으로 로그인</span>
+            </a>  
+          </form>
+        </div>
+        <div class="forgetPassword">
+          <a href="https://www.instagram.com/accounts/password/reset/?hl=ko">비밀번호를 잊으셨나요?</a>
         </div>
      </div>
       <div class="signUp">
-        <p>계정이 없으신가요? <span><a href="">가입하기</a></span></p>
+        <p>계정이 없으신가요? 
+          <span>
+            <a href="https://www.instagram.com/accounts/emailsignup/?hl=ko">가입하기</a>
+          </span>
+        </p>
       </div>
       <div class="downloadApp">
         <p>앱을 다운로드하세요.</p>
-        <img class="appstore_download" src="img/appstore_download.png" alt="App Store에서 이용 가능">
-        <img class="googlePlay_download" src="img/googlePlay_download.png" alt="Google Play에서 이용 가능">
+        <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&ct=igweb.loginPage.badge&mt=8&vt=lo" target="_blank">
+          <img class="appstoreDownload" src="img/appstore_download.png" alt="App Store에서 이용 가능">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D25DB95A7-2BB3-4356-9C94-1BFEAAC9CE51%26utm_content%3Dlo%26utm_medium%3Dbadge" target="_blank">
+          <img class="googlePlayDownload" src="img/googlePlay_download.png" alt="Google Play에서 이용 가능">
+        </a>
       </div>
     </div>
     <script src="js/login.js"></script>
