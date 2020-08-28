@@ -34,7 +34,7 @@ nav .logo {
     padding-left: 16px;
 }
 
-nav .logo li {
+nav .logo span {
     height: 30px;
     overflow: hidden;
     text-indent: -9999px;
@@ -43,6 +43,7 @@ nav .logo li {
 nav .logo--img {
     background: url('../img/logo.png') 0 center no-repeat;
     background-size: contain;
+    display: block;
 }
 
 nav .logo--text {
@@ -151,14 +152,14 @@ nav .menu {
     padding-right: 16px;
 }
 
-nav .menu > li {
+nav .menu > div {
     width: 26px;
     height: 26px;
     margin-left: 18px;
     text-indent: -9999px;
 }
 
-nav .menu > li > a {
+nav .menu > div > a {
     display: block;
 }
 
@@ -447,7 +448,7 @@ main .feeds .feed__icon--left {
     display: flex;
 }
 
-main .feeds .feed__icon li a,
+main .feeds .feed__icon span a,
 main .feeds .feed__icon .bookmark-button a {
     width: 40px;
     height: 40px;
@@ -494,20 +495,22 @@ main .feeds .feed__text .post {
 }
 
 main .feeds .feed__text .comments-box-handler {
+    display: block;
     font-size: 14px;
     color: #aaa;
     cursor: pointer;
+    margin-bottom: 4px;
 }
 
 main .feeds .feed__text .comments {
-    max-height: 40px;
+    max-height: 45px;
     height: 100%;
     overflow: hidden;
 }
 
-main .feeds .feed__text .post li,
-main .feeds .feed__text .comments li {
-    margin: 4px 0;
+main .feeds .feed__text .post span,
+main .feeds .feed__text .comments span {
+    margin: 2px 0;
     font-size: 14px;
 }
 

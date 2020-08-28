@@ -1,4 +1,4 @@
-.body__container {
+body {
     height: 100vh;
     position: relative;
     display: flex;
@@ -229,7 +229,7 @@ main .entry .quick-link__icon-container {
     margin: 10px 0;
 }
 
-main .entry .quick-link__icon-container li {
+main .entry .quick-link__icon-container span {
     width: 140px;
     height: 40px;
     overflow: hidden;

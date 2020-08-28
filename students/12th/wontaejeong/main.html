@@ -21,26 +21,26 @@
             <!-- NAV -->
             <nav>
                 <div class="nav__inner">
-                    <ul class="logo">
-                        <li class="logo--img">Westagram image logo</li>
-                        <li class="logo--text">Westagram text logo</li>
-                    </ul>
+                    <div class="logo">
+                        <span class="logo--img">Westagram image logo</span>
+                        <span class="logo--text">Westagram text logo</span>
+                    </div>
                     <div class="search-box">
                         <input type="text" class="search-box__input" />
                         <span class="search-box__text">검색</span>
                         <ul class="result"></ul>
                     </div>
-                    <ul class="menu">
-                        <li class="menu__direct-message">
+                    <nav class="menu">
+                        <div class="menu__direct-message">
                             <a href="#">Direct-message</a>
-                        </li>
-                        <li class="menu__explore">
+                        </div>
+                        <div class="menu__explore">
                             <a href="#">Explore</a>
-                        </li>
-                        <li class="menu__activity">
+                        </div>
+                        <div class="menu__activity">
                             <a href="#">Activity</a>
-                        </li>
-                        <li class="menu__user">
+                        </div>
+                        <div class="menu__user">
                             <a href="#">User Avartar</a>
                             <ul class="menu__sub-menu">
                                 <li class="profile"><a href="#">프로필</a></li>
@@ -50,8 +50,8 @@
                                     <a href="#">로그아웃</a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </nav>
                 </div>
             </nav>
 
@@ -61,10 +61,10 @@
                     <ul class="story-container"></ul>
                     <article class="feed">
                         <header>
-                            <ul class="user">
-                                <li class="user__photo"></li>
-                                <li class="user__name">xxadoraa</li>
-                            </ul>
+                            <div class="user">
+                                <span class="user__photo"></span>
+                                <span class="user__name">xxadoraa</span>
+                            </div>
                             <div class="more">🎲</div>
                         </header>
                         <section class="feed__photo">
@@ -74,53 +74,27 @@
                             />
                         </section>
                         <section class="feed__icon">
-                            <ul class="feed__icon--left">
-                                <li class="likes-button">
+                            <div class="feed__icon--left">
+                                <span class="likes-button">
                                     <a href="#"></a>
-                                </li>
-                                <li class="comment-button">
+                                </span>
+                                <span class="comment-button">
                                     <a href="#"></a>
-                                </li>
-                                <li class="direct-button">
+                                </span>
+                                <span class="direct-button">
                                     <a href="#"></a>
-                                </li>
-                            </ul>
+                                </span>
+                            </div>
                             <div class="bookmark-button"><a href="#"></a></div>
                         </section>
                         <section class="feed__text">
                             <span class="likes-count">좋아요 17,014개</span>
-                            <ul class="post">
-                                <li class="post__user-name">xxadoraa</li>
-                                <li class="post__text">정말 정말 감사합니다!</li>
-                            </ul>
+                            <div class="post">
+                                <span class="post__user-name">xxadoraa</span>
+                                <span class="post__text">정말 정말 감사합니다!</span>
+                            </div>
                             <span class="comments-box-handler"> 모든 댓글 보기 </span>
-                            <ul class="comments">
-                                <li class="comment">
-                                    <div>
-                                        <span class="comment__user-name">
-                                            username_01
-                                        </span>
-                                        <span class="comment__text">👌</span>
-                                    </div>
-                                    <div>
-                                        <span class="like"></span>
-                                        <span class="delete-button">✂️</span>
-                                    </div>
-                                </li>
-
-                                <li class="comment">
-                                    <div>
-                                        <span class="comment__user-name">
-                                            username_02
-                                        </span>
-                                        <span class="comment__text">🤟🏾</span>
-                                    </div>
-                                    <div>
-                                        <span class="like"></span>
-                                        <span class="delete-button">✂️</span>
-                                    </div>
-                                </li>
-                            </ul>
+                            <ul class="comments"></ul>
                             <span class="date"> 20시간 전 </span>
                             <div class="input">
                                 <input type="text" placeholder="댓글 달기..." />
@@ -130,8 +104,8 @@
                     </article>
                 </div>
 
-                <ul class="main-right">
-                    <li class="my-profile">
+                <div class="main-right">
+                    <section class="my-profile">
                         <div class="my-profile__photo">
                             <img src="./img/wecode.jpg" alt="My Photo" />
                         </div>
@@ -139,15 +113,15 @@
                             <span class="my-profile__text__name">wecode_bootcamp</span>
                             <span class="my-profile__text__remark">WeCode | 위코드</span>
                         </div>
-                    </li>
-                    <li class="suggestion-container">
+                    </section>
+                    <section class="suggestion-container">
                         <header>
                             <span>회원님을 위한 추천</span>
                             <span>모두 보기</span>
                         </header>
                         <ul class="suggestion"></ul>
-                    </li>
-                    <li class="site-map-container">
+                    </section>
+                    <section class="site-map-container">
                         <ul class="site-map">
                             <li>
                                 <a href="#">소개</a>
@@ -185,9 +159,9 @@
                                 <a href="#">언어</a>
                             </li>
                         </ul>
-                    </li>
+                    </section>
                     <span class="copyright">© 2020 WESTAGRAM FROM FACEBOOK</span>
-                </ul>
+                </div>
             </main>
         </div>
     </body>

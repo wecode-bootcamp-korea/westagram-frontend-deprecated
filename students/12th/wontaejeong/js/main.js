@@ -1,3 +1,4 @@
+// Data
 const userData = [
     {
         id: 1,
@@ -70,35 +71,58 @@ const userData = [
         isFollowed: false,
     },
 ];
+const commentData = [
+    {
+        user: 'username_01',
+        comment: '👌',
+    },
+    {
+        user: 'username_02',
+        comment: '🤟🏾',
+    },
+];
 
-(handleSearchText = () => {
-    const searchInput = document.querySelector('nav .search-box__input');
+let signedInUser = 'Wecode';
+
+// Search bar
+const searchInput = document.querySelector('nav .search-box__input');
+const searchResult = document.querySelector('.search-box .result');
+const searchText = document.querySelector('.search-box__text');
+
+let results = document.querySelectorAll('.result__user-name');
+
+createDefaultSearchResult(userData);
+
+searchInput.addEventListener('focusin', () => handlePlaceHolderPosition('36px'));
+searchInput.addEventListener('focusout', () => handlePlaceHolderPosition('50%'));
+searchInput.addEventListener('keyup', showSearchResult);
+searchInput.addEventListener('keyup', () => {
+    searchText.innerText = searchInput.value ? '' : '검색';
+});
+
+function showSearchResult() {
+    results = document.querySelectorAll('.result__user-name');
+
+    const newResult = [...results].filter((result) => {
+        return !result.innerText.includes(searchInput.value);
+    });
+
+    newResult.forEach((el) => {
+        el.parentElement.parentElement.remove();
+    });
+
+    if (!searchInput.value) {
+        searchResult.innerHTML = '';
+        createDefaultSearchResult(userData);
+    }
+}
+
+function handlePlaceHolderPosition(position) {
     const searchText = document.querySelector('nav .search-box__text');
+    searchText.style.left = position;
+}
 
-    searchInput.addEventListener('focusin', () => {
-        searchText.style.left = '36px';
-    });
-    searchInput.addEventListener('focusout', () => {
-        searchText.style.left = '50%';
-    });
-})();
-
-(showMenuOnClick = () => {
-    const userMenu = document.querySelector('.menu__user a');
-    const subMenu = document.querySelector('.menu__sub-menu');
-
-    userMenu.addEventListener('click', () => subMenu.classList.toggle('clicked'));
-
-    document.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        if (e.target !== userMenu) {
-            subMenu.classList.remove('clicked');
-        }
-    });
-})();
-
-const createSearchResult = (data) => {
+function createDefaultSearchResult(data) {
     const searchResult = document.querySelector('.search-box .result');
 
     data.forEach((obj, index) => {
@@ -118,46 +142,26 @@ const createSearchResult = (data) => {
         photoElement.style.background = `${obj.photo}`;
         photoElement.style.backgroundSize = 'contain';
     });
-};
+}
 
-createSearchResult(userData);
+// Sub-Menu
+const userMenu = document.querySelector('.menu__user a');
+const subMenu = document.querySelector('.menu__sub-menu');
 
-(handleSearchResult = () => {
-    const input = document.querySelector('.search-box__input');
-    const searchResult = document.querySelector('.search-box .result');
-    let results = document.querySelectorAll('.result__user-name');
+userMenu.addEventListener('click', () => subMenu.classList.toggle('clicked'));
+document.addEventListener('click', (e) => {
+    e.preventDefault();
 
-    input.addEventListener('keyup', () => {
-        results = document.querySelectorAll('.result__user-name');
+    if (e.target !== userMenu) {
+        subMenu.classList.remove('clicked');
+    }
+});
 
-        const newResult = [...results].filter((result) => {
-            return !result.innerText.includes(input.value);
-        });
-
-        newResult.forEach((el) => {
-            el.parentElement.parentElement.remove();
-        });
-
-        if (!input.value) {
-            searchResult.innerHTML = '';
-            createSearchResult(userData);
-        }
-    });
-})();
-
-(removeDefaultSearchTextOnKeyUp = () => {
-    const searchText = document.querySelector('.search-box__text');
-    const searchInput = document.querySelector('.search-box__input');
-
-    searchInput.addEventListener('keyup', () => {
-        searchText.innerText = searchInput.value ? '' : '검색';
-    });
-})();
-
+// Suggestion
 (createSuggestion = () => {
     const suggestions = document.querySelector('.suggestion');
 
-    for (let obj of userData) {
+    userData.map((obj) => {
         const { id, name, photo, isFollowed } = obj;
 
         if (!isFollowed) {
@@ -182,13 +186,14 @@ createSearchResult(userData);
             photoElement.style.background = `${photo}`;
             photoElement.style.backgroundSize = 'contain';
         }
-    }
+    });
 })();
 
+// Story
 (createStories = () => {
     const stories = document.querySelector('.story-container');
 
-    for (let obj of userData) {
+    userData.map((obj) => {
         const { id, name, photo, isFollowed } = obj;
 
         if (isFollowed) {
@@ -208,94 +213,94 @@ createSearchResult(userData);
             photoElement.style.background = `${photo}`;
             photoElement.style.backgroundSize = 'contain';
         }
-    }
+    });
 })();
 
-const createComment = (input, user) => {
+// Comment
+const commentsBox = document.querySelector('.comments');
+const commentInput = document.querySelector('.feed__text .input input');
+const submitButton = document.querySelector('.input button');
+const showAllCommentsButton = document.querySelector('.comments-box-handler');
+
+let isClicked = false;
+
+showAllCommentsButton.addEventListener('click', handleCommentBoxSize);
+
+commentInput.addEventListener('keyup', () => {
+    submitButton.className = commentInput.value ? 'hasValue' : '';
+});
+commentInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        commentData.push({ user: signedInUser, comment: commentInput.value });
+        createComment();
+        commentInput.value = '';
+
+        // 새로운 노드리스트 전달
+        removeComment();
+        handleLikesButtonColor();
+    }
+});
+
+submitButton.addEventListener('click', () => {
+    commentData.push({ user: signedInUser, comment: commentInput.value });
+    createComment();
+    commentInput.value = '';
+    commentInput.focus();
+
+    // 새로운 노드리스트 전달
+    removeComment();
+    handleLikesButtonColor();
+});
+
+createComment();
+removeComment();
+handleLikesButtonColor();
+
+function removeComment() {
+    const deleteButtons = document.querySelectorAll('.delete-button');
+
+    deleteButtons.forEach((deleteButton) => {
+        deleteButton.addEventListener('click', (e) => {
+            e.target.parentElement.parentElement.remove();
+            commentData.splice(e.target.id[0], 1);
+        });
+    });
+}
+
+function handleLikesButtonColor() {
+    const likesButtons = document.querySelectorAll('.like');
+
+    likesButtons.forEach((likesButton) => {
+        likesButton.addEventListener('click', (e) => {
+            e.target.classList.toggle('clicked');
+        });
+    });
+}
+
+function createComment() {
     const comments = document.querySelector('.comments');
 
-    comments.innerHTML = `
+    comments.innerHTML = '';
+    commentData.map((obj, index) => {
+        return (comments.innerHTML = `
         <li class="comment">
             <div>
-                <span class="comment__user-name">${user}</span>
-                <span class="comment__text">${input.value}</span>
+                <span class="comment__user-name">${obj.user}</span>
+                <span class="comment__text">${obj.comment}</span>
             </div>
             <div>
                 <span class="like"></span>
-                <span class="delete-button">✂️</span>
+                <span class="delete-button" id="${index}comment">✂️</span>
             </div>
         </li>
         ${comments.innerHTML}
-    `;
-};
-
-(handleCommentsBoxSize = () => {
-    const commentsBox = document.querySelector('.comments');
-    const button = document.querySelector('.comments-box-handler');
-
-    let isClicked = false;
-
-    button.addEventListener('click', () => {
-        commentsBox.style.maxHeight = isClicked ? '40px' : '100%';
-        button.innerText = isClicked ? '모든 댓글 보기' : '댓글 접기';
-
-        isClicked = !isClicked;
+    `);
     });
-})();
+}
 
-(handleCommentEvents = () => {
-    const input = document.querySelector('.feed__text .input input');
-    const submitButton = document.querySelector('.input button');
+function handleCommentBoxSize() {
+    commentsBox.style.maxHeight = isClicked ? '45px' : '100%';
+    showAllCommentsButton.innerText = isClicked ? '모든 댓글 보기' : '댓글 접기';
 
-    let deleteButtons = document.querySelectorAll('.delete-button');
-    let likesButtons = document.querySelectorAll('.like');
-
-    input.addEventListener('keyup', () => {
-        submitButton.className = input.value ? 'hasValue' : '';
-    });
-
-    input.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-            createComment(input, 'Wecode');
-            input.value = '';
-
-            deleteButtons = document.querySelectorAll('.delete-button');
-            likesButtons = document.querySelectorAll('.like');
-
-            removeComment();
-            handleLikesButtonColor();
-        }
-    });
-
-    submitButton.addEventListener('click', (e) => {
-        createComment(input, 'Wecode');
-        input.value = '';
-        input.focus();
-
-        deleteButtons = document.querySelectorAll('.delete-button');
-        likesButtons = document.querySelectorAll('.like');
-
-        removeComment();
-        handleLikesButtonColor();
-    });
-
-    function removeComment() {
-        deleteButtons.forEach((deleteButton) => {
-            deleteButton.addEventListener('click', (e) => {
-                e.target.parentElement.parentElement.remove();
-            });
-        });
-    }
-
-    function handleLikesButtonColor() {
-        likesButtons.forEach((likesButton) => {
-            likesButton.addEventListener('click', (e) => {
-                e.target.classList.toggle('clicked');
-            });
-        });
-    }
-
-    removeComment();
-    handleCommentsBoxSize();
-    handleLikesButtonColor();
-})();
+    isClicked = !isClicked;
+}
