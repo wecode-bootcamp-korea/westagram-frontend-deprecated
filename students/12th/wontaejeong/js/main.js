@@ -91,8 +91,6 @@ const searchInput = document.querySelector('nav .search-box__input');
 const searchResult = document.querySelector('.search-box .result');
 const searchText = document.querySelector('.search-box__text');
 
-let results = document.querySelectorAll('.result__user-name');
-
 createDefaultSearchResult(userData);
 
 searchInput.addEventListener('focusin', () => handlePlaceHolderPosition('36px'));
@@ -103,7 +101,7 @@ searchInput.addEventListener('keyup', () => {
 });
 
 function showSearchResult() {
-    results = document.querySelectorAll('.result__user-name');
+    const results = document.querySelectorAll('.result__user-name');
 
     const newResult = [...results].filter((result) => {
         return !result.innerText.includes(searchInput.value);
