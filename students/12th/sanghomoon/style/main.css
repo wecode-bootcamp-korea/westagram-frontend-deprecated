@@ -1,0 +1,480 @@
+body {
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 935px;
+    padding: 0 20px;
+}
+
+/* 메인 로고 이미지 */
+.navMainLogo {
+    display: flex;
+    align-items: center;
+}
+
+.navMainLogo a {
+    height: 30px;
+}
+
+.navMainLogo a img {
+    width: 103px;
+}
+
+/* nav 검색창 */
+.navSearchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.navSearchBox img {
+    position: absolute;
+    width: 10px;
+    left: 73px;
+}
+
+.navSearchBox input {
+    width: 215px;
+    height: 28px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    font-size: 12px;
+    outline: none;
+    padding: 7px;
+}
+
+.navSearchBox input::placeholder {
+    color: #909090;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+}
+
+.navSearchBox input:focus::placeholder {
+    text-align: left;
+}
+
+/* 메뉴 */
+.navMenu {
+    display: flex;
+}
+
+.navMenu li {
+    list-style: none;
+}
+
+.navMenu li:nth-child(5) img {
+    border-radius: 100%;
+}
+
+.navMenu li img {
+    width: 22px;
+    margin: 0 0 0 24px;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 935px;
+    height: 1100px;
+    padding: 30px 0 0;
+}
+
+/* main-left */
+.mainLeft {
+    /* border: 1px solid green; */
+    width: 614px;
+    margin-right: 28px;
+}
+
+.mainLeft .story {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 614px;
+    height: 86px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin: 0 0 24px;
+    padding: 16px 0;
+    list-style: none;
+    background-color: #ffffff;
+}
+
+.mainLeft .story li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mainLeft .story li .imgWrap {
+    width: 62px;
+    height: 62px;
+    padding: 2px 0 0 2px;
+    border-radius: 100%;
+    background: radial-gradient(
+        circle at 0% 99%,
+        #FFC900 0%,
+        #FFAB00 20%,
+        #CC0C67 70%
+        );
+}
+    
+.mainLeft .story li img {
+    width: 56px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+}
+    
+.mainLeft .story li .account {
+    font-size: 12px;
+    margin-top: 5px;
+    width: 68px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mainLeft .feeds .feedsHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 582px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    border-bottom: none;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+.mainLeft .feeds .feedsHeader .profile {
+    display: flex;
+    justify-content: left;
+}
+
+.mainLeft .feeds .feedsHeader .profile .profileImg img {
+    width: 32px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsHeader .profile .profileId {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 7.5px;
+    padding: 7.5px 0 0 12px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsHeader .headerMenu img {
+    width: 24px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsBody {
+    width: 614px;
+    height: 614px;
+    background-color: #ffffff;
+    border: 1px solid #DBDBDB;
+}
+
+.mainLeft .feeds .feedsBody img {
+    width: 614px;
+}
+
+.mainLeft .feeds .feedsFooter {
+    width: 614px;
+    border: 1px solid #DBDBDB;
+    border-top: none;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; 
+    background-color: #ffffff;
+}
+
+.mainLeft .feeds .feedsFooter .socialMenu {
+    width: 590px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    /* background-color: #ffffff; */
+}
+
+.mainLeft .feeds .feedsFooter .socialMenu .leftMenu {
+    display: flex;
+    align-items: center;
+}
+
+.mainLeft .feeds .feedsFooter .socialMenu .leftMenu img {
+    width: 26px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsFooter .socialMenu img {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsFooter .contentsBox {
+    width: 614px;
+    font-size: 14px;
+}
+
+
+.mainLeft .feeds .feedsFooter .contentsBox .likeCountBar {
+    width: 590px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px 18px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsFooter .contentsBox .contents {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.mainLeft .feeds .feedsFooter .contentsBox .contents .postUserId {
+    font-weight: bold;
+    padding: 0 4px 0 8px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsFooter .contentsBox .contents .userContents {
+    padding-bottom: 4px;
+}
+
+.mainLeft .feeds .feedsFooter .contentsBox .contents .userContents span {
+    color: #8E8E8E;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentList {
+    display: block;
+    width: 614px;
+    height: 66 +px;
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    /* overflow: auto; */
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentList li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 21px;
+    list-style: none;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentList li .commentInfo {
+    display: flex;
+    font-size: 14px;
+    padding: 0 18px;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentList li .commentInfo .userId {
+    font-weight: 600;
+    padding-right: 6px;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentList li .btnGroup {
+    display: flex;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentList li .btnGroup .delBtn button {
+    display: none;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 10px;
+    padding-right: 6px;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentList li .btnGroup .likeBtn img {
+    width: 12px;
+    height: 12px;
+    padding: 4.3px 14px 0 0;
+    cursor: pointer;
+}
+
+
+.mainLeft .feeds .feedsFooter .commentBox .postTimeBar {
+    width: 578px;
+    height: 19px;
+    font-size: 10px;
+    color: #8E8E8E;
+    padding: 6px 18px 0;
+    cursor: pointer;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentHandler {
+    width: 578px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EFEFEF;
+    padding: 0 18px;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentHandler .commentInput input {
+    width: 540px;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.mainLeft .feeds .feedsFooter .commentBox .commentHandler .commentBtn button {
+    color: #BEE2FD;
+    background-color: #ffffff;
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+
+/* main-right */
+.mainRight {
+    width: 293px;
+}
+
+.mainRight .profileContainer {
+    display: flex;
+    align-items: center;
+    width: 290px;
+    height: 45px;
+    margin-top: 28px;
+}
+
+.mainRight .profileContainer img {
+    width: 56px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.mainRight .profileContainer .profileInfo {
+    margin-left: 18px;
+}
+
+.mainRight .profileContainer .profileInfo .profileId {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mainRight .profileContainer .profileInfo .profileName {
+    font-size: 12px;
+    color: #8E8E8E;
+    margin-top: 3px;
+}
+
+.mainRight .recommendContainer {
+    width: 290px;
+    height: 291px;
+}
+
+.mainRight .recommendContainer .recommendHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.mainRight .recommendContainer .recommendHeader div:nth-child(1) {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8E8E8E;
+}
+
+.mainRight .recommendContainer .recommendHeader div:nth-child(2) {
+    font-size: 12px;
+    font-weight: bold;
+    color: #262626;
+    cursor: pointer;
+}
+
+.mainRight .recommendContainer .recommendList {
+    padding-top: 8px;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer img {
+    width: 32px;
+    padding-left: 4px;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer .textContainer {
+    margin-right: auto;
+    padding-left: 12px;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer .textContainer .profileId {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer .textContainer .relationship {
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.mainRight .recommendContainer .recommendList .profileContainer .followBtn {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0095F6;
+    cursor: pointer;
+}
+
+.mainRight .footerBox {
+    font-size: 11px;
+    color: #C7C7C7;
+    margin-top: 6px;
+}
+
+.mainRight .footerBox .footerMenu {
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.mainRight .footerBox .copyright {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 16px;
+}
+
+
+
+
+
+

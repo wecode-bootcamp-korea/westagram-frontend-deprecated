@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+}
+
+.loginContainer .instaLogo {
+    margin: 22px 0 12px;
+    padding: 20px 0;
+}
+
+.loginContainer .loginForm input {
+    display: block;
+    width: 254px;
+    font-size: 12px;
+    margin: 5px auto;
+    padding: 12px 0 9px 8px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    outline: none;
+}
+
+.loginContainer .loginForm input:focus {
+    border: 1px solid #A8A8A8;
+}
+
+.loginContainer .loginForm .loginBtn {
+    width: 266px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 8px 40px;
+    padding: 8px;
+    background-color: #B9E0FC;
+    border: 1px solid #B9E0FC;
+    border-radius: 4px;
+    outline: none;
+}
+
+.loginContainer .findPassword {
+    margin: 100px auto 20px;
+}
+
+.loginContainer .findPassword a {
+    color: #00376C;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+
