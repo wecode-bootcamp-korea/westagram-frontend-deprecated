@@ -101,9 +101,9 @@ searchInput.addEventListener('keyup', () => {
 });
 
 function showSearchResult() {
-    const results = document.querySelectorAll('.result__user-name');
+    const results = Array.from(document.querySelectorAll('.result__user-name'));
 
-    const newResult = [...results].filter((result) => {
+    const newResult = results.filter((result) => {
         return !result.innerText.includes(searchInput.value);
     });
 
