@@ -32,7 +32,6 @@ body{
 }
 
 .signup-content {
-    width: 348px;
     height: 263px;
     margin-top: 10px;
     display: flex;
@@ -85,7 +84,6 @@ form {
 }
 
 .forgotPassword {
-    width: 348px;
     height: 14px;
     font-size: 12px;
     display: flex;
