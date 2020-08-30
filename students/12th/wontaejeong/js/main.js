@@ -73,10 +73,12 @@ const userData = [
 ];
 const commentData = [
     {
+        id: 0,
         user: 'username_01',
         comment: '👌',
     },
     {
+        id: 1,
         user: 'username_02',
         comment: '🤟🏾',
     },
@@ -161,7 +163,7 @@ document.addEventListener('click', (e) => {
 (createSuggestion = () => {
     const suggestions = document.querySelector('.suggestion');
 
-    userData.map((obj) => {
+    userData.forEach((obj) => {
         const { id, name, photo, isFollowed } = obj;
 
         if (!isFollowed) {
@@ -193,7 +195,7 @@ document.addEventListener('click', (e) => {
 (createStories = () => {
     const stories = document.querySelector('.story-container');
 
-    userData.map((obj) => {
+    userData.forEach((obj) => {
         const { id, name, photo, isFollowed } = obj;
 
         if (isFollowed) {
@@ -281,8 +283,10 @@ function createComment() {
     const comments = document.querySelector('.comments');
 
     comments.innerHTML = '';
-    commentData.map((obj, index) => {
-        return (comments.innerHTML = `
+    commentData.forEach((obj, index) => {
+        obj.id = index;
+
+        comments.innerHTML = `
         <li class="comment">
             <div>
                 <span class="comment__user-name">${obj.user}</span>
@@ -294,7 +298,7 @@ function createComment() {
             </div>
         </li>
         ${comments.innerHTML}
-    `);
+    `;
     });
 }
 

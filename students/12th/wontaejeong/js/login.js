@@ -51,19 +51,19 @@ const slideData = [
 (function createSlideElements() {
     const slider = document.querySelector('.slider');
 
-    slideData.map((slide) => {
-        return (slider.innerHTML = `
-                    ${slider.innerHTML}
-                    <li>
-                        <img alt="${slide.alt}" src="${slide.src}">
-                    </li>
-                `);
+    slideData.forEach((slide) => {
+        slider.innerHTML = `
+            ${slider.innerHTML}
+            <li>
+                <img alt="${slide.alt}" src="${slide.src}">
+            </li>
+        `;
     });
 })();
 
 (function moveSlidePhotos() {
     const slides = document.querySelectorAll('.slider li');
-    let current = 0;
+    let current = 1;
 
     slides[0].className = 'focus';
     setInterval(() => {
