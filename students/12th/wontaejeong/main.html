@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>WESTAGRAM</title>
+
+        <!-- style -->
+        <link href="./styles/common.css" rel="stylesheet" type="text/css" />
+        <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- script -->
+        <script src="./js/main.js" defer></script>
+    </head>
+    <body>
+        <div class="body__container">
+            <!-- NAV -->
+            <nav>
+                <div class="nav__inner">
+                    <div class="logo">
+                        <span class="logo--img">Westagram image logo</span>
+                        <span class="logo--text">Westagram text logo</span>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" class="search-box__input" />
+                        <span class="search-box__text">검색</span>
+                        <ul class="result"></ul>
+                    </div>
+                    <nav class="menu">
+                        <div class="menu__direct-message">
+                            <a href="#">Direct-message</a>
+                        </div>
+                        <div class="menu__explore">
+                            <a href="#">Explore</a>
+                        </div>
+                        <div class="menu__activity">
+                            <a href="#">Activity</a>
+                        </div>
+                        <div class="menu__user">
+                            <a href="#">User Avartar</a>
+                            <ul class="menu__sub-menu">
+                                <li class="profile"><a href="#">프로필</a></li>
+                                <li class="saved"><a href="#">저장됨</a></li>
+                                <li class="settings"><a href="#">설정</a></li>
+                                <li class="sign-out">
+                                    <a href="#">로그아웃</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+
+            <!-- MAIN -->
+            <main>
+                <div class="feeds">
+                    <ul class="story-container"></ul>
+                    <article class="feed">
+                        <header>
+                            <div class="user">
+                                <span class="user__photo"></span>
+                                <span class="user__name">xxadoraa</span>
+                            </div>
+                            <div class="more">🎲</div>
+                        </header>
+                        <section class="feed__photo">
+                            <img
+                                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/118471032_308627900447854_5218360257830486986_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=gBj0t3zwdQcAX_ZD9MO&oh=1777092353e6bc03f3cfbc9d7c19750b&oe=5F6D8167"
+                                alt="xxadoraa_200825"
+                            />
+                        </section>
+                        <section class="feed__icon">
+                            <div class="feed__icon--left">
+                                <span class="likes-button">
+                                    <a href="#"></a>
+                                </span>
+                                <span class="comment-button">
+                                    <a href="#"></a>
+                                </span>
+                                <span class="direct-button">
+                                    <a href="#"></a>
+                                </span>
+                            </div>
+                            <div class="bookmark-button"><a href="#"></a></div>
+                        </section>
+                        <section class="feed__text">
+                            <span class="likes-count">좋아요 17,014개</span>
+                            <div class="post">
+                                <span class="post__user-name">xxadoraa</span>
+                                <span class="post__text">정말 정말 감사합니다!</span>
+                            </div>
+                            <span class="comments-box-handler"> 모든 댓글 보기 </span>
+                            <ul class="comments"></ul>
+                            <span class="date"> 20시간 전 </span>
+                            <div class="input">
+                                <input type="text" placeholder="댓글 달기..." />
+                                <button type="submit">게시</button>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+
+                <div class="main-right">
+                    <section class="my-profile">
+                        <div class="my-profile__photo">
+                            <img src="./img/wecode.jpg" alt="My Photo" />
+                        </div>
+                        <div class="my-profile__text">
+                            <span class="my-profile__text__name">wecode_bootcamp</span>
+                            <span class="my-profile__text__remark">WeCode | 위코드</span>
+                        </div>
+                    </section>
+                    <section class="suggestion-container">
+                        <header>
+                            <span>회원님을 위한 추천</span>
+                            <span>모두 보기</span>
+                        </header>
+                        <ul class="suggestion"></ul>
+                    </section>
+                    <section class="site-map-container">
+                        <ul class="site-map">
+                            <li>
+                                <a href="#">소개</a>
+                            </li>
+                            <li>
+                                <a href="#">도움말</a>
+                            </li>
+                            <li>
+                                <a href="#">홍보 센터</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">채용 정보</a>
+                            </li>
+                        </ul>
+                        <ul class="site-map">
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">약관</a>
+                            </li>
+                            <li>
+                                <a href="#">위치</a>
+                            </li>
+                            <li>
+                                <a href="#">인기 계정</a>
+                            </li>
+                            <li>
+                                <a href="#">해시태그</a>
+                            </li>
+                            <li>
+                                <a href="#">언어</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <span class="copyright">© 2020 WESTAGRAM FROM FACEBOOK</span>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
