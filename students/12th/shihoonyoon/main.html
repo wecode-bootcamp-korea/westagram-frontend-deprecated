@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>WESTAGRAM</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
      <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
@@ -16,37 +16,159 @@
           </div>
           <input class="nav-searchBox" type="search" placeholder="검색">
           <ul class="nav-icons">
-            <li><img class="homeIcon" src="img/home.png" width="25px"></li>
-            <li><img class="messageIcon" src="img/dm.png" width="25px"></li>
-            <li><img class="feedIcon" src="img/explore.png" width="25px"></li>
-            <li><img class="likeIcon" src="img/heart.png" width="25px"></li>
-            <li><img class="myPageIcon" src="img/profile.png" width="25px"></li>
+            <li><img class="icon navHome" src="img/home.png"></li>
+            <li><img class="icon navMessage" src="img/dm.png"></li>
+            <li><img class="icon navFeed" src="img/explore.png"></li>
+            <li><img class="icon navLike" src="img/heart.png"></li>
+            <li><img class="icon navAccount" src="img/profile.png"></li>
           </ul>
         </div>
       </nav>
-      <div class="main"> 
-        <div class="div feeds">
-          <span>div.feeds</span>
-          <div class="article">
-            <div class="feedTopBar">
-              <img class="chelseaLogo" src="img/chelsealogo.jpg">
-                <span class="chelseaAccount">chelseafc</span>
-              <img class="dotDotDotButton" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+      <main>
+        <div class="leftOfMain">
+          <div class="storyBar">
+            <div class="storyFeed">
+              <div class="storyUserGroup">
+                <img class="picStoryUser" src="../shihoonyoon/img/friend1.jpg">
+                  <span>colby.yoo.</span>
+              </div>
+              <div class="storyUserGroup">
+                <img class="picStoryUser" src="../shihoonyoon/img/friend2.jpg">
+                  <span>anujj112</span>
+              </div>
+              <div class="storyUserGroup">
+                <img class="picStoryUser" src="../shihoonyoon/img/friend3.jpg">
+                  <span>superstar...</span>
+              </div>
+              <div class="storyUserGroup">
+                <img class="picStoryUser" src="../shihoonyoon/img/friend4.jpg">
+                  <span>monica_...</span>
+              </div>
+              <div class="storyUserGroup">
+                <img class="picStoryUser" src="../shihoonyoon/img/friend5.jpg">
+                  <span>cityofseoul</span>
+              </div>
+              <div class="storyUserGroup">
+                <img class="picStoryUser" src="../shihoonyoon/img/friend6.jpg">
+                  <span>uhh_laxa...</span>
+              </div>
+              <div class="storyUserGroup">
+                <img class="picStoryUser" src="../shihoonyoon/img/friend7.jpg">
+                  <span>aznsubas...</span>
+              </div>
             </div>
-            <div class="feedPicture">
-              <img class="chelseaPlayer" src="img/chelsea.jpg">
+          </div>
+          <div class="newsFeeds">
+            <div class="article">
+              <div class="feedTopBar">
+                <div class="leftFeedTopBar">
+                  <img class="chelseaLogo" src="img/chelsealogo.jpg">
+                    <div class="chelseaAccountName">chelseafc</div>
+                </div>
+                <div class="rightFeedTopBar">
+                  <img class="dotDotDotButton" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+                </div>
+              </div>
+              <div class="feedPicture">
+                <img class="chelseaPlayer" src="img/chelsea.jpg">
+              </div>
+              <div class="feedIcons">
+                <div class="feedIconsLeft">
+                  <img class="icon feedLike" src="img/heart.png">
+                  <img class="icon feedComment" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+                  <img class="icon feedMessage" src="img/dm.png">
+                </div>
+                <div class="feedIconsRight">
+                  <img class="icon bookmark" src="img/bookmark.png">
+                </div>
+              </div>
+              <div class="reply likeCount">
+                <div>좋아요 2027개</div>
+              </div>
+              <div class="reply seeAll">
+                <span>댓글 99개 모두 보기</span>
+              </div>
+              <div class="reply comment">
+                <div class="userId">shihoonyoon</div>
+                <div class="commentMessage">Welcome to the Bridge!!</div>
+                <img class="heart" src="img/heart.png" width="5px">
+              </div>
+              <div class="reply commentTime">
+                <span>1시간 전</span>
+              </div> 
+              <div class="addedComment">
+
+              </div>
+            <div class="leaveCommentBar">
+              <input class="leaveCommentBox" type="text" placeholder="댓글 달기..."></input>
+              <button class="leaveCommentButton" type="submit" onclick="postComment()">게시</button>
             </div>
-            <ul class="feed-icons">
-              <li><img class="likeIconFeedback" src="img/heart.png" width="25px"></li>
-              <li><img class="commentIconFeedback" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" width="25px"></li>
-              <li><img class=</li>
-            </ul>
+            </div>
+          </div>
+        </div> 
+        <div class="rightOfMain">
+          <div class="myAccountBox">
+            <img class="myAccountBoxPicture" src="img/shihoonyoon.jpg">
+            <div class="myAccountBoxInformation">
+              <div class="userId">shihoonyoon</div>
+              <span>윤시훈</span>
+            </div>
+          </div>
+          <div class="suggestedList">
+            <div class="suggestedListForUser">회원님을 위한 추천</div>
+            <div class="suggestedListSeeAll">모두 보기</div>
+          </div>
+          <div class="suggestedFriendsList">
+            <div class="suggestedFriends">
+              <img class="suggestedFriendPic" src="../shihoonyoon/img/suggestedfriend1.jpg">
+              <div class="suggestedFriendText">
+                <div class="suggestedFriendId">rohjh00</div>
+                <span>회원님을 위한 추천</span>
+              </div>
+              <div class="followSuggestedFriend">팔로우</div>
+            </div>
+            <div class="suggestedFriends">
+              <img class="suggestedFriendPic" src="../shihoonyoon/img/suggestedfriend2.jpg">
+              <div class="suggestedFriendText">
+                <div class="suggestedFriendId">ji.chung</div>
+                <span>kang.yum님이 팔로우합니다</span>
+              </div>
+              <div class="followSuggestedFriend">팔로우</div>
+            </div>
+            <div class="suggestedFriends">
+              <img class="suggestedFriendPic" src="../shihoonyoon/img/suggestedfriend3.jpg">
+              <div class="suggestedFriendText">
+                <div class="suggestedFriendId">santar2528</div>
+                <span>회원님을 팔로우합니다</span>
+              </div>
+              <div class="followSuggestedFriend">팔로우</div>
+            </div>
+            <div class="suggestedFriends">
+              <img class="suggestedFriendPic" src="../shihoonyoon/img/suggestedfriend4.jpg">
+              <div class="suggestedFriendText">
+                <div class="suggestedFriendId">jaehyun.moon</div>
+                <span>hongaram님 외 6명이 팔로우합니다</span>
+              </div>
+              <div class="followSuggestedFriend">팔로우</div>
+            </div>
+            <div class="suggestedFriends">
+              <img class="suggestedFriendPic" src="../shihoonyoon/img/suggestedfriend5.jpg">
+              <div class="suggestedFriendText">
+                <div class="suggestedFriendId">ipsofactoduh</div>
+                <span>ajrogers3님 외 1명이 팔로우합니다</span>
+              </div>
+              <div class="followSuggestedFriend">팔로우</div>
+            </div>
+          <div class="companyInformation">
+            <div class="aboutInstagram">
+              <div class="about1">소개&#x000B7;도움말&#x000B7;홍보 센터&#x000B7;API&#x000B7;채용 정보&#x000B7;개인정보처리방침</div>
+              <div class="about2">약관&#x000B7;위치&#x000B7;인기 계정&#x000B7;해시태그&#x000B7;언어</div>
+            </div>
+            <div class="copyright">© 2020 INSTAGRAM FROM FACEBOOK</div>
+          </div>
           </div>
         </div>
-        <div class="div rightOfMain">
-          <spa>div.main-right</spa>
-        </div>
-      </div>
+      </main>
     </div>
     <script src="js/main.js"></script>
   </body>
