@@ -1,10 +1,20 @@
 @media screen and (max-width: 1000px) {
     main {
+        width: 100vw !important;
         display: flex;
         justify-content: center;
     }
+    nav {
+        justify-content: space-between !important;
+    }
     .main-right {
         display: none !important;
+    }
+    .logo_instagram {
+        margin-right: auto !important; 
+    }
+    .nav_icons {
+        margin-left: auto !important;
     }
 }
 
@@ -45,30 +55,20 @@ span.point-span {
 /* nav */
 nav {
     width: 100%;
-    padding: 12px 0;
+    padding: 12px 20px;
     position: fixed;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: white;
     border-bottom: 1px solid #DBDBDB;
 }
 
-.nav-container {
-    width: 1000px;
-    padding: 0 20px;
+div.nav_icons {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav div.nav-1, nav div.nav-2 {
-    max-width: 370px;
-    display: flex;
-    align-items: center;
-}
-
-div.nav-2 {
     justify-content: flex-end;
+    align-items: center;
+    margin-left: 210px;
 }
 
 nav img {
@@ -83,9 +83,10 @@ nav img {
 
 .logo_instagram {
     height: 30px;
+    margin-right: 210px;
 }
 
-.nav-2 img {
+.nav_icons img {
     margin-left: 20px;
 }
 
@@ -277,7 +278,7 @@ header {
     border-radius: 100%;
 }
 
-.main-image img {
+.main-image {
     width: 612px;
 }
 

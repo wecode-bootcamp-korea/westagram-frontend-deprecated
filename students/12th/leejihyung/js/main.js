@@ -8,13 +8,8 @@ const resultBox = document.getElementsByClassName('search-result-box')[0];
 // 댓글 데이터
 const commentArray = [
     {id: "postmalone",
-    content: "내가 입으면 더 잘 어울릴 것 같아",
-    deletebutton: `<img alt="more" class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">`,
-    likebutton: `<div class="comment-like">
-                    <img alt="하트" class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-                    <img alt="좋아요된하트" class="comment-heart-liked" src="img/liked.png">
-                </div>`}
-]
+    content: "내가 입으면 더 잘 어울릴 것 같아"}
+    ]
 
 // 계정 데이터
 const userArray = [
@@ -51,7 +46,7 @@ const userArray = [
     {id: "ssem_ni",
     nickname: "세 민",
     picture: "https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/117155857_903863120099240_2371507172497494303_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=MG5LtHwXexUAX8JmCGN&oh=17c235482e73a66bfe99d6173930e198&oe=5F7205F2"},
-]
+    ]
 
 // 댓글 데이터 노출
 commentArray.forEach(function(e) {
@@ -65,8 +60,11 @@ function showComments(comment) {
             <span class="point-span userID">${comment.id}</span>${comment.content}
         </span>
             <div>
-                ${comment.deletebutton}
-                ${comment.likebutton}
+                <img alt="more" class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+                <div class="comment-like">
+                    <img alt="하트" class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+                    <img alt="좋아요된하트" class="comment-heart-liked" src="img/liked.png">
+                </div>
             </div>`;
     commentList.appendChild(newComment);
 }
@@ -81,11 +79,10 @@ function addComment() {
         id: "thisisyourhyung",
         content: `${commentInput.value}`,
         deletebutton: `<img alt="more" class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">`,
-        likebutton: `
-            <div class="comment-like">
-                <img alt="하트" class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-                <img alt="좋아요된하트" class="comment-heart-liked" src="img/liked.png">
-            </div>`}
+        likebutton: `<div class="comment-like">
+                        <img alt="하트" class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+                        <img alt="좋아요된하트" class="comment-heart-liked" src="img/liked.png">
+                    </div>`}
     commentArray.push(newComment);
     commentInput.value = "";
     commentBtn.disabled = true;
@@ -158,8 +155,8 @@ function showFilteredID(id) {
     filteredUser.innerHTML = `
         <img class="img-profile" src=${id.picture} alt=${id.id}님의 프로필 사진">
         <div class="profile-text">
-        <span class="userID point-span">${id.id}</span>
-        <span class="sub-span">${id.nickname}</span>  
+            <span class="userID point-span">${id.id}</span>
+            <span class="sub-span">${id.nickname}</span>  
         </div>`
     searchList.appendChild(filteredUser);
 }
@@ -169,7 +166,7 @@ searchInput.addEventListener('keyup', function() {
     resultBox.style.display = "none";
     if (searchInput.value) {
         const filteredID = userArray.filter( x => matchSearch(x.id))
-        if (filteredID) {
+        if (filteredID != []) {
             filteredID.forEach(function(e) {
                 showFilteredID(e)
             })
