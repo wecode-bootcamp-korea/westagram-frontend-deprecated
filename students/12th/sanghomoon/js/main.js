@@ -1,27 +1,57 @@
-// 추후 시간 남을 때 다시 시도 예정
-// const account = document.querySelectorAll('div.account');
-// const accountLengthLimit = 9;
-// const dot = "...";
+const commentList = document.querySelector('.commentList');
+const commentHandler = document.querySelector('.commentHandler');
+const commentInput = document.querySelector('.commentInput').children[0];
+const commentBtn = document.querySelector('.commentBtn').children[0];
+
+commentHandler.addEventListener('keyup', handleCommentBtn);
+commentBtn.addEventListener('click', writeComment);
 
 
-// console.log(account[1].innerHTML);
-// console.log(account.length);
+function handleCommentBtn() {
+    let isValid = commentInput.value;
 
-// for (let i = 0; i<account.length; i++) {
-//     console.log(account[i]);
-//     console.log(account[i].innerHTML);
-// }
+    if (isValid) {
+        activeCommentBtn();
+    } else {
+        inactiveCommentBtn();
+    }
+}
 
-// function replaceToDot(str, len, dot) {
-//     for (let i = 0; i<str.length; i++) {
-//         const strValue = str[i].innerHTML;
-//         if (strValue.length > len) {
-//             return strValue = str.substr(0, 9) + dot;
-//         }
-//     }
-// }
+function activeCommentBtn() {
+    commentBtn.removeAttribute("disabled");
+    commentBtn.style.color = "#0095F6";
+    commentBtn.style.cursor = "pointer";
+}
 
-// replaceToDot(account, accountLengthLimit, dot);
+function inactiveCommentBtn() {
+    commentBtn.setAttribute("disabled","");
+    commentBtn.style.color = "#BEE2FD";
+    commentBtn.style.cursor = "default";
+}
 
-// console.log(replaceToDot(account, accountLengthLimit, dot));
+function writeComment() {
+    const createLi = document.createElement('li');
+    const commentNumber = commentList.children.length;
+    let isValid = commentInput.value;
 
+    if (commentNumber > 2) {
+        commentList.style.height = "auto";        
+    }
+
+    createLi.innerHTML = `<div class="commentInfo">
+                            <span class="userId">92moon_sh</span>
+                            <span class="userComment">${isValid}</span>
+                          </div>
+                          <div class="btnGroup">
+                            <span class="delBtn">
+                                <button>❌</button>
+                            </span>
+                            <span class="likeBtn">
+                                <img alt="likeBtn" src="img/heart.png">
+                            </span>
+                         </div>`
+
+    commentList.appendChild(createLi);
+    commentInput.value = ""; //isValid를 넣으면 안먹힘. 왜때문이죠??
+    inactiveCommentBtn();
+}
