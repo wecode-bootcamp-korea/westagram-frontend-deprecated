@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <main class="login_container">
+        <article class="login_content">
+          <div class="login_left">
+            <div class="phone_image">
+              <img class="slide_img slide_now" src="img/slide1.jpg" alt />
+              <img class="slide_img" src="img/slide2.jpg" alt />
+              <img class="slide_img" src="img/slide3.jpg" alt />
+              <img class="slide_img" src="img/slide4.jpg" alt />
+              <img class="slide_img" src="img/slide5.jpg" alt />
+            </div>
+          </div>
+          <div class="login_right">
+            <div class="login_right_top login_right_common">
+              <h1>Instagram</h1>
+              <div class="input_container">
+                <form class="login_form" method="POST" onsubmit="return false">
+                  <div class="input_button_box">
+                    <input
+                      class="id_input login_input"
+                      type="text"
+                      placeholder="전화번호, 사용자 이름 또는 이메일"
+                      onkeyup="changeLoginBtn()"
+                    />
+                    <input
+                      class="password_input login_input"
+                      type="password"
+                      placeholder="비밀번호"
+                      onkeyup="changeLoginBtn()"
+                    />
+                    <button class="login_button">
+                      <div>로그인</div>
+                    </button>
+                    <div class="or_line">
+                      <div class="line"></div>
+                      <div class="or">또는</div>
+                      <div class="line"></div>
+                    </div>
+                    <button class="facebook_login_button">
+                      <div class="facebook_icon facebook_login_all"></div>
+                      <div class="facebook_login_all">Facebook으로 로그인</div>
+                    </button>
+                  </div>
+                </form>
+                <div class="forget_password">
+                  <a>비밀번호를 잊으셨나요?</a>
+                </div>
+              </div>
+            </div>
+            <div class="login_right_signup login_right_common">
+              <div class="signup_text">
+                <p>
+                  계정이 없으신가요?
+                  <a>가입하기</a>
+                </p>
+              </div>
+            </div>
+            <div class="login_right_app">
+              <p>앱을 다운로드하세요.</p>
+              <div class="app_download">
+                <a>
+                  <img src="img/appstore.png" alt="App Store에서 이용 가능" />
+                </a>
+                <a>
+                  <img
+                    src="img/playstore.png"
+                    alt="Google Play에서 이용 가능"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer class="footer_container">
+        <div class="footer_content">
+          <ul class="footer_left">
+            <li class="footer_items">소개</li>
+            <li class="footer_items">도움말</li>
+            <li class="footer_items">홍보 센터</li>
+            <li class="footer_items">API</li>
+            <li class="footer_items">채용 정보</li>
+            <li class="footer_items">개인정보처리방침</li>
+            <li class="footer_items">약관</li>
+            <li class="footer_items">위치</li>
+            <li class="footer_items">인기 계정</li>
+            <li class="footer_items">해시태그</li>
+            <li class="footer_items">언어</li>
+          </ul>
+          <span class="footer_right">© 2020 WESTAGRAM FROM WECODE</span>
+        </div>
+      </footer>
+    </section>
+    <script src="js/login.js"></script>
+  </body>
+</html>

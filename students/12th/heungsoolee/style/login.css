@@ -1,0 +1,260 @@
+/* .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+} */
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:88vh;
+}
+
+.login_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 935px;
+    width:100%;
+    height:100%;
+}
+
+.login_left {
+    width: 454px;
+    height: 618px;
+    margin-right: 4px;
+    background-size: cover;
+    background-image: url(../img/loginphone.png);
+}
+
+.phone_image {
+    width: 100%;
+    position: relative;
+    margin: 99px 0 0 151px;
+}
+
+.slide_img {
+    width: 240px;
+    height: 427px;
+    opacity: 0;
+    transition: opacity 2.5s ease-out;
+    position: absolute;
+}
+
+.slide_now {
+    opacity: 1;
+    /* transition: opacity 1s ease-in-out; */
+}
+
+.login_right {
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    margin-left: 4px;
+}
+
+.login_right_common {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 1px;
+    border: 1px solid #dbdbdb;
+    max-width: 350px;
+}
+
+.login_right_top {
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.login_right_top h1 {
+    width: 175px;
+    height: 51px;
+    text-indent: 110%;
+    margin: 30px auto 40px;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(../img/logo_text.png);
+}
+
+.input_container {
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+}
+
+.input_button_box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login_input {
+    height: 34px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 0 40px 6px;
+    padding: 0 0 0 8px;
+    font-size: 12px;
+    background-color: #FAFAFA;
+    outline: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.login_input:focus {
+    border-color: rgb(147, 147, 147);
+}
+
+.login_button {
+    margin: 8px 40px;
+    height:30px;
+    background-color: #C0DFFD;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.or_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px 18px;
+}
+
+.line {
+    background-color: #dbdbdb;
+    width: 104px;
+    height: 1px;
+}
+
+.or {
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.facebook_login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3A559F;
+    margin: 10px 0;
+}
+
+.facebook_icon {
+    width: 16px;
+    height:16px;
+    background-image: url(../img/facebook.png);
+    background-size: cover;
+}
+
+.facebook_login_all {
+    display: inline-block;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.forget_password {
+    text-align: center;
+    font-size: 12px;
+    color: #2b417c;
+    margin: 20px 0;
+}
+
+.forget_password a {
+    cursor: pointer;
+}
+
+.login_right_signup {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* p 14px */
+
+.signup_text {
+    margin: 22px 22px 21px;
+    font-size: 14px;
+}
+
+.signup_text p {
+    color: #262626;
+    font-weight: 300;
+}
+
+.signup_text p a {
+    color: #0095f6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login_right_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_right_app p {
+    font-size: 14px;
+    color: #262626;
+    margin: 9px 0 20px;
+}
+
+.app_download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.app_download a {
+    height: 40px;
+    cursor: pointer;
+}
+
+.app_download img{
+    height: 100%;
+    background-size: cover;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:12vh;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1012px;
+    width:100%;
+    height:100%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.footer_items {
+    cursor: pointer;
+    color: #00376B
+}
+
+.footer_right {
+    color: #8e8e8e;
+}
