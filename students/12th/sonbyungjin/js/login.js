@@ -9,6 +9,8 @@ for (const el of loginInput){
         loginButton.style.backgroundColor = '#0095f6' :
         loginButton.style.backgroundColor = 'lightblue'
 })}
+
+
 // 하단 배너 이미지 링크(클릭이벤트)
 const advertisementImage = document.querySelectorAll('.advertisement img');
 advertisementImage[0].addEventListener('click', function(){

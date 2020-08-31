@@ -23,13 +23,13 @@ function appendComment(){
             </li>
         `
         // 댓글 입력 값 초기화
-        commentInput.value = null;
+        commentInput.value = "";
         // 댓글 삭제 기능
         const thisIsRemove = document.getElementsByClassName('comment--remove');
         removeComment(thisIsRemove);
         // 댓글 좋아요 기능
-        let thisIsLike = document.querySelectorAll('.comment--like');
-        likeComment(thisIsLike);
+        // let thisIsLike = document.querySelectorAll('.comment--like');
+        // likeComment(thisIsLike);
 }}
 
 // 댓글 삭제 함수(이벤트)
@@ -43,11 +43,11 @@ function removeComment(parameter){
 
 // 댓글 하트 함수(이벤트)
 function likeComment(parameter){
-    parameter.forEach( el => {
+    parameter.forEach(el => {
         el.addEventListener('click', function(e){
-            e.target.src="./img/heart.png"
-        })}
-    )
+        e.target.src="./img/heart.png";
+        })
+    })
 }
 
 // 엔터 및 클릭 이벤트
@@ -57,3 +57,8 @@ commentInput.addEventListener('keypress', function(e){
     }
 })
 commentButton.addEventListener('click', appendComment);
+
+let thisIsLike = document.querySelectorAll('.comment--like');
+thisIsLike.addEventListener('click', function(){
+    console.log(thisIsLike);
+})
