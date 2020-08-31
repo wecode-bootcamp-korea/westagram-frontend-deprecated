@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
-    <link href="style/common.css" rel="stylesheet" type="text/css" />
-    <link href="style/login.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <div id="wrap"></div>
-    <div class="loginBox">
-      <img src="img/logo_text.png" />
-      <ul>
-        <input
-          type="text"
-          class="email"
-          placeholder="전화번호, 사용자 이름 또는 이메일"
-        />
-        <input type="password" class="pwd" placeholder="비밀번호" />
-        <input type="button" value="로그인" class="loginBtn" />
-      </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Instagram</title>
+  <link href="style/common.css" rel="stylesheet" type="text/css" />
+  <link href="style/login.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+</head>
 
-      <script src="js/login.js"></script>
-      <div class="findPwd">비밀번호를 잊으셨나요?</div>
+<body>
+  <article class="container">
+    <div class="logo">
+      <img alt="로고" src="img/logo_text.png" />
     </div>
-  </body>
+    <div class="loginForm">
+      <input class="email" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+      <input class="pwd" type="password" placeholder="비밀번호" />
+      <button class="loginBtn" disabled>로그인</button>
+    </div>
+    <a href="#" class="findPwd">비밀번호를 잊으셨나요?</a>
+  </article>
+  <script src="js/login.js"></script>
+</body>
+
 </html>

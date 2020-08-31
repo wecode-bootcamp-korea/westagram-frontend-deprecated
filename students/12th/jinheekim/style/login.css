@@ -1,53 +1,57 @@
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#wrap {
-  background: #fafbfa;
-}
-.loginBox {
-  text-align: center;
-  width: 430px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  width: 350px;
   height: 480px;
-  margin: 0px 0px 10px;
-  padding: 10px 0px;
-  border: 1px solid #e8e8e8;
-  margin-top: 0px 0px 10px 0px;
-  border-width: 12px 12px 12px 1px;
-  border-color: #fafbfa #fafbfa #fafbfa #fafbfa;
-}
-img {
-  margin: 22px auto 12px;
-  margin-bottom: 30px;
-}
-ul input {
-  border-radius: 3px;
-  border: 1px solid #eff0ef;
-  background-color: #fafafa;
-  padding: 9px 0px 7px 8px;
-  height: 45px;
-  width: 300px;
-  font-size: 14px;
-  margin-bottom: 5px;
-  padding: 8px 12px;
-  box-sizing: border-box;
+  margin-top: 100px;
 }
 
-.loginBtn {
-  color: white;
-  background-color: #b2dffc;
-  font-weight: bold;
-  border: 0px;
-  outline: 0px;
-  margin-top: 11px;
-  font-size: 14px;
+.logo {
+  padding-top: 50px;
 }
 
-.findPwd {
-  margin-top: 130px;
-  text-align: center;
-  color: #114071;
-  font-size: 14px;
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.container .loginForm input {
+  width: 266px;
+  height: 40px;
+  margin: 5px 40px 5px 40px;
+  padding-left: 8px;
+  font-size: 13px;
+  background-color: #fafbfa;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.container .loginForm .loginBtn {
+  width: 279px;
+  height: 36px;
+  color: #ffffff;
   font-weight: bold;
+  font-size: 15px;
+  margin: 8px 40px;
+  background-color: #b9e0fc;
+  border: 1px solid #b9e0fc;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 110px;
+  padding: 0;
+}
+
+.container a {
+  color: #00376c;
+  font-size: 13px;
+  text-decoration: none;
 }
