@@ -1,6 +1,6 @@
 
 * {
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 
 body {
 	position: relative;
-  display: table-cell;
+ 	 display: table-cell;
 	vertical-align: middle;
 	height: 100%;
 	font-size: 14px;
@@ -23,27 +23,27 @@ body {
 
 main {
 	position: relative;
-  display: flex;
+ 	display: flex;
 	flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ 	justify-content: center;
+  	align-items: center;
 	height: 100%;
 }
 
 article {
-  padding-bottom: 44px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	padding-bottom: 44px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .main-container {
@@ -54,7 +54,6 @@ footer {
 	align-items: stretch;
 	margin: 30px auto 0;
 	max-width: 935px;
-	padding-bottom: 44px;
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -100,60 +99,58 @@ footer {
 #####################################*/
 
 .main-right {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 12px;
-  max-width: 350px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	max-width: 350px;
 }
 
 .signin-box {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(255,255,255);
-  border: 1px solid rgba(219,219,219);
-  border-radius: 1px;
-  margin: 0 0 10px;
-  padding: 10px 0;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(255,255,255);
+	border: 1px solid rgba(219,219,219);
+	border-radius: 1px;
+	margin: 0 0 10px;
+	padding: 10px 0;
 	width: 348px;
 	height: 358px;
 	box-sizing: border-box;
 }
 
-.instalogo {
-	display: block:
-	margin: 20px auto 12px;
-  background-repeat: no-repeat;
-  background-position: center;
+.instalogo {	
+	display: block:margin: 20px auto 12px;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: contain;
-  height: 51px;
-  width: 175px;
-  background-image: url("../img/log-in/logo_text.png");
+	height: 51px;
+	width: 175px;
+	background-image: url("../img/log-in/logo_text.png");
 }
 
 .form-container {
 	position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 10px;
 	padding: 0;
-
 }
 
 .userform {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	align-content: stretch;
 	width: 100%;
 }
@@ -172,23 +169,18 @@ footer {
 	margin: 0 40px 6px;
 }
 
-.signin__button__margin {
-	margin: 8px 40px;
+#signin__button {
 	width: 254px;
-}
-
-.signin__button__blue {
+	margin: 8px 40px;
 	position: relative;
 	display: block;
 	background-color: rgba(0, 149, 246, .3);
-	outline: 0;
+	cursor: pointer;
 	border: 0;
 	border-radius: 4px;
 	font-weight: 600;
 	padding: 5px 9px;
-	margin: 0;
 	text-align: center;
-	width: 100%;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(255, 255, 255, 1);
@@ -399,7 +391,7 @@ footer {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 38px 0;
+	padding: 0 0 38px 0;
 	max-width: 1012px;
 	font-size: 12px;
 	font-weight: 600;
