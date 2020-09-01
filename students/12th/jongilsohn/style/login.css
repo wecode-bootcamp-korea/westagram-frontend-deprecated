@@ -4,15 +4,17 @@
     padding: 0;
 }
 
-div#main_center {
+.main_center {
     width: 959px;
     margin: 0 auto;
 }
 
-div#section_center {
+.section_center {
     width: 959px;
     height: 100%;
     margin: 30px 12px 0px 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .phone_img {
@@ -22,29 +24,24 @@ div#section_center {
     background-size: 454px 618px;
 }
 
-#section_center{
-display: flex;
-justify-content: center;
-}
-
-.login_nav{
+.login_nav {
     display: flex;
     align-items: center;
 }
 
-aside{
+aside {
     width: 350px;
     height: 753px;
 }
-.login_aside{
+.login_aside {
     display: flex;
     align-items: center;
 }
-section{
+section {
     display: flex;
 }
 
-footer{
+footer {
     width: 959px;
 }
 
@@ -52,12 +49,12 @@ footer{
 .login {
     width: 350px;
     height: 358px;
-    margin:0px 0px 20px 0px;
+    margin-bottom:20px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     background-color: rgba(var(--d87,255,255,255),1);
 }
 
-.lost_id{
+.lost_id {
     width: 350px;
     height: 63px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
@@ -65,12 +62,12 @@ footer{
     margin-bottom: 10px;
 }
 
-.download_app{
+.download_app {
     width: 350px;
     height: 102px;
 }
 
-.login_insta_logo > h1{
+.login_insta_logo > h1 {
     height: 51px;
     text-align: center;
     background-image:url(../img/logo_text.png) ;
@@ -84,7 +81,7 @@ footer{
     margin-top: 24px;
 }
 
-.login_form_id{
+.login_form_id {
     height: 38px;
     margin-bottom: 6px;
     text-align: center;
@@ -99,7 +96,7 @@ footer{
     padding: 9px 0px 7px 8px;
 }
 
-.login_form_password{
+.login_form_password {
     height: 38px;
     margin-bottom: 6px;
     text-align: center;
@@ -122,7 +119,7 @@ footer{
 .login_btn {
     width: 266px;
     height: 30px;
-    margin: 8px 0px 8px 0px;
+    margin: 8px 0px;
     background-color: rgba(var(--d69,0,149,246),.3);
     border: 1px solid transparent;
     border-radius: 4px;
@@ -133,7 +130,7 @@ footer{
     color: white;
 }
 
-.login_form_or{
+.login_form_or {
     height: 15px;
     margin: 10px 40px 18px 40px;
     text-align: center;
@@ -142,7 +139,7 @@ footer{
     color: rgba(var(--f52,142,142,142),1);
 }
 
-.login_form_or_line{
+.login_form_or_line {
     height: 5px;
     width: 113px;
     border-bottom: 1px solid rgba(var(--f52,142,142,142),1);;
@@ -150,10 +147,9 @@ footer{
     margin-bottom: 4px;
 }
 
-.login_form_facebook{
+.login_form_facebook {
     height: 20px;
-    margin: 8px 40px 8px 40px;
-    /* text-align: center; */
+    margin: 8px 40px;
     display: flex;
     justify-content: center;
 }
@@ -171,14 +167,14 @@ footer{
     
 }
 
-.login_form_facebook .facebook_btn span{
+.login_form_facebook .facebook_btn span {
     color: #385185;
     font-weight: 600;
     font-size: 14px;
 }
 
 
-.login_form_facebook .facebook_btn .facebook_img{
+.login_form_facebook .facebook_btn .facebook_img {
     background-image: url(../img/facebook_img.png);
     background-size: 16px 16px;
     width: 16px;
@@ -191,7 +187,7 @@ footer{
     color: #385185;
 }
 
-.login_lost{
+.login_lost {
     margin-top: 18px;
     text-align: center;
     line-height: 18px;   
@@ -222,22 +218,21 @@ footer{
     font-weight: 600;
 }
 
-.please_download{
+.please_download {
     height: 18px;
-    margin: 10px 20px 10px 20px;
-    /* text-align: center; */
+    margin: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.please_download_span{
+.please_download_span {
     font-size: 14px;
 }
 
 .download_apps {
     height: 44px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px;
     display: flex;
     justify-content: space-around;
 }
@@ -257,7 +252,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     height: 28px;
-    margin: 38px 0px 0px 0px;
+    margin-top: 38px;
 }
 
 .footer_info {
@@ -266,14 +261,15 @@ footer{
     font-size: 12px;
     font-weight: 600;
 }
+.co_info_ul {
+    display: flex;
+}
 
-.co_info_ul li{
-    list-style-type: none;
-    float: left;
+.co_info_ul li {
     margin-right: 16px;
 }
 
-.co_main{
+.co_main {
     float: right;
 }
 
@@ -281,17 +277,13 @@ footer{
     color: #8e8e8e;
 }
 
-.login_btn_change{
+.login_btn_change {
     width: 266px;
     height: 30px;
-    margin: 8px 0px 8px 0px;
+    margin: 8px 0px;
     background-color: #0095f6;
     border: 1px solid transparent;
-    border-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 4px 4px 4px 4px;
     color: white;
 }
 
@@ -300,71 +292,24 @@ footer{
     width: 303px;
 }
 
-.phone_move1 {
-    width: 240px;
-    height: 427px;
-
-    animation: fadein 2000ms ease-out;
-    -moz-animation: fadein 2000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 2000ms ease-out; /* Opera */
-}
-
-.phone_move2 {
-    width: 240px;
-    height: 427px;
-    animation: fadein 2000ms ease-out;
-    -moz-animation: fadein 2000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 2000ms ease-out; /* Opera */
-}
-
-.phone_move3 {
-    width: 240px;
-    height: 427px;
-    animation: fadein 2000ms ease-out;
-    -moz-animation: fadein 2000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 2000ms ease-out; /* Opera */
-}
-
-.phone_move4 {
-    width: 240px;
-    height: 427px;
-    animation: fadein 2000ms ease-out;
-    -moz-animation: fadein 2000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 2000ms ease-out; /* Opera */
-}
-
-.phone_move5 {
-    width: 240px;
-    height: 427px;
-    animation: fadein 2000ms ease-out;
-    -moz-animation: fadein 2000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 2000ms ease-out; /* Opera */
-}
-
 .phone_img_hide {
     opacity: 0;
     display: none;
 }
 
+.facebook_a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.phone_animation {
+    animation: fadein 2000ms ease-out;
+    width: 240px;
+    height: 427px;
+}
+
 @keyframes fadein {
     from {opacity:0;}
     to {opacity:1;}
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@-o-keyframes fadein { /* Opera */
-    from {opacity:0;}
-    to {opacity: 1;}
 }
 
