@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style/common.css" rel="stylesheet" type="text/css" />
+  <link href="style/login.css" rel="stylesheet" type="text/css" />
+  <link href="style/reset_css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="js/login.js"></script>
+  <div id="main_center">
+    <section>
+      <!-- 가운데 섹션 ( 핸드폰이미지, 로그인창) -->
+      <div id="section_center">
+
+        <nav class="login_nav">  <!-- //왼쪽 핸드폰 이미지 모양 -->
+          <div class="phone_img">
+            <div class="phone_empty">
+              <img src="../../study_wecode/1Day_Work/static/dodo.jpg" class="phone_move phone_move1">
+              <img src="../../study_wecode/1Day_Work/static/jeju.jpg" class="phone_move phone_move2 phone_img_hide">
+              <img src="../../study_wecode/1Day_Work/static/museum.jpg" class="phone_move phone_move3 phone_img_hide">
+              <img src="../../study_wecode/1Day_Work/static/soju.jpg" class="phone_move phone_move4 phone_img_hide">
+              <img src="../../study_wecode/1Day_Work/static/wecode.jpg" class="phone_move phone_move5 phone_img_hide">
+            </div>
+          </div>
+        </nav>
+
+        <aside class="login_aside">   <!-- // 가운데 오른쪽 div -->
+          <div class="aside_flex">
+            <div class="login"> 
+              <div class="login_insta_logo">  <!-- 로그인 div 인스타 로고 -->
+                <h1></h1>
+              </div>
+              <div class="login_form">      <!-- 로그인 창-->
+                <div class="login_form_id">   <!-- 로그인 ID입력-->
+                  <input type="text" class="login_id" placeholder="  전화번호, 사용자 이름 또는 이메일">
+                </div>
+                <div class="login_form_password">   <!-- 로그인 password 입력-->
+                  <input type="password" class="login_password" placeholder="  비밀번호">
+                </div>
+                <div class="login_form_btn">
+                  <button class="login_btn btn_change">로그인</button>
+                </div>
+                <div class="login_form_or">
+                  <div class="login_form_or_line"></div>
+                  <span>또는</span>
+                  <div class="login_form_or_line"></div>
+                </div>
+                <div class="login_form_facebook">
+                  <button class="facebook_btn">
+                    <span class="facebook_img"></span>
+                    <span>
+                      Facebook으로 로그인
+                    </span>
+                  </button>
+                </div>
+                <div class="login_lost">
+                  <a class="login_lost_password" href="/accounts/password/reset/">비밀번호를 잊으셨나요?</a>
+                </div>
+              </div>
+            </div>
+            <div class="lost_id">
+              <div class="lost_id_p">
+                <p class="lost_p">계정이 없으신가요?
+                  <a href="/accounts/emailsignup/" class="sign_up">
+                    가입하기
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class=" download_app">
+              <div class="please_download">
+                <span class="please_download_span">앱을 다운로드하세요.</span>
+              </div>
+
+              <div class="download_apps">
+                <a class=""
+                  href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D7138DDC7-D379-4B5E-9692-C8F5EC822C27%26utm_content%3Dlo%26utm_medium%3Dbadge">
+                  <img src="img/appstore_download.png" class="appstore_download">
+                </a>
+                <a class=""
+                  href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&amp;ct=igweb.loginPage.badge&amp;mt=8&amp;vt=lo">
+                  <img src="img/googleplay_download.png" class="googleplay_download">
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer>
+      <div class="co_info">
+        <!-- // 맨아래 footer -->
+        <ul class="co_info_ul">
+          <li>
+            <a class="footer_info" href="https://about.instagram.com/">소개</a>
+          </li>
+          <li>
+            <a class="footer_info" href="https://help.instagram.com/">도움말</a>
+          </li>
+          <li>
+            <a class="footer_info" href="https://about.instagram.com/blog/">홍보 센터</a>
+          </li>
+          <li>
+            <a class="footer_info" href="/developer/">API</a>
+          </li>
+          <li>
+            <a class="footer_info" href="/about/jobs/">채용 정보</a>
+          </li>
+          <li>
+            <a class="footer_info" href="/legal/privacy/">개인정보처리방침</a>
+          </li>
+          <li>
+            <a class="footer_info" href="/legal/terms/">약관</a>
+          </li>
+          <li>
+            <a class="footer_info" href="/explore/locations/">위치</a>
+          </li>
+          <li>
+            <a class="footer_info" href="/directory/profiles/">인기 계정</a>
+          </li>
+          <li>
+            <a class="footer_info" href="/directory/hashtags/">해시태그</a>
+          </li>
+          <li>
+            <a class="footer_info">언어</a>
+        </ul>
+        <div class="co_main">
+          <span class="co_main_span">© 2020 INSTAGRAM FROM FACEBOOK</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
