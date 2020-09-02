@@ -32,6 +32,7 @@
     width: 240px;
     height: 427px;
     opacity: 0;
+    top: 0;
     transition: opacity 2.5s ease-out;
     position: absolute;
 }
