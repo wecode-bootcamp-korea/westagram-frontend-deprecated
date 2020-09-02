@@ -3,36 +3,33 @@ const inputPassword = document.getElementsByClassName("password_input")[0];
 const loginBtn = document.getElementsByClassName("login_button")[0];
 
 const slideImg = document.getElementsByClassName("slide_img");
-const slideClassName = "slide_now";
 
 const changeLoginBtn = () => {
-  let keyValue = event.key;
+  const keyValue = event.key;
 
   if (keyValue.length > 0) {
-    if (inputPassword.value.length > 0 && inputId.value.length > 0) {
-      loginBtn.style.backgroundColor = "#0095F6";
-      loginBtn.style.cursor = "pointer";
-    } else {
-      loginBtn.style.backgroundColor = "#C0DFFD";
-      loginBtn.style.cursor = "";
-    }
+    inputPassword.value.length > 0 && inputId.value.length > 0
+      ? ((loginBtn.style.backgroundColor = "#0095F6"),
+        (loginBtn.style.cursor = "pointer"))
+      : ((loginBtn.style.backgroundColor = "#C0DFFD"),
+        (loginBtn.style.cursor = ""));
   }
 };
 
-const slideShow = () => {
-  let nowImg = document.getElementsByClassName(slideClassName)[0];
-  if (nowImg) {
-    nowImg.classList.remove(slideClassName);
-    let nextImg = nowImg.nextElementSibling;
+inputId.addEventListener("keyup", changeLoginBtn);
+inputPassword.addEventListener("keyup", changeLoginBtn);
 
-    if (nextImg) {
-      nextImg.classList.add(slideClassName);
-    } else {
-      slideImg[0].classList.add(slideClassName);
-    }
-  } else {
-    slideImg[0].classList.add(slideClassName);
+const slideShow = () => {
+  const nowImg = document.getElementsByClassName("slide_now")[0];
+
+  if (nowImg) {
+    nowImg.classList.remove("slide_now");
+    const nextImg = nowImg.nextElementSibling;
+    if (nextImg) return nextImg.classList.add("slide_now");
+    if (!nextImg) return slideImg[0].classList.add("slide_now");
   }
+
+  slideImg[0].classList.add("slide_now");
 };
 
 const showInterval = () => {
