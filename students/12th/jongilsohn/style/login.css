@@ -8,7 +8,7 @@
     width: 959px;
     margin: 0 auto;
 }
-    
+
 .section_center {
     width: 959px;
     height: 100%;
@@ -30,10 +30,13 @@
 }
 
 .login_aside {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     width: 350px;
     height: 753px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section {
