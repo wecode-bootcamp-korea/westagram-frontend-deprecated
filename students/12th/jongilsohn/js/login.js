@@ -18,7 +18,7 @@ function init(){
     document.addEventListener("keyup", handlekey);      //키이벤트 발생시 핸들키함수 호출
     
     imgChange = setInterval(function() {             //3초에 한뻔씩 호출하는 함수
-        let imgNum = document.getElementsByClassName('phone_animation')
+        const imgNum = document.getElementsByClassName('phone_animation')
         const imgHide= "phone_img_hide"
 
         for (let i = 0; i < imgNum.length; i++){

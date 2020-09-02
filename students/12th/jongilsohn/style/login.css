@@ -30,8 +30,6 @@
 }
 
 .login_aside {
-    /* display: flex;
-    align-items: center; */
     width: 350px;
     height: 753px;
     display: flex;
@@ -79,13 +77,12 @@ footer {
 }
 
 .login_form {
-    /* background-color: thistle; */
     height: 259px;
     margin-top: 24px;
 }
 
 .login_id {
-    width: 266px;
+    width: 100%;
     height: 38px;
     background: #fafafa;
     border: 1px solid rgba(var(--ca6,219,219,219),1);
@@ -94,7 +91,7 @@ footer {
 }
 
 .login_password {
-    width: 266px;
+    width: 100%;
     height: 36px;
     border: 1px solid rgba(var(--ca6,219,219,219),1);
     background: #fafafa;
@@ -102,7 +99,7 @@ footer {
 }
 
 .login_btn {
-    width: 266px;
+    width: 100%;
     height: 30px;
     margin: 8px 0px;
     background-color: rgba(var(--d69,0,149,246),.3);
@@ -252,6 +249,8 @@ footer {
 
 .co_main_span {
     color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .login_btn_change {
@@ -286,6 +285,9 @@ footer {
 }
 
 .id_pw_btn {
+    width: 266px;
+    height: 126px;
+    margin: 0 auto;
     margin-bottom: 6px;
     text-align: center;
 }
