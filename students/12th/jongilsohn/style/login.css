@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main_center {
+    width: 959px;
+    margin: 0 auto;
+}
+
+.section_center {
+    width: 959px;
+    height: 100%;
+    margin: 30px 12px 0px 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.phone_img {
+    width: 454px;
+    height: 618px;
+    background-image: url(https://www.instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png);
+    background-size: 454px 618px;
+}
+
+.login_nav {
+    display: flex;
+    align-items: center;
+}
+
+.login_aside {
+    width: 350px;
+    height: 753px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+}
+
+footer {
+    width: 959px;
+}
+
+.loginContainer {
+    width: 350px;
+    height: 358px;
+    margin-bottom:20px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    background-color: rgba(var(--d87,255,255,255),1);
+}
+
+.lost_id {
+    width: 350px;
+    height: 63px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    background-color: rgba(var(--d87,255,255,255),1);
+    margin-bottom: 10px;
+}
+
+.download_app {
+    width: 350px;
+    height: 102px;
+}
+
+.login_insta_logo > h1 {
+    height: 51px;
+    text-align: center;
+    background-image:url(../img/logo_text.png) ;
+    background-size: cover;
+    margin: 22px 86.5px 12px 86.5px;
+    text-indent: 110%;
+    overflow: hidden;
+}
+
+.login_form {
+    height: 259px;
+    margin-top: 24px;
+}
+
+.login_id {
+    width: 100%;
+    height: 38px;
+    background: #fafafa;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    padding: 9px 0px 7px 8px;
+    margin-bottom: 6px;
+}
+
+.login_password {
+    width: 100%;
+    height: 36px;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    background: #fafafa;
+    padding: 9px 0px 7px 8px;
+}
+
+.login_btn {
+    width: 100%;
+    height: 30px;
+    margin: 8px 0px;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: white;
+}
+
+.login_form_or {
+    height: 15px;
+    margin: 10px 40px 18px 40px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+.login_form_or_line {
+    height: 5px;
+    width: 113px;
+    border-bottom: 1px solid rgba(var(--f52,142,142,142),1);;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.login_form_facebook {
+    height: 20px;
+    margin: 8px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.login_form_facebook .facebook_btn {
+    background-color:  rgba(var(--d87,255,255,255),1);
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login_form_facebook .facebook_btn span {
+    color: #385185;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.login_form_facebook .facebook_btn .facebook_img {
+    background-image: url(../img/facebook_img.png);
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.login_lost_password {
+    color: #385185;
+}
+
+.login_lost {
+    margin-top: 18px;
+    text-align: center;
+    line-height: 18px;   
+}
+
+.login_lost a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.lost_id {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lost_p {
+    display: flex;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sign_up {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.please_download {
+    height: 18px;
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.please_download_span {
+    font-size: 14px;
+}
+
+.download_apps {
+    height: 44px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.googleplay_download {
+    width: 136px;
+    height: 40px;
+}
+
+.appstore_download {
+    width: 136px;
+    height: 40px;
+}
+
+.co_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 28px;
+    margin-top: 38px;
+}
+
+.footer_info {
+    color: #00376b; 
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.co_info_ul {
+    display: flex;
+}
+
+.co_info_ul li {
+    margin-right: 16px;
+}
+
+.co_main_span {
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.login_btn_change {
+    width: 266px;
+    height: 30px;
+    margin: 8px 0px;
+    background-color: #0095f6;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+}
+
+.phone_empty {
+    margin: 99px 0px 0px 151px;
+    width: 303px;
+}
+
+.phone_img_hide {
+    opacity: 0;
+    display: none;
+}
+
+.facebook_a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.phone_animation {
+    animation: fadein 2000ms ease-out;
+    width: 240px;
+    height: 427px;
+}
+
+.id_pw_btn {
+    width: 266px;
+    height: 126px;
+    margin: 0 auto;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
