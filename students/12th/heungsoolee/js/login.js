@@ -5,15 +5,11 @@ const loginBtn = document.getElementsByClassName("login_button")[0];
 const slideImg = document.getElementsByClassName("slide_img");
 
 const changeLoginBtn = () => {
-  const keyValue = event.key;
-
-  if (keyValue.length > 0) {
-    inputPassword.value.length > 0 && inputId.value.length > 0
-      ? ((loginBtn.style.backgroundColor = "#0095F6"),
-        (loginBtn.style.cursor = "pointer"))
-      : ((loginBtn.style.backgroundColor = "#C0DFFD"),
-        (loginBtn.style.cursor = ""));
-  }
+  inputPassword.value.length > 0 && inputId.value.length > 0
+    ? ((loginBtn.style.backgroundColor = "#0095F6"),
+      (loginBtn.style.cursor = "pointer"))
+    : ((loginBtn.style.backgroundColor = "#C0DFFD"),
+      (loginBtn.style.cursor = ""));
 };
 
 inputId.addEventListener("keyup", changeLoginBtn);
