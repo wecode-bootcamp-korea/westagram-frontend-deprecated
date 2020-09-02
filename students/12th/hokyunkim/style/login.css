@@ -1,0 +1,175 @@
+body {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+a{
+    text-decoration:none;
+   }
+
+.login {
+    margin-top: 30px;
+    padding-bottom: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.login_pic {
+    width: 454px;
+    height: 624px;
+    object-fit: contain;
+}
+
+.login_main {
+    width: 350px;
+    height: 737px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_body {
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    background-color: rgba(var(--d87,255,255,255),1);
+    height:345px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_header {
+    margin-top: 12px;
+}
+
+.login_header img {
+    width: 175px;
+    height: 51px; 
+    margin: 22px auto 12px;
+}
+
+.login_others_header {
+    width: 268px;
+    height: 15px;
+    margin: 10px 40px 18px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.login_others_header div {
+    background-color: rgba(var(--b38,219,219,219),1);
+    width: 103px;
+    height: 1px;
+    position: relative;
+    top: .45em;
+}
+
+.login_others_header span {
+    color: rgba(var(--f52,142,142,142),1);
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+}
+
+.login_form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+input, textarea {
+    font-size: 14px;
+    margin-bottom: 5px;
+    height: 38px;
+    width: 268px;
+    display:flex;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+    
+  }
+
+button{
+    margin-top: 8px;
+    margin-right: 40px;
+    margin-left:40px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    background-color: #0095f6;
+    border-radius: 4px;
+    color: rgba(var(--eca,255,255,255),1);
+    align-items: center;
+    width: 268px;
+    height: 30px;
+    font-weight: 600;
+}
+.log_button button{
+    align-items: center;
+}
+.login_facelost{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.no_account{
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 10px;
+    /* padding: 10px 0; */
+    background-color: rgba(var(--d87,255,255,255),1);
+    width: 350px;
+    height: 63px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.no_account span{
+    justify-content:center;
+}
+.no_account a{
+    color: rgba(var(--d69,0,149,246),1);
+}
+.app_download img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    justify-content: center;
+    width: 136px;
+    height: 44px;
+}
+.app_download span{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+    font-size: 14px;
+    line-height: 18px;
+}
