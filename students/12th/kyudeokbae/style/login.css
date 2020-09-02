@@ -85,8 +85,7 @@ input {
   padding-left: 10px;
 }
 
-input:focus,
-.loginButton {
+input:focus {
   outline: none;
 }
 
