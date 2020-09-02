@@ -33,10 +33,12 @@ aside {
     width: 350px;
     height: 753px;
 }
+
 .login_aside {
     display: flex;
     align-items: center;
 }
+
 section {
     display: flex;
 }
@@ -110,8 +112,6 @@ footer {
     padding: 9px 0px 7px 8px;
 }
 
-
-
 .login_form_btn {
     text-align: center;
 }
@@ -123,10 +123,6 @@ footer {
     background-color: rgba(var(--d69,0,149,246),.3);
     border: 1px solid transparent;
     border-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
     color: white;
 }
 
@@ -172,7 +168,6 @@ footer {
     font-weight: 600;
     font-size: 14px;
 }
-
 
 .login_form_facebook .facebook_btn .facebook_img {
     background-image: url(../img/facebook_img.png);
@@ -261,6 +256,7 @@ footer {
     font-size: 12px;
     font-weight: 600;
 }
+
 .co_info_ul {
     display: flex;
 }
