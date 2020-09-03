@@ -1,0 +1,191 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 100px auto 0;
+  padding-bottom: 44px;
+}
+
+.m-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 12px;
+  width: 350px;
+}
+
+.logo {
+  padding: 10px 0;
+  margin: 22px auto 12px;
+  width: 190px;
+}
+
+.login-form {
+  display: flex;
+}
+
+.login-info {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background-color: rgba(var(--d87, 255, 255, 255), 1);
+  border-radius: 1px;
+  margin-top: 24px;
+  padding: 0 50px;
+  margin: 0 0 10px;
+}
+
+.login-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.idPasswordForm {
+  border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+  border-radius: 3px;
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  padding: 9px 8px 7px 8px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.login-sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background-color: rgba(var(--d87, 255, 255, 255), 1);
+  border-radius: 1px;
+  margin: 0px 0 10px;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.loginBtn {
+  background-color: rgba(var(--d69, 0, 149, 246), 0.3);
+  opacity: 1;
+  border: 1px solid transparent;
+  margin-top: 15px;
+  padding: 5px 9px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.FacebookIcon {
+  height: 15px;
+}
+
+.divideLogin {
+  flex-direction: row;
+  margin: 10px 40px 18px;
+  display: flex;
+  position: relative;
+}
+
+.line {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  background-color: rgba(var(--b38, 219, 219, 219), 1);
+  height: 1px;
+  position: relative;
+  top: 0.45em;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.lineText {
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+  font: inherit;
+  line-height: 15px;
+  margin: 0 60px;
+}
+
+.facebookLogin {
+  margin-bottom: 15px;
+}
+
+.forgotPassword {
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.join {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.getApp {
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 20px 10px 20px;
+  text-align: center;
+}
+
+.appBanner {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  margin: 10px 0 10px 0;
+}
+
+.appBtn {
+  height: 40px;
+  padding: 0 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 38px 20px;
+  margin-top: 80px;
+}
+
+.footLeft {
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.footRight {
+  list-style: none;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: -100px;
+  margin-left: -250px;
+}
+
+a {
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-right: 16px;
+}
