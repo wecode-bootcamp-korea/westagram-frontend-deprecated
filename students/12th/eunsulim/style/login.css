@@ -13,31 +13,23 @@ html, body {
 
 .wrap {
     display: flex;
-    display: -webkit-flex;
     justify-content: center;
     height: 100%;
 }
 
 .container {
     display: flex;
-    display: -webkit-flex;
     flex-direction: column;
     flex: 1;
-    -webkit-flex: 1;
 }
 
 .content {
     display: flex;
-    display: -webkit-flex;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
-.inner_box{
+.innerBox {
     display: flex;
-    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     margin: 30px auto 0 ;
@@ -46,19 +38,20 @@ html, body {
     width: 100%;
 }
 
-.slider_box {
+.sliderBox {
     background-image: url(../img/phone_img.png);
     background-size: cover;
     width: 454px;
     height: 618px;
 }
 
-.slider_img {
+.sliderImg {
     position: relative;
-    margin: 99px 0 0 151px;
+    margin-top: 99px;
+    margin-left: 151px;
 }
 
-.slider_img img {
+.sliderImg img {
     position: absolute;
     top: 0;
     right: 63px;
@@ -68,11 +61,11 @@ html, body {
     transition: opacity 2.5s ease-out;
 }
 
-.slider_img .active {
+.sliderImg .active {
     opacity: 1;
 }
 
-.login_box .login_wrap{   
+.loginBox .loginWrap{   
     padding: 10px 0; 
     margin-bottom: 10px;
     max-width: 350px;
@@ -81,7 +74,7 @@ html, body {
     background-color: #fff;
 }
 
-.login_box h1 {
+.loginBox h1 {
     overflow: hidden;
     margin: 22px auto 12px;
     background-image: url(../img/logo_text.png);
@@ -91,17 +84,17 @@ html, body {
     text-indent: 110%;
 }
 
-.login_form {
+.loginForm {
     margin: 24px 0 10px 0;
     padding-top: 24px;
     width: 100%;
 }
 
-.form_box {
+.formBox {
    margin: 0 40px;
 }
 
-.form_box input {
+.formBox input {
     padding: 9px 0 9px 9px;
     margin-bottom: 6px;
     width: 100%;
@@ -113,11 +106,11 @@ html, body {
     outline: none;
 }
 
-.login_box .btn_box {
+.loginBox .btnBox {
     margin: 0 40px;
 } 
 
-.login_box .btn_box .login_btn {
+.loginBox .btnBox .loginBtn {
     margin: 8px 0;
     padding: 6px 9px;
     width: 100%;
@@ -132,15 +125,13 @@ html, body {
     outline: none;
 }
 
-.line_wrap {
+.lineWrap {
     display: flex;
-    display: -webkit-flex;
     margin: 10px 40px 26px;
 }
 
-.line_wrap .line {
+.lineWrap .line {
     display: flex;
-    display: -webkit-flex;
     flex-grow: 1;
     margin-top: 7px;
     background-color: #dbdbdb;
@@ -148,7 +139,7 @@ html, body {
 
 }
 
-.line_wrap .line_text {
+.lineWrap .lineText {
     margin: 0 18px;
     font-size: 13px;
     line-height: 15px;
@@ -156,43 +147,42 @@ html, body {
     color: #8e8e8e;
 }
 
-.download_app {
+.downloadApp {
     margin: 10px 20px 10px 20px;   
 }
 
-.download_app p {
+.downloadApp p {
     margin: 20px 20px;
     text-align: center;
     font-size: 14px;
     line-height: 18px;
 }
 
-.download_app .download_img {
+.downloadApp .downloadImg {
     display: flex;
-    display: -webkit-flex;
     justify-content: center;
     margin: 10px 0;
 }
 
-.download_img a {
+.downloadImg a {
     margin-right: 8px;
 }
 
-.download_img a:last-child {
+.downloadImg a:last-child {
     margin-right: 0;
 }
 
-.download_img img { 
+.downloadImg img { 
     height: 40px;
 }
 
-.join_box {
+.joinBox {
     padding: 6px 0;
     border: 1px solid #dbdbdb;
     background-color: #fff;
 }
 
-.join_box p {
+.joinBox p {
     margin: 15px;
     text-align: center;
     font-size: 15px;
@@ -200,18 +190,17 @@ html, body {
     color: #262626;
 }
 
-.join_box p a {
+.joinBox p a {
     color: #0095f6;
     font-weight: 600;
 }
 
-.login_pw {
+.loginPw {
     margin: 0 40px;
 }
 
-.login_pw .sns_btn {
+.loginPw .snsBtn {
     display: flex;
-    display: -webkit-flex;
     justify-content: center;
     margin-bottom: 27px;
     width: 100%;
@@ -222,7 +211,7 @@ html, body {
     cursor: pointer;
 }
 
-.sns_btn .sns_img {
+.snsBtn .snsImg {
     display: inline-block;
     margin-right:8px;
     width: 16px;
@@ -231,16 +220,15 @@ html, body {
     background-size: cover;
 }
 
-.sns_btn .sns_login {
+.snsBtn .snsLogin {
     color: #385185;
     font-weight: 600;
     font-size: 14px; 
     line-height: 18px;
 }
 
-.login_pw a {
+.loginPw a {
     display: flex;
-    display: -webkit-flex;
     justify-content: center;
     color: #00376b;
     font-size: 12px;
@@ -255,25 +243,25 @@ html, body {
     width: 100%;
 }
 
-.footer_box {
+.footerBox {
     padding: 38px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.footer_box li {
+.footerBox li {
     display: inline-block;
     margin-bottom: 7px; 
     margin-right: 16px;
 }
 
-.footer_box li a {
+.footerBox li a {
     color: #00376b;
     font-size: 12px;
     font-weight: 600;
 }
 
-.footer_box span {
+.footerBox span {
     color: #8e8e8e;
     font-size: 12px;
     font-weight: 600;
