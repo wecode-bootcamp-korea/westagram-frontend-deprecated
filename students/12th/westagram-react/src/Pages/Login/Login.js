@@ -5,6 +5,37 @@ import "../../Styles/reset.scss";
 import { Link } from "react-router-dom";
 
 class Login extends Component {
+  constructor() {
+    super();
+    this.state = {
+      validation: false,
+      idValue: false,
+      passwordValue: false,
+      id: "",
+      password: "",
+    };
+  }
+  preventDefault = (e) => {
+    e.preventDefault();
+    // (this.state.idValue === true) & (this.state.passwordValue === true)
+    //   ? this.setState({ validation: true })
+    //   : this.setState({ validation: false });
+  };
+
+  handleInput = (event) => {
+    const value = event.target.value;
+    this.setState({ id: value });
+    value.includes("@") === true
+      ? this.setState({ idValue: true })
+      : this.setState({ passwordValue: false });
+  };
+  passwordHandleInput = (event) => {
+    const value = event.target.value;
+    this.setState({ password: value });
+    value.length >= 5
+      ? this.setState({ passwordValue: true })
+      : this.setState({ passwordValue: false });
+  };
   render() {
     return (
       <div className="all">
@@ -33,21 +64,34 @@ class Login extends Component {
               </div>
               <div className="article__login">
                 <div className="login__main">
-                  <h1 className="login__instagram"></h1>
+                  <h1 className="login__instagram" />
                   <div className="login__main__form">
-                    <form action="" id="loginform">
+                    <form
+                      action=""
+                      id="loginform"
+                      onSubmit={this.preventDefault}
+                    >
                       <input
                         type="text"
                         placeholder="전화번호,사용자 이름 또는 이메일"
                         className="loginform__input__id"
+                        onChange={this.handleInput}
                       />
                       <input
                         type="password"
                         placeholder="비밀번호"
                         className="loginform__input__password"
+                        onChange={this.passwordHandleInput}
                       />
                       <Link to="./main">
-                        <button className="login__button">
+                        <button
+                          className={
+                            (this.state.idValue === true) &
+                            (this.state.passwordValue === true)
+                              ? "buttonActive"
+                              : "login__button"
+                          }
+                        >
                           <div className="login__button--text">로그인</div>
                         </button>
                       </Link>

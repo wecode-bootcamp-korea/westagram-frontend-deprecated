@@ -4,6 +4,26 @@ import "../../Styles/common.scss";
 import { Link } from "react-router-dom";
 
 class Main extends Component {
+  constructor() {
+    super();
+    this.state = {
+      inputValue: "",
+      comments: [],
+    };
+  }
+
+  btnClick = (e) => {
+    const comments = [];
+    comments.push(this.state.inputValue);
+    this.setState({ comments: comments.push(this.state.inputValue) });
+    console.log(this.state.comments);
+  };
+
+  addComment = (e) => {
+    const inputValue = e.target.value;
+    this.setState({ inputValue });
+  };
+
   render() {
     return (
       <div className="all">
@@ -177,8 +197,12 @@ class Main extends Component {
                     <div className="feed__minutes"></div>
                   </div>
                   <div className="feed__button">
-                    <input type="text" placeholder="댓글 달기..." />
-                    <button>게시</button>
+                    <input
+                      type="text"
+                      placeholder="댓글 달기..."
+                      onChange={this.addComment}
+                    />
+                    <button onClick={this.btnClick}>게시</button>
                   </div>
                 </article>
               </div>
