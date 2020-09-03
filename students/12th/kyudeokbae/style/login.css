@@ -21,7 +21,6 @@ article {
   border-radius: 3px;
   width: 348px;
   height: 380px;
-  box-sizing: border-box;
   text-align: center;
   padding: 10px 0;
   margin-top: 30px;
@@ -32,7 +31,6 @@ article {
   border-radius: 3px;
   margin-top: 10px;
   width: 348px;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +41,6 @@ article {
 
 .textDownload {
   width: 348px;
-  box-sizing: border-box;
   text-align: center;
   color: rgba(var(--i1d, 38, 38, 38), 1);
   font-size: 14px;
@@ -52,7 +49,6 @@ article {
 
 .appDownload {
   width: 348px;
-  box-sizing: border-box;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -61,13 +57,12 @@ article {
 .appleDownload {
   width: 136px;
   height: 40px;
-  padding: 10px;
+  margin-right: 10px;
 }
 
 .googleDownload {
   width: 136px;
   height: 40px;
-  padding: 10px;
 }
 
 .loginBoxLogo {
@@ -114,7 +109,6 @@ input:focus {
 .anotherBox {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -133,8 +127,6 @@ input:focus {
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
   background-color: initial;
 }
 
