@@ -11,16 +11,11 @@ html, body {
     background-color: #fafafa;
 }
 
-.wrap {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
 .container {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    justify-content: center;
+    height: 100%;
 }
 
 .content {
@@ -32,8 +27,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto 0 ;
-    padding-bottom: 44px;
+    margin: 30px auto 44px;
     max-width: 935px;
     width: 100%;
 }
@@ -85,13 +79,11 @@ html, body {
 }
 
 .loginForm {
-    margin: 24px 0 10px 0;
-    padding-top: 24px;
-    width: 100%;
+    margin: 48px 0 10px 0;
 }
 
-.formBox {
-   margin: 0 40px;
+.loginForm form {
+   padding: 0 40px;
 }
 
 .formBox input {
@@ -105,10 +97,6 @@ html, body {
     color: #262626;
     outline: none;
 }
-
-.loginBox .btnBox {
-    margin: 0 40px;
-} 
 
 .loginBox .btnBox .loginBtn {
     margin: 8px 0;
@@ -177,20 +165,16 @@ html, body {
 }
 
 .joinBox {
-    padding: 6px 0;
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
-}
-
-.joinBox p {
-    margin: 15px;
+    padding: 21px 0;
     text-align: center;
     font-size: 15px;
     font-weight: 300;
     color: #262626;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
 }
 
-.joinBox p a {
+.joinBox a {
     color: #0095f6;
     font-weight: 600;
 }
