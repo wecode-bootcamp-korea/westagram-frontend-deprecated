@@ -1,0 +1,206 @@
+article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px auto;
+  padding-top: 70px;
+}
+
+.loginPhoto {
+  flex: 1 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.loginBox {
+  flex: 1 0;
+}
+
+.loginBoxTop {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 3px;
+  width: 348px;
+  height: 380px;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.loginBoxBottom {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 3px;
+  margin-top: 10px;
+  width: 348px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.textDownload {
+  width: 348px;
+  text-align: center;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-size: 14px;
+  margin: 25px 0 15px;
+}
+
+.appDownload {
+  width: 348px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.appleDownload {
+  width: 136px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.googleDownload {
+  width: 136px;
+  height: 40px;
+}
+
+.loginBoxLogo {
+  margin: 20px auto;
+}
+
+input {
+  height: 30px;
+  width: 250px;
+  margin: 5px;
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+  font: 400 12px Arial;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.loginButton {
+  font-size: 14px;
+  padding: 6px 114px;
+  margin: 15px 0;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(var(--d69, 0, 149, 246), 0.3);
+  color: white;
+  font-weight: 600;
+}
+
+.another {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  line-height: 15px;
+  vertical-align: baseline;
+  margin: 0 18px;
+}
+
+.anotherBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anotherLine {
+  height: 1px;
+  background-color: rgba(var(--b38, 219, 219, 219), 1);
+  width: 104px;
+}
+
+.facebookButton {
+  border: 0;
+  margin: 30px 0 15px;
+  width: 310px;
+  padding: 0;
+  color: #385185;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: initial;
+}
+
+.findPassword {
+  color: #385185;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.joinUs {
+  text-decoration: none;
+  color: rgba(var(--d69, 0, 149, 246), 1);
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.authority {
+  font-weight: 700;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 12px;
+  max-width: 1021px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.facebookImg {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+
+.facebookLogIn {
+  display: flex;
+  justify-content: center;
+}
+
+.imgslider {
+  height: 427px;
+  width: 240px;
+  position: absolute;
+  top: 100px;
+  left: 151px;
+}
+
+.imgSliderList {
+  position: relative;
+}
