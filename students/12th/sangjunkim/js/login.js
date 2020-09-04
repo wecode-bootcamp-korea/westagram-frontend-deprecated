@@ -1,11 +1,12 @@
 "use strict";
 
-const thisIsId = document.getElementsByClassName("idPasswordForm")[0];
-const thisIsPw = document.getElementsByClassName("idPasswordForm")[1];
-const thisIsBtn = document.getElementsByClassName("loginBtn")[0];
+const idInput = document.getElementsByClassName("idPasswordForm")[0];
+const pwInput = document.getElementsByClassName("idPasswordForm")[1];
+const btnInput = document.getElementsByClassName("loginBtn")[0];
+const btnColor = document.getElementsByClassName("loginInput")[0];
 
-document.addEventListener("keyup", function () {
-  if (thisIsId.value.length > 0 && thisIsPw.value.length > 0) {
-    thisIsBtn.style.backgroundColor = "#0295F6";
+btnColor.addEventListener("keyup", function () {
+  if (idInput.value.length > 0 && pwInput.value.length > 0) {
+    btnInput.style.backgroundColor = "#0295F6";
   }
 });

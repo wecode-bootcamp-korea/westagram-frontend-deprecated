@@ -16,7 +16,7 @@ article {
   padding-bottom: 44px;
 }
 
-.m-right {
+.mainRight {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -24,17 +24,7 @@ article {
   width: 350px;
 }
 
-.logo {
-  padding: 10px 0;
-  margin: 22px auto 12px;
-  width: 190px;
-}
-
-.login-form {
-  display: flex;
-}
-
-.login-info {
+.loginInfo {
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   background-color: rgba(var(--d87, 255, 255, 255), 1);
   border-radius: 1px;
@@ -43,7 +33,18 @@ article {
   margin: 0 0 10px;
 }
 
-.login-input {
+.logo {
+  padding: 10px 0;
+  margin: 22px auto 12px;
+  width: 190px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginInput {
   display: flex;
   flex-direction: column;
 }
@@ -60,7 +61,7 @@ article {
     Arial, sans-serif;
 }
 
-.login-sign-up {
+.loginSignUp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,15 +83,14 @@ article {
   font-weight: 600;
 }
 
-.FacebookIcon {
-  height: 15px;
-}
-
 .divideLogin {
-  flex-direction: row;
-  margin: 10px 40px 18px;
   display: flex;
   position: relative;
+  margin: 10px 40px 18px;
+}
+
+.facebookIcon {
+  height: 15px;
 }
 
 .line {
@@ -101,8 +101,7 @@ article {
   height: 1px;
   position: relative;
   top: 0.45em;
-  margin-left: -40px;
-  margin-right: -40px;
+  margin: 0 -40px;
 }
 
 .lineText {
@@ -136,7 +135,7 @@ article {
   color: rgba(var(--i1d, 38, 38, 38), 1);
   font-size: 14px;
   line-height: 18px;
-  margin: 10px 20px 10px 20px;
+  margin: 10px 20px;
   text-align: center;
 }
 
@@ -144,7 +143,7 @@ article {
   display: flex;
   justify-content: center;
   width: 350px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
 }
 
 .appBtn {
@@ -185,7 +184,6 @@ a {
 }
 
 li {
-  display: inline-block;
   margin-bottom: 7px;
   margin-right: 16px;
 }
