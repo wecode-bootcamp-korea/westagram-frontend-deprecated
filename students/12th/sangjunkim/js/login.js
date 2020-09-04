@@ -6,7 +6,9 @@ const btnInput = document.getElementsByClassName("loginBtn")[0];
 const btnColor = document.getElementsByClassName("loginInput")[0];
 
 btnColor.addEventListener("keyup", function () {
-  if (idInput.value.length > 0 && pwInput.value.length > 0) {
+  if (idInput.value && pwInput.value) {
     btnInput.style.backgroundColor = "#0295F6";
+  } else if (idInput.value || pwInput.value === 0) {
+    btnInput.style.backgroundColor = "";
   }
 });
