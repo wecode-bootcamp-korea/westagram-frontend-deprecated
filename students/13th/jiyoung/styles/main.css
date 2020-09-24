@@ -1,0 +1,364 @@
+
+
+.page {
+    background-color:#fafafa
+}
+
+
+.navbar{
+    border-bottom: solid 0.5px #dbdbdb;
+    width:100%;
+    background-color: white;
+    position: fixed;
+   
+    
+}
+
+div.navbar0{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    height: 54px;
+    margin: auto;
+}
+
+
+.navbar0 img{ margin-left: 13px;}
+
+.bd{
+    display: flex;
+    align-items: center;
+    margin:auto;
+    width: 1000px;
+    height: 1000px;
+    display: white;
+
+}
+
+div.navbar1{
+    display: flex;
+align-items: center;}
+
+
+
+
+#검색 {
+    padding: 5px 0px;
+    width: 215px;
+    height: 18px;
+    background-color:  #fafafa;
+    text-align: center;
+    color:#8E8E8E;
+    color: #dbdbdb;
+    border-radius: 3px;
+    
+    border: solid 0.1px #dbdbdb;
+  
+}
+
+.검색{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.검색 img{
+    color: #8E8E8E;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 10px;
+    left: 65px;
+}
+
+.navbar1 i{ 
+width:16px;
+height: 16px;}
+
+
+img{padding-left: 10px;
+   
+    width:22px;
+    height:22px;
+}
+
+.instagram{ width: 103px; height:29px; padding-left:13px;
+border-left: solid 2px grey;
+}
+
+input{
+    text-align: center;
+}
+
+
+
+
+main{
+    margin-top:90px;
+    border:solid 0.1px #dbdbdb;
+    width: 616px;
+    height: 1000x;
+    background-color: white;
+
+}
+
+
+.main-right{
+    margin-top:100px;
+    margin-left:30px;
+    width:293px;
+    height:915px;
+    background-color: #fafafa;
+    position: fixed;
+    right: 250px;
+    
+    
+
+    
+}
+
+.head{
+    height:30px;
+    border-bottom: solid 0.1px #dbdbdb;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.head img{
+    width: 32px;
+    height: 32px;
+    border-radius: 70%;
+}
+
+.head .left{
+    display: flex;
+    flex-direction: column;
+    margin-left:14px;
+}
+
+.headInfo .a{
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2px;}
+
+.headInfo{
+    width:100%;
+    margin-left: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.head .headInfo .b{
+    font-size: 12px;
+    padding: 2px;
+}
+
+.picture{
+    height:614px;
+    border-bottom: solid 0.1px #dbdbdb;
+}
+
+.picture img{
+    width:100%;
+    height: 100%;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    height:40px;
+   
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+
+.icons img{
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    
+}
+
+.like{
+    height:18px;
+    display: flex;
+    align-items: center;
+   padding: 0px 16px;
+  
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.comments{
+    font-size:14px;
+    margin-top: 7px;
+    padding: 0px 16px;
+    height: 75px;
+  
+}
+
+
+
+
+.line2, .line3{
+    margin-top:10px;
+}
+
+.line1 .id{
+    font-weight: 700;
+}
+
+.line1 .more{
+    color: #8E8E8E
+}
+
+.line2 {
+    color: #8E8E8E
+}
+
+.line3 .id{
+    font-weight: 700;
+}
+
+.day{
+    height: 19px;
+    color: #8E8E8E
+}
+
+.comment{
+    display:flex;
+    align-items: center;
+    height: 56px;
+    border-top: solid 0.1px #dbdbdb;
+}
+
+.self{
+    display: flex;
+    align-items: center;
+}
+
+.self div{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+}
+
+.self .a{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.self .b{
+    font-size: 12px;
+    color:#8E8E8E;
+    margin-top: 4px;
+}
+
+.self img{
+    padding-left:2px;
+    width: 56px;
+    height: 56px;
+}
+
+
+.recommendation{margin-top:25px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.recommendation .a{ font-size: 14px;
+    color:#8E8E8E;
+    font-weight: 700;
+    
+}
+
+.recommendation .b{ font-size: 12px;
+font-weight: 500;
+padding-right: 13px;}
+
+
+.follow {
+padding: 8px 0px;    
+}
+
+
+
+
+.follow img{
+    width: 32px;
+    height: 32px;
+}
+
+.main-right img{
+    border-radius: 70%;
+    border:solid 0.1px #dbdbdb;
+}
+
+div .d{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.c{ color:#0095f6;
+    font-size: 12px;}
+
+.d .a{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.d .b{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #8E8E8E
+}
+
+.e{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.follow1, .follow2, .follow3{
+    padding: 8px 16px 8px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.day {
+
+    padding-left: 16px;
+    font-size: 10px;
+
+}
+
+
+
+input{
+    padding-left:10px;
+    text-align: left;
+    width: 558px;
+    border:None;
+    align-items: center;
+
+}
