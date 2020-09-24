@@ -1,0 +1,270 @@
+/* media query */
+@import url("media_query_login.css");
+
+/* login.css styles */
+body {
+  margin: 0 20px;
+  font-family: 'Arimo', sans-serif;
+  background-color: #fafafa;
+}
+
+#login-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 800px;
+  margin: 80px auto;
+  margin-bottom: 110px;
+  /* border: 1px solid black; */
+}
+
+#login-phones {
+  width: 381px;
+  margin: 0 11px;
+  /* border: 1px solid blue; */
+}
+
+.phone-frame {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.phone-screen {
+  background: url("../img/login/westagram_login_page_insta_capture_img_1.jpg");
+  background-position: cover;
+  width: 63.1%;
+  height: 72.5%;
+  position: absolute;
+  top: 14.1%;
+  left: 29.9%;
+  animation-name: insta-image-slideshow-animation;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes insta-image-slideshow-animation {
+  0% {background: url("../img/login/westagram_login_page_insta_capture_img_1.jpg");}
+  10% {background: url("../img/login/westagram_login_page_insta_capture_img_1.jpg");}
+  20% {background: url("../img/login/westagram_login_page_insta_capture_img_2.jpg");}
+  30% {background: url("../img/login/westagram_login_page_insta_capture_img_2.jpg");}
+  40% {background: url("../img/login/westagram_login_page_insta_capture_img_3.jpg");}
+  50% {background: url("../img/login/westagram_login_page_insta_capture_img_3.jpg");}
+  60% {background: url("../img/login/westagram_login_page_insta_capture_img_4.jpg");}
+  70% {background: url("../img/login/westagram_login_page_insta_capture_img_4.jpg");}
+  80% {background: url("../img/login/westagram_login_page_insta_capture_img_5.jpg");}
+  90% {background: url("../img/login/westagram_login_page_insta_capture_img_5.jpg");}
+}
+
+#login-section {
+  width: 350px;
+  margin: 0 11px;
+  /* border: 1px solid green; */
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  border: 1px solid #dbdbdb;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 50%;
+  margin: 25px;
+}
+
+#username-box, #pw-box, #login-button {
+  width: 77%;
+}
+
+#username-box, #pw-box {
+  text-indent: 0.4em;
+  font-size: 75%;
+  background-color: #fafafa;
+  color: #9f9f9f;
+  border-style: none;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 3px;
+  height: 40px;
+  margin: 3px;
+  cursor: text;
+}
+
+#username-box:focus, #pw-box:focus {
+  border: 0.5px solid #a8a8a8;
+}
+
+#login-button {
+  background-color: #b2dffc;
+  border-radius: 3px;
+  border-style: none;
+  height: 30px;
+  margin: 12px;
+}
+
+#login-button {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 78%;
+  font-weight: 700;
+}
+
+.or-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 6px;
+}
+
+div.or {
+  font-size: 80%;
+  color: #909090;
+}
+
+div.or-line {
+  border-top: 0.5px solid #dbdbdb;
+  width: 32%;
+  margin: 10px;
+}
+
+.login-with-facebook {
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+  width: 70%;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.fb-logo {
+  width: 17px;
+  height: auto;
+}
+
+.fb-logo img {
+  width: 100%;
+}
+
+.fb-text {
+  padding-left: 8px;
+}
+
+.fb-text a {
+  font-size: 86%;
+  font-weight: 600;
+  color: #385185;
+  text-decoration: none;
+}
+
+.forgot-pw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.forgot-pw a {
+  font-size: 75%;
+  color: #22527f;
+  text-decoration: none;
+}
+
+.signup-box {
+  text-align: center;
+  padding: 25px;
+  width: 100%;
+  margin-top: 12px;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+}
+
+.signup-box p {
+  font-size: 85%;
+}
+
+p.no-account-question {
+  font-weight: 300;
+  color: #303030;
+}
+
+span.signup-text a {
+  font-weight: 700;
+  color: #0095f6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.get-the-app {
+  text-align: center;
+  padding: 20px;
+}
+
+.get-the-app p {
+  font-size: 85%;
+  color: #3b3b3b;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.download a {
+  margin: 0 4px;
+}
+
+.app-store-button, .play-store-button {
+  width: auto;
+  height: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1150px;
+  margin: 50px auto;
+  /* font-weight: 700; */
+  /* border: 1px solid black; */
+}
+
+ul.footer-menus {
+  display: flex;
+  margin: 8px 0;
+}
+
+.footer-menus a {
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+li.footer-menu {
+  font-size: 75%;
+  font-weight: 700;
+  color: #00376b;
+}
+
+li.language {
+  cursor: pointer;
+}
+
+.footer-copyright {
+  font-size: 75%;
+  font-weight: 700;
+  color: #8e8e8e;
+  margin: 8px 0;
+}
+

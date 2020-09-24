@@ -1,0 +1,30 @@
+@media only screen and (max-width: 800px) {
+
+  section#login-main {
+    width: 400px;
+    margin: 30px auto;
+  }
+  
+  section#login-phones {
+    display: none;
+  }
+
+  #footer {
+    width: 330px;
+    justify-content: center;
+    /* border: 1px solid black; */
+  }
+
+  .footer-menus {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li.footer-menu {
+    padding: 6px 0;
+  }
+
+  div.footer-copyright {
+    margin-top: 0;
+  }
+}
