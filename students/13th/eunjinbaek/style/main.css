@@ -81,7 +81,6 @@ article, div, footer, header, main, nav, section {
                     border-radius: 3px;
                     z-index: 2;
                     line-height: 18px;
-                    right:
                 }
 
                 .inputbox input::placeholder {
@@ -97,7 +96,7 @@ article, div, footer, header, main, nav, section {
                     background-position-x:-399px;
                     background-position-y:-321px;
                     background-repeat: no-repeat;
-                    justify-self: content 찾아보기!!;
+                    /* justify-self: content 찾아보기!!; */
 
                     z-index: 10;
                     height: 10px;
@@ -230,13 +229,13 @@ article, div, footer, header, main, nav, section {
             top: 0;
             right: 4px;
             bottom: 0;
-            position absolute;
+            position: absolute;
         }
 
         .threeDotIcon button {
             background-image: url(/img/icons.png);
-            background-position-x: ;
-            background-position-y: ;
+            /* background-position-x: ; */
+            /* background-position-y: ; */
         }
 
         .squarePhoto img{
