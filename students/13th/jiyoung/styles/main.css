@@ -1,3 +1,29 @@
+/*js input*/
+
+
+
+
+.wecode{
+    width: 50px; 
+    height: 20px;
+    background-color: white;
+
+}
+
+.wecode_bootcamp{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 .page {
@@ -33,6 +59,7 @@ div.navbar0{
     width: 1000px;
     height: 1000px;
     display: white;
+    
 
 }
 
@@ -60,6 +87,7 @@ align-items: center;}
 .검색{
     position: relative;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -94,13 +122,22 @@ input{
 }
 
 
+.deleteBtn{
+    background-color: #8E8E8E;
+    border:none;
+    margin-left:10px;
+    border-radius: 50;
+
+}
+
+
 
 
 main{
     margin-top:90px;
     border:solid 0.1px #dbdbdb;
     width: 616px;
-    height: 1000x;
+    
     background-color: white;
 
 }
@@ -113,7 +150,7 @@ main{
     height:915px;
     background-color: #fafafa;
     position: fixed;
-    right: 250px;
+    right: 150px;
     
     
 
@@ -204,7 +241,7 @@ main{
     font-size:14px;
     margin-top: 7px;
     padding: 0px 16px;
-    height: 75px;
+    
   
 }
 
@@ -341,7 +378,9 @@ div .d{
 }
 
 
-
+.bold{
+    font-weight: 700;
+}
 
 
 

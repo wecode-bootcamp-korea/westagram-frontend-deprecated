@@ -36,8 +36,6 @@ img {
 
 
 
-
-
 input{
 font-size: 11px;
     border-width: 0.1px;
@@ -58,7 +56,7 @@ font-size: 11px;
     width: 268px;
     height: 30px;
     margin: 8px 40px;
-    background-color: #bbe0fc;
+    background-color:grey;
     color:white;
     text-align:center;}
     
