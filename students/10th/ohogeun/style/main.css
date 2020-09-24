@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    z-index: 1;
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+nav {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #DBDBDB;
+    background-color: white;
+}
+
+.headerBox {
+    width: 975px;
+    height: 54px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logoBox {
+    width: 360px;
+    height: 36;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    width: 103px;
+    height: 29px;
+}
+
+.searchBox {
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #FAFAFA;
+    position: relative;
+}
+
+.searchImg {
+    width: 10px;
+    position: absolute;
+    right: 125px;
+}
+
+.searchImgFocus {
+    left: 5px;
+}
+
+.search {
+    width: 215px;
+    margin: 0 20px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: #FAFAFA;
+    text-align:center;
+}
+
+.searchFocus {
+    text-align:left;
+}
+
+.navIconBox {
+    width: 360px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icon {
+    height: 24px;
+    margin: 9px;
+}
+
+.mainBox {
+    width: 935px;
+    margin: 0 auto;
+    padding: 85px 0 0;
+    display: flex;
+}
+
+.mainLeftBox {
+    width: 614px;
+    margin: 0 28px 0 0;
+}
+
+.storyBox {
+    height: 118px;
+    margin: 0 0 24px;
+    padding: 16px 0 0 10px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x : auto;
+}
+
+.storyBox::-webkit-scrollbar {
+    display: none;
+}
+
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.gradation {
+    width: 64px;
+    height: 64px;
+    background: radial-gradient(66px, skyblue, orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.gradation img {
+    width: 58px;
+    border-radius: 50%;
+    border:2px solid white;
+}
+
+.story span {
+    font-size: 12px;
+    margin:0 auto;
+}
+
+.uploadBox {
+    border: 1px solid #DBDBDB;
+    margin-bottom: 60px;
+    border-radius: 3px;
+}
+
+.uploadHeaderBox {
+    height: 60px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.gradationMini {
+    width: 42px;
+    height: 42px;
+    background: radial-gradient(66px, skyblue, orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.UHBprofile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border:2px solid white;
+    
+}
+
+.UHBdot {
+    width: 25px;
+    position: absolute;
+    right: 15px;
+}
+
+.uploadPictureBox img {
+    width: 614px;
+}
+
+.pictureIconBox {
+    height: 40px;
+    margin: 4px 16px 0;
+    position: relative;
+}
+
+.pictureIconBox img {
+    width: 25px;
+    margin: 4px;
+}
+
+.iconLeft {
+    position: absolute;
+    right: 0;
+}
+
+.likeBox {
+    height: 18;
+    margin: 0 0 8px;
+    padding: 0 16px;
+    display: flex;
+    font-size: 14px;
+}
+
+.likeBox img {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.commentBox {
+    margin: 0 16px;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin-right: 5px;
+}
+
+.commentBox img {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+}
+
+.commnetTimeBox {
+    margin: 6px 16px 0;
+    font-size: 10px;
+    color: #8E8E8E;
+}
+
+.commentInputBox {
+    height: 56px;
+    margin: 9px 0 0;
+    padding: 0 15px;
+    border-top: 1px solid #DBDBDB;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.commentInput {
+    width: 100%;
+    height: 19px;
+    border: none;
+    outline: none;
+    background-color: #FAFAFA;
+}
+
+.button {
+    font-size: 14px;
+    color: skyblue;
+    position: absolute;
+    right: 15px;
+}
+
+.mainRightBox {
+    width: 293px;
+}
+
+.RightBoxIn {
+    width: 293px;
+    position: fixed;
+}
+
+.mypageBox {
+    height: 56px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.mypageBox img {
+    width: 56px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.mypageNameBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.recommendBox {
+    height: 291px;
+    margin-left: 10px;
+}
+
+.myRecommendBox {
+    height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recommend {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8E8E8E;
+}
+
+.allview {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+.user {
+    height: 48px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user img {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.follow {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0095F6;
+    position: absolute;
+    right: 0;
+}

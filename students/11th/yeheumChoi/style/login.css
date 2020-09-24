@@ -1,0 +1,87 @@
+body {
+  background-color: #fafafa;
+}
+
+.wrapLogin {
+  width: 350px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-shrink: 0;
+  background-color: white;
+  border: 1px solid #d6d6d6;
+  padding: 10px 0;
+  margin: 10px;
+}
+
+.wrapArticle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.instaImg {
+  width: 175px;
+  margin: 10px;
+}
+
+.iphoneImg {
+  width: 390px;
+  margin: 10px;
+}
+
+.wrapImg {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapTexts {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginTextbox {
+  width: 270px;
+  height: 36px;
+  font-size: 12px;
+  background-color: #fafafa;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 3px;
+}
+
+.loginButton {
+  width: 270px;
+  height: 30px;
+  opacity: 1;
+  border-width: 0;
+  border-radius: 3px;
+  margin: 15px 3px;
+  color: white;
+  background-color: #0095f6;
+  cursor: pointer;
+}
+
+.loginButton:disabled {
+  cursor: default;
+  opacity: 0.4;
+}
+
+#forgetPw {
+  margin: 10px 0;
+}
+
+#forgetPw a {
+  text-decoration: none;
+  color: #00376b;
+  font-size: 12px;
+}
+
+.wrapsection {
+  min-width: 860px;
+  margin: 0 auto;
+}

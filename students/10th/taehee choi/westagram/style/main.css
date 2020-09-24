@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 5px;
+}
+nav {
+    padding: 10px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav_left {
+    display: flex;
+    width: 200px;
+}
+
+.insta_logo {
+    width: 103px;
+    height: 29px;
+    border-left: 1.5px solid gray;
+    padding-left: 10px;
+}
+
+.icon_camera {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+input {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.nav_right {
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
+    width: 22px;
+    height: 21px;
+}

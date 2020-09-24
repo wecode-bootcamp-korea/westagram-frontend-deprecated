@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 250, 250, 1);
+
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}

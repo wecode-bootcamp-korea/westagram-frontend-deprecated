@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBorder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+  border: 2px solid lightgray;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.loginLogo {
+  margin-top: 50px;
+}
+
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginId,
+.loginPassword,
+.loginBtn {
+  margin-bottom: 10px;
+}
+
+.loginBtn {
+  margin-top: 10px;
+}
+
+.loginBox input {
+  width: 350px;
+  height: 50px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  border-radius: 2px;
+  padding-left: 10px;
+}
+
+.loginBox input::placeholder {
+  color: #8e8e8e;
+  font-size: 15px;
+}
+
+.loginBox button {
+  width: 350px;
+  height: 45px;
+  background-color: #c0e0fe;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: #f7fdff;
+}
+
+.loginPasswordFind {
+  margin-bottom: 10px;
+}
+
+.loginPasswordFind a {
+  color: #385185;
+  text-decoration: none;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="navContainer">
+      <nav>
+          <a class="navLogo" href="#">
+            <img alt="instagram" src="img/logo_text.png">
+          </a>
+        <div class="navSearch">
+          <input type="text" placeholder="검색">
+        </div>
+        <div class="navIconList"> 
+        <ul>
+          <li class="listIcon home">
+            <a href="http://">
+            <svg aria-label="홈" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M45.3 48H30c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2-4.6-4.6-4.6s-4.6 2-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.5-.6 2.1 0l21.5 21.5c.4.4.6 1.1.3 1.6 0 .1-.1.1-.1.2v22.8c.1.8-.6 1.5-1.4 1.5zm-13.8-3h12.3V23.4L24 3.6l-20 20V45h12.3V34.2c0-4.3 3.3-7.6 7.6-7.6s7.6 3.3 7.6 7.6V45z"></path></svg>
+            </a>
+          </li>
+          <li class="listIcon message">
+            <a href="#">
+            <svg aria-label="Direct" class="_8-yf5 " fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l13.2 13c.5.4 1.1.6 1.7.3l16.6-8c.7-.3 1.6-.1 2 .5.4.7.2 1.6-.5 2l-15.6 9.9c-.5.3-.8 1-.7 1.6l4.6 19c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.5-.5.5-1.1.2-1.6z"></path>
+            </svg></a>
+          </li>
+          <li class="listIcon">
+            <a href="#">
+              <img alt="around" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+            </a>
+          </li>
+          <li class="listIcon">
+            <a href="#">
+              <img alt="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" >
+            </a>
+          </li>
+          <li class="listIcon">
+            <a href="#">
+              <img class="profileImg" alt="userProfilePicture" src="img/me.jpg">
+            </a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <section>
+      <div class="feeds">
+        <div class="storyContainer">
+          <ul>
+            <li class="storyItem">
+                <a class="storyCircle">
+                  <img alt="__님의 프로필 사진"  class="profileImg" src="img/me.jpg">
+                </a>
+                <span class="storyId">__hi</span>
+            </li>
+            <li class="storyItem">
+              <a class="storyCircle">
+                <img alt="__님의 프로필 사진"  class="profileImg" src="img/me.jpg">
+              </a>
+              <span class="storyId">__hi</span>
+          </li>
+          <li class="storyItem">
+            <a class="storyCircle">
+              <img alt="__님의 프로필 사진"  class="profileImg" src="img/me.jpg">
+            </a>
+            <span class="storyId">__hi</span>
+        </li>
+        <li class="storyItem">
+          <a class="storyCircle">
+            <img alt="__님의 프로필 사진"  class="profileImg" src="img/me.jpg">
+          </a>
+          <span class="storyId">__hi</span>
+      </li>
+      <li class="storyItem">
+        <a class="storyCircle">
+          <img alt="__님의 프로필 사진"  class="profileImg" src="img/me.jpg">
+        </a>
+        <span class="storyId">__hi</span>
+    </li>
+          </ul>   
+        </div>
+        <article class="articleConatiner">
+        <div class="articleTop">
+            <div class="profilePicture">
+              <a href="https://www.instagram.com/kim_mi_myo/">
+                <img class="profileImg" alt="kim_mi_myo님의 프로필 사진" src="img/feedsProfile.jpg">
+              </a>
+            </div>
+            <div class="content">
+              <a href="">kim_mi_myo</a>
+            </div>
+            <button class="threeDots"></button>
+        </div>
+        <div class="articlePictures">
+        </div>
+        <div class="articleBottom">
+          <div class="articleIconContainer">
+            <button class="articleBtn heart"></button>
+            <button class="articleBtn commentImg"></button>
+            <button class="articleBtn share">
+              <svg aria-label="게시물 공유" class="_8-yf5 " fill="#262626" height="20" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+            </button>
+            <button class="articleBtn bookmarkImg"></button>
+          </div>
+          <div class="heartInfoContainer">
+            <img class="profileImg" alt="yejiiii_95의 프로필 사진" src="img/me.jpg">
+            <div><span class="infoBold userId">회원님 </span> 외 <span class="infoBold"> 200명</span>이 좋아합니다.</div>
+          </div>
+          <div class="commentContainer">
+            <div class="commentItem"><span class="infoBold commentId">kim_mi_myo</span>집 가고 싶다. 
+            </div>
+          </div>
+        </div>
+        <div class="articleTimeInfo">1시간전</div>
+        <div class="AddCommentContainer">
+          <div class=commentForm>
+            <input class="inputComment" type="text" placeholder="댓글달기...">
+          <button>게시</button>
+          </div>
+        </div>
+        </article>
+      </div>
+      <aside class="mainAside">
+        <div class="profileContainer">
+            <a href="http://" class="userImg picture__link">
+            <img class="profileImg" alt="yejiiii_95의프로필사진"  src="img/me.jpg"></a>
+          <div class ="profileComment">
+            <a href="http://" class="userId">yejiiii_95</a>
+            <div class="userName">강예지</div>  
+          </div> 
+        </div>
+        <div class="suggestions">
+          <div class="suggestionsHeader">
+            <div class="suggestionsTitle">회원님을 위한 추천</div>
+            <a href="" class="suggestionsSeeAll">모두 보기</a>
+          </div>
+          <div class="suggestionsList">
+            <div class="listItem">
+                  <a class="listPicture" href="">
+                    <img alt="mynameis20님의 프로필" class="profileImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/29403423_2018860301734687_8265582011880570880_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=m0CvUVd59rEAX-79ddt&amp;oh=593dd7d6cb1922837ce85c1741bd7b41&amp;oe=5F515228" >
+                  </a>
+                <div class="listDescription">
+                    <a href="" class="suggestionsId">mynameis20</a>
+                  <div>
+                    <span class="comment">회원님을 팔로우합니다.</span>
+                  </div>
+                </div>
+                <button>팔로우</button>
+              </div>  
+              <div class="listItem">
+                <a class="listPicture" href="">
+                  <img alt="mynameis20님의 프로필" class="profileImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/29403423_2018860301734687_8265582011880570880_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=m0CvUVd59rEAX-79ddt&amp;oh=593dd7d6cb1922837ce85c1741bd7b41&amp;oe=5F515228" >
+                </a>
+              <div class="listDescription">
+                  <a href="" class="suggestionsId">mynameis20</a>
+                <div>
+                  <span class="comment">회원님을 팔로우합니다.</span>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>  
+            <div class="listItem">
+              <a class="listPicture" href="">
+                <img alt="mynameis20님의 프로필" class="profileImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/29403423_2018860301734687_8265582011880570880_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=m0CvUVd59rEAX-79ddt&amp;oh=593dd7d6cb1922837ce85c1741bd7b41&amp;oe=5F515228" >
+              </a>
+            <div class="listDescription">
+                <a href="" class="suggestionsId">mynameis20</a>
+              <div>
+                <span class="comment">회원님을 팔로우합니다.</span>
+              </div>
+            </div>
+            <button>팔로우</button>
+          </div>  
+          <div class="listItem">
+            <a class="listPicture" href="">
+              <img alt="mynameis20님의 프로필" class="profileImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/29403423_2018860301734687_8265582011880570880_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=m0CvUVd59rEAX-79ddt&amp;oh=593dd7d6cb1922837ce85c1741bd7b41&amp;oe=5F515228" >
+            </a>
+          <div class="listDescription">
+              <a href="" class="suggestionsId">mynameis20</a>
+            <div>
+              <span class="comment">회원님을 팔로우합니다.</span>
+            </div>
+          </div>
+          <button>팔로우</button>
+        </div>  
+        <div class="listItem">
+          <a class="listPicture" href="">
+            <img alt="mynameis20님의 프로필" class="profileImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/29403423_2018860301734687_8265582011880570880_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=m0CvUVd59rEAX-79ddt&amp;oh=593dd7d6cb1922837ce85c1741bd7b41&amp;oe=5F515228" >
+          </a>
+        <div class="listDescription">
+            <a href="" class="suggestionsId">mynameis20</a>
+          <div>
+            <span class="comment">회원님을 팔로우합니다.</span>
+          </div>
+        </div>
+        <button>팔로우</button>
+      </div>  
+        </div>
+        <nav class="bottomNav">
+          <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">．도움말</a></li>
+            <li><a href="#">．홍보센터</a></li>
+            <li><a href="#">．API</a></li>
+            <li><a href="#">．채용 정보</a></li>
+            <li><a href="#">．개인정보처리방침</a></li>
+            <li><a href="#">．약관</a></li>
+            <li><a href="#">．위치</a></li>
+            <li><a href="#">．인기계정</a></li>
+            <li><a href="#">．해시태그</a></li>
+            <li><a href="#">．언어</a></li>
+          </ul>
+          <span>@ 2020 INSTAGRAM FROM FACEBOOK</span>
+        </nav>
+      </aside>
+    </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
