@@ -28,7 +28,8 @@ function downPlaceholder(input, placeholder) {
   placeholder.classList.remove(`${placeholder.classList[0]}Upper`);
   input.classList.remove("downText");
 }
-function isValid(validity) {
+
+function isUserInfoValid(validity) {
   if (validity) {
     loginBtn.classList.remove("btn-disabled");
   } else {
@@ -47,7 +48,7 @@ function handleInput(event) {
   } else {
     downPlaceholder(inputTarget, inputTargetPlaceholder);
   }
-  isValid(loginForm.checkValidity());
+  isUserInfoValid(loginForm.checkValidity());
 }
 
 function init() {
