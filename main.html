@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <span>
+        <img id='imgLogo' src='https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png' alt='Image Logo'>
+        <img id='imgText' src='img/logo_text.png' alt='Image Text'>
+      </span>
+      <span>
+        <input type="text" placeholder="Search">
+      </span>
+      <span>
+        <img class='navIcon' src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="Explore">
+        <img class='navIcon' src='https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png' alt='Heart'>
+        <img class='navIcon' src='https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png' alt='My Page'>
+      </span>
+    </nav>
+
+    <main>
+      <div class='feeds'>
+        <article>
+          <div class='user'>
+            <section class="prfl">
+              <img id='prflPhoto'src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/71533411_449636125903525_7464596574253875200_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Izru35a3h2sAX8nevRu&oh=b911dfd175a23d0195d6d8fdf1bd2b36&oe=5F91D92B" alt="Profile photo">
+              <div>
+                <p>jennierubyjane</p>
+                <p>Black Pink</p>
+              </div>
+            </section>
+            <img id="more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="Three dots" width="16" height="16">
+          </div>
+          <div class='photo'>
+            <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/119945872_660222924899582_7313075262915608996_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=I1HFmacSFvYAX_6IbAb&oh=058d62956447c7f7c8b15a1b13abfe1c&oe=5F9435B2" alt="Feed" width="614px" height="614px">
+          </div>
+          <div id='social'>
+            <section>
+              <div id='fdbLeft'>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="Like" width="24px" height="24px">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="Comment" width="24px" height="24px">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="Share" width="24px" height="24px">
+              </div>            
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="bookmark" width="24px" height="24px">
+            </section>
+            <section>
+              <p>180,687 likes</p>
+            </section>
+            <section class='posting'>
+              <p><span>jennierubyjane</span>Saturday is my fav.</p>
+            </section>
+            <section id='pstdTime'>
+              <p>2 HOURS AGO</p>
+            </section>
+            <section>
+              <form>
+                <textarea id="newCmnt" placeholder="Add a comment..."></textarea>
+                <button type="button" id='pstBttn'>POST</button>
+              </form>
+            </section>
+          </div>
+        </article>
+      </div>
+      <div class='main-right'>
+        <div>
+          <img class='prfl' src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/71533411_449636125903525_7464596574253875200_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Izru35a3h2sAX8nevRu&oh=b911dfd175a23d0195d6d8fdf1bd2b36&oe=5F91D92B" alt="Profile photo">
+          <section>
+            <p>jennierubyjane</p>
+            <p>Black Pink</p>
+          </section>
+        </div>
+        <div>
+          <section class="seeAll">
+            <span>Suggestions For You</span>
+            <span>See All</span>
+          </section>
+          <ul>
+            <li>
+              <img class="prfl" src = 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/119460968_1404833619705406_7332665833183385816_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=MA31larDdRkAX93JCMU&oh=9d4e1fe28e0d5a53dd78f3a1fffbeb74&oe=5F913596' alt="Profile photo">
+              <div>
+                <p>alexishyun</p>
+                <p>1 HOURS AGO</p>
+              </div>
+              <span>Follow</span>
+            </li>
+            <li>
+              <img class="prfl" src = 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/13774220_741372302672618_601989193_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=KOYcPb93VecAX_IoxZl&oh=52ef2f9e6cb65d52f90a37482d849b1c&oe=5F94FE2B' alt="Profile photo">
+              <div>
+                <p>jako8</p>
+                <p>4 HOURS AGO</p>
+              </div>
+              <span>Follow</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img class="prfl" src = 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/23279977_2006212239623881_1538274598993264640_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=-UaOD3TVgcEAX9UXb3h&oh=19590b3612c72db0549b618abde022ff&oe=5F93CB32' alt="Profile photo">
+          <div>
+            <p>museelouvre</p>
+            <p>1 YEAR AGO</p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>About</li>
+            <li>&#183</li>
+            <li>Help</li>
+            <li>&#183</li>
+            <li>Press</li>
+            <li>&#183</li>
+            <li>API</li>
+            <li>&#183</li>
+            <li>Jobs</li>
+            <li>&#183</li>
+            <li>Privacy</li>
+            <li>&#183</li>
+            <li>Terms</li>
+            <li>&#183</li>
+            <li>Locations</li>
+            <li>&#183</li>
+            <li>Top</li>
+            <li>&#183</li>
+            <li>Accounts</li>
+            <li>&#183</li>
+            <li>Hashtags</li>
+            <li>&#183</li>
+            <li>Language</li>
+          </ul>
+          <p>© 2020 INSTAGRAM FROM FACEBOOK</p>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>   
+  </body>
+</html>
