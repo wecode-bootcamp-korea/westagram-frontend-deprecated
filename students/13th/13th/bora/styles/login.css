@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+      background-color: #FAFAFA;
+  }
+
+.login-container {
+    background-color: white;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 126px;
+    padding: 10px 0;
+    border: 1.5px solid #DBDBDB;
+    border-radius: 1.4px;
+
+
+
+}
+
+.logo-img {
+    width: 180px;
+    padding: 22.2px 0 30.3px 0;
+}
+
+.login-box {
+    width: 268px;
+}
+
+.login-input {
+    width: 268px;
+    height: 38px;
+    margin: 3.09px 0;
+    padding-left: 10px;
+    background-color: #FAFAFA;
+    border: 1.5px solid #DBDBDB;
+    border-radius: 3.3px;
+    font-size: 11.7px;
+    
+
+}
+
+::-webkit-input-placeholder {
+    color: #939393;
+}
+
+#login-btn {
+    height: 31px;
+    background-color: #C0DFFD;
+    border-radius: 5px;
+    border: 1.5px solid #C0DFFD;
+    color: white;
+    font-size: 14.1px;
+    font-weight: 700;
+    cursor: pointer;
+
+    width: 268px;
+    margin: 11.5px 0 5.1px 0;
+    padding-left: 14px;
+}
+
+.or {
+    width: 268px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+
+
+.line {
+    height: 0.2px;
+    opacity: 0.2;
+    background: #000;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 20px;
+}
+
+#or-span{
+    background-color: white;
+    z-index: 1;
+    margin-top: 8px;
+    padding: 0 17px;
+    position: relative;
+    top: 14px;
+
+}
+
+.facebook {
+    display: flex;
+    padding: 0 60px;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#fb-img{
+   width: 24px;
+   height: 18px;
+
+}
+
+#fb-login-txt {
+    font-size: 14.4px;
+    font-weight: 600;
+    text-align: center;
+    color: #385184;
+    margin-left: 5px;
+}
+
+.forgot-pw {
+    font-size: 12px;
+    font-weight: 500;
+    color: #385184;
+    margin-top: 22px;
+    margin-bottom: 13px;
+}
+
+#bold {
+    font-weight: 700;
+}
