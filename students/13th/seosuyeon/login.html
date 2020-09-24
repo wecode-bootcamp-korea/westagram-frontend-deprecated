@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="login_container">
+          <img src="./img/logo_text.png" alt="instagram" class="logo">
+
+          <form class="login_form" action="" >
+
+            <input id="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+            <input id="pw" type="password" placeholder="비밀번호">
+
+
+            <button id="login_btn" class="login_btn">로그인</button>
+          </form>
+
+          <div class="or_wrap">
+            <div class="or_line1"></div>
+            <span class="or_text">또는</span>
+            <div class="or_line2"></div>
+          </div>
+
+          <button class="facebook_btn" type="button">
+            <span class="facebook_login">Facebook으로 로그인</span>
+          </button>
+
+          <a  class="forget_pw" href="https://www.instagram.com/accounts/password/reset/">비밀번호를 잊으셨나요?</a>
+        </div>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
