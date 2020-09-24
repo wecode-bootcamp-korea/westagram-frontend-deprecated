@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <nav>
+          <div class='nav-container'>
+            <div class='nav-left'>
+                <img src="img/logo_text.png" alt="">
+            </div>
+
+            <div class="nav-center">
+                <input class="search" type="text" placeholder="검색"/>
+            </div>
+
+            <div class='nav-right'>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="">
+            </div>  
+          </div>
+      </nav>
+    
+
+      <main>
+        <div class="main-container">
+          <div class = 'feeds'>
+              <article class='feed1'>
+                <div class= 'feed1-writer-div'>
+                  <div>
+                  <img id = 'feed1-writer-photo' src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/70808325_507421323323756_3971480877640187904_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=pKe1Es2qSwMAX8uXRMM&oh=e4fa642a8189677e45eb28795a5e95c9&oe=5F904BAD" alt="">
+                  </div>
+                  <div>
+                  <span id= 'feed1-writer-id'>leexieun</span>
+                  </div>  
+                </div>
+
+                <div>
+                  <img id = 'feed1-photo' src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119557752_883676642161347_1265095594911741660_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=KVKBttX_XUoAX__Vp5b&_nc_tp=15&oh=e7ac1dda826193941cc4cb4f5b6a9307&oe=5F8F844E" alt="x" >
+                </div>
+
+                <div class='article-icon'>
+                  <div>  
+                    <img id = "isLiked" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+                    <img id = "reply" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="">
+                    <img id = 'share' src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="">
+                  </div>
+
+                  <div>
+                    <img id = 'save' src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="">
+                  </div>
+                </div>
+
+                <div class="div-p">
+                  <ul>
+
+                  </ul>
+                </div>
+
+                <div class="comment">
+                  <div>
+                    <input id ='dat' type="text/submit" placeholder="댓글 달기...">
+                  </div>  
+                  <div class="btn-box">  
+                    <button id ='btn'>게시</button>
+                  </div>   
+                  
+                  <div>
+                    
+                  </div>  
+                  </div>  
+              </article>
+          </div>
+       
+
+          <div class = 'main-right'>
+            <div class="main-right-container">
+              <div class="main-right-myProfile">
+                <div>  
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/119481404_659569124666964_8132641890208942305_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=LholeTsQ_NQAX_Gpti1&oh=7ed6443827525f404a249ff8ad66cb85&oe=5F900ACD" alt="x">
+                </div>
+
+                <div class="main-right-myProfile-id">  
+                  <span>jeon.92</span>
+                  <span>전민승</span>
+                </div> 
+              </div>
+
+          
+              <div class = "recomand">
+                <span id = 'recomand-forYou'>회원님을 위한 추천</span>
+                <span id = 'recomand-all'>모두보기</span>
+              </div>
+
+                <div class='friends'>
+                  <div class = 'friend1'>
+                    <div>
+                    <img id="friend1-photo" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/119552270_886529011873760_1339554069031005809_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=gD8EPW1EXsoAX_FqyYJ&_nc_tp=15&oh=d927a3cdce3edca6b23be46ceebc3459&oe=5F924FA7" alt="x">
+                    </div>
+
+                    <div class="friend1-id">
+                      <span id ='friend1-id'>kiwi</span>
+                      <span id ='friend1-recomand'>회원님을 위한 추천</span>
+                    </div>  
+                  </div>
+                
+
+                  <div class="follow">
+                    <span>팔로우</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </main>
+      <div class = 'search-container'>
+
+      </div>
+      <script src="js/main.js"></script>
+  </body>
+</html>
