@@ -86,7 +86,7 @@ function change(){
 
 
 // NAV 아이디 검색기능
-const idArr = ['전민승', '전승민', '강아지', '고양이'];cd
+const idArr = ['전민승', '전승민', '강아지', '고양이'];
 
 
 
