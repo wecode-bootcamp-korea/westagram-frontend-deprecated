@@ -1,0 +1,330 @@
+article, div, footer, header, main, nav, section {
+    align-items: stretch;
+    box-sizing: border-box;
+    display: flex;
+    box-direction: normal;
+    flex-direction: column;
+}
+
+
+
+.bodyclass {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+    nav {
+        width: 100%;
+        top: 0;
+        height: 54px;
+        border-bottom: 1px solid #dbdbdb;
+        background-color: white;
+        position: fixed;
+        margin: 0 auto;
+        text-align: center; /* center 다시 맞추기 */
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+        .boxInNav {
+            border: 1px solid red;
+            width: 975px;
+            height: 100%;
+            padding: 0 20px;
+            margin: 0 auto;
+            align-items: center;
+            display: flex;
+            /* flex-flow: row wrap; */
+            flex-direction: row;
+            justify-content: center;
+        }
+
+            .logo a {
+                height: 29px;
+                width: 360px;
+                left: 0;
+                flex: 0 0 auto;
+                align-content: stretch;
+                display: flex;
+                position: relative;
+
+            }
+
+            .inputbox {
+                height: 28px;
+                flex: 0 1 auto;
+                min-width: 125px;
+                width: 215px;
+                box-sizing: border-box;
+                position: relative;
+
+            }
+
+                .inputbox span{
+                    background-image: url(/img/icons.png);
+                    background-position: -399px -321px;
+                    background-repeat: no-repeat;
+                    height: 10px;
+                    width: 10px;
+                }
+
+                .inputbox input {
+                    border: 1px solid #dbdbdb;
+                    box-sizing: border-box;
+                    padding: 3px 10px 3px 26px;
+                    font-size: 16px;
+                    /* background-color: #FAFAFA; */
+                    background-color: black;
+                    border-radius: 3px;
+                    z-index: 2;
+                    line-height: 18px;
+                    right:
+                }
+
+                .inputbox input::placeholder {
+                    color: #dbdbdb;
+                }
+
+                .inputbox input:focus {
+                    outline-color: #272727; 
+                }
+
+                .searchIcon {
+                    background-image: url(/img/icons.png);
+                    background-position-x:-399px;
+                    background-position-y:-321px;
+                    background-repeat: no-repeat;
+                    justify-self: content 찾아보기!!;
+
+                    z-index: 10;
+                    height: 10px;
+                    width: 10px;
+                    display: inline-block;
+                    position: absolute;
+
+                }
+
+                
+
+            .icons {
+                right: 0;
+
+            }
+
+                .icons span {
+                    background-image: url(/img/icons.png);
+                    
+                }
+
+                .homeicon {
+                    background-image: url(/img/icons.png);
+                    background-position-x:-399px;
+                    background-position-y:-321px;
+                    height: 10px;
+                    width: 10px;
+                }
+
+
+
+    main {
+        margin-top: 54px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        display: flex;
+
+    }
+
+        main section {
+            border: 3px solid red;
+            position: relative;
+            padding-top: 30px;
+            margin: 0 auto;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            max-width: 935px;
+            box-sizing: border-box;
+            flex-flow: row nowrap;
+            max-width: 935px;
+            width: 100%
+
+        }
+
+        .feeds {
+            border: 3px solid red;
+            width: 614px;
+            height: 100%;
+            float: left;
+            display: flex;
+            margin-right: 28px;
+        }
+
+        .main-right {
+            border: 3px solid red;
+            display: flex;
+            width: 293px;
+            box-align: stretch;
+            box-sizing: border-box;
+            height: 100%;
+            position: absolute;
+            right: 0%;
+            margin-bottom: 30px;
+        }
+
+        .itembox {
+            border: 3px solid red;
+            width: 100%;
+            height: 500px;
+            top: 92px;
+            position: sticky;
+        }
+
+        .storybox {
+            border: 2px solid red;
+            margin: 0 0 24px 0;
+            padding: 16px 0;
+            width: 100%;
+            height: 84px;
+        }
+
+        .stories {
+            border: 1px solid red;
+            height: 84px;
+        }
+
+        .feedsWithoutStories1 {
+            display: flex;
+            position: relative;
+        }
+
+        .feedsWithoutStories2 {
+            border: 1px solid red;
+            flex-direction: column;
+            position: relative;
+        }
+
+        article {
+            border: 1px solid red;
+            border-radius: 3px;;
+            margin-bottom: 60px;
+            display: flex;
+            position: relative;
+        }
+
+        header {
+            border: 1px solid red;
+            box-align: center;
+            align-items: center;
+            height: 60px;
+            flex-direction: row;
+            padding: 16px;
+        }
+
+        .threeDotIcon {
+            border: 1px solid red;
+            height: 60px;
+            top: 0;
+            right: 4px;
+            bottom: 0;
+            position absolute;
+        }
+
+        .threeDotIcon button {
+            background-image: url(/img/icons.png);
+            background-position-x: ;
+            background-position-y: ;
+        }
+
+        .squarePhoto img{
+            width: 613px;
+            height: 613px;
+        }
+
+        .belowSquarePhoto {
+            align-items: stretch;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+
+            .iconsInArticle {
+                padding-left: 16px;
+                padding-right: 16px;
+                margin-top: 4px;
+                flex-direction: row;
+            }
+
+            .likedNums {
+                padding-left: 16px;
+                padding-right: 16px;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-bottom: 8px;
+            }
+
+            .feedStringBox {
+                
+            }
+
+                .replyNums {
+                    color: #8E8E8E;
+                }
+
+            .uploadedTime {
+                color: #8E8E8E;
+            }
+
+            .typingReplyBox {
+                box-sizing: border-box;
+                padding-left: 16px;
+                padding-right: 16px;
+                margin-top: 4px;
+                font-size: 14px;
+                line-height: 18px;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+
+            }
+            .typingReplyBox div div {
+                box-align: center;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                justify-content: space-between;
+            }
+
+            .typingReply {
+                color: #8E8E8E;
+                border: 0;
+                height: 18px;
+                padding: 0px;
+                flex-grow: 1;
+                width: 0;
+                resize: none;
+                line-height: 18px;
+                flex-direction: column;
+            }
+
+            .postingReply {
+                opacity: 0.3;
+                font-size: 14px;
+                line-height: 18px;
+                color: #0095f6;
+                width: auto;
+                border: 0;
+                padding: 0;
+                margin: 0;
+                display: inline;
+                position: relative;
+                box-sizing: border-box;
+            }
+
+                ul li {
+                    position: relative;
+
+                }
