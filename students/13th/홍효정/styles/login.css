@@ -1,0 +1,160 @@
+/* ----- LOGIN ----- */
+
+.login-container {
+    background: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container main > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container .login-iphone > img{
+    position: relative;
+    right: -10px;
+}
+
+.login-items {
+    width: 350px;
+}
+
+.login-items > div + div{
+    margin-top: 10px;
+}
+
+.login-items .input-wrap,
+.login-items .sign-up {
+    padding: 20px 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    text-align: center;
+}
+
+.login-items .input-wrap .logo {
+    width: 175px;
+    margin: 15px auto 30px;
+}
+
+#login-form p{
+    position: relative;
+}
+
+#login-form p + p{
+    margin-top: 7px;
+}
+
+#login-form p > input{
+    width: 100%;
+    height: 40px;
+    padding: 5px 7px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fafafa;
+    font-size: 14px;
+    transition: 0.35s ease;
+}
+
+#login-form .pry-btn{
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: rgba(0, 149, 246, 0.3);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+
+.login-items .input-wrap .login-hr{
+    position: relative;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.login-items .input-wrap .login-hr span{
+    position: relative;
+    padding: 0 15px;
+    font-size: 14px;
+    background: #fff;
+    color: #8e8e8e;
+    z-index: 3;
+}
+
+.login-items .input-wrap .login-hr::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+}
+
+.login-items .input-wrap .login-sns button{
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #385185;
+}
+
+.login-items .input-wrap .login-sns a{
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #385185;
+}
+
+.login-items .sign-up p{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.login-items .sign-up p a{
+    font-weight: 600;
+    color: #0095f6;
+}
+
+.login-items .dwn-apps{
+    text-align: center;
+}
+
+.login-items .dwn-apps > p{
+    margin: 25px 0;
+    font-weight: 300;
+}
+
+.login-items .dwn-apps ul{
+    display: flex;
+    justify-content: center;
+}
+
+.login-items .dwn-apps ul li + li{
+    margin-left: 10px;
+}
+
+.login-items .dwn-apps ul li a{
+    display: inline-block;
+    width: 135px;
+}
+
+/* ----- LOGIN -- end ----- */
+
+/* ----- 반응형 ----- */
+
+@media (max-width: 960px){
+    .login-container main > .container .login-iphone{
+        display: none;
+    }
+}
+
+/* ----- 반응형 -- end ----- */
