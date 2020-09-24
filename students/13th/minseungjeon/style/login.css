@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.container{
+    border: 2px solid #FFFFFF;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+.logo-box{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-box{
+    margin-top: 0;
+    padding-top: 0;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+input{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #FAFAFA;
+    border: 1px solid lightgray;
+    padding-left: 1rem;
+    box-sizing: border-box;
+        
+}
+
+button{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #B2DFFC;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: #385185;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.forgotPw{
+    margin-bottom: 15px;
+}
+
+.login-box span {
+    font-size: 0.7rem;
+    color:  #385185;
+}
+
+
+.join-box, .download-box {
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.join-box{
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+.join-box span:nth-last-child(1){
+    color: #52C2FB;
+    font-weight: bold;
+}
+
+.download-img{
+    margin-top: 10px;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+}
+
+.download-img img{
+    width: 180px;
+    height: 50px;
+}
+
