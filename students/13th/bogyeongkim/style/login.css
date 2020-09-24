@@ -1,0 +1,57 @@
+*{
+    box-sizing:border-box;
+}
+
+.total-container{
+    margin: 30px auto;
+    width:400px;
+    height:100%;
+    border:1px solid #CCC;
+}
+
+header{
+    margin:60px;
+    text-align:center;
+}
+input{ 
+    width:300px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #999;
+    background-color:#fafafa;
+    border-radius:5px;
+}
+button{
+    width:300px;
+    height:40px;
+    border:0;
+    background-color: #b9dffc;
+    border-radius:5px;
+}
+.phone{
+     font-size:20px;
+     text-align:center;
+}
+.password{ 
+    padding-top:20px;
+    font-size:20px;
+    text-align:center;
+}
+.final_forget{
+    padding-bottom:20px;
+    color:blue;
+    text-align:center;
+
+}
+.loginBtn{
+
+    padding:10px;
+    font-size:50px;
+    text-align:center;
+
+}
+footer{
+    margin-top:100px;
+    text-align:center;
+
+}
