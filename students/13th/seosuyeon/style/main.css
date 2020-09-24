@@ -1,0 +1,316 @@
+/* :root {
+    --background: #fafafa;
+    --white: #fff;
+    --gray: #dbdbdb;
+    --skyblue: #b2dffc;
+    --darkgray: #929292;
+    --black: #3d3a3b;
+} */
+
+button {
+    background-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    height: 53px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+
+.navbar_inside {
+    width: 975px;
+    height: 53px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logos */
+.logo_wrap {
+    width: 200px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_image, .logo_centerline, .logo_text {
+    height: 29px;
+    margin: 4px 8px;
+}
+
+.logo_image {
+    width: 29px;
+    cursor: pointer;
+}
+
+.logo_centerline {
+    width: 2px;
+    background-color: #3d3a3b;
+}
+
+.logo_text {
+    width: 103px;
+    cursor: pointer;
+}
+
+/* Search */
+.searchbar {
+    width: 215px;
+    height: 28px;
+    padding: 7px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+/* Icons */
+.navbar_icons {
+    width: 222px;
+    height: 22px;
+    text-align: end;
+}
+
+.explore_icon, .follow_icon, .account_icon {
+    width: 22px;
+    height: 22px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+/* 본문 */
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.main_wrap {
+    width: 975px;
+    height: 100%;
+    margin: 59px auto 0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_wrap {
+    width: 614px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* feed */
+
+.feed {
+    margin-bottom: 60px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feed_top {
+    width: 100%;
+    height: 60px;
+    padding: 16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_user_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_user_img {
+    width: 42px;
+    height: 42px;
+    margin: 0 8px 0 0;
+}
+
+.top_user_name {
+    font-weight: 600;
+}
+
+.option {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.option img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.feed_center {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+.feed_image {
+    width: 100%;
+}
+
+.feed_bottom {
+    width: 100%;
+    padding: 0 8px;
+    background-color:  #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed_btns_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heartbtn, .bubblebtn, .sharebtn, .bookmarkbtn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.heart, .bubble, .share, .bookmark {
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.user_likecount_wrap {
+    width: 100%;
+    height: 28px;
+    padding: 8px;
+    display: flex;
+    align-items: center
+}
+
+.user_likecount_wrap img {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #dbdbdb;
+    border-radius: 50%;
+    position: relative;
+}
+
+.user_likement {
+    padding-left: 8px;
+}
+
+.user_like {
+    font-weight: 600;
+}
+
+.comment_wrap, .comments_wrap {
+    width: 100%;
+    margin: 4px 0 0;
+    padding: 0 8px;
+    display: flex;
+}
+
+.comments_wrap {
+    height: 100%;
+    flex-direction: column;
+
+}
+
+.comment_list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.comments_comment {
+    font-size: 13px;
+}
+
+.comments_time {
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.comments_userlink {
+    margin-right: 4px;
+    font-weight: 600;
+}
+
+.comment_wrap {
+    height: 56px;
+    align-items: center;
+}
+
+.comment {
+    width: 554px;
+    height: 18px;
+    cursor: text;
+}
+
+.commentbtn {
+    width: 36px;
+    height: 17px;
+    color: #b2dffc;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* aside */
+.right_wrap, aside {
+    height: 100%;
+}
+
+.right_wrap {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+
+aside {
+    width: 293px;
+}
+
+aside header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.account_img {
+    width: 59px;
+    height: 59px;
+    margin-right: 16px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+
+.accountinfo_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.names {
+    display: flex;
+}
+
+.names_line {
+    width: 2px;
+    height: 100%;
+    padding: 0 4px;
+    background-color:#929292;
+}
+
