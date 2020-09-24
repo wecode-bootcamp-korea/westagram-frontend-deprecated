@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/common.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <script defer src="../js/main.js"></script>
+    <title>Westagram_main</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="wrapper">
+        <div class="leftContent">
+          <ul class="navFlexItems">
+            <li>
+              <a href=""><img src="../img/logo_img.png" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="../img/logo_text.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="middleContent">
+          <input type="text" />
+          <div class="placeholder"><i class="xi-search"></i>검색</div>
+          <div class="searchBox">
+            <ul class="searchList"></ul>
+          </div>
+        </div>
+        <div class="rightContent">
+          <ul class="navFlexItems">
+            <li>
+              <a href="">
+                <img src="../img/explore.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="../img/heart.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="../html/login.html">
+                <img src="../img/profile.png" alt="" />
+              </a>
+            </li>
+            <li class="profile_button">
+              <a href="">
+                <div class="imgBox">
+                  <img src="../img/insta_profile.jpg" alt="" />
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="profileBox">
+            <ul>
+              <li class="profile">
+                <a href="#">
+                  <svg
+                    aria-label="프로필"
+                    class="_8-yf5"
+                    fill="#262626"
+                    height="16"
+                    viewBox="0 0 32 32"
+                    width="16"
+                  >
+                    <path
+                      d="M16 0C7.2 0 0 7.1 0 16c0 4.8 2.1 9.1 5.5 12l.3.3C8.5 30.6 12.1 32 16 32s7.5-1.4 10.2-3.7l.3-.3c3.4-3 5.5-7.2 5.5-12 0-8.9-7.2-16-16-16zm0 29c-2.8 0-5.3-.9-7.5-2.4.5-.9.9-1.3 1.4-1.8.7-.5 1.5-.8 2.4-.8h7.2c.9 0 1.7.3 2.4.8.5.4.9.8 1.4 1.8-2 1.5-4.5 2.4-7.3 2.4zm9.7-4.4c-.5-.9-1.1-1.5-1.9-2.1-1.2-.9-2.7-1.4-4.2-1.4h-7.2c-1.5 0-3 .5-4.2 1.4-.8.6-1.4 1.2-1.9 2.1C4.2 22.3 3 19.3 3 16 3 8.8 8.8 3 16 3s13 5.8 13 13c0 3.3-1.2 6.3-3.3 8.6zM16 5.7c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm0 11c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"
+                    ></path>
+                  </svg>
+                  <span>프로필</span>
+                </a>
+              </li>
+              <li class="bookmark">
+                <a href="#">
+                  <svg
+                    aria-label="저장됨"
+                    class="_8-yf5"
+                    fill="#262626"
+                    height="16"
+                    viewBox="0 0 32 32"
+                    width="16"
+                  >
+                    <path
+                      d="M28.7 32c-.4 0-.8-.2-1.1-.4L16 19.9 4.4 31.6c-.4.4-1.1.6-1.6.3-.6-.2-.9-.8-.9-1.4v-29C1.8.7 2.5 0 3.3 0h25.4c.8 0 1.5.7 1.5 1.5v29c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM4.8 3v23.9l9.4-9.4c.9-.9 2.6-.9 3.5 0l9.4 9.4V3H4.8z"
+                    ></path>
+                  </svg>
+                  <span>저장됨</span>
+                </a>
+              </li>
+              <li class="settings">
+                <a href="">
+                  <svg
+                    fill="#262626"
+                    height="16"
+                    viewBox="0 0 32 32"
+                    width="16"
+                  >
+                    <path
+                      d="M31.2 13.4l-1.4-.7c-.1 0-.2-.1-.2-.2v-.2c-.3-1.1-.7-2.1-1.3-3.1v-.1l-.2-.1v-.3l.5-1.5c.2-.5 0-1.1-.4-1.5l-1.9-1.9c-.4-.4-1-.5-1.5-.4l-1.5.5H23l-.1-.1h-.1c-1-.5-2-1-3.1-1.3h-.2c-.1 0-.1-.1-.2-.2L18.6.9c-.2-.5-.7-.9-1.2-.9h-2.7c-.5 0-1 .3-1.3.8l-.7 1.4c0 .1-.1.2-.2.2h-.2c-1.1.3-2.1.7-3.1 1.3h-.1l-.1.2h-.3l-1.5-.5c-.5-.2-1.1 0-1.5.4L3.8 5.7c-.4.4-.5 1-.4 1.5l.5 1.5v.5c-.5 1-1 2-1.3 3.1v.2c0 .1-.1.1-.2.2l-1.4.7c-.6.2-1 .7-1 1.2v2.7c0 .5.3 1 .8 1.3l1.4.7c.1 0 .2.1.2.2v.2c.3 1.1.7 2.1 1.3 3.1v.1l.2.1v.3l-.5 1.5c-.2.5 0 1.1.4 1.5l1.9 1.9c.3.3.6.4 1 .4.2 0 .3 0 .5-.1l1.5-.5H9l.1.1h.1c1 .5 2 1 3.1 1.3h.2c.1 0 .1.1.2.2l.7 1.4c.2.5.7.8 1.3.8h2.7c.5 0 1-.3 1.3-.8l.7-1.4c0-.1.1-.2.2-.2h.2c1.1-.3 2.1-.7 3.1-1.3h.1l.1-.1h.3l1.5.5c.1 0 .3.1.5.1.4 0 .7-.1 1-.4l1.9-1.9c.4-.4.5-1 .4-1.5l-.5-1.5V23l.1-.1v-.1c.5-1 1-2 1.3-3.1v-.2c0-.1.1-.1.2-.2l1.4-.7c.5-.2.8-.7.8-1.3v-2.7c0-.5-.4-1-.8-1.2zM16 27.1c-6.1 0-11.1-5-11.1-11.1S9.9 4.9 16 4.9s11.1 5 11.1 11.1-5 11.1-11.1 11.1z"
+                    ></path>
+                  </svg>
+                  <span>설정</span>
+                </a>
+              </li>
+              <li class="logout">
+                <a href=""><span>로그아웃</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="wrapper">
+        <div class="feeds">
+          <article>
+            <div class="profile_top">
+              <div class="profileImgBox">
+                <a href="#"
+                  ><img class="img100per" src="../img/insta_profile.jpg" alt=""
+                /></a>
+              </div>
+              <a href=""><span class="name">every_moment</span></a>
+              <div class="more">
+                <a href=""><img src="../img/more.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="feedImgBox">
+              <img class="img100per" src="../img/insta_feed1.jpg" alt="" />
+            </div>
+            <div class="profile_bottom">
+              <div class="icons">
+                <ul>
+                  <li>
+                    <img src="../img/heart.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="../img/comment.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="../img/share.png" alt="" />
+                  </li>
+                  <li>
+                    <a href=""><img src="../img/bookmark.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="likeCount">좋아요 3개</div>
+              <div class="feedContext">
+                <div class="feed">
+                  <a class="name" href="">every_moment</a>
+                  <p>아무것도 하고싶지 않아..</p>
+                  <button class="moreBtn">더 보기</button>
+                </div>
+                <div class="comments">
+                  <ul class="commentList"></ul>
+                </div>
+                <span class="timeAgo">30분 전</span>
+              </div>
+              <div class="commentInput">
+                <input type="text" placeholder="댓글달기..." />
+                <button class="replyBtn">게시</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="main-right">
+          <div class="profile">
+            <div class="top">
+              <div class="imgBox">
+                <a href=""
+                  ><img class="img100per" src="../img/insta_profile.jpg" alt=""
+                /></a>
+              </div>
+              <div class="textBox">
+                <a href="">
+                  <span>every_moment</span>
+                  <span class="nick">Wanna_go_Home </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="content stories">
+            <div class="text">
+              <span>스토리</span>
+              <button>모두 보기</button>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">16분 전</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">4분 전</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">2분 전</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">30분 전</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content recommend">
+            <div class="text">
+              <span>회원님을 위한 추천</span>
+              <button>모두 보기</button>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img
+                      class="img100per"
+                      src="../img/insta_recommend_profile.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="textBox">
+                    <span class="id">ID</span>
+                    <span class="sub">Nick</span>
+                  </div>
+                  <button>팔로우</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

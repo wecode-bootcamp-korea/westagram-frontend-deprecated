@@ -1,0 +1,13 @@
+#main article .commentInput .replyBtn {
+  position: absolute;
+  font-weight: bold;
+  color: #0094f68a;
+  padding: 10px;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
