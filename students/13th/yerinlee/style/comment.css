@@ -1,0 +1,48 @@
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.comment-container__ID {
+  font-weight: 600;
+}
+.comment-container__btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.comment-container__btns > * {
+  margin-left: 10px;
+}
+.comment-container__likeBtn {
+  display: flex;
+  align-items: center;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+  background-size: contain;
+  width: 15px;
+  height: 14px;
+}
+.like-btn-fill {
+  background-image: url("../img/heartFill.png");
+}
+.comment-container__likeBtn img {
+  width: 15px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.like-btn-fill {
+  animation: heartbeat 0.3s ease-in-out forwards;
+}
