@@ -1,0 +1,261 @@
+/* main styling */
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 95px;
+  padding-bottom: 145px;
+}
+
+.showcase {
+  position: relative;
+  background-image: url('../img/login_bg.png');
+  width: 454px;
+  height: 618px;
+  margin-right: -20px;
+}
+
+.slide {
+  position: absolute;
+  bottom: 91px;
+  left: 151px;
+}
+
+/* form styling */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-top: 30px;
+  padding: 30px 25px 20px 25px;
+  background: #fff;
+  border: #ccc 1px solid;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.logo {
+  width: 175px;
+  height: 51px;
+  margin: 0 auto 30px auto;
+}
+
+.id-input,
+.pw-input,
+.login-btn {
+  margin: 5px 10px 5px 10px;
+  padding: 9px 0 7px 8px;
+  background: #fafafa;
+  border: 1px #ccc solid;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+}
+
+.id-input:focus,
+.pw-input:focus {
+  border: 1px solid #333;
+}
+
+.login-btn {
+  height: 30px;
+  color: #fff;
+  background-color: #0095f6;
+  border: none;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+/* divider : draws horizontal line */
+.form-divider {
+  display: flex;
+  margin: 10px 10px 0 10px;
+}
+
+.form-divider::before,
+.form-divider::after {
+  content: '';
+  border-bottom: 0.05rem solid #ccc;
+  flex: 1;
+  margin: auto;
+}
+
+.form-divider::after {
+  margin-left: 15px;
+}
+
+.form-divider::before {
+  margin-right: 15px;
+}
+
+.facebook-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.forgot-password {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+  height: 63px;
+  border: 1px #ccc solid;
+  background: #fff;
+  font-size: 15px;
+}
+
+.signup a {
+  margin-left: 5px;
+  color: #0095f6;
+  font-weight: bold;
+}
+
+.stores {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.store-img {
+  margin-top: 20px;
+  width: 136px;
+}
+
+.copyright {
+  color: #666;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.facebook {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.facebook-thumb {
+  display: inline-block;
+  position: relative;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.facebook-text {
+  color: #385185;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* footer styling */
+footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  font-size: 12px;
+}
+
+footer li {
+  margin-right: 15px;
+  color: #003782;
+  font-weight: bold;
+}
+
+/* slide show animation */
+.slide {
+  position: absolute;
+}
+
+.slide:nth-child(1) {
+  animation: fade 25s 20s infinite;
+  z-index: 10;
+}
+
+.slide:nth-child(2) {
+  animation: fade 25s 15s infinite;
+  z-index: 10;
+}
+
+.slide:nth-child(3) {
+  animation: fade 25s 10s infinite;
+  z-index: 10;
+}
+
+.slide:nth-child(4) {
+  animation: fade 25s 5s infinite;
+  z-index: 10;
+}
+
+.slide:nth-child(5) {
+  animation: fade 25s 0s infinite;
+  z-index: 10;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* media querys */
+@media (max-width: 1000px) {
+  .showcase {
+    display: none;
+  }
+
+  footer {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

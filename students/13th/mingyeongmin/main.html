@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>westagram-main</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="">
+          <img
+            class="nav-logo-img"
+            src="img/nav_logo_text.png"
+            alt="instagram-logo-text"
+          />
+        </a>
+        <div class="position-relative">
+          <img class="nav-search-icon" src="img/search.png.png" alt="" />
+          <input class="nav-searchbar" type="text" placeholder="검색" />
+        </div>
+        <div class="nav-link-container position-relative">
+          <a href=""
+            ><img
+              class="nav-link"
+              src="img/home.png"
+              alt="menu-link-navigation"
+          /></a>
+          <a href=""
+            ><img
+              class="nav-link"
+              src="img/share.png"
+              alt="menu-link-navigation"
+          /></a>
+          <a href=""
+            ><img
+              class="nav-link"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+              alt="menu-link-navigation"
+          /></a>
+          <a href=""
+            ><img
+              class="nav-link"
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              alt="menu-link-likes"
+          /></a>
+          <a class="nav-mypage-button" href=""
+            ><img
+              class="nav-link circle-crop"
+              src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=lXGRUtCINKEAX8d_W6p&oh=7c30a4b7c356c422462745dc4356d36b&oe=5F92A1F0"
+              alt="menu-link-mypage"
+          /></a>
+          <ul class="menu-box display-none">
+            <li>
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=lXGRUtCINKEAX8d_W6p&oh=7c30a4b7c356c422462745dc4356d36b&oe=5F92A1F0"
+                alt=""
+                class="circle-crop"
+              />
+              프로필
+            </li>
+            <li>
+              <img src="img/bookmark.png" alt="" />
+              저장됨
+            </li>
+            <li>
+              <img src="img/settings.png" alt="" />
+              설정
+            </li>
+            <li>로그아웃</li>
+          </ul>
+        </div>
+        <div class="search-result-box display-none">
+          <ul class="search-result-list">
+            <li>
+              <div class="search-result-item">검색 결과가 없습니다</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="feed-and-story">
+        <div class="story-list">
+          <div class="story">
+            <img src="img/pepe.png" alt="" />
+            <a href="">
+              <div>pepe</div>
+            </a>
+          </div>
+          <div class="story">
+            <img src="img/pengsu.jpg" alt="" />
+            <a href="">
+              <div>peng_su</div>
+            </a>
+          </div>
+        </div>
+        <article class="feed">
+          <section class="feed-top">
+            <div class="feed-profile">
+              <img class="feed-profile-img" src="img/tux.png" alt="" />
+              <span>ubuntu_tux</span>
+            </div>
+            <button class="feed-showmore-button">
+              <img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+                alt=""
+              />
+            </button>
+          </section>
+          <img class="feed-main-img" src="img/main.png" alt="" />
+          <section class="feed-bottom">
+            <section class="bottom-menu">
+              <div class="buttons-left">
+                <button>
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                    alt="feed-button-like"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                    alt="feed-button-message"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                    alt="feed-button-share"
+                  />
+                </button>
+              </div>
+              <button>
+                <img
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+                  alt="feed-button-bookmark"
+                />
+              </button>
+            </section>
+            <section class="feed-comment-section">
+              <div class="feed-likes">
+                <span class="text-bold">좋아요 16개</span>
+              </div>
+              <ul class="feed-comment-list">
+                <li class="feed-comment">
+                  <div class="comment-content">
+                    <span class="feed-comment-writer text-bold"> pepe </span>
+                    <span class="feed-comment-content"> 내이름은 페페야 </span>
+                  </div>
+                  <div class="comment-buttons">
+                    <button class="delete-comment-button">삭제</button>
+                    <button class="like-comment-button"></button>
+                    <button
+                      class="dislike-comment-button display-none"
+                    ></button>
+                  </div>
+                </li>
+              </ul>
+              <div class="feed-update-time">42분 전</div>
+              <div class="feed-write-comment">
+                <input
+                  class="feed-write-comment-input"
+                  type="text"
+                  class="text"
+                  name="comment"
+                  placeholder="댓글 달기..."
+                />
+                <button class="feed-write-comment-button">게시</button>
+              </div>
+            </section>
+          </section>
+        </article>
+        <article class="feed">
+          <div class="feed-top">
+            <div class="feed-profile">
+              <img class="feed-profile-img" src="img/sonic.jpg" alt="" />
+              <span>sonic_the_hedgehog</span>
+            </div>
+            <button class="feed-showmore-button">
+              <img
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <img class="feed-main-img" src="img/main2.jpg" alt="" />
+          <div class="feed-bottom">
+            <section class="bottom-menu">
+              <div class="buttons-left">
+                <button>
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                    alt="feed-button-like"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                    alt="feed-button-message"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png"
+                    alt="feed-button-share"
+                  />
+                </button>
+              </div>
+              <button>
+                <img
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+                  alt="feed-button-bookmark"
+                />
+              </button>
+            </section>
+            <section class="feed-comment-section">
+              <div class="feed-likes">
+                <span class="text-bold">좋아요 51개</span>
+              </div>
+              <ul class="feed-comments"></ul>
+              <div class="feed-update-time">1시간 전</div>
+              <div class="feed-write-comment">
+                <input
+                  class="feed-write-comment-input"
+                  type="text"
+                  class="text"
+                  name="comment"
+                  placeholder="댓글 달기..."
+                />
+                <button class="feed-write-comment-button">게시</button>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+      <aside class="main-right">
+        <section class="main-right-my-profile">
+          <img
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=lXGRUtCINKEAX8d_W6p&oh=7c30a4b7c356c422462745dc4356d36b&oe=5F92A1F0"
+            alt="wecode-bootcamp"
+          />
+          <div>
+            <div class="text-bold-black">wecode_bootcamp</div>
+            <div class="text-grey">Wecode | 위코드</div>
+          </div>
+        </section>
+        <section class="main-right-recommend">
+          <div class="main-right-recommend-top">
+            <div>회원님을 위한 추천</div>
+            <button>모두 보기</button>
+          </div>
+          <div class="main-right-recommend-list">
+            <div class="main-right-recommend-profile">
+              <div class="main-right-recommend-profile-info">
+                <img src="img/sonic.jpg" alt="recommend-profile" />
+                <div>
+                  <div class="text-bold-black">sonic_the_hedgehog</div>
+                  <div class="text-grey">회원님을 위한 추천</div>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+            <div class="main-right-recommend-profile">
+              <div class="main-right-recommend-profile-info">
+                <img src="img/pickachu.jpg" alt="recommend-profile" />
+                <div>
+                  <div class="text-bold-black">pickachu</div>
+                  <div class="text-grey">회원님을 위한 추천</div>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+            <div class="main-right-recommend-profile">
+              <div class="main-right-recommend-profile-info">
+                <img src="img/mario.jpg" alt="recommend-profile" />
+                <div>
+                  <div class="text-bold-black">super_mario</div>
+                  <div class="text-grey">회원님을 위한 추천</div>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+            <div class="main-right-recommend-profile">
+              <div class="main-right-recommend-profile-info">
+                <img src="img/link.jpg" alt="recommend-profile" />
+                <div>
+                  <div class="text-bold-black">link_not_zelda</div>
+                  <div class="text-grey">회원님을 위한 추천</div>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+            <div class="main-right-recommend-profile">
+              <div class="main-right-recommend-profile-info">
+                <img src="img/donkey_kong.png" alt="recommend-profile" />
+                <div>
+                  <div class="text-bold-black">donkey_kong</div>
+                  <div class="text-grey">회원님을 팔로우 합니다</div>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+          </div>
+        </section>
+        <div class="main-right-bottom">
+          <ul>
+            <li><a href="">소개</a></li>
+            <li><a href="">도움말</a></li>
+            <li><a href="">홍보 센터</a></li>
+            <li><a href="">API</a></li>
+            <li><a href="">채용정보</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">약관</a></li>
+            <li><a href="">위치</a></li>
+            <li><a href="">인기 계정</a></li>
+            <li><a href="">해시태그</a></li>
+            <li><a href="">언어</a></li>
+          </ul>
+          <div>&copy; 2020 INSTAGRAM</div>
+        </div>
+      </aside>
+    </main>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

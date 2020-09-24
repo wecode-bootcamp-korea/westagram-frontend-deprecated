@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>westagram-login</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 hidden>instagram login page</h1>
+    <div class="main-container">
+      <main>
+        <section class="showcase">
+          <img class="slide" src="img/login_1.jpg" alt="slide1" />
+          <img class="slide" src="img/login_2.jpg" alt="slide2" />
+          <img class="slide" src="img/login_3.jpg" alt="slide3" />
+          <img class="slide" src="img/login_4.jpg" alt="slide4" />
+          <img class="slide" src="img/login_5.jpg" alt="slide5" />
+        </section>
+        <section class="form-container">
+          <form class="login-form" action="">
+            <img class="logo" src="img/logo_text.png" alt="instagram-logo" />
+            <input
+              class="id-input"
+              type="text"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+              name="id"
+            />
+            <input
+              class="pw-input"
+              type="password"
+              placeholder="비밀번호"
+              name="pw"
+            />
+            <input
+              class="login-btn inactive"
+              type="submit"
+              value="로그인"
+              disabled
+            />
+            <div class="form-divider">또는</div>
+            <a class="facebook-login" href="">
+              <img
+                class="facebook-thumb"
+                src="img/facebook.png"
+                alt="facebook-thumbnail"
+              />
+              <span class="facebook-text">Facebook</span>
+              으로 로그인
+            </a>
+            <a class="forgot-password" href="">비밀번호를 잊으셨나요?</a>
+          </form>
+          <div class="signup">
+            <span>계정이 없으신가요?</span>
+            <a href="">가입하기</a>
+          </div>
+          <div class="stores">
+            <div>앱을 다운로드하세요.</div>
+            <div>
+              <a href="">
+                <img
+                  class="store-img"
+                  src="img/app-store.png"
+                  alt="app-store"
+                />
+              </a>
+              <a href="">
+                <img
+                  class="store-img"
+                  src="img/play-store.png"
+                  alt="play-store"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <ul>
+        <li><a href="">소개</a></li>
+        <li><a href="">도움말</a></li>
+        <li><a href="">홍보 센터</a></li>
+        <li><a href="">API</a></li>
+        <li><a href="">채용 정보</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+        <li><a href="">약관</a></li>
+        <li><a href="">위치</a></li>
+        <li><a href="">인기 계정</a></li>
+        <li><a href="">해시태그</a></li>
+        <li><a href="">언어</a></li>
+      </ul>
+      <div class="copyright">&copy; 2020 INSTAGRAM FROM FACEBOOK</div>
+    </footer>
+    <script src="js/login.js" defer></script>
+  </body>
+</html>
