@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="icon" sizes="192x192" href="/img/favicon.png">
+  <link href="style/common.css" rel="stylesheet" type="text/css" />
+  <link href="style/main.css" rel="stylesheet" type="text/css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <main>
+    <section>
+      <article>
+        <div class="story_wrap gray_border_lines">
+          <ul class="story_list">
+          </ul>
+          <div class="story_move_btn_left">
+            <i class="xi-caret-up-circle xi-2x"></i>
+          </div>
+          <div class="story_move_btn_right">
+            <i class="xi-caret-down-circle xi-2x"></i>
+          </div>
+        </div>
+        <div class="feed_list gray_border_lines">
+          <div class="feed_info">
+            <div class="user_image">
+              <img class="my_profile_image" src="http://placehold.it/32x32?text=sample" />
+              <span class="user_name">nickname</span>
+
+            </div>
+            <div class="threedot">
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="">
+            </div>
+          </div>
+          <div class="feed_image">
+            <img src="http://placehold.it/614x614?text=sample" />
+          </div>
+          <div class="comments_wrap">
+            <div class="comment_icons">
+              <div>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="" srcset="" />
+              </div>
+              <div>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt=""
+                  srcset="" />
+              </div>
+              <div>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="" srcset="" />
+              </div>
+              <div>
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt=""
+                  srcset="" />
+              </div>
+
+            </div>
+            <div class="like_you_message">
+              <span class="bold">null</span> 님 <span class="bold">외 100명</span>이 좋아합니다
+            </div>
+            <div class="feed_contents">
+              <div class="user_name">
+                nickname
+              </div>
+              <div class="feed_message">
+                할 말 부분
+              </div>
+            </div>
+
+            <div class="comment_length"></div>
+            <div class="comments_list">
+              <ul>
+              </ul>
+            </div>
+            <div class="comment_write">
+              <form class="comment_form">
+                <textarea placeholder="댓글 달기..." onkeyup="keyPress()"></textarea>
+                <button type="button" onclick="submitComment()" disabled>게시</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </article>
+      <aside class="main_right">
+        <div class="right_nav">
+          <div class="my_profile">
+            <img class="my_profile_image" src="" alt="">
+            <div class="name_box">
+              <p class="user_name"></p>
+              <p class="user_name"></p>
+            </div>
+          </div>
+          <div class="get_friend">
+            <div class="friend_header">
+              <h4>회원님을 위한 추천</h4>
+              <p>모두 보기</p>
+            </div>
+            <ul>
+
+              <li class="get_friend_profile">
+                <img class="get_friend_image" src="" alt="">
+                <div class="name_box">
+                  <p>boradori</p>
+                  <p>amongus님 외 7명이 팔로우합니다</p>
+                </div>
+                <div class="follow_btn">팔로우</div>
+              </li>
+              <li class="get_friend_profile">
+                <img class="get_friend_image" src="" alt="">
+                <div class="name_box">
+                  <p>ddobi</p>
+                  <p>bibi님 외 7명이 팔로우합니다</p>
+                </div>
+                <div class="follow_btn">팔로우</div>
+              </li>
+              <li class="get_friend_profile">
+                <img class="get_friend_image" src="" alt="">
+                <div class="name_box">
+                  <p>nana</p>
+                  <p>fedexx님 외 7명이 팔로우합니다</p>
+                </div>
+                <div class="follow_btn">팔로우</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <ul>
+            <li>소개</li>
+            <li>도움말</li>
+            <li>홍보 센터</li>
+            <li>API</li>
+            <li>채용 정보</li>
+            <li>개인정보 처리방침</li>
+            <li>약관</li>
+            <li>위치</li>
+            <li>인기 계정</li>
+            <li>해시태그</li>
+            <li>언어</li>
+          </ul>
+          <div>© 2020 INSTAGRAM FROM FACEBOOK</div>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <nav class="top_nav_wrap">
+    <div class="top_nav">
+      <a href="/main.html" class="insta_logo">
+        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png">
+      </a>
+      <div class="nav_search search_change">
+        <input type="text" placeholder="검색">
+        <i class="xi-search"></i>
+        <i class="xi-close-circle"></i>
+        <div class="search_list">
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class="nav_icons">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+        <div class="click_form">
+          <img class="my_profile_image" src="" alt="">
+          <div class="form_profile gray_border_lines hide">
+            <ul>
+              <li>
+                <img src="http://placehold.it/614x614?text=sample" alt="">
+                <span>프로필</span>
+              </li>
+              <li>
+                <img src="http://placehold.it/614x614?text=sample" alt="">
+                <span>저장됨</span>
+              </li>
+              <li>
+                <img src="http://placehold.it/614x614?text=sample" alt="">
+                <span>설정</span>
+              </li>
+              <a class="logout" href="./login.html">
+                <li>
+                  <span>로그아웃</span>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <footer></footer>
+
+</body>
+
+</html>
