@@ -3,7 +3,6 @@ const inputLabel = document.querySelector('.login_area');
 const id = document.querySelector('.id_area input');
 const password = document.querySelector('.password_area input');
 const loginButton = document.querySelector('.login_btn');
-const loginAction = document.querySelector('.login_action');
 
 function focusLabel(value) {
   value.addEventListener('focus', () => { // 인풋창 포커스
@@ -40,5 +39,3 @@ inputWrap.addEventListener('submit', (e) => {
    password.value = ''
  }
 })
-
-

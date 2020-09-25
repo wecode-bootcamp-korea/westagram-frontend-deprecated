@@ -75,6 +75,11 @@ body {
   cursor: pointer;
 }
 
+.no_search_result {
+  color: gray;
+  text-align : center;
+}
+
 /* ----- 상단 Nav End ----- */
 /* --------------------- */
 /* ----- Story Start ----- */
