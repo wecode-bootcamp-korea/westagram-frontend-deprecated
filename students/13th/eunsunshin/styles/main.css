@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+ }
+
+ body{
+     background-color: #fafafa;
+     flex-direction: column;
+     margin: 0;
+ }
+
+ nav{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  padding: 10px 160px 10px 160px;
+  border-bottom: 1px solid #dbdbdb;
+
+ }
+
+ #logos{
+     display: flex;
+ }
+
+ #appImg{
+    border-right: 2px solid black;
+}
+
+ #search{
+     width: 215px;
+     height: 38px;
+     padding: 7px;
+     margin: 0 auto;
+ }
+
+ #search input{
+     display: block;
+     margin: 0 auto;
+     background-color: #fafafa;
+     border: 1px solid #dbdbdb;
+     text-align: center;
+ }
+
+ #search input{
+     margin: auto;
+ }
+
+ #icons img, #appImg, #logoImg{
+     margin: auto;
+     height: 22px;
+ }
+
+ #icons{
+    display: flex;
+    width:122px;
+ }
+
+ #appImg{
+     padding-right: 10px;
+ }
+
+ #logoImg{
+     padding-left:10px;
+ }
+
+ main{
+     display: flex;
+     padding: 0 160px 0 160px;
+     
+ }
+
+ .feeds{
+     width: 600px;
+     background-color: #fafafa;
+     padding: 100px 0 30px;
+ }
+
+ article{
+     width: 600px;
+     border: 1px solid #dbdbdb;
+     border-radius: 3px;
+     background-color: white;
+     margin: 0 0 70px 0;
+ }
+
+ #postingUser{
+     display: flex;
+     width: 598px;
+     height: 60px;
+ }
+
+ #postingUserInfo{
+   display: flex;
+   margin: auto 0 auto 15px;
+   padding-right:415px;
+ }
+
+ #postingUserPic{
+     width: 32px;
+     height: 32px;
+     border-radius: 20px;
+ }
+
+ #postingUserId{
+    margin: auto 0 auto 12px;
+ }
+
+ #postingUserId span{
+     width:500px;
+     font-size: 14px;
+     font-weight: bold;
+     color: #262626;
+ }
+
+ #threeDot{
+     width: 16px;
+     height: 16px;
+     margin: auto 0;
+ }
+ #postingImg{
+     width: 100%
+ }
+
+ #feedIcons{
+     display: flex; 
+     width: 598px;
+ }
+
+ #feedIconGroup{
+     height: 40px;
+     margin: 0 410px 0 8px;
+     
+ }
+
+ #feedIconGroup img, #bookmark{
+     width: 40px;
+     height: 40px;
+     padding: 8px;
+ }
+
+ #peopleWhoLike{
+     display: flex;
+     margin: 4px 0 0 15px;
+ }
+
+ #peopleWhoLike img{
+     width: 20px;
+     border-radius: 20px;
+ 
+ }
+
+ #peopleWhoLike span{
+     color: #262626;
+     font-size: 14px;
+     margin-left: 8px;
+ }
+
+ #peopleWhoLike span a{
+     font-weight: bold;
+ }
+
+ #reply{
+     margin: 8px 0 0 0;
+ }
+
+#reply ul{
+  margin: 0 0 6px 15px;
+  padding: 0;
+}
+
+ #reply li{
+     display: flex;
+ }
+
+ .replyId{
+     font-size: 14px;
+     font-weight: bold;
+     margin-right: 4px;
+ }
+
+ .replyCont{
+     font-size: 14px;
+ }
+
+#time{
+    display: block;
+    font-size: 8px;
+    color: gray;
+    margin: 6px 0 10px 15px;
+}
+
+ #reply section{
+     display: flex;
+     padding: 20px 10px 20px 10px;
+     border-top: 1px solid #dbdbdb;
+}
+
+ #reply input{
+     width: 540px;
+     border: 0;
+     
+ }
+
+ button{
+    border: 0;
+    background-color: white;
+}
+
+button span{
+    color: #B9DFFC;
+}
+
+ .main-right{
+     position: fixed;
+     top: 60px;
+     left: 760px;
+     width: 295px;
+     margin:40px 0 0 30px;
+ }
+
+ #myProfile{
+     display: flex;
+     margin-bottom: 20px;
+ }
+
+ #myProfileInfo{
+     margin: 10px 0 0 15px;
+ }
+
+ #myProfileInfo p{
+     font-size: 14px;
+     font-weight: bold;
+     margin: auto 0;
+ }
+
+ #myProfileInfo span{
+     font-size: 12px;
+     color: gray;
+ }
+
+ #story{
+     background-color: white; 
+     border: 1px solid #dbdbdb;
+     border-radius: 3px;
+     margin-bottom: 15px;
+ }
+
+ #storyText, #recommendText{
+     display: block;
+     width: 265px;
+     margin: 10px 0 5px 15px;
+ }
+
+ #storyText span{
+     padding-right: 170px;
+ }
+
+ #storyText span, #recommendText span{
+     color: gray;
+     font-size: 14px;
+     font-weight: bold;
+ }
+
+ #storyText a, #recommendText a{
+     font-size: 12px;
+     font-weight: bold;
+ }
+
+#myProfile img{
+    width: 56px;
+    border-radius: 56px;
+}
+
+.userList{
+    padding: 0;
+}
+
+.user {
+    display: flex;
+    margin: 10px 0 10px 15px;
+}
+
+.user img{
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+
+.userInfo{
+    width: 170px;
+    margin-left: 15px;
+}
+
+.userInfo p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.userInfo span{
+    font-size: 12px;
+    color: #dbdbdb;
+}
+
+#recommend{
+    border: 1px solid #dbdbdb;
+    background-color: white;
+}
+
+#recommendText span{
+    padding-right: 100px;
+}
+
+.user a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #009DF9;
+    margin: auto 0;
+}

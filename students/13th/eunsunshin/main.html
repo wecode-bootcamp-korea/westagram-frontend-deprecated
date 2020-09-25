@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <nav>
+        <div id="logos">
+            <img id="appImg" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png">
+            <img id="logoImg" src="./img/logo_text.png">
+        </div>
+        <div id="search">
+            <input type="text" placeholder="검색">
+        </div>
+        <div id ="icons">
+            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+            <img id="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+            <img id="myPage"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+        </div>
+    </nav>
+
+    <main>
+        <div class="feeds">
+            <article>
+                <div id="postingUser">
+                    <div id="postingUserInfo">
+                        <img id="postingUserPic" src="">
+                        <div id="postingUserId"></div>
+                    </div>
+                    <img id="threeDot" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png"></img>
+                </div>
+                <img id="postingImg" src="">
+                <div id="feedIcons">
+                    <div id="feedIconGroup">
+                        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+                        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+                        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png">
+                    </div>
+                    <img id="bookmark" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png">
+                </div>
+                <div id="peopleWhoLike">
+                    <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/12107566_439445119573821_1199273077_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=BHV0iKlNN0kAX9-lXxh&oh=cf9d57202ab9b596e66ed51b858d9e8c&oe=5F90E3DF">
+                    <span><a>eunsonny</a>외 <a>여러 명</a>이 좋아합니다.</span>
+                </div>
+                <div id="reply">
+                   <ul class="replyList"></ul>
+                   <span id="time">42분 전</span>
+                   <section>
+                    <input type="text" placeholder="댓글 달기...">  
+                    <button id="post"><span>게시</span></button>
+                  </section>
+                </div>
+            </article>
+
+        <div class="main-right"> 
+            <section id="myProfile">
+              <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=1KpbY1ZwmC4AX9Bnmwg&oh=b56e7160d695a326a0a2fa6eb9cb1b98&oe=5F92A1F0"></img>
+              <div id="myProfileInfo">
+                <p>wecode_bootcamp</p>
+                <span>wecode | 위코드</span>
+              </div>
+            </section>
+            
+            <section id="story">
+              <div id="storyText">
+                <span>스토리</span>
+                <a>모두보기</a>
+              </div>
+              <ul class="userList"></ul>
+            </section>
+
+            <section id="recommend">
+              <div id="recommendText">
+                <span>회원님을 위한 추천</span>
+                <a>모두 보기</a>
+              </div>
+              <ul class="userList"></ul>
+            </section>
+            
+        </div>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>

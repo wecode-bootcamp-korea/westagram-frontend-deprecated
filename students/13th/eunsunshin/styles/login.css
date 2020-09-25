@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: auto;
+  }
+  
+  #logIn{
+    width: 348px;
+    height: 358px;
+    border: 1px solid #dbdbdb;
+    padding: 10px auto;
+    margin: 64px auto 10px;
+  }
+  
+  #logoImg{
+    display: block;
+    width: 175px;
+    margin: 22px auto 12px;
+  }
+  
+  #inputId{
+    display: block;
+    width: 268px;
+    height: 36px;
+    margin:24px auto 6px;
+    padding: 9px 0 7px 8px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    color: #8E8E8E;
+  }
+  
+  #inputPwd{
+    display: block;
+    width: 268px;
+    height: 36px;
+    margin: 0 auto 6px;
+    padding: 9px 0 7px 8px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    color: #8E8E8E;
+  }
+  
+  #logInBtn{
+    display: block;
+    width: 268px;
+    height: 30px;
+    margin: 18px auto;
+    background-color: #B9DFFC;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+  }
+  
+  
+  #lostPwd{
+    margin: 80px auto;
+  }
+  
+  #lostPwdText{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #00366B;
+  }
