@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>main - Westagram</title>
+  <link href="styles/common.css" rel="stylesheet" type="text/css" />
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <script defer src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="gnb">
+      <div class="container">
+        <div class="logos">
+          <ul>
+            <li>
+              <a href="#" class="logo-icon">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="인스타그램 아이콘 로고">
+              </a>
+            </li>
+            <li>
+              <a href="#" class="logo-text"><img src="img/logo_text.png" alt="인스타그램 텍스트 로고"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <div class="input-wrap">
+            <input type="text" id="search-input" placeholder="검색">
+          </div>
+          <div class="search-result">
+            <ul>
+              <li>
+                <a href="#" class="profile-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/40580601_323811805059591_3871402985682632704_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=X_HAsbmG93EAX9621ge&amp;oh=98dbbab1182e76932389f8a59ad29808&amp;oe=5F91C5DF" alt="">
+                </a>
+                <div class="user-info">
+                  <a href="#" class="name">홍효정</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="icons">
+          <ul class="clearfix icon-list">
+            <li class="compass">
+              <a href="#">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="추천 피드">
+              </a>
+            </li>
+            <li class="likes">
+              <a href="#">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="좋아요 로고">
+              </a>
+            </li>
+            <li class="profile">
+              <a href="#">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="프로필 더보기">
+              </a>
+              <ul id="profile-viewer" class="profile-viewer">
+                <li><a href="#">프로필</a></li>
+                <li><a href="#">저장됨</a></li>
+                <li><a href="#">설정</a></li>
+                <li><a href="#">로그아웃</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="clearfix main-feed-wrap">
+      <section class="feeds">
+        <article>
+          <div class="feed-info">
+            <a href="#" class="profile-img">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=1KpbY1ZwmC4AX9Bnmwg&oh=b56e7160d695a326a0a2fa6eb9cb1b98&oe=5F92A1F0"
+                alt="" data-url="">
+            </a>
+            <div class="user-info">
+              <a href="#" class="name">wecode_bootcamp</a>
+              <p class="desc">weCode - 위코드</p>
+              <a href="#" class="etc">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="feed-img">
+            <img
+              src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/119707472_175542930707613_2852164279961058907_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=zZ2kV7dT4qQAX9P_wnB&oh=069e8f636acf83bda3f755669dcc566f&oe=5F930D13"
+              alt="">
+          </div>
+          <div class="feed-contents">
+            <div class="actions">
+              <ul class="clearfix icons">
+                <li>
+                  <button>
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="">
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="">
+                  </button>
+                </li>
+              </ul>
+              <a href="#" class="book-mark">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="">
+              </a>
+            </div>
+            <div class="reples">
+              <div class="clearfix whos-like">
+                <button>
+                  <img
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/40580601_323811805059591_3871402985682632704_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=X_HAsbmG93EAX9621ge&amp;oh=98dbbab1182e76932389f8a59ad29808&amp;oe=5F91C5DF"
+                    alt="">
+                </button>
+                <p>
+                  <a href="#">홍효정</a>님 <a href="#">외 4명</a>이 좋아합니다.
+                </p>
+              </div>
+              <div class="comment">
+                <ul>
+                  <li>
+                    <a href="#" class="name">wecode_bootcamp</a>
+                    <span>
+                      위코드는 단순 교육업체가 아닌 개발자 커뮤니티입니다. Wecode에서 배우고 저는 총 5개 회사에서 오퍼를 받았습니다. - Wecode 졸업생 강병진님
+                    </span>
+                    <button class="comment-close"></button>
+                  </li>
+                </ul>
+                <div class="comment-write">
+                  <form action="" id="addComment">
+                    <textarea name="comment-input" id="comment-input" placeholder="댓글 달기..."></textarea>
+                    <button type="button" for="comment-input" id="comment-btn">게시</label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <aside class="main-right">
+        <div class="main-right-inner">
+          <div class="user-profile">
+            <a href="#" class="profile-img">
+              <img
+                src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=1KpbY1ZwmC4AX9Bnmwg&amp;oh=b56e7160d695a326a0a2fa6eb9cb1b98&amp;oe=5F92A1F0"
+                alt="">
+            </a>
+            <div class="user-info">
+              <a href="#" class="name">wecode_bootcamp</a>
+              <p class="date">weCode - 위코드</p>
+            </div>
+          </div>
+          <div class="user-story">
+            <dl>
+              <dt>
+                <span>스토리</span>
+                <a href="#" class="viewmore">모두보기</a>
+              </dt>
+              <dd>
+                <a href="#" class="profile-img">
+                  <img
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/40580601_323811805059591_3871402985682632704_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=X_HAsbmG93EAX9621ge&amp;oh=98dbbab1182e76932389f8a59ad29808&amp;oe=5F91C5DF"
+                    alt="">
+                </a>
+                <div class="user-info">
+                  <a href="#" class="name">홍효정</a>
+                  <p class="date">2시간 전</p>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="user-recommend">
+            <dl>
+              <dt>
+                <span>회원님을 위한 추천</span>
+                <a href="#" class="viewmore">모두보기</a>
+              </dt>
+              <dd>
+                <a href="#" class="profile-img">
+                  <img
+                    src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/40580601_323811805059591_3871402985682632704_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&amp;_nc_ohc=X_HAsbmG93EAX9621ge&amp;oh=98dbbab1182e76932389f8a59ad29808&amp;oe=5F91C5DF"
+                    alt="">
+                </a>
+                <div class="user-info">
+                  <a href="#" class="name">홍효정</a>
+                  <p class="follow-check">회원님을 팔로우 합니다.</p>
+                  <a href="#" class="follow-link">팔로우</a>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <footer>
+            <ul class="clearfix copyright">
+              <li><a href="#">Instagram 정보</a></li>
+              <li><a href="#">지원</a></li>
+              <li><a href="#">홍보 센터</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">채용 정보</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">약관</a></li>
+              <li><a href="#">디렉터리</a></li>
+              <li><a href="#">프로필</a></li>
+              <li><a href="#">해시태그</a></li>
+              <li><a href="#">언어</a></li>
+            </ul>
+            <p>&copy; 2020 INSTAGRAM FROM FACEBOOK</p>
+          </footer>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+
+</html>

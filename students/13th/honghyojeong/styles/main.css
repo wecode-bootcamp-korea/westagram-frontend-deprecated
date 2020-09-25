@@ -1,0 +1,522 @@
+/* ----- GNB ----- */
+
+nav.gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    z-index: 100;
+}
+
+nav.gnb>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
+}
+
+nav.gnb .logos ul li {
+    position: relative;
+    float: left;
+}
+
+nav.gnb .logos ul li>a {
+    display: inline-block;
+}
+
+nav.gnb .logos ul li:nth-child(1):after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 1px;
+    width: 1px;
+    height: 25px;
+    background: #bbb;
+}
+
+nav.gnb .logos ul li .logo-icon {
+    width: 25px;
+    margin-right: 35px;
+}
+
+nav.gnb .logos ul li .logo-text {
+    width: 90px;
+}
+
+nav.gnb .search {
+    position: relative;
+}
+
+nav.gnb .search .input-wrap input {
+    padding: 4px 10px;
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fafafa;
+    text-align: center;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+nav.gnb .search .input-wrap input:focus {
+    text-align: left;
+}
+
+nav.gnb .search .search-result {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 20px);
+    bottom: auto;
+    transform: translateX(-50%);
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    background: #fff;
+}
+
+nav.gnb .search .search-result ul {
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
+}
+
+nav.gnb .search .search-result ul::before,
+nav.gnb .search .search-result ul::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    border-style: solid;
+}
+
+nav.gnb .search .search-result ul::before {
+    left: 50%;
+    border-width: 8px;
+    border-color: transparent transparent #fff transparent;
+    z-index: 2;
+}
+
+nav.gnb .search .search-result ul::after {
+    left: calc(50% + -2px);
+    border-width: 10px;
+    border-color: transparent transparent #ddd transparent;
+    z-index: 1;
+}
+
+nav.gnb .search .search-result ul li {
+    display: table;
+    padding: 13px;
+}
+
+nav.gnb .search .search-result ul li+li {
+    border-top: 1px solid #ddd;
+}
+
+nav.gnb .search .search-result ul li .user-info {
+    padding: 7px 0 10px 10px;
+}
+
+nav.gnb .search .search-result ul li .user-info .name {
+    font-size: 14px;
+}
+
+nav.gnb .icons .icon-list > li {
+    float: left;
+}
+
+nav.gnb .icons .icon-list > li+li {
+    margin-left: 25px;
+}
+
+nav.gnb .icons .icon-list > li>a {
+    display: inline-block;
+    width: 24px;
+}
+
+nav.gnb .icons li.profile{
+    position: relative;
+}
+
+nav.gnb .icons li.profile .profile-viewer{
+    display: none;
+    position: absolute;
+    right: -13px;
+    top: calc(100% + 15px);
+    width: 150px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
+    text-align: center;
+    z-index: 5;
+}
+
+nav.gnb .icons li.profile .profile-viewer.active{
+    display: block;
+}
+
+nav.gnb .icons li.profile .profile-viewer:before,
+nav.gnb .icons li.profile .profile-viewer:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    border-style: solid;
+}
+
+nav.gnb .icons li.profile .profile-viewer:before{
+    right: 15px;
+    border-width: 8px;
+    border-color: transparent transparent #fff transparent;
+    z-index: 2;
+}
+
+nav.gnb .icons li.profile .profile-viewer:after{
+    right: 13px;
+    border-width: 10px;
+    border-color: transparent transparent #ddd transparent;
+    z-index: 1;
+}
+
+nav.gnb .icons li.profile .profile-viewer li a{
+    display: block;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+nav.gnb .icons li.profile .profile-viewer li a:hover{
+    background: #fafafa;
+}
+
+nav.gnb .icons li.profile .profile-viewer li:last-child{
+    border-top: 1px solid #ddd;
+}
+
+/* ----- GNB -- end ----- */
+
+/* ----- MAIN ----- */
+
+main.main-feed-wrap {
+    padding-top: 61px;
+    position: relative;
+}
+
+/* feeds */
+main>.feeds {
+    position: relative;
+    width: 600px;
+    float: left;
+    z-index: 10;
+}
+
+.feeds article {
+    margin: 50px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.feeds article .feed-info {
+    position: relative;
+    display: table;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* user-info 공통 style */
+.user-info {
+    display: table-cell;
+    padding-left: 10px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.user-info .name {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #262626;
+}
+
+.user-info .follow-check {
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #828282;
+}
+
+.profile-img {
+    display: table-cell;
+    display: inline-block;
+    width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.user-info .desc,
+.user-info .date {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+/* user-info 공통 style -- end */
+
+.feed-info .etc {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 27px;
+}
+
+.feed-contents .actions {
+    position: relative;
+    border-top: 1px solid #ddd;
+    padding: 5px 10px;
+}
+
+.feed-contents .actions .icons li {
+    float: left;
+}
+
+.feed-contents .actions .icons li button {
+    background: transparent;
+    max-width: 35px;
+    height: auto;
+    padding: 5px;
+}
+
+.feed-contents .actions .book-mark {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 23px;
+}
+
+.feed-contents .reples .whos-like {
+    padding: 10px 15px;
+}
+
+.feed-contents .reples .whos-like>button {
+    float: left;
+    width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.feed-contents .reples .whos-like p {
+    margin-left: 27px;
+    margin: 2px 0 0 27px;
+    font-size: 14px;
+    color: #262626;
+}
+
+.feed-contents .reples .whos-like p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.feed-contents .reples .comment ul {
+    padding: 0 15px 15px;
+}
+
+.feed-contents .reples .comment ul li {
+    position: relative;
+    padding-right: 50px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.feed-contents .reples .comment ul li+li {
+    padding-top: 10px;
+}
+
+.feed-contents .reples .comment ul li .comment-close {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background: url(../img/close.png) no-repeat center / cover;
+}
+
+.feed-contents .reples .comment ul li span {
+    font-weight: 300;
+}
+
+.feed-contents .reples .comment ul li .name {
+    padding-right: 3px;
+    font-weight: 500;
+}
+
+.feed-contents .reples .comment-write {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.feed-contents .reples .comment-write form {
+    display: flex;
+}
+
+.feed-contents .reples .comment-write form #comment-input {
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    resize: none;
+}
+
+.feed-contents .reples .comment-write form button {
+    width: 50px;
+    background: transparent;
+    font-size: 15px;
+    color: #0095f6;
+}
+
+/* feeds -- end */
+
+/* main-right */
+main>aside.main-right {
+    position: fixed;
+    width: 945px;
+    margin: 0 auto;
+}
+
+main>aside.main-right .main-right-inner {
+    float: right;
+    max-width: calc(100% - 630px);
+}
+
+aside.main-right-inner>div {
+    min-width: 300px;
+}
+
+.main-right-inner>div+div {
+    margin-top: 15px;
+}
+
+.main-right-inner .user-profile {
+    display: table;
+    margin-top: 50px;
+}
+
+.main-right-inner .user-profile .profile-img {
+    max-width: 55px;
+}
+
+.main-right-inner .user-profile .user-info {
+    position: relative;
+}
+
+.main-right-inner .user-story,
+.main-right-inner .user-recommend {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.main-right-inner dl dt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-right-inner dl dt span {
+    font-size: 14px;
+    color: #888;
+}
+
+.main-right-inner dl dt .viewmore {
+    font-weight: 500;
+    font-size: 13px;
+    color: #000;
+}
+
+.main-right-inner dl dd {
+    position: relative;
+    display: table;
+    padding: 0 10px 10px;
+}
+
+.main-right-inner dl dd+dd {
+    padding-bottom: 10px;
+}
+
+.main-right-inner dl dd:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.main-right-inner dl dd .follow-link {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    font-size: 12px;
+    color: #0095f6;
+}
+
+/* main-right -- end */
+
+/* ----- MAIN -- end ----- */
+
+/* ----- FOOTER ----- */
+footer .copyright {
+    margin-top: 15px;
+}
+
+footer .copyright li {
+    float: left;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #c7c7c7;
+}
+
+footer .copyright li:after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background: #c7c7c7;
+    margin: 5px;
+}
+
+footer>p {
+    margin: 15px 0 0;
+    font-size: 12px;
+    color: #c7c7c7;
+}
+
+/* ----- FOOTER -- end ----- */
+
+/* ----- 반응형 ----- */
+
+@media (max-width: 960px){
+    main>.main-right{
+        display: none;
+    }
+
+    main>.feeds{
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+/* ----- 반응형 -- end ----- */
