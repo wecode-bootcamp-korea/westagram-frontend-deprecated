@@ -18,11 +18,11 @@
 }
 .comment-container__likeBtn {
   display: flex;
+  width: 15px;
+  height: 14px;
   align-items: center;
   background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
   background-size: contain;
-  width: 15px;
-  height: 14px;
 }
 .like-btn-fill {
   background-image: url("../img/heartFill.png");

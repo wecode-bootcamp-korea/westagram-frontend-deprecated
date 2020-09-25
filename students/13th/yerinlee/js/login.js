@@ -37,7 +37,7 @@ function isUserInfoValid(validity) {
   }
 }
 
-function handleInput(event) {
+function handleLoginInput(event) {
   // event.preventDefault();
   const inputTarget = event.target;
   const inputTargetPlaceholder = inputTarget.nextElementSibling;
@@ -53,7 +53,7 @@ function handleInput(event) {
 
 function init() {
   setInterval(changeImg, 2000);
-  loginForm.addEventListener("input", handleInput);
+  loginForm.addEventListener("input", handleLoginInput);
 }
 
 init();

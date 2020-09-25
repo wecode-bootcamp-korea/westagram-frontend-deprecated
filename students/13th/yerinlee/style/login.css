@@ -4,8 +4,8 @@
 }
 
 .phone-block {
-  height: 618px;
   width: 454px;
+  height: 618px;
   position: relative;
 }
 
@@ -37,24 +37,24 @@
 } */
 
 .user-inputs {
+  width: 350px;
   margin-left: -15px;
   padding-top: 32px;
-  width: 350px;
 }
 
 .login-box,
 .join-box {
-  width: 100%;
   display: flex;
-  margin-bottom: 10px;
+  width: 100%;
   padding: 23px 0;
+  margin-bottom: 10px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: white;
 }
 
 .login-box__logo {
-  margin: 10px 86.5px 12px;
   width: 180px;
+  margin: 10px 86.5px 12px;
 }
 
 .login-form {
@@ -65,9 +65,9 @@
 .login-form__ID,
 .login-form__PW,
 .login-form button {
+  width: 266px;
   box-sizing: border-box;
   border-radius: 3px;
-  width: 266px;
 }
 
 .login-form input:focus,
@@ -77,8 +77,8 @@
 
 .login-form__ID,
 .login-form__PW {
-  margin-bottom: 6px;
   padding: 10px 8px;
+  margin-bottom: 6px;
   border: 0.1px solid rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.01);
 }
@@ -127,13 +127,13 @@
 }
 
 .login-form__btlogin {
-  border: none;
-  padding: 5.5px 0;
-  margin: 8px 0;
-  background-color: #0095f6;
-  color: white;
   font-size: 14px;
   font-weight: 600;
+  color: white;
+  padding: 5.5px 0;
+  margin: 8px 0;
+  border: none;
+  background-color: #0095f6;
 }
 
 .btn-disabled {
@@ -144,26 +144,26 @@
 .login-box__OR {
   display: flex;
   width: 100%;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.5);
   font-size: 13px;
   font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
   margin: 10px 0px;
+  align-items: center;
 }
 
 .login-box__OR::before,
 .login-box__OR::after {
+  height: 1px;
   content: "";
   flex-grow: 1;
   background: rgba(0, 0, 0, 0.15);
-  height: 1px;
 }
 
 .facebook-login-block {
   display: flex;
+  margin: 22px 0px;
 
   justify-content: center;
-  margin: 22px 0px;
 }
 
 .facebook-login-block__icon {
@@ -173,9 +173,9 @@
 }
 
 .facebook-login-block__link {
-  color: #385185;
   font-size: 14px;
   font-weight: 600;
+  color: #385185;
 }
 
 .login-box__forgetPW-link {
@@ -192,8 +192,8 @@
 }
 
 .join-box__link {
-  color: #0095f6;
   font-weight: 600;
+  color: #0095f6;
 }
 
 .download-box > * {
@@ -201,9 +201,9 @@
 }
 
 .download-box__text {
+  font-size: 14px;
   text-align: center;
   padding-bottom: 10px;
-  font-size: 14px;
 }
 
 .download-box__btn {
@@ -221,10 +221,10 @@
 
 .login-footer__box {
   display: flex;
+  padding: 38px 0;
+  margin: 0 36px;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 36px;
-  padding: 38px 0;
 }
 
 .login-footer__lists {
@@ -234,8 +234,8 @@
   align-items: flex-start;
 }
 .login-footer__list {
-  margin: 0 16px 10px 0;
   display: flex;
+  margin: 0 16px 10px 0;
   justify-content: flex-start;
   align-items: flex-start;
 }

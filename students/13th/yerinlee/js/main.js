@@ -22,7 +22,7 @@ const delComment = (event) => {
   targetcommentLi.remove();
 };
 
-const addTolist = (comment) => {
+const addComment = (comment) => {
   //댓글창에 넣을 element
   const comments = document.querySelector(".comments-list");
   const commentLi = document.createElement("li");
@@ -54,7 +54,7 @@ const handleCommentSubmit = (event) => {
   event.preventDefault();
   const comment = commentInput.value;
   if (comment !== "") {
-    addTolist(comment);
+    addComment(comment);
     commentInput.value = "";
   }
 };
