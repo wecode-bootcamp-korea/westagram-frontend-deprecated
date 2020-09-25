@@ -5,7 +5,7 @@ const contentLikeBtn = document.querySelectorAll(".contents-container__btn")[0];
 
 const heartbeat = (targetLikeBtn) => {
   targetLikeBtn.classList.remove("heartbeat");
-  targetLikeBtn.offsetWidth = targetLikeBtn.offsetWidth; // ???????????구글링해서 넣은 코드인데 이줄이 없으면 동작안함.. 너비가 뭔상관이쥐..?
+  targetLikeBtn.offsetWidth = targetLikeBtn.offsetWidth; // ?????????구글링해서 넣은 코드인데 이줄이 없으면 동작안함.. 너비가 뭔상관이쥐..?
   targetLikeBtn.classList.add("heartbeat");
 };
 
