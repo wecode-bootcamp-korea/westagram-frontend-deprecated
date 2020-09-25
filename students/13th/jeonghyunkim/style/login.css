@@ -1,0 +1,75 @@
+body {
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.main {
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.main_page {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+}
+.main_logo img {
+  display: flex;
+  margin: 35px 0;
+  width: 175px;
+}
+.main_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input::placeholder {
+  color: -internal-light-dark(black, white);
+}
+.ipid {
+  width: 250px;
+  height: 40px;
+  background-color: #fafafa;
+  margin: 5px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.ipps {
+  width: 250px;
+  height: 40px;
+  background-color: #fafafa;
+  margin: 5px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btlogin {
+  width: 270px;
+  height: 40px;
+  margin: 15px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #b9dffc;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.pstext {
+  margin-top: 70px;
+  font-size: 14px;
+  color: #00366b;
+  text-decoration: none;
+  font-weight: 600;
+}
