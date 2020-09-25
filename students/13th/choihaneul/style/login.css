@@ -1,0 +1,64 @@
+body {
+  background-color: #fafafa;
+}
+
+.logo img {
+  margin: 22px auto 12px;
+  width: 185px;
+}
+
+.login__container {
+  background-color: #ffffff;
+  display: block;
+  text-align: center;
+  width: 350px;
+  height: 380px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -175px;
+  margin-top: -190px;
+  border: 1px solid #dbdbdb;
+  padding: 10px 0;
+}
+
+.login__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input_box {
+  width: 256px;
+  height: 36px;
+  padding: 0 5px;
+  margin-top: 6px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+}
+
+.login__btn {
+  width: 270px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #c0dffd;
+  border-style: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.lost__password {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -58px;
+  color: #02386a;
+  font-size: 12px;
+}
