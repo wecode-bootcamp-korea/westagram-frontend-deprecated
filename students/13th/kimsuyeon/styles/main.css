@@ -9,7 +9,7 @@ header {
   border-bottom: 2px solid #ededed;
 }
 
-nav#nav_bar {
+nav.nav_bar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,7 @@ img.user_image {
 
 p.user_id {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 550;
 }
 
 img.feed_img {
@@ -131,8 +131,9 @@ p.liked_number {
   font-weight: bold;
 }
 
-div.reply_contents {
+li.reply_content {
   display: flex;
+  flex-direction: row;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 4px;
@@ -150,9 +151,11 @@ div.reply_input {
   border-top: 1px solid #bbbbbbd5;
   padding: 10px 20px;
 }
+
 input.reply_input {
   all: unset;
 }
+
 input.reply_input::placeholder {
   text-align: left;
 }
