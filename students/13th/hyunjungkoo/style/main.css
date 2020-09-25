@@ -25,7 +25,7 @@
 #nav .navFlexItems li a img {
   height: 100%;
 }
-.wrapper {
+#nav .wrapper {
   display: flex;
   width: 975px;
   padding: 5px 0;
@@ -50,6 +50,9 @@
 #nav .rightContent {
   position: relative;
 }
+#nav .rightContent .navFlexItems {
+  padding: 0 10px;
+}
 #nav .rightContent .navFlexItems li {
   width: 45px;
   height: 45px;
@@ -68,10 +71,10 @@
   width: 100%;
 }
 #nav .rightContent .profileBox {
+  width: 230px;
   position: absolute;
   top: 50px;
   right: -15px;
-  width: 230px;
   background-color: #fff;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
@@ -86,17 +89,17 @@
 }
 
 #nav .rightContent .profileBox:after {
-  content: "";
   display: block;
-  background-color: #fff;
   width: 10px;
   height: 10px;
-  transform: rotate(45deg);
   position: absolute;
   top: -5px;
+  right: 22px;
+  content: "";
+  background-color: #fff;
+  transform: rotate(45deg);
   border-top: 1px solid #d9d9d9;
   border-left: 1px solid #d9d9d9;
-  right: 22px;
 }
 #nav .rightContent .profileBox ul li {
   padding: 10px 15px;
@@ -112,8 +115,8 @@
 }
 #nav .rightContent .profileBox ul li span {
   display: inline-block;
-  margin-left: 25px;
   font-size: 1.4rem;
+  margin-left: 25px;
 }
 #nav .rightContent .profileBox ul li:last-child {
   border-top: 1px solid #d9d9d9;
@@ -132,7 +135,7 @@
   transform: translate(-65%, -40%);
 }
 
-.middleContent input {
+#nav .middleContent input {
   width: 250px;
   padding: 5px;
   margin: 10px 0;
@@ -216,12 +219,11 @@
 }
 #main .wrapper {
   display: inline-block;
-  min-width: 975px;
+  width: 975px;
   overflow: hidden;
 }
 #main .feeds {
   width: 70%;
-  float: left;
   padding-top: 30px;
 }
 #main article {

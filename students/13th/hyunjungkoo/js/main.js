@@ -166,9 +166,34 @@ const navProfileButton = document.querySelector(
 );
 const profileBox = document.querySelector("#nav .rightContent .profileBox");
 
-navProfileButton.addEventListener("click", (e) => {
+const profileBoxAnchors = document.querySelectorAll(
+  "#nav .rightContent .profileBox li a"
+);
+profileBoxAnchors.forEach((a) => {
+  a.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+});
+
+document.querySelector(".profile_button").addEventListener("click", (e) => {
   e.preventDefault();
-  profileBox.classList.contains("clicked")
-    ? profileBox.classList.remove("clicked")
-    : profileBox.classList.add("clicked");
+});
+
+// 뭔가 더 간단하고 좋은 방법이 있지 않을까....
+document.addEventListener("click", (e) => {
+  const target = e.target;
+  console.log(target.closest(".profileBox"));
+  if (
+    target.closest(".profile_button") !== null &&
+    !profileBox.classList.contains("clicked")
+  ) {
+    profileBox.classList.add("clicked");
+    return;
+  }
+  if (
+    target.closest(".profileBox") == null &&
+    profileBox.classList.contains("clicked")
+  ) {
+    profileBox.classList.remove("clicked");
+  }
 });

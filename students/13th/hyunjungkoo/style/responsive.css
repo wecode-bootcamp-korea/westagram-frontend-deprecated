@@ -1,0 +1,79 @@
+@media all and (max-width: 1690px) {
+  #main {
+    width: 680px;
+  }
+  #main .feeds {
+    width: 680px;
+    padding: 180px 30px 0;
+  }
+  #main .main-right {
+    width: 293px;
+    width: 100%;
+    position: absolute;
+    padding: 0 30px;
+    top: 10px;
+    left: 0;
+    min-height: fit-content;
+  }
+  #main .main-right .profile {
+    display: none;
+  }
+  .main-right .content {
+    padding: 5px 10px;
+    flex: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    /* 안건듦 */
+  }
+  #main .main-right .content .text {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #999;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* 안건듦 */
+  }
+  #main .main-right .content .text button {
+    font-weight: bolder;
+    color: #333;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    /* 안건듦 */
+  }
+  .main-right .content .list ul {
+    display: flex;
+    font-size: 1.4rem;
+    padding-top: 10px;
+  }
+  #main .main-right .content .list ul li {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+  }
+  #main .main-right .content .list ul li .textBox .id {
+    font-weight: bold;
+  }
+  #main .main-right .content .list ul li .textBox .sub {
+    font-size: 1.2rem;
+    color: rgb(168, 168, 168);
+  }
+  #main .main-right .content .list ul li .imgBox {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .main-right .content.recommend {
+    display: none;
+  }
+}
