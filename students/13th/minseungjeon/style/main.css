@@ -1,34 +1,44 @@
 body{
     margin: 0;
+    background-color: #FAFAFA;
+}
+
+section{
+    width: 1519.2px;
 }
 
 /* nav 맨위 */
 nav{
     position: fixed;
     top:0;
-    width: 100%;
+    width: 1519.2px;
     background-color: white;
+    border-bottom: 1px solid #FAFAFA;
     
 }
 
 .nav-container {
-    margin: 0 400px; 
-    height: 70px; 
+    margin: 0 289px;
+    width: 975px; 
+    height: 54px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
 .nav-left img{
-    height: 39px;
+    width: 103px;
+    height: 29px;
+    padding-top: 12px;
 }
 
 .nav-center input {
-    border: 3px solid black;
-    width: 250px;
-    height: 24px;
-    border-color: lightgray;
+    width: 200px;
+    height: 20px;
     background-color: #FAFAFA;
+    border: 1px solid gray;
 }
 
 input::placeholder{
@@ -36,23 +46,27 @@ input::placeholder{
 }
 
 .nav-right img {
-    height: 30px;
+    height: 24px;
+    width: 24px;
+    padding-left: 7px
 }
 
 /* main */
 main {
     background-color: #FAFAFA;
+    width: 1519.2px;
+    margin: 0 289px;
 }
 
 .main-container {
-    margin: 0 400px;
+    
     padding-top: 5%;
     display: flex;
 }
 
 /* main 왼쪽 */
 .feeds {
-    width: 65%;
+    width: 614px;
     border: 2px solid #FAFAFA;
 }
 
@@ -60,30 +74,32 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 70px;
+    height: 60px;
+    
 }
 
 #feed1-writer-photo{
-    width: 50px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    border: 3px solid purple;
-    
+    margin-left: 15px;
 }
+
 #feed1-writer-id{
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 12px;
     margin-left: 15px;
 }
 
 #feed1-photo{
-    width: 100%;
+    width: 614px;
+    height: 614px;
 }
 
 article {
     height: 100%;
     width: 100%;
-    background-color: white;
-    
+    background-color: white;    
 }
 
 .article-icon{
@@ -92,25 +108,23 @@ article {
 }
 
 .article-icon img{
-    height: 40px;
-    width: 45px;
+    padding-left: 8px;
+    height: 24px;
+    width: 24px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
+
 
 .comment{
     border-top: 2px solid #FAFAFA;
-    width: 100%;
-    height: 60px;
+    width: 614px;
+    height: 56px;
     display: flex;
     justify-content: space-between;
 }
 
 .comment input{
-    width: 640px;
+    width: 554px;
     border: 0px solid white;
 }
 
@@ -120,17 +134,20 @@ ul {
 
 /* main오른쪽 */
 .main-right{
-    width: 35%;
+    width: 355px;
+    
 }
 
 .main-right-container{
     position: sticky;
-    top: 150px;
+    top: 105px;
+    
 }
 
 .main-right-myProfile img{
     border-radius: 50%;
-    width: 80px;
+    width: 56px;
+    height: 56px;
 }
 
 .main-right-myProfile {
@@ -143,6 +160,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     margin-left: 15px;
+    font-size: 13px;
 }
 
 .recomand{
@@ -150,15 +168,16 @@ ul {
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
+    font-size: 13px;
 }
 
 #recomand-forYou{
+    font-size: 15px;
     color: gray;
     font-weight: bold;
 }
 
 #recomand-all{
-    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -172,14 +191,15 @@ ul {
 
 #friend1-photo{
     border-radius: 50%;
-    width: 50px;
-    border: 2px solid purple;
+    width: 32px;
+    height: 32px;
 }
 
 .friend1{
     display: flex;
     justify-content: center;
     padding-left: 20px;
+    font-size: 13px;
 }
 
 .friend1-id{
@@ -190,7 +210,7 @@ ul {
 
 .follow{
     color: #3d92ed;
-    font-size: 0.8rem;
+    font-size: 13px;
     font-weight: bold;
     display: flex;
     justify-content: center;
