@@ -43,6 +43,6 @@
   }
 }
 
-.like-btn-fill {
+.heartbeat {
   animation: heartbeat 0.3s ease-in-out forwards;
 }

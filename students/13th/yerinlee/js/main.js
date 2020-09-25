@@ -2,9 +2,17 @@ const commentForm = document.querySelector(".comment-form");
 const commentInput = document.querySelector(".comment-form__comment-input");
 const contentLikeBtn = document.querySelectorAll(".contents-container__btn")[0];
 
+const heartbeat = (targetLikeBtn) => {
+  targetLikeBtn.classList.remove("heartbeat");
+  targetLikeBtn.offsetWidth = targetLikeBtn.offsetWidth; // ???????????구글링해서 넣은 코드인데 이줄이 없으면 동작안함.. 너비가 뭔상관이쥐..?
+  targetLikeBtn.classList.add("heartbeat");
+};
+
 const handleLikeBtn = (event) => {
   const targetLikeBtn = event.target;
   targetLikeBtn.classList.toggle("like-btn-fill");
+  heartbeat(targetLikeBtn);
+  // -> and re-adding the class
 };
 
 const delComment = (event) => {
@@ -44,12 +52,10 @@ const addTolist = (comment) => {
 
 const handleCommentSubmit = (event) => {
   event.preventDefault();
-  const comment = commentInput.value; //input에 있는 value
-
+  const comment = commentInput.value;
   if (comment !== "") {
-    //input에 있는 value가 비어있으면
-    addTolist(comment); // input에 있는 value를 span&btn create해주는 함수로보냄(함수더럽다고 해서 안알려줌)
-    commentInput.value = ""; //이미 value는 보냈으니 초기화.
+    addTolist(comment);
+    commentInput.value = "";
   }
 };
 
