@@ -51,6 +51,8 @@ function addWithBtn() {
        commentDiv.appendChild(commentTxt);
        commentDiv.appendChild(commentLike);
 
+       input.value = '';
+
    }
 
 
