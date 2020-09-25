@@ -25,6 +25,7 @@ body {
   border-bottom: 1px solid #dbdbdb;
   background-color: white;
   position: fixed;
+  z-index: 1;
   top: 0;
 }
 
@@ -65,7 +66,7 @@ body {
   position: absolute;
   top: 9px;
   z-index: 2;
-  background-image: url(/westargram_clone/img/아이콘모음.png);
+  background-image: url(./deokhyeong/img/아이콘모음.png);
   background-size: 440px 411px;
   background-position: -428px -241px;
 }
@@ -85,7 +86,7 @@ body {
   position: absolute;
   right: 5px;
   top: 4px;
-  background-image: url(/westargram_clone/img/아이콘모음.png);
+  background-image: url(./deokhyeong/img/아이콘모음.png);
   background-size: 440px 411px;
   background-position: -380px -96px;
 }
