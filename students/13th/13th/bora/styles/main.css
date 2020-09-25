@@ -387,19 +387,10 @@ input {
 }
 
 
-
 .story-txt {
     margin-left: 10px;
     font-size: 13.7px;
 }
-
-/* .story-img-container {
-    width: 33px;
-    height: 33px;
-    border: 2px solid white;
-    border-radius: 100%;
-    overflow: hidden;
-} */
 
 .story-img {
     width: 37px;
