@@ -1,0 +1,173 @@
+body {
+  background-color: #eee;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: #fff;
+  width: 350px;
+  height: 380px;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+}
+
+.logo-img {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* ################# Email And Password ################# */
+
+.email-and-password {
+  /* border: 1px solid #000; */
+  height: 213px;
+}
+
+input {
+  display: inline-block;
+  width: 250px;
+  height: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 9px 0 7px 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  opacity: .4;
+  font-weight: bold;
+}
+
+button {
+  display: inline-block;
+  width: 268px;
+  height: 30px;
+  background-color: #0095f6;
+  opacity: .3;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  pointer-events: none;
+  transition: .3s;
+}
+
+button.active {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+button span {
+  color: white;
+  font-weight: bold;
+}
+
+/* ################# Other Login (orDiv) ################# */
+
+.orDiv {
+}
+
+.orSpan {
+  position: relative;
+}
+
+.orSpan:before,
+.orSpan:after {
+  content: '';
+  position: absolute;
+  background-color: #dbdbdb;
+  width: 100px;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.orSpan:before {
+  left: -120px;
+}
+
+.orSpan:after {
+  right: -120px;
+}
+
+.facebook {
+  margin-top: 10px;
+  /* border: 1px solid #000; */
+  height: 30px;
+  position: relative;
+}
+
+.facebook div {
+  display: inline-block;
+}
+
+.facebook-img-container {
+  /* border: 1px solid #000; */
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.facebook-img-container:before {
+  content:"\f230";
+  font-family: FontAwesome;
+  color: #3b5999;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 23px;
+}
+
+.facebook-login-text {
+  /* border: 1px solid #000; */
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top:0;
+  left: 55%;
+  transform: translateX(-50%);
+}
+
+.facebook-login-text a {
+  font-size: 12px;
+  position: absolute;
+  /* border: 1px solid #000; */
+  width: 100%;
+  height: 100%;
+  top: 75%;
+  left: 0;
+  transform: translateY(-50%);
+  text-decoration: none;
+  cursor: pointer;
+  color: #3b5999;
+}
+
+/* ################# Forget ################# */
+
+.forget {
+  margin-top: 20px;
+  text-align: center;
+  /* border: 1px solid #000; */
+}
+
+.forget a {
+  text-decoration: none;
+  color: #00376b;
+  font-size: 12px;
+  font-weight: bold;
+}

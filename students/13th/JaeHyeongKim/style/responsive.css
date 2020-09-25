@@ -1,0 +1,113 @@
+@media (max-width: 1850px) {
+  .main-right {
+    display: none;
+  }
+
+  .main-story-container {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .feeds {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .personal {
+    margin-left: 0%;
+  }
+
+  .threedots-sub-menu {
+    width: 50%;
+  }
+
+  .threedots-sub-menu.active {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-logo {
+    display: none;
+  }
+
+  .wrapper > div {
+    margin: 0 10px;
+  }
+
+  .logo {
+    width: 50%;
+    padding: 0px;
+    height: 70%;
+  }
+
+  .logo .text-logo {
+    border-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .personal {
+    width: 70%;
+  }
+
+  .search{
+    display: none !important;
+  }
+
+  .logo img {
+    height: 100%;
+  }
+
+  main {
+    width: 100vw;
+    border: 1px solid #000;
+  }
+
+  .main-story-container,
+  .feeds {
+    width: 100%;
+  }
+
+  .main-story-container {
+    top: -2px;
+  }
+
+  article {
+    margin-top: -4%;
+    border-top: 0;
+  }
+
+  .comment-list {
+    height: 40%;
+    margin-top: 18px;
+  }
+
+  .add-comment {
+    height: 45%;
+  }
+
+  .add-comment .add-comment-btn {
+  }
+
+  .threedots-sub-menu-background {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .threedots-sub-menu {
+    width: 95%;
+  }
+
+  .threedots-sub-menu.active {
+    width: 80%;
+  }
+}

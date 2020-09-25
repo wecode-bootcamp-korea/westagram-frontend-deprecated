@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <!-- Font awesome -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- SlickJS -->
+  <link rel="stylesheet" href="./js/slick/slick.css">
+  <link rel="stylesheet" href="./js/slick/slick-theme.css">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+  <link href="style/main.css" rel="stylesheet" type="text/css" />
+  <link href="style/responsive.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <img class="main-logo" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="">
+          <a href="#">
+            <img class="text-logo" src="./img/logo_text.png" alt="">
+          </a>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="검색" >
+          <div class="search-id-result-container"></div>
+        </div>
+        <div class="personal">
+          <div class="personal-profile">
+            <div class="personal-profile-img-container">
+              <div class="personal-profile-img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/20184707_2475441045927839_6341421179915468800_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=0WQJX1apDRYAX9tsje6&oh=320d7b04d195b54ce64ef31e109a0189&oe=5F8E57AF" alt="">
+              </div>
+            </div>
+            <div class="personal-profile-sub-menu">
+              <div class="personal-profile-sub-menu-profile">
+                <div class="icon-container">
+                  <i class="fa fa-user-o"></i>
+                </div>
+                <div class="info-container">
+                  <span>프로필</span>
+                </div>
+              </div>
+              <div class="personal-profile-sub-menu-saved">
+                <div class="icon-container">
+                  <i class="fa fa-bookmark-o"></i>
+                </div>
+                <div class="info-container">
+                  <span>저장됨</span>
+                </div>
+              </div>
+              <div class="personal-profile-sub-menu-setting">
+                <div class="icon-container">
+                  <i class="fa fa-cog"></i>
+                </div>
+                <div class="info-container">
+                  <span>설정</span>
+                </div>
+              </div>
+              <div class="personal-profile-sub-menu-logout">
+                <span>로그아웃</span>
+              </div>
+            </div>
+          </div>
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="">
+          <img src="https://static.thenounproject.com/png/682477-200.png" alt="">
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="main-story-container">
+        <div class="story-element-container"></div>
+      </div>
+      <div class="feeds">
+        <article>
+          <div class="article-header">
+            <div class="article-profile-img-container">
+              <div class="article-profile-img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=lXGRUtCINKEAX8d_W6p&oh=7a160c2460db3c9c9412569366a998d8&oe=5F8EAD70" alt="">
+              </div>
+            </div>
+            <div class="article-profile-info-container">
+              <div class="article-profile-id">wecode_bootcamp</div>
+              <div class="article-profile-name">WeCode - 위코드</div>
+              <div class="article-profile-threedots" onclick="clickThreedotsDisplaySubMenu()">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="article-image-container">
+            <div class="article-image">
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/landing/bootcamp/boot_2.jpg" alt="">
+              <img src="https://media.vlpt.us/images/devmin/post/519de033-a1a0-414c-ba3c-92193ae01d4c/H53A6662.jpg" alt="">
+              <img src="https://i.ytimg.com/vi/dEapUsHML3s/maxresdefault.jpg" alt="">
+            </div>
+          </div>
+          <div class="article-sub">
+            <div class="article-sub-menu">
+              <div class="heart">
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <div class="comment">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="">
+              </div>
+              <div class="share">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="">
+              </div>
+              <div class="save">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="">
+              </div>
+            </div>
+            <div class="article-like-info">
+              <div class="article-like-profile">
+                <div class="article-like-profile-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/20184707_2475441045927839_6341421179915468800_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=0WQJX1apDRYAX9tsje6&oh=320d7b04d195b54ce64ef31e109a0189&oe=5F8E57AF" alt="">
+                </div>
+              </div>
+              <div class="article-like-total">
+                <span class="like-account">hellobeen</span>님 <span class="other-info">외 4명</span>이 좋아합니다.
+              </div>
+            </div>
+          </div>
+          <div class="article-text">
+            <span class="account">wecode_bootcamp</span> "위코드는 단순 교육업체가 아닌 개발자 커뮤니티입니다. Wecode에서 배우고 저는 총 5개 회사에서 오퍼를 받았습니다." - Wecode 졸업생 강병진님... <span class="more">더 보기</span><br><span class="time">54분전</span>
+          </div>
+          <div class="article-comment">
+            <div class="comment-list">
+            </div>
+            <div class="add-comment">
+              <section>
+                <input type="text" class="comment-textarea" placeholder="댓글 달기..." onkeyup="activateCommentButton(this)"></input>
+              </section>
+              <input type="submit" class="add-comment-btn" value="게시"</button>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-header">
+            <div class="article-profile-img-container">
+              <div class="article-profile-img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=lXGRUtCINKEAX8d_W6p&oh=7a160c2460db3c9c9412569366a998d8&oe=5F8EAD70" alt="">
+              </div>
+            </div>
+            <div class="article-profile-info-container">
+              <div class="article-profile-id">wecode_bootcamp</div>
+              <div class="article-profile-name">WeCode - 위코드</div>
+              <div class="article-profile-threedots" onclick="clickThreedotsDisplaySubMenu()">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="article-image-container">
+            <div class="article-image">
+              <img src="https://media.vlpt.us/images/taeha7b/post/30051c48-eebc-464d-9195-20ca6e9285fa/Image%20from%20iOS%20(2).jpg" alt="">
+              <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/landing/bootcamp/boot_4_1.jpg" alt="">
+              <img src="https://soongyu.github.io/media/wecode.jpg" alt="">
+            </div>
+          </div>
+          <div class="article-sub">
+            <div class="article-sub-menu">
+              <div class="heart">
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <div class="comment">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="">
+              </div>
+              <div class="share">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="">
+              </div>
+              <div class="save">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="">
+              </div>
+            </div>
+            <div class="article-like-info">
+              <div class="article-like-profile">
+                <div class="article-like-profile-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/20184707_2475441045927839_6341421179915468800_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=0WQJX1apDRYAX9tsje6&oh=320d7b04d195b54ce64ef31e109a0189&oe=5F8E57AF" alt="">
+                </div>
+              </div>
+              <div class="article-like-total">
+                <span class="like-account">hellobeen</span>님 <span class="other-info">외 4명</span>이 좋아합니다.
+              </div>
+            </div>
+          </div>
+          <div class="article-text">
+            <span class="account">wecode_bootcamp</span> "위코드는 단순 교육업체가 아닌 개발자 커뮤니티입니다. Wecode에서 배우고 저는 총 5개 회사에서 오퍼를 받았습니다." - Wecode 졸업생 강병진님... <span class="more">더 보기</span><br><span class="time">54분전</span>
+          </div>
+          <div class="article-comment">
+            <div class="comment-list">
+            </div>
+            <div class="add-comment">
+              <section>
+                <input type="text" class="comment-textarea" placeholder="댓글 달기..." onkeyup="activateCommentButton(this)"></input>
+              </section>
+              <button class="add-comment-btn">게시</button>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="article-header">
+            <div class="article-profile-img-container">
+              <div class="article-profile-img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=lXGRUtCINKEAX8d_W6p&oh=7a160c2460db3c9c9412569366a998d8&oe=5F8EAD70" alt="">
+              </div>
+            </div>
+            <div class="article-profile-info-container">
+              <div class="article-profile-id">wecode_bootcamp</div>
+              <div class="article-profile-name">WeCode - 위코드</div>
+              <div class="article-profile-threedots" onclick="clickThreedotsDisplaySubMenu()">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="article-image-container">
+            <div class="article-image">
+              <img src="https://i.ytimg.com/vi/EJ83gdDk-SM/hqdefault.jpg" alt="">
+              <img src="https://i.ytimg.com/vi/hbuxAm4RuFE/maxresdefault.jpg" alt="">
+              <img src="https://saengmotmi.netlify.app/static/34a23a27c096f13652cd0f313461907f/1c72d/032201.jpg" alt="">
+            </div>
+          </div>
+          <div class="article-sub">
+            <div class="article-sub-menu">
+              <div class="heart">
+                <i class="fa fa-heart-o"></i>
+              </div>
+              <div class="comment">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="">
+              </div>
+              <div class="share">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="">
+              </div>
+              <div class="save">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="">
+              </div>
+            </div>
+            <div class="article-like-info">
+              <div class="article-like-profile">
+                <div class="article-like-profile-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/20184707_2475441045927839_6341421179915468800_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=0WQJX1apDRYAX9tsje6&oh=320d7b04d195b54ce64ef31e109a0189&oe=5F8E57AF" alt="">
+                </div>
+              </div>
+              <div class="article-like-total">
+                <span class="like-account">hellobeen</span>님 <span class="other-info">외 4명</span>이 좋아합니다.
+              </div>
+            </div>
+          </div>
+          <div class="article-text">
+            <span class="account">wecode_bootcamp</span> "위코드는 단순 교육업체가 아닌 개발자 커뮤니티입니다. Wecode에서 배우고 저는 총 5개 회사에서 오퍼를 받았습니다." - Wecode 졸업생 강병진님... <span class="more">더 보기</span><br><span class="time">54분전</span>
+          </div>
+          <div class="article-comment">
+            <div class="comment-list">
+            </div>
+            <div class="add-comment">
+              <section>
+                <input type="text" class="comment-textarea" placeholder="댓글 달기..." onkeyup="activateCommentButton(this)"></input>
+              </section>
+              <button class="add-comment-btn">게시</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="main-right">
+        <div class="profile">
+          <a href="https://www.instagram.com/wecode_bootcamp/">
+            <div class="profile-img-container">
+              <div class="profile-img">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=lXGRUtCINKEAX8d_W6p&oh=7a160c2460db3c9c9412569366a998d8&oe=5F8EAD70" alt="">
+              </div>
+            </div>
+            <div class="profile-info-container">
+              <div class="profile-id">wecode_bootcamp</div>
+              <div class="profile-name">WeCode | 위코드</div>
+            </div>
+          </a>
+        </div>
+        <div class="recommendation">
+          <div class="recommendation-header">
+            <span class="header-left">회원님을 위한 추천</span>
+            <span class="header-right">모두 보기</span>
+          </div>
+          <div class="recommendation-info">
+            <a href="https://www.instagram.com/jinseyun.go/">
+              <div class="recommendation-info-img-container">
+                <div class="recommendation-info-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/55961998_2144219755661884_244699173209767936_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=KT2_08Ugdt4AX8CxN-p&oh=98adae7a3d358a449477b5a41c4ada18&oe=5F933BF8" alt="">
+                </div>
+              </div>
+              <div class="recommendation-info-container">
+                  <div class="recommendation-info-id">jinseyun.go</div>
+                  <div class="recommendation-info-follow">회원님을 팔로우합니다</div>
+                  <div class="recommendation-follow">팔로우</div>
+              </div>
+            </a>
+          </div>
+          <div class="recommendation-info">
+            <a href="https://www.instagram.com/lightyears81/">
+              <div class="recommendation-info-img-container">
+                <div class="recommendation-info-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/93214148_225473025179753_2554179714780495872_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=npSCOqbGGCAAX_xkMJ3&oh=781050457100ebad42a136f272a5d4ac&oe=5F9337D1" alt="">
+                </div>
+              </div>
+              <div class="recommendation-info-container">
+                  <div class="recommendation-info-id">lightyears81</div>
+                  <div class="recommendation-info-follow">회원님을 팔로우합니다</div>
+                  <div class="recommendation-follow">팔로우</div>
+              </div>
+            </a>
+          </div>
+          <div class="recommendation-info">
+            <a href="https://www.instagram.com/onestar_p/">
+              <div class="recommendation-info-img-container">
+                <div class="recommendation-info-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/34983547_1909665332404907_5969793680020602880_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=rzR8QvlfhwYAX9dH3ux&oh=623ef3c6309f79b6a26389a8d440285a&oe=5F94F46D" alt="">
+                </div>
+              </div>
+              <div class="recommendation-info-container">
+                  <div class="recommendation-info-id">onestar_p</div>
+                  <div class="recommendation-info-follow">회원님을 팔로우합니다</div>
+                  <div class="recommendation-follow">팔로우</div>
+              </div>
+            </a>
+          </div>
+          <div class="recommendation-info">
+            <a href="https://www.instagram.com/ssinz7/">
+              <div class="recommendation-info-img-container">
+                <div class="recommendation-info-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/13525473_239562676427287_1092224874_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=w3vGXPoYWI0AX9L7in_&oh=6728aab4eb4f0ceb3cff8d0a94c6fafb&oe=5F9397CF" alt="">
+                </div>
+              </div>
+              <div class="recommendation-info-container">
+                  <div class="recommendation-info-id">ssinz7</div>
+                  <div class="recommendation-info-follow">회원님을 팔로우합니다</div>
+                  <div class="recommendation-follow">팔로우</div>
+              </div>
+            </a>
+          </div>
+          <div class="recommendation-info">
+            <a href="https://www.instagram.com/honey_lee32/">
+              <div class="recommendation-info-img-container">
+                <div class="recommendation-info-img">
+                  <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/67491268_1280683048803873_2961286346074750976_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=JUOei-yO7gEAX_Cf1TO&oh=28ec508f7f124a8188d6375ea86a0d73&oe=5F962196" alt="">
+                </div>
+              </div>
+              <div class="recommendation-info-container">
+                  <div class="recommendation-info-id">honey_lee32</div>
+                  <div class="recommendation-info-follow">회원님을 팔로우합니다</div>
+                  <div class="recommendation-follow">팔로우</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="additional-info-copyright">
+          <div class="additional-info">
+            <p>
+              소개.도움말.홍보 센터.API.채용 정보.<br> 정보개인정보처리방침.약관.위치인기 계정.해시태그.언어
+            </p>
+          </div>
+          <div class="copyright">
+            <p>
+              © 2020 INSTAGRAM FROM FACEBOOK
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="threedots-sub-menu-background">
+    <div class="threedots-sub-menu">
+      <div class="threedots-sub-menu-element">
+        <span>신고</span>
+      </div>
+      <div class="threedots-sub-menu-element">
+        <span>팔로우 취소</span>
+      </div>
+      <div class="threedots-sub-menu-element">
+        <span>게시물로 이동</span>
+      </div>
+      <div class="threedots-sub-menu-element">
+        <span>공유하기</span>
+      </div>
+      <div class="threedots-sub-menu-element">
+        <span>링크 복사</span>
+      </div>
+      <div class="threedots-sub-menu-element">
+        <span>퍼가기</span>
+      </div>
+      <div class="threedots-sub-menu-element">
+        <span>취소</span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./js/data.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
