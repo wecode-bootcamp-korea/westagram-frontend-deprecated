@@ -7,15 +7,16 @@ let btnAct = function (){
     let pwdLength = pwd.value.length;
     let at = idVal.indexOf("@");
     let logInBtn = document.getElementById('logInBtn');
-
-    if(idLength > 0 && pwdLength > 0 ){
-        logInBtn.style.backgroundColor = "#009DF9";
-    } else if(at !== -1 || pwdLength < 5){
-        logInBtn.style.backgroundColor = "#B9DFFC";
-    }
     
-    if (idLength === 0 || pwdLength === 0){
+    if(at === -1 || pwdLength < 5) {
+        logInBtn.disabled = true;
         logInBtn.style.backgroundColor = "#B9DFFC";
+        return;
+    };
+
+    if((at !== -1 && idLength > 0) && pwdLength >= 5 ){
+        logInBtn.disabled = false;
+        logInBtn.style.backgroundColor = "#009DF9";
         return;
     } 
 };
