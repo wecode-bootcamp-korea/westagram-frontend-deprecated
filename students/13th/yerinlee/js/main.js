@@ -1,3 +1,4 @@
+//document
 const commentForm = document.querySelector(".comment-form");
 const commentInput = document.querySelector(".comment-form__comment-input");
 const contentLikeBtn = document.querySelectorAll(".contents-container__btn")[0];
@@ -45,7 +46,6 @@ const addTolist = (comment) => {
   comentBtns.appendChild(commentDelBtn);
   commentLi.appendChild(comentBtns);
   comments.appendChild(commentLi);
-
   commentDelBtn.addEventListener("click", delComment);
   commentLikeBtn.addEventListener("click", handleLikeBtn);
 };
