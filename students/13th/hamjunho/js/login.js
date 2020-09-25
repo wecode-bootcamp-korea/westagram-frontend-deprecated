@@ -1,8 +1,7 @@
-
 const inputWrap = document.querySelector('.input_btn_warp')
-const inputLabel = document.querySelector('.input_label');
-const id = document.querySelector('.id_label input');
-const password = document.querySelector('.password_label input');
+const inputLabel = document.querySelector('.login_area');
+const id = document.querySelector('.id_area input');
+const password = document.querySelector('.password_area input');
 const loginButton = document.querySelector('.login_btn');
 const loginAction = document.querySelector('.login_action');
 

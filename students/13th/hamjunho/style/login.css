@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.input_label {
+.login_area {
   position: relative;
   width: 330px;
   height: 45px;
@@ -38,7 +38,7 @@ body {
   border-color: #a8a8a8;
 }
 
-.input_label input {
+.login_area input {
   position: absolute;
   bottom: 50%;
   left: 5px;
@@ -49,7 +49,7 @@ body {
   outline: none;
 }
 
-.input_placeholder {
+.login_placeholder {
   position: absolute;
   top: 10px;
   left: 7px;
@@ -59,7 +59,7 @@ body {
   transition: font-size .5s, top .5s;
 }
 
-.focus_border {/* 클래스명 바꾸기 */
+.focus_border {
   top: 50%;
   font-size: 15px;
 }
