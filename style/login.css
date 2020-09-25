@@ -57,7 +57,7 @@ button {
     box-sizing: border-box;
     width: 268px;
     height: 30px;
-    background-color: rgba(0, 149, 246, 0.3);
+    background-color: rgb(0, 149, 246);
     opacity: 0.3;
     border-radius: 4px;
     border-color: transparent;
