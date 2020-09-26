@@ -22,3 +22,7 @@
 body {
   background-color: #fafafa;
 }
+
+.showing {
+  display: block;
+}
