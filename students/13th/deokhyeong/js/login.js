@@ -5,19 +5,23 @@ ex) id >>> '@' 포함 / pw >>> 5글자 이상
 */
 
 const loginBtn = document.querySelector(".login_btn");
-const idInfo = document.getElementById("id").value;
-const pwdInfo = document.getElementById("pwd").value;
+let idInfo = document.getElementById("id").value;
+let pwdInfo = document.getElementById("pwd").value;
+
 // 두 개의 함수에 같은 변수가 사용된다... 불필요한 중복 발생을 고쳐 줌..
 
 const inspectIdPw = () => {
+  idInfo = document.getElementById("id").value;
+  pwdInfo = document.getElementById("pwd").value;
+
   if (idInfo.includes("@") === false) {
     loginBtn.style.backgroundColor = "#c0dffd";
     return;
   }
-  if (pwdInfo.value.length > 4) {
+  if (pwdInfo.length > 4) {
     loginBtn.style.backgroundColor = "#0095f6";
   }
-  if (pwdInfo.value.length <= 4) {
+  if (pwdInfo.length <= 4) {
     loginBtn.style.backgroundColor = "#c0dffd";
   }
 };
