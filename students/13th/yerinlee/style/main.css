@@ -24,6 +24,9 @@
   justify-content: flex-start;
   align-items: flex-end;
 }
+.main-navbar__colomn:nth-child(2) {
+  position: relative;
+}
 .main-navbar__colomn:last-child {
   justify-content: flex-end;
   align-items: center;
@@ -60,11 +63,6 @@
   text-align: left;
 }
 
-.main-navbar__search:focus + div {
-  top: 6px;
-  left: 12px;
-}
-
 .main-navbar__placeholder {
   position: absolute;
   font-size: 14px;
@@ -72,6 +70,33 @@
   top: 6px;
   left: 84px;
   pointer-events: none;
+}
+.main-navbar__search:focus + div {
+  top: 6px;
+  left: 12px;
+}
+.main-navbar__userID-select-box {
+  width: 241px;
+  height: auto;
+  position: absolute;
+  top: 48px;
+  left: 30px;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  max-height: 362px;
+  overflow: auto;
+  background-color: white;
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.userID {
+  padding: 16px 14px;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
 }
 
 .main-navbar__icons > * {
@@ -218,6 +243,14 @@
   font-size: 12px;
   font-weight: 600;
 }
+
+.recommend-profile__fallow-btn {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0095f6;
+  margin: 0 0 0 auto;
+}
+
 .main-footer {
   font-size: 11px;
   color: rgba(0, 0, 0, 0.3);
