@@ -317,12 +317,13 @@ body {
   background-color: white;
 }
 
-.feeds .feed .status .status_comments ul li button img.blackheart {
+.feeds .feed .status .status_comments ul li button .blackheart {
   width: 12px;
   height: 12px;
+  display: block;
 }
 
-.feeds .feed .status .status_comments ul li button img.redheart {
+.feeds .feed .status .status_comments ul li button .redheart {
   display: none;
   width: 12px;
   height: 12px;
