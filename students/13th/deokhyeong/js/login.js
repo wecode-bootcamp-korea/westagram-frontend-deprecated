@@ -7,7 +7,7 @@ ex) id >>> '@' 포함 / pw >>> 5글자 이상
 // getElementByclassName을 안 쓰고 쿼리셀렉터 썼으면 어땠을까?? ===>
 const clickLoginBtn = document.getElementsByClassName("login_btn")[0];
 
-let inspectIdPw = () => {
+const inspectIdPw = () => {
   if (document.getElementById("id").value.includes("@") === false) {
     clickLoginBtn.style.backgroundColor = "#c0dffd";
     return;
