@@ -5,16 +5,19 @@ ex) id >>> '@' 포함 / pw >>> 5글자 이상
 */
 
 const loginBtn = document.querySelector(".login_btn");
+const idInfo = document.getElementById("id").value;
+const pwdInfo = document.getElementById("pwd").value;
+// 두 개의 함수에 같은 변수가 사용된다... 불필요한 중복 발생을 고쳐 줌..
 
 const inspectIdPw = () => {
-  if (document.getElementById("id").value.includes("@") === false) {
+  if (idInfo.includes("@") === false) {
     loginBtn.style.backgroundColor = "#c0dffd";
     return;
   }
-  if (document.getElementById("pwd").value.length > 4) {
+  if (pwdInfo.value.length > 4) {
     loginBtn.style.backgroundColor = "#0095f6";
   }
-  if (document.getElementById("pwd").value.length <= 4) {
+  if (pwdInfo.value.length <= 4) {
     loginBtn.style.backgroundColor = "#c0dffd";
   }
 };
@@ -32,9 +35,6 @@ document
   });
 
 loginBtn.addEventListener("click", function () {
-  const idInfo = document.getElementById("id").value;
-  const pwdInfo = document.getElementById("pwd").value;
-
   if (idInfo.includes("@") === false) {
     alert("전화번호,사용자 이름 또는 이메일을 정확히 입력해주세요!");
     return;
