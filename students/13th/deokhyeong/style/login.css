@@ -14,7 +14,6 @@ body {
 main {
   display: flex;
   height: 100%;
-  /* 한줄 블록으로 되어있길래 가운데 정렬을 위해 높이를 100% 주었다. */
   justify-content: center;
   align-items: center;
 }

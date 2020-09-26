@@ -8,8 +8,6 @@ const loginBtn = document.querySelector(".login_btn");
 let idInfo = document.getElementById("id").value;
 let pwdInfo = document.getElementById("pwd").value;
 
-// 두 개의 함수에 같은 변수가 사용된다... 불필요한 중복 발생을 고쳐 줌..
-
 const inspectIdPw = () => {
   idInfo = document.getElementById("id").value;
   pwdInfo = document.getElementById("pwd").value;
