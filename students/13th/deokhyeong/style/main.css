@@ -308,6 +308,21 @@ body {
   position: relative;
 }
 
+.feeds .feed .status .status_comments ul li div {
+  position: absolute;
+  right: 0px;
+}
+
+.feeds .feed .status .status_comments ul li button {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.feeds .feed .status .status_comments ul li button.good_Btn {
+  position: absolute;
+  right: 32px;
+}
+
 .feeds .feed .status .status_time {
   height: 19px;
   position: relative;
