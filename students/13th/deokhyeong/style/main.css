@@ -308,27 +308,6 @@ body {
   position: relative;
 }
 
-.feeds .feed .status .status_comments ul li button {
-  position: absolute;
-  top: 2px;
-  right: 0;
-  border: 0;
-  outline: 0;
-  background-color: white;
-}
-
-.feeds .feed .status .status_comments ul li button .blackheart {
-  width: 12px;
-  height: 12px;
-  display: block;
-}
-
-.feeds .feed .status .status_comments ul li button .redheart {
-  display: none;
-  width: 12px;
-  height: 12px;
-}
-
 .feeds .feed .status .status_time {
   height: 19px;
   position: relative;
