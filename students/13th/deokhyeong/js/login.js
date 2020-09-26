@@ -4,19 +4,18 @@
 ex) id >>> '@' 포함 / pw >>> 5글자 이상
 */
 
-// getElementByclassName을 안 쓰고 쿼리셀렉터 썼으면 어땠을까?? ===>
-const clickLoginBtn = document.getElementsByClassName("login_btn")[0];
+const loginBtn = document.querySelector(".login_btn");
 
 const inspectIdPw = () => {
   if (document.getElementById("id").value.includes("@") === false) {
-    clickLoginBtn.style.backgroundColor = "#c0dffd";
+    loginBtn.style.backgroundColor = "#c0dffd";
     return;
   }
   if (document.getElementById("pwd").value.length > 4) {
-    clickLoginBtn.style.backgroundColor = "#0095f6";
+    loginBtn.style.backgroundColor = "#0095f6";
   }
   if (document.getElementById("pwd").value.length <= 4) {
-    clickLoginBtn.style.backgroundColor = "#c0dffd";
+    loginBtn.style.backgroundColor = "#c0dffd";
   }
 };
 
@@ -32,7 +31,7 @@ document
     inspectIdPw();
   });
 
-clickLoginBtn.addEventListener("click", function () {
+loginBtn.addEventListener("click", function () {
   const idInfo = document.getElementById("id").value;
   const pwdInfo = document.getElementById("pwd").value;
 
