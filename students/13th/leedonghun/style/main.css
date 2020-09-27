@@ -349,7 +349,7 @@ img.feed-option {
 .feed-main-pic {
   width: 150%;
   height: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .feed-actions {
