@@ -138,20 +138,13 @@ span.or-line {
   cursor: pointer;
 }
 
-.fb-logo {
+img.fb-logo {
   width: 17px;
   height: auto;
 }
 
-.fb-logo img {
-  width: 100%;
-}
-
-.fb-text {
+a.fb-text {
   padding-left: 8px;
-}
-
-.fb-text a {
   font-size: 86%;
   font-weight: 600;
   color: #385185;
