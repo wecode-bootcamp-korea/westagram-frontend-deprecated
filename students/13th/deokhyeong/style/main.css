@@ -98,13 +98,14 @@ body {
   width: 230px;
   height: 201px;
   z-index: 2;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .nav .navbar_center .member_box li {
   width: 215px;
   height: 67px;
   border-bottom: solid 1px #dbdbdb;
+  border-left: solid 1px #dbdbdb;
   display: flex;
   align-items: center;
 }

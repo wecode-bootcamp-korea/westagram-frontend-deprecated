@@ -96,3 +96,5 @@ searchInput.addEventListener("keyup", () => {
     memberBox.style.display = "block";
   }
 });
+
+// nav 프로필사진 클릭
