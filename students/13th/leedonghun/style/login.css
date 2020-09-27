@@ -221,9 +221,11 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1150px;
+  height: 60px;
   margin: 50px auto;
-  margin-bottom: 40px;
-  /* border: 1px solid black; */
+  margin-bottom: 18px;
+  padding: 0 12px;
+  border: 1px solid black;
 }
 
 ul.footer-menus {

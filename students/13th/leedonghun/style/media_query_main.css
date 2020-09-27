@@ -1,27 +1,27 @@
 @media only screen and (max-width: 1010px) {
-  #nav-items-container {
+  section.nav-items-container {
     padding: 0 20px;
   }
 
-  section#main {
+  section.main {
     width: 610px;
   }
   
-  section#feeds-section {
+  section.feeds-section {
     margin: 0 auto;
   }
 
-  section#side-section {
+  section.side-section {
     display: none;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  div#nav-search-box-container {
+  div.nav-search-box-container {
     right: 45%;
   }
 
-  section#main {
+  section.main {
     width: 100%;
     margin: 0 auto;
     top: 55px;
@@ -29,7 +29,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  #nav-search-box-container {
+  div.nav-search-box-container {
     display: none;
   }
 }
