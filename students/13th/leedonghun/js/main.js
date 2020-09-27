@@ -4,13 +4,9 @@ function add_comment() {
 
 function activatePostButton(e) {
   const postButton = document.querySelector('.post-button');
-  if (e.target.value.length > 0) {
-    postButton.style.opacity = 1;
-    postButton.style.cursor = 'pointer';
-  } else {
-    postButton.style.opacity = 0.3;
-    postButton.style.cursor = 'default';
-  }
+  const postInput = e.target.value.length > 0;
+  postButton.style.opacity = postInput ? 1 : 0.3;
+  postButton.style.cursor = postInput ? 'pointer' : 'default';
 }
 
 const postCommentBox = document.querySelector('.post-comment-box');
