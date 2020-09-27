@@ -14,19 +14,15 @@ body {
   width: 800px;
   margin: 80px auto;
   margin-bottom: 110px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .login-phones {
   width: 381px;
-  margin: 0 11px;
-  /* border: 1px solid blue; */
-}
-
-.phone-frame {
-  width: 100%;
   height: auto;
+  margin: 0 11px;
   position: relative;
+  /* border: 1px solid blue; */
 }
 
 .phone-screen {
