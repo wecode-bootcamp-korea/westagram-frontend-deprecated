@@ -222,8 +222,8 @@ footer {
   flex-wrap: wrap;
   max-width: 1150px;
   margin: 50px auto;
-  /* font-weight: 700; */
-  /* border: 1px solid black; */
+  margin-bottom: 40px;
+  border: 1px solid black;
 }
 
 ul.footer-menus {
@@ -231,14 +231,14 @@ ul.footer-menus {
   margin: 8px 0;
 }
 
-.footer-menus a {
-  text-decoration: none;
+li.footer-menu {
   margin-right: 15px;
 }
 
-li.footer-menu {
+.footer-menu a {
   font-size: 75%;
   font-weight: 700;
+  text-decoration: none;
   color: #00376b;
 }
 
@@ -250,6 +250,6 @@ li.language {
   font-size: 75%;
   font-weight: 700;
   color: #8e8e8e;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
