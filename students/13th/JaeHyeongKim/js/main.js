@@ -27,9 +27,9 @@ function addCommentToFeed(e) {
   commentList.appendChild(newCommentListDiv);
 }
 
-function activateCommentButton(obj) {
-  const addCommentButton = obj.parentNode.parentNode.children[1];
-  obj.value ? addCommentButton.classList.add('active') : addCommentButton.classList.remove('active');
+function activateCommentButton(commentInputText) {
+  const addCommentButton = commentInputText.parentNode.parentNode.children[1];
+  commentInputText.value ? addCommentButton.classList.add('active') : addCommentButton.classList.remove('active');
 }
 
 function addHeartColorWhenClicked() {
@@ -78,10 +78,10 @@ function allocateStoryProfileList() {
   let dataContainer = [];
   let storyElementContainer = document.querySelector('.story-element-container');
   PROFILE_DATA.forEach((data) => {
-    if (data["id"] >= 14) return;
+    if (data.id >= 14) return;
     let tempArr = [];
-    tempArr.push(data["imgUrl"]);
-    tempArr.push(data["userId"]);
+    tempArr.push(data.imgUrl);
+    tempArr.push(data.userId);
     dataContainer.push(tempArr);
   });
   dataContainer.forEach((data) => {
@@ -108,12 +108,14 @@ function liveSearchForProfile(e) {
   const searchDiv = e.target.parentNode;
   const searchIdResultContainer = document.querySelector('.search-id-result-container');
   searchIdResultContainer.innerHTML = "";
+
   if (!e.target.value) {
     e.target.classList.remove('active');
     searchDiv.style.setProperty('--search-left', '90px');
     searchIdResultContainer.className = "search-id-result-container";
     return;
   }
+
   searchDiv.style.setProperty('--search-left','10px');
   e.target.className="active";
   searchIdResultContainer.classList.add("active");
@@ -166,11 +168,14 @@ function clickThreedotsDisplaySubMenu() {
   const threedotsSubMenuBackground = document.querySelector('.threedots-sub-menu-background');
   const threedotsSubMenuElement = document.querySelector('.threedots-sub-menu');
   const threedotsSubMenuClose = document.querySelectorAll('.threedots-sub-menu-element')[6];
+
   threedotsSubMenuClose.addEventListener('click', () => {
     threedotsSubMenuBackground.classList.remove('active');
     threedotsSubMenuElement.classList.remove('active');
-  },{once: true});
+  });
+
   threedotsSubMenuBackground.className.includes('active') ? threedotsSubMenuBackground.classList.remove('active') : threedotsSubMenuBackground.classList.add('active');
+
   threedotsSubMenuElement.className.includes('active') ? threedotsSubMenuElement.classList.remove('active') : threedotsSubMenuElement.classList.add('active');
 }
 
