@@ -193,12 +193,9 @@ span.signup-text a {
   text-decoration: none;
 }
 
-.get-the-app {
+p.get-the-app {
   text-align: center;
   padding: 20px;
-}
-
-.get-the-app p {
   font-size: 85%;
   color: #3b3b3b;
 }
