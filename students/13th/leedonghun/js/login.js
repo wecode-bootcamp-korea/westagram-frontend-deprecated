@@ -1,6 +1,6 @@
 
 function activateLoginButton() {
-  const loginButton = document.getElementById('login-button');
+  const loginButton = document.querySelector('.login-button');
   if (idBox.value.length > 0 && pwBox.value.length > 5) {
     loginButton.style.backgroundColor = '#0095f6';
     loginButton.style.cursor = 'pointer';
@@ -11,8 +11,8 @@ function activateLoginButton() {
   }
 }
 
-const idBox = document.getElementById('username-box');
-const pwBox = document.getElementById('pw-box');
+const idBox = document.querySelector('.username-box');
+const pwBox = document.querySelector('.pw-box');
 
 idBox.addEventListener('input', activateLoginButton);
 pwBox.addEventListener('input', activateLoginButton);

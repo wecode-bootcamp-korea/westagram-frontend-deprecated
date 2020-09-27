@@ -11,7 +11,7 @@ body {
 
 
 /***** navigation bar *****/
-#nav-bar {
+.nav-bar {
   display: flex;
   justify-content: center;
   background-color: #ffffff;
@@ -22,7 +22,7 @@ body {
   z-index: 10;
 }
 
-#nav-items-container {
+.nav-items-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,11 +34,11 @@ body {
   /* border: 1px solid black; */
 }
 
-#nav-logo, #nav-search-box-container, #nav-menu {
+.nav-logo, .nav-search-box-container, .nav-menu {
   flex-shrink: 0;
 }
 
-#nav-logo {
+.nav-logo {
   width: 107px;
   align-self: flex-end;
   position: relative;
@@ -48,11 +48,11 @@ body {
   /* border: 1px solid black; */
 }
 
-.nav-logo {
+img.nav-logo {
   width: 100%;
 }
 
-#nav-search-box-container {
+.nav-search-box-container {
   width: 215px;
   height: 28px;
   position: absolute;
@@ -83,7 +83,7 @@ body {
   opacity: 0.5;
 }
 
-#nav-menu {
+.nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,7 +141,7 @@ img.avatar-icon {
 
 /***** main section - feeds & side sections *****/
 
-#main {
+.main {
   display: flex;
   justify-content: space-between;
   width: 950px;
@@ -154,7 +154,7 @@ img.avatar-icon {
 
 
 /***** feeds section *****/
-#feeds-section {
+.feeds-section {
   width: 612px;
   /* border: 1px solid black; */
 }
@@ -483,7 +483,7 @@ li.feed-comment-item {
 
 
 /***** side section *****/
-#side-section {
+.side-section {
   width: 315px;
   height: 600px;
   position: sticky;

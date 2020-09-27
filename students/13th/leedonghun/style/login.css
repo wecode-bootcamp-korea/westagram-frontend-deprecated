@@ -8,7 +8,7 @@ body {
   background-color: #fafafa;
 }
 
-#login-main {
+.login-main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -18,7 +18,7 @@ body {
   /* border: 1px solid black; */
 }
 
-#login-phones {
+.login-phones {
   width: 381px;
   margin: 0 11px;
   /* border: 1px solid blue; */
@@ -56,7 +56,7 @@ body {
   90% {background: url("../img/login/westagram_login_page_insta_capture_img_5.jpg");}
 }
 
-#login-section {
+.login-section {
   width: 350px;
   margin: 0 11px;
   /* border: 1px solid green; */
@@ -79,11 +79,11 @@ body {
   margin: 25px;
 }
 
-#username-box, #pw-box, #login-button {
+.username-box, .pw-box, .login-button {
   width: 77%;
 }
 
-#username-box, #pw-box {
+.username-box, .pw-box {
   text-indent: 0.4em;
   font-size: 75%;
   background-color: #fafafa;
@@ -96,11 +96,11 @@ body {
   cursor: text;
 }
 
-#username-box:focus, #pw-box:focus {
+.username-box:focus, .pw-box:focus {
   border: 0.5px solid #a8a8a8;
 }
 
-#login-button {
+.login-button {
   background-color: #b2dffc;
   border-radius: 3px;
   border-style: none;
@@ -108,7 +108,7 @@ body {
   margin: 12px;
 }
 
-#login-button {
+.login-button {
   text-decoration: none;
   color: #ffffff;
   font-size: 78%;
