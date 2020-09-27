@@ -38,11 +38,9 @@ function isIconSelected(e) {
 function changeIconColor(e) {
   if (!isIconSelected(e)) {
     e.target.setAttribute('src', iconImgSrcAfterSelect[e.target.className]);
-    console.log(iconImgSrcAfterSelect[e.target.className]);
     e.target.style.width = '120%';
   } else {
     e.target.setAttribute('src', iconImgSrcOriginal[e.target.className]);
-    console.log(iconImgSrcOriginal[e.target.className]);
     e.target.style.width = '100%';
   }
 }
