@@ -223,7 +223,7 @@ footer {
   max-width: 1150px;
   margin: 50px auto;
   margin-bottom: 40px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 ul.footer-menus {
