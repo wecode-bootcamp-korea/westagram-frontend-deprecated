@@ -12,5 +12,5 @@ function changeLoginBtnColor() {
     let inputIdValue = document.getElementById('id').value;
     let inputPwValue = document.getElementById('pw').value;
 
-    (inputIdValue.length && inputPwValue.length > 5) ? loginBtn.style.backgroundColor = '#0095f6' : loginBtn.style.backgroundColor = '#b2dffc'
+    (inputIdValue.includes('@') && inputPwValue.length > 5) ? loginBtn.style.backgroundColor = '#0095f6' : loginBtn.style.backgroundColor = '#b2dffc'
 }
