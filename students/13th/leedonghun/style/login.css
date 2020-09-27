@@ -3,7 +3,6 @@
 
 /* login.css styles */
 body {
-  margin: 0 20px;
   font-family: 'Arimo', sans-serif;
   background-color: #fafafa;
 }
@@ -15,7 +14,7 @@ body {
   width: 800px;
   margin: 80px auto;
   margin-bottom: 110px;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 .login-phones {
