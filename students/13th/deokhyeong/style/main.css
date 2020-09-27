@@ -91,6 +91,46 @@ body {
   background-position: -380px -96px;
 }
 
+.nav .navbar_center .member_box {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 230px;
+  height: 201px;
+  z-index: 2;
+  overflow: scroll;
+}
+
+.nav .navbar_center .member_box li {
+  width: 215px;
+  height: 67px;
+  border-bottom: solid 1px #dbdbdb;
+  display: flex;
+  align-items: center;
+}
+
+.nav .navbar_center .member_box li .profileBox_img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 16px;
+}
+.nav .navbar_center .member_box li .profileBox_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+}
+.nav .navbar_center .member_box li .profileBox_info .profileBoxMainId {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.nav .navbar_center .member_box li .profileBox_info .profileBoxSubId {
+  font-size: 13px;
+  color: #dbdbdb;
+  font-weight: 400;
+}
+
 .nav .navbar .navbar_right ul {
   display: flex;
   justify-content: space-between;

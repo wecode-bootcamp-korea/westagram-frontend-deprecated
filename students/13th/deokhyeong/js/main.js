@@ -52,3 +52,47 @@ document
       commentAdd();
     }
   });
+
+// Member Filtering
+
+const memberBox = document.querySelector(".member_box");
+
+class member {
+  constructor(id, subId) {
+    this.id = id;
+    this.subId = subId;
+  }
+
+  makeMemberProfile() {
+    const profileBox = document.createElement("li");
+    memberBox.appendChild(profileBox);
+    profileBox.innerHTML = `<img class="profileBox_img" src="./deokhyeong/img/프로필사진.jpg" alt="프사" /><div class="profileBox_info"><span class="profileBoxMainId">${this.id}</span><span class="profileBoxSubId">${this.subId}</span></div>`;
+    return this.id;
+  }
+}
+
+const user1 = new member("계란", "계란 튀김");
+const user2 = new member("문어", "문어 튀김");
+const user3 = new member("고추", "고추 튀김");
+const user4 = new member("오징어", "오징어 튀김");
+const user5 = new member("순대", "순대 튀김");
+
+const searchInput = document.getElementsByClassName("search")[0];
+
+searchInput.addEventListener("keyup", () => {
+  // while (memberBox.hasChildNodes()) {
+  //   memberBox.removeChild(memberBox.firstChild);
+  // }
+  memberBox.innerHTML = "";
+  let searchInputValue = searchInput.value;
+  let userBox = [user1, user2, user3, user4, user5];
+  let searchResult = userBox.filter(
+    (user) => user.id.includes(searchInputValue) === true
+  );
+  searchResult.map((el) => el.makeMemberProfile());
+  if (!memberBox.getElementsByTagName("li")[0]) {
+    memberBox.style.display = "none";
+  } else {
+    memberBox.style.display = "block";
+  }
+});
