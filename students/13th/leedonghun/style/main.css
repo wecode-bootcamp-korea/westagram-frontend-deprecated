@@ -170,16 +170,25 @@ img.avatar-icon {
   position: relative;
 }
 
-.story-element {
+li.story-element {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 68px;
   height: 100%;
-  margin-left: 17.5px;
+  margin-left: 17.7px;
   padding: 0 1px;
   /* border: 1px solid black; */
+}
+
+.story-element a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 .story-profile-pic-outer-glow {
@@ -202,7 +211,7 @@ img.avatar-icon {
   border-radius: 50%;
 }
 
-.story-profile-pic {
+div.story-profile-pic {
   width: 52px;
   height: 52px;
   overflow: hidden;
@@ -213,12 +222,12 @@ img.avatar-icon {
   position: relative;
 }
 
-.story-profile-pic .profile-pic {
-  width: 135%;
+img.story-profile-pic {
+  width: 200%;
   border-radius: 50%;
   position: absolute;
-  left: -16.9%;
-  top: -25%;
+  left: -48%;
+  top: -35%;
 }
 
 .story-profile-id {
