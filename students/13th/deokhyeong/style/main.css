@@ -323,6 +323,11 @@ body {
   right: 32px;
 }
 
+.feeds .feed .status .status_comments ul li button.del_Btn {
+  position: absolute;
+  right: 0px;
+}
+
 .feeds .feed .status .status_time {
   height: 19px;
   position: relative;
