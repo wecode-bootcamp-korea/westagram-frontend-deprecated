@@ -118,12 +118,12 @@ body {
   margin: 6px;
 }
 
-div.or {
+span.or {
   font-size: 80%;
   color: #909090;
 }
 
-div.or-line {
+span.or-line {
   border-top: 0.5px solid #dbdbdb;
   width: 32%;
   margin: 10px;
