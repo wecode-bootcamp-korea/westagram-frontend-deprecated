@@ -1,0 +1,75 @@
+:root {
+    --main-color : #bfdffd;
+    --feed-color : #ffffff;
+    --background-color : #FAFAFA;
+    --unclick-color : #BFBFBF;
+    --main-font-color : #43638B;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.container {
+    width: 348px;
+    height: 358px;
+    background-color: var(--feed-color);
+    border: 1px solid lightgray;
+    padding: 10px 0;
+}
+.flex_box {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+img {
+    width: 175px;
+}
+form {
+    display: block;
+    margin-top: 22px;
+}
+input {
+    box-sizing: border-box;
+    display: block;
+    width: 260px;
+    height: 36px;
+    margin-bottom: 6px;
+    padding-left: 8px;
+    color: var(--unclick-color);
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+    font-size: 12px;
+}
+
+button {
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: var(--main-color);
+    border: none;
+    color: var(--feed-color);
+    border-radius: 4px;
+    /* JS event 에서 추가하기 cursor: pointer; */
+}
+
+span {
+    font-size: 12px;
+    margin-top: 90px;
+    color: var(--main-font-color);
+    font-weight: bold;
+}
