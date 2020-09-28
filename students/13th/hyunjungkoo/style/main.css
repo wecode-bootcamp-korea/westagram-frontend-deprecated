@@ -25,16 +25,16 @@
 #nav .navFlexItems li a img {
   height: 100%;
 }
-#nav .wrapper {
+#nav .navWrapper {
   display: flex;
   width: 975px;
   padding: 5px 0;
   justify-content: space-between;
 }
-#nav .leftContent ul li {
+#nav .logoContent ul li {
   position: relative;
 }
-#nav .leftContent ul li:nth-child(1)::after {
+#nav .logoContent ul li:nth-child(1)::after {
   display: block;
   width: 1px;
   position: absolute;
@@ -44,33 +44,33 @@
   content: "";
   background-color: #333;
 }
-#nav .leftContent ul li:nth-child(2) {
+#nav .logoContent ul li:nth-child(2) {
   width: 130px;
 }
-#nav .rightContent {
+#nav .utilMenuContent {
   position: relative;
 }
-#nav .rightContent .navFlexItems {
+#nav .utilMenuContent .navFlexItems {
   padding: 0 10px;
 }
-#nav .rightContent .navFlexItems li {
+#nav .utilMenuContent .navFlexItems li {
   width: 45px;
   height: 45px;
   padding: 10px 0;
 }
-#nav .rightContent .navFlexItems li:last-child {
+#nav .utilMenuContent .navFlexItems li:last-child {
   width: 30px;
   height: 30px;
   margin-left: 5px;
 }
-#nav .rightContent .navFlexItems li .imgBox {
+#nav .utilMenuContent .navFlexItems li .imgBox {
   border-radius: 100px;
   overflow: hidden;
 }
-#nav .rightContent .navFlexItems li .imgBox img {
+#nav .utilMenuContent .navFlexItems li .imgBox img {
   width: 100%;
 }
-#nav .rightContent .profileBox {
+#nav .utilMenuContent .profileBox {
   width: 230px;
   position: absolute;
   top: 50px;
@@ -83,12 +83,12 @@
   transition: 0.25s ease;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.125);
 }
-#nav .rightContent .profileBox.clicked {
+#nav .utilMenuContent .profileBox.clicked {
   opacity: 1;
   visibility: visible;
 }
 
-#nav .rightContent .profileBox:after {
+#nav .utilMenuContent .profileBox:after {
   display: block;
   width: 10px;
   height: 10px;
@@ -101,33 +101,33 @@
   border-top: 1px solid #d9d9d9;
   border-left: 1px solid #d9d9d9;
 }
-#nav .rightContent .profileBox ul li {
+#nav .utilMenuContent .profileBox ul li {
   padding: 10px 15px;
   text-align: left;
 }
-#nav .rightContent .profileBox ul li a {
+#nav .utilMenuContent .profileBox ul li a {
   position: relative;
 }
-#nav .rightContent .profileBox ul li a svg {
+#nav .utilMenuContent .profileBox ul li a svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-#nav .rightContent .profileBox ul li span {
+#nav .utilMenuContent .profileBox ul li span {
   display: inline-block;
   font-size: 1.4rem;
   margin-left: 25px;
 }
-#nav .rightContent .profileBox ul li:last-child {
+#nav .utilMenuContent .profileBox ul li:last-child {
   border-top: 1px solid #d9d9d9;
 }
-#nav .rightContent .profileBox ul li:last-child span {
+#nav .utilMenuContent .profileBox ul li:last-child span {
   margin: 0;
 }
-#nav .middleContent {
+#nav .inputContent {
   position: relative;
 }
-#nav .middleContent .placeholder {
+#nav .inputContent .placeholder {
   position: absolute;
   color: #888;
   top: 50%;
@@ -135,7 +135,7 @@
   transform: translate(-65%, -40%);
 }
 
-#nav .middleContent input {
+#nav .inputContent input {
   width: 250px;
   padding: 5px;
   margin: 10px 0;
@@ -144,11 +144,11 @@
   outline: none;
   background-color: transparent;
 }
-#nav .middleContent .placeholder {
+#nav .inputContent .placeholder {
   z-index: -2;
 }
 
-#nav .middleContent .searchBox {
+#nav .inputContent .searchBox {
   position: absolute;
   top: 55px;
   left: 50%;
@@ -157,9 +157,9 @@
   border: 1px solid #d9d9d9;
   opacity: 0;
   visibility: hidden;
-  transition: 0.25s ease;
+  transition: 0.15s ease;
 }
-#nav .middleContent .searchBox:after {
+#nav .inputContent .searchBox:after {
   display: block;
   width: 15px;
   height: 15px;
@@ -172,7 +172,7 @@
   border-left: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
 }
-#nav .middleContent .searchBox .searchList li {
+#nav .inputContent .searchBox .searchList li {
   display: flex;
   width: 100%;
   width: 260px;
@@ -180,29 +180,29 @@
   border-bottom: 1px solid #d9d9d9;
   align-items: center;
 }
-#nav .middleContent .searchBox .searchList li:last-child {
+#nav .inputContent .searchBox .searchList li:last-child {
   border-bottom: none;
 }
-#nav .middleContent .searchBox .searchList li:hover {
+#nav .inputContent .searchBox .searchList li:hover {
   background-color: #f8f8f8;
   cursor: pointer;
 }
-#nav .middleContent .searchBox .searchList li .textBox {
+#nav .inputContent .searchBox .searchList li .textBox {
   display: flex;
   font-size: 1.4rem;
   flex-direction: column;
   text-align: left;
   padding-left: 15px;
 }
-#nav .middleContent .searchBox .searchList li .textBox .id {
+#nav .inputContent .searchBox .searchList li .textBox .id {
   font-weight: 500;
   color: #000;
   margin-bottom: 3px;
 }
-#nav .middleContent .searchBox .searchList li .textBox .name {
+#nav .inputContent .searchBox .searchList li .textBox .name {
   color: #666;
 }
-#nav .middleContent .searchBox .imgBox {
+#nav .inputContent .searchBox .imgBox {
   width: 40px;
   height: 40px;
   border-radius: 100px;

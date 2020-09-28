@@ -1,21 +1,21 @@
 const button = document.querySelector(".loginBtn");
 button.disabled = true;
 
-let inputs = document.querySelectorAll(".inputBox input");
+const inputs = document.querySelectorAll(".inputBox input");
 inputs.forEach((input) => {
   input.addEventListener("keyup", () => {
-    let inputIdValue = document.querySelector(".inputBox .loginId").value;
-    let inputPwValue = document.querySelector(".inputBox .loginPw").value;
+    const inputIdValue = document.querySelector(".inputBox .loginId").value;
+    const inputPwValue = document.querySelector(".inputBox .loginPw").value;
+    const isValid = inputIdValue.includes("@") && inputPwValue.length >= 5;
 
-    inputIdValue.includes("@") && inputPwValue.length >= 5
-      ? (button.disabled = false)
-      : (button.disabled = true);
-    if (button.disabled) {
-      button.disabled = true;
+    button.disabled = !isValid;
+
+    if (!isValid) {
+      isValid = true;
       button.style.cursor = "initial";
       button.style.opacity = "40%";
     }
-    if (!button.disabled) {
+    if (isValid) {
       button.style.cursor = "pointer";
       button.style.opacity = "100%";
       button.addEventListener("click", () => {
