@@ -11,3 +11,6 @@ function booleanCheck() {
 
 pwInput.addEventListener('input', booleanCheck);
 idInput.addEventListener('input', booleanCheck);
+
+
+
