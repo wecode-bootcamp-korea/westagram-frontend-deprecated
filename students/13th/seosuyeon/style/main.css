@@ -278,9 +278,21 @@ main {
     font-weight: 600;
 }
 
-.far fa-heart {
+.comments_likebtn:hover i {
+    color: red;
+}
+
+.far, .fas{
     width: 12px;
     height: 12px;
+}
+
+.far {
+    color: #dbdbdb;
+}
+
+.fas {
+    color:red;
 }
 
 .comments_time {
@@ -476,4 +488,10 @@ aside header {
 
 .infos a, .info_year {
     color: #dbdbdb;
+}
+
+@media only screen and (max-width:960px) {
+    .right_wrap {
+        display: none;
+    }
 }
