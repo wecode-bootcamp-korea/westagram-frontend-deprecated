@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+i {
+    font-size: 27px;
+}
+
+#instagramIcon {
+    font-size: 32px;
+}
+
+.imgInstagram {
+    width: 130px; 
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 5px 15px;
+    padding-left: 10px;  
+}
+
+.navWrapLeft, .navWrapMiddle, .navWrapRight {
+    display: flex;
+    align-items: center;
+}
+
+.navWrapRight {
+    width: 230px;
+    justify-content: space-between;
+}
+
+#search {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    border: 1px, solid, rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: rgba(var(--b3f,250,250,250),1);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.feeds {
+    width: 614px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.feedHeader {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#profileImg {
+    width: 42px;
+    height: 42px;
+    border-radius: 30px;
+}
+
+.articlTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 540px;
+    margin-left: 7px;
+}
+
+h5 {
+    margin: 0px;
+}
+
+.feedsImg{
+    width: 613px;
+}
+
+.feedsTools {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 16px;
+}
+
+.toolsWrapRight {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolsImg {
+    width: 30px;
+    height: 30px;
+}
+
+.commentsImg {
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+footer {
+    padding: 14px 17px;
+}
+
+.likeComment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comments {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.commentPlus {
+    width: 520px;
+    height: 40px;
+    margin: 13px 4px -4px 4px;
+    border: 0px;
+    font-size: 15px;
+}
+
+button {
+    height: 40px;
+    background-color: white;
+    border: 0px;
+    font-weight: bold;
+    color: #b2dffc;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feedsRight {
+    width: 290px;
+    margin-left: 30px;
+    background-color: yellow;
+}

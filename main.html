@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>westagram_main</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/main.css" rel="stylesheet" type="text/css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navWrapLeft">
+        <i class="fab fa-instagram" id="instagramIcon"></i>
+        <img class="imgInstagram" src="img/logo_text.png">
+      </div>
+      <div class="navWrapMiddle">
+        <input id="search" type="text" placeholder="&#xF002; 검색">
+      </div>
+      <div class="navWrapRight">
+          <i class="far fa-compass"></i>
+          <i class="far fa-heart"></i>
+          <i class="far fa-user"></i>
+      </div>
+    </nav>
+    <main>
+      <section class="feeds">
+        <article>
+          <header class="feedHeader">
+            <img id="profileImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/50481796_2110370102355462_6471934636061622272_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=89QcK3vxHDEAX8iDIHd&oh=e2430f8bc6af1b1f188c35cfa09b597c&oe=5F984C21">
+            <div class="articlTitle">
+              <div>
+                <h5>수현</h5>
+                <span>삼청동</span>
+              </div>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </header>
+          <div>
+            <img class="feedsImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/c0.180.1440.1440a/s320x320/73043095_2492709327479889_2292766166647892885_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=CIBo6yspz-4AX_-hwpZ&_nc_tp=16&oh=a9cc3d57910e88ad1045706b10df8951&oe=5F9C32A9">
+          </div>
+          <div class="feedsTools">
+            <div class="toolsWrapRight">
+              <img class="toolsImg" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+              <img class="toolsImg" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png">
+              <i class="far fa-paper-plane"></i>
+            </div>
+            <div class="toolsWrapLeft">
+              <i class="far fa-bookmark"></i>
+            </div>
+          </div>
+          <footer>
+            <div class="likeComment">
+              <img class="commentsImg" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/91781219_698263384249338_2316312945480433664_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=TYu76dmBCpsAX81Ditv&oh=62805cbeb05157580db3dbb91f64a2bb&oe=5F9CB9EC">
+              <span>eunyeongkimm님 외 798명이 좋아합니다.</span>
+            </div>
+            <div class="comments">여기는 댓글 란입니다.</div>
+            <div>
+              <input class="commentPlus" type="text" placeholder="댓글 달기...">
+              <button type="button">게시</button>
+            </div>
+          </footer>
+        </article>
+      </section>
+      <section class="feedsRight">
+
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
