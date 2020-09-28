@@ -475,6 +475,9 @@ li.feed-comment-item {
 }
 
 .post-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 10%;
   font-size: 90%;
   font-weight: 700;
