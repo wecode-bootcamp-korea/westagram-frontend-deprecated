@@ -1,65 +1,79 @@
-body{
+*{
+    box-sizing: border-box;
     margin: 0;
     background-color: #FAFAFA;
-}
-
-section{
-    width: 1519.2px;
 }
 
 /* nav 맨위 */
 nav{
     position: fixed;
     top:0;
-    width: 1519.2px;
+    width: 100%;
     background-color: white;
     border-bottom: 1px solid #FAFAFA;
     
 }
 
 .nav-container {
-    margin: 0 289px;
+    margin: 0 auto;
     width: 975px; 
-    height: 54px; 
+    height: 54px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+    border: 1px solid red;
 }
 
 .nav-left img{
     width: 103px;
     height: 29px;
-    padding-top: 12px;
+    position: relative;
+    top: 5px;
+}
+
+.nav-center{
+    position: relative;
 }
 
 .nav-center input {
-    width: 200px;
-    height: 20px;
+    width: 230px;
+    height: 28px;
     background-color: #FAFAFA;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
 }
 
 input::placeholder{
     text-align: center;
 }
 
+input:focus{
+    outline: none;
+}
+
+.nav-right{
+    width: 230px;
+    border: 1px solid red;
+}
+
 .nav-right img {
     height: 24px;
     width: 24px;
-    padding-left: 7px
+    margin-left: 14px;
+}
+
+.nav-right img:nth-child(5){
+    border-radius: 50%;
+    position: relative;
 }
 
 /* main */
 main {
     background-color: #FAFAFA;
-    width: 1519.2px;
-    margin: 0 289px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .main-container {
-    
     padding-top: 5%;
     display: flex;
 }
@@ -135,13 +149,11 @@ article {
 /* main오른쪽 */
 .main-right{
     width: 355px;
-    
 }
 
 .main-right-container{
     position: sticky;
     top: 105px;
-    
 }
 
 .main-right-myProfile img{
@@ -215,7 +227,6 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 @media screen and (max-width: 1400px) {
@@ -225,12 +236,67 @@ article {
   }
 
   .search-container{
+    position: relative;
+  }
+
+  .search-container ul{
       border: 2px solid black;
       height: 200px;
       width: 240px;
-      position: fixed;
-      top: 50px;
-      left: 44%;
+      position: absolute;
       display: none;
       z-index: 100;
+      background-color: white;
+      overflow: scroll;
+      padding: 0;
+  }
+
+  .search-container ul li{
+      padding: 5px;
+      list-style: none;
+      border-bottom: 1px solid gray;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+  }
+
+  .search-container ul img{
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      margin: 4px;
+  }
+
+  .menu-box {
+    border: 2px solid lightgray;
+    height: 200px;
+    width: 240px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    z-index: 100;
+  }
+
+  .menu-box ul {
+      padding: 10px;
+      list-style: none;
+  }
+
+  .menu-box ul li {
+      padding: 5px;
+  }
+
+  .menu-box ul li:nth-child(4){
+      border-top: 1px solid;
+  }
+
+  .div-p ul{
+      padding-left: 12px;
+  }
+
+  .nav-right>div{
+      margin: 100px;
+      position: relative;
   }
