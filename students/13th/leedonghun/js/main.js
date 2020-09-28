@@ -2,8 +2,9 @@ function add_comment() {
   const feedComments = document.querySelector('ul.feed-comments');
 }
 
+const postButton = document.querySelector('.post-button');
+
 function activatePostButton(e) {
-  const postButton = document.querySelector('.post-button');
   const postInput = e.target.value.length > 0;
   postButton.style.opacity = postInput ? 1 : 0.3;
   postButton.style.cursor = postInput ? 'pointer' : 'default';
@@ -57,3 +58,4 @@ if (feedCommentHeartIcon.length > 0) {
 if (feedActionTagIcon.length > 0) {
   feedActionTagIcon.forEach(el => el.addEventListener('click', changeIconColor));
 }
+
