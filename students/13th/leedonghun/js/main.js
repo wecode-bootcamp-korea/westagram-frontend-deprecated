@@ -59,3 +59,44 @@ if (feedActionTagIcon.length > 0) {
   feedActionTagIcon.forEach(el => el.addEventListener('click', changeIconColor));
 }
 
+function postComment() {
+  console.log('function started ok')
+  if (postCommentBox.value.length > 0) {
+    const feedComments = document.querySelector('.feed-comments');
+    const newCommentPoster = document.createElement('a')
+    newCommentPoster.setAttribute('href','');
+    newCommentPoster.setAttribute('class', 'feed-profile-id');
+    const currentAccountUser = document.querySelector('p.account-profile-id').innerText;
+    newCommentPoster.innerHTML = currentAccountUser;
+    const newCommentContent = document.createElement('p');
+    newCommentContent.setAttribute('class', 'feed-comment');
+    const commentContent = postCommentBox.value;
+    newCommentContent.innerHTML = commentContent;
+    const newCommentHeartIcon = document.createElement('img');
+    newCommentHeartIcon.setAttribute('src', 'img/main/nav_menu_heart_icon.png');
+    newCommentHeartIcon.setAttribute('alt', 'feed comment like heart icon');
+    newCommentHeartIcon.setAttribute('class', 'feed-comment-heart');
+    newCommentHeartIcon.addEventListener('click', changeIconColor);
+    const newCommentHeartIconDiv = document.createElement('div');
+    newCommentHeartIconDiv.setAttribute('class', 'feed-comment-like');
+    newCommentHeartIconDiv.appendChild(newCommentHeartIcon);
+    const newFeedComment = document.createElement('li');
+    newFeedComment.setAttribute('class', 'feed-comment-item');
+    newFeedComment.appendChild(newCommentPoster);
+    newFeedComment.appendChild(newCommentContent);
+    newFeedComment.appendChild(newCommentHeartIconDiv);
+    feedComments.appendChild(newFeedComment);
+    postCommentBox.value = '';
+    postButton.style.opacity = 0.3;
+    postButton.style.cursor = 'default';
+    postButton.disabled = "true";
+  }
+}
+
+postCommentBox.addEventListener('keyup', function(e) {
+  if(e.keyCode === 13) {
+    postComment();
+  }
+});
+
+postButton.addEventListener('click', postComment);
