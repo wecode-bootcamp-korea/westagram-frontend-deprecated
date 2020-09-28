@@ -68,9 +68,11 @@ main {
     display: flex;
 }
 .feeds{
-     width: 612px;
-     margin-right: 12px;
+    width: 612px;
+    margin-right: 12px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    flex-grow: 5;
+    height: 300vh;
 }
 .feeds article {
     display: flex;
@@ -124,6 +126,11 @@ main {
 }
 .main-right {
     width: 280px;
+    flex-grow: 1;
+}
+.fixedPart {
+    position: fixed;
+    height: 100vh;
 }
 .profileImage-wecode {
     width: 35px;
