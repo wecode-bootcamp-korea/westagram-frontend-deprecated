@@ -1,0 +1,189 @@
+body {
+    background-color: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.phoneImage {
+    background-image: url("https://instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png");
+    width: 450px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+}
+.slidingImages {
+    position: absolute;
+    left: 149px;
+    top: 91px;
+}
+#loginMain {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.instaLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px 10px;
+    padding: 10px;
+}
+.loginForms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userID {
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
+    width: 270px;
+    margin: 10px 0 7px 0;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+.userPW {
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
+    width: 270px;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+#sumbitBtn {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px;
+    margin: 13px 0 7px 0;
+    width: 270px;
+    background-color: #C1DFFC;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    border-radius: 3px;
+}
+#sumbitBtn:disabled {
+    background-color: #B9DFFC;
+}
+.loginSeperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+.seperateLine {
+    border: 1px solid #8e8e8e;
+    opacity: 0.2;
+    width: 105px;
+}
+.textOr {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #8e8e8e;
+    padding: 0 20px;
+}
+.loginAccount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginAccount button {
+    background:none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.fbLogo {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.fbLogin {
+    font-weight: 600;
+    color: #385185;
+}
+.forgotPW {
+    font-size: 12px;
+    line-height: 14px;
+    color: #00376b;
+    margin-bottom: 20px;
+}
+#signUp {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.noAccount {
+    font-weight: 300;
+    color: #262626;
+}
+.newAccount {
+    font-weight: 600;
+    color: #0095f6;
+}
+.downloadApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textDownloadApp {
+    color: #262626;
+    padding: 20px 0 20px 0;
+}
+.apple-badge {
+    width: 136px;
+    height: 40px;
+}
+.google-badge {
+    width: 134px;
+    height: 40px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 4% 5%;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+.navLink {
+    padding-right: 10px;
+}
+.navLink a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #00376b;
+}
+.copyright {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8e8e8e
+}
