@@ -7,6 +7,7 @@ function activatePostButton(e) {
   const postInput = e.target.value.length > 0;
   postButton.style.opacity = postInput ? 1 : 0.3;
   postButton.style.cursor = postInput ? 'pointer' : 'default';
+  postButton.disabled = postInput ? "false" : "true";
 }
 
 const postCommentBox = document.querySelector('.post-comment-box');
