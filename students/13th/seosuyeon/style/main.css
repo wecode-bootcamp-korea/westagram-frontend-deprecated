@@ -97,10 +97,11 @@ button {
 
 
 /* Icons */
-.navbar_icons {
+.nav_icons {
     width: 222px;
     height: 22px;
-    text-align: end;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .explore_icon, .follow_icon, .account_icon {
@@ -493,5 +494,9 @@ aside header {
 @media only screen and (max-width:960px) {
     .right_wrap {
         display: none;
+    }
+
+    .navbar_inside {
+        width: auto;
     }
 }
