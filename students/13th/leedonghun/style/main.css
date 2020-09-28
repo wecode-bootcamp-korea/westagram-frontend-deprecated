@@ -439,6 +439,7 @@ li.feed-comment-item {
   height: 20px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .feed-comment-heart {
