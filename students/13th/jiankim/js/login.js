@@ -1,30 +1,9 @@
-const idInput = document.getElementsByClassName('userID');
-const pwInput = document.getElementsByClassName('userPW');
-const loginBtn = document.getElementById('submitBtn');
-const linkToMain = document.getElementsByTagName('a')[0];
+const idInfo = document.getElementById('userID');
+const pwInfo = document.getElementById('userPW');
 
-idInput.addEventListener('keyup', function(event) {
-    if (idInput.value && pwInput.value) {
-        loginBtn.disabled = false;
-        linkToMain.href = "file:///Users/JIAN/Downloads/westagram%20(1)%202/main.html";
-    } else {
-        loginBtn.disabled = true;
-        linkToMain.href = "#none"
-    }
-})
-
-pwInput.addEventListener('keyup', function(event) {
-    if (idInput.value && pwInput.value) {
-        loginBtn.disabled = false;
-        linkToMain.href = "file:///Users/JIAN/Downloads/westagram%20(1)%202/main.html";
-    } else {
-        loginBtn.disabled = true;
-        linkToMain.href = "#none";
-    }
-})
-
-document.addEventListener ('keyup', function(event) {
-    if (event.keyCode === 13) {
-        document.getElementById("submitBtn").click();
+document.addEventListener('keyup', function() {
+    if (idInfo.value.length >= 1 && pwInfo.value.length >= 1) {
+        let color = document.getElementById('loginBtn');
+        color.style.backgroundColor = "#0095F6";
     }
 })
