@@ -70,25 +70,21 @@ main {
 .feeds{
     width: 612px;
     margin-right: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     flex-grow: 5;
-    height: 300vh;
 }
 .feeds article {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 55px;
 }
 .feedAccount {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px;
-}
-.aa {
-    display: flex;
-    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 7px 10px;
 }
 .feedAccount img:nth-child(1) {
     width: 35px;
@@ -124,6 +120,39 @@ main {
     width: 13px;
     height: 13px;
 }
+.comments {
+    margin: 0 10px 5px 10px;
+}
+.comments li {
+    display: flex;
+    justify-content: space-between;
+}
+.comments p {
+    padding-bottom: 3px;
+}
+.commentsSpan {
+    font-weight: 400;
+    font-size: 13px;
+}
+.commentsContainer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#commentsInput {
+    background-color: #ffffff;
+    opacity: 0.8;
+    font-weight: 400;
+    border: none;
+}
+/* input:focus border:none */
+#commentsPost {
+    border: none;
+    background-color: #ffffff;
+    color: #0095f6;
+    opacity: 0.3;
+}
 .main-right {
     width: 280px;
     flex-grow: 1;
@@ -152,6 +181,7 @@ main {
 .storyAll {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 5px;
 }
 .storyAll p:nth-child(1) {
     color: #8e8e8e;
@@ -163,13 +193,12 @@ main {
 .profileInfo {
     display: flex;
     align-items: center;
+    padding-bottom: 3px;
+
 }
 .profileInfo img {
-    margin: 6px 12px 6px 6px;
-}
-.profileInfo>p {
-    color: #0095f6;
-    font-size: 12px;
+
+    margin: 6px 12px 4px 4px;
 }
 .accountInfo p:nth-child(2) {
     color: #8e8e8e;
@@ -179,20 +208,31 @@ main {
 .wecode {
     margin-bottom: 10px;
 }
-.recommendation {
+.suggestion {
     background-color: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 12px;
 }
-.recommendationAll {
+.suggestionAll {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 3px;
 }
-.recommendationAll p:nth-child(1) {
+.suggestedAccount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.suggestedAccount>p {
+    color: #0095f6;
+    font-size: 12px;
+}
+.suggestionAll p:nth-child(1) {
     color: #8e8e8e;
     font-weight: 400;
 }
-.recommendationAll p:nth-child(2) {
+.suggestionAll p:nth-child(2) {
     font-size: 12px;
 }
 .moreInfo {
