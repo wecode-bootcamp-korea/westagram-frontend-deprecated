@@ -51,9 +51,7 @@ function handleLoginInput(event) {
   isUserInfoValid(loginForm.checkValidity());
 }
 
-function init() {
+(function init() {
   setInterval(changeImg, 2000);
   loginForm.addEventListener("input", handleLoginInput);
-}
-
-init();
+})();
