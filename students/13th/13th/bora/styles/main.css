@@ -16,7 +16,6 @@ input {
     background-color: white;
     border: 1.8px solid #DBDBDB;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding: 12px 0;
@@ -24,11 +23,9 @@ input {
 
 .nav-content {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 
 .logo-img {
   width: 20px;
@@ -47,10 +44,12 @@ input {
     width: 103px;
     height: 29px;
 }
+
 .search{
     width: 215px;
     height: 28px;
 }
+
 .search-container {
     display: flex;
     justify-content: center;
@@ -75,7 +74,6 @@ input {
     text-align: center;
     align-self: center;
     color: #8E8E8E;
-
 }
 
 .nav-right-icon {
@@ -85,13 +83,13 @@ input {
     opacity: 0.9;
 }
 
-
 .main {
     margin-top: 100px;
     display: flex;
     justify-content: center;
     font-size: 14px;
     margin-bottom: 100px;
+    height: 100%;
 }
 
 .feeds {
@@ -103,12 +101,6 @@ input {
     width: 614px;
     margin-right: 32px;
     background-color: white;
-
-}
-
-.article {
-    background-color: white;
-
 }
 
 .feed-top {
@@ -155,8 +147,7 @@ input {
 }
 
 .feed-img {
-    width: 100%;
-        
+    width: 100%;       
 }
 
 .feed-icons-container {
@@ -190,7 +181,6 @@ input {
     border: 0.4px solid #DBDBDB;
     overflow: hidden;
     margin: 0 4px 0px 1.5px;
-    
 }
 
 .like-img {
@@ -206,7 +196,6 @@ input {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    margin: 0;
 }
 
 .feed-uploaderId {
@@ -238,17 +227,14 @@ input {
 
 .comments-list {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
 }
-
 
 .comment-like{
     width: 12px;
     height: 12px;
     margin-left: auto;
-
 }
 
 .comment {
@@ -379,13 +365,10 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-right: 10px; */
 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    
 }
-
 
 .story-txt {
     margin-left: 10px;
@@ -452,7 +435,7 @@ input {
 }
 
 .recommend-content-container {
-    height: 160px;
+    height: 160px; 
     overflow: scroll;
 }
 
@@ -488,7 +471,7 @@ input {
 }
 
 footer {    
-    margin: 22px 0;
+    margin: 17px 0;
     padding: 0 7px;
     color: #C7C7C7;
     font-size: 12.4px;
@@ -504,4 +487,3 @@ footer {
     height: 100%;
     width: 7px;
   }
-

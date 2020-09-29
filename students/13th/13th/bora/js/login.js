@@ -1,23 +1,16 @@
 const idInput = document.getElementById("id-input");
 const pwInput = document.getElementById("pw-input");
-const btn = document.getElementById("login-btn");
-
+const btn = document.getElementsByClassName("login-submit")[0];
 
 function btnActive() {
     const idVal = idInput.value;
     const pwVal = pwInput.value;
 
-    (idVal.length >= 1 && pwVal.length) ? 
-    (btn.style.backgroundColor = "#0096F6") : (btn.style.backgroundColor = "#C0DFFD") 
+    btn.style.backgroundColor = idVal.length && pwVal.length >= 1 ? "#0096F6" : "#C0DFFD";
 };
 
+const input = document.querySelectorAll("input");
 
-idInput.addEventListener('keyup', function() {
-    btnActive();
+input.forEach(function(target) {
+    target.addEventListener('keyup', btnActive)
 });
-pwInput.addEventListener('keyup', function() {
-    btnActive();
-});
-
-
-   
