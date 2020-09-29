@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>westagramclone_main</title>
-    <link rel="stylesheet" href="" />
     <link href="styles\common.css" rel="stylesheet" type="text/css" />
     <link href="styles\main.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/5dd75722d0.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/main.js"></script>
   </head>
   <body>
@@ -20,14 +23,21 @@
           />
           <img src="img\logo_text.png" alt="instagram_logo" />
         </div>
-        <input class="serch" type="text" placeholder="검색" />
+        <input
+          class="search"
+          type="text"
+          placeholder="검색"
+          class="serach_location"
+        />
+        <ul class="search_box"></ul>
         <div class="icons_container">
           <ul class="icons">
-            <il
-              ><img
+            <il>
+              <img
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
                 alt="search"
-            /></il>
+              />
+            </il>
             <il
               ><img
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
@@ -37,7 +47,26 @@
               ><img
                 src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
                 alt="my_page"
-            /></il>
+                class="profile_icon"
+              />
+              <div class="tool_container">
+                <div class="tool">
+                  <i class="far fa-user-circle tool_icon"></i>
+                  <p class="tool_text">프로필</p>
+                </div>
+                <div class="tool">
+                  <i class="far fa-bookmark tool_icon"></i>
+                  <p class="tool_text">저장됨</p>
+                </div>
+                <div class="tool">
+                  <i class="fas fa-cog tool_icon"></i>
+                  <p class="tool_text">설정</p>
+                </div>
+                <div class="tool">
+                  <p class="tool_text tool_icon">로그아웃</p>
+                </div>
+              </div></il
+            >
           </ul>
         </div>
       </nav>
@@ -96,30 +125,39 @@
             <div class="reply_container">
               <div class="reply_table">
                 <p class="liked_number">좋아요 6,727개</p>
-                <div class="reply_contents">
+                <div class="reply_contents_container">
                   <ul class="reply_contents">
                     <li class="reply_content">
-                      <p class="user_id">kakaofriends_taiwan</p>
-                      <p class="reply_user_comment">너무 귀엽다</p>
+                      <div class="content_information">
+                        <p class="user_id">kakaofriends_taiwan</p>
+                        <p class="reply_user_comment">너무 귀엽다</p>
+                      </div>
+                      <div class="button_container"></div>
                     </li>
                     <li class="reply_content">
-                      <p class="user_id">ryan.seoul.icon</p>
-                      <p class="reply_user_comment">할 말이 없다</p>
+                      <div class="content_information">
+                        <p class="user_id">ryan.seoul.icon</p>
+                        <p class="reply_user_comment">할 말이 없다</p>
+                      </div>
+                      <div class="button_container"></div>
                     </li>
                     <li class="reply_content">
-                      <p class="user_id">niniz_official</p>
-                      <p class="reply_user_comment">🎃</p>
+                      <div class="content_information">
+                        <p class="user_id">niniz_official</p>
+                        <p class="reply_user_comment">🎃</p>
+                      </div>
+                      <div class="button_container"></div>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="reply_input">
+              <div class="reply_input_container">
                 <input
-                  class="reply_input"
+                  class="reply_input_text"
                   type="text"
                   placeholder="댓글 달기"
                 />
-                <button class="reply_input">게시</button>
+                <button class="reply_input_button">게시</button>
               </div>
             </div>
           </article>

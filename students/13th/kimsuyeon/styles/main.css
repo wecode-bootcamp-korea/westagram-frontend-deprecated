@@ -3,10 +3,11 @@
 }
 
 header {
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  width: 100%;
   height: 56px;
   border-bottom: 2px solid #ededed;
+  background-color: #ffffff;
 }
 
 nav.nav_bar {
@@ -14,9 +15,9 @@ nav.nav_bar {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  width: 975px;
+  max-width: 975px;
   height: 54px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -28,7 +29,12 @@ nav.nav_bar {
 .logo img {
   height: 29px;
 }
-input.serch {
+
+li.search_location {
+  position: relative;
+}
+
+input.search {
   width: 215px;
   height: 25px;
   background-color: #fafafa;
@@ -37,12 +43,81 @@ input.serch {
   font-size: 14px;
   color: #ededed;
 }
-input.serch:focus {
+
+input.search:focus {
   outline-color: #a5a4a4d5;
   border-radius: 2px;
+  color: #2c2829;
 }
+
+input.search:focus::placeholder {
+  text-align: left;
+}
+
 input::placeholder {
   text-align: center;
+}
+
+ul.search_box {
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  transform: translate(-55%, 0);
+  width: 241px;
+  max-height: 362px;
+  border: 1px solid #bbbbbbd5;
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  visibility: hidden;
+}
+
+div.search_user_container {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 14px;
+  border-bottom: solid 1px #fafafa;
+  background-color: #ffffff;
+}
+
+div.search_user_container:hover {
+  background-color: #fafafa;
+}
+
+img.search_user_image {
+  width: 32px;
+  height: 32px;
+  border-radius: 60%;
+}
+
+div.search_user_info {
+  padding-left: 5px;
+}
+
+p.search_user_id {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p.search_user_description {
+  padding-top: 4px;
+  font-size: 13.5px;
+  color: #b8b7b7;
+}
+
+li.no_data_box {
+  height: 50px;
+  color: #b8b7b7;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #bbbbbbd5;
+  background-color: #ffffff;
+  visibility: hidden;
 }
 
 .icons img {
@@ -50,14 +125,51 @@ input::placeholder {
   margin: 0 15px;
 }
 
+img.profile_icon {
+  cursor: grab;
+}
+
+div.tool_container {
+  position: absolute;
+  width: 230px;
+  margin-top: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  z-index: 1;
+  visibility: hidden;
+}
+
+div.tool {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+div.tool:nth-child(3) {
+  margin-bottom: 4px;
+}
+
+div.tool:last-child {
+  margin-bottom: 4px;
+  border-top: 1px solid #ededed;
+}
+
+i.tool_icon::before {
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
+}
+
 main {
   display: flex;
   justify-content: center;
+  padding-top: 40px;
   background-color: #fafafa;
 }
 
 section {
-  width: 614px;
+  max-width: 614px;
   margin-top: 40px;
   margin-bottom: 60px;
   border: 1px solid #bbbbbbd5;
@@ -80,8 +192,9 @@ img.user_image {
 }
 
 p.user_id {
-  font-size: 14px;
-  font-weight: 550;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 img.feed_img {
@@ -133,18 +246,39 @@ p.liked_number {
 
 li.reply_content {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 4px;
+}
+
+div.content_information {
+  display: flex;
 }
 
 p.reply_user_comment {
   margin-left: 5px;
   font-size: 14px;
+  line-height: 24px;
 }
 
-div.reply_input {
+div.button_container {
+  display: flex;
+}
+
+i.fas.fa-times {
+  padding-left: 5px;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  line-height: 0;
+}
+
+div.reply_input_container {
   display: flex;
   justify-content: space-between;
   width: auto;
@@ -152,18 +286,19 @@ div.reply_input {
   padding: 10px 20px;
 }
 
-input.reply_input {
+input.reply_input_text {
   all: unset;
 }
 
-input.reply_input::placeholder {
+input.reply_input_text::placeholder {
   text-align: left;
 }
 
-button.reply_input {
+button.reply_input_button {
   all: unset;
   color: #b2dffc;
   font-size: 15px;
+  cursor: default;
 }
 
 aside {
@@ -194,7 +329,7 @@ div.aside_user_info {
 }
 
 p.aside_user_id {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
 }
 
@@ -259,4 +394,20 @@ footer {
   font-weight: 500;
   color: #b8b7b7;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  input.search {
+    display: none;
+  }
+
+  img.feed_img {
+    width: 100%;
+  }
 }

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  line-height: 0;
+}
+
+ul.search_box {
+  width: 241px;
+  max-height: 362px;
+  border: 1px solid #bbbbbbd5;
+  border-radius: 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+div.search_user_container {
+  height: 67px;
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-bottom: 1px solid #bbbbbbd5;
+}
+
+div.search_user_container:hover {
+  background-color: #fafafa;
+}
+
+img.search_user_image {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 60%;
+}
+
+p.search_user_id {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p.search_user_description {
+  padding-top: 4px;
+  font-size: 13.5px;
+  color: #b8b7b7;
+}
