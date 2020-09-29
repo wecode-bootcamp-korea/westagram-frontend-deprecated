@@ -41,23 +41,19 @@
     margin: 15px auto 30px;
 }
 
-#login-form p{
-    position: relative;
-}
-
-#login-form p + p{
-    margin-top: 7px;
-}
-
-#login-form p > input{
+#login-form input{
     width: 100%;
     height: 40px;
     padding: 5px 7px;
+    background: #fafafa;
     border: 1px solid #ddd;
     border-radius: 3px;
-    background: #fafafa;
     font-size: 14px;
     transition: 0.35s ease;
+}
+
+#login-form input + input {
+    margin-top: 10px;
 }
 
 #login-form .pry-btn{
@@ -92,8 +88,8 @@
     left: 0;
     right: 0;
     top: 50%;
-    height: 2px;
     width: 100%;
+    height: 2px;
     background: #ccc;
 }
 

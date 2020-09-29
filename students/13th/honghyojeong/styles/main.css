@@ -67,6 +67,7 @@ nav.gnb .search .input-wrap input:focus {
 }
 
 nav.gnb .search .search-result {
+    display: none;
     position: absolute;
     left: 50%;
     top: calc(100% + 20px);
@@ -78,48 +79,45 @@ nav.gnb .search .search-result {
     background: #fff;
 }
 
-nav.gnb .search .search-result ul {
-    position: relative;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
-}
-
-nav.gnb .search .search-result ul::before,
-nav.gnb .search .search-result ul::after {
+nav.gnb .search .search-result::before,
+nav.gnb .search .search-result::after {
     content: "";
     position: absolute;
     bottom: 100%;
     border-style: solid;
 }
 
-nav.gnb .search .search-result ul::before {
+nav.gnb .search .search-result::before {
     left: 50%;
     border-width: 8px;
     border-color: transparent transparent #fff transparent;
     z-index: 2;
 }
 
-nav.gnb .search .search-result ul::after {
+nav.gnb .search .search-result::after {
     left: calc(50% + -2px);
     border-width: 10px;
     border-color: transparent transparent #ddd transparent;
     z-index: 1;
 }
 
-nav.gnb .search .search-result ul li {
-    display: table;
-    padding: 13px;
+nav.gnb .search .search-result ul {
+    position: relative;
+    max-height: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
+    overflow-y: auto;
 }
 
 nav.gnb .search .search-result ul li+li {
     border-top: 1px solid #ddd;
 }
 
-nav.gnb .search .search-result ul li .user-info {
-    padding: 7px 0 10px 10px;
-}
-
-nav.gnb .search .search-result ul li .user-info .name {
+nav.gnb .search .search-result ul li a {
+    padding: 13px;
+    display: block;
+    text-align: center;
     font-size: 14px;
+    cursor: pointer;
 }
 
 nav.gnb .icons .icon-list > li {
@@ -130,7 +128,7 @@ nav.gnb .icons .icon-list > li+li {
     margin-left: 25px;
 }
 
-nav.gnb .icons .icon-list > li>a {
+nav.gnb .icons .icon-list > li > a {
     display: inline-block;
     width: 24px;
 }
@@ -334,7 +332,7 @@ main>.feeds {
 
 .feed-contents .reples .comment ul li {
     position: relative;
-    padding-right: 50px;
+    padding-right: 60px;
     font-size: 14px;
     line-height: 1.4;
     word-break: break-word;
@@ -344,14 +342,34 @@ main>.feeds {
     padding-top: 10px;
 }
 
-.feed-contents .reples .comment ul li .comment-close {
+.feed-contents .reples .comment ul li button{
     position: absolute;
-    right: 5px;
     top: 50%;
     transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    background: url(../img/close.png) no-repeat center / cover;
+}
+
+.feed-contents .reples .comment ul li .comment-close {
+    width: 17px;
+    height: 17px;
+    right: 25px;
+    background: url(../img/close.png) no-repeat center / 100%;
+    opacity: 0;
+    transition: 0.35s;
+}
+
+.feed-contents .reples .comment ul li:hover .comment-close{
+    opacity: 1;
+}
+
+.feed-contents .reples .comment ul li .comment-like {
+    width: 14px;
+    height: 14px;
+    right: 5px;
+    background: url(../img/heart.png) no-repeat center / 100%;
+}
+
+.feed-contents .reples .comment ul li .comment-like.active{
+    background: url(../img/heart-active.png) no-repeat center / 100%;
 }
 
 .feed-contents .reples .comment ul li span {
