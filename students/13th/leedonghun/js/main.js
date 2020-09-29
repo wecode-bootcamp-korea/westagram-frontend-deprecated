@@ -97,5 +97,43 @@ postCommentBox.addEventListener('keyup', function(e) {
     postComment();
   }
 });
-
 postButton.addEventListener('click', postComment);
+
+const storyElement = document.querySelector('ul.story');
+const storyArrowButtonRight = document.querySelector('div.story-arrow-button.right');
+const storyArrowButtonLeft = document.querySelector('div.story-arrow-button.left');
+
+function slideStoryLeft() {
+  const storyPosition = storyElement.style.transform;
+  const xCorCurrentStartIdx = storyPosition.indexOf('-') === -1 ? storyPosition.indexOf('(') + 1 : storyPosition.indexOf('-') + 1;
+  const xCorCurrentEndIdx = storyPosition.indexOf('%');
+  const xCorCurrentAbs = Number(storyPosition.substring(xCorCurrentStartIdx, xCorCurrentEndIdx));
+  const xCorIncrement = 52;
+  const isMaxReached = xCorCurrentAbs + xCorIncrement >= 98;
+  const isMinReached = xCorCurrentAbs + xCorIncrement <= 0;
+  const xCorTranslated = isMaxReached ? -98 : (xCorCurrentAbs + xCorIncrement) * -1;
+  storyElement.style.transform = `translate(${xCorTranslated}%, 0)`;
+  storyElement.style.transition = 'transform 600ms';
+  storyArrowButtonRight.style.display = isMaxReached ? 'none' : 'flex';
+  storyArrowButtonLeft.style.display = isMinReached ? 'none' : 'flex';
+}
+
+function slideStoryRight() {
+  const storyPosition = storyElement.style.transform;
+  const originalPosition = storyElement.style.transform === 'translate(-0, 0)';
+  const xCorCurrentStartIdx = storyPosition.indexOf('-') + 1;
+  const xCorCurrentEndIdx = storyPosition.indexOf('%');
+  const xCorCurrentAbs = Number(storyPosition.substring(xCorCurrentStartIdx, xCorCurrentEndIdx));
+  const xCorIncrement = -48;
+  const isMaxReached = xCorCurrentAbs + xCorIncrement >= 100;
+  const isMinReached = xCorCurrentAbs + xCorIncrement <= 4;
+  const xCorTranslated = isMinReached ? 0 : (xCorCurrentAbs + xCorIncrement) * -1;
+  storyElement.style.transform = `translate(${xCorTranslated}%, 0)`;
+  storyElement.style.transition = 'transform 600ms';
+  storyArrowButtonLeft.style.display = isMinReached ? 'none' : 'flex';
+  storyArrowButtonRight.style.display = isMaxReached ? 'none' : 'flex';
+}
+
+
+storyArrowButtonRight.addEventListener('click', slideStoryLeft);
+storyArrowButtonLeft.addEventListener('click', slideStoryRight);

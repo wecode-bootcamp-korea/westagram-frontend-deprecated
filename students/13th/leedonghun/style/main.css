@@ -147,7 +147,7 @@ img.avatar-icon {
   width: 950px;
   margin: 0 auto;
   position: relative;
-  top: 52px;
+  top: 48px;
   padding-top: 38px;
   /* border: 1px solid black; */
 }
@@ -160,14 +160,53 @@ img.avatar-icon {
 }
 
 /***** Story *****/
-.story {
+.story-container {
   display: flex;
+  align-items: center;
   width: 100%;
-  height: 110px;
+  height: 118px;
   overflow: hidden;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
   position: relative;
+  left: 0%;
+
+}
+
+div.story-arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  overflow: hidden;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0 0 7px 5px #dbdbdb;
+  cursor: pointer;
+}
+
+div.story-arrow-button.left {
+  left: 1.98%;
+  display: none;
+}
+
+div.story-arrow-button.right {
+  right: 1.3%;
+}
+
+img.story-arrow-img {
+  width: 180%;
+}
+
+.story {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(0, 0);
+  /* border: 1px solid black; */
 }
 
 li.story-element {
