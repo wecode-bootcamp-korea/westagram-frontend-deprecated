@@ -1,3 +1,35 @@
+const body = document.querySelector('body');
+const navSearchBox = document.querySelector('.nav-search-box');
+const navSearchIcon = document.querySelector('img.nav-search-icon');
+const navSearchClearIcon = document.querySelector('img.nav-search-clear-icon');
+
+function navSearchBoxSelected() {
+  navSearchBox.style.textIndent = '12%';
+  navSearchBox.style.color = 'black';
+  navSearchIcon.style.left = '3%';
+  navSearchClearIcon.style.display = 'block';
+}
+
+function navSearchBoxUnselected(e) {
+  if (!e.target.matches('.nav-search-box, .nav-search-icon, .nav-search-clear-icon')) {
+    navSearchBox.style.textIndent = '41%';
+    navSearchBox.style.color = '#959595';
+    navSearchIcon.style.left = '31.5%';
+    navSearchClearIcon.style.display = 'none';
+  }
+}
+
+function clearSearch() {
+  navSearchBox.value = '';
+  body.addEventListener('click', navSearchBoxUnselected);
+  body.click();
+}
+
+navSearchBox.addEventListener('click', navSearchBoxSelected);
+body.addEventListener('click', navSearchBoxUnselected);
+navSearchClearIcon.addEventListener('click', clearSearch);
+
+
 function add_comment() {
   const feedComments = document.querySelector('ul.feed-comments');
 }

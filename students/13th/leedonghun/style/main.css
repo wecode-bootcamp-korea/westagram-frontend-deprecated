@@ -59,8 +59,8 @@ img.nav-logo {
   top: 23%;
   right: 39%;
   z-index: 2;
-  /* border: 1px solid black; */
   /* overflow: hidden; */
+  /* border: 1px solid black; */
 }
 
 .nav-search-box {
@@ -70,9 +70,12 @@ img.nav-logo {
   border: 0.5px solid #dbdbdb;
   background-color: #fafafa;
   font-size: 88%;
-  font-weight: 200;
-  color: #d3d3d3;
+  color: black;
   text-indent: 41%;
+}
+
+.nav-search-box::placeholder {
+  color: #959595;
 }
 
 .nav-search-icon {
@@ -81,6 +84,16 @@ img.nav-logo {
   top: 15%;
   left: 31.5%;
   opacity: 0.5;
+}
+
+.nav-search-clear-icon {
+  width: 11%;
+  position: absolute;
+  top: 5%;
+  right: 1%;
+  opacity: 0.2;
+  display: none;
+  /* border: 1px solid red; */
 }
 
 .nav-menu {
