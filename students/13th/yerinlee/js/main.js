@@ -117,7 +117,6 @@ const handleLikeBtn = (event) => {
 
 const delComment = (event) => {
   const targetcommentLi = event.target.parentNode.parentNode.parentNode;
-
   targetcommentLi.remove();
 };
 
@@ -152,7 +151,7 @@ const addComment = (comment) => {
 const handleCommentSubmit = (event) => {
   event.preventDefault();
   const comment = commentInput.value;
-  if (comment !== "") {
+  if (comment) {
     addComment(comment);
     commentInput.value = "";
   }
@@ -167,7 +166,7 @@ const handleSearchinput = () => {
   userIDList.innerHTML = ``;
   const searchKeyword = searchInput.value;
   let searchResult = [];
-  if (searchKeyword === "") {
+  if (!searchKeyword) {
     initSearchInput();
   } else {
     searchResult = IDArr2d.filter(
@@ -207,13 +206,11 @@ const hideProfileMenu = (event) => {
     profileMenuBox.classList.remove("showing");
 };
 
-const mainInit = () => {
-  commentForm.addEventListener("submit", handleCommentSubmit); //댓글 form에 eventlistner 추가
+(function mainInit() {
+  commentForm.addEventListener("submit", handleCommentSubmit);
   contentLikeBtn.addEventListener("click", handleLikeBtn);
   searchInput.addEventListener("focusout", initSearchInput);
   searchInput, addEventListener("input", handleSearchinput);
   profileMenuBtn.addEventListener("click", handleProfileMenu);
   window.addEventListener("click", hideProfileMenu);
-};
-
-mainInit();
+})();

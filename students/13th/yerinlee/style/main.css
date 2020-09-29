@@ -96,6 +96,7 @@
 .main-navbar__icons > * {
   margin-left: 24px;
 }
+
 .profile-icon {
   width: 22px;
   border-radius: 50%;
@@ -314,4 +315,22 @@
 }
 .story__ID {
   font-weight: 300;
+}
+
+@media only screen and (max-width: 975px) {
+  .main-right {
+    display: none;
+  }
+  .feeds-main__section {
+    width: 614px;
+  }
+  .main-navbar__colomns {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main-navbar__search,
+  .main-navbar__placeholder {
+    display: none;
+  }
 }
