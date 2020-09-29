@@ -29,6 +29,23 @@ navSearchBox.addEventListener('click', navSearchBoxSelected);
 body.addEventListener('click', navSearchBoxUnselected);
 navSearchClearIcon.addEventListener('click', clearSearch);
 
+const navMenuItems = document.querySelectorAll('.nav-menu-item');
+const navMenuAvatar = document.querySelector('.nav-menu-item.avatar');
+const navMenuAvatarBorder = document.querySelector('.nav-menu-item.avatar-outer-border');
+const navMenuHomeIcon = document.querySelector('.menu-item-icon.home-icon');
+const navMenuDropdown = document.querySelector('div.nav-menu-dropdown');
+
+function toggleDropdownDisplay() {
+  const isDropdownShown = navMenuDropdown.style.display !== 'none';
+  navMenuDropdown.style.display = isDropdownShown ? 'none' : 'block';
+  isDropdownShown ? navMenuHomeIcon.setAttribute('src', 'img/main/nav_menu_home_icon.png') : navMenuHomeIcon.setAttribute('src', 'img/main/onclick_icons/nav_menu_home_icon_white.png');
+  navMenuHomeIcon.style.width = isDropdownShown ? '130%' : '120%';
+  navMenuAvatar.style.marginRight = isDropdownShown ? '0' : '-7.5%';
+  navMenuAvatarBorder.style.border = isDropdownShown ? 'none' : '1.5px solid black';
+  navMenuAvatar.addEventListener('click', toggleDropdownDisplay);
+}
+
+navMenuAvatar.addEventListener('click', toggleDropdownDisplay);
 
 function add_comment() {
   const feedComments = document.querySelector('ul.feed-comments');
@@ -71,10 +88,10 @@ function isIconSelected(e) {
 function changeIconColor(e) {
   if (!isIconSelected(e)) {
     e.target.setAttribute('src', iconImgSrcAfterSelect[e.target.className]);
-    e.target.style.width = '120%';
+    e.target.style.width = '110%';
   } else {
     e.target.setAttribute('src', iconImgSrcOriginal[e.target.className]);
-    e.target.style.width = '100%';
+    e.target.style.width = '90%';
   }
 }
 
