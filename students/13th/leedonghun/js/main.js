@@ -124,8 +124,8 @@ function slideStoryRight() {
   const xCorCurrentStartIdx = storyPosition.indexOf('-') + 1;
   const xCorCurrentEndIdx = storyPosition.indexOf('%');
   const xCorCurrentAbs = Number(storyPosition.substring(xCorCurrentStartIdx, xCorCurrentEndIdx));
-  const xCorIncrement = -48;
-  const isMaxReached = xCorCurrentAbs + xCorIncrement >= 100;
+  const xCorIncrement = -46;
+  const isMaxReached = xCorCurrentAbs + xCorIncrement >= 98;
   const isMinReached = xCorCurrentAbs + xCorIncrement <= 4;
   const xCorTranslated = isMinReached ? 0 : (xCorCurrentAbs + xCorIncrement) * -1;
   storyElement.style.transform = `translate(${xCorTranslated}%, 0)`;
