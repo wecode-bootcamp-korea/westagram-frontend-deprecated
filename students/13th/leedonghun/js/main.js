@@ -59,7 +59,6 @@ if (feedActionTagIcon.length > 0) {
 }
 
 function postComment() {
-  console.log('function started ok')
   if (postCommentBox.value.length > 0) {
     const feedComments = document.querySelector('.feed-comments');
     const newCommentPoster = document.createElement('a')
