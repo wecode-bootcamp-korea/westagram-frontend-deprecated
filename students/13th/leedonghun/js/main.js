@@ -126,7 +126,7 @@ function slideStoryRight() {
   const xCorCurrentAbs = Number(storyPosition.substring(xCorCurrentStartIdx, xCorCurrentEndIdx));
   const xCorIncrement = -46;
   const isMaxReached = xCorCurrentAbs + xCorIncrement >= 98;
-  const isMinReached = xCorCurrentAbs + xCorIncrement <= 4;
+  const isMinReached = xCorCurrentAbs + xCorIncrement <= 6;
   const xCorTranslated = isMinReached ? 0 : (xCorCurrentAbs + xCorIncrement) * -1;
   storyElement.style.transform = `translate(${xCorTranslated}%, 0)`;
   storyElement.style.transition = 'transform 600ms';
