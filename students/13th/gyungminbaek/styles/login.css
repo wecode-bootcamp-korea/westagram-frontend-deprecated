@@ -3,9 +3,7 @@ body {
     font-size: 14px;
 }
 .header {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
+    width: 350px;
     margin: 12px auto;
 }
 .top {
@@ -21,7 +19,7 @@ body {
 .input_field {
     margin-bottom: 5px;
 }
-.inputID {
+.input_field input {
     width: 100%;
     background-color: #fafafa;
     border: 1px solid #efefef;
@@ -30,19 +28,7 @@ body {
     color: #262626;
     padding: 10px;
 }
-.inputPW {
-    width: 100%;
-    background-color: #fafafa;
-    border: 1px solid #efefef;
-    border-radius: 3px;
-    font-size: 12px;
-    color: #262626;
-    padding: 10px;
-}
-.inputID:focus{
-    border: 1px solid #b2b2b2;
-}
-.inputPW:focus{
+.input_field input:focus{
     border: 1px solid #b2b2b2;
 }
 .button {
@@ -54,7 +40,6 @@ body {
     padding: 5px;
 }
 .button .login {
-    display: block;
     color: white; 
 }
 .forgot {

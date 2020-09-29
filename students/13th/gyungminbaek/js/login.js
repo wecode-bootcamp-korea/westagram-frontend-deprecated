@@ -1,18 +1,19 @@
+const id = document.querySelector(".user_id");
+const pw = document.querySelector(".user_pw");
+
 function activateLogin() {
-    console.log("activate")
-    const loginButton = document.querySelector('.button');
-    
-    const ID = document.querySelector('.inputID').value;
-    const PW = document.querySelector('.inputPW').value;
+  const loginButton = document.querySelector(".button");
+  id.value.length >= 1 && pw.value.length >= 6
+    ? (loginButton.style.backgroundColor = "#0095F6")
+    : (loginButton.style.backgroundColor = "#B2dffc");
+}
 
-    (ID.length>=1)&&(PW.length>=6) ?
-    loginButton.style.backgroundColor='#0095F6':
-    loginButton.style.backgroundColor='#B2dffc';
-  }
-
-document.querySelector('.inputID').addEventListener('keyup', function(){
-    activateLogin();
-})
-document.querySelector('.inputPW').addEventListener('keyup', function(){
-    activateLogin();
-})
+const form = document.querySelector(".form");
+  
+form.addEventListener(
+    "keyup",
+    function () {
+      activateLogin();
+    },
+    true
+  );

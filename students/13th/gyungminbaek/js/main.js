@@ -1,35 +1,32 @@
+const uploadButton = document.querySelector(".upload_button");
+const comment = document.querySelector(".write_newComment");
+
 function activateUploadButton() {
-    const uploadButton = document.querySelector(".upload_button");
-    const comment = document.querySelector(".write_newComment").value;
-    
-    (comment.length>=1) ?
+    (comment.value.length>=1) ?
     uploadButton.style.color='#0095F6':
     uploadButton.style.color='#B2dffc';
 }
 
-document.querySelector('.write_newComment').addEventListener('keyup', function(){
+comment.addEventListener('keyup', function(){
     activateUploadButton();
 })
 
 function addComment() {    
-    const commentClass = document.querySelector(".comment");
-    const newDivtag = document.createElement("div");
-    newDivtag.className = "previous_comment"
-    let comment = document.querySelector(".write_newComment").value;
-    newDivtag.innerHTML = `<p><b>jjburi_</b> ${comment} </p><img class="comment_likebutton" alt="" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">`;
-    commentClass.appendChild(newDivtag);
+    const commentWrapper = document.querySelector(".comment_wrapper");
+    const newCommentDiv = document.createElement("div");
+    newCommentDiv.className = "previous_comment"
+    newCommentDiv.innerHTML = `<p><b>jjburi_</b> ${comment.value} </p><img class="comment_likebutton" alt="" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">`;
+    commentWrapper.appendChild(newCommentDiv);
 }
 
-document.querySelector(".upload_button").addEventListener("click", function(){
+uploadButton.addEventListener("click", function(){
     addComment();
-    document.querySelector(".write_newComment").value = "";
+    comment.value = "";
 })
 
-document.querySelector(".write_newComment").addEventListener('keydown', function(e){
+comment.addEventListener('keydown', function(e){
     if (e.keyCode === 13) {
     addComment();
-    document.querySelector(".write_newComment").value = "";
+    comment.value = "";
     }
 })
-
-

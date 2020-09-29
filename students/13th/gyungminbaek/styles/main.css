@@ -104,10 +104,12 @@ article {
     position: relative;
     padding: 8px 0px;
 }
+
 .react_buttons img {
     width: 26px;
     margin-left: 16px;
 }
+
 .bookmark_button {
     position: absolute;
     right: 16px;
@@ -119,13 +121,14 @@ article {
     padding: 4px 0 8px 0;
     align-items: center;
 }
+
 .profile_mini {
     width: 26px;
     border-radius: 50%;
     margin: 0px 5px 0px 16px;
 }
 
-.comment_area p {
+.comment p {
     font-size: 14px;
     margin-left: 16px;
     margin-bottom: 5px;
@@ -142,6 +145,7 @@ article {
     height: 12px;
     margin-right: 16px;
 }
+
 .time {
     font-size: 10px;
     color: grey;
@@ -168,13 +172,13 @@ article {
     font-size: 14px;
     background-color: white;
     border: none;
-  }
+}
   
 .upload_button:hover {
     cursor: pointer;
-  }
+}
 
-.main-right {
+.main_right {
     width: 293px;
     align-items: flex-start;
 }
@@ -185,6 +189,7 @@ article {
     display: flex;
     align-items: center;
 }
+
 .profile_img2 {
     width: 56px;
     border-radius: 50%;
@@ -195,6 +200,7 @@ article {
     font-size: 14px;
     margin-bottom: 4px;
 }
+
 .profile_id2 {
     font-size: 14px;
     color: grey;
@@ -223,6 +229,7 @@ article {
     position: relative;
     overflow: hidden;
 }
+
 .inner {
     position: absolute;
     top: 0;
@@ -251,7 +258,6 @@ article {
     position: relative;
     border-radius: 50%;
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 .friend_img {
@@ -263,14 +269,17 @@ article {
     border: 2px solid white;
 
 }
+
 .timeline {
     color:grey;
 }
+
 .recommend {
     border: 1.5px solid #EAEAEA;
     margin-top: 16px;
     font-size: 14px;
 }
+
 .unknown_list {
     width: 293px;
     height: 144px;
@@ -286,6 +295,7 @@ article {
     align-items: center;
     background-color: white;
 }
+
 .unknown_wrapper {
     width: 100%;
     display: flex;
@@ -296,23 +306,26 @@ article {
     font-size: 14px;
     margin-left: 10px;
 }
+
 .unknown_img {
     width: 32px;
     border-radius: 50%;
 }
+
 .mutual_friend {
     color:grey;
 }
+
 .follow_button {
     color: #459dee;
     font-size: 14px;
     background-color: white;
     border: none;
-  }
+}
   
 .follow_button:hover {
     cursor: pointer;
-  }
+}
 
 footer {
     font-size: 11px;
@@ -327,6 +340,7 @@ ul {
     outline: none;
     margin-bottom: 16px;
 }
+
 li a{
     color: inherit;
 }
