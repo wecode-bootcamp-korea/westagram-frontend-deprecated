@@ -52,7 +52,7 @@ navMenuAvatar.addEventListener('click', toggleDropdownDisplay);
 
 const followersData = {
   'agst_1014': 'agst_1014.png',
-  'alessa_bebe': 'alessa_bebe.png' ,
+  'alessa_bebe': 'alessa_bebe.png',
   'arnocee': 'arnocee.png',
   'ashkkny': 'ashkkny.png',
   'blacq_swan': 'blacq_swan.png',
@@ -69,15 +69,18 @@ const followersData = {
   'ldosy': 'ldosy.png',
   'minoonooo': 'minoonooo.png',
   'paulchoi24': 'paulchoi24.png',
+  'permanentstylelondon': 'permanentstylelondon.png',
   'phi_choi': 'phi_choi.png',
-  'porsche': 'porsche.png',
   'seo_nani': 'seo_nani.png',
+  'seojuhyun_s': 'seojuhyun_s.png',
   'sk17rina': 'sk17rina.png',
   'stevelee_jh': 'stevelee_jh.png',
+  'sunghopaik89': 'sunghopaik89.png',
   'sweetpotatos2': 'sweetpotatos2.png',
   'therake': 'therake.png',
   'thisisdklee': 'thisisdklee.png',
-  'yueergu': 'yueergu.png'
+  'yueergu': 'yueergu.png',
+  'wecode_bootcamp': 'wecode_bootcamp.png'
 }
 
 let followersIds = [];
@@ -87,6 +90,7 @@ for (let key in followersData) {
   followersIds.push(key);
   followersProfilePics.push(followersData[key]);
 }
+
 const story = document.querySelector('ul.story');
 const storyArrowButtonRight = document.querySelector('div.story-arrow-button.right');
 const storyArrowButtonLeft = document.querySelector('div.story-arrow-button.left');
@@ -100,14 +104,14 @@ function slideStoryLeft() {
   const xCurrentStartIdx = (storyPosition.indexOf('-') === -1) ? storyPosition.indexOf('(') + 1 : storyPosition.indexOf('-') + 1;
   const xCurrentEndIdx = storyPosition.indexOf('%');
   const xCurrentAbs = Number(storyPosition.substring(xCurrentStartIdx, xCurrentEndIdx));
-  console.log('xCorCurrentAbs: ' + xCurrentAbs);
+  console.log('xCurrentAbs: ' + xCurrentAbs);
   const xIncrement = ((storyItemWidth * 4) / storySectionWidth) * 100;
   const xRemainder = 100 - xIncrement;
   const storyTotalWidth = (((storyItemWidth * followersIds.length) + storyLastItemRightMargin) / storySectionWidth) * 100;
   const isMaxReached = xCurrentAbs + xIncrement >=  storyTotalWidth - 100;
-  const xTranslated = isMaxReached ? (xCurrentAbs + xRemainder) * -1 : (xCurrentAbs + xIncrement) * -1;
+  const xTranslated = isMaxReached ? (storyTotalWidth - 100) * -1 : (xCurrentAbs + xIncrement) * -1;
   console.log('isMaxReached?: ' + isMaxReached);
-  console.log('xCorTranslated: ' + xTranslated);
+  console.log('xTranslated: ' + xTranslated);
   story.style.transform = `translate(${xTranslated}%, 0)`;
   story.style.transition = 'transform 600ms';
   storyArrowButtonRight.style.display = isMaxReached ? 'none' : 'flex';
@@ -119,7 +123,7 @@ function slideStoryRight() {
   const xCurrentStartIdx = (storyPosition.indexOf('-') === -1) ? storyPosition.indexOf('(') + 1 : storyPosition.indexOf('-') + 1;
   const xCurrentEndIdx = storyPosition.indexOf('%');
   const xCurrentAbs = Number(storyPosition.substring(xCurrentStartIdx, xCurrentEndIdx));
-  console.log('xCorCurrentAbs: ' + xCurrentAbs);
+  console.log('xCurrentAbs: ' + xCurrentAbs);
   const xIncrement = ((storyItemWidth * 4) / storySectionWidth) * 100;
   const xRemainder = 100 - xIncrement;
   const storyTotalWidth = (((storyItemWidth * followersIds.length) + storyLastItemRightMargin) / storySectionWidth) * 100;
@@ -128,11 +132,11 @@ function slideStoryRight() {
   const xTranslated = wasMaxReached ? (xCurrentAbs - xRemainder) * -1 : (isMinReached ? 0 : (xCurrentAbs - xIncrement) * -1);
   console.log('wasMaxReached?: ' + wasMaxReached);
   console.log('isMinReached?: ' + isMinReached);
-  console.log('xCorTranslated: ' + xTranslated);
+  console.log('xTranslated: ' + xTranslated);
   story.style.transform = `translate(${xTranslated}%, 0)`;
   story.style.transition = 'transform 600ms';
   storyArrowButtonLeft.style.display = isMinReached ? 'none' : 'flex';
-  storyArrowButtonRight.style.display = wasMaxReached ? 'none' : 'flex';
+  storyArrowButtonRight.style.display = 'flex';
 }
 
 storyArrowButtonRight.addEventListener('click', slideStoryLeft);
@@ -186,11 +190,11 @@ function generateRandomOrderArr(orderedArr) {
   return randomOrderArr;
 }
 
-let myArr = generateOrderedArr(0, followersIds.length);
-let myRandArr = generateRandomOrderArr(myArr);
+let followersNumArr = generateOrderedArr(0, followersIds.length);
+let followersRandNumArr = generateRandomOrderArr(followersNumArr);
 
-for (let i in myRandArr) {
-  generateStory(myRandArr[i]);
+for (let i in followersRandNumArr) {
+  generateStory(followersRandNumArr[i]);
 }
 
 
@@ -291,6 +295,85 @@ postCommentBox.addEventListener('keyup', function(e) {
 });
 postButton.addEventListener('click', postComment);
 
+
+
+const suggestedData = {
+  'rolex': 'rolex.png',
+  'wework': 'wework.png',
+  'nusr_et': 'nusr_et.png',
+  'davidbeckham': 'davidbeckham.png',
+  'lamborghini': 'lamborghini.png',
+  'ferrari': 'ferrari.png',
+  'seoyejidaily': 'seoyejidaily.png',
+  'porsche': 'porsche.png',
+  'victoriassecret': 'victoriassecret.png',
+  'disney': 'disney.png',
+  'bentleymotors': 'bentleymotors.png',
+  'cristiano': 'cristiano.png',
+  'hermes': 'hermes.png',
+  'palaceskateboards': 'palaceskateboards.png',
+  'nike': 'nike.png',
+  'rogerfederer': 'rogerfederer.png',
+  'kingjames': 'kingjames.png',
+  'lucascheon': 'lucascheon.png',
+  'google': 'google.png',
+  'apple': 'apple.png',
+  'cornelluniversity': 'cornelluniversity.png',
+  'teslamotors': 'teslamotors.png',
+  'thisisbillgates': 'thisisbillgates.png',
+  'momstouch_love': 'momstouch_love.png',
+  'subway': 'subway.png',
+  'kakaofriends_official': 'kakaofriends_official.png',
+  'hublot': 'hublot.png',
+  'patekphilippe': 'patekphilippe.png',
+  'audemarspiguet': 'audemarspiguet.png',
+  'yjoo_oh': 'yjoo_oh.png',
+  'yj_loves': 'yj_loves.png'
+}
+
+let suggestedIds = [];
+let suggestedProfilePics = [];
+
+for (let key in suggestedData) {
+  suggestedIds.push(key);
+  suggestedProfilePics.push(suggestedData[key]);
+}
+
+
+function generateSuggestions(num) {
+  console.log(num);
+  let followedByStatementOptions = [
+    `Followed by ${followersIds[Math.floor(Math.random() * followersIds.length)]}`,
+    `Followed by ${followersIds[Math.floor(Math.random() * followersIds.length)]} +${Math.floor(Math.random() * 19) + 1} more`,
+    'Suggested for you'
+  ];
+  const suggestionsList = document.querySelector('ul.suggestions-list');
+  const suggestionItem = document.createElement('li');
+  suggestionItem.className = `suggestion-item suggestion-item-${num}`;
+  suggestionItem.innerHTML = `
+    <div class="suggested-profile-pic">
+      <a href="#" class="suggested-profile-pic">
+        <img src="img/main/suggested/${suggestedProfilePics[num]}" alt="suggested user profile picture" class="suggested-profile-pic">
+      </a>
+    </div>
+    <div class="suggested-profile-id-n-followers">
+      <a href="" class="suggested-profile-id">${suggestedIds[num]}</a>
+      <p class="followed-by">${followedByStatementOptions[Math.floor(Math.random() * 3)]}</p>
+    </div>
+    <a href="#" class="follow"><p class="follow">Follow</p></a>
+  `;
+  suggestionsList.appendChild(suggestionItem);
+}
+
+let suggestedNumArr = generateOrderedArr(0, suggestedIds.length);
+let suggestedRandNumArr = generateRandomOrderArr(suggestedNumArr);
+
+for (let i in suggestedRandNumArr) {
+  if (i > 4) {
+    break;
+  }
+  generateSuggestions(suggestedRandNumArr[i]);
+}
 
 
 

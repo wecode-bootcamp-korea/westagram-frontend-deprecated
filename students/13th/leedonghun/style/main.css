@@ -699,10 +699,7 @@ img.account-profile-pic {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 11px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 11px;
+  padding: 8px 16px 10px 5px;
   font-weight: 700;
   /* border: 1px solid black; */
 }
@@ -722,12 +719,12 @@ img.account-profile-pic {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 7px;
+  padding: 10px;
   overflow: hidden;
   /* border: 1px solid black; */
 }
 
-.suggested-profile-pic {
+div.suggested-profile-pic {
   width: 30px;
   height: 30px;
   overflow: hidden;
@@ -738,11 +735,11 @@ img.account-profile-pic {
   position: relative;
 }
 
-.suggested-profile-pic .profile-pic {
-  width: 135%;
+img.suggested-profile-pic {
+  width: 118%;
   position: absolute;
-  left: -16.9%;
-  top: -25%;
+  top: -10%;
+  left: -8%;
 }
 
 .suggested-profile-id-n-followers {
@@ -758,6 +755,7 @@ img.account-profile-pic {
 }
 
 .followed-by {
+  width: 185px;
   color: #919191;
   font-size: 75%;
   padding-top: 5px;
@@ -772,7 +770,7 @@ p.follow {
 }
 
 footer {
-  margin: 33px 0;
+  margin: 25px 0;
 }
 
 .footer-menus {
