@@ -580,3 +580,15 @@ body {
   opacity: 0.8;
   color: #8e8e8e;
 }
+
+@media screen and (max-width: 986px) {
+  .main_right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar_center {
+    display: none;
+  }
+}
