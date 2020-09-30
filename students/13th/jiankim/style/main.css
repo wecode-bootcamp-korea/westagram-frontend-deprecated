@@ -146,6 +146,11 @@ main {
     font-weight: 400;
     border: none;
 }
+
+#commentsInput {
+    outline: none;
+    box-shadow: none;
+} 
 #commentsPost {
     border: none;
     background-color: #ffffff;
