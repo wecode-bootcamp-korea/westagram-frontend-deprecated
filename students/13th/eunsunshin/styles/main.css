@@ -237,10 +237,13 @@
      border-top: 1px solid #dbdbdb;
 }
 
- #reply input{
+ .replyInput{
      width: 540px;
      border: 0;
-     
+ }
+
+ .replyInput:focus{
+     outline: none;
  }
 
  li button{

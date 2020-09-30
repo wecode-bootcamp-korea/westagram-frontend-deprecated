@@ -159,7 +159,7 @@ function makeReply(idVal, cmntVal) {
 
 
 const postBtn = document.getElementById('postBtn');
-const reply = document.querySelector('section input');
+const reply = document.querySelector('.replyInput');
 
 function makeNewReply ( ) {
     let replyVal = reply.value;
