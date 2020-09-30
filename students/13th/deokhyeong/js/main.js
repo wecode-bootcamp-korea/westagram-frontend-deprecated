@@ -116,5 +116,5 @@ const clickProfileBoxEvent = (event) => {
     profileBox.style.display = "none";
   }
 };
-// css에서 준 스타일은 영향이 없는듯 뭘 줘도 ''으로 뜨네...
+
 document.body.addEventListener("click", clickProfileBoxEvent);
