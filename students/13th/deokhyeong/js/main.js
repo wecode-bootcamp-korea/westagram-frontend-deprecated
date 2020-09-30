@@ -105,7 +105,6 @@ const profileBtn = document.querySelector(".profile_btn");
 
 const clickProfileBoxEvent = (event) => {
   const target = event.target;
-  console.log(target);
   if (
     target === profileBtn ||
     target.className === "profileBox_list" ||
