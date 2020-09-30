@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>westagram-prototyping</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/reset.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navi">
+      <section>
+        <div class="logo"></div>
+        <div class="search">
+          <!-- <label for="search" class="display-none"> -->
+          <label for="search">
+            <span>
+              <i class="far fa-search"></i>
+              <span>Search</span>
+            </span>
+            <i class="fas fa-times-circle"></i>
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="search-box"
+            class="bgc-main"
+            placeholder="Search"
+            autocapitalize="none"
+            value
+          />
+        </div>
+        <!-- search dropdown -->
+        <div class="search-dropdown display-none">
+          <div class="search-deco"></div>
+          <div class="search-menu">
+            <div>
+              <ul class="user-list">
+                <li class="empty-list">No results found.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="icon">
+          <a href="./main.html"><i class="fas fa-home link-color"></i></a>
+          <a href="./main.html"
+            ><i class="far fa-location-arrow link-color"></i
+          ></a>
+          <a href="./main.html"><i class="far fa-compass link-color"></i></a>
+          <a href="./main.html"><i class="far fa-heart link-color"></i></a>
+          <div>
+            <span class="nav-avatar"></span>
+          </div>
+        </div>
+        <!-- nav dropdown -->
+        <div class="nav-dropdown display-none">
+          <div class="dropdown-deco"></div>
+          <div class="dropdown-menu">
+            <div><i class="far fa-user-circle"></i>Profile</div>
+            <div><i class="far fa-bookmark"></i>Saved</div>
+            <div><i class="far fa-cog"></i>Settings</div>
+            <hr />
+            <div>Log Out</div>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <!-- main -->
+    <main>
+      <section>
+        <!-- feed -->
+        <div class="feeds">
+          <article>
+            <div class="header">
+              <div class="header-left">
+                <div class="avatar"><div class="pic"></div></div>
+                <div class="name">john_doe</div>
+              </div>
+              <div class="header-right"><i class="fas fa-ellipsis-h"></i></div>
+            </div>
+            <div class="feed-image">
+              <img src="https://via.placeholder.com/612" alt="feed-image" />
+            </div>
+            <div class="comment">
+              <section class="like">
+                <div class="feed-like">
+                  <i class="far fa-heart"></i>
+                  <i class="far fa-comment"></i>
+                  <i class="far fa-share"></i>
+                </div>
+                <div><i class="far fa-bookmark"></i></div>
+              </section>
+              <section class="like-count">100 likes</section>
+              <div class="comment-list">
+                <ul>
+                  <li>
+                    <div class="comment-text">
+                      <span>John_doe</span>
+                      <span
+                        >Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Tenetur ex ex vero repudiandae...
+                      </span>
+                      <span class="more">more</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="post-time">20 HOURS AGO</div>
+              <section class="add-comment">
+                <form onsubmit="return false">
+                  <input
+                    name="input-comment"
+                    autocapitalize="off"
+                    autocomplete="off"
+                    placeholder="Add a comment..."
+                  />
+                  <button>Post</button>
+                </form>
+              </section>
+            </div>
+          </article>
+        </div>
+        <!-- Profile -->
+        <aside class="main-right">
+          <section>
+            <div class="profile">
+              <div class="profile-pic">
+                <img src="https://via.placeholder.com/56" alt="user-avatar" />
+              </div>
+              <div class="profile-name">
+                <div>john_doe_writer</div>
+                <div>John Doe</div>
+              </div>
+            </div>
+            <div class="friends">
+              <div class="friends-suggestion">
+                <span>Suggestions For You</span>
+                <span>See All</span>
+              </div>
+              <div class="friends-list">
+                <ul></ul>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+    <script src="js/searchAlgo.js"></script>
+  </body>
+</html>

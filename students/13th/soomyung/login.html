@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>westagram-prototyping</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <link href="style/reset.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="login height-set">
+      <article class="login-area">
+        <div class="login-form login-border">
+          <div class="title block">Instagram</div>
+          <div class="form-section">
+            <form class="form-main" action="index.html" method="POST">
+              <label for="username" class="username mainColor">
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  minlength="3"
+                  maxlength="75"
+                  autocapitalize="off"
+                  autocorrect="off"
+                  autocomplete="off"
+                  placeholder="Phone number, username, or email"
+                  required
+                />
+              </label>
+              <label for="password" class="password">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="8"
+                  maxlength="20"
+                  autocorrect="off"
+                  autocomplete="off"
+                  placeholder="Password"
+                  required
+                />
+              </label>
+              <div class="submit">
+                <button class="button">Log In</button>
+              </div>
+              <div class="divider">
+                <div class="line"></div>
+                <div class="or">or</div>
+                <div class="line"></div>
+              </div>
+              <div class="error"></div>
+              <a href="_blank" class="forget">Forgot password?</a>
+            </form>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
