@@ -105,22 +105,32 @@ const initMain = () => {
     {
       name: 'sonic_the_hedgehog',
       ment: 'gotta go fast',
-      url: '/img/sonic.jpg',
+      url: 'img/sonic.jpg',
+      state: '회원님을 위한 추천',
     },
     {
       name: 'pickachu',
       ment: 'picka picka!',
-      url: '/img/pickachu.jpg',
+      url: 'img/pickachu.jpg',
+      state: '회원님을 위한 추천',
     },
     {
       name: 'super_mario',
       ment: 'its me, mario',
-      url: '/img/mario.jpg',
+      url: 'img/mario.jpg',
+      state: '회원님을 위한 추천',
     },
     {
       name: 'link_not_zelda',
       ment: 'my name is link',
-      url: '/img/link.jpg',
+      url: 'img/link.jpg',
+      state: '회원님을 위한 추천',
+    },
+    {
+      name: 'donkey_kong',
+      ment: 'ow ow ah ah',
+      url: 'img/donkey_kong.png',
+      state: '회원님을 팔로우 합니다',
     },
   ];
 
@@ -176,6 +186,25 @@ const initMain = () => {
     ) {
       hideMenuBox();
     }
+  });
+
+  // add recommended profiles progmatically
+  const recommendList = document.querySelector('.main-right-recommend-list');
+  dummyUsers.forEach((user) => {
+    const recommendedUser = document.createElement('DIV');
+    recommendedUser.innerHTML = `
+    <div class="main-right-recommend-profile">
+      <div class="main-right-recommend-profile-info">
+        <img src="${user.url}" alt="recommend-profile" />
+        <div>
+          <div class="text-bold-black">${user.name}</div>
+          <div class="text-grey">${user.state}</div>
+        </div>
+      </div>
+      <button>팔로우</button>
+    </div>`;
+
+    recommendList.append(recommendedUser);
   });
 };
 
