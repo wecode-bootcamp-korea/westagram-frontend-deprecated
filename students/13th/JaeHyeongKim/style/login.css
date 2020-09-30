@@ -102,7 +102,6 @@ button span {
 
 .facebook {
   margin-top: 10px;
-  /* border: 1px solid #000; */
   height: 30px;
   position: relative;
 }
@@ -112,7 +111,6 @@ button span {
 }
 
 .facebook-img-container {
-  /* border: 1px solid #000; */
   height: 100%;
   width: 10%;
   position: absolute;
@@ -134,7 +132,6 @@ button span {
 }
 
 .facebook-login-text {
-  /* border: 1px solid #000; */
   height: 100%;
   width: 50%;
   position: absolute;
@@ -146,7 +143,6 @@ button span {
 .facebook-login-text a {
   font-size: 12px;
   position: absolute;
-  /* border: 1px solid #000; */
   width: 100%;
   height: 100%;
   top: 75%;
@@ -162,7 +158,6 @@ button span {
 .forget {
   margin-top: 20px;
   text-align: center;
-  /* border: 1px solid #000; */
 }
 
 .forget a {

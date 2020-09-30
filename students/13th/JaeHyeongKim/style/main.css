@@ -629,7 +629,7 @@ article {
 }
 
 .article-sub-menu {
-  height: 55%;
+  height: 36px;
   position: relative;
   margin-bottom: 4px;
 }
@@ -688,7 +688,7 @@ article {
 }
 
 .article-like-info {
-  height: 45%;
+  height: 29px;
 }
 
 .article-like-info div {
@@ -760,6 +760,7 @@ article {
 
 .article-comment {
   height: 16%;
+  /* border: 1px solid #000; */
   position: relative;
 }
 
@@ -847,11 +848,13 @@ article {
 }
 
 .add-comment input[type=text] {
+  border: 1px solid #000;
   width: 97%;
   position: absolute;
   padding: 0;
   top: 50%;
   transform: translateY(-50%);
+  background-color: #fff;
   outline: none;
   border: none;
   font-size: 13px;

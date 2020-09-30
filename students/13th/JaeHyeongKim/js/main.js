@@ -3,28 +3,19 @@ function addCommentToFeed(e) {
   const getCommentText = e.target.parentNode.children[0].children[0];
   const newCommentListDiv = document.createElement('div');
   newCommentListDiv.className = "comment-list-child";
-  const newCommentListDivSpan = document.createElement('span');
-  newCommentListDivSpan.className = "comment-id";
-  newCommentListDivSpan.innerText = "wecode_bootcamp";
-  const heartContainerDiv = document.createElement('div');
-  heartContainerDiv.className = "comment-heart";
-  const heartIcon = document.createElement('i');
-  heartIcon.className = "fa fa-heart-o";
-  const removeIconContainerDiv = document.createElement('div');
-  removeIconContainerDiv.className = 'comment-delete';
-  const removeIcon = document.createElement('i');
-  removeIcon.className = "fa fa-times";
-  removeIcon.addEventListener('click', removeComment);
-  heartIcon.addEventListener('click', toggleHeartColor);
-  heartContainerDiv.appendChild(heartIcon);
-  removeIconContainerDiv.appendChild(removeIcon);
-  newCommentListDiv.appendChild(newCommentListDivSpan);
-  newCommentListDiv.append(getCommentText.value);
-  newCommentListDiv.appendChild(heartContainerDiv);
-  newCommentListDiv.appendChild(removeIconContainerDiv);
+  newCommentListDiv.innerHTML =
+  `
+  <span class="comment-id">wecode_bootcamp</span>${getCommentText.value}
+  <div class="comment-heart">
+    <i class="fa fa-heart-o" onclick="toggleHeartColorForComment(this)"></i>
+  </div>
+  <div class="comment-delete">
+    <i class="fa fa-times" onclick="removeComment(this)"></i>
+  </div>
+  `;
+  commentList.appendChild(newCommentListDiv);
   getCommentText.value = "";
   e.target.classList.remove('active');
-  commentList.appendChild(newCommentListDiv);
 }
 
 function activateCommentButton(commentInputText) {
@@ -41,8 +32,12 @@ function toggleHeartColor(e) {
   e.target.className = e.target.className === "fa fa-heart-o" ? "fa fa-heart" : "fa fa-heart-o";
 }
 
-function removeComment(e) {
-  e.target.parentNode.parentNode.remove();
+function toggleHeartColorForComment(comment) {
+  comment.className = comment.className === "fa fa-heart-o" ? "fa fa-heart" : "fa fa-heart-o";
+}
+
+function removeComment(comment) {
+  comment.parentNode.parentNode.remove();
 }
 
 function enterPushSubmit() {
@@ -143,6 +138,7 @@ function createSearchProfileResult(imgUrl, userId, name, linkUrl) {
   let searchIdResultElement = document.createElement('div');
   searchIdResultElement.className = "search-id-result-element";
   let searchIdResultContainer = document.querySelector('.search-id-result-container');
+
   if (!imgUrl && !userId && !name) {
     searchIdResultElement.innerHTML = "<span>검색 결과가 없습니다</span>";
   } else {
@@ -175,7 +171,6 @@ function clickThreedotsDisplaySubMenu() {
   });
 
   threedotsSubMenuBackground.className.includes('active') ? threedotsSubMenuBackground.classList.remove('active') : threedotsSubMenuBackground.classList.add('active');
-
   threedotsSubMenuElement.className.includes('active') ? threedotsSubMenuElement.classList.remove('active') : threedotsSubMenuElement.classList.add('active');
 }
 
