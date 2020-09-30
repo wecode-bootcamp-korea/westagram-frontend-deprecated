@@ -98,3 +98,23 @@ searchInput.addEventListener("keyup", () => {
 });
 
 // nav 프로필사진 클릭
+
+const profileBox = document.querySelector(".my_profileBox");
+profileBox.style.display = "none";
+const profileBtn = document.querySelector(".profile_btn");
+
+const clickProfileBoxEvent = (event) => {
+  const target = event.target;
+  console.log(target);
+  if (
+    target === profileBtn ||
+    target.className === "profileBox_list" ||
+    target.className === "log_out"
+  ) {
+    profileBox.style.display = "block";
+  } else {
+    profileBox.style.display = "none";
+  }
+};
+// css에서 준 스타일은 영향이 없는듯 뭘 줘도 ''으로 뜨네...
+document.body.addEventListener("click", clickProfileBoxEvent);

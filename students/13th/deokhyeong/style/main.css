@@ -132,20 +132,68 @@ body {
   font-weight: 400;
 }
 
+.nav .navbar .navbar_right {
+  position: relative;
+}
+
 .nav .navbar .navbar_right ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 
-.nav .navbar .navbar_right ul .right_item_2,
+.nav .navbar .navbar_right ul .right_item_1,
+.right_item_2,
 .right_item_3 {
-  margin-left: 22px;
+  margin: 0 12px;
+}
+
+.nav .navbar .navbar_right ul .right_item_4 {
+  margin-left: 12px;
+}
+
+.nav .navbar .navbar_right ul .right_item_4 .profile_btn {
+  border-radius: 50%;
 }
 
 .nav .navbar .navbar_right ul li img {
   width: 22px;
   height: 22px;
+}
+
+.nav .navbar .navbar_right .my_profileBox {
+  position: absolute;
+}
+
+.nav .navbar .navbar_right .arrow_box {
+  position: relative;
+  top: 6px;
+  left: 156px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  background-color: white;
+}
+
+.nav .navbar .navbar_right .my_profileBox_list {
+  display: block;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  width: 230px;
+  height: 157px;
+}
+.nav .navbar .navbar_right .my_profileBox_list li {
+  height: 25%;
+  line-height: 39px;
+  position: relative;
+  padding-left: 12px;
+}
+.nav .navbar .navbar_right .my_profileBox_list li:last-child {
+  border-top: 1px solid #dbdbdb;
 }
 
 /* Main */
