@@ -25,7 +25,7 @@ const getFdImg = document.querySelector(
   ".feed-image>img[src='https://via.placeholder.com/612']"
 );
 
-// user db
+// LINK user db
 const userList = [
   {
     id: "john_doe_1st",
@@ -69,7 +69,7 @@ const userList = [
   },
 ];
 
-// comment db
+// LINK comment db
 const commentList = [
   {
     id: "john_doe_1",
@@ -93,7 +93,7 @@ window.addEventListener("resize", () => {
     : (getFdImg.src = "https://via.placeholder.com/612");
 });
 
-//--- friends-suggestion generator from user DB (random) & 5rows ---//
+//--- SECTION friends-suggestion generator from user DB (random) & 5rows ---//
 const friendCheck = [];
 
 // friend template
@@ -144,7 +144,7 @@ getFdLk.forEach((like) => {
   like.addEventListener("click", (e) => likeToggle(e));
 });
 
-// --- comment handling --- //
+// --- SECTION comment handling --- //
 
 // template generator
 const cmtTemplateGenerator = () => {
@@ -222,7 +222,7 @@ getCommentText.addEventListener("submit", (e) => {
   createComment();
 });
 
-// --- nav dropdown --- //
+// --- SECTION nav dropdown --- //
 
 // fadeout animation ~just like instagram
 const fadeAnimation = () => {
@@ -257,7 +257,7 @@ const fixedToNone = () => {
   // avatar border remove
   getNavAvatar.parentNode.classList.remove("avatar-border");
   // time for disapear
-  // when I tested this, timing-gap occured about 20ms (e.g) css 150, js 130)
+  // NOTE when I tested this, timing-gap occured about 20ms (e.g) css 150, js 130)
   setTimeout(dispNone, 130);
 };
 
@@ -268,7 +268,7 @@ getNavAvatar.addEventListener("click", () => {
     : fixedToNone();
 });
 
-// --- search box handling --- //
+// --- SECTION search box handling --- //
 
 // search focusin
 getSearchBox.addEventListener("focusin", (e) => {
@@ -291,7 +291,7 @@ getSearchBox.addEventListener("focusout", (e) => {
 });
 
 // search box additional action:
-// if click the body, disapear dropdownlist. then if back to click the search box again, reappear the list again too
+// NOTE if click the body, disapear dropdownlist. then if back to click the search box again, reappear the list again too
 getSearchBox.addEventListener("click", () => {
   if (getSearchBox.value != "") {
     getSearchMenu.classList.remove("display-none");

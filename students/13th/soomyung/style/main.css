@@ -17,7 +17,7 @@ main > section {
   margin: 0 58px;
 }
 
-/* feed */
+/* SECTION feed */
 
 .feeds {
   width: 614px;
@@ -86,7 +86,7 @@ main > section {
   width: 100%;
 }
 
-/* Comment section */
+/* SECTION Comment section */
 
 .comment {
   width: 100%;
@@ -202,7 +202,8 @@ main > section {
   color: rgb(237, 73, 86);
 }
 
-/* main right */
+/* SECTION main right */
+
 .main-right {
   position: relative;
   width: 100%;
@@ -260,6 +261,8 @@ main > section {
   color: var(--main-color);
   font-size: 12px;
 }
+
+/* SECTION friends list generator */
 
 .friends {
   width: calc(100%-32px);
@@ -341,7 +344,7 @@ main > section {
   cursor: pointer;
 }
 
-/* navigation */
+/* SECTION navigation */
 
 .navi {
   position: fixed;
@@ -380,7 +383,7 @@ main > section {
   cursor: pointer;
 }
 
-/* search box */
+/* ANCHOR search box */
 
 .search {
   position: absolute;
@@ -445,7 +448,7 @@ main > section {
   text-indent: 28px;
 }
 
-/* search dropdown result */
+/* ANCHOR search dropdown result */
 
 .search-dropdown {
   position: absolute;
@@ -588,7 +591,7 @@ li .user > span:last-child {
   cursor: pointer;
 }
 
-/* profile dropdown menu */
+/* ANCHOR profile dropdown menu */
 
 .nav-dropdown {
   position: absolute;
@@ -675,6 +678,8 @@ li .user > span:last-child {
 .display-none {
   display: none;
 }
+
+/* SECTION media query & animation */
 
 @keyframes upOut {
   from {

@@ -1,7 +1,7 @@
-// search Algorithm:
+// NOTE search Algorithm:
 //(e.g.) coming out "wecode" when searching "wcd", "cd", "oe", "ee" and so on...
 
-// search array creater: using subset Algo
+// ANCHOR search array creater: using subset Algo
 const searchArrayCreator = (str) => {
   const findLetter = (v) => {
     if (v >= str.length) {
