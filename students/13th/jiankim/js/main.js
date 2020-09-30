@@ -13,3 +13,9 @@ document.addEventListener('keyup',function() {
 
 
 //댓글을 게시한 후 input에 남아있는 value 삭제
+
+//댓글 좋아요 삭제 기능
+
+//아이디 검색 기능
+
+//nav프로필 사진 클릭 시 메뉴 박스 생성

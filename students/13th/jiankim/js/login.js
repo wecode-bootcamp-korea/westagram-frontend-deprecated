@@ -1,3 +1,4 @@
+//로그인 버튼 색깔 바꾸기
 const idInfo = document.getElementById('userID');
 const pwInfo = document.getElementById('userPW');
 const btnColor = document.getElementById('loginBtn');
