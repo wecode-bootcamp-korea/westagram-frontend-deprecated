@@ -224,12 +224,12 @@ for (let key in userFollowers) {
   userFollowersProfilePics.push(userFollowers[key]);
 }
 
+
 function generateStory(num) {
   console.log('generating story...');
-  const randNum = Math.floor(Math.random() * num);
   const storyProfilePicImg = document.createElement('img');
   storyProfilePicImg.setAttribute('class', 'story-profile-pic');
-  storyProfilePicImg.setAttribute('src', `img/main/user_followers/${userFollowersProfilePics[randNum]}`);
+  storyProfilePicImg.setAttribute('src', `img/main/user_followers/${userFollowersProfilePics[num]}`);
   const storyProfilePicDiv = document.createElement('div');
   storyProfilePicDiv.setAttribute('class', 'story-profile-pic');
   storyProfilePicDiv.appendChild(storyProfilePicImg);
@@ -241,31 +241,47 @@ function generateStory(num) {
   storyProfilePicOuterGlow.appendChild(storyProfilePicMidWhiteDiv);
   const storyProfileId = document.createElement('p');
   storyProfileId.setAttribute('class', 'story-profile-id');
-  storyProfileId.innerHTML = `${userFollowersIds[randNum]}`;
+  storyProfileId.innerHTML = `${userFollowersIds[num]}`;
   const storyElementLink = document.createElement('a');
   storyElementLink.setAttribute('class', 'story-element-link');
   storyElementLink.setAttribute('href', '#');
   storyElementLink.appendChild(storyProfilePicOuterGlow);
   storyElementLink.appendChild(storyProfileId);
   const storyElement = document.createElement('li');
-  storyElement.setAttribute('class', `story-element story-${randNum}`);
+  storyElement.setAttribute('class', `story-element story-${num}`);
   storyElement.appendChild(storyElementLink);
   story.appendChild(storyElement);
   console.log('story generation complete');
 }
 
-for (let i=userFollowersIds.length-1; i>=0; i--) {
-  generateStory(i);
+function generateOrderedArr(min, max) {
+  let newOrderedArr = [];
+  for (let i=min; i<max; i++) {
+    newOrderedArr.push(i);
+  }
+  return newOrderedArr;
 }
 
-// let randomOrderList = [];
+let myArr = generateOrderedArr(0, userFollowersIds.length);
 
-// function generateRandomOrderList() {
-//   for (let i=userFollowersIds.length-1; i>=0; i--) {
-//     let randNum = Math.floor(Math.random * i);
-//     randomOrderList.push(randNum);
-//   }
-// }
+function generateRandomOrderArr(orderedArr) {
+  let randomOrderArr = [];
+  while (orderedArr.length !== 0) {
+    let randIdx = Math.floor(Math.random() * orderedArr.length);
+    let randNum = orderedArr[randIdx];
+    orderedArr.splice(randIdx, 1);
+    randomOrderArr.push(randNum);
+  }
+  return randomOrderArr;
+}
+
+let myRandArr = generateRandomOrderArr(myArr);
+
+for (let i in myRandArr) {
+  generateStory(myRandArr[i]);
+}
+
+
 
 
 
