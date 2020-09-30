@@ -57,8 +57,8 @@ buttonLocation.addEventListener("click", function () {
 });
 
 replyTextLocation.addEventListener("keydown", function (enter) {
-  const isVaild = replyTextLocation.value.length > 0 && enter.keyCode === 13;
-  if (isVaild)
+  const isValid = replyTextLocation.value.length > 0 && enter.keyCode === 13;
+  if (isValid)
     saveReply(),
       (replyTextLocation.value = ""),
       (buttonLocation.style.color = "#b2dffc"),
@@ -96,14 +96,10 @@ document.addEventListener("click", function (profile) {
   const getId = eventLocation.className === "profile_icon";
   const containerPosition = document.querySelector(".tool_container");
 
-  if (
-    (getId && containerPosition.style.visibility === "") ||
-    (getId && containerPosition.style.visibility === "hidden")
-  ) {
-    containerPosition.style.visibility = "visible";
-  } else if (containerPosition.style.visibility === "visible") {
-    containerPosition.style.visibility = "hidden";
-  }
+  (getId && containerPosition.style.visibility === "") ||
+  (getId && containerPosition.style.visibility === "hidden")
+    ? (containerPosition.style.visibility = "visible")
+    : (containerPosition.style.visibility = "hidden");
 });
 
 let userRawDatas = [

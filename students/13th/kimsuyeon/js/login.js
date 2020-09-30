@@ -3,31 +3,15 @@
 const userId = document.getElementsByTagName("input")[0];
 const userPw = document.getElementsByTagName("input")[1];
 const loginBtn = document.querySelector("button");
+const idPw = document.querySelector(".login");
 
-userId.addEventListener("keyup", function (event) {
-  let validation = 0;
+idPw.addEventListener("keyup", function () {
+  const isValid =
+    userId.value.length > 0 &&
+    userId.value.includes("@") &&
+    userPw.value.length > 4;
 
-  for (let i = 0; i < userId.value.length; i++) {
-    userId.value[i] === "@" ? (validation = 1) : (validation = 0);
-  }
-
-  const isVaild =
-    userId.value.length > 0 && userPw.value.length > 4 && validation === 1;
-  isVaild
-    ? (loginBtn.style.backgroundColor = "#0095F6")
-    : (loginBtn.style.backgroundColor = "#b2dffc");
-});
-
-userPw.addEventListener("keyup", function (event) {
-  let validation = 0;
-
-  for (let i = 0; i < userId.value.length; i++) {
-    userId.value[i] === "@" ? (validation = 1) : (validation = 0);
-  }
-
-  const isVaild =
-    userId.value.length > 0 && userPw.value.length > 4 && validation === 1;
-  isVaild
+  isValid
     ? (loginBtn.style.backgroundColor = "#0095F6")
     : (loginBtn.style.backgroundColor = "#b2dffc");
 });
