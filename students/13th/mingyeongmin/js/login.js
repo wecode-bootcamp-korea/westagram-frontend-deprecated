@@ -5,13 +5,11 @@ const loginPageInit = () => {
   const loginBtn = document.querySelector('.login-btn');
 
   const checkIfInputEmpty = () => {
-    idInput.value != '' && pwInput.value != ''
-      ? loginBtn.classList.replace('inactive', 'active')
-      : loginBtn.classList.replace('active', 'inactive');
+    const isValid = idInput.value && pwInput.value;
 
-    idInput.value != '' && pwInput.value != ''
-      ? (loginBtn.disabled = false)
-      : (loginBtn.disabled = true);
+    if (isValid) loginBtn.classList.replace('inactive', 'active');
+    if (!isValid) loginBtn.classList.replace('active', 'inactive');
+    loginBtn.disabled = !isValid;
   };
 
   const validateInput = () => {
@@ -22,8 +20,7 @@ const loginPageInit = () => {
     alert('please check pw and id');
   };
 
-  idInput.addEventListener('keyup', checkIfInputEmpty);
-  pwInput.addEventListener('keyup', checkIfInputEmpty);
+  loginForm.addEventListener('keyup', checkIfInputEmpty);
   loginForm.addEventListener('submit', validateInput);
 };
 

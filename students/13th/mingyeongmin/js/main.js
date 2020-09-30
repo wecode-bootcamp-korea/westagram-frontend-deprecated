@@ -67,13 +67,9 @@ const initMain = () => {
   };
 
   const handleKeydown = (e) => {
-    commentInput.value
-      ? (commentWriteButton.style.opacity = 1)
-      : (commentWriteButton.style.opacity = 0.5);
+    commentWriteButton.style.opacity = commentInput.value ? 1 : 0.5;
 
-    if (e.keyCode === 13) {
-      addComment();
-    }
+    if (e.keyCode === 13) addComment();
   };
 
   const deleteComment = (e) => {
@@ -129,11 +125,8 @@ const initMain = () => {
   ];
 
   const filterUserByName = (name) => {
-    if (name === '') {
-      return;
-    }
-    const searchResult = dummyUsers.filter((user) => user.name.includes(name));
-    return searchResult;
+    if (!name) return;
+    return dummyUsers.filter((user) => user.name.includes(name));
   };
 
   const showSearchResult = (searchResult) => {

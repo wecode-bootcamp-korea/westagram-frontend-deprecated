@@ -1,14 +1,14 @@
 /* main styling */
-main {
-  display: flex;
-  justify-content: center;
-}
-
 .main-container {
   width: 90%;
   margin: auto;
   padding-top: 95px;
   padding-bottom: 145px;
+}
+
+.main-container > div {
+  display: flex;
+  justify-content: center;
 }
 
 .showcase {
@@ -38,7 +38,7 @@ main {
   flex-direction: column;
   width: 350px;
   margin-top: 30px;
-  padding: 30px 25px 20px 25px;
+  padding: 30px 25px;
   background: #fff;
   border: #ccc 1px solid;
   border-radius: 2px;
@@ -171,11 +171,10 @@ main {
 /* footer styling */
 footer {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-between;
+  margin: 0 auto;
   width: 95%;
   max-width: 1200px;
-  justify-content: space-between;
 }
 
 footer ul {
