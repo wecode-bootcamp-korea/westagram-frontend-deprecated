@@ -50,48 +50,7 @@ function toggleDropdownDisplay() {
 navMenuAvatar.addEventListener('click', toggleDropdownDisplay);
 
 
-
-const story = document.querySelector('ul.story');
-const storyArrowButtonRight = document.querySelector('div.story-arrow-button.right');
-const storyArrowButtonLeft = document.querySelector('div.story-arrow-button.left');
-
-function slideStoryLeft() {
-  const storyPosition = story.style.transform;
-  const xCorCurrentStartIdx = storyPosition.indexOf('-') === -1 ? storyPosition.indexOf('(') + 1 : storyPosition.indexOf('-') + 1;
-  const xCorCurrentEndIdx = storyPosition.indexOf('%');
-  const xCorCurrentAbs = Number(storyPosition.substring(xCorCurrentStartIdx, xCorCurrentEndIdx));
-  const xCorIncrement = 52;
-  const isMaxReached = xCorCurrentAbs + xCorIncrement >= 100;
-  const isMinReached = xCorCurrentAbs + xCorIncrement <= 0;
-  const xCorTranslated = isMaxReached ? -100 : (xCorCurrentAbs + xCorIncrement) * -1;
-  story.style.transform = `translate(${xCorTranslated}%, 0)`;
-  story.style.transition = 'transform 600ms';
-  storyArrowButtonRight.style.display = isMaxReached ? 'none' : 'flex';
-  storyArrowButtonLeft.style.display = isMinReached ? 'none' : 'flex';
-}
-
-function slideStoryRight() {
-  const storyPosition = story.style.transform;
-  const originalPosition = story.style.transform === 'translate(-0, 0)';
-  const xCorCurrentStartIdx = storyPosition.indexOf('-') + 1;
-  const xCorCurrentEndIdx = storyPosition.indexOf('%');
-  const xCorCurrentAbs = Number(storyPosition.substring(xCorCurrentStartIdx, xCorCurrentEndIdx));
-  const xCorIncrement = -48;
-  const isMaxReached = xCorCurrentAbs + xCorIncrement >= 100;
-  const isMinReached = xCorCurrentAbs + xCorIncrement <= 4;
-  const xCorTranslated = isMinReached ? 0 : (xCorCurrentAbs + xCorIncrement) * -1;
-  story.style.transform = `translate(${xCorTranslated}%, 0)`;
-  story.style.transition = 'transform 600ms';
-  storyArrowButtonLeft.style.display = isMinReached ? 'none' : 'flex';
-  storyArrowButtonRight.style.display = isMaxReached ? 'none' : 'flex';
-}
-
-storyArrowButtonRight.addEventListener('click', slideStoryLeft);
-storyArrowButtonLeft.addEventListener('click', slideStoryRight);
-
-
-
-const userFollowers = {
+const followersData = {
   'agst_1014': 'agst_1014.png',
   'alessa_bebe': 'alessa_bebe.png' ,
   'arnocee': 'arnocee.png',
@@ -121,18 +80,70 @@ const userFollowers = {
   'yueergu': 'yueergu.png'
 }
 
-let userFollowersIds = [];
-let userFollowersProfilePics = [];
+let followersIds = [];
+let followersProfilePics = [];
 
-for (let key in userFollowers) {
-  userFollowersIds.push(key);
-  userFollowersProfilePics.push(userFollowers[key]);
+for (let key in followersData) {
+  followersIds.push(key);
+  followersProfilePics.push(followersData[key]);
 }
+const story = document.querySelector('ul.story');
+const storyArrowButtonRight = document.querySelector('div.story-arrow-button.right');
+const storyArrowButtonLeft = document.querySelector('div.story-arrow-button.left');
+
+const storySectionWidth = 610;
+const storyItemWidth = 80;
+const storyLastItemRightMargin = 14;
+
+function slideStoryLeft() {
+  const storyPosition = story.style.transform;
+  const xCurrentStartIdx = (storyPosition.indexOf('-') === -1) ? storyPosition.indexOf('(') + 1 : storyPosition.indexOf('-') + 1;
+  const xCurrentEndIdx = storyPosition.indexOf('%');
+  const xCurrentAbs = Number(storyPosition.substring(xCurrentStartIdx, xCurrentEndIdx));
+  console.log('xCorCurrentAbs: ' + xCurrentAbs);
+  const xIncrement = ((storyItemWidth * 4) / storySectionWidth) * 100;
+  const xRemainder = 100 - xIncrement;
+  const storyTotalWidth = (((storyItemWidth * followersIds.length) + storyLastItemRightMargin) / storySectionWidth) * 100;
+  const isMaxReached = xCurrentAbs + xIncrement >=  storyTotalWidth - 100;
+  const xTranslated = isMaxReached ? (xCurrentAbs + xRemainder) * -1 : (xCurrentAbs + xIncrement) * -1;
+  console.log('isMaxReached?: ' + isMaxReached);
+  console.log('xCorTranslated: ' + xTranslated);
+  story.style.transform = `translate(${xTranslated}%, 0)`;
+  story.style.transition = 'transform 600ms';
+  storyArrowButtonRight.style.display = isMaxReached ? 'none' : 'flex';
+  storyArrowButtonLeft.style.display = 'flex';
+}
+
+function slideStoryRight() {
+  const storyPosition = story.style.transform;
+  const xCurrentStartIdx = (storyPosition.indexOf('-') === -1) ? storyPosition.indexOf('(') + 1 : storyPosition.indexOf('-') + 1;
+  const xCurrentEndIdx = storyPosition.indexOf('%');
+  const xCurrentAbs = Number(storyPosition.substring(xCurrentStartIdx, xCurrentEndIdx));
+  console.log('xCorCurrentAbs: ' + xCurrentAbs);
+  const xIncrement = ((storyItemWidth * 4) / storySectionWidth) * 100;
+  const xRemainder = 100 - xIncrement;
+  const storyTotalWidth = (((storyItemWidth * followersIds.length) + storyLastItemRightMargin) / storySectionWidth) * 100;
+  const wasMaxReached = xCurrentAbs + (xIncrement - xRemainder) >= storyTotalWidth - 100;
+  const isMinReached = xCurrentAbs - xIncrement <= 0;
+  const xTranslated = wasMaxReached ? (xCurrentAbs - xRemainder) * -1 : (isMinReached ? 0 : (xCurrentAbs - xIncrement) * -1);
+  console.log('wasMaxReached?: ' + wasMaxReached);
+  console.log('isMinReached?: ' + isMinReached);
+  console.log('xCorTranslated: ' + xTranslated);
+  story.style.transform = `translate(${xTranslated}%, 0)`;
+  story.style.transition = 'transform 600ms';
+  storyArrowButtonLeft.style.display = isMinReached ? 'none' : 'flex';
+  storyArrowButtonRight.style.display = wasMaxReached ? 'none' : 'flex';
+}
+
+storyArrowButtonRight.addEventListener('click', slideStoryLeft);
+storyArrowButtonLeft.addEventListener('click', slideStoryRight);
+
+
 
 function generateStory(num) {
   const storyProfilePicImg = document.createElement('img');
   storyProfilePicImg.setAttribute('class', 'story-profile-pic');
-  storyProfilePicImg.setAttribute('src', `img/main/user_followers/${userFollowersProfilePics[num]}`);
+  storyProfilePicImg.setAttribute('src', `img/main/user_followers/${followersProfilePics[num]}`);
   const storyProfilePicDiv = document.createElement('div');
   storyProfilePicDiv.setAttribute('class', 'story-profile-pic');
   storyProfilePicDiv.appendChild(storyProfilePicImg);
@@ -144,7 +155,7 @@ function generateStory(num) {
   storyProfilePicOuterGlow.appendChild(storyProfilePicMidWhiteDiv);
   const storyProfileId = document.createElement('p');
   storyProfileId.setAttribute('class', 'story-profile-id');
-  storyProfileId.innerHTML = `${userFollowersIds[num]}`;
+  storyProfileId.innerHTML = `${followersIds[num]}`;
   const storyElementLink = document.createElement('a');
   storyElementLink.setAttribute('class', 'story-element-link');
   storyElementLink.setAttribute('href', '#');
@@ -164,8 +175,6 @@ function generateOrderedArr(min, max) {
   return newOrderedArr;
 }
 
-let myArr = generateOrderedArr(0, userFollowersIds.length);
-
 function generateRandomOrderArr(orderedArr) {
   let randomOrderArr = [];
   while (orderedArr.length !== 0) {
@@ -177,6 +186,7 @@ function generateRandomOrderArr(orderedArr) {
   return randomOrderArr;
 }
 
+let myArr = generateOrderedArr(0, followersIds.length);
 let myRandArr = generateRandomOrderArr(myArr);
 
 for (let i in myRandArr) {
