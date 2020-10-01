@@ -719,10 +719,6 @@ img.account-profile-pic {
   font-size: 75%;
 }
 
-.suggestions-box {
-  /* border: 1px solid black; */
-}
-
 .suggestions-header {
   display: flex;
   justify-content: space-between;
@@ -740,10 +736,6 @@ img.account-profile-pic {
 .suggestions-see-all {
   color: black;
   font-size: 75%;
-}
-
-ul.suggestions-list {
-  /* border: 1px solid black; */
 }
 
 .suggestion-item {

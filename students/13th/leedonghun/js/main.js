@@ -264,14 +264,21 @@ const sampleFeedExpData = [
   'les girit~',
   'sooooo good',
   'love it!',
-  'in love <3',
+  'in love 🧡',
   'rockin the day',
   'this is so good',
   'yeaaaaaaaa',
   'let\'s begin!',
   'the best there is',
   'rollin on',
-  'can\'t resist'
+  'can\'t resist',
+  '🧡🧡🧡',
+  '🔥',
+  '🔥🔥🔥',
+  '😍',
+  '😍😍😍',
+  '😘',
+  'so good it\'s dizzifying🤪'
 ]
 
 const sampleCommentsData = [
@@ -281,10 +288,20 @@ const sampleCommentsData = [
   'looks amazing! ><',
   'that looks soooooooo nice',
   'woah that\ looks fly',
-  'wowwowowowww',
-  'looks so goooooood',
+  'wowwowowow',
+  'wowowowow😍',
+  'wowowow🔥',
+  'woah!🧡',
+  'looks so goooooood🧡',
   'i\'ll join you next time!',
-  'hey hit me up!'
+  'hey hit me up!',
+  'omg🧡',
+  '🔥🔥🔥',
+  '😍🧡',
+  '👍👍👍',
+  '😘',
+  '😆',
+  '👍🧡'
 ]
 
 function generateFeed(picNum) {
