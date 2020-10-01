@@ -227,7 +227,7 @@ main>.feeds {
 /* user-info 공통 style */
 .user-info {
     display: table-cell;
-    padding-left: 10px;
+    padding: 0px 40px 0px 10px;
     width: 100%;
     vertical-align: middle;
 }
@@ -250,7 +250,6 @@ main>.feeds {
 }
 
 .profile-img {
-    display: table-cell;
     display: inline-block;
     width: 35px;
     min-height: 35px;
