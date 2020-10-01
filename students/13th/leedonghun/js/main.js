@@ -199,101 +199,275 @@ for (let i in followersRandNumArr) {
 
 
 
-const postButton = document.querySelector('.post-button');
+const placesData = [
+  '',
+  'Seoul',
+  'Yeouido',
+  'Hannam-dong',
+  'Euljiro',
+  'Yongsan-gu',
+  'Seocho-gu',
+  'Gangnam-gu',
+  'Chungdam-dong',
+  'Incheon',
+  'Busan',
+  'Jeju',
+  'Tokyo',
+  'Osaka',
+  'Kyoto',
+  'Hokkaido, Japan',
+  'Shanghai',
+  'Beijing',
+  'Chengdu',
+  'Hong Kong',
+  'New York',
+  'Ithaca',
+  'Los Angeles',
+  'San Francisco',
+  'Mountain View, California',
+  'Cupertino, California',
+  'Miami',
+  'Boston',
+  'Seattle',
+  'Portland, Oregon',
+  'Chicago',
+  'Milano',
+  'Napoli',
+  'London',
+  'Paris',
+  'Geneva',
+  'Frankfurt',
+  'Barcelona',
+  'Madrid',
+  'Praha'
+];
 
-function activatePostButton(e) {
-  const postInput = e.target.value.length > 0;
-  postButton.style.opacity = postInput ? 1 : 0.3;
-  postButton.style.cursor = postInput ? 'pointer' : 'default';
-}
+const feedPicsData = [
+  'beef.png',
+  'beef2.png',
+  'homeparty.png',
+  'pizza2.png',
+  'sushi.png',
+  'sushi2.png',
+  'wines.png',
+  'risotto.png',
+  'asianfood.png',
+  'roomservice.png',
+  'snack.png',
+  'macchiato.png',
+  'porterhouse2.png',
+  'barbeque.png',
+  'steak.png'
+]
 
-const postCommentBox = document.querySelector('.post-comment-box');
-postCommentBox.addEventListener('input', activatePostButton);
+const sampleFeedExpData = [
+  'les girit~',
+  'sooooo good',
+  'love it!',
+  'in love <3',
+  'rockin the day',
+  'this is so good',
+  'yeaaaaaaaa',
+  'let\'s begin!',
+  'the best there is',
+  'rollin on',
+  'can\'t resist'
+]
 
-const feedElement = document.querySelector('.feed-element');
-const feedActionHeartIcon = feedElement.querySelectorAll('.feed-action-heart');
-const feedCommentHeartIcon = feedElement.querySelectorAll('.feed-comment-heart');
-const feedActionTagIcon = feedElement.querySelectorAll('.feed-action-tag');
+const sampleCommentsData = [
+  'woahhh where is this??',
+  'awesome!!!',
+  'omg!!!!!!!!',
+  'looks amazing! ><',
+  'that looks soooooooo nice',
+  'woah that\ looks fly',
+  'wowwowowowww',
+  'looks so goooooood',
+  'i\'ll join you next time!',
+  'hey hit me up!'
+]
 
-let iconImgSrcOriginal = {};
-feedActionHeartIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
-feedCommentHeartIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
-feedActionTagIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_tag_icon.png');
-
-let iconImgSrcAfterSelect = {};
-feedActionHeartIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
-feedCommentHeartIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
-feedActionTagIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_tag_icon_black.png');
-
-function isIconSelected(e) {
-  if (e.target.getAttribute('src') === iconImgSrcOriginal[e.target.className]) {
-    return false;
-  } else if (e.target.getAttribute('src') === iconImgSrcAfterSelect[e.target.className]) {
-    return true;
+function generateFeed(picNum) {
+  let profileRandNumArr = generateRandomOrderArr(generateOrderedArr(0, followersIds.length));
+  let profileNum = profileRandNumArr[0];
+  let profileNum2 = profileRandNumArr[1];
+  let placeRandNumArr = generateRandomOrderArr(generateOrderedArr(0, placesData.length));
+  let placeNum = placeRandNumArr[0];
+  let expRandNumArr = generateRandomOrderArr(generateOrderedArr(0, sampleFeedExpData.length));
+  let expNum = expRandNumArr[0];
+  let commentRandNumArr = generateRandomOrderArr(generateOrderedArr(0, sampleCommentsData.length));
+  let commentNum = commentRandNumArr[0];
+  let randomCommentsCount = Math.floor(Math.random() * 3 + 1);
+  const feedsDiv = document.querySelector('div.feeds');
+  const feed = document.createElement('div');
+  feed.className = `feed-element feed-${placeNum}`;
+  feed.innerHTML = `
+    <div class="feed-header">
+      <div class="feed-profile-pic-outer-glow">
+        <div class="feed-profile-pic-mid-white">
+          <div class="feed-profile-pic">
+            <a href="#" class="feed-profile-pic">
+              <img src="img/main/user_followers/${followersProfilePics[profileNum]}" alt="story user profile picture" class="feed-profile-pic">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="feed-profile-id-n-place">
+        <a href="" class="feed-profile-id">${followersIds[profileNum]}</a>
+        <p class="feed-place">${placesData[placeNum]}</p>
+      </div>
+      <div class="feed-option">
+        <img src="img/main/three_dots_horizontal.png" alt="feed option button" class="feed-option">
+      </div>
+    </div>
+    <div class="feed-main">
+      <img src="img/main/feed_pics/${feedPicsData[picNum]}" alt="feed picture" class="feed-main-pic">
+    </div>
+    <div class="feed-actions">
+      <div class="feed-action feed-like">
+        <img src="img/main/nav_menu_heart_icon.png" alt="feed like heart icon" class="feed-action-heart">
+      </div>
+      <div class="feed-action feed-comment">
+        <img src="img/main/nav_menu_comment.png" alt="see comment icon" class="feed-action-comment">
+      </div>
+      <div class="feed-action feed--dm">
+        <img src="img/main/nav_menu_dm_icon.png" alt="" class="feed-action-dm">
+      </div>
+      <div class="feed-action feed-tag">
+        <img src="img/main/nav_menu_tag_icon.png" alt="" class="feed-action-tag">
+      </div>
+    </div>
+    <div class="feed-likes">
+      <div class="focused-liker-img">
+        <img class=focused-liker-img src="img/main/user_followers/${followersProfilePics[profileNum2]}" alt="profile image of the focused person who liked the feed">
+      </div>
+        <p class="likes-count">Liked by <span>${followersIds[profileNum2]}</span> and <span>${Math.floor(Math.random() * 200 + 5)} others</span></p>
+    </div>
+      <div class="feed-exp-box">
+      <a href="" class="feed-profile-id">${followersIds[profileNum]}</a>
+      <p class="feed-exp">${sampleFeedExpData[expNum]}</p>
+    </div>
+    <ul class="feed-comments">
+      <li class="feed-comment-item">
+        <a href="" class="feed-profile-id">${followersIds[Math.floor(Math.random() * followersIds.length)]}</a>
+        <p class="feed-comment">${sampleCommentsData[commentNum]}</p>
+        <div class="feed-comment-like">
+          <img src="img/main/nav_menu_heart_icon.png" alt="feed comment like heart icon" class="feed-comment-heart">
+        </div>
+      </li>
+    </ul>
+    <p class="feed-posted-time">${Math.floor(Math.random() * 10 + 2)} HOURS AGO</p>
+    <div class="feed-post-comment">
+      <input type="text" class="post-comment-box" placeholder="Add a comment...">
+      <div class="post-button">Post</div>
+    </div>
+    `;
+    feedsDiv.appendChild(feed);
   }
-}
-
-function changeIconColor(e) {
-  if (!isIconSelected(e)) {
-    e.target.setAttribute('src', iconImgSrcAfterSelect[e.target.className]);
-    e.target.style.width = '110%';
-  } else {
-    e.target.setAttribute('src', iconImgSrcOriginal[e.target.className]);
-    e.target.style.width = '90%';
+  
+  
+  let feedNumArr = generateOrderedArr(0, feedPicsData.length);
+  let feedRandNumArr = generateRandomOrderArr(feedNumArr);
+  
+  for (let i in feedRandNumArr) {
+    generateFeed(feedRandNumArr[i]);
   }
-}
+  
+  const postButton = document.querySelector('.post-button');
 
-if (feedActionHeartIcon.length > 0) {
-  feedActionHeartIcon.forEach(el => el.addEventListener('click', changeIconColor));
-}
-
-if (feedCommentHeartIcon.length > 0) {
-  feedCommentHeartIcon.forEach(el => el.addEventListener('click', changeIconColor));
-}
-
-if (feedActionTagIcon.length > 0) {
-  feedActionTagIcon.forEach(el => el.addEventListener('click', changeIconColor));
-}
-
-function postComment() {
-  if (postCommentBox.value.length > 0) {
-    const feedComments = document.querySelector('.feed-comments');
-    const newCommentPoster = document.createElement('a')
-    newCommentPoster.setAttribute('href','');
-    newCommentPoster.setAttribute('class', 'feed-profile-id');
-    const currentAccountUser = document.querySelector('p.account-profile-id').innerText;
-    newCommentPoster.innerHTML = currentAccountUser;
-    const newCommentContent = document.createElement('p');
-    newCommentContent.setAttribute('class', 'feed-comment');
-    const commentContent = postCommentBox.value;
-    newCommentContent.innerHTML = commentContent;
-    const newCommentHeartIcon = document.createElement('img');
-    newCommentHeartIcon.setAttribute('src', 'img/main/nav_menu_heart_icon.png');
-    newCommentHeartIcon.setAttribute('alt', 'feed comment like heart icon');
-    newCommentHeartIcon.setAttribute('class', 'feed-comment-heart');
-    newCommentHeartIcon.addEventListener('click', changeIconColor);
-    const newCommentHeartIconDiv = document.createElement('div');
-    newCommentHeartIconDiv.setAttribute('class', 'feed-comment-like');
-    newCommentHeartIconDiv.appendChild(newCommentHeartIcon);
-    const newFeedComment = document.createElement('li');
-    newFeedComment.setAttribute('class', 'feed-comment-item');
-    newFeedComment.appendChild(newCommentPoster);
-    newFeedComment.appendChild(newCommentContent);
-    newFeedComment.appendChild(newCommentHeartIconDiv);
-    feedComments.appendChild(newFeedComment);
-    postCommentBox.value = '';
-    postButton.style.opacity = 0.3;
-    postButton.style.cursor = 'default';
-    postButton.disabled = "true";
+  function activatePostButton(e) {
+    const postInput = e.target.value.length > 0;
+    postButton.style.opacity = postInput ? 1 : 0.3;
+    postButton.style.cursor = postInput ? 'pointer' : 'default';
   }
-}
-
-postCommentBox.addEventListener('keyup', function(e) {
-  if(e.keyCode === 13) {
-    postComment();
+  
+  const postCommentBox = document.querySelector('.post-comment-box');
+  postCommentBox.addEventListener('input', activatePostButton);
+  
+  const feedElement = document.querySelector('.feed-element');
+  const feedActionHeartIcon = feedElement.querySelectorAll('.feed-action-heart');
+  const feedCommentHeartIcon = feedElement.querySelectorAll('.feed-comment-heart');
+  const feedActionTagIcon = feedElement.querySelectorAll('.feed-action-tag');
+  
+  let iconImgSrcOriginal = {};
+  feedActionHeartIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
+  feedCommentHeartIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
+  feedActionTagIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_tag_icon.png');
+  
+  let iconImgSrcAfterSelect = {};
+  feedActionHeartIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
+  feedCommentHeartIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
+  feedActionTagIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_tag_icon_black.png');
+  
+  function isIconSelected(e) {
+    if (e.target.getAttribute('src') === iconImgSrcOriginal[e.target.className]) {
+      return false;
+    } else if (e.target.getAttribute('src') === iconImgSrcAfterSelect[e.target.className]) {
+      return true;
+    }
   }
-});
-postButton.addEventListener('click', postComment);
+  
+  function changeIconColor(e) {
+    if (!isIconSelected(e)) {
+      e.target.setAttribute('src', iconImgSrcAfterSelect[e.target.className]);
+      e.target.style.width = '110%';
+    } else {
+      e.target.setAttribute('src', iconImgSrcOriginal[e.target.className]);
+      e.target.style.width = '90%';
+    }
+  }
+  
+  if (feedActionHeartIcon.length > 0) {
+    feedActionHeartIcon.forEach(el => el.addEventListener('click', changeIconColor));
+  }
+  
+  if (feedCommentHeartIcon.length > 0) {
+    feedCommentHeartIcon.forEach(el => el.addEventListener('click', changeIconColor));
+  }
+  
+  if (feedActionTagIcon.length > 0) {
+    feedActionTagIcon.forEach(el => el.addEventListener('click', changeIconColor));
+  }
+  
+  function postComment() {
+    if (postCommentBox.value.length > 0) {
+      const feedComments = document.querySelector('.feed-comments');
+      const newCommentPoster = document.createElement('a')
+      newCommentPoster.setAttribute('href','');
+      newCommentPoster.setAttribute('class', 'feed-profile-id');
+      const currentAccountUser = document.querySelector('p.account-profile-id').innerText;
+      newCommentPoster.innerHTML = currentAccountUser;
+      const newCommentContent = document.createElement('p');
+      newCommentContent.setAttribute('class', 'feed-comment');
+      const commentContent = postCommentBox.value;
+      newCommentContent.innerHTML = commentContent;
+      const newCommentHeartIcon = document.createElement('img');
+      newCommentHeartIcon.setAttribute('src', 'img/main/nav_menu_heart_icon.png');
+      newCommentHeartIcon.setAttribute('alt', 'feed comment like heart icon');
+      newCommentHeartIcon.setAttribute('class', 'feed-comment-heart');
+      newCommentHeartIcon.addEventListener('click', changeIconColor);
+      const newCommentHeartIconDiv = document.createElement('div');
+      newCommentHeartIconDiv.setAttribute('class', 'feed-comment-like');
+      newCommentHeartIconDiv.appendChild(newCommentHeartIcon);
+      const newFeedComment = document.createElement('li');
+      newFeedComment.setAttribute('class', 'feed-comment-item');
+      newFeedComment.appendChild(newCommentPoster);
+      newFeedComment.appendChild(newCommentContent);
+      newFeedComment.appendChild(newCommentHeartIconDiv);
+      feedComments.appendChild(newFeedComment);
+      postCommentBox.value = '';
+      postButton.style.opacity = 0.3;
+      postButton.style.cursor = 'default';
+      postButton.disabled = "true";
+    }
+  }
+  
+  postCommentBox.addEventListener('keyup', function(e) {
+    if(e.keyCode === 13) {
+      postComment();
+    }
+  });
+  postButton.addEventListener('click', postComment);
 
 
 
@@ -339,9 +513,7 @@ for (let key in suggestedData) {
   suggestedProfilePics.push(suggestedData[key]);
 }
 
-
 function generateSuggestions(num) {
-  console.log(num);
   let followedByStatementOptions = [
     `Followed by ${followersIds[Math.floor(Math.random() * followersIds.length)]}`,
     `Followed by ${followersIds[Math.floor(Math.random() * followersIds.length)]} +${Math.floor(Math.random() * 19) + 1} more`,
@@ -374,10 +546,6 @@ for (let i in suggestedRandNumArr) {
   }
   generateSuggestions(suggestedRandNumArr[i]);
 }
-
-
-
-
 
 
 

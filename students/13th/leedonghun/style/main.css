@@ -435,7 +435,7 @@ img.story-profile-pic {
   border-radius: 50%;
 }
 
-.feed-profile-pic {
+div.feed-profile-pic {
   width: 33px;
   height: 33px;
   overflow: hidden;
@@ -446,12 +446,12 @@ img.story-profile-pic {
   position: relative;
 }
 
-.feed-profile-pic .profile-pic {
-  width: 135%;
+img.feed-profile-pic {
+  width: 128%;
   border-radius: 50%;
   position: absolute;
-  left: -16.9%;
-  top: -25%;
+  top: -12%;
+  left: -10%;
 }
 
 .feed-profile-id-n-place {
@@ -498,7 +498,7 @@ img.feed-option {
 }
 
 .feed-main-pic {
-  width: 150%;
+  width: 100%;
   height: auto;
   /* border: 1px solid red; */
 }
@@ -546,9 +546,36 @@ img.feed-action-tag {
   /* border: 1px solid black; */
 }
 
-.likes-count {
+div.feed-likes {
+  display: flex;
+  align-items: center;
   padding: 3px 15px;
+}
+
+div.focused-liker-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #dbdbdb;
+  overflow: hidden;
+  box-shadow: 0 0 0.5px 0.5px #919191;
+  position: relative;
+}
+
+img.focused-liker-img {
+  width: 122%;
+  border-radius: 50%;
+  position: absolute;
+  top: -11%;
+  left: -10%;
+}
+
+.likes-count {
   font-size: 90%;
+  padding-left: 5px;
+}
+
+.likes-count span {
   font-weight: 700;
 }
 
@@ -594,16 +621,13 @@ li.feed-comment-item {
 }
 
 .feed-comment-heart {
-  width: 100%;
+  width: 90%;
 }
 
 .feed-posted-time {
   width: 100%;
   padding: 7px 15px;
   padding-bottom: 10px;
-}
-
-.posted-time {
   font-size: 65%;
   color: #9d9d9d;
 }
@@ -695,6 +719,10 @@ img.account-profile-pic {
   font-size: 75%;
 }
 
+.suggestions-box {
+  /* border: 1px solid black; */
+}
+
 .suggestions-header {
   display: flex;
   justify-content: space-between;
@@ -712,6 +740,10 @@ img.account-profile-pic {
 .suggestions-see-all {
   color: black;
   font-size: 75%;
+}
+
+ul.suggestions-list {
+  /* border: 1px solid black; */
 }
 
 .suggestion-item {
