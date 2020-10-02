@@ -230,8 +230,6 @@ const navMenuDropdown = document.querySelector('div.nav-menu-dropdown');
 
 function toggleDropdownDisplay() {
   const isDropdownShown = navMenuDropdown.style.display === 'block';
-  console.log(navMenuDropdown.style.display);
-  console.log(isDropdownShown);
   navMenuDropdown.style.display = isDropdownShown ? 'none' : 'block';
   isDropdownShown ? navMenuHomeIcon.setAttribute('src', 'img/main/nav_menu_home_icon.png') : navMenuHomeIcon.setAttribute('src', 'img/main/onclick_icons/nav_menu_home_icon_white.png');
   navMenuHomeIcon.style.width = isDropdownShown ? '130%' : '120%';
