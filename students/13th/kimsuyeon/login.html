@@ -15,9 +15,23 @@
           <img src="img\logo_text.png" alt="logo" />
         </div>
         <div class="login">
-          <input type="email" placeholder="전화번호, 사용자 이름 또는 이메일" />
-          <input type="password" placeholder="비밀번호" />
-          <button>로그인</button>
+          <form>
+            <label for="email"></label>
+            <input
+              type="email"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+              name="email"
+              id="email"
+            />
+            <label for="password"></label>
+            <input
+              type="password"
+              placeholder="비밀번호"
+              name="password"
+              id="password"
+            />
+            <button>로그인</button>
+          </form>
         </div>
         <div class="alert">
           <p>비밀번호를 잊으셨나요?</p>

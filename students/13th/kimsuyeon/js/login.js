@@ -12,8 +12,12 @@ idPw.addEventListener("keyup", function () {
     userPw.value.length > 4;
 
   isValid
-    ? (loginBtn.style.backgroundColor = "#0095F6")
-    : (loginBtn.style.backgroundColor = "#b2dffc");
+    ? (loginBtn.style.backgroundColor = "#0095F6")(
+        (loginBtn.style.cursor = "pointer")
+      )
+    : (loginBtn.style.backgroundColor = "#b2dffc")(
+        (loginBtn.style.cursor = "")
+      );
 });
 
 /*keydown, keypress event는 다음 key가 눌려야 그 직전 event가 종료된 것으로 인식하는듯하다.

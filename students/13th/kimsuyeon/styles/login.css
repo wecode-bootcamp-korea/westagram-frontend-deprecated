@@ -23,14 +23,14 @@ section {
   margin: auto;
 }
 
-div.logo {
+.logo {
   margin: 30px auto;
   width: 100%;
   height: auto;
   text-align: center;
 }
 
-div.login {
+.login {
   margin-top: 50px;
   width: 100%;
   text-align: center;
@@ -65,7 +65,7 @@ button {
   height: 29.6px;
 }
 
-div.alert {
+.alert {
   color: #385185;
   font-size: 12px;
   margin-top: 100px;

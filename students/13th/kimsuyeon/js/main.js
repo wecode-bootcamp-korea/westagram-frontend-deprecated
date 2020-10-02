@@ -1,42 +1,29 @@
 "use strict";
 
+//댓글 HTML Tag 생성 및 댓글 달기 창 초기화
 const saveReply = () => {
   const addPostPosition = document.querySelector(".reply_contents");
-  const createReplyList = document.createElement("li");
-  createReplyList.className = "reply_content";
-  addPostPosition.appendChild(createReplyList);
+  const userId = document.querySelector(".aside_user_id").innerText;
+  const replyText = document.querySelector(".reply_input_text").value;
+  const li = document.createElement("li");
+  const createReplyList = `
+  <div class="content_information">
+    <p class="user_id">${userId}</p>
+    <p class="reply_user_comment">${replyText}</p>
+  </div>
+  <div class="button_container">
+    <i class="far fa-heart"></i>
+    <i class="fas fa-times"></i>
+  </div>
+`;
 
-  const createReplyInformation = document.createElement("div");
-  createReplyInformation.className = "content_information";
-  createReplyList.appendChild(createReplyInformation);
-
-  const createReplyUserId = document.createElement("p");
-  createReplyUserId.className = "user_id";
-  createReplyUserId.innerHTML = document.querySelector(
-    ".aside_user_id"
-  ).innerText;
-  createReplyInformation.appendChild(createReplyUserId);
-
-  const createReplyComment = document.createElement("p");
-  createReplyComment.className = "reply_user_comment";
-  createReplyComment.innerHTML = replyTextLocation.value;
-  createReplyInformation.appendChild(createReplyComment);
-
-  const createButtonContainer = document.createElement("div");
-  createButtonContainer.className = "button_container";
-  createReplyList.appendChild(createButtonContainer);
-
-  const createLikeButton = document.createElement("i");
-  createLikeButton.className = "far fa-heart";
-  createButtonContainer.appendChild(createLikeButton);
-  createButtonContainer.style.cursor = "grab";
-
-  const createDeleteButton = document.createElement("i");
-  createDeleteButton.className = "fas fa-times";
-  createButtonContainer.appendChild(createDeleteButton);
-  createButtonContainer.style.cursor = "grab";
+  li.className = "reply_content";
+  li.innerHTML = createReplyList;
+  addPostPosition.appendChild(li);
+  replyTextLocation.value = "";
 };
 
+// 댓글 생성 (게시 버튼 스타일, Click/Enter 입력시 추가)
 const replyTextLocation = document.querySelector(".reply_input_text");
 const buttonLocation = document.querySelector(".reply_input_button");
 
@@ -49,33 +36,23 @@ replyTextLocation.addEventListener("keyup", function () {
 });
 
 buttonLocation.addEventListener("click", function () {
-  if (replyTextLocation.value.length > 0)
-    saveReply(),
-      (replyTextLocation.value = ""),
-      (buttonLocation.style.color = "#b2dffc"),
-      (buttonLocation.style.cursor = "default");
+  if (replyTextLocation.value.length > 0) saveReply();
 });
 
 replyTextLocation.addEventListener("keydown", function (enter) {
   const isValid = replyTextLocation.value.length > 0 && enter.keyCode === 13;
-  if (isValid)
-    saveReply(),
-      (replyTextLocation.value = ""),
-      (buttonLocation.style.color = "#b2dffc"),
-      (buttonLocation.style.cursor = "default");
+  if (isValid) saveReply();
 });
 
+//좋아요/삭제 버튼 동작
 document.addEventListener("click", function (likedEvent) {
   const clickedLocation = likedEvent.target;
-  const getId = clickedLocation.className;
+  const getId = clickedLocation.className === "far fa-heart";
 
-  if (getId === "far fa-heart" && clickedLocation.style.color === "") {
+  if (getId && clickedLocation.style.color === "") {
     clickedLocation.className = "fas fa-heart";
     clickedLocation.style.color = "red";
-  } else if (
-    getId === "fas fa-heart" &&
-    clickedLocation.style.color === "red"
-  ) {
+  } else if (!getId && clickedLocation.style.color === "red") {
     clickedLocation.className = "far fa-heart";
     clickedLocation.style.color = "";
   }
@@ -86,22 +63,10 @@ document.addEventListener("click", function (deleteEvent) {
   const getId = eventLocation.className === "fas fa-times";
   const deleteReply = eventLocation.parentNode.parentNode;
 
-  if (getId) {
-    deleteReply.remove();
-  }
+  if (getId) deleteReply.remove();
 });
 
-document.addEventListener("click", function (profile) {
-  const eventLocation = profile.target;
-  const getId = eventLocation.className === "profile_icon";
-  const containerPosition = document.querySelector(".tool_container");
-
-  (getId && containerPosition.style.visibility === "") ||
-  (getId && containerPosition.style.visibility === "hidden")
-    ? (containerPosition.style.visibility = "visible")
-    : (containerPosition.style.visibility = "hidden");
-});
-
+//사용자 정보 rawdata 및 검색창 HTML 생성
 let userRawDatas = [
   {
     userImage:
@@ -165,43 +130,27 @@ let userRawDatas = [
   },
 ];
 
+const searchBoxLocation = document.querySelector(".search_box");
 const makeListBox = (filteredData) => {
-  const searchBoxLocation = document.querySelector(".search_box");
-  const createList = document.createElement("li");
-  createList.className = "search_list";
-  searchBoxLocation.appendChild(createList);
+  const li = document.createElement("li");
+  const userImage = filteredData.userImage;
+  const userId = filteredData.userId;
+  const userDescription = filteredData.userDescription;
+  const boxMaker = `<div class="search_user_container">
+  <img src="${userImage}" alt="user_image" class="search_user_image">
+</div>
+<div class="search_user_info">
+  <p class="search_user_id">${userId}</p>
+  <p class="search_user_description">${userDescription}</p>
+</div>`;
 
-  const createUserContainer = document.createElement("div");
-  createUserContainer.className = "search_user_container";
-  createList.appendChild(createUserContainer);
-
-  const createUserImage = document.createElement("img");
-  createUserImage.className = "search_user_image";
-  createUserImage.src = filteredData.userImage;
-  createUserImage.alt = "user_image";
-  createUserContainer.appendChild(createUserImage);
-
-  const createInfoContainer = document.createElement("div");
-  createInfoContainer.className = "search_user_info";
-  createUserContainer.appendChild(createInfoContainer);
-
-  const createUserId = document.createElement("p");
-  createUserId.className = "search_user_id";
-  createUserId.innerHTML = filteredData.userId;
-  createInfoContainer.appendChild(createUserId);
-
-  const createUserDescription = document.createElement("p");
-  createUserDescription.className = "search_user_description";
-  createUserDescription.innerHTML = filteredData.userDescription;
-  createInfoContainer.appendChild(createUserDescription);
+  li.className = "search_list";
+  li.innerHTML = boxMaker;
+  searchBoxLocation.appendChild(li);
 };
 
 const makeNoDataBox = () => {
-  const searchBoxLocation = document.querySelector(".search_box");
-  const createList = document.createElement("li");
-  createList.className = "no_data_box";
-  createList.innerHTML = "검색 결과가 없습니다.";
-  searchBoxLocation.appendChild(createList);
+  searchBoxLocation.innerHTML = `<li class="no_data_box">검색 결과가 없습니다.</li>`;
 };
 
 const makeFilteredList = (userDatas) => {
@@ -209,24 +158,32 @@ const makeFilteredList = (userDatas) => {
 };
 
 document.addEventListener("keyup", function (keyIn) {
+  const searchBox = document.querySelector(".search_box");
+  const boxHorn = document.querySelector(".search_box_horn");
   const typedInText = document.querySelector(".search").value;
-  const initializeList = document.querySelectorAll(".search_list");
-  const isMatchedList = userRawDatas.filter((data) => {
-    return data.userId.indexOf(typedInText) >= 0;
-  });
+  const isMatchedList = userRawDatas.filter(
+    (data) => data.userId.indexOf(typedInText) >= 0
+  );
 
   if (typedInText === "") {
-    document.querySelectorAll(".no_data_box").forEach((list) => list.remove());
-    document.querySelector(".search_box").style.visibility = "hidden";
+    boxHorn.style.visibility = "hidden";
+    searchBox.style.visibility = "hidden";
   } else if (isMatchedList.length > 0) {
-    initializeList.forEach((list) => list.remove());
-    document.querySelectorAll(".no_data_box").forEach((list) => list.remove());
-    document.querySelector(".search_box").style.visibility = "visible";
+    searchBox.innerHTML = "";
+    boxHorn.style.visibility = "visible";
+    searchBox.style.visibility = "visible";
     makeFilteredList(isMatchedList);
-  } else {
-    initializeList.forEach((list) => list.remove());
-    document.querySelectorAll(".no_data_box").forEach((list) => list.remove());
-    makeNoDataBox();
-    document.querySelector(".no_data_box").style.visibility = "visible";
-  }
+  } else makeNoDataBox();
+});
+
+//프로필 클릭시 메뉴 박스 생성
+const containerPosition = document.querySelector(".tool_container");
+
+document.addEventListener("click", function (profile) {
+  const eventLocation = profile.target;
+  const getId = eventLocation.className === "profile_icon";
+
+  getId && containerPosition.style.visibility === ""
+    ? (containerPosition.style.visibility = "visible")
+    : (containerPosition.style.visibility = "");
 });
