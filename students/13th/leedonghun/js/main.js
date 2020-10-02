@@ -304,6 +304,8 @@ const sampleCommentsData = [
   '👍🧡'
 ]
 
+const feedsDiv = document.querySelector('div.feeds');
+
 function generateFeed(picNum) {
   let profileRandNumArr = generateRandomOrderArr(generateOrderedArr(0, followersIds.length));
   let profileNum = profileRandNumArr[0];
@@ -315,7 +317,6 @@ function generateFeed(picNum) {
   let commentRandNumArr = generateRandomOrderArr(generateOrderedArr(0, sampleCommentsData.length));
   let commentNum = commentRandNumArr[0];
   let randomCommentsCount = Math.floor(Math.random() * 3 + 1);
-  const feedsDiv = document.querySelector('div.feeds');
   const feed = document.createElement('div');
   feed.className = `feed-element feed-${placeNum}`;
   feed.innerHTML = `
@@ -390,31 +391,22 @@ function generateFeed(picNum) {
     generateFeed(feedRandNumArr[i]);
   }
   
-  const postButton = document.querySelector('.post-button');
+  
 
-  function activatePostButton(e) {
-    const postInput = e.target.value.length > 0;
-    postButton.style.opacity = postInput ? 1 : 0.3;
-    postButton.style.cursor = postInput ? 'pointer' : 'default';
-  }
-  
-  const postCommentBox = document.querySelector('.post-comment-box');
-  postCommentBox.addEventListener('input', activatePostButton);
-  
-  const feedElement = document.querySelector('.feed-element');
-  const feedActionHeartIcon = feedElement.querySelectorAll('.feed-action-heart');
-  const feedCommentHeartIcon = feedElement.querySelectorAll('.feed-comment-heart');
-  const feedActionTagIcon = feedElement.querySelectorAll('.feed-action-tag');
+  const feedElements = feedsDiv.querySelectorAll('.feed-element');
+  const feedActionHeartIcons = feedsDiv.querySelectorAll('.feed-action-heart');
+  const feedCommentHeartIcons = feedsDiv.querySelectorAll('.feed-comment-heart');
+  const feedActionTagIcons = feedsDiv.querySelectorAll('.feed-action-tag');
   
   let iconImgSrcOriginal = {};
-  feedActionHeartIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
-  feedCommentHeartIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
-  feedActionTagIcon.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_tag_icon.png');
+  feedActionHeartIcons.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
+  feedCommentHeartIcons.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_heart_icon.png');
+  feedActionTagIcons.forEach(el => iconImgSrcOriginal[el.className] = 'img/main/nav_menu_tag_icon.png');
   
   let iconImgSrcAfterSelect = {};
-  feedActionHeartIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
-  feedCommentHeartIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
-  feedActionTagIcon.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_tag_icon_black.png');
+  feedActionHeartIcons.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
+  feedCommentHeartIcons.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_heart_icon_red.png');
+  feedActionTagIcons.forEach(el => iconImgSrcAfterSelect[el.className] = 'img/main/onclick_icons/nav_menu_tag_icon_black.png');
   
   function isIconSelected(e) {
     if (e.target.getAttribute('src') === iconImgSrcOriginal[e.target.className]) {
@@ -434,57 +426,65 @@ function generateFeed(picNum) {
     }
   }
   
-  if (feedActionHeartIcon.length > 0) {
-    feedActionHeartIcon.forEach(el => el.addEventListener('click', changeIconColor));
+  feedActionHeartIcons.forEach(el => el.addEventListener('click', changeIconColor));
+  feedCommentHeartIcons.forEach(el => el.addEventListener('click', changeIconColor));
+  feedActionTagIcons.forEach(el => el.addEventListener('click', changeIconColor));
+  
+
+  const postButtons = feedsDiv.querySelectorAll('.post-button');
+  const postCommentBoxes = feedsDiv.querySelectorAll('.post-comment-box');
+
+  function activatePostButton() {
+    feedElements.forEach (el => {
+      const postCommentBox = el.querySelector('.post-comment-box');
+      const postButton = el.querySelector('.post-button');
+      const isInputValid = postCommentBox.value.length > 0;
+      postButton.style.opacity = isInputValid ? 1 : 0.3;
+      postButton.style.cursor = isInputValid ? 'pointer' : 'default';
+    })
   }
   
-  if (feedCommentHeartIcon.length > 0) {
-    feedCommentHeartIcon.forEach(el => el.addEventListener('click', changeIconColor));
-  }
-  
-  if (feedActionTagIcon.length > 0) {
-    feedActionTagIcon.forEach(el => el.addEventListener('click', changeIconColor));
-  }
+  postCommentBoxes.forEach(el => el.addEventListener('input', activatePostButton));
+
   
   function postComment() {
-    if (postCommentBox.value.length > 0) {
-      const feedComments = document.querySelector('.feed-comments');
-      const newCommentPoster = document.createElement('a')
-      newCommentPoster.setAttribute('href','');
-      newCommentPoster.setAttribute('class', 'feed-profile-id');
-      const currentAccountUser = document.querySelector('p.account-profile-id').innerText;
-      newCommentPoster.innerHTML = currentAccountUser;
-      const newCommentContent = document.createElement('p');
-      newCommentContent.setAttribute('class', 'feed-comment');
-      const commentContent = postCommentBox.value;
-      newCommentContent.innerHTML = commentContent;
-      const newCommentHeartIcon = document.createElement('img');
-      newCommentHeartIcon.setAttribute('src', 'img/main/nav_menu_heart_icon.png');
-      newCommentHeartIcon.setAttribute('alt', 'feed comment like heart icon');
-      newCommentHeartIcon.setAttribute('class', 'feed-comment-heart');
-      newCommentHeartIcon.addEventListener('click', changeIconColor);
-      const newCommentHeartIconDiv = document.createElement('div');
-      newCommentHeartIconDiv.setAttribute('class', 'feed-comment-like');
-      newCommentHeartIconDiv.appendChild(newCommentHeartIcon);
-      const newFeedComment = document.createElement('li');
-      newFeedComment.setAttribute('class', 'feed-comment-item');
-      newFeedComment.appendChild(newCommentPoster);
-      newFeedComment.appendChild(newCommentContent);
-      newFeedComment.appendChild(newCommentHeartIconDiv);
-      feedComments.appendChild(newFeedComment);
-      postCommentBox.value = '';
-      postButton.style.opacity = 0.3;
-      postButton.style.cursor = 'default';
-      postButton.disabled = "true";
-    }
+    feedElements.forEach(el => {
+      const postCommentBox = el.querySelector('.post-comment-box');
+      const postButton = el.querySelector('.post-button');
+      const currentAccountUser = document.querySelector('p.account-profile-id');
+      if (postCommentBox.value.length > 0) {
+        const newFeedComment = document.createElement('li');
+        newFeedComment.className = 'feed-comment-item';
+        newFeedComment.innerHTML = `
+        <li class="feed-comment-item">
+          <a href="" class="feed-profile-id">${currentAccountUser.innerText}</a>
+          <p class="feed-comment">${postCommentBox.value}</p>
+          <div class="feed-comment-like">
+          </div>
+          </li>
+          `;
+        const newCommentHeartIcon = document.createElement('img');
+        newCommentHeartIcon.setAttribute('src', 'img/main/nav_menu_heart_icon.png');
+        newCommentHeartIcon.setAttribute('alt', 'feed comment like heart icon');
+        newCommentHeartIcon.className = 'feed-comment-heart';
+        newCommentHeartIcon.addEventListener('click', changeIconColor);
+        const newCommentHeartIconDiv = newFeedComment.querySelector('.feed-comment-like');
+        newCommentHeartIconDiv.appendChild(newCommentHeartIcon);
+        const feedCommentsUl = el.querySelector('.feed-comments');
+        feedCommentsUl.appendChild(newFeedComment);
+        postCommentBox.value = '';
+        postButton.style.opacity = 0.3;
+        postButton.style.cursor = 'default';
+      }
+    })
   }
   
-  postCommentBox.addEventListener('keyup', function(e) {
+  postCommentBoxes.forEach(el => el.addEventListener('keyup', function(e) {
     if(e.keyCode === 13) {
       postComment();
     }
-  });
-  postButton.addEventListener('click', postComment);
+  }));
+  postButtons.forEach(el => el.addEventListener('click', postComment));
 
 
 
