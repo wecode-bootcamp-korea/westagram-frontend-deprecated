@@ -271,6 +271,8 @@
   display: block;
   position: absolute;
   right: 0;
+  border-style: none;
+  background-color: transparent;
 }
 
 .comment__like img {
@@ -292,11 +294,13 @@
 }
 
 .add__comment {
-  width: 90%;
+  width: 550px;
+  height: 100%;
   border-style: none;
   padding-left: 17px;
   font-size: 14px;
   color: #8f8f8f;
+  outline: none;
 }
 
 .add__comment-btn {
@@ -305,6 +309,39 @@
   background-color: transparent;
   font-size: 14px;
   color: #c0e0fd;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.commentLi {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  height: 19px;
+  line-height: 19px;
+}
+
+.userA {
+  margin-right: 10px;
+  font-weight: 700;
+  color: #262626;
+  font-size: 15px;
+}
+
+.userSpan {
+  text-align: left;
+  font-size: 14px;
+}
+
+.heartImg {
+  border-style: none;
+  background-color: transparent;
+}
+
+.heartImg > img {
+  width: 13px;
+  
 }
 
 .relative {
@@ -457,7 +494,7 @@
 
 @media only screen and (max-width: 987px) {
   .side__container {
-    position: relative;
+    display: none;
   }
 
   .main__container-in {
