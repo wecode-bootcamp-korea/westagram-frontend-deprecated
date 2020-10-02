@@ -460,16 +460,12 @@ function generateFeed(picNum) {
           <a href="" class="feed-profile-id">${currentAccountUser.innerText}</a>
           <p class="feed-comment">${postCommentBox.value}</p>
           <div class="feed-comment-like">
+            <img src="img/main/nav_menu_heart_icon.png" alt="feed comment like heart icon" class="feed-comment-heart">
           </div>
           </li>
           `;
-        const newCommentHeartIcon = document.createElement('img');
-        newCommentHeartIcon.setAttribute('src', 'img/main/nav_menu_heart_icon.png');
-        newCommentHeartIcon.setAttribute('alt', 'feed comment like heart icon');
-        newCommentHeartIcon.className = 'feed-comment-heart';
+        const newCommentHeartIcon = newFeedComment.querySelector('.feed-comment-heart');
         newCommentHeartIcon.addEventListener('click', changeIconColor);
-        const newCommentHeartIconDiv = newFeedComment.querySelector('.feed-comment-like');
-        newCommentHeartIconDiv.appendChild(newCommentHeartIcon);
         const feedCommentsUl = el.querySelector('.feed-comments');
         feedCommentsUl.appendChild(newFeedComment);
         postCommentBox.value = '';
