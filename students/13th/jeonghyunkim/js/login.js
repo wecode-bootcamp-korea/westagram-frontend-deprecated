@@ -4,16 +4,15 @@ const button = document.querySelector(".btlogin");
 const login = document.querySelector(".main_login");
 
 function LoginEvent() {
-  if (id.value.length > 0 && password.value.length > 0) {
+  if (id.value.length >=5 && id.value.search("@") !=-1  && password.value.length >= 5) {
     button.disabled = false;
     button.style.backgroundColor = "#0095F6";
     button.style.cursor = "pointer";
   } else {
     button.disabled = true;
-    button.style.backgroundColor = "#B9DFFC";
-    button.style.cursor = "default";
+  button.style.backgroundColor = "#B9DFFC";
+  button.style.cursor = "default";
   }
-
 }
 
 login.addEventListener("keyup", LoginEvent);
