@@ -79,8 +79,3 @@ form .login-submit{
     margin-top: 80px;
     margin-bottom: 10px;
 }
-
-
-.login-submit:active{
-    background-color: rgb(0, 149, 246);
-}
