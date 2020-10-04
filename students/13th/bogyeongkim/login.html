@@ -5,25 +5,47 @@
     <meta name="viewport" content="width=device-width">
     <title>Instagram</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
-     <link href="style/login.css" rel="stylesheet" type="text/css" />
-     <link rel="shortcut icon" href="img/instagram.png"/>
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/instagram.png"/>
   </head>
   <body>
-    <div class="total-container">
-    <header><img src="img/logo_text.png"alt="instagram"></header>
-    <form name="login-form" method="post">
-    <div class="phone" >
-      <input id="phoneID" type="text" placeholder="전화번호,사용자 이름 또는 이메일">
+   <div class="totalContainer">
+    <div class="leftContainer">
+     <img src="img/loginphoto.png" alt="loginphoto"/>
     </div>
-     <div class="password">
-      <input id="psWord" type="password" placeholder="비밀번호">
+    <div class="rightContainer">
+     <header>
+      <img src="img/logo_text.png"alt="instagram">
+     </header>
+     <form class="loginForm" name="login-form" method="post">
+      <div class="phone" >
+       <input id="phoneID" type="text" placeholder="전화번호,사용자 이름 또는 이메일">
+      </div>
+      <div class="password">
+       <input id="psWord" type="password" placeholder="비밀번호">
+      </div>
+      <div class="loginBtn">
+       <button id="logBtn" type="submit">로그인</button> 
+      </div>
+     </form>
+     <div class="bottomLine">
+      <div class="leftLine"></div>
+      <div class="middleLine">또는</div>
+      <div class="rightLine"></div>
+     </div>
+     <footer>
+      <div class=facebookLogin>
+       <span><img src="img/facebook.png" alt="facebook"></span>
+       <p class=fbLogin>Facebook으로 로그인</p>
+     </div>
+      <p class="forgetPassword">비밀번호를 잊으셨나요?</p>
+     </footer>
+     <div class="accountSign">
+      <span class="ifnoAccount">계정이 없으신가요?</span>
+      <span class="sign">가입하기</span>
+     </div>
     </div>
-    <div class="loginBtn">
-      <button id="logBtn" type="submit">로그인</button> 
-    </div>
-  </form>
-    <footer class="final_forget">비밀번호를 잊으셨나요?</footer>
-    </div>
-    <script src="js/login.js"></script>
+   </div>
+   <script src="js/login.js"></script>
   </body>
 </html>

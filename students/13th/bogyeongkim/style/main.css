@@ -1,63 +1,481 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body{
+  width:100%;
+  margin:0;
+  padding:0;
+  background-color:#fafafa;
+}
+
 nav{
   position:fixed;
-  top:10px;
   width:100%;
-  height:20%;
+  height:50px;
   display:flex;
   justify-content:center;
   flex-direction:row;
   border-bottom:1px solid #DBDBDB;
-}
-body{
-  width:100%;
+  background-color:white;
 }
 
-.container{
+nav .container{
   width:100%;
+  height:100%;
   margin: 0 auto;
+  padding-top:10px;
   display:flex;
-  align-items:center;
+  justify-content:center;
   max-width:975px;
+  background-color:white;
 }
-.instaLogo{
+
+.container img.instaLogo{
   margin-top:7px;
   max-height:70%;
   max-width:70%;
+}
+
+.container .search{
+  position:relative;
+  margin:0 auto;
+  padding-bottom:50px;
+  width:215px;
+}
+
+.search input#searchbox{
+  width:100%;
+  position:absolute;
+  margin-bottom:3px;
+  border: 1px solid #E3E3E3;
+  padding:10px 12px 10px 12px;
+  font-size:14px; 
+  font-weight: 300;
+  text-align:center;
+  border-radius:3px;
+  background-color:#fafafa;
+  min-width:125px;
+  height:28px;
+}
+
+.search input#searchbox{
+  background:url("../img/search_icon.png") no-repeat;
+  background-size:12px;
+  background-position:76px;
+}
+
+.search input#searchbox:focus{
+ background-position:10px;
+}
+
+.search input#searchbox:focus::placeholder{
+  color:transparent;
+}
+
+.container .icons{
+  display:flex;
+  justify-content:space-between;
+}
+
+.icons img.iconImg{
+  width:22px;
+  height:22px;
+  margin-bottom:10px;
+  margin-left:24px;
+  margin-top:5px;
+}
+
+.icons img.iconPhoto{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  margin-left:24px;
+  margin-top:5px;
+}
+
+main{
+  width:100%;
+  height:100%;
+  margin: 0 auto;
+}
+
+.mainLeft{
+  margin-left:150px;
+  position:absolute;
+  z-index:-2;
+}
+
+#mainRight{
+  width:350px;
+  height:600px;
+  position:fixed;
+  margin-top:100px;
+  margin-left:800px;
+}
+
+.mainLeft .topPhotos{
+  margin-top:100px;
+  width:614px;
+  height:120px;
+  border:1px solid #DBDBDB;
+  border-radius:3px;
+  position:absolute;
+  background-color:white;
+}
+
+.topPhotos ul.photos{
+  display:flex;
+  flex-direction:row;
+  list-style:none;
+}
+
+.photos button.photo1{ 
+  width:66px;
+  height:66px;
+  border-radius:50%;
+  border:2px solid #d02c86;
+  background-color:white;
+  margin-left:20px;
+}
+
+.photos img#storyPhoto{
+  max-width:56px;
+  max-height:56px;
+  border-radius:50%;
+  margin:3px -3px;
+  border:1px solid  #DBDBDB;
+}
+
+.photos .photoText1{
+  font-size:12px;
+  margin-left:30px;
+}
+
+.photos .photoText2{
+  font-size:12px;
+  margin-left:40px;
+}
+
+.photos .photoText3{
+  font-size:12px;
+  margin-left:30px;
+}
+
+.photos .photoText4{
+  font-size:12px;
+  margin-left:40px;
+}
+
+.photos .photoText5{
+  font-size:12px;
+  margin-left:35px;
+}
+
+.photos .photoText6{
+  font-size:12px;
+  margin-left:30px;
+}
+
+article{
+  margin-top:250px;
+  width:614px;
+  height:920px;
+  border:1px solid #DBDBDB;
+  border-radius:3px;
+  background-color:white;
+}
+
+article header{
+  width: 100%;
+  height:8%;
+  padding:10px 5px 0 10px;
+  display:flex;
+  flex-direction:row;
+  margin-top:10px;
+}
+
+header img.smallPhoto{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  margin-left:10px;
+}
+
+header .smallPhotoName{
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+  margin-top:10px;
+  margin-left:15px;
+}
+
+header .dot{
+  margin-top:10px;
+  margin-left:450px;
+}
+
+article .feedPhoto{
+  max-width:100%;
+  max-height:830px;
+}
+
+.feedPhoto,img{
+  max-width:100%;
+  max-height:614px;
+}
+
+.feedBtn{
+  width:100%;
+  max-height:40px;
+  display:flex;
+  flex-direction:row;
 
 }
-.search{
-   position:relative;
-   margin:10px auto;
-   display:inline;
 
+.feedBtn .heart{
+ margin-left:10px;
+ margin-top:10px;
+ width:27px;
 }
-.search_text{
-    width:100%;
-    position:absolute;
-    border: 1px solid #bbb;
-    padding:10px 12px 10px 12px;
-    font-size:14px; 
-    text-align:center;
-    border-radius:3px;
-    background-color:#fafafa;
-    
-}
-.searchImg{
-    position:absolute;
-    width:17px;
-    margin:0;
-    top:10px;
-    left:90px; 
-    z-index:1;
-    display:inline-block;
-    margin-right:6px;
-    vertical-align:baseline;
 
-  }
-  .icons{
-    max-width:50%;
-    max-height:50%;
-  }
+.feedBtn .comment{
+ margin-left:8px;
+ margin-bottom:30px;
+ max-width:42px;
+ max-height:42px;
+}
+
+.feedBtn .dm{
+  width:25px;
+  height:25px;
+  margin-left:5px;
+  margin-top:10px;
+}
+
+.feedBtn .unnamed{
+  width:70px;
+  height:40px;
+  margin-left:450px;
+  margin-bottom:10px;
+}
+
+.feedLike{
+  width:100%;
+  max-height:18px;
+  margin-left:10px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.feedContent{
+  margin-top:10px;
+  margin-left:10px;
+  font-size:14px;
+}
+
+.feedContent .feedName{
+ font-weight:bold;
+}
+
+.feedAllComment{
+  font-size:14px;
+  color:#acafb8;
+  margin-left:10px;
+  margin-top:5px;
+}
+
+.feedComment{
+  font-size:14px;
+  display:flex;
+  flex-direction:row;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.feedComment>ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.feedComment li.userName{
+  font-weight:bold;
+  margin-right:5px;
+}
+
+.userName .firstComment{
+  font-size:14px;
+  font-weight:lighter;
+}
+
+.userName .smallHeart{
+  width:12px;
+  height:12px;
+  margin-left:475px;
+}
+
+.userName .smallHeart1{
+  width:12px;
+  height:12px;
+  margin-left:471px;
+}
+
+.time{
+  font-size:10px;
+  color:#acafb8;
+  margin-left:10px;
+}
+
+form#commentForm{
+  border-top:1px solid  #DBDBDB;
+  width:100%;
+  height:56px;
+}
+
+form #commentArea{
+  border:0;
+  max-height:56px;
+  margin-top:15px;
+  margin-left:15px;
+  font-size: 14px;
+  width:540px;
+  height: 18px;
+  overflow:hidden;
+  resize:none;
+}
+
+form #uploadBtn{
+  border:0;
+  background-color:white;
+  font-size:14px;
+  font-weight:bold;
+  color:#0095f6;
+  opacity:.3;
+  padding:0;
+  text-decoration:none;
+}
+
+#mainRight .rightPhoto{
+  display:flex;
+  flex-direction:row;
+}
+
+#mainRight .nameBox{
+  margin-left:15px;
+  margin-top:20px;
+}
+
+.nameBox .name{
+  font-size:11px;
+  font-weight:bold;
+  color:#8e8e8e; 
+}
+
+.rightPhoto img.profilePhoto{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  margin-left:10px;
+  margin-top:10px;
+}
+
+.nameBox .profileName{
+ 
+  font-size:14px;
+  font-weight:bold;
+}
+
+.recommendBox{
+  display:flex;
+  flex-direction:row;
+}
+
+.recommendBox .userRecommend{
+  font-size:14px;
+  color:#8e8e8e;
+  font-weight:bold;
+  margin-top:30px;
+  margin-left:10px;
+}
+.recommendBox .seeAllUser{
+  font-size:12px;
+  font-weight:bold;
+  margin-top:30px;
+  margin-left:160px;
+}
+
+.recommendGroup{
+  width:100%;
+  height:270px;
+  display:flex;
+  flex-direction:column;
+}
+
+ul.recommendList{
+  padding-right:30px;
+  margin-top:10px;
+  padding-left:10px;
+  list-style:none;
+}
+
+ul.recommendList li{
+  width:100%;
+  height:48px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+img.photoList{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  margin-top:10px;
+}
+
+.nameContainer{
+  width:200px;
+  height:35px;
+  display:flex;
+  flex-direction:column;
+  margin-top:15px;
+  margin-right:10px;
+  line-height:10px;
+}
+
+.nameContainer .photoName{
+ font-size:14px;
+ font-weight:bold;
+ margin-bottom:10px;
+}
+
+.nameContainer .followWho{
+  font-size:12px;
+  color:#8e8e8e;
+  font-weight:400;
+}
+.follow{
+  font-size:12px;
+  color:#0095f6;
+  font-weight:bold;
+  margin-top:10px;
+  margin-right:10px;
+}
+
+footer.explainBox{
+  margin-bottom:10px;
+  margin-left:17px;
+}
+
+.explainBox .finalExplain{
+  color:#C7C7C7;
+  font-size:11px;
+  padding-top:10px;
+}
+
+.explainBox .insta2020{
+  color:#C7C7C7;
+  font-size:11px;
+  margin-bottom:10px;
+}

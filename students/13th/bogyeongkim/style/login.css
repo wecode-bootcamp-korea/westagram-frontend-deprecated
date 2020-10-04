@@ -1,57 +1,159 @@
 *{
-    box-sizing:border-box;
+  box-sizing:border-box;
 }
 
-.total-container{
-    margin: 30px auto;
-    width:400px;
-    height:100%;
-    border:1px solid #CCC;
+body, html{
+  background-color:#Fafafa;
 }
 
-header{
-    margin:60px;
-    text-align:center;
+.totalContainer{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin:80px auto;
 }
-input{ 
-    width:300px;
-    height:40px;
-    margin:0 auto;
-    border:1px solid #999;
-    background-color:#fafafa;
-    border-radius:5px;
+
+.leftContainer{
+  width:370px;
+  height:584px;
+  margin-left:45px;
 }
+
+.leftContainer img{
+  max-width:100%;
+}
+
+.rightContainer{
+  width:350px;
+  height:400px;
+  border:1px solid #CCC;
+  background-color:white;
+  margin-left:20px;
+  margin-top:10px;
+}
+
+header img{
+  margin:30px 70px;
+}
+
+.loginForm{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ line-height:10px;
+}
+
+.loginForm input{ 
+  width:266px;
+  height:40px;
+  margin:0 auto;
+  font-size:12px;
+  border:1px solid #ccc;
+  background-color:#fafafa;
+  border-radius:3px;
+}
+
 button{
-    width:300px;
-    height:40px;
-    border:0;
-    background-color: #b9dffc;
-    border-radius:5px;
+  width:266px;
+  height:40px;
+  border:0;
+  background-color: #b9dffc;
+  border-radius:5px;
 }
-.phone{
-     font-size:20px;
-     text-align:center;
-}
+
 .password{ 
-    padding-top:20px;
-    font-size:20px;
-    text-align:center;
+  padding-top:10px;
 }
-.final_forget{
-    padding-bottom:20px;
-    color:blue;
-    text-align:center;
 
+.forgetPassword{
+  padding-bottom:20px;
+  color:blue;
+  text-align:center;
 }
+
 .loginBtn{
-
-    padding:10px;
-    font-size:50px;
-    text-align:center;
-
+  padding:10px;
+  font-size:50px;
+  text-align:center;
 }
-footer{
-    margin-top:100px;
-    text-align:center;
 
+.loginBtn #logBtn{
+  color:white;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.bottomLine{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top:15px;
+}
+
+.leftLine{
+  width:103px;
+  border-top:1px solid #ccc;
+  margin-top:7px;
+}
+
+.middleLine{
+  width:55px;
+  font-size:14px;
+  color:#8e8e8e;
+  text-align:center;
+}
+
+.rightLine{
+  width:103px;
+  margin-top:7px;
+  border-top:1px solid  #ccc;
+}
+
+footer .facebookLogin{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+ 
+}
+
+footer .facebookLogin img{
+  margin-top:14px;
+  margin-right:10px;
+}
+
+
+footer p.fbLogin{
+  font-size:14px;
+  font-weight:600;
+  color: #385185;
+  
+}
+
+footer .forgetPassword{
+  font-size:12px;
+  text-align:center;
+  color: #385185;
+}
+
+.accountSign{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  width:350px;
+  height:60px;
+  border:1px solid #CCC;
+  background-color:white;
+  margin-bottom:50px;
+  padding-top:20px;
+  font-size:14px;
+}
+
+.accountSign .ifnoAccount{
+  color:#646464;
+  font-weight:lighter;
+}
+
+.accountSign .sign{
+  color: #0095f6;
+  font-weight:bold;
 }

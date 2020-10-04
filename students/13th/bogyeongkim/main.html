@@ -5,29 +5,166 @@
     <meta name="viewport" content="width=device-width">
     <title>Instagram</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
-     <link href="style/main.css" rel="stylesheet" type="text/css" />
-     <link rel="shortcut icon" href="img/instagram.png"/>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/instagram.png"/>
   </head>
   <body>
-    <script src="js/main.js"></script>
+   <div>
     <nav>
-      <div class="container">
-      <div>
-        <img class=instaLogo src=img/logo_text.png />
-      </div>
-      <div class="search">
-        <span><img class="searchImg"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"></span>
-        <input class="search_text" type="text" placeholder="검색">
-      </div>
-      <div class="icons">
-        <img src="img/home.png"alt="home">
-        <img src="img/dm.png" alt="dm">
-        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"/>
-        <img src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
-        <img src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"/>
-      </div>
-    </div>
-     
+     <div class="container">
+       <div>
+         <img class="instaLogo" src="img/logo_text.png" />
+       </div>
+       <div class="search">
+         <input type="text" id="searchbox" placeholder="검색">
+       </div>
+       <div class="icons">
+         <img class="iconImg" src="img/home.png"alt="home">
+         <img class="iconImg" src="img/dm.png" alt="dm">
+         <img class="iconImg" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="search"/>
+         <img class="iconImg" src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart"/>
+         <img class="iconPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/120374158_128673045638796_8031674882934190126_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=c_UBGw2aZvUAX9vzS3B&oh=4d21cf3f6d90a9910c5846e8d9a269d0&oe=5FA0D330" alt="profile"/>
+       </div>
+     </div>  
     </nav>
+   <main>
+     <div class="mainLeft">
+       <div class="topPhotos">
+       <ul class="photos">
+       <li>
+        <button class="photo1"><img id="storyPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/75349282_431903637497623_4313120099830595584_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=bl04zmAfS3QAX8WYS9a&oh=f25bb5a3041fdbca8b5883d028b30b37&oe=5F970B8E" alt="universal"/></button>
+        <div class="photoText1">universal</div>
+       </li>
+       <li>
+         <button class="photo1"><img id="storyPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/71533411_449636125903525_7464596574253875200_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=ta78EfOcJRUAX-8x1Ju&oh=30fae2d429c0df7926ebe1d6f5e35bc0&oe=5F99C22B" alt="jennie"/></button>
+         <div class="photoText2">jennie</div>
+       </li>
+       <li>
+         <button class="photo1"><img id="storyPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/105365279_3520222574663213_8532879881338910739_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=IEd2YHWyUagAX9W_DaW&oh=32740cc25d2aa5099ef63542ffa061a6&oe=5F99AFE1" alt="iu"/></button>
+         <div class="photoText3">dlwlrma</div>
+       </li>
+       <li>
+        <button class="photo1"><img id="storyPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/111349901_1395387453991019_2451741521804599905_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=pK2sk-mMRJ8AX9gEQ52&oh=19f37eaeb99bb9263e54d3570c6dc36b&oe=5F9A0ECC" alt="hyolee"/></button>
+        <div class="photoText4">hyolee</div>
+       </li>
+       <li>
+        <button class="photo1"><img id="storyPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/51757673_541870449633960_829572817258283008_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MYpvdrMbCLwAX8FxTkU&oh=ca6a3079e8965a6fc356ff04877709fe&oe=5F9906AF" alt="jh" /></button>
+        <div class="photoText5">joohyuk</div>
+       </li>
+       <li>
+        <button class="photo1"><img id="storyPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/24254565_1470010129761673_1933981364881719296_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=iOVMzjsQQs8AX_2Hp2Y&oh=033f08ca469da1e535739c31abb06509&oe=5F98ADD8" alt="bg" /></button>
+        <div class="photoText6">bogeom</div>
+       </li>
+       </ul>
+      </div>
+     <article>
+       <header>
+         <div>
+          <img class="smallPhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/119738863_1988883098085782_4229784649426119329_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Lybxi4EU1JgAX9WUbiV&oh=6e9d487139df20c5595d22bccbb3ea6b&oe=5F9A2273" alt="작은 사진"/>
+         </div>
+         <span class="smallPhotoName">dlwlrma</span>
+         <div class="dot">
+          <img src="img/more.png"alt="circle_dot">
+         </div>
+       </header>
+       <div class="feedPhoto">
+         <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/101653756_264362278013052_3708976393041530975_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=9tnG4HBB6LMAX_OEosB&_nc_tp=15&oh=dd0c7f00d28ec748fe42e08ab5c69615&oe=5F9A7788" alt="사진"/>
+       </div>
+       <div class="feedBtn">
+         <div class="heart"><img src="img/heart.png" alt="heart"></div>
+         <div class="comment"><img src="img/comment.jpg"alt="comment"></div>
+         <div class="dm"><img src="img/dm1.png" alt="dm"></div>
+         <div class="unnamed"><img src="img/unnamed.png" alt="unnamed"></div>
+       </div>
+       <div class="feedLike">좋아요 587개</div>
+       <div class="feedContent">
+         <span class="feedName">dlwlrma</span>
+         <span>지구를 지켜 바나나!!</span>
+       </div>
+       <div class="feedAllComment">댓글 4개 모두 보기</div>
+       <div class="feedComment">
+       <ul>
+         <li class="userName">chloe
+          <span class="firstComment">So cute:)</span>
+          <span><img class="smallHeart" src="img/heart.png" alt="heart"/></span>
+         </li>
+         <li class="userName">harry
+          <span class="firstComment"> Adorable!</span>
+          <span><img class="smallHeart1" src="img/heart.png" alt="heart"/></span>
+         </li>
+       </ul>
+       </div>
+       <div id="comments"></div>
+       <div><span class="time">5시간 전</span></div>
+       <form id="commentForm" method="POST">
+         <textarea id="commentArea" rows="5" col="30"placeholder="댓글 달기..."></textarea>
+         <a href="#" id="uploadBtn" onclick="postComment();">게시</a> 
+       </form>
+     </article>
+     </div>
+     <div id="mainRight">
+       <div class="rightPhoto">
+         <img class="profilePhoto" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/120374158_128673045638796_8031674882934190126_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=c_UBGw2aZvUAX9vzS3B&oh=4d21cf3f6d90a9910c5846e8d9a269d0&oe=5FA0D330" alt="profilePhoto"/>
+         <div class=nameBox>
+           <div class="profileName">bo.qhrud_</div>
+           <div class="name">CHLOE🤍</div>
+         </div>
+       </div>
+       <div class="recommendBox">
+         <span class="userRecommend">회원님을 위한 추천</span>
+         <span class="seeAllUser">모두 보기</span>
+       </div>
+       <div class="recommendGroup">
+       <ul class="recommendList">
+         <li>
+           <img class="photoList" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/109208929_3101925519888737_1522869340239906863_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=FXfcMWyhqosAX_pOdjY&oh=21d5396613aea1f19ced83cba6c4234e&oe=5F9BCB08" alt="harry"/>
+           <div class="nameContainer">
+             <div class="photoName">harrystyles</div>
+             <div class="followWho">neoeren님 외 3명이 팔로우합니다</div>
+           </div>
+           <div class="follow">팔로우</div>
+          </li>
+          <li>
+            <img class="photoList" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/92929672_556110498655630_1882470159948447744_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=ZzFSGxG1TMYAX_PBAat&oh=382472ba3600089a877ef8e9d0cc57f6&oe=5F9CEDA8" alt="tom"/>
+            <div class="nameContainer">
+             <div class="photoName">tommish</div>
+             <div class="followWho">naushin님 외 2명이 팔로우합니다</div>
+            </div>
+            <div class="follow">팔로우</div>
+          </li>
+          <li>
+            <img class="photoList" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/110606554_274256377193351_7760278100826446941_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=xIPT_TBWM1QAX9syiG0&oh=6011c879f9c19a9eb8b4a7160f195436&oe=5F9C402E"alt="taylor"/>
+            <div class="nameContainer">
+             <div class="photoName">taylorswift</div>
+             <div class="followWho">samson_c님 외 5명이 팔로우합니다</div>
+            </div>
+            <div class="follow">팔로우</div>
+          </li>
+         <li> 
+           <img class="photoList" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/118726631_627782271509971_7872339884670239799_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=NfWDfbEvbqAAX_bmjsS&oh=b607304dace8222ec6ed0427d34d391c&oe=5F9E1687"alt="selena"/>
+           <div class="nameContainer">
+             <div class="photoName">selenagomez</div>
+             <div class="followWho">whelan님 외 9명이 팔로우합니다</div>
+           </div>
+           <div class="follow">팔로우</div>
+         </li>
+         <li>
+           <img class="photoList" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/62210614_846268582418127_6149448713153544192_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Hv5koyP5G0MAX9bLZ4g&oh=e3487ee8f382d00dfb0bd9cf5a99d076&oe=5F9B4260"alt="shawn"/>
+           <div class="nameContainer">
+            <div class="photoName">shawnmendes</div>
+            <div class="followWho">kate_님 외 7명이 팔로우합니다</div>
+           </div>
+           <div class="follow">팔로우</div>
+         </li>
+       </ul>
+       </div>
+      <footer class="explainBox">
+        <div class="finalExplain">소개 · 도움말 · 홍보 센터 · API · 채용 정보 · 개인정보처리방침·</div>
+        <div class="finalExplain">약관 · 위치 · 인기 계정 · 해시태그 · 언어</div>
+       <span class="insta2020">© 2020 INSTAGRAM FROM FACEBOOK</span>
+      </footer>
+   </main>
+   </div>
+   <script src="js/main.js"></script>
   </body>
 </html>
