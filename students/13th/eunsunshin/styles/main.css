@@ -20,7 +20,7 @@
   border-bottom: 1px solid #dbdbdb;
  }
 
-#textLogo{
+.textLogo{
     width: 105px;
     height: 29px;
     margin: auto 0;
@@ -113,56 +113,57 @@
      margin: 0 0 70px 0;
  }
 
- #postingUser{
+ .postingUser{
      display: flex;
      width: 598px;
      height: 60px;
  }
 
- #postingUserInfo{
+ .postingUserInfo{
    display: flex;
    margin: auto 0 auto 15px;
    padding-right:415px;
  }
 
- #postingUserPic{
+ .postingUserPic{
      width: 32px;
      height: 32px;
      border-radius: 20px;
  }
 
- #postingUserId{
+ .postingUserId{
     margin: auto 410px auto 12px;
  }
 
- #postingUserId span{
+ .postingUserId span{
      width:500px;
      font-size: 14px;
      font-weight: bold;
      color: #262626;
  }
 
- #threeDot{
+ .threeDot{
      width: 16px;
      height: 16px;
      margin: auto 0;
  }
- #postingImg{
+
+ .postingImg{
      width: 100%
  }
 
- #feedIcons{
+ .feedIcons{
      display: flex; 
      width: 598px;
  }
 
- #feedIconGroup{
+ .feedIconGroup{
      display: flex;
      height: 40px;
      margin: 0 420px 0 8px;
  }
 
- #feedIconGroup img, #bookmark{
+ .feedIconGroup img, .bookmark{
      width: 40px;
      height: 40px;
      padding: 8px;
@@ -180,36 +181,36 @@
      position: absolute;
  }
 
- #peopleWhoLike{
+ .peopleWhoLike{
      display: flex;
      margin: 4px 0 0 15px;
  }
 
- #peopleWhoLike img{
+ .peopleWhoLike img{
      width: 20px;
      border-radius: 20px;
  }
 
- #peopleWhoLike span{
+ .peopleWhoLike span{
      color: #262626;
      font-size: 14px;
      margin-left: 8px;
  }
 
- #peopleWhoLike span a{
+ .peopleWhoLike span a{
      font-weight: bold;
  }
 
- #reply{
+ .reply{
      margin: 8px 0 0 0;
  }
 
-#reply ul{
+.reply ul{
   margin: 0 0 6px 15px;
   padding: 0;
 }
 
- #reply li{
+ .reply li{
      display: flex;
      position: relative;
  }
@@ -224,14 +225,14 @@
      font-size: 14px;
  }
 
-#time{
+.time{
     display: block;
     font-size: 8px;
     color: gray;
     margin: 6px 0 10px 15px;
 }
 
- #reply section{
+ .reply section{
      display: flex;
      padding: 20px 10px 20px 10px;
      border-top: 1px solid #dbdbdb;
@@ -278,13 +279,17 @@
     bottom: 1px;
 }
 
-#postBtn{
+.postBtn{
     border: 0;
     background-color: white;
     margin: auto;
 }
 
-#postBtn span{
+.postBtn:focus {
+    outline : none;
+}
+
+.postBtn span{
     color: #B9DFFC;
 }
 
@@ -297,22 +302,27 @@
      z-index: -1;
  }
 
- #myProfile{
+ .myProfile{
      display: flex;
      margin-bottom: 20px;
  }
 
- #myProfileInfo{
+ .myProfileInfo{
      margin: 10px 0 0 15px;
  }
 
- #myProfileInfo p{
+ .myProfile img{
+    width: 56px;
+    border-radius: 56px;
+}
+
+ .myProfileInfo p{
      font-size: 14px;
      font-weight: bold;
      margin: auto 0;
  }
 
- #myProfileInfo span{
+ .myProfileInfo span{
      font-size: 12px;
      color: gray;
  }
@@ -324,31 +334,26 @@
      margin-bottom: 10px;
  }
 
- #storyText, #recommendText{
+ .storyText, .recommendText{
      display: block;
      width: 265px;
      margin: 10px 0 5px 15px;
  }
 
- #storyText span{
+ .storyText span{
      padding-right: 170px;
  }
 
- #storyText span, #recommendText span{
+ .storyText span, .recommendText span{
      color: gray;
      font-size: 14px;
      font-weight: bold;
  }
 
- #storyText a, #recommendText a{
+ .storyText a, .recommendText a{
      font-size: 12px;
      font-weight: bold;
  }
-
-#myProfile img{
-    width: 56px;
-    border-radius: 56px;
-}
 
 .userList{
     padding: 0;
@@ -386,7 +391,7 @@
     background-color: white;
 }
 
-#recommendText span{
+.recommendText span{
     padding-right: 100px;
 }
 

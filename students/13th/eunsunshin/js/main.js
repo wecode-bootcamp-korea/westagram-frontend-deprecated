@@ -1,3 +1,4 @@
+"use strict";
 const searchArr = [
     {  num : 0,
        id : 'wecode_bootcamp',
@@ -24,9 +25,9 @@ const searchArr = [
        displayState : 'initial'
     },
     {  num : 0,
-       id : 'muuuuuuji',
-       info : '무지막지',
-       picSrc : 'https://instagram.fadb3-2.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fadb3-2.fna.fbcdn.net&_nc_ohc=_Csvb8SfdY8AX8_0JDI&oh=6bcb1489e580b84ee44f8e2cdab8a672&oe=5F9E1A0F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2',
+       id : 'haeseung_j',
+       info : '혜숭',
+       picSrc : 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/31674583_246127199287741_1367605827149496320_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=2lPYzJH2xlYAX9dbleQ&oh=a96cc258f9926d380dd96c7d90ff06fa&oe=5FA35E0D',
        displayState : 'initial'
     },
     {  num : 0,
@@ -43,7 +44,7 @@ const searchUserList = document.getElementsByClassName('userList')[0];
 searchUserList.style.visibility = 'hidden';
 
 const search = ( ) => {
-    //function which make able to search on the nav bar
+    //function which make able to search on the navbar
     const searchVal = searchInput.value;
     const searchResultCon = document.getElementsByClassName('searchResultCon')[0];
     searchUserList.innerHTML = '';
@@ -57,7 +58,7 @@ const search = ( ) => {
             return idVal.includes(searchVal);
         };
 
-        let newSearchArr = searchArr.filter(arrFilter);
+        const newSearchArr = searchArr.filter(arrFilter);
        
         if(newSearchArr.length > 0){
             searchResultCon.style.visibility = 'visible';
@@ -67,11 +68,11 @@ const search = ( ) => {
             searchUserList.style.visibility = 'hidden';
             searchResultCon.style.visibility = 'hidden';
         };
-  };
+    };
 };
 
 
-const myPageIcon = document.getElementById('myPageIcon');
+const myPageIcon = document.querySelector('.myPageIcon');
 
 const makeProfileBox = (e) => {
     //function which show profile Box when you click mypage icon. 
@@ -88,17 +89,17 @@ const makeProfileBox = (e) => {
 
 
 const makePosting = (obj) => {
-    //function which make posing article
-    const postingUser = document.getElementById('postingUser');
-    const postingImg = document.getElementById('postingImg');
+    //function which make posting article
+    const postingUser = document.querySelector('.postingUser');
+    const postingImg = document.querySelector('.postingImg');
 
     postingUser.innerHTML = `
-    <div id= "postingUserInfo">   
-       <img id= "postingUserPic" alt= "" src=${obj.userPic} />
-       <div id= "postingUserId">
+    <div class= "postingUserInfo">   
+       <img class= "postingUserPic" alt= "" src=${obj.userPic} />
+       <div class= "postingUserId">
          <span>${obj.userId}</span>
     </div>
-    <img id="threeDot" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
+    <img class="threeDot" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png">
     `
     postingImg.src = obj.postingPic;
 };
@@ -110,23 +111,25 @@ const postingObj= {
 };
 
 
-const deleteReply = (event) => {
-    const targetDelBtn = event.target;
+const deleteReply = (e) => {
+    const targetDelBtn = e.target;
     const targetReply = targetDelBtn.parentNode;
     targetReply.remove();
 };
 
+
 const feedLikeIcon = document.querySelector('.likeIconCon');
 
-const activateLikeBtn = (event) => {
-    const targetLikeBtn = event.currentTarget;
+const activateLikeBtn = (e) => {
+    const targetLikeBtn = e.currentTarget;
     const targetHeart= targetLikeBtn.children;
  
     targetHeart[0].classList.toggle("visibility");
     targetHeart[1].classList.toggle("visibility");
 };
 
-function makeReply(idVal, cmntVal) {
+
+const makeReply = (idVal, cmntVal) => {
     const replyUl = document.querySelector('.replyUl');
     let makeReplyLi = document.createElement('li');
     let replyIdSpan = document.createElement('span');
@@ -158,28 +161,29 @@ function makeReply(idVal, cmntVal) {
 };
 
 
-const postBtn = document.getElementById('postBtn');
+const postBtn = document.querySelector('.postBtn');
 const reply = document.querySelector('.replyInput');
 
-function makeNewReply ( ) {
-    let replyVal = reply.value;
+const makeNewReply = ( ) => {
+    //let replyVal = replyInput.value;
 
-    if(replyVal.length > 0){
-         makeReply('eunsonny', replyVal);
-    }
+    if(reply.value.length > 0){
+         makeReply('eunsonny', reply.value);
+         reply.value= '';
+    };
 };
 
-const makeReplyByEnter = function(e){
+const makeReplyByEnter = (e) => {
     if(e.keyCode === 13){
         makeNewReply();
     }
 };
 
 const activatePostBtn = ( ) => {
-    let replyVal = reply.value; 
-    let postBtnText = document.querySelector('#postBtn span');
+    const replyValLength = reply.value.length; 
+    const postBtnText = document.querySelector('.postBtn span');
 
-    return(replyVal.length > 0 ? postBtnText.style.color = '#009DF9': postBtnText.style.color = '#B9DFFC');
+    return(replyValLength > 0 ? postBtnText.style.color = '#009DF9': postBtnText.style.color = '#B9DFFC');
 };
 
 const sectionArr = [
@@ -205,7 +209,7 @@ const makeSection = (obj) => {
     mainRight.lastChild.className = obj.classname;
     mainRight.lastChild.innerHTML = 
     `
-                 <div id= ${obj.text}>
+                 <div class= ${obj.text}>
                     <span>${obj.span}</span>
                     <a>${obj.a}</a>
                   </div>
@@ -279,9 +283,9 @@ const recommendUserArr = [
       picSrc : 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/74490511_471880130353160_3130748176273768448_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=hPiqmfRUcyoAX_Ij70b&oh=81c5c897fefd2d8cf1e32ea2ec176e01&oe=5F9C321B'
     },
     { num: 2,
-      id : 'muuuuuuji',
+      id : 'haeseung_j',
       info : 'Jennie님 외 5명이 팔로우합니다',
-      picSrc : 'https://scontent-gmp1-1.cdninstagram.com/v/t51.12442-15/e35/c157.880.471.471a/s150x150/79473995_2616382741781142_351196571197428485_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=WqA6qrkliEEAX-nPzvK&_nc_tp=16&oh=54b52f2609515017aa641bad8c468201&oe=5F7513F6'
+      picSrc : 'https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/31674583_246127199287741_1367605827149496320_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=2lPYzJH2xlYAX9dbleQ&oh=a96cc258f9926d380dd96c7d90ff06fa&oe=5FA35E0D'
     },
     { num: 2,
       id : 'A.P.C.',

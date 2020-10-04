@@ -1,15 +1,15 @@
-let id = document.getElementById('inputId');
-let pwd = document.getElementById('inputPwd');
-let logInInfo = document.querySelector('main div');
+"use strict";
+const id = document.querySelector('.inputId');
+const pwd = document.querySelector('.inputPwd');
+const logInInfo = document.querySelector('main div');
 
 const btnAct = () => {
     let idVal = id.value;
-    let idLength = idVal.length;
     let pwdLength = pwd.value.length;
     let at = idVal.indexOf("@");
-    let logInBtn = document.getElementById('logInBtn');
+    let logInBtn = document.querySelector('logInBtn');
   
-    if((at !== -1 && idLength > 0) && pwdLength >= 5 ){
+    if(at !== -1 && pwdLength >= 5 ){
         logInBtn.disabled = false;
         logInBtn.style.backgroundColor = "#009DF9";
     } else {
@@ -18,4 +18,4 @@ const btnAct = () => {
     }
 };
 
-logInInfo.addEventListener('keyup',btnAct);
+logInInfo.addEventListener('keyup', btnAct);
