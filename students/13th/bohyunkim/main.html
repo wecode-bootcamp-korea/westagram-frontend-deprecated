@@ -3,11 +3,120 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style/common.css" rel="stylesheet" type="text/css" />
-     <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <title>Westagram Main Page</title>
+    <link href="styles/common.css" rel="stylesheet" type="text/css" />
+     <link href="styles/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <script src="js/main.js"></script>
+
+    <header>
+      <nav id="top-nav">
+        <div class="nav-left">
+          <a href="https://www.instagram.com/">
+            <img src="img/logo_visual.png" alt="Instagram-Logo">
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="img/logo_text.png" alt="Instagram-Logo-Text">
+          </a>
+        </div> 
+        <div class="nav-center">
+          <input class="input-field" type="text" name="search" placeholder="검색"></input>
+        </div>
+        <div class="nav-right">
+          <a href="https://www.instagram.com/explore">
+            <img src="img/explore.png" alt="explore-icon">
+          </a>
+          <a>
+            <img src="img/heart.png" alt="heart-icon">
+          </a>
+          <a>
+            <img src="img/profile.png" alt="profile-icon">
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="feeds">
+        <article>
+          <section id="feed-top">
+            <a href="https://www.instagram.com/profile">
+              <img src="img/profile-image.jpg" alt="profile-link">
+            </a>
+            <div class="text-beside">
+              <a href="https://www.instagram.com/profile"><b>kimshelby</b></a>
+              <a href="https://www.instagram.com/profile">Seoul, Korea</a>
+            </div>
+            <a href="javascript:alert('');">
+              <img src="img/more.png" alt="more-icon">
+            </a>
+          </section>
+          <section id="feed-image">
+            <img src="img/feed-image.jpg" alt="Eating sushi on my lap">
+          </section>
+          <section id="feed-menu">
+            <div class="left-align">
+              <a href="">
+                <img src="img/heart-abovecomments.png" alt="like">
+              </a>     
+              <a href="">
+                <img src="img/comment.png" alt="comment">
+              </a>   
+              <a href="">
+                <img src="img/send.png" alt="send">
+              </a>     
+            </div>  
+            <div class="right-align">
+              <a href="">
+                <img src="img/bookmark.png" alt="send">
+              </a>  
+            </div>
+          </section>
+          <section id="feed-info">
+            <b>좋아요 28개</b>
+            <p><b>stephaniekeem</b>맛있겠지? 히히히</p>
+            <p>15시간 전</p>
+          </section>
+          <section id="feed-comments">
+            <input type="text" name="comments" placeholder="댓글 달기...">
+            <button type="button">게시</button>
+          </section>
+        </article>
+      </div>
+
+      <div class="main-right">
+        <section id="profile-info-right">
+          <a href="https://www.instagram.com/profile">
+            <img src="img/profile-image.jpg" alt="profile-link">
+          </a>
+          <a href="https://www.instagram.com/profile"><b>kimshelby</b></a>
+        </section>
+
+        <section class="right-sections">
+          <div class="title-right">
+            <div><h3>회원님을 위한 추천</h3></div>
+            <div><h4>모두보기</h4></div>
+          </div>
+
+          <div class="friend-cards">
+            <article>
+              <a href="https://www.instagram.com/profile">
+                <img src="img/profile-image.jpg" alt="profile-link">
+              </a>
+              <div class="text-beside">              
+                <a href="https://www.instagram.com/profile"><b>kimshelby</b></a>
+                <p>mikesun0님 외 2명이 팔로우합니다</p>
+              </div>
+              <button type="button">팔로우</button>
+            </article>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+
+
   </body>
 </html>
