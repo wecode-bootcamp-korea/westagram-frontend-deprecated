@@ -12,19 +12,20 @@
       <h1 class="logo"><img src="img/logo_text.png" alt="instagram_logo" /></h1>
       <div class="login__box">
         <div class="btn__box">
-          <input
-            class="id__box"
-            id="input_box"
-            type="text"
-            placeholder="전화번호, 사용자 이름 또는 이메일"
-          />
-          <input
-            class="password__box"
-            id="input_box"
-            type="password"
-            placeholder="비밀번호"
-          />
-          <button class="login__btn">로그인</button>
+          <form class="loginForm" action="">
+            <input
+              class="id__box"
+              type="text"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+            />
+            <input
+              class="password__box"
+              type="password"
+              placeholder="비밀번호"
+            />
+          
+          <button type="submit" class="login__btn">로그인</button>
+        </form>
         </div>
         <span class="lost__password">비밀번호를 잊으셨나요?</span>
       </div>

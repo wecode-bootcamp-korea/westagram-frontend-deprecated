@@ -34,7 +34,7 @@ body {
   align-items: center;
 }
 
-#input_box {
+.login__box input {
   width: 256px;
   height: 36px;
   padding: 0 5px;

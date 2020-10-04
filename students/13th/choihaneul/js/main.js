@@ -2,6 +2,7 @@ const commentForm = document.querySelector('.add__comment-form');
 const addComment = commentForm.querySelectorAll('.add__comment');
 const addCommentBtn = document.querySelectorAll('.add__comment-btn');
 const commentList = document.querySelector('.comment__list');
+const userIcon = document.querySelector('.user__img');
 
 for (let i = 0; i < addComment.length; i++) {
   addComment[i].addEventListener('keyup', function (e) {
