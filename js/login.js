@@ -1,6 +1,6 @@
-let user = document.getElementById('user');
-let pswd = document.getElementById('pswd');
-let bttn = document.getElementById('login');
+const userInput = document.getElementsByClassName('user');
+const pswd = document.getElementsByClassName('pswd');
+const bttn = document.getElementsByClassName('login');
 
 pswd.addEventListener('input', function(e){
   if(e !== '') {

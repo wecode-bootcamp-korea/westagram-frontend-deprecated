@@ -1,15 +1,12 @@
-let pstdTime = document.getElementById('pstdTime');
-let social = document.getElementById('social');
-let cmnt = document.getElementById('newCmnt');
-let bttn = document.getElementById('pstBttn');
+const pstdTime = document.getElementsByClassName('pstdTime');
+const social = document.getElementsByClassName('social');
+const cmnt = document.getElementsByClassName('newCmnt');
+const bttn = document.getElementsByClassName('pstBttn');
 let x = 'silverglasses';
 let y = cmnt.value;
 let z;
 bttn.disabled = true;
-bttn.style.opacity = '0.3';
-
 cmnt.addEventListener('input', function(e){
-
     if(e !== '') {
         bttn.disabled = false;
         bttn.style.opacity = '1';

@@ -76,7 +76,7 @@ main {
     margin-top: 54px;
 }
 
-div.feeds {
+article.feeds {
     box-sizing: border-box;
     width: 614px;
     height: 100%;
@@ -136,19 +136,19 @@ section.prfl div p:last-child {
     margin: 8px;
 }
 
-article div.photo {
+article img.photo {
     box-sizing: border-box;
     width: 614px;
     height: 614px;
 }
 
-article div#social {
+article div.social {
     box-sizing: border-box;
     width: 614px;
     height: auto;
 }
 
-div#social section {
+div.social section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +160,7 @@ article section:nth-child(1) {
     height: 40px;
 }
 
-div#fdbLeft {
+div#feedbarLeft {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -252,6 +252,7 @@ article section:nth-child(5) button {
     background-color: transparent;
     border-style: none;
     color: rgb(0, 149, 246);
+    opacity: 0.3;
     font-weight: 600;
 }
 
