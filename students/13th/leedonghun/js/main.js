@@ -433,6 +433,7 @@ body.addEventListener('click', navSearchBoxUnselected);
 navSearchClearIcon.addEventListener('click', clearSearch);
 
 
+
 const searchSuggestionsBox = document.querySelector('.nav-search-suggestions-box');
 const searchSuggestionsUl = document.querySelector('.nav-search-suggestions');
 
@@ -480,6 +481,17 @@ function generateSearchSuggestionsArr(e) {
   }
   clearRenderedSearchSuggestionItems();
   searchSuggestionsArr.forEach(el => renderSearchSuggestionItem(el));
+  navSearchClearIcon.addEventListener('click', function() {
+    clearRenderedSearchSuggestionItems;
+    searchSuggestionsBox.style.display = 'none';
+  });
+  document.addEventListener('click', function(e) {
+    const isSearchBoxClicked = navSearchBox.contains(e.target);
+    if (!isSearchBoxClicked) {
+      clearRenderedSearchSuggestionItems;
+      searchSuggestionsBox.style.display = 'none';
+    };
+  });
   const isSuggestionAvailable = searchSuggestionsArr.length > 0;
   searchSuggestionsBox.style.display = isSuggestionAvailable ? 'block' : 'none';
 }
