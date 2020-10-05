@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
-     <link href="style/login.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="js/login.js"></script>
-      <div class="loginBox">
-        <div class="loginImg">
-          <img src="img/logo_text.png" alt ="westargram logo">
-          <div id = "login_wrapper">
-            <form action =login method="POST" class="form">
-              <div>
-                <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" required>
-              </div>
-              <!-- test testtest -->
-              <div>
-                <input type="password" placeholder="비밀번호" required>
-              </div>
-              <button type="submit">로그인</button>
-            </form>
+    <div class="loginBox">
+      <div class="loginImg">
+        <img src="img/logo_text.png" alt="westargram logo" />
+        <div id="login_wrapper">
+          <form action="login" method="POST" class="form">
             <div>
-              <a class="forGetPW" href="https://www.instagram.com/accounts/password/reset/?hl=ko">
-                비밀번호를 잊으셨나요?</a>
+              <label for="jb-input-text"></label>
+              <input
+                type="text"
+                id="userID"
+                placeholder="전화번호, 사용자 이름 또는 이메일"
+                required
+              />
             </div>
+            <div>
+              <input
+                type="password"
+                id="userPW"
+                placeholder="비밀번호"
+                required
+              />
             </div>
-</body>
+            <button class="logBtn">로그인</button>
+          </form>
+          <div>
+            <a
+              class="forGetPW"
+              href="https://www.instagram.com/accounts/password/reset/?hl=ko"
+            >
+              비밀번호를 잊으셨나요?</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
 </html>

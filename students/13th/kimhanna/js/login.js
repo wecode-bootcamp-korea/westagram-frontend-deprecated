@@ -1,10 +1,13 @@
-let input = document.querySelector('input');
-let log = document.getElementsByID('values');
+const loginID = document.getElementById("userID");
+const loginPW = document.getElementById("userPW");
+const loginBtn = document.getElementsByClassName("logBtn")[0];
 
-document.addEventListener('keyup',function(e){
-    if(info.vlaue !=="") {
-        if(PaymentAddress.vlaue !== "") {
-            
-        }
-    }
-})
+function checklogin() {
+  if (loginID.value !== "" && loginPW.value !== "") {
+    loginBtn.style.backgroundColor = "#0095f6";
+  } else {
+    loginBtn.style.backgroundColor = "#b2dffc";
+  }
+}
+loginID.addEventListener("keyup", checklogin);
+loginPW.addEventListener("keyup", checklogin);
