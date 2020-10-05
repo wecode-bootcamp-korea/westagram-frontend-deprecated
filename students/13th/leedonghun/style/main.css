@@ -86,13 +86,112 @@ img.nav-logo {
 }
 
 .nav-search-clear-icon {
-  width: 11%;
+  width: 10%;
   position: absolute;
-  top: 5%;
+  top: 11%;
   right: 1%;
   opacity: 0.2;
   display: none;
   /* border: 1px solid red; */
+}
+
+div.nav-search-suggestions-box {
+  display: none;
+}
+
+ul.nav-search-suggestions {
+  width: 245px;
+  max-height: 360px;
+  border-radius: 1%;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0.2px #c8c8c8;
+  position: absolute;
+  top: 117%;
+  right: 37.5%;
+  overflow: auto;
+  z-index: 3;
+  /* border: 1px solid red; */
+}
+
+li.nav-search-suggestion-item {
+  display: flex;
+  align-items: center;
+  height: 66px;
+  padding-left: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  cursor: pointer;
+  /* border: 1px solid orange; */
+}
+
+
+li.nav-search-suggestion-item:hover {
+  background-color: #fafafa;
+}
+
+.search-suggested-profile-pic-outer-glow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  background: linear-gradient(270deg, #c82d8e, #f99d4c);
+  border-radius: 50%;
+}
+
+.search-suggested-profile-pic-mid-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 37px;
+  background: white;
+  border-radius: 50%;
+}
+
+div.search-suggested-profile-pic {
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+  background-color: #dbdbdb;
+  box-shadow: 0 0 0.5px 0.5px #919191;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+}
+
+img.search-suggested-profile-pic {
+  width: 125%;
+  border-radius: 50%;
+  position: absolute;
+  top: -12%;
+  left: -10%;
+}
+
+.search-suggested-profile-id-n-detail {
+  font-size: 90%;
+  padding-left: 6px;
+}
+
+.search-suggested-profile-id {
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.search-suggested-profile-detail {
+  opacity: 0.5;
+}
+
+.nav-search-suggestions-connector-figure {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 99%;
+  right: 49%;
+  box-shadow: -1px -1px 2px 0 #dbdbdb;
+  z-index: 4;
+  /* border: 1px solid blue; */
 }
 
 .nav-menu {

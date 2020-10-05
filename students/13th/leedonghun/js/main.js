@@ -1,35 +1,260 @@
 // **************** Westagram Data ****************
 const followersData = {
-  'agst_1014': 'agst_1014.png',
-  'alessa_bebe': 'alessa_bebe.png',
-  'arnocee': 'arnocee.png',
-  'ashkkny': 'ashkkny.png',
-  'blacq_swan': 'blacq_swan.png',
-  'bydaeun': 'bydaeun.png',
-  'chanjinni': 'chanjinni.png',
-  'clairesyyoon25': 'clairesyyoon25.png',
-  'dongkyun_woo': 'dongkyun_woo.png',
-  'estherjyn': 'estherjyn.png',
-  'haein_stella': 'haein_stella.png',
-  'howon92': 'howon92.png',
-  'jupo_park': 'jupo_park.png',
-  'khan89_gb': 'khan89_gb.png',
-  'knoparablem': 'knoparablem.png',
-  'ldosy': 'ldosy.png',
-  'minoonooo': 'minoonooo.png',
-  'paulchoi24': 'paulchoi24.png',
-  'permanentstylelondon': 'permanentstylelondon.png',
-  'phi_choi': 'phi_choi.png',
-  'seo_nani': 'seo_nani.png',
-  'seojuhyun_s': 'seojuhyun_s.png',
-  'sk17rina': 'sk17rina.png',
-  'stevelee_jh': 'stevelee_jh.png',
-  'sunghopaik89': 'sunghopaik89.png',
-  'sweetpotatos2': 'sweetpotatos2.png',
-  'therake': 'therake.png',
-  'thisisdklee': 'thisisdklee.png',
-  'yueergu': 'yueergu.png',
-  'wecode_bootcamp': 'wecode_bootcamp.png'
+  'agst_1014': {
+    detail: 'Song',
+    pic: 'agst_1014.png'
+  },
+  'alessa_bebe': {
+    detail: 'Alessandra Byun',
+    pic: 'alessa_bebe.png'
+  },
+  'arnocee': {
+    detail: 'Arnold C',
+    pic: 'arnocee.png'
+  },
+  'ashkkny': {
+    detail: 'Ashley',
+    pic: 'ashkkny.png'
+  },
+  'blacq_swan': {
+    detail: 'Soohwan Jang',
+    pic: 'blacq_swan.png'
+  },
+  'bydaeun': {
+    detail: '다은',
+    pic: 'bydaeun.png'
+  },
+  'chanjinni': {
+    detail: '찬징',
+    pic: 'chanjinni.png'
+  },
+  'clairesyyoon25': {
+    detail: 'Soyeon Claire Yoon',
+    pic: 'clairesyyoon25.png'
+  },
+  'dongkyun_woo': {
+    detail: 'Daniel',
+    pic: 'dongkyun_woo.png'
+  },
+  'estherjyn': {
+    detail: 'Esther✨',
+    pic: 'estherjyn.png'
+  },
+  'haein_stella': {
+    detail: 'Haein Stella Kim',
+    pic: 'haein_stella.png'
+  },
+  'howon92': {
+    detail: 'Howon Song',
+    pic: 'howon92.png'
+  },
+  'jupo_park': {
+    detail: 'Hong Ju Park',
+    pic: 'jupo_park.png'
+  },
+  'khan89_gb': {
+    detail: 'Ki Woong Albert Han',
+    pic: 'khan89_gb.png'
+  },
+  'knoparablem': {
+    detail: '',
+    pic: 'knoparablem.png'
+  },
+  'ldosy': {
+    detail: '다인이',
+    pic: 'ldosy.png'
+  },
+  'minoonooo': {
+    detail: '강민우',
+    pic: 'minoonooo.png'
+  },
+  'paulchoi24': {
+    detail: 'Paul Jinwook Choi',
+    pic: 'paulchoi24.png'
+  },
+  'permanentstylelondon': {
+    detail: 'Permanent Style',
+    pic: 'permanentstylelondon.png'
+  },
+  'phi_choi': {
+    detail: '',
+    pic: 'phi_choi.png'
+  },
+  'seo_nani': {
+    detail: 'Na Eun Seo',
+    pic: 'seo_nani.png'
+  },
+  'seojuhyun_s': {
+    detail: 'SEOHYUN(SEO JU HYUN)',
+    pic: 'seojuhyun_s.png'
+  },
+  'sk17rina': {
+    detail: 'SooJin Katarina',
+    pic: 'sk17rina.png'
+  },
+  'stevelee_jh': {
+    detail: 'Steve Lee',
+    pic: 'stevelee_jh.png'
+  },
+  'sunghopaik89': {
+    detail: 'Sung Ho',
+    pic: 'sunghopaik89.png'
+  },
+  'sweetpotatos2': {
+    detail: 'Joanne Shin',
+    pic: 'sweetpotatos2.png'
+  },
+  'therake': {
+    detail: 'The Rake',
+    pic: 'therake.png'
+  },
+  'thisisdklee': {
+    detail: '이도경',
+    pic: 'thisisdklee.png'
+  },
+  'yueergu': {
+    detail: 'YUEER GU💋',
+    pic: 'yueergu.png'
+  },
+  'wecode_bootcamp': {
+    detail: '>wecode | 위코드',
+    pic: 'wecode_bootcamp.png'
+  }
+};
+
+const suggestedData = {
+  'rolex': {
+    detail: 'ROLEX',
+    pic: 'rolex.png'
+  },
+  'wework': {
+    detail: 'WeWork',
+    pic: 'wework.png'
+  },
+  'nusr_et': {
+    detail: 'Nusr_et#Saltbae',
+    pic: 'nusr_et.png'
+  },
+  'davidbeckham': {
+    detail: 'David Beckham',
+    pic: 'davidbeckham.png'
+  },
+  'lamborghini': {
+    detail: 'Lamborghini',
+    pic: 'lamborghini.png'
+  },
+  'ferrari': {
+    detail: 'Ferrari',
+    pic: 'ferrari.png'
+  },
+  'seoyejidaily': {
+    detail: 'seo ye ji 서예지 徐睿知',
+    pic: 'seoyejidaily.png'
+  },
+  'porsche': {
+    detail: 'Porsche',
+    pic: 'porsche.png'
+  },
+  'victoriassecret': {
+    detail: 'Victoria\'s Secret',
+    pic: 'victoriassecret.png'
+  },
+  'disney': {
+    detail: 'Disney',
+    pic: 'disney.png'
+  },
+  'bentleymotors': {
+    detail: 'Bentley Motors Official',
+    pic: 'bentleymotors.png'
+  },
+  'cristiano': {
+    detail: 'Cristiano Ronaldo',
+    pic: 'cristiano.png'
+  },
+  'hermes': {
+    detail: 'Hermès',
+    pic: 'hermes.png'
+  },
+  'palaceskateboards': {
+    detail: 'PALACE',
+    pic: 'palaceskateboards.png'
+  },
+  'nike': {
+    detail: 'Nike',
+    pic: 'nike.png'
+  },
+  'rogerfederer': {
+    detail: 'Roger Federer',
+    pic: 'rogerfederer.png'
+  },
+  'kingjames': {
+    detail: 'LeBron James',
+    pic: 'kingjames.png'
+  },
+  'lucascheon': {
+    detail: '천인우',
+    pic: 'lucascheon.png'
+  },
+  'google': {
+    detail: 'Google',
+    pic: 'google.png'
+  },
+  'apple': {
+    detail: 'apple',
+    pic: 'apple.png'
+  },
+  'cornelluniversity': {
+    detail: 'Cornell University',
+    pic: 'cornelluniversity.png'
+  },
+  'teslamotors': {
+    detail: 'Tesla',
+    pic: 'teslamotors.png'
+  },
+  'thisisbillgates': {
+    detail: 'Bill Gates',
+    pic: 'thisisbillgates.png'
+  },
+  'momstouch_love': {
+    detail: '맘스터치',
+    pic: 'momstouch_love.png'
+  },
+  'subway': {
+    detail: 'Official Subway',
+    pic: 'subway.png'
+  },
+  'kakaofriends_official': {
+    detail: '카카오프렌즈 • KAKAO FRIENDS',
+    pic: 'kakaofriends_official.png'
+  },
+  'hublot': {
+    detail: 'Hublot',
+    pic: 'hublot.png'
+  },
+  'patekphilippe': {
+    detail: 'Patek Philippe',
+    pic: 'patekphilippe.png'
+  },
+  'audemarspiguet': {
+    detail: 'Audemars Piguet',
+    pic: 'audemarspiguet.png'
+  },
+  'yjoo_oh': {
+    detail: '오영주',
+    pic: 'yjoo_oh.png'
+  },
+  'yj_loves': {
+    detail: '정용진',
+    pic: 'yj_loves.png'
+  }
+};
+
+const combinedData = {};
+for (let key in followersData) {
+  combinedData[key] = followersData[key];
+}
+for (let key in suggestedData) {
+  combinedData[key] = suggestedData[key];
 }
 
 let followersIds = [];
@@ -37,7 +262,25 @@ let followersProfilePics = [];
 
 for (let key in followersData) {
   followersIds.push(key);
-  followersProfilePics.push(followersData[key]);
+  followersProfilePics.push(followersData[key].pic);
+};
+
+let suggestedIds = [];
+let suggestedProfilePics = [];
+
+for (let key in suggestedData) {
+  suggestedIds.push(key);
+  suggestedProfilePics.push(suggestedData[key].pic);
+};
+
+let combinedIds = [];
+let combinedDetails = [];
+let combinedProfilePics = [];
+
+for (let key in combinedData) {
+  combinedIds.push(key);
+  combinedDetails.push(combinedData[key].detail);
+  combinedProfilePics.push(combinedData[key].pic);
 }
 
 const placesData = [
@@ -98,8 +341,13 @@ const feedPicsData = [
   'macchiato.png',
   'porterhouse2.png',
   'barbeque.png',
-  'steak.png'
-]
+  'steak.png',
+  'chuseok.png',
+  'chinesefood.png',
+  'chicken.png',
+  'uniandsoju.png',
+  'fishandsake.png'
+];
 
 const sampleFeedExpData = [
   'les girit~',
@@ -119,8 +367,10 @@ const sampleFeedExpData = [
   '😍',
   '😍😍😍',
   '😘',
-  'so good it\'s dizzifying🤪'
-]
+  'so good it\'s dizzifying🤪',
+  'yeessssssss🔥',
+  'carpe diem!'
+];
 
 const sampleCommentsData = [
   'woahhh where is this??',
@@ -142,50 +392,11 @@ const sampleCommentsData = [
   '👍👍👍',
   '😘',
   '😆',
-  '👍🧡'
-]
+  '👍🧡',
+  'nice~~~~',
+  'awesome🧡'
+];
 
-const suggestedData = {
-  'rolex': 'rolex.png',
-  'wework': 'wework.png',
-  'nusr_et': 'nusr_et.png',
-  'davidbeckham': 'davidbeckham.png',
-  'lamborghini': 'lamborghini.png',
-  'ferrari': 'ferrari.png',
-  'seoyejidaily': 'seoyejidaily.png',
-  'porsche': 'porsche.png',
-  'victoriassecret': 'victoriassecret.png',
-  'disney': 'disney.png',
-  'bentleymotors': 'bentleymotors.png',
-  'cristiano': 'cristiano.png',
-  'hermes': 'hermes.png',
-  'palaceskateboards': 'palaceskateboards.png',
-  'nike': 'nike.png',
-  'rogerfederer': 'rogerfederer.png',
-  'kingjames': 'kingjames.png',
-  'lucascheon': 'lucascheon.png',
-  'google': 'google.png',
-  'apple': 'apple.png',
-  'cornelluniversity': 'cornelluniversity.png',
-  'teslamotors': 'teslamotors.png',
-  'thisisbillgates': 'thisisbillgates.png',
-  'momstouch_love': 'momstouch_love.png',
-  'subway': 'subway.png',
-  'kakaofriends_official': 'kakaofriends_official.png',
-  'hublot': 'hublot.png',
-  'patekphilippe': 'patekphilippe.png',
-  'audemarspiguet': 'audemarspiguet.png',
-  'yjoo_oh': 'yjoo_oh.png',
-  'yj_loves': 'yj_loves.png'
-}
-
-let suggestedIds = [];
-let suggestedProfilePics = [];
-
-for (let key in suggestedData) {
-  suggestedIds.push(key);
-  suggestedProfilePics.push(suggestedData[key]);
-}
 
 
 
@@ -222,6 +433,61 @@ body.addEventListener('click', navSearchBoxUnselected);
 navSearchClearIcon.addEventListener('click', clearSearch);
 
 
+const searchSuggestionsBox = document.querySelector('.nav-search-suggestions-box');
+const searchSuggestionsUl = document.querySelector('.nav-search-suggestions');
+
+function renderSearchSuggestionItem(suggestionId) {
+  function findIdPicPath(suggestionId) {
+    if (followersIds.includes(suggestionId)) {
+      return `user_followers/${combinedData[suggestionId].pic}`;
+    } else if (suggestedIds.includes(suggestionId)) {
+      return `suggested/${combinedData[suggestionId].pic}`;
+    }
+  }
+  const searchSuggestionItem = document.createElement('li');
+  searchSuggestionItem.className = 'nav-search-suggestion-item';
+  searchSuggestionItem.innerHTML = `
+  <div class="search-suggested-profile-pic-outer-glow">
+    <div class="search-suggested-profile-pic-mid-white">
+      <div class="search-suggested-profile-pic">
+        <img src="img/main/${findIdPicPath(suggestionId)}" alt="search suggested user profile picture" class="search-suggested-profile-pic">
+      </div>
+    </div>
+  </div>
+  <div class="search-suggested-profile-id-n-detail">
+    <p class="search-suggested-profile-id">${suggestionId}</p>
+    <p class="search-suggested-profile-detail">${combinedData[suggestionId].detail}</p>
+  </div>
+  `;
+  searchSuggestionsUl.appendChild(searchSuggestionItem);
+  const searchSuggestionItemHeight = 66;
+  console.log(searchSuggestionItemHeight);
+  searchSuggestionsUl.style.height = `${(searchSuggestionItemHeight * searchSuggestionsUl.children.length)}px`;
+}
+
+function clearRenderedSearchSuggestionItems() {
+  searchSuggestionsUl.innerHTML = '';
+}
+
+function generateSearchSuggestionsArr(e) {
+  let searchSuggestionsArr = [];
+  let combinedIdsSorted = combinedIds.sort();
+  for (let id in combinedIdsSorted) {
+    if (e.target.value !== '' && combinedIdsSorted[id].toLowerCase().includes(e.target.value.toLowerCase())) {
+      console.log(combinedIdsSorted[id]);
+      searchSuggestionsArr.push(combinedIdsSorted[id]);
+    }
+  }
+  clearRenderedSearchSuggestionItems();
+  searchSuggestionsArr.forEach(el => renderSearchSuggestionItem(el));
+  const isSuggestionAvailable = searchSuggestionsArr.length > 0;
+  searchSuggestionsBox.style.display = isSuggestionAvailable ? 'block' : 'none';
+}
+
+navSearchBox.addEventListener('input', generateSearchSuggestionsArr);
+
+
+
 const navMenuItems = document.querySelectorAll('.nav-menu-item');
 const navMenuAvatar = document.querySelector('.nav-menu-item.avatar');
 const navMenuAvatarBorder = document.querySelector('.nav-menu-item.avatar-outer-border');
@@ -236,7 +502,18 @@ function toggleDropdownDisplay() {
   navMenuAvatar.style.marginRight = isDropdownShown ? '0' : '-7.5%';
   navMenuAvatarBorder.style.border = isDropdownShown ? 'none' : '1.5px solid black';
   navMenuAvatar.addEventListener('click', toggleDropdownDisplay);
+  document.addEventListener('click', function(e) {
+    const isAvatarClicked = navMenuAvatar.contains(e.target);
+    if (!isAvatarClicked) {
+      navMenuDropdown.style.display = 'none';
+      navMenuHomeIcon.setAttribute('src', 'img/main/nav_menu_home_icon.png');
+      navMenuHomeIcon.style.width = '130%';
+      navMenuAvatar.style.marginRight = '0';
+      navMenuAvatarBorder.style.border = 'none';
+    }
+  });
 }
+
 
 navMenuAvatar.addEventListener('click', toggleDropdownDisplay);
 
