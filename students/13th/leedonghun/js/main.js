@@ -48,9 +48,17 @@ const followersData = {
     detail: 'Howon Song',
     pic: 'howon92.png'
   },
+  'ieyeqkyu': {
+    detail: 'Will C',
+    pic: 'ieyeqkyu.png'
+  },
   'jupo_park': {
     detail: 'Hong Ju Park',
     pic: 'jupo_park.png'
+  },
+  'kevceb': {
+    detail: 'Kevin Ceballos',
+    pic: 'kevceb.png'
   },
   'khan89_gb': {
     detail: 'Ki Woong Albert Han',
@@ -71,10 +79,6 @@ const followersData = {
   'paulchoi24': {
     detail: 'Paul Jinwook Choi',
     pic: 'paulchoi24.png'
-  },
-  'permanentstylelondon': {
-    detail: 'Permanent Style',
-    pic: 'permanentstylelondon.png'
   },
   'phi_choi': {
     detail: '',
@@ -103,10 +107,6 @@ const followersData = {
   'sweetpotatos2': {
     detail: 'Joanne Shin',
     pic: 'sweetpotatos2.png'
-  },
-  'therake': {
-    detail: 'The Rake',
-    pic: 'therake.png'
   },
   'thisisdklee': {
     detail: '이도경',
