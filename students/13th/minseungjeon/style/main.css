@@ -11,24 +11,23 @@ nav{
     width: 100%;
     background-color: white;
     border-bottom: 1px solid #FAFAFA;
-    
+    z-index: 10;
 }
 
 .nav-container {
+    display: flex;
     margin: 0 auto;
     width: 975px; 
     height: 54px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 
 .nav-left img{
-    width: 103px;
-    height: 29px;
     position: relative;
     top: 5px;
+    width: 103px;
+    height: 29px;
 }
 
 .nav-center{
@@ -52,7 +51,6 @@ input:focus{
 
 .nav-right{
     width: 230px;
-    border: 1px solid red;
 }
 
 .nav-right img {
@@ -62,20 +60,22 @@ input:focus{
 }
 
 .nav-right img:nth-child(5){
-    border-radius: 50%;
     position: relative;
+    border-radius: 50%;
 }
 
 /* main */
 main {
+    position: relative;
+    top: 54px;
     background-color: #FAFAFA;
-    width: 100%;
+    width: 975px;
     margin: 0 auto;
 }
 
 .main-container {
-    padding-top: 5%;
     display: flex;
+    padding-top: 5%;
 }
 
 /* main 왼쪽 */
@@ -130,10 +130,10 @@ article {
 
 
 .comment{
+    display: flex;
     border-top: 2px solid #FAFAFA;
     width: 614px;
     height: 56px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -176,8 +176,8 @@ article {
 }
 
 .recomand{
-    margin-top: 10px;
     display: flex;
+    margin-top: 10px;
     justify-content: space-between;
     padding-left: 30px;
     font-size: 13px;
@@ -194,8 +194,8 @@ article {
 }
 
 .friends {
-    padding-top: 20px;
     display: flex;
+    padding-top: 20px;
     justify-content: space-between;
     padding-left: 15px;
 }
@@ -221,10 +221,10 @@ article {
 }
 
 .follow{
+    display: flex;
     color: #3d92ed;
     font-size: 13px;
     font-weight: bold;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -240,11 +240,11 @@ article {
   }
 
   .search-container ul{
+      display: none;
+      position: absolute;
       border: 2px solid black;
       height: 200px;
       width: 240px;
-      position: absolute;
-      display: none;
       z-index: 100;
       background-color: white;
       overflow: scroll;
@@ -252,11 +252,11 @@ article {
   }
 
   .search-container ul li{
+      display: flex;
       padding: 5px;
       list-style: none;
       border-bottom: 1px solid gray;
       font-size: 0.8rem;
-      display: flex;
       align-items: center;
   }
 
@@ -268,14 +268,14 @@ article {
   }
 
   .menu-box {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 150px;
     border: 2px solid lightgray;
     height: 200px;
     width: 240px;
-    display: none;
     background-color: white;
-    position: absolute;
-    top: 100px;
-    right: 40px;
     z-index: 100;
   }
 
@@ -297,6 +297,6 @@ article {
   }
 
   .nav-right>div{
-      margin: 100px;
       position: relative;
+      margin: 100px;
   }
