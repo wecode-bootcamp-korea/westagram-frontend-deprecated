@@ -9,8 +9,6 @@ inputId.addEventListener("input", changeLoginBtnColor);
 // Functions
 function changeLoginBtnColor() {
     const loginBtn = document.getElementById('login_btn');
-    let inputIdValue = document.getElementById('id').value;
-    let inputPwValue = document.getElementById('pw').value;
 
-    (inputIdValue.includes('@') && inputPwValue.length > 5) ? loginBtn.style.backgroundColor = '#0095f6' : loginBtn.style.backgroundColor = '#b2dffc'
+    loginBtn.style.backgroundColor = (inputId.value.includes('@') && inputPw.value.length > 5) ? '#0095f6' : '#b2dffc'
 }
