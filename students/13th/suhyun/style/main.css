@@ -120,12 +120,12 @@ footer {
     margin-bottom: 10px;
 }
 
-.comments {
+.commentsBoard {
     padding-bottom: 12px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.commentPlus {
+.contents {
     width: 520px;
     height: 40px;
     margin: 13px 4px -4px 4px;
@@ -145,22 +145,77 @@ button:hover {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .feedsRight {
     width: 290px;
     margin-left: 30px;
-    background-color: yellow;
+}
+
+.rightTop {
+    display: flex;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.rightTopID {
+    margin-left: 5px;
+}
+
+.rightName {
+    font-size: small;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.rightMiddle {
+    padding: 15px;
+}
+
+.rightMiddleTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#recommend {
+    color: darkgray;
+    font-weight: bold;
+}
+
+#allSee {
+    font-size: small;
+    font-weight: bold;
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+}
+
+.middleProfileImgs {
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+}
+
+.rightMiddleID {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 290px;
+}
+
+.profileRecommends {
+    color: darkgray;
+    font-size: small;
+}
+
+.follow {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.rightBottom {
+    color:  rgba(0, 0, 0, 0.3);
+    font-size: 10px;
 }
