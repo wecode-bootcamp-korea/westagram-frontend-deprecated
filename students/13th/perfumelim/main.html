@@ -1,102 +1,158 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>repl.it</title>
-    <link href="style/common.css" rel="stylesheet" type="text/css" />
-    <link href="style/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="crossorigin="anonymous"/> 
+    <link href="styles/common.css" rel="stylesheet" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <script defer src="js/main.js"></script>
     <header>
       <a href="https://www.instagram.com/">
-        <img src="./img/logo_text.png">
+        <img src="./img/logo_text.png" />
       </a>
       <div class="input-container">
         <i class="fas fa-search"></i>
-        <input type="search" placeholder="검색">
-      </div>  
+        <input type="search" placeholder="검색" />
+      </div>
       <div class="icons">
-        <a href="https://www.instagram.com/"><img src="./img/home.png" width="110%"></a>  
-        <a href="https://www.instagram.com/direct/inbox/"><img src="./img/paperplane.png"></a>
-        <a href="https://www.instagram.com/explore/"><img src="./img/explore.png"></a>
-        <img src="./img/heart.png">
-        <img class= "circle" src="./img/myProfile.jpg">
+        <a href="https://www.instagram.com/"
+          ><img src="./img/home.png" width="110%"
+        /></a>
+        <a href="https://www.instagram.com/direct/inbox/"
+          ><img src="./img/paperplane.png"
+        /></a>
+        <a href="https://www.instagram.com/explore/"
+          ><img src="./img/explore.png"
+        /></a>
+        <img src="./img/heart.png" />
+        <img class="circle" src="./img/myProfile.jpg" />
       </div>
     </header>
     <div class="everything">
-      <div id= "mainPart">
+      <div id="mainPart">
         <div class="story">
-          <img src="./img/pyerMoss.jpg">
-          <img src="./img/cho.jpg">
-          <img src="./img/kerbito.jpg">
-          <img src="./img/offwhite.jpg">
-          <img src="./img/simon.jpg">
-          <img src="./img/susan.jpg">
-          <img src="./img/susie.jpg">
-          <img src="./img/versace.jpg">
-          <img src="./img/voguerunway.jpg">
-          <img src="./img/yuhan.jpg">
-          <img src="./img/zen.jpg">   
+          <img src="./img/pyerMoss.jpg" />
+          <img src="./img/cho.jpg" />
+          <img src="./img/kerbito.jpg" />
+          <img src="./img/offwhite.jpg" />
+          <img src="./img/simon.jpg" />
+          <img src="./img/susan.jpg" />
+          <img src="./img/susie.jpg" />
+          <img src="./img/versace.jpg" />
+          <img src="./img/voguerunway.jpg" />
+          <img src="./img/yuhan.jpg" />
+          <img src="./img/zen.jpg" />
+        </div>
+        <section id="feed">
+          <div class="feedTop">
+            <img src="./img/yuhan.jpg" />
+            <p>yuhanwangyuhan</p>
+            <span class="dots"><img src="./img/3dots.png" /></span>
+          </div>
+          <div class="feedMain">
+            <img src="./img/feed.jpg" />
+          </div>
+          <div class="feedBottom">
+            <img src="./img/heart.png" />
+            <img src="./img/comment.png" />
+            <img src="./img/paperplane.png" />
+            <img src="./img/bookmark.png" />
+          </div>
+          <div class="numOfLikes">
+            <p>좋아요 1126개</p>
+          </div>
+          <div class="commentArea">
+            <p>
+              <span>yuhanwangyuhan</span> 고양이처럼 귀여운 생명체와 같은 행성에
+              살 수 있다니..
+            </p>
+          </div>
+          <div class="commentInput">
+            <input type="text" class="comment" placeholder="댓글 달기 ..." />
+            <button type="submit" id="myBtn">게시</button>
+          </div>
+        </section>
       </div>
-     
-      <section id="feed">
-        <div class="feedTop">
-          <img src="./img/yuhan.jpg">
-          <p>yuhanwangyuhan</p>
-          <span class="dots"><img src="./img/3dots.png"></span>
+
+      <aside id="personalAside">
+        <div class="myBox">
+          <img src="./img/myProfile.jpg" />
+          <p>perfumelim</p>
         </div>
-        <div class="feedMain">
-          <img src="./img/feed.jpg">
+        <div class="recommend">
+          <p>회원님을 위한 추천</p>
+          <p><span>모두보기</span></p>
         </div>
-        <div class="feedBottom">
-          <img src="./img/heart.png">
-          <img src="./img/comment.png">
-          <img src="./img/paperplane.png">
-          <img src="./img/bookmark.png">
-        </div>  
-        <div class="numOfLikes">
-          <p>좋아요 1126개</p>
-        </div>
-        <div class="commentArea">
-          <p><span>yuhanwangyuhan</span> 고양이처럼 귀여운 생명체와 같은 행성에 살 수 있다니..</p> 
-        </div>
-        <div class="commentInput">
-          <input type="text" class="comment" placeholder="댓글 달기 ...">
-          <button type="submit" id="myBtn">게시</button>
-        </div>
-      </section>     
-    </div> 
-  
-    <aside id="personalAside">
-      <div class="myBox">
-        <img src="./img/myProfile.jpg">
-        <p>perfumelim</p>
-      </div>
-      <div class="recommend">
-        <p>회원님을 위한 추천</p>
-        <p><span>모두보기</span></p> 
-      </div>
-      <nav id="footmenu">
-        <ul>
-          <li><a class="menuLink" href="https://about.instagram.com/">소개</a></li>
-          <li><a class="menuLink" href="https://help.instagram.com/">도움말</a></li>
-          <li><a class="menuLink" href="https://about.instagram.com/blog/">홍보 센터</a></li>
-          <li><a class="menuLink" href="https://www.instagram.com/developer/">API</a></li>
-          <li><a class="menuLink" href="https://www.instagram.com/about/jobs/">채용정보</a></li>
-          <li><a class="menuLink" href="https://www.instagram.com/legal/privacy/">개인정보처리방침</a></li>
-          <li><a class="menuLink" href="https://www.instagram.com/legal/terms/">약관</a></li>
-          <li><a class="menuLink" href="https://www.instagram.com/explore/locations/">위치</a></li>
-          <li><a class="menuLink" href="https://www.instagram.com/directory/profiles/">인기 계정</a></li>
-          <li><a class="menuLink" href="https://www.instagram.com/directory/hashtags/">해시태그</a></li>
-          <li><a class="menuLink">언어</a></li>
-        </ul>
-        <p> &copy; 2020 INSTAGRAM FROM FACEBOOK</p>
-      </nav>
+        <nav id="footmenu">
+          <ul>
+            <li>
+              <a class="menuLink" href="https://about.instagram.com/">소개</a>
+            </li>
+            <li>
+              <a class="menuLink" href="https://help.instagram.com/">도움말</a>
+            </li>
+            <li>
+              <a class="menuLink" href="https://about.instagram.com/blog/"
+                >홍보 센터</a
+              >
+            </li>
+            <li>
+              <a class="menuLink" href="https://www.instagram.com/developer/"
+                >API</a
+              >
+            </li>
+            <li>
+              <a class="menuLink" href="https://www.instagram.com/about/jobs/"
+                >채용정보</a
+              >
+            </li>
+            <li>
+              <a
+                class="menuLink"
+                href="https://www.instagram.com/legal/privacy/"
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a class="menuLink" href="https://www.instagram.com/legal/terms/"
+                >약관</a
+              >
+            </li>
+            <li>
+              <a
+                class="menuLink"
+                href="https://www.instagram.com/explore/locations/"
+                >위치</a
+              >
+            </li>
+            <li>
+              <a
+                class="menuLink"
+                href="https://www.instagram.com/directory/profiles/"
+                >인기 계정</a
+              >
+            </li>
+            <li>
+              <a
+                class="menuLink"
+                href="https://www.instagram.com/directory/hashtags/"
+                >해시태그</a
+              >
+            </li>
+            <li><a class="menuLink">언어</a></li>
+          </ul>
+          <p>&copy; 2020 INSTAGRAM FROM FACEBOOK</p>
+        </nav>
       </aside>
-  </div>   
+    </div>
   </body>
 </html>
