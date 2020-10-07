@@ -6,8 +6,8 @@ const errorOut = document.querySelector(".error");
 let idIsTrue = false;
 let pwIsTrue = false;
 
-const verifyAccount = (x, y) => {
-  x && y
+const verifyAccount = (idState, pwState) => {
+  idState && pwState
     ? loginBtn.classList.add("button-active")
     : loginBtn.classList.remove("button-active");
 };
@@ -17,14 +17,12 @@ const putErrorMessage = () => {
     "<span>The username you entered doesn't belong to an account. Please check your username and try again.</span>";
 };
 
-// length check
 loginForm.addEventListener("keyup", (e) => {
-  idInput.value.length >= 1 ? (idIsTrue = true) : (idIsTrue = false);
-  pwInput.value.length >= 1 ? (pwIsTrue = true) : (pwIsTrue = false);
+  idIsTrue = idInput.value.length >= 1;
+  pwIsTrue = pwInput.value.length >= 1;
   verifyAccount(idIsTrue, pwIsTrue);
 });
 
-// check @ with Error Message
 loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
   idInput.value.search("@") === -1
