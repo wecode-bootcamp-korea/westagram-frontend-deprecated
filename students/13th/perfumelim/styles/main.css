@@ -1,277 +1,284 @@
 * {
-    box-sizing: border-box;
-    font-family: '-apple-system', 'system-ui', "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
+  box-sizing: border-box;
+  font-family: "-apple-system", "system-ui", "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    width: 1440px;
-    height: 54px;
-    border-bottom: solid 1px #DBDBDB;
-    margin-bottom: 33px;
-    padding: 12px 0 7px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 1440px;
+  height: 54px;
+  border-bottom: solid 1px #dbdbdb;
+  margin-bottom: 33px;
+  padding: 12px 0 7px 0;
+  background-color: #ffff;
 }
 
-header img{
-    width:103px;
-    height: 29px;
-    margin-right: 257px;
-    
+header img {
+  width: 103px;
+  height: 29px;
+  margin-right: 257px;
 }
 
 .input-container {
-    display: flex;
+  display: flex;
 }
 
-.input-container i{
-    color: #B3B6B8;
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    margin: 5px 0 0 20px;
-}   
+.input-container i {
+  color: #b3b6b8;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  margin: 5px 0 0 20px;
+}
 
 header input {
-    width: 215px;
-    height: 28px;
-    font-weight: lighter;
-    text-align: center;
-    padding: 7px 7px 7px 7px;
-    border: solid 1px #DBDBDB;
-    border-radius: 3px;
-    background-color: #FAFAFA;
+  width: 215px;
+  height: 28px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 7px 7px 7px 7px;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
 }
 
 header .icons {
-    width: 330px;
-    height: 22px;
-    padding-left: 138px;
+  width: 330px;
+  height: 22px;
+  padding-left: 138px;
 }
 
-header .icons img{
-    width: 27px;
-    height: 27px;
-    margin-right: 7px;
+header .icons img {
+  width: 27px;
+  height: 27px;
+  margin-right: 7px;
 }
 
 header .circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .everything {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 #personalAside {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .story {
-    display: flex;
-    border: solid 1px #DBDBDB;
-    width: 614px;
-    height: 118px;
-    padding:16px 0 16px 0;
-    margin-bottom: 24px;
-    overflow: auto;
+  display: flex;
+  border: solid 1px #dbdbdb;
+  width: 614px;
+  height: 118px;
+  padding: 16px 0 16px 0;
+  margin-bottom: 24px;
+  overflow: auto;
 }
 
 .story img {
-    width: 66px;
-    height: 66px;
-    border-radius: 50%;
-    margin-left: 18px;
-    border: solid 2px transparent;
-    background-image: linear-gradient(#c13584 70%, #f58529), radial-gradient(#c13584,#f58529);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  margin-left: 18px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(#c13584 70%, #f58529),
+    radial-gradient(#c13584, #f58529);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .myBox {
-    display: flex;
-    padding: 10px 0 0 30px;
-    width: 321px;
-    height: 56px;
+  display: flex;
+  padding: 10px 0 0 30px;
+  width: 321px;
+  height: 56px;
 }
 
-.myBox p{
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    padding: 24px 0 24px 14px;
+.myBox p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 24px 0 24px 14px;
 }
 
-.myBox img{
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    margin: 10px 0 0 5px;
+.myBox img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 10px 0 0 5px;
 }
-
 
 #footmenu {
-    display: flex;
-    flex-direction: column;
-    width: 293px;
-    height: 36px;
-    margin: 29px 27px 0 27px;
+  display: flex;
+  flex-direction: column;
+  width: 293px;
+  height: 36px;
+  margin: 29px 27px 0 27px;
 }
 
 #footmenu ul li {
-    list-style: none;
-    float: left;
-    margin-right: 3px;
-    padding-right: 5px;    
+  list-style: none;
+  float: left;
+  margin-right: 3px;
+  padding-right: 5px;
 }
 
 #footmenu .menuLink {
-    text-decoration: none;
-    font-size: 11px;
-    line-height: 13px;
-    color: #c7c7c7;
- 
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
 }
 
 #footmenu p {
-    width: 204px;
-    font-size: 11px;
-    line-height: 13px;
-    color: #c7c7c7;
-    margin-top: 17px;
+  width: 204px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
+  margin-top: 17px;
 }
 
 .recommend {
-   width: 321px;
-   height: 18px;
-   display: flex;
-   justify-content: space-between; 
-   margin: 40px 0 -4px 0;
-   padding: 0 0 0 27px;
+  width: 321px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 -4px 0;
+  padding: 0 0 0 27px;
 }
 
 .recommend p {
-    font-size: 14px;
-    line-height: 18px;
-    color: #8e8e8e;
-    font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #8e8e8e;
+  font-weight: 600;
 }
 
 .recommend span {
-    font-size: 12px;
-    color: #262626;
-    font-weight: 500;
+  font-size: 12px;
+  color: #262626;
+  font-weight: 500;
 }
 
 #feed {
-    width: 614px;
-    border-left: solid 1px #DBDBDB;
-    border-right: solid 1px #DBDBDB;
+  width: 614px;
+  border-left: solid 1px #dbdbdb;
+  border-right: solid 1px #dbdbdb;
 }
 
 .feedTop {
-    height: 60px;
-    padding: 16px;
-    border-top: 1px solid #DBDBDB;
-    border-bottom: 1px solid #DBDBDB;
-    display: flex;
+  height: 60px;
+  padding: 16px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
 }
 
-.feedTop img{
-    width: 32px;
-    height: 32px;
-    border-radius:50%;
+.feedTop img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
 
 .feedTop .dots {
-    width: 20px;
-    height: auto;
-    text-align: right;
-}   
+  width: 20px;
+  height: auto;
+  text-align: right;
+}
 
 .feedTop p {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: bold;
-    margin: 5px 0 0 17px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 5px 0 0 17px;
 }
 
 .feedMain {
-    height: auto;
+  height: auto;
 }
 
-.feedMain img{
-    width: 614px;
-    height: auto;
+.feedMain img {
+  width: 614px;
+  height: auto;
 }
 
 .feedBottom {
-    display:flex;
-    height: 40px;
-    padding: 0 16px 0 16px;
+  display: flex;
+  height: 40px;
+  padding: 0 16px 0 16px;
 }
 
 .feedBottom img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 .numOfLikes {
-    height: 26px;
-    padding: 0 16px 8px 16px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 700;
+  height: 26px;
+  padding: 0 16px 8px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
 }
 
 .commentArea {
-    height: 88px;
-    overflow: hidden;
-    padding: 0 16px 0 16px;
+  list-style: none;
+  height: 88px;
+  overflow: hidden;
+  padding: 0 16px 0 16px;
 }
 
-.commentArea p {
-    font-size: 14px;
-    line-height: 18px;
+.commentArea li {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .commentArea span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .commentInput {
-    display: flex;
+  display: flex;
 }
 
 .comment {
-    width: 569px;
-    height: 56px;
-    padding: 19px 16px 19px 16px;
-    border-bottom: solid 1px #DBDBDB;
-    border-left: none;
-    border-right: none;
-    border-top: solid 1px #EFEFEF;
+  width: 569px;
+  height: 56px;
+  padding: 19px 16px 19px 16px;
+  border-bottom: solid 1px #dbdbdb;
+  border-left: none;
+  border-right: none;
+  border-top: solid 1px #efefef;
 }
 
 input::placeholder {
-    font-size: 14px;
-    line-height: 19px;
-    color: #8E8E8E;
-
+  font-size: 14px;
+  line-height: 19px;
+  color: #8e8e8e;
 }
 
 .commentInput #myBtn {
-    width: 44px;
-    height: 56px;
-    background-color: #Ffff;
-    color: #C0E0FD;
-    border-left: none;
-    border-right: none;
-    border-top: solid 1px #EFEFEF;
-    border-bottom: solid 1px #DBDBDB;
+  width: 44px;
+  height: 56px;
+  background-color: #ffff;
+  color: #c0e0fd;
+  border-left: none;
+  border-right: none;
+  border-top: solid 1px #efefef;
+  border-bottom: solid 1px #dbdbdb;
+}
+
+.comment-box {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.comment-box .comment-txt {
+  font-weight: 400;
 }

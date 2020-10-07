@@ -1,30 +1,32 @@
-const clickButton = document.getElementById("myBtn");
-const innerComment = document.getElementsByClassName("commentArea")[1];
+const btn = document.getElementById("myBtn");
+const commentInput = document.querySelector(".comment");
 
-clickButton.addEventListener("click", function(){
-
+commentInput.addEventListener("keyup", function () {
+  let inputValue = commentInput.value;
+  if (inputValue.length >= 1) {
+    btn.style.color = "#0095f6";
+    btn.style.fontWeight = 600;
+  } else {
+    btn.style.color = "#c0e0fd";
+    btn.style.fontWeight = 500;
+  }
 });
 
-let enterInput = document.getElementsByTagName("input")[0];
-enterInput.addEventListener("keyup", function(event){
-if(event.keycode === 13) {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
+//이 밑은 댓글 기능
+
+const commentUl = document.getElementsByClassName("commentArea")[0];
+
+function addComment() {
+  const commentLi = document.createElement("li");
+  const commentLikeBtn = document.createElement("button");
+  const commentDelBtn = document.createElement("button");
+  const comment = commentInput.value;
+
+  commentLi.innerHTML = `
+  <div class="comment-box">
+  <span class="comment-id">perfumelim</span>
+  <span class="comment-txt">${comment}</span>
+  </div>`;
+
+  commentUl.appendChild(commentLi);
 }
-});
-
-const blueButton = document.getElementById("myBtn");
-const commentInput = document.getElementsByClassName("comment")[0];
-
-commentInput.addEventListener("keyup", function(){
-
-
-let commentInputvalue = commentInput.value;
-
-if (commentInputvalue.length>=1) {
-
-blueButton.style.color = "#0095f6";
-blueButton.style.fontWeight = 600;
-
-}
-});
