@@ -75,6 +75,7 @@ section {
   justify-content: center;
   max-width: 350px;
   margin-top: 12px;
+  font-family: var(--font-family);
   user-select: none;
 }
 
@@ -139,8 +140,8 @@ section {
   cursor: text;
 }
 
-#username,
-#password {
+.usrInput,
+.pwInput {
   margin: 0;
   padding: 9px 44px 7px 8px;
   background: var(--background-color);
@@ -155,7 +156,7 @@ section {
 }
 
 input::placeholder {
-  font: var(--font-family);
+  font-family: var(--font-family);
 }
 
 input:focus {
@@ -182,6 +183,7 @@ input:focus {
   text-align: center;
   text-overflow: ellipsis;
   text-transform: inherit;
+  font-family: var(--font-family);
   font-weight: 600;
   user-select: none;
   opacity: 1;

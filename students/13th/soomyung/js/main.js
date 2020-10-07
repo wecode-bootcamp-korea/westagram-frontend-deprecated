@@ -1,27 +1,27 @@
 "use strict";
 
-const getBody = document.querySelector("body");
+const body = document.querySelector("body");
 // for comment
-const getCommentText = document.querySelector(".add-comment input");
-const getCommentBtn = document.querySelector("button");
-const getCommentList = document.querySelector(".comment-list>ul");
-const getProfile = document.querySelector(".profile-name>div:first-child");
-const getFdLk = document.querySelectorAll(".feed-like .fa-heart");
+const cmtText = document.querySelector(".add-comment input");
+const cmtBtn = document.querySelector("button");
+const cmtList = document.querySelector(".comment-list>ul");
+const profile = document.querySelector(".profile-name>div:first-child");
+const feedLike = document.querySelectorAll(".feed-like .fa-heart");
 // for navimenu
-const getNavAvatar = document.querySelector(".nav-avatar");
-const getHomeIcon = document.querySelector(".icon i:first-child");
-const getNavDropdown = document.querySelector(".nav-dropdown");
+const navAvatar = document.querySelector(".nav-avatar");
+const homeIcon = document.querySelector(".icon i:first-child");
+const navDrop = document.querySelector(".nav-dropdown");
 // for searchbox
-const getSearchBox = document.getElementById("search-box");
-const getSearchLabel = document.querySelector(".search>label");
-const getUlParent = document.querySelector(".search-menu>div");
-const getSearchMenu = document.querySelector(".search-dropdown");
-const getSearchLabelText = document.querySelector(".search>label>span>span");
-let getSearchUl = document.querySelector(".user-list");
+const searchBox = document.getElementById("search-box");
+const searchLabel = document.querySelector(".search>label");
+const ulParent = document.querySelector(".search-menu>div");
+const searchMenu = document.querySelector(".search-dropdown");
+const searchLabelText = document.querySelector(".search>label>span>span");
+let searchUl = document.querySelector(".user-list");
 // for friendlist
-const getFriendUl = document.querySelector(".friends-list>ul");
+const friendUl = document.querySelector(".friends-list>ul");
 // for feed image responsive
-const getFdImg = document.querySelector(
+const feedImg = document.querySelector(
   ".feed-image>img[src='https://via.placeholder.com/612']"
 );
 
@@ -89,8 +89,8 @@ const commentList = [
 // for placeholder image resize
 window.addEventListener("resize", () => {
   window.innerWidth < 612
-    ? (getFdImg.src = "https://via.placeholder.com/500")
-    : (getFdImg.src = "https://via.placeholder.com/612");
+    ? (feedImg.src = "https://via.placeholder.com/500")
+    : (feedImg.src = "https://via.placeholder.com/612");
 });
 
 //--- SECTION friends-suggestion generator from user DB (random) & 5rows ---//
@@ -116,7 +116,7 @@ const friendListElement = (idx) => {
         <button type="button">Follow</button>
         `
   );
-  getFriendUl.append(friendLi);
+  friendUl.append(friendLi);
 };
 
 // generator
@@ -140,7 +140,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 // exsiting feed like toggle not good but just for this project~ only few feeds!
-getFdLk.forEach((like) => {
+feedLike.forEach((like) => {
   like.addEventListener("click", (e) => likeToggle(e));
 });
 
@@ -188,7 +188,7 @@ commentList.forEach((cmt) => {
     `
   );
   existLi.append(cmtTemplateGenerator());
-  getCommentList.append(existLi);
+  cmtList.append(existLi);
 });
 
 // new comment generator
@@ -201,23 +201,23 @@ const createComment = () => {
     "afterbegin",
     `
     <div class="comment-text">
-      <span>${getProfile.textContent}</span>
-      <span>${getCommentText.value}</span>
+      <span>${profile.textContent}</span>
+      <span>${cmtText.value}</span>
     </div>
     `
   );
   li.append(cmtTemplateGenerator());
   // create new comment with condition
-  getCommentText.value !== ""
-    ? getCommentList.append(li)
-    : (getCommentText.value = getCommentText.defaultValue);
+  cmtText.value !== ""
+    ? cmtList.append(li)
+    : (cmtText.value = cmtText.defaultValue);
   // initializing
-  getCommentText.value = "";
+  cmtText.value = "";
 };
 
 // comment trigger [click & enter]
-getCommentBtn.addEventListener("click", () => createComment());
-getCommentText.addEventListener("submit", (e) => {
+cmtBtn.addEventListener("click", () => createComment());
+cmtText.addEventListener("submit", (e) => {
   e.preventDefault();
   createComment();
 });
@@ -226,64 +226,62 @@ getCommentText.addEventListener("submit", (e) => {
 
 // fadeout animation ~just like instagram
 const fadeAnimation = () => {
-  getNavDropdown.classList.remove("upOut");
-  void getNavDropdown.offsetHeight;
-  getNavDropdown.classList.add("upOut");
+  navDrop.classList.remove("upOut");
+  void navDrop.offsetHeight;
+  navDrop.classList.add("upOut");
 };
 
 const dispNone = () => {
-  getNavDropdown.classList.add("display-none");
+  navDrop.classList.add("display-none");
 };
 
 // open the nav menu
 const noneToFixed = () => {
-  getNavDropdown.classList.remove("upOut");
+  navDrop.classList.remove("upOut");
   // showing menu
-  getNavDropdown.classList.remove("display-none");
-  getNavDropdown.classList.add("display-fixed");
+  navDrop.classList.remove("display-none");
+  navDrop.classList.add("display-fixed");
   // home Icon change
-  getHomeIcon.classList.add("far");
-  getHomeIcon.classList.remove("fas");
+  homeIcon.classList.add("far");
+  homeIcon.classList.remove("fas");
   // avatar border generate
-  getNavAvatar.parentNode.classList.add("avatar-border");
+  navAvatar.parentNode.classList.add("avatar-border");
 };
 
 // close the nav menu
 const fixedToNone = () => {
   fadeAnimation();
   // home Icon change
-  getHomeIcon.classList.remove("far");
-  getHomeIcon.classList.add("fas");
+  homeIcon.classList.remove("far");
+  homeIcon.classList.add("fas");
   // avatar border remove
-  getNavAvatar.parentNode.classList.remove("avatar-border");
+  navAvatar.parentNode.classList.remove("avatar-border");
   // time for disapear
   // NOTE when I tested this, timing-gap occured about 20ms (e.g) css 150, js 130)
   setTimeout(dispNone, 130);
 };
 
 // nav trigger
-getNavAvatar.addEventListener("click", () => {
-  getNavDropdown.classList.contains("display-none")
-    ? noneToFixed()
-    : fixedToNone();
+navAvatar.addEventListener("click", () => {
+  navDrop.classList.contains("display-none") ? noneToFixed() : fixedToNone();
 });
 
 // --- SECTION search box handling --- //
 
 // search focusin
-getSearchBox.addEventListener("focusin", (e) => {
+searchBox.addEventListener("focusin", (e) => {
   //remove placeholder & showing covered stuff
   e.target.placeholder = "";
   e.target.classList.add("bgc-transparent");
   e.target.classList.remove("bgc-main");
   // if there is input value, label placeholder remove
   if (e.target.value !== "") {
-    getSearchLabelText.classList.add("display-none");
+    searchLabelText.classList.add("display-none");
   }
 });
 
 // search focusout
-getSearchBox.addEventListener("focusout", (e) => {
+searchBox.addEventListener("focusout", (e) => {
   //regenerating placeholder & coverering back stuff
   e.target.placeholder = "Search";
   e.target.classList.add("bgc-main");
@@ -292,18 +290,18 @@ getSearchBox.addEventListener("focusout", (e) => {
 
 // search box additional action:
 // NOTE if click the body, disapear dropdownlist. then if back to click the search box again, reappear the list again too
-getSearchBox.addEventListener("click", () => {
-  if (getSearchBox.value != "") {
-    getSearchMenu.classList.remove("display-none");
+searchBox.addEventListener("click", () => {
+  if (searchBox.value != "") {
+    searchMenu.classList.remove("display-none");
   }
 });
 
 //  body trigger for dissapear items: search & nav dropdown
-getBody.addEventListener("click", (e) => {
-  if (e.target !== getNavAvatar) {
+body.addEventListener("click", (e) => {
+  if (e.target !== navAvatar) {
     fixedToNone();
   }
-  if (e.target !== getSearchBox) {
-    getSearchMenu.classList.add("display-none");
+  if (e.target !== searchBox) {
+    searchMenu.classList.add("display-none");
   }
 });

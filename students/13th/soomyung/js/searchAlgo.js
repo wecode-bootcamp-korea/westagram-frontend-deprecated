@@ -47,24 +47,24 @@ const allConditionDB = userList.map((user) => searchArrayCreator(user.id));
 // ul initiate
 const initUl = () => {
   // remove old ul
-  getSearchUl.remove();
+  searchUl.remove();
   // regenerate new ul
-  getSearchUl = document.createElement("ul");
-  getSearchUl.classList.add("user-list");
-  getUlParent.append(getSearchUl);
+  searchUl = document.createElement("ul");
+  searchUl.classList.add("user-list");
+  ulParent.append(searchUl);
 };
 
 // search update
-getSearchBox.addEventListener("keyup", () => {
+searchBox.addEventListener("keyup", () => {
   //event trigger
-  if (getSearchBox.value != "") {
+  if (searchBox.value != "") {
     // something input on search box
 
     // placeholder text clear
-    getSearchLabelText.classList.add("display-none");
+    searchLabelText.classList.add("display-none");
 
     // show search menu
-    getSearchMenu.classList.remove("display-none");
+    searchMenu.classList.remove("display-none");
 
     // initialize to empty ul list remove => create new ul
     initUl();
@@ -74,7 +74,7 @@ getSearchBox.addEventListener("keyup", () => {
 
     // Loop one array from multiple Array (here is 6 loop!)
     allConditionDB.forEach((conArray) => {
-      if (conArray.includes(getSearchBox.value)) {
+      if (conArray.includes(searchBox.value)) {
         // check input value in User(condition array elements); the first element of condition array is full text(full ID)
 
         const li = document.createElement("li");
@@ -99,11 +99,11 @@ getSearchBox.addEventListener("keyup", () => {
               </div>
               `
             );
-            getSearchUl.append(li);
+            searchUl.append(li);
           }
         });
       }
-      if (!conArray.includes(getSearchBox.value)) {
+      if (!conArray.includes(searchBox.value)) {
         // check input value NOT in user (condition Array)
 
         // false cnt increasing 1 how much user(condition array) not matched with input value
@@ -118,7 +118,7 @@ getSearchBox.addEventListener("keyup", () => {
           emptyLi.innerHTML = "No results found.";
 
           // append default list item first then...
-          getSearchUl.append(emptyLi);
+          searchUl.append(emptyLi);
         }
       }
     });
@@ -126,10 +126,10 @@ getSearchBox.addEventListener("keyup", () => {
     // if there is no input on searchbox
 
     //regenerate placeholder!
-    getSearchLabelText.classList.remove("display-none");
+    searchLabelText.classList.remove("display-none");
 
     // don't show search dropdown menu
-    getSearchMenu.classList.add("display-none");
+    searchMenu.classList.add("display-none");
 
     // initialize to empty ul list remove => create new ul
     initUl();
