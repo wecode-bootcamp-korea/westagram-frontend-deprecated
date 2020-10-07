@@ -82,7 +82,7 @@ searchBox.addEventListener("keyup", () => {
           // matching userdata from original DB with the first element from the array matched with input value at least one
 
           // then show the search result
-          if (user.id == conArray[0]) {
+          if (user.id === conArray[0]) {
             li.insertAdjacentHTML(
               "beforeend",
               `

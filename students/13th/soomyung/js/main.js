@@ -120,24 +120,21 @@ const friendListElement = (idx) => {
 };
 
 // generator
-for (let i = 0; i < 5; i++) {
+userList.forEach(() => {
   const friendListGenerator = () => {
-    // random name picker from the db
+    if (friendCheck.length >= 5) return;
+
     const randomIdx = Math.floor(Math.random() * userList.length);
     const randomName = userList[randomIdx].id;
+
     if (!friendCheck.includes(randomName)) {
-      // if there is no identical items in the friendcheck, push the item inside friendcheck array
       friendCheck.push(randomName);
-      // generator
       friendListElement(randomIdx);
-    } else if (friendCheck.length <= 5) {
-      // recurring the function for generating 5 rows
-      friendListGenerator();
     }
+    friendListGenerator();
   };
-  // execute frinds generator
   friendListGenerator();
-}
+});
 
 // exsiting feed like toggle not good but just for this project~ only few feeds!
 feedLike.forEach((like) => {
@@ -208,9 +205,7 @@ const createComment = () => {
   );
   li.append(cmtTemplateGenerator());
   // create new comment with condition
-  cmtText.value !== ""
-    ? cmtList.append(li)
-    : (cmtText.value = cmtText.defaultValue);
+  cmtText.value ? cmtList.append(li) : (cmtText.value = cmtText.defaultValue);
   // initializing
   cmtText.value = "";
 };
@@ -275,7 +270,7 @@ searchBox.addEventListener("focusin", (e) => {
   e.target.classList.add("bgc-transparent");
   e.target.classList.remove("bgc-main");
   // if there is input value, label placeholder remove
-  if (e.target.value !== "") {
+  if (e.target.value) {
     searchLabelText.classList.add("display-none");
   }
 });
@@ -291,7 +286,7 @@ searchBox.addEventListener("focusout", (e) => {
 // search box additional action:
 // NOTE if click the body, disapear dropdownlist. then if back to click the search box again, reappear the list again too
 searchBox.addEventListener("click", () => {
-  if (searchBox.value != "") {
+  if (searchBox.value) {
     searchMenu.classList.remove("display-none");
   }
 });
