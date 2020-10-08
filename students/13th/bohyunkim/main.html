@@ -12,43 +12,46 @@
     <header>
       <nav id="nav-bar">
         <div class="nav-left">
-          <a href="https://www.instagram.com/">
-            <img src="img/logo_visual.png" alt="Instagram-Logo">
+          <a id="logo-visual" href="https://www.instagram.com/">
+            <img src="img/logo_visual.png" alt="Instagram-Logo" width=24px>
           </a>
-          <a href="https://www.instagram.com/">
-            <img src="img/logo_text.png" alt="Instagram-Logo-Text">
+          <a id="logo-text" href="https://www.instagram.com/">
+            <img src="img/logo_text.png" alt="Instagram-Logo-Text" width=103px>
           </a>
         </div> 
+
         <div class="nav-center">
-          <input class="input-field" type="text" name="search" placeholder="검색"></input>
+          <input id="nav-search" type="text" name="search" placeholder="&#128269 &nbsp 검색"></input>
         </div>
+
         <div class="nav-right">
-          <a href="https://www.instagram.com/explore">
-            <img src="img/explore.png" alt="explore-icon">
+          <a class="icons-nav"href="https://www.instagram.com/explore">
+            <img id="first-icon" src="img/explore.png" alt="explore-icon" width=21px>
           </a>
-          <a>
-            <img src="img/heart.png" alt="heart-icon">
+          <a class="icons-nav">
+            <img  src="img/heart.png" alt="heart-icon" width=21px>
           </a>
-          <a>
-            <img src="img/profile.png" alt="profile-icon">
+          <a class="icons-nav">
+            <img  src="img/profile.png" alt="profile-icon" width=20px>
           </a>
         </div>
       </nav>
     </header>
+    <div class="clear"></div>
 
     <main>
-      <div class="feeds">
-        <article>
+      <div class="main-feeds">
+        <article class="feed-container">
           <section id="feed-top">
-            <a href="https://www.instagram.com/profile">
-              <img src="img/profile-image.jpg" alt="profile-link">
+            <a class="thumbnail-wrapper" href="https://www.instagram.com/profile">
+              <img class="profile-thumbnail" src="img/profile-image.jpg" alt="profile-link">
             </a>
             <div class="text-beside">
               <a href="https://www.instagram.com/profile"><b>kimshelby</b></a>
-              <a href="https://www.instagram.com/profile">Seoul, Korea</a>
+              <a class="text-clickable" href="https://www.instagram.com/profile">Seoul, Korea</a>
             </div>
-            <a href="#">
-              <img src="img/more.png" alt="more-icon">
+            <a class="nav-right" href="#">
+              <img src="img/more-options.png" alt="more-icon" width=24px>
             </a>
           </section>
           <section id="feed-image">
@@ -56,33 +59,44 @@
           </section>
           <section id="feed-menu">
             <div class="left-align">
-              <a href="#">
+              <a class="feed-icons" href="#">
                 <img src="img/heart-abovecomments.png" alt="like">
               </a>     
-              <a href="#">
+              <a class="feed-icons" href="#">
                 <img src="img/comment.png" alt="comment">
               </a>   
-              <a href="#">
+              <a class="feed-icons" href="#">
                 <img src="img/send.png" alt="send">
               </a>     
             </div>  
             <div class="right-align">
-              <a href="#">
+              <a class="feed-icons" href="#">
                 <img src="img/bookmark.png" alt="send">
               </a>  
             </div>
           </section>
-          <section id="feed-info">
-            <b>좋아요 28개</b>
-            <p><b>stephaniekeem</b>맛있겠지? 히히히</p>
-            <p>15시간 전</p>
+          <section id="feed-info-wrap">
+            <p class="feed-info"><b>좋아요 28개</b></p>
+            <p class="feed-info"><b>kimshelby</b><span>&nbsp 맛있겠지? 히히히</span></p>
+            
+            <ul class="comments-list">
+              <li class="comment-container"> 
+                  <p class="comment-ID"><b>stephaniekeem</b><span class="comment-text">&nbsp 맛있겠다...</span></p>
+              </li>
+            </ul>
+
+            <p class="small-font">15시간 전</p>
           </section>
+
           <section id="feed-comments">
-            <input type="text" name="comments" placeholder="댓글 달기...">
-            <button type="button">게시</button>
+            <form class="comment">
+              <textarea class="comment-textarea" name="comments" placeholder="댓글 달기..."></textarea>
+              <button class="comment-button" type="button">게시</button>
+            </form>
           </section>
         </article>
       </div>
+      
       <div class="main-right">
         <section id="profile-info-right">
           <a href="https://www.instagram.com/profile">
@@ -109,7 +123,9 @@
           </div>
         </section>
       </div>
+      <div class="clear"></div>
     </main>
+    <div class="clear"></div>
   <script src="js/main.js"></script>
   </body>
 </html>
