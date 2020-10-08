@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
+    <title>westagram.com</title>
     <link href="styles/common.css" rel="stylesheet" type="text/css" />
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link
@@ -14,10 +14,9 @@
     />
   </head>
   <body>
-    <script defer src="js/main.js"></script>
     <header>
       <a href="https://www.instagram.com/">
-        <img src="./img/logo_text.png" />
+        <img alt="인스타그램 로고" src="./img/logo_text.png" />
       </a>
       <div class="input-container">
         <i class="fas fa-search"></i>
@@ -25,36 +24,36 @@
       </div>
       <div class="icons">
         <a href="https://www.instagram.com/"
-          ><img src="./img/home.png" width="110%"
+          ><img alt="홈" src="./img/home.png" width="110%"
         /></a>
         <a href="https://www.instagram.com/direct/inbox/"
-          ><img src="./img/paperplane.png"
+          ><img alt="공유" src="./img/paperplane.png"
         /></a>
         <a href="https://www.instagram.com/explore/"
-          ><img src="./img/explore.png"
+          ><img alt="탐색" src="./img/explore.png"
         /></a>
-        <img src="./img/heart.png" />
-        <img class="circle" src="./img/myProfile.jpg" />
+        <img alt="좋아요" src="./img/heart.png" />
+        <img alt="내 프로필" class="circle" src="./img/myProfile.jpg" />
       </div>
     </header>
     <div class="everything">
       <div id="mainPart">
         <div class="story">
-          <img src="./img/pyerMoss.jpg" />
-          <img src="./img/cho.jpg" />
-          <img src="./img/kerbito.jpg" />
-          <img src="./img/offwhite.jpg" />
-          <img src="./img/simon.jpg" />
-          <img src="./img/susan.jpg" />
-          <img src="./img/susie.jpg" />
-          <img src="./img/versace.jpg" />
-          <img src="./img/voguerunway.jpg" />
-          <img src="./img/yuhan.jpg" />
-          <img src="./img/zen.jpg" />
+          <img alt="pyerMoss" src="./img/pyerMoss.jpg" />
+          <img alt="cho" src="./img/cho.jpg" />
+          <img alt="kerbito" src="./img/kerbito.jpg" />
+          <img alt="offwhite" src="./img/offwhite.jpg" />
+          <img alt="simon" src="./img/simon.jpg" />
+          <img alt="susan" src="./img/susan.jpg" />
+          <img alt="susie" src="./img/susie.jpg" />
+          <img alt="versace" src="./img/versace.jpg" />
+          <img alt="voguerunway" src="./img/voguerunway.jpg" />
+          <img alt="yuhan" src="./img/yuhan.jpg" />
+          <img alt="zen" src="./img/zen.jpg" />
         </div>
         <section id="feed">
           <div class="feedTop">
-            <img src="./img/yuhan.jpg" />
+            <img alt="yuhan의 프로필" src="./img/yuhan.jpg" />
             <p>yuhanwangyuhan</p>
             <span class="dots"><img src="./img/3dots.png" /></span>
           </div>
@@ -62,10 +61,10 @@
             <img src="./img/feed.jpg" />
           </div>
           <div class="feedBottom">
-            <img src="./img/heart.png" />
-            <img src="./img/comment.png" />
-            <img src="./img/paperplane.png" />
-            <img src="./img/bookmark.png" />
+            <img alt="좋아요" src="./img/heart.png" />
+            <img alt="댓글" src="./img/comment.png" />
+            <img alt="공유" src="./img/paperplane.png" />
+            <img alt="저장" src="./img/bookmark.png" />
           </div>
           <div class="numOfLikes">
             <p>좋아요 1126개</p>
@@ -78,14 +77,13 @@
           </ul>
           <div class="commentInput">
             <input type="text" class="comment" placeholder="댓글 달기 ..." />
-            <button onclick="addComment()" id="myBtn">게시</button>
+            <button id="myBtn">게시</button>
           </div>
         </section>
       </div>
-
       <aside id="personalAside">
         <div class="myBox">
-          <img src="./img/myProfile.jpg" />
+          <img alt="나의 프로필 사진" src="./img/myProfile.jpg" />
           <p>perfumelim</p>
         </div>
         <div class="recommend">
@@ -154,5 +152,6 @@
         </nav>
       </aside>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -12,6 +12,8 @@ commentInput.addEventListener("keyup", function () {
   }
 });
 
+btn.addEventListener("click", addComment);
+
 //이 밑은 댓글 기능
 
 const deleteComment = (event) => {
@@ -23,15 +25,12 @@ const commentUl = document.getElementsByClassName("commentArea")[0];
 
 function addComment() {
   const commentLi = document.createElement("li");
-  const commentLikeBtn = document.createElement("button");
-  const commentDelBtn = document.createElement("button");
   const comment = commentInput.value;
 
   commentLi.innerHTML = `
-  <div class="comment-box">
   <span class="comment-id">perfumelim</span>
   <span class="comment-txt">${comment}</span>
-  </div>`;
+  `;
 
   commentUl.appendChild(commentLi);
 }

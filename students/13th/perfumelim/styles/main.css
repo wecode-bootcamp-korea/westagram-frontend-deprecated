@@ -79,7 +79,6 @@ header .circle {
   margin-bottom: 24px;
   overflow: auto;
 }
-
 .story img {
   width: 66px;
   height: 66px;
@@ -91,28 +90,24 @@ header .circle {
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
-
 .myBox {
   display: flex;
   padding: 10px 0 0 30px;
   width: 321px;
   height: 56px;
 }
-
 .myBox p {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
   padding: 24px 0 24px 14px;
 }
-
 .myBox img {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   margin: 10px 0 0 5px;
 }
-
 #footmenu {
   display: flex;
   flex-direction: column;
@@ -120,21 +115,18 @@ header .circle {
   height: 36px;
   margin: 29px 27px 0 27px;
 }
-
 #footmenu ul li {
   list-style: none;
   float: left;
   margin-right: 3px;
   padding-right: 5px;
 }
-
 #footmenu .menuLink {
   text-decoration: none;
   font-size: 11px;
   line-height: 13px;
   color: #c7c7c7;
 }
-
 #footmenu p {
   width: 204px;
   font-size: 11px;
@@ -142,7 +134,6 @@ header .circle {
   color: #c7c7c7;
   margin-top: 17px;
 }
-
 .recommend {
   width: 321px;
   height: 18px;
@@ -151,26 +142,22 @@ header .circle {
   margin: 40px 0 -4px 0;
   padding: 0 0 0 27px;
 }
-
 .recommend p {
   font-size: 14px;
   line-height: 18px;
   color: #8e8e8e;
   font-weight: 600;
 }
-
 .recommend span {
   font-size: 12px;
   color: #262626;
   font-weight: 500;
 }
-
 #feed {
   width: 614px;
   border-left: solid 1px #dbdbdb;
   border-right: solid 1px #dbdbdb;
 }
-
 .feedTop {
   height: 60px;
   padding: 16px;
@@ -178,47 +165,39 @@ header .circle {
   border-bottom: 1px solid #dbdbdb;
   display: flex;
 }
-
 .feedTop img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
 }
-
 .feedTop .dots {
   width: 20px;
   height: auto;
   text-align: right;
 }
-
 .feedTop p {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
   margin: 5px 0 0 17px;
 }
-
 .feedMain {
   height: auto;
 }
-
 .feedMain img {
   width: 614px;
   height: auto;
 }
-
 .feedBottom {
   display: flex;
   height: 40px;
   padding: 0 16px 0 16px;
 }
-
 .feedBottom img {
   width: 24px;
   height: 24px;
   margin-right: 10px;
 }
-
 .numOfLikes {
   height: 26px;
   padding: 0 16px 8px 16px;
@@ -226,27 +205,22 @@ header .circle {
   line-height: 18px;
   font-weight: 700;
 }
-
 .commentArea {
   list-style: none;
   height: 88px;
   overflow: hidden;
   padding: 0 16px 0 16px;
 }
-
 .commentArea li {
   font-size: 14px;
   line-height: 18px;
 }
-
 .commentArea span {
   font-weight: 700;
 }
-
 .commentInput {
   display: flex;
 }
-
 .comment {
   width: 569px;
   height: 56px;
@@ -256,13 +230,11 @@ header .circle {
   border-right: none;
   border-top: solid 1px #efefef;
 }
-
 input::placeholder {
   font-size: 14px;
   line-height: 19px;
   color: #8e8e8e;
 }
-
 .commentInput #myBtn {
   width: 44px;
   height: 56px;
@@ -273,12 +245,10 @@ input::placeholder {
   border-top: solid 1px #efefef;
   border-bottom: solid 1px #dbdbdb;
 }
-
 .comment-box {
   font-size: 14px;
   line-height: 18px;
 }
-
 .comment-box .comment-txt {
   font-weight: 400;
 }
