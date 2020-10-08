@@ -3,17 +3,20 @@
   font-family: "-apple-system", "system-ui", "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
 }
+
 #flexLayout {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   margin: 60px 0 80px 0;
 }
+
 #loginTable {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
+
 #loginTable .tobe {
   width: 350px;
   height: 380px;
@@ -21,11 +24,13 @@
   margin-bottom: 10px;
   border: solid 1px #dbdbdb;
 }
+
 #loginTable .tobe img {
   width: 175px;
   height: 51px;
   margin: 22px 86px 12px 86px;
 }
+
 #loginTable input {
   width: 268px;
   height: 36px;
@@ -35,13 +40,16 @@
   margin: 5px 40px 0 40px;
   background-color: #fafafa;
 }
+
 input::placeholder {
   font-size: 12px;
   color: #8e8e8e;
 }
+
 input:hover {
   border: 1px solid #8e8e8e;
 }
+
 #loginTable button {
   width: 268px;
   height: 30px;
@@ -51,20 +59,24 @@ input:hover {
   background-color: #c0dffd;
   color: white;
 }
+
 .tobe .hrOr {
   display: flex;
   margin-bottom: 10px;
 }
+
 #loginTable hr {
   margin-top: 15px;
   border: none;
   height: 1px;
   background-color: #dbdbdb;
 }
+
 #loginTable .tobe .or {
   float: center;
   color: #8e8e8e;
 }
+
 #loginTable .tobe p {
   font-size: 12px;
   line-height: 14px;
@@ -73,6 +85,7 @@ input:hover {
   margin-top: 18px;
   color: #385185;
 }
+
 #loginTable .tobe .icon {
   font-size: 16px;
   line-height: 18px;
@@ -82,9 +95,11 @@ input:hover {
   margin-top: 28px;
   color: #00376b;
 }
+
 #loginTable .tobe a {
   text-decoration: none;
 }
+
 #loginTable .tobe h6 {
   font-size: 14px;
   line-height: 18px;
@@ -93,12 +108,14 @@ input:hover {
   margin-left: 7px;
   color: #385185;
 }
+
 #loginTable .secondBox {
   width: 350px;
   height: 63px;
   border: solid 1px #dbdbdb;
   padding: 10px 0 5px 0;
 }
+
 #loginTable .secondBox p {
   font-weight: lighter;
   font-size: 14px;
@@ -106,50 +123,60 @@ input:hover {
   text-align: center;
   margin: 15px 15px 15px 15px;
 }
+
 #loginTable .secondBox a {
   text-decoration: none;
 }
+
 #loginTable .secondBox span {
   color: #0095f6;
   font-weight: bold;
 }
+
 #loginTable .thirdBox {
   width: 350px;
   height: 102px;
 }
+
 #loginTable .thirdBox p {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   margin: 10px 20px 10px 20px;
 }
+
 #loginTable .thirdBox img {
   margin: 10px 0 10px 0;
   flex-direction: row;
 }
+
 #loginTable .thirdBox .appstore {
   width: 136px;
   height: 40px;
   float: center;
   margin-left: 35px;
 }
+
 #loginTable .thirdBox .googleplay {
   width: 134px;
   height: 40px;
   float: center;
   margin-left: 5px;
 }
+
 .showcase img {
   width: 454px;
   height: 618px;
   margin: 0 -15px 0px -35px;
 }
+
 #downMenu {
   height: 25px;
   width: 1150px;
   margin-left: 140px;
   display: flex;
 }
+
 #downMenu ul li {
   list-style: none;
   float: left;
@@ -157,6 +184,7 @@ input:hover {
   vertical-align: middle;
   padding: 0 7px 0 7px;
 }
+
 #downMenu .menuLink {
   text-decoration: none;
   color: #00376b;
@@ -164,6 +192,7 @@ input:hover {
   line-height: 18px;
   font-weight: 600;
 }
+
 footer p {
   font-size: 12px;
   line-height: 18px;

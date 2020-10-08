@@ -29,8 +29,12 @@ function addComment() {
 
   commentLi.innerHTML = `
   <span class="comment-id">perfumelim</span>
-  <span class="comment-txt">${comment}</span>
+  ${comment}
+  <button class="delBtn">삭제</button>
   `;
+
+  const delBtn = document.querySelector(".delBtn");
+  delBtn.addEventListener("click", deleteComment);
 
   commentUl.appendChild(commentLi);
 }
