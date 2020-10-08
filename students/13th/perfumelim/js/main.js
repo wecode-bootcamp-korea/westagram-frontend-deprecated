@@ -14,6 +14,11 @@ commentInput.addEventListener("keyup", function () {
 
 //이 밑은 댓글 기능
 
+const deleteComment = (event) => {
+  const targetLi = event.target.parentNode.parentNode;
+  targetLi.remove();
+};
+
 const commentUl = document.getElementsByClassName("commentArea")[0];
 
 function addComment() {
