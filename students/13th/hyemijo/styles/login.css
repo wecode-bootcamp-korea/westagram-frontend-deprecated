@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login_box {
+  border: 1.5px solid rgb(228, 228, 228);
+  width: 350px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login_img {
+  margin-bottom: 50px;
+}
+
+.input-wrap {
+  width: 250px;
+  margin: 20px auto;
+}
+.input_box {
+  box-sizing: border-box;
+  width: 250px;
+}
+
+input {
+  font-size: 12px;
+  border: 1.5px solid rgb(228, 228, 228);
+  border-radius: 3px;
+  padding: 10px;
+  background-color: rgb(249, 249, 249);
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background-color: #badcfa;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.password_confirm {
+  align-items: flex-end;
+}
+
+a {
+  color: rgb(0, 46, 93);
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+  margin-top: 20px;
+}

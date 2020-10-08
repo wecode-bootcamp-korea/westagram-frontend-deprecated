@@ -1,0 +1,17 @@
+.userCommentBox {
+  display: flex;
+  width: 600px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+}
+.postUserId {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.commentBox input {
+  width: 600px;
+  padding: 10px;
+  margin: 0;
+}
