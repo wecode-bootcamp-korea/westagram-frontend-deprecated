@@ -1,63 +1,70 @@
-* { margin: 0; padding: 0; border: 0; font-size: 100%;
-    font: inherit; vertical-align: baseline; }
-
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   height: 100vh;
   display: flex;
 }
 
-.loginBox { width: 350px;
-height: 360px;
-background-color: #ffff;
-border: 1px solid #DBDBDB;
-padding: 10px 0;
-background-color: #ffff;
-position: relative;
-margin: auto;
+.loginBox {
+  position: relative;
+  margin: auto;
+  padding: 10px 0;
+  width: 350px;
+  height: 360px;
+  background-color: #ffff;
+  border: 1px solid #dbdbdb;
 }
+
 .loginImg > img {
-  display :block;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  margin: 22px auto 24px auto;
   width: 175px;
   height: 51px;
-  margin-top: 22px;
-  margin-bottom: 24px;
 }
-.form > div{
+
+.form > div {
   display: flex;
   justify-content: center;
-  padding-bottom: 7px;
   align-items: center;
+  padding-bottom: 7px;
 }
-.loninBtn {
+
+button {
   width: 268px;
   height: 30px;
-  margin: 8px 40px 8px 40px;
-  background-color: #C0DFFD;
-  border: 1px solid #C0DFFD;
+  margin: 8px 40px;
+  background-color: #c0dffd;
   color: #ffff;
+  border: 1px solid #c0dffd;
   border-radius: 3px;
 }
+
 input {
   width: 250px;
   height: 20px;
-  background-color: #FAFAFA;
   padding: 9px 0px 7px 8px;
-  border: 1px solid #DBDBDB;
-  color: #262626;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
   border-radius: 3px;
+  color: #262626;
   font-size: 12px;
   outline: none;
 }
+
 div > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 13px;
   margin-top: 80px;
-  color: #00376B;
+  font-size: 13px;
+  color: #00376b;
   text-decoration: none;
 }
