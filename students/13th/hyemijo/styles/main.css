@@ -5,12 +5,13 @@
   border: 1px solid;
   border-radius: 3px;
 }
+
 .postUserId {
   font-weight: bold;
   margin-right: 15px;
 }
 
-.commentBox input {
+.commentInput {
   width: 600px;
   padding: 10px;
   margin: 0;

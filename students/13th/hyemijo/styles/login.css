@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
 }
-.main {
+
+section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.login_box {
+
+.loginBox {
   border: 1.5px solid rgb(228, 228, 228);
   width: 350px;
   height: 380px;
@@ -17,29 +19,25 @@
   flex-direction: column;
 }
 
-.login_img {
-  margin-bottom: 50px;
+.loginImg {
+  margin: 10px auto;
 }
 
-.input-wrap {
-  width: 250px;
+.inputWrap {
+  width: 265px;
   margin: 20px auto;
-}
-.input_box {
-  box-sizing: border-box;
-  width: 250px;
 }
 
 input {
-  font-size: 12px;
-  border: 1.5px solid rgb(228, 228, 228);
-  border-radius: 3px;
-  padding: 10px;
-  background-color: rgb(249, 249, 249);
-  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  border: 1.5px solid #e4e4e4;
+  border-radius: 3px;
+  background-color: #f9f9f9;
 }
 
 button {
@@ -48,18 +46,18 @@ button {
   color: #fff;
   border-radius: 3px;
   border: none;
-  padding: 10px;
+  padding: 7px;
   font-weight: bold;
 }
 
-.password_confirm {
+.passwordConfirm {
   align-items: flex-end;
 }
 
 a {
-  color: rgb(0, 46, 93);
+  color: #002e5d;
   text-decoration: none;
   font-size: 12px;
   display: block;
-  margin-top: 20px;
+  margin-top: 80px;
 }

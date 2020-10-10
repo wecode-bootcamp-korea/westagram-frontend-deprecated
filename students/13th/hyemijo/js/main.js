@@ -1,22 +1,18 @@
-const comments = document.querySelector(.commentList);
-const commentsLi = document.createElement('li');
-const commentsButtonBox = document.createElement('div');
-//const commentButton = document.createElement('button');
-const commentDelButton = document.createElement('button');
-const commentInput = document.querySelector(.commentIn);
+function addComment() {
+  const comments = document.querySelector(".commentList");
+  const commentsLi = document.createElement("li");
+  const commentsButtonBox = document.createElement("div");
+  const commentInput = document.querySelector(".commentInput");
+  const comment = commentInput.value;
 
-commentsLi.className = "listBox";
-commentsButtonBox.className = "btnBox";
-commentButton.className = "btnList";
+  commentsLi.innerHTML = `<div class="commentInner">${comment}
+         <div>`;
 
-const comment = commentInput.value;
+  comments.appendChild(commentsLi);
+  commentsLi.appendChild(commentsButtonBox);
 
-commentInput.addEventListener('keydown',fuction(add){
-    if(add.keyCode == 13){
-        commentsLi.innerHTML = `<div class="commentInner">${comment}
-         <div>` ; }
-        
-     comments.appendChild(commentsLi);
-     commentsLi.appendChild(commentsButtonBox);
-     
-});
+  commentInput.value = " ";
+}
+
+const inBtn = document.querySelector("#psButton");
+inBtn.addEventListener("click", addComment);
