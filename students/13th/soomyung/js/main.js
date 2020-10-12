@@ -120,21 +120,19 @@ const friendListElement = (idx) => {
 };
 
 // generator
-userList.forEach(() => {
-  const friendListGenerator = () => {
-    if (friendCheck.length >= 5) return;
+const friendListGenerator = () => {
+  if (friendCheck.length >= 5) return;
 
-    const randomIdx = Math.floor(Math.random() * userList.length);
-    const randomName = userList[randomIdx].id;
+  const randomIdx = Math.floor(Math.random() * userList.length);
+  const randomName = userList[randomIdx].id;
 
-    if (!friendCheck.includes(randomName)) {
-      friendCheck.push(randomName);
-      friendListElement(randomIdx);
-    }
-    friendListGenerator();
-  };
+  if (!friendCheck.includes(randomName)) {
+    friendCheck.push(randomName);
+    friendListElement(randomIdx);
+  }
   friendListGenerator();
-});
+};
+friendListGenerator();
 
 // exsiting feed like toggle not good but just for this project~ only few feeds!
 feedLike.forEach((like) => {
@@ -230,7 +228,7 @@ const dispNone = () => {
   navDrop.classList.add("display-none");
 };
 
-// open the nav menu
+// open the nav menu TODO
 const noneToFixed = () => {
   navDrop.classList.remove("upOut");
   // showing menu
@@ -243,7 +241,7 @@ const noneToFixed = () => {
   navAvatar.parentNode.classList.add("avatar-border");
 };
 
-// close the nav menu
+// close the nav menu TODO
 const fixedToNone = () => {
   fadeAnimation();
   // home Icon change
@@ -256,7 +254,7 @@ const fixedToNone = () => {
   setTimeout(dispNone, 130);
 };
 
-// nav trigger
+// nav trigger TODO
 navAvatar.addEventListener("click", () => {
   navDrop.classList.contains("display-none") ? noneToFixed() : fixedToNone();
 });

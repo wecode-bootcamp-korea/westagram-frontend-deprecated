@@ -25,7 +25,7 @@ loginForm.addEventListener("keyup", (e) => {
 
 loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  idInput.value.includes("@")
+  !idInput.value.includes("@")
     ? errorOut.removeChild(errorOut.childNodes[0])
     : putErrorMessage();
 });
