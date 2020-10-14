@@ -652,7 +652,6 @@ function generateFeed(picNum) {
   let expNum = expRandNumArr[0];
   let commentRandNumArr = generateRandomOrderArr(generateOrderedArr(0, sampleCommentsData.length));
   let commentNum = commentRandNumArr[0];
-  let randomCommentsCount = Math.floor(Math.random() * 3 + 1);
   const feed = document.createElement('div');
   feed.className = `feed-element feed-${placeNum}`;
   feed.innerHTML = `
@@ -693,7 +692,7 @@ function generateFeed(picNum) {
     </div>
     <div class="feed-likes">
       <div class="focused-liker-img">
-        <img class=focused-liker-img src="img/main/user_followers/${followersProfilePics[profileNum2]}" alt="profile image of the focused person who liked the feed">
+        <img class="focused-liker-img" src="img/main/user_followers/${followersProfilePics[profileNum2]}" alt="profile image of the focused person who liked the feed">
       </div>
         <p class="likes-count">Liked by <span>${followersIds[profileNum2]}</span> and <span>${Math.floor(Math.random() * 200 + 5)} others</span></p>
     </div>
