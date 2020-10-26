@@ -1,0 +1,1 @@
+guide 폴더를 참고해서 westagram 진행해주세요 :) 
