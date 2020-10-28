@@ -1,0 +1,412 @@
+* {
+  font-size: 14px;
+}
+.btn {
+  height: 30px;
+  width: 25px;
+  height: 25px;
+  margin: 15px 10px 15px 10px;
+}
+
+.userName,
+.userId,
+.bold {
+  font-weight: 700;
+}
+.gray {
+  color: #797878;
+}
+.darkgray {
+  color: #909090;
+}
+.lightgray {
+  color: #bebebe;
+}
+.userInfo .userProfile {
+  border-radius: 50%;
+}
+.userInfo .textArea {
+  padding-left: 10px;
+}
+.big {
+  width: 56px;
+  height: 56px;
+}
+.middle {
+  width: 32px;
+  height: 32px;
+}
+.small {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.sfont {
+  font-size: 11px;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  height: 54px;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid lightgray;
+}
+
+.navWrapper {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  height: 54px;
+  top: 0;
+  margin: 0 auto;
+}
+.navRight img {
+  margin-right: 6px;
+}
+
+.textLogo {
+  width: 103px;
+  height: 29px;
+  object-fit: contain;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 220px;
+  height: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  cursor: text;
+}
+
+.magnifier.active {
+  position: static;
+  width: 10px;
+  height: 10px;
+  margin: auto 0;
+  margin-left: 10px;
+  background-image: url('/img/magnifier.png');
+  background-size: cover;
+}
+.magnifier {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  left: 80px;
+  margin: auto 0;
+  background-image: url('/img/magnifier.png');
+  background-size: cover;
+}
+input:focus {
+  outline: none;
+}
+.searchInput.active {
+  width: 155px;
+  color: #797878;
+  border: none;
+  background-color: #fafafa;
+  text-align: left;
+}
+.searchInput {
+  width: 100px;
+  margin: 0 3px;
+  color: #797878;
+  border: none;
+  background-color: #fafafa;
+  text-align: center;
+}
+.xbtn {
+  display: none;
+  width: 13px;
+  height: 13px;
+  margin: auto 0;
+  margin-right: 10px;
+  background-image: url('/img/xbtn.png');
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fafafa;
+}
+.feeds {
+  width: 615px;
+}
+
+article {
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.articleHeader {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.articleHeader .userInfo {
+  display: flex;
+  flex-direction: row;
+}
+.articleHeader .userProfile {
+  padding: 10px;
+  margin-left: 5px;
+}
+.articleHeader img {
+  width: 60px;
+  height: 60px;
+}
+
+.articleHeader .threeBtn {
+  width: 23px;
+  height: 23px;
+  margin: auto 10px;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.threeBtn {
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+}
+
+.articleImg {
+  width: 614px;
+}
+
+.articleFooter {
+  width: 100%;
+  padding: 4px 8px 0px 8px;
+  /* padding: 10px, 30px; */
+}
+.iconbar {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iconbar .btn {
+  margin: auto 8px;
+}
+.iconWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.commentArea {
+  padding: 0 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.likeStatus {
+  margin-bottom: 8px;
+}
+.smallHeart {
+  height: 12px;
+  width: 12px;
+}
+.comment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.time {
+  font-size: 0.75em;
+  margin: 0 0 10px 10px;
+}
+.commentForm {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.commentInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.addBtn {
+  width: 40px;
+  color: #bee1fd;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.deleteBtn {
+  width: 40px;
+  color: #469edb;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* 우측 메인 */
+.main-right {
+  position: sticky;
+  width: 293px;
+  height: 430px;
+  top: 100px;
+  margin-left: 30px;
+}
+
+.main-right .userInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 293px;
+  height: 56px;
+}
+.main-right .userText {
+  padding: 0 auto;
+}
+.recommendText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.recommended .userInfo {
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+}
+.recommended .userText {
+  margin-left: 13px;
+}
+
+.follow {
+  width: 40px;
+  font-size: 12px;
+  border: none;
+  background: none;
+  color: #469edb;
+  text-align: end;
+}
+.menu {
+  margin-top: 25px;
+  width: 100%;
+  border-image-repeat: stretch;
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.menu li {
+  font-size: 11px;
+  display: inline-block;
+  line-height: 13px;
+  vertical-align: baseline;
+  margin: 0;
+}
+.menu li::after {
+  content: '\00B7';
+  float: right;
+  margin-left: 0.25em;
+}
+.menu li:last-child::after {
+  display: none;
+}
+.copyright {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+/* responsive browser media query settings */
+
+@media screen and (max-width: 960px) {
+  body {
+    width: 100%;
+    min-width: 500px;
+  }
+  .navWrapper {
+    width: 100%;
+    min-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    min-width: 500px;
+  }
+  .main-right {
+    display: none;
+  }
+  .navWrapper {
+    width: 100%;
+    min-width: 500px;
+  }
+  .articleImg {
+    /* width: 600px; */
+    width: 100%;
+  }
+  .search {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .article {
+    width: 100%;
+    min-width: 500px;
+  }
+  .articleHeader {
+    width: 100%;
+  }
+  .articleImg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search {
+    display: none;
+  }
+  .article {
+    width: 500px;
+  }
+  .articleHeader {
+    width: 500px;
+  }
+  .articleImg {
+    width: 100%;
+  }
+}
