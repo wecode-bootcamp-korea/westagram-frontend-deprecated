@@ -237,3 +237,14 @@ main{
     margin-top: 1px;
 }
 
+
+@media screen and (max-width: 1000px) {
+    .cover_img{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+ }
