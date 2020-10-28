@@ -38,39 +38,56 @@ nav {
 }
 
 .input_container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px; */
+    position: relative;
     display: flex;
     justify-content: center;
-    width: 600px;
+    align-items: center;
+
 }
 
 /* 검색창 안에 플레이스홀더랑 돋보기 가운데에 집어넣어라 */
 .input_search {
-    width: 400px;
+    /* width: 400px;
     height: 40px;
     border-radius: 3px;
     border: 1px solid lightgray;
     margin: auto 20px;
     outline:none;
     color: lightgray;
-    font-weight: bold;
-    /* display: flex;
-    justify-content: center; */
-    position: relative;
+    font-weight: bold; */
+    width: 400px;
+    height: 40px;
+    /* position: relative; */
 }
 
 .input_search::placeholder {
-    color: lightgray;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    /* margin-left: 50px; */
-}
 
-/* 부트스트랩 돋보기 아이콘 */
+    /* color: lightgray;
+    font-weight: bold; */
+    /* position: absolute;
+    left: 50px; */
+    /* margin: 10px auto; */
+    /* color: red; */
+    /* position: absolute; */
+    /* z-index: 10000; */
+    /* margin: 10px auto; */
+}
 .fa {
     color: lightgray;
-    margin: auto 20px;
-    z-index: 100;
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 60px;
+    margin-top: 30px; */
+    /* margin: auto 20px; */
+    /* padding-left: 70px; */
+    /* margin-left: 70px; */
+    /* z-index: 100; */
+    position: absolute;
 }
 
 .input_right_icons {
@@ -242,7 +259,6 @@ newcomments span {
     margin-left: 10px;
     font-weight: normal;
 }
-
 /* 게시한 시간 */
 time {
     padding-left: 10px;
@@ -271,7 +287,6 @@ comment_heart img {
     width: 15px;
     height: 15px;
 }
-/* 게시 버튼 */
 post_comment_btn {
     color: rgb(94, 159, 245);
     opacity: 0.5;
@@ -396,10 +411,6 @@ story_see_all {
 .story_list_3 span {
     color: rgb(190, 190, 190);
 }
-
-
-/* 여기까지 flex 적용완료 */
-
 .recommend_container {
     display: flex;
     flex-direction: column;
