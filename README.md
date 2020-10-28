@@ -16,6 +16,7 @@
 - 작업 중간 중간 commit 잘 남기고, 완료 시 origin master로 push 후 PR 까지 완료해주세요.
 - [참고) Commit Message Guidelines](https://www.notion.so/wecode/Commit-Message-Guidelines-eb3d8ebc0d014c26848ee628934ae430)
 - PR template 양식에 맞게 잘 작성해주세요. 양식에 맞지 않는 경우 리뷰를 하지 않습니다.
+- PR label 부착 신경써주세요. PR 진행 상황에 대한 공유가 반드시 필요합니다.
 - 리뷰 후에는 기존에 작업하던 branch에서 코드 수정하고 다시 add > commit > push 해주시면 됩니다.
 - 해당 branch가 merge되면 미션 완료입니다! :)
 
