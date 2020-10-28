@@ -23,7 +23,7 @@ let LOCAL_KEY = "comment-list"
 let STORY_KEY = "story-key"
 let SEARCH_KEY = "search-key"
 let lists = JSON.parse(localStorage.getItem(LOCAL_KEY)) || []
-let userArr = JSON.parse(localStorage.getItem(STORY_KEY)) || []
+    // let userArr = JSON.parse(localStorage.getItem(STORY_KEY)) || []
 let serachArr = JSON.parse(localStorage.getItem(SEARCH_KEY)) || []
 
 let click = false;
@@ -31,6 +31,23 @@ let storyClicked = false;
 
 let cnt = 7;
 let logutId;
+
+let userArr = [{
+    id: new Date().getTime().toString(),
+    userId: "ancs",
+    bg: "img/main/story_icon.png",
+    src: "img/main/avatar/ava1.jpg"
+}, {
+    id: new Date().getTime().toString() + 1,
+    userId: "1231dkj",
+    bg: "img/main/story_icon.png",
+    src: "img/main/avatar/ava2.jpg"
+}, {
+    id: new Date().getTime().toString() + 2,
+    userId: "test123",
+    bg: "img/main/story_icon.png",
+    src: "img/main/avatar/ava3.jpg"
+}]
 
 function navHeartHandler(e) {
     const heart = e.target
@@ -84,7 +101,6 @@ function createStoryObj(userId, url) {
     return {
         id: new Date().getTime().toString(),
         userId: userId,
-        bg: "img/main/story_icon.png",
         src: url
     }
 }
@@ -131,7 +147,6 @@ let tempStr = ""
 let submited = false
 let showContentFlag = false
 let showCommentFlag = true;
-console.log(lists)
 
 function renderlists() {
     clearEelmenet(listsContainer)
@@ -155,26 +170,6 @@ function renderlists() {
                         </li>`
         listsContainer.appendChild(list)
     })
-    saveLists()
-}
-
-
-function renderFeed() {
-    if (serachArr[0].src === undefined) {
-        serachArr[0].src = "https://t1.daumcdn.net/cfile/tistory/215B644D56DCF5E82C"
-    } else {
-        serachArr = serachArr.splice(serachArr.length - 1, 1)
-        clearEelmenet(feedRender)
-        serachArr.forEach(search => {
-            const div = document.createElement("div")
-            div.classList.add("feed-img")
-            console.log(search)
-            div.innerHTML += `<img src="${search.src}" alt="">
-                         </div>`
-            feedRender.appendChild(div)
-            card.insertBefore(feedRender, insertAfter)
-        })
-    }
     saveLists()
 }
 
@@ -274,7 +269,6 @@ searchForm.addEventListener("submit", function(e) {
     let fomattedInput = createInput(userInput)
     serachArr.push(fomattedInput)
     searchUserInput.value = ""
-    renderFeed()
     saveLists()
 
 
@@ -359,6 +353,6 @@ function clearEelmenet(container) {
 function render() {
     renderStory()
     renderlists()
-    renderFeed()
+
 }
 render()
