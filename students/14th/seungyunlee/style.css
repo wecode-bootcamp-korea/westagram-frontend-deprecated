@@ -1,0 +1,128 @@
+@import "/style/common.css";
+
+.mainbox {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+  margin-top: 30px;
+}
+.mainbox__box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.main__top input {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 5px;
+  border: 1px solid rgba(31, 29, 29, 0.1);
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.main__login {
+  display: flex;
+  background-color: rgb(192, 223, 253);
+  color: white;
+  border-radius: 2px;
+  width: 255px;
+  height: 28px;
+  font-size: 15px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+
+.or {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+
+  width: 250px;
+}
+
+.or__blank {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 1px;
+}
+
+.main__sign-up {
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 63px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-size: 14px;
+}
+
+.main__sign-up :first-child {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 200;
+  margin-right: 5px;
+}
+
+.main__sign-up :last-child {
+  color: rgb(64, 151, 246);
+  font-weight: 600;
+}
+
+.fb__iogin {
+  color: rgb(56, 81, 133);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 18px 0;
+}
+
+.find__pw {
+  color: rgb(56, 81, 133);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.download__app {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  border-color: none;
+}
