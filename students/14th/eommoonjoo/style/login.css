@@ -1,0 +1,103 @@
+* { box-sizing: border-box;}
+
+#wrapper {
+    width: 380px;
+    margin-left:auto;
+    margin-right:auto;
+    height: 600px;
+}
+
+
+
+
+.main {
+    border: 1px solid;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 380px;
+    height: 500px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.35);
+   
+
+
+}
+
+
+.mainInfo{
+    width: 300 px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.instagramTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#logInId {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 7.5px;
+    border: 1 solid gray;
+    font-size: 12px;
+    text-indent: 5px
+}
+
+
+#logInPw  {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 15px;
+    border: 1 solid gray;
+    font-size: 12px;
+    text-indent: 5px
+}
+
+#logInBtn {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    border: 1px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+
+}
+
+.ddo {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 8px 0px;
+}
+.ddo::before, 
+.ddo::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(p, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 16px;
+    border: 5px
+}
+
+.hyper2 {
+    text-align:center;
+    
+}
+
+.hyper{
+    text-align:center;
+    margin-bottom: 20px;
+}
