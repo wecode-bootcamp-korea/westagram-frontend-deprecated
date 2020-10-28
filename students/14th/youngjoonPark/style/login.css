@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  border: 1px solid lightgray;
+  background: white;
+  padding: 10px 0;
+}
+
+header img {
+  width: 175px;
+  height: 51px;
+  margin: 22px 86.5px 12px;
+}
+
+.login-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.id-box {
+  width: 258px;
+  height: 36px;
+  padding: 9px 0 7px 8px;
+  background: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.pw-box {
+  width: 258px;
+  height: 36px;
+  padding: 9px 0 7px 8px;
+  margin-top: 5px;
+  background: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.login-btn {
+  width: 258px;
+  height: 30px;
+  padding: 9px 4px 7px;
+  background: #bfe0fd;
+  color: #f5fbfe;
+  border: none;
+  border-radius: 3px;
+  margin: 8px 40px;
+}
+
+.forget-pw {
+  margin: 85px 0 25px 0;
+  font-size: 11px;
+}
+
+.forget-pw a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #6481a0;
+}
