@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: rgb(236, 236, 236);
+}
+
+.main{
+    width: 100%;
+    max-width: 935px;
+    padding-bottom: 32px;
+    margin: 32px auto 0;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-box{
+    width: 350px;
+    height: 380px;
+    border: 0.5px #fafafa solid ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    position: relative;
+}
+.logo {
+    width: 250px;
+    height: 70px;
+    /* border: 1px solid hotpink; */
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+}
+.logo-img {
+    width: 175px;
+   
+    
+}
+.main-box .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+ 
+}
+
+input {
+    width: 250px;
+    height: 35px;
+    margin: 4px 0px;
+    background: #fafafa;
+    text-decoration: none;
+    border: 1px solid #fafafa;
+    border-color: silver;
+    border-radius: 2px;
+    font-size: 12px;
+    
+}
+
+button {
+    width: 250px;
+    height: 28px;
+    background: rgb(201, 224, 249);
+    /* background: #0095f6; */
+    border-style: none;
+    border-radius: 2px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.forgetpw {
+    position: absolute;
+    top: 340px;
+}
+.forgetpw p {
+    font-size: 12px;
+    text-align: center;
+    color: #00376b;
+    cursor: pointer;
+}
