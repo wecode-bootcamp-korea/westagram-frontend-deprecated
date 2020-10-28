@@ -1,15 +1,13 @@
 body {
-    width: 100%;
-    background-color: #eee;
-    height: 100%;
+    background-color: rgba(var(--b3f,250,250,250),1);
 }
 
 nav {
-    height: 80px;
-    border-bottom: 1px solid lightgray;
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
 }
 
 .input_left_icons {
@@ -38,57 +36,25 @@ nav {
 }
 
 .input_container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 600px; */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* 검색창 안에 플레이스홀더랑 돋보기 가운데에 집어넣어라 */
 .input_search {
-    /* width: 400px;
-    height: 40px;
-    border-radius: 3px;
-    border: 1px solid lightgray;
-    margin: auto 20px;
-    outline:none;
-    color: lightgray;
-    font-weight: bold; */
     width: 400px;
     height: 40px;
-    /* position: relative; */
 }
 
 .input_search::placeholder {
-
-    /* color: lightgray;
-    font-weight: bold; */
-    /* position: absolute;
-    left: 50px; */
-    /* margin: 10px auto; */
-    /* color: red; */
-    /* position: absolute; */
-    /* z-index: 10000; */
-    /* margin: 10px auto; */
     position: relative;
     left: 210px;
 }
+
 .fa {
-    color: lightgray;
-    /* position: absolute;
-    left: 0;
-    top: 0;
-    margin-left: 60px;
-    margin-top: 30px; */
-    /* margin: auto 20px; */
-    /* padding-left: 70px; */
-    /* margin-left: 70px; */
-    /* z-index: 100; */
     position: absolute;
+    color: lightgray;
 }
 
 .input_right_icons {
@@ -127,9 +93,9 @@ main {
 }
 
 article {
-    margin: 20px auto;
     display: flex;
     flex-direction: column;
+    margin: 20px auto;
     background-color: #fff;
     border: 1px solid #ddd;
 }
@@ -147,16 +113,16 @@ article {
 }
 
 #article_profile_image {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin: auto 10px ;
+    border-radius: 50%;
 }
 
 #article_profile_id {
+    margin: auto 20px;
     color: #000;
     font-weight: bold;
-    margin: auto 20px;
 }
 
 #threeDots {
@@ -187,16 +153,14 @@ article {
 }
 
 .article_left_icons img {
-    width: 30px;
-    height: 30px;
-    margin: auto 10px;
     display: flex;
     justify-content: flex-start;
+    margin: auto 10px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
-.article_right_icon {
 
-}
 .right_icon {
     width: 30px;
     height: 30px;
@@ -207,20 +171,23 @@ article {
 .article_likes {
     display: flex;
     justify-content: flex-start;
-    height: 40px;
     align-items: cener;
+    height: 40px;
 }
+
 .article_likes img {
-    border-radius: 50%;
     width: 30px;
     height: 30px;
     margin: auto 10px;
+    border-radius: 50%;
 }
+
 .article_likes p {
+    margin: auto 0;
     color: #000;
     font-weight: normal;
-    margin: auto 0;
 }
+
 .article_likes span {
     font-weight: bold;
 }
@@ -229,16 +196,19 @@ article {
     display: flex;
     justify-content: space-between;
 }
+
 .article_comments_1 p {
     height: 30px;
     margin: auto 10px;
     font-weight: bold;
 }
+
 .article_comments_1 span {
     height: 30px;
     margin: auto 10px;
     font-weight: normal;
 }
+
 .article_comments_1 more {
     color: #bbb;
 }
@@ -260,39 +230,44 @@ newcomments span {
     margin-left: 10px;
     font-weight: normal;
 }
+
 /* 게시한 시간 */
 time {
     padding-left: 10px;
     color: rgb(190, 190, 190);
     font-weight: bold;
-    display: block;
 }
+
 .input_box {
-    border-top: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #ddd;
 }
+
 #input_comment {
     width: 630px;
     height: 50px;
     border: none;
     outline: none;
 }
+
 #input_comment::placeholder {
-    color: rgb(190, 190, 190);
     padding-left: 10px;
+    color: rgb(190, 190, 190);
     font-weight: bold;
 }
+
 comment_heart img {
-    margin: auto 10px;
     width: 15px;
     height: 15px;
+    margin: auto 10px;
 }
+
 post_comment_btn {
+    margin: auto 10px;
     color: rgb(94, 159, 245);
     opacity: 0.5;
     cursor: pointer;
-    margin: auto 10px;
 }
 
 .main_right {
@@ -305,6 +280,7 @@ post_comment_btn {
     justify-content: space-between;
     margin: 20px auto;
 }
+
 .right_profile {
     display: flex;
     justify-content: flex-start;
@@ -312,17 +288,20 @@ post_comment_btn {
     width: 350px;
     height: 80px;
 }
+
 .right_profile img {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin: auto 10px;
+    border-radius: 50%;
 }
+
 .right_profile p {
     margin: auto 20px;
-    font-weight: bold;
     color: #000;
+    font-weight: bold;
 }
+
 .right_profile span {
     color: rgb(190, 190, 190);
     font-weight: bold;
@@ -332,15 +311,15 @@ post_comment_btn {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 30px;
     background-color: #fff;
     border: 1px solid #ddd;
-    margin-bottom: 30px;
 }
 .story_heading {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     margin: 10px 0;
+    text-align: center;
 }
 
 .story {
@@ -348,6 +327,7 @@ post_comment_btn {
     font-weight: bold;
     padding-left: 10px;
 }
+
 story_see_all {
     padding-right: 10px;
     font-weight: bold;
@@ -360,16 +340,19 @@ story_see_all {
     align-items: center;
     height: 80px;
 }
+
 .story_list_1 img {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin: 0 30px 0 10px;
+    border-radius: 50%;
 }
+
 .story_list_1 p {
-    font-weight: bold;
     color: #000;
+    font-weight: bold;
 }
+
 .story_list_1 span {
     color: rgb(190, 190, 190);
 }
@@ -380,57 +363,66 @@ story_see_all {
     align-items: center;
     height: 80px;
 }
+
 .story_list_2 img {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin: 0 30px 0 10px;
+    border-radius: 50%;
 }
+
 .story_list_2 p {
-    font-weight: bold;
     color: #000;
+    font-weight: bold;
 }
+
 .story_list_2 span {
     color: rgb(190, 190, 190);
 }
+
 .story_list_3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 80px;
 }
+
 .story_list_3 img {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin: 0 30px 0 10px;
+    border-radius: 50%;
 }
+
 .story_list_3 p {
-    font-weight: bold;
     color: #000;
+    font-weight: bold;
 }
+
 .story_list_3 span {
     color: rgb(190, 190, 190);
 }
+
 .recommend_container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 30px;
     background-color: #fff;
     border: 1px solid #ddd;
-    margin-bottom: 30px;
 }
+
 .recommend_heading {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     margin: 10px 0;
+    text-align: center;
 }
 
 .recommend {
+    padding-left: 10px;
     color: lightgray;
     font-weight: bold;
-    padding-left: 10px;
 }
 
 recommend_see_all {
@@ -445,62 +437,75 @@ recommend_see_all {
     align-items: center;
     height: 80px;
 }
+
 .recommend_list_1 img{
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-left: 10px;
+    border-radius: 50%;
 }
+
 .recommend_list_1 p {
-    font-weight: bold;
     color: #000;
+    font-weight: bold;
 }
+
 .recommend_list_1 span {
     color: rgb(190, 190, 190);
 }
+
 .recommend_list_2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
 }
+
 .recommend_list_2 img {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-left: 10px;
+    border-radius: 50%;
 }
+
 .recommend_list_2 p {
     font-weight: bold;
     color: #000;
 }
+
 .recommend_list_2 span {
     color: rgb(190, 190, 190);
 }
+
 .recommend_list_3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
 }
+
 .recommend_list_3 img {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-left: 10px;
+    border-radius: 50%;
 }
+
 .recommend_list_3 p {
-    font-weight: bold;
     color: #000;
+    font-weight: bold;
 }
+
 .recommend_list_3 span {
     color: rgb(190, 190, 190);
 }
+
 follow {
     margin-right: 10px;
-    font-weight: bold;
     color: rgb(94, 159, 245);
+    font-weight: bold;
 }
+
 .etc {
     color: lightgray;
     font-weight: bold;
