@@ -11,7 +11,7 @@ function checkLogin (){
         console.log("*_*");
     }
 }
-//keyup - 사용자가 키를 뗄 때, keydown - 사용자가 키를 처음 눌렀을 때(눌린 동안 계속해서 발생)
+
 id.addEventListener('keyup', checkLogin);
 pw.addEventListener('keyup', checkLogin);
 

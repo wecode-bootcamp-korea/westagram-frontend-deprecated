@@ -17,18 +17,15 @@ body {
     max-width: 935px;
     padding-bottom: 32px;
     margin: 32px auto 0;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .main-box{
     width: 350px;
     height: 380px;
     border: 0.5px #fafafa solid ;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +36,7 @@ body {
 .logo {
     width: 250px;
     height: 70px;
-    /* border: 1px solid hotpink; */
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -48,8 +44,6 @@ body {
 }
 .logo-img {
     width: 175px;
-   
-    
 }
 .main-box .login {
     display: flex;
@@ -58,7 +52,6 @@ body {
     flex-direction: column;
     position: absolute;
     top: 150px;
- 
 }
 
 input {
@@ -71,14 +64,12 @@ input {
     border-color: silver;
     border-radius: 2px;
     font-size: 12px;
-    
 }
 
 button {
     width: 250px;
     height: 28px;
     background: rgb(201, 224, 249);
-    /* background: #0095f6; */
     border-style: none;
     border-radius: 2px;
     color: white;
