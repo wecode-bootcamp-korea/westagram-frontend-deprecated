@@ -1,19 +1,19 @@
 //데이터로부터 피드 렌더..하고 싶어요
-const tmp_data = [
-  {
-    user_id: 'chaelinCL',
-    story: true,
-    img_src: '/img/feedimg/CL.jpeg',
-    content: `아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼
-    내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~`,
-    likes: 21,
-    comments: [
-      { user_id: 'Mengkki', content: '와! 정말 데단해~' },
-      { user_id: 'Mengkki', content: '안녕하세용~~' },
-    ],
-    upload_date: '2020-10-28',
-  },
-];
+// const tmp_data = [
+//   {
+//     user_id: 'chaelinCL',
+//     story: true,
+//     img_src: '/img/feedimg/CL.jpeg',
+//     content: `아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼
+//     내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~아무튼 내용임~~`,
+//     likes: 21,
+//     comments: [
+//       { user_id: 'Mengkki', content: '와! 정말 데단해~' },
+//       { user_id: 'Mengkki', content: '안녕하세용~~' },
+//     ],
+//     upload_date: '2020-10-28',
+//   },
+// ];
 
 function load_feed_content() {}
 
