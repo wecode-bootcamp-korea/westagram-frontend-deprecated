@@ -1,0 +1,172 @@
+body {
+    background-color: #FAFAFA;
+    /* width: 100%;
+    height: 100%; */
+   
+}
+
+form {
+    width: 348px;
+    height: 263px;
+}
+
+.login-box{
+    
+    border: 1px solid #DBDBDB;
+    height: 370px;
+    width: 350px;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    margin: 0 auto;
+    margin-top: 70px;
+    background-color: white;
+    box-sizing: content-box;
+    
+}
+
+.instagram-logo {
+   width: 175px;
+   height: 51px;
+   display: block;
+   margin: auto;
+   margin-top: 22px;
+   margin-bottom: 12px;
+   
+}
+
+
+
+#name {
+    width: 250px;
+    height: 20px;
+    padding: 9px 8px 7px 8px;
+    margin: 6px auto 6px;
+    display: block;
+    background-color:  #FAFAFA;;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    color: #262626;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B8B8B8;
+    outline: none;
+    
+
+}
+#pw {
+    width: 250px;
+    height: 20px;
+    padding: 9px 8px 7px 8px;
+    display: block;
+    margin: 0 auto;
+    background-color:  #FAFAFA;;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    color: #262626;
+    font-size: 12px;
+    line-height: 14px;
+    color: #B8B8B8;
+    outline: none;
+    
+}
+
+.login {
+    width: 348px;
+    height: 213px;
+    margin-top: 24px;
+    position: relative;
+}
+
+
+
+#btn {
+    display: block;
+    width: 268px;
+    height: 30px;
+    margin: 15px 40px 8px 40px;
+    border: 0px;
+    border-radius: 4px;
+    background-color: #B7DFFC;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+.or {
+    width: 268px;
+    height: 15px;
+    margin: 10 40 18 40px;
+}
+.input-form {
+    position: relative;
+}
+.find-pw {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 33%;
+    color: #00376b;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none solid rgb(0, 55, 107);
+}
+
+
+.sign-up {
+    width: 350px;
+    height: 41px;
+    padding: 10px 0;
+    border: 1px solid #dddddd;
+    margin: 10px auto;
+    background-color: white;
+}
+
+
+.signupText {
+    display: inline-block;
+    /* text-align: center; */
+    text-decoration: none solid rgb(38, 38, 38);
+    font-size: 14px;
+    color: #262626;
+    font-weight: 300;
+    margin:12px auto;
+    margin-left: 25%;
+}
+
+.link-signup {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rgb(0, 149, 246);
+    color: #0095F6;
+}
+/* js 클릭했을때 로그인 테두리 두껍게 바꾸기 */
+
+.download {
+    width: 310px;
+    height: 18px;
+    margin: 20px auto;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none solid rbg(38, 38, 38);
+    color: #262626;
+    text-align: center;
+}
+
+#apple {
+    width: 136px;
+    height: 40px;
+}
+
+#android {
+    width: 136px;
+    height: 40px;
+}
+
+.img_download {
+    text-align: center;
+}
