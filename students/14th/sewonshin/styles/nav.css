@@ -1,0 +1,111 @@
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20% 0 20%;
+  height: 54px;
+  border-bottom: solid 1px #dbdbdb;
+  background-color: white;
+  /* border: 1px black solid; */
+}
+
+.middle_box {
+  display: inline;
+  border: 1px solid red;
+}
+.right_box {
+  display: flex;
+  justify-content: space-around;
+  width: 222px;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.left_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  width: 280px;
+  height: 32px;
+}
+
+.camera {
+  width: 22px;
+}
+.line {
+  width: 20px;
+  height: -15px;
+  font-size: 25px;
+  margin: 0 5px;
+  text-align: center;
+}
+.logo {
+  width: 103px;
+}
+
+.logo_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seach_box {
+  display: flex;
+  align-items: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -2px;
+  height: 27px;
+  width: 215px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+}
+.search::placeholder {
+  text-align: center;
+}
+
+.navi_box {
+  height: 22px;
+  width: 22px;
+  display: inline;
+}
+.heart_box {
+  height: 22px;
+  width: 22px;
+  display: inline;
+}
+.navi {
+  height: 22px;
+  width: 22px;
+}
+.heart {
+  height: 22px;
+  width: 22px;
+  display: inline;
+}
+.heart_box {
+  height: 22px;
+  width: 22px;
+  display: inline;
+}
+.myProfile_box {
+  height: 22px;
+  width: 22px;
+  display: inline;
+}
+
+.myProfile {
+  width: 22px;
+  height: 22px;
+  display: inline;
+}
