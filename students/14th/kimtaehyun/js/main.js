@@ -1,6 +1,3 @@
-// 댓글 input 창에 엔터치거나 "게시" 누르면 댓글 추가되도록
-// createElement로 요소 생성해서, input에 입력한 값이 추가 되어야합니다.
-
 let enterEvent = document.querySelector('#input_comment');
 let clickEvent = document.querySelector('post_comment_btn');
 let next_comment = document.querySelector('.next_comment');
@@ -31,7 +28,6 @@ enterEvent.addEventListener('keydown', (e) => {
     }
 })
 
-// neceousecius가 하드코딩되어 있음 고쳐야함
 clickEvent.addEventListener('click', () => {
     let p = document.createElement('newcomments');
     let comment = document.querySelector('.article_comments_1');
@@ -54,12 +50,10 @@ clickEvent.addEventListener('click', () => {
         let passedTime = Math.floor(parseInt(now - writeDay) / 1000);
         time.innerHTML = passedTime + "초 전";
     }
-
     let time = document.querySelector('time');
     let writeDay = new Date();
     let passedTime = Math.floor(parseInt(now - writeDay) / 1000);
     time.innerHTML = passedTime + "초 전";
-
 })
 
 
