@@ -46,7 +46,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 /* 검색창 안에 플레이스홀더랑 돋보기 가운데에 집어넣어라 */
@@ -75,6 +74,8 @@ nav {
     /* position: absolute; */
     /* z-index: 10000; */
     /* margin: 10px auto; */
+    position: relative;
+    left: 210px;
 }
 .fa {
     color: lightgray;
