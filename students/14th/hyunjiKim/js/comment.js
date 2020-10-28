@@ -2,10 +2,10 @@
 function comment_heart_controll(e) {
   if (e.target.className === 'non-clicked') {
     e.target.className = 'clicked';
-    e.target.src = '/img/heart_full.png';
+    e.target.src = 'img/heart_full.png';
   } else {
     e.target.className = 'non-clicked';
-    e.target.src = '/img/heart.png';
+    e.target.src = 'img/heart.png';
   }
 }
 

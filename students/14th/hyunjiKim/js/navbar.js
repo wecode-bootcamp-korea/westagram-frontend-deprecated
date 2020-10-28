@@ -2,16 +2,16 @@ const navbar_input = document.querySelector('.nav-search input');
 
 //temporary data
 const my_data = [
-  { user_id: 'chaelinCL', profile_pic: '/img/profile/chaelinCL.jpg' },
-  { user_id: 'daraxxi', profile_pic: '/img/profile/daraxxi.jpg' },
-  { user_id: 'kendalljenner', profile_pic: '/img/profile/kendalljenner.jpg' },
-  { user_id: 'kimkardashian', profile_pic: '/img/profile/kimkardashian.jpg' },
-  { user_id: 'kyliejenner', profile_pic: '/img/profile/kyliejenner.jpg' },
-  { user_id: 'meng', profile_pic: '/img/profile/meng.jpeg' },
-  { user_id: 'abc', profile_pic: '/img/profile.png' },
-  { user_id: 'abc1', profile_pic: '/img/profile.png' },
-  { user_id: 'abc2', profile_pic: '/img/profile.png' },
-  { user_id: 'abc3', profile_pic: '/img/profile.png' },
+  { user_id: 'chaelinCL', profile_pic: 'img/profile/chaelinCL.jpg' },
+  { user_id: 'daraxxi', profile_pic: 'img/profile/daraxxi.jpg' },
+  { user_id: 'kendalljenner', profile_pic: 'img/profile/kendalljenner.jpg' },
+  { user_id: 'kimkardashian', profile_pic: 'img/profile/kimkardashian.jpg' },
+  { user_id: 'kyliejenner', profile_pic: 'img/profile/kyliejenner.jpg' },
+  { user_id: 'meng', profile_pic: 'img/profile/meng.jpeg' },
+  { user_id: 'abc', profile_pic: 'img/profile.png' },
+  { user_id: 'abc1', profile_pic: 'img/profile.png' },
+  { user_id: 'abc2', profile_pic: 'img/profile.png' },
+  { user_id: 'abc3', profile_pic: 'img/profile.png' },
 ];
 
 function search_id() {
