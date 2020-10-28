@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>main</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" i ntegrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main class="main-wrap">
+        <header class="nav">
+            <div class="test">
+                <div class="nav-wrap">
+                    <div class="logo">
+                        <img src="img/main/logo-text-main.png" alt="">
+                    </div>
+                    <div class="form-wrap">
+                        <form action="" class="header-search-form">
+                            <img src="img/main/serch.png" alt="">
+                            <input type="text" class="header-search-input" placeholder="검색">
+                            <button class="header-btn"></button>
+                        </form>
+                    </div>
+                    <div class="icons">
+                        <div class="icons-wraps">
+                            <div class="icons-wrap">
+                                <img src="img/main/home.png" alt="">
+                            </div>
+                            <div class="icons-wrap">
+                                <img src="img/main/de-removed.png" alt="">
+                            </div>
+                            <div class="icons-wrap">
+                                <img src="img/main/explore.png" alt="">
+                            </div>
+                            <div class="icons-wrap heart-icon">
+                                <i class="far fa-heart i-default"></i>
+                                <i class="fas fa-heart full"></i>
+                            </div>
+                            <div class="icons-wrap">
+                                <img src="img/main/me1.png" class="nav-profile" alt="">
+                            </div>
+                            <div class="icons-wrap-toggle">
+                                <div class="profile-wrap">
+                                    <div class="profile-row">
+                                        <i class="far fa-user-circle"></i>
+                                        <span>프로필</span>
+                                    </div>
+                                    <div class="profile-row">
+                                        <i class="far fa-bookmark"></i>
+                                        <span>저장됨</span>
+                                    </div>
+                                    <div class="profile-row">
+                                        <i class="fas fa-cog"></i>
+                                        <span>설정</span>
+                                    </div>
+                                    <div class="profile-row last">
+                                        <button class="logout">로그아웃</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article class="feed-main">
+            <div class="feed-container">
+                <section class="container">
+                    <div class="story">
+                        <div class="story-wrap">
+                            <ul class="story-lists-wrap">
+
+                            </ul>
+                            <!-- <div class="story-add">
+                                <i class="fas fa-plus story-add-btn"></i>
+                            </div> -->
+                        </div>
+                        <form action="post" value="story" class="story-add-wrap">
+                            <input type="text" class="story-add-name" placeholder="add your name">
+                            <input type="text" class="story-add-img" placeholder="add your img url">
+                            <input type="submit" class="story-submit-btn">
+                            <i class="far fa-trash-alt story-delete"></i>
+                        </form>
+                    </div>
+                    <div class="feed-wrap">
+                        <div class="feed">
+                            <div class="card">
+                                <div class="feed-header-wrap">
+                                    <div class="feed-header">
+                                        <div class="feed-avatar">
+                                            <img src="img/main/avatar/ava2.jpg" alt="" class="ciicle-avatar">
+                                        </div>
+                                        <div class="feed-header-right">
+                                            <div class="feed-user-name-wrap">
+                                                <div class="feed-user-name">haku_sooseok</div>
+                                                <div class="feed-user-loc">Seoul</div>
+                                            </div>
+                                            <div class="dot">
+                                                <img src="img/main/more.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feed-render">
+                                    <!-- <div class="feed-img">
+                                    <img src="img/main/feed-img.jpg" alt="">
+                                </div> -->
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-wrap">
+                                        <div class="feed-bottom-icons">
+                                            <div class="feed-bottom-left">
+                                                <div class="feed-bottom-icon-wrap">
+                                                    <i class="far fa-heart feed-default"></i>
+                                                    <i class="fas fa-heart feed-full"></i>
+                                                </div>
+                                                <i class="far fa-comment"></i>
+                                                <i class="far fa-paper-plane"></i>
+                                            </div>
+                                            <div class="feed-bottom-right">
+                                                <img src="img/main/bookmark.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="feed-like-count">
+                                            <span>좋아요 <span class="feed-like"></span>개</span>
+                                        </div>
+                                        <div class="feed-user-content-wrap">
+                                            <div class="feed-user-content-id">donghja kim</div>
+                                            <div class="feed-user-content">홀롤롤롤홀롤롤롤홀롤롤롤홀롤롤롤홀롤롤롤홀롤롤롤홀롤롤롤홀롤롤롤</div>
+                                            <button class="feed-user-content-more">더 보기</button>
+                                        </div>
+                                        <div class="feed-user-comment-lists">
+                                            <div class="feed-user-comment-count">댓글 <span class="comment-count"></span>개 <button class="comment-show-btn">모두 보기</button></div>
+                                            <ul class="feed-user-comment-list-wrap">
+
+                                            </ul>
+                                        </div>
+                                        <div class="feed-user-time">9시간 전</div>
+
+                                        <div class="feed-user-form">
+                                            <form action="" class="feed-user-form-js">
+                                                <input type="text" class="feed-user-comment-input" placeholder="댓글 달기...">
+                                                <button class="feed-user-comment-submit">게시</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="refList">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="feed-header-wrap">
+                                    <div class="feed-header">
+                                        <div class="feed-avatar">
+
+                                            <img src="img/main/avatar/ava2.jpg" alt="" class="ciicle-avatar">
+                                        </div>
+                                        <div class="feed-header-right">
+                                            <div class="feed-user-name-wrap">
+                                                <div class="feed-user-name">haku_sooseok</div>
+                                                <div class="feed-user-loc">Seoul</div>
+                                            </div>
+                                            <div class="dot">
+                                                <img src="img/main/more.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feed-img">
+                                    <img src="img/main/feed-img.jpg" alt="">
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-wrap">
+                                        <div class="feed-bottom-icons">
+                                            <div class="feed-bottom-left">
+                                                <div class="feed-bottom-icon-wrap">
+                                                    <i class="far fa-heart feed-default"></i>
+                                                    <i class="fas fa-heart feed-full"></i>
+                                                </div>
+                                                <i class="far fa-comment"></i>
+                                                <i class="far fa-paper-plane"></i>
+                                            </div>
+                                            <div class="feed-bottom-right">
+                                                <img src="img/main/bookmark.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="feed-like-count">
+                                            <span>좋아요 7개</span>
+                                        </div>
+                                        <div class="feed-user-content-wrap">
+                                            <div class="feed-user-content-id">donghja kim</div>
+                                            <div class="feed-user-content">홀롤롤롤...</div>
+                                            <button class="feed-user-content-more">더 보기</button>
+                                        </div>
+                                        <div class="feed-user-comment-lists">
+                                            <div class="feed-user-comment-count">댓글 <span class="comment-count"></span>개 <button class="comment-show-btn">모두 보기</button></div>
+                                            <ul class="feed-user-comment-list-wrap">
+
+                                            </ul>
+                                        </div>
+                                        <div class="feed-user-time">9시간 전</div>
+
+                                        <div class="feed-user-form">
+                                            <form action="" class="feed-user-form-js">
+                                                <input type="text" class="feed-user-comment-input" placeholder="댓글 달기...">
+                                                <button class="feed-user-comment-submit">게시</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="right">
+                    <div class="right-wrap">
+                        <div class="right-avatar">
+                            <img src="img/main/me1.png" alt="" class="right-avatar-img">
+                            <span>immerfernweh_</span>
+                        </div>
+                        <div class="recommand-wrap">
+                            <div class="recommand">
+                                <span>회원님을 위한 추천</span>
+                                <span>모두 보기</span>
+                            </div>
+                            <div class="recommand-list">
+                                <div class="recommand-list-wrap">
+                                    <div class="recommand-avatar">
+                                        <img src="img/main/story_icon.png" alt="" class="right-story-img">
+                                        <img src="img/main/me1.png" alt="" class="right-avatar-img">
+                                    </div>
+                                    <div class="recommand-right">
+                                        <div class="follow-name">
+                                            <span class="recommand-bold">paccu_</span>
+                                            <span class="recommand-small">회원님을 팔로우 합니다</span>
+                                        </div>
+                                        <div class="follow"><span>팔로우</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recommand-list-wrap">
+                                    <div class="recommand-avatar">
+                                        <img src="img/main/story_icon.png" alt="" class="right-story-img">
+                                        <img src="img/main/me1.png" alt="" class="right-avatar-img">
+                                    </div>
+                                    <div class="recommand-right">
+                                        <div class="follow-name">
+                                            <span class="recommand-bold">paccu_</span>
+                                            <span class="recommand-small">회원님을 팔로우 합니다</span>
+                                        </div>
+                                        <div class="follow"><span>팔로우</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recommand-list-wrap">
+                                    <div class="recommand-avatar">
+                                        <img src="img/main/story_icon.png" alt="" class="right-story-img">
+                                        <img src="img/main/me1.png" alt="" class="right-avatar-img">
+                                    </div>
+                                    <div class="recommand-right">
+                                        <div class="follow-name">
+                                            <span class="recommand-bold">paccu_</span>
+                                            <span class="recommand-small">회원님을 팔로우 합니다</span>
+                                        </div>
+                                        <div class="follow"><span>팔로우</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recommand-list-wrap">
+                                    <div class="recommand-avatar">
+                                        <img src="img/main/story_icon.png" alt="" class="right-story-img">
+                                        <img src="img/main/me1.png" alt="" class="right-avatar-img">
+                                    </div>
+                                    <div class="recommand-right">
+                                        <div class="follow-name">
+                                            <span class="recommand-bold">paccu_</span>
+                                            <span class="recommand-small">회원님을 팔로우 합니다</span>
+                                        </div>
+                                        <div class="follow"><span>팔로우</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recommand-list-wrap">
+                                    <div class="recommand-avatar">
+                                        <img src="img/main/story_icon.png" alt="" class="right-story-img">
+                                        <img src="img/main/me1.png" alt="" class="right-avatar-img">
+                                    </div>
+                                    <div class="recommand-right">
+                                        <div class="follow-name">
+                                            <span class="recommand-bold">paccu_</span>
+                                            <span class="recommand-small">회원님을 팔로우 합니다</span>
+                                        </div>
+                                        <div class="follow"><span>팔로우</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-info">
+                            <div class="right-info-wrap">
+                                <a href="">소개</a>
+                                <a href="">도움말</a>
+                                <a href="">홍보센터</a>
+                                <a href="">채용</a>
+                                <a href="">정보</a>
+                                <a href="">개인정보처리방침</a>
+                            </div>
+                            <div class="right-info-wrap">
+                                <a href="">약관</a>
+                                <a href="">위치 </a>
+                                <a href="">인기 </a>
+                                <a href="">계정</a>
+                                <a href="">해시태그</a>
+                                <a href="">언어</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </article>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

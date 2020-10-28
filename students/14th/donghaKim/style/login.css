@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcfcfc;
+}
+
+.main-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.left-img {
+    display: flex;
+    padding-right: 50px;
+    width: 450px;
+}
+
+.left-img img {
+    width: 100%;
+}
+
+.right-content {
+    position: relative;
+    width: 400px;
+}
+
+.after-login {
+    display: none;
+    top: 15%;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    background-color: white;
+    z-index: 1;
+}
+
+.after-login .login-welcome {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    color: black;
+    font-size: 30px;
+}
+
+.right-wrap {
+    background-color: white;
+    margin: 10px 0;
+    width: 400px;
+    height: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 50px;
+}
+
+.right-login {
+    width: 100%;
+}
+
+.right-login .logo {
+    width: 100%;
+    height: 60px;
+    margin: 20px 0;
+}
+
+.right-login .logo img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    height: 100%;
+}
+
+.right-login form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right-login form input {
+    padding: 15px 0;
+    text-emphasis: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.right-login form input::placeholder {
+    text-align: center;
+}
+
+.user-id {
+    margin-bottom: 10px;
+}
+
+.password {
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    border-radius: 5px;
+    background-color: #d2e3fc;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+}
+
+.divided {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+}
+
+.divided::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0;
+    bottom: 45px;
+}
+
+.divided::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    right: 0px;
+    bottom: 45px;
+}
+
+.facebook-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facebook-login .col {
+    display: flex;
+    justify-content: center;
+}
+
+.facebook-login img {
+    width: 25px;
+    height: 20px;
+}
+
+.facebook-login a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+.facebook-login .find {
+    margin: 25px 0;
+    font-size: 13px;
+}
+
+.right-app-wrap {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.right-app {}
+
+.sign-out-box {
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sign-out-box span {
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sign-out-box span a {
+    outline: none;
+    color: #4b78f2;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.download-app {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-app span {
+    display: block;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.download-app .app-btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.download-app .app-btn button {
+    width: 155px;
+    background-color: black;
+    height: 43px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.download-app .app-btn .apple {
+    margin-right: 10px;
+    color: white;
+}
+
+.download-app .app-btn .apple p {
+    float: right;
+    width: 70%;
+}
+
+.download-app .app-btn .google {
+    color: white;
+}
+
+.download-app .app-btn .google p {
+    float: right;
+    width: 70%;
+}
+
+.app-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.apple-img {
+    left: 12%;
+    position: absolute;
+    z-index: 1;
+}
+
+.google-img {
+    z-index: 1;
+    left: 55%;
+    position: absolute;
+}
+
+.show-success {}
