@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1010px) {
+  div.nav-items-container {
+    padding: 0 20px;
+  }
+
+  section.main {
+    width: 610px;
+  }
+  
+  section.feeds-section {
+    margin: 0 auto;
+  }
+
+  section.side-section {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  div.nav-search-box-container {
+    right: 45%;
+  }
+
+  section.main {
+    width: 100%;
+    margin: 0 auto;
+    top: 20px;
+  }
+
+  section.feeds-section {
+    width: 100%;
+  }
+
+  div.story-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  div.nav-search-box-container {
+    display: none;
+  }
+}

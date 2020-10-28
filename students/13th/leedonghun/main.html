@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Westagram by pdl39 - Main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- ************************* Nav Bar ************************* -->
+    <nav class="nav-bar">
+      <div class="nav-items-container">
+        <div class="nav-logo">
+          <a href="#"><img src="img/main/logo_text.png" alt="insta text logo" class="nav-logo"></a>
+        </div>
+        <div class="nav-search">
+          <div class="nav-search-box-container">
+            <input type="text" class="nav-search-box" placeholder="Search">
+            <img src="img/main/nav_search_icon.png" alt="search icon" class="nav-search-icon">
+            <img src="img/main/nav_search_clear_icon.png" alt="search close icon" class="nav-search-clear-icon">
+          </div>
+          <div class="nav-search-suggestions-box">
+            <ul class="nav-search-suggestions"></ul>
+            <div class="nav-search-suggestions-connector-figure"></div>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <div class="nav-menu-item home">
+            <img src="img/main/nav_menu_home_icon.png" alt="nav bar home menu icon" class="menu-item-icon home-icon">
+          </div>
+          <div class="nav-menu-item dm">
+            <img src="img/main/nav_menu_dm_icon.png" alt="nav bar dm icon" class="menu-item-icon dm-icon">
+          </div>
+          <div class="nav-menu-item explore">
+            <img src="img/main/nav_menu_explore_icon.png" alt="nav bar explore menu icon" class="menu-item-icon explore-icon">
+          </div>
+          <div class="nav-menu-item heart">
+            <img src="img/main/nav_menu_heart_icon.png" alt="nav bar heart menu icon" class="menu-item-icon heart-icon">
+          </div>
+          <div class="nav-menu-item avatar">
+            <img src="img/main/account_profile_pic.png" alt="nav bar avatar profile picture" class="menu-item-icon avatar-icon">
+          </div>
+          <div class="nav-menu-item avatar-outer-border"></div>
+          <div class="nav-menu-dropdown">
+            <ul class="nav-menu-dropdown-items">
+              <li class="nav-menu-dropdown-item profile">
+                <a href="" class="nav-menu-dropdown-item profile">
+                  <div class="nav-dropdown-item-img avatar-img">
+                    <img src="img/main/nav_menu_dropdown_avatar.png" alt="nav bar menu dropdown avatar" class="nav-dropdown-item-img avatar-img">
+                  </div>
+                  <p class="nav-dropdown-item-text profile-text">Profile</p>
+                </a>
+              </li>
+              <li class="nav-menu-dropdown-item saved">
+                <a href="" class="nav-menu-dropdown-item saved">
+                  <div class="nav-dropdown-item-img tag-img">
+                    <img src="img/main/nav_menu_tag_icon.png" alt="nav bar menu dropdown tag" class="nav-dropdown-item-img tag-img">
+                  </div>
+                  <p class="nav-dropdown-item-text saved-text">Saved</p>
+                </a>
+              </li>
+              <li class="nav-menu-dropdown-item settings">
+                <a href="" class="nav-menu-dropdown-item settings">
+                  <div class="nav-dropdown-item-img settings-img">
+                    <img src="img/main/nav_menu_settings_icon.png" alt="nav bar menu dropdown settings" class="nav-dropdown-item-img settings-img">
+                  </div>
+                  <p class="nav-dropdown-item-text settings-text">Settings</p>
+                </a>
+              </li>
+              <li class="nav-menu-dropdown-item logout">
+                <a href="login.html" class="nav-menu-dropdown-item logout"><p class="nav-dropdown-item-text logout-text">Log Out</p></a>
+              </li>
+            </ul>
+            <div class="nav-menu-dropdown-connector-figure"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ************************* Main Section - Story/Feeds & Side ************************* -->
+    <section class="main">
+      <!-- *************** Story & Feeds Section ************** -->
+      <section class="feeds-section">
+        <!-- ***** Story ***** -->
+        <div class="story-container">
+          <div class="story-arrow-button left">
+            <img src="img/main/story_left_arrow.png" alt="story right arrow button" class="story-arrow-img left">
+          </div>
+          <div class="story-arrow-button right">
+            <img src="img/main/story_right_arrow.png" alt="story right arrow button" class="story-arrow-img right">
+          </div>
+          <ul class="story">
+            <!-- One Story Element (reusable) >>> -->
+            <!-- <li class="story-element story-1">
+              <a href="#" class="story-element-link">
+                <div class="story-profile-pic-outer-glow">
+                  <div class="story-profile-pic-mid-white">
+                    <div class="story-profile-pic">
+                      <img src="img/main/nav_menu_avatar.png" alt="story user profile picture" class="story-profile-pic">
+                    </div>
+                  </div>
+                </div>
+                <p class="story-profile-id">usr123</p>
+              </a>
+            </li> -->
+            <!-- >>> One Story Element (reusable) -->
+          </ul>
+        </div>
+        <!-- ***** Feeds ***** -->
+        <div class="feeds">
+          <!-- One Feed Element (reusable) >>> -->
+          <!-- <div class="feed-element feed-1">
+            <div class="feed-header">
+              <div class="feed-profile-pic-outer-glow">
+                <div class="feed-profile-pic-mid-white">
+                  <div class="feed-profile-pic">
+                    <a href="#" class="profile-pic"><img src="img/main/nav_menu_avatar.png" alt="story user profile picture" class="profile-pic"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="feed-profile-id-n-place">
+                <a href="#" class="feed-profile-id">usr123</a>
+                <p class="feed-place">Seoul</p>
+              </div>
+              <div class="feed-option">
+                <img src="img/main/three_dots_horizontal.png" alt="feed option button" class="feed-option">
+              </div>
+            </div>
+            <div class="feed-main">
+              <img src="img/main/feed_pics/pizza2.png" alt="feed picture" class="feed-main-pic">
+            </div>
+            <div class="feed-actions">
+              <div class="feed-action feed-like">
+                <img src="img/main/nav_menu_heart_icon.png" alt="feed like heart icon" class="feed-action-heart">
+              </div>
+              <div class="feed-action feed-comment">
+                <img src="img/main/nav_menu_comment.png" alt="see comment icon" class="feed-action-comment">
+              </div>
+              <div class="feed-action feed--dm">
+                <img src="img/main/nav_menu_dm_icon.png" alt="" class="feed-action-dm">
+              </div>
+              <div class="feed-action feed-tag">
+                <img src="img/main/nav_menu_tag_icon.png" alt="" class="feed-action-tag">
+              </div>
+            </div>
+            <p class="likes-count"># likes</p>
+            <div class="feed-exp-box">
+              <a href="" class="feed-profile-id">usr123</a>
+              <p class="feed-exp">pizza very yummy</p>
+            </div>
+            <ul class="feed-comments">
+              <li class="feed-comment-item">
+                <a href="" class="feed-profile-id">usr456</a>
+                <p class="feed-comment">woahh where is this??</p>
+                <div class="feed-comment-like">
+                  <img src="img/main/nav_menu_heart_icon.png" alt="feed comment like heart icon" class="feed-comment-heart">
+                </div>
+              </li>
+            </ul>
+            <p class="feed-posted-time">1 HOUR AGO</p>
+            <div class="feed-post-comment">
+              <input type="text" class="post-comment-box" placeholder="Add a comment...">
+              <div class="post-button">Post</div>
+            </div>
+          </div> -->
+          <!-- >>> One Feed Element (reusable) -->
+        </div>
+      </section>
+      <!-- *************** Side Section *************** -->
+      <section class="side-section">
+        <!-- ***** Account Profile Box ***** -->
+        <div class="account-profile-box">
+          <div class="account-profile-pic">
+            <a href="#" class="account-profile-pic"><img src="img/main/account_profile_pic.png" alt="profile picture" class="account-profile-pic"></a>
+          </div>
+          <div class="account-profile-id-n-name">
+            <a href="#" class="account-profile-id"><p class="account-profile-id">peterrdlee</p></a>
+            <p class="account-profile-name">Peter D Lee</p>
+          </div>
+        </div>
+        <!-- ***** Suggestions Box ***** -->
+        <div class="suggestions-box">
+          <div class="suggestions-header">
+            <h5 class="suggestions-heading">Suggestions For You</h5>
+            <a href="#" class="suggestions-see-all">See All</a>
+          </div>
+          <ul class="suggestions-list">
+            <!-- <li class="suggestion-item suggestion-item-1">
+              <div class="suggested-profile-pic">
+                <a href="#" class="suggested-profile-pic"><img src="img/main/nav_menu_avatar.png" alt="suggested user profile picture" class="suggested-profile-pic"></a>
+              </div>
+              <div class="suggested-profile-id-n-followers">
+                <a href="#" class="suggested-profile-id">usrnm123</a>
+                <p class="followed-by">Followed by................... + n more</p>
+              </div>
+              <a href="#" class="follow"><p class="follow">Follow</p></a>
+            </li> -->
+          </ul>
+        </div>
+          <!-- ***** Footer ***** -->
+        <footer class="footer">
+          <ul class="footer-menus">
+            <li class="footer-menu 1"><a href="" class="footer-item-link item-1" target="_blank">About</a></li>
+            <li class="footer-menu 2 "><a href="" class="footer-item-link item-2">Help</a></li>
+            <li class="footer-menu 3"><a href="" class="footer-item-link item-3">Press</a></li>
+            <li class="footer-menu 4"><a href="" class="footer-item-link item-4">API</a></li>
+            <li class="footer-menu 5"><a href="" class="footer-item-link item-5">Jobs</a></li>
+            <li class="footer-menu 6"><a href="" class="footer-item-link item-6">Privacy</a></li>
+            <li class="footer-menu 7"><a href="" class="footer-item-link item-7">Terms</a></li>
+            <li class="footer-menu 8"><a href="" class="footer-item-link item-8">Locations</a></li>
+            <li class="footer-menu 9"><a href="" class="footer-item-link item-9">Top Accounts</a></li>
+            <li class="footer-menu 10"><a href="" class="footer-item-link item-10">Hashtags</a></li>
+            <li class="footer-menu language"><a>Language</a></li>
+          </ul>
+          <p class="footer-copyright">© 2020 INSTAGRAM FROM FACEBOOK</p>
+        </footer>
+      </section>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
