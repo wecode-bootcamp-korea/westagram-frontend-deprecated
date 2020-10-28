@@ -1,0 +1,239 @@
+*{
+    margin: 0;;
+    padding: 0;
+    height : 100%;
+    background-color: #FAFAFA;
+}
+
+.top_lv_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+}
+
+
+.login_nav li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    font-size: 12px;
+    margin: 0px 11px;
+    font-weight: bold;
+    color: #00376b;
+}
+
+main{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    flex-grow: 1;
+}
+
+.flex_center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.app_down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    height: 102px;
+    font-size: 13px;
+}
+
+.app_down div{
+    margin: 10px 0;
+}
+
+.app_down img{
+    width : 136px;
+    height : 40px;
+}
+
+.login_form{
+    width : 350px;
+    height : 380px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(219,219,219);
+    margin-bottom: 10px;
+}
+
+.login_form > div{
+    background-color: #FFFFFF;
+}
+
+.login_form input{
+    width : 289px;
+    height: 36px;
+    background : #fafafa;
+    border : 0;
+}
+
+.new_id{
+    position: relative;
+    width : 350px;
+    height : 63px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid rgba(219,219,219);
+    margin-bottom: 10px;
+}
+
+.new_id > div{
+    padding-top: 20px;
+}
+
+.new_id a {
+    text-decoration:none
+}
+
+.logo_img{
+    background-color: #FFFFFF;
+    width : 175px;
+    height : 51px;
+    margin : 30px 0;
+}
+
+.in_txt_box{
+    position: relative;
+    border : 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin : 3px;
+}
+
+.in_txt_box input{
+    width : 268px;
+    height : 43px;
+    outline: none;
+    margin-left : 8px;
+    font-size: 13px;
+}
+
+.login_btn{
+    background-color: #B2DFFC;
+    color : White;
+    border : none;
+    border-radius: 4px;
+    width : 268px;
+    height: 28px;
+    margin-top: 14px;
+    cursor: auto;
+    outline: none;
+
+}
+.login_btn_active{  
+    background-color: #0095f6;
+    cursor:pointer;    
+}
+
+.login_btn_cover{
+    background-color: #FFFFFF;
+}
+.other_login{
+    position: relative;
+    top : -20px
+}
+
+.f_b_icon{
+    display: inline-block;
+    position: relative;
+    width : 16px;
+    height: 16px;
+    background-image: url('../img/full_img.png');
+    background-position: -414px -259px;
+    top : 2px;
+}
+
+.search_pwd{
+    font-size: 12px;
+}
+
+.other_login div {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login_data_form{
+    margin: 10px 0;
+}
+
+.form_line{
+    display: flex;
+    font-size: 12px;
+    color : #8e8e8e;
+    font-weight: bold;
+}
+
+.form_line div {
+    margin : 5px 0;
+}
+
+.txt_line{
+    position: relative;
+    background: #dbdbdb;
+    width : 90px;
+    height: 1px;
+    top : 10px;
+
+}
+
+.cover_img{
+    background-image: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png');
+    position: relative;
+    width : 454px;
+    height: 618px;
+}
+
+.chang_img{
+    position: absolute;
+    top : 98px;
+    left : 150px;
+    width : 241px;
+    height : 430px;
+
+    transition : opacity 1.0s ease-in-out;
+    opacity : 1;
+}
+.chang_img.fade {
+    opacity:0;
+}
+
+.helper{
+    position: absolute;
+    font-size: 12px;
+    top : 12px;
+    left : 10px;
+    color : #8e8e8e;
+    height : 13px;
+    transition : all  0.1s;
+}
+
+
+.move_helper{
+    top:1px;
+    font-size: 8px;
+}
+
+.move_input{
+    margin-top: 1px;
+}
+
