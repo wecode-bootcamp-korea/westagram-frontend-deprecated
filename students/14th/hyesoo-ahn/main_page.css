@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    background-color: #FAFAFA;
+    
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+   z-index: 2;
+   
+    
+}
+
+.img_insta {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5px;
+}
+.imgInsta{
+    width:22px;
+    height:22px;
+    opacity: 0.8;
+
+}
+
+
+.div{
+    font-size: 26px;
+    font-weight: 300;
+    opacity: 0.6;
+    margin-top: 2.8px;
+    color: black;
+
+}
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    /* position: fixed;
+    z-index: 2;
+     */
+    
+    
+}
+.section1 {
+    display: flex;
+    width: 140px;
+    justify-content: space-around;
+}
+
+
+
+.text_insta {
+    width: 100px;
+    height: 30px;
+    opacity: 0.95;
+    margin-left:1px;
+    margin-top: 2.3px;
+}
+
+#input-box {
+    width: 215px;
+    height: 28px;
+    padding: 3px 10px 3px 26px;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    cursor: text;
+    box-sizing: border-box;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #FAFAFA;
+    color: #8e8e8e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    min-width: 100px;
+}
+
+
+.imgs_div {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.find {
+    width: 24px;
+    height: 24px;
+}
+
+.like {
+    width: 24px;
+    height: 24px;
+}
+
+.mypage {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.feeds {
+   width: 100%;
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+    
+}
+
+
+.stories {
+    width: 600px;
+    min-width: 400px;
+    height: 118px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* margin: 30px auto; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 16px 0;
+    margin: 30px 0 24px 0;
+}
+
+
+.feed {
+    width: 600px;
+    min-width: 400px;
+    height: 800px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 30px 0 ;
+    background-color: white;
+    height: 860px;
+    
+    
+
+}
+
+aside {
+    width: 300px;
+    
+    height: 350px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 100px 0 50px 30px;
+    background-color: white;
+}
+
+#stories {
+    width: 66px;
+    height: 66px;
+
+}
+
+.stories {
+    padding-left: 17px;
+    /* position: absolute; */
+    z-index: 1;
+    /* height: 180px; */
+    overflow: hidden;
+    margin-top: 85px;
+
+}
+
+
+#instaID {
+    font-size: 12px;
+    /* width: 66px;
+    height: 66px; */
+    /* padding-left: 17px; */
+    text-align: center;
+    padding: 7px 0 0 0;
+    
+}
+
+.img {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    /* z-index: 2; */
+}
+
+#stories_photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    top: -85px;
+    left: 3px;
+    
+    
+}
+.mypage {
+    border-radius: 50%;
+}
+
+.id_section {
+    height: 60px;
+    border: 1px solid black;
+   
+}
+
+.feed_image {
+    width: 596px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.interaction_likeCommentDM {
+   height: 40px; 
+   border: 1px solid black;
+}
+
+.like_count {
+    height: 18px;
+    border: 1px solid black;
+}
+
+.time {
+    height: 19px;
+    border: 1px solid black;
+}
+
+
+.comment {
+    height: 56px;
+    border: 1px solid black;
+}
+
+.IDinFeed {
+    display: flex;
+    position: relative;
+}
+
+
+.id_section {
+    padding: 9px 15px;
+    box-sizing: border-box;
+    
+}
+#rainbow {
+    width: 41px;
+    height: 41px;
+    /* position: absolute; */
+    /* top: 10px; */
+}
+
+#img_in_id {
+    width: 34.5px;
+    height: 34.5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3.3px;
+    left: 3.47px;
+}
+
+
+#user_id {
+    width: 80px;
+    /* height: 34.5px; */
+    /* position: absolute; */
+    padding: 12px 0 10px 5px;
+    text-align: center;
+    font-size: 14.5px;
+    line-height: 18px;
+    font-weight: 700;
+    text-decoration: none solid rgb(38, 38, 38);
+    letter-spacing: 0.4px;
+    
+}
+
+#kkooroo {
+    width: 596px;
+    height: 600px;
+}
+
+#like_button {
+    width: 24px;
+    height: 24px;
+}
+
+#dm_button {
+    width: 24px;
+    height: 24px;
+}
+
+#bookmark {
+    width: 24px;
+    height: 24px;
+}
+
+.WhoDoYouLike {
+    width: 596px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.my_feed_text {
+    width: 598px;
+    height: 40px;
+    border: 1px solid black;
+    padding-bottom: 10px;;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.your_feed_text {
+    width: 598px;
+    height: 40px;
+    border: 1px solid black;
+    /* padding-bottom: 10px;;
+    padding-top: 15px; */
+    box-sizing: border-box;
+}
+
+.add_comment {
+    width: 592px;
+    height: 50px;
+    border: 1px solid black;
+    /* padding-bottom: 10px;;
+    padding-top: 15px; */
+    /* box-sizing: border-box; */
+}
