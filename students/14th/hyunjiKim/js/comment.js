@@ -29,32 +29,31 @@ function add_events_on_comments() {
   });
 }
 
-//add new comment on feed 수정해야함....target의 댓글에 추가하도록
+//add new comment on feed
 function add_new_comment(evt) {
-  // console.log(evt.target);
-  const comment_input = document.querySelector('.newcomment-input');
-  if (comment_input.value.trim().length <= 0) return;
-
+  const target_form = evt.target;
+  const target_input = evt.target.firstChild.nextSibling;
+  const target_submitbtn = evt.target.lastChild.previousSibling;
   const user_id = document.querySelector('.right-main .bio .id').innerHTML;
-  const feed_comment = document.querySelector('.feed-comments');
-  const post_btn = document.querySelector('.newcomment-form button');
-  feed_comment.innerHTML += `
+  if (target_input.value.trim().length <= 0) return;
+  const target_comment_container = target_form.previousSibling.previousSibling.childNodes[9];
+  const target_comment_counter = target_form.previousSibling.previousSibling.childNodes[7];
+  target_comment_container.innerHTML += `
     <div class="comment">
       <div class="comment-left">
         <span class="id">${user_id}</span>
-        <span>${comment_input.value}</span>
+        <span>${target_input.value.trim()}</span>
       </div>
       <div class="comment-right">
         <img class="non-clicked" src="img/heart.png" alt="comment heart">
         <span>삭제</span>
       </div>
     </div>`;
-  let comment_cnt = document.querySelector('.feed-comments').childElementCount;
-  const comment_counter = document.querySelector('.comment-counter');
-  comment_counter.innerHTML = `댓글 ${comment_cnt}개 모두 보기`;
-  comment_input.value = '';
-  post_btn.style.color = '#c0e0fc';
-  add_events_on_comments(); //추가된 댓글에도 리스너 달아주기
+  const cur_comment_cnt = target_comment_container.childElementCount;
+  target_comment_counter.innerHTML = `댓글 ${cur_comment_cnt}개 모두 보기`;
+  target_input.value = '';
+  target_submitbtn.style.color = '#c0e0fc';
+  add_events_on_comments();
 }
 
 //newcomment input handler
