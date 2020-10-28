@@ -3,11 +3,11 @@
 }
 
 body {
-  background: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: #fafafa;
 }
 
 .main-box {
@@ -16,8 +16,8 @@ body {
   align-items: center;
   max-width: 350px;
   border: 1px solid lightgray;
-  background: white;
   padding: 10px 0;
+  background: white;
 }
 
 header img {
@@ -36,33 +36,33 @@ header img {
 .id-box {
   width: 258px;
   height: 36px;
-  padding: 9px 0 7px 8px;
-  background: #fafafa;
   border: 1px solid lightgray;
   border-radius: 3px;
+  padding: 9px 0 7px 8px;
+  background: #fafafa;
   font-size: 12px;
 }
 
 .pw-box {
   width: 258px;
   height: 36px;
-  padding: 9px 0 7px 8px;
   margin-top: 5px;
-  background: #fafafa;
+  padding: 9px 0 7px 8px;
   border: 1px solid lightgray;
   border-radius: 3px;
+  background: #fafafa;
   font-size: 12px;
 }
 
 .login-btn {
   width: 258px;
   height: 30px;
+  margin: 8px 40px;
   padding: 9px 4px 7px;
-  background: #bfe0fd;
-  color: #f5fbfe;
   border: none;
   border-radius: 3px;
-  margin: 8px 40px;
+  background: #bfe0fd;
+  color: #f5fbfe;
 }
 
 .forget-pw {
