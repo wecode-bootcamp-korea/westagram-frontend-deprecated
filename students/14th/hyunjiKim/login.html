@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Westagram login</title>
+  <link href="style/common.css" rel="stylesheet" type="text/css" />
+  <link href="style/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="overall-container">
+    <section class="login-section">
+      <div class="logo-container">
+        <img src="img/logo_text.png" alt="logo text">
+      </div>
+      <div class="idpw-container">
+        <input class="user-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+        <span class="user-id-warning">이메일 주소의 형식이 올바르지 않습니다.</span>
+        <input class="user-pw" type="password" placeholder="비밀번호">
+        <span class="user-pw-warning">비밀번호는 영문,숫자를 포함하며 5~16자여야 합니다.</span>
+        <button class="login-btn">로그인</button>
+        <p><span>또는</span></p>
+        <button class="fb-login-btn">
+          <img src="img/facebook.png" alt="facebook login">
+          <span>Facebook으로 로그인</span>
+        </button>
+      </div>
+      <div class="or-container">
+      </div>
+      <div class="forgotpw-container">
+        <p>비밀번호를 잊으셨나요?</p>
+      </div>
+    </section>
+    <section class="register-section">
+      <p>계정이 없으신가요?</p>
+      <a href="">가입하기</a>
+    </section>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

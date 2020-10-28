@@ -1,0 +1,144 @@
+.overall-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  height: 92vh;
+}
+
+/* log in */
+
+.login-section {
+  padding: 0px 40px;
+  height: 395px;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 10px 0;
+  margin: 5px 0;
+  width: 350px;
+}
+
+.logo-container {
+  margin: 1em auto;
+}
+
+.logo-container img {
+  width: 175px;
+  margin: 22px auto 12px;
+}
+
+.idpw-container {
+  display: flex;
+  flex-flow: column;
+  height: 348px;
+}
+
+.idpw-container input {
+  height: 36px;
+  margin-bottom: 5px;
+  padding: 0 10px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #8e8e8e;
+}
+
+.idpw-container input:focus {
+  outline: none;
+  border: 1px solid #a8a8a8;
+}
+
+.idpw-container .user-id-warning,
+.idpw-container .user-pw-warning {
+  display: none;
+  font-size: 12px;
+  color: #751717;
+}
+
+.login-btn {
+  background-color: #c0e0fe;
+}
+
+.fb-login-btn {
+  padding: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.fb-login-btn img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.fb-login-btn span {
+  color: #375284;
+}
+
+.idpw-container button {
+  height: 33px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  color: white;
+  font-weight: bold;
+}
+
+.idpw-container button:hover {
+  cursor: pointer;
+}
+
+.idpw-container button:focus {
+  outline: none;
+}
+
+.idpw-container p {
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  line-height: 0.1em;
+}
+
+.idpw-container p span {
+  background-color: white;
+  color: #8f8f8f;
+  font-size: 13px;
+  padding: 0 20px;
+}
+
+.forgotpw-container {
+  margin: 5px auto;
+  color: #01376a;
+  font-size: 12px;
+}
+
+.register-section {
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.register-section p {
+  color: #a6a6a6;
+}
+.register-section a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #289cf7;
+  font-weight: bold;
+}
+
+.visible {
+  background-color: #0095f6;
+}

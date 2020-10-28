@@ -1,0 +1,155 @@
+.right-main {
+  width: 293px;
+  height: fit-content;
+  margin-left: 40px;
+  margin-top: 30px;
+  position: sticky;
+  top: 80px;
+}
+
+.right-main:hover {
+  cursor: pointer;
+}
+
+.profile-container {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.profileimg-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+}
+
+.profileimg-container img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bio p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.bio .id {
+  font-weight: bold;
+  color: #262626;
+}
+
+.bio .nickname {
+  color: #8e8e8e;
+}
+
+.reco-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reco-header .reco-text1 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.reco-header .reco-text2 {
+  font-weight: bold;
+  font-size: 12px;
+  color: #262626;
+}
+
+.reco-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.reco-list img {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.reco-left {
+  width: 32px;
+  height: 32px;
+}
+
+.reco-center {
+  width: 200px;
+}
+
+.reco-center p {
+  font-size: 12px;
+  color: #8e8e8e;
+  margin: 0;
+}
+
+.reco-center .id {
+  width: fit-content;
+  font-size: 14px;
+  font-weight: bold;
+  color: #262626;
+}
+
+.reco-center .id:hover {
+  text-decoration: underline;
+}
+
+.reco-list span {
+  color: #0095f6;
+  font-size: 12px;
+}
+
+.info {
+  height: fit-content;
+  margin-top: 17px;
+  overflow: hidden;
+}
+
+.info-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+}
+
+.info-list li a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #c7c7c7;
+}
+
+li + li::before {
+  content: '· ';
+  color: #c7c7c7;
+  font-size: 11px;
+}
+
+.info p {
+  margin-top: 17px;
+  color: #c7c7c7;
+  font-size: 11px;
+}
