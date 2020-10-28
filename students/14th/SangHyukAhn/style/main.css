@@ -1,0 +1,529 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: RGB(250, 250, 250);
+  display: block;
+}
+
+button {
+  color: #0094f8;
+  background: inherit;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button:focus {
+  outline-width: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  margin: 0px auto;
+  position: fixed;
+  z-index: 4;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 935px;
+  height: 54px;
+  z-index: 3;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  width: 320px;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 0px 11px;
+}
+nav ul li svg {
+  display: flex;
+  align-items: center;
+}
+nav ul li:last-child {
+  padding-right: 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 1680;
+  min-width: auto;
+  min-height: auto;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 84px 0 0 0;
+  width: 935px;
+  max-width: 975;
+  min-width: auto;
+  min-height: auto;
+  margin: 0 368px 0 368px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.sSmall-text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 10px;
+  color: #8e8e8e;
+}
+
+.small-text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.large-text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.body-text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  word-spacing: 0px;
+}
+
+.gray-text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  word-spacing: 0px;
+  color: #8e8e8e;
+}
+
+.gray-text12 {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  word-spacing: 0px;
+  color: #8e8e8e;
+}
+
+.graySmall-Text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.11px;
+  word-spacing: 0px;
+  color: #c7c7c7;
+}
+
+.link-text {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.fontWeight500 {
+  font-weight: 500;
+}
+
+.container {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  z-index: 2;
+}
+
+.mainBox {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  width: 360px;
+  height: 36px;
+  cursor: pointer;
+}
+.main-img {
+  display: flex;
+  position: relative;
+  width: 103px;
+  height: 29px;
+  cursor: pointer;
+  padding: 0 0px 0px 0px;
+}
+.my-pic {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.serchBar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 215px;
+  height: 28px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+
+.serchBarImg {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  left: 81px;
+  text-align: center;
+}
+.serchBarText {
+  text-align: center;
+  width: 215px;
+  border: 0px solid red;
+  background-color: RGB(250, 250, 250);
+}
+.serchBarText::placeholder {
+  display: flex;
+  position: absolute;
+  color: rgb(145, 145, 145);
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+.serchBarText:focus {
+  outline-width: 0;
+}
+.leftBar {
+  width: 614px;
+}
+
+.storyBox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 118px;
+  margin: 0 0 24px 0;
+  padding: 0 0 0 17px;
+  padding-right: 17px;
+}
+.storyBox::-webkit-scrollbar {
+  display: none;
+}
+.storyLi {
+  position: relative;
+  display: flex;
+  display: inline-block;
+  width: 66px;
+  height: 70px;
+  margin: 17px 14px 18px 0;
+}
+.canvas {
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  z-index: 0;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  padding: 5px 5px 5px 5px;
+  z-index: 1;
+}
+.storyName {
+  text-align: center;
+  width: 66px;
+  padding-top: 68px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.feedBox {
+  width: 614px;
+  display: block;
+}
+.feeds {
+  margin-bottom: 60px;
+}
+.feedTop {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  width: 614px;
+  height: 60px;
+  border-bottom: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.feedWriter {
+  display: flex;
+  position: relative;
+  left: 14px;
+  width: 32px;
+  height: 32px;
+}
+.feedWriter img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.feedTop span {
+  display: flex;
+  position: relative;
+  left: 28px;
+}
+.feedSetting {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 580px;
+}
+.feedImg {
+  max-height: 760px;
+  overflow: hidden;
+  border-bottom: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.feedImg img {
+  position: relative;
+  width: 100%;
+  bottom: 120px;
+}
+
+.feedButton {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 6px 0 6px;
+  margin-top: 4px;
+}
+.rightButton {
+  display: flex;
+}
+.leftButton {
+  display: flex;
+  left: 100px;
+}
+.buttonBoxStyle {
+  width: 24px;
+  height: 24px;
+  padding: 8px 8px 8px 8px;
+}
+.bottomButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+.like {
+  height: 18px;
+  padding: 0 16px 0 16px;
+  margin: 0 0 8px 0;
+}
+
+.feedBody {
+  padding: 0 16px 0 16px;
+  border-bottom: 1px solid #ececec;
+}
+.feedBodyContent {
+  margin-bottom: 4px;
+}
+.viewComment {
+  margin-bottom: 4px;
+}
+.viewComment a:visited {
+  color: #8e8e8e;
+}
+.comment {
+  margin-bottom: 4px;
+}
+.commentTime {
+  margin-bottom: 8px;
+}
+
+.writeCommentBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 56px;
+}
+.writeCommentBox input {
+  border: 0px solid red;
+  width: 572px;
+  box-sizing: border-box;
+  padding: 14px;
+}
+.writeCommentBox input::placeholder {
+  color: gray;
+}
+.writeCommentBox input:focus {
+  border: 0px;
+  outline-width: 0;
+}
+.addComments {
+  margin-left: 5px;
+}
+.deleteButton {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  margin-left: 5px;
+}
+
+.rightBar {
+  position: sticky;
+  top: 88px;
+  bottom: -118px;
+  width: 298px;
+  margin: 4px 0 0 28px;
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profileBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  padding: 16px 0 16px 0;
+}
+.profileBox img {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+}
+.profileName {
+  margin-left: 12px;
+}
+
+.recomTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recommend {
+  margin: 12px 0 0 0;
+}
+.recomBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.recomBoxLast {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.recomFiBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recomFiPicCanvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+}
+.recomFiPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+}
+.recomFiNameBox {
+  width: 213px;
+  margin-left: 6px;
+}
+.follow {
+  display: flex;
+  align-items: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.infomation {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+.infomation ul {
+  padding: 0px;
+}
+.infomation ul li {
+  float: left;
+  padding-right: 3px;
+  list-style: none;
+}
+.infomation ul li a {
+  color: #c7c7c7;
+}
+.infomation ul li::after {
+  position: relative;
+  padding-left: 2px;
+  content: '\00b7';
+  color: #c7c7c7;
+}
+.copyRight {
+  margin-top: 5px;
+}
+#serch {
+  width: 10px;
+  height: 10px;
+}
+
+.margin5px {
+  margin-left: 5px;
+}
