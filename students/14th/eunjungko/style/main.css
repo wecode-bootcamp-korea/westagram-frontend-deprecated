@@ -1,6 +1,7 @@
 * {
   font-size: 14px;
 }
+/* 전체 도큐먼트에 중복 할당되는 클래스 */
 .btn {
   height: 30px;
   width: 25px;
@@ -13,43 +14,58 @@
 .bold {
   font-weight: 700;
 }
+
 .gray {
   color: #797878;
 }
+
 .darkgray {
   color: #909090;
 }
+
 .lightgray {
   color: #bebebe;
 }
+
 .userInfo .userProfile {
   border-radius: 50%;
 }
+
 .userInfo .textArea {
   padding-left: 10px;
 }
+
+input:focus {
+  outline: none;
+}
+
 .big {
   width: 56px;
   height: 56px;
 }
+
 .middle {
   width: 32px;
   height: 32px;
 }
+
 .small {
   width: 22px;
   height: 22px;
   border-radius: 50%;
 }
+
 .sfont {
   font-size: 11px;
 }
 
+/* 본문 */
 body {
   width: 100%;
   margin: 0;
 }
 
+/* 네비 바 */
 nav {
   position: sticky;
   height: 54px;
@@ -69,6 +85,7 @@ nav {
   top: 0;
   margin: 0 auto;
 }
+
 .navRight img {
   margin-right: 6px;
 }
@@ -100,6 +117,7 @@ nav {
   background-image: url('/img/magnifier.png');
   background-size: cover;
 }
+
 .magnifier {
   position: absolute;
   width: 10px;
@@ -110,9 +128,7 @@ nav {
   background-image: url('/img/magnifier.png');
   background-size: cover;
 }
-input:focus {
-  outline: none;
-}
+
 .searchInput.active {
   width: 155px;
   color: #797878;
@@ -120,6 +136,7 @@ input:focus {
   background-color: #fafafa;
   text-align: left;
 }
+
 .searchInput {
   width: 100px;
   margin: 0 3px;
@@ -128,6 +145,7 @@ input:focus {
   background-color: #fafafa;
   text-align: center;
 }
+
 .xbtn {
   display: none;
   width: 13px;
@@ -138,16 +156,19 @@ input:focus {
   background-size: cover;
 }
 
+/* 메인 시작 */
 main {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: #fafafa;
 }
+
 .feeds {
   width: 615px;
 }
 
+/* 아티클 */
 article {
   margin-top: 20px;
   background-color: #fff;
@@ -171,10 +192,12 @@ article {
   display: flex;
   flex-direction: row;
 }
+
 .articleHeader .userProfile {
   padding: 10px;
   margin-left: 5px;
 }
+
 .articleHeader img {
   width: 60px;
   height: 60px;
@@ -191,6 +214,7 @@ article {
   flex-direction: column;
   justify-content: center;
 }
+
 .threeBtn {
   width: 10px;
   height: 10px;
@@ -206,6 +230,7 @@ article {
   padding: 4px 8px 0px 8px;
   /* padding: 10px, 30px; */
 }
+
 .iconbar {
   height: 40px;
   width: 100%;
@@ -213,35 +238,43 @@ article {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .iconbar .btn {
   margin: auto 8px;
 }
+
 .iconWrapper {
   display: flex;
   flex-direction: row;
 }
 
+/* 댓글 */
 .commentArea {
   padding: 0 10px 0px 10px;
   display: flex;
   flex-direction: column;
 }
+
 .likeStatus {
   margin-bottom: 8px;
 }
+
 .smallHeart {
   height: 12px;
   width: 12px;
 }
+
 .comment {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
 }
+
 .time {
   font-size: 0.75em;
   margin: 0 0 10px 10px;
 }
+
 .commentForm {
   width: 100%;
   border-top: 1px solid lightgray;
@@ -250,11 +283,13 @@ article {
   display: flex;
   justify-content: space-between;
 }
+
 .commentInput {
   width: 100%;
   height: 100%;
   border: none;
 }
+
 .addBtn {
   width: 40px;
   color: #bee1fd;
@@ -262,6 +297,7 @@ article {
   border: none;
   cursor: pointer;
 }
+
 .deleteBtn {
   width: 40px;
   color: #469edb;
@@ -290,9 +326,11 @@ button:focus {
   width: 293px;
   height: 56px;
 }
+
 .main-right .userText {
   padding: 0 auto;
 }
+
 .recommendText {
   display: flex;
   justify-content: space-between;
@@ -304,11 +342,13 @@ button:focus {
   justify-content: space-between;
   margin-bottom: 0;
 }
+
 .recommended .userInfo {
   display: flex;
   flex-direction: row;
   height: 45px;
 }
+
 .recommended .userText {
   margin-left: 13px;
 }
@@ -321,6 +361,7 @@ button:focus {
   color: #469edb;
   text-align: end;
 }
+
 .menu {
   margin-top: 25px;
   width: 100%;
@@ -329,6 +370,7 @@ button:focus {
   display: inline-block;
   padding: 0;
 }
+
 .menu li {
   font-size: 11px;
   display: inline-block;
@@ -336,14 +378,17 @@ button:focus {
   vertical-align: baseline;
   margin: 0;
 }
+
 .menu li::after {
   content: '\00B7';
   float: right;
   margin-left: 0.25em;
 }
+
 .menu li:last-child::after {
   display: none;
 }
+
 .copyright {
   font-size: 11px;
   margin-top: 5px;
