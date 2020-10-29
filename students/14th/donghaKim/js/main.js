@@ -213,9 +213,9 @@ function showList(userInputCommment, submited) {
                              </div >
                         `
                 showRefList.appendChild(div)
-                console.log(user)
+
             })
-        } else {}
+        }
     }
 }
 
@@ -270,8 +270,6 @@ searchForm.addEventListener("submit", function(e) {
     serachArr.push(fomattedInput)
     searchUserInput.value = ""
     saveLists()
-
-
 })
 
 feedUserForm.addEventListener("keyup", function(e) {

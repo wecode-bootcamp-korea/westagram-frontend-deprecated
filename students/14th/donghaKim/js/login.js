@@ -8,11 +8,6 @@ let loginObj = []
 let timerId
 
 
-
-function userLogin(e) {
-    console.log(e.target)
-}
-
 form.addEventListener("keyup", function(e) {
     let userPassword = passwordInput.value
     userPassword.length > 6 ? loginBtn.style.backgroundColor = "#4e5dfc" : loginBtn.style.backgroundColor = ""
@@ -31,8 +26,6 @@ form.addEventListener("submit", function(e) {
     loginObj.push(userInfo)
     validation()
 })
-
-
 
 function createObj(userId, userPassword) {
     return {
