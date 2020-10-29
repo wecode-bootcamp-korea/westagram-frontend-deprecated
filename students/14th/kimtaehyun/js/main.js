@@ -1,11 +1,11 @@
-let enterEvent = document.querySelector('#input_comment');
-let clickEvent = document.querySelector('post_comment_btn');
-let comment_container = document.querySelector('.comment_container');
+const enterEvent = document.querySelector('#input_comment');
+const clickEvent = document.querySelector('post_comment_btn');
+const comment_container = document.querySelector('.comment_container');
 let now = new Date();
 
 function post_comment() {
     let newcomments = document.createElement('newcomments');
-    let comment = document.querySelector('.article_comments_1');
+    const comment = document.querySelector('.article_comments_1');
     if (newcomments.innerHTML === '') {
         newcomments.innerHTML = `<p>b2ng_9<span>${enterEvent.value}</span></p>`;
         comment_container.append(newcomments);
@@ -18,7 +18,7 @@ function post_comment() {
 }
 
 function time_ticking() {
-    let time = document.querySelector('time');
+    const time = document.querySelector('time');
     let writeDay = new Date();
     let passedTime = Math.floor(parseInt(now - writeDay) / 1000);
     time.innerHTML = passedTime + "초 전";
