@@ -1,10 +1,3 @@
-// 1) 미디어 쿼리로 반응형 페이지 완성
-// 2) 댓글 입력 시에 로컬 스토리지에 넣어서 새로고침 시에도 댓글이 남아 있도록 한 기능
-// 3) 빈 칸으로는 댓글 입력이 불가하도록 설정
-// 4) 인풋바 클릭 시에 스타일 효과
-// 5) X 버튼 클릭 시에 댓글 지우기 (로컬 스토리지에서도 삭제)
-
-
 // 인풋바
 const search = document.querySelector('.search'),
     searchInput = document.querySelector('.searchInput'),
@@ -15,9 +8,8 @@ const search = document.querySelector('.search'),
 const commentForm = document.querySelector('.commentForm'),
     commentInput = document.querySelector('.commentInput'),
     addBtn = document.querySelector('.addBtn'),
-    commentList = document.querySelector('.comment'),
-    commentArea = document.querySelector('.commentArea');
-// 댓글 local storage 기능
+    commentSet = document.querySelector('.commentSet');
+// 댓글 Local Storage 기능
 const CMTS_LS = 'cmts';
 let cmts = [];
 
@@ -47,9 +39,9 @@ function deleteCmt(event) {
     const btn = event.target;
     const cmt = btn.parentNode;
     const comment = cmt.parentNode;
-    commentArea.removeChild(comment);
-    const cleanCMT = cmts.filter((cmtls) => {return cmtls.id !== parseInt(comment.id)});
-    cmts = cleanCMT;
+    commentSet.removeChild(comment);
+    const cleanCmt = cmts.filter((cmtSet) => {return cmtSet.id !== parseInt(comment.id)});
+    cmts = cleanCmt;
     saveCmt();
 }
 
@@ -58,10 +50,8 @@ function makeCmt(cmt) {
     // 빈 내용 댓글 추가 불가
     if (cmt.trim() === '') {
         return;
-    // } else if ( cmt.keycode === '16' + ) {
-    //    cmt + \n
     }
-    let codeblock = `<div class="commentSet">
+    let cmtCodeblock = `<div class="commentSet">
     <span class="userId">edie_ko</span>
     <span class="userComment">${cmt}</span>
     <button class="deleteBtn">X</button>
@@ -69,8 +59,8 @@ function makeCmt(cmt) {
     <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="smallHeart" class="smallHeart">`
     let cmtSet = document.createElement('div');
     cmtSet.className = 'comment';
-    cmtSet.innerHTML = codeblock;
-    commentArea.appendChild(cmtSet);
+    cmtSet.innerHTML = cmtCodeblock;
+    commentSet.appendChild(cmtSet);
     // deleteBtn에 삭제 기능 추가
     let deleteBtn = document.querySelectorAll('.deleteBtn');
     for (let i = 0; i < deleteBtn.length; i++) {
@@ -100,8 +90,8 @@ function loadCmts() {
     const loadedCmts = localStorage.getItem(CMTS_LS);
     if (loadedCmts !== null) {
         const parsedCmts = JSON.parse(loadedCmts);
-        parsedCmts.forEach(function(cmtls) {
-            makeCmt(cmtls.text);
+        parsedCmts.forEach(function(cmtobj) {
+            makeCmt(cmtobj.text);
         })
     }
 }
