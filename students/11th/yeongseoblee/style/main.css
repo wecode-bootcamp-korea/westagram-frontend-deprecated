@@ -3,8 +3,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 input:focus,
@@ -131,7 +130,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png");
+  background-image: url('https://www.instagram.com/static/bundles/es6/sprite_core_2x_bcd90c1d4868.png/bcd90c1d4868.png');
   background-position: -65px -223px;
   background-size: 440px 411px;
   cursor: pointer;
@@ -608,7 +607,7 @@ button:focus {
 }
 
 .sideNavBar li:not(:last-of-type)::after {
-  content: "\00B7";
+  content: '\00B7';
   margin-right: 0.25em;
 }
 
