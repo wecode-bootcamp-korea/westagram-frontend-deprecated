@@ -11,8 +11,12 @@ function comment_heart_controll(e) {
 
 //delete selected comment
 function comment_delete(e) {
-  let targetted_comment = e.target.parentNode.parentNode;
+  const targetted_comment = e.target.parentNode.parentNode;
+  const comment_counter = targetted_comment.parentNode.parentNode.childNodes[7];
+  const cur_comment_cnt = targetted_comment.parentNode.parentNode.childNodes[9].childElementCount - 1;
   targetted_comment.remove();
+  if (cur_comment_cnt <= 0) comment_counter.innerHTML = '';
+  else comment_counter.innerHTML = `댓글 ${cur_comment_cnt}개 모두 보기`;
 }
 
 //add event listeners on comments
