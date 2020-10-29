@@ -93,6 +93,7 @@ input:focus::-webkit-input-placeholder {
     align-items: center;
     padding-top: 5px;
 }
+
 .icon-menu {
     height: 100%;
     padding-top: 3px;
@@ -108,14 +109,15 @@ input:focus::-webkit-input-placeholder {
 .icon ul {
     display: flex;
 }
+
 .icon ul li {
 padding-left: 20px;
 }
-.user img{
+
+.icon-menu:nth-child(5) img{
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    /* padding-right: 0px; */
 }
 
 .search-bar input::placeholder {
@@ -130,7 +132,6 @@ main {
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
 .feed {
@@ -139,7 +140,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .feed-container {
@@ -151,7 +151,6 @@ main {
     justify-content: flex-start;
     align-items: center;
     position: relative;
-
 }
 
 .story-box {
@@ -175,6 +174,7 @@ main {
     justify-content: flex-start;
     align-items: center;
 }
+
 .personal-story {
     width: 66px;
     display: flex;
@@ -188,6 +188,7 @@ main {
     background-size: contain;
     object-fit: cover;
 }
+
 .personal-story img {
     width: 56px;
     height: 56px;
@@ -198,9 +199,9 @@ main {
     padding: 0;
     position: relative;
     top: 18px;
-    left: 0px;
-    
+    left: 0px; 
 }
+
 .story-image {
     width: 60px;
     height: 60px;
@@ -208,9 +209,11 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 .story-name {
     padding-top: 22px;
 }
+
 article {
     width: 614px;
     height: auto;
@@ -230,14 +233,15 @@ article {
     align-items: center;
     padding: 0px 16px;
 }
+
 .user-info img {
     width: 35px;
     height: 35px;
     border: 1px solid #dbdbdb;
     border-radius: 50%;
     margin-right: 10px;
-
 }
+
 .user-info-group {
     display: flex;
     justify-content: center;
@@ -249,14 +253,17 @@ article {
     width: 100%;
     height: 613px;
 }
+
 .feed-photo img {
     width: 100%;
     height: 613px;
 }
+
 .feed-icon {
     width: 100%;
     height: 40px;
 }
+
 .icon-group {
     width: 100%;
     height: 40px;
@@ -265,41 +272,50 @@ article {
     align-items: center;
     padding: 0px 16px;
 }
+
 .left-side-icon img{
     width: 24px;
     height: 24px;
     margin-right: 10px;
 } 
+
 .right-side-icon img {
     width: 24px;
     height: 24px;
 } 
+
 .like {
     width: 100%;
     height: 18px;
     padding: 0px 16px;
 }
+
 .like p {
     font-size: 14px;
     color: #262626;
     font-weight: 700;
 }
+
 .comments {
     width: 100%;
     height: auto;
     font-size: 14px;
     padding: 0px 16px;
 }
+
 .comments p {
     margin-top: 3px;
 }
+
 .bold {
     font-weight: 700;
     font-size: 14px;
 }
+
 .normal {
     font-size: 12px;
 }
+
 .mensions-group {
     display: flex;
     justify-content: flex-start;
@@ -314,22 +330,26 @@ article {
     display: flex;
     justify-content: space-between;
 }
+
 .mensions-list {
     width: inherit;
     height: auto;
     display: flex;
     justify-content: left;
 }
+
 .mention-like img {
     width: 12px;
     height: 12px;
 }
+
 .time-history {
     width: 100%;
     height: 19px;
     line-height: 19px;
     border-bottom: 0.5px solid #efefee;
 }
+
 .time-history p {
     font-size: 10px;
     height: 18px;
@@ -337,18 +357,21 @@ article {
     color: #8E8E8E;
     padding: 0px 16px;
 }
+
 .write-comment {
     width: 100%;
     height: 56px;
     /* border: 1px solid #dbdbdb; */
     padding: 0px 16px;
 }
+
 .putin-place {
     height: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .write-comment .putin-place input {
     outline: none;
     border: none;
@@ -367,7 +390,6 @@ article {
     cursor: pointer;
 }
 
-
 .main-right {
     width: 293px;
     height: 450px;
@@ -379,7 +401,6 @@ article {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-
 }
 
 .user-account {
@@ -406,10 +427,12 @@ article {
     align-items: left;
     flex-direction: column;
 }
+
 .name {
     font-size: 14px;
     color: #8E8E8E;
 }
+
 .add-other-accounts{
     width: 325px;
     height: 19px;
@@ -421,22 +444,26 @@ article {
     width: 325px;
     height: 58px;
 }
+
 .other-accounts  ul {
     width: 325px;
     height: auto;
     display: flex;
     flex-direction: column;
 }
+
 .other-accounts li {
     width: 325px;
     height: 58px;
     display: flex;
     align-items: center;
 }
+
 .recommend {
     width: 100%;
     height: 58px;
 }
+
 .other-profile {
     width: 100%;
     height: 58px;
@@ -444,6 +471,7 @@ article {
     justify-content: flex-start;
     align-items: center;
 }
+
 .other-profile-photo {
     width: 32px;
     height: 32px;
@@ -456,9 +484,11 @@ article {
     border-radius: 50%;
     object-fit: cover;
 }
+
 .follow-btn {
     width: 40px;
 }
+
 .follow-btn button {
     color:#0095f6;
     outline: none;
@@ -466,10 +496,12 @@ article {
     background-color: transparent;
     cursor: pointer;
 }
+
 .intro-menu {
     width: 293px;
     height: 136px;
 }
+
 .intro-menu p {
     font-size: 11px;
     color: #c7c7c7;
