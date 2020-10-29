@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>repl.it</title>
+    <title>westagram - login</title>
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
     <!-- 인스타 로고 ~ 비밀번호를 잊으셨나요? -->
-    <div class="mainbox">
+    <main class="mainbox">
       <div class="mainbox__box1">
         <!-- 입력창~ 비밀번호를 잊으셨나요? -->
         <div class="main__top">
-          <h1 class="logo"><img src="./img/logo_text.png" alt="" /></h1>
+          <h1 class="logo">
+            <img src="./img/logo_text.png" alt="" />
+          </h1>
           <!-- id pw -->
-          <input
-            class="id"
-            type="text"
-            placeholder="전화번호, 사용자 이름 또는 이메일"
-          />
-          <input class="pw" type="password" placeholder="비밀번호" />
+          <div class="inputBox">
+            <input
+              class="id"
+              type="text"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+            />
+            <input class="pw" type="password" placeholder="비밀번호" />
+          </div>
           <!-- 로그인 -->
           <button class="main__login">로그인</button>
           <!-- 또는 -->
@@ -41,7 +45,7 @@
         <div><span>아이콘 1</span><span>아이콘 2</span></div>
       </div>
       <!-- 가입하기 -->
-    </div>
+    </main>
     <script src="js/login.js"></script>
   </body>
 </html>

@@ -25,7 +25,12 @@
   background-color: white;
 }
 
-.main__top input {
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox input {
   width: 250px;
   height: 30px;
   margin-bottom: 5px;
