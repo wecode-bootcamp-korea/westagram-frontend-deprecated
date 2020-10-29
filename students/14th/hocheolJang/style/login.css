@@ -1,0 +1,104 @@
+.box {
+  width: 350px;
+  height: 380px;
+  border: 1px solid #dbdbdb;
+  padding: 10px 0 10px 0;
+  min-height: 350px;
+  min-width: auto;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  box-sizing: border-box;
+  border-radius: 1px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -175px;
+  /* margin값이 이상하다... 센터로오는 방법 */
+}
+
+#mainLogo {
+  display: block;
+  overflow: hidden;
+  margin: 22px 87px 12px 87px;
+  width: 175px;
+  height: 51px;
+  min-width: auto;
+  min-height: auto;
+  background-color: #ffffff;
+}
+
+/* #loginForm{
+    height: 263px;
+    width: 348px;
+    min-height: auto;
+    min-width: auto;
+    display: flex;
+
+} */
+
+#IdBox {
+  width: 256px;
+  height: 20px;
+  padding: 9px 0 7px 8px;
+  background-color: #fafafa;
+  font-size: 12px;
+  line-height: 18px;
+  border: 0.5px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin: 8px 40px 8px 40px;
+}
+
+#passwordBox {
+    width: 256px;
+    height: 20px;
+    padding: 9px 0 7px 8px;
+    background-color: #fafafa;
+    font-size: 12px;
+    line-height: 18px;
+    border: 0.5px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 4px 40px 8px 40px;
+    margin-bottom: 15px;
+
+}
+
+#loginBtn {
+  width: 268px;
+  height: 30px;
+  margin: 8px 40px 8px 40px;
+  min-height: auto;
+  min-width: auto;
+  background-color: #b2dffc;
+  border-radius: 5px;
+  border: 0.1px solid white;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#forgetPassword {
+  color: #356089;
+  font-weight: 500;
+  position: relative;
+  bottom: -80px;
+  text-align: center;
+  font-size: 12px;
+}
+
+button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#forgetPasswordbtn{
+  text-decoration: none;
+}
+
+#a:hover{
+  /* font-weight: bolder; */
+  cursor: pointer;
+}

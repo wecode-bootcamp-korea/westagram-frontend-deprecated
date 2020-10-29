@@ -1,0 +1,502 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navContainer {
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #dbdbdb;
+  top: 0px;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+#title {
+  width: 103px;
+  height: 40px;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+#searchInputBox {
+  height: 25px;
+  width: 180px;
+  display: flex;
+  border: 1px solid gray;
+  background-color: whitesmoke;
+  left: 50%;
+  top: 13px;
+  text-decoration: none solid rgb(142, 142, 142);
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  top: 2px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.8;
+}
+
+#homeNow {
+  width: 22px;
+  height: 22px;
+  margin: 0px 5px 0px 5px;
+  position: relative;
+  top: 2px;
+}
+
+#message {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px 0px 5px;
+  transform: rotate(-50deg);
+  position: relative;
+  top: -0.5px;
+}
+
+#navigator {
+  width: 22px;
+  height: 22px;
+  margin: 0px 5px 0px 5px;
+  position: relative;
+  top: 2px;
+}
+
+#heart {
+  width: 22px;
+  height: 22px;
+  margin: 0px 5px 0px 5px;
+  position: relative;
+  top: 2px;
+}
+#navProfile {
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  margin: 0px 5px 0px 5px;
+  position: relative;
+  top: 2px;
+}
+
+.wrapper {
+  display: flex;
+  background-color: #fafafa;
+  width: 100%;
+  height: 2000px;
+  margin-top: 54px;
+}
+
+.storyContainer {
+  position: relative;
+  display: flex;
+  top: 32px;
+  left: 140px;
+  /* margin-left: 85px; */
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 614px;
+  height: 118px;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  border-radius: 3px;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.storyContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.feedContainer {
+  position: relative;
+  top: 50px;
+  left: 140px;
+  /* margin-left: 85px; */
+  display: flex;
+  justify-content: flex-start;
+  width: 614px;
+  height: 883px;
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.asideContainer {
+  display: flex;
+  position: sticky;
+  top: 54px;
+  margin-left: 180px;
+  z-index: 2;
+  justify-content: flex-start;
+  width: 293px;
+  height: 1200px;
+  border-top: 1px solid #dbdbdb;
+  background-color: #fafafa;
+}
+
+/* #searchInputBox input {
+  background-image: url(../img/search.svg);
+  background-position: 5px center;
+  padding-left: 40px;
+  border: 1px solid #2e3238;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+} */
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.storyItem {
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  top: 15px;
+  width: 74px;
+  height: 94px;
+}
+
+.storyContainerLeftMargin {
+  width: 10px;
+}
+.storyProfileBackground {
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+}
+
+.storyProfilePicture {
+  position: absolute;
+  display: inline-block;
+  top: 14px;
+  left: 11px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #dbdbdb;
+  /* justify-content: center; */
+}
+.storyAccount {
+  position: absolute;
+  margin: 0 auto;
+  top: 80px;
+  width: 74px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.feedItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedHead {
+  width: 614px;
+  height: 60px;
+  display: block;
+}
+
+.feedProfileImage {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+.feedProfileAccount {
+  font-size: 15px;
+  position: absolute;
+  left: 65px;
+  top: 22px;
+  font-weight: 700;
+}
+
+.feedImage {
+  display: block;
+  width: 614px;
+  height: 614px;
+  /* 비율을 맞춰서 좌우폭을 줄이려면 */
+  /* object-fit: contain; */
+  /* 비율을 맞춰서 꽉 채우려면 */
+  object-fit: fill;
+}
+
+.feedContents {
+  width: 614px;
+  height: 60px;
+}
+
+.feedContentHead {
+  width: 614px;
+  height: 40px;
+  border: 1px solid red;
+}
+
+.feedContentHeadIcon {
+  display: inline-block;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  top: 8px;
+  left: 10px;
+  margin: 0 5px;
+  width: 26px;
+  height: 26px;
+}
+.feedContentlikeContainer {
+  width: 614px;
+  height: 20px;
+  border: 1px solid red;
+}
+.feedContentLike {
+  font-size: 14px;
+  margin-left: 16px;
+  font-weight: 600;
+}
+.feedContentTextContainer {
+  width: 614px;
+  height: 60px;
+  border: 1px solid red;
+}
+.feedContentUploadTimeContainer {
+  width: 614px;
+  height: 20px;
+  border: 1px solid red;
+}
+.feedContentTextAccount {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 16px;
+  text-decoration: none;
+  color: black;
+}
+.feedContentTextMessage {
+  font-size: 14px;
+  margin-left: 18px;
+}
+.feedContentTextMore {
+  color: grey;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.feedContntUploadTime {
+  font-size: 10px;
+  margin-left: 16px;
+  color: grey;
+}
+.feedCommentContainer {
+  width: 614px;
+  height: 56px;
+  border-top: 0.5px solid #dbdbdb;
+}
+.feedComment {
+  width: 530px;
+  height: 18px;
+  margin-left: 20px;
+  margin-top: 20px;
+  overflow: auto;
+  cursor: text;
+  border: none;
+}
+.postCommentBtn {
+  width: 40px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  color: skyblue;
+  margin-left: -4px;
+  text-align: center;
+  align-content: center;
+}
+.feedComment .postCommentBtn {
+  display: inline;
+}
+/* 293px */
+.asideHead {
+  margin-top: 45px;
+  width: 263px;
+  height: 100px;
+  border: 1px solid red;
+}
+.asideProfile {
+  position: relative;
+  top: 13px;
+}
+.asideProfileImageContainer {
+  width: 56px;
+  height: 56px;
+  border: 1px solid red;
+}
+.asideProfileImage {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+
+.asideProfileAccountContainer {
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.asideProfileImageContainer,
+.asideProfileAccountContainer {
+  display: inline;
+}
+
+.asideProfileAccount {
+  position: relative;
+  top: -34px;
+  left: 8px;
+  font-weight: 700;
+}
+.asideProfileName {
+  position: relative;
+  top: -10px;
+  left: -100px;
+  color: grey;
+}
+
+.recommendationContainer {
+  width: 263px;
+  height: 20px;
+  border: 1px solid red;
+}
+.recommendationTitle {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ShowAll {
+  float: right;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-right: -22px;
+}
+
+.recommendationItemContainer {
+  width: 263px;
+  height: 300px;
+  border: 1px solid red;
+}
+.recommendationItem {
+  width: 321px;
+  height: 48px;
+  border: 1px solid red;
+}
+
+.recommendationItemProfileImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  top: 9px;
+  left: 6px;
+}
+
+.recommendationAccount {
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  top: -8px;
+  left: 10px;
+}
+
+.recommendationdescription {
+  position: relative;
+  top: -11px;
+  left: 46px;
+  font-size: 11px;
+  color: grey;
+}
+
+.followBtn {
+  position: relative;
+  top: -20px;
+  left: 85px;
+  text-decoration: none;
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+}
+.recommendationItemContainer {
+  width: 263px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.asideDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 263px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.asideDescriptionList li {
+  list-style: none;
+  float: left;
+  margin-right: 2px;
+}
+
+.asideDescriptionList li::after {
+  content: "\00b7";
+  float: right;
+  padding-left: 2px;
+}
+.asideDescriptionList a:last-child li::after {
+  display: none;
+}
+
+.description {
+  display: inline;
+  color: #c7c7c7;
+  font-size: 11px;
+}
+
+.copyright {
+  color: #c7c7c7;
+  font-size: 13px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.floatRight {
+  float: right;
+}
+
+.bookmark {
+  margin-right: 30px;
+}
+
+.feedContentMessage {
+  transform: rotate(-45deg);
+  position: relative;
+  top: 5px;
+}
