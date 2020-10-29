@@ -45,28 +45,29 @@ button {
     height: 30px;
     margin: 15px auto;
     color: white;
-    background-color: #c0e0fe;
+    background-color: #0095f6;
     border-style: none;
     border-radius: 3px;
+    line-height: 5px;
     font-weight: bold;
     outline: none;
+    opacity: 0.5;
 }
 
-button:disabled {
-    background-color: #B9DFFC;
-}
-
-button:disabled:hover {
-    cursor: default;
-}
-
-button:enabled:hover { 
-    cursor: pointer;
-}
 
 .forget {
     text-align: center;
     color: #385184;
     margin-top: 65px;
     font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: #2e5882;
 }
