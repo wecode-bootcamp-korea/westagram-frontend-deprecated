@@ -213,7 +213,6 @@ function showList(userInputCommment, submited) {
                              </div >
                         `
                 showRefList.appendChild(div)
-
             })
         }
     }
@@ -231,7 +230,6 @@ function hideContent() {
         }
     }
     userContent.innerText = copiedStr
-    console.log(tempStr, copiedStr)
 }
 
 
@@ -328,7 +326,6 @@ listsContainer.addEventListener("click", function(e) {
 storyWrapTarget.addEventListener("click", function(e) {
     console.log(e)
     if (e.target.classList.contains("story-delete")) {
-        let targetedStory = e.target.parentElement.previousElementSibling.firstElementChild
         userArr.splice(userArr.length - 1, 1)
         renderStory()
         saveLists()

@@ -732,6 +732,7 @@ body {}
 }
 
 .refList {
+    display: none;
     position: absolute;
     left: -1px;
     top: 99.4%;

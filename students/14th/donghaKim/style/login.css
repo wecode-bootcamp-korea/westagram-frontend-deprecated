@@ -7,17 +7,17 @@
 body {}
 
 .container {
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fcfcfc;
+    text-align: center;
 }
 
 .main-wrap {
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .left-img {
@@ -36,10 +36,10 @@ body {}
 }
 
 .after-login {
+    position: absolute;
     display: none;
     top: 15%;
     left: 10%;
-    position: absolute;
     width: 80%;
     height: 30%;
     background-color: white;
@@ -55,12 +55,12 @@ body {}
 }
 
 .right-wrap {
-    background-color: white;
-    margin: 10px 0;
     width: 400px;
     height: 450px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0 50px;
+    background-color: white;
+    margin: 10px 0;
 }
 
 .right-login {
@@ -176,8 +176,8 @@ body {}
 }
 
 .right-app-wrap {
-    width: 400px;
     display: flex;
+    width: 400px;
     flex-direction: column;
     text-align: center;
     padding-bottom: 10px;
@@ -219,8 +219,8 @@ body {}
 
 .download-app .app-btn {
     display: flex;
-    justify-content: center;
     position: relative;
+    justify-content: center;
 }
 
 .download-app .app-btn button {
@@ -257,15 +257,15 @@ body {}
 }
 
 .apple-img {
-    left: 12%;
     position: absolute;
+    left: 12%;
     z-index: 1;
 }
 
 .google-img {
+    position: absolute;
     z-index: 1;
     left: 55%;
-    position: absolute;
 }
 
 .show-success {}
