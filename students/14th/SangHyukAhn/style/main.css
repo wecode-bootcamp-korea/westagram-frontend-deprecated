@@ -246,7 +246,7 @@ section {
 .storyBox::-webkit-scrollbar {
   display: none;
 }
-.storyLi {
+.storyList {
   position: relative;
   display: flex;
   display: inline-block;
@@ -274,6 +274,7 @@ section {
   padding-top: 68px;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .feedBox {

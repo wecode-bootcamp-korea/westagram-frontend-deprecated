@@ -1,10 +1,10 @@
 const storyList = [
   {
-    name: Moana,
-    image: './data/friends/friend2.png',
+    _name: 'Moana',
+    _image: './data/friends/friend2.png',
   },
   {
-    name: Elsa_Bryantis,
-    image: './data/friends/friend3.png',
+    _name: 'Elsa_Bryantis',
+    _image: './data/friends/friend3.png',
   },
 ];
