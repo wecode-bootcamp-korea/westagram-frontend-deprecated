@@ -11,7 +11,6 @@
 
 <body>
     <main class="container">
-
         <div class="main-wrap">
             <div class="left-img"><img src="img/login/left-img.png" alt=""></div>
             <div class="right-content">
@@ -25,17 +24,22 @@
                         </div>
                         <form action="" class="user-form">
                             <input type="text" class="user-id" placeholder="전화번호, 사용자 또는 이메일 ">
+                            <span class="email-failed">email을 다시 확인해주세요.</span>
                             <input type="password" class="password" placeholder="비밀번호를 입력해주세요.">
+                            <span class="password-failed">비밀번호를 다시 입력해주세요.</span>
                             <button class="login-btn">로그인</button>
                         </form>
-                        <div class="divided">또는</div>
+                        <div>
+                            <div class="below-loign-btn-left"></div>
+                            <div class="below-loign-btn">또는</div>
+                            <div class="below-loign-btn-right"></div>
+                        </div>
                         <div class="facebook-login">
                             <div class="col">
-                                <img src="img/login/facebook.jpeg" alt="">
-                                <a href="" class="des">페이스북으로 로그인</a>
+                                <img src="img/login/facebook.jpeg" alt="facebook">
+                                <a href="" class="login-to-facebook">페이스북으로 로그인</a>
                             </div>
-                            <a href="" class="find">비밀 번호를 잊으셨나요?</a>
-
+                            <a href="" class="find-password">비밀 번호를 잊으셨나요?</a>
                         </div>
                     </div>
 
@@ -58,7 +62,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
     <script src="js/login.js"></script>

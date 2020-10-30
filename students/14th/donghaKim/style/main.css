@@ -20,7 +20,7 @@ body {}
     top: 0;
     left: 0%;
     width: 100%;
-    z-index: 1;
+    z-index: 11;
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -157,12 +157,12 @@ body {}
     padding-right: 15px;
 }
 
-.i-default {
+.nav-heart-default {
     color: black;
     font-size: 22px;
 }
 
-.full {
+.nav-heart-full {
     display: none;
     position: absolute;
     font-size: 24px;
@@ -170,8 +170,6 @@ body {}
     left: 0;
     top: -1px;
 }
-
-.unshow {}
 
 .nav .icons .icons-wrap img {
     width: 100%;
@@ -797,7 +795,7 @@ body {}
     color: rgba(0, 0, 0, 0.3);
 }
 
-.show-profile {
+.show {
     display: block;
 }
 
