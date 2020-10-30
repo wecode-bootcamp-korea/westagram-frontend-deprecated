@@ -3,78 +3,71 @@ body {
 }
 
 .none {
-  padding-top: 75px;
-  /* border: 1px green solid; */
   width: auto;
   height: 40px;
+  padding-top: 75px;
   background-color: #fafafa;
 }
 article {
   position: relative;
-  left: 10px;
+  right: 170px;
   background-color: #fafafa;
-  /* border: 1px solid #dbdbdb; */
   border-radius: 3px;
 }
 .main_body {
   display: flex;
+  position: relative;
   text-align: center;
   justify-content: center;
-  /* border: 1px red solid; */
-  position: relative;
   left: 20px;
 }
 .feed {
   width: 600px;
   height: auto;
-  /* border: 1px black solid; */
 }
 
 .story {
+  height: 117px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
-  height: 117px;
+}
+
+.my_profile{
+  border-radius: 50%;
 }
 
 aside {
-  position: relative;
+  position: fixed;
   width: 450px;
-  left: 10px;
+  right: 360px;
 }
 
 .my_profile {
   display: flex;
-  /* width: 400px; */
   height: 95px;
-  /* border: 1px solid peru; */
-  background-color: #fafafa;
   margin: 0px;
+  background-color: #fafafa;
 }
 .recommendation_box {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid purple; */
-}
-
-.other {
-  /* border: 1px solid sienna; */
 }
 
 ul {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
   left: -0px;
   padding: 0px;
   margin: 20px 0;
-  /* border: solid 1px red; */
 }
 
 ul li {
   display: flex;
   flex-direction: row;
 }
+
 
 .sub_story img {
   width: 60px;
@@ -86,14 +79,13 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 66px;
   height: 66px;
   background-image: url("rainbow.png");
   background-size: contain;
-  flex-direction: column;
 }
 .empty_box {
-  /* border: 1px solid red; */
   height: 26px;
 }
 
@@ -108,43 +100,54 @@ ul li {
 }
 
 .feed_id {
-  height: 60px;
-  /* border: 1px solid pink; */
   position: relative;
   display: flex;
   justify-content: center;
+  height: 60px;
 }
 .id_round {
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
-  background-image: url("picture8.png");
-  background-size: contain;
   flex-direction: column;
-  border-radius: 50%;
-  position: absolute;
   top: 15px;
   left: 10px;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  border-radius: 50%;
 }
 
 .id_box {
   display: flex;
-  flex-direction: column;
+  position: absolute;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  position: absolute;
-  /* border: 1px solid palegreen; */
+  left: 0px;
+  top:0px;
   width: 536px;
   height: 41px;
-  left: 40px;
+}
+.id_container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 10px;
+}
+
+.id_img{
+  width:32px;
+  height: 32px;
+  border-radius: 50%;
 }
 
 .id_name {
+  margin-bottom: 3px;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 3px;
 }
 .place {
   font-size: 12px;
@@ -171,10 +174,6 @@ ul li {
   height: 598px;
 }
 
-.feed_bottom {
-  /* border: 1px solid black; */
-}
-
 .emoticon_box {
   display: flex;
   flex-direction: row;
@@ -193,7 +192,6 @@ ul li {
   justify-content: center;
   width: 40px;
   margin: 0px;
-  /* border: 1px solid red; */
 }
 
 .emoticon_box2 img {
@@ -201,36 +199,31 @@ ul li {
   height: 24px;
 }
 .bookmark_box {
-  width: 40px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
+  width: 40px;
+  height: 40px;
+
 }
 
 .bookmark_box img {
   width: 24px;
   height: 24px;
 }
-.bookmark {
-  /* margin-right: 10px; */
-}
 
 .feed_like_box {
   display: flex;
-  flex-direction: row;
   position: relative;
+  flex-direction: row;
   align-items: center;
   height: 30px;
   left: 8px;
   padding: 0 16px 0 8px;
-  /* border: 1px solid red; */
 }
 
 .feed_like_box .feed_like {
   display: flex;
-  /* border: 1px solid blue; */
   position: relative;
   left: 5px;
   font-size: 14px;
@@ -256,7 +249,6 @@ ul li {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  /* border: 1px solid red; */
 }
 
 .feed_article_box {
@@ -265,7 +257,6 @@ ul li {
   align-items: flex-start;
   flex-direction: column;
   padding: 0 16px 0 16px;
-  /* border: 1px solid green; */
 }
 .comments_container {
   display: flex;
@@ -276,11 +267,34 @@ ul li {
   padding: 2px;
 }
 .comments1 {
+  padding: 2px;
   font-size: 14px;
   line-height: 18px;
   color: #8e8e8e;
-  padding: 2px;
 }
+.comments1_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  
+}
+.new_comments{
+  display: block;
+  text-align: start;
+}
+
+.newCommentBox{
+  padding: 2px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.newCommentBox1{
+  padding: 2px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 
 .comments2 {
   font-size: 10px;
@@ -289,7 +303,7 @@ ul li {
   letter-spacing: 0.2px;
 }
 
-.feed_comment_box {
+.inputContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -298,15 +312,31 @@ ul li {
   margin: 0px;
   border-top: 1px solid #efefef;
 }
-#type_comment {
+
+.inputBox{
+  background-color: #FAFAFA;
+  font:14px;
+  color: black;
+  outline: none;
+  width:550px;
+  height: 50px;
+  border: solid 0px;
+}
+.buttonBox{
+  background-color: #FAFAFA;
+  color:#C0E0FD;
+  outline: none;
+  border: solid 0px;
+}
+
+.type_comment {
   display: flex;
   justify-content: flex-start;
   width: 530px;
-  /* border: 1px solid black; */
   font-size: 14px;
   color: #8e8e8e;
 }
-//
+
 .summit {
   font-size: 14px;
   color: #bee1fd;
@@ -370,7 +400,6 @@ ul li {
 }
 
 
-
 .recommendation_box {
   margin: 10px 120px 10px 40px;
 }
@@ -386,6 +415,7 @@ ul li {
   height: 290px;
   flex-direction: column;
 }
+
 
 .my_profile_main_box{
   display: flex;
@@ -428,14 +458,12 @@ ul li {
 .user{
   display: flex;
   flex-direction: row;
-  /* border:1px solid red; */
   align-items: center;
   height:48px;
   margin:5px 0 0 40px;
 
 }
 .user_box{
-  /* border: 1px solid purple; */
   height: 50%;
 }
 .follow{

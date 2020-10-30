@@ -1,16 +1,15 @@
 header {
   display: flex;
   position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 20% 0 20%;
+  width: 100%;
   height: 54px;
+  top: 0;
+  padding: 0 20% 0 20%;
   border-bottom: solid 1px #dbdbdb;
   background-color: white;
-  /* border: 1px black solid; */
+  z-index: 999;
 }
 
 .middle_box {
@@ -19,18 +18,19 @@ header {
 }
 .right_box {
   display: flex;
+  position: relative;
   justify-content: space-around;
-  width: 222px;
   align-items: center;
-  /* border: 1px solid black; */
+  right: 80px;
+  width: 222px;
 }
 
 .left_box {
   display: flex;
+  position: relative;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
-  left: 30px;
+  left: 60px;
   top: 10px;
   width: 280px;
   height: 32px;
@@ -42,8 +42,8 @@ header {
 .line {
   width: 20px;
   height: -15px;
-  font-size: 25px;
   margin: 0 5px;
+  font-size: 25px;
   text-align: center;
 }
 .logo {
@@ -62,50 +62,35 @@ header {
 }
 .search {
   display: flex;
-  align-items: center;
   position: relative;
+  align-items: center;
+  left: -10px;
   top: -2px;
   height: 27px;
   width: 215px;
   background-color: #fafafa;
   border: 1px solid #dbdbdb;
 }
+
+.magnifier {
+  position: absolute;
+  top: 35%;
+  left: 49.3%;
+  width: 12px;
+  height: 12px;
+}
+
 .search::placeholder {
   text-align: center;
 }
 
 .navi_box {
-  height: 22px;
-  width: 22px;
   display: inline;
-}
-.heart_box {
   height: 22px;
   width: 22px;
-  display: inline;
-}
-.navi {
-  height: 22px;
-  width: 22px;
-}
-.heart {
-  height: 22px;
-  width: 22px;
-  display: inline;
-}
-.heart_box {
-  height: 22px;
-  width: 22px;
-  display: inline;
-}
-.myProfile_box {
-  height: 22px;
-  width: 22px;
-  display: inline;
 }
 
-.myProfile {
+.right_box img {
   width: 22px;
   height: 22px;
-  display: inline;
 }
