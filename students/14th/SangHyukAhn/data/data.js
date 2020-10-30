@@ -49,11 +49,11 @@ const storyList = [
 storyList.map((ele) => {
   let getName = ele.name;
   let getImage = ele.image;
-  locateStoryBox.innerHTML += `<div class="storyList">
+  locateStoryBox.innerHTML += `<li class="storyList">
     <a href="">
       <img src="./img/circle.png" class="canvas" />
       <img src=${getImage} class="circle" />
       <div class="storyName small-text">${getName}</div>
     </a>
-  </div>`;
+  </li>`;
 });
