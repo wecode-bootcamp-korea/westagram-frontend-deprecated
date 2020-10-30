@@ -1,4 +1,3 @@
-const inputComment = document.querySelectorAll('.inputComment');
 const buttonComment = document.querySelectorAll('.buttonComment');
 const myName = document.querySelector('.profileName div');
 const currentBodyTag = document.querySelectorAll('.feedBodyContent .body-text');
@@ -14,27 +13,24 @@ locationViewComment.forEach((ele) =>
 );
 
 function addComment(e) {
-  const locationComment = e.target;
-  const locationCommentParent = locationComment.parentNode.parentNode;
-  const locationCommenBox = locationCommentParent.querySelector('.commentBox');
-  const locationInputBox = locationCommentParent.querySelector('.inputComment');
-  const makeDiv = document.createElement('div');
-  const makeWriter = document.createElement('span');
-  const makeMessage = document.createElement('span');
-  const makeDelButton = document.createElement('button');
-  makeDiv.className = 'comment';
-  makeWriter.className = 'large-text';
-  makeMessage.className = 'body-text addComments';
-  makeDelButton.className = 'deleteButton';
-  makeMessage.innerHTML = locationInputBox.value;
-  makeWriter.innerHTML = myName.innerHTML;
-  makeDelButton.innerHTML = '❌';
-  locationCommenBox.appendChild(makeDiv);
-  makeDiv.appendChild(makeWriter);
-  makeDiv.appendChild(makeMessage);
-  makeDiv.appendChild(makeDelButton);
-  makeDelButton.addEventListener('click', deleteComment);
-  locationInputBox.value = null;
+  const targetButton = e.target;
+  const locationTargetParent = targetButton.parentNode.parentNode;
+  const locationTargetInput = locationTargetParent.querySelector(
+    '.inputComment'
+  );
+  const locationTargetCommentBox = locationTargetParent.querySelector(
+    '.commentBox'
+  );
+  locationTargetCommentBox.innerHTML += `<div class="comment">
+    <a href=""><span class="large-text">${myName.innerHTML}</span></a>
+    <span class="body-text addComments">${locationTargetInput.value}</span>
+    <button class="deleteButton">❌</button>
+  </div>`;
+  const deleteButton = locationTargetCommentBox.querySelectorAll(
+    '.deleteButton'
+  );
+  deleteButton.forEach((ele) => ele.addEventListener('click', deleteComment));
+  locationTargetInput.value = null;
 }
 
 function deleteComment(e) {
