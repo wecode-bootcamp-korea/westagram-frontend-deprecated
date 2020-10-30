@@ -9,13 +9,6 @@ function comment_heart_controll(e) {
   }
 }
 
-//댓글 숫자 수정하는 부분 그냥 함수로 묶어버리게 구현중..
-// function refresh_comment_counter(container, counter){
-//   const cur_comment_cnt = container.childElementCount;
-//   if(cur_comment_cnt)
-//   counter.innerHTML = `댓글 ${cur_comment_cnt}개 모두 보기`;
-// }
-
 //delete selected comment
 function comment_delete(e) {
   const targetted_comment = e.target.parentNode.parentNode;
@@ -63,32 +56,47 @@ function add_new_comment(evt) {
   const cur_comment_cnt = target_comment_container.childElementCount;
   target_comment_counter.innerHTML = `댓글 ${cur_comment_cnt}개 모두 보기`;
   target_input.value = '';
-  target_submitbtn.style.color = '#c0e0fc';
+  target_submitbtn.classList.add('newcomment-btn-lightblue');
   add_events_on_comments();
 }
 
 //newcomment input handler
-function controll_newcomment_textarea() {
-  const comment_input = document.querySelector('.newcomment-input');
-  comment_input.addEventListener('keyup', (e) => {
-    const post_btn = document.querySelector('.newcomment-form button');
-    let trimmed_comment = comment_input.value.trim();
-    trimmed_comment.length > 0 ? (post_btn.style.color = '#0095f6') : (post_btn.style.color = '#c0e0fc');
+function controll_newcomment_input() {
+  const comment_inputs = document.querySelectorAll('.newcomment-input');
+  comment_inputs.forEach((comment_input) => {
+    comment_input.addEventListener('keyup', (evt) => {
+      const postbtn = evt.target.parentNode.childNodes[3];
+      const trimmed_comment = comment_input.value.trim();
+      if (trimmed_comment.length) {
+        postbtn.classList.add('newcomment-btn-blue');
+        postbtn.classList.remove('newcomment-btn-lightblue');
+      } else {
+        postbtn.classList.add('newcomment-btn-lightblue');
+        postbtn.classList.remove('newcomment-btn-blue');
+      }
+    });
   });
 }
 
 //newcomment form handler
 function controll_form() {
-  const comment_form = document.querySelector('.newcomment-form');
-  comment_form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    add_new_comment(e);
+  // const comment_form = document.querySelector('.newcomment-form');
+  // comment_form.addEventListener('submit', (e) => {
+  //   e.preventDefault();
+  //   add_new_comment(e);
+  // });
+  const comment_forms = document.querySelectorAll('.newcomment-form');
+  comment_forms.forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      add_new_comment(e);
+    });
   });
 }
 
 function init() {
   add_events_on_comments();
-  controll_newcomment_textarea();
+  controll_newcomment_input();
   controll_form();
 }
 
