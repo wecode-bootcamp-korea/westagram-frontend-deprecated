@@ -12,16 +12,18 @@ body {
   border: 1px solid #e8e8e8;
   background-color: #fff;
 }
+
 .logo {
   display: block;
   margin: 0 auto;
 }
+
 .loginForm {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-top: 30px;
 }
+
 input {
   height: 40px;
   margin-bottom: 5px;
@@ -31,6 +33,7 @@ input {
   color: #9e9e9e;
   background-color: #fafafa;
 }
+
 .loginBtn {
   height: 30px;
   margin-top: 10px;
@@ -40,6 +43,7 @@ input {
   background-color: #bee1fd;
   font-weight: 600;
 }
+
 p {
   margin-top: 130px;
   color: #134273;

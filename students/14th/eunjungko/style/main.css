@@ -108,24 +108,37 @@ nav {
   cursor: text;
 }
 
+.search.active {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  width: 220px;
+  height: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  cursor: text;
+}
+
 .magnifier.active {
   position: static;
   width: 10px;
   height: 10px;
   margin: auto 0;
   margin-left: 10px;
-  background-image: url('/img/magnifier.png');
+  background-image: url('../img/magnifier.png');
   background-size: cover;
 }
 
 .magnifier {
+  justify-content: center;
   position: absolute;
   width: 10px;
   height: 10px;
   top: 10px;
   left: 80px;
   margin: auto 0;
-  background-image: url('/img/magnifier.png');
+  background-image: url('../img/magnifier.png');
   background-size: cover;
 }
 
@@ -147,12 +160,22 @@ nav {
 }
 
 .xbtn {
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: auto 0;
+  margin-right: 10px;
+  background-image: url('../img/xbtn.png');
+  background-size: cover;
+}
+
+.xbtn.active {
   display: none;
   width: 13px;
   height: 13px;
   margin: auto 0;
   margin-right: 10px;
-  background-image: url('/img/xbtn.png');
+  background-image: url('../img/xbtn.png');
   background-size: cover;
 }
 
@@ -418,7 +441,6 @@ button:focus {
     min-width: 500px;
   }
   .articleImg {
-    /* width: 600px; */
     width: 100%;
   }
   .search {

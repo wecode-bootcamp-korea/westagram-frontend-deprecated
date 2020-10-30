@@ -13,42 +13,33 @@ const commentForm = document.querySelector('.commentForm'),
 const CMTS_LS = 'cmts';
 let cmts = [];
 
-//인풋바 활성화
+// 인풋바 활성화
 function searchActive() {
-  xbtn.style.display = 'block';
-  searchInput.classList.toggle('active');
-  magnifier.classList.toggle('active');
-  search.style.justifyContent = 'space-between';
-}
-
-// 인풋바 비활성화 (x버튼 혹은 인풋 이외 클릭 시)
-function searchInactive() {
-  xbtn.style.display = 'none';
-  searchInput.classList.toggle('active');
-  magnifier.classList.toggle('active');
-  search.style.justifyContent = 'center';
+  const isActive = searchInput.classList.contains('active');
+  magnifier.classList = isActive ? 'magnifier' : 'magnifier active';
+  xbtn.classList = isActive ? 'xbtn active' : 'xbtn';
+  search.classList = isActive ? 'search' : 'search active';
+  searchInput.classList = isActive ? 'searchInput' : 'searchInput active';
 }
 
 // local storage에 string으로 저장
-function saveCmt() {
+function saveComment() {
   localStorage.setItem(CMTS_LS, JSON.stringify(cmts));
 }
 
 // 댓글 삭제
-function deleteCmt(event) {
+function deleteComment(event) {
   const btn = event.target;
   const cmt = btn.parentNode;
   const comment = cmt.parentNode;
   commentSet.removeChild(comment);
-  const cleanCmt = cmts.filter((cmtSet) => {
-    return cmtSet.id !== parseInt(comment.id);
-  });
-  cmts = cleanCmt;
-  saveCmt();
+  const cleanComment = cmts.filter((cmtSet) => cmtSet.id !== +comment.id);
+  cmts = cleanComment;
+  saveComment();
 }
 
 // 받은 comment 추가하기
-function makeCmt(cmt) {
+function makeComment(cmt) {
   // 빈 내용 댓글 추가 불가
   if (cmt.trim() === '') {
     return;
@@ -66,7 +57,7 @@ function makeCmt(cmt) {
   // deleteBtn에 삭제 기능 추가
   let deleteBtn = document.querySelectorAll('.deleteBtn');
   for (let i = 0; i < deleteBtn.length; i++) {
-    deleteBtn[i].addEventListener('click', deleteCmt);
+    deleteBtn[i].addEventListener('click', deleteComment);
   }
   // local storage에 저장할 객체 생성
   const newId = cmts.length + 1;
@@ -76,14 +67,14 @@ function makeCmt(cmt) {
     id: newId,
   };
   cmts.push(cmtObj);
-  saveCmt();
+  saveComment();
 }
 
 // 코멘트 폼으로 comment 받기
 function submitCmt(event) {
   event.preventDefault();
   const cmt = commentInput.value;
-  makeCmt(cmt);
+  makeComment(cmt);
   commentInput.value = '';
 }
 
@@ -93,14 +84,14 @@ function loadCmts() {
   if (loadedCmts !== null) {
     const parsedCmts = JSON.parse(loadedCmts);
     parsedCmts.forEach(function (cmtobj) {
-      makeCmt(cmtobj.text);
+      makeComment(cmtobj.text);
     });
   }
 }
 
-searchInput.addEventListener('click', searchActive);
-searchInput.addEventListener('blur', searchInactive);
-xbtn.addEventListener('click', searchInactive);
+searchInput.addEventListener('focus', searchActive);
+searchInput.addEventListener('blur', searchActive);
+xbtn.addEventListener('click', searchActive);
 
 commentForm.addEventListener('submit', submitCmt);
 addBtn.addEventListener('click', submitCmt);

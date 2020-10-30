@@ -1,23 +1,16 @@
-// 버튼 활성화
 const idInput = document.querySelector('.id'),
   pwInput = document.querySelector('.pw'),
-  loginBtn = document.querySelector('.loginBtn');
+  loginBtn = document.querySelector('.loginBtn'),
+  loginForm = document.querySelector('.loginForm');
 
-//id와 input에 value가 있을 때 loginBtn 활성화
 function loginBtnOn() {
-  if (idInput.value !== '' && pwInput.value !== '') {
-    loginBtn.disabled = 'false';
-    loginBtn.style.backgroundColor = '#469edb';
-  } else {
-    loginBtn.disabled = 'true';
-    loginBtn.style.backgroundColor = '#bee1fd';
-  }
+  const isActive = idInput.value && pwInput.value;
+  loginBtn.disabled = isActive ? 'false' : 'true';
+  loginBtn.style.backgroundColor = isActive ? '#469edb' : '#bee1fd';
 }
 
 function init() {
-  loginBtnOn();
-  idInput.addEventListener('keyup', loginBtnOn);
-  pwInput.addEventListener('keyup', loginBtnOn);
+  loginForm.addEventListener('keyup', loginBtnOn);
 }
 
 init();
