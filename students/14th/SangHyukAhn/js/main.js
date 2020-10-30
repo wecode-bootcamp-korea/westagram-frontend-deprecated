@@ -8,12 +8,11 @@ const locationViewComment = document.querySelectorAll(
   '.viewComment .gray-text'
 );
 
-//실행기
-buttonComment.forEach((ele) => ele.addEventListener('click', addComment)); // 게시 버튼 클릭
+buttonComment.forEach((ele) => ele.addEventListener('click', addComment));
 locationViewComment.forEach((ele) =>
   ele.addEventListener('click', allComments)
-); // 댓글 모두 보기 버튼 클릭
-//댓글 추가 기능
+);
+
 function addComment(e) {
   const locationComment = e.target;
   const locationCommentParent = locationComment.parentNode.parentNode;
@@ -34,21 +33,21 @@ function addComment(e) {
   makeDiv.appendChild(makeWriter);
   makeDiv.appendChild(makeMessage);
   makeDiv.appendChild(makeDelButton);
-  makeDelButton.addEventListener('click', deleteComment); //delete키 이벤트 활성화
-  locationInputBox.value = null; //input 비우기
+  makeDelButton.addEventListener('click', deleteComment);
+  locationInputBox.value = null;
 }
-// 댓글 삭제 기능
+
 function deleteComment(e) {
   let delButton = e.target.parentNode;
   let targetComment = delButton.parentNode;
   targetComment.removeChild(delButton);
 }
-// 피드의 오리지널 innerText
+
 const originalText = [];
 for (let i = 0; i < locationFeedContent.length; i++) {
   originalText.push(currentBodyTag[i].innerText);
 }
-// 내용 숨기기 기능
+
 function hiddenInnerText(ele) {
   for (let i = 0; i < ele.length; i++)
     if (ele[i].innerText.length > 10) {
@@ -63,12 +62,11 @@ function hiddenInnerText(ele) {
     }
 }
 hiddenInnerText(currentBodyTag);
-// 숨긴 내용 다시 리셋
+
 function resetBodyText(e) {
   let deleteButton = e.target;
   let locationFeedContentP = deleteButton.parentNode;
   locationFeedContentP.removeChild(deleteButton);
-
   let changeTag = locationFeedContentP.querySelector('.body-text');
   for (let i = 0; i < currentBodyTag.length; i++) {
     if (changeTag.innerText === currentBodyTag[i].innerText) {
@@ -76,13 +74,13 @@ function resetBodyText(e) {
     }
   }
 }
-// 댓글 갯수 보여주기
+
 for (let i = 0; i < locationCommentBox.length; i++) {
   let locationCommenter = locationCommentBox[i].children;
   document.querySelectorAll('.numberOfComment')[i].innerHTML =
     locationCommenter.length;
 }
-// 댓글 2개 이상 숨기기
+
 for (let i = 0; i < locationCommentBox.length; i++) {
   let locationCommenter = locationCommentBox[i].children;
   if (locationCommenter.length > 2) {
@@ -91,7 +89,7 @@ for (let i = 0; i < locationCommentBox.length; i++) {
     }
   }
 }
-// 댓글 모두 보기
+
 function allComments(e) {
   let targetViewiewButton = e.target.parentNode.parentNode;
   let targetComment = targetViewiewButton.children[2];
