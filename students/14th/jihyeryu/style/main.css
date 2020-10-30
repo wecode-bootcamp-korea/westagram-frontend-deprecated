@@ -386,7 +386,7 @@ article {
     outline: none;
     border: none;
     background-color: transparent;
-    color: rgb(201, 224, 249);
+    /* color: rgb(201, 224, 249); */
     cursor: pointer;
 }
 
@@ -505,4 +505,12 @@ article {
 .intro-menu p {
     font-size: 11px;
     color: #c7c7c7;
+}
+
+.activeLogin {
+    color: #0095f6;
+}
+
+.inactiveLogin {
+    color: #c0e0fc;
 }

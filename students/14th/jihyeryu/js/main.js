@@ -1,9 +1,21 @@
 const commentInputBtn = document.getElementById('comment-input-btn');
 const displayComment = document.getElementById('comment-side');
 const commentInputSide = document.getElementById('comment-input-side');
+// const activeBtn = commentInputBtn.classList.add("activeLogin");
+// const inactiveBtn = commentInputBtn.classList.add('inactiveLogin');
 
 function checkComment() {
-    commentInputSide.value !== '' ? commentInputBtn.style.color = '#0095f6' : commentInputBtn.style.color = 'rgb(201, 224, 249)'
+//     commentInputSide.value !== '' ? commentInputBtn.classList.add("activeLogin") && commentInputBtn.classList.remove('inactiveLogin') : commentInputBtn.classList.add('inactiveLogin') && commentInputBtn.classList.remove("activeLogin") 
+// }
+if(commentInputSide.value !== ''){
+    commentInputBtn.classList.add("activeLogin") 
+    commentInputBtn.classList.remove('inactiveLogin')
+    console.log("sdsdf"); 
+}else {
+    commentInputBtn.classList.add('inactiveLogin')
+    commentInputBtn.classList.remove("activeLogin") 
+    console.log("123");
+}
 }
 
 function inputComment(e) {

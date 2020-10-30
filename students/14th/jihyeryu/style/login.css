@@ -83,3 +83,11 @@ button {
     color: #00376b;
     cursor: pointer;
 }
+
+.acticeLogin {
+    color: #0095f6;
+}
+
+.unactiveLogin {
+    color: 'rgb(201, 224, 249)';
+}
