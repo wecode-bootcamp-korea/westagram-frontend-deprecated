@@ -19,6 +19,12 @@ li {
   font-size: 12px;
   line-height: 18px;
 }
+.small-text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 5px;
+  text-overflow: ellipsis;
+}
 
 body {
   margin: 0px;
