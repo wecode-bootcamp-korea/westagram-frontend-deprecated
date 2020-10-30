@@ -1,5 +1,5 @@
-const locationInputId = document.querySelector('.InputId');
-const locationInputPw = document.querySelector('.InputPw');
+const locationInputId = document.querySelector('.inputId');
+const locationInputPw = document.querySelector('.inputPw');
 const locationLoginButton = document.querySelector('.loginButton');
 const locationErrorMsg = document.querySelector('.errorMsg');
 
