@@ -19,8 +19,8 @@ function load_feed_content() {}
 
 //더보기 버튼 눌렀을때
 function controll_show_more_btn(evt, slice_length) {
-  const hide_content = evt.target.previousSibling.previousSibling;
-  const original_content = hide_content.previousSibling.previousSibling;
+  const hide_content = evt.target.previousElementSibling;
+  const original_content = hide_content.previousElementSibling;
   if (evt.target.innerHTML === '더 보기') {
     original_content.innerHTML += hide_content.innerHTML;
     evt.target.innerHTML = '숨기기';
@@ -40,14 +40,11 @@ function hide_feed_content() {
     if (content.innerHTML.length > slice_length) {
       feed_hidecontents[idx].innerHTML = `${content.innerHTML.slice(slice_length)}`;
       content.innerHTML = content.innerHTML.slice(0, slice_length);
-      more_btn[idx].style.display = 'inline';
-      //   console.log(feed_hidecontents[idx].innerHTML, feed_hidecontents[idx].innerHTML.length);
+      more_btn[idx].classList.remove('morebtn-invisible');
       more_btn[idx].addEventListener('click', (e) => {
         controll_show_more_btn(e, slice_length); //생긴 더 보기 버튼에 이벤트리스너 달아줌
       });
-    } else {
-      more_btn[idx].style.display = 'none';
-    }
+    } else more_btn[idx].classList.add('morebtn-invisible');
   });
 }
 

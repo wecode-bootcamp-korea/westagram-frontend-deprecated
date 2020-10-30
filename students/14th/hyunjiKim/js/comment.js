@@ -9,6 +9,13 @@ function comment_heart_controll(e) {
   }
 }
 
+//댓글 숫자 수정하는 부분 그냥 함수로 묶어버리게 구현중..
+// function refresh_comment_counter(container, counter){
+//   const cur_comment_cnt = container.childElementCount;
+//   if(cur_comment_cnt)
+//   counter.innerHTML = `댓글 ${cur_comment_cnt}개 모두 보기`;
+// }
+
 //delete selected comment
 function comment_delete(e) {
   const targetted_comment = e.target.parentNode.parentNode;
@@ -36,12 +43,12 @@ function add_events_on_comments() {
 //add new comment on feed
 function add_new_comment(evt) {
   const target_form = evt.target;
-  const target_input = evt.target.firstChild.nextSibling;
+  const target_input = target_form.firstChild.nextSibling;
   const target_submitbtn = evt.target.lastChild.previousSibling;
   const user_id = document.querySelector('.right-main .bio .id').innerHTML;
   if (target_input.value.trim().length <= 0) return;
-  const target_comment_container = target_form.previousSibling.previousSibling.childNodes[9];
-  const target_comment_counter = target_form.previousSibling.previousSibling.childNodes[7];
+  const target_comment_container = target_form.previousElementSibling.childNodes[9];
+  const target_comment_counter = target_form.previousElementSibling.childNodes[7];
   target_comment_container.innerHTML += `
     <div class="comment">
       <div class="comment-left">

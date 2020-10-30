@@ -16,12 +16,9 @@ const my_data = [
 
 function search_id() {
   const search_container = document.querySelector('.navbar-search-container');
-  //일단 기존에있던 차일드노드들 전부 삭제
-  while (search_container.firstChild) search_container.removeChild(search_container.firstChild); //어..?왜 되는거지..?
+  search_container.innerHTML = '';
   const input_value = navbar_input.value.trim();
-  const filtered_data = my_data.filter((user) => {
-    return user.user_id.includes(input_value);
-  });
+  const filtered_data = my_data.filter((user) => user.user_id.includes(input_value));
   //필터된 데이터를 추가함
   if (filtered_data.length > 0) {
     filtered_data.forEach((user) => {
@@ -33,7 +30,7 @@ function search_id() {
       `;
     });
     const search_items = document.querySelector('.navbar-search-item');
-    search_items.style.justifyContent = 'unset';
+    search_items.classList.remove('navbar-search-center-align');
   } else {
     // 데이터 없으면 없다고표시
     search_container.innerHTML += `
@@ -42,7 +39,7 @@ function search_id() {
     </div>
     `;
     const search_items = document.querySelector('.navbar-search-item');
-    search_items.style.justifyContent = 'center';
+    search_items.classList.add('navbar-search-center-align');
   }
 }
 
@@ -56,12 +53,10 @@ function controll_navbar_search() {
   });
   navbar_input.addEventListener('blur', () => {
     navbar_search_icon.classList.remove('search-focused');
-    navbar_search_container.style.display = 'none';
+    navbar_search_container.classList.remove('navbar-visible');
   });
   navbar_input.addEventListener('keyup', () => {
-    if (navbar_input.value.trim().length > 0) {
-      navbar_search_container.style.display = 'block';
-    }
+    if (navbar_input.value.trim().length) navbar_search_container.classList.add('navbar-visible');
     search_id();
   });
 }
@@ -73,11 +68,8 @@ function controll_navbar_profile() {
     const profile_pic = document.querySelector('.nav-right .profile-pic');
     let is_clicked_container = navbar_profile_container.contains(evt.target);
     let is_clicked_profile_pic = profile_pic.contains(evt.target);
-    if (is_clicked_container || is_clicked_profile_pic) {
-      navbar_profile_container.style.display = 'block';
-    } else {
-      navbar_profile_container.style.display = 'none';
-    }
+    if (is_clicked_container || is_clicked_profile_pic) navbar_profile_container.classList.add('navbar-visible');
+    else navbar_profile_container.classList.remove('navbar-visible');
   });
 }
 

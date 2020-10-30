@@ -18,12 +18,12 @@ section {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  background-color: white;
-  border: 1px solid #dbdbdb;
-  border-radius: 1px;
   padding: 10px 0;
   margin: 5px 0;
   width: 350px;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
 }
 
 .logo-container {
@@ -58,13 +58,20 @@ section {
 
 .idpw-container .user-id-warning,
 .idpw-container .user-pw-warning {
-  display: none;
   font-size: 12px;
   color: #751717;
 }
 
-.login-btn {
+.warning-invisible {
+  display: none;
+}
+
+.btn-light-blue {
   background-color: #c0e0fe;
+}
+
+.btn-blue {
+  background-color: #0095f6;
 }
 
 .fb-login-btn {

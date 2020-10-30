@@ -32,7 +32,6 @@
   flex-flow: column;
   align-items: center;
   width: 80px;
-  /* background-color: black; */
 }
 
 .story .profile-img-container {
@@ -113,7 +112,6 @@
 /* feed content area */
 
 .feed-img-container {
-  width: 100%;
   overflow: hidden;
 }
 
@@ -188,6 +186,10 @@
   border: none;
   background-color: white;
   color: #8e8e8e;
+}
+
+.morebtn-invisible {
+  display: none;
 }
 
 /* comment area */
@@ -277,29 +279,16 @@ button:focus {
   outline: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
   .right-main {
     display: none;
   }
-  /* .overall-container {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  } */
   .left-main {
     position: unset;
   }
 }
 
-@media screen and (max-width: 600px) {
-  /* .right-main {
-    display: none;
-  } */
-  /* .overall-container {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  } */
+@media screen and (max-width: 640px) {
   .left-main {
     width: 100%;
   }

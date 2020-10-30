@@ -107,6 +107,10 @@ nav {
   border-bottom: 1px solid #dbdbdb;
 }
 
+.navbar-search-center-align {
+  justify-content: center;
+}
+
 .navbar-search-item:hover {
   cursor: pointer;
   background-color: #dbdbdb;
@@ -166,6 +170,10 @@ nav {
   padding: 0 20px;
 }
 
+.navbar-visible {
+  display: block;
+}
+
 @media screen and (max-width: 500px) {
   .nav-search {
     display: none;
@@ -180,7 +188,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 980px) {
   .nav-left {
     padding-left: 0;
   }
