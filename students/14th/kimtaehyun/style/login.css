@@ -5,7 +5,7 @@ body {
     height: 100vh;
 }
 
-.container {
+.login_container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -26,11 +26,7 @@ input {
     border: 1px solid lightgray;
     border-radius: 3px;
     font-size: 10px;
-    margin-bottom: 10px;
-}
-
-.input_pass {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 input::placeholder {
@@ -42,6 +38,7 @@ input::placeholder {
 button {
     width: 320px;
     height: 36px;
+    margin-top: 15px;
     color: white;
     background-color: rgb(94, 159, 245);
     border-style: none;
@@ -51,7 +48,7 @@ button {
     outline: none;
 }
 
-.down_container{
+.bottom_container{
     margin-bottom: 60px;
 }
 
