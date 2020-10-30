@@ -23,7 +23,7 @@ function addComment(e) {
   );
   locationTargetCommentBox.innerHTML += `<div class="comment">
     <a href=""><span class="large-text">${myName.innerHTML}</span></a>
-    <span class="body-text addComments">${locationTargetInput.value}</span>
+    <span class="body-text">${locationTargetInput.value}</span>
     <button class="deleteButton">❌</button>
   </div>`;
   const deleteButton = locationTargetCommentBox.querySelectorAll(

@@ -399,9 +399,6 @@ section {
   border: 0px;
   outline-width: 0;
 }
-.addComments {
-  margin-left: 5px;
-}
 .deleteButton {
   font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
     sans-serif;
