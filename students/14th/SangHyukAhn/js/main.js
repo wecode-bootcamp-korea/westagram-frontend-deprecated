@@ -1,11 +1,11 @@
 const buttonComment = document.querySelectorAll('.buttonComment');
 const myName = document.querySelector('.profileName div');
-const currentBodyTag = document.querySelectorAll('.feedBodyContent .body-text');
 const locationFeedContent = document.querySelectorAll('.feedBodyContent');
 const locationCommentBox = document.querySelectorAll('.commentBox');
 const locationViewComment = document.querySelectorAll(
   '.viewComment .gray-text'
 );
+const currentBodyTag = document.querySelectorAll('.feedBodyContent .body-text');
 
 buttonComment.forEach((ele) => ele.addEventListener('click', addComment));
 locationViewComment.forEach((ele) =>
@@ -95,10 +95,10 @@ function allComments(e) {
   }
 }
 
-const aa = document.querySelector('.serchBarText');
-aa.addEventListener('click', serchBarPopUp);
+const locateSerchBar = document.querySelector('.serchBarText');
+locateSerchBar.addEventListener('click', serchBarPopUp);
 function serchBarPopUp(e) {
-  let locationSerchBar = e.target;
+  let locateSerchBar = e.target;
   let makeDiv2 = document.createElement('div');
   makeDiv2.innerHTML;
 }
