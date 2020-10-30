@@ -1,0 +1,75 @@
+@import "/students/14th/seungyunlee/style/reset.css";
+
+nav {
+  position: fixed;
+  top: 0;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.nav__left--icons {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__left--icons i {
+  color: rgba(128, 128, 128, 0.8);
+  border-right: 2px solid rgba(0, 0, 0, 0.6);
+  padding-right: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+.nav__left--icons img {
+  height: 35px;
+  padding-left: 20px;
+  opacity: 80%;
+}
+
+.nav__center--input {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__center--input input {
+  width: 200px;
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.nav__center--input input::placeholder {
+  display: flex;
+  text-align: center;
+}
+
+.nav__right--icons {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.redDot {
+  background-color: red;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.nav__right--icons i {
+  margin: 0px 20px;
+  opacity: 60%;
+}

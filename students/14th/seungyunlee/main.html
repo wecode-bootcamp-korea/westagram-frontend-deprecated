@@ -3,35 +3,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>repl.it</title>
-    <link href="style/common.css" rel="stylesheet" type="text/css" />
-    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <title>westagram - main</title>
+    <link href="/students/14th/seungyunlee/style/common.css" rel="stylesheet" type="text/css" />
+    <link href="/students/14th/seungyunlee/style/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav>
-      <div class="nav__left--camera">
-        <i class="fas fa-camera-retro fa-2x"></i>
-      </div>
-      <div class="nav__center--input">
-        <img src="img/logo_text.png" alt="" />
-        <input type="text" placeholder="검색" />
-      </div>
-      <div class="nav__right--icons">
-        <div><i class="far fa-compass fa-2x"></i></div>
-        <div><i class="far fa-heart fa-2x"></i></div>
-        <div><i class="far fa-user fa-2x"></i></div>
-      </div>
-    </nav>
     <main>
-      <div class="feeds">
-        <article></article>
-      </div>
-      <div class="main-right"></div>
+      <nav>
+        <div class="nav__left--icons">
+          <i class="fas fa-camera-retro fa-2x"></i>
+          <img src="/img/logo_text.png" alt="" />
+        </div>
+        <div class="nav__center--input">
+          <input type="text" placeholder="검색" />
+        </div>
+        <div class="nav__right--icons">
+          <i class="far fa-compass fa-2x"></i>
+          <i class="far fa-heart fa-2x"><span class="redDot"></span></i>
+          <i class="far fa-user fa-2x"></i>
+        </div>
+      </nav>
+      <main>
+        <article>
+          <div class="feed">
+            <div class="feedName">
+              <div class="face">
+              <img
+                src="https://ca.slack-edge.com/TH0U6FBTN-U019YK6G44U-63624c327e2a-72"
+                alt=""
+                />
+              </div>
+              <div class="name">
+                <div>lee.sy</div>
+                <i class="fas fa-ellipsis-h"></i>
+              </div>          
+            </div>
+            <img src="/students/14th/seungyunlee/img/weelloween.jpeg" alt="" width="615px" height="615px">
+            <div class="like">1</div>
+            <div class="textInpicture">1</div>
+          </div>
+          <div class="mainRight"></div>
+        </article>
+      <script src="js/main.js"></script>
+      <script
+        src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+      ></script>
     </main>
-    <script src="js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

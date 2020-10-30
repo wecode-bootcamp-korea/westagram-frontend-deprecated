@@ -1,0 +1,54 @@
+@import "/students/14th/seungyunlee/style/navbar.css";
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+article {
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.feed {
+  width: 615px;
+  margin: 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.feedName {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.face {
+  width: 60px;
+  height: 60px;
+}
+
+.face img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 15px 15px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name div {
+  width: 500px;
+}
+
+.name i {
+  width: 45px;
+}
