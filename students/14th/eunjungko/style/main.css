@@ -170,22 +170,22 @@ main {
 
 /* 아티클 */
 article {
-  margin-top: 20px;
-  background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 30px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fff;
 }
 
 .articleHeader {
-  height: 60px;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 60px;
+  width: 100%;
 }
 
 .articleHeader .userInfo {
@@ -228,15 +228,14 @@ article {
 .articleFooter {
   width: 100%;
   padding: 4px 8px 0px 8px;
-  /* padding: 10px, 30px; */
 }
 
 .iconbar {
-  height: 40px;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 40px;
+  width: 100%;
 }
 
 .iconbar .btn {
@@ -250,9 +249,9 @@ article {
 
 /* 댓글 */
 .commentArea {
-  padding: 0 10px 0px 10px;
   display: flex;
   flex-direction: column;
+  padding: 0 10px 0px 10px;
 }
 
 .likeStatus {
@@ -271,17 +270,17 @@ article {
 }
 
 .time {
-  font-size: 0.75em;
   margin: 0 0 10px 10px;
+  font-size: 0.75em;
 }
 
 .commentForm {
-  width: 100%;
-  border-top: 1px solid lightgray;
-  height: 50px;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-top: 1px solid lightgray;
 }
 
 .commentInput {
@@ -292,17 +291,17 @@ article {
 
 .addBtn {
   width: 40px;
+  border: none;
   color: #bee1fd;
   background: none;
-  border: none;
   cursor: pointer;
 }
 
 .deleteBtn {
   width: 40px;
+  border: none;
   color: #469edb;
   background: none;
-  border: none;
   cursor: pointer;
 }
 
@@ -357,26 +356,26 @@ button:focus {
   width: 40px;
   font-size: 12px;
   border: none;
-  background: none;
   color: #469edb;
+  background: none;
   text-align: end;
 }
 
 .menu {
+  display: inline-block;
   margin-top: 25px;
   width: 100%;
+  padding: 0;
   border-image-repeat: stretch;
   list-style: none;
-  display: inline-block;
-  padding: 0;
 }
 
 .menu li {
-  font-size: 11px;
   display: inline-block;
-  line-height: 13px;
   vertical-align: baseline;
   margin: 0;
+  line-height: 13px;
+  font-size: 11px;
 }
 
 .menu li::after {
@@ -395,7 +394,6 @@ button:focus {
 }
 
 /* responsive browser media query settings */
-
 @media screen and (max-width: 960px) {
   body {
     width: 100%;
