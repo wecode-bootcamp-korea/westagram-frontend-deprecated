@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 2px 0;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.instagram_icon img {
+    width: 103px;
+    height: 29px;
+}
+
+.nav input {
+    width: 213px;
+    height: 26px;
+    padding: 7px;
+    border: 1px solid  lightgray;
+    border-radius: 3px;
+    background-color: #fafafa;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.nav_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 222px;
+    padding-left: 24px;
+}
+
+.nav_icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.nav_icon5 img {
+    border-radius: 100%;
+}
+
+.nav_icon2 img {
+    transform: rotate(-30deg);
+    top: 50px;
+}
+
+.main_page {
+    background-color: #fafafa;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    margin: 0 235px;
+    padding-top: 30px;
+}
+
+.main_left {
+    width: 614px;
+    height: 1000px;
+    margin-right: 25px;
+}
+
+.story_area {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 16px 15px 16px 15px;
+    margin-bottom: 24px;
+    background-color: white;
+    overflow-x: auto;
+}
+
+.stories {
+    position: relative;
+    padding: 0 4px;
+}
+
+.rainbow img {
+    width: 66px;
+    height: 66px;
+}
+
+.story_profile img {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.feed {
+    width: 614px;
+    height: 820px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin: 30px 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.IDinfeed {
+    display: flex;
+    position: relative;
+} 
+
+.info {
+    position: relative;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.rainbow_info {
+    width: 42px;
+    height: 42px;
+}
+
+.small_profile {
+    position: absolute;
+    width: 35x;
+    height: 35px;
+    border-radius: 100%;
+    top: 7.75px;
+    left: 8.5px;
+}
+
+.username {
+    font: inherit;
+    margin: 0 0 0 14px;
+    top: 18px;
+    left: 45px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.zulie {
+    width: 613px;
+    height: 614px;
+    align-items: center;
+}
+
+.interaction_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.interaction{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 29px;
+    padding: 0 16px;
+} 
+
+.interaction_icon{
+    position: relative;
+    top:-13px;
+    left:-40px;
+    margin:0 20px;
+    padding: 0px;
+}
+
+.interaction_icon img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left:50%;
+    top:50%; 
+}
+
+.interaction_icon2{
+    position: relative;
+    left: -10px;
+}
+
+.interaction_icon2 img {
+    width: 24px;
+    height: 24px;
+    position: relative; 
+}
+
+.whoLike {
+    width: 596px;
+    width: 598px;
+    height: 20px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rbg(38, 38, 38);
+    padding: 0 0 0 15px;
+    box-sizing: border-box;
+    top:100px;
+}
+
+.myFeedText {
+    width: 6px;
+    height: 18px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    box-sizing: border-box;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rbg(38, 38, 38);  
+}
+
+.your_feed_text {
+    width: 614px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-decoration: none solid rbg(38, 38, 38);
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.comment_length {
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none solid rgb(142, 142, 142);
+    word-spacing: 0px;
+    color: #8e8e8e;
+    font-weight: 400;
+    margin: 0 0 7px 0;
+}
+
+.comment_added {
+    margin: 3px;
+}
+
+.input_comment {
+    width: 614px;
+    padding: 0 0 0 0px;
+    font-size: 14px;
+    line-height: 40px;
+    color: lightgray;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+
+.add_comment{
+    width: 500px;
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    line-height: 18px;
+    box-sizing: border-box;
+    border: none;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #fafafa;
+}
+
+#btn {
+    margin: 10px;
+    border: none;
+    background-color: white;
+    color: #BEE2FC;
+}
+
+.main_right {
+    position:sticky;
+    width: 310px;
+    height: 400px;
+    right:400px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin: 100px 0 50px 30px
+}
+
+.my_feed {
+    width: 293px;
+    height: 56px;
+    display: flex;
+    padding: 0 0 0 10px;
+}
+
+#my_profile_photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid lightgray;
+}
+
+.my_profile {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.my_profile_id {
+    margin: 1px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.intro {
+    color: #8E8E8E;
+    font-weight: 500;
+}
+
+.recommand {
+    font-size: 13px;
+    padding: 0 10px 0 10px;
+}
+
+.recommand_nav {
+    margin: 20px 3px ;
+}
+
+.text_recommand {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #8E8E8E;
+}
+
+.recommand_view_all {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.recommand_feed {
+    height: 50px;
+    display: flex;
+}
+
+#recommand_photo {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+}
+
+.recommand_profile {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-left: 15px;
+}
+
+.my_profile_id {
+    margin: 1px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.intro-1 {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none solid rgb(142, 142, 142);
+    word-spacing: 0px;
+    color: #8e8e8e; 
+}
+
+.follow {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0095f6;
+    font-weight: 600;
+}
