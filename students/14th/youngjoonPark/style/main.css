@@ -4,15 +4,27 @@
 
 body {
   flex-direction: column;
+  z-index: -1;
+  background-color: #fafafa;
 }
 
-.nav {
+.nav-background {
   display: flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 12px 0 2px 0;
+  justify-content: center;
+  /* opacity: 50%; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
   border-bottom: 1px solid lightgray;
+  background: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 975px;
+  padding: 12px 20px 2px 20px;
 }
 
 .insta-icon img {
@@ -20,17 +32,27 @@ body {
   height: 32px;
 }
 
-.nav input {
+nav input {
+  text-align: center;
   width: 199px;
   height: 18px;
   padding: 12px;
   border: 1px solid lightgray;
   border-radius: 3px;
-  background: #fafafa;
-  font-size: 12px;
-  text-align: center;
   font-size: 14px;
   font-weight: 300;
+  background: #fafafa;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input img {
+  position: absolute;
+  left: 70px;
+  top: 7px;
+  width: 9px;
 }
 
 .nav-icons {
@@ -45,87 +67,318 @@ body {
   height: 25px;
 }
 
-.nav-icon5 img {
+.profile-icon img {
   border-radius: 100%;
-}
-
-.main-page {
-  background-color: #fafafa;
 }
 
 .main {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  margin: 0 72.5px 0 172.5px;
+  justify-content: center;
+  margin: 0 72.5px 0 72.5px;
   padding-top: 30px;
 }
 
 .main-left {
   width: 614px;
   margin-right: 28px;
+  z-index: 0;
+}
+
+.story-border img {
+  width: 66px;
+}
+
+.story-photo img {
+  width: 66px;
+  border-radius: 100%;
 }
 
 .story-section {
   display: flex;
-  flex-direction: row;
   text-align: center;
-  border: 1px solid lightgray;
+  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: scroll;
   padding: 12px 0 9px 0;
   margin-bottom: 24px;
+  margin-top: 50px;
+  border: 1px solid lightgray;
   background-color: white;
 }
 
-.story1 {
-  margin: 5px 8px 0 15px;
+.story-section::-webkit-scrollbar {
+  display: none;
 }
 
-.story2 {
+.story {
+  position: relative;
+  width: 82px;
+}
+
+.story p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.story-border {
   margin: 5px 8px 0 8px;
 }
 
-.story3 {
-  margin: 5px 8px 0 8px;
+.story-border img {
+  width: 66px;
 }
 
-.story4 {
-  margin: 5px 8px 0 8px;
+.story-photo img {
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  width: 58px;
+  height: 58px;
 }
 
-.story5 {
-  margin: 5px 8px 0 8px;
+.feed-section {
+  position: relative;
+  border: 1px solid lightgray;
+  background-color: white;
 }
 
-.story6 {
-  margin: 5px 8px 0 8px;
+.feed-nickname {
+  display: flex;
+  position: relative;
+  padding: 15px 15px 15px 20px;
+}
+.feed-nickname p {
+  padding: 10px 15px 0px 17px;
 }
 
-.story7 {
-  margin: 5px 8px 0 8px;
+.feed-profile-img img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
 }
 
-.story8 {
-  margin: 5px 8px 0 8px;
+.feed-nickname p {
+  font-weight: bold;
 }
 
-.story-section img {
+.feed-img img {
+  width: 100%;
+  height: 500px;
+}
+
+.feed-icons {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.feed-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.feed-icon {
+  padding: 8px;
+}
+
+.feed-icon:hover {
+  cursor: pointer;
+}
+
+.feed-heart-icon {
+  margin-left: 5px;
+}
+
+.feed-heart-icon i {
+  color: red;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.feed-heart-icon i:hover {
+  cursor: pointer;
+}
+
+.feed-heart-icon i:active {
+  font-size: 30px;
+}
+
+.feed-bookmark img {
+  position: absolute;
+  top: 8px;
+  right: 7px;
+}
+
+.feed-likes {
+  margin-bottom: 8px;
+  padding: 0 16px;
+  font-size: 15px;
+}
+
+.feed-likes span {
+  font-weight: bold;
+}
+
+.feed-paragraph {
+  margin-bottom: 8px;
+  padding: 0 16px;
+}
+
+.feed-paragraph span {
+  font-weight: bold;
+}
+
+.feed-comment .comments {
+  padding-bottom: 4px;
+}
+
+.feed-comment ul .new-comments {
+  font-weight: normal;
+  margin: 0 0 4px 0px;
+}
+
+.new-comments span:first-child {
+  margin-right: 3px;
+}
+
+.feed-comment p {
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 400px;
+  color: gray;
+}
+
+.comment-box {
+  position: relative;
+}
+
+.comment-box input {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-top: 1px solid lightgray;
+}
+
+.comment-box button {
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  border: none;
+  background-color: white;
+  color: #bfe0fd;
+}
+
+.comment-box button:hover {
+  cursor: pointer;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 70px;
+  right: 20%;
+  width: 297px;
+  height: 617px;
+}
+
+.introduce-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  padding: 0 8px;
+}
+
+.introduce-profile img {
   width: 56px;
   height: 56px;
   border-radius: 100%;
 }
 
-.story-photo img {
+.introduce-paragraph {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.introduce-id {
+  font-weight: bold;
+}
+
+.introduce-name {
+  color: gray;
+}
+
+.introduce-recommend {
+  position: relative;
+  margin-top: 12px;
+  padding: 12px 4px;
+}
+
+.introduce-recommend span {
+  color: gray;
+  font-size: 14px;
+}
+
+.introduce-recommend a span {
+  position: absolute;
+  right: 32px;
+  top: 13px;
+  color: black;
+  font-size: 11px;
+  font-weight: 600px;
+}
+
+.recommend-ids {
+  padding: 8px 0;
+}
+
+.recommend-id {
+  display: flex;
+  padding: 8px;
+}
+
+.recommend-id-photo img {
+  width: 32px;
+  height: 32px;
   border-radius: 100%;
 }
 
-.main-right {
-  width: 297px;
-  height: 617px;
-  border: 1px solid lightgray;
+.recommend-id-text {
+  width: 195px;
+  padding: 4px;
 }
 
-.feed-section {
-  border: 1px solid lightgray;
-  height: 100vh;
-  background-color: white;
+.text-id {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text-info {
+  font-size: 12px;
+  color: gray;
+}
+
+.recommend-id {
+  position: relative;
+}
+
+.recommend-id-follow {
+  padding: 10px 8px 0 0;
+}
+
+.recommend-id-follow a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.recommend-id-follow a:visited {
+  color: #0095f6;
+}
+
+@media (max-width: 1700px) {
+  .main-right {
+    display: none;
+  }
 }

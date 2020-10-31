@@ -10,7 +10,7 @@ body {
   background: #fafafa;
 }
 
-.main-box {
+.login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,6 +63,10 @@ header img {
   border-radius: 3px;
   background: #bfe0fd;
   color: #f5fbfe;
+}
+
+.login-btn:hover {
+  cursor: pointer;
 }
 
 .forget-pw {
