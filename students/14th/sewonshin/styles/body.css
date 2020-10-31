@@ -10,7 +10,7 @@ body {
 }
 article {
   position: relative;
-  right: 170px;
+  right: 0px;
   background-color: #fafafa;
   border-radius: 3px;
 }
@@ -36,10 +36,18 @@ article {
   border-radius: 50%;
 }
 
-aside {
-  position: fixed;
+
+aside{
+  position: relative;
+  left:0px;
+  right:100px;
+}
+
+.feed_right_container{
+  position: sticky;
   width: 450px;
-  right: 360px;
+  top:0px;
+  right:100px;
 }
 
 .my_profile {

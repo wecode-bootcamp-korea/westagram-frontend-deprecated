@@ -1,10 +1,29 @@
-const textBox = document.querySelector(".inputBox");
-const summitButtonClick = document.querySelector(".buttonBox");
-const feedComment = document.querySelector(".new_comments");
-const profileId1 = document.querySelector(".my_profile_id");
-console.log(textBox);
+const textBox = document.querySelector(".inputBox"); //input 변수 할당
+const summitButtonClick = document.querySelector(".buttonBox"); //버튼 변수 할당
+const feedComment = document.querySelector(".new_comments"); // 새로운 댓글이 달릴 div 할당
+const profileId1 = document.querySelector(".my_profile_id"); //s_sewon 이름 할당
 
-// 게시 버튼 눌렀을때 댓글 기능 추가
+// 1. 코드 수정 전)게시 버튼 눌렀을때 댓글 기능 추가
+// summitButtonClick.addEventListener("click", clickButton);
+
+// function clickButton() {
+//   const commentBox = document.createElement("span");
+//   const profileId = document.createElement("span");
+//   const br = document.createElement("br");
+//   commentBox.className = "newCommentBox";
+//   commentBox.innerHTML = textBox.value;
+//   profileId.className = "newCommentBox1";
+//   profileId.innerHTML = "s_sewon";
+
+//   if (textBox.value != "") {
+//     feedComment.appendChild(profileId) +
+//       feedComment.appendChild(commentBox) +
+//       feedComment.appendChild(br);
+//     textBox.value = null;
+//   }
+// }
+
+// 2. 코드 수정 후)게시 버튼 눌렀을때 댓글 기능 추가
 summitButtonClick.addEventListener("click", clickButton);
 
 function clickButton() {
@@ -16,13 +35,14 @@ function clickButton() {
   profileId.className = "newCommentBox1";
   profileId.innerHTML = "s_sewon";
 
-  if (textBox.value != "") {
+  if (textBox.value !== "" && textBox.value.trim() !== "") {
     feedComment.appendChild(profileId) +
       feedComment.appendChild(commentBox) +
       feedComment.appendChild(br);
     textBox.value = null;
   }
 }
+
 // 엔터 쳤을때 댓글 기능 추가
 textBox.addEventListener("keypress", enter);
 
@@ -31,11 +51,17 @@ function enter(e) {
   const profileId1 = document.createElement("span");
   const br = document.createElement("br");
   const profileId = document.querySelector(".my_profile_id");
+  const textBoxTrim = textBox.value.trim();
   profileId1.className = "newCommentBox1";
   commentBox.className = "newCommentBox";
   profileId1.innerHTML = "s_sewon";
   commentBox.innerHTML = textBox.value;
-  if (e.key === "Enter" && textBox.value !== "") {
+
+  if (
+    textBox.value !== "" &&
+    textBox.value.trim() !== "" &&
+    e.key === "Enter"
+  ) {
     feedComment.appendChild(profileId1) +
       feedComment.appendChild(commentBox) +
       feedComment.appendChild(br);
@@ -43,35 +69,24 @@ function enter(e) {
   }
 }
 
-//글자 타이핑 했을때 '게시' 색깔 바뀌는 기능 추가
+//1. 코드 수정 전)글자 타이핑 했을때 '게시' 색깔 바뀌는 기능 추가
 
+// textBox.addEventListener("keydown", colorChange);
+
+// function colorChange() {
+//   if (textBox.value !== "") {
+//     summitButtonClick.style.color = "#0095F6";
+//   } else if (textBox.value === "")
+//     return (summitButtonClick.style.color = "#C0E0FD");
+// }
+
+//2. 코드 수정 후)글자 타이핑 했을때 '게시' 색깔 바뀌는 기능 추가
 textBox.addEventListener("keydown", colorChange);
 
 function colorChange() {
-  if (textBox.value !== "") {
+  if (textBox.value !== "" && textBox.value.trim() !== "") {
     summitButtonClick.style.color = "#0095F6";
-  } else if (textBox.value === "")
+  } else if (textBox.value.trim() == "") {
     return (summitButtonClick.style.color = "#C0E0FD");
+  }
 }
-
-//'댓글 ${n}개 더 보기' 글자 기능 추가
-// const commentNumberTest = textBox.addEventListener("keydown", colorChange);
-// const commentNumber = document.getElementsByClassName("comment_number")[0];
-
-// function commentNumberAction() {
-//   if (commentNumberTest) {
-//     commentNumber.innerHTML = "3333";
-//   }
-// }
-
-// commentNumberAction();
-
-// let count = document.getElementById("button");
-// count = 0;
-
-// const countUp = function () {
-//   count += count + 1;
-//   document.querySelector("#count").innerHTML = 2;
-// };
-
-// countUp();
