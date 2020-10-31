@@ -8,25 +8,24 @@
      <link href="style/login.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="js/login.js"></script>
-    <section class="top_lv_section">
+    <section>
       <main>
-        <div class="cover_img flex_center">
-          <img src="./img/login_img/1.jpg" class="chang_img">
-          <img src="./img/login_img/2.jpg" class="chang_img">
-          <img src="./img/login_img/3.jpg" class="chang_img">
+        <div class="login_cover_img flex_center">
+          <img src="./img/login_img/1.jpg" class="chang_img" alt="메인커버 첫번째 이미지">
+          <img src="./img/login_img/2.jpg" class="chang_img" alt="메인커버 두번째 이미지">
+          <img src="./img/login_img/3.jpg" class="chang_img" alt="메인커버 세번째 이미지">
         </div>
         <div class="flex_center">
           <div class="login_form flex_center">
-            <img class="logo_img" src="img/logo_text.png" alt="없음">
+            <img class="logo_img" src="img/logo_text.png" alt="로그인 로고 이미지">
             <div class="flex_center login_data_form">
-              <div class="in_txt_box" id="id_form">
+              <div class="id_form in_txt_box">
                 <span class="helper">전화번호, 사용자 이름 또는 이메일</span>
-                <input type="text" id="id">
+                <input type="text" class="input_id">
               </div>
-              <div class="in_txt_box" id="pwd_form">
+              <div class="pwd_form in_txt_box">
                 <span class="helper">비밀번호</span>
-                <input type="Password" id="pwd">
+                <input type="Password" class="input_pwd">
               </div>
               <div class="login_btn_cover">
                 <button class="login_btn">로그인</button>
@@ -45,14 +44,14 @@
               <span class="search_pwd">비밀번호를 잊으셨나요?</span>
             </div>
           </div>
-          <div class="new_id flex_center">
+          <div class="sign_form flex_center">
             <div>계정이 없으신가요?<a href="" style="color : #0095f6;">가입하기</a></div>
           </div>
-          <div class="app_down">
+          <div class="app_down_form">
             <div>앱으로 다운로드하세요</div>
             <div>
-              <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_korean-ko.png/4a5c9d62d51b.png" alt="">
-              <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_korean-ko.png/f155b664a93b.png" alt="">
+              <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_korean-ko.png/4a5c9d62d51b.png" alt="애플 앱 이미지">
+              <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_korean-ko.png/f155b664a93b.png" alt="안드로이드 앱 이미지">
             </div>
           </div>
         </div>
@@ -79,5 +78,6 @@
         </div>
       </footer>
     </section>
+    <script src="js/login.js"></script>
   </body>
 </html>

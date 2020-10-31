@@ -5,7 +5,7 @@
     background-color: #FAFAFA;
 }
 
-.top_lv_section{
+section{
     display: flex;
     flex-direction: column;
 }
@@ -49,7 +49,7 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-.app_down{
+.app_down_form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,11 +59,11 @@ main{
     font-size: 13px;
 }
 
-.app_down div{
+.app_down_form div{
     margin: 10px 0;
 }
 
-.app_down img{
+.app_down_form img{
     width : 136px;
     height : 40px;
 }
@@ -87,7 +87,7 @@ main{
     border : 0;
 }
 
-.new_id{
+.sign_form{
     position: relative;
     width : 350px;
     height : 63px;
@@ -98,11 +98,11 @@ main{
     margin-bottom: 10px;
 }
 
-.new_id > div{
+.sign_form > div{
     padding-top: 20px;
 }
 
-.new_id a {
+.sign_form a {
     text-decoration:none
 }
 
@@ -196,7 +196,7 @@ main{
 
 }
 
-.cover_img{
+.login_cover_img{
     background-image: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png');
     position: relative;
     width : 454px;
@@ -239,7 +239,7 @@ main{
 
 
 @media screen and (max-width: 1000px) {
-    .cover_img{
+    .login_cover_img{
         display: none;
     }
 
