@@ -398,9 +398,9 @@ section {
 .deleteButton {
   font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
     sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-overflow: ellipsis;
-  margin-left: 5px;
+  color: gray;
 }
 
 .rightBar {
