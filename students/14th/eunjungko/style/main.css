@@ -1,4 +1,7 @@
-* {
+searchResultList.innerHTML += `<div class="searchResultSet">
+          <img src="${e.imgUrl}"
+          alt="userProfile" class="searchResultImg middle">
+          <span class="userId">${e.userId}</span></div>`;* {
   font-size: 14px;
 }
 /* 전체 도큐먼트에 중복 할당되는 클래스 */
@@ -75,7 +78,6 @@ nav {
 }
 
 .navWrapper {
-  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -159,7 +161,7 @@ nav {
   text-align: center;
 }
 
-.xbtn {
+.xbtn.active {
   display: block;
   width: 13px;
   height: 13px;
@@ -169,14 +171,49 @@ nav {
   background-size: cover;
 }
 
-.xbtn.active {
+.xbtn {
   display: none;
-  width: 13px;
-  height: 13px;
-  margin: auto 0;
-  margin-right: 10px;
-  background-image: url('../img/xbtn.png');
-  background-size: cover;
+}
+
+/* 검색 결과창*/
+.searchResultList {
+  position: sticky;
+  margin: 6px;
+  width: 242px;
+  max-height: 360px;
+  overflow: hidden; 
+  overflow-y: auto;
+  left: 41%;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color:white;
+}
+
+.searchResultList::before {
+  content: '  ';
+  position: absolute;
+  top: 10px;;
+  left: 90px;
+  width: 1000px;
+  height: 50px;
+  border: 1px solid #dbdbdb;
+  transform: rotate(45deg);
+  background-color: red;
+  z-index: 1000;
+}
+
+.searchResultSet {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  width: 240px;
+  height: 67px;
+}
+
+.searchResultImg {
+  border-radius: 50%;
+  margin: 0 10px 0 10px;
 }
 
 /* 메인 시작 */

@@ -1,9 +1,3 @@
-// 인풋바
-const search = document.querySelector('.search'),
-  searchInput = document.querySelector('.searchInput'),
-  xbtn = document.querySelector('.xbtn'),
-  magnifier = document.querySelector('.magnifier'),
-  searchText = document.querySelector('.searchText');
 // 댓글 기능
 const commentForm = document.querySelector('.commentForm'),
   commentInput = document.querySelector('.commentInput'),
@@ -12,15 +6,6 @@ const commentForm = document.querySelector('.commentForm'),
 // 댓글 Local Storage 기능
 const CMTS_LS = 'cmts';
 let cmts = [];
-
-// 인풋바 활성화
-function searchActive() {
-  const isActive = searchInput.classList.contains('active');
-  magnifier.classList = isActive ? 'magnifier' : 'magnifier active';
-  xbtn.classList = isActive ? 'xbtn active' : 'xbtn';
-  search.classList = isActive ? 'search' : 'search active';
-  searchInput.classList = isActive ? 'searchInput' : 'searchInput active';
-}
 
 // local storage에 string으로 저장
 function saveComment() {
@@ -88,10 +73,6 @@ function loadCmts() {
     });
   }
 }
-
-searchInput.addEventListener('focus', searchActive);
-searchInput.addEventListener('blur', searchActive);
-xbtn.addEventListener('click', searchActive);
 
 commentForm.addEventListener('submit', submitCmt);
 addBtn.addEventListener('click', submitCmt);
