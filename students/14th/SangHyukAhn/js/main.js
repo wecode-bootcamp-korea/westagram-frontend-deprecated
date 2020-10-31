@@ -1,11 +1,10 @@
 const buttonComment = document.querySelectorAll('.buttonComment');
-const myName = document.querySelector('.profileName div');
-const locationFeedContent = document.querySelectorAll('.feedBodyContent');
+const myName = document.querySelector('.profileTextStyle');
+const locationFeedContent = document.querySelectorAll('.foodBodyTextStyle');
 const locationCommentBox = document.querySelectorAll('.commentBox');
 const locationViewComment = document.querySelectorAll(
-  '.viewComment .gray-text'
+  '.commentButtonTextStyle'
 );
-const currentBodyTag = document.querySelectorAll('.feedBodyContent .body-text');
 
 buttonComment.forEach((ele) => ele.addEventListener('click', addComment));
 locationViewComment.forEach((ele) =>
@@ -22,8 +21,8 @@ function addComment(e) {
     '.commentBox'
   );
   locationTargetCommentBox.innerHTML += `<div class="comment">
-    <a href=""><span class="large-text">${myName.innerHTML}</span></a>
-    <span class="body-text">${locationTargetInput.value}</span>
+    <a href=""><span class="largeText heavyWeight">${myName.innerHTML}</span></a>
+    <span class="largeText">${locationTargetInput.value}</span>
     <button class="deleteButton">❌</button>
   </div>`;
   const deleteButton = locationTargetCommentBox.querySelectorAll(
@@ -34,39 +33,40 @@ function addComment(e) {
 }
 
 function deleteComment(e) {
-  let delButton = e.target.parentNode;
-  let targetComment = delButton.parentNode;
-  targetComment.removeChild(delButton);
+  let targetDeleteButton = e.target.parentNode;
+  let targetComment = targetDeleteButton.parentNode;
+  targetComment.removeChild(targetDeleteButton);
 }
 
-const originalText = [];
+const originalBodyText = [];
 for (let i = 0; i < locationFeedContent.length; i++) {
-  originalText.push(currentBodyTag[i].innerText);
+  originalBodyText.push(locationFeedContent[i].innerText);
 }
 
 function hiddenInnerText(ele) {
   for (let i = 0; i < ele.length; i++)
     if (ele[i].innerText.length > 10) {
-      ele[i].innerText = originalText[i].slice(0, 10) + ' ' + '...';
+      ele[i].innerText = originalBodyText[i].slice(0, 10) + ' ' + '...';
       let makeAddButton = document.createElement('button');
-      makeAddButton.className = 'gray-text12 margin5px';
+      makeAddButton.className = 'smallText grayColor margin5px';
       makeAddButton.innerText = '더 보기';
       locationFeedContent[i].appendChild(makeAddButton);
       makeAddButton.addEventListener('click', resetBodyText);
     } else {
-      ele[i].innerText = originalText[i];
+      ele[i].innerText = originalBodyText[i];
     }
 }
-hiddenInnerText(currentBodyTag);
+hiddenInnerText(locationFeedContent);
 
 function resetBodyText(e) {
   let deleteButton = e.target;
-  let locationFeedContentP = deleteButton.parentNode;
-  locationFeedContentP.removeChild(deleteButton);
-  let changeTag = locationFeedContentP.querySelector('.body-text');
-  for (let i = 0; i < currentBodyTag.length; i++) {
-    if (changeTag.innerText === currentBodyTag[i].innerText) {
-      changeTag.innerText = originalText[i];
+  let locationFeedContentPrent = deleteButton.parentNode;
+  locationFeedContentPrent.removeChild(deleteButton);
+  for (let i = 0; i < locationFeedContent.length; i++) {
+    if (
+      locationFeedContentPrent.innerText === locationFeedContent[i].innerText
+    ) {
+      locationFeedContentPrent.innerText = originalBodyText[i];
     }
   }
 }
@@ -89,16 +89,15 @@ for (let i = 0; i < locationCommentBox.length; i++) {
 function allComments(e) {
   let targetViewiewButton = e.target.parentNode.parentNode;
   let targetComment = targetViewiewButton.children[2];
-  console.log((targetComment.children[2].style.display = 'block'));
   for (let i = 2; i < targetComment.children.length; i++) {
     targetComment.children[i].style.display = 'block';
   }
 }
 
-const locateSerchBar = document.querySelector('.serchBarText');
-locateSerchBar.addEventListener('click', serchBarPopUp);
-function serchBarPopUp(e) {
-  let locateSerchBar = e.target;
-  let makeDiv2 = document.createElement('div');
-  makeDiv2.innerHTML;
-}
+// const locateSerchBar = document.querySelector('.serchBarText');
+// locateSerchBar.addEventListener('click', serchBarPopUp);
+// function serchBarPopUp(e) {
+//   let locateSerchBar = e.target;
+//   let makeDiv2 = document.createElement('div');
+//   makeDiv2.innerHTML;
+// }

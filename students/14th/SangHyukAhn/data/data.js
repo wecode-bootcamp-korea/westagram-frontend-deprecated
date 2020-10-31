@@ -1,4 +1,4 @@
-const locateStoryBox = document.querySelector('.storyBox');
+const locateStoryBox = document.querySelector('.addToStoryData');
 const storyList = [
   {
     name: 'Moana',
@@ -49,11 +49,11 @@ const storyList = [
 storyList.map((ele) => {
   let getName = ele.name;
   let getImage = ele.image;
-  locateStoryBox.innerHTML += `<li class="storyList">
+  locateStoryBox.innerHTML += `<li class="storyDataList">
     <a href="">
-      <img src="./img/circle.png" class="canvas" />
-      <img src=${getImage} class="circle" />
-      <div class="storyName small-text">${getName}</div>
+      <img src="./img/circle.png" class="stotyProfileCanvas" />
+      <img src=${getImage} class="storyProfileImage" />
+      <div class="storyProfileName smallText">${getName}</div>
     </a>
   </li>`;
 });

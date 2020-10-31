@@ -1,3 +1,76 @@
+/* 공통 테그 */
+.xSmallText {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.11px;
+  word-spacing: 0px;
+}
+
+.smallText {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.largeText,
+.profileTextStyle,
+.feedTopProfileName,
+.countFeedLikeStyle,
+.feedBodyNameTextStyle,
+.foodBodyTextStyle,
+.commentButtonTextStyle {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.normalWeight,
+.foodBodyTextStyle,
+.commentButtonTextStyle {
+  font-weight: 400;
+}
+
+.lightHeavyWeight {
+  font-weight: 500;
+}
+
+.heavyWeight,
+.profileTextStyle,
+.feedTopProfileName,
+.countFeedLikeStyle,
+.feedBodyNameTextStyle {
+  font-weight: 600;
+}
+
+.grayColor,
+.commentButtonTextStyle {
+  color: #8e8e8e;
+}
+
+.lightGrayColor {
+  color: #c7c7c7;
+}
+
+.linkColor {
+  color: #0095f6;
+}
+
+.leftMainBox {
+  width: 614px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+/* 디폴트 값 리셋 */
 body {
   margin: 0;
   padding: 0;
@@ -8,8 +81,8 @@ body {
 input:focus {
   outline-width: 0;
 }
+
 button {
-  color: #0094f8;
   background: inherit;
   border: none;
   box-shadow: none;
@@ -32,6 +105,7 @@ a {
   color: #000;
 }
 
+/* main 태그 */
 .flexHeader {
   display: flex;
   justify-content: center;
@@ -125,7 +199,7 @@ a {
 .navigationMenuList:last-child {
   padding-right: 0px;
 }
-.navigationMenuList svg {
+.navigationMenuIcon {
   display: flex;
   align-items: center;
 }
@@ -141,133 +215,46 @@ a {
 main {
   display: flex;
   justify-content: center;
-  width: 1680;
-  min-width: auto;
-  min-height: auto;
 }
 
 section {
   display: flex;
   justify-content: center;
-  padding: 84px 0 0 0;
   width: 935px;
   max-width: 975;
   min-width: auto;
   min-height: auto;
   margin: 0 368px 0 368px;
+  padding: 84px 0 0 0;
   box-sizing: border-box;
   z-index: 1;
 }
 
-.sSmall-text {
-  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  font-size: 10px;
-  color: #8e8e8e;
-}
-
-.small-text {
-  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.large-text {
-  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 18px;
-}
-
-.body-text {
-  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  word-spacing: 0px;
-}
-
-.gray-text {
-  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  word-spacing: 0px;
-  color: #8e8e8e;
-}
-
-.gray-text12 {
-  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  word-spacing: 0px;
-  color: #8e8e8e;
-}
-
-.graySmall-Text {
-  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.11px;
-  word-spacing: 0px;
-  color: #c7c7c7;
-}
-
-.link-text {
-  color: #0095f6;
-  font-weight: 600;
-}
-
-.fontWeight500 {
-  font-weight: 500;
-}
-
-.container {
-  background-color: white;
-  border-radius: 3px;
-  border: 1px solid #dbdbdb;
-  box-sizing: border-box;
-}
-
-.leftBar {
-  width: 614px;
-}
-
-.storyBox {
+.addToStoryData {
   display: flex;
-  flex-wrap: nowrap;
   overflow-x: auto;
   height: 118px;
   margin: 0 0 24px 0;
   padding: 0 0 0 17px;
   padding-right: 17px;
 }
-.storyBox::-webkit-scrollbar {
+
+.addToStoryData::-webkit-scrollbar {
   display: none;
 }
-.storyList {
-  position: relative;
+
+.storyDataList {
   display: flex;
-  display: inline-block;
-  width: 66px;
-  height: 70px;
+  position: relative;
   margin: 17px 14px 18px 0;
 }
-.canvas {
+.stotyProfileCanvas {
   position: absolute;
   width: 66px;
   height: 66px;
   z-index: 0;
 }
-.circle {
+.storyProfileImage {
   position: absolute;
   border-radius: 50%;
   width: 56px;
@@ -275,7 +262,7 @@ section {
   padding: 5px 5px 5px 5px;
   z-index: 1;
 }
-.storyName {
+.storyProfileName {
   text-align: center;
   width: 66px;
   padding-top: 68px;
@@ -284,85 +271,83 @@ section {
   text-overflow: ellipsis;
 }
 
-.feedBox {
+.feedContainer {
   width: 614px;
   display: block;
-}
-.feeds {
   margin-bottom: 60px;
 }
-.feedTop {
+
+.flexfeedTopBox {
   display: flex;
   justify-content: left;
   align-items: center;
   position: relative;
-  width: 614px;
   height: 60px;
+  width: 614px;
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
   z-index: 2;
 }
-.feedWriter {
-  display: flex;
+.feedTopProfile {
   position: relative;
   left: 14px;
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
-.feedWriter img {
-  width: 100%;
+.feedTopProfileImage {
   height: 100%;
+  width: 100%;
   border-radius: 50%;
 }
-.feedTop span {
-  display: flex;
+.feedTopProfileName {
   position: relative;
   left: 28px;
 }
-.feedSetting {
-  display: flex;
-  align-items: center;
+.feedTopSetting {
   position: absolute;
   left: 580px;
 }
-.feedImg {
+.feedBodyImageBox {
   max-height: 760px;
   overflow: hidden;
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
   z-index: 1;
 }
-.feedImg img {
+.feedBodyImage {
   position: relative;
   width: 100%;
   bottom: 120px;
 }
 
-.feedButton {
+.flexFeedBodyButtonBox {
   display: flex;
   justify-content: space-between;
   height: 40px;
   padding: 0 6px 0 6px;
   margin-top: 4px;
 }
-.rightButton {
-  display: flex;
-}
-.leftButton {
+
+.flexFeedleftButton {
   display: flex;
   left: 100px;
 }
-.buttonBoxStyle {
-  width: 24px;
+
+.flexFeedrightButton {
+  display: flex;
+}
+
+.feedButtonBox {
   height: 24px;
+  width: 24px;
   padding: 8px 8px 8px 8px;
 }
-.bottomButton svg {
+.feedButton svg {
   width: 24px;
   height: 24px;
 }
 
-.like {
+.countFeedlike {
   height: 18px;
   padding: 0 16px 0 16px;
   margin: 0 0 8px 0;
@@ -406,6 +391,9 @@ section {
 .writeCommentBox input:focus {
   border: 0px;
   outline-width: 0;
+}
+.buttonComment {
+  color: #0094f8;
 }
 .deleteButton {
   font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
