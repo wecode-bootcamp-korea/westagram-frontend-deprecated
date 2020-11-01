@@ -1,0 +1,74 @@
+body {
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Segoe UI", cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.row {
+  text-align: center;
+}
+
+.input-num,
+.input-text {
+  padding: 10px 0 10px 0;
+  margin: 5px 0 5px 0;
+}
+
+input {
+  height: 30px;
+  width: 258px;
+}
+
+a {
+  font-size: 12px;
+  color: #00376b;
+  text-align: center;
+  height: 14px;
+}
+
+.maindish {
+  box-sizing: border-box;
+  height: 380px;
+  width: 350px;
+  border: 1px solid #dbdbdb;
+  margin: 12px 0 0 0;
+  padding: 10px 0 10px 0;
+  min-height: auto;
+  min-width: auto;
+  position: relative;
+  background: #ffffff;
+  margin-top: 150px;
+}
+
+.formbtn {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  background-color: #0095f6;
+  opacity: 50%;
+  background-position: 0px 0px;
+  color: #ffffff;
+  height: 30px;
+  width: 268px;
+  border: 1px solid #ffffff;
+  min-height: auto;
+  min-width: auto;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+/* 중요순서 먼저 레이아웃
+height, width 같이 구조 잡아주는거
+그다음은 연관된것들 as 마진 패딩 보더

@@ -1,0 +1,199 @@
+body {
+  height: 100vh;
+  margin: 0%;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1920px;
+  height: 54px;
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+article {
+  display: flex;
+  position: relative;
+  height: 900px;
+  width: 616px;
+}
+
+.feeds {
+  display: flex;
+  height: 500px;
+  width: 616px;
+  padding-top: 80px;
+  margin-left: 350px;
+}
+
+.stories {
+  display: flex;
+  flex-flow: column;
+  height: 112px;
+  width: 616px;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+}
+
+.intext {
+  height: 29px;
+  width: 103px;
+}
+
+.topbox {
+  height: 28px;
+  width: 215px;
+}
+
+.searchbox {
+  height: 18px;
+  width: 199px;
+}
+
+.icons {
+  height: 22px;
+  width: 222px;
+}
+
+.comp {
+  height: 22px;
+  width: 22px;
+}
+
+.like {
+  height: 22px;
+  width: 22px;
+}
+
+.profile {
+  height: 22px;
+  width: 22px;
+}
+
+.capbox {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  height: 650px;
+  width: 616px;
+  border: 1px solid #dbdbdb;
+  right: 0.1px;
+  margin-top: 150px;
+}
+
+.boxone {
+  height: 50px;
+  width: 615px;
+}
+
+.mainbtns {
+  display: flex;
+  height: 50px;
+  width: 616px;
+  justify-content: flex-start;
+}
+
+.drake {
+  height: 40px;
+  width: 40px;
+}
+
+.picsave {
+  position: absolute;
+  left: 570px;
+}
+
+.tears {
+  position: relative;
+  height: 18px;
+  width: 69px;
+  font-size: 14px;
+  left: 6px;
+}
+
+.mainlikes {
+  position: relative;
+  height: 18px;
+  width: 69px;
+  font-size: 14px;
+  left: 6px;
+}
+
+.etc {
+  font-size: 14px;
+  height: 18px;
+  width: 69px;
+}
+
+.time {
+  position: relative;
+  font-size: 10px;
+  left: 6px;
+}
+
+.dat {
+  width: 580px;
+  border: 0;
+}
+
+.mainpic {
+  height: 500px;
+  width: 616px;
+  left: 5px;
+}
+
+.main-right {
+  display: flex;
+  padding: 20px;
+}
+
+.ftopbar {
+  display: flex;
+}
+
+.ftextbar {
+  height: 18px;
+  width: 240px;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.fshowall {
+  height: 18px;
+  width: 47px;
+  font-size: 12px;
+  align-items: center;
+}
+
+.frd-box {
+  height: 290px;
+  width: 297px;
+  position: relative;
+  display: flex;
+  flex-flow: column-reverse;
+  border: 0px solid #000000;
+}
+
+.frdz {
+  display: block;
+}
+
+.frd-num {
+  width: 120px;
+  margin-left: 50px;
+  font-size: 14px;
+  justify-content: flex-end;
+}
+
+.stranger {
+  display: flex;
+  margin-top: -8px;
+}
