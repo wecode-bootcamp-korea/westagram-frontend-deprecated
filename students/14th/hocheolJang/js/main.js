@@ -1,7 +1,7 @@
 // activateCommentBtn
 
 const postCommentBtn = document.querySelector(".postCommentBtn");
-const commentContent = document.querySelector(".feedComment");
+const commentContent = document.querySelector(".feedCommentPostBox");
 const commentsListContainer = document.querySelectorAll(
   ".commentsListContainer"
 );
@@ -41,7 +41,8 @@ postCommentBtn.addEventListener("click", postComment);
 
 // add comment(enterKey)
 
-commentContent.addEventListener("keyup", function (e) {
+commentContent.addEventListener("keydown", function (e) {
+
   if (e.keyCode === 13) {
     return postComment();
   }

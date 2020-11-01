@@ -115,7 +115,7 @@ body {
   display: flex;
   justify-content: flex-start;
   width: 614px;
-  height: 883px;
+  height: 880px;
   border: 1px solid #dbdbdb;
   background-color: #ffffff;
   border-radius: 3px;
@@ -159,9 +159,7 @@ main {
   height: 94px;
 }
 
-.storyContainerLeftMargin {
-  width: 10px;
-}
+
 .storyProfileBackground {
   position: absolute;
   display: inline-block;
@@ -254,11 +252,6 @@ main {
   width: 26px;
   height: 26px;
 }
-.feedContentTextContainer {
-  width: 614px;
-  /* height: 20px; */
-  /* border: 1px solid red; */
-}
 .feedContentLike {
   font-size: 14px;
   margin-left: 16px;
@@ -266,24 +259,18 @@ main {
 }
 .feedContentTextContainer {
   width: 614px;
-  /* height: 50px; */
+  height: 30px;
   /* border: 1px solid red; */
 }
-/* .commentsListContainer {
+.commentsListContainer {
   width: 614px;
-  height: auto;
-  border: 1px solid red;
-} */
-
-/* .commentBox{
-  display: block;
-  
-} */
+  overflow: hidden;
+  height: 60px;
+  /* border: 1px solid red; */
+}
 
 .feedContentUploadTimeContainer {
   width: 614px;
-  /* height: 20px; */
-  /* border: 1px solid red; */
 }
 .feedContentTextAccount {
   margin-left: 16px;
@@ -325,28 +312,27 @@ main {
   border-top: 0.5px solid #dbdbdb;
   /* border: 1px solid red; */
 }
-.feedComment {
+.feedCommentPostBox {
   width: 530px;
-  height: 18px;
-  margin-left: 20px;
-  margin-top: 20px;
+  /* height: 18px; */
+  margin-left: 14px;
+  margin-top: 2px;
   overflow: auto;
   cursor: text;
   border: none;
+  /* border: 1px solid red; */
 }
 .postCommentBtn {
+
   width: 40px;
   height: 24px;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
   color: skyblue;
-  margin-left: -4px;
   text-align: center;
   align-content: center;
-}
-.feedComment .postCommentBtn {
-  display: inline;
+  /* border: 1px solid red; */
 }
 
 /* 293px */
