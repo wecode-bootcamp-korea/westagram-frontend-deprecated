@@ -2,16 +2,32 @@
     box-sizing: border-box;
 }
 
+.body {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+/* 975X54 */
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width:100%;
+    height: 58px;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.5px solid gray;
-    margin:0 auto;
+    width: 975px;
     padding:0;
+    height: 54px;
 }
 
 .navbar_logo {
+    display: inline-flex;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -32,9 +48,31 @@
     font-size: 16px;
 }
 
+.navsearch input {
+    text-align: center;
+    height: 30px;
+}
+
 .navBtn {
     display: inline-flex;
     list-style: none;
+    margin:0;
+}
+
+.navBtn img {
+    border: 0px solid #000000;
+    border-radius: 50%;
+}
+
+.navBtn li {
+    padding: 8px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 975px;
+    margin: 30px auto 0 auto;
 }
 
 .mainbar {
@@ -45,5 +83,220 @@
 }
 
 .feedsbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0 0 0;
+    width: 600px;
+}
+
+.feeds {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 118px;
+    margin: 0 0 24px 0;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    font-size: 10px;
+}
+
+.feeds img {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    border: 0px solid #000000;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.feedsImg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 56px;
+    height: 56px;
+ }
+
+.browser {
+    width: 602px;
+    /* height: 1018px; */
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
+.contentsInfoBox {
+    display: flex;
+    width: 600px;
+    height: 60px;
+    border-top: 0px solid #000000;
+    border-right: 0px solid #000000;
+    border-bottom: 1px solid #EFEFEF;
+    border-left: 0px solid #000000;
+}
+
+.contentsInfo {
+    display: flex;
+}
+
+.contentsInfo img {
+    border: 0px solid #000000;
+    border-radius: 50%;
+}
+
+.contentsInfo div {
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.menuBtn {
+    padding-left: 430px;
+}
+
+.contentsImg {
+    width: 600px;
+    height: 750px;
+    border: 0px solid #000000;
+}
+
+.likeBtn {
+    display: flex;
+    width: 600px;
+    height: 40px;
+    margin: 4px 0 0 0;
+    padding: 0 16px 0 16px;
+}
+
+.like {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.comment {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.share {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.save {
+    justify-content: right;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.commentsWrapper {
+    width: 600px;
+    /* height: 162px; */
+    padding-left: 16px;
+}
+
+.commentBox {
+    width: 600px;
+    /* height: 56px; */
+}
+
+.addCommentBox {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EFEFEF;
+    border-right: 0px solid #000000;
+    border-bottom: 0px solid #000000;
+    border-left: 0px solid #000000;
+}
+
+.addCommentBox input {
+    width: 537.656px;
+    height: 18px;
+    margin: 6px;
+    border: 0px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.post {
+    margin-right: 24px;
+}
+
+.side_bar {
+    width: 293px;
+    height: 936px;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    border: 0px solid #000000;
+    border-radius: 50%;
+}
+
+.sideName {
+    margin-left: 16px;
+    margin-top: 10px;
+    font-size: 14px;
+    align-content: center;
+}
+
+.sideKoName {
+    color: #8E8E8E;
+}
+
+.follow_suggestion {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.textSuggestion {
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+.suggestion1 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.suggestion1 li {
+    display: flex;
+    padding-right: 3px;
+}
+
+.suggestion1 img {
+    width: 32px;
+    height: 32px;
+    border: 0px solid #000000;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.follower {
+    display: block;
+}
+
+.aboutCo {
+    font-size: 11px;
+    line-height: 18px;
+    width: 293px;
+    height: 106px;
+    color: #C7C7C7;
+    margin-top: 26px;
 }

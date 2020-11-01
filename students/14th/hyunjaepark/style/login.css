@@ -1,51 +1,77 @@
-.container {
+* {
+    box-sizing: border-box;
+}
+
+
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 380px;
-    border: 1px solid gray;
+    margin: auto;
+    height: 800px;
 }
 
-.instaLogo img {
+.container {
+    width: 350px;
+    height: 380px;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+
+.instaLogo {
     width: 175px;
     height: 51px;
+    margin: 32px 87px 12px 70px;
 }
 
 .loginForm {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    width: 348px;
+    height: 213px;
+    margin: 40px auto;
     line-height: 18px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .inputId {
     width: 250px;
-    height: 20px;
+    height: 40px;
+    padding: 9px 0 7px 8px;
+    text-decoration: none solid rgb(38, 38, 38);
+    background-color: #FAFAFA;
+    border: 1px solid gray;
+    border-radius: 3%;
+    margin: 30px 0 0 50px;
 }
 
 .inputPw {
     width: 250px;
-    height: 20px;
+    height: 40px;
+    padding: 9px 0 7px 8px;
+    text-decoration: none solid rgb(38, 38, 38);
+    background-color: #FAFAFA;
+    border: 1px solid gray;
+    border-radius: 3%;
+    margin: 5px 0 0 50px;
 }
 
-.loginButton {
-    text-align: center;
+.loginBtn {
     width: 250px;
-    height: 30px;
+    height: 40px;
     margin: 18px 0 8px 0;
-    background-color: skyblue;
-}
-
-.loginButton input {
-    width: 250px;
-    height: 30px;
-    background-color: skyblue;
+    color: white;
+    background-color: #B2DFFC;
+    border: 0px solid #000000;
+    border-radius: 3%;
+    margin-left: 50px;
 }
 
 .searchPw {
     text-align: center;
-    color: skyblue;
+    color: #375C78;
+    margin-top: 20px;
 }
