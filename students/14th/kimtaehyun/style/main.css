@@ -57,6 +57,16 @@ nav {
     color: lightgray;
 }
 
+.search_context {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 100px;
+    top: 60px;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
 .input_right_icons {
     display: flex;
     justify-content: flex-end;
