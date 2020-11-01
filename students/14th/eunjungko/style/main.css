@@ -181,26 +181,13 @@ nav {
   display: none;
 }
 
-.searchResultList::after {
-  content: '  ';
-  position: absolute;
-  top: 10px;;
-  left: 90px;
-  width: 1000px;
-  height: 50px;
-  border: 1px solid #dbdbdb;
-  transform: rotate(45deg);
-  background-color: red;
-  z-index: 1000;
-}
-
 .searchResultSet {
   display: flex;
   align-items: center;
-  background-color: white;
-  border-bottom: 1px solid #dbdbdb;
   width: 240px;
   height: 67px;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: white;
 }
 
 .searchResultImg {

@@ -38,12 +38,16 @@ function searchId() {
     });
     searchData = tempData.slice();
   });
-  searchData.forEach((e) => {
-    searchResultList.innerHTML += `<div class="searchResultSet">
+  if (searchData.length == 0) {
+    searchResultList.classList.add('displayNone');
+  } else {
+    searchData.forEach((e) => {
+      searchResultList.innerHTML += `<div class="searchResultSet">
     <img src="${e.imgUrl}"
     alt="userProfile" class="searchResultImg middle">
     <span class="userId">${e.userId}</span></div>`;
-  });
+    });
+  }
 }
 
 const cleanData = () => {
