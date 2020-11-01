@@ -1,4 +1,8 @@
 @import "/students/14th/seungyunlee/style/navbar.css";
+@import "/students/14th/seungyunlee/style/reset.css";
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: rgb(250, 250, 250);
@@ -16,9 +20,10 @@ article {
   margin: 0 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  background-color: white;
 }
 
 .feedName {
@@ -51,4 +56,95 @@ article {
 
 .name i {
   width: 45px;
+}
+
+.like {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.likeLeft i {
+  padding-right: 10px;
+}
+
+.feedBottom {
+  margin: 15px 15px;
+}
+
+.manyPeopleLikeIt {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 10px 0;
+}
+.manyPeopleLikeIt span {
+  margin-left: 10px;
+}
+
+.aPerson {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.picNoti {
+  width: 100%;
+}
+
+.more {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.mention {
+  width: 100%;
+  margin: 15px 0;
+}
+.mention p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.writeHere {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mentionBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 25px;
+}
+
+.mentionBox img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.metionEnter {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.write {
+  width: 75%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-left: 25px;
+  padding-left: 15px;
+}
+
+.enter {
+  border: none;
+  background-color: white;
+  color: rgb(192, 224, 253);
+  width: 15%;
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
 }

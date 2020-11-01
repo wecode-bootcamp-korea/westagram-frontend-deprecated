@@ -21,9 +21,10 @@ nav {
 }
 
 .nav__left--icons i {
-  color: rgba(128, 128, 128, 0.8);
+  color: rgba(128, 128, 128, 1);
   border-right: 2px solid rgba(0, 0, 0, 0.6);
-  padding-right: 20px;
+  border-radius: 1px;
+  padding-right: 50px;
   width: 35px;
   height: 35px;
 }
@@ -31,7 +32,7 @@ nav {
 .nav__left--icons img {
   height: 35px;
   padding-left: 20px;
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .nav__center--input {

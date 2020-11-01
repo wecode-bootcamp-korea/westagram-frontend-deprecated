@@ -1,8 +1,10 @@
 * {
   text-decoration: none;
-}
-
-body {
   margin: 0;
   padding: 0;
+}
+
+li,
+ul {
+  list-style: none;
 }
