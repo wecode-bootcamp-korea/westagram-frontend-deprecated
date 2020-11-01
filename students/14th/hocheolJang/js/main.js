@@ -31,6 +31,8 @@ function postComment() {
       <div class="commentBox">
         <span class="commentAccount">${asideProfileAccount}</span>
         <span class="comment">${comment}</span>
+        <span><button class="commentIcon commentRemove"><i class="fas fa-trash"></i></button></span>
+        <span><button class="commentIcon commentHeart"><i class="icon-heart-empty"></i></button></span>
       </div>
     `;
     commentContent.value = null;
@@ -48,6 +50,13 @@ commentContent.addEventListener("keydown", function (e) {
   }
 });
 
+//LikeComment
+
+const LikeComment = document.querySelector('.commentHeart');
+
+LikeComment.addEventListener('click', function(){
+  
+})
 
 
 

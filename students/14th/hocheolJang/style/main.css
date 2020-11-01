@@ -242,15 +242,14 @@ main {
 }
 
 .feedContentHeadIcon {
-  display: inline-block;
-  justify-content: flex-start;
-  flex-direction: column;
   position: relative;
   top: 8px;
   left: 10px;
-  margin: 0 5px;
+  display: inline-block;
+  justify-content: flex-start;
   width: 26px;
-  height: 26px;
+  /* height: 26px; */
+  margin: 0 5px;
 }
 .feedContentLike {
   font-size: 14px;
@@ -265,7 +264,7 @@ main {
 .commentsListContainer {
   width: 614px;
   overflow: hidden;
-  height: 60px;
+  height: 58px;
   /* border: 1px solid red; */
 }
 
@@ -308,7 +307,7 @@ main {
 
 .feedCommentInputContainer {
   width: 614px;
-  height: 56px;
+  height: 38px;
   border-top: 0.5px solid #dbdbdb;
   /* border: 1px solid red; */
 }
@@ -319,11 +318,10 @@ main {
   margin-top: 2px;
   overflow: auto;
   cursor: text;
-  border: none;
+  border: 0px solid white;
   /* border: 1px solid red; */
 }
 .postCommentBtn {
-
   width: 40px;
   height: 24px;
   border: none;
@@ -429,10 +427,10 @@ main {
 }
 
 .recommendationAccount {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   position: relative;
-  top: -8px;
+  top: -6px;
   left: 10px;
 }
 
@@ -491,7 +489,7 @@ main {
 
 .copyright {
   color: #c7c7c7;
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .cursorPointer {
@@ -510,6 +508,15 @@ main {
   transform: rotate(-45deg);
   position: relative;
   top: 5px;
+}
+
+.commentIcon {
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  display: inline;
+  float: right;
+  margin-right: 5px;
 }
 
 @media (max-width: 1050px) {
