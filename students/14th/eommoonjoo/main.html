@@ -3,23 +3,221 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>westagram</title>
     <link href="style/common.css" rel="stylesheet" type="text/css" />
      <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <nav id ="menu">
-      <ul>
-        <li><a href = "instagram.com"><img src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"></a></li>
-        <li><a href = "instagram.com"><img src = "img/logo_text.png"></a></li>
-        <input type ="text" id="searchBar" placeholder="검색">
-        <li><a href = "instagram.com"><img src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"></a></li>
-        <li><a href = "instagram.com"><img src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"></a></li>
-        <li><a href = "instagram.com"><img src = "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"></a></li>
-
-
-      </ul>
-    
+  <!-- 네비 -->
+      <section class="navBar">
+        <nav class="menu">
+          <div class="leftMenu">
+            <div>
+              <button type="button" class="resetButtonInstaIcon">
+                <img 
+                  class="instagramIcon" 
+                  alt="instagram Icon" 
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
+                >
+              </button>
+            </div>
+            <div>
+              <button type="button" class="resetButtonInstaLetter">
+                <img
+                  class="instagramLetter"
+                  alt="instagram Letter"
+                  src="img/logo_text.png"
+                >
+              </button>  
+            </div>
+          </div>
+          <div class="search">
+            <input
+              id="searchBar"
+              class="searchInfo"
+              type="text"
+              name="search bar"
+              placeholder="검색">
+          </div>
+          <div class="rightMenu">
+            <div>
+              <img
+                class="searchIcon"
+                alt="search Icon"
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+              >
+            </div>
+            <div>
+              <img
+                class="heartIcon"
+                alt="heart Icon"
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              >
+            </div>
+            <div>
+              <img
+                class="mypageIcon"
+                alt="mypage Icon"
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+              >
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- 메인페이지 -->
+      <div class="entirePage">
+        <div class="mainPage">
+          <div class="feeds">
+          <div class="mainPageHeader">
+            <div>
+              <button type="button" class="findWhoImage">
+                <img 
+                  class="circleImage"
+                  alt="circle Image"
+                  src="img/circleIcon.jpg"
+                >
+              </button>
+            </div>
+            <div>
+              <button type="button" class="findWhoLetter">
+                <a href ="www.instagram.com">eommoonjoo</a>
+              </button>
+            </div>
+          </div>
+          <div class="mainPageContents">
+            <img 
+              class="mainPageImage"
+              alt="main Page Image"
+              src="img/mainPageImage.jpg"
+            >
+          </div>
+          <div class="mainPageComments">
+            <div class="mainPageCommentsIcons">
+            <div class="mainPageCommentsIconsL">  
+            <div>
+                <img
+                  class="commentsHeart"
+                  art="comments Heart"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                >
+              </div>
+              <div>
+                <img
+                  class="speechBubleIcon"
+                  art="speech Buble Icon"
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png"
+                  >
+              </div>
+              <div>
+                <img
+                  class="shareIcon"
+                  art="share Icon"
+                  src=https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png
+                >
+              </div>
+            </div>
+            <div class="mainPageCommentsIconsR">
+              <img
+                class="bookMark"
+                art="bookMark"
+                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png"
+              >
+            </div>
+          </div>
+            <div class ="reply">
+              <p>lemon5625님 외 10명이 좋아합니다</p> 
+            </div>
+            <div class="replySample">
+              <div class="relySampleId">
+                <p>lemon5625</p>
+              </div>
+              <div class="replySmapleCt">
+                <span>가보고 싶은 곳이네요.</span>
+              </div>
+            </div>
+            <div>
+              <div class="addPlace"></div>
+            </div>
+            <div class = "realReply">
+              <div class ="replyInputBox">
+                <input 
+                  class = "replyIn"
+                  type="text" 
+                  placeholder="댓글 달기..."
+                  >
+                  <div class="replyApply">
+                    <button
+                      class = "buttonIn"
+                      type = "submit">게시</button>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      
+          <div class="mainPageRight">
+            <div class="mainPageRigtUp">
+            <div>
+              <button type="button" class="mainRfindWhoId">
+                <img 
+                  class="mainPageIdIcon"
+                  art="main Page Id Icon"
+                  src="img/mainRightId.jpg"
+                >
+              </button>
+            </div>
+            <div class="mainRfindWhoLetterSum">
+              <button type="button" class="mainRfindWhoLetter">
+                <a href ="www.instagram.com">we-work</a>
+              </button>
+              <div>
+                <p>위워크</p>
+              </div>
+            </div>
+          </div>
+          <div class="mainPageRightMid">
+            <div class="storyLetter">
+              <p>스토리</p>
+            </div>
+            <div class="storyLittleBox">
+              <img 
+                class="storyImage"
+                art="story image1"
+                src="img/story1.jpg"
+              >
+              <span>_yum_s<br>16분 전</span>
+            </div>
+            <div class="storyLittleBox">
+              <img
+                class="storyImage"
+                art="story image2"
+                src="img/story2.jpg"
+              >
+              <span>drink_eat_drink<br>3시간 전</span>
+            </div>
+            <div class="storyLittleBox">
+              <img
+                class="storyImage"
+                art="story image3"
+                src="img/story3.jpg"
+              >
+              <span>hyukyc<br>20시간 전</span>
+            </div>
+          </div>
+          <div class="mainPageRightEnd">
+            <div class="mainPageRightEndLetter">
+              <p>Instagram 정보∙지원∙홍보 센터∙API</p>
+              <p>채용정보∙개인정보처리방침∙약관∙</p>
+              <p>디렉토리∙프로필∙해시태그∙언어</p>
+              <p>2020 INSTAGRAM</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
     <script src="js/main.js"></script>
   </body>
 </html>
