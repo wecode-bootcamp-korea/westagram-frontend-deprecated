@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Main | Instagram</title>
-
   <!-- CSS & Icon  -->
   <link href="style/common.css" rel="stylesheet" type="text/css" />
   <link href="style/main.css" rel="stylesheet" type="text/css" />
@@ -19,7 +18,11 @@
         <img src="./img/icon/logo_text.png" id="title" />
       </div>
       <div class="nav-center item">
-        <input type="text" id="searchInputBox" placeholder="(돋보기)검색" />
+        <input type="text" id="searchInputBox" placeholder="검색" />
+        <!-- <div>
+            <span><img id ="searchIcon" src="./img/icon/search.svg" /></span>
+            <span id="searchInputText">검색</span>
+          </div> -->
       </div>
       <div class="nav-right item">
         <img src="./img/icon/home-fill.svg" id="homeNow" class="cursorPointer" />
@@ -110,24 +113,29 @@
                 <div>
                   <img src="./img/icon/heart.svg" class="feedContentHeadIcon cursorPointer" />
                   <img src="./img/icon/comment.png" class="feedContentHeadIcon cursorPointer" />
-                  <img src="./img/icon/paper-airplane.svg" class="feedContentHeadIcon cursorPointer feedContentMessage" />
+                  <img src="./img/icon/paper-airplane.svg"
+                    class="feedContentHeadIcon cursorPointer feedContentMessage" />
                   <img src="./img/icon/bookmark.png" class="feedContentHeadIcon cursorPointer floatRight bookmark" />
                 </div>
               </div>
               <div class="feedContentBody">
                 <div class="feedContentlikeContainer">
-                  <span class="feedContentLike">좋아요 1개</span>
+                  <span class="feedContentLike">좋아요 99개</span>
                 </div>
                 <div class="feedContentTextContainer">
                   <a href="#" class="feedContentTextAccount"><span>namubabo</span></a>
                   <span class="feedContentTextMessage">비닐가지고 장난치다가 검거</span>
-                  <p class="feedContentTextMessage">귀여운 자식...<a href="#" class="feedContentTextMore"><span>더
-                        보기</a></span></p>
+                  <a href="#" class="feedContentTextMore">
+                    <span>더 보기</span></a>
                 </div>
-                <div class="feedContentUploadTimeContainer">
-                  <span class="feedContntUploadTime">3시간 전</span>
+                <div class="commentsListContainer">
+                  <div class="commentBox">
+                    <span class="commentAccount"></span>
+                    <span class="comment"></span>
+                  </div>
                 </div>
-                <div class="feedCommentContainer">
+                <span class="feedContntUploadTime">3시간 전</span>
+                <div class="feedCommentInputContainer">
                   <input type="text" class="feedComment" placeholder="댓글 달기..." />
                   <button class="postCommentBtn">게시</button>
                 </div>
@@ -151,8 +159,10 @@
           </div>
           <div class="recommendationForMe">
             <div class="recommendationContainer">
-              <span class="recommendationTitle">회원님을 위한 추천</span>
-              <a href="#" class="ShowAll"><span>모두 보기</span></a>
+              <div class="recommendationHeader">
+                <span class="recommendationTitle">회원님을 위한 추천</span>
+                <span><a href="#" class="showAll">모두 보기</a></span>
+              </div>
               <div class="recommendationItemContainer">
                 <div class="recommendationItem">
                   <img src="./img/profile/profile10.jpg" class="recommendationItemProfileImage" />

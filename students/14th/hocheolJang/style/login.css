@@ -1,4 +1,4 @@
-.box {
+.loginBox {
   width: 350px;
   height: 380px;
   border: 1px solid #dbdbdb;
@@ -37,7 +37,7 @@
 
 } */
 
-#IdBox {
+#idContainer {
   width: 256px;
   height: 20px;
   padding: 9px 0 7px 8px;
@@ -50,7 +50,7 @@
   margin: 8px 40px 8px 40px;
 }
 
-#passwordBox {
+#passwordContainer {
     width: 256px;
     height: 20px;
     padding: 9px 0 7px 8px;
@@ -65,7 +65,7 @@
 
 }
 
-#loginBtn {
+#loginButton {
   width: 268px;
   height: 30px;
   margin: 8px 40px 8px 40px;
@@ -96,9 +96,17 @@ button:hover{
 
 #forgetPasswordbtn{
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  
 }
+
+/* #forgetPasswordbtn:visited{
+  text-decoration: none;
+} */
 
 #a:hover{
   /* font-weight: bolder; */
   cursor: pointer;
 }
+
