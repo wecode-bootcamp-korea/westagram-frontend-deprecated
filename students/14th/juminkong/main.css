@@ -14,8 +14,12 @@ body {
     border-bottom: 1px solid lightgray;
     position: fixed;
     width: 100%;
+    margin: 0;
+    top: 0;
+    color: white;
     background-color: #ffffff;
-    color: #ffffff;
+    list-style-type: none;
+    z-index: 3;
 }
 
 .instagram_icon img {
@@ -63,8 +67,9 @@ body {
 .main {
     display: flex;
     height: 100vh;
-    margin: 0 235px;
+    margin: 60px 235px;
     padding-top: 30px;
+    background-color: #fafafa;
 }
 
 .main_left {
@@ -86,7 +91,7 @@ body {
 
 .stories {
     position: relative;
-    padding: 0 4px;
+    padding: 0 10px;
 }
 
 .rainbow img {
@@ -96,8 +101,8 @@ body {
 
 .story_profile img {
     position: absolute;
-    top: 3px;
-    right: 7px;
+    top: 3.3px;
+    right: 13px;
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -164,15 +169,15 @@ body {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    width: 200px;
+    width: 175px;
     height: 29px;
     padding: 0 16px;
 } 
 
 .interaction_icon{
     position: relative;
-    top:-13px;
-    left:-40px;
+    top:-17px;
+    left:-30px;
     margin:0 20px;
     padding: 0px;
 }
@@ -197,8 +202,8 @@ body {
 }
 
 .whoLike {
-    width: 596px;
-    width: 598px;
+    width: 614px;
+    margin: 0;
     height: 20px;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
@@ -212,7 +217,7 @@ body {
 }
 
 .myFeedText {
-    width: 6px;
+    width: 614px;
     height: 18px;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
@@ -250,6 +255,14 @@ body {
     margin: 3px;
 }
 
+#feed_class {
+    font-weight: bold;
+}
+
+#feed_comment {
+    font-weight: normal;
+}
+
 .input_comment {
     width: 614px;
     padding: 0 0 0 0px;
@@ -263,13 +276,14 @@ body {
 }
 
 .add_comment{
-    width: 500px;
+    width: 550px;
     padding: 0 0 0 15px;
     font-size: 14px;
     line-height: 18px;
     box-sizing: border-box;
     border: none;
 }
+
 .container{
     display: flex;
     flex-direction: row;
@@ -277,10 +291,12 @@ body {
 }
 
 #btn {
-    margin: 10px;
+    margin: 10px auto;
     border: none;
     background-color: white;
-    color: #BEE2FC;
+    font-weight: bold;
+    color: #0095f6;
+    opacity: 0.5;
 }
 
 .main_right {
@@ -371,7 +387,7 @@ body {
     font-weight: 600;
 }
 
-.intro-1 {
+.intro_people {
     font-size: 12px;
     line-height: 14px;
     text-decoration: none solid rgb(142, 142, 142);

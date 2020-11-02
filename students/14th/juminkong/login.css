@@ -1,20 +1,19 @@
-
 .container {
     width: 350px;
     height: 380px;
     margin: 100px auto;
+    border: 1px solid #DBDBDB;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
-    background-color: #fff;
-    border: 1px solid #DBDBDB;
+    align-content: center;
 }
 
 img{
-    align-self: center;
     width: 175px;
     margin: 35px 0;
+    align-self: center;
 }
 
 input {
@@ -54,7 +53,6 @@ button {
     opacity: 0.5;
 }
 
-
 .forget {
     text-align: center;
     color: #385184;
@@ -66,8 +64,12 @@ a {
     text-decoration: none;
 }
 
-
+a:visited {
+    text-decoration: none;
+    color:black;
+}
 a:link {
     text-decoration: none;
     color: #2e5882;
+
 }
