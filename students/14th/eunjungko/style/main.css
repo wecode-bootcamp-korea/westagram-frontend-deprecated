@@ -1,9 +1,3 @@
-searchResultList.innerHTML += `<div class="searchResultSet">
-          <img src="${e.imgUrl}"
-          alt="userProfile" class="searchResultImg middle">
-          <span class="userId">${e.userId}</span></div>`;* {
-  font-size: 14px;
-}
 /* 전체 도큐먼트에 중복 할당되는 클래스 */
 .btn {
   height: 30px;
@@ -134,7 +128,6 @@ nav {
 }
 
 .searchInput.active {
-
   margin-left: 40px;
   color: #797878;
   border: none;
@@ -174,7 +167,7 @@ nav {
   overflow-y: auto;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
-  background-color:white;
+  background-color: white;
 }
 
 .searchResultList.displayNone {
