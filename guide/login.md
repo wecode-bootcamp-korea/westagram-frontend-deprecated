@@ -29,11 +29,11 @@
 다음 요구사항에 맞게 HTML을 작성해주세요.
 HTML을 작성할때는, 항상 디자인된 화면을 보면서 해야합니다.
 
-로그인 되지 않은 https://www.instagram.com/ 화면을 참고하여 만들어주세요.
+로그인 되지 않은 https://www.instagram.com/ 화면을 참고하거나 tobe 폴더의 login.png이미지를 참고해 만들어주세요.
 
 0. 로그인 전체를 감싸고 border가 적용된 div 태그가 필요합니다.
 
-1. instagram 로고는 img/logo_text.png를 사용해주세요.
+1. instagram 로고는 폰트를 이용해 'westagram'으로 작성해주세요.
 
 2. input 태그 사용
 

@@ -19,10 +19,6 @@
 
 ## 필요한 이미지
 
-- 로고
-  이미지 로고: https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png
-  텍스트 로고: img/logo_text.png
-
 - 우측 메뉴
   탐색: https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png
   하트: https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png
