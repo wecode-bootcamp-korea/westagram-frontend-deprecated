@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+  height: 54px;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+.nav_bar {
+  margin: 0 auto;
+  width: 910px;
+  height: 100%;
+  margin: 0, auto;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.nav_left {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_logo {
+  height: 22px;
+  width: 22px;
+}
+
+.nav_titile {
+  font-size: 22px;
+  font-family: "Lobster", cursive;
+  margin-left: 30px;
+}
+
+.nav_center {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#search {
+  height: 15px;
+  position: absolute;
+  left: 50px;
+}
+
+.search_bar {
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  width: 164px;
+  height: 22px;
+}
+
+.nav_right {
+  align-items: center;
+  display: flex;
+  padding-right: 24px;
+}
+
+.nav_right_imgs {
+  width: 198px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_right_img {
+  width: 22px;
+  height: 22px;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main_left {
+  width: 614px;
+  height: 893px;
+}
+
+.story_container {
+  border: 1px solid black;
+  height: 84px;
+  width: 612px;
+  padding: 16px, 0px;
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.story_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.story_name {
+  height: 14px;
+  font-size: 10px;
+}
+
+article {
+  width: 614px;
+  height: 893px;
+  background-color: black;
+}
+
+.header_container {
+  width: 614px;
+  height: 64px;
+  background-color: green;
+}
+.header_left {
+  padding: 16px;
+  display: flex;
+  justify-content: left;
+}
+
+.feed_header_img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.feed_header_name {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.feed_fictures {
+  height: 612px;
+  width: 612px;
+}
+
+.feed_ficture {
+}
+
+.main_right {
+  margin-left: 10px;
+  width: 293px;
+  height: 893px;
+  background-color: blue;
+}
