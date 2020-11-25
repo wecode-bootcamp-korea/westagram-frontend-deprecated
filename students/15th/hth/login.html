@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>westagram</title>
+    <link href="./img/instagram.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="img-container">
+        <img id="slide1" class="slide-img" src="./img/slide_img1.jpg" alt="" />
+        <img id="slide2" class="slide-img" src="./img/slide_img2.jpg" alt="" />
+        <img id="slide3" class="slide-img" src="./img/slide_img3.jpg" alt="" />
+        <img class="phone-img" src="./img/login_phoe_img.png" alt="" />
+      </div>
+      <section>
+        <div class="logo">Westagram</div>
+        <input placeholder="전화번호, 사용자 이름 또는 이메일" type="text" />
+        <input placeholder="비밀번호" type="password" />
+        <button disabled="false">로그인</button>
+        <div class="hr-box">
+          <div class="hr"></div>
+          <div class="hr-text">또는</div>
+          <div class="hr"></div>
+        </div>
+        <div class="facebook-box">
+          <img
+            class="facebook-logo"
+            src="./img/facebook.png"
+            alt="facebook-logo"
+          />
+          <div class="facebook-login">Facebook으로 로그인</div>
+        </div>
+        <div class="notice" style="display: none">test</div>
+        <a href="#"> 비밀번호를 잊으셨나요?</a>
+      </section>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

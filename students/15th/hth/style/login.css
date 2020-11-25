@@ -1,0 +1,128 @@
+html {
+  background-color: #fafafa;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.img-container {
+  position: relative;
+}
+.slide-img {
+  width: 240px;
+  height: 427px;
+  position: absolute;
+  top: 99px;
+  left: 151px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.phone-img {
+  width: 454px;
+  height: 618px;
+}
+section {
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0;
+  width: 350px;
+  background-color: white;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  font-size: 3em;
+  margin: 40px auto;
+}
+
+input {
+  width: 250px;
+  font-size: 13px;
+  height: 36px;
+  padding-left: 10px;
+  margin: 8px auto;
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+input:focus {
+  outline: none;
+  border: 1px solid rgb(150, 144, 144);
+}
+
+button {
+  border-radius: 4px;
+  width: 250px;
+  padding: 8px 1px;
+  margin: 20px auto;
+  background-color: #bbe0fc;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.activate-button {
+  cursor: pointer;
+  background-color: #0095f6;
+}
+
+.hr-box {
+  display: flex;
+  margin: 0 auto;
+  color: gray;
+}
+
+.hr {
+  width: 100px;
+  height: 1px;
+  background-color: gray;
+  margin: auto;
+}
+
+.hr-text {
+  font-size: 16px;
+  padding: 0 11.2px;
+}
+
+a {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #5f7e9f;
+  font-weight: 600;
+}
+.facebook-box {
+  display: flex;
+  margin: 20px auto 20px;
+}
+
+.facebook-login {
+  color: #4267b2;
+  font-size: 14px;
+  padding: 3px 8px;
+}
+.facebook-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.notice {
+  width: 265px;
+  margin: 0 auto;
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+}
