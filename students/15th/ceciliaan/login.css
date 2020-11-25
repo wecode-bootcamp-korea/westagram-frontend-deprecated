@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.allContainer {
+  border: 1px solid lightgrey;
+  width: 350px;
+  height: 418px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+header {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+input {
+  all: unset;
+  width: 268px;
+  height: 25px;
+  border: 2px solid #efefef;
+  background-color: #fafafa;
+  padding: 14px 0px 2px 8px;
+  border-radius: 5px;
+  display: block;
+  margin: 5px auto;
+}
+
+input::placeholder {
+  color: #999999;
+  line-height: 18px;
+}
+
+.id {
+  margin-top: 50px;
+}
+
+button {
+  all: unset;
+  width: 268px;
+  height: 30px;
+  font-weight: 600px;
+  font-size: 18px;
+  background-color: #c4e0fc;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+  display: block;
+  text-align: center;
+  margin-top: 90px;
+}
