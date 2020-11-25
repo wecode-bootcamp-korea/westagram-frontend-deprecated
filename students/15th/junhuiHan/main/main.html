@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>westagram main page</title>
+    <script
+      src="https://kit.fontawesome.com/074e697a30.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <p class="navbar-logo-p">Westagram</p>
+      </div>
+      <form class="navbar-search">
+        <input
+          type="text"
+          class="navbar-search-input"
+          placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp검색"
+        />
+        <i class="fas fa-search"></i>
+      </form>
+      <div class="navbar-icons">
+        <button class="navbar-icons-button">
+          <img src="img/explore.png" alt="explore" />
+        </button>
+        <button class="navbar-icons-button">
+          <img src="img/heart.png" alt="heart" />
+        </button>
+        <button class="navbar-icons-button">
+          <img src="img/profile.png" alt="profile" />
+        </button>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main-divcontrol">
+        <div class="main-story">
+          <div class="main-story-profile">
+            <img
+              class="main-story-profile-img"
+              src="img/profile1.jpg"
+              alt="profile1"
+            />
+            <p class="main-story-profile-nickname">토람이</p>
+          </div>
+          <div class="main-story-profile">
+            <img
+              class="main-story-profile-img"
+              src="img/profile2.jpg"
+              alt="profile2"
+            />
+            <p class="main-story-profile-nickname">말티즈는 참지 않긔</p>
+          </div>
+        </div>
+        <div class="main-feed">
+          <div class="main-feed-head">
+            <img
+              class="main-feed-head-profile_img"
+              src="img/head_img.jpg"
+              alt="profile"
+            />
+            <p class="main-feed-head-profile_nickname">다람이</p>
+          </div>
+          <img
+            class="main-feed-img"
+            src="img/superhero.jpg"
+            alt="superherolanding"
+          />
+          <div class="main-feed-buttons">
+            <div class="main-feed-threebuttons">
+              <button><i class="fas fa-heart"></i></button>
+              <button><i class="far fa-comment"></i></button>
+              <button><i class="fas fa-upload"></i></button>
+            </div>
+            <div class="main-feed-onebutton">
+              <button><i class="far fa-bookmark"></i></button>
+            </div>
+          </div>
+          <div class="main-feed-likes">
+            <img
+              class="main-feed-likes-img"
+              src="img/profile1.jpg"
+              alt="profile"
+            />
+            <p class="main-feed-likes-p">
+              <span class="main-feed-likes-p-span">토람이</span>님
+              <span class="main-feed-likes-p-span">외 10명</span>이 좋아합니다.
+            </p>
+          </div>
+          <div class="main-feed-detail">
+            <p class="main-feed-detail-p">
+              <span class="main-feed-detail-p_span">다람이</span> 아이언맨
+              따라하기
+            </p>
+          </div>
+          <div class="main-feed-comment">
+            <ul class="main-feed-comment-ul">
+              <li class="main-feed-comment-ul-li">
+                <span>다람이</span>&nbsp멋진 착륙 좋아요~!
+              </li>
+            </ul>
+            <form class="main-feed-comment-form">
+              <input
+                type="text"
+                class="main-feed-comment-form-input"
+                placeholder="댓글 달기..."
+              />
+              <button class="main-feed-comment-form-button">게시</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <aside class="main-aside">
+        <div class="main-aside-me">
+          <img class="main-aside-me-img" src="img/head_img.jpg" alt="" />
+          <div class="main-aside-me-p_control">
+            <p class="main-aside-me-p_nickname">다람이</p>
+            <p class="main-aside-me-p_name">다람쥐</p>
+          </div>
+          <button class="main-aside-me-button">전환</button>
+        </div>
+        <div class="main-aside-recommend">
+          <div class="main-aside-recommend-head">
+            <p class="main-aside-recommend-p">회원님을 위한 추천</p>
+            <p class="main-aside-recommend-p_view">모두보기</p>
+          </div>
+          <div class="main-aside-recommend-div">
+            <ul class="main-aside-recommend-ul">
+              <li class="main-aside-recommend-ul-li">
+                <img
+                  class="main-aside-recommend-ul-li-img"
+                  src="img/profile3.jpg"
+                  alt=""
+                />
+                <div class="main-aside-recommend-ul-li-div">
+                  <span class="main-aside-recommend-ul-li-div-span"
+                    >jiaaaaahye</span
+                  >
+                  <p class="main-aside-recommend-ul-li-div-p_detail">
+                    회원님을 위한 추천
+                  </p>
+                </div>
+                <button class="main-aside-recommend-ul-li-button">
+                  팔로우
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer class="main-aside-footer">
+          <p class="main-aside-footer-p_value">
+            westagram 정보∙지원∙홍보 센터∙API∙채용
+            정보∙개인정보처리방침∙약관∙디렉터리∙프로필∙해시태그∙언어
+          </p>
+          <p class="main-aside-footer-business">
+            © 2020 INSTAGRAM FROM FACEBOOK
+          </p>
+        </footer>
+      </aside>
+    </main>
+  </body>
+</html>

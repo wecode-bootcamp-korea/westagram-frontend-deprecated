@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+span {
+  font-weight: bold;
+}
+
+.navbar,
+.navbar-logo,
+.navbar-search,
+.navbar-icons {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.navbar {
+  height: 3em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10em;
+}
+
+.navbar-logo-p {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+}
+
+.navbar-search {
+  position: relative;
+  padding: 0.5em 0;
+  outline: none;
+}
+
+.fa-search {
+  font-size: 1em;
+  position: absolute;
+  right: 8em;
+  bottom: 1em;
+  color: gray;
+}
+
+.navbar-search-input {
+  width: 15em;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+}
+
+.navbar-icons {
+  margin-right: 10em;
+}
+
+.navbar-icons-button img {
+  width: 2em;
+  height: 2em;
+}
+
+.main {
+  display: flex;
+  margin: 0 10em;
+}
+
+.main-divcontrol {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-story {
+  display: flex;
+  border: 1px solid #dbdbdb;
+  margin: 2em 0;
+  padding: 1em;
+  height: 7em;
+  background-color: #ffffff;
+}
+
+.main-story-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.3em;
+}
+
+.main-story-profile-img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin-bottom: 0.3em;
+}
+
+.main-story-profile-nickname {
+  font-size: 0.7em;
+  margin-top: 0.2em;
+}
+
+.main-feed {
+  border: 1px solid#dbdbdb;
+  background-color: #ffffff;
+}
+
+.main-feed-head {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background-color: #ffffff;
+}
+
+.main-feed-head-profile_img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin-right: 0.7em;
+}
+
+.main-feed-head-profile_nickname {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.main-feed-img {
+  width: 39em;
+  height: 39em;
+}
+
+.main-feed-buttons {
+  display: flex;
+  align-content: space-around;
+  padding: 0.5em;
+}
+
+.main-feed-threebuttons {
+  margin: 0 27em 0 0.5em;
+}
+
+i {
+  font-size: 2em;
+}
+
+.main-feed-likes {
+  margin-top: 0;
+  display: flex;
+  padding: 0 1em;
+  align-items: center;
+}
+
+.main-feed-likes-img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 0 0.5em 0.6em 0;
+}
+
+.main-feed-comment-ul {
+  padding: 0 1em;
+}
+
+.main-feed-comment-form {
+  position: relative;
+  border-top: 1px solid #dbdbdb;
+}
+
+.main-feed-comment-form-button {
+  color: #b3dffc;
+}
+
+.main-feed-comment-form-input {
+  width: 100%;
+  height: 3em;
+  border-style: none;
+  padding: 1em;
+  font-size: 1em;
+}
+
+.main-feed-detail {
+  padding: 0 1em;
+}
+
+.main-feed-detail-p {
+  margin-top: 0;
+}
+
+.main-feed-comment-form-button {
+  position: absolute;
+  right: 1em;
+  top: 1.3em;
+}
+
+.main-feed-comment-ul-li {
+  margin: 0.5em 0;
+}
+
+.main-aside {
+  margin: 2em 0 0 1em;
+}
+
+.main-aside-me {
+  display: flex;
+  position: relative;
+  align-items: center;
+  align-content: space-between;
+}
+
+.main-aside-me-button {
+  position: absolute;
+  right: 0.3em;
+  top: 2.5em;
+  color: #0095f6;
+}
+
+.main-aside-me-img {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+.main-aside-me-p_name {
+  color: #8e8e8e;
+}
+
+.main-aside-recommend-head {
+  display: flex;
+  margin-left: 2em;
+  align-items: center;
+  font-size: 1em;
+}
+
+.main-aside-recommend-p {
+  color: #8e8e8e;
+}
+
+.main-aside-recommend-p_view {
+  margin-left: 11.5rem;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.main-aside-recommend-ul {
+  padding-left: 0.3em;
+  display: flex;
+}
+
+.main-aside-recommend-ul-li {
+  display: flex;
+  align-content: center;
+}
+
+.main-aside-recommend-ul-li-img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 0 1em;
+}
+
+.main-aside-me-p_nickname {
+  font-weight: bold;
+}
+
+.main-aside-me-p_nickname,
+.main-aside-me-p_name,
+.main-aside-recommend-ul-li-div-p_detail {
+  margin: 0;
+}
+
+.main-aside-recommend-ul-li-div-p_detail {
+  color: #8e8e8e;
+  font-size: 0.7rem;
+}
+
+.main-aside-recommend-ul-li-button {
+  color: #0095f6;
+  margin-left: 13.7em;
+}
+
+.main-aside-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1em;
+  color: #aeaeae;
+  font-size: 0.8em;
+}
