@@ -1,3 +1,5 @@
+Auto close tag
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,10 +13,7 @@
       rel="stylesheet"
     />
     <script src="main.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/31bb0af018.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/31bb0af018.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -22,13 +21,13 @@
         <div class="nav_container">
           <div class="nav_left">
             <div class="nav_icon">
-              <img src="/imgs/logo.png" alt="" class="nav_logo" />
+              <img src="imgs/logo.png" alt="" class="nav_logo" />
             </div>
             <div class="nav_titile">Westagram</div>
           </div>
 
           <div class="nav_center">
-            <img src="/imgs/search.png" alt="" id="search" />
+            <img src="imgs/search.png" alt="" id="search" />
             <input type="text" placeholder="검색" class="search_bar" />
           </div>
 
@@ -48,13 +47,13 @@
         <div class="story_container">
           <div class="story">
             <div class="story_picture">
-              <img src="/imgs/pangsu.jpg" alt="" class="story_img" />
+              <img src="imgs/pangsu.jpg" alt="" class="story_img" />
             </div>
             <div class="story_name">pangsu</div>
           </div>
           <div class="story">
             <div class="story_picture">
-              <img src="/imgs/pangsu.jpg" alt="" class="story_img" />
+              <img src="imgs/pangsu.jpg" alt="" class="story_img" />
             </div>
             <div class="story_name">pangsu</div>
           </div>
@@ -64,7 +63,7 @@
             <div class="feed_header">
               <div class="header_left">
                 <div class="feed_header_imgs">
-                  <img src="/imgs/face.jpeg" alt="" class="feed_header_img" />
+                  <img src="imgs/face.jpeg" alt="" class="feed_header_img" />
                 </div>
                 <div class="">
                   <p class="feed_header_name">pangsu</p>
@@ -72,7 +71,9 @@
               </div>
 
               <div class="header_right">
-                <div class="addIcon"></div>
+                <div class="addIcon">
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -82,22 +83,47 @@
           </div>
 
           <div class="feed_icons">
-            <div class="feed_ions_left"></div>
-            <div class="feed_icons_right"></div>
+            <div class="feed_ions_left">
+              <div><img src="imgs/heart.png" alt="" class="like"></div>
+            <div ><img src="imgs/speech-bubble.png" alt="" class="content"></div>
+            <div ><img src="imgs/direct.png" alt="" class="comment"></div>
+            </div>
+            <div class="feed_icons_right"><i class="far fa-bookmark"></i></div>
           </div>
-          <div class="feed_content">
-            <div class="likeNum"></div>
-            <div class="content"></div>
-            <div class="comment"></div>
+          <dlv class="likeNum">
+            <button class="likeNum_btn">좋아요 111,111개</button>
+          </dlv>
+          <div></div>
+          <div id="feed_content">
+          11111
           </div>
+          <div id="feed_content">
+          aaaaa
+          </div>
+          <div id="feed_content">
+            aaaaa
+            </div>
+            <div id="feed_content">
+              aaaaa
+              </div>
 
           <div class="add_comment">
-            <input type="text" placeholder="댓글 달기..." />
-            <button class="addBtn">게시</button>
+            <input type="text" placeholder="댓글 달기..." / class ="add_input">
+            <div class="addBtn"><button class="add" >게시</button></div>
           </div>
         </article>
       </div>
-      <div class="main_right">1111</div>
+      <div class="main_right">
+        <div class="main_right_avator_container">
+          <div class="main_right_avator_imgs">
+            <img src="imgs/face.jpeg" alt="" class="avator_img">
+          </div>
+          <div class="avator_info">
+          <div class="main_right_avator_ids">yongjl11</div>
+          <div class="main_right_avator_names">펭수</div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

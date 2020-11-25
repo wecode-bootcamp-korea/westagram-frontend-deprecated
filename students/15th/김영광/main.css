@@ -102,13 +102,14 @@ main {
 }
 
 .story_container {
-  border: 1px solid black;
-  height: 84px;
+  border: 1px solid #bdbbbb;
+  height: 100px;
   width: 612px;
   padding: 16px, 0px;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   align-items: center;
+  border-radius: 3px;
 }
 
 .story {
@@ -127,6 +128,7 @@ main {
   margin-left: 10px;
 }
 .story_name {
+  padding : 5px;
   height: 14px;
   font-size: 10px;
 }
@@ -134,42 +136,142 @@ main {
 article {
   width: 614px;
   height: 893px;
-  background-color: black;
 }
 
 .header_container {
+  border: 1px;
   width: 614px;
   height: 64px;
-  background-color: green;
+  display: flex;
+  justify-content: space-between;
 }
 .header_left {
   padding: 16px;
   display: flex;
-  justify-content: left;
 }
 
 .feed_header_img {
   height: 32px;
   width: 32px;
   border-radius: 50%;
+  border: 1px solid lightgray;
 }
 
 .feed_header_name {
   font-size: 15px;
   margin-left: 10px;
+  margin-top: 9px;
 }
 
-.feed_fictures {
+
+.feed_ficture {
   height: 612px;
   width: 612px;
 }
 
-.feed_ficture {
-}
-
 .main_right {
-  margin-left: 10px;
+  margin-left: 30px;
   width: 293px;
   height: 893px;
-  background-color: blue;
 }
+
+.feed_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed_ions_left {
+  display: flex;
+}
+
+.like,
+.content{
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+}
+.comment {
+  height: 43px;
+  width: 43px;
+  padding-bottom: 5px;
+}
+
+.feed_icons_right {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-bookmark {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.likeNum{
+  height: 18px;
+  
+}
+
+.likeNum_btn {
+  text-align: center;  
+  font-size: 12px;
+  height: 18px;
+  width: 120px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+#feed_content{
+  width: 400px;
+  height: 18px;
+  position: relative;
+  left: 15px;
+}
+
+.add_input {
+  width: 614px;
+  height: 58px;
+} 
+
+.add_comment {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  
+}
+
+.addBtn {
+  position: absolute;
+    margin-top: 20px;
+    right: 10px;
+  }
+
+  .add{
+    border: 0;
+    outline: 0;
+  }
+
+  .main_right_avator_container{
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .main_right_avator_imgs{
+    height: 58px;
+    width: 58px;
+  }
+
+  .avator_img {
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    margin-top: 15px;
+  }
+
+  .avator_info {
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 13px;
+  }
