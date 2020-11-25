@@ -1,0 +1,282 @@
+
+.nav {
+    height: 77px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.navLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.navLogo i {
+    margin-right: 15px; 
+}
+
+.navLogoBar {
+    width: 2px;
+    height: 30px;
+    background-color: black;
+    margin-right: 15px;
+
+}
+
+.navLogoInsta {
+    font-family: 'Lobster', cursive;
+    
+}
+
+.navSearch {
+    display: flex;
+    align-items: center;
+}
+
+.navSearchInput {
+    width: 210px;
+    height: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    padding: 0, 50px;
+
+}
+
+.navSearchInput:focus {
+    outline: none;
+}
+
+.navSearchInput::placeholder {
+    font-family: FontAwesome;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center; 
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.navIcons i:first-child, .navIcons i:nth-child(2) {
+    margin-right: 30px;  
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+.mainFeed {
+    width: 620px;
+    height: 760px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: white;
+    margin-right: 30px;
+}
+
+.mainFeedTitle {
+    width: 620px;
+    height: 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainFeedTitle i {
+    margin-right: 20px;
+}
+
+.mainFeedTitleName {
+    display: flex;
+    align-items: center;
+
+}
+
+.mainFeedTitleName img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 20px;
+    z-index: 1;
+
+}
+
+.mainFeedTitleName div {
+    font-weight: 700;
+}
+
+.mainFeedPic img {
+    width: 620px;
+    height: 460px;
+
+}
+
+.mainFeedIcons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.mainFeedIconsLeft, .mainFeedIconsRight {
+    font-size: 28px;
+}
+
+.mainFeedIconsLeft i:first-child, .mainFeedIconsLeft i:nth-child(2) {
+    margin-right: 10px;
+}
+
+.mainFeedLike {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.mainFeedLike img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+
+.mainFeedLike span:nth-child(2), .mainFeedLike span:nth-child(4) {
+    font-weight: 700;
+}
+
+.mainFeedLike span:nth-child(3) {
+    margin-right: 5px;
+}
+
+.mainFeedContent {
+    margin: 15px 20px;
+}
+
+.mainFeedContent span:first-child {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.mainFeedContent span:last-child {
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mainFeedComments {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.mainFeedComment {
+    margin-bottom: 5px;
+}
+
+.mainFeedComment span:first-child {
+    font-weight: 700;
+    
+}
+
+.mainFeedCommentBox {
+    height: 70px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainFeedCommentBoxInput, .mainFeedBtn {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+}
+
+.mainFeedCommentBoxInput:focus, .mainFeedBtn:focus {
+    outline: none;
+}
+
+.mainFeedCommentBoxInput {
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+.mainFeedBtn {
+    color: #CAE3FC;
+    margin-right: 20px;
+}
+
+
+//////nav, mainRight 고정시키기
+
+
+.mainRight {
+    width: 310px;
+    height: 450px;
+}
+
+.mainRightUser {
+    width: 310px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.mainRightUserLeft {
+    display: flex;
+    align-items: center;
+
+}
+
+.mainRightUserLeft img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.mainRightUserLeftProfileId {
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.mainRightUserLeftProfileDes {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.mainRightStory {
+    width: 310px;
+    height: 220px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 15px 15px;
+}
+
+.mainRightStoryTitle {
+    width: 310px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainRightStoryTitle span:first-child {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.mainRightStoryUpdate img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    
+}

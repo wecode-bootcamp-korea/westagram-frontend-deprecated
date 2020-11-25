@@ -1,0 +1,48 @@
+
+.frame {
+    width: 350px;
+    height: 378px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 30px;    
+}
+
+.loginIdInput, .loginPasswordInput {
+    width: 250px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FAFAFA;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 0 10px;
+    margin-bottom: 7px;
+}
+
+.btn {
+    width: 272px;
+    height: 30px;
+    color: white;
+    background-color: #CAE3FC;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 90px;
+}
+
+.forgetQ {
+    font-size: 13px;
+    font-weight: 400;
+    color: #023A6D;
+}
