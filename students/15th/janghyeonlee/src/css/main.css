@@ -73,6 +73,7 @@ nav {
 }
 
 .nav-search {
+  position: relative;
   width: 215px;
   height: 28px;
   background-color: var(--light-gray);
@@ -80,7 +81,6 @@ nav {
 
 .nav-search input{
   padding-left: 23px;
-  color: var(--dark-gray);
   font-weight: 300;
 }
 
@@ -103,6 +103,25 @@ nav {
   border-radius: 100%;
 }
 
+.nav-search-modal{
+  display: none;
+  position: absolute;
+  top: 45px;
+  width: 215px;
+  height: 300px;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.nav-search-modal::-webkit-scrollbar{
+  display: none;
+}
+.user-in-nav-search-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
 
 
 /* main */

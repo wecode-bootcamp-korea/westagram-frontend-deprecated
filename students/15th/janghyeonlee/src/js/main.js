@@ -1,11 +1,16 @@
+import { dummyUser } from './dummy_users.js';
 const commentSubmitBtn = document.querySelector('.feed-comment-upload-button button');
 const commentInput = document.querySelector('.feed-new-comment-input');
-const currentUser = "id4"
+const navSearchInput = document.querySelector('input.nav-search');
+const navSearchUserModal = document.querySelector('section.nav-search-modal');
+
+const currentUser = "jhyeon_300";
+
 // 전역 변수로 있는 것이 불편하다. 클로저를 써서 해결해보고 싶다.
 let commentSideInfo = document.getElementsByClassName('comment-side-info');
 
 // 엔터 혹은 게시 버튼을 눌렀을 때 댓글을 업로드 하는 함수.
-commentUpload = () => {
+function commentUpload() {
   let commentsList = document.getElementById('feed-comment-list');
   let newList = document.createElement('li');
   const newCommentInput = document.getElementsByClassName('feed-new-comment-input')[0].value;
@@ -33,7 +38,7 @@ commentUpload = () => {
   }
 }
 
-uploadIfEnterKey = (e) => {
+function uploadIfEnterKey(e) {
   if(e.keyCode === 13){
     commentUpload();
   }
@@ -75,12 +80,48 @@ function updateCommentNodes() {
   handleCommentSideClick();
 }
 
-init = () => {
+function showSearchResult() {
+  if(!navSearchInput.value){
+    navSearchUserModal.style.display = "none";
+  }else{
+    navSearchUserModal.style.display = "block";
+  }
+}
+
+function onNavSearchFocus() {
+  navSearchInput.style.backgroundColor = "white";
+  navSearchInput.style.color = "black"
+  navSearchInput.addEventListener('input', showSearchResult);
+}
+
+function onNavSearchBlur() {
+  navSearchInput.style.backgroundColor = "transparent";
+  navSearchUserModal.style.display = "none";
+  navSearchInput.style.color = "var(--darker-gray)"
+}
+
+function createDummyUserList() {
+  const userNum = dummyUser.length;
+  let newUser = document.createElement('div');
+  newUser.classList.add('user-in-nav-search-modal');
+  for(let i=0; i<userNum; i++){
+    newUser.innerHTML = dummyUser[i];
+    console.log(dummyUser[i]);
+    console.log(newUser.innerHTML)
+    console.log(newUser)
+    navSearchUserModal.appendChild(newUser);
+  }
+
+}
+
+function init() {
   commentSubmitBtn.addEventListener('click', commentUpload);
   commentInput.addEventListener('keypress', uploadIfEnterKey);
-
+  navSearchInput.addEventListener('focus', onNavSearchFocus);
+  navSearchInput.addEventListener('blur', onNavSearchBlur);
   //update if comment already exists on feed.
   updateCommentNodes();
+  createDummyUserList();
 };
 
 init();
