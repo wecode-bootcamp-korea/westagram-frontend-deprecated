@@ -14,5 +14,3 @@ function pushcomment(init) {
   document.getElementById("list").appendChild(li);
   comment.value = "";
 }
-
-button.addEventListener("keydown");

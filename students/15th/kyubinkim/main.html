@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>westagram</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h4>westagram</h4>
+        <div class="search">
+          <input type="text" placeholder="검색" />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="icon">
+          <a href=""
+            ><img
+              src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+              alt=""
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-left">
+        <div class="story">
+          <div class="story-wrap">
+            <div class="story-box">
+              <img
+                src="https://i.pinimg.com/564x/1b/d9/62/1bd9622642721f5ac5e5f75bc1e214b2.jpg"
+                alt=""
+              />
+              <span>UserName</span>
+            </div>
+            <div class="story-box">
+              <img
+                src="https://i.pinimg.com/236x/d4/2f/94/d42f940c0bab85ee728805175f242d59.jpg"
+                alt=""
+              />
+              <span>UserName</span>
+            </div>
+          </div>
+        </div>
+        <div class="feeds">
+          <article>
+            <div class="feeds-header">
+              <img
+                src="https://i.pinimg.com/564x/46/d6/f3/46d6f351007f494efdd48406b792e3fd.jpg"
+                alt=""
+              />
+              <h2>UserName</h2>
+            </div>
+            <div class="feeds-img">
+              <img
+                src="https://i.pinimg.com/564x/2b/dc/f8/2bdcf8d6a3040536324c58504cd25cff.jpg"
+                alt=""
+              />
+            </div>
+            <div class="feeds-like">
+              <i class="far fa-heart"></i>
+              <i class="far fa-comment"></i>
+              <i class="fas fa-share"></i>
+              <i class="far fa-bookmark"></i>
+            </div>
+            <div class="feeds-howmanylike">좋아요 33,333개</div>
+            <div id="list" class="feeds-comment"></div>
+            <form class="box" onsubmit="return false">
+              <input id="textarea" type="text" placeholder="댓글 달기..." />
+              <button id="button" onclick="pushcomment()">게시</button>
+            </form>
+          </article>
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="myprofile">
+          <img
+            src="https://i.pinimg.com/564x/46/d6/f3/46d6f351007f494efdd48406b792e3fd.jpg"
+            alt=""
+          />
+          <span>
+            <h2>UserName</h2>
+            UserProfile</span
+          >
+        </div>
+        <div class="morepeople">
+          <div class="morepeople-header">
+            <span>회원님을 위한 추천</span>
+            <button>모두보기</button>
+          </div>
+          <div class="morepeople-content">
+            <img
+              src="https://i.pinimg.com/564x/9f/2a/7d/9f2a7d6fa9043cdfa76154ae99da7199.jpg"
+              alt=""
+            />
+            <div class="morepeople-content-profile">
+              <div class="preofile-content">
+                <span>UserName</span>
+                <span>UserProfile</span>
+              </div>
+              <button>팔로우</button>
+            </div>
+          </div>
+          <div class="morepeople-content">
+            <img
+              src="https://i.pinimg.com/564x/1d/a8/36/1da836f447798c960be3b64a7702353d.jpg"
+              alt=""
+            />
+            <div class="morepeople-content-profile">
+              <div class="preofile-content">
+                <span>UserName</span>
+                <span>UserProfile</span>
+              </div>
+              <button>팔로우</button>
+            </div>
+          </div>
+          <div class="morepeople-content">
+            <img
+              src="https://i.pinimg.com/564x/9f/2a/7d/9f2a7d6fa9043cdfa76154ae99da7199.jpg"
+              alt=""
+            />
+            <div class="morepeople-content-profile">
+              <div class="preofile-content">
+                <span>UserName</span>
+                <span>UserProfile</span>
+              </div>
+              <button>팔로우</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
