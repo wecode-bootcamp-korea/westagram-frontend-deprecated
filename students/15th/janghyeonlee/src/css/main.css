@@ -304,8 +304,11 @@ button.feed-header-menu{
   width: 335px;
 }
 
-/* 아래 css why it works? */
 .fixed-aside{
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  position: fixed;
   padding-top: 10px;
 }
 .aside-recommend-box{ 
