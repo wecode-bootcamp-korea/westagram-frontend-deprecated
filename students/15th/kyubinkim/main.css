@@ -10,6 +10,9 @@
 body {
   background-color: #fafafa;
 }
+button {
+  outline: none;
+}
 header {
   background-color: #fff;
   height: 54px;
