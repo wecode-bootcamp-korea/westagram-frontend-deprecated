@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+:root {
+  --font-size-supersmall: 12px;
+  --font-size-extrasmall: 12.5px;
+  --font-size-small: 14px;
+  --font-size-regular: 15px;
+  --font-size-medium: 16px;
+
+  --font-weight-light: 200;
+  --font-weight-regular: 300;
+  --font-weight-medium: 400;
+  --font-weight-bold: 600;
+  
+  --font-color-lightgray: #bdbdbd;
+  --font-color-gray: #909090;
+  --font-color-black: #191919;
+
+  --font-color-lightblue: #bbd6ed;;
+  --font-color-blue: #1e93f2;
+
+  --border-line-gray: #ddd;
+
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--font-color-black);
+  font-family: proxima-nova, sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #191919;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* ============================================= */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #f7f8f9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 360px;
+  height: 420px;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 4px;
+  border: 1px solid var(--border-line-gray);
+
+  padding: 26px 40px;
+}
+
+.westa-logo {
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+  color: #191919;
+
+  margin-top: 10px;
+}
+
+.form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-bottom: 36px;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-bottom: 10px;
+}
+
+.form-control.success input {
+  border: 2px solid var(--success-color);
+}
+.form-control.error input {
+  border: 2px solid var(--error-color);
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  background: #fafafa;
+
+  border: none;
+  border-radius: 3px;
+  border: 1px solid #f1f1f1;
+
+  font-size: var(--font-size-extrasmall);
+  font-weight: var(--font-weight-medium);
+  color: var(--font-color-gray);
+
+  padding: 0 10px;
+  margin-bottom: 6px;
+}
+
+input:focus {
+  outline: none;
+}
+
+small {
+  visibility: hidden;
+  font-size: var(--font-size-extrasmall);
+  font-weight: var(--font-weight-medium);
+  color: var(--error-color);
+}
+
+form-control.error small {
+  visibility: visible;
+}
+
+button {
+  width: 100%;
+  height: 42px;
+  background: #d0e9fe;
+
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 6px;
+  /* margin: 6px 0 20px 0; */
+}
+
+button.active {
+  background: #1e93f2;
+  cursor: pointer;
+}
+
+.find-password {
+  color: #064a81;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 350;
+  letter-spacing: -0.3px;
+
+  cursor: pointer;
+}
