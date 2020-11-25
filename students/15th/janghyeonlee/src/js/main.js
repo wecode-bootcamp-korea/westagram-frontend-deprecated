@@ -46,21 +46,33 @@ function increaseHeartNum(e) {
   heartNumberElement.innerHTML = currentHeartNum +1;
 }
 
-function handleCommentHeartClick() {
+function deleteComment(e) {
+  // 삭제 버튼을 누른 댓글에 해당하는 댓글 li HTML element
+  const commentElement = e.path[2];
+  commentElement.remove();
+  console.log("removed!")
+  updateCommentNodes();
+}
+
+function handleCommentSideClick() {
   /* 
-   commentSideInfo.child nodes
-   [0]: p.comment-heart-number
-   [1]: div.comment-heart-button
-   [2]: p.comment-delet.button
+    commentSideInfo.child nodes
+    [0]: p.comment-heart-number
+    [1]: div.comment-heart-button
+    [2]: p.comment-delet.button
   */
   for(let i=0; i<commentSideInfo.length; i++){
+    // handle comment heart click 
     commentSideInfo[i].children[1].addEventListener('click', increaseHeartNum)
+    // handle comment delete click
+    commentSideInfo[i].children[2].addEventListener('click', deleteComment)
   }
+
 }
 
 function updateCommentNodes() {
   commentSideInfo = document.getElementsByClassName('comment-side-info');
-  handleCommentHeartClick();
+  handleCommentSideClick();
 }
 
 init = () => {
@@ -69,7 +81,6 @@ init = () => {
 
   //update if comment already exists on feed.
   updateCommentNodes();
-  //document.addEventListener("DOMNodeInserted", updateCommentNodes)
 };
 
 init();
