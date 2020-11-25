@@ -46,8 +46,8 @@ function uploadIfEnterKey(e) {
 
 function increaseHeartNum(e) {
   // 하트를 누른 댓글에 해당하는 하트 수 HTML element
-  const heartNumberElement = e.path[2].children[0];
-  const currentHeartNum = Number(heartNumberElement.innerHTML)
+  const heartNumberElement = e.path[2].querySelector('.comment-heart-number');
+  const currentHeartNum = Number(heartNumberElement.innerHTML);
   heartNumberElement.innerHTML = currentHeartNum +1;
 }
 
