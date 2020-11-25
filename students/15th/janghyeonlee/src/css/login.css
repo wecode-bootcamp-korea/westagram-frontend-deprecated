@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --title-box-height: 119px;
+  --login-box-height: 378px;
+  --login-box-width: 348px;
+  --westagram-dark-gray: rgb(219, 219, 219);
+  --westagram-light-gray: #FAFAFA;
+}
+
+body {
+  background-color: var(--westagram-light-gray);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 300px;
+  height: var(--login-box-height);
+  width: var(--login-box-width);
+  background-color: white;
+  border: 1px solid var(--westagram-dark-gray);
+}
+
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 50px;
+  font-family: 'Lobster', cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input.id, input.password{
+  height: 36px;
+  width: 266px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border: 1px solid var(--westagram-dark-gray);
+  background-color: var(--westagram-light-gray);
+  border-radius: 3px;
+}
+
+button.login-button {
+  height: 30px;
+  width: 268px;
+  margin-top: 14px;
+  background-color: #C5E0FC;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+input.password {
+  margin-top: 6px;
+}
+
+.valid-check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valid-check-message {
+  display: none;
+  font-size: 14px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 135px;
+  color: rgb(0,55,107);
+  font-size: 12px;
+}
