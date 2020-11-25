@@ -1,0 +1,255 @@
+[33mcommit fbf57d659d5d5334069318a51ffd685b1865b3da[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/chan[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: 김신영 <shinyeong@gimsin-yeong-ui-MacBookPro.local>
+Date:   Tue Nov 24 17:36:46 2020 +0900
+
+    Refactor: md 파일 수정
+
+[33mcommit 38898c2145f9962becfcd4a5450f8a2bd3f2a19c[m
+Author: 김신영 <shinyeong@gimsin-yeong-ui-MacBookPro.local>
+Date:   Mon Nov 23 13:44:33 2020 +0900
+
+    Add: 15th 폴더 추가
+
+[33mcommit afe913de26414921443c797f74ad384ab537feb2[m
+Merge: 4645012 b33c30f
+Author: shinyeong <61774575+bonbon0202@users.noreply.github.com>
+Date:   Mon Nov 23 10:56:52 2020 +0900
+
+    Merge pull request #150 from wecode-bootcamp-korea/jaewon
+    
+    [14기 장재원] 초기세팅
+
+[33mcommit 4645012682eb2ca9286680590f63737adbb2c4b7[m
+Merge: c4f8daa 158212c
+Author: shinyeong <61774575+bonbon0202@users.noreply.github.com>
+Date:   Mon Nov 23 10:56:25 2020 +0900
+
+    Merge pull request #153 from wecode-bootcamp-korea/feature/eunjungko
+    
+    [14기 고은정] 초기 세팅 완료
+
+[33mcommit 158212cd56e6c941e27bc7b20fd75a6639169584[m[33m ([m[1;31morigin/feature/eunjungko[m[33m)[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Tue Nov 3 09:38:36 2020 +0900
+
+    [Refactor] CSS 오류 수정
+
+[33mcommit 3268db15870f2122d0ac6979cd969e31a8e53da6[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Mon Nov 2 01:24:48 2020 +0900
+
+    [Fix] Search result 없을 시 리스트 표시되는 오류 수정
+
+[33mcommit c0c155c34b3f43e91af51c8569c9ef3058b88004[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Mon Nov 2 00:56:57 2020 +0900
+
+    [Fix] Search data list 버그 수정
+
+[33mcommit b33c30fe74e58b36d936548b5a57202bdd523fa7[m[33m ([m[1;31morigin/jaewon[m[33m)[m
+Author: appWon <korkrip11@gmail.com>
+Date:   Sat Oct 31 22:19:24 2020 +0900
+
+    필수 구현항목 MISSION8 , MISSION7 , MISSION6 추가 및 검색 리스트 데이터 추가
+
+[33mcommit 36357c07e27f02043e3de76e315a1aca5b3bd3df[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Sat Oct 31 19:31:28 2020 +0900
+
+    [Add] 네비바 아이디 검색 기능 추가
+
+[33mcommit 9677892f40958fe3847b34be7d0bd20de146a879[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Fri Oct 30 18:59:29 2020 +0900
+
+    [Refactor] 리뷰 반영 코드 리팩토링 완료
+
+[33mcommit 49881de96a064a47453a9ac3499ef30cc998742c[m
+Merge: 81040bc 01d7299
+Author: positiveko <edie_ko@naver.com>
+Date:   Fri Oct 30 09:44:42 2020 +0900
+
+    Merge branch 'feature/eunjungko' of https://github.com/wecode-bootcamp-korea/westagram-frontend into feature/eunjungko
+
+[33mcommit 81040bc540177148910d708b8d22f43259c52476[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Fri Oct 30 09:43:28 2020 +0900
+
+    Refactor: 불필요 파일 삭제
+
+[33mcommit f690df1f40d316d02f632868846d8d5c785241f6[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Fri Oct 30 09:34:22 2020 +0900
+
+    Refactor: CSS 불필요 코드 삭제
+
+[33mcommit 01d72993b13ab98e766784bce5ee777bd05665fd[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Fri Oct 30 09:34:22 2020 +0900
+
+    CSS 불필요 코드 삭제
+
+[33mcommit 35611e7c60dc86916511bfc3b590004e2d3bdcfe[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Fri Oct 30 09:28:15 2020 +0900
+
+    refactor: 코드 가독성 높임
+
+[33mcommit 6a92faf8ff34b9d8120bdb790ebca63d36f76068[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Fri Oct 30 08:42:43 2020 +0900
+
+    Refactor: 변수명 정리 및 불필요 코드 삭제
+
+[33mcommit 21e1acbb43abf69873f5b145606f91428deb8099[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Thu Oct 29 20:21:54 2020 +0900
+
+    Refactor: 불필요 코드 삭제 및 코드 정리
+
+[33mcommit 1672d31ce8f11cd74f11a69715d42d247f36fb2a[m
+Author: appWon <korkrip11@gmail.com>
+Date:   Thu Oct 29 19:52:47 2020 +0900
+
+    main 홈페이지 반응형으로 적용 및 세메틱 태그 변경
+
+[33mcommit 1842baa127ac7d1cd787db4ef7db84f55e8713a6[m
+Author: appWon <korkrip11@gmail.com>
+Date:   Thu Oct 29 00:44:13 2020 +0900
+
+    main.html 파일 레이아웃 및 css 수정, login.html은 반응형 사이트 적용
+
+[33mcommit 1dba01d97fbfad9efff63aeb83810e51d8a11056[m
+Author: positiveko <edie_ko@naver.com>
+Date:   Wed Oct 28 20:45:56 2020 +0900
+
+    set: 환경 세팅
+
+[33mcommit 92b65d0178827245193a5b53585810d7458843ef[m
+Author: appWon <korkrip11@gmail.com>
+Date:   Wed Oct 28 20:42:39 2020 +0900
+
+    미완성이지만 지금까지 만든 login.html , 레이아웃 만 구성한 main.html
+
+[33mcommit c4f8daa37a2abaeb195c49aa1311fce3669532c7[m
+Author: Joon Sik Yang <joonsikyang@gmail.com>
+Date:   Wed Oct 28 17:16:14 2020 +0900
+
+    Update README.md
+
+[33mcommit 2cda065a323c4ad795c85de2844e179520201667[m
+Merge: b56ddc1 42ebd8c
+Author: claire-euni <61927257+claire-euni@users.noreply.github.com>
+Date:   Mon Oct 26 15:01:25 2020 +0900
+
+    Merge pull request #146 from wecode-bootcamp-korea/feature/makeNewFolder
+    
+    Add: 14th 폴더 생성
+
+[33mcommit 42ebd8ccab7e4a0f50ea7f3240e697cded11f6f8[m[33m ([m[1;31morigin/feature/makeNewFolder[m[33m)[m
+Author: Claire <claireeuni@Claires-MacBook-Pro16.local>
+Date:   Mon Oct 26 15:00:43 2020 +0900
+
+    Add: 14th 폴더 생성
+
+[33mcommit b56ddc1eab0d1d1203a62e33179e483c859eb34c[m
+Author: Claire <claireeuni@Claires-MacBook-Pro16.local>
+Date:   Mon Oct 26 14:58:22 2020 +0900
+
+    Add: 14th 폴더 생성
+
+[33mcommit a09d7bd28c76c0727a37cfd6a21156f5ccbf7a64[m
+Author: jiyoung yoon <60738400+yojuyoon@users.noreply.github.com>
+Date:   Tue Oct 6 17:53:28 2020 +0900
+
+    Update README.md
+
+[33mcommit 59024c4895255c22b362507675492ff86d326948[m
+Author: Jun4928 <jun.choi.4928@gmail.com>
+Date:   Mon Oct 5 19:28:33 2020 +0900
+
+    Delete: minseungjeon
+
+[33mcommit b4c21e6bc52f073ae39da04125b86c48723df8e8[m[33m ([m[1;31morigin/yerin[m[33m)[m
+Author: Joon Sik Yang <joonsikyang@gmail.com>
+Date:   Fri Sep 25 04:45:04 2020 +0900
+
+    Delete heart.png
+
+[33mcommit 9859a89e3664fbabf4b236de0aba3d8e8d737e92[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 17:22:47 2020 +0900
+
+    remove: 마스터에 잘못 올린 폴더 삭제
+
+[33mcommit 5b6d8a3590ec093d30f7e3d2570a6e647aff91fb[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 16:43:24 2020 +0900
+
+    login.js
+
+[33mcommit b0e15fa173e59e51bbefdf1c6198d4e879db6284[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 16:42:16 2020 +0900
+
+    login.css
+
+[33mcommit 3f0f983d86a31fc0b265163cae36085b0b3e57ee[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 16:37:11 2020 +0900
+
+    login.html
+
+[33mcommit be8d9b9de8cac8da0fb3f40ad79df0c323dc5c60[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 16:29:45 2020 +0900
+
+    Remove: 오타 제거
+
+[33mcommit be19fa3e16c7fbbad69d04c9fc58308bfd98e6eb[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 16:28:00 2020 +0900
+
+    main.js
+
+[33mcommit 090002c3b6b545f1430f2171a2385863f74cd0eb[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 16:25:44 2020 +0900
+
+    main.css
+
+[33mcommit 3157357999f6b768bb8b5c4b40b4f1d3892aedd6[m
+Author: msjulyone <msjulyone@gmail.com>
+Date:   Thu Sep 24 16:23:07 2020 +0900
+
+    main.html
+
+[33mcommit b21b9eb7f77c46819be18861ec1d22cd1031d923[m
+Author: Joon Sik Yang <joonsikyang@gmail.com>
+Date:   Thu Sep 24 15:31:48 2020 +0900
+
+    Update README.md
+
+[33mcommit 1bd5a6e1ad31e9557fbfc4eb44f9848667ab1dd8[m
+Merge: 8bdcb21 4a9db44
+Author: Joon Sik Yang <joonsikyang@gmail.com>
+Date:   Thu Sep 24 15:30:07 2020 +0900
+
+    Merge pull request #104 from wecode-bootcamp-korea/feature/13setting
+    
+    Add : 13th folder
+
+[33mcommit 4a9db4463db699b976795bd888bee1be0b505227[m[33m ([m[1;31morigin/feature/13setting[m[33m)[m
+Author: Joon Sik Yang <joonsikyang@Joons-MacBook-Pro.local>
+Date:   Thu Sep 24 15:28:53 2020 +0900
+
+    Add : 13th folder
+
+[33mcommit 8bdcb2186c87ec8f753c45f1437f5800d5d1b9eb[m
+Merge: 9d8a4f8 5f48322
+Author: GWANHUI KIM <rhks122314@gmail.com>
+Date:   Fri Sep 4 15:07:39 2020 +0900
+
+    Merge pull request #102 from wecode-bootcamp-korea/feature/yeonseongLee
+    
+    [12기 이연성] Add - 로그인 �
