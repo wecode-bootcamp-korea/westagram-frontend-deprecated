@@ -259,7 +259,7 @@ button.feed-header-menu{
   font-weight: 600;
 }
 
-.feed-upload-date-box{
+.feed-upload-date{
   display: flex;
   align-items: center;
   height: 30px;
@@ -272,13 +272,30 @@ button.feed-header-menu{
 }
 
 .feed-comment-box li{
+  display: flex;
+  justify-content: space-between;
   margin: 2px 0 2px 0;
   word-wrap: break-word;
 }
 
-
 .feed-comment-box .comment-userid{
   font-weight: 600;
+}
+
+.comment-side-info {
+  display: flex;
+}
+.comment-heart-button {
+  margin: 0 3px 0 3px;
+}
+.comment-heart-button img {
+  width: 12px;
+  cursor: pointer;
+}
+.comment-delete-button {
+  font-size: 15px;
+  cursor: pointer;
+  width: 30px;
 }
 
 .feed-comment-input-box{
