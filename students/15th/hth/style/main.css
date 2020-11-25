@@ -60,6 +60,7 @@ nav {
   background-color: #fafafa;
   background-position-y: center;
 }
+
 .search-input:focus {
   text-align: start;
   padding-left: 20px;
@@ -153,6 +154,8 @@ li {
 .comment-list-nickname {
   font-weight: bold;
   margin-right: 8px;
+  color: black;
+  text-decoration: none;
 }
 
 .input-box {
@@ -163,21 +166,34 @@ li {
 .comment-input {
   width: 100%;
   border: none;
+  outline: none;
+  padding-left: 15px;
+  height: 56px;
 }
 
 .input-button {
   width: 50px;
-  height: 46px;
+  height: 56px;
   background-color: white;
   outline: none;
   border: none;
+  color: #bbe0fc;
+  font-weight: bold;
+}
+
+.activate-button {
+  cursor: pointer;
+  color: #0095f6;
 }
 
 .main-right {
   position: fixed;
-  top: 100px;
+  top: 103px;
   right: 100px;
   width: 300px;
   height: 400px;
-  border: black 1px solid;
+  font-size: 40px;
+  padding: 180px 0;
+  text-align: center;
+  border: 1px solid red;
 }

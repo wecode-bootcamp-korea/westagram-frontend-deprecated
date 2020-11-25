@@ -25,7 +25,7 @@ const loginHandler = () => {
   const emailValue = document.querySelectorAll("input")[0].value;
   const pwValue = document.querySelectorAll("input")[1].value;
   if (emailValue === id && pwValue === pw) {
-    location.href = "../main.html";
+    location.href = "./main.html";
   } else {
     const $notice = document.querySelector(".notice");
     if (emailValue !== "test") {
