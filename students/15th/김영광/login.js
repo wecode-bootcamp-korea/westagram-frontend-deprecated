@@ -7,13 +7,12 @@ const myId = 'yongjl12@naver.com';
 const myPw = '123456789';
 
 
-
 thisIsPw.addEventListener('keyup', (e)=> {
     idValue = thisIsId.value;
     pwValue = thisIsPw.value;
 
     console.log(idValue,pwValue)
-    if(idValue.length >=1 && pwValue.length >= 1) {
+    if((idValue.includes('@')) &&(pwValue.length >= 5)) {
         thisIsBtn.style.backgroundColor = "royalblue";
     } else {
         thisIsBtn.style.backgroundColor = "#ccdefc";

@@ -222,7 +222,7 @@ article {
   font-weight: 600;
 }
 
-#feed_content{
+.feed_content{
   width: 400px;
   height: 18px;
   position: relative;
@@ -275,3 +275,11 @@ article {
     margin-left: 15px;
     font-size: 13px;
   }
+
+  li {
+    list-style: none;
+  }
+
+  ul { margin-left: 15px ;  padding: 0; }
+
+  
