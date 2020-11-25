@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+html{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+}
+/* font-family: 'Lobster', cursive; */

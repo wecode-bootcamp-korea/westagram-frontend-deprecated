@@ -1,0 +1,212 @@
+/* header-nav line */
+#nav{
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+    padding-top: 15px;
+    background-color: #fefefe;
+}
+#nav-box{
+    width: 935px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#nav img{
+    width: 23px;
+    height: auto;
+}
+
+/* logo */
+#logo a {
+    color:#444;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+#logo a img{
+    margin-right: 10px;
+}
+#logo a p{
+    margin: 0 10px;
+    font: 1.2em 'Lobster', cursive;
+}
+
+/* 검색창 search-input*/
+form{position: relative;}
+form input{
+    border: 1px solid #ddd;
+    width: 200px;
+    height: 27px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    font-size: 14px;  
+    text-align: center;
+}
+input::placeholder{
+    font-size: 13px;
+}
+.fa-search{
+    color: rgb(180, 179, 179);
+    position: absolute;
+    top: 9px; 
+    left: 110px;
+    font-size: 12px;
+}
+
+/* top-right-icon */
+#right_miniBox{
+    padding-right: 10px;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main-page */
+#main{
+    width: 935px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.feeds{
+    width: 614px;
+    height: auto;
+}
+.storage{
+    background-color: #fefefe;
+    margin-top: 20px;
+    height: 100px;
+    width: 614px;
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.storage li{
+    width: 50px;
+    overflow: hidden;
+}
+.storage a{
+    text-align: center;
+}
+.storage img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.storage p{
+    padding-top: 4px;
+    font-size: 0.5em;
+    color: #444;
+}
+
+/* article */
+article{
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+/* feed-user */
+.feed-user{
+    padding: 10px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-pro{
+    display: flex;
+    justify-content: content;
+}
+.feed-pro p{
+    padding: 3px 0 0 10px;
+    font: 14px bold;
+}
+.feed-user img{
+    width: 30px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.feed-more{
+    width: 30px;
+    padding: 7px;
+}
+.feed-more img{
+    width: 15px;
+}
+.filter-color{
+   filter: invert(55%) sepia(1%) saturate(689%) hue-rotate(73deg) brightness(99%) contrast(91%);
+}
+
+.feed-img {
+    overflow: hidden;
+}
+.feed-img img{
+    width: 614px;
+    height: auto;
+}
+
+
+/* main-right */
+.main-right{
+    width: 293px;
+    /* border: 1px solid #ddd; */
+}
+/* feed-post */
+.feed-post{
+    padding: 10px 15px;
+}
+.feed-post-mark{
+    display: flex;
+    justify-content: space-between;  
+}
+.post-motion{
+    height: 30px; 
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+}
+.post-motion img , .save img{
+    width: 25px;
+    height: auto;
+}
+.feed-post-mark button{
+    border: none;
+    background-color: #fff;
+}
+.board-message{
+    padding-top: 5px;
+}
+.board-message .like-point{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding-bottom: 10px;
+}
+.like-point .point-update{
+    font-size: 13px;
+}
+.board-message-upload-user-name{
+    letter-spacing: -1px;
+    font-size: 14px;
+    vertical-align: baseline;
+}
+.user-id{
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 5px;
+    letter-spacing: 0;
+}
+.Date-time{
+    padding-top: 10px; 
+    color: #888;
+    font-size: 12px;
+}
