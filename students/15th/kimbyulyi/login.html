@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Westagram</title>
+    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/login.js" defer></script>
+  </head>
+  <body>
+    <!-- 메인-->
+    <main>
+      <article>
+        <!--aside  왼쪽 이미지-->
+        <aside class="login__img">
+          <img src="img/phone.png" />
+        </aside>
+        <!-- 로그인 섹션 상단 -->
+        <section class="login__container">
+          <div class="login__container__top">
+            <img src="img/logo_text.png" />
+            <form class="login__form">
+              <input
+                type="text"
+                placeholder="Phone number, username, or email"
+                class="userId"
+              />
+              <input type="password" placeholder="Password" class="userPw" />
+              <button class="loginBtn">Log In</button>
+            </form>
+            <div class="login__bar">
+              <div class="bar"></div>
+              <span class="bar__text">OR</span>
+              <div class="bar"></div>
+            </div>
+            <div class="login__findPw">
+              <a href="#" class="findFacebook">Log in with Facebook</a>
+              <a href="#" class="findPw">Forgot Password?</a>
+            </div>
+          </div>
+          <!-- 로그인 섹션 하단-->
+          <div class="login__container__bottom">
+            <div class="app__title">
+              <p>
+                Don't have an account? <a href="#" class="signupBtn">Sign up</a>
+              </p>
+            </div>
+            <div class="app__btn">
+              <p>Get the app.</p>
+              <div class="btns">
+                <button class="app__btn__img">
+                  <img src="img/app1.png" />
+                </button>
+                <button class="app__btn__img">
+                  <img src="img/app2.png" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- footer -->
+    <footer>
+      <ul class="footer__list">
+        <li>About</li>
+        <li>Blog</li>
+        <li>Jobs</li>
+        <li>Help</li>
+        <li>Api</li>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Top Accounts</li>
+        <li>Hashtags</li>
+        <li>Locations</li>
+      </ul>
+      <ul class="footer__list">
+        <li>Beauty</li>
+        <li>Dance & Performance</li>
+        <li>Fitness</li>
+        <li>Food & Drink</li>
+        <li>Home & Garden</li>
+        <li>Music</li>
+        <li>Visual Arts</li>
+      </ul>
+      <p>© 2020 Instagram from Facebook</p>
+    </footer>
+  </body>
+</html>

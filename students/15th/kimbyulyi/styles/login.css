@@ -1,0 +1,179 @@
+@import "reset.css";
+@import "common.css";
+
+/* Main */
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+/* Article  */
+
+article {
+  display: flex;
+  max-width: 935px;
+  margin-top: 110px;
+}
+
+/*right section*/
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  width: 351px;
+  height: 618px;
+  padding: 10px 0px;
+  background-color: var(--color-white);
+}
+
+/* 로그인 컨테이너 상단 */
+
+.login__container__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  border: 1px solid var(--color-gainsoboro);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+
+.login__form input {
+  width: 265px;
+  height: 25px;
+  padding: 15px 5px;
+  margin-bottom: 10px;
+  background-color: var(--color-snow);
+  border: 1px solid var(--color-gainsoboro);
+  border-radius: 3px;
+  font-size: var(--font-small);
+  color: var(--color-nobel);
+}
+
+.loginBtn {
+  padding: 8px 0px;
+  border-radius: 5px;
+  font-weight: var(--weight-regular);
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
+
+.loginBtn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.login__bar {
+  display: flex;
+  width: 268px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar {
+  background-color: var(--color-nobel);
+  width: 100px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.bar__text {
+  margin: 0px 20px;
+  color: var(--color-nobel);
+  font-size: var(--font-small);
+  font-weight: var(--weight-bold);
+  top: 10px;
+}
+
+.login__findPw {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.findFacebook {
+  margin-bottom: 20px;
+  color: var(--color-cobalt);
+  font-weight: var(--weight-semi-bold);
+}
+
+.findPw {
+  color: var(--color-cobalt);
+  font-size: var(--font-small);
+}
+
+/* 로그인 컨테이너 하단 */
+
+.login__container__bottom {
+  margin-top: 10px;
+}
+
+.app__title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0px;
+  border: 1px solid var(--color-gainsoboro);
+}
+
+.signupBtn {
+  color: var(--color-blue);
+  font-weight: var(--weight-bold);
+}
+
+.app__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.btns {
+  margin-top: 20px;
+}
+
+.app__btn__img img {
+  width: 136px;
+  height: 40px;
+}
+
+/* 푸터 */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+  color: var(--color-nobel);
+  font-size: var(--font-small);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.footer__list li {
+  margin-right: 10px;
+}
+
+footer p {
+  margin-top: 15px;
+}
