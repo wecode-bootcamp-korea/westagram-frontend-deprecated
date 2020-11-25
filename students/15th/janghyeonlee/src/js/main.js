@@ -101,27 +101,24 @@ function onNavSearchBlur() {
 }
 
 function createDummyUserList() {
-  const userNum = dummyUser.length;
   let newUser = document.createElement('div');
   newUser.classList.add('user-in-nav-search-modal');
-  for(let i=0; i<userNum; i++){
-    newUser.innerHTML = dummyUser[i];
-    console.log(dummyUser[i]);
-    console.log(newUser.innerHTML)
-    console.log(newUser)
-    navSearchUserModal.appendChild(newUser);
-  }
-
+  newUser.innerHTML = dummyUser.pop();
+  navSearchUserModal.appendChild(newUser);
 }
 
 function init() {
+  const userNum = dummyUser.length;
+
   commentSubmitBtn.addEventListener('click', commentUpload);
   commentInput.addEventListener('keypress', uploadIfEnterKey);
   navSearchInput.addEventListener('focus', onNavSearchFocus);
   navSearchInput.addEventListener('blur', onNavSearchBlur);
   //update if comment already exists on feed.
   updateCommentNodes();
-  createDummyUserList();
+  for(let i=0; i<userNum; i++){
+    createDummyUserList();
+  }
 };
 
 init();
