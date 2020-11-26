@@ -19,9 +19,9 @@ nav {
 
 .nav__left__iconbox {
   width: 46px;
+  margin-right: 7px;
   border-right: 2px solid black;
   text-align: center;
-  margin-right: 7px;
 }
 
 .nav__left__icon {
@@ -37,6 +37,23 @@ nav {
 .nav__input {
   width: 215px;
   height: 28px;
+  border: 2px solid #e6e6e6;
+  background-image: url('../img/magnifying-glass.png');
+  background-repeat: no-repeat;
+  background-position: 76px;
+  background-size: 12px;
+}
+
+.nav__input:focus {
+  background: none;
+}
+
+.nav__input:focus::placeholder {
+  color: transparent;
+}
+
+.nav__input::placeholder {
+  text-align: center;
 }
 
 .nav__right {
@@ -52,39 +69,33 @@ nav {
 
 main {
   display: flex;
+  justify-content: center;
   height: 100%;
   background-color: #fafafa;
-  border-top: 1px solid black;
+  border-top: 2px solid #e6e6e6;
   overflow-y: auto;
-  justify-content: center;
 }
 
 .feeds {
-  width: 45%;
+  width: 50%;
   height: 100%;
-  margin-right: 24px;
   background-color: #fafafa;
 }
 
-.main-right {
-  width: 25%;
-  height: 70%;
-  background-color: #ffffff;
-}
-
 .feed {
-  width: 95%;
+  position: relative;
+  width: 90%;
   height: 100%;
   margin: auto;
   margin-top: 32px;
   background-color: #ffffff;
-  border: 1px solid black;
+  border: 2px solid #e6e6e6;
 }
 
 .feed__header {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 12px;
 }
 
 .feed__header__wrapping {
@@ -96,8 +107,8 @@ main {
 .feed__header__avatar {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
   margin-right: 16px;
+  border-radius: 50%;
 }
 
 .feed__header__more {
@@ -109,4 +120,125 @@ main {
   width: 100%;
   height: 65%;
   object-fit: cover;
+}
+
+section {
+  padding: 0 12px;
+}
+
+.feed__content__icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.feed__content__icon {
+  width: 22px;
+  margin: 0 8px;
+}
+
+.feed__content__like-number {
+  display: flex;
+  align-items: center;
+}
+
+.feed_content__like-number__avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.feed__content__like-number__text {
+  margin: 16px 12px;
+}
+
+.feed__comments {
+  height: 72px;
+  margin: 4px 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.feed__comment {
+  padding: 0 12px;
+}
+
+.feed__comment__input {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 45px;
+  border: none;
+  border-top: 2px solid #e6e6e6;
+  padding-left: 12px;
+  outline: none;
+}
+
+.feed__comment__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  height: 45px;
+  border: none;
+  background-color: white;
+  border-top: 2px solid #e6e6e6;
+  color: #cde5fc;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-right {
+  width: 20%;
+  height: 70%;
+  margin-top: 32px;
+  background-color: #fafafa;
+}
+
+.main-right__header-card {
+  display: flex;
+  align-items: center;
+}
+
+.main-right__header-card__img {
+  width: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.main-right__story {
+  width: 90%;
+  height: 40%;
+  margin-top: 12px;
+  background-color: white;
+  border: 2px solid #e6e6e6;
+  overflow-y: auto;
+}
+
+.main-right__story__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 4px;
+  font-size: 14px;
+}
+
+.main-right__story__user-cards {
+  margin: 0;
+  padding: 0 4px;
+}
+
+.main-right__story__user-card {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.main-right__story__user-card__img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
 }

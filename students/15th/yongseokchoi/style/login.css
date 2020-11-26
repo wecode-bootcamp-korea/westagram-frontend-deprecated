@@ -1,18 +1,18 @@
 html,
 body {
-  background-color: #fafafa;
   margin: 8px;
+  background-color: #fafafa;
 }
 
 .wrapping {
-  width: 699px;
-  height: 758px;
-  margin: auto;
-  background-color: #ffffff;
-  border: 1px solid #e9e9e9;
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 699px;
+  height: 758px;
+  margin: auto;
+  border: 1px solid #e9e9e9;
+  background-color: #ffffff;
 }
 
 img {
@@ -26,11 +26,11 @@ input {
   margin: 8px 0;
   padding-left: 20px;
   background-color: #fafafa;
+  color: #999999;
   border: 1px solid #e9e9e9;
   border-radius: 8px;
   outline: none;
   font-size: 18px;
-  color: #999999;
 }
 
 button {
@@ -38,11 +38,11 @@ button {
   height: 60px;
   margin: 12px 0;
   background-color: #c0dffd;
+  color: #ffffff;
   border-style: none;
   border-radius: 8px;
   outline: none;
   font-size: 20px;
-  color: #ffffff;
 }
 
 button:hover {
