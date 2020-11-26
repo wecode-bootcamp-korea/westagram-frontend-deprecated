@@ -3,7 +3,265 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/536e662bb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="img/logo_text.png" alt="logo" class="logo" />
+        <div class="wrap-input">
+          <input type="text" placeholder="Search" />
+          <img class="search-icon" src="img/search.png" alt="search icon" />
+        </div>
+        <div class="navitem">
+          <img src="img/explore.png" alt="explore icon" />
+          <img src="img/heart.png" alt="heart icon" />
+          <img src="img/user.png" alt="user icon" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="main-wrap">
+        <div class="main-left">
+          <section class="feeds">
+            <article>
+              <div class="feeds__top">
+                <div class="profile">
+                  <img src="img/profile_1.jpg" alt="profile" />
+                  <div class="profile__name">
+                    <a href="#">Boris</a>
+                    <p>Pullman, Washington</p>
+                  </div>
+                </div>
+                <img src="img/more_icon.png" alt="more icon" class="more" />
+              </div>
+              <img src="img/feed_img.jpg" alt="feed image" class="feedImg" />
+              <div class="feeds__action">
+                <div class="action__left">
+                  <img src="img/heart.png" alt="like" class="likeBtn" />
+                  <img src="img/speech-bubble.png" alt="comment" />
+                  <img src="img/send.png" alt="dm" />
+                </div>
+                <img src="img/bookmark.png" alt="bookmark" />
+              </div>
+              <div class="feeds__like">
+                <a>840,088 likes</a>
+              </div>
+              <div class="feeds__description">
+                <p><a>Boris</a>Happy Christmas🎅</p>
+                <p></p>
+              </div>
+
+              <div class="feeds__comments">
+                <ul class="comments">
+                  <li>
+                    <a> sandi_nqq</a>Classy!
+                    <span class="comment-like">
+                      <img src="img/heart.png" alt="like icon" />
+                    </span>
+                  </li>
+                  <li>
+                    <a>clyde_thebasset </a>🧡🐾🧡🐾🧡
+                    <span class="comment-like">
+                      <img src="img/heart.png" alt="like icon" />
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="feeds__update">
+                <span>2 HOURS AGO</span>
+              </div>
+              <form class="feeds__comments__form" type="submit">
+                <textarea
+                  class="comment__input"
+                  placeholder="Add a comment..."
+                ></textarea>
+                <button class="comment__btn">Post</button>
+              </form>
+            </article>
+          </section>
+          <section class="feeds">
+            <article>
+              <div class="feeds__top">
+                <div class="profile">
+                  <img src="img/profile_1.jpg" alt="profile" />
+                  <div class="profile__name">
+                    <a href="#">Boris</a>
+                    <p>Pullman, Washington</p>
+                  </div>
+                </div>
+                <img src="img/more_icon.png" alt="more icon" class="more" />
+              </div>
+              <img src="img/feed_img2.jpg" alt="feed image" class="feedImg" />
+              <div class="feeds__action">
+                <div class="action__left">
+                  <img src="img/heart.png" alt="like" class="likeBtn" />
+                  <img src="img/speech-bubble.png" alt="comment" />
+                  <img src="img/send.png" alt="dm" />
+                </div>
+                <img src="img/bookmark.png" alt="bookmark" />
+              </div>
+              <div class="feeds__like">
+                <a>840,088 likes</a>
+              </div>
+              <div class="feeds__description">
+                <p>
+                  <a>Boris</a>I’m sorry what... can’t hear you through my
+                  curtain ears!
+                </p>
+              </div>
+              <div class="feeds__comments">
+                <ul class="comments">
+                  <li>
+                    <a> taterandcollette</a>Adorable 💙💙💙
+                    <span class="comment-like">
+                      <img src="img/heart.png" alt="like icon" />
+                    </span>
+                  </li>
+                  <li>
+                    <a> bassetpoppy </a>Your curtains are sooo pretty!! 😍
+                    <span class="comment-like">
+                      <img src="img/heart.png" alt="like icon" />
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="feeds__update">
+                <span>2 HOURS AGO</span>
+              </div>
+              <form class="feeds__comments__form" type="submit">
+                <textarea
+                  class="comment__input"
+                  placeholder="Add a comment..."
+                ></textarea>
+                <button class="comment__btn">Post</button>
+              </form>
+            </article>
+          </section>
+        </div>
+        <!-- aside-->
+        <aside>
+          <div class="aside__header">
+            <div class="header-img-wrap">
+              <img src="img/profile_1.jpg" alt="profile" />
+            </div>
+            <div class="profile__name">
+              <a href="#">Boris</a>
+              <p>Born on July 1, 2018. 🐶</p>
+            </div>
+          </div>
+          <div class="aside__story">
+            <div class="story__header">
+              <span>스토리</span>
+              <a>모두 보기</a>
+            </div>
+            <div class="story__recommend">
+              <div class="story-img-wrap">
+                <img src="img/profile_2.jpg" alt="profile" />
+              </div>
+              <div class="profile__name">
+                <a>happydog_a</a>
+                <p>15분전</p>
+              </div>
+            </div>
+            <div class="story__recommend">
+              <div class="story-img-wrap">
+                <img src="img/profile_3.jpg" alt="profile" />
+              </div>
+              <div class="profile__name">
+                <a>happydog_b</a>
+                <p>1분전</p>
+              </div>
+            </div>
+            <div class="story__recommend">
+              <div class="story-img-wrap">
+                <img src="img/profile_4.jpg" alt="profile" />
+              </div>
+              <div class="profile__name">
+                <a>happydog_c</a>
+                <p>30분전</p>
+              </div>
+            </div>
+            <div class="story__recommend">
+              <div class="story-img-wrap">
+                <img src="img/profile_5.jpg" alt="profile" />
+              </div>
+              <div class="profile__name">
+                <a>happydog_d</a>
+                <p>1시간전</p>
+              </div>
+            </div>
+          </div>
+          <div class="aside__users">
+            <div class="users__header">
+              <span>회원님을 위한 추천</span>
+              <a>모두 보기</a>
+            </div>
+            <div class="user__recommend">
+              <div class="user-img-wrap">
+                <img src="img/profile_6.jpg" alt="profile" />
+              </div>
+              <div class="profile__name">
+                <a>happydog_e</a>
+                <p>happydog_a님 외 2명이 ...</p>
+              </div>
+              <div class="follow-btn">
+                <a>팔로우</a>
+              </div>
+            </div>
+            <div class="user__recommend">
+              <div class="user-img-wrap">
+                <img src="img/profile_7.jpg" alt="profile" />
+              </div>
+              <div class="profile__name">
+                <a>happydog_f</a>
+                <p>happydog_c님 외 2명이 ...</p>
+              </div>
+              <div class="follow-btn">
+                <a>팔로우</a>
+              </div>
+            </div>
+            <div class="user__recommend">
+              <div class="user-img-wrap">
+                <img src="img/profile_8.jpg" alt="profile" />
+              </div>
+              <div class="profile__name">
+                <a>happydog_g</a>
+                <p>happydog_d님 외 2명이 ...</p>
+              </div>
+              <div class="follow-btn">
+                <a>팔로우</a>
+              </div>
+            </div>
+          </div>
+          <div class="aside__footer">
+            <ul class="guidline">
+              <li>Instagram 정보</li>
+              <li>지원</li>
+              <li>홍보 센터</li>
+              <li>API</li>
+            </ul>
+            <ul class="guidline">
+              <li>채용 정보</li>
+              <li>개인정보처리방침</li>
+              <li>약관</li>
+              <li>디렉터리</li>
+            </ul>
+            <ul class="guidline">
+              <li>프로필</li>
+              <li>해시태그</li>
+              <li>언어</li>
+            </ul>
+            <div class="copyright">© 2020 Instagram from Facebook</div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
 </html>

@@ -14,5 +14,3 @@ const chnageBtn = () => {
 
 userId.addEventListener("keyup", chnageBtn);
 userPw.addEventListener("keyup", chnageBtn);
-
-// image slide :: 추가 기능
