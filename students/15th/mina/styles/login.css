@@ -22,8 +22,8 @@ body {
 }
 
 /* 헤더 */
-h1 {
-    margin-bottom: 40px;;
+h1.login_h1 {
+    margin: 35px 0 52px 0;
     font-family: 'Lobster', cursive; 
     font-size: 44px; 
     font-weight: 100;
@@ -48,8 +48,9 @@ input:first-child {
 }
 button { 
     margin-top: 15px;
+    margin-bottom: 25px;
     width: 100%;
-    height: 35px;
+    height: 33px;
     background-color: #bfdffd;
     color: #fff;
     border: none;
@@ -57,16 +58,33 @@ button {
     font-size: 15px;
     font-weight: 500;
 }
-
+.or div {
+    display: inline-block;
+    width: 120px;
+    height: 2px;
+    background-color: #dbdbdb;
+    vertical-align: middle;
+}
 .login_getinfo_wrap p{
+    margin: 0 18px;
     color: #8e8c8c;
     font-size: 14px;
     font-weight: 700;
+    display: inline-block;
 }
 
 .login_getinfo_wrap a {
     display: block;
     color: #385185;
+}
+
+.facebook_login {
+    font-size: 15px;
+    font-weight: bold;
+}
+.lostpassword {
+    font-size: 13px;
+    font-weight: 500;
 }
 
 /* footer */

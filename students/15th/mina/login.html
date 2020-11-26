@@ -6,20 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/reset.css">
 </head>
 <body>
     <div class="loginpage_wrap">      
          <div class="login_wrap">
             <header>
-                <h1>Westagram</h1>
+                <h1 class="login_h1">Westagram</h1>
             </header>
             <section class="login_getinfo_wrap">
                 <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
                 <input type="password" placeholder="비밀번호">   
-                   <button>로그인</button> 
-                   <p>또는</p>
-                   <a href="#" target="blank">Facebook으로 로그인</a>  
-                   <a href="#" target="blank">비밀번호를 잊으셨나요?</a>  
+                   <button>로그인</button>
+                   <div class="or">
+                       <div></div>
+                        <p>또는</p>
+                        <div></div>
+                    </div> 
+                   <a href="#" target="blank" class="facebook_login">Facebook으로 로그인</a>  
+                   <a href="#" target="blank" class="lostpassword">비밀번호를 잊으셨나요?</a>  
            </section>
          </div>
         
