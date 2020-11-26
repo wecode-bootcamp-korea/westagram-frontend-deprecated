@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+
+body { 
+    background-color: #fafafa;
+}
+.loginpage_wrap {
+    width: 400px; 
+    margin: 0 auto;
+}
+.login_wrap { 
+    margin-bottom: 10px; 
+    width: 100%; height: 445px; 
+    background-color: #fff; 
+    border : 1px solid #dbdbdb; 
+    text-align: center;
+}
+.login_conbox { 
+    width: 268px;
+}
+
+/* 헤더 */
+h1 {
+    margin-bottom: 40px;;
+    font-family: 'Lobster', cursive; 
+    font-size: 44px; 
+    font-weight: 100;
+}
+
+/* section */
+.login_getinfo_wrap { 
+    width: 310px; 
+    display: inline-block;
+}
+input { 
+    padding: 9px 8px 7px; 
+    width: 100%; 
+    height: 40px; 
+    background-color: #fafafa; 
+    border: 1px solid #dbdbdb ; 
+    box-sizing: border-box; 
+    border-radius: 3px;
+}
+input:first-child {
+    margin-bottom: 5px;;
+}
+button { 
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    background-color: #bfdffd;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.login_getinfo_wrap p{
+    color: #8e8c8c;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.login_getinfo_wrap a {
+    display: block;
+    color: #385185;
+}
+
+/* footer */
+.assign { 
+    width: 100%; 
+    height: 75px; 
+    background-color: #fff; 
+    border : 1px solid #dbdbdb; 
+    text-align: center;}
+
+.login_assign_wrap { 
+    margin: auto 0;
+}
