@@ -2,16 +2,56 @@
   box-sizing: border-box;
 }
 
-nav {
-  /* display: flex; */
-  background-color: pink;
-  border-bottom: 1px solid grey;
+body {
+  padding-top: 40px;
+  background-color: gray;
 }
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid grey;
+  background-color: white;
+}
+
+.nav-container {
+  display: flex;
+  width: 914px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+
+.searchBar {
+  all: unset;
+  width: 215px;
+  height: 28px;
+  display: block;
+  margin: auto 0;
+  border: 2px solid lightgrey;
+  background-color: #fafafa;
+}
+.icon-container {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 10px;
+}
+
 #exploreImg {
   background: white url(img/explore.png) no-repeat;
   background-size: contain; /* 이미지 가로세로 비율 유지한 채로 사이즈 조절, */
   width: 22px;
   height: 22px;
+  cursor: pointer;
 }
 
 #heartImg {
@@ -19,6 +59,7 @@ nav {
   background-size: contain;
   width: 22px;
   height: 22px;
+  cursor: pointer;
 }
 
 #profileImg {
@@ -26,34 +67,107 @@ nav {
   background-size: contain;
   width: 22px;
   height: 22px;
+  cursor: pointer;
+  display: block;
 }
 
 main {
-  /* position: relative; */
-  width: 100%;
+  width: 914px;
   height: 100%;
-  background-color: yellow;
-  /* display: block;
-  margin: 0 auto; */
+  padding-top: 30px;
+  display: flex;
+  margin: 0 auto;
 }
 
-.feeds {
-  position: absolute;
+.article-container {
+  display: flex;
 }
+
 article {
-  position: absolute;
-  width: 614px;
-  height: 118px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   background-color: white;
+  margin-top: 40px;
+  border-radius: 2px;
 }
 
-.contentsBox {
-  border: 1px solid black;
+header {
+  width: 614px;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  align-items: center;
+  padding: 10px;
+}
+
+.miniProfile {
+  width: 32px;
+  height: 32px;
+  border-radius: 70px;
+  border: 1px solid lightgray;
+  padding: 1px;
+}
+
+/* .contentsBox {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
   background-color: white;
+  height: 106px;
+} */
+
+.id {
+  font-weight: bold;
+  /* display: inline; */
+}
+
+.more {
+  font-weight: bold;
+  /* display: inline; */
+}
+
+#feedImg {
+  width: 614px;
+  object-fit: contain;
+}
+
+.uploadComment {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-container {
+  position: relative;
 }
 
 .commentBox {
-  border: 1px solid black;
+  border: 1px solid lightgray;
   background-color: white;
+  width: 100%;
+  height: 60px;
+  position: absolute;
+}
+
+.commentBtn {
+  display: inline;
+  position: absolute;
+  color: blue;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  right: 5px;
+  width: 60px;
+  height: 40px;
+  /* z-index: 1; */
+  border: 0 none;
+  font-weight: bold;
+}
+
+.main-right {
+  width: 250px;
+  height: 614px;
+  border: 1px solid black;
+  margin-top: 40px;
+  background-color: white;
+  /* position: fixed; */
 }

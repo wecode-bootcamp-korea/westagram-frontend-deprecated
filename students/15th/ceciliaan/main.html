@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>westargram</title>
     <link rel = "stylesheet" href ="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
+        <div class ="nav-container">
         <h1>Instagram</h1>
-        <ul>
+        <input class = "searchBar" type="text" placeholder="검색">
+        <ul class = "icon-container">
             <li id = "exploreImg"></li>
             <li id = "heartImg"></li>
             <li id = "profileImg"></li>
         </ul>
+        </div>
     </nav>
     <main>
-        <div class = "feeds">
+        <div class ="article-container">
             <article>
-                <header> 헤더입니다</header>
-                <!-- <img alt ="img1" src = "img/feedImg1.jpeg"> -->
-                <div class = "contentsBox"> 피드 내용 부분입니다</div>
-                <div class = "commentBox"> 댓글창입니다 </div>
+                <header>
+                    <img  class ="miniProfile" alt = "miniProfile" src = "img/feedImg1.jpeg">
+                    <span class = "id">devCecy</span> 
+                    <span class = "more">...</span>
+                </header>
+                <img  id ="feedImg" alt = "img1" src = "img/feedImg1.jpeg">
+                <div class = "contentsBox">
+                    <p class = "id">devCecy</p>  
+                    <p class = "content">제주도 바다에서 사진찍기!</p>
+                </div>
+                <div class = "uploadComment-container">
+                    <ul class ="uploadComment">
+
+                    </ul>
+                </div>
+            <div class = "comment-container">
+                <input class = "commentBox" placeholder="댓글달기..." onKeyDown = "onKeyDown()">
+                <button class = "commentBtn">게시</button>
+            </div>
             </article>
         </div>
-        <div class ="main-right"></div>
+        <div class = "main-right">
+
+        </div>
     </main>
-    <link href = "main.js">
+    <script src = "./main.js"></script>
+    
 </body>
 </html>
