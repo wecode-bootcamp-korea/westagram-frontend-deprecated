@@ -53,6 +53,9 @@ const checkEmail = (input) => {
   }
 }
 
+//search users by id
+
+
 //activate loginBtn
 const activateLoginBtn = () => {
   if (email.value.length >= 3 && password.value.length >= 7) {
@@ -75,7 +78,6 @@ form.addEventListener('submit', (e) => {
   checkEmail(email)
   // email.value = ''
   password.value = ''
-
-  // location.href = "/main/'index.html'"
 })
+
 // form.addEventListener('submit', goToMain)

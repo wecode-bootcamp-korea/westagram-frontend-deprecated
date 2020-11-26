@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
 
 /* Proxima Nova Bold
 
@@ -65,6 +63,7 @@ font-style: normal; */
   --font-color-lightblue: #bbd6ed;;
   --font-color-blue: #1e93f2;
 
+  --story-line-pink: #dc4166;
   --border-line-gray: #ddd;
 }
 
@@ -123,7 +122,6 @@ img {
 
   position: fixed;
   z-index: 10;
-
 }
 .nav {
   width: 920px;
@@ -196,6 +194,87 @@ img {
 .nav__menu-container img:last-of-type {
   border-radius: 50%;
 }
+
+.search-list-container {
+  width: 250px;
+  /* height: 300px; */
+  max-height: 450px;
+  overflow: hidden;
+  background: #999;
+
+  border: 1px solid var(--border-line-gray);
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column; 
+  position: absolute;
+  left: 0;
+  top: 30px;
+  z-index: 20;
+}
+
+.search-list__result {
+  width: 100%;
+  height: 66px;
+  background: white;
+
+  border-bottom: 1px solid var(--border-line-gray);
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.search-list__result:hover {
+  background: #f7f7f9;
+}
+
+.search-list__user-image-container {
+  width: 40px;
+  height: 40px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 2px solid var(--story-line-pink);
+
+  margin-right: 10px;
+}
+
+.search-list__user-image {
+  width: 32px;
+  height: 32px;
+  background: #000;
+
+  border-radius: 50%;
+}
+
+.search-list__user-info-container {
+  max-width: 160px;
+}
+
+
+.search-list__user-id {
+  margin-bottom: 3px;
+}
+
+.search-list__user-name {
+  max-width: 200px;
+
+  font-size: var(--font-size-extrasmall);
+  color: var(--font-color-gray);
+  line-height: 14px;
+}
+
+
+
+
 /* ================================================================================= */
 
 .main {
@@ -463,13 +542,13 @@ img {
   margin: 4px 0;
 }
 
-.comment__content-list-dummy {
+/* .comment__content-list-dummy {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 
   margin: 2px 0;
-}
+} */
 
 .comment__content-list {
   display: flex;
