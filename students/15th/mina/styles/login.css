@@ -12,7 +12,8 @@ body {
 }
 .login_wrap { 
     margin-bottom: 10px; 
-    width: 100%; height: 445px; 
+    width: 100%; 
+    height: 424px; 
     background-color: #fff; 
     border : 1px solid #dbdbdb; 
     text-align: center;
@@ -47,7 +48,7 @@ input:first-child {
     margin-bottom: 5px;;
 }
 button { 
-    margin-top: 15px;
+    margin-top: 17px;
     margin-bottom: 25px;
     width: 100%;
     height: 33px;
@@ -79,8 +80,14 @@ button {
 }
 
 .facebook_login {
-    font-size: 15px;
+    padding: 3px 0;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 16px;
     font-weight: bold;
+}
+.facebook_login img {
+    width: 18px;
 }
 .lostpassword {
     font-size: 13px;
@@ -96,5 +103,13 @@ button {
     text-align: center;}
 
 .login_assign_wrap { 
-    margin: auto 0;
+    line-height: 77px;
 }
+.login_assign_wrap span{
+    font-weight: inherit;
+}
+.login_assign_wrap a {
+    color:#0095f6; 
+    font-weight: 600;
+}
+
