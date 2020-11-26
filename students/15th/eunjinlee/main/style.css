@@ -450,8 +450,8 @@ img {
 
 .comment__view-all {
   color: var(--font-color-gray);
-  font-size: var(--font-size-regular);
-  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-regular);
   margin: 2px 0;
 }
 
@@ -488,6 +488,25 @@ img {
 .comment__content-box {
   display: flex;
   align-items: flex-start;
+}
+
+.comment__content {
+  max-width: 420px;
+  margin-top: 1px;
+}
+
+.comment__content-delete {
+  visibility: hidden;
+
+  font-size: var(--font-size-extrasmall);
+  color: #bababa;
+  margin: 3px 0 0 8px;
+
+  cursor: pointer;
+}
+
+.comment__content-box:hover > .comment__content-delete{
+  visibility: visible;
 }
 
 .feed__created-at {
