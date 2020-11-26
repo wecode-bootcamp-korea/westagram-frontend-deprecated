@@ -433,7 +433,7 @@ img {
 
 /* feed article */
 .feed__article-container {
-  font-size: var(--font-size-regular);
+  font-size: var(--font-size-small);
   font-weight: var(--font-weight-medium);
   line-height: 18px;
 
@@ -471,10 +471,10 @@ img {
 }
 
 .comment__content-list .comment__user {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
-.comment__content-list .comment__content-box {
+.comment__content-list {
   display: flex;
   align-items: center;
   font-size: var(--font-size-small);
@@ -483,6 +483,11 @@ img {
 .comment__content-list .comment__heart {
   width: 12px;
   height: 12px;
+}
+
+.comment__content-box {
+  display: flex;
+  align-items: flex-start;
 }
 
 .feed__created-at {
