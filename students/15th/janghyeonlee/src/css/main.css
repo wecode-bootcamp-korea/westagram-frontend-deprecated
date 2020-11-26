@@ -24,6 +24,7 @@
 }
 
 body {
+  z-index: 0;
   background-color: var(--light-gray);
 }
 
@@ -86,6 +87,7 @@ nav {
 
 .nav-icons{
   display: flex;
+  position: relative;
 }
 .nav-icon{
   padding-top: 3px;
@@ -98,10 +100,39 @@ nav {
   margin-left: 15px;
 }
 .nav-icon-profile{
+  position: relative;
   width: 22px;
   height: 22px;
   border-radius: 100%;
+  cursor: pointer;
 }
+.nav-profile-modal{
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 40px;
+  left: 24px;
+  width: 230px;
+  height: 193px;
+  background-color: white;
+  box-shadow: 0 0 8px var(--dark-gray);
+  border-radius: 6px;
+}
+/* 임시 적용 중 */
+.nav-icon-profile:hover + .nav-profile-modal{
+  display: block;
+}
+
+.nav-profile-modal:after {
+  content:"";
+  position:absolute;
+  top:-10px;
+  left:180px;
+  border-top: 0px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+ }
 
 .nav-search-modal{
   display: none;
@@ -122,6 +153,8 @@ nav {
   align-items: center;
   height: 30px;
 }
+
+
 
 
 /* main */
