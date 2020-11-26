@@ -1,10 +1,14 @@
 
 .nav {
+    width: 100%;
     height: 77px;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 0;
 }
 
 .navLogo {
@@ -68,22 +72,21 @@
 
 .main {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 .mainFeed {
-    width: 620px;
-    height: 760px;
+    width: 630px;
+    height: auto;
     border: 3px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     background-color: white;
-    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 160px;
 }
 
 .mainFeedTitle {
-    width: 620px;
+    width: 630px;
     height: 60px;
     box-sizing: border-box;
     display: flex;
@@ -115,7 +118,7 @@
 }
 
 .mainFeedPic img {
-    width: 620px;
+    width: 630px;
     height: 460px;
 
 }
@@ -180,9 +183,9 @@
     margin-bottom: 5px;
 }
 
-.mainFeedComment span:first-child {
+.mainFeedComment span:first-child, .comment_user {
     font-weight: 700;
-    
+    margin-right: 5px;
 }
 
 .mainFeedCommentBox {
@@ -204,6 +207,7 @@
 }
 
 .mainFeedCommentBoxInput {
+    width: 500px;
     color: rgba(0, 0, 0, 0.5);
     margin-left: 20px;
 }
@@ -212,13 +216,12 @@
     margin-right: 20px;
 }
 
-
-//////nav, mainRight 고정시키기
-
-
 .mainRight {
     width: 310px;
     height: 450px;
+    position: fixed;
+    top: 160px;
+    right: 160px;
 }
 
 .mainRightUser {
@@ -227,6 +230,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
 
 }
 
@@ -253,30 +257,49 @@
 }
 
 .mainRightStory {
-    width: 310px;
+    width: 280px;
     height: 220px;
     border: 3px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     background-color: white;
     margin-top: 20px;
-    padding: 15px 15px;
+    padding: 10px 15px;
 }
 
 .mainRightStoryTitle {
-    width: 310px;
+    width: 280px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .mainRightStoryTitle span:first-child {
     color: rgba(0, 0, 0, 0.5);
 }
 
+.mainRightStoryUpdate {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .mainRightStoryUpdate img {
     width: 40px;
     height: 40px;
     border-radius: 20px;
+    margin-right: 10px;
     
 }
+
+.mainRightStoryUpdateContentId {
+    font-weight: 700;
+}
+
+.mainRightStoryUpdateContentTime {
+    color: rgba(0, 0, 0, 0.5);
+}
+
