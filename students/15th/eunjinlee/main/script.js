@@ -4,6 +4,7 @@ const commentBtn = document.getElementById('comment-btn')
 const commentDeleteBtn = document.getElementById('delete-btn')
 
 const commentList = document.getElementById('comment__list')
+const viewAll = document.getElementById('comment__view-all')
 
 //comments from the local Storage
 let comments = localStorage.getItem('comments') !== null ? JSON.parse(localStorage.getItem('comments')) : []
@@ -28,12 +29,14 @@ const addCommentsInLocalStorage = () => {
 const addCommentDOM = (comment) => {
   const commentEl = document.createElement('li')
   if (comment.text !== '') {
+    viewAll.innerText = `View all ${comments.length} comment${comments.length === 1 ? '' : 's'}`
+
     commentEl.classList.add('comment__content-list')
     commentEl.innerHTML =''
     commentEl.innerHTML = `
     <div class="comment__content-box">
-      <p class="comment__user user-link">workoutbutlazy</p>
-      <p class="comment__content">${comment.text}</p>
+      
+      <span class="comment__content"><span class="comment__user user-link">workoutbutlazy</span>${comment.text}</span>
       <i class="comment__content-delete fas fa-times" id="delete-btn" onclick="removeComment(${comment.id})"></i>
     </div>
     <img src="../images/heart.png" alt="Comment heart" class="comment__heart"></img>
@@ -46,7 +49,7 @@ const addCommentDOM = (comment) => {
 const removeComment = (id) => {
   commentList.innerHTML='' 
   comments = comments.filter((comment) => comment.id !== id)
-  addCommentsInLocalStorage()
+  localStorage.setItem('comments', JSON.stringify(comments))
   renderComments()
 }
 

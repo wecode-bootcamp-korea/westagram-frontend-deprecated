@@ -129,14 +129,14 @@ input:focus {
   outline: none;
 }
 
-small {
+.err-message {
   visibility: hidden;
   font-size: var(--font-size-extrasmall);
   font-weight: var(--font-weight-medium);
   color: var(--error-color);
 }
 
-form-control.error small {
+form-control.error > .err-message {
   visibility: visible;
 }
 

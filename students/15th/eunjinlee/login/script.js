@@ -3,14 +3,17 @@ const email = document.getElementById('email')
 const password = document.getElementById('password')
 const loginBtn = document.getElementById('login-btn')
 
+const errMessage = document.getElementById('err-message')
+console.log(errMessage)
+
 //show input error message
 const showError = (input, message) => {
   // const formControl = document.getElementById('form-control')
   const formControl = input.parentElement;
   formControl.className = 'form-control error'
   // const small = document.getElementById('small')
-  // small.innerText = message
-  // console.log(small.innerText)
+  errMessage.innerHTML = message
+  // console.log(errMessage.innerText)
 }
 
 //show Success
@@ -40,6 +43,16 @@ const checkLength = (input, min) => {
   }
 }
 
+// Check email is valid
+const checkEmail = (input) => {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(input.value.trim())) {
+    showSuccess(input)
+  } else {
+    showError(input, 'Email is not valid')
+  }
+}
+
 //activate loginBtn
 const activateLoginBtn = () => {
   if (email.value.length >= 3 && password.value.length >= 7) {
@@ -57,9 +70,9 @@ form.addEventListener('keyup', activateLoginBtn)
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   checkRequired([email, password])
-  checkLength(email, 3)
-  checkLength(password, 7)
-
+  checkLength(email, 5)
+  checkLength(password, 5)
+  checkEmail(email)
   // email.value = ''
   password.value = ''
 
