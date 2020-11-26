@@ -1,5 +1,23 @@
 const $commentInput = document.querySelector(".comment-input");
 const $inputButton = document.querySelector(".input-button");
+const $ulDiv = document.querySelector("ul");
+
+$ulDiv.addEventListener("click", (event) => {
+  if (event.target.tagName === "I") {
+    if (!event.target.classList.contains("fas")) {
+      event.target.classList.add("fas");
+      event.target.style.color = "#ED4956";
+    } else {
+      event.target.classList.remove("fas");
+      event.target.style.color = "black";
+    }
+  }
+  if (event.target.tagName === "BUTTON") {
+    if (confirm("정말 삭제 하시겠습니까?") === true) {
+      event.target.parentNode.remove();
+    }
+  }
+});
 
 const checkRealtimeValue = () => {
   const inputValue = document.querySelector(".comment-input").value;
@@ -18,29 +36,25 @@ const checkRealtimeValue = () => {
 };
 
 const postComment = () => {
-  const $ul = document.querySelector("ul");
-  const $inputElement = document.createElement("span");
-  const inputValue = document.querySelector(".comment-input").value;
-  $inputElement.innerHTML = inputValue;
   const nickname = "kingth_man";
+  const $nicknameTag = `<a href="#" class="comment-list-nickname">${nickname}</a>`;
+  const inputValue = document.querySelector(".comment-input").value;
+  const $commentTextTag = `<span>${inputValue}</span>`;
+  const $deleteButtonTag = `<button class="delete-button">...</button>`;
+  const $likeButtonTag = `<i class="far fa-heart like-button"></i>`;
   const $commentElement = document.createElement("li");
-  const $nicknameElement = document.createElement("a");
-  $nicknameElement.href = "#";
-  $nicknameElement.classList.add("comment-list-nickname");
-  $nicknameElement.innerHTML = nickname;
-  $commentElement.appendChild($nicknameElement);
-  $commentElement.appendChild($inputElement);
-  $ul.appendChild($commentElement);
 
+  $commentElement.innerHTML =
+    $nicknameTag + $commentTextTag + $deleteButtonTag + $likeButtonTag;
+  document.querySelector("ul").appendChild($commentElement);
   document.querySelector(".comment-input").value = "";
   $inputButton.classList.remove("activate-button");
   $inputButton.disabled = true;
 };
 
 $commentInput.addEventListener("keyup", checkRealtimeValue);
-
 $inputButton.addEventListener("click", postComment);
-
-$commentInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") postComment();
+$commentInput.addEventListener("keyup", (event) => {
+  const inputValue = document.querySelector(".comment-input").value;
+  if (inputValue && event.key === "Enter") postComment();
 });

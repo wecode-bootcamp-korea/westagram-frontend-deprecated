@@ -186,6 +186,30 @@ li {
   color: #0095f6;
 }
 
+.delete-button {
+  border: none;
+  font-size: 14px;
+  background-color: white;
+  position: absolute;
+  right: 35px;
+  opacity: 0;
+  outline: none;
+  margin-top: -7px;
+  padding-bottom: 5px;
+}
+
+li:hover .delete-button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.like-button {
+  position: absolute;
+  right: 15px;
+  color: black;
+  cursor: pointer;
+}
+
 .main-right {
   position: fixed;
   top: 103px;
