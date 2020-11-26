@@ -7,35 +7,20 @@
   <link rel="stylesheet" href="src/css/login.css">
 </head>
 <body>
-
   <section class="login-container">
-    <section class="login-box">
-      <header class="title-box">
-        <img src="src/img/westagram_big.png" alt="westagram logo">
-      </header>
-  
-      <form action="">
-        <div class="id">
-          <input type="text" class="id" placeholder="전화번호, 사용자 이름 또는 이메일">
-        </div>
-        <div class="password">
-          <input type="password" class="password" placeholder="비밀번호">
-        </div>
-        <div class="valid-check">
-          <p class="valid-check-message"></p>
-        </div>
-        <div class="login-button">
-          <button class="login-button" disabled>로그인</button>
-        </div>
-      </form>
-    </section>
-
+    <header class="title-box">
+      <img src="src/img/westagram_big.png" alt="westagram logo">
+    </header>
+    <form action="">
+      <input type="text" class="id" placeholder="전화번호, 사용자 이름 또는 이메일">
+      <input type="password" class="password" placeholder="비밀번호">
+      <p class="valid-check-message"></p>
+      <button class="login-button" disabled>로그인</button>
+    </form>
     <footer class="footer-box">
       <p class="password-lost">비밀번호를 잊으셨나요?</p>
     </footer>
-    
   </section>
-
   <script src="src/js/login.js"></script>
 </body>
 </html>

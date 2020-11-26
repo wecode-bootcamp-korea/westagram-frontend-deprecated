@@ -1,6 +1,6 @@
 const inputForm = document.getElementsByTagName("form")[0];
 const loginButton = document.getElementsByTagName("button")[0];
-
+const validErrorMessageElement = document.getElementsByClassName("valid-check-message")[0];
 // Validation 관련 모든 규칙을 클로저로 구현해보면 좋을 것 같다.
 
 function activateLoginButton(){
@@ -33,33 +33,31 @@ function checkPwValidation(pwToCheck, isValidId){
   }
   const minPwLength = 8;
   const pwLength = pwToCheck.length;
-  const validErrorMessage = document.getElementsByClassName("valid-check-message")[0];
   
-  // password length validation
+  // password 'length' validation
   if(pwLength<minPwLength){
     if(isValidId && pwLength){
-      showValidatingGuide("비밀번호는 8자리 이상입니다.", validErrorMessage);
+      showValidatingGuide("비밀번호는 8자리 이상입니다.", validErrorMessageElement);
     }
     return false;
-  }
-  // password including validation
-  else{
+  }else{
+    // password 'is-including?' validation
     for(let validType in pwValidation){
       if(!pwToCheck.match(pwValidation[validType])){
         if(isValidId){
-          showValidatingGuide(`비밀번호는 ${validType.slice(5)}(을)를 포함해야 합니다.`, validErrorMessage);
+          showValidatingGuide(`비밀번호는 ${validType.slice(5)}(을)를 포함해야 합니다.`, validErrorMessageElement);
         }
         return false;
       }
     }
     if(isValidId){
-      hideValidatingGuide(validErrorMessage);
+      hideValidatingGuide(validErrorMessageElement);
     }
     return true;
   }
 
 }
-// 아이디는 현재 이메일 형식으로 작성
+// 아이디는 이메일 형식으로 '문자열@문자열' 형태인지 확인
 function checkIdValidation(idValue){
   const validIdRegExp = /\w\@\w/i;
   if(idValue.match(validIdRegExp)){
@@ -72,30 +70,22 @@ function checkIdValidation(idValue){
 onInputChange = () => {
   const idValue = document.querySelector('input.id').value;
   const pwValue = document.querySelector('input.password').value;
+  
+  // validation process
   const isValidId = checkIdValidation(idValue);
   const isValidPw = checkPwValidation(pwValue, isValidId);
-  const validErrorMessage = document.getElementsByClassName("valid-check-message")[0];
+  
 
   if(isValidId && isValidPw){
     activateLoginButton();
-  }else if(!isValidId){
-    console.log("현재 이메일로만 로그인이 가능합니다.");
-    deactivateLoginButton();
-  }else if(!isValidPw){
-    deactivateLoginButton();
-    console.log("비밀번호 오류");
   }else{
-    console.log("valid");
     deactivateLoginButton();
   }
-  if(!pwValue) hideValidatingGuide(validErrorMessage);
-
+  // if empty password input => hide guide message
+  if(!pwValue) hideValidatingGuide(validErrorMessageElement);
 }
-
 
 main = () => {
   inputForm.addEventListener("input", onInputChange);
-
 }
-
 main();
