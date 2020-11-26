@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <title>Westagram</title>
+</head>
+
+<body>
+    <!--------- nav bar ------------->
+    <nav class="nav_bar">
+        <div class="nav_logos">
+            <img class="nav_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
+                alt="logo_img">
+            <span class="nav_letter">Westagram</span>
+        </div>
+        <div class="nav_search">
+            <input class="nav_search_box" type="text" name="nav_search" id="nav_search" placeholder="검색">
+        </div>
+        <div class="nav_more">
+            <img class="nav_more_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+                alt="explore">
+            <img class="nav_more_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                alt="heart">
+            <img class="nav_more_icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+                alt="profile">
+        </div>
+    </nav>
+    <!------------- 피드 박스 ------------->
+    <main class="main_container">
+        <section class="feeds">
+            <article class="feed_box">
+                <!--------- 피드 헤더 ------------>
+                <div class="article_header">
+                    <img class="user_img"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/66829545_2327038777404003_5582996931161882624_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=TaG-DsoZMAQAX-LtJYz&tp=1&oh=2975b0ff95cb1c021797160b3829de7a&oe=5FE6FC08"
+                        alt="user_profile_img">
+                    <div>
+                        <span class="user_id">compassionkorea</span>
+                        <p class="user_location">한국컴패션</p>
+                    </div>
+                    <img class="more"
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDI2LjY2NyA0MjYuNjY3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MjYuNjY3IDQyNi42Njc7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSI0Mi42NjciIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPGNpcmNsZSBjeD0iMjEzLjMzMyIgY3k9IjIxMy4zMzMiIHI9IjQyLjY2NyIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8Y2lyY2xlIGN4PSIzODQiIGN5PSIyMTMuMzMzIiByPSI0Mi42NjciLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                </div>
+                <!------------ 피드 이미지 ---------->
+                <div class="feed_img_container">
+                    <img class="feed_img"
+                        src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/123245829_1472129352986945_2420344400157355594_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=uclls1m5pHQAX9jSOFp&tp=1&oh=8150adb32611b4a0c79259132a56e40d&oe=5FE62776"
+                        alt="feed_img">
+                </div>
+                <div class="feed_content">
+                    <div class="feed_icons">
+                        <div>
+                            <button type="button" id="liked" class="feed_icon">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC0yOCA1MTIuMDAxIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjU2IDQ1NS41MTU2MjVjLTcuMjg5MDYyIDAtMTQuMzE2NDA2LTIuNjQwNjI1LTE5Ljc5Mjk2OS03LjQzNzUtMjAuNjgzNTkzLTE4LjA4NTkzNy00MC42MjUtMzUuMDgyMDMxLTU4LjIxODc1LTUwLjA3NDIxOWwtLjA4OTg0My0uMDc4MTI1Yy01MS41ODIwMzItNDMuOTU3MDMxLTk2LjEyNS04MS45MTc5NjktMTI3LjExNzE4OC0xMTkuMzEyNS0zNC42NDQ1MzEtNDEuODA0Njg3LTUwLjc4MTI1LTgxLjQ0MTQwNi01MC43ODEyNS0xMjQuNzQyMTg3IDAtNDIuMDcwMzEzIDE0LjQyNTc4MS04MC44ODI4MTMgNDAuNjE3MTg4LTEwOS4yOTI5NjkgMjYuNTAzOTA2LTI4Ljc0NjA5NCA2Mi44NzEwOTMtNDQuNTc4MTI1IDEwMi40MTQwNjItNDQuNTc4MTI1IDI5LjU1NDY4OCAwIDU2LjYyMTA5NCA5LjM0Mzc1IDgwLjQ0NTMxMiAyNy43Njk1MzEgMTIuMDIzNDM4IDkuMzAwNzgxIDIyLjkyMTg3NiAyMC42ODM1OTQgMzIuNTIzNDM4IDMzLjk2MDkzOCA5LjYwNTQ2OS0xMy4yNzczNDQgMjAuNS0yNC42NjAxNTcgMzIuNTI3MzQ0LTMzLjk2MDkzOCAyMy44MjQyMTgtMTguNDI1NzgxIDUwLjg5MDYyNS0yNy43Njk1MzEgODAuNDQ1MzEyLTI3Ljc2OTUzMSAzOS41MzkwNjMgMCA3NS45MTAxNTYgMTUuODMyMDMxIDEwMi40MTQwNjMgNDQuNTc4MTI1IDI2LjE5MTQwNiAyOC40MTAxNTYgNDAuNjEzMjgxIDY3LjIyMjY1NiA0MC42MTMyODEgMTA5LjI5Mjk2OSAwIDQzLjMwMDc4MS0xNi4xMzI4MTIgODIuOTM3NS01MC43NzczNDQgMTI0LjczODI4MS0zMC45OTIxODcgMzcuMzk4NDM3LTc1LjUzMTI1IDc1LjM1NTQ2OS0xMjcuMTA1NDY4IDExOS4zMDg1OTQtMTcuNjI1IDE1LjAxNTYyNS0zNy41OTc2NTcgMzIuMDM5MDYyLTU4LjMyODEyNiA1MC4xNjc5NjktNS40NzI2NTYgNC43ODkwNjItMTIuNTAzOTA2IDcuNDI5Njg3LTE5Ljc4OTA2MiA3LjQyOTY4N3ptLTExMi45Njg3NS00MjUuNTIzNDM3Yy0zMS4wNjY0MDYgMC01OS42MDU0NjkgMTIuMzk4NDM3LTgwLjM2NzE4OCAzNC45MTQwNjItMjEuMDcwMzEyIDIyLjg1NTQ2OS0zMi42NzU3ODEgNTQuNDQ5MjE5LTMyLjY3NTc4MSA4OC45NjQ4NDQgMCAzNi40MTc5NjggMTMuNTM1MTU3IDY4Ljk4ODI4MSA0My44ODI4MTMgMTA1LjYwNTQ2OCAyOS4zMzIwMzEgMzUuMzk0NTMyIDcyLjk2MDkzNyA3Mi41NzQyMTkgMTIzLjQ3NjU2MiAxMTUuNjI1bC4wOTM3NS4wNzgxMjZjMTcuNjYwMTU2IDE1LjA1MDc4MSAzNy42Nzk2ODggMzIuMTEzMjgxIDU4LjUxNTYyNSA1MC4zMzIwMzEgMjAuOTYwOTM4LTE4LjI1MzkwNyA0MS4wMTE3MTktMzUuMzQzNzUgNTguNzA3MDMxLTUwLjQxNzk2OSA1MC41MTE3MTktNDMuMDUwNzgxIDk0LjEzNjcxOS04MC4yMjI2NTYgMTIzLjQ2ODc1LTExNS42MTcxODggMzAuMzQzNzUtMzYuNjE3MTg3IDQzLjg3ODkwNy02OS4xODc1IDQzLjg3ODkwNy0xMDUuNjA1NDY4IDAtMzQuNTE1NjI1LTExLjYwNTQ2OS02Ni4xMDkzNzUtMzIuNjc1NzgxLTg4Ljk2NDg0NC0yMC43NTc4MTMtMjIuNTE1NjI1LTQ5LjMwMDc4Mi0zNC45MTQwNjItODAuMzYzMjgyLTM0LjkxNDA2Mi0yMi43NTc4MTIgMC00My42NTIzNDQgNy4yMzQzNzQtNjIuMTAxNTYyIDIxLjUtMTYuNDQxNDA2IDEyLjcxODc1LTI3Ljg5NDUzMiAyOC43OTY4NzQtMzQuNjA5Mzc1IDQwLjA0Njg3NC0zLjQ1MzEyNSA1Ljc4NTE1Ny05LjUzMTI1IDkuMjM4MjgyLTE2LjI2MTcxOSA5LjIzODI4MnMtMTIuODA4NTk0LTMuNDUzMTI1LTE2LjI2MTcxOS05LjIzODI4MmMtNi43MTA5MzctMTEuMjUtMTguMTY0MDYyLTI3LjMyODEyNC0zNC42MDkzNzUtNDAuMDQ2ODc0LTE4LjQ0OTIxOC0xNC4yNjU2MjYtMzkuMzQzNzUtMjEuNS02Mi4wOTc2NTYtMjEuNXptMCAwIi8+PC9zdmc+"
+                                    alt="liked_img">
+                            </button>
+                            <button type="button" id="comment" class="feed_icon">
+                                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yNTYsMEMxMTQuODQ4LDAsMCwxMTQuODQ4LDAsMjU2YzAsNDkuMjE2LDEzLjc5Miw5Ni40OCwzOS45MzYsMTM3LjIxNkwxLjE1Miw0OTAuMDQ4DQoJCQljLTIuMzY4LDUuOTUyLTAuOTkyLDEyLjczNiwzLjU1MiwxNy4yOEM3Ljc0NCw1MTAuMzY4LDExLjg0LDUxMiwxNiw1MTJjMi4wMTYsMCw0LTAuMzg0LDUuOTUyLTEuMTUybDk2LjgzMi0zOC43ODQNCgkJCUMxNTkuNTIsNDk4LjIwOCwyMDYuNzg0LDUxMiwyNTYsNTEyYzE0MS4xNTIsMCwyNTYtMTE0Ljg0OCwyNTYtMjU2UzM5Ny4xNTIsMCwyNTYsMHogTTI1Niw0ODANCgkJCWMtNDUuNjMyLDAtODkuMzEyLTEzLjUwNC0xMjYuMjcyLTM5LjA3MmMtMi42ODgtMS44ODgtNS44ODgtMi44NDgtOS4wODgtMi44NDhjLTIuMDE2LDAtNC4wMzIsMC4zODQtNS45NTIsMS4xNTJsLTY5Ljk1MiwyOC4wMzINCgkJCWwyOC4wMzItNjkuOTUyYzEuOTg0LTQuOTkyLDEuMzQ0LTEwLjY1Ni0xLjY5Ni0xNS4wNEM0NS41MDQsMzQ1LjMxMiwzMiwzMDEuNjMyLDMyLDI1NkMzMiwxMzIuNDgsMTMyLjQ4LDMyLDI1NiwzMg0KCQkJczIyNCwxMDAuNDgsMjI0LDIyNFMzNzkuNTIsNDgwLDI1Niw0ODB6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo="
+                                    alt="comment_img">
+                            </button>
+                            <button type="button" id="share" class="feed_icon">
+                                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNTA3LjYwOCw0LjM5NWMtNC4yNDMtNC4yNDQtMTAuNjA5LTUuNTQ5LTE2LjE3Ny0zLjMyMUw5LjQzLDE5My44NzJjLTUuNTE1LDIuMjA2LTkuMjA4LDcuNDU4LTkuNDIsMTMuMzk1DQoJCQljLTAuMjExLDUuOTM2LDMuMTAxLDExLjQzNyw4LjQ0NSwxNC4wMjlsMTkwLjA2OCw5Mi4xODFsOTIuMTgyLDE5MC4wNjhjMi41MTQsNS4xODQsNy43NjQsOC40NTUsMTMuNDkzLDguNDU1DQoJCQljMC4xNzgsMCwwLjM1Ny0wLjAwMywwLjUzNi0wLjAxYzUuOTM1LTAuMjExLDExLjE4OS0zLjkwNCwxMy4zOTQtOS40MTlsMTkyLjgtNDgxLjk5OA0KCQkJQzUxMy4xNTYsMTUuMDAxLDUxMS44NTEsOC42MzgsNTA3LjYwOCw0LjM5NXogTTUyLjA5NCwyMDkuMTE4TDQzNC43Miw1Ni4wNjlMMjA2LjY5MSwyODQuMDk2TDUyLjA5NCwyMDkuMTE4eiBNMzAyLjg4Myw0NTkuOTA3DQoJCQlsLTc0Ljk3OS0xNTQuNTk5bDIyOC4wMy0yMjguMDI3TDMwMi44ODMsNDU5LjkwN3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="
+                                    alt="share" />
+                            </button>
+                        </div>
+                        <button type="button" id="bookmark" class="feed_icon">
+                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MTYuNjY3LDBIOTUuMzMzYy04LjI4NCwwLTE1LDYuNzE2LTE1LDE1djQ4MmMwLDYuMDY3LDMuNjU1LDExLjUzNiw5LjI2LDEzLjg1OGMxLjg1NiwwLjc2OSwzLjgwNSwxLjE0Miw1LjczNywxLjE0Mg0KCQkJYzMuOTA0LDAsNy43NC0xLjUyMywxMC42MS00LjM5NGwxNTAuMDYzLTE1MC4wNjFMNDA2LjA2LDUwNy42MDZjNC4yOSw0LjI5LDEwLjc0Miw1LjU3MywxNi4zNDcsMy4yNTINCgkJCWM1LjYwNS0yLjMyMiw5LjI2LTcuNzkxLDkuMjYtMTMuODU4VjE1QzQzMS42NjcsNi43MTYsNDI0Ljk1MSwwLDQxNi42NjcsMHogTTI1Ni4wMDIsMzIxLjMzMmMtMy45NzgsMC03Ljc5MywxLjU4LTEwLjYwNiw0LjM5NA0KCQkJTDExMC4zMzMsNDYwLjc4N1YzMGgyOTEuMzMzdjQzMC43ODVMMjY2LjYwOSwzMjUuNzI2QzI2My43OTYsMzIyLjkxMiwyNTkuOTgxLDMyMS4zMzIsMjU2LjAwMiwzMjEuMzMyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
+                                alt="bookmark" />
+                    </div>
+                    <div class="who_liked">
+                        <p class="like">좋아요 919개</p>
+                    </div>
+                    <div class="feed_description">
+                        <p><span class="commentUserID">compassionkorea</span> 오늘은 한국컴패션이 17번째 ... <span
+                                class="more_comment">더 보기</span></p>
+                    </div>
+                    <!------------- 댓글  ------------->
+                    <div class="comment_section">
+                        <ul class="comments">
+                            <li class="each_comment">
+                                <div>
+                                    <span class="commentUserID">compassionkorea </span><span class="commentMsg">#감사 #나눔 #어린이 #후원</span>
+                                </div>
+                                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                                    class="comment_heart" alt="comment_heart">
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="updated_time">3주 전</p>
+                    </div>
+                </div>
+                <div class="new_comment_container">
+                    <input id="new_comment" type="text" placeholder="댓글 달기...">
+                    <button class="submit_comment" type="button">게시</button>
+                </div>
+            </article>
+        </section>
+        <!------------- aside ------------>
+        <aside class="main_right">
+            <div class="my_profile">
+                <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/46339276_721891531523670_514643747573596160_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=BvXi93YoSq0AX9ZRkGt&tp=1&oh=2eda327f827530b39690d8ed33b6ab63&oe=5FE6308E"
+                    class="my_profile_picture" alt="my_profile_picture">
+                <div class="profile">
+                    <p class="myID" id="myID">daehoieem</p>
+                    <p class="myName" id="myName">대호</p>
+                </div>
+                <p class="switchID">전환</p>
+            </div>
+            <!---------- 추천 ------------>
+            <div class="recommend">
+                <div class="recommendationForYou">
+                    <p>회원님을 위한 추천</p><span class="seeAll">모두 보기</span>
+                </div>
+            </div>
+            <ul class="recommend_user">
+                <li class="userNum">
+                    <div class="reco_user_profile">
+                        <img src="https://instagram.fmel5-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fmel5-1.fna.fbcdn.net&_nc_ohc=eJfynleCkQkAX_-ylC_&oh=dd98355110e51a60683901deb4937ce4&oe=5FE54B0F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+                            class="recommend_user_picture" alt="recommend_user_picture">
+                        <div>
+                            <p class="userID">aaaa</p>
+                            <p class="follow_desc">abc님 외 3명이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <p class="follow">팔로우</p>
+                </li>
+                <li class="userNum">
+                    <div class="reco_user_profile">
+                        <img src="https://instagram.fmel5-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fmel5-1.fna.fbcdn.net&_nc_ohc=eJfynleCkQkAX_-ylC_&oh=dd98355110e51a60683901deb4937ce4&oe=5FE54B0F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+                            class="recommend_user_picture" alt="recommend_user_picture">
+                        <div>
+                            <p class="userID">bb</p>
+                            <p class="follow_desc">abc님 외 132명이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <p class="follow">팔로우</p>
+                </li>
+                <li class="userNum">
+                    <div class="reco_user_profile">
+                        <img src="https://instagram.fmel5-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fmel5-1.fna.fbcdn.net&_nc_ohc=eJfynleCkQkAX_-ylC_&oh=dd98355110e51a60683901deb4937ce4&oe=5FE54B0F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+                            class="recommend_user_picture" alt="recommend_user_picture">
+                        <div>
+                            <p class="userID">ccccccccc</p>
+                            <p class="follow_desc">abc님 외 33명이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <p class="follow">팔로우</p>
+                </li>
+                <li class="userNum">
+                    <div class="reco_user_profile">
+                        <img src="https://instagram.fmel5-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fmel5-1.fna.fbcdn.net&_nc_ohc=eJfynleCkQkAX_-ylC_&oh=dd98355110e51a60683901deb4937ce4&oe=5FE54B0F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+                            class="recommend_user_picture" alt="recommend_user_picture">
+                        <div>
+                            <p class="userID">dddddddd</p>
+                            <p class="follow_desc">abc님 외 7명이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <p class="follow">팔로우</p>
+                </li>
+                <li class="userNum">
+                    <div class="reco_user_profile">
+                        <img src="https://instagram.fmel5-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fmel5-1.fna.fbcdn.net&_nc_ohc=eJfynleCkQkAX_-ylC_&oh=dd98355110e51a60683901deb4937ce4&oe=5FE54B0F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
+                            class="recommend_user_picture" alt="recommend_user_picture">
+                        <div>
+                            <p class="userID">eeee</p>
+                            <p class="follow_desc">abc님 외 9명이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <p class="follow">팔로우</p>
+                </li>
+            </ul>
+            <!------  footer   ------->
+            <footer>
+                <ul class="footer_ul">
+                    <li>소개</li>
+                    <li>도움말</li>
+                    <li>홍보 센터</li>
+                    <li>API</li>
+                    <li>채용 정보</li>
+                    <li>개인정보처리방침</li>
+                    <li>약관</li>
+                    <li>위치</li>
+                    <li>인기 계정</li>
+                    <li>해시태그</li>
+                    <li>언어</li>
+                </ul>
+                <p class="inc">© 2020 INSTAGRAM FROM FACEBOOK</p>
+            </footer>
+        </aside>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

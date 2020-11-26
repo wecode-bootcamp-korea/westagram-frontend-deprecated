@@ -1,0 +1,61 @@
+.whole_container {
+    width: 350px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 200px;
+    border: 1px solid #E6E6E6;
+}
+
+.logo_header {
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 50px;
+}
+
+.logo_letter {
+    font-family: Lobster Two;
+    font-size: 50px;
+}
+
+.login_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_input,
+.password_input {
+    width: 268px;
+    height: 38px;
+    color: #999999;
+    background-color: #FAFAFA;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 7px;
+}
+
+.btn {
+    margin-top: 5px;
+}
+
+.login_btn {
+    width: 268px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    margin: 5px 0 55px;
+    background-color: #C0DFFD;
+    color: white;
+    font-size: 14px;
+}
+
+.forgot_pw {
+    font-size: 14px;
+    color: #013569;
+    text-decoration: none;
+    align-items: baseline;
+}
