@@ -18,6 +18,8 @@ const firstName = [
   "kwon",
   "hwang",
   "song",
+  "jang",
+  "joo",
 ]
 
 const lastName = [
@@ -37,14 +39,18 @@ const lastName = [
   "developer",
   "frontend",
   "backend",
+  "python",
+  "javascript",
 ]
 
-let dummyUser = []
+let dummyUsers = []
 
 for(let i in firstName){
   for(let j in lastName){
-    dummyUser.push(`${lastName[j]} ${firstName[i]}`);
+    dummyUsers.push(`${lastName[j]} ${firstName[i]}`);
   }
 }
 
-export { dummyUser };
+dummyUsers;
+
+export { dummyUsers };

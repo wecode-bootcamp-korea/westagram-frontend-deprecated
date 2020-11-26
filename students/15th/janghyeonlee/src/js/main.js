@@ -1,4 +1,4 @@
-import { dummyUser } from './dummy_users.js';
+import { dummyUsers } from './dummy_users.js';
 const commentSubmitBtn = document.querySelector('.feed-comment-upload-button button');
 const commentInput = document.querySelector('.feed-new-comment-input');
 const navSearchInput = document.querySelector('input.nav-search');
@@ -55,7 +55,6 @@ function deleteComment(e) {
   // 삭제 버튼을 누른 댓글에 해당하는 댓글 li HTML element
   const commentElement = e.path[2];
   commentElement.remove();
-  console.log("removed!")
   updateCommentNodes();
 }
 
@@ -80,18 +79,45 @@ function updateCommentNodes() {
   handleCommentSideClick();
 }
 
-function showSearchResult() {
+function deleteUserList() {
+  navSearchUserModal.innerHTML = "";
+}
+
+// 유저 검색 결과 알파벳 순으로 정렬
+function getFilteredUserList() {
+  const splitedSearchKeyword = navSearchInput.value.split(' ');
+  let userList = []
+  dummyUsers.forEach((elem)=>{
+    for(let i=0; i<splitedSearchKeyword.length; i++){
+      if(elem.includes(splitedSearchKeyword[i]) && splitedSearchKeyword[i]){
+        userList.push(elem);
+        break;
+      }
+    }
+  })
+  return userList.sort()
+}
+
+function makeUserList() {
+  const filteredUserList = getFilteredUserList();
+
+  deleteUserList();
+  createUserList(filteredUserList);
+}
+
+function updateUserList() {
   if(!navSearchInput.value){
     navSearchUserModal.style.display = "none";
   }else{
     navSearchUserModal.style.display = "block";
+    makeUserList();
   }
 }
 
 function onNavSearchFocus() {
   navSearchInput.style.backgroundColor = "white";
   navSearchInput.style.color = "black"
-  navSearchInput.addEventListener('input', showSearchResult);
+  navSearchInput.addEventListener('input', updateUserList);
 }
 
 function onNavSearchBlur() {
@@ -100,25 +126,29 @@ function onNavSearchBlur() {
   navSearchInput.style.color = "var(--darker-gray)"
 }
 
-function createDummyUserList() {
+function createUserElement(userName){
   let newUser = document.createElement('div');
   newUser.classList.add('user-in-nav-search-modal');
-  newUser.innerHTML = dummyUser.pop();
+  newUser.innerHTML = userName;
   navSearchUserModal.appendChild(newUser);
 }
 
-function init() {
-  const userNum = dummyUser.length;
+function createUserList(UserList) {
+  const filteredUserNum = UserList.length; 
+  for(let i=0; i<filteredUserNum; i++){
+    createUserElement(UserList[i]);
+  }
+}
 
+function init() {
   commentSubmitBtn.addEventListener('click', commentUpload);
   commentInput.addEventListener('keypress', uploadIfEnterKey);
+  
   navSearchInput.addEventListener('focus', onNavSearchFocus);
   navSearchInput.addEventListener('blur', onNavSearchBlur);
   //update if comment already exists on feed.
   updateCommentNodes();
-  for(let i=0; i<userNum; i++){
-    createDummyUserList();
-  }
+
 };
 
 init();
