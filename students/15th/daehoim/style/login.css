@@ -48,9 +48,12 @@
     border-radius: 6px;
     border: none;
     margin: 5px 0 55px;
-    background-color: #C0DFFD;
+    background-color: #0095F6;
     color: white;
     font-size: 14px;
+}
+.login_btn:disabled {
+    background-color: #C0DFFD;
 }
 
 .forgot_pw {

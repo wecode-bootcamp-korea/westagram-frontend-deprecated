@@ -9,7 +9,6 @@ getID.addEventListener('keyup', function () {
         getID.value && getPW.value !== false
     ) {
         ableBtn.disabled = false;
-        ableBtn.style.backgroundColor = '#0095F6';
     }
 })
 getPW.addEventListener('keyup', function () {
@@ -19,6 +18,8 @@ getPW.addEventListener('keyup', function () {
         getID.value && getPW.value !== false
     ) {
         ableBtn.disabled = false;
-        ableBtn.style.backgroundColor = '#0095F6';
     }
 })
+function moveMain() {
+    location.href = "main.html";
+}
