@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+/* reset */
 
 * {
   margin: 0;
@@ -12,7 +13,6 @@
   list-style: none;
 }
 
-
 :root {
   --normal-gray: rgb(230,230,230);
   --light-gray: rgb(250,250,250);
@@ -24,7 +24,6 @@
 }
 
 body {
-  z-index: 0;
   background-color: var(--light-gray);
 }
 
@@ -60,7 +59,7 @@ nav {
   border-bottom: 1px solid var(--dark-gray);
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,6 +72,33 @@ nav {
   padding-right: 122px;
 }
 
+.nav-search-modal {
+  display: none;
+  position: absolute;
+  top: 45px;
+  width: 215px;
+  height: 300px;
+  background-color: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.nav-search-modal::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-search-modal div {
+  border-bottom: 1px solid var(--dark-gray);
+  cursor: pointer;
+}
+
+.user-in-nav-search-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
 .nav-search {
   position: relative;
   width: 215px;
@@ -80,46 +106,47 @@ nav {
   background-color: var(--light-gray);
 }
 
-.nav-search input{
+.nav-search input {
   padding-left: 23px;
   font-weight: 300;
 }
 
 .nav-icons{
   display: flex;
+  
   position: relative;
-}
-.nav-icon{
-  padding-top: 3px;
-  margin-left: 8px;
+  height: 25px;
 }
 
-.nav-icon img{
-  width: 22px;
-  height: 22px;
-  margin-left: 15px;
+.nav-icon {
+  width: 20px;
+  object-fit: contain;
+  margin-left: 20px;
 }
-.nav-icon-profile{
+
+.nav-icon-profile {
   position: relative;
   width: 22px;
   height: 22px;
   border-radius: 100%;
   cursor: pointer;
 }
-.nav-profile-modal{
+
+.nav-profile-modal {
   display: none;
   z-index: 1;
   position: absolute;
   top: 40px;
-  left: 24px;
+  right: -30px;
   width: 230px;
   height: 193px;
   background-color: white;
   box-shadow: 0 0 8px var(--dark-gray);
   border-radius: 6px;
 }
+
 /* 임시 적용 중 */
-.nav-icon-profile:hover + .nav-profile-modal{
+.nav-icon-profile:hover + .nav-profile-modal {
   display: block;
 }
 
@@ -132,30 +159,7 @@ nav {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid white;
- }
-
-.nav-search-modal{
-  display: none;
-  position: absolute;
-  top: 45px;
-  width: 215px;
-  height: 300px;
-  background-color: white;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
-.nav-search-modal::-webkit-scrollbar{
-  display: none;
-}
-.user-in-nav-search-modal{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-}
-
-
-
 
 /* main */
 
@@ -167,16 +171,14 @@ main {
   margin: auto;
 }
 
-
-
-.main-left{
+.main-left {
   display: flex;
   flex-direction: column;
   width: 612px;
   margin-right: 28px;
 }
 
-.story-box{
+.story-box {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -185,7 +187,7 @@ main {
   height: 118px;
 }
 
-.story-icon-profile{
+.story-icon-profile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,16 +197,15 @@ main {
   height: 70px;
 }
 
-.story-icon-profile img{
+.story-icon-profile img {
   width: 60px;
   height: 60px;
   border-radius: 100%;
 }
 
-
 /* feeds style */
 
-.feed-box{
+.feed-box {
   display: flex;
   flex-direction: column;
   width: 614px;
@@ -213,19 +214,19 @@ main {
   background-color: white;
 }
 
-.feed-header-box{
+.feed-header-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 59px;
 }
 
-.feed-publisher-box{
+.feed-publisher-box {
   display: flex;
   align-items: center;
 }
 
-.feed-publisher-profile{
+.feed-publisher-profile {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,26 +236,27 @@ main {
   border-radius: 100%;
 }
 
-.feed-publisher-profile img{
+.feed-publisher-profile img {
   width: 30px;
   height: 30px;
   border-radius: 100%;
 }
 
-.feed-publisher-info-box{
+.feed-publisher-info-box {
   display: flex;
   flex-direction: column;
 }
 
-.feed-publisher-name{
+.feed-publisher-name {
   font-size: 14px;
   font-weight: 600;
 }
-.feed-publisher-place{
+
+.feed-publisher-place {
   font-size: 13px;
 }
 
-button.feed-header-menu{
+.feed-header-menu {
   border:none;
   border-radius: 100%;
   font-weight: 600;
@@ -264,54 +266,56 @@ button.feed-header-menu{
   height: 20px
 }
 
-.feed-img-box{
+.feed-img-box {
   width: 100%;
   height: 768px;
   overflow: hidden;
 }
-.feed-img-box img{
+
+.feed-img-box img {
   height: 100%;
 }
 
-.feed-social-box{
+.feed-social-box {
   display: flex;
   flex-direction: column;
 }
 
-.feed-social-icons-box{
+.feed-social-icons-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 47px;
 }
 
-.feed-social-left-icons img{
+.feed-social-left-icons img {
   margin-right: 15px;
   width: 24px;
   height: 24px;
 }
 
-.feed-social-right-icons img{
+.feed-social-right-icons img {
   width: 24px;
 }
 
-.feed-social-likes{
+.feed-social-likes {
   font-size: 15px;
   font-weight: 600;
 }
 
-.feed-introduce-box{
-  margin-top: 7px;
+.feed-description-box {
   display: -webkit-box;
+  margin-top: 7px;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-.feed-introduce-publisher-name{
+
+.feed-description-publisher-name {
   font-weight: 600;
 }
 
-.feed-upload-date{
+.feed-upload-date {
   display: flex;
   align-items: center;
   height: 30px;
@@ -319,38 +323,41 @@ button.feed-header-menu{
   color: var(--darker-gray);
 }
 
-.feed-comment-box{
+.feed-comment-box {
   margin-top: 7px;
 }
 
-.feed-comment-box li{
+.feed-comment-box li {
   display: flex;
   justify-content: space-between;
   margin: 2px 0 2px 0;
   word-wrap: break-word;
 }
 
-.feed-comment-box .comment-userid{
+.feed-comment-box .comment-userid {
   font-weight: 600;
 }
 
 .comment-side-info {
   display: flex;
 }
+
 .comment-heart-button {
   margin: 0 3px 0 3px;
 }
+
 .comment-heart-button img {
   width: 12px;
   cursor: pointer;
 }
+
 .comment-delete-button {
   font-size: 15px;
   cursor: pointer;
   width: 30px;
 }
 
-.feed-comment-input-box{
+.feed-comment-input-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -358,52 +365,78 @@ button.feed-header-menu{
   border-top: 1px solid var(--normal-gray);
 }
 
-.feed-new-comment-input{
+.feed-new-comment-input {
   border: none;
   width: 550px;
 }
-.feed-comment-upload-button button{
+
+.feed-comment-upload-button {
   border: none;
   background-color: white;
 }
 
 /* main-right */
 
-.main-right{
-  width: 335px;
+.main-right {
+  width: 295px;
 }
 
-.fixed-aside{
+.fixed-aside {
   display: flex;
   flex-direction: column;
-  width: 295px;
   position: fixed;
+  width: 295px;
   padding-top: 10px;
 }
-.aside-recommend-box{ 
+
+.aside-recommend-box { 
   margin-bottom: 30px;
 }
+
 .aside-current-user-box, 
 .aside-recommend-user-box,
-.aside-recommend-title-box{
+.aside-recommend-title-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.aside-current-user-box{
+
+.aside-current-user-box {
   height: 80px;
 }
+
 .aside-recommend-user-box {
   height: 50px;
 }
+
 .aside-recommend-title-box {
-  height: 30px;
+  height: 40px;
 }
-.aside-recommend-show-all button{
-  border: none;
+
+.aside-current-user-info,
+.aside-recommend-user-info {
+  display: flex;
+}
+
+.aside-current-user-text-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.aside-user-change-button, 
+.aside-follow-recommend-user-button,
+.aside-recommend-show-all-button {
   background-color: transparent;
+  border: none;
+  color: #0395F6;
   font-size: 12px;
   font-weight: 600;
+}
+
+.aside-recommend-show-all-button {
+  color: black;
 }
 
 .aside-recommend-for-user {
@@ -412,76 +445,64 @@ button.feed-header-menu{
   font-weight: 600;
 }
 
-.aside-current-user-info, .aside-recommend-user-info{
-  display: flex;
-}
-
-.aside-current-user-text-info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 15px;
-}
-.aside-recommend-user-text-info{
+.aside-recommend-user-text-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 15px;
 }
 
-.aside-current-user-id, .aside-recommend-user-id{
+.aside-current-user-id,
+.aside-recommend-user-id {
   font-size: 14px;
   font-weight: 600;
 }
-.aside-current-user-name, .aside-recommend-user-name{
+
+.aside-current-user-name,
+.aside-recommend-user-name {
   margin-top: 2px;
   color: var(--darker-gray);
   font-size: 13px;
 }
 
 .aside-current-user-profile,
-.aside-recommend-user-profile{
+.aside-recommend-user-profile {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
 }
-.aside-current-user-profile{
+
+.aside-current-user-profile {
   width: 58px;
   height: 58px;
 }
-.aside-current-user-profile img{
+
+.aside-current-user-profile img {
   width: 56px;
   height: 56px;
   border-radius: 100%;
 }
-.aside-recommend-user-profile{
+
+.aside-recommend-user-profile {
   width: 32px;
   height: 32px;
 }
-.aside-recommend-user-profile img{
+
+.aside-recommend-user-profile img {
   width: 32px;
   height: 32px;
   border-radius: 100%;
 }
 
-
-.aside-user-change button, .aside-follow-recommend-user button{
-  border: none;
-  background-color: transparent;
-  color: #0395F6;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-
 /* footer */
-small{
+small {
   display: block;
   margin-bottom: 15px;
   color: var(--darker-gray);
   font-size: 11.5px;
 }
-small.westagram-copyright{
+
+small.westagram-copyright {
   font-weight: 600;
 }
