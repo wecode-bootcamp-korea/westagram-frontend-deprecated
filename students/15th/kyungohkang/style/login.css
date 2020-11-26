@@ -1,0 +1,59 @@
+.loginpage{
+    width: 400px;
+    height: 500px;
+
+    border: 1px solid lightgray;
+
+    margin: 50px auto;
+    padding: 20px;
+}
+
+header{
+    width: 100%;
+    font-family:'Lobster', cursive;
+   text-align: center;
+    font-size: 60px;
+}
+
+.boxes{
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 100%;
+    margin: 20px auto;
+    padding: 50px 0;
+
+  
+}
+
+input, .loginbtn{
+    padding:15px;
+    margin: 0 20px 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;;
+}
+
+.loginbtn{
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    color: white;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+span{
+
+    display: block;
+
+    width: 100%;
+    font-size: 15px;
+
+    margin: 50px auto;
+    text-align: center;
+
+    color: darkblue;
+}
+
