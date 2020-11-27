@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -6,7 +6,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
 header {
   background-color: #666;
   padding: 30px;
@@ -15,16 +14,16 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px; 
   background: #ccc;
   padding: 20px;
 }
 
-/* Style the list inside the menu */
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -35,17 +34,15 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px; 
 }
 
-/* Clear floats after the columns */
 section:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
 footer {
   background-color: #777;
   padding: 10px;
@@ -53,11 +50,79 @@ footer {
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
     height: auto;
   }
 }
+ */
 
+
+ * {
+   box-sizing: border-box;
+ }
+
+ .frame { /*부모*/
+  width: 365px;
+  height: 420px;
+  background:#ebeff3;
+  /* border-radius: 10px; */
+  position: relative;
+ }
+
+ .colorBox { /*자식*/
+  background: #719fb0;
+  width: 310px;
+  height: 305px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 27px;
+ }
+
+ .miniText { /*색상이름*/
+  position: absolute;
+  opacity: 0;
+  top: 270px;
+  left: 0px;
+  font-size: 16px;
+ }
+
+ .miniText span{ /*색상이름*/
+  background: #578291;
+  color: white;
+ }
+
+ .colorBox:hover .miniText { /*텍스트에 대한*/
+  opacity: 1;
+ }
+
+ .minibox {
+  position: absolute;
+  width: 310;
+  bottom: 25px;
+  left: 28px;
+  display: flex;
+  justify-content:  space-between;
+ }
+
+ .flex-item {
+  background: #ebeff3;
+  padding: 13px 25px;
+  border-radius: 10px;
+  border-color: gainsboro;
+  font-size: 18px;
+  font-weight: bolder;
+ }
+
+ .days {
+  padding: 13px 0px 13px 0px;
+  font-size: 18px;
+  font-weight: bolder;
+ }
+
+ .login {
+  color: #ffff;
+  background-color:  #b2dffc;
+ }
