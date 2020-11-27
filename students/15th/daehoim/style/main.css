@@ -1,3 +1,9 @@
+:root {
+    --border-color: #DBDBDB;
+    --description-color :#8E8E8E;
+    --follow-color: #3FA6F7;
+}
+
 /*          nav bar           */
 .nav_bar {
     width: 100%;
@@ -6,7 +12,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #DBDBDB;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .nav_logos {
@@ -41,7 +47,7 @@
     background-color: #FAFAFA;
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid #DBDBDB;
+    border: 1px solid var(--border-color);
 }
 
 .nav_more {
@@ -71,14 +77,14 @@
 }
 
 .feed_box {
-    border: 1px solid #DBDBDB;
+    border: 1px solid var(--border-color);
 }
 
 /*          피드 헤더           */
 .article_header {
     height: 60px;
     padding: 16px;
-    border-bottom: 1px solid #DBDBDB;
+    border-bottom: 1px solid var(--border-color);
     display: flex;
     align-items: center;
 }
@@ -148,13 +154,15 @@
 }
 
 .more_comment {
-    color: #8E8E8E;
+    color: var(--description-color);
 }
 
 .comments {
     list-style-type: none;
     margin: 2px 0 10px 0;
-
+}
+.commentMsg {
+    color: #02376B;
 }
 
 .comments>li {
@@ -167,16 +175,26 @@
     width: 12px;
 }
 
+.remove_button, .like_button {
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.comment_remove_img {
+    width: 10px;
+}
+
 .updated_time {
     color: #999999;
     font-size: 11px;
 }
 
-/*          댓글           */
+/*          댓글 입력창           */
 .new_comment_container {
     height: 56px;
     padding: 14px;
-    border-top: 1px solid #DBDBDB;
+    border-top: 1px solid var(--border-color);
     margin-top: 10px;
     display: flex;
 }
@@ -235,11 +253,11 @@
 }
 
 .myName {
-    color: #8E8E8E;
+    color: var(--description-color);
 }
 
 .switchID {
-    color: #3FA6F7;
+    color: var(--follow-color);
     font-size: 13px;
 }
 
@@ -296,11 +314,11 @@
 
 .follow_desc {
     font-size: 12px;
-    color: #8E8E8E;
+    color: var(--description-color);
 }
 
 .follow {
-    color: #3FA6F7;
+    color: var(--follow-color);
     font-size: 13px;
 }
 
