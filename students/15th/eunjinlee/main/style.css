@@ -156,7 +156,7 @@ img {
   width: 250px;
   /* height: 300px; */
   max-height: 450px;
-  overflow: hidden;
+  overflow: scroll;
   background: #999;
 
   border: 1px solid var(--border-line-gray);
@@ -172,7 +172,7 @@ img {
 
 .search-list__result {
   width: 100%;
-  height: 72px;
+  min-height: 70px;
   background: white;
 
   border-bottom: 1px solid var(--border-line-gray);
@@ -465,27 +465,26 @@ img {
   background: #000;
   border-radius: 50%;
 
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 /* feed article */
 .feed__article-container {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-regular);
   font-weight: var(--font-weight-medium);
-  line-height: 18px;
+  line-height: 22px;
 
   padding: 0 16px;
   margin-bottom: 6px;
+
+  display: flex;
+
 }
 
 .feed__article {
   width: 490px;
   
   display: inline-block;
-  /* display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden; */
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -496,7 +495,7 @@ img {
   cursor: pointer;
   color: #777;
 
-  margin-left: 8px;
+  margin-left: 3px;
 }
 
 .feed__article-more-button.open{
@@ -504,10 +503,8 @@ img {
 }  
 .feed__article.open  {
   width: 560px;
-  /* display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden; */
+  /* display: block; */
+  
   text-overflow: '';
   overflow: visible;
   white-space: normal;
@@ -522,7 +519,7 @@ img {
 
 .comment__view-all {
   color: var(--font-color-gray);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-regular);
   font-weight: var(--font-weight-regular);
   margin: 2px 0;
 
@@ -551,7 +548,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
 
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-regular);
   margin: 2px 0;
 }
 
@@ -574,16 +571,16 @@ img {
 }
 
 .comment__heart {
-  width: 12px;
-  height: 12px;
+  font-size: var(--font-size-small);
 
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .comment__content {
   max-width: 540px;
-  margin-top: 1px;
-  font-size: var(--font-size-small);
+  margin-top: 3px;
+  font-size: var(--font-size-regular);
   color: var(--font-color-lighterblack);
 
   line-height: 17px;
@@ -594,7 +591,7 @@ img {
 
   font-size: var(--font-size-extrasmall);
   color: #bababa;
-  margin: 3px 0 0 8px;
+  margin: 5px 0 0 8px;
 
   cursor: pointer;
 }
