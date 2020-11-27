@@ -21,23 +21,50 @@
   </head>
   <body>
     <nav>
-      <div class="nav-logo">
-        <img class="nav-logo-img" src="./img/instagram-2.png" alt="" />
-        <div class="nav-logo-text">
-          <div class="small-border">Westagram</div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img class="nav-logo-img" src="./img/instagram-2.png" alt="" />
+          <div class="nav-logo-text">
+            <div class="small-border">Westagram</div>
+          </div>
         </div>
-      </div>
-      <div class="search-bar">
-        <input class="search-input" type="text" placeholder="검색" />
-      </div>
+        <div class="search-bar">
+          <input class="search-input" type="text" placeholder="검색" />
+          <div class="search-list hidden">
+            <ul class="search-list-ul">
+              <!-- <li class="search-list-flex">
+                <div><img src="./img/friends1.jpg" alt="" /></div>
+                <div>wiinnerb</div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
 
-      <div class="menu-bar">
-        <a href="#"><img class="menu-icon" src="./img/compass.png" alt="" /></a>
-        <a href="#"><img class="menu-icon" src="./img/heart.png" alt="" /></a>
-        <a href="#"><img class="menu-icon" src="./img/user.png" alt="" /></a>
-        <a href="#"
-          ><img class="menu-icon circle" src="./img/my_profile.jpg" alt=""
-        /></a>
+        <div class="menu-bar">
+          <a href="#"
+            ><img class="menu-icon" src="./img/compass.png" alt=""
+          /></a>
+          <a href="#"><img class="menu-icon" src="./img/heart.png" alt="" /></a>
+          <a href="#"><img class="menu-icon" src="./img/user.png" alt="" /></a>
+          <a href="#"
+            ><img class="menu-icon circle profile-button" src="./img/my_profile.jpg" alt=""
+          /></a>
+          <div class="menu-box hidden">
+            <div class="in-menu">
+              <i class="far fa-user-circle"></i>
+              <span>프로필</span>
+            </div>
+            <div class="in-menu">
+              <i class="far fa-bookmark"></i>
+              <span>저장됨</span>
+            </div>
+            <div class="in-menu">
+              <i class="fas fa-cog"></i>
+              <span>설정</span>
+            </div>
+            <div class="in-menu">로그아웃</div>
+          </div>
+        </div>
       </div>
     </nav>
     <main>
@@ -90,7 +117,48 @@
           </div>
         </article>
       </div>
-      <div class="main-right">오른쪽 영역이다.</div>
+      <div class="main-right">
+        <div class="right-container">
+          <img class="right-profile" src="./img/my_profile.jpg" alt="" />
+          <div class="right-myname">
+            <div><span>kingth_man</span></div>
+            <div class="right-nickname">하태현님</div>
+          </div>
+          <div class="right-button">전환</div>
+        </div>
+        <div class="right-mid-div">
+          <div class="mid-left-div">회원님을 위한 추천</div>
+          <div>모두 보기</div>
+        </div>
+        <div class="friends">
+          <div class="right-container">
+            <img class="right-profile" src="./img/friends1.jpg" alt="" />
+            <div class="right-myname">
+              <div><span>wiinnerb</span></div>
+              <div class="right-nickname">Follows you</div>
+            </div>
+            <div class="right-button">팔로우</div>
+          </div>
+          <div class="right-container">
+            <img class="right-profile" src="./img/friends2.jpg" alt="" />
+            <div class="right-myname">
+              <div><span>joooniboy</span></div>
+              <div class="right-nickname">
+                ash.island님 외 3명이 팔로우 합니다.
+              </div>
+            </div>
+            <div class="right-button">팔로우</div>
+          </div>
+          <div class="right-container">
+            <img class="right-profile" src="./img/friends3.jpg" alt="" />
+            <div class="right-myname">
+              <div><span>chaehoon.p</span></div>
+              <div class="right-nickname">Follows you</div>
+            </div>
+            <div class="right-button">팔로우</div>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="./js/main.js"></script>
   </body>

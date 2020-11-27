@@ -2,8 +2,8 @@ const $emailInput = document.querySelectorAll("input")[0];
 const $passwordInput = document.querySelectorAll("input")[1];
 const $button = document.querySelector("button");
 const $slideImage = document.querySelectorAll(".slide-img");
-const id = "test";
-const pw = "1234";
+const id = "test@test.com";
+const pw = "12345";
 let imageNumber = 0;
 
 const checkRealtimeValue = () => {
@@ -18,7 +18,9 @@ const checkRealtimeValue = () => {
     $button.disabled = true;
   };
 
-  emailValue && pwValue ? disabledFalse() : disabledTrue();
+  emailValue.includes("@") && pwValue.length >= 5
+    ? disabledFalse()
+    : disabledTrue();
 };
 
 const loginHandler = () => {
