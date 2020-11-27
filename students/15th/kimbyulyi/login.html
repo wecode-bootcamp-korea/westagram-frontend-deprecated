@@ -13,25 +13,22 @@
     <script src="js/login.js" defer></script>
   </head>
   <body>
-    <!-- 메인-->
     <main>
       <article>
-        <!--aside  왼쪽 이미지-->
         <aside class="login__img">
-          <img src="img/phone.png" />
+          <img src="img/phone.png" alt="phone image" />
         </aside>
-        <!-- 로그인 섹션 상단 -->
         <section class="login__container">
           <div class="login__container__top">
-            <img src="img/logo_text.png" />
+            <img src="img/logo_text.png" alt="logo image" />
             <form class="login__form">
               <input
                 type="text"
                 placeholder="Phone number, username, or email"
-                class="userId"
+                class="user__id"
               />
-              <input type="password" placeholder="Password" class="userPw" />
-              <button class="loginBtn">Log In</button>
+              <input type="password" placeholder="Password" class="user__pw" />
+              <button class="login__btn">Log In</button>
             </form>
             <div class="login__bar">
               <div class="bar"></div>
@@ -39,25 +36,25 @@
               <div class="bar"></div>
             </div>
             <div class="login__findPw">
-              <a href="#" class="findFacebook">Log in with Facebook</a>
-              <a href="#" class="findPw">Forgot Password?</a>
+              <a href="#" class="find__facebook">Log in with Facebook</a>
+              <a href="#" class="find__password">Forgot Password?</a>
             </div>
           </div>
-          <!-- 로그인 섹션 하단-->
           <div class="login__container__bottom">
             <div class="app__title">
               <p>
-                Don't have an account? <a href="#" class="signupBtn">Sign up</a>
+                Don't have an account?
+                <a href="#" class="signup__btn">Sign up</a>
               </p>
             </div>
             <div class="app__btn">
               <p>Get the app.</p>
               <div class="btns">
                 <button class="app__btn__img">
-                  <img src="img/app1.png" />
+                  <img src="img/app1.png" alt="appstore logo" />
                 </button>
                 <button class="app__btn__img">
-                  <img src="img/app2.png" />
+                  <img src="img/app2.png" alt="google play logo" />
                 </button>
               </div>
             </div>
@@ -65,7 +62,6 @@
         </section>
       </article>
     </main>
-    <!-- footer -->
     <footer>
       <ul class="footer__list">
         <li>About</li>

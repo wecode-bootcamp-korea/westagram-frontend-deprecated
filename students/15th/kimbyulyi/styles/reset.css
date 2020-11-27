@@ -127,3 +127,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: var(--color-white);
+}
+
+text {
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}

@@ -9,19 +9,19 @@
 }
 
 nav {
-  background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-gainsoboro);
-  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 55px;
+  border-bottom: 1px solid var(--color-gainsoboro);
+  background-color: var(--color-white);
 }
 
 nav .navbar {
-  width: 975px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 975px;
 }
 
 .navbar .logo {
@@ -35,8 +35,8 @@ nav .navbar {
   width: 215px;
   height: 28px;
   border: 1px solid var(--color-gainsoboro);
-  background-color: var(--color-snow);
   border-radius: 5px;
+  background-color: var(--color-snow);
 }
 
 .navbar .wrap-input input {
@@ -45,14 +45,14 @@ nav .navbar {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
 
 .navbar .wrap-input input::placeholder {
+  text-align: center;
   color: var(--color-gainsoboro);
   font-size: 14px;
-  text-align: center;
 }
 
 .navbar .wrap-input input::focus {
@@ -60,12 +60,8 @@ nav .navbar {
 }
 
 .navbar .wrap-input input[type="text"] {
-  color: #3a3a3a;
   padding-left: 30px;
-}
-
-.navbar .wrap-input input[type="text"] {
-  color: ;
+  color: #3a3a3a;
 }
 
 .navbar .wrap-input img.search-icon {
@@ -92,22 +88,22 @@ nav .navbar .navitem :hover {
 /* content === main */
 
 main {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .main-wrap {
+  display: flex;
   max-width: 935px;
   width: 100%;
-  display: flex;
 }
 
 .feeds {
   width: 615px;
   margin-bottom: 50px;
-  background-color: var(--color-white);
   border: 1px solid var(--color-gainsoboro);
+  background-color: var(--color-white);
 }
 
 .feeds__top {
@@ -117,9 +113,9 @@ main {
 }
 
 .feeds__top .more {
+  margin-right: 20px;
   transform: rotate(90deg);
   opacity: 0.5;
-  margin-right: 20px;
 }
 
 .feeds .feeds__top .profile {
@@ -134,8 +130,8 @@ main {
 }
 
 .profile__name p {
-  font-size: var(--font-small);
   margin-top: 5px;
+  font-size: var(--font-small);
 }
 
 .feeds .feedImg {
@@ -194,12 +190,17 @@ main {
   font-weight: var(--weight-bold);
 }
 
-.feeds__comments .comments .comment-like {
+.feeds__comments .comments li .comment__text {
+  width: 500px;
+  text-overflow: ellipsis;
+}
+
+.feeds__comments .comments .comment__like {
   position: absolute;
   right: 5px;
 }
 
-.feeds__comments .comments .comment-like img:hover {
+.feeds__comments .comments .comment__like img:hover {
   cursor: pointer;
 }
 
@@ -222,7 +223,7 @@ main {
   padding: 0 12px;
   margin: 18px 0px;
   resize: none;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .feeds .feeds__comments__form .comment__input:focus {
@@ -235,29 +236,27 @@ main {
   background-color: var(--color-white);
 }
 
-/* right */
-
 aside {
+  position: sticky;
   max-width: 293px;
   width: 100%;
-  margin-left: 30px;
-  position: sticky;
-  top: 0;
   height: 10vw;
+  margin-left: 30px;
+  top: 0;
 }
 
 aside .aside__header {
-  height: 56px;
   display: flex;
   align-items: center;
+  height: 56px;
 }
 
-aside .aside__header .header-img-wrap {
+aside .aside__header .header__img-wrap {
   width: 56px;
   height: 56px;
   margin-right: 20px;
 }
-aside .aside__header .header-img-wrap img {
+aside .aside__header .header__img-wrap img {
   width: 100%;
   height: 100%;
   border-radius: 70%;
@@ -269,8 +268,8 @@ aside .aside__header .profile__name p {
 
 aside .aside__story {
   height: 220px;
-  border: 1px solid var(--color-gainsoboro);
   margin-top: 20px;
+  border: 1px solid var(--color-gainsoboro);
   overflow: hidden;
 }
 
@@ -297,13 +296,13 @@ aside .aside__story .story__recommend {
   padding: 15px;
 }
 
-aside .aside__story .story__recommend .story-img-wrap {
+aside .aside__story .story__recommend .story__img-wrap {
   width: 42px;
   height: 42px;
   margin-right: 10px;
 }
 
-aside .aside__story .story__recommend .story-img-wrap img {
+aside .aside__story .story__recommend .story__img-wrap img {
   width: 100%;
   height: 100%;
   border-radius: 70%;
@@ -342,13 +341,13 @@ aside .aside__users .user__recommend {
   margin-top: 15px;
 }
 
-aside .aside__users .user__recommend .user-img-wrap {
+aside .aside__users .user__recommend .user__img-wrap {
   width: 40px;
   height: 40px;
   margin-right: 10px;
 }
 
-aside .aside__users .user__recommend .user-img-wrap img {
+aside .aside__users .user__recommend .user__img-wrap img {
   width: 100%;
   height: 100%;
   border-radius: 70%;

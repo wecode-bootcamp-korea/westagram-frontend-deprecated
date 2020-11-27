@@ -1,11 +1,9 @@
 "use strict";
 
-const userId = document.querySelector(".userId");
-const userPw = document.querySelector(".userPw");
-const loginBtn = document.querySelector(".loginBtn");
+const userId = document.querySelector(".user__id");
+const userPw = document.querySelector(".user__pw");
+const loginBtn = document.querySelector(".login__btn");
 const login__form = document.querySelector(".login__form");
-
-loginBtn.disabled = true;
 
 const chnageBtn = () => {
   const currentBtn = userId.value && userPw.value;
@@ -14,3 +12,4 @@ const chnageBtn = () => {
 
 userId.addEventListener("keyup", chnageBtn);
 userPw.addEventListener("keyup", chnageBtn);
+loginBtn.disabled = true;
