@@ -37,12 +37,57 @@ body {
 
 .icons {
     float:right;
-    padding-top: 7px;
-
-    width:222px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0 0 24px;
+    width:198px;
     height:22px;
-    background-color:rgb(114, 47, 47);
 
+}
+
+.homeIcon {
+    width: 23px;
+    height: 23px;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url(./images/home.png);
+}
+
+.messageIcon {
+    width: 23px;
+    height: 23px;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url(./images/airplane.png);
+}
+
+
+.exploreIcon {
+    width: 23px;
+    height: 23px;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url(./images/compass.png);
+}
+
+.activityIcon {
+    width: 23px;
+    height: 23px;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url(./images/heart.png);
+}
+
+.profileIcon {
+    
+    width: 25px;
+    height: 25px;
+    border: #E3E3E3 1px solid;
+    border-radius: 50%;
+    margin-top: -2px;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url(./images/IMG_20201112_204911_512.jpg);
 }
 
 .searchBarOutline {
@@ -50,12 +95,27 @@ body {
 }
 
 .searchButton {
+    position: relative;
     width : 199px;
     height: 12px;
     padding: 7px;
     border-radius: 3px;
     background-color: #fafafa;
     border: #dbdbdb 1px solid;
+}
+
+.searchIcon {
+    position: relative;
+    left :0;
+    width: 10px;
+    height: 10px;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url(./images/magnifier.png);
+}
+
+.searchWord {
+    position: absolute;
 }
 
 .mainBar {
@@ -102,6 +162,20 @@ body {
     margin: 0 0 24px;
     padding: 16px 0;
     background-color: white;
+}
+
+li {
+    position: absolute;
+    list-style: none;
+    width: 10px;
+    height: 84px;
+
+}
+.storyContents {
+    width: 76px;
+    height: 122px;
+    padding: 0 4px;
+    background-color: #8e8e8e;
 }
 
 
