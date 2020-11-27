@@ -89,6 +89,9 @@ button {
 .facebook_login img {
     width: 18px;
 }
+.facebook_login span{
+    vertical-align: middle;
+}
 .lostpassword {
     font-size: 13px;
     font-weight: 500;
@@ -112,4 +115,3 @@ button {
     color:#0095f6; 
     font-weight: 600;
 }
-
