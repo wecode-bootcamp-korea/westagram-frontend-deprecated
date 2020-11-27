@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    height:100%;
+    background-color: #fafafa;
+}
+
+.barOutline {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 935px;
+    height: 54px;
+    padding: 0 20px;
+}
+.logoOutline {
+    width:360px;
+    height:36px;
+    padding-top: 16px;
+}
+
+.logo {
+    width:103px;
+    height:29px;
+    padding-top: 7px;
+    bottom: 0;
+    background-image: url(./images/735145cfe0a4.png);
+    background-repeat : no-repeat;
+    background-size : contain;
+}
+
+.iconsOutline {
+    padding-top: 12px;
+    width:360px;
+    height:22px;
+    background-color: white;
+}
+
+.icons {
+    float:right;
+    padding-top: 7px;
+
+    width:222px;
+    height:22px;
+    background-color:rgb(114, 47, 47);
+
+}
+
+.searchBarOutline {
+    padding-top: 12px;
+}
+
+.searchButton {
+    width : 199px;
+    height: 12px;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    border: #dbdbdb 1px solid;
+}
+
+.mainBar {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 53px;
+    border-bottom: #dbdbdb 1px solid;
+    background-color: white;
+}
+
+
+.mainPage {
+    top: 0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+}
+
+.outLine {
+    margin: auto;
+    width: 935px;
+    height: 100px;
+    background-color: rgb(255, 255, 255, 0);
+}
+
+
+.mainContents {
+    float: left;
+    margin-top: 84px;
+    width: 614px;
+    height: 1500px;
+    margin-right: 28px;
+}
+
+.storyBar {
+    width:612px;
+    height:84px;
+    border: #dbdbdb solid 1px ;
+    border-radius: 3px;
+    margin: 0 0 24px;
+    padding: 16px 0;
+    background-color: white;
+}
+
+
+.feedContents {
+    width: 614px;
+    height: auto;
+    border: #dbdbdb solid 1px ;
+    border-radius: 3px;
+    margin: 0 -1px 60px;
+    background-color: rgb(255, 255, 255, 0);
+
+}
+
+
+.profileHeader {
+    width: 614px;
+    height: 60px;
+    background-color:rgb(255, 255, 255, 0);
+    
+}
+
+.feedPhoto {
+    width: 614px;
+    height: 614px;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-image: url(images/hosico_cat_20201113_1.png);
+}
+
+.reactionContents {
+    width: 614px;
+    height: autox;
+    background-color: white;
+}
+
+.reactionBar {
+    width: 614px;
+    height: 40px;
+    background-color: wheat;
+}
+
+.likeNumberBar {
+    width: 582px;
+    height: 18px;
+    margin: 0 0 8px;
+    padding: 0 16px;
+}
+
+.likePeople {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    height: 18px;
+    padding: 0;
+    top: 0;
+    font-size: 14px;
+    color: #262626;
+
+    font-weight: bold;
+    background-color: white;
+}
+
+.textBar {
+    width: 582px;
+    height: 88px;
+    padding: 0 16px;
+    color: #262626;
+    font-size: 14px;
+}
+
+ul {
+    padding:0;
+    margin: 0;
+}
+
+a{
+    font-weight: bolder;
+}
+
+.writersComment {
+    width: 582px;
+    height: 18px;
+    padding-bottom: 5px;
+} 
+
+.totalReply {
+    color: slategray;
+}
+
+.updateTime {
+    width: 598px;
+    height: 20px;
+    padding: 0 0 0 16px;
+    margin: 0 0 4px;
+    font-size: 10px;
+    color: #8e8e8e;
+}
+
+.inputBar{
+    width: 583px;
+    height: 56px;
+    margin: 4px 0 0;
+    padding: 0 16px;
+    border-top:#dbdbdb 1px solid;
+    background-color: rgb(255, 255, 255, 0);
+
+}
+
+/*
+.repleInput {
+    width: 582px;
+    height: 56px;
+    margin: 4px 0 0;
+    padding: 0 16px;
+    border-top:#dbdbdb 1px solid;
+    background-color: rgb(255, 255, 255, 0);
+}
+*/
+
+.createComment {
+   
+    width: 540.23px;
+    height: 54px;
+    border: 0;
+    outline: 0;
+    margin: auto;
+    cursor: auto;
+    font-size: 14px;
+    color: #8e8e8e;
+    background-color: #ffffff, 0;
+    
+
+}
+
+.push {
+    float: right;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: 28px;
+    height: 18px;
+    margin: 17px auto;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bolder;
+    color: blue;
+    background-color: #ffffff;
+
+}
+
+
+.sideBar {
+    float: left;
+    width: 293px;
+    height: 506px;
+    margin: 0 0 30px;
+}
+
+
+
+.Bio {
+    position: fixed;
+    width: 293px;
+    height: 506px;
+    background-color:blue;
+
+}
+
+
+.profile {
+    width: 293px;
+    height: 56px;
+    background-color:lavenderblush
+
+}
+
+.recommendProfile {
+    position: fixed;
+    margin:0 0 12px -16px;
+    width: 325px;
+    height: 291px;
+    background-color: coral;
+}
