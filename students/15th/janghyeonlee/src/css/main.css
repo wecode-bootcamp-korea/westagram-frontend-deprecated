@@ -143,14 +143,25 @@ nav {
 .nav-profile-modal {
   display: none;
   position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
   width: 230px;
-  height: 193px;
   z-index: 10;
   top: 30px;
   right: -15px;
   background-color: white;
   box-shadow: 0 0 8px var(--dark-gray);
   border-radius: 6px;
+}
+
+.nav-profile-modal div{
+  display: flex;
+  align-items: center;
+  padding: 14px;
+}
+
+.nav-profile-modal-logout {
+  border-top: 1px solid var(--dark-gray);
 }
 
 /* main */

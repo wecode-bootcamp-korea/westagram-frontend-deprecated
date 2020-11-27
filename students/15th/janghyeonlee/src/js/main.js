@@ -107,31 +107,13 @@ function deleteComment(e) {
   updateCommentNodes();
 }
 
-function showProfileModal(){
-  const userProfileModal = document.querySelector('section.nav-profile-modal');
-  userProfileModal.style.display = 'block';
-  if(userProfileModal.style.display){
-    document.addEventListener('click', hideProfileModal);
-  }
-}
-
-function hideProfileModal(e){
-  console.log('here!')
-  const userProfileModal = document.querySelector('section.nav-profile-modal');
-  const isModalDisplayed = userProfileModal.style.display;
-  const didclickedProfileModal = e.target.classList[0] === 'nav-profile-modal';
-  if(isModalDisplayed && didclickedProfileModal){
-    userProfileModal.style.display = 'none';
-  }
-}
-
 function toggleNavProfileModal(e) {
   const userProfileModal = document.querySelector('section.nav-profile-modal');
   const didClickedModal = e.target.classList[0] === 'nav-profile-modal';
   const didClickedProfile = e.target.classList[0] === 'nav-icon-profile';
   if(didClickedProfile){
-    userProfileModal.style.display = 'block'
-  }else if(userProfileModal.style.display==='block' && !didClickedModal){
+    userProfileModal.style.display = 'flex'
+  }else if(userProfileModal.style.display && !didClickedModal){
     userProfileModal.style.display = 'none'
   }
 }
