@@ -107,6 +107,35 @@ function deleteComment(e) {
   updateCommentNodes();
 }
 
+function showProfileModal(){
+  const userProfileModal = document.querySelector('section.nav-profile-modal');
+  userProfileModal.style.display = 'block';
+  if(userProfileModal.style.display){
+    document.addEventListener('click', hideProfileModal);
+  }
+}
+
+function hideProfileModal(e){
+  console.log('here!')
+  const userProfileModal = document.querySelector('section.nav-profile-modal');
+  const isModalDisplayed = userProfileModal.style.display;
+  const didclickedProfileModal = e.target.classList[0] === 'nav-profile-modal';
+  if(isModalDisplayed && didclickedProfileModal){
+    userProfileModal.style.display = 'none';
+  }
+}
+
+function toggleNavProfileModal(e) {
+  const userProfileModal = document.querySelector('section.nav-profile-modal');
+  const didClickedModal = e.target.classList[0] === 'nav-profile-modal';
+  const didClickedProfile = e.target.classList[0] === 'nav-icon-profile';
+  if(didClickedProfile){
+    userProfileModal.style.display = 'block'
+  }else if(userProfileModal.style.display==='block' && !didClickedModal){
+    userProfileModal.style.display = 'none'
+  }
+}
+
 // 댓글 최신화 및 하트/삭제 event listener
 function updateCommentNodes() {
   const commentSideInfo = document.getElementsByClassName('comment-side-info');
@@ -131,6 +160,7 @@ function init() {
   commentInput.addEventListener('keypress', (e) => { if(e.keyCode === 13) commentUpload() } )
   navSearchInput.addEventListener('focus', onNavSearchFocus);
   navSearchInput.addEventListener('blur', onNavSearchBlur);
+  document.addEventListener('click', toggleNavProfileModal);
 };
 
 init();
