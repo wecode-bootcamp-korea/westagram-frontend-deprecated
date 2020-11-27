@@ -3,7 +3,7 @@
     width: 350px;
     height: 378px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,15 @@
     margin-bottom: 30px;    
 }
 
-.loginIdInput, .loginPasswordInput {
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.loginForm input {
     width: 250px;
     height: 35px;
     border-radius: 3px;
