@@ -19,9 +19,7 @@
         </div>
         <img src="img/logo.png" alt="" class="nav__left__logo" />
       </div>
-
       <input type="text" placeholder="검색" class="nav__input" />
-
       <div class="nav__right">
         <img
           src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
@@ -37,7 +35,6 @@
         />
       </div>
     </nav>
-
     <main>
       <div class="feeds">
         <article class="feed">
@@ -47,11 +44,9 @@
               class="feed__header__avatar"/ >
               <span class="feed__header__id">ys</span>
             </div>
-            <img src="img/more.png" alt="" class="feed__header__more" />
+            <img src="img/more.png" alt="more" class="feed__header__more" />
           </header>
-
-          <img src="img/the_cat.jpeg" alt="" class="feed__img" />
-
+          <img src="img/the_cat.jpeg" alt="cat" class="feed__img" />
           <section class="feed__content">
             <div class="feed__content__icons">
               <div class="feed__content__icons__left">
@@ -91,7 +86,9 @@
             </div>
           </section>
           <ul class="feed__comments">
-            <li class="feed__comment">cute</li>
+            <li class="feed__comment">
+              <span class="feed__comment__id">zoo0190&nbsp&nbsp</span>cute
+            </li>
           </ul>
           <div class="feed__comment__wrapping">
             <input
@@ -111,14 +108,16 @@
             class="main-right__header-card__img"
           />
           <div>
-            <div style="font-weight: 700">WePet</div>
-            <div style="color: #9e9e9e">WePet | 위펫</div>
+            <div class="main-right__header-card__title">WePet</div>
+            <div class="main-right__header-card__title-detail">
+              WePet | 위펫
+            </div>
           </div>
         </header>
         <section class="main-right__story">
           <header class="main-right__story__header">
-            <div style="color: #9e9e9e">스토리</div>
-            <div style="font-weight: 700">모두 보기</div>
+            <div class="main-right__story__header__title">스토리</div>
+            <div class="main-right__story__header__menu">모두 보기</div>
           </header>
           <ul class="main-right__story__user-cards">
             <li class="main-right__story__user-card">
@@ -128,8 +127,8 @@
                 class="main-right__story__user-card__img"
               />
               <div>
-                <div style="font-weight: 700">sheep</div>
-                <div style="color: #9e9e9e">2분 전</div>
+                <div class="story__user">sheep</div>
+                <div class="story__user-time">2분 전</div>
               </div>
             </li>
             <li class="main-right__story__user-card">
@@ -139,8 +138,8 @@
                 class="main-right__story__user-card__img"
               />
               <div>
-                <div style="font-weight: 700">tiger</div>
-                <div style="color: #9e9e9e">16분 전</div>
+                <div class="story__user">tiger</div>
+                <div class="story__user-time">16분 전</div>
               </div>
             </li>
             <li class="main-right__story__user-card">
@@ -150,8 +149,8 @@
                 class="main-right__story__user-card__img"
               />
               <div>
-                <div style="font-weight: 700">deer</div>
-                <div style="color: #9e9e9e">4분 전</div>
+                <div class="story__user">deer</div>
+                <div class="story__user-time">4분 전</div>
               </div>
             </li>
             <li class="main-right__story__user-card">
@@ -161,15 +160,14 @@
                 class="main-right__story__user-card__img"
               />
               <div>
-                <div style="font-weight: 700">bird</div>
-                <div style="color: #9e9e9e">2분 전</div>
+                <div class="story__user">bird</div>
+                <div class="story__user-time">2분 전</div>
               </div>
             </li>
           </ul>
         </section>
       </div>
     </main>
-
     <script src="js/main.js"></script>
   </body>
 </html>

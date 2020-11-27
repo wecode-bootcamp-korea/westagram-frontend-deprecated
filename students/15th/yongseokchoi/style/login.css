@@ -1,17 +1,17 @@
 html,
 body {
   margin: 8px;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
-.wrapping {
+.loginContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 699px;
   height: 758px;
   margin: auto;
-  border: 1px solid #e9e9e9;
+  border: 2px solid var(--border-color);
   background-color: #ffffff;
 }
 
@@ -25,9 +25,9 @@ input {
   height: 68px;
   margin: 8px 0;
   padding-left: 20px;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
   color: #999999;
-  border: 1px solid #e9e9e9;
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   outline: none;
   font-size: 18px;
@@ -50,7 +50,7 @@ button:hover {
 }
 
 a {
-  margin-top: 250px;
+  margin-top: 180px;
   font-size: 18px;
   color: #2d5481;
   text-decoration: none;

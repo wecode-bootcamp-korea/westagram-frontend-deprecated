@@ -1,9 +1,3 @@
-html,
-body {
-  margin: 0;
-  height: 100%;
-}
-
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -37,7 +31,7 @@ nav {
 .nav__input {
   width: 215px;
   height: 28px;
-  border: 2px solid #e6e6e6;
+  border: 2px solid var(--border-color);
   background-image: url('../img/magnifying-glass.png');
   background-repeat: no-repeat;
   background-position: 76px;
@@ -70,26 +64,22 @@ nav {
 main {
   display: flex;
   justify-content: center;
-  height: 100%;
-  background-color: #fafafa;
-  border-top: 2px solid #e6e6e6;
-  overflow-y: auto;
+  background-color: var(--bg-color);
+  border-top: 2px solid var(--border-color);
 }
 
 .feeds {
   width: 50%;
-  height: 100%;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .feed {
   position: relative;
   width: 90%;
-  height: 100%;
   margin: auto;
   margin-top: 32px;
   background-color: #ffffff;
-  border: 2px solid #e6e6e6;
+  border: 2px solid var(--border-color);
 }
 
 .feed__header {
@@ -118,7 +108,7 @@ main {
 
 .feed__img {
   width: 100%;
-  height: 65%;
+  height: 420px;
   object-fit: cover;
 }
 
@@ -153,7 +143,7 @@ section {
 }
 
 .feed__comments {
-  height: 72px;
+  height: 100px;
   margin: 4px 0;
   padding: 0;
   list-style: none;
@@ -164,13 +154,21 @@ section {
   padding: 0 12px;
 }
 
+.feed__comment__id {
+  font-weight: 700;
+}
+
+.feed__comment__wrapping {
+  height: 48px;
+}
+
 .feed__comment__input {
   position: absolute;
   bottom: 0;
   width: 90%;
   height: 45px;
   border: none;
-  border-top: 2px solid #e6e6e6;
+  border-top: 2px solid var(--border-color);
   padding-left: 12px;
   outline: none;
 }
@@ -183,7 +181,7 @@ section {
   height: 45px;
   border: none;
   background-color: white;
-  border-top: 2px solid #e6e6e6;
+  border-top: 2px solid var(--border-color);
   color: #cde5fc;
   outline: none;
   cursor: pointer;
@@ -193,7 +191,7 @@ section {
   width: 20%;
   height: 70%;
   margin-top: 32px;
-  background-color: #fafafa;
+  background-color: var(--bg--color);
 }
 
 .main-right__header-card {
@@ -207,12 +205,20 @@ section {
   margin-right: 12px;
 }
 
+.main-right__header-card__title {
+  font-weight: 700;
+}
+
+.main-right__header-card__title-detail {
+  color: var(--font-color-faint);
+}
+
 .main-right__story {
   width: 90%;
   height: 40%;
   margin-top: 12px;
   background-color: white;
-  border: 2px solid #e6e6e6;
+  border: 2px solid var(--border-color);
   overflow-y: auto;
 }
 
@@ -221,6 +227,14 @@ section {
   justify-content: space-between;
   padding: 16px 4px;
   font-size: 14px;
+}
+
+.main-right__story__header__title {
+  color: var(--font-color-faint);
+}
+
+.main-right__story__header__menu {
+  font-weight: 700;
 }
 
 .main-right__story__user-cards {
@@ -241,4 +255,12 @@ section {
   height: 32px;
   border-radius: 50%;
   margin-right: 12px;
+}
+
+.story__user {
+  font-weight: 700;
+}
+
+.story__user-time {
+  color: var(--font-color-faint);
 }

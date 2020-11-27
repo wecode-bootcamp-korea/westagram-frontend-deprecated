@@ -3,12 +3,16 @@ const feedComments = document.querySelector('.feed__comments');
 const feedBTN = document.querySelector('.feed__comment__button');
 
 function addComment() {
-  const feedComment = document.createElement('li');
-  feedComment.classList.add('feed__comment');
-  feedComment.innerText = inputComment.value;
-  feedComments.appendChild(feedComment);
-  feedComment.scrollIntoView();
-  inputComment.value = '';
+  if (inputComment.value === '') {
+    return;
+  } else {
+    const commentList = document.createElement('li');
+    commentList.classList.add('feed__comment');
+    commentList.innerHTML = `<span class="feed__comment__id">ys&nbsp&nbsp</span>${inputComment.value}`;
+    feedComments.appendChild(commentList);
+    commentList.scrollIntoView();
+    inputComment.value = '';
+  }
 }
 
 feedBTN.addEventListener('click', addComment);
