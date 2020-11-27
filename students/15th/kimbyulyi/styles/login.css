@@ -115,6 +115,12 @@ article {
   font-size: var(--font-small);
 }
 
+.login__error {
+  margin-top: 20px;
+  font-size: var(--font-small);
+  color: var(--color-blue);
+}
+
 /* 로그인 컨테이너 하단 */
 
 .login__container__bottom {
