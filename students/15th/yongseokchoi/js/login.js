@@ -1,4 +1,3 @@
-const loginContainer = document.querySelector('.loginContainer');
 const loginId = document.querySelector('.login__id');
 const loginPassword = document.querySelector('.login__password');
 const loginBTN = document.querySelector('button');
@@ -19,10 +18,10 @@ const EmailValidate = () => {
     invalidEmail.innerText = '';
     return true;
   } else if (email.length === 0) {
-    invalidEmail.innerText = 'email을 입력해주세요';
+    invalidEmail.innerText = 'email을 입력해주세요😊';
     return false;
   } else {
-    invalidEmail.innerText = '유효하지 않은 email 입니다';
+    invalidEmail.innerText = '유효하지 않은 email 입니다😭';
     return false;
   }
 };
@@ -34,11 +33,11 @@ const passwordValidate = () => {
     invalidPassword.innerText = '';
     return true;
   } else if (password.length === 0) {
-    invalidPassword.innerText = 'password를 입력해주세요';
+    invalidPassword.innerText = 'password를 입력해주세요😊';
     return false;
   } else {
     invalidPassword.innerText =
-      '숫자, 영문, 특수문자 각 1자리 이상이면서 8자에서 16자 사이여야 합니당!';
+      '숫자, 영문, 특수문자 각 1자리 이상이면서 8자에서 16자 사이여야 합니다😭';
     return false;
   }
 };
