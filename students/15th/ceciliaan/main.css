@@ -4,7 +4,7 @@
 
 body {
   padding-top: 40px;
-  background-color: gray;
+  background-color: #fafafa;
 }
 
 nav {
@@ -12,34 +12,56 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgray;
   background-color: white;
 }
 
-.nav-container {
+.navContainer {
   display: flex;
-  width: 914px;
   justify-content: space-between;
+  width: 914px;
   margin: 0 auto;
 }
 
-h1 {
-  font-family: "Lobster", cursive;
-  font-size: 30px;
+.instaLogo {
+  width: 103px;
+  height: 29px;
+  margin: auto 0;
+  background-size: contain;
+}
+
+.searchBarContainer {
+  position: relative;
+  top: 20px;
+  right: 60px;
 }
 
 .searchBar {
   all: unset;
+  position: absolute;
   width: 215px;
   height: 28px;
-  display: block;
-  margin: auto 0;
   border: 2px solid lightgrey;
+  border-radius: 3px;
   background-color: #fafafa;
 }
-.icon-container {
-  list-style: none;
+
+.searchBar::placeholder {
+  position: absolute;
+  color: lightgray;
+  text-align: center;
+}
+
+.findIcon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 70px;
+  top: 8px;
+}
+.iconContainer {
   display: flex;
+  list-style: none;
 }
 
 li {
@@ -47,87 +69,133 @@ li {
 }
 
 #exploreImg {
-  background: white url(img/explore.png) no-repeat;
-  background-size: contain; /* 이미지 가로세로 비율 유지한 채로 사이즈 조절, */
   width: 22px;
   height: 22px;
+  background: white url(img/explore.png) no-repeat;
+  background-size: contain; /* 이미지 가로세로 비율 유지한 채로 사이즈 조절, */
   cursor: pointer;
 }
 
 #heartImg {
-  background: white url(img/heart.png) no-repeat;
-  background-size: contain;
   width: 22px;
   height: 22px;
+  background: white url(img/heart.png) no-repeat;
+  background-size: contain;
   cursor: pointer;
 }
 
 #profileImg {
-  background: white url(img/profile.png) no-repeat;
-  background-size: contain;
+  display: block;
   width: 22px;
   height: 22px;
+  background: white url(img/profile.png) no-repeat;
+  background-size: contain;
   cursor: pointer;
-  display: block;
 }
 
 main {
+  display: flex;
+  justify-content: space-between;
   width: 914px;
   height: 100%;
   padding-top: 30px;
-  display: flex;
   margin: 0 auto;
 }
 
-.article-container {
+.storyBar {
   display: flex;
-}
-
-article {
-  border: 1px solid lightgray;
-  background-color: white;
-  margin-top: 40px;
-  border-radius: 2px;
-}
-
-header {
+  justify-content: space-evenly;
   width: 614px;
+  height: 120px;
+  margin-top: 40px;
   border: 1px solid lightgray;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.activeStory {
   display: flex;
-  justify-content: space-between;
-  padding: 0 16px;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
+  margin-top: 10px;
+}
+
+.storyBorder {
+  width: 66px;
+  height: 66px;
+  border-radius: 70px;
+}
+
+.storyImg {
+  width: 56px;
+  height: 56px;
+  margin-top: -61px;
+  border-radius: 70px;
+  /* position: absolute; */
+}
+
+.articleContainer {
+  margin-top: 40px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.articleHeader {
+  display: flex;
+  align-items: center;
+  width: 614px;
+  padding: 10px 16px;
+  border-radius: 5px;
 }
 
 .miniProfile {
   width: 32px;
   height: 32px;
+  padding: 1px;
   border-radius: 70px;
   border: 1px solid lightgray;
-  padding: 1px;
 }
 
-/* .contentsBox {
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  background-color: white;
-  height: 106px;
-} */
-
-.id {
+.mainId {
+  margin-left: 10px;
   font-weight: bold;
-  /* display: inline; */
 }
 
 .more {
+  margin-left: 480px;
   font-weight: bold;
-  /* display: inline; */
 }
 
 #feedImg {
   width: 614px;
   object-fit: contain;
+}
+
+.contentImgContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px 10px;
+  margin-left: 10px;
+  width: 100px;
+}
+
+#contentHeart {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#contentComment {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#contetnShare {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .uploadComment {
@@ -136,38 +204,104 @@ header {
   padding: 0;
 }
 
-.comment-container {
+.commentContainer {
   position: relative;
 }
 
 .commentBox {
-  border: 1px solid lightgray;
-  background-color: white;
   width: 100%;
   height: 60px;
-  position: absolute;
+  border: none;
+  border-top: 1px solid lightgray;
+}
+
+.like {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.id {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.content {
+  margin: 10px;
+}
+
+.moreComents {
+  margin: 10px;
+  color: lightgray;
+  cursor: pointer;
 }
 
 .commentBtn {
   display: inline;
   position: absolute;
-  color: blue;
-  background-color: white;
-  cursor: pointer;
   margin-top: 10px;
   right: 5px;
   width: 60px;
   height: 40px;
-  /* z-index: 1; */
   border: 0 none;
+  color: blue;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mainRight {
+  position: fixed;
+  margin: 40px 0 0 680px;
+  width: 250px;
+  height: 614px;
+  border: 1px solid #fafafa;
+  background-color: #fafafa;
+}
+
+.sideMyProfile {
+  display: flex;
+  align-items: center;
+}
+.sideProfile {
+  width: 56px;
+  height: 56px;
+  border-radius: 70px;
+}
+
+.sideId {
+  margin-left: 10px;
   font-weight: bold;
 }
 
-.main-right {
-  width: 250px;
-  height: 614px;
-  border: 1px solid black;
-  margin-top: 40px;
-  background-color: white;
-  /* position: fixed; */
+.sideRecommendContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sideRecommend1,
+.sideRecommend2,
+.sideRecommend3,
+.sideRecommend4,
+.sideRecommend5,
+.sideRecommend6 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sideFollowId {
+  margin-left: 10px;
+}
+
+.followText {
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.sideFollow {
+  width: 32px;
+  height: 32px;
+  border-radius: 70px;
 }

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>westargram</title>
     <link rel = "stylesheet" href ="main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <div class ="nav-container">
-        <h1>Instagram</h1>
-        <input class = "searchBar" type="text" placeholder="검색">
-        <ul class = "icon-container">
+        <div class ="navContainer">
+        <img  class ="instaLogo" alt = "instaLogo" src = "img/instagramLogo.png">
+        <div class = "searchBarContainer">
+            <input class = "searchBar" type="text" placeholder="검색">
+            <img class = "findIcon" alt ="find" src ="img/find2.png">
+        </div>
+        <ul class = "iconContainer">
             <li id = "exploreImg"></li>
             <li id = "heartImg"></li>
             <li id = "profileImg"></li>
@@ -21,31 +22,123 @@
         </div>
     </nav>
     <main>
-        <div class ="article-container">
+        <div class = "mainColunm">
+        <div class = "storyBar">
+            <div class = "activeStory">
+                <img class = "storyBorder" src = "img/story.png">
+                <img class = "storyImg" src = "img/wecode.png">
+                <p>wecode</p>
+            </div>
+            <div class = "activeStory">
+                <img class = "storyBorder" src = "img/story.png">
+                <img class = "storyImg" src = "img/mina.jpg">
+                <p>mina_.___._</p>
+            </div>
+            <div class = "activeStory">
+                <img class = "storyBorder" src = "img/story.png">
+                <img class = "storyImg" src = "img/daeho.jpg">
+                <p>daehoieem</p>
+            </div>
+            <div class = "activeStory">
+                <img class = "storyBorder" src = "img/story.png">
+                <img class = "storyImg" src = "img/taehyun.jpg">
+                <p>kingth_man</p>
+            </div>
+            <div class = "activeStory">
+                <img class = "storyBorder" src = "img/story.png">
+                <img class = "storyImg" src = "img/eunwoo.jpg">
+                <p>wecode_founder </div>
+            <div class = "activeStory">
+                <img class = "storyBorder" src = "img/story.png">
+                <img class = "storyImg" src = "img/byunggon.png">
+                <p>soral215</p>
+            </div>
+           
+        </div>
+        <div class ="articleContainer">
             <article>
-                <header>
+                <div class = "articleHeader">
                     <img  class ="miniProfile" alt = "miniProfile" src = "img/feedImg1.jpeg">
-                    <span class = "id">devCecy</span> 
+                    <span class = "mainId">devCecy</span> 
                     <span class = "more">...</span>
-                </header>
-                <img  id ="feedImg" alt = "img1" src = "img/feedImg1.jpeg">
-                <div class = "contentsBox">
-                    <p class = "id">devCecy</p>  
-                    <p class = "content">제주도 바다에서 사진찍기!</p>
                 </div>
-                <div class = "uploadComment-container">
+                    <img  id ="feedImg" alt = "img1" src = "img/feedImg1.jpeg">
+                <div class = "contentsBox">
+                    <div class="contentImgContainer">
+                        <img  id ="contentHeart" alt = "contentHeart" src = "img/heart.png">
+                        <img  id ="contentComment" alt = "contentComment" src = "img/commentIcon.png">
+                        <img  id ="contetnShare" alt = "contetnShare" src = "img/send.png">
+                    </div>
+                    <p class = "like">좋아요 200개</p>
+                    <span class = "id"> devCecy</span>  
+                    <span class = "content"> 제주도 바다에서 사진찍기!👻</span>
+                    <p class = "moreComents">댓글 모두보기</p>
+                <div class = "uploadCommentContainer">
                     <ul class ="uploadComment">
-
                     </ul>
                 </div>
-            <div class = "comment-container">
-                <input class = "commentBox" placeholder="댓글달기..." onKeyDown = "onKeyDown()">
-                <button class = "commentBtn">게시</button>
-            </div>
+                <div class = "commentContainer">
+                    <input class = "commentBox" placeholder="댓글달기..." onKeyDown = "onKeyDown()">
+                    <button class = "commentBtn">게시</button>
+                </div>
+        </div>
             </article>
         </div>
-        <div class = "main-right">
+    </div>
 
+        <div class = "mainRight">
+            <div class = "sideMyProfile">
+                <img  class ="sideProfile" alt = "sideProfile" src = "img/feedImg1.jpeg">
+                <span class = "sideId"> devCecy</span> 
+            </div>
+            <p style ="color : gray">회원님을 위한 추천</p>
+            <div class = "sideRecommendContainer">
+                <div class ="sideRecommend1">
+                    <img  class ="sideFollow" alt = "sideProfile" src = "img/wecode.png">
+                    <span class = "sideFollowId"> wecode</span> 
+                </div>
+                <span class = "followText"> 팔로우</span> 
+            </div>
+
+            <div class = "sideRecommendContainer">
+                <div class ="sideRecommend2">
+                    <img  class ="sideFollow" alt = "sideProfile" src = "img/aram.jpg">
+                    <span class = "sideFollowId">alioolive0206</span> 
+                </div>
+                <span class = "followText"> 팔로우</span> 
+            </div>
+
+            <div class = "sideRecommendContainer">
+                <div class ="sideRecommend3">
+                    <img  class ="sideFollow" alt = "sideProfile" src = "img/doory.jpg">
+                    <span class = "sideFollowId">dooreplay</span> 
+                </div>
+                <span class = "followText"> 팔로우</span> 
+            </div>
+
+            <div class = "sideRecommendContainer">
+                <div class ="sideRecommend4">
+                    <img  class ="sideFollow" alt = "sideProfile" src = "img/eunjin.jpg">
+                    <span class = "sideFollowId">workoutbutlazy</span> 
+                </div>
+                <span class = "followText"> 팔로우</span> 
+            </div>
+
+            <div class = "sideRecommendContainer">
+                <div class ="sideRecommend5">
+                    <img  class ="sideFollow" alt = "sideProfile" src = "img/haram.jpg">
+                    <span class = "sideFollowId">kkram95</span> 
+                </div>
+                <span class = "followText"> 팔로우</span> 
+            </div>
+
+            <div class = "sideRecommendContainer">
+                <div class ="sideRecommend6">
+                    <img  class ="sideFollow" alt = "sideProfile" src = "img/jacob.jpg">
+                    <span class = "sideFollowId">jacob.lee19</span> 
+                </div>
+                <span class = "followText"> 팔로우</span> 
+            </div>
         </div>
     </main>
     <script src = "./main.js"></script>
