@@ -49,8 +49,13 @@ button:hover {
   cursor: pointer;
 }
 
+.checkText {
+  color: red;
+}
+
 a {
-  margin-top: 180px;
+  position: fixed;
+  bottom: 48px;
   font-size: 18px;
   color: #2d5481;
   text-decoration: none;
