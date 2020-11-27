@@ -1,26 +1,21 @@
 
 const thisIsBtn = document.querySelector('.logBtn');
-// console.log(thisIsBtn)
 const thisIsId = document.getElementById('loginEmail');
 const thisIsPw = document.getElementById('loginPw');
 const myId = 'yongjl12@naver.com';
 const myPw = '123456789';
 
+function BtnChange(){
+    const idValue = thisIsId.value;
+    const pwValue = thisIsPw.value;
+    const userInfo = idValue.includes('@') && pwValue.length >=5;
+    
+    const canChange = (userInfo) ? thisIsBtn.style.backgroundColor = "royalblue" :
+    thisIsBtn.style.backgroundColor = "#ccdefc";
+}
 
-thisIsPw.addEventListener('keyup', (e)=> {
-    idValue = thisIsId.value;
-    pwValue = thisIsPw.value;
-
-    console.log(idValue,pwValue)
-    if((idValue.includes('@')) &&(pwValue.length >= 5)) {
-        thisIsBtn.style.backgroundColor = "royalblue";
-    } else {
-        thisIsBtn.style.backgroundColor = "#ccdefc";
-    }
-
-})
-
-
+thisIsId.addEventListener('keyup', BtnChange)
+thisIsPw.addEventListener('keyup', BtnChange)
 
 
 thisIsBtn.addEventListener('click', (e)=> {

@@ -7,12 +7,12 @@ body {
     height: 750px;
     margin: auto;
 }
+
 h1 {
     display: flex;
     justify-content: center;
     font-family: 'Lobster', cursive;
     font-size: 60px;
-    
 }
 
 header {

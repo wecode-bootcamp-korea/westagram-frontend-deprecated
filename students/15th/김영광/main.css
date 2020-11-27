@@ -135,11 +135,11 @@ main {
 
 article {
   width: 614px;
-  height: 893px;
+  border:1px solid lightgray;
 }
 
 .header_container {
-  border: 1px;
+  border: 1px solid lightgray;
   width: 614px;
   height: 64px;
   display: flex;
@@ -222,16 +222,12 @@ article {
   font-weight: 600;
 }
 
-.feed_content{
-  width: 400px;
-  height: 18px;
-  position: relative;
-  left: 15px;
-}
 
 .add_input {
   width: 614px;
   height: 58px;
+  outline: none;
+  border: 1px 0 1px 0  solid lightgray;
 } 
 
 .add_comment {
@@ -283,3 +279,7 @@ article {
   ul { margin-left: 15px ;  padding: 0; }
 
   
+  .feed_comments{
+    position: relative;
+    width: 400px;
+  }
