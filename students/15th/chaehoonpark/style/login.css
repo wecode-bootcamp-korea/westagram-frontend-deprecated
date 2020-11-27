@@ -7,24 +7,19 @@
 .mother{
     display: flex;
     justify-content: center;
-    
-    margin: 32px auto 0;
-    max-width: 935px;
-    padding-bottom: 32px;
-    width: 100%;
+    padding-top: 50px;
     background-color: #FAFAFA;
 }
 
 div {
-    
     text-align: center;
 }
 
 .right_main{
-    border-radius: 1px
+    margin-left: 10px;
     background-color: #FFFFFF;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
-    margin-left: 10px;
+    border-radius: 1px;
 }
 
 h1 {
@@ -33,7 +28,6 @@ h1 {
 }
 
 .login_info{
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,21 +36,18 @@ h1 {
 }
 
 .input_and_button_box {
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 20px;
 }
 
 input {
     display: inline-block;
-    font-size: 16px;
-    background: rgba(var(--b3f,250,250,250),1);
-    padding : 9px 0 7px 8px;
-
     width: 258px;
     height: 36px;
     margin: 3px;
+    padding : 9px 0 7px 8px;
+    background: rgba(var(--b3f,250,250,250),1);
     border: 1px solid rgba(var(--ca6,219,219,219),1);;
     border-radius: 3px;
     font-size: 14px;
@@ -68,17 +59,17 @@ button {
     height: 30px;
     margin: 8px 40px;
     background-color: #B2DFFC;
-    font: inherit;
     color: #FAFFFF;
     border: 0;
     border-radius: 3px;
+    font: inherit;
 }
 
 
 
 .lost_password {
     margin-bottom: 10px;
+    line-height: 14px;
     color: rgba(var(--fe0,0,55,107),1);
     font-size: 12px;
-    line-height: 14px;
 }
