@@ -1,13 +1,16 @@
 const searchList = document.getElementById('search-list-container')
-const searchInput = document.getElementById('nav__search-input')
+const searchInput = document.getElementById('nav-search-input')
+
+const moreArticleBtn = document.getElementById('more-article-button')
 
 const commentForm = document.getElementById('comment-form')
 const commentInput = document.getElementById('comment-input')
 const commentBtn = document.getElementById('comment-btn')
 const commentDeleteBtn = document.getElementById('delete-btn')
 
-const commentList = document.getElementById('comment__list')
-const viewAll = document.getElementById('comment__view-all')
+const viewCommentsBtn = document.getElementById('comment-view-all')
+const commentList = document.getElementById('comment-list')
+const commentItem = document.getElementsByClassName('comment__content-list')
 
 //comments from the local Storage
 let comments = localStorage.getItem('comments') !== null ? JSON.parse(localStorage.getItem('comments')) : []
@@ -32,7 +35,7 @@ const addCommentsInLocalStorage = () => {
 const addCommentDOM = (comment) => {
   const commentEl = document.createElement('li')
   if (comment.text !== '') {
-    viewAll.innerText = `View all ${comments.length} comment${comments.length === 1 ? '' : 's'}`
+    viewCommentsBtn.innerText = `View ${comments.length === 1 ? '' : 'all'} ${comments.length} comment${comments.length === 1 ? '' : 's'}`
 
     commentEl.classList.add('comment__content-list')
     commentEl.innerHTML =''
@@ -110,7 +113,17 @@ const submitTextAndRender = (e) => {
   searchInput.value = '' //폼은 비워준다.
 }
 
+//opening an article with more button
+const openArticle = () => {
+  const article = document.getElementById('article')
+  article.classList.add('open')
+  moreArticleBtn.classList.add('open')
+}
 
+//view all comments with button
+const viewAllComments = () => {
+  commentList.classList.add('view')
+}
 
 //submit event listener
 commentForm.addEventListener('submit', submitTextAndRender)
@@ -120,3 +133,9 @@ commentForm.addEventListener('keyup', activateLoginBtn)
 
 //window load event
 window.addEventListener('load', renderComments)
+
+//more button event listener
+moreArticleBtn.addEventListener('click', openArticle)
+
+//view all comments button event listener 
+viewCommentsBtn.addEventListener('click', viewAllComments)
