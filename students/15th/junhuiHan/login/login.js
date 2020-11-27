@@ -1,7 +1,6 @@
 const inputId = document.querySelector('.id');
 const inputPassword = document.querySelector('.password');
 const loginButton = document.querySelector('.login-button');
-console.log(inputId);
 
 function activeLoginButton() {
   if (inputId.value && inputPassword.value) {
@@ -9,5 +8,6 @@ function activeLoginButton() {
     loginButton.removeAttribute('disabled');
   }
 }
-console.log(loginButton);
+
+inputId.addEventListener('keyup', activeLoginButton);
 inputPassword.addEventListener('keyup', activeLoginButton);

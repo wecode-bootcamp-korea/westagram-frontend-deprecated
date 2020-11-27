@@ -12,14 +12,14 @@ const userId = document.querySelector('.main-feed-head-profile_nickname')
   .innerText;
 
 function addComment() {
-  const commentValue = inputFeedComment.value;
-  const addCommentIi = document.createElement('li');
-  addCommentIi.className = 'main-feed-comment-ul-li';
-
-  addCommentIi.innerHTML = `<span>${userId}</span> ${commentValue}`;
-  feedCommentUl.appendChild(addCommentIi);
+  feedCommentUl.innerHTML = `
+    <li class="main-feed-comment-ul-li">
+      <span>${userId}</span> 
+      ${inputFeedComment.value}
+    </li>
+  `;
   inputFeedComment.value = '';
-  return addCommentIi;
+  return addCommentLi;
 }
 
 feedCommentButton.addEventListener('click', (event) => {
