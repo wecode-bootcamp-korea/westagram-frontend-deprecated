@@ -92,9 +92,9 @@ main{
 
 .main-right{
     width: 293px;
+    height: 60%;
     margin-top: 8px;
     margin-left: 8px;
-    height: 60%;
 }
 
 article {
@@ -105,6 +105,10 @@ article {
 .article-header{
     display: flex;
     justify-content: flex-start;
+}
+
+.article-header-profile-img{
+    margin: 5px 5px 0px 5px;
 }
 
 .article-writer{
@@ -129,12 +133,12 @@ article {
     margin-top: 3px;
 }
 
-.third-row{
+.article-third-row{
     display:flex;
     justify-content: space-between;
 }
 
-.first-column{
+.article-third-fow-first-column{
     width: 100px;
     display:flex;
     justify-content: space-around;
