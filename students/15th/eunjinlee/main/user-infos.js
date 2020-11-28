@@ -2,7 +2,7 @@ const userInfos = [{
   userIndex: 1,
   userId: 'wecode_bootcamp',
   userName: '위코드 부트캠프',
-  userProfile: 'https://images.unsplash.com/photo-1606225457115-9b0de873c5db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
+  userProfile: 'https://media.vlpt.us/images/inyong_pang/post/f0ea605d-c2d9-460c-aedc-a0ec77e6759f/wecode.png',
   userStatus: 'Follows you',
 },{
   userIndex: 2,
@@ -32,13 +32,13 @@ const userInfos = [{
   userIndex: 6,
   userId: 'exerciseyunn',
   userName: '한지연 | 운동하는 여자, 본계정 @hailee',
-  userProfile: 'https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1253&q=80',
+  userProfile: 'https://images.unsplash.com/photo-1496024840928-4c417adf211d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80',
   userStatus: 'Followed by dev_jt__ + 2 more',
 },{
   userIndex: 7,
   userId: 'lovelylifter',
   userName: 'Lifting Community',
-  userProfile: 'https://images.unsplash.com/photo-1516481265257-97e5f4bc50d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80',
+  userProfile: 'https://images.unsplash.com/photo-1550456915-749f38312cbe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80',
   userStatus: 'Follows you',
 },{
   userIndex: 8,
@@ -86,7 +86,7 @@ const userInfos = [{
   userIndex: 15,
   userId: 'js__yang',
   userName: 'Joon Sik Yang | 양준식',
-  userProfile: 'https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  userProfile: 'https://images.unsplash.com/photo-1520931061294-db3e762a9273?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80',
   userStatus: 'Followed by wecode_bootcamp + 3 more',
 },{
   userIndex: 16,
@@ -104,7 +104,7 @@ const userInfos = [{
   userIndex: 18,
   userId: 'jennystagram',
   userName: '김제니스타그램',
-  userProfile: 'https://images.unsplash.com/photo-1606056041654-f203e0351229?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
+  userProfile: 'https://images.unsplash.com/photo-1581090731827-0ccd446ec831?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1600&q=80',
   userStatus: 'Follows you',
 },{
   userIndex: 19,
@@ -134,7 +134,7 @@ const userInfos = [{
   userIndex: 23,
   userId: 'jisooooya',
   userName: 'Jisoo',
-  userProfile: 'https://images.unsplash.com/photo-1606156185887-4e270c707089?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80',
+  userProfile: 'https://images.unsplash.com/photo-1519940640025-75fdf32010d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1234&q=80',
   userStatus: 'Followed by wecode_bootcamp + 2 more',
 },{
   userIndex: 24,

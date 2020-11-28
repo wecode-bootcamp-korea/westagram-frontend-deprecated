@@ -15,12 +15,10 @@ const commentItem = document.getElementsByClassName('comment__content-list')
 
 //comments from the local Storage
 let comments =
-  localStorage.getItem('comments') !== null
-    ? JSON.parse(localStorage.getItem('comments')) : []
+  localStorage.getItem('comments') !== null ? JSON.parse(localStorage.getItem('comments')) : []
 
 //setting new comments in the local storage
-const updateLocalStorage = () => {
-  localStorage.setItem('comments', JSON.stringify(comments))
+const updateLocalStorage = () => { localStorage.setItem('comments', JSON.stringify(comments))
 }
 
 //just adding comments array in localstorage with random id
@@ -52,6 +50,7 @@ const addCommentDOM = (comment) => {
   }
 }
 
+//making search result DOM
 const addSearchResultDOM = (inputText, userInfo) => {
   const searchResultEl = document.createElement('li') //li
   if (inputText !== '') {
@@ -84,17 +83,12 @@ const renderSearchResult = () => {
   })
   searchList.innerHTML = ''
   filteredUsers.forEach((filteredUser) => addSearchResultDOM(searchText, filteredUser))
-  console.log(filteredUsers)
 }
-
-
 
 //selecting random index without same element
 const selectIndex = (totalIndex, selectingNumber) => {
   let randomIndexArray = []
-  
-  //check if there is any duplicate index
-  for (i=0; i<selectingNumber; i++) {
+  for (i=0; i<selectingNumber; i++) {   //check if there is any duplicate index
     randomNum = Math.floor(Math.random() * totalIndex)
     if (randomIndexArray.indexOf(randomNum) === -1) {
       randomIndexArray.push(randomNum)
@@ -138,8 +132,12 @@ const renderSuggestion = () => {
     <a href="#" class="follow-btn">Follow</a>
     `
     suggestionContainer.appendChild(recommendedUser)
-    console.log(recommendedUser)
   })
+}
+
+//render each comments from localstorage when refreshed
+const renderComments = () => {
+  comments.forEach((comment) => addCommentDOM(comment))
 }
 
 //remove comments by id
@@ -148,11 +146,6 @@ const removeComment = (id) => {
   comments = comments.filter((comment) => comment.id !== id)
   updateLocalStorage()
   renderComments()
-}
-
-//render each comments from localstorage when refreshed
-const renderComments = () => {
-  comments.forEach((comment) => addCommentDOM(comment))
 }
 
 //submitting comment and rendering on pages
@@ -197,19 +190,19 @@ const toggleCommentHeart = (e) => {
   }
 }
 
-//submit event listener
-commentForm.addEventListener('submit', submitTextAndRender)
-
-//input box event listener
-// commentForm.addEventListener('keyup', activateLoginBtn)
-
-//window load event
-window.addEventListener('load', () => {
+//window load events
+const init = () => {
   renderComments()
   renderStories()
   renderSuggestion()
   searchInput.value = ''
-})
+}
+
+//submit event listener
+commentForm.addEventListener('submit', submitTextAndRender)
+
+//window load event
+window.addEventListener('load', init)
 
 //more button event listener
 moreArticleBtn.addEventListener('click', openArticle)
