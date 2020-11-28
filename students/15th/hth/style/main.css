@@ -102,7 +102,7 @@ nav {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .menu-icon {
@@ -115,7 +115,7 @@ nav {
   border-radius: 11px;
 }
 
-.menu-box {
+.show-menu-box {
   height: 160px;
   display: flex;
   flex-direction: column;
@@ -141,6 +141,7 @@ nav {
 .in-menu span {
   margin-left: 5px;
 }
+
 .feeds {
   position: absolute;
   top: 100px;
@@ -185,7 +186,7 @@ article {
   padding: 10px 15px 10px 5px;
 }
 
-.c-icon {
+.comment-header-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -275,7 +276,7 @@ li:hover .delete-button {
     visibility: hidden;
   }
   .feeds {
-    margin-left: -306px;
+    margin-left: -325px;
     left: 50%;
   }
   .nav-container {

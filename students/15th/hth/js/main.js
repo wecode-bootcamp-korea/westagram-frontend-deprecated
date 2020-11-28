@@ -52,7 +52,7 @@ const postComment = () => {
   $inputButton.disabled = true;
 };
 
-const idArray2 = [
+const users = [
   {
     id: "wiinnerb",
     imageUrl: "./img/friends1.jpg",
@@ -71,31 +71,21 @@ const idArray2 = [
   },
 ];
 
-const selectId = () => {
-  const idArray = idArray2.map((userObj) => {
-    return userObj["id"];
-  });
-  const urlArray = idArray2.map((userObj) => {
-    return userObj["imageUrl"];
-  });
-
+const selectUSer = () => {
   const $searchViewList = document.querySelectorAll(".search-list-flex");
   $searchViewList.forEach((element) => {
     document.querySelector(".search-list-ul").removeChild(element);
   });
   const inputValue = document.querySelector(".search-input").value;
-  const searchIds = idArray.filter((id) => {
-    return id.indexOf(inputValue) !== -1;
+  const searchUsers = users.filter((user) => {
+    return user.id.indexOf(inputValue) !== -1;
   });
+
   if (inputValue) {
-    searchIds.forEach((searchId) => {
-      if (searchId)
+    searchUsers.forEach((searchUser) => {
+      if (searchUser)
         document.querySelector(".search-list").classList.remove("hidden");
-      idArray.forEach((id, index) => {
-        if (id === searchId) {
-          addElement(searchId, urlArray[index]);
-        }
-      });
+      addElement(searchUser.id, searchUser.imageUrl);
     });
   } else document.querySelector(".search-list").classList.add("hidden");
 
@@ -112,12 +102,13 @@ const selectId = () => {
 const $html = document.querySelector("html");
 
 $html.addEventListener("click", (event) => {
-  if (event.target.classList.contains("menu-icon")) {
+  if (event.target.classList.contains("profile-button")) {
     document.querySelector(".menu-box").classList.remove("hidden");
+    document.querySelector(".menu-box").classList.add("show-menu-box");
   } else {
     document.querySelector(".menu-box").classList.add("hidden");
+    document.querySelector(".menu-box").classList.remove("show-menu-box");
   }
-  //
 });
 
 $commentInput.addEventListener("keyup", checkRealtimeValue);
@@ -127,5 +118,5 @@ $commentInput.addEventListener("keyup", (event) => {
   if (inputValue && event.key === "Enter") postComment();
 });
 $searchInput.addEventListener("keyup", () => {
-  selectId();
+  selectUSer();
 });
