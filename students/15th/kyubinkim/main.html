@@ -17,7 +17,8 @@
       <nav>
         <h4>westagram</h4>
         <div class="search">
-          <input type="text" placeholder="검색" />
+          <input class="searchInput" type="text" placeholder="검색" />
+          <ul class="userinfo"></ul>
           <i class="fas fa-search"></i>
         </div>
         <div class="icon">
@@ -31,11 +32,18 @@
               src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
               alt=""
           /></a>
-          <a href=""
+          <a class="menu" href="#"
             ><img
               src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
               alt=""
-          /></a>
+            />
+            <ul class="menubox">
+              <li><i class="far fa-user-circle"></i>프로필</li>
+              <li><i class="fas fa-bookmark"></i>저장됨</li>
+              <li><i class="fas fa-cog"></i>설정</li>
+              <li>로그아웃</li>
+            </ul></a
+          >
         </div>
       </nav>
     </header>
@@ -81,12 +89,10 @@
               <i class="far fa-bookmark"></i>
             </div>
             <div class="feeds-howmanylike">좋아요 33,333개</div>
-            <div id="list" class="feeds-comment"></div>
-            <form class="box" onsubmit="return false">
+            <ul id="list" class="feeds-comment"></ul>
+            <form class="box">
               <input id="textarea" type="text" placeholder="댓글 달기..." />
-              <button id="button" onclick="pushcomment()" ontoggle="ontoggle()">
-                게시
-              </button>
+              <button id="button">게시</button>
             </form>
           </article>
         </div>
@@ -149,6 +155,6 @@
         </div>
       </div>
     </main>
-    <script src="./main.js"></script>
+    <script src="./main2.js"></script>
   </body>
 </html>

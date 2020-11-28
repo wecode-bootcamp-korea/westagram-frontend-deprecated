@@ -10,24 +10,24 @@
 body {
   background-color: #fafafa;
 }
-button {
+button,
+input {
   outline: none;
 }
 header {
-  background-color: #fff;
-  height: 54px;
-  width: 100%;
-  border-bottom: 1px solid rgb(172, 172, 172);
-
   position: fixed;
   top: 0;
+  height: 54px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(172, 172, 172);
   padding-top: 10px;
 }
 header nav {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 935px;
+  margin: 0 auto;
   text-align: center;
 }
 header nav div.icon {
@@ -52,13 +52,13 @@ header input {
   margin-top: 3px;
   background-color: #fafafa;
 }
-header nav .search {
+header nav input {
   position: relative;
 }
 header nav .search i {
   position: absolute;
-  right: 60%;
-  top: 40%;
+  right: 53%;
+  top: 41%;
   font-size: 10px;
   color: rgb(172, 172, 172);
 }
@@ -68,10 +68,10 @@ header input::placeholder {
 }
 
 main {
-  margin: 0 auto;
-  width: 907px;
   display: flex;
   flex-direction: row;
+  width: 907px;
+  margin: 0 auto;
   margin-top: 50px;
 }
 
@@ -79,21 +79,20 @@ main {
   width: 614px;
   height: 118px;
   border: 1px solid rgb(172, 172, 172);
-  clear: both;
-  margin-bottom: 100px;
-  margin-top: 40px;
-  background-color: #fff;
   border-radius: 2px;
+  clear: both;
+  margin: 40px 0 100px 0;
+  background-color: #fff;
 }
 .story-wrap {
-  height: 100%;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .story-box {
-  margin-left: 15px;
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 }
 .story-box img {
   width: 56px;
@@ -114,13 +113,13 @@ article {
   height: 500px;
 }
 article .feeds-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 60px;
   border: 1px solid rgb(172, 172, 172);
   border-radius: 3px;
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   border-bottom: none;
 }
 article .feeds-header img {
@@ -135,6 +134,7 @@ article .feeds-header h2 {
   font-size: 14px;
   margin-left: 10px;
 }
+
 article .feeds-img {
   height: 694px;
   border: 1px solid rgb(172, 172, 172);
@@ -144,24 +144,27 @@ article .feeds-img img {
   width: 100%;
   height: 694px;
 }
+
 article .feeds-like {
+  display: flex;
+  align-items: center;
+  position: relative;
   height: 40px;
   border: 1px solid rgb(172, 172, 172);
   border-bottom: none;
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  position: relative;
 }
+
 article .feeds-like i {
   font-size: 24px;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin: 10px 0 0 20px;
 }
+
 article .feeds-like .fa-bookmark {
   position: absolute;
   right: 15px;
 }
+
 article .feeds-howmanylike {
   height: 40px;
   background-color: #fff;
@@ -172,58 +175,105 @@ article .feeds-howmanylike {
   border-top: none;
   border-bottom: none;
 }
+
 article .feeds-comment {
+  position: relative;
   background-color: #fff;
   border-left: 1px solid rgb(172, 172, 172);
   border-right: 1px solid rgb(172, 172, 172);
   padding-left: 20px;
 }
-article .feeds-comment span {
+
+article .feeds-comment span:nth-child(1) {
   font-weight: 600;
 }
+
+article .feeds-comment span:nth-child(2) {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+article .feeds-comment span:nth-child(3) {
+  position: absolute;
+  right: 20px;
+  margin-top: 3px;
+  font-size: 12px;
+}
+
 article .feeds-comment li:last-child {
   padding-bottom: 10px;
 }
+
+article .feeds-comment i {
+  position: absolute;
+  right: 40px;
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+article .feeds-comment i.fa-heart {
+  margin-top: 2px;
+}
+
+article .feeds-comment li > button {
+  position: absolute;
+  right: 130px;
+  background-color: #fff;
+  border: none;
+  margin-top: 3px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  cursor: pointer;
+}
+
+article .feeds-comment li i button {
+  background-color: #fff;
+  border: none;
+}
+
 article input {
   width: 614px;
   height: 56px;
   border: 1px solid rgb(172, 172, 172);
   background-color: #fff;
-
   position: relative;
 }
+
 .box {
   position: relative;
 }
+
 .box input {
   font-size: 14px;
   padding: 10px 20px;
-  outline: none;
 }
+
 form button {
-  width: 50px;
-  height: 50px;
   position: absolute;
   right: 1px;
   top: 1px;
+  width: 50px;
+  height: 50px;
   background-color: #ffff;
   border: none;
   color: #a1c5e8;
   outline: none;
 }
+
 .main-right {
-  width: 260px;
-  height: 600px;
   display: flex;
   flex-direction: column;
-  margin-left: 35px;
   position: fixed;
   left: 58%;
+  width: 260px;
+  height: 600px;
+  margin-left: 45px;
 }
+
 @media screen and (max-width: 1400px) {
   .main-right {
     display: none;
   }
+
   .main-left {
     margin: 0 auto;
   }
@@ -244,19 +294,20 @@ form button {
 
 .myprofile span {
   padding-top: 6px;
-  margin-left: 10px;
-  margin-top: 5px;
+  margin: 5px 0 0 10px;
   font-size: 14px;
   color: rgba(var(--f52, 142, 142, 142), 1);
 }
+
 .myprofile h2 {
   font-size: 14px;
-
   color: rgba(var(--i1d, 38, 38, 38), 1);
 }
+
 .main-right .morepeople {
   margin-top: 25px;
 }
+
 .main-right .morepeople-header {
   display: flex;
   justify-content: space-between;
@@ -268,16 +319,18 @@ form button {
   background-color: #fafafa;
   font-size: 12px;
 }
+
 .main-right .morepeople .morepeople-content {
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
   font-size: 14px;
   margin-top: 20px;
 }
+
 .main-right .morepeople .morepeople-content span:nth-child(2) {
   font-size: 12px;
 }
+
 .main-right .morepeople-content img {
   width: 42px;
   height: 42px;
@@ -285,19 +338,99 @@ form button {
   border-radius: 20px;
   padding: 2px;
 }
+
 .main-right .morepeople-content-profile {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-left: 10px;
 }
+
 .main-right .morepeople-content-profile button {
   font-size: 12px;
   border: none;
   background-color: #fafafa;
   color: #0095f6;
 }
+
 .main-right .morepeople-content .preofile-content {
   display: flex;
   flex-direction: column;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  background-color: #fff;
+  margin-top: 12px;
+}
+
+.userinfo_id {
+  display: flex;
+  flex-direction: row;
+}
+
+.userinfo li {
+  width: 241px;
+  height: 67px;
+  border: 1px solid rgb(172, 172, 172);
+  border-bottom: none;
+  align-items: center;
+}
+
+.userinfo li:last-child {
+  border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+.userinfo li img {
+  width: 42px;
+  height: 42px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
+.userinfo .id_content {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.userinfo .id_username {
+  font-weight: 600;
+}
+
+/* 메뉴박스 */
+.menu:focus .menubox {
+  display: inline-block;
+}
+.menubox {
+  display: none;
+  position: absolute;
+  right: 250px;
+  top: 50px;
+  width: 230px;
+  height: 157px;
+  box-shadow: 0px 5px 15px 5px #dadada;
+  z-index: 26;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.menubox > li {
+  text-align: left;
+  width: 230px;
+  height: 37px;
+  padding: 11px 16px 8px 16px;
+  color: #000;
+  font-size: 14px;
+}
+
+.menubox > li:last-child {
+  border-top: 1px solid rgb(172, 172, 172);
+}
+
+.menubox i {
+  margin-right: 10px;
 }
