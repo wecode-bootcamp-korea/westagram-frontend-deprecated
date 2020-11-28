@@ -197,10 +197,19 @@ main {
 
 .feeds__comments .comments .comment__like {
   position: absolute;
-  right: 5px;
+  right: 25px;
 }
 
 .feeds__comments .comments .comment__like img:hover {
+  cursor: pointer;
+}
+
+.feeds__comments .comments .comment__delete {
+  position: absolute;
+  right: 5px;
+}
+
+.feeds__comments .comments .comment__delete img:hover {
   cursor: pointer;
 }
 

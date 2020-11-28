@@ -2,7 +2,13 @@
 
 const commentList = document.getElementsByClassName("comments");
 const cmtLikeBtn = document.getElementsByClassName("comment__like");
+const cmtDeleteBtn = document.getElementsByClassName("comment__delete");
 let likeCheck = false;
+
+const clickDeleteBtn = (i) => {
+  const parent = cmtDeleteBtn[i].parentNode;
+  parent.parentNode.removeChild(parent);
+};
 
 const clickLikeBtn = (i) => {
   if (likeCheck === false) {
@@ -49,6 +55,10 @@ const init = () => {
 
   for (let i = 0; i < cmtLikeBtn.length; i++) {
     cmtLikeBtn[i].addEventListener("click", (event) => clickLikeBtn(i));
+  }
+
+  for (let i = 0; i < cmtDeleteBtn.length; i++) {
+    cmtDeleteBtn[i].addEventListener("click", (event) => clickDeleteBtn(i));
   }
 };
 
