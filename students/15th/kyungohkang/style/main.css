@@ -1,0 +1,214 @@
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+
+.camera{
+    width: 20px;
+    border-right: 1px solid black;
+    padding-right: 12px;
+}
+
+.westa{
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.top-center input{
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: #fafafa;
+    margin-top: 5px;
+}
+
+.top-right img{
+    width: 20px;
+    padding:3px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #fafafa;
+    padding: 50px 230px;
+}
+
+article{
+    width: 600px;
+    border: 1px solid lightgray;
+}
+
+.feedstop{
+    border: 1px solid lightgray;
+}
+
+.maskpepe{
+    width: 100%;
+}
+.smilepepe{
+    width: 20px;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.main-right{
+    border: 1px solid lightgray;
+}
+
+.feedsbot{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.feedsbot img{
+    width: 30px;
+}
+
+.content{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.content img{
+    width: 12px;
+}
+
+.reply{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+}
+.repl{
+    width: 100%;
+    border: 1px none;  
+    background-color: #fafafa;
+    padding: 10px;
+
+}
+
+.post{
+    width: 60px;
+    color: rgba(200, 223, 249, 0.8);
+    background-color: #fafafa; 
+    border: 1px;
+}
+
+.main-right{
+    width: 300px;
+    border: 0;
+}
+
+.righttop{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.descriptions{                                                                                                                           
+    list-style: none;
+    font-size: 15px;
+}
+
+
+
+.kidpepe{
+    width: 60px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+.storytop{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story{
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.storydiv{
+    display: flex;
+    padding: 10px;
+}
+
+.nicktime{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 12px;
+    font-size: 12px;
+}
+
+.time{
+    color: lightgray;
+}
+
+
+
+.storydiv img{
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.recom{
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.recomdiv{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.recomfr{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 12px;
+
+    font-size: 12px;
+}
+
+.time{
+    color: lightgray;
+}
+
+
+
+.recomdiv img{
+    width: 40px;
+    border: 1px solid none;
+    border-radius: 50%;
+}
+
+.recomdiv button{
+    width: 60px;
+    color: rgba(55, 155, 235);
+    background-color: #fafafa; 
+    border: 1px;
+}
+
+.recomtop{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
