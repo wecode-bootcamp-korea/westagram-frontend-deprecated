@@ -13,6 +13,9 @@ const viewCommentsBtn = document.getElementById('comment-view-all')
 const commentList = document.getElementById('comment-list')
 const commentItem = document.getElementsByClassName('comment__content-list')
 
+const openMenuBtn = document.getElementById('openMenuBtn')
+const navContainerOutside = document.getElementById('navContainerOutside')
+
 //comments from the local Storage
 let comments =
   localStorage.getItem('comments') !== null ? JSON.parse(localStorage.getItem('comments')) : []
@@ -190,6 +193,18 @@ const toggleCommentHeart = (e) => {
   }
 }
 
+//opening menu and closing it by clicking outside container
+const openAndCloseMenu = (e) => {
+  if (e.target === openMenuBtn) {
+    navContainerOutside.classList.add('open')
+  }
+  if (e.target === navContainerOutside) {
+    navContainerOutside.classList.remove('open')
+  }
+  //  ?  : false
+  // e.target === navContainerOutside ? navContainerOutside.classList.remove('open') : false
+}
+
 //window load events
 const init = () => {
   renderComments()
@@ -212,6 +227,9 @@ viewCommentsBtn.addEventListener('click', toggleViewCommentsBtn)
 
 //search user event listener
 searchInput.addEventListener('keyup', renderSearchResult)
+
+//profile icon click and open menu event listener 
+window.addEventListener('click', openAndCloseMenu)
 
 //comment heart toggle event listener
 // commentHeart.addEventListener('click', toggleCommentHeart)
