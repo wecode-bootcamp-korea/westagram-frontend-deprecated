@@ -151,11 +151,30 @@ section {
 }
 
 .feed__comment {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   padding: 0 12px;
 }
 
 .feed__comment__id {
   font-weight: 700;
+}
+
+.feed__comment__likeBtn,
+.feed__comment__deleteBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.delete__icon:hover {
+  transform: scale(1.5);
+  color: red;
 }
 
 .feed__comment__wrapping {
