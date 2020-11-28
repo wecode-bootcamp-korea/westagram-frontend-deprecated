@@ -101,11 +101,10 @@ const selectIndex = (totalIndex, selectingNumber) => {
   }
   return randomIndexArray
 }
-
 //rendering stories / getting data from user-infos.js
 const renderStories = () => {
   const storyContainer = document.getElementById('stories-container')
-  const randomIndexArray = selectIndex(24, 7)
+  const randomIndexArray = selectIndex(24, 15)
   randomIndexArray.map((index) => {
     const story = document.createElement('div')
     story.classList.add('story')
@@ -180,19 +179,6 @@ const toggleViewCommentsBtn = () => {
   }
 }
 
-//toggle comment heart
-const toggleCommentHeart = (e) => {
-  // e.target.value = 
-  commentHeart.classList.toggle('like')
-  if (commentHeart.classList.contains('like')) {
-    commentHeart.classList.remove('far')
-    commentHeart.classList.add('fas')
-  } else {
-    commentHeart.classList.add('far')
-    commentHeart.classList.remove('fas')
-  }
-}
-
 //opening menu and closing it by clicking outside container
 const openAndCloseMenu = (e) => {
   if (e.target === openMenuBtn) {
@@ -201,8 +187,6 @@ const openAndCloseMenu = (e) => {
   if (e.target === navContainerOutside) {
     navContainerOutside.classList.remove('open')
   }
-  //  ?  : false
-  // e.target === navContainerOutside ? navContainerOutside.classList.remove('open') : false
 }
 
 //window load events
@@ -230,6 +214,3 @@ searchInput.addEventListener('keyup', renderSearchResult)
 
 //profile icon click and open menu event listener 
 window.addEventListener('click', openAndCloseMenu)
-
-//comment heart toggle event listener
-// commentHeart.addEventListener('click', toggleCommentHeart)
