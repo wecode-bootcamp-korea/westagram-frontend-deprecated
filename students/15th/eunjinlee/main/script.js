@@ -1,6 +1,3 @@
-const storyContainer = document.getElementById('stories-container')
-const suggestionContainer = document.getElementById('suggestionContainer')
-
 const searchList = document.getElementById('search-list-container') //ul
 const searchInput = document.getElementById('nav-search-input')
 
@@ -55,11 +52,10 @@ const addCommentDOM = (comment) => {
   }
 }
 
-const searchResultEl = document.createElement('li') //li
 const addSearchResultDOM = (inputText, userInfo) => {
+  const searchResultEl = document.createElement('li') //li
   if (inputText !== '') {
     searchResultEl.classList.add('search-list__result')
-
     searchResultEl.innerHTML = `
     <div class="search-list__user-image-container">
       <img src="${userInfo.userProfile}" alt="User profile" class="search-list__user-image">
@@ -69,35 +65,29 @@ const addSearchResultDOM = (inputText, userInfo) => {
       <div class="search-list__user-name">${userInfo.userName}</div>
     </div>
     `
+    searchList.classList.add('open')
     searchList.appendChild(searchResultEl)
     return searchList
   } else {
-    searchResultEl.innerHTML = ''
+    searchList.classList.remove('open')
   }
 }
 
 //search users
 const renderSearchResult = () => {
   const searchText = searchInput.value
-
-  // let filteredUsers = userInfos.filter((userInfo) => {
-  //   if (userInfo.userId.toLowerCase().includes(searchText.toLowerCase())
-  //      || userInfo.userName.toLowerCase().includes(searchText.toLowerCase())) {
-  //     return userInfo
-  //   }
-  // })
-
-  searchResultEl.innerHTML = ''
-  // filteredUsers.forEach((filteredUser) => addSearchResultDOM(searchText, filteredUser))
-  // // searchList.appendChild(searchResultEl)
-  // console.log(filteredUsers)
-  userInfos.forEach((userInfo) => addSearchResultDOM(searchText, userInfo))
-  // searchList.appendChild(searchResultEl)
-  console.log(userInfos)
+  let filteredUsers = userInfos.filter((userInfo) => {
+    if (userInfo.userId.toLowerCase().includes(searchText.toLowerCase())
+       || userInfo.userName.toLowerCase().includes(searchText.toLowerCase())) {
+      return userInfo
+    }
+  })
+  searchList.innerHTML = ''
+  filteredUsers.forEach((filteredUser) => addSearchResultDOM(searchText, filteredUser))
+  console.log(filteredUsers)
 }
 
-//search user event listener
-searchInput.addEventListener('keyup', renderSearchResult)
+
 
 //selecting random index without same element
 const selectIndex = (totalIndex, selectingNumber) => {
@@ -117,6 +107,7 @@ const selectIndex = (totalIndex, selectingNumber) => {
 
 //rendering stories / getting data from user-infos.js
 const renderStories = () => {
+  const storyContainer = document.getElementById('stories-container')
   const randomIndexArray = selectIndex(24, 7)
   randomIndexArray.map((index) => {
     const story = document.createElement('div')
@@ -131,6 +122,7 @@ const renderStories = () => {
 
 //rendering suggestion dom
 const renderSuggestion = () => {
+  const suggestionContainer = document.getElementById('suggestionContainer')
   const randomIndexArray = selectIndex(24, 5)
   randomIndexArray.map((index) => {
     const recommendedUser = document.createElement('li')
@@ -194,7 +186,7 @@ const toggleViewCommentsBtn = () => {
 
 //toggle comment heart
 const toggleCommentHeart = (e) => {
-
+  // e.target.value = 
   commentHeart.classList.toggle('like')
   if (commentHeart.classList.contains('like')) {
     commentHeart.classList.remove('far')
@@ -204,7 +196,6 @@ const toggleCommentHeart = (e) => {
     commentHeart.classList.remove('fas')
   }
 }
-
 
 //submit event listener
 commentForm.addEventListener('submit', submitTextAndRender)
@@ -217,6 +208,7 @@ window.addEventListener('load', () => {
   renderComments()
   renderStories()
   renderSuggestion()
+  searchInput.value = ''
 })
 
 //more button event listener
@@ -224,6 +216,9 @@ moreArticleBtn.addEventListener('click', openArticle)
 
 //view all comments button event listener
 viewCommentsBtn.addEventListener('click', toggleViewCommentsBtn)
+
+//search user event listener
+searchInput.addEventListener('keyup', renderSearchResult)
 
 //comment heart toggle event listener
 // commentHeart.addEventListener('click', toggleCommentHeart)
