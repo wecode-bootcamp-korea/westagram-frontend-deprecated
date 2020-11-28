@@ -1,3 +1,6 @@
+const storyContainer = document.getElementById('stories-container')
+const suggestionContainer = document.getElementById('suggestionContainer')
+
 const searchList = document.getElementById('search-list-container') //ul
 const searchInput = document.getElementById('nav-search-input')
 
@@ -7,7 +10,7 @@ const commentForm = document.getElementById('comment-form')
 const commentInput = document.getElementById('comment-input')
 const commentBtn = document.getElementById('comment-btn')
 const commentDeleteBtn = document.getElementById('delete-btn')
-const commentHeart = document.getElementById('comment-heart')
+// const commentHeart = document.getElementById('comment-heart')
 
 const viewCommentsBtn = document.getElementById('comment-view-all')
 const commentList = document.getElementById('comment-list')
@@ -16,8 +19,7 @@ const commentItem = document.getElementsByClassName('comment__content-list')
 //comments from the local Storage
 let comments =
   localStorage.getItem('comments') !== null
-    ? JSON.parse(localStorage.getItem('comments'))
-    : []
+    ? JSON.parse(localStorage.getItem('comments')) : []
 
 //setting new comments in the local storage
 const updateLocalStorage = () => {
@@ -30,7 +32,6 @@ const addCommentsInLocalStorage = () => {
   const comment = {
     id: generateID(),
     text: commentInput.value,
-    heart: false,
   }
   comments.push(comment)
   updateLocalStorage()
@@ -40,10 +41,7 @@ const addCommentsInLocalStorage = () => {
 const addCommentDOM = (comment) => {
   const commentEl = document.createElement('li')
   if (comment.text !== '') {
-    viewCommentsBtn.innerText = `View ${comments.length === 1 ? '' : 'all'} ${
-      comments.length
-    } comment${comments.length === 1 ? '' : 's'}`
-
+    viewCommentsBtn.innerText = `View ${comments.length === 1 ? '' : 'all'} ${comments.length} comment${comments.length === 1 ? '' : 's'}`
     commentEl.classList.add('comment__content-list')
     commentEl.innerHTML = ''
     commentEl.innerHTML = `
@@ -71,26 +69,11 @@ const addSearchResultDOM = (inputText, userInfo) => {
       <div class="search-list__user-name">${userInfo.userName}</div>
     </div>
     `
-
     searchList.appendChild(searchResultEl)
     return searchList
   } else {
     searchResultEl.innerHTML = ''
   }
-}
-
-//toggle comment heart
-const toggleCommentHeart = (e) => {
-  console.log(e.target)
-
-  // commentHeart.classList.toggle('like')
-  // if (commentHeart.classList.contains('like')) {
-  //   commentHeart.classList.remove('far')
-  //   commentHeart.classList.add('fas')
-  // } else {
-  //   commentHeart.classList.add('far')
-  //   commentHeart.classList.remove('fas')
-  // }
 }
 
 //search users
@@ -116,6 +99,57 @@ const renderSearchResult = () => {
 //search user event listener
 searchInput.addEventListener('keyup', renderSearchResult)
 
+//selecting random index without same element
+const selectIndex = (totalIndex, selectingNumber) => {
+  let randomIndexArray = []
+  
+  //check if there is any duplicate index
+  for (i=0; i<selectingNumber; i++) {
+    randomNum = Math.floor(Math.random() * totalIndex)
+    if (randomIndexArray.indexOf(randomNum) === -1) {
+      randomIndexArray.push(randomNum)
+    } else { //if the randomNum is already in the array retry
+      i--
+    }
+  }
+  return randomIndexArray
+}
+
+//rendering stories / getting data from user-infos.js
+const renderStories = () => {
+  const randomIndexArray = selectIndex(24, 7)
+  randomIndexArray.map((index) => {
+    const story = document.createElement('div')
+    story.classList.add('story')
+    story.innerHTML = `
+    <div class="story__view-button"><img src="${userInfos[index].userProfile}" alt="User image" class="story__user-image"></div>
+    <div class="story__user-id">${userInfos[index].userId}</div>
+    `
+    storyContainer.appendChild(story)
+  })
+}
+
+//rendering suggestion dom
+const renderSuggestion = () => {
+  const randomIndexArray = selectIndex(24, 5)
+  randomIndexArray.map((index) => {
+    const recommendedUser = document.createElement('li')
+    recommendedUser.classList.add('suggestion-user')
+    recommendedUser.innerHTML = `
+    <div class="suggestion-user-container">
+      <img src="${userInfos[index].userProfile}" class="suggestion-user-profile"></img>
+    </div>
+    <div class="suggestion-user-info">
+      <div class="suggestion-user-id user-link">${userInfos[index].userId}</div>
+      <div class="suggestion-detail">${userInfos[index].userStatus}</div>
+    </div>
+    <a href="#" class="follow-btn">Follow</a>
+    `
+    suggestionContainer.appendChild(recommendedUser)
+    console.log(recommendedUser)
+  })
+}
+
 //remove comments by id
 const removeComment = (id) => {
   commentList.innerHTML = ''
@@ -127,13 +161,6 @@ const removeComment = (id) => {
 //render each comments from localstorage when refreshed
 const renderComments = () => {
   comments.forEach((comment) => addCommentDOM(comment))
-}
-
-//activating login button
-const activateLoginBtn = () => {
-  if (commentInput.value.length > -1) {
-    commentBtn.classList.add('active')
-  }
 }
 
 //submitting comment and rendering on pages
@@ -165,17 +192,32 @@ const toggleViewCommentsBtn = () => {
   }
 }
 
+//toggle comment heart
+const toggleCommentHeart = (e) => {
 
+  commentHeart.classList.toggle('like')
+  if (commentHeart.classList.contains('like')) {
+    commentHeart.classList.remove('far')
+    commentHeart.classList.add('fas')
+  } else {
+    commentHeart.classList.add('far')
+    commentHeart.classList.remove('fas')
+  }
+}
 
 
 //submit event listener
 commentForm.addEventListener('submit', submitTextAndRender)
 
 //input box event listener
-commentForm.addEventListener('keyup', activateLoginBtn)
+// commentForm.addEventListener('keyup', activateLoginBtn)
 
 //window load event
-window.addEventListener('load', renderComments)
+window.addEventListener('load', () => {
+  renderComments()
+  renderStories()
+  renderSuggestion()
+})
 
 //more button event listener
 moreArticleBtn.addEventListener('click', openArticle)
@@ -184,4 +226,4 @@ moreArticleBtn.addEventListener('click', openArticle)
 viewCommentsBtn.addEventListener('click', toggleViewCommentsBtn)
 
 //comment heart toggle event listener
-commentHeart.addEventListener('click', toggleCommentHeart)
+// commentHeart.addEventListener('click', toggleCommentHeart)
