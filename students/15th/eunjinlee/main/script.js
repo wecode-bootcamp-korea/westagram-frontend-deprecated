@@ -7,7 +7,6 @@ const commentForm = document.getElementById('comment-form')
 const commentInput = document.getElementById('comment-input')
 const commentBtn = document.getElementById('comment-btn')
 const commentDeleteBtn = document.getElementById('delete-btn')
-// const commentHeart = document.getElementById('comment-heart')
 
 const viewCommentsBtn = document.getElementById('comment-view-all')
 const commentList = document.getElementById('comment-list')
@@ -189,6 +188,13 @@ const openAndCloseMenu = (e) => {
   }
 }
 
+//activate posting button
+const activatePostBtn = () => {
+  if (commentInput.value.length > -1) {
+    commentBtn.classList.toggle('active')
+  } 
+}
+
 //window load events
 const init = () => {
   renderComments()
@@ -200,9 +206,6 @@ const init = () => {
 //submit event listener
 commentForm.addEventListener('submit', submitTextAndRender)
 
-//window load event
-window.addEventListener('load', init)
-
 //more button event listener
 moreArticleBtn.addEventListener('click', openArticle)
 
@@ -212,5 +215,11 @@ viewCommentsBtn.addEventListener('click', toggleViewCommentsBtn)
 //search user event listener
 searchInput.addEventListener('keyup', renderSearchResult)
 
+//posting button event listener
+commentForm.addEventListener('keyup', activatePostBtn)
+
 //profile icon click and open menu event listener 
 window.addEventListener('click', openAndCloseMenu)
+
+//window load event
+window.addEventListener('load', init)
