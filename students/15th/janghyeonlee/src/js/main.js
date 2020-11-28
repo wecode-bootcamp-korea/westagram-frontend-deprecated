@@ -65,7 +65,7 @@ function getFilteredUserList() {
   const splitedSearchKeyword = navSearchInput.value.split(' ');
   let userListToShow = []
   dummyUsers.forEach((elem)=>{
-    for(let i=0; i<splitedSearchKeyword.length; i++) {
+    for(let i=0; i < splitedSearchKeyword.length; i++) {
       if(elem.includes(splitedSearchKeyword[i]) && splitedSearchKeyword[i]) {
         userListToShow.push(elem);
         break;
@@ -81,7 +81,7 @@ function deleteUserList() {
 
 function createUserList(UserList) {
   const filteredUserNum = UserList.length; 
-  for(let i=0; i<filteredUserNum; i++) {
+  for(let i=0; i < filteredUserNum; i++) {
     createUserElement(UserList[i]);
   }
 }
@@ -121,7 +121,7 @@ function toggleNavProfileModal(e) {
 // 댓글 최신화 및 하트/삭제 event listener
 function updateCommentNodes() {
   const commentSideInfo = document.getElementsByClassName('comment-side-info');
-  for(let i=0; i<commentSideInfo.length; i++) {
+  for(let i=0; i < commentSideInfo.length; i++) {
     // handle comment heart click 
     commentSideInfo[i].children[1].addEventListener('click', increaseHeartNum)
     // handle comment delete click
