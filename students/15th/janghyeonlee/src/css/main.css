@@ -1,36 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-/* reset */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  list-style: none;
-}
-
-:root {
-  --normal-gray: rgb(230,230,230);
-  --light-gray: rgb(250,250,250);
-  --dark-gray: rgb(219, 219, 219);
-  --darker-gray: rgb(170, 170, 170);
-  --nav-height: 54px;
-  --feed-padding: 15px;
-  --content-width: 935px;
-}
-
-body {
-  background-color: var(--light-gray);
-}
-
-img {
-  object-fit: cover;
-}
-
 /* responsive */
 
 @media screen and (max-width: 945px) {
@@ -212,8 +179,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 614px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px 0 40px 0;
   background-color: white;
 }
 

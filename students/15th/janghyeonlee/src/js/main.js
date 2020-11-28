@@ -1,4 +1,4 @@
-import { dummyUsers } from './dummy_users.js';
+import { dummyUsers, dummyStory, dummyRecommendUser } from './dummy_data.js';
 const commentSubmitBtn = document.querySelector('.feed-comment-upload-button');
 const commentInput = document.querySelector('.feed-new-comment-input');
 const navSearchInput = document.querySelector('input.nav-search');
@@ -23,7 +23,7 @@ function commentUpload() {
     </p>
   </div>
   `
-  if(newCommentString){
+  if(newCommentString) {
     newCommentList.innerHTML = newCommentHTML+commentSideHTML;
     commentsList.appendChild(newCommentList);
     commentInput.value = '';
@@ -46,7 +46,7 @@ function onNavSearchBlur() {
 }
 
 function updateUserList() {
-  if(!navSearchInput.value){
+  if(!navSearchInput.value) {
     navSearchUserModal.style.display = "none";
   }else{
     navSearchUserModal.style.display = "block";
@@ -65,8 +65,8 @@ function getFilteredUserList() {
   const splitedSearchKeyword = navSearchInput.value.split(' ');
   let userListToShow = []
   dummyUsers.forEach((elem)=>{
-    for(let i=0; i<splitedSearchKeyword.length; i++){
-      if(elem.includes(splitedSearchKeyword[i]) && splitedSearchKeyword[i]){
+    for(let i=0; i<splitedSearchKeyword.length; i++) {
+      if(elem.includes(splitedSearchKeyword[i]) && splitedSearchKeyword[i]) {
         userListToShow.push(elem);
         break;
       }
@@ -81,13 +81,13 @@ function deleteUserList() {
 
 function createUserList(UserList) {
   const filteredUserNum = UserList.length; 
-  for(let i=0; i<filteredUserNum; i++){
+  for(let i=0; i<filteredUserNum; i++) {
     createUserElement(UserList[i]);
   }
 }
 
-function createUserElement(userName){
-  let newUser = document.createElement('div');
+function createUserElement(userName) {
+  const newUser = document.createElement('div');
   newUser.classList.add('user-in-nav-search-modal');
   newUser.innerHTML = userName;
   navSearchUserModal.appendChild(newUser);
@@ -111,9 +111,9 @@ function toggleNavProfileModal(e) {
   const userProfileModal = document.querySelector('section.nav-profile-modal');
   const didClickedModal = e.target.classList[0] === 'nav-profile-modal';
   const didClickedProfile = e.target.classList[0] === 'nav-icon-profile';
-  if(didClickedProfile){
+  if(didClickedProfile) {
     userProfileModal.style.display = 'flex'
-  }else if(userProfileModal.style.display && !didClickedModal){
+  }else if(userProfileModal.style.display && !didClickedModal) {
     userProfileModal.style.display = 'none'
   }
 }
@@ -121,13 +121,7 @@ function toggleNavProfileModal(e) {
 // 댓글 최신화 및 하트/삭제 event listener
 function updateCommentNodes() {
   const commentSideInfo = document.getElementsByClassName('comment-side-info');
-  /* 
-    commentSideInfo.child nodes
-    [0]: p.comment-heart-number
-    [1]: div.comment-heart-button
-    [2]: p.comment-delete.button
-  */
-  for(let i=0; i<commentSideInfo.length; i++){
+  for(let i=0; i<commentSideInfo.length; i++) {
     // handle comment heart click 
     commentSideInfo[i].children[1].addEventListener('click', increaseHeartNum)
     // handle comment delete click
@@ -135,9 +129,46 @@ function updateCommentNodes() {
   }
 }
 
+function renderStories() {
+  const storyBox = document.getElementsByClassName('story-box')[0];
+  dummyStory.forEach(story=>{
+    const storyHtmlElement = document.createElement('figure');
+    story = `<img src="${story.src}" alt="${story.alt}">`
+    storyHtmlElement.classList.add('story-icon-profile', 'westa-border', 'westa-feed-padding-x');
+    storyHtmlElement.innerHTML = story;
+    storyBox.appendChild(storyHtmlElement);
+  })
+}
+
+function renderRecommend() {
+  const recommendUserBox = document.getElementsByClassName('aside-recommend-box')[0];
+  dummyRecommendUser.forEach(user=>{
+    const userHtmlElement = document.createElement('div');
+    user = `
+    <div class="aside-recommend-user-info">
+      <figure class="aside-recommend-user-profile">
+        <img src="${user.imgUrl}" alt="recommend ${user.userId} profile">
+      </figure>
+      <div class="aside-recommend-user-text-info">
+        <p class="aside-recommend-user-id">
+          ${user.userId}
+        </p>
+        <p class="aside-recommend-user-name">Follows you</p>
+      </div>
+    </div>
+    <button class="aside-follow-recommend-user-button">팔로우</button>
+    `
+    userHtmlElement.classList.add('aside-recommend-user-box');
+    userHtmlElement.innerHTML = user;
+    recommendUserBox.appendChild(userHtmlElement);
+  })
+}
+
 function init() {
   //update if comment already exists on feed.
   updateCommentNodes();
+  renderStories();
+  renderRecommend();
   commentSubmitBtn.addEventListener('click', commentUpload);
   commentInput.addEventListener('keypress', (e) => { if(e.keyCode === 13) commentUpload() } )
   navSearchInput.addEventListener('focus', onNavSearchFocus);

@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>westagram login page</title>
   <link rel="stylesheet" href="src/css/login.css">
+  <link rel="stylesheet" href="src/css/reset.css">
 </head>
 <body>
   <section class="login-container">
     <header class="title-box">
       <img src="src/img/westagram_big.png" alt="westagram logo">
     </header>
-    <form action="">
+    <form class="login-form"action="">
       <input type="text" class="id" placeholder="전화번호, 사용자 이름 또는 이메일">
       <input type="password" class="password" placeholder="비밀번호">
       <p class="valid-check-message"></p>
       <button class="login-button" disabled>로그인</button>
     </form>
-    <footer class="footer-box">
+    <div class="footer-box">
       <p class="password-lost">비밀번호를 잊으셨나요?</p>
-    </footer>
+    </div>
   </section>
   <script src="src/js/login.js"></script>
 </body>

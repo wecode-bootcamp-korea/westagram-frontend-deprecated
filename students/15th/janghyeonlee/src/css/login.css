@@ -1,34 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-:root {
-  --title-box-height: 119px;
-  --login-box-height: 378px;
-  --login-box-width: 348px;
-  --westagram-dark-gray: rgb(219, 219, 219);
-  --westagram-light-gray: rgb(250,250,250);
-}
-
-body {
-  background-color: var(--westagram-light-gray);
-}
-
 .login-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: var(--login-box-height);
   width: var(--login-box-width);
-  margin: auto;
-  margin-top: 300px;
+  margin: 300px auto;
   background-color: white;
-  border: 1px solid var(--westagram-dark-gray);
+  border: 1px solid var(--dark-gray);
 }
 
 .title-box {
@@ -49,10 +27,9 @@ form {
 input.id, input.password{
   height: 36px;
   width: 266px;
-  padding-left: 7px;
-  padding-right: 7px;
-  border: 1px solid var(--westagram-dark-gray);
-  background-color: var(--westagram-light-gray);
+  padding: 0 7px;
+  border: 1px solid var(--dark-gray);
+  background-color: var(--light-gray);
   border-radius: 3px;
 }
 
@@ -78,8 +55,7 @@ input.password {
 
 .valid-check-message {
   display: none;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin: 7px 0;
   font-size: 14px;
 }
 
