@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+
+  
+
+  <!-- modal -->                
+  <div class="modal__ellipsis hidden">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+ <ul>
+     <li><a href="#">신고</a></li>
+     <li><a href="#">팔로우 취소</a></li>
+     <li><a href="#">게시물로 이동</a></li>
+     <li><a href="#">공유 대상</a></li>
+     <li><a href="#">링크 복사</a></li>
+     <li><a href="#">퍼가기</a> </li>
+     <li id="modal__close">❤</li>
+    </ul>
+    
+      
+    </div>
+  </div>       
+
+<!-- video -->
+
+<!-- 3rd image -->
+<div class="video__container video__hidden">
+  <div class="video__overlay"></div>
+  <div class="me__video">
+    <div class="video__close">❤</div>
+    <video class="video__box" src="./video/KakaoTalk_20201129_084726290.mp4"  ></video>
+     <div class="video__controls">
+       <div class="orange__bar">
+         <div class="orange__juice"></div>
+       </div>
+       <div class="video__buttons">
+         <button id="play-pause"></button>
+       </div>
+     </div>
+  </div>
+</div>
+
+
+
+
+
+    <div class="wrap">
+      <!-- Navbar -->
+      <nav>
+        <!-- Navbar Logo -->
+        <div class="logo">
+          <div class="logo__icon">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"
+              alt="logo"
+            />
+          </div>
+          <h2>Chanstagram</h2>
+        </div>
+         
+        <div class="search__bar">
+          <input type="text" class="searh__input" />
+          <div class="search__btn">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="seacrh__table">
+            <ul id="search__list"></ul>
+          </div>
+        </div>
+        <!-- Navbar UserInfo -->
+        <div class="logo__userinfo">
+        <ul class="logo__userinfo__list">
+            <li><a href="#"> <i class="fas fa-house-user"></i></a></li>
+            <li><a href="#"> <i class="far fa-paper-plane"></i></a></li>
+            <li>
+              <a href="#"
+                ><img
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+                  alt=""
+              /></a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><img
+                  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                  alt=""
+              /></a>
+            </li>
+
+            <li id = "userInfo__menu" onclick="menuToggle()">
+         <a href="#"> <img class="userInfo__image" src="./images/girss.png" alt="" /></a>
+           
+           
+          <ul class="menu__bar">
+            <li><i class="far fa-user"></i><a href="#">프로필</a></li>
+            <li><i class="far fa-bookmark"></i><a href="#">저장됨</a></li>
+            <li><i class="fas fa-cog"></i><a href="#">설정</a></li>
+            <li><i class="fas fa-sync"></i><a href="#">계정 전환</a></li>
+            <li><i class="fas fa-sign-out-alt"></i><a href="#">로그 아웃</a></li>
+
+
+
+          </ul>
+        </li>
+        
+    
+          </ul>
+         
+        </div>
+      </nav>
+
+      <!-- main -->
+      <div id="main">
+        <div class="feeds">
+          <div class="feeds_container">
+            <div class="feeds__header">
+              <ul class="slides">
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람1.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람2.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람3.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox video__open">
+                    <img src="./images/사람4.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox video__open__two">
+                    <img src="./images/사람4.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람1.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람6.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람6.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람6.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람6.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람6.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람6.png" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="imgBox">
+                    <img src="./images/사람1.png" alt="" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p class="controls">
+              <span class="prev"
+                ><i id="prev__heart" class="fas fa-heart"></i
+              ></span>
+              <span class="next"
+                ><i id="next__heart" class="fas fa-heart"></i
+              ></span>
+            </p>
+          </div>
+          <article>
+            <!-- card  -->
+            <div class="card">
+              <!-- card heaer menu -->
+
+              <div class="card__menu">
+                <div class="card__userinfo">
+                  <img src="./images/사람1.png" alt="" />
+                  <a href="#">ryang_ae</a>
+                </div>
+                <span><i id ="elli__modal" class="fas fa-ellipsis-h"></i></span>
+              </div>
+                   
+
+              <!-- card image -->
+
+              <div class="card__image"><img src="./images/g.png" alt="" /></div>
+
+              <!-- card description -->
+
+              <div class="card__description">
+                <div class="header__icon">
+                  <div class="Heart">
+                    <ul class="ulHeart">
+                      <li class="liHeart">
+                        <i id="heart" class="far fa-heart"></i>
+                      </li>
+                      <li><i class="far fa-comment"></i></li>
+                      <li><i class="far fa-paper-plane"></i></li>
+                    </ul>
+                  </div>
+                  <div class="header__button">
+                    <a href="#"><i class="far fa-share-square"></i></a>
+                  </div>
+                </div>
+                <div class="like__comment">
+                  <img src="./images/사람3.png" alt="" />
+                </div>
+                  <ul class="lists"></ul>
+                  <div class="card__input">
+               
+                    <input
+                      class="input__text"
+                      type="text"
+                      placeholder="Comment Come on !!!"
+                    />
+                    <button class="card__btn">게시</button>
+      
+                  </div>
+                </div>
+             
+          </article>
+        </div>
+
+        <!-- Main Right !!! -->
+        <div class="main__right">
+          <!-- Main Right My info -->
+          <div class="main__right__myInfo">
+            <ul class="myInfo__lists">
+              <li class="myInfo__list list__first">
+                <div class="myInfo__Image">
+                  <img src="./images/girss.png" alt="" />
+                </div>
+              </li>
+              <li class="myInfo__list list__second">
+                <p>Sexy Gril</p>
+                <p>Come on Baby!</p>
+              </li>
+              <li class="myInfo__list list__third">
+                <a class="change" href="#">전환</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main__right__recommend">
+            <header class="recommend__header">
+              <span>회원님을 위한 추천</span>
+              <span>모두 보기</span>
+            </header>
+            <div class="recommend__container">
+              <ul>
+                <li>
+                  <div class="image">
+                    <img src="./images/사람1.png" alt="" />
+                  </div>
+                  <div class="recommend__box">
+                    <p>klm_shh</p>
+                    <p>Follows you</p>
+                  </div>
+                  <div class="follow">
+                    <i class="fab fa-earlybirds"></i>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="image">
+                    <img src="./images/사람6.png" alt="" />
+                  </div>
+                  <div class="recommend__box">
+                    <p>klm_shh</p>
+
+                    <p>Follows you</p>
+                  </div>
+                  <div class="follow">
+                    <i class="fab fa-earlybirds"></i>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="image">
+                    <img src="./images/사람2.png" alt="" />
+                  </div>
+                  <div class="recommend__box">
+                    <p>klm_shh</p>
+
+                    <p>Follows you</p>
+                  </div>
+                  <div class="follow">
+                    <i class="fab fa-earlybirds"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="image">
+                    <img src="./images/사람3.png" alt="" />
+                  </div>
+                  <div class="recommend__box">
+                    <p>klm_shh</p>
+
+                    <p>Follows you</p>
+                  </div>
+                  <div class="follow">
+                    <i class="fab fa-earlybirds"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="image">
+                    <img src="./images/사람4.png" alt="" />
+                  </div>
+                  <div class="recommend__box">
+                    <p>klm_shh</p>
+
+                    <p>Follows you</p>
+                  </div>
+                  <div class="follow">
+                    <i class="fab fa-earlybirds"></i>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="image">
+                    <img src="./images/사람5.png" alt="" />
+                  </div>
+                  <div class="recommend__box">
+                    <p>klm_shh</p>
+
+                    <p>Follows you</p>
+                  </div>
+                  <div class="follow">
+                    <i class="fab fa-earlybirds"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        
+        <div class="footer__menu">
+        
+          <div class ="footer__icon">
+            <i class="fas fa-house-user"></i>
+          </div>
+
+          <div class="footer__bar">
+            <div class="footer__btn">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="footer__table">
+              <ul id="footer__list"></ul>
+            </div>
+          </div>
+
+    <div class="footer__icon">
+   <i class="far fa-plus-square"></i> </div>
+  
+  
+   <div class="footer__icon">
+        <i class="fas fa-shopping-bag"></i>
+      </div>
+        
+      <div class="footer__icon">
+            <img src="./images/girss.png" alt="" />
+          </div>
+          
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

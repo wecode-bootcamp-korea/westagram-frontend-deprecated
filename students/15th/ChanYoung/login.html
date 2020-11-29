@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chanstargam</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card card__sign__up">
+        <header class="login__head">
+          <i class="fab fa-instagram"></i>
+          <p>Chanstargram</p>
+        </header>
+
+        <div class="signup__error"></div>
+        <form
+          name="signupForm"
+          mathod="post"
+          onsubmit="return signupValid()"
+          action="#"
+        >
+          <input
+            class="name"
+            type="text"
+            name="name"
+            placeholder="전화번호 사용자 이름 또는 이메일"
+            autocomplete="off"
+          />
+          <input
+            class="email"
+            type="password"
+            name="password"
+            placeholder="비밀번호"
+            autocomplete="off"
+          />
+          <input name="login" type="submit" value="로그인" autocomplete="off" />
+        </form>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
