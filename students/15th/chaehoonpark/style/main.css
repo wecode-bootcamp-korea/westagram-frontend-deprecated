@@ -1,145 +1,249 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  color: #262626;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 13px;
 }
-
-div {
-    border:1px solid black;
-}
-
-
 
 nav {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border: 1px solid black;
-    display:flex;
-    justify-content: space-around;
-    margin-bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;  
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  background-color: #ffffff;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    width: 975px;
+.left-nav-westagram {
+  display: inline-block;
+  margin: 10px 0 0 0;
 }
 
-.left-nav{
-    width: 200px; 
-    display:flex;
-    justify-content: flex-start;
-    padding-top: 9px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 975px;
 }
 
-.ig-logo{
-    display:block;
-    width: 25px;
-    height: 25px;
-    margin-top: 7px;
-    margin-right: 10px;
+.left-nav {
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 9px;
+}
+
+.ig-logo {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-top: 7px;
+  margin-right: 10px;
 }
 
 .input-box {
-    width: 215px;
-    text-align: center;
+  width: 215px;
+  margin: 5px 0 0 0;
+  text-align: center;
 }
 
 input {
-    margin-top: 15px;
-    display: inline-block;
-    background: rgba(var(--b3f,250,250,250),1);
-    width: 100%;
-    height: 25px;
-    border: 1px solid rgba(var(--ca6,219,219,219),1);;
-    border-radius: 3px;
-    font-size: 12px;
-    text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  width: 100%;
+  height: 25px;
+  border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+  border-radius: 3px;
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+  font-size: 12px;
+  text-align: center;
 }
 
-.nav-images-box{
-    display: flex;
-    justify-content: space-around;
-    width: 100px;
-    height: 60px
+.nav-images-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 60px;
+  margin: 5px 0 0 0;
 }
 
-.nav-images{
-    margin-top: 20px;
-    display:inline-block;
-    width:20px;
-    height: 20px;
+.nav-images {
+  margin-top: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 
-main{
-    background-color: #FAFAFA;
-    border: 1px solid black;
-    height: 100vh; /* 이건 첨 본다. 머자  */
-    margin-top: 61px;
-    display: flex;
-    justify-content: center;
+main {
+  width: 975px;
+  background-color: #fafafa;
+  height: 100vh; /* 이건 첨 본다. 머자  */
+  margin: 38px auto;
 }
 
-
-.feeds{
-    width:614px;
-    margin-top: 8px;
-    margin-right: 10px;
+.feeds {
+  margin: 70px auto;
 }
 
-.main-right{
-    width: 293px;
-    height: 60%;
-    margin-top: 8px;
-    margin-left: 8px;
+.main-right {
+  position: fixed;
+  top: 61px;
+  left: 60%;
+  width: 293px;
+  height: 60%;
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
 article {
-    border:1px solid black;
-    margin: 30px 5px 5px 5px;
+  width: 60%;
+  margin: 30px 5px 5px 50px;
+  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  background-color: #ffffff;
 }
 
-.article-header{
-    display: flex;
-    justify-content: flex-start;
+.article-header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.article-header-profile-img{
-    margin: 5px 5px 0px 5px;
+.article-header-profile {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.article-writer{
-    font-size: 14px;
+.article-header-profile-img {
+  margin: 5px 5px 0px 5px;
 }
 
-.article-place{
-    font-size: 12px;
+.article-header-writer {
+  margin: 2px 0px 0px 0px;
+  font-size: 14px;
 }
 
-.article-img-box{
-    height: 615px;
+.article-header-place {
+  font-size: 10px;
 }
 
-.article-img{
-    height: 614px;
+.article-header-option-class {
+  margin: 0 3px 0 0;
+  padding: 7px 0 0 0;
 }
 
-.like-comment-share-bookmark{
-    width: 20px;
-    height: 20px;
-    margin-top: 3px;
+.article-img-box {
+  height: 615px;
 }
 
-.article-third-row{
-    display:flex;
-    justify-content: space-between;
+.article-img {
+  height: 614px;
 }
 
-.article-third-fow-first-column{
-    width: 100px;
-    display:flex;
-    justify-content: space-around;
+.article-third-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-third-fow-first-column {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.like-comment-share-bookmark {
+  width: 20px;
+  height: 20px;
+  margin: 3px 5px 0 0;
+}
+
+.heart {
+  margin: 3px 0 0 3px;
+}
+
+.comment {
+  width: 30px;
+  margin: 3px 0 0 0;
+}
+
+.share {
+  margin: 0 8px 0 0;
+}
+
+.article-fourth-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.article-fourth-row-img-box {
+  margin: 1px 5px 0 5px;
+}
+
+.article-fourth-row-img {
+  width: 20px;
+  margin-left: 6px;
+  border-radius: 100%;
+}
+
+.username-bold {
+  font-weight: bold;
+}
+
+.article-fifth-row {
+  padding-left: 8px;
+}
+
+.article-space-to-write-comments {
+  padding: 10px 0 10px 8px;
+  border-top: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px 0 0 0;
+}
+
+.user-info-img {
+  width: 55px;
+  border-radius: 100%;
+}
+
+.user-info-id-and-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0 0 0;
+  background-color: #ffffff;
+}
+
+.story-section-user-list {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+
+.story-section-user-img-box {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+
+.story-section-user-img {
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+footer {
+  margin: 20px 0 0 0;
 }
