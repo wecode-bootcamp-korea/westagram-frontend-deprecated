@@ -28,26 +28,22 @@ nav {
   height: 29px;
 }
 
+.search__modal__nav__input__wrapping {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+
 .nav__input {
   width: 215px;
   height: 28px;
   border: 2px solid var(--border-color);
   background-image: url('../img/magnifying-glass.png');
   background-repeat: no-repeat;
-  background-position: 76px;
+  background-position: 6px;
   background-size: 12px;
-}
-
-.nav__input:focus {
-  background: none;
-}
-
-.nav__input:focus::placeholder {
-  color: transparent;
-}
-
-.nav__input::placeholder {
-  text-align: center;
+  padding-left: 24px;
 }
 
 .nav__right {
@@ -282,4 +278,28 @@ section {
 
 .story__user-time {
   color: var(--font-color-faint);
+}
+
+.search__modal__box {
+  position: absolute;
+  display: none;
+  top: 24px;
+  height: 148px;
+  width: 230px;
+  padding: 0;
+  border: 2px solid var(--border-color);
+  background-color: white;
+  z-index: 1;
+  overflow-y: auto;
+}
+
+.search__modal__item {
+  padding: 0px 8px;
+  padding-top: 4px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search__modal__description {
+  margin: 0;
+  font-size: 12px;
 }

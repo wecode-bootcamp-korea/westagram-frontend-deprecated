@@ -4,9 +4,20 @@ const feedBTN = document.querySelector('.feed__comment__button');
 const likeNumberText = document.querySelector(
   '.feed__content__like-number__text'
 );
+const navInput = document.querySelector('.nav__input');
+const searchModalBox = document.querySelector('.search__modal__box');
 
 let obj = {
   commentLike: [],
+  dummyDate: [
+    { id: 'wecode_bootcamp', description: '>wecode | 위코드' },
+    { id: 'wecode_korea', description: 'Fun coding' },
+    { id: 'ys', description: '이거 못풀면 죽는다는 마음으로...ㅜ😭' },
+    { id: 'Wecode', description: '고난과 역경의 연속의 장' },
+    { id: 'wecode_?', description: '선릉역멀다..' },
+    { id: 'wecode_!', description: '화이팅!' },
+    { id: 'wecode_yes', description: 'ㅎㅎㅎ' },
+  ],
 };
 
 let likeNumber = 10;
@@ -90,6 +101,37 @@ function refreshLikeNumber() {
   }명이 좋아합니다`;
 }
 
+function showSearchValue(value) {
+  searchModalBox.innerHTML = '';
+  if (value.length) {
+    value.forEach(item => {
+      const searchModalitem = document.createElement('li');
+      searchModalitem.setAttribute('class', 'search__modal__item');
+      searchModalitem.innerHTML = `
+      <div class="search__modal__item">
+        <strong class="search__modal__id">${item.id}</strong>
+        <p class="search__modal__description">${item.description}</p>
+      </div>`;
+      searchModalBox.appendChild(searchModalitem);
+    });
+  } else {
+    const searchModalitem = document.createElement('li');
+    searchModalitem.setAttribute('class', 'search__modal__item');
+    searchModalitem.innerHTML = `
+      <div class="search__modal__item">
+        <strong class="search__modal__id">검색한 id가 없습니다.</strong>
+      </div>`;
+    searchModalBox.appendChild(searchModalitem);
+  }
+}
+
+function findSearchId() {
+  const matchValue = obj.dummyDate.filter(x => {
+    return x.id.indexOf(navInput.value) != -1;
+  });
+  showSearchValue(matchValue);
+}
+
 feedBTN.addEventListener('click', addComment);
 inputComment.addEventListener('keyup', event => {
   if (event.keyCode == 13) {
@@ -99,3 +141,21 @@ inputComment.addEventListener('keyup', event => {
 
 feedComments.addEventListener('click', deleteComment);
 feedComments.addEventListener('click', countLike);
+navInput.addEventListener('keyup', () => {
+  if (navInput.value) {
+    searchModalBox.style.display = 'block';
+    findSearchId();
+  } else {
+    searchModalBox.style.display = 'none';
+  }
+});
+navInput.addEventListener('focusout', () => {
+  searchModalBox.style.display = 'none';
+});
+navInput.addEventListener('focusin', () => {
+  if (navInput.value) {
+    searchModalBox.style.display = 'block';
+  } else {
+    searchModalBox.style.display = 'none';
+  }
+});
