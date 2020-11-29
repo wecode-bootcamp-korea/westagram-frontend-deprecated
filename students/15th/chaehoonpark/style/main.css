@@ -14,11 +14,11 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;  
+  right: 0;
   display: flex;
   justify-content: space-around;
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   background-color: #ffffff;
 }
 
@@ -77,7 +77,7 @@ input {
 .nav-images {
   display: inline-block;
   width: 20px;
-  height: 20px;  
+  height: 20px;
   margin-top: 20px;
 }
 
@@ -105,7 +105,7 @@ main {
 article {
   width: 60%;
   margin: 30px 5px 5px 50px;
-  border: 1px solid rgba(var(--b6a,219,219,219),1);
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   background-color: #ffffff;
 }
 
@@ -248,28 +248,28 @@ footer {
   margin: 20px 0 0 0;
 }
 
-.article-space-to-write-comments{
-    display:flex;
-    justify-content: space-between;
-    /* border: 1px solid black; */
-    padding: 0;
+.article-space-to-write-comments {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  padding: 0;
 }
 
-.input-box{
-    margin: 0 0 15px 8px;
-    width: 90%;
+.input-box {
+  margin: 0 0 15px 8px;
+  width: 90%;
 }
 
-.article-comment{
-    border: 0;
-    text-align: start;
+.article-comment {
+  border: 0;
+  text-align: start;
 }
 
-.button-box{
-    margin: 15px 10px 0 0;
+.button-box {
+  margin: 15px 10px 0 0;
 }
 
-.article-comment-button{
-    border:0;
-    color:#B3DFFC
+.article-comment-button {
+  border: 0;
+  color: #b3dffc;
 }
