@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
 </head>
 
 <body>
     <!-- top-header -->
-    <div id="nav">
+    <nav>
         <div id="nav-box">
             <div id="logo">
                 <a href="#">
@@ -47,62 +46,10 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </nav>
     <!-- allfeeds -->
     <div id="main">
         <div class="feeds">
-            <ul class="storage">
-                <!-- 스토리 -->
-                <li>
-                    <a href="#">
-                        <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/46236641_361980647869956_5196270907529625600_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=M7zigSPq0zoAX_acVfU&tp=1&oh=53ddfcf63e0b84bd014d39bba1026f45&oe=5FE5BF4C"
-                            alt="profile1">
-                        <p>canonkorea</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/91865671_209303637041032_6215383650922397696_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=hsIMtI4uCUoAX8CEpKw&tp=1&oh=86817926374e64006f145193990d95ea&oe=5FE49E07"
-                            alt="profile2">
-                        <p>gs25_official</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/46236641_361980647869956_5196270907529625600_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=M7zigSPq0zoAX_acVfU&tp=1&oh=53ddfcf63e0b84bd014d39bba1026f45&oe=5FE5BF4C"
-                            alt="profile1">
-                        <p>canonkorea</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/91865671_209303637041032_6215383650922397696_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=hsIMtI4uCUoAX8CEpKw&tp=1&oh=86817926374e64006f145193990d95ea&oe=5FE49E07"
-                            alt="profile2">
-                        <p>gs25_official</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/46236641_361980647869956_5196270907529625600_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=M7zigSPq0zoAX_acVfU&tp=1&oh=53ddfcf63e0b84bd014d39bba1026f45&oe=5FE5BF4C"
-                            alt="profile1">
-                        <p>canonkorea</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/91865671_209303637041032_6215383650922397696_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=hsIMtI4uCUoAX8CEpKw&tp=1&oh=86817926374e64006f145193990d95ea&oe=5FE49E07"
-                            alt="profile2">
-                        <p>gs25_official</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/46236641_361980647869956_5196270907529625600_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=M7zigSPq0zoAX_acVfU&tp=1&oh=53ddfcf63e0b84bd014d39bba1026f45&oe=5FE5BF4C"
-                            alt="profile1">
-                        <p>canonkorea</p>
-                    </a>
-                </li>
-            </ul>
             <article>
                 <div class="feed-user">
                     <div class="feed-pro">
@@ -136,30 +83,26 @@
                             좋아요 <span class="point-update">777</span>개
                         </div>
                         <div class="board-message-upload-user-name">
-                            <span class="user-id">mini_cat_ya</span>
-                            오구오구~ 자다깼쪄여~?
-                        </div>
-                        <div class="board-message-upload-user-name">
                             <span class="user-id">cat_m_mama</span>
                             몇 개월된 아가인가요~ 너무 귀여워요!
                         </div>
                         <div class="Date-time">
                             42분 전
                         </div>
+                        <ul class="uploadComment">
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
+                <form class="feed-comment-input">
+                    <input class="feed-comment-input-content" placeholder="댓글 달기..."/>
+                    <button class="feed-comment-input-button" type="submit">게시</button>
+                </form>
             </article>
         </div>
         <div class="main-right">
-            <div class="main-myPro">
-                <!-- 내프로필 -->
-            </div>
-            <div class="storyBox">
-                <ul class="addPro">
-                    <!-- 추천인 -->
-                </ul>
-            </div>
-            <div class="footer">
+            <img src="images/main-right.png" alt="예시프로필">
+            <footer>
                 <ul class="footer-nav">
                     <li><a href="">소개</a>&#183;</li>
                     <li><a href="">도움말</a>&#183;</li>
@@ -171,12 +114,13 @@
                     <li><a href="">위치</a>&#183;</li>
                     <li><a href="">인기 계정</a>&#183;</li>
                     <li><a href="">해시태그</a>&#183;</li>
-                    <li><a href="">언어</a>&#183;</li>
+                    <li><a href="">언어</a></li>
                 </ul>
                 <p>© 2020 INSTAGRAM FROM FACEBOOK</p>
-            </div>
+            </footer>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

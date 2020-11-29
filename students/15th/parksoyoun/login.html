@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/login.js"></script>
 </head>
 
 <body>
@@ -24,16 +23,17 @@
             <div class="hearderLog">
                 <p>Westagram</p>
             </div>
-            <form action="" method="post" class="loginBox">
-                <input type="text" name="id" id="id" placeholder="전화번호, 사용자 이름 또는 이메일">
-                <input type="password" name="pwd" id="pwd" placeholder="비밀번호">
-                <button>로그인</button>
+            <form action="" method="post">
+                <input type="text" name="id" id="loginId" placeholder="전화번호, 사용자 이름 또는 이메일">
+                <input type="password" name="pwd" id="loginPwd" placeholder="비밀번호">
+                <button type="button" disabled>로그인</button>
             </form>
             <div class="caption">
                 비밀번호를 잊으셨나요?
             </div>
         </div>
     </div>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

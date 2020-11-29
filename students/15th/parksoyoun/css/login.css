@@ -39,6 +39,7 @@ form{
 }
 form>*{
     display: block;
+    outline: none;
 }   
 input{
     margin: 5px 0;
@@ -54,8 +55,7 @@ button{
     width: 100%;
     height: 35px;
     margin-top: 15px;
-    cursor: pointer;
-    background-color: rgb(174, 216, 243);
+    background-color: #c5e0fc;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -63,8 +63,9 @@ button{
     font-size: 1em;
 }
 .caption{
-    padding-top: 250px;
+    margin-top: 250px;
     text-align: center;
     color: rgb(39, 63, 109);
     font-weight: 600;
+    cursor: pointer;
 }
