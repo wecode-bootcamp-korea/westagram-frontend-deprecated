@@ -1,64 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="login.css">
-<script src="http://kit.fontawesome.com/b470176574.js" crossorigin="anomymous"></script>
- 
 
+<head>
+  <title>Westagram</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b470176574.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-  <div class="frame">
-    <input type="text" name="id" size="12" value="" placeholder="전화번호, 사용자 이름 또는 이메일" >
-    <input type="password" name="pw" size="12" value="">
-    <button class="login">로그인 </button>
-    <!-- <div class="colorBox"> -->
-      <!-- <div class="minRText">
-          <span>
-              <font>인스타그램</font>
-          </span> -->
-      <!-- </div> -->
-    </div>
+  <div class="login_container">
+
+
+    <header class="logo_header">
+      <p class="logo_name">Westagram</p>
+    </header>
+
+    <section class="login_box">
+      <input class="login_input" type="text" name="id" size="12" placeholder="전화번호, 사용자 이름 또는 이메일">
+      <input class="pw_input" type="password" name="pw" size="12" placeholder="비밀번호">
+      <div class="btn">
+        <button class="login_btn">로그인 </button>
+      </div>
+      <p class="or"><b>――――――――&nbsp;&nbsp; 또는 &nbsp;&nbsp;――――――――</b></p>
+      <p class="facebook"><i class="fab fa-facebook-square"></i>&nbsp;<b>Facebook으로 로그인</b></p>
+
+    </section>
+
+    <footer class="forgot_box">
+      <p class="forgot_pw">비밀번호를 잊으셨나요?</p>
+    </footer>
+
+
   </div>
 
-  <!-- <div class="miniBox">
-    <button class="flex-item">
-      <i class="fas fa-heart"></i>&nbsp;
-    </button>
-    <span clas="days">
-      <font>텍스트</font>
-    </span>
-  </div> -->
-
-
-
-<!-- 
-<header>
-  <h2>상단</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">1111111111</a></li>
-      <li><a href="#">2222222222</a></li>
-      <li><a href="#">333333333</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>제목</h1>
-    <p>본문</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section> -->
-
-<footer>
-  <p>푸터</p>
-</footer>
-
 </body>
+
 </html>
