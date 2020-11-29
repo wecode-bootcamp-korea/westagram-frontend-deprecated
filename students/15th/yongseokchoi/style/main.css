@@ -48,6 +48,7 @@ nav {
 
 .nav__right {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-evenly;
   width: 222px;
@@ -55,6 +56,7 @@ nav {
 
 .nav__right > img {
   width: 22px;
+  cursor: pointer;
 }
 
 main {
@@ -302,4 +304,39 @@ section {
 .search__modal__description {
   margin: 0;
   font-size: 12px;
+}
+
+.profile__modal__box {
+  position: absolute;
+  display: none;
+  top: 18px;
+  right: 30px;
+  width: 180px;
+  padding: 0;
+  border: 2px solid var(--border-color);
+  z-index: 1;
+  background-color: white;
+}
+
+.profile__modal__item {
+  list-style: none;
+  margin: 4px;
+  padding: 0px 8px;
+  padding-top: 4px;
+}
+
+.modal__icon {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.profile__modal__item:last-child {
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color);
+}
+
+@media screen and (max-width: 768px) {
+  .main-right {
+    display: none;
+  }
 }

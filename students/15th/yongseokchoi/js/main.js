@@ -6,6 +6,8 @@ const likeNumberText = document.querySelector(
 );
 const navInput = document.querySelector('.nav__input');
 const searchModalBox = document.querySelector('.search__modal__box');
+const profileIcon = document.querySelector('.profile__img');
+const profileModalBox = document.querySelector('.profile__modal__box');
 
 let obj = {
   commentLike: [],
@@ -141,6 +143,7 @@ inputComment.addEventListener('keyup', event => {
 
 feedComments.addEventListener('click', deleteComment);
 feedComments.addEventListener('click', countLike);
+
 navInput.addEventListener('keyup', () => {
   if (navInput.value) {
     searchModalBox.style.display = 'block';
@@ -157,5 +160,15 @@ navInput.addEventListener('focusin', () => {
     searchModalBox.style.display = 'block';
   } else {
     searchModalBox.style.display = 'none';
+  }
+});
+
+window.addEventListener('click', event => {
+  if (event.target.className === 'profile__img') {
+    profileModalBox.style.display = 'block';
+  } else if (event.target.classList[0] === 'profile') {
+    profileModalBox.style.display = 'block';
+  } else {
+    profileModalBox.style.display = 'none';
   }
 });

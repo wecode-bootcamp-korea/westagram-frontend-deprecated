@@ -30,16 +30,32 @@
       <div class="nav__right">
         <img
           src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-          alt=""
+          alt="explore"
         />
         <img
           src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-          alt=""
+          alt="heart"
         />
         <img
           src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-          alt=""
+          alt="profile"
+          class="profile__img"
         />
+        <ul class="profile profile__modal__box">
+          <li class="profile profile__modal__item">
+            <i class="profile far fa-user-circle fa-fw modal__icon"></i>
+            <span class="profile">프로필</span>
+          </li>
+          <li class="profile profile__modal__item">
+            <i class="profile far fa-bookmark fa-fw modal__icon profile"></i>
+            <span class="profile">저장됨</span>
+          </li>
+          <li class="profile profile__modal__item">
+            <i class="profile fas fa-cog fa-fw modal__icon"></i>
+            <span class="profile">설정</span>
+          </li>
+          <li class="profile profile__modal__item">로그아웃</li>
+        </ul>
       </div>
     </nav>
     <main>
