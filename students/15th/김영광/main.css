@@ -230,17 +230,18 @@ article {
   border: 1px 0 1px 0  solid lightgray;
 } 
 
-.add_comment {
-  display: flex;
+
+.add-form {
   position: relative;
+  display: flex;
   justify-content: space-between;
-  
+  margin-bottom: 0;
 }
 
-.addBtn {
-  position: absolute;
-    margin-top: 20px;
+.add-btn {
+    position: absolute;
     right: 10px;
+    bottom: 20px;
   }
 
   .add{
