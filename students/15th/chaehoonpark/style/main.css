@@ -48,7 +48,7 @@ nav {
   margin-right: 10px;
 }
 
-.input-box {
+.nav-input-box {
   width: 215px;
   margin: 5px 0 0 0;
   text-align: center;
@@ -246,4 +246,30 @@ header {
 
 footer {
   margin: 20px 0 0 0;
+}
+
+.article-space-to-write-comments{
+    display:flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 0;
+}
+
+.input-box{
+    margin: 0 0 15px 8px;
+    width: 90%;
+}
+
+.article-comment{
+    border: 0;
+    text-align: start;
+}
+
+.button-box{
+    margin: 15px 10px 0 0;
+}
+
+.article-comment-button{
+    border:0;
+    color:#B3DFFC
 }
