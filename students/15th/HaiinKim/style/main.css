@@ -19,7 +19,7 @@
 }
 
 .navLogo i {
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 .navLogoBar {
@@ -27,12 +27,10 @@
     height: 30px;
     background-color: black;
     margin-right: 15px;
-
 }
 
 .navLogoInsta {
-    font-family: 'Lobster', cursive;
-    
+    font-family: 'Lobster', cursive; 
 }
 
 .navSearch {
@@ -47,7 +45,6 @@
     border-radius: 3px;
     background-color: #FAFAFA;
     padding: 0, 50px;
-
 }
 
 .navSearchInput:focus {
@@ -73,16 +70,17 @@
 .main {
     display: flex;
     margin-top: 160px;
+    margin-left: 80px;
 }
 
 .mainFeed {
     width: 630px;
     height: auto;
-    border: 3px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     background-color: white;
     margin-bottom: 40px;
-    margin-left: 160px;
+    margin-left: 110px;
 }
 
 .mainFeedTitle {
@@ -101,7 +99,6 @@
 .mainFeedTitleName {
     display: flex;
     align-items: center;
-
 }
 
 .mainFeedTitleName img {
@@ -110,7 +107,6 @@
     border-radius: 20px;
     margin: 0 20px;
     z-index: 1;
-
 }
 
 .mainFeedTitleName div {
@@ -120,7 +116,6 @@
 .mainFeedPic img {
     width: 630px;
     height: 460px;
-
 }
 
 .mainFeedIcons {
@@ -131,6 +126,10 @@
 
 .mainFeedIconsLeft, .mainFeedIconsRight {
     font-size: 28px;
+}
+
+.mainFeedIconsLeft i:first-child {
+    color: red;
 }
 
 .mainFeedIconsLeft i:first-child, .mainFeedIconsLeft i:nth-child(2) {
@@ -179,12 +178,25 @@
 }
 
 .mainFeedComment {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 5px;
 }
 
 .mainFeedComment span:first-child, .commentUser {
     font-weight: 700;
     margin-right: 5px;
+}
+
+.mainFeedComment i {
+    margin-left: 50px;
+}
+
+.mainFeedCommentLike {
+    margin-right: 20px;
+}
+.mainFeedCommentLike i, .mainFeedCommentLike span {
+    cursor: pointer;
 }
 
 .mainFeedCommentBox {
@@ -213,6 +225,7 @@
 .mainFeedBtn {
     color: #CAE3FC;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .mainRight {
@@ -220,7 +233,7 @@
     height: 450px;
     position: fixed;
     top: 160px;
-    right: 160px;
+    right: 200px;
 }
 
 .mainRightUser {
@@ -230,13 +243,11 @@
     align-items: center;
     justify-content: space-between;
     margin: 0;
-
 }
 
 .mainRightUserLeft {
     display: flex;
     align-items: center;
-
 }
 
 .mainRightUserLeft img {
@@ -258,7 +269,7 @@
 .mainRightStory {
     width: 280px;
     height: 220px;
-    border: 3px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     background-color: white;
     margin-top: 20px;
@@ -290,8 +301,7 @@
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    margin-right: 10px;
-    
+    margin-right: 10px;  
 }
 
 .mainRightStoryUpdateContentId {
@@ -302,3 +312,6 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.flipped {
+    color: red;
+}
