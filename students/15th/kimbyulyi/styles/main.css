@@ -412,6 +412,33 @@ aside .aside__footer .copyright {
   }
 }
 
+@media (max-width: 665px) {
+  .main-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feeds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+  }
+
+  article {
+    width: 450px;
+  }
+
+  .feeds .feedImg {
+    width: 450px;
+  }
+
+  .feeds .feeds__comments__form {
+    border: 1px solid var(--color-gainsoboro);
+  }
+}
+
 @media (max-width: 500px) {
   .wrap-input {
     display: none;

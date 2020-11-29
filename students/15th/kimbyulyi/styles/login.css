@@ -182,3 +182,15 @@ footer {
 footer p {
   margin-top: 15px;
 }
+
+@media (max-width: 810px) {
+  aside {
+    display: none;
+  }
+}
+
+@media (max-width: 565px) {
+  .footer__list li {
+    margin-right: 5px;
+  }
+}
