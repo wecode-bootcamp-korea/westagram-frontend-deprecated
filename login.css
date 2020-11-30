@@ -1,0 +1,48 @@
+body{
+    text-align:center;
+}
+
+.super_main{
+    margin:15px;
+    border:2px solid rgba(189, 178, 177,.5);
+
+}
+
+h1{
+    font-family: ‘Lobster’, cursive;
+    font-size: 80px;
+}
+
+.main_log{
+    margin: 100px auto 10px auto;
+}
+
+input[type = text]{
+    width:400px;
+    height: 60px;
+    border-radius: 5px;
+    border:2px solid rgba(221, 228, 240,.5);
+}
+input[type = password]{
+    width:400px;
+    height:60px;
+    border-radius: 5px;
+    border:2px solid rgba(221, 228, 240,.5);
+}
+.main_log_pwd{
+    margin-top: 15px;
+   
+}
+.main_btn{
+    width:408px;
+    height: 45px;
+    border-radius: 5px;
+    border:2px solid rgba(189, 178, 177,.5);
+    margin-top: 15px;
+    background-color: #9ebbe6;
+}
+footer{
+    margin-top: 325px;
+    color: #3d66a8;
+    margin-bottom: 100px;
+}

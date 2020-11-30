@@ -1,0 +1,97 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #e3dddc;
+    padding-left: 15px;
+    height: 70px;
+    align-items: center;
+}
+.nav_title{
+    padding-left: 15;
+    font-family: ‘Lobster’, cursive;
+    font-size: 25px;
+}
+.nav_search{
+    padding-top: 7px;
+}
+.nav_item{
+    padding-right: 15px;
+}
+
+.super{
+    display:flex;
+}
+.left{
+    padding-left:15px;
+    padding-top:30px;
+}
+.img_sort{
+    position: absolute;
+    width:700px;
+    height:110px;
+    border:1px solid #e3dddc;
+    border-radius: 5px;
+}
+.issue{
+    position:absolute;
+    height:900px;
+    width: 700px;
+    border: 1px solid #e3dddc;
+    border-radius: 2px;
+    margin-top: 130px;
+}
+.small_img{
+    border-bottom: 1px solid #e3dddc;
+    align-items: center;
+}
+.issue_top{
+    height:600px;
+    border-bottom: 1px solid #e3dddc;
+}
+.far{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.fas{
+    font-size: 30px;
+}
+.issue_header{
+    padding: 5px 20px;
+}
+
+.ment{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.remain_word{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+input[type=text]{
+    width:691.5px;
+    height:45px;
+    margin-top: 52.5px;
+}
+
+/* 오른쪽 */
+
+
+
+
+
+
+
+.right{
+    padding-top:auto;
+    padding-left: 730px;
+    margin-right: 0px;
+}
+.right_top{
+    margin-top: 30px;
+    height:110px;
+    border:1px solid black;
+}
+.right_intro{
+    font-size: 20px;
+    
+}
