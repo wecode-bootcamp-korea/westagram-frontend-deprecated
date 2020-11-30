@@ -2,6 +2,11 @@
 body{
     background-color: #fafafa;
 }
+
+button{
+    background: none;
+    border: none;
+}
 /* header_navbar */
 header {
     position: fixed;
@@ -88,6 +93,7 @@ main{
 }
 
 .story img{
+    margin-bottom: 10px;
     width: 55px;
     height: 55px;
     border-radius: 100%;
@@ -107,16 +113,19 @@ main{
     background-color: #fff;
 }
 .feed_header {
-   width: 100%;
-   height: 60px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px; 
 }
 
 .accout_name{
     display: inline-block;
-
+    margin-left: 17px;
 }
 
-.feed_header img {
+.accout_name img {
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -124,10 +133,109 @@ main{
     vertical-align: bottom;
 }
 
-.feed_header a {
+.accout_name a {
     display: inline-block;
     color: black;
     font-size: 14px;
     font-weight: bold;
     line-height: 30px;
+}
+
+.feed_header button{
+    margin-right: 17px;
+    padding: 0;
+    background: none;
+    border: none;
+    width: 20px;
+    height: 15px;
+}
+
+.feed_header button img {
+    width: 100%;
+    height: 100%;
+}
+
+.feed_img {
+    width: 100%;
+}
+
+/* 댓글아이콘 */
+.feed_txt_ico img {
+    width: 22px;
+    height: 22px;
+}
+
+.feed_txt_ico_left {
+    display: inline-block;
+}
+
+.feed_txt_ico_left button,a {
+    padding: 8px;
+    display: inline-block
+}
+
+button.feed_heart{
+    padding-left: 0;
+}
+
+.bookmark {
+    float: right;
+    margin-right: 17px;
+}
+
+
+/* 댓글 */
+.feed_txt {
+    margin: 0 auto;
+    width: 579px;
+    line-height: 25px;
+}
+
+.bold {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.more_comments{
+    padding: 0;
+    color:#8e8e8e;
+    font-size: 16px;
+}
+
+.comments_heart {
+    float: right;
+
+}
+.comments_heart img{
+    width: 12px;
+}
+
+/* 댓글달기 */
+.add_comments {
+    border-top: 1px solid #dbdbdb;
+}
+.add_comments > div {
+    width: 579px;
+    margin: 0 auto;
+}
+
+.add_comments input{
+    margin: 20px 0;
+    padding: 0;
+    border: none;
+    width: 90%;
+    height: 40px;
+}
+
+.add_comments input::placeholder {
+    font-size: 17px;
+    color: #dbdbdb;
+}
+
+.add_comments button {
+    padding: 0;
+    font-size: 16px;
+    color: #0095f6;
+    font-weight: bold;
 }
