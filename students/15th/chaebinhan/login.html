@@ -9,35 +9,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b470176574.js" crossorigin="anonymous"></script>
+  <script src="login.js"></script>
 </head>
 
 <body>
 
   <div class="login_container">
-
-
     <header class="logo_header">
-      <p class="logo_name">Westagram</p>
-    </header>
+      <p class="logo_name" >Westagram</p>
+    </header>  
 
     <section class="login_box">
-      <input class="login_input" type="text" name="id" size="12" placeholder="전화번호, 사용자 이름 또는 이메일">
-      <input class="pw_input" type="password" name="pw" size="12" placeholder="비밀번호">
+      <input class="login_input" id="userId" oninput="changeColor()" type="text" name="id" size="12" placeholder="전화번호, 사용자 이름 또는 이메일">
+      <input class="pw_input"  id="userPw" oninput="changeColor()" type="password" name="pw" size="12" placeholder="비밀번호">
       <div class="btn">
-        <button class="login_btn">로그인 </button>
+        <button class="login_btn" id="btn_id">로그인 </button>
       </div>
       <p class="or"><b>――――――――&nbsp;&nbsp; 또는 &nbsp;&nbsp;――――――――</b></p>
       <p class="facebook"><i class="fab fa-facebook-square"></i>&nbsp;<b>Facebook으로 로그인</b></p>
-
     </section>
 
-    <footer class="forgot_box">
-      <p class="forgot_pw">비밀번호를 잊으셨나요?</p>
-    </footer>
-
+    <footer class="forgot_box">비밀번호를 잊으셨나요?</footer>
 
   </div>
-
 </body>
-
 </html>
