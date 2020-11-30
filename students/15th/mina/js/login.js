@@ -6,8 +6,11 @@ const inputwrap = document.getElementsByClassName('inputwrap')[0];
 function buttonChangeColor(){    
     if( loginId.value && loginPassword.value ){
         console.log(loginPassword.value)
-        loginButton.removeAttribute('disabled');
+        loginButton.setAttribute('disabled',false);
         loginButton.style.backgroundColor = '#0095F6';
+    }else{
+        loginButton.setAttribute('disabled',true);
+        loginButton.style.backgroundColor = '#bfdffd';
     }
 }
 buttonChangeColor();
