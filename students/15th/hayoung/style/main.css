@@ -1,0 +1,277 @@
+body {
+  background-color: #fafafa;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  height: 54px;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  margin: 0;
+  padding: 0 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 215px;
+  height: 28px;
+}
+
+.searchIc {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  margin: 8px 0 9px 80px;
+}
+
+#search {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 9px 7px;
+}
+
+#search::placeholder {
+  color: #ccc;
+  text-align: center;
+}
+
+#search:focus {
+  outline: none;
+}
+
+.navMenu {
+  width: 128px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ic {
+  width: 24px;
+  height: 24px;
+  margin: 6px;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.feeds {
+  width: 614px;
+}
+
+article {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+}
+
+.article.header {
+  height: 60px;
+  padding: 0px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+}
+
+.userId {
+  font-weight: 600;
+}
+
+.userInfo span.userId {
+  margin-left: 10px;
+}
+
+.article.img {
+  width: 614px;
+  height: 614px;
+}
+
+.icBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6px;
+}
+
+.reactions p {
+  margin: 0;
+  padding: 0 14px;
+  font-weight: 600;
+  font-size: small;
+}
+
+.postTime {
+  padding: 0 14px;
+  font-size: x-small;
+  color: #999999;
+}
+
+.commentForm {
+  width: 614px;
+  height: 56px;
+  border-top: 1px solid #dbdbdb;
+  margin-top: 8px;
+  position: relative;
+}
+
+.commentInput {
+  width: 90%;
+  height: 100%;
+  border: none;
+  padding: 0 16px;
+}
+
+.commentInput::placeholder {
+  color: #919191;
+}
+
+.commentInput:focus {
+  outline: none;
+}
+
+.submitBtn {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  color: #b9e0fc;
+}
+
+.submitBtn:active {
+  color: #0095f6;
+}
+
+.rightFloatingMenu {
+  width: 326px;
+  margin-top: 100px;
+}
+
+.myProfile {
+  height: 56px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.myProfile img {
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+}
+.myProfile div {
+  display: inline-block;
+  margin-left: 14px;
+}
+.myProfile div span {
+  display: block;
+}
+.myProfile div span.userId {
+  margin-bottom: 4px;
+}
+
+.subText {
+  color: #999999;
+}
+
+.menuTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-left: 30px;
+}
+.subTitle {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 600;
+}
+.viewAll {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333;
+}
+.recommendList li {
+  display: flex;
+  align-items: flex-start;
+}
+
+ul.storyList .profileText {
+  margin-top: 3px;
+}
+.profileText {
+  display: inline-block;
+  margin: 0 0 8px 8px;
+}
+.profileText span {
+  display: block;
+}
+.profileText span.userId {
+  margin-bottom: 2px;
+}
+
+.profileText span.subText {
+  font-size: 13px;
+  color: #999999;
+}
+
+.recommendList {
+  padding-left: 30px;
+}
+
+.recommendList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.followBtn {
+  padding-top: 7px;
+  color: #0095f6;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: right;
+}
+.profile {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile .thumbnail {
+  width: 32px;
+  height: 32px;
+}
+
+footer {
+  color: #bbbbbb;
+  font-size: x-small;
+  padding-left: 30px;
+}

@@ -11,14 +11,18 @@
 
 <body>
   <main class="loginWrapper">
-    <img class="logo" src="img/logo_text.png" alt="instagram logo" srcset="">
+    <a class="logoText" href="login.html">
+        <h1>Westagram</h1>
+    </a>
     <form class="loginForm">
-      <input type="text" class="id" placeholder="전화번호, 사용자 이름 또는 이메일">
-      <input type="password" class="pw" placeholder="비밀번호">
-      <button class="loginBtn" type="submit">로그인</button>
+        <input type="text" id="id" placeholder="전화번호, 사용자 이름 또는 이메일">
+        <input type="password" id="password" placeholder="비밀번호">
+        <button class="loginBtn" type="submit">로그인</button>
     </form>
-    <p>비밀번호를 잊으셨나요?</p>
-  </main>
+    <a href="#" class="findPassword">
+        <p>비밀번호를 잊으셨나요?</p>
+    </a>
+    </main>
   <script src="js/login.js"></script>
 </body>
 

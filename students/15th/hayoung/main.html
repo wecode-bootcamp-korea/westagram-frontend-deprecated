@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Westagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav>
+        <a class="logoText" href="main.html">
+            <h2>Westagram</h2>
+        </a>
+        <div class="searchWrapper">
+            <img src="img/magnify.svg" alt="searchIc" class="searchIc">
+            <input type="text" id="search" placeholder="검색">
+        </div>
+        <div class="navMenu">
+            <img src="img/explore.png" alt="explore" class="ic explore">
+            <img src="img/heart.png" alt="heart" class="ic heart">
+            <img src="img/profile.png" alt="profile" class="ic profile">
+        </div>
+    </nav>
+    <main>
+        <section class="feeds">
+            <article>
+                <header class="article header">
+                    <div class="userInfo">
+                        <img src="img/thumbnail_img1.jpeg" alt="thumbnail" class="thumbnail article">
+                        <span class="userId">canon mj</span>
+                    </div>
+                    <img src="img/more.svg" alt="more" class="ic more">
+                </header>
+                <img src="img/img_example.jpg" alt="articleImg" class="article img">
+                <div class="article footer">
+                    <div class="icBar">
+                        <div class="leftsideWrapper">
+                            <img src="img/heart.svg" alt="heart2" class="ic heart2">
+                            <img src="img/comment.svg" alt="comment" class="ic comment">
+                            <img src="img/navigation.svg" alt="navigation" class="ic navigation">
+                        </div>
+                        <img src="img/bookmark.svg" alt="bookmark" class="ic bookmark">
+                    </div>
+                    <div class="reactions">
+                        <p>좋아요 59개</p>
+                    </div>
+                    <div class="comments">
+                        <div class="comment">
+
+                        </div>
+                    </div>
+                    <p class="postTime">2시간 전</p>
+                    <form class="commentForm">
+                        <input placeholder="댓글 달기..." class="commentInput"></input>
+                        <button disabled type="submit" class="submitBtn">게시</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <section class="rightFloatingMenu">
+        <div class="myProfile">
+            <img src="img/myImg.jpg" alt="나의 프로필 사진" class="thumbnail myProfile">
+            <div>
+              <span class="userId">bibiandpipi</span>
+              <span class="subText">HAYOUNG LEE</span>  
+            </div>
+          </div>
+        <div class="menuTitle">
+          <span class="subTitle">회원님을 위한 추천</span>
+          <span class="viewAll">모두 보기</span>
+        </div>
+        <ul class="recommendList">
+          <li>
+            <div class="profile">
+              <img class="thumbnail" src="img/li1.jpg" alt="renebaebae님의 프로필 사진">
+              <div class="profileText">
+                <span class="userId">renebaebae</span>
+                <span class="subText">hi_sseulgi님 외 2명이 팔로우합니다</span>
+              </div>
+            </div>
+            <span class="followBtn">팔로우</span>
+          </li>
+          <li>
+            <div class="profile">
+              <img class="thumbnail" src="img/li2.jpg" alt="_jeongjaehyun님의 프로필 사진">
+              <div class="profileText">
+                <span class="userId">_jeongjaehyun</span>
+                <span class="subText">johnnyjsuh님이 팔로우합니다</span>  
+              </div>
+            </div>
+            <span class="followBtn">팔로우</span>
+          </li>
+          <li>
+            <div class="profile">
+              <img class="thumbnail" src="img/li3.jpg" alt="leehi_hi님의 프로필 사진">
+              <div class="profileText">
+                <span class="userId">leehi_hi</span>
+                <span class="subText">jennierubyjane님 외 5명이 팔로우합...</span>  
+              </div>
+            </div>
+            <span class="followBtn">팔로우</span>
+          </li>
+        </ul>
+        <footer class="footerScript">
+            <p>
+              소개 ∙ 도움말 ∙ 홍보 센터 ∙ API ∙ 채용 정보 ∙ 개인정보처리방침 ∙ <br>약관 ∙ 위치 ∙ 인기계정 ∙ 해시태그 ∙ 언어
+              <br><br>
+              © 2020 INSTAGRAM FROM FACEBOOK
+            </p>
+        </footer>
+    </section>
+    <script src="js/login.js"></script>
+</body>
+</html>
