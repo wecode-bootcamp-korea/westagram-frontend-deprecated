@@ -16,7 +16,7 @@ const checkUserLogin = (event) => {
 
 const chnageBtn = () => {
   const currentBtn = userId.value && userPw.value;
-  loginBtn.disabled = currentBtn ? false : true;
+  loginBtn.disabled = !currentBtn
 };
 
 const init = () => {
