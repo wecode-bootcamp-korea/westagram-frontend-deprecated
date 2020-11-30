@@ -20,13 +20,8 @@ const likeComment = () => {
   cmtLikeList.forEach((event) => {
     event.addEventListener("click", () => {
       let likeImg = event.querySelectorAll(".like__img")[0];
-      if (checLikeStatus) {
-        likeImg.src = "img/heart.png";
-        checLikeStatus = false;
-      } else {
-        likeImg.src = "img/heart_fill.png";
-        checLikeStatus = true;
-      }
+  likeImg.src = checkLikeStatus ? "img/heart.png" : "img/heart_fill.png";
+  checLikeStatus = !checkLikeStatus
     });
   });
 };
