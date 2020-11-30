@@ -74,20 +74,38 @@ article{
 
 .content{
     padding: 30px 20px;
-    display: flex;
-    justify-content: space-between;
     font-size: 14px;
+   
+    flex-direction: column;
 }
 
-.content img{
-    width: 12px;
+.feedsandheart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.smallheart{
+    width: 14px;
+    height: 14px;
 }
 
 .reply{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     border-top: 1px solid lightgray;
 }
+
+.commentsbox{
+    padding: 0 10px;
+}
+
+.inputbtncontainer{
+    display: flex;
+    justify-content: space-between;
+}
+
 .repl{
     width: 100%;
     border: 1px none;  
@@ -118,8 +136,6 @@ article{
     list-style: none;
     font-size: 15px;
 }
-
-
 
 .kidpepe{
     width: 60px;
@@ -157,8 +173,6 @@ article{
     color: lightgray;
 }
 
-
-
 .storydiv img{
     width: 40px;
     border: 1px solid red;
@@ -186,12 +200,9 @@ article{
 
     font-size: 12px;
 }
-
 .time{
     color: lightgray;
 }
-
-
 
 .recomdiv img{
     width: 40px;

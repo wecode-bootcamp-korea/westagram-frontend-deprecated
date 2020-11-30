@@ -8,7 +8,7 @@ let password = document.getElementsByClassName('passbox')[0];
         loginbutton.style.backgroundColor='blue';
     }
     else{
-    id.value&&password.value === null ? loginbutton.style.backgroundColor='lightblue' : loginbutton.style.backgroundColor='blue';
+        loginbutton.style.backgroundColor= 'blue' ? loginbutton.style.backgroundColor='lightblue' : loginbutton.style.backgroundColor='lightblue';
     }
     return;
 

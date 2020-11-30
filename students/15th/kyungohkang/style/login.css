@@ -42,13 +42,10 @@ input, .loginbtn{
 span{
 
     display: block;
-
     width: 100%;
     font-size: 15px;
-
     margin: 50px auto;
     text-align: center;
-
     color: darkblue;
 }
 
