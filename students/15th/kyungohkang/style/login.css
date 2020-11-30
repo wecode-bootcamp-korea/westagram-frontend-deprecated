@@ -1,29 +1,24 @@
-.loginpage{
+.logincontainer{
     width: 400px;
     height: 500px;
-
     border: 1px solid lightgray;
-
     margin: 50px auto;
     padding: 20px;
 }
 
 header{
     width: 100%;
+    text-align: center;
     font-family:'Lobster', cursive;
-   text-align: center;
     font-size: 60px;
 }
 
 .boxes{
     display: flex;
     flex-flow: column wrap;
-
     width: 100%;
     margin: 20px auto;
     padding: 50px 0;
-
-  
 }
 
 input, .loginbtn{
