@@ -44,7 +44,7 @@ const addCommentDOM = (comment) => {
     commentEl.innerHTML = `
     <div class="comment__content-box">
       <span class="comment__content"><span class="comment__user user-link">workoutbutlazy</span>${comment.text}</span>
-      <i class="comment__content-delete fas fa-times" id="delete-btn" onclick="removeComment(${comment.id})"></i>
+      <i class="comment__content-delete fas fa-times" onclick="removeComment(${comment.id})"></i>
     </div>
     <i class="far fa-heart comment__heart" id="comment-heart"></i>
     `
@@ -100,6 +100,7 @@ const selectIndex = (totalIndex, selectingNumber) => {
   }
   return randomIndexArray
 }
+
 //rendering stories / getting data from user-infos.js
 const renderStories = () => {
   const storyContainer = document.getElementById('stories-container')
@@ -117,23 +118,36 @@ const renderStories = () => {
 
 //rendering suggestion dom
 const renderSuggestion = () => {
-  const suggestionContainer = document.getElementById('suggestionContainer')
+  const suggestionContainer = document.getElementById('suggestion-container')
   const randomIndexArray = selectIndex(24, 5)
   randomIndexArray.map((index) => {
     const recommendedUser = document.createElement('li')
     recommendedUser.classList.add('suggestion-user')
     recommendedUser.innerHTML = `
-    <div class="suggestion-user-container">
-      <img src="${userInfos[index].userProfile}" class="suggestion-user-profile"></img>
+    <div class="suggestion-user-container ${!userInfos[index].newStory ? 'new-story-false' : ''}">
+      <img src="${userInfos[index].userProfile}" class="suggestion-user-profile">
     </div>
     <div class="suggestion-user-info">
       <div class="suggestion-user-id user-link">${userInfos[index].userId}</div>
       <div class="suggestion-detail">${userInfos[index].userStatus}</div>
     </div>
-    <a href="#" class="follow-btn">Follow</a>
+    <a href="#" class="follow-btn" id="follow-btn" onclick="followUser()">Follow</a>
     `
     suggestionContainer.appendChild(recommendedUser)
   })
+}
+
+//follow button toggle
+const followUser = () => {
+  console.log('hello')
+  const followBtn = document.getElementById('follow-btn')
+  if (followBtn.innerText === 'Follow') {
+    followBtn.innerText = 'Following'
+    followBtn.style.color = '#191919'
+  } else {
+    followBtn.innerText = 'Follow'
+    followBtn.style.color = 'var(--font-color-blue)'
+  }
 }
 
 //render each comments from localstorage when refreshed
@@ -173,8 +187,7 @@ const toggleViewCommentsBtn = () => {
     viewCommentsBtn.innerText = 'Hide comments'
   } else {
     viewCommentsBtn.innerText = `View ${comments.length === 1 ? '' : 'all'} ${
-      comments.length
-    } comment${comments.length === 1 ? '' : 's'}`
+      comments.length} comment${comments.length === 1 ? '' : 's'}`
   }
 }
 

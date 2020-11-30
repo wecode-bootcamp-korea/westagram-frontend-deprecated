@@ -92,9 +92,7 @@ img {
 }
 
 .westragram-logo {
-  font-family: 'Lobster', cursive;
-  font-size: 26px;
-  /* color: #191919; */
+  width: 110px;
 }
 
 .nav__search-container {
@@ -168,6 +166,15 @@ img {
   left: 0;
   top: 30px;
   z-index: 20;
+
+  overflow: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.search-list-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .search-list-container.open {
@@ -305,7 +312,6 @@ img {
 
 .main-stories-feeds-right-container {
   width: 935px;
-  /* background: #eee; */
 
   display: flex;
   justify-content: space-between;
@@ -339,6 +345,13 @@ img {
   position: relative;
 
   overflow: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.stories-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .story {
@@ -356,7 +369,7 @@ img {
 .story__view-button {
   width: 64px;
   height: 64px;
-  background: #eee;
+  /* background: #eee; */
 
   border: 2px solid #dc4166;
   border-radius: 50%;
@@ -388,7 +401,7 @@ img {
   white-space: nowrap;
 }
 
-.stories__scroll-button-container {
+/* .stories__scroll-button-container {
   width: 614px;
   height: 114px;
 
@@ -398,9 +411,9 @@ img {
 
   display: none;
   transition: all 0.5s ease;
-}
+} */
 
-.stories__scroll-button {
+/* .stories__scroll-button {
   width: 26px;
   height: 26px;
   background: rgba(255, 255, 255, 0.8);
@@ -408,12 +421,12 @@ img {
 
   border-radius: 50%;
 
-  position: fixed;
-  /* top: 40px;
-  left: 8px; */
+  position: absolute;
+  top: 20px;
+  left: 8px;
   transform: translate(10px, 40px);
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -428,9 +441,9 @@ img {
   color: var(--font-color-gray);
 }
 
-.stories-container:hover > .stories__scroll-button-container {
-  display: block;
-}
+.stories-container:hover > .stories__scroll-button {
+  display: flex;
+} */
 
 /* ================================================================================= */
 
@@ -523,14 +536,15 @@ img {
   font-size: 24px;
 }
 
-.feed__icons-container div img {
+.feed__icon-box-left img {
   width: 24px;
   height: 24px;
   margin-right: 12px;
 }
 
 .feed__icon-bookmark {
-  margin: 0;
+  width: 24px;
+  height: 24px;
 }
 
 /* ================================================================================= */
@@ -588,7 +602,6 @@ img {
 }
 .feed__article.open {
   width: 560px;
-  /* display: block; */
 
   text-overflow: '';
   overflow: visible;
@@ -759,7 +772,7 @@ img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  border: 2px solid #dc4166;
+  border: 1px solid #ddd;
 
   display: flex;
   justify-content: center;
@@ -844,6 +857,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.suggestion-user-container.new-story-false {
+  border: 1px solid #ccc;
 }
 
 .suggestion-user-container .suggestion-user-profile {

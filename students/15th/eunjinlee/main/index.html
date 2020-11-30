@@ -12,65 +12,41 @@
 
   <header class="header">
     <div class="nav">
-      <a href="index.html" class="westragram-logo">Westagram</a>
+      <img src="../images/instagram-logo.png" href="index.html" class="westragram-logo">
       <div class="nav__search-container">
         <input type="text" class="nav__search-input" id="nav-search-input" placeholder="Search">
         <i class="fas fa-search nav__search-icon"></i>
-
         <ul class="search-list-container" id="search-list-container"></ul>
-        
       </div>
-
       <div class="nav__menu-container">
         <img alt="Home" class="nav__home" src="../images/home.png">
         <img src="../images/message.png" alt="Direct Message" class="nav__direct-message">
         <img src="../images/trend.png" alt="Trend" class="nav__trend">
         <img src="../images/heart.png" alt="Heart" class="nav__heart">
         <img src="../images/myprofile.JPG" alt="My page" class="nav__my-posts" id="openMenuBtn">
-
         <div class="nav__profile-menu-container" id="navContainerOutside">
           <ul class="nav__profile-menu" id="navContainer">
             <li class="nav__profile-menu-item">
-              <img src="../images/profile.png" alt="Profile icon"> Profile</li>
+              <img src="../images/profile.png" alt="Profile icon">Profile</li>
             <li class="nav__profile-menu-item">
-              <img src="../images/bookmark.png" alt="Bookmark icon"> Saved</li>
+              <img src="../images/bookmark.png" alt="Bookmark icon">Saved</li>
             <li class="nav__profile-menu-item">
-              <img src="../images/settings.png" alt="Settings icon"> Settings</li>
+              <img src="../images/settings.png" alt="Settings icon">Settings</li>
             <li class="nav__profile-menu-item">Log out</li>
           </ul>
         </div>
       </div>
     </div>
-
     <ul class="search-list__container" id="search-list-container"></ul>
-
   </header>
 
   <main class="main">
-    
     <div class="main-stories-feeds-right-container">
-
       <div class="main-left-container">
-
-        <div class="stories-container" id="stories-container">
-
-          <div class="stories__scroll-button-container">
-            <div class="stories__scroll-button">
-              <i class="fas fa-chevron-left"></i>
-            </div>
-            <div class="stories__scroll-button">
-              <i class="fas fa-chevron-right"></i>
-            </div>
-          </div>
-        </div>
-
-
-    
+        <div class="stories-container" id="stories-container"></div>
         <div class="feeds">
-    
           <article class="feed-container">
             <header class="feed__header">
-
               <div class="feed__user-info-box">
                 <img src="https://images.unsplash.com/photo-1516876711927-904e13c2a8d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80" alt="Account image" class="feed__user-profile">
                 <div class="feed__user-status-box">
@@ -78,33 +54,26 @@
                   <a href="#" class="feed__user-location">Seoul, Korea</a>
                 </div>
               </div>
-
-              <img src="../images/more.png" class="feed__more-button"></img>
-
+              <img src="../images/more.png" class="feed__more-button">
             </header>
-    
             <img src="../images/myfeed.JPG" alt="Feed image" class="feed__posts">
-    
             <section class="feed-content">
-    
               <div class="feed__icons-container">
                 <div class="feed__icon-box-left">
-                  <img src="../images/heart.png" class="feed__icon-heart"></img>
-                  <img src="../images/bubble.png" class="feed__icon-reply"></img>
-                  <img src="../images/message.png" class="feed__icon-message"></img>
+                  <img src="../images/heart.png" class="feed__icon-heart">
+                  <img src="../images/bubble.png" class="feed__icon-reply">
+                  <img src="../images/message.png" class="feed__icon-message">
                 </div>
                 <div class="feed__icon-box-right">
-                  <img src="../images/bookmark.png" class="feed__icon-bookmark"></img>
+                  <img src="../images/bookmark.png" class="feed__icon-bookmark">
                 </div>
               </div>
-    
               <div class="feed__likes-container">
-                <img src="https://images.unsplash.com/photo-1605553042899-7334093d937d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" class="feed__like-profile-image"></img>
+                <img src="https://images.unsplash.com/photo-1605553042899-7334093d937d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" class="feed__like-profile-image">
                 <div class="feed__like-explain">
                   <p>Liked by <a href="#" class="user-link">workoutbutlazy</a> and <a href="#" class="user-link">26 others</a> </p>
                 </div>
               </div>
-    
               <article class="feed__article-container">
                 <p class="feed__article" id="article"> 
                   <a href="#" class="feed-uploader-id user-link">eunjinlog</a> 
@@ -112,32 +81,25 @@
                 <p class="feed__article-more-button" id="more-article-button">more</p>
               </p>
               </article>
-    
               <div class="comments-container">
                 <p class="comment__view-all" id="comment-view-all"> </p>
-                <ul class="comment__list" id="comment-list"></ul>                
+                <ul class="comment__list" id="comment-list"></ul> 
               </div>
-    
               <p class="feed__created-at">9 HOURS AGO</p>
-    
               <form class="comment-form-container" id="comment-form">
                 <input class="comment__input" id="comment-input" type="text" placeholder="Add a comment...">
                 <button class="comment__post-button" id="comment-btn" >Post</button>
               </form>
-    
             </section>
           </article>
         </div>
-
       </div>
 
-  
       <div class="main-right">
-
         <div class="main-right-inner">
           <div class="main-right__my-account-container">
             <div class="main-right__my-profile-container">
-              <img src="../images/myprofile.JPG"  class="main-right__my-profile-image"></img>
+              <img src="../images/myprofile.JPG"  class="main-right__my-profile-image">
             </div>
             <div class="main-right__my-profile-info-box">
               <div class="main-right__my-id user-link">workoutbutlazy</div>
@@ -145,16 +107,13 @@
             </div>
             <a href="#" class="main-right__switch">Switch</a>
           </div>
-    
           <div class="main-right__suggestions-container">
             <div class="main-right__suggestions-title">
               <p>Suggestions For You</p>
               <a href="#">See All</a>
             </div>
-            
-            <ul class="main-right__suggestion-list" id="suggestionContainer"></ul>
+            <ul class="main-right__suggestion-list" id="suggestion-container"></ul>
           </div>
-    
           <footer class="footer">
             <p class="footer-list">About Help Press API Jobs Privacy Terms Locations Top Accounts Hashtags Language</p>
             <p class="footer-copyright">© 2020 INSTAGRAM FROM FACEBOOK</p>
