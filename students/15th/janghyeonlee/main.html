@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8\">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>westagram main page</title>
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+</head>
+<body>
+  <!-- top navigation bar -->
+  <nav>
+    <ul class="nav-container">
+      <li class="nav-logo">
+        <img src="src/img/westagram.png" alt="westagram logo">
+      </li>
+      <li class="nav-search">
+        <input type="text" class="nav-search westa-border" placeholder="검색">
+        <section class="nav-search-modal westa-border">
+        </section>
+      </li>
+      <li class="nav-icons">
+        <img class="nav-icon" src="src/img/home.png" alt="nav icon home">
+        <img class="nav-icon" src="src/img/send.png" alt="nav icon send">
+        <img class="nav-icon" src="src/img/compass.png" alt="nav icon compass">
+        <img class="nav-icon" src="src/img/heart.png" alt="nav icon heart">
+        <div class="nav-icon">
+          <img class="nav-icon-profile" src="src/img/my_profile.jpg" alt="myprofile image">
+          <section class="nav-profile-modal">
+            <div class="nav-profile-modal-profile">
+              <span><i class="far fa-user-circle"></i> 프로필</span>
+            </div>
+            <div class="nav-profile-modal-saved">
+              <span><i class="far fa-bookmark"></i> 저장됨</span>
+            </div>
+            <div class="nav-profile modal-setting">
+              <span><i class="fas fa-cog"></i> 설정</span>
+            </div>
+            <div class="nav-profile-modal-logout">
+              로그아웃
+            </div>
+          </section>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <!-- westagram main -->
+    <section class="main-left">
+      <!-- story -->
+      <section class="story-box westa-border westa-feed-padding-x">
+      </section>
+      <!-- feeds -->
+      <article class="feed-box westa-border">
+        <!-- feed header -->
+        <header class="feed-header-box westa-feed-padding-x">
+          <div class="feed-publisher-box">
+            <figure class="feed-publisher-profile westa-border">
+              <img src="src/img/facebook.png" alt="facebook icon">
+            </figure>
+            <div class="feed-publisher-info-box">
+              <p class="feed-publisher-name">facebook</p>
+              <p class="feed-publisher-place">Korea</p>
+            </div>
+          </div>
+          <button class="feed-header-menu">···</button>
+        </header>
+        <!-- feed image -->
+        <figure class="feed-img-box">
+          <img src="src/img/dog1.jpg" alt="super cute samoyed!">
+        </figure>
+        <!-- social buttons -->
+        <section class="feed-social-box westa-feed-padding-x">
+          <div class="feed-social-icons-box">
+            <div class="feed-social-left-icons">
+              <img src="src/img/heart.png" alt="heart icon">
+              <img src="src/img/comment.png" alt="comment icon">
+              <img src="src/img/send.png" alt="send icon">
+            </div>
+            <div class="feed-social-right-icons">
+              <img src="src/img/bookmark.png" alt="bookmark icon">
+            </div>
+          </div>
+          <div class="feed-social-likes">
+            좋아요 777,777개
+          </div>
+        </section>
+        <!-- feed description -->
+        <div class="feed-description-box westa-feed-padding-x">
+          <span class="feed-description-publisher-name">youtube</span>
+          댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아. 댕댕이는 너무 기여워. 사모예드 너무 좋아.
+        </div>
+        <!-- feed comments -->
+        <section class="feed-comment-box westa-feed-padding-x">
+          <ul id="feed-comment-list">
+            <li>
+              <p class="comment-content">
+                <span class="comment-userid">id1 </span>좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 
+              </p>
+              <div class="comment-side-info">
+                <p class="comment-heart-number">
+                  12
+                </p>
+                <div class="comment-heart-button">
+                  <img src="src/img/heart.png" alt="comment-heart-button">
+                </div>
+                <p class="comment-delete-button">
+                  삭제
+                </p>
+              </div>
+            
+            </li>
+            <li>
+              <p class="comment-content">
+                <span class="comment-userid">id1 </span>좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 좋아용! 
+              </p>
+              <div class="comment-side-info">
+                <p class="comment-heart-number">
+                  3
+                </p>
+                <div class="comment-heart-button">
+                  <img src="src/img/heart.png" alt="comment-heart-button">
+                </div>
+                <p class="comment-delete-button">
+                  삭제
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- feed date -->
+        <date class="feed-upload-date westa-feed-padding-x">11월 24일</date>
+        <!-- feed new comment input -->
+        <form onsubmit="return false" class="feed-comment-input-box westa-feed-padding-x">
+          <input class="feed-new-comment-input" type="text" placeholder="댓글 달기...">
+          <button class="feed-comment-upload-button" type="button">게시</button>
+        </form>
+      </article>
+    </section>
+    <!-- westagram right aside -->
+    <section class="main-right">
+      <aside class="fixed-aside">
+        <section class="aside-current-user-box">
+          <div class="aside-current-user-info">
+            <figure class="aside-current-user-profile">
+              <img src="src/img/my_profile.jpg" alt="myprofile image">
+            </figure>
+            <div class="aside-current-user-text-info">
+              <p class="aside-current-user-id">
+                jhyeon_300
+              </p>
+              <p class="aside-current-user-name">
+                이장현
+              </p>
+            </div>
+          </div>
+          <button class="aside-user-change-button">전환</button>
+        </section>
+        <!-- westagram recommendation box -->
+        <section class="aside-recommend-box">
+          <header class="aside-recommend-title-box">
+            <p class="aside-recommend-for-user">
+              회원님을 위한 추천
+            </p>
+            <button class="aside-recommend-show-all-button">모두 보기</button>
+          </header>
+        </section>
+        <!-- westagram footer -->
+        <footer class="westagram-footer">
+          <small>
+            소개 · 도움말 · 홍보 센터 · API · 채용 정보 · 개인정보처리방침 · 약관 · 위치 · 인기 계정 · 해시태그 · 언어
+          </small>
+          <small class="westagram-copyright">
+            © 2020 WESTAGRAM FROM JHEYON
+          </small>
+        </footer>
+      </aside>
+    </section>
+  </main>
+
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
