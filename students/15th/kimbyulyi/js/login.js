@@ -10,14 +10,8 @@ const checkUserLogin = (event) => {
   const userIdValue = userId.value;
   const userPwValue = userPw.value;
   const errorMsg = document.querySelector(".login__error");
-  if (
-    emailCheck.test(String(userIdValue).toLowerCase()) === false ||
-    userPwValue.length < 5
-  ) {
-    errorMsg.innerText = "계정을 다시 확인해주세요";
-  } else {
-    errorMsg.innerText = "로그인 성공";
-  }
+  const isValid = emailCheck.test(String(userIdValue).toLowerCase()) && userPwValue.length >= 5
+  errorMsg.innerText = isValid ? "로그인 성공" : "계정을 다시 확인해주세요"
 };
 
 const chnageBtn = () => {
