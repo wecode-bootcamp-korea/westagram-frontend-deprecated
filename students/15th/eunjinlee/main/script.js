@@ -204,8 +204,10 @@ const openAndCloseMenu = (e) => {
 //activate posting button
 const activatePostBtn = () => {
   if (commentInput.value.length > -1) {
-    commentBtn.classList.toggle('active')
-  } 
+    commentBtn.classList.add('active')
+  } else {
+    commentBtn.classList.remove('active')
+  }
 }
 
 //window load events
