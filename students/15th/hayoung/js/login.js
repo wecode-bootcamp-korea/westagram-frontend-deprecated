@@ -1,24 +1,19 @@
-const idInput = document.getElementById('id'),
-passwordInput = document.getElementById('password'),
-loginBtn = document.getElementsByClassName('loginBtn'),
-loginForm = document.getElementsByClassName('loginForm');
+const idInput = document.getElementsByClassName('id'),
+passwordInput = document.getElementsByClassName('password'),
+loginBtn = document.getElementsByClassName('loginBtn')[0],
+loginForm = document.getElementsByClassName('loginForm')[0];
 
-loginBtn.disabled = true;
-
-let eventStart = () => {
+( () => {
     loginForm.addEventListener('keyup',checkLoginBtn);
+})();
+
+const checkLoginBtn = () => {
+    const isIdOn = idInput.value.length > 0;
+    const isPasswordOn = passwordInput.value.length > 0;
+    const isValid = isIdOn && isPasswordOn;
+    loginBtn.disabled = !isValid;
+    loginBtn.style.backgroundColor = isValid ? "#0095f6" : "#b9e0fc";
 }
 
-let checkLoginBtn = () => {
-    let isIdOn = idInput.value.length > 0;
-    let isPasswordOn = passwordInput.value.length > 0;
-    let loginBtnOn = () => {
-        loginBtn.disabled = false;
-        loginBtn.style.backgroundColor = '#0095f6';
-    };
-    let result = isIdOn ? (isPasswordOn ? loginBtnOn() : null) : null;
-}
-
-eventStart();
 
  

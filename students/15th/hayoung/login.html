@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Westagram | Login</title>
+  <link href="style/reset.css" rel="stylesheet" type="text/css" />
   <link href="style/common.css" rel="stylesheet" type="text/css" />
   <link href="style/login.css" rel="stylesheet" type="text/css" />
 </head>
@@ -15,9 +16,9 @@
         <h1>Westagram</h1>
     </a>
     <form class="loginForm">
-        <input type="text" id="id" placeholder="전화번호, 사용자 이름 또는 이메일">
-        <input type="password" id="password" placeholder="비밀번호">
-        <button class="loginBtn" type="submit">로그인</button>
+        <input type="text" class="id" placeholder="전화번호, 사용자 이름 또는 이메일">
+        <input type="password" class="password" placeholder="비밀번호">
+        <button disabled type="submit" class="loginBtn" onclick="location.href='./main.html'">로그인</button>
     </form>
     <a href="#" class="findPassword">
         <p>비밀번호를 잊으셨나요?</p>
