@@ -88,6 +88,7 @@
   top: 54px;
   padding: 30px 0;
   margin: 0 auto;
+  display: flex;
 }
 
 .storyFeeds {
@@ -333,20 +334,17 @@
 }
 
 /* accounts info section */
-.feedContainer {
-  display: flex;
-}
-
 .mainLeftContainer {
   margin-right: 28px;
 }
 
 .mainRightContainer {
+  /* position: sticky;
   height: 100vh;
-  position: sticky;
-  top: 0;
-  /* max-width: 293px;
-  margin: 0 auto; */
+  top: 0; */
+  position: fixed;
+  right: 0;
+  width: 35%;
 }
 
 .accountsInfo {
@@ -397,6 +395,10 @@
 .userInfo {
   font-size: 14px;
   color: #8E8E8E;
+}
+
+.recomendation {
+  width: 325px;
 }
 
 .recomendTitle {
