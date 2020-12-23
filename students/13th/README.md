@@ -1,1 +1,0 @@
-# 13th | Westagram frontend
