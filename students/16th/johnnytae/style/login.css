@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: 'lobster', cursive;
+  font-size: 50px;
+};
+
