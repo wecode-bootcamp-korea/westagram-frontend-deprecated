@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html, body {
+    height: 100%;
+    background-color: #FAFAFA;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 875px) {
+    .westagram__content img {
+        display: none;
+    }
+    .westagram__content .westagram__form__box__group {
+        padding-bottom: 100px;
+    }
+
+    .westagram__facebook__login img {
+        display: inline-block;
+        top: -1px;
+    }
+
+    .westagram__downloadinfo .applogo__group img {
+        display: inline-block;
+        padding-left: 10px;
+        height: 40px;
+
+    }
+
+}
+

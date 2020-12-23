@@ -1,0 +1,60 @@
+.main__nav {
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.main__nav .nav__group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.main__nav .nav__group .nav__left img {
+    width: 22px;
+    padding-right: 10px;
+}
+
+.main__nav .nav__left h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    display: inline;
+    border-left: 1px solid #c7c6c9;
+    padding-left: 10px;
+}
+
+
+.main__nav .nav__center input {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 215px;
+    height: 28px;
+}
+
+.main__nav .nav__right img {
+    width: 22px;
+    padding-left: 15px;
+}
+
+.main__content {
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    
+}
+
+.main__content .section__group {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.main__content .section__group .westagram__story__box {
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}

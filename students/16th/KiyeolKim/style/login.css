@@ -1,0 +1,228 @@
+
+
+/* main container */
+.westagram__container {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main content */
+.westagram__container .westagram__content {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* main content img */
+.westagram__container .westagram__content img[alt="wecode--img"] {
+    border: 1px solid #fff;
+    width: 240px;
+    height: 430px;
+    position: absolute;
+    top: 98px;
+    left: 150px;
+}
+
+/* main form box group */
+.westagram__content .westagram__form__box__group {
+    margin-top: 30px;
+}
+
+/* main form box */
+.westagram__content .westagram__form__box {
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+/* westagram title */
+.westagram__form__box__group .westagram__form__box .westagram__title {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    margin: 30px 90px;
+}
+
+/* westagram input__group */
+.westagram__form__box__group .westagram__form__box .westagram__input__group {
+    padding-top: 5px;
+    text-align: center;
+    
+}
+
+.westagram__form__box__group .westagram__form__box .westagram__input__group li {
+    margin: 5px; 
+}
+
+/* westagram form input */
+.westagram__form__box .westagram__input__group input {
+    padding: 10px;
+    width: 250px;
+    background-color: #FAFAFA;
+    border: 1px solid #dad7d7;
+    border-radius: 5px;
+}
+
+/* westagram button */
+.westagram__form__box .westagram__input__group button {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #B2DFFC;
+    color: #fff;
+    width: 274px;
+    height: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.westagram__form__box .westagram__input__group button p{
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+/* .westagram hr */
+.westagram__hr__container {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.westagram__hr__container .westagram__hr__content {
+    color: #8E8E8E;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    top: -7px;
+    left: 180px;
+    
+
+}
+
+.westagram__hr__container .westagram__hr {
+    width: 27%;
+    margin-left: 60px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+/* facebook login */
+.westagram__facebook__login {
+    text-align: center;
+    position: relative;
+}
+
+.westagram__facebook__login img {
+    width: 20px;
+    position: absolute;
+    left: 110px;
+
+}
+
+.westagram__facebook__login a {
+    padding-left: 20px;
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;  
+}
+
+/* password__lose */
+.westagram__password__lose {
+    text-align: center;
+    padding: 15px;
+
+}
+
+.westagram__password__lose a {
+    font-size: 12px;
+    color: #00376B;
+
+}
+
+/* westagram box SignUp */
+.westagram__content .westagram__form__box__SignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.westagram__form__box__SignUp p {
+    font-size: 15px
+}
+
+.westagram__form__box__SignUp a {
+    padding-left: 5px;
+    color: #0095F6;
+    font-weight: 600;
+}
+
+/* app downloadinfo */
+.westagram__downloadinfo p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.westagram__downloadinfo .applogo__group {
+    padding-left: 50px;
+}
+
+.westagram__downloadinfo .applogo__group img {
+    padding-top: 20px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer.westagram__contentinfo {
+    height: 15%;
+}
+
+footer.westagram__contentinfo ul, footer .westagram__language__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer.westagram__contentinfo ul li {
+    margin: 5px 10px;
+    font-size: 12px;
+    color: #8E8E8E; 
+}
+
+.westagram__language__group {
+    margin-top: 10px;
+}
+
+.westagram__language__group select {
+    background-color: #FAFAFA;
+    border: 0;
+    color: #8E8E8E;
+}
+
+.westagram__language__group span {
+    font-size: 13px;
+    color: #8E8E8E;
+    margin-left: 15px;
+}
+
+
+
