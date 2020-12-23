@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Westagram</title>
+  <link rel="stylesheet" href="../style/common.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="icon" href="./assets/instagram.svg" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <nav class="navContainer">
+        <h1 class="logo">
+          <a href="#">
+            Westagram
+          </a>
+        </h1>
+        <div class="searchBar">
+          <input type="text" placeholder="검색"/>
+          <img src="./assets/loupe.png" alt="search">
+        </div>
+        <div class="navMenu">
+          <ul class="menu">
+            <li class="menuItems">
+              <a href="#">
+                <img src="./assets/home.png" alt="home" />
+              </a>
+            </li>
+            <li class="menuItems">
+              <a href="#">
+                <img src="./assets/send.png" alt="send message" />
+              </a>
+            </li>
+            <li class="menuItems">
+              <a href="#">
+                <img src="./assets/explore.png" alt="explore" />
+              </a>
+            </li>
+            <li class="menuItems">
+              <a href="#">
+                <img src="./assets/heart.png" alt="heart" />
+              </a>
+            </li>
+            <li class="menuItems">
+              <a href="#">
+                <img src="./assets/profile.jpg" alt="profile">
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <main class="feedContainer">
+      <div class="mainLeftContainer">
+        <section class="storyFeeds">
+          <ul class="storyLists">
+            <li class="storyItems">
+              <a href="#">
+                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/110054169_631618667480471_8395309931424378448_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=APx1rWNWYaEAX98bol-&tp=1&oh=3b2ebfd3eeb40ba096e24fc8460adfd8&oe=600B7BE1" alt="kendalljenner profile" />
+                <p>kendalljenner</p>
+              </a>
+            </li>
+            <li class="storyItems">
+              <a href="#">
+                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/118803455_120863839516646_4281183625374452390_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=vv_HPTQckqUAX_f8opF&tp=1&oh=c1035e34f64ace8190c0a90e23770678&oe=60090684" alt="justinbieber profile" />
+                <p>justinbieber</p>
+              </a>
+            </li>
+            <li class="storyItems">
+              <a href="#">
+                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/118550039_182034303327791_6144105614706839563_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=og4Syra4QF8AX9A8CYh&tp=1&oh=4f0374067a6480d8b670ba1426fe9510&oe=600AF2F4" alt="katyperry profile" />
+                <p>katyperry</p>
+              </a>
+            </li>
+            <li class="storyItems">
+              <a href="#">
+                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/123885563_855075811697113_8647373123046258603_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=q-beqDUMLUAAX9MQ5Lp&tp=1&oh=12a89c666ae0088df7c8984d0b529b7d&oe=600ACF52" alt="kyliejenner profile" />
+                <p>kyliejenner</p>
+              </a>
+            </li>
+            <li class="storyItems">
+              <a href="#">
+                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/109136688_610125179899980_1868015297406610141_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=z_ukZiTl20IAX-Y6DRI&tp=1&oh=85e566ac5a9f138758214123fd849dea&oe=600BFC22" alt="kimkardashian profile" />
+                <p>kimkardashi...</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <article class="mainFeeds">
+          <div class="mainFeedProfile">
+            <a href="#">
+              <img class="profileImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/110054169_631618667480471_8395309931424378448_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=APx1rWNWYaEAX98bol-&tp=1&oh=3b2ebfd3eeb40ba096e24fc8460adfd8&oe=600B7BE1" alt="kendalljenner profile" />
+            </a>
+            <a class="userId" href="#">
+              kendalljenner
+            </a>
+            <button class="moreBtn" type="button">
+              <img src="./assets/more.png" alt="mores" />
+            </button>
+          </div>
+          <div class="feedImg">
+            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/130871044_2745672262348583_7997894274575437350_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=ZtLhZ_71Iw8AX9AQ5_L&tp=1&oh=f79942be376e6d530bf8cc8fd8b69abf&oe=600A6446" alt="feed" />
+          </div>
+          <div class="feedInfoContainer">
+            <div class="feedBtns">
+              <button class="feedBtn" type="button">
+                <img src="./assets/heart.png" alt="like" />
+              </button>
+              <button class="feedBtn" type="button">
+                <img src="./assets/comment-white-oval-bubble.png" alt="message" />
+              </button>
+              <button class="feedBtn" type="button">
+                <img src="./assets/send.png" alt="send message" />
+              </button>
+              <button class="feedBtn" type="button">
+                <img src="./assets/bookmark.png" alt="bookmark" />
+              </button>
+            </div>
+            <div class="feedContent">
+              <p class="likedUserInfo">
+                <a href="#">
+                  <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/123885563_855075811697113_8647373123046258603_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=q-beqDUMLUAAX9MQ5Lp&tp=1&oh=12a89c666ae0088df7c8984d0b529b7d&oe=600ACF52" alt="kyliejenner profile" />
+                </a>
+                <button class="userId" type="button">kyliejenner</button>
+                님
+                <button type="button">외 3,135,768명</button>
+                이 좋아합니다.
+              </p>
+              <p class="postedUserInfo">
+                <button class="userId" type="button">kendalljenner</button>
+                Secret to my smile
+                <a href="#">
+                  @moon
+                </a>
+                <a href="#">
+                  #moon-partner ❄️
+                </a>
+              </p>
+            </div>
+            <button class="moreCommentsBtn" type="button">
+              댓글 11,299개 모두 보기
+            </button>
+            <div class="feedComments">
+              <ul class="commentsList">
+                <li class="commentItem">
+                  <a class="userId" href="#">
+                    nameauction
+                  </a>
+                  <p>
+                    Happly New Year✨🎄🌝
+                  </p>
+                  <button type="button">
+                    <img src="./assets/heart.png" alt="like" />
+                  </button>
+                </li>
+                <li class="commentItem">
+                  <a class="userId" href="#">
+                    dudagraziii
+                  </a>
+                  <p>
+                    Goddess 😍
+                  </p>
+                  <button type="button">
+                    <img src="./assets/heart.png" alt="like" />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <span class="postedDate">5일 전</span>
+          </div>
+          <div class="commentContainer">
+            <form class="commentForm" action="#" method="POST">
+              <div class="commnetForm">
+                <input type="text" placeholder="댓글 달기..." />
+                <button class="commentBtn" type="submit" disabled>게시</button>
+              </div>
+              </form>
+          </div>
+        </article>
+        <article class="mainFeeds">
+          <div class="mainFeedProfile">
+            <a href="#">
+              <img class="profileImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/28156252_202954810453161_1736762118826360832_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=NrF5WDzLS9IAX9fXVRS&tp=1&oh=fd8581d231e523ed6e4e8bb879e85eb2&oe=600B1018" alt="bestvacations profile" />
+            </a>
+            <a class="userId" href="#">
+              bestvacations
+            </a>
+            <button class="moreBtn" type="button">
+              <img src="./assets/more.png" alt="mores" />
+            </button>
+          </div>
+          <div class="feedImg">
+            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/131913695_210192177266401_1385500136233166656_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=wr6qUBRdBBwAX94-C4Q&tp=1&oh=0b444c342c450d52bd45b54c7400b48d&oe=600CB737" alt="feed" />
+          </div>
+          <div class="feedInfoContainer">
+            <div class="feedBtns">
+              <button class="feedBtn" type="button">
+                <img src="./assets/heart.png" alt="like" />
+              </button>
+              <button class="feedBtn" type="button">
+                <img src="./assets/comment-white-oval-bubble.png" alt="message" />
+              </button>
+              <button class="feedBtn" type="button">
+                <img src="./assets/send.png" alt="send message" />
+              </button>
+              <button class="feedBtn" type="button">
+                <img src="./assets/bookmark.png" alt="bookmark" />
+              </button>
+            </div>
+            <div class="feedContent">
+              <p class="likedUserInfo">
+                <button type="button">좋아요 82,704개</button>
+              </p>
+              <p class="postedUserInfo">
+                <button class="userId" type="button">bestvacations</button>
+                Dreaming of Christmas in NYC ❄️... 
+                <button class="moreCommentsBtn" type="button">
+                  더 보기
+                </button>
+              </p>
+            </div>
+            <button class="moreCommentsBtn" type="button">
+              댓글 11,299개 모두 보기
+            </button>
+            <div class="feedComments">
+              <ul class="commentsList">
+                <li class="commentItem">
+                  <a class="userId" href="#">
+                    rubyperez21
+                  </a>
+                  <p>
+                    <a href="#">
+                      @emiedray
+                    </a>
+                  </p>
+                  <button type="button">
+                    <img src="./assets/heart.png" alt="like" />
+                  </button>
+                </li>
+                <li class="commentItem">
+                  <a class="userId" href="#">
+                    imanaileen
+                  </a>
+                  <p>
+                    <a href="#">
+                      @vrkn_
+                    </a>
+                  </p>
+                  <button type="button">
+                    <img src="./assets/heart.png" alt="like" />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <span class="postedDate">5일 전</span>
+          </div>
+          <div class="commentContainer">
+            <form class="commentForm" action="#" method="POST">
+              <div class="commnetForm">
+                <input type="text" placeholder="댓글 달기..." />
+                <button class="commentBtn" type="submit" disabled>게시</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </div>
+      <div class="mainRightContainer">
+        <aside class="accountsInfo">
+          <section class="personalAccount">
+            <a class="profileImg" href="#">
+              <img src="./assets/profile.jpg" alt="profile" />
+            </a>
+            <div class="userInfoContainer">
+              <a class="userId" href="#">
+                usersssss
+              </a>
+              <span class="userInfo">nameeee</span>
+            </div>
+            <button type="button">
+              전환
+            </button>
+          </section>
+          <section class="recomendation">
+            <div class="recomendTitle">
+              <h4>회원님을 위한 추천</h4>
+              <button class="viewAllBtn" type="button">
+              모두 보기
+              </button>
+            </div>
+            <ul class="recomendList">
+              <li class="recomendItem">
+                <a href="#">
+                  <img class="userImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/129789769_1340573919615966_4744243407009962140_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=QX5DX3GzdmUAX8c6pWF&tp=1&oh=2631991ef8897aca2e5ee7aa26d24c4b&oe=600B12CF" alt="khloekardashian" />
+                </a>
+                <div class="userInfoContainer">
+                  <a class="userId" href="#">
+                    khloekardashian
+                  </a>
+                  <span class="userInfo">인기</span>
+                </div>
+                <button class="followBtn" type="button">
+                  팔로우
+                </button>
+              </li>
+              <li class="recomendItem">
+                <a href="#">
+                  <img class="userImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/129337501_719060642053489_4725676323306299276_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=dxuZe3TvSS0AX_zAtKz&tp=1&oh=777cf9d3c03f5b5f51fd91ae77722a94&oe=6009B283" alt="kourtneykardash" />
+                </a>
+                <div class="userInfoContainer">
+                  <a class="userId" href="#">
+                    kourtneykardash
+                  </a>
+                  <span class="userInfo">인기</span>
+                </div>
+                <button class="followBtn" type="button">
+                  팔로우
+                </button>
+              </li>
+              <li class="recomendItem">
+                <a href="#">
+                  <img class="userImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/11348214_1481558242162220_192850898_a.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=41L55NhZ9wQAX8BumdO&tp=1&oh=9ca04223d5cb82814d8abd9531bdc78b&oe=600C6C5B" alt="travisscott" />
+                </a>
+                <div class="userInfoContainer">
+                  <a class="userId" href="#">
+                    travisscott
+                  </a>
+                  <span class="userInfo">인기</span>
+                </div>
+                <button class="followBtn" type="button">
+                  팔로우
+                </button>
+              </li>
+              <li class="recomendItem">
+                <a href="#">
+                  <img class="userImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/126507807_730870471162439_2370163096545934968_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=K-sboRrMQDQAX_vKcdX&tp=1&oh=25b51c9d414b2cb26f2ae4dee36900ba&oe=600ADD11" alt="charildamelio" />
+                </a>
+                <div class="userInfoContainer">
+                  <a class="userId" href="#">
+                    charildamelio
+                  </a>
+                  <span class="userInfo">인기</span>
+                </div>
+                <button class="followBtn" type="button">
+                  팔로우
+                </button>
+              </li>
+              <li class="recomendItem">
+                <a href="#">
+                  <img class="userImg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/131980604_413741999968339_7651799267812310195_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=43Cli2cp4tIAX_qP_c1&tp=1&oh=24b8c3e24baa42baa785d368786ae45f&oe=600BC46D" alt="addisonraee" />
+                </a>
+                <div class="userInfoContainer">
+                  <a class="userId" href="#">
+                    addisonaraee
+                  </a>
+                  <span class="userInfo">인기</span>
+                </div>
+                <button class="followBtn" type="button">
+                  팔로우
+                </button>
+              </li>
+            </ul>
+          </section>
+        </aside>
+        <footer>
+          <div class="linksAbout">
+            <a href="#">
+              소개
+            </a>
+            <a href="#">
+              · 도움말
+            </a>
+            <a href="#">
+              · 홍보 센터
+            </a>
+            <a href="#">
+              · API
+            </a>
+            <a href="#">
+              · 채용 정보 ·
+            </a>
+            <br />
+            <a href="#">
+              개인정보처리방침 ·
+            </a>
+            <a href="#">
+              약관 ·
+            </a>
+            <a href="#">
+              위치 ·
+            </a>
+            <a href="#">
+              인기 계정 ·
+            </a>
+            <a href="#">
+              해시태그 ·
+            </a>
+            <a href="#">
+              언어
+            </a>
+          </div>
+          <p>© 2020 INSTAGRAM FROM FACEBOOK</p>
+        </footer>
+      </div>
+  </main>
+</body>
+</html>
