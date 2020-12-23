@@ -73,11 +73,19 @@ button {
   background: #000000;
 }
 
-.nav-title h2 {
+.text-logo {
   font-family: 'Lobster', cursive;
   text-transform: capitalize;
-  cursor: pointer;
+}
+
+.text-logo a {
+  text-decoration: none;
   font-size: 24px;
+  color: #000000;
+}
+
+.text-logo.focus a {
+  color: var(--gray3);
 }
 
 .nav-search {

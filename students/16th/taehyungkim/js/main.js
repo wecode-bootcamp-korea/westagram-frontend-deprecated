@@ -35,7 +35,9 @@ const followersData = [
 
 let now_Id = 0;
 
-
+// * Instagram 글씨 클릭이벤트
+const textLogo = document.querySelector('.text-logo');
+textLogo.addEventListener('mousedown', () => {textLogo.className = `text-logo focus`})
 
 // * 더 보기 구현
 const myCmt = document.querySelector('.my-comment');
@@ -131,7 +133,7 @@ function toggleFeedLike() {
       feedLikeBtn.classList.remove('like')
       feedData[now_Id].like.shift(myProfile)
     }
-  console.log(feedData[now_Id].like)
+  // console.log(feedData[now_Id].like)
   countLike();
 }
 
@@ -140,7 +142,7 @@ function toggleCmtLike() {
     cmtLikeBtn[i].addEventListener('click', () => {
       if (!cmtLikeBtn[i].classList.contains('like')) {
         cmtLikeBtn[i].classList.add('like');
-        feedData[now_Id].follower[i].like = true;
+        feedData[now_Id].follower[i].like = true;         // !로 수정하려햇으나, 원본이 더 정교함
       }
       else {
         cmtLikeBtn[i].classList.remove('like');
