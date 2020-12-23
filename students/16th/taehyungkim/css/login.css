@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background: #fafafa;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-container {
+  width: 360px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  background: #ffffff;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  text-transform: capitalize;
+  margin: 22px auto 12px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto 80px;
+}
+
+.login-form input {
+  width: 260px;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 5px;
+  border: 1px solid #f3f3f3;
+  margin-bottom: 5px;
+}
+
+.login-form p {
+  display: none;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #b61b1b;
+}
+
+.login-form p.active {
+  display: block;
+}
+
+.login-form .login-btn {
+  width: 260px;
+  padding: 8px;
+  color: #ffffff;
+  background: #C5E1FB;
+  border-radius: 5px;
+  margin: 8px auto;
+  font-weight: 600;
+}
+
+.login-form .login-btn.active {
+  background: #0096F6;
+  cursor: pointer;
+}
+
+.find-pwd {
+  margin: 12px auto 22px;
+  
+}
+
+.find-pwd a {
+  text-decoration: none;
+  color: #5F7D9F;
+  font-size: 14px;
+  font-weight: 600;
+}

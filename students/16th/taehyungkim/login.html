@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="./css/login.css" rel="stylesheet">
+  <title>Westagram</title>
+</head>
+<body>
+  <div id="container">    <!-- root -->
+    <div id="login-container">
+      <h1>instargram</h1>
+      <form class="login-form">
+        <input type="text" class="login-id" placeholder="전화번호, 사용자 이름 또는 이메일" />
+        <p class="login-id-valid">아이디는 최소 6글자 이상!</p>
+        <input type="password" class="login-pwd" placeholder="비밀번호" />
+        <p class="login-pwd-valid">비밀번호는 8~15자의 영문(대소)/숫자/특수문자 혼합!</p>
+        <button type="submit" class="login-btn">로그인</button>
+      </form>
+      <p class="find-pwd"><a href="/password-finder.html">비밀번호를 잊으셨나요?</a></p>
+    </div>
+  </div>
+  <script src="./js/login.js"></script>
+</body>
+</html>

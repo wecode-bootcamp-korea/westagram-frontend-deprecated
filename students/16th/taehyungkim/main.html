@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="./css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  <title>Westagram</title>
+</head>
+<body>
+  <div id="container">    <!-- root -->
+    <nav id="nav-bar">
+      <section class="nav-container">
+        <div class="nav-title">
+          <img src="./images/instagram.png" alt="logo" class="logo">
+          <div class="nav-title-midbar"></div>
+          <h2>Instagram</h2>
+        </div>
+        <div class="nav-search">
+          <input type="text" class="nav-search-input" placeholder="검색">
+          <div class="nav-search-phdr">
+            <i class="fas fa-search"></i><span class="placeholder">검색</span>
+          </div>
+          <div class="nav-search-end">
+            <button type="button" class="nav-search-endbtn"><i class="fas fa-times-circle"></i></button>
+          </div>
+          <div class="search-id-container">
+            <!-- <div class="search-id">
+              <div class="search-id-left">
+                <strong class="search-id-name">ID!!</strong>
+                <p class="search-id-desc">설명입니다.</p>
+              </div>
+              <button class="search-id-btn">팔로우</button>
+            </div> -->
+          </div>
+        </div>
+        <ul class="nav-menus">
+          <li><a href=""><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt=""></a></li>
+          <li class="new"><a href=""><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt=""></a></li>
+          <li><a href=""><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt=""></a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <main id="main">
+
+      <div class="feeds">
+        <article class="feed">
+          <header class="feed-header">
+            <div class="feed-header-profile">
+              <img class="feed-profile-img" src="./images/prof.jpeg" alt="feed-profile-img">
+              <strong class="feed-profile-name">canon-mj</strong>
+            </div>
+            <button class="feed-profile-btn">
+              <svg aria-label="옵션 더 보기" class="feed-profile-more " fill="#262626" height="16" viewBox="0 0 48 48" width="16"><circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle><circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle></svg>
+            </button>
+          </header>
+          <img class="feed-main-img" src="./images//prague.jpeg" alt="feed-main-img">
+          <footer class="feed-footer">
+            <div class="btn-container">
+              <div class="btn-container-left">
+                <button class="btn-container-like like-btn">
+                  <svg class="like-false" aria-label="좋아요" width="24" height="24" fill="#262626" viewBox="0 0 48 48">
+                    <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                  </svg>
+                  <svg class="like-true" aria-label="좋아요 취소" fill="#ed4956" height="24" viewBox="0 0 48 48" width="24">
+                    <path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                  </svg>
+                </button>
+                <button class="btn-container-comment">
+                  <svg width="24" height="24" fill="#262626" viewBox="0 0 48 48">
+                    <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <button class="btn-container-share">
+                  <svg width="24" height="24" fill="#262626" viewBox="0 0 48 48">
+                    <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="btn-container-right">
+                <button class="btn-container-bookmark">
+                  <svg width="24" height="24" fill="#262626" viewBox="0 0 48 48">
+                    <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <p class="like-counter">
+              <!-- <img src="./images/미나.png" alt="like-first-img" class="like-first-img">
+              <strong class="like-name">mina_is_mina</strong>님 <strong class="like-count">외 10명</strong>이 좋아합니다. -->
+            </p>
+            <div class="comment-container">
+              <div class="my-comment">
+                <!-- <strong class="my-comment-name">canon-mj&nbsp</strong>
+                <span class="my-comment-text">프라하 가고싶다아아아~~ 체코맥주 먹고싶다아아아~~~~ 야경 조지고싶다아아아아~~~~~</span>
+                <span>
+                  <span class="my-comment-dots">...&nbsp</span>
+                  <span class="my-comment-more">더 보기</span>
+                </span> -->
+              </div>
+              <div class="follower-comment-container">
+                <!-- <div class="follower-comment-content">
+                  <div class="follwer-comment-text">
+                    <p class="follower-comment">댓글</p>
+                  </div>
+                  <button class="follower-comment-like">
+                    <svg aria-label="좋아요" fill="#262626" height="12" viewBox="0 0 48 48" width="12"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                  </button>
+                </div> -->
+              </div>
+            </div>
+            <p class="time-content">42분 전</p>
+          </footer>
+          <form class="comment-form">
+            <input type="text" class="comment-form-input" placeholder="댓글 달기..." />
+            <button type="submit" class="comment-form-btn">게시</button>
+          </form>
+        </article>
+        
+        <!-- more articles -->
+      </div>
+
+      <aside class="main-right">
+        <div class="wecode-container">
+          <img class="wecode-logo" src="./images/wecode.png" alt="wecode-logo">
+          <div class="wecode-content">
+            <strong>wecode_bootcamp</strong>
+            <p>Wecode | 위코드</p>
+          </div>
+        </div>
+        <div class="story-container">
+          <div class="story-title">
+            <p>스토리</p>
+            <span>모두 보기</span>
+          </div>
+          <div class="story-contents">
+            <div class="story">
+              <img class="story-img" src="./images/정연.png" alt="story-img">
+              <div class="story-text">
+                <strong>jeongyeon_love</strong>
+                <p>16분 전</p>
+              </div>
+            </div>
+            <div class="story">
+              <img class="story-img" src="./images/사나.png" alt="story-img">
+              <div class="story-text">
+                <strong>sana_no_mossana</strong>
+                <p>42분 전</p>
+              </div>
+            </div>
+            <div class="story">
+              <img class="story-img" src="./images/쯔위.png" alt="story-img">
+              <div class="story-text">
+                <strong>arrow_goddess</strong>
+                <p>2시간 전</p>
+              </div>
+            </div>
+            <div class="story">
+              <img class="story-img" src="./images/나연.png" alt="story-img">
+              <div class="story-text">
+                <strong>bunnybunny_nayeon</strong>
+                <p>4시간 전</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommend-container">
+          <div class="recommend-title">
+            <p>회원님을 위한 추천</p>
+            <span>모두 보기</span>
+          </div>
+          <div class="recommend-contents">
+            <div class="recommend">
+              <div class="recommend-left">
+                <img class="recommend-img" src="./images/다현.png" alt="recommend-img">
+                <div class="recommend-text">
+                  <strong>tohu_dahyun</strong>
+                  <p>jeongyeon_love 외 12명이</p>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+            <div class="recommend">
+              <div class="recommend-left">
+                <img class="recommend-img" src="./images/모모.png" alt="recommend-img">
+                <div class="recommend-text">
+                  <strong>momo_is_chulbuzi</strong>
+                  <p>jeongyeon_love 외 12명이</p>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+            <div class="recommend">
+              <div class="recommend-left">
+                <img class="recommend-img" src="./images/지효.png" alt="recommend-img">
+                <div class="recommend-text">
+                  <strong>jihyo_dieter</strong>
+                  <p>jeongyeon_love 외 12명이</p>
+                </div>
+              </div>
+              <button>팔로우</button>
+            </div>
+          </div>
+        </div>
+        <div class="right-container">
+          <p>
+            Instragram 정보 • 지원 • 홍보 센터 • API • <br />
+            채용 정보 • 개인정보처리방침 • 약관 • <br />
+            디렉터리 • 프로필 • 해시태그 • 언어
+          </p>
+          <br />
+          @ 2019 Instagram
+        </div>
+      </aside>
+
+    </main>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
