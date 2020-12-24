@@ -62,6 +62,10 @@
   background: #B2DFFC;
 }
 
+.fillBtn:hover {
+  cursor: pointer;
+}
+
 .linkToFindPw {
   color: #00376B;
   font-size: 12px;

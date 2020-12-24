@@ -7,7 +7,9 @@ function inputHandler() {
   const idInput = document.querySelector('.idInput').value,
         pwInput = document.querySelector('.pwInput').value;
   if (idInput !== '' && pwInput !== '') {
-    return fillBtn.removeAttribute('disabled');
+    fillBtn.removeAttribute('disabled');
+    fillBtn.setAttribute("active", "");
+    return;
   }
 }
 
