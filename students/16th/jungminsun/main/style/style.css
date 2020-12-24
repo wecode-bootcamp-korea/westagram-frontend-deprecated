@@ -311,6 +311,7 @@
 .commentForm input {
   width: 540px;
   height: 18px;
+  background: #FAFAFA;
   font-size: 14px;
   border: none;
   padding: 0;
@@ -318,6 +319,7 @@
 
 .commentBtn {
   font-size: 14px;
+  font-weight: 700;
   border: none;
   background: #fff;
   color: rgb(0, 149, 246);
@@ -325,10 +327,10 @@
 }
 
 .commentBtn:disabled {
-  cursor: not-allowed;
+  color: #B5E0FC;
 }
 
-.commentBtn {
+.commentBtn:hover {
   cursor: pointer;
 }
 

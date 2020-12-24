@@ -1,11 +1,18 @@
 'use strict';
 
-const commentBtns = document.querySelectorAll('.commentBtn'),
+const commentBtn = document.querySelector('.commentBtn'),
       commentInput = document.querySelector('.commentInput'),
       commentForm = document.querySelector('.commentForm');
 
-function addCommentHandler(evt) {
-  evt.preventDefault();
+function commentInputHandler() {
+  const inputVal = document.querySelector('.commentInput').value;
+  if (inputVal !== '') {
+    commentBtn.removeAttribute("disabled");
+    return;
+  }
+}
+
+function addCommentPaint() {
   const inputVal = commentInput.value;
   const commentList = document.querySelector('.commentsList');
   const li = document.createElement('li');
@@ -26,14 +33,15 @@ function addCommentHandler(evt) {
   commentInput.value = '';
 }
 
-commentBtns.forEach((btn, idx) => {
-  btn.addEventListener('click', addCommentHandler);
-})
+function addCommentHandler(evt) {
+  console.dir(evt.target);
+  evt.preventDefault();
+  addCommentPaint();
+}
 
 function init() {
-  commentBtns.forEach((btn) => {
-    btn.addEventListener('click', addCommentHandler);
-  })
+  commentBtn.addEventListener('click', addCommentHandler);
+  commentInput.addEventListener('input', commentInputHandler);
 }
 
 init();
