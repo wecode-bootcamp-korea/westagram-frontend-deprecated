@@ -21,9 +21,9 @@ function commentInputHandler(evt) {
   }
 }
 
-function addCommentPaint(targetId) {
-  const inputVal = commentInput.value;
-  const commentList = document.querySelector('.commentsList');
+function addCommentPaint(inputIdx, listIdx) {
+  const inputVal = commentInputs[inputIdx].value;
+  const commentLists = document.querySelectorAll('.commentsList');
   const li = document.createElement('li');
   li.classList.add('commentItem');
   const aTag = document.createElement('a');
@@ -38,14 +38,20 @@ function addCommentPaint(targetId) {
   button.setAttribute("type", "button");
   button.innerHTML = `<img src="./assets/heart.png" alt="like" />`;
   li.appendChild(button);
-  commentList.appendChild(li);
-  commentInput.value = '';
+  commentLists[listIdx].appendChild(li);
+  commentInputs[inputIdx].value = '';
 }
 
 function addCommentHandler(evt) {
   const targetId = evt.target.id;
   evt.preventDefault();
-  addCommentPaint(targetId);
+  if (targetId === 'btn1') {
+    addCommentPaint(0, 0);
+  }
+  if (targetId === 'btn2') {
+    addCommentPaint(1, 1);
+  }
+
 }
 
 function init() {
