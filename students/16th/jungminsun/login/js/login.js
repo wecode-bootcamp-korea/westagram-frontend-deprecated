@@ -6,7 +6,7 @@ const inputs = document.querySelectorAll('.fillInput'),
 function inputHandler() {
   const idInput = document.querySelector('.idInput').value,
         pwInput = document.querySelector('.pwInput').value;
-  if (idInput !== '' && pwInput !== '') {
+  if (idInput.indexOf('@') !== -1 && pwInput.length >= 5) {
     fillBtn.removeAttribute('disabled');
     fillBtn.setAttribute("active", "");
     return;
