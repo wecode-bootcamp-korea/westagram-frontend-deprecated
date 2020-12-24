@@ -1,0 +1,70 @@
+@import url(https://fonts.google.com/specimen/Lobster?preview.text=&preview.text_type=custom);
+
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size:10px;
+}
+body{
+  margin:0;
+  padding:0;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  background-color: #FAFAFA;
+}
+a{
+  text-decoration: none;
+}
+input{
+  outline: none;
+  border:none;
+  display: block;
+  width:100%;
+  font-size:1.5rem;
+  border:1px solid #E9E9E9;
+  border-radius: .5rem;
+  background-color: #FAFAFA;
+  padding:.8rem 1.2rem;
+  margin-bottom:1rem;
+}
+button{
+  outline: none;
+  border:none;
+  cursor: pointer;
+
+}
+.wrap__container{
+  min-width:38rem;
+  height:39rem;
+  border:1px solid #E9E9E9;
+  background-color: #fff;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  padding:0 4rem;
+
+}
+.title{
+  font-family: 'Lobster', cursive;
+  font-size:5rem;
+  margin:0;
+}
+.find__password{
+  font-size:1.3rem;
+  color:#3B6288;
+  font-weight:bold;
+}
+.on__Submit{
+  background-color: #0095f6;
+  color:#fff;
+  width:100%;
+  border-radius: .5rem;
+  font-size:1.6rem;
+  padding:.8rem 1.2rem;
+  opacity: .5;
+}
