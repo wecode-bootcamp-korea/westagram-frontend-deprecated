@@ -204,13 +204,14 @@ button {
 .search-id-container.show {
   visibility: visible;
   opacity: 1;
-  z-index: 100;
+  z-index: 50;
 }
 
 .nav-menus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 }
 
 .nav-menus > li {
@@ -218,6 +219,10 @@ button {
   margin-left: 20px;
   position: relative;
   cursor: pointer;
+}
+
+.nav-menus > li:first-child {
+  margin-left: 0;
 }
 
 .nav-menus > li img {
@@ -559,8 +564,110 @@ article {
 }
 
 
-/* 9. [추가구현] 반응형  */
+/* 9. [추가구현] Responsive Web  */
 
-/* 768px(tablet) */
+/* 1000px(small monitor, tablet) */
+@media (max-width: 1000px) {
+  #container {
+    width: 90%;
+  }
 
-/* 400px(phone) */
+  .nav-container {
+    width: 90%;
+  }
+
+  .nav-search {
+    width: 160px;
+  }
+
+  .search-id-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .search-id {
+    padding: 10px;
+    height: 50px;
+  }
+
+  .nav-submenu-profile {
+    width: 180px;
+  }
+
+  .nav-submenu-profile li {
+    height: 24px;
+  }
+
+  .feeds {
+    margin-right: 0;
+  }
+  
+  .main-right {
+    display: none;
+  }
+}
+
+/* 550px(phone) */
+@media (max-width: 550px) {
+  * {
+    font-size: 12px;
+  }
+
+  .text-logo a {
+    font-size: 20px;
+  }
+
+  .logo, .nav-title-midbar {
+    display: none;
+  }
+
+  .nav-menus > li {
+    margin-left: 15px;
+    width: 20px;
+  }
+
+  .nav-menu-profile::after {
+    width: 26px;
+    height: 26px;
+  }
+
+  #main {
+    margin-top: 65px;
+  }
+
+  .feed-profile-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .feed-main-img {
+    height: 450px;
+  }
+
+  .btn-container svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .my-comment {
+    margin-top: 5px;
+  }
+
+  .follower-comment-content {
+    margin-top: 3px;
+  }
+
+  .follower-comment-like svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .time-content {
+    margin-top: 4px;
+  }
+
+  .comment-form-input, .comment-form-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
