@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+}
+
+.navWrap {
+  display: flex;
+  box-shadow: 0 2px 2px -2px gray;
+  padding: 0 19%;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.logo {
+  font-family: 'lobster', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+
+}
+
+ul>li>img {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+.profilePic {
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.searchWrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.searchBar {
+  width: 220px;
+  height: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.searchBarImg {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 80px;
+}
+
+.body-wrap {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.feed-wrap {
+  background-color: yellow;
+  width: 614px;
+  height: 100%;
+}
+
+.story-wrap {
+  background: white;
+  border: 1px solid lightgray;
+  height: 120px;
+  border-radius: 3px;
+}
+
+.feed {
+  background-color: green;
+}
+
+.main-right {
+  background-color: blue;
+  width: 293px;
+}
