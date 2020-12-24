@@ -1,0 +1,89 @@
+body{
+    background-color: #fafafa;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.container {
+    width: 350px;
+    height: 380px;
+    background: #ffffff;
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 1px;
+    padding: 10px 0;
+}
+.logo {
+    width: 175px;
+    height: 51px;
+    margin: 22px 86.5px 12px;
+}
+.logo h1 {
+    font-size: 30px;
+    color : #262626;
+}
+
+.idForm {
+    position: relative;
+}
+.idForm .idName {
+    position: absolute;
+    padding: 9px 0 7px 8px;
+    font-size: 12px;
+    left: 35px;
+    line-height: 30px;
+    pointer-events: none;
+}
+.idLogin {
+    width: 260px;
+    height: 36px;
+    background: #fafafa;
+    margin: 5px 0 0 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+.pwForm {
+    position: relative;
+}
+.pwForm .pwName {
+    position: absolute;
+    padding: 9px 0 7px 8px;
+    font-size: 12px;
+    left: 35px;
+    line-height: 30px;
+    pointer-events: none;
+}
+.pwLogin {
+    width: 260px;
+    height: 36px;
+    background: #fafafa;
+    margin: 5px 0 0 40px;  
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+.loginBtn {
+    width: 268px;
+    height: 30px;
+    margin: 8px 40px; 
+    border-radius: 5px;
+    background: #0095f6;
+    opacity: 0.5;
+    font-weight: 600;
+    color: #fff;
+    border:none;
+    outline: none;
+}
+.forget {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+.forgetPw{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
