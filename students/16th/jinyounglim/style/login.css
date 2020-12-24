@@ -1,0 +1,55 @@
+body{
+    font-family: 'Lobster', cursive;
+}
+section{
+    padding: 32px 0; 
+}
+section h1{
+    margin: 0 0 36px 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+section .login_box{
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border: solid 1px #e6e6e6;
+    
+}
+section form{
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    flex-wrap:  wrap;
+
+}
+section .login_box input, button{
+    width: 100%;
+    margin: 0 0 6px 0;
+    padding: 9px 0 7px 8px;
+    background: #fafafa;
+    border: solid 1px #efefef;
+    border-radius: 5px;
+    color: #333;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+section button{
+    height: 30px;
+    margin: 8px 0 20px 0;
+    padding: 0 0;
+    background-color: #c5e1fa;
+    border: solid 1px #cee5fb;
+    color: #fff;
+}
+.active{
+    background-color: #0095f6;
+}
+section .login_box .forget_pw{
+    color: #0095f6;
+    font-size: 12px;
+}
