@@ -21,8 +21,6 @@ a{
   text-decoration: none;
 }
 input{
-  outline: none;
-  border:none;
   display: block;
   width:100%;
   font-size:1.5rem;
@@ -32,12 +30,7 @@ input{
   padding:.8rem 1.2rem;
   margin-bottom:1rem;
 }
-button{
-  outline: none;
-  border:none;
-  cursor: pointer;
 
-}
 .wrap__container{
   min-width:38rem;
   height:39rem;
