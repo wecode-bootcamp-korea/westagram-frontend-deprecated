@@ -384,6 +384,10 @@
   margin-left: auto;
 }
 
+.personalAccount button:hover {
+  cursor: pointer;
+}
+
 .userInfoContainer {
   display: flex;
   flex-direction: column;
@@ -427,6 +431,10 @@
   margin-left: auto;
 }
 
+.viewAllBtn:hover {
+  cursor: pointer;
+}
+
 .recomendList {
   padding: 8px 0;
 }
@@ -458,6 +466,10 @@
   background: #FAFAFA;
   padding: 0;
   margin-left: auto;
+}
+
+.recomendItem .followBtn:hover {
+  cursor: pointer;
 }
 
 /* footer */
