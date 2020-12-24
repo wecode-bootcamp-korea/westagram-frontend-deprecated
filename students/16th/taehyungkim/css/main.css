@@ -214,21 +214,14 @@ button {
 }
 
 .nav-menus > li {
-<<<<<<< HEAD
+  width: 24px;
   margin-left: 20px;
-=======
-  width: 28px;
->>>>>>> ba1f4c37329b322814f33ec0278542cfd4ca4519
   position: relative;
   cursor: pointer;
 }
 
 .nav-menus > li img {
-<<<<<<< HEAD
-  width: 24px;
-=======
   width: 100%;
->>>>>>> ba1f4c37329b322814f33ec0278542cfd4ca4519
 }
 
 .nav-menus > li.new::after {
@@ -243,7 +236,6 @@ button {
   background: #ED4955;
 }
 
-<<<<<<< HEAD
 .nav-menu-profile::after {
   content: '';
   width: 30px;
@@ -260,17 +252,11 @@ button {
 .nav-submenu-profile {
   position: absolute;
   right: -24px;
-=======
-.nav-submenu-profile {
-  position: absolute;
-  right: -20px;
->>>>>>> ba1f4c37329b322814f33ec0278542cfd4ca4519
   bottom: -210px;
   width: 230px;
   background: #ffffff;
   box-shadow: 1px 1px 5px 1px var(--gray1);
   border-radius: 5px;
-<<<<<<< HEAD
   visibility: hidden;
   opacity: 0;
   transition: all .3s ease;
@@ -285,14 +271,12 @@ button {
   visibility: visible;
   opacity: 1;
   z-index: 100;
-=======
->>>>>>> ba1f4c37329b322814f33ec0278542cfd4ca4519
 }
 
 .nav-submenu-profile::before {
   position: absolute;
   content: '';
-  right: 20px;
+  right: 21px;
   top: -10px;
   width: 0px;
   height: 0px;
@@ -307,11 +291,7 @@ button {
 
 .nav-submenu-profile li {
   width: 100%;
-<<<<<<< HEAD
   height: 37px;
-=======
-  height: 40px;
->>>>>>> ba1f4c37329b322814f33ec0278542cfd4ca4519
   display: flex;
   align-items: center;
   padding: 20px;
@@ -325,13 +305,10 @@ button {
 .nav-submenu-profile li:last-child {
   border-top: 1px solid var(--gray1);
 }
-<<<<<<< HEAD
 
 .nav-submenu-profile li span {
   margin-left: 15px;
 }
-=======
->>>>>>> ba1f4c37329b322814f33ec0278542cfd4ca4519
 
 /* Main + Article */
 
