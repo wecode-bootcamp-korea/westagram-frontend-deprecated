@@ -207,4 +207,5 @@ function inputIdSearch() {
 
 
 // 8. [추가구현] nav 프로필 사진 클릭시 메뉴박스 생성
-// ...
+const profMenu = document.querySelector('.nav-menu-profile');
+profMenu.addEventListener('click', () => profMenu.classList.toggle('show'))
