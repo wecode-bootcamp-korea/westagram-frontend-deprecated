@@ -3,9 +3,10 @@
 const commentBtns = document.querySelectorAll('.commentBtn'),
       commentInputs = document.querySelectorAll('.commentInput'),
       commentForms = document.querySelectorAll('.commentForm');
+      
+// 댓글 추가 기능
 
 function commentInputHandler(evt) {
-  console.dir(evt.target);
   const targetVal = evt.target.value;
   if (evt.target.id === 'input1') {
     if (targetVal !== '') {
@@ -36,6 +37,7 @@ function addCommentPaint(inputIdx, listIdx) {
   li.appendChild(pTag);
   const button = document.createElement('button');
   button.setAttribute("type", "button");
+  button.classList.add("addLikeToCommentBtn");
   button.innerHTML = `<img src="./assets/heart.png" alt="like" />`;
   li.appendChild(button);
   commentLists[listIdx].appendChild(li);
@@ -51,7 +53,6 @@ function addCommentHandler(evt) {
   if (targetId === 'btn2') {
     addCommentPaint(1, 1);
   }
-
 }
 
 function clickCommentBtn() {
@@ -72,10 +73,30 @@ function activeBtn() {
   })
 }
 
+//댓글 좋아요 기능
+function addLikeHandler(evt) {
+  const target = evt.target;
+  if (target.classList[0] === 'liked') {
+    target.setAttribute("src", "./assets/heart.png");
+    target.classList.remove('liked');
+  } else {
+    target.setAttribute("src", "./assets/redheart.png");
+    target.classList.add('liked');
+  }
+}
+
+function addLike() {
+  const likeBtns = document.querySelectorAll('.addLikeToCommentBtn');
+  likeBtns.forEach((btn) => {
+    btn.addEventListener('click', addLikeHandler);
+  })
+}
+
 function init() {
   clickCommentBtn();
   inputSubmit();
   activeBtn();
+  addLike();
 }
 
 init();
