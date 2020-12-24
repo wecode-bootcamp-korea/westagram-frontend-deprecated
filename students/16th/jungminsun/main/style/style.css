@@ -91,8 +91,12 @@
   display: flex;
 }
 
+.mainLeftContainer {
+  width: 614px;
+}
+
 .storyFeeds {
-  width: 616px;
+  width: 614px;
   background: #fff;
   border: 1px solid #DBDBDB;
   border-radius: 3px;
@@ -139,7 +143,8 @@
 
 /* main feeds */
 .mainFeeds {
-  width: 616px;
+  width: 614px;
+  background: #fff;
   border: 1px solid #DBDBDB;
   border-radius: 3px;
   margin-bottom: 60px;
@@ -358,12 +363,10 @@
 }
 
 .mainRightContainer {
-  /* position: sticky;
+  width: 293px;
   height: 100vh;
-  top: 0; */
-  position: fixed;
-  right: 0;
-  width: 35%;
+  position: sticky;
+  top: 0;
 }
 
 .accountsInfo {
@@ -439,7 +442,7 @@
   font-size: 12px;
   font-weight: 700;
   border: none;
-  background: #fff;
+  background: #FAFAFA;
   padding: 0;
   margin-left: auto;
 }
