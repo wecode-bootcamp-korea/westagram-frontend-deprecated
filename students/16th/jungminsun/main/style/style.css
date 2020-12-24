@@ -520,3 +520,14 @@ footer p {
   color: #C7C7C7;
 }
 
+/* 반응형 웹 구현 */
+@media screen and (max-width: 1000px) {
+  .mainLeftContainer {
+    margin: 0 auto;
+  }
+
+  .mainRightContainer {
+    display: none;
+  }
+}
+
