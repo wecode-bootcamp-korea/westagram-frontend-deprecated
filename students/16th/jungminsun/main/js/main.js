@@ -92,11 +92,29 @@ function addLike() {
   })
 }
 
+// 프로필 메뉴 박스
+function openMenuBox() {
+  const profileBtn = document.querySelector('.accountInfoBtn');
+  profileBtn.addEventListener('click', openMenuBoxHandler);
+}
+
+function openMenuBoxHandler() {
+  const menuBox = document.querySelector('.profileMenuBox');
+  window.addEventListener('click', (e) => {
+    if (e.target.parentElement.id === 'downMenu' || e.target.parentElement.id === 'profileBtn') {
+      menuBox.classList.remove('hide');
+    } else {
+      menuBox.classList.add('hide');
+    }
+  })
+}
+
 function init() {
   clickCommentBtn();
   inputSubmit();
   activeBtn();
   addLike();
+  openMenuBox();
 }
 
 init();
