@@ -371,6 +371,7 @@
 .personalAccount img {
   width: 56px;
   height: 56px;
+  border: 1px solid rgba(230, 230, 230, 0.5);
   border-radius: 50%;
 }
 
@@ -404,7 +405,7 @@
 }
 
 .recomendation {
-  width: 325px;
+  width: 293px;
 }
 
 .recomendTitle {
@@ -431,7 +432,7 @@
 }
 
 .recomendItem {
-  width: 321px;
+  width: 293px;
   height: 48px;
   list-style: none;
   display: flex;
@@ -446,6 +447,7 @@
 .recomendItem .userImg {
   width: 32px;
   height: 32px;
+  border: 1px solid rgba(230, 230, 230, 0.5);;
   border-radius: 50%;
 }
 
