@@ -1,18 +1,27 @@
 'use strict';
 
-const commentBtn = document.querySelector('.commentBtn'),
-      commentInput = document.querySelector('.commentInput'),
+const commentBtns = document.querySelectorAll('.commentBtn'),
+      commentInputs = document.querySelectorAll('.commentInput'),
       commentForm = document.querySelector('.commentForm');
 
-function commentInputHandler() {
-  const inputVal = document.querySelector('.commentInput').value;
-  if (inputVal !== '') {
-    commentBtn.removeAttribute("disabled");
-    return;
+function commentInputHandler(evt) {
+  console.dir(evt.target);
+  const targetVal = evt.target.value;
+  if (evt.target.id === 'input1') {
+    if (targetVal !== '') {
+      commentBtns[0].removeAttribute('disabled');
+      return;
+    }
+  }
+  if (evt.target.id === 'input2') {
+    if (targetVal !== '') {
+      commentBtns[1].removeAttribute('disabled');
+      return;
+    }
   }
 }
 
-function addCommentPaint() {
+function addCommentPaint(targetId) {
   const inputVal = commentInput.value;
   const commentList = document.querySelector('.commentsList');
   const li = document.createElement('li');
@@ -34,14 +43,18 @@ function addCommentPaint() {
 }
 
 function addCommentHandler(evt) {
-  console.dir(evt.target);
+  const targetId = evt.target.id;
   evt.preventDefault();
-  addCommentPaint();
+  addCommentPaint(targetId);
 }
 
 function init() {
-  commentBtn.addEventListener('click', addCommentHandler);
-  commentInput.addEventListener('input', commentInputHandler);
+  commentBtns.forEach((btn) => {
+    btn.addEventListener('click', addCommentHandler);
+  })
+  commentInputs.forEach((input) => {
+    input.addEventListener('input', commentInputHandler);
+  })
 }
 
 init();
