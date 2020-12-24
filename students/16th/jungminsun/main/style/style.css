@@ -302,6 +302,10 @@
   margin-left: auto;
 }
 
+.commentItem button:hover {
+  cursor: pointer;
+}
+
 .commentItem img {
   width: 12px;
   height: 12px;
