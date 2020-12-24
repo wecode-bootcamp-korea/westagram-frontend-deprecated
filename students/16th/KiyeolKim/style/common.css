@@ -3,7 +3,7 @@
 html, body {
     height: 100%;
     background-color: #FAFAFA;
-    overflow: hidden;
+    overflow: auto;
 }
 
 a {
@@ -12,7 +12,7 @@ a {
 
 
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 876px) {
     .westagram__content img {
         display: none;
     }
@@ -32,5 +32,16 @@ a {
 
     }
 
-}
+    .westagram__feed__aside, .nav__center {
+            display: none;
+    }
 
+    .westagram__story__box, .westagram__feed__box {
+        width: 35rem;
+        border: 1px solid red;
+    }
+
+    .section__group {
+        width: 100%;
+    }
+}

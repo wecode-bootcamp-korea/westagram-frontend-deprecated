@@ -1,6 +1,10 @@
+/* main navbar */
 .main__nav {
     width: 100%;
+    background-color: #fff;
     border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    z-index: 1;
 }
 
 .main__nav .nav__group {
@@ -25,6 +29,14 @@
     padding-left: 10px;
 }
 
+.main__nav .nav__center .fa-search {
+    font-size: 10px;
+    color: #b1b0b3;
+    position: relative;
+    left: 88px;
+    top: -2px;
+}
+
 
 .main__nav .nav__center input {
     border: 1px solid #dbdbdb;
@@ -40,21 +52,253 @@
     padding-left: 15px;
 }
 
+/* main content */
 .main__content {
     width: 100%;
-    height: 100%;
     background-color: #fafafa;
-    
 }
 
 .main__content .section__group {
-    width: 60%;
-    height: 100%;
+    width: 65%;
     margin: 0 auto;
-    border: 1px solid black;
+    padding-top: 90px;
 }
 
-.main__content .section__group .westagram__story__box {
+.section__group .westagram__group__box {
+    width: 63%;
+    margin-left: 4%;
+}
+
+/* story box */
+.section__group .westagram__story__box {
+    height: 118px;
     border: 1px solid #dbdbdb;
     background-color: #fff;
+    margin-bottom: 24px;
+    z-index: 2;
+}
+
+.section__group .westagram__story__box ul {
+    display: flex;
+    padding: 20px;
+    
+}
+
+.section__group .westagram__story__box ul li {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+ 
+.westagram__story__box ul li img {
+    width: 70px;
+}
+
+.westagram__story__box ul li p {
+    font-size: 12px;
+    margin-left: 13px;
+}
+
+/* westagram feed */
+.section__group .westagram__feed__box {
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+/* westagram feed header */
+.section__group .westagram__feed__header {
+    padding: 16px;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+}
+
+.section__group .westagram__feed__header img {
+    height: 32px;
+    border-radius: 70%;
+}
+
+.section__group .westagram__feed__header .feed__name__box {
+    width: 100%;
+    margin-left: 15px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.westagram__feed__header .feed__name__box a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.westagram__feed__header .feed__name__box .fa-ellipsis-h {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+/* westagram feed photo */
+.westagram__feed__photo {
+    height: 100%;
+}
+
+.westagram__feed__photo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* westagram feed status */
+.westagram__feed__status svg {
+    margin: 10px 0px 10px 13px;
+}
+
+
+/* westagram feed love */
+/* westagram feed info */
+.westagram__feed__love p, .westagram__feed__info p {
+    margin-left: 13px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.westagram__feed__info span {
+    font-size: 15px;
+    padding: 11px;
+}
+
+.westagram__feed__info {
+    display: flex;
+    
+}
+
+.westagram__feed__info p {
+    margin-top: 10px;
+}
+
+.westagram__feed__info button, .westagram__feed__comment button {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #b1b0b3;
+    font-size: 15px;
+    outline: none;
+}
+
+.westagram__feed__comment {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+}
+
+.westagram__feed__comment input {
+    padding: 20px 0px 20px 15px;
+    width: 80%;
+    border: none;
+    background-color: #fff;
+    outline: none;
+
+}
+
+.westagram__feed__comment button {
+    color: #0095F6;
+    font-size: 14px;
+    margin: 0px 10px 0px 0px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* feed aside */
+.westagram__feed__aside {
+    width: 20%;
+    margin-left: 45%;
+    position: fixed;
+    top: 70px;
+}
+
+.recommend__profile__box {
+    margin-top: 25px;
+}
+
+.recommend__profile__box .profile__box, .recommend__box .profile__box {
+    display: inline-block;
+    width: 70%;
+}
+
+.recommend__profile__box p {
+    padding: 10px 0px 0px 10px;
+}
+
+.recommend__profile__box img {
+    width: 56px;
+    border-radius: 70%;   
+}
+
+.recommend__profile__box .profile__introduce {
+    font-size: 14px;
+    padding-top: 5px;
+    color: #8c8b8d;
+}
+
+.recommend__profile__box .profile__box a, .recommend__box a, .recommend__info__box a {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    color: #199fec;
+    position: relative;
+    left: 181px;
+    top: -24px;    
+}
+
+.recommend__info__box {
+    padding-top: 30px;
+    display: flex;
+}
+
+.recommend__info__box p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8b8a8d;
+}
+
+.recommend__info__box a{
+    font-size: 12px;
+    font-weight: 600;
+    top: 9px;
+    left: 85px;
+    color: #000;
+}
+
+.recommend__box {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.recommend__box img {
+    width: 45px;
+    position: relative;
+    top: -5px;
+}
+
+.recommend__box p {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.recommend__box .profile__introduce {
+    font-size: 12px;
+    color: #8b8b8b;
+    padding-top: 5px;
+}
+
+.recommend__box a {
+    left: 182px;
+}
+
+/* westagram copyright */
+.westagram__copyright {
+    margin: 10px 0px 0px 50px;
+}
+
+.westagram__copyright p {
+    font-size: 5px;
 }
