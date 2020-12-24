@@ -1,0 +1,181 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main_img{
+    background-image: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png');
+    height: 618px;
+    width: 454px;
+    position: relative;
+}
+
+.image_ch{
+    position: absolute;
+    top: 98px;
+    left: 150px;
+    height: 431px;
+}
+
+.image_ch.fade{
+    opacity: 0;
+}
+
+.art{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+.login_box{
+    /* position: relative; */
+    width: 100%;
+    width: 350px;
+    height: 610px;
+}
+
+.top_box{
+    height: 46vh;
+    border: 1px solid lightgray;
+}
+
+.middle_box{
+    position: relative;
+    height: 10vh;
+    top: 40px;
+}
+
+.under_box{
+    position: relative;
+    display: flex;
+    height: 100px;
+    top: 75px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.under_box img{
+  width: 135px;
+  height: 40px;
+  padding: 10px 7px;
+}
+
+.logo{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.logo_insta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 30px 0;
+    font-size: 32px;
+    font-family: cursive;
+}
+.box_space{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.register_di{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.box_input_space{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_input{
+    width: 268px;
+    height: 37px;
+    margin: 2px 0;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid lightgray;
+}
+
+#btn_login{
+    width: 280px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: lightskyblue;
+    border: 1px solid lightgrey;
+}
+
+#btn_face{
+    border: 0px solid;
+    background-color: white;
+    
+}
+
+.btn_text{
+    font-weight: bold;
+    color: #00498c;
+    font-size: 14px;
+}
+.login_under_box{
+    height: 1px;
+    width: 290px;
+    border: 1px solid lightgrey;
+    margin: 20px;
+}
+
+.pw_lost{
+    color: #00498c;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.ft_main{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    color: #8e8e8e;
+    font-size: 13px;
+}
+
+.ft_space{
+    
+}

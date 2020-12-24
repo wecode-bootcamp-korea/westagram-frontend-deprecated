@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link href="login.css" rel="stylesheet"/>
+
+    <script>
+        let image_ch = (cnt) => setTimeout(()=>{
+    let img = document.querySelectorAll('.image_ch');
+    if(!cnt){
+        img[2].classList.toggle('fade');
+        cnt = 2
+    }else{
+        img[cnt].classList.toggle('fade');
+    }
+    image_ch(cnt-1)
+},3000)
+
+window.onload = () => {
+    image_ch(2);
+}
+    </script>
+
+</head>
+
+<body>
+
+    <section>
+        <main class="main_westa">
+            <article class="art">
+                <div class="main_img">
+                    <img src="./image/1.jpg" class="image_ch">
+                    <img src="./image/2.jpg" class="image_ch">
+                    <img src="./image/3.jpg" class="image_ch">
+                    <img src="./image/4.jpg" class="image_ch">
+                </div>
+                <div class="art login_box">
+                    <div class="login_box top_box">
+                        <div class="logo_insta">Instagram</div>
+                        <div class="box_input_space">
+                           <div><input type="text" class="box_input" placeholder="전화번호,사용자 이름 또는 이메일"></div>
+                           <div><input type="text" class="box_input" placeholder="비밀번호"></div>
+                           <button type="button" id="btn_login">로그인</button>
+                           <div class="login_under_box"></div>
+                           <button type="button" id="btn_face">
+                               <span class="btn_text">Facebook으로 로그인</span>
+                           </button>
+                           <a href="#" class="pw_lost">비밀번호를 잊으셨나요?</a>
+                        </div> 
+                        <div class="login_box top_box middle_box">
+                            <div class="register_di">계정이 없으신가요? <a href="#">가입하기</a></div>
+                            <div class="login_box under_box">
+                                <div class="logo">앱으로 다운로드하세요.</div>
+                                 <div class="box_space">
+                                      <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_korean-ko.png/4a5c9d62d51b.png">
+                                      <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_korean-ko.png/f155b664a93b.png">
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </main>
+
+        <footer class="ft_main">
+            <div class="ft_space">
+                소재   블로그   채용 정보   도움말   API   개인정보처리방침   약관   인기 계정   해시태크  위치
+                <div class="ft_main">
+                   뷰티 댄스 및 공연 피트니스 식음료 집 및 정원 음악 시각 예술
+                </div>
+                <div class="ft_main">한국어 2020 instagram from Facebook</div>
+            </div>
+        </footer>
+        
+    </section>
+
+    
+
+    
+
+    
+</body>
+</html>
