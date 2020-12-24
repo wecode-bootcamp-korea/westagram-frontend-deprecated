@@ -7,15 +7,16 @@
     <title>Westagram</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="page_container">
+
+        <!-- nav -->
         <nav>
             <div class="nav_content">
-                <div class="logo">
-                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="">
-                </div>
+                <div class="logo">Westagram</div>
                 <div class="search">
                     <input type="text">
                 </div>
@@ -28,22 +29,53 @@
                             <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart">
                         </div>
                         <div>
-                            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+                            <img src="https://scontent-xsp1-2.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-xsp1-2.cdninstagram.com&_nc_ohc=FbyWMPXOjYgAX8RM9LH&oh=06e5342744e5ff4803fd3bb789f6ecfd&oe=600CD80F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2"
                             alt="my profile">
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="fixed_guard"></div>
+        <div class="nav_fixed_guard"></div>
+
+        <!-- 포스트 -->
         <main>
             <div class="main_content_container">
                 <section>
                     <div class="story"></div>
                     <article>
+                        <header></header>
+                        <div class="post_img">
+                            <img src="img/KakaoTalk_20201224_203347451.jpg" alt="">
+                        </div>
+                        <div class="content_info_container">
+                            <div class="icon_container"></div>
+                            <div class="likes"></div>
+                            <div class="desc">참DOM</div>
+                            <div class="day"></div>
+                            <div class="comment"></div>
+                        </div>
                     </article>
                 </section>
-                <aside></aside>
+                <aside>
+                    <div class="my_profile">
+                        <div class="profile_img">
+                            <img src="https://scontent-ort2-2.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_ohc=FbyWMPXOjYgAX_hZ25G&oh=3e9c84895822d1bfb2ef77cdeeae0acf&oe=600CD80F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2" alt="profile_img">
+                        </div>
+                        <div class="profile_info">
+                             <div class="my_id"></div>
+                             <div class="my_name"></div>
+                        </div>
+                        <div class="change">
+                            <button class="change_btn">
+                                <div>전환</div>
+                            </button>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="recommend"></div>
+                    <footer></footer>
+                </aside>
             </div>
         </main>
     </div>
