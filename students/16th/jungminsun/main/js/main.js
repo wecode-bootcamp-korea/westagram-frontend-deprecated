@@ -2,7 +2,7 @@
 
 const commentBtns = document.querySelectorAll('.commentBtn'),
       commentInputs = document.querySelectorAll('.commentInput'),
-      commentForm = document.querySelector('.commentForm');
+      commentForms = document.querySelectorAll('.commentForm');
 
 function commentInputHandler(evt) {
   console.dir(evt.target);
@@ -54,13 +54,28 @@ function addCommentHandler(evt) {
 
 }
 
-function init() {
+function clickCommentBtn() {
   commentBtns.forEach((btn) => {
     btn.addEventListener('click', addCommentHandler);
   })
+}
+
+function inputSubmit() {
+  commentForms.forEach((form) => {
+    form.addEventListener('submit', addCommentHandler);
+  })
+}
+
+function activeBtn() {
   commentInputs.forEach((input) => {
     input.addEventListener('input', commentInputHandler);
   })
+}
+
+function init() {
+  clickCommentBtn();
+  inputSubmit();
+  activeBtn();
 }
 
 init();
