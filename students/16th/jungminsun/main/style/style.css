@@ -116,11 +116,24 @@
   text-decoration: none;
 }
 
+.activeStory {
+  width: 64px;
+  height: 64px;
+  border: double 2px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at left top, #F99848,#CC3C95);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .storyItems a img {
   display: block;
   width: 56px;
   height: 56px;
-  border: 1px solid rgba(230, 230, 230, 0.5);
+  border: 1px solid rgba(230, 230, 230, 0.9);
   border-radius: 50%;
 }
 
