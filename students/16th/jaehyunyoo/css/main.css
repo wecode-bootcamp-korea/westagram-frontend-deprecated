@@ -151,6 +151,15 @@ main{
   margin-right:15px;
   border-radius: 50%;
 }
+.comment__Like__Btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.like__btn svg{
+  width:12px;
+  height:12px;
+}
 .feed__paragraph{
   display: flex;
   align-items: center;
