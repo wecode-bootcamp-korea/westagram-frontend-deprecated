@@ -6,24 +6,9 @@
     <title>로그인</title>
     <link href="login.css" rel="stylesheet"/>
 
-    <script>
-        let image_ch = (cnt) => setTimeout(()=>{
-    let img = document.querySelectorAll('.image_ch');
-    if(!cnt){
-        img[2].classList.toggle('fade');
-        cnt = 2
-    }else{
-        img[cnt].classList.toggle('fade');
-    }
-    image_ch(cnt-1)
-},3000)
-
-window.onload = () => {
-    image_ch(2);
-}
-    </script>
-
 </head>
+
+
 
 <body>
 
@@ -40,12 +25,14 @@ window.onload = () => {
                     <div class="login_box top_box">
                         <div class="logo_insta">Instagram</div>
                         <div class="box_input_space">
-                           <div><input type="text" class="box_input" placeholder="전화번호,사용자 이름 또는 이메일"></div>
-                           <div><input type="text" class="box_input" placeholder="비밀번호"></div>
-                           <button type="button" id="btn_login">로그인</button>
+                        <form action="#">
+                           <div><input type="text" class="box_input" id="id_input" placeholder="전화번호,사용자 이름 또는 이메일"></div>
+                           <div><input type="password" class="box_input" id="pw_input" placeholder="비밀번호"></div>
+                           <button type="submit" class="btn_login">로그인</button>
+                        </form>
                            <div class="login_under_box"></div>
                            <button type="button" id="btn_face">
-                               <span class="btn_text">Facebook으로 로그인</span>
+                               <a href="#"><span class="btn_text">Facebook으로 로그인</span></a>
                            </button>
                            <a href="#" class="pw_lost">비밀번호를 잊으셨나요?</a>
                         </div> 
@@ -76,11 +63,8 @@ window.onload = () => {
         </footer>
         
     </section>
-
-    
-
-    
-
-    
 </body>
+
+<script src="login.js"></script>
+
 </html>

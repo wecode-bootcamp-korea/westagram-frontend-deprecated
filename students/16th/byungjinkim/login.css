@@ -40,6 +40,7 @@ a{
     top: 98px;
     left: 150px;
     height: 431px;
+    opacity: 1;
 }
 
 .image_ch.fade{
@@ -134,7 +135,7 @@ a{
     border: 1px solid lightgray;
 }
 
-#btn_login{
+.btn_login{
     width: 280px;
     height: 30px;
     color: white;
@@ -176,6 +177,6 @@ a{
     font-size: 13px;
 }
 
-.ft_space{
-    
+.active{
+    background-color: blue;
 }
