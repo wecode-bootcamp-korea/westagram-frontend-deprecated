@@ -4,10 +4,12 @@ const addBtn = document.querySelector('.onSubmit');
 
 function onAddComment(){
   const text = input.value;
-
+  if(text === ''){
+    return;
+  }
   const commentRow = createComment(text);
-  console.log(commentRow);
   comments.appendChild(commentRow);
+  commentRow.scrollIntoView({block:'center'})
   input.value = '';
   input.focus();
 }
@@ -33,7 +35,15 @@ addBtn.addEventListener('click',() => {
 input.addEventListener('keyup', () => {
   if(input.value.length >= 3){
     addBtn.style.opacity = '1';
+    addBtn.disabled = false;
   } else {
     addBtn.style.opacity = '.5';
+    addBtn.disabled = true;
+  }
+});
+input.addEventListener('keypress', event => {
+  if(event.key === 'Enter'){
+    onAddComment();
+    event.preventDefault();
   }
 })
