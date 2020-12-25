@@ -109,6 +109,8 @@ function openMenuBoxHandler() {
   })
 }
 
+// 검색 기능
+
 function init() {
   clickCommentBtn();
   inputSubmit();

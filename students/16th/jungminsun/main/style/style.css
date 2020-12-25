@@ -41,17 +41,26 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding: 7px;
+  padding: 7px 31px;
 }
 
-.searchBar img {
+.searchIcon {
   width: 10px;
   height: 10px;
   display: block;
   position: absolute;
   top: 50%;
-  left: 47.5%;
+  left: 47%;
   transform: translateY(-50%);
+}
+
+.searchBar input:focus {
+  outline: none;
+  text-align: left;
+}
+
+.searchBar input:focus + .searchIcon {
+  left: 40%;
 }
 
 .menu {
@@ -595,3 +604,70 @@ footer p {
   }
 }
 
+/* 검색박스 */
+.searchBox {
+  width: 240px;
+  height: 270px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-shadow: 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.searchBox.hide {
+  display: none;
+}
+
+.searchBoxList {
+  width: 100%;
+  height: 270px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBoxItem {
+  width: 100%;
+  height: 67px;
+  list-style: none;
+  border-bottom: 1px solid #dbdbdb;;
+  padding: 8px 14px;
+}
+
+.searchBoxItem:hover {
+  background: rgba(250,250,250, 0.9);
+}
+
+.searchBoxItem:last-child {
+  border-bottom: none;
+}
+
+.searchBoxItem a {
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBoxItem img {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.accountInfoContainer p {
+  color: #262626;
+  font-weight: 500;
+}
+
+.accountInfoContainer span {
+  color: #C7C7C7;
+}
