@@ -5,8 +5,44 @@ button{
   outline: none;
   border:none;
   cursor: pointer;
+  background: none;
 }
 input{
   outline: none;
   border:none;
+}
+ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+a{
+  text-decoration: none;
+}
+article{
+  margin:0;
+}
+textarea{
+  border:none;
+  outline: none;
+}
+h1,h2{
+  margin:0;
+  font-weight: normal;
+  font-size:100%;
+}
+textarea{
+  resize: none;
+  border:none;
+  outline: none;
+}
+img{
+  max-width:100%;
+}
+figure{
+  margin:0;
+  padding:0;
+}
+p{
+  margin:0;
 }
