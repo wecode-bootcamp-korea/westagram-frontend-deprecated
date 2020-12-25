@@ -1,20 +1,24 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: rgb(248, 247, 247);
 }
 
 nav {
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 2px -2px gray;
 }
 
 .navWrap {
   display: flex;
-  box-shadow: 0 2px 2px -2px gray;
-  padding: 0 19%;
   height: 60px;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  background-color: white;
 }
 
 
@@ -22,12 +26,13 @@ nav {
   font-family: 'lobster', cursive;
   font-size: 30px;
   text-align: center;
+  margin-right: 200px;
 }
 
-ul {
+.nav_menus {
   display: flex;
   list-style-type: none;
-
+  padding-left: 200px;
 }
 
 ul>li>img {
@@ -48,15 +53,18 @@ ul>li>img {
 }
 
 .searchBar {
-  width: 220px;
-  height: 30px;
+  width: 210px;
+  height: 28px;
   margin: auto;
   text-align: center;
+  background-color: rgb(248, 247, 247);
+  border: 1px solid lightgray;
+  border-radius: 3px;
 }
 
 .searchBarImg {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   position: absolute;
   top: 10px;
   left: 80px;
@@ -65,13 +73,11 @@ ul>li>img {
 .body-wrap {
   display: flex;
   justify-content: center;
-  height: 100%;
+  padding-top: 30px;
 }
 
 .feed-wrap {
-  background-color: yellow;
-  width: 614px;
-  height: 100%;
+  margin-right: 350px;
 }
 
 .story-wrap {
@@ -79,13 +85,42 @@ ul>li>img {
   border: 1px solid lightgray;
   height: 120px;
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 
 .feed {
-  background-color: green;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
 }
 
 .main-right {
-  background-color: blue;
   width: 293px;
+  height: 500px;
+  border: 1px solid black;
+  position: fixed;
+  margin-left: 650px;
+}
+
+.feed-header {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+}
+
+.feed-footer {
+  background-color: yellow;
+  height: 100px;
+}
+
+.feed-img {
+  border-bottom: 1px solid lightgray;
+}
+
+.feed-img > img {
+  width: 614px;
+}
+
+.stories {
+  display: flex;
+  list-style-type: none;
 }
