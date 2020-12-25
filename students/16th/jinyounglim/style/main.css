@@ -1,0 +1,404 @@
+body {
+    font-size: 1.4rem;
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    background-color: #fff;
+    border-bottom: var(--border-gray);
+}
+
+header nav {
+    max-width: 975px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header nav .logo {
+    width: 37%;
+    font: 2em 'Lobster', cursive;
+}
+
+header nav .search_wr {
+    width: 22%;
+    position: relative;
+}
+
+header nav .search_wr i {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    transform: translateY(-50%);
+    background: url(../img/icons_sprit) no-repeat;
+    background-size: 85px;
+    background-position: -32px -23px;
+    text-indent: -9999px;
+}
+
+header nav .search_wr input {
+    width: 100%;
+    height: 100%;
+    padding: 3px 10px 3px 26px;
+    color: var(--sub-color);
+    background-color: var(--bg-color);
+    border: var(--border-gray);
+    font-weight: 100;
+    cursor: text;
+}
+
+header nav .icons {
+    width: 41%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .icons li button {
+    margin: 0 0 0 22px;
+}
+
+main {
+    max-width: 935px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.story {
+    max-width: 614px;
+    height: 116px;
+    margin: 0 0 24px;
+    padding: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    border: var(--border-gray);
+}
+
+.story ul {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.story li {
+    width: 80px;
+    height: 88px;
+    padding: 0 4px;
+    display: inline-block;
+    position: relative;
+}
+
+.story .user_profile {
+    width: 66px;
+    height: 66px;
+}
+
+.story .user_id {
+    max-width: 74px;
+    margin: 0;
+    padding: 8px 0 0;
+    overflow: hidden;
+    line-height: 14px;
+    font-size: 1.2rem;
+    letter-spacing: .01em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.feeds {
+    max-width: 614px;
+    margin: 0 28px 0 0;
+    background-color: #fff;
+    border: var(--border-gray);
+    border-radius: 3px;
+}
+
+.feeds .feeds_user {
+    height: 60px;
+    padding: 16px;
+    position: relative;
+}
+
+.feeds .feeds_user .info {
+    display: flex;
+    align-items: center;
+    float: left;
+    overflow: hidden;
+}
+
+strong.user_id {
+    margin: 0 0 0 14px;
+    display: inline-block;
+    color: var(--id-color);
+}
+
+.feeds .feeds_content {
+    padding: 0 16px;
+}
+
+.feeds .feeds_content button {
+    margin: 8px;
+}
+
+.feeds .feeds_content button.btn_heart {
+    margin: 8px 8px 8px 0;
+}
+
+.feeds .feeds_content button.btn_bookmark {
+    margin: 8px 0 0;
+}
+
+.feeds .feeds_content .feeds_txt .user_id {
+    margin: 0;
+}
+
+.feeds .feeds_content .txt_time {
+    margin: 0 0 5px 0;
+    color: var(--sub-color);
+    font-size: 1rem;
+    font-style: normal;
+    letter-spacing: .2px;
+    line-height: 1.8rem;
+}
+
+.feeds .feeds_content .like_count {
+    margin: 4px 0;
+}
+
+.feeds .feeds_content .feeds_txt p {
+    width: 40%;
+    line-height: 18px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+.feeds .feeds_content .feeds_txt p.all {
+    width: 100%;
+}
+
+.feeds .feeds_content .feeds_txt .btn_txt_all {
+    margin: 0;
+    color: var(--sub-color);
+}
+
+.feeds .feeds_content .comments_all {
+    margin: 4px 0;
+    color: var(--sub-color);
+    cursor: pointer;
+}
+
+.feeds .feeds_content .comments_list {
+    max-height: 36px;
+    overflow: scroll;
+}
+
+.feeds .feeds_content .comments_list .user_id {
+    margin: 0 4px 0 0;
+}
+
+.feeds .feeds_content .comments_list p {
+    width: 80%;
+}
+
+.feeds .feeds_content .comments_list li {
+    position: relative;
+}
+
+.feeds .feeds_content .comments_list li .btn_heart {
+    width: 12px;
+    height: 12px;
+    margin: 0 0;
+    position: absolute;
+    right: 0;
+}
+
+.feeds .comments_write {
+    width: 100%;
+    min-height: 56px;
+    margin: 4px 0 0 0;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 18px;
+    border-top: var(--border-gray);
+}
+
+.feeds .comments_write input {
+    width: 90%;
+    height: 56px;
+    border: none;
+}
+
+.feeds .comments_write .btn_comment {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    color: var(--high-color);
+    font-weight: var(--font-bold);
+}
+
+.feeds_right {
+    width: 293px;
+    padding: 0 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+}
+
+.feeds_right .main_profile p {
+    width: 66px;
+    height: 66px;
+}
+
+.feeds_right .common_box {
+    margin: 12px 0 0 0;
+    padding: 16px;
+    position: relative;
+    background-color: #fff;
+    border: var(--border-gray);
+}
+
+.feeds_right .common_box h3 {
+    margin: 4px 0;
+    color: var(--sub-color);
+    font-size: 1.4rem;
+}
+
+.feeds_right .common_box .btn_view_all {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 1.2rem;
+    font-weight: var(--font-bold);
+}
+
+.feeds_right .common_box .user_list {
+    height: 144px;
+    margin: 8px 0;
+    overflow: auto;
+}
+
+/* buttons */
+
+.btn_com {
+    width: 24px;
+    height: 24px;
+    background: url(../img/icons_sprit) no-repeat;
+    background-size: 200px;
+    text-indent: -9999px;
+}
+
+.btn_explore {
+    background-position: -5px -54px;
+}
+
+.btn_heart {
+    background-position: -5px -6px;
+}
+
+.btn_heart.on {
+    background-position: -42px -6px;
+}
+
+.btn_small {
+    margin: 0;
+    background-position: -1px -3px;
+    background-size: 90px;
+}
+
+.btn_small.on {
+    background-position: -18px -3px;
+    background-size: 90px;
+}
+
+.btn_comments {
+    background-position: -151px -6px;
+}
+
+.btn_dm {
+    background-position: -78px -4px;
+}
+
+.btn_mypage {
+    background-position: -5px -101px;
+}
+
+.btn_more {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background-position: -112px -6px;
+}
+
+.btn_bookmark {
+    float: right;
+    background-position: -42px -53px;
+}
+
+.btn_follow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: var(--high-color);
+    font-size: 1.2rem;
+}
+
+.user_profile {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-color: var(--bg-color);
+    border: var(--border-gray);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* reusable box */
+
+.user_info {
+    display: flex;
+    align-items: center;
+}
+
+.sub_wr {
+    line-height: 13px;
+    text-align: left;
+}
+
+.user_subtxt {
+    margin: 3px 0 0 14px;
+    display: block;
+    color: var(--sub-color);
+    font-size: 1.2rem;
+}
+
+.user_list li {
+    padding: 8px 0;
+    position: relative;
+}
+
+@media all and (max-width: 1000px) {
+    header nav {
+        padding: 0 20px;
+    }
+
+    .feeds {
+        margin: 0 auto;
+    }
+
+    .feeds_right {
+        display: none;
+    }
+}

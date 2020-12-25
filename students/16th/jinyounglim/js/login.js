@@ -1,14 +1,10 @@
 const loginForm = document.querySelector(".login_form");
-const Id = document.querySelector(".user_id");
-const Pw = document.querySelector(".user_pw");
+const id = document.querySelector(".user_id");
+const pw = document.querySelector(".user_pw");
 const loginBtn = document.querySelector(".btn_login");
 
-const activateLoginBtn = () => {
-    if (Id.value && Pw.value){ 
-        loginBtn.classList.add('active');
-    }else{
-        loginBtn.classList.remove('active');
-    }
-}
-
-loginForm.addEventListener('keyup', activateLoginBtn);
+document.addEventListener('keyup', function(){
+  id.value && pw.value 
+  ? (loginBtn.classList.add('active')) 
+  : (loginBtn.classList.remove('active'))  
+});
