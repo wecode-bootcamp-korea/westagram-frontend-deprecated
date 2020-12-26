@@ -104,6 +104,40 @@ main{
   margin:0 auto;
   display: flex;
 }
+.followers{
+  max-width:614px;
+  width:100%;
+  height:130px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border:1px solid #E9E9E9;
+  margin-bottom:30px;
+}
+.followers figure{
+  width:100px;
+  height:100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.followers figure img{
+  border-radius: 50%;
+}
+.recom__img{
+  width:65px;
+  height:65px;
+  background: 
+  linear-gradient(rgb(255, 255, 255),#fff) padding-box, /*this is your grey background*/
+  linear-gradient(to right, #9c20aa, #fb3570) border-box;
+  margin-right:10px;
+  padding:2px;
+  border: 2px solid transparent;
+  border-radius:50%;
+  margin:0 auto;
+}
+
 .left__feed{
   max-width:614px;
   width:100%;
@@ -111,22 +145,22 @@ main{
   background-color: #fff;
   border:1px solid #E9E9E9;
 }
-.feed__content header{
+.left__feed header{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.feed__content header figure{
+.left__feed header figure{
   display: flex;
   align-items: center;
 }
-.feed__content header figure img{
+.left__feed header figure img{
   width:32px;
   height:32px;
   border-radius: 50%;
   margin-right:10px;
 }
-.feed__content header .more{
+.left__feed header .more{
   text-indent: -99999px;
   width:25px;
   height:25px;
