@@ -352,6 +352,10 @@
   text-decoration: none;
 }
 
+.taged {
+  color: rgb(0, 149, 246);
+}
+
 .moreCommentsBtn {
   border: none;
   background: #fff;
@@ -367,6 +371,7 @@
   font-size: 14px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .commentItem .userId {
@@ -392,6 +397,22 @@
   font-size: 10px;
   color: #B0AA95;
   margin: 8px 0;
+}
+
+.deleteCommentBtn {
+  border: none;
+  background: #fff;
+  position: absolute;
+  right: 20px;
+}
+
+.deleteCommentBtn img {
+  width: 9px;
+  height: 9px;
+}
+
+.deleteCommentBtn:hover {
+  cursor: pointer;
 }
 
 /* comment form */

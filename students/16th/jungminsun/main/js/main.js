@@ -35,11 +35,20 @@ function addCommentPaint(inputIdx, listIdx) {
   const pTag = document.createElement('p');
   pTag.innerText = inputVal;
   li.appendChild(pTag);
+
   const button = document.createElement('button');
   button.setAttribute("type", "button");
   button.classList.add("addLikeToCommentBtn");
   button.innerHTML = `<img src="./assets/heart.png" alt="like" />`;
   button.addEventListener('click', addLikeHandler);
+
+  const delButton = document.createElement('button');
+  delButton.setAttribute("type", "button");
+  delButton.classList.add('deleteCommentBtn');
+  delButton.innerHTML = `<img src="./assets/cancel.png" alt="cancel">`;
+  delButton.addEventListener('click', removeComment);
+
+  li.appendChild(delButton);
   li.appendChild(button);
   commentLists[listIdx].appendChild(li);
   commentInputs[inputIdx].value = '';
@@ -91,6 +100,11 @@ function addLike() {
   likeBtns.forEach((btn) => {
     btn.addEventListener('click', addLikeHandler);
   })
+}
+
+// 댓글 삭제 기능
+function removeComment(e) {
+  return e.target.parentElement.parentElement.remove();
 }
 
 // 프로필 메뉴 박스
