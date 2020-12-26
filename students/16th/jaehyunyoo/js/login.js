@@ -20,12 +20,16 @@ function onLogin(){
 function onValidation(){
   const user = userId.value;
   const passwod = userPassword.value;
-  if(!(user === 'test')){
-    errorMsg.innerText = '잘못된 아이디 입니다.'
+  if(!(user === 'test') && !(passwod === '1234')){
+    errorMsg.innerText = '계정 정보가 없습니다.';
     return;
-  } 
+  }
+  if(!(user === 'test')){
+    errorMsg.innerText = '아이디가 잘못 되었습니다.';
+    return;
+  }
   if(!(passwod === '1234')){
-    errorMsg.innerText = '잘못된 비밀번호 입니다.'
+    errorMsg.innerText = '비밀번호가 잘못 되었습니다.';
     return;
   }
   location.href = '../jaehyunyoo/main.html';
