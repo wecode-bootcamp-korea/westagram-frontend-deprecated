@@ -1,11 +1,20 @@
 const enrollBtn = document.getElementById('commentEnrollBtn');
 const commentInput = document.getElementById('commentInput');
 const commentBox = document.getElementsByClassName('comments')[0];
+enrollBtn.setAttribute('disabled', 'true');
 
 commentInput.addEventListener('keydown', e => {
-    console.log(commentInput.value);
     if ((e.key === 'Enter') && (commentInput.value.trim() !== '')) {
         postComment();
+    }
+})
+
+commentInput.addEventListener('input', e => {
+    if (commentInput.value.trim() === '') {
+        enrollBtn.setAttribute('disabled', 'true');
+    }
+    if (commentInput.value.trim() !== '') {
+        enrollBtn.removeAttribute('disabled');
     }
 })
 
