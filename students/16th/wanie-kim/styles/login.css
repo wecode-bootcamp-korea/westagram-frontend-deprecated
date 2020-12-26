@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loginpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+    height: 400px;
+    padding: 20px 0px;
+    border: 1px solid #bbb;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin: 10px auto 30px;
+    font-size: 38px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+.input-items {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    height: 37px;
+    padding: 8px 10px 6px;
+    margin-top: 7px;
+    background-color: #FAFAFA;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+button {
+    height: 35px;
+    margin-top: 14px;
+    color: white;
+    background-color: #C0DFFD;
+    border-style: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+}
+button.active {
+    background-color: #1F96F7;
+}
+
+a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #253860;
+}
