@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.loginBox {
+    position: relative;
+    width: 350px;
+    height: 380px;
+    background-color: #ffffff;
+    border: 2px solid #e6e6e6;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    bottom: 0;
+    width: 260px;
+    height: 40px;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #fafafa;
+    color: #9b9b9b;
+    font-size: 12px;
+}
+
+.westaLogo {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 50px auto;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 40px;
+    background-color: #0095f6;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #043667;
+}
+
+.forgotPw {
+    font-family: ;
+    font-style: normal;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.forgotPw:link {
+    color: #043667;
+    text-decoration: none;
+}
