@@ -197,18 +197,18 @@ function noneOfResult() {
   searchBox.appendChild(ul);
 }
 
-function showSearchResult(e) {
+function showSearchResult() {
   const searchBox = document.querySelector('.searchBox');
-  searchBox.classList.remove('hide');
-  const value = e.target.value;
-  const result = searchData.filter((el) => {
-    const id = el.userId;
-    const name = el.userName;
-    const url = el.imgUrl;
-    if (el.userId.includes(value)) {
-      paintSearchList(id, name, url);
+  const value = document.querySelector('.searchInput').value;
+  const result = searchData.filter((e) => {
+    if (e.userId.includes(value)) {
+      paintSearchList(e.userId, e.userName, e.imgUrl);
+      searchBox.classList.remove('hide');
     } else {
       noneOfResult();
+    }
+    if (value === '') {
+      searchBox.classList.add('hide');
     }
   })
   return result;
@@ -219,13 +219,14 @@ function hideSearchBox() {
   window.addEventListener('click', (e) => {
     if (e.target.parentElement.id !== 'searchArea') {
       searchBox.classList.add('hide');
+      document.querySelector('.searchInput').value = '';
     }
   })
 }
 
 function activeSearchbar() {
   const searchInput = document.querySelector('.searchInput');
-  searchInput.addEventListener('keydown', showSearchResult);
+  searchInput.addEventListener('input', showSearchResult);
 }
 
 function init() {
