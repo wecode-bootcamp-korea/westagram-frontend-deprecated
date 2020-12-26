@@ -28,15 +28,7 @@ body{
 .idForm {
     position: relative;
 }
-.idForm .idName {
-    position: absolute;
-    padding: 9px 0 7px 8px;
-    font-size: 12px;
-    left: 35px;
-    line-height: 30px;
-    pointer-events: none;
-}
-.idLogin {
+.userId {
     width: 260px;
     height: 36px;
     background: #fafafa;
@@ -48,15 +40,7 @@ body{
 .pwForm {
     position: relative;
 }
-.pwForm .pwName {
-    position: absolute;
-    padding: 9px 0 7px 8px;
-    font-size: 12px;
-    left: 35px;
-    line-height: 30px;
-    pointer-events: none;
-}
-.pwLogin {
+.userPw {
     width: 260px;
     height: 36px;
     background: #fafafa;
@@ -70,8 +54,7 @@ body{
     height: 30px;
     margin: 8px 40px; 
     border-radius: 5px;
-    background: #0095f6;
-    opacity: 0.5;
+    background-color:#b2dffc;
     font-weight: 600;
     color: #fff;
     border:none;
