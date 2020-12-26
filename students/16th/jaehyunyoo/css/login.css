@@ -17,9 +17,7 @@ body{
   text-align: center;
   background-color: #FAFAFA;
 }
-a{
-  text-decoration: none;
-}
+
 input{
   display: block;
   width:100%;
@@ -60,4 +58,9 @@ input{
   font-size:1.6rem;
   padding:.8rem 1.2rem;
   opacity: .5;
+}
+.user__validation{
+  margin-top:2rem;
+  font-size:1.6rem;
+  color:red;
 }
