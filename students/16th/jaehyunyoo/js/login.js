@@ -28,9 +28,9 @@ function onValidation(){
     errorMsg.innerText = '잘못된 비밀번호 입니다.'
     return;
   }
+  location.href = '../jaehyunyoo/main.html';
 }
 onBtnabled.addEventListener('click',(event)=>{
   event.preventDefault();
   onValidation();
-  location.href = '../jaehyunyoo/main.html';
 });
