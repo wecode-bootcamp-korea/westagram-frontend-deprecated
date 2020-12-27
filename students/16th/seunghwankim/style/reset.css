@@ -13,7 +13,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, canvas, details, embed, 
-figure, figcaption, header, hgroup, 
+figure, figcaption, header, hgroup, input,
 menu, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
