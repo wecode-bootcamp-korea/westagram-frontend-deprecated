@@ -104,8 +104,38 @@ ul>li>img {
 
 .feed-header {
   display: flex;
+  height: 60px;
   border-bottom: 1px solid lightgray;
+  align-items: center;
+  padding: 0 15px;
 }
+
+.feed-header-profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 25px;
+  border: 1px solid gray;
+  margin-right: 15px;
+}
+
+.feed-header-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed-header-id {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.feed-header-more-option {
+  width: 15px;
+  height: 15px;
+}
+
+
 
 .feed-footer {
   background-color: yellow;
