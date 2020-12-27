@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav-column {
+  width: 1000px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+}
+
+.nav-form {
+  position: relative;
+}
+
+.nav-form_search {
+  width: 215px;
+  height: 30px;
+  background-color: #fafafa;
+  padding: 0 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fa-search {
+  position: relative;
+  left: 25px;
+  opacity: 50%;
+}
+
+.fa-times-circle {
+  position: relative;
+  right: 25px;
+  opacity: 50%;
+}
+
+@media screen and (max-width: 610px) {
+  .nav-form {
+    display: none;
+  }
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons_list {
+  margin-left: 15px;
+}
+
+.nav-icons_user {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.main {
+  width: 100%;
+  height: 1500px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: cen;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+
+.div-main-feeds {
+  width: 614px;
+  height: 100%;
+}
+
+.div-main-feeds_story {
+  width: inherit;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin-top: 100px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  padding-left: 15px;
+}
+
+.feeds-story__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.feeds-story__pic {
+  width: 66px;
+  height: 66px;
+  border-radius: 50px;
+  padding: 1px;
+  border: 2px solid lightcoral;
+}
+
+.feeds-story__name {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.div-main-feeds_feed {
+  width: inherit;
+  height: 730px;
+  margin-top: 30px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.feed-profile {
+  width: inherit;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
+  padding: 0 15px;
+}
+
+.feed-profile-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed-profile_pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.feed-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.feed-picture img {
+  width: 612px;
+  height: inherit;
+}
+
+.feed-comment-icons {
+  width: inherit;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 5px;
+}
+
+.comment-icon {
+  margin-right: 10px;
+}
+
+.feed-comment-likes {
+  width: inherit;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.feed-comment-article {
+  width: inherit;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.feed-comment-article__content {
+  font-weight: normal;
+}
+
+.article-new__comment {
+  width: inherit;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.feed-comment-article__allcomment {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.article-new__comment--txt {
+  font-size: 14px;
+}
+
+.article-new__comment--txt span:nth-child(2) {
+  font-weight: normal;
+}
+
+.feed-comment-form {
+  width: inherit;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.feed-comment-addcomment {
+  border: none;
+  background-color: inherit;
+  font-size: 15px;
+}
+
+.feed-comment-submit {
+  border: none;
+  background-color: inherit;
+  color: #c4e1fb;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.div-main-right {
+  width: 350px;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.div-main-right__aside {
+  position: fixed;
+  top: 100px;
+  width: inherit;
+}
+
+.div-main-right_myaccount {
+  width: inherit;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.main-myaccount {
+  display: flex;
+  align-items: center;
+}
+
+.main-myaccount_pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.main-myaccount_name {
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.main-myaccount_switch {
+  font-size: 12px;
+  color: #0095f6;
+}
+
+.div-main-right_rec {
+  width: inherit;
+  height: 300px;
+  padding: 0 10px;
+}
+
+.rec_txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rec_txt span:first-child {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.rec_txt span:nth-child(2) {
+  font-size: 12px;
+}
+
+.rec_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.rec_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.rec_row_column {
+  display: flex;
+  align-items: center;
+}
+
+.rec_comment {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.rec_comment span:first-child {
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.rec_comment span:nth-child(2) {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 3px;
+}
+
+.rec_follow {
+  font-size: 12px;
+  color: #0095f6;
+}
+
+.div-main-right_footer {
+  width: inherit;
+  height: 80px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.div-main-right_footer span {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.div-main-right_footer span:last-child {
+  margin-top: 10px;
+}
