@@ -280,6 +280,7 @@ main {
 
 .enroll_btn:disabled {
     opacity: 0.3;
+    cursor: default;
 }
 
 aside {
@@ -305,6 +306,7 @@ aside {
     overflow: hidden;
     width: 56px;
     height: 56px;
+    margin-right: 6px;
 }
 
 .profile_img img {
@@ -315,7 +317,26 @@ aside {
 .profile_info {
     margin-left: 12px;
     width: 187px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile_info div {
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+}
+
+.profile_info .my_id {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.profile_info .my_name {
+    font-size: 14px;
+    color: #8e8e8e;
 }
 
 .change_btn_block {
@@ -330,7 +351,7 @@ aside {
     display: flex;
     align-items: center;
     margin: auto;
-    width: 24px;
+    width: 100%;
     height: 12px;
     border: 0;
     padding: 0;
@@ -346,7 +367,91 @@ aside {
     width: 100%;
     height: 291px;
     margin-bottom: 12px;
-    border: 1px solid black;
+}
+
+.recommend {
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+    line-height: 18px;
+    color: #8e8e8e;
+}
+
+.recommend_list {
+    width: 100%;
+    height: 256px;
+    padding: 8px 0;
+}
+
+.recommend_list .member_block {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    padding: 8px 0;
+    padding-left: 4px;
+}
+
+.member_block .member_img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.member_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.member_block .member_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+}
+
+.member_info .member_id {
+    width: 100%;
+    height: 19px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #262626;
+}
+
+.member_info > div:nth-child(2) {
+    width: 100%;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8e8e8e;
+}
+
+.follow_btn_block {
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+    width: 36px;
+    height: 100%;
+}
+
+.follow_btn {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 9px;
+    border: 0;
+    padding: 0;
+    word-break:keep-all;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0095F6;
 }
 
 footer {

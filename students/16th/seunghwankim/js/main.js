@@ -32,7 +32,7 @@ enrollBtn.addEventListener('click', e => {
 function postComment() {
     const newComment = document.createElement('div');
     const commentFrame = `
-        <span>1k3h_ksh</span>
+        <span>1k3h_sh</span>
         <span>${commentInput.value}</span>`;
     newComment.className = 'comment_line_container';
     newComment.innerHTML = commentFrame;
