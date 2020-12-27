@@ -158,62 +158,88 @@ const searchData = [
   }
 ]
 
-function paintSearchList(id, name, url) {
-  const ul = document.createElement('ul');
-  ul.classList.add('searchBoxList');
-  const li = document.createElement('li');
-  li.classList.add('searchBoxItem');
-  ul.appendChild(li);
-  const a = document.createElement('a');
-  a.setAttribute('href', '#');
-  li.appendChild(a);
-  const img = document.createElement('img');
-  img.setAttribute('src', url);
-  a.appendChild(img);
-  const div = document.createElement('div');
-  div.classList.add('accountInfoContainer');
-  const p = document.createElement('p');
-  p.classList.add('searchId');
-  p.innerText = id;
-  const span = document.createElement('span');
-  span.innerText = name;
-  div.appendChild(p);
-  div.appendChild(span);
-  a.appendChild(div);
+// function paintSearchList(id, name, url) {
+//   const ul = document.createElement('ul');
+//   ul.classList.add('searchBoxList');
+//   const li = document.createElement('li');
+//   li.classList.add('searchBoxItem');
+//   ul.appendChild(li);
+//   const a = document.createElement('a');
+//   a.setAttribute('href', '#');
+//   li.appendChild(a);
+//   const img = document.createElement('img');
+//   img.setAttribute('src', url);
+//   a.appendChild(img);
+//   const div = document.createElement('div');
+//   div.classList.add('accountInfoContainer');
+//   const p = document.createElement('p');
+//   p.classList.add('searchId');
+//   p.innerText = id;
+//   const span = document.createElement('span');
+//   span.innerText = name;
+//   div.appendChild(p);
+//   div.appendChild(span);
+//   a.appendChild(div);
+//   const searchBox = document.querySelector('.searchBox');
+//   searchBox.appendChild(ul);
+// }
+
+function paintSearchList(resultArr) {
   const searchBox = document.querySelector('.searchBox');
-  searchBox.appendChild(ul);
+  if (resultArr.length > 0) {
+    searchBox.classList.remove('hide');
+    const appendList = resultArr.map((e) => {
+      return `<li class="searchBoxItem">
+                  <a href="#">
+                    <img src="${e.imgUrl}" />
+                    <div class="accountInfoContainer">
+                      <p class="searchId">${e.userId}</p>
+                      <span>${e.userName}</span>
+                    </div>
+                  </a>
+                </li>`
+    }).join('');
+    searchBox.innerHTML = appendList;
+  }
+  if (resultArr.length === 0) {
+    searchBox.classList.remove('hide');
+    searchBox.innerHTML =  `<li class="searchBoxItem">
+                                <a href="#">
+                                 <div class="accountInfoContainer">
+                                    <span>검색 결과가 없습니다</span>
+                                  </div>
+                                </a>
+                              </li>`
+  }
 }
 
-function noneOfResult() {
-  const ul = document.createElement('ul');
-  ul.classList.add('searchBoxList');
-  const li = document.createElement('li');
-  li.classList.add('searchBoxItem');
-  ul.appendChild(li);
-  const span = document.createElement('span');
-  span.innerText = '검색 결과가 없습니다';
-  li.appendChild(span);
-  const searchBox = document.querySelector('.searchBox');
-  searchBox.appendChild(ul);
-}
+// function noneOfResult() {
+//   const ul = document.createElement('ul');
+//   ul.classList.add('searchBoxList');
+//   const li = document.createElement('li');
+//   li.classList.add('searchBoxItem');
+//   ul.appendChild(li);
+//   const span = document.createElement('span');
+//   span.innerText = '검색 결과가 없습니다';
+//   li.appendChild(span);
+//   const searchBox = document.querySelector('.searchBox');
+//   searchBox.appendChild(ul);
+// }
 
-function showSearchResult() {
-  const searchBox = document.querySelector('.searchBox');
-  const value = document.querySelector('.searchInput').value;
+function showSearchResult(evt) {
+  const value = evt.target.value;
   const result = searchData.filter((e) => {
-    if (e.userId.includes(value)) {
-      paintSearchList(e.userId, e.userName, e.imgUrl);
-      searchBox.classList.remove('hide');
-    } else {
-      noneOfResult();
-    }
-    if (value === '') {
-      searchBox.classList.add('hide');
-    }
+    return e.userId.includes(value);
   })
-  return result;
+  paintSearchList(result);
 }
 
+function activeSearchbar() {
+  const searchInput = document.querySelector('.searchInput');
+  searchInput.addEventListener('keyup', showSearchResult);
+}
+
+//검색 박스 숨기기
 function hideSearchBox() {
   const searchBox = document.querySelector('.searchBox');
   window.addEventListener('click', (e) => {
@@ -222,11 +248,6 @@ function hideSearchBox() {
       document.querySelector('.searchInput').value = '';
     }
   })
-}
-
-function activeSearchbar() {
-  const searchInput = document.querySelector('.searchInput');
-  searchInput.addEventListener('input', showSearchResult);
 }
 
 function init() {
