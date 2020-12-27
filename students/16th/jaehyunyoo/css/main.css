@@ -74,20 +74,62 @@ nav{
 .navMenu__right{
   display: flex;
 }
-.navMenu__right li{
+.navMenu__right .navMenu{
   margin-left:15px;
 }
-.navMenu__right li:first-child{
+.navMenu__right .navMenu:first-child{
   margin-left:0;
 }
-.profile__Menu span{
+.profile__Menu{
+  position: relative;
+  background: url(../img/myimg.png) 50% 50% no-repeat;
   width:22px;
   height:22px;
-}
-.profile__Menu span img{
+  background-size: cover;
   border-radius: 50%;
+  cursor: pointer;
+  text-indent:-9999px;
+}
+.profile__Menu .sub__Menu{
+  text-indent: 0;
+  position: absolute;
+  top:40px;
+  right:0;
+  z-index:2;
+  width:200px;
+  background-color: #fff;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
+.sub__Menu li{
+  width:100%;
+  display: flex;
+  align-items: center;
+  flex:1;
+  cursor: pointer;
+  padding:12px;
+}
+.sub__Menu li span{
+  margin:0 5px;
+}
+.sub__Menu li span:last-child{
+  width:100%;
+}
+.sub__Menu li span a{
+  display: block;
+  width:100%;
+  color:#000;
+}
+.sub__Menu li:hover{
+  background-color: #f1f1f1;
+}
+.sub__Menu li:last-child{
+  border-top:1px solid #E9E9E9;
+}
+.d_none{
+  display: none;
+}
 /*main*/
 main{
   padding-top:94px;
@@ -238,6 +280,7 @@ main{
   align-items: center;
 }
 .form__area textarea{
+  flex-grow: 1;
   height:18px;
   max-height: 80px;
   font-size:15px;
@@ -254,6 +297,15 @@ main{
   max-width:300px;
   width:100%;
 }
+.right__feed aside header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right__feed aside header button a{
+  color:#0095f6;
+}
+
 .my__profile{
   display: flex;
   align-items: center;
@@ -342,3 +394,13 @@ main{
   color:#c7c7c7;
 }
 
+.heart{
+  fill:transparent;
+  stroke: #737373;
+  stroke-width: 4;
+  display: block;
+}
+.heart__fill{
+  fill: red;
+  stroke-width: 0;
+}
