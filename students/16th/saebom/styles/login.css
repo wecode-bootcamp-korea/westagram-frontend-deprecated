@@ -1,106 +1,162 @@
 * {
-    box-sizing: border-box;
-    margin:0;
-    background-color: #fafafa;
- }
-
-.container {
-   flex-direction: column;
-   align-items: center;
-   overflow: hidden;
-   width: 935px;
-   height: 100%;
-   margin: auto;
-   border: 1px solid red;
-   display: flex;
+   box-sizing: border-box;
+   margin:0;
+   background-color: rgba(var(--b3f,250,250,250),1);
 }
 
-/* main */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-width: 935px;
+  width: 100%;
+  height: 100%;
+  margin: 32px auto 0;
+}
+
+/* main - login area */
 main {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 682px;
- }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 682px;
+}
 
 .loginBox {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   width: 350px;
-   height: 337.8px;
-   border: 1px solid #bdbdbd;
-   background-color: #fff;
-   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 355px;
+  height: 380px;
+  margin: 40px auto 0px;
+  padding: 10px 0;
+  border: 1px solid #bdbdbd;
+  background-color: #fff;
 }
 
 h1 {
-   padding: 20px;
-   text-align: center;
-   background-color: #ffffff;
-   font-family: 'Lobster', cursive;
-   font-size: 45px;
-   font-weight: lighter;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  font-weight: lighter;
 }
 
 .loginInfo {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   height: 400px;
-   padding-bottom: 15px;
-   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  background-color: #ffffff;
 }
 
-.loginInfo div {
-   background-color: #ffffff;
+.userId , .userPw{
+  width: 268px;
+  height: 38px;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  background-color: rgba(var(--b3f,250,250,250),1);
+  font-size: 12px;
+  cursor: text;
 }
 
-.loginInfo img {
-   width: 100px;
-   height: 100px; 
-   margin: 10px auto;
-   border-radius: 100px;
-}
 
 .loginBtn {
-   margin: 10px;
-   padding: 5px 20px;
-   font-weight: 600;
-   border: 1px solid #0095f6;
-   border-radius: 4px;
-   background-color: #0095f6;
-   color: white;
-   cursor: pointer;
+  width:  268px;
+  height: 34px;
+  margin: 10px;
+  padding: 5px 20px;
+  font-weight: 600;
+  border: 1px solid #0095f6;
+  border-radius: 4px;
+  background-color: #0095f6;
+  color: white;
+  cursor: pointer;
 }
 
-.loginInfo span{
-   background-color: #ffffff;
+.active{
+   border: 1px solid #3b5999;
+   background-color: #3b5999;
 }
 
-.accountChange{
-   border: none;
-   background-color: #ffffff;
-   color: #0095f6;
-   font-weight: 600;
-   font-size: 14px;
+.or {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #ffffff;
 }
 
-/* footer */
+.line {
+  width: 104.75px;
+  height: 1px;
+  background-color: rgba(var(--b38,219,219,219),1);
+}
+
+.lineText{
+  padding: 0 10px;
+  background-color: #ffffff;
+  font-size: 15px;
+}
+.facebookLogin {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  align-items: center;
+  cursor: pointer;
+}
+
+.facebookLogin img {
+  width: 22px;
+}
+
+.facebookLogin span {
+  padding-left: 10px;
+  background-color: #ffffff;
+  color: #3b5999;
+  font-size: 15px;
+}
+
+.forgotPw {
+  padding-top:10px;
+  border: none;
+  background-color: #ffffff;
+  color: #3b5999;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* footer - information area*/
 footer {
-   width: 100%;
-   height: 150.46px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
- }
- 
+  width: 100%;
+  height: 150.46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 ul {
-   display: none;
-   display: flex;
-   padding: 10px 20px 10px;
+  display: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 20px;
+  list-style:none;
+}
+
+li {
+  padding-left: 15px;
+  font-size: 13px;
+  color: gray;
+}
+
+.copyright {
+  padding-top: 20px;
+  font-size: 13px;
+  color: gray;
 }
