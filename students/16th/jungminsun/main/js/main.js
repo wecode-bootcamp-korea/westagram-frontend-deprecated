@@ -158,32 +158,6 @@ const searchData = [
   }
 ]
 
-// function paintSearchList(id, name, url) {
-//   const ul = document.createElement('ul');
-//   ul.classList.add('searchBoxList');
-//   const li = document.createElement('li');
-//   li.classList.add('searchBoxItem');
-//   ul.appendChild(li);
-//   const a = document.createElement('a');
-//   a.setAttribute('href', '#');
-//   li.appendChild(a);
-//   const img = document.createElement('img');
-//   img.setAttribute('src', url);
-//   a.appendChild(img);
-//   const div = document.createElement('div');
-//   div.classList.add('accountInfoContainer');
-//   const p = document.createElement('p');
-//   p.classList.add('searchId');
-//   p.innerText = id;
-//   const span = document.createElement('span');
-//   span.innerText = name;
-//   div.appendChild(p);
-//   div.appendChild(span);
-//   a.appendChild(div);
-//   const searchBox = document.querySelector('.searchBox');
-//   searchBox.appendChild(ul);
-// }
-
 function paintSearchList(resultArr) {
   const searchBox = document.querySelector('.searchBox');
   if (resultArr.length > 0) {
@@ -213,19 +187,6 @@ function paintSearchList(resultArr) {
   }
 }
 
-// function noneOfResult() {
-//   const ul = document.createElement('ul');
-//   ul.classList.add('searchBoxList');
-//   const li = document.createElement('li');
-//   li.classList.add('searchBoxItem');
-//   ul.appendChild(li);
-//   const span = document.createElement('span');
-//   span.innerText = '검색 결과가 없습니다';
-//   li.appendChild(span);
-//   const searchBox = document.querySelector('.searchBox');
-//   searchBox.appendChild(ul);
-// }
-
 function showSearchResult(evt) {
   const value = evt.target.value;
   const result = searchData.filter((e) => {
@@ -236,7 +197,7 @@ function showSearchResult(evt) {
 
 function activeSearchbar() {
   const searchInput = document.querySelector('.searchInput');
-  searchInput.addEventListener('keyup', showSearchResult);
+  searchInput.addEventListener('input', showSearchResult);
 }
 
 //검색 박스 숨기기
