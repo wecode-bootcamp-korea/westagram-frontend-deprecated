@@ -24,6 +24,7 @@ commentInput.addEventListener('input', e => {
 // 게시 버튼 클릭으로 댓글 게시
 enrollBtn.addEventListener('click', e => {
     if (commentInput.value.trim() !== '') {
+        enrollBtn.setAttribute('disabled', 'true');
         postComment();
     }
 })
