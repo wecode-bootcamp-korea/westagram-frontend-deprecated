@@ -1,6 +1,6 @@
 'use strict';
 
-const inputs = document.querySelectorAll('.fillInput'),
+const inputs = document.querySelectorAll('.loginInput'),
       loginBtn = document.querySelector('.loginBtn');
 
 function inputHandler() {

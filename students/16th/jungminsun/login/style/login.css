@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.fillInput {
+.loginInput {
   width: 266px;
   height: 36px;
   background: #FAFAFA;
@@ -38,7 +38,7 @@
   margin-bottom: 6px;
 }
 
-.fillInput:focus {
+.loginInput:focus {
   outline: none;
   border: 1px solid gray;
 }
@@ -61,17 +61,6 @@
 
 .loginBtn:hover {
   cursor: pointer;
-}
-
-.alertForWrongLogin {
-  font-size: 14px;
-  text-align: center;
-  color: red;
-  margin-top: 60px;
-}
-
-.alertForWrongLogin.hide {
-  display: none;
 }
 
 .linkToFindPw {
