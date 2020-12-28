@@ -37,7 +37,6 @@
     top: -2px;
 }
 
-
 .main__nav .nav__center input {
     border: 1px solid #dbdbdb;
     border-radius: 3px;
@@ -88,7 +87,6 @@
     margin-left: 10px;
     cursor: pointer;
 }
-
  
 .westagram__story__box ul li img {
     width: 70px;
@@ -168,7 +166,6 @@
 
 .westagram__feed__info {
     display: flex;
-    
 }
 
 .westagram__feed__info p {
@@ -195,7 +192,6 @@
     border: none;
     background-color: #fff;
     outline: none;
-
 }
 
 .westagram__feed__comment button {
@@ -301,4 +297,10 @@
 
 .westagram__copyright p {
     font-size: 5px;
+}
+
+/* westagram love on & off */
+
+.mylike {
+    visibility: hidden;
 }

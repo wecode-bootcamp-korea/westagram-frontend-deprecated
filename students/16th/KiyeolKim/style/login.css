@@ -95,8 +95,6 @@
     position: absolute;
     top: -7px;
     left: 180px;
-    
-
 }
 
 .westagram__hr__container .westagram__hr {
@@ -116,7 +114,6 @@
     width: 20px;
     position: absolute;
     left: 110px;
-
 }
 
 .westagram__facebook__login a {
@@ -130,13 +127,11 @@
 .westagram__password__lose {
     text-align: center;
     padding: 15px;
-
 }
 
 .westagram__password__lose a {
     font-size: 12px;
     color: #00376B;
-
 }
 
 /* westagram box SignUp */
@@ -146,7 +141,6 @@
     align-items: center;
     border: 1px solid #dbdbdb;
     background-color: #fff;
-    
     height: 60px;
     margin-bottom: 30px;
 }

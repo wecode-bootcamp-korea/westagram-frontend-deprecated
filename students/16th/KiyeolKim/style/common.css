@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+
 html, body {
     height: 100%;
     background-color: #FAFAFA;
@@ -10,7 +11,12 @@ a {
     text-decoration: none;
 }
 
-
+button {
+    border: #fff;
+    outline: #fff;
+    background-color: #fff;
+    padding: 0;
+}
 
 @media screen and (max-width: 876px) {
     .westagram__content img {
