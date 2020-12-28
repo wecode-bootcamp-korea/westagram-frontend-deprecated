@@ -18,7 +18,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-input {
+#loginId, #password {
     display: block;
     margin: 0 auto;
     bottom: 0;
@@ -41,6 +41,7 @@ input {
 }
 
 .btn {
+    opacity: 0.3;
     display: block;
     margin: 0 auto;
     width: 260px;
@@ -54,12 +55,7 @@ input {
     font-weight: 700;
 }
 
-.btn:hover {
-    background-color: #043667;
-}
-
 .forgotPw {
-    font-family: ;
     font-style: normal;
     display: block;
     text-align: center;
