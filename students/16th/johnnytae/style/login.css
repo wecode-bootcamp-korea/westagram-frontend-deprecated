@@ -11,7 +11,7 @@ body {
   height: 440px;
   margin-top: 40px;
   padding: 30px 40px;
-  
+  border-radius: 3px;
 }
 
 .logo {
