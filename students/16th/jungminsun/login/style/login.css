@@ -46,7 +46,7 @@
   border: 1px solid gray;
 }
 
-.fillBtn {
+.loginBtn {
   width: 268px;
   height: 30px;
   background: #0095F6;
@@ -58,12 +58,23 @@
   margin: 8px 0;
 }
 
-.fillBtn:disabled {
+.loginBtn:disabled {
   background: #B2DFFC;
 }
 
-.fillBtn:hover {
+.loginBtn:hover {
   cursor: pointer;
+}
+
+.alertForWrongLogin {
+  font-size: 14px;
+  text-align: center;
+  color: red;
+  margin-top: 60px;
+}
+
+.alertForWrongLogin.hide {
+  display: none;
 }
 
 .linkToFindPw {
