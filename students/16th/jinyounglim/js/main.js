@@ -24,7 +24,8 @@ cmtBtn.addEventListener('click', (e) => {
   if (!cmtInput.value) {
     return;
   }
-  cmtBox.innerHTML = `<li>
+  cmtBox.innerHTML = 
+  `<li>
         <p>
             <strong class="user_id">${'delheure'}</strong>
             ${cmtInput.value}
@@ -35,6 +36,3 @@ cmtBtn.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', likesActive);
-
-
-
