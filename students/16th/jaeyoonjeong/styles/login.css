@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ body {
     height: 100vh;
 }
 
-main{
+main {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -20,7 +20,7 @@ main{
 }
 
 /* logo_box */
-.logo_box h1{
+.logo_box h1 {
     font-family: 'Lobster', serif;
     text-align: center;
     maigin: 0;
@@ -28,11 +28,11 @@ main{
 }
 
 /* input_box */
-.input_box{
+.input_box {
     display: flex;
     flex-direction: column;
 }
-.input_box input{
+.input_box input {
     height: 37px;
     margin: 0 40px 6px;
     border: 1px solid #bbb;
@@ -50,7 +50,7 @@ main{
 }
 
 /* forgot_box */
-.forgot_box{
+.forgot_box {
     display: flex;
     justify-content: center;
 }
