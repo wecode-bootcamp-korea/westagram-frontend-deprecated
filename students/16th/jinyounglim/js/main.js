@@ -1,45 +1,40 @@
-const btnTxtAll = document.querySelector('.btn_txt_all');
+const btnTxtMore = document.querySelector('.btn_txt_more');
 const feedTxt = document.querySelector('.feeds_txt p');
 
-btnTxtAll.addEventListener('click', txtShow = () => {
-    feedTxt.classList.add('all');
-    btnTxtAll.remove();
+btnTxtMore.addEventListener('click', () => {
+  feedTxt.classList.add('all');
+  btnTxtMore.remove();
 });
 
 const likes = document.querySelectorAll('.btn_heart');
-
-for(const like of likes){ 
-    like.addEventListener('click', function(){
-        this.classList.toggle('on');
+function likesActive() {
+  for (const like of likes) {
+    like.addEventListener('click', function () {
+      this.classList.toggle('on');
     });
+  }
 }
 
-const cmBox = document.querySelector('.comments_list');
-const cmInput = document.querySelector('.comments_write input');
-const cmBtn = document.querySelector('.btn_comment');
+const cmtBox = document.querySelector('.cmt_list');
+const cmtInput = document.querySelector('.cmt_write input');
+const cmtBtn = document.querySelector('.btn_submit');
 
-cmBtn.addEventListener('click', cmPut = (e) => {
-    e.preventDefault();
-
-    const cm = document.createElement('li');
-    const cmTxt = document.createElement('p');
-    const id = document.createElement('strong');
-
-    const cmHeart = document.createElement('button');
-    cmHeart.className ='btn_heart btn_small btn_com';
-    id.className = 'user_id';
-
-    cmTxt.innerHTML = cmInput.value;
-    id.innerHTML = 'delheure29';
-    
-    if(cmInput.value){
-        cmBox.appendChild(cm);
-        cm.appendChild(id);
-        cm.appendChild(cmTxt);
-        cm.appendChild(cmHeart);     
-        cmInput.value = "";
-    }
+cmtBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (!cmtInput.value) {
+    return;
+  }
+  cmtBox.innerHTML = `<li>
+        <p>
+            <strong class="user_id">${'delheure'}</strong>
+            ${cmtInput.value}
+        </p>
+        <button class="btn_heart btn_small btn_com">Like</button>
+    </li>`;
+  cmtInput.value = '';
 });
+
+document.addEventListener('click', likesActive);
 
 
 

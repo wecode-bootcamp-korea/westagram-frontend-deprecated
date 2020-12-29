@@ -1,86 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import 'reset.css';
+
 :root {
-    --bg-color: #fafafa;
-    --border-gray: solid 1px #dbdbdb;
-    --id-color: #262626;
-    --sub-color: #8e8e8e;
-    --high-color: #0095f6;
-    --font-bold: 600;
+  --bg-color: #fafafa;
+  --border-gray: solid 1px #dbdbdb;
+  --id-color: #262626;
+  --sub-color: #8e8e8e;
+  --high-color: #0095f6;
+  --font-gray: #c7c7c7;
+  --font-bold: 600;
 }
 
-*{
-	box-sizing: border-box;
-	outline: 0;
+* {
+  box-sizing: border-box;
+  outline: 0;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: middle;
-}
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-html{
-	font-size: 10px;
+html {
+  font-size: 10px;
 }
 
 body {
-    line-height: 1;
-    background-color: var(--bg-color);
+  line-height: 1;
+  background-color: var(--bg-color);
 }
 
-ol, ul {
-	list-style: none;
+h1 {
+  font-family: 'Lobster', cursive;
 }
 
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-button{
-	border: none;
-	background: none;
-	padding: 0;
-	cursor: pointer;
-}
-
-a{
-    text-decoration: none;
-}
-
-h1{
-	font-family:  'Lobster', cursive;
-}
-
-img{
-	width: 100%;
-	height: 100%;
+img {
+  width: 100%;
+  height: 100%;
 }

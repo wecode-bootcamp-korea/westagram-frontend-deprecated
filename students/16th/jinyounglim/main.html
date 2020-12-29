@@ -9,8 +9,8 @@
     <link rel="icon" sizes="192x192" href="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png">
 </head>
 <body>
-    <header>
-        <nav>
+    <nav>
+        <section>
             <h1 class="logo">Westargram</h1>
             <div class="search_wr">
                 <i>search icon</i>
@@ -23,8 +23,8 @@
                 <li><button class="btn_heart btn_com">Like</button></li>
                 <li><button class="btn_mypage btn_com">My page</button></li>
             </ul>
-        </nav>
-    </header>
+        </section>
+    </nav>
     <main>
         <section class="story">
             <ul>
@@ -65,11 +65,13 @@
                 <button class="btn_more btn_com"></button>
             </div>
             <ul class="feeds_img">
-                <li><img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/132601143_721843625415991_3629856789401793119_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=-tOA0Q8X9UgAX836igb&tp=1&oh=75c255af728060279d706eaaec888865&oe=600C4512" alt="feed contents image"></li>
+                <li>
+                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/132601143_721843625415991_3629856789401793119_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=-tOA0Q8X9UgAX836igb&tp=1&oh=75c255af728060279d706eaaec888865&oe=600C4512" alt="feed contents image">
+                </li>
             </ul>
             <div class="feeds_content">
                 <button class="btn_heart btn_com">Like</button>
-                <button class="btn_comments  btn_com">Comments</button>
+                <button class="btn_cmt  btn_com">cmt</button>
                 <button class="btn_dm  btn_com">Direct Message</button>
                 <button class="btn_bookmark btn_com">Book mark</button>
                 <p class="like_count">좋아요 <span>11,000개</span></p>
@@ -79,23 +81,25 @@
                         <strong class="user_id">delheure29</strong>
                         위스타그램 첫 포스트! 앞으로 화이팅!
                     </p>
-                    <button class="btn_txt_all">더보기</button>
+                    <button class="btn_txt_more">더보기</button>
                 </div>
 
-                <p class="comments_all">댓글 30개 모두 보기</p>
-                <ul class="comments_list feeds_txt">
+                <p class="cmt_all">댓글 30개 모두 보기</p>
+                <ul class="cmt_list feeds_txt">
                 </ul>    
 
                 <i class="txt_time">53분 전</i>
             </div>
-            <form class="comments_write"> 
+            <form class="cmt_write"> 
                 <input type="text" placeholder="댓글 달기...">
-                <button class="btn_comment" type="submit">게시</button>
+                <button class="btn_submit" type="submit">게시</button>
             </form>
         </section>
         <section class="feeds_right">
             <div class="user_info main_profile">
-                <p class="user_profile"><img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/87202283_813565965805206_1543825822748508160_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=bEs3gXnydDcAX8A8t0R&tp=1&oh=5941fd6f57788cecb2669bad711f8e22&oe=600E7F48" alt="user profile image"></p>
+                <p class="user_profile"
+                    ><img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/87202283_813565965805206_1543825822748508160_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=bEs3gXnydDcAX8A8t0R&tp=1&oh=5941fd6f57788cecb2669bad711f8e22&oe=600E7F48" alt="user profile image">
+                </p>
                 <div class="sub_wr">
                     <strong class="user_id">delheure29</strong>
                     <span class="user_subtxt">위코드 16기 프론트엔드 개발 지망생</span>
@@ -106,7 +110,9 @@
                 <button class="btn_view_all">모두 보기</button>
                 <ul class="user_list">
                     <li class="user_info">
-                        <p class="user_profile"><img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/128896071_196191798715046_7589079194622738820_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=DV8pXQ2D9U0AX9WjOlT&tp=1&oh=5ffc3bf8bc76b5a7b1b1b590f71ebb54&oe=6011406B" alt="user profile image"></p>
+                        <p class="user_profile">
+                            <img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/128896071_196191798715046_7589079194622738820_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=DV8pXQ2D9U0AX9WjOlT&tp=1&oh=5ffc3bf8bc76b5a7b1b1b590f71ebb54&oe=6011406B" alt="user profile image">
+                        </p>
                         <div class="sub_wr">
                             <strong class="user_id">zzangjeolmi</strong>
                             <span class="user_subtxt">chorong님이 팔로우합니다.</span>
@@ -114,7 +120,9 @@
                         <button class="btn_follow">팔로우</button>
                     </li>
                     <li class="user_info">
-                        <p class="user_profile"><img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/87202283_813565965805206_1543825822748508160_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=bEs3gXnydDcAX8A8t0R&tp=1&oh=5941fd6f57788cecb2669bad711f8e22&oe=600E7F48" alt="user profile image"></p>
+                        <p class="user_profile">
+                            <img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/87202283_813565965805206_1543825822748508160_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=bEs3gXnydDcAX8A8t0R&tp=1&oh=5941fd6f57788cecb2669bad711f8e22&oe=600E7F48"    alt="user profile image">
+                        </p>
                         <div class="sub_wr">
                             <strong class="user_id">delheure29</strong>
                             <span class="user_subtxt">chorong님이 팔로우합니다.</span>
@@ -122,7 +130,9 @@
                         <button class="btn_follow">팔로우</button>
                     </li>
                     <li class="user_info">
-                        <p class="user_profile"><img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/67745613_674109426434274_106145512515698688_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=jc7VskxfXHAAX8tZ7C4&tp=1&oh=0b4116f9718960d01d1db08f0dec2efc&oe=600EF148" alt="user profile image"></p>
+                        <p class="user_profile">
+                            <img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/67745613_674109426434274_106145512515698688_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=jc7VskxfXHAAX8tZ7C4&tp=1&oh=0b4116f9718960d01d1db08f0dec2efc&oe=600EF148" alt="user profile image">
+                        </p>
                         <div class="sub_wr">
                             <strong class="user_id">claire_luvcat</strong>
                             <span class="user_subtxt">chorong님이 팔로우합니다.</span>
@@ -130,7 +140,9 @@
                         <button class="btn_follow">팔로우</button>
                     </li>
                     <li class="user_info">
-                        <p class="user_profile"><img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/54446654_2298678970399971_7346204911681404928_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=52TV2MKh01YAX9C0NgO&tp=1&oh=a4aa1557057df8ede1f33e5f0287da3b&oe=60106A3F" alt="user profile image"></p>
+                        <p class="user_profile">
+                            <img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/54446654_2298678970399971_7346204911681404928_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=52TV2MKh01YAX9C0NgO&tp=1&oh=a4aa1557057df8ede1f33e5f0287da3b&oe=60106A3F" alt="user profile image">
+                        </p>
                         <div class="sub_wr">
                             <strong class="user_id">love_doong.doong</strong>
                             <span class="user_subtxt">chorong님이 팔로우합니다.</span>
@@ -138,7 +150,9 @@
                         <button class="btn_follow">팔로우</button>
                     </li>
                     <li class="user_info">
-                        <p class="user_profile"><img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/54731574_263156361292875_3099228545159790592_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=p48PlHEhLKcAX9ahH4w&tp=1&oh=1b11246862b0264fb1b3ae38d862bd84&oe=60116E0C" alt="user profile image"></p>
+                        <p class="user_profile">
+                            <img src="https://instagram.ficn1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/54731574_263156361292875_3099228545159790592_n.jpg?_nc_ht=instagram.ficn1-1.fna.fbcdn.net&_nc_ohc=p48PlHEhLKcAX9ahH4w&tp=1&oh=1b11246862b0264fb1b3ae38d862bd84&oe=60116E0C" alt="user profile image">
+                        </p>
                         <div class="sub_wr">
                             <strong class="user_id">qkqhro</strong>
                             <span class="user_subtxt">chorong님이 팔로우합니다.</span>
@@ -148,8 +162,23 @@
                 </ul>
             </div>
         </section>
-    </main>
-    
+        <section class="footer">
+            <ul>
+                <li><a href="https://about.instagram.com/">소개</a></li>
+                <li><a href="https://help.instagram.com/">도움말</a></li>
+                <li><a href="https://about.instagram.com/blog/">홍보 센터</a></li>
+                <li><a href="https://www.instagram.com/developer/">API</a></li>
+                <li><a href="https://www.instagram.com/about/jobs/">채용 정보</a></li>
+                <li><a href="https://www.instagram.com/legal/privacy/">개인정보처리방침</a></li>
+                <li><a href="https://www.instagram.com/legal/terms/">약관</a></li>
+                <li><a href="https://www.instagram.com/explore/locations/">위치</a></li>
+                <li><a href="https://www.instagram.com/directory/profiles/">인기 계정</a></li>
+                <li><a href="https://www.instagram.com/directory/hashtags/">해시태그</a></li>
+                <li>언어</li>
+            </ul>
+            <p>© 2020 WESTAGRAM FROM JINYOUNG</p>
+        </section>
+    </main>    
     <script src="js/main.js"></script>
 </body>
 </html>
