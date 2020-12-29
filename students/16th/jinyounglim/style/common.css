@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import 'reset.css';
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import "reset.css";
 
 :root {
-  --bg-color: #fafafa;
-  --border-gray: solid 1px #dbdbdb;
-  --id-color: #262626;
-  --sub-color: #8e8e8e;
-  --high-color: #0095f6;
-  --font-gray: #c7c7c7;
-  --font-bold: 600;
+    --bg-color: #fafafa;
+    --border-gray: solid 1px #dbdbdb;
+    --id-color: #262626;
+    --sub-color: #8e8e8e;
+    --high-color: #0095f6;
+    --font-gray: #c7c7c7;
+    --font-bold: 600;
 }
 
 * {
-  box-sizing: border-box;
-  outline: 0;
+    box-sizing: border-box;
+    outline: 0;
 }
 
 html {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 body {
-  line-height: 1;
-  background-color: var(--bg-color);
+    line-height: 1;
+    background-color: var(--bg-color);
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
 }
 
 img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
