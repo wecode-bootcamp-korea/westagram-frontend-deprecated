@@ -6,25 +6,47 @@ const commentBtns = document.querySelectorAll('.commentBtn'),
       
 // 댓글 추가 기능
 
-function commentInputHandler(evt) {
-  const targetVal = evt.target.value;
-  if (evt.target.id === 'input1') {
-    if (targetVal !== '') {
-      commentBtns[0].removeAttribute('disabled');
-      return;
-    }
-  }
-  if (evt.target.id === 'input2') {
-    if (targetVal !== '') {
-      commentBtns[1].removeAttribute('disabled');
-      return;
-    }
-  }
+//코드 리뷰전 
+// function commentInputHandler(evt) {
+//   const targetVal = evt.target.value;
+//   if (evt.target.id === 'input1') {
+//     if (targetVal !== '') {
+//       commentBtns[0].removeAttribute('disabled');
+//       return;
+//     }
+//   }
+//   if (evt.target.id === 'input2') {
+//     if (targetVal !== '') {
+//       commentBtns[1].removeAttribute('disabled');
+//       return;
+//     }
+//   }
+// }
+
+//코드 리뷰후 
+function activeCommentBtn(evt) {
+ const targetVal = evt.target.value;
+ if (targetVal.length > 0) {
+   const targetParent = evt.target.parentElement.parentElement.parentElement.parentElement;
+   for (let i = 0; i < commentBtns.length; i++) {
+     if (commentBtns[i].parentElement.parentElement.parentElement.parentElement.id ===
+      targetParent.id) {
+        commentBtns[i].removeAttribute('disabled');
+      }
+   }
+ }
 }
 
-function addCommentPaint(inputIdx, listIdx) {
-  const inputVal = commentInputs[inputIdx].value;
-  const commentLists = document.querySelectorAll('.commentsList');
+function commentBtnHandler(evt) {
+  evt.preventDefault();
+  const containerId = evt.target.parentElement.parentElement.parentElement.parentElement.id;
+  const getContainer = document.getElementById(containerId);
+  let inputVal = getContainer.children[3].children[0].children[0].children[0].value;
+  const commentList= getContainer.children[2].children[3].children[0];
+  addCommentPaint(inputVal, commentList);
+}
+
+function addCommentPaint(inputVal, list) {
   const li = document.createElement('li');
   li.classList.add('commentItem');
   const aTag = document.createElement('a');
@@ -50,38 +72,17 @@ function addCommentPaint(inputIdx, listIdx) {
 
   li.appendChild(delButton);
   li.appendChild(button);
-  commentLists[listIdx].appendChild(li);
-  commentInputs[inputIdx].value = '';
+  
+  list.appendChild(li);
 }
 
-function addCommentHandler(evt) {
-  const targetId = evt.target.id;
-  evt.preventDefault();
-  if (targetId === 'btn1') {
-    addCommentPaint(0, 0);
-  }
-  if (targetId === 'btn2') {
-    addCommentPaint(1, 1);
-  }
-}
+commentInputs.forEach((input) => {
+  input.addEventListener('input', activeCommentBtn);
+})
 
-function clickCommentBtn() {
-  commentBtns.forEach((btn) => {
-    btn.addEventListener('click', addCommentHandler);
-  })
-}
-
-function inputSubmit() {
-  commentForms.forEach((form) => {
-    form.addEventListener('submit', addCommentHandler);
-  })
-}
-
-function activeBtn() {
-  commentInputs.forEach((input) => {
-    input.addEventListener('input', commentInputHandler);
-  })
-}
+commentBtns.forEach((btn) => {
+  btn.addEventListener('click', commentBtnHandler);
+})
 
 //댓글 좋아요 기능
 function addLikeHandler(evt) {
@@ -212,9 +213,6 @@ function hideSearchBox() {
 }
 
 function init() {
-  clickCommentBtn();
-  inputSubmit();
-  activeBtn();
   addLike();
   openMenuBox();
   activeSearchbar();
