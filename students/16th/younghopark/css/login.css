@@ -1,25 +1,30 @@
 body{
     background-color: #fafafa;
 }
+
 .login {
     display: flex;
     justify-content: center;
     margin-top: 10%;
 }
+
 .container {
+    position: relative;
     width: 350px;
     height: 380px;
+    padding: 10px 0;
     background: #ffffff;
-    position: relative;
     border: 1px solid #000;
     border-radius: 1px;
-    padding: 10px 0;
 }
+
 .logo {
     width: 175px;
     height: 51px;
-    margin: 22px 86.5px 12px;
+    margin: 15px 75px 12px;
+    font-family: 'Lobster', cursive;
 }
+
 .logo h1 {
     font-size: 30px;
     color : #262626;
@@ -28,6 +33,7 @@ body{
 .idForm {
     position: relative;
 }
+
 .userId {
     width: 260px;
     height: 36px;
@@ -37,9 +43,11 @@ body{
     border-radius: 5px;
     outline: none;
 }
+
 .pwForm {
     position: relative;
 }
+
 .userPw {
     width: 260px;
     height: 36px;
@@ -49,6 +57,7 @@ body{
     border-radius: 5px;
     outline: none;
 }
+
 .loginBtn {
     width: 268px;
     height: 30px;
@@ -60,11 +69,13 @@ body{
     border:none;
     outline: none;
 }
-.forget {
+
+.forgetBtn {
     position: relative;
     top: 50px;
     text-align: center;
 }
+
 .forgetPw{
     text-decoration: none;
     color: #000;
