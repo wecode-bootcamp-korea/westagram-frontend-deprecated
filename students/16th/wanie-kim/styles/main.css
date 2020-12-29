@@ -1,9 +1,9 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
-ul {
-    margin: 0px;
-    padding: 0px;
+
+html {
+    background-color: #FAFAFA;
 }
 
 body {
@@ -11,32 +11,33 @@ body {
     height: 100vh;
     margin: 0px;
 }
-header {
+
+nav {
+    display: flex;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-}
-nav {
     width: 100%;
     height: 54px;
-    display: flex;
-    justify-content: center;
     border-bottom: 1px solid #bbb;
+    background-color: #FFFFFF;
 }
 
-.nav-main {
-    width: 975px;
+.nav-left {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 975px;
     padding: 0 20px;
 }
+
 .logo {
-    width: 360px;
-    height: 36px;
     display: flex;
     align-items: flex-end;
+    width: 360px;
+    height: 36px;
 }
 
 .nav-input {
@@ -45,25 +46,27 @@ nav {
 }
 
 input {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #bbb;
-    background-color: #FAFAFA;
-    border-radius: 3px;
+    width: 215px;
+    height: 28px;
     padding: 7px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background-color: #FAFAFA;
 }
+
 .logo img {
     width: 103px;
 }
+
 .nav-right {
-    width: 360px;
-    height: 24px;
     display: flex;
     justify-content:flex-end;
+    width: 360px;
+    height: 24px;
     list-style: none;
 }
 
-.nav-right li img {
+.nav-right img {
     align-items: flex-end;
     width: 24px;
     height: 24px;
@@ -75,27 +78,27 @@ input {
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
-    padding-top: 84px;
+    margin: 84px 252.5px 0;
     background-color: #FAFAFA;
 }
 
 .main-left {
-    width: 612px;
-    height: 84px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 612px;
 }
 
-.story {
+.story-container {
+    display: flex;
     width: 614px;
     height: 118px;
     padding: 16px 0;
-    border: 1px solid #bbb;
     margin-bottom: 24px;
+    border: 1px solid #bbb;
+    background-color: #FFFFFF;
 }
 
 .story-wrap {
@@ -106,16 +109,18 @@ main {
 }
 
 .story-wrap li {
-    width: 80px;
-    height: 122px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    width: 80px;
+    height: 100%;
 }
 
 .story-wrap li img {
     width: 56px;
     border-radius: 50%;
+    border: 1px solid red;
 }
 
 .story-wrap li a {
@@ -123,28 +128,234 @@ main {
     font-size: 12px;
 }
 
-.feeds {
-    width: 100%;
-    height: 763.5px;
+.feed {
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 614px;
+    margin-bottom: 60px;
+    border: 1px solid #bbb;
+    background-color: #FFFFFF;
 }
 
-.user {
-    width: 100%;
+.feed-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 60px;
     padding: 16px;
     border-bottom: 1px solid #bbb;
 }
 
-.user-left img {
+.info-img {
     width: 32px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.info-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 536px;
+    height: 41px;
+    margin-left: 14px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-id {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.user-location {
+    margin-top: 2px;
+    font-size: 12px;
+}
+.info-right img {
+    width: 16px;
+}
+
+.feed-img {
+    width: 100%;
+}
+
+.feed-comment {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin-top: 4px;
+}
+.feed-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.feed-comment .feed-icon button{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+.feed-comment img{
+    width: 24px;
+}
+
+.feed-userlikes {
+    display: flex;
+    align-items: center;
+    height: 18px;
+    margin-bottom: 8px;
+    padding: 0 8px;
+}
+
+.feed-userlikes span{
+    font-size: 14px;
+}
+
+.feed-userlikes button{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0;
+}
+
+.feed-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 88px;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.feed-text a {
+    font-weight: bold;
+}
+
+.feed-text .comment-plus{
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+.text-main {
+    margin-bottom: 4px;
+    height: 18px;
+}
+
+.comment-plus {
+    height: 18px;
+    margin-bottom: 4px;
+}
+
+.text-comment {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.comment-left {
+    height: 18px;
+    margin-bottom: 4px;
+
+}
+
+.comment-right{
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.comment-right img{
+    width: 12px;
+    height: 12px;
+}
+
+.feed-time {
+    height: 19px;
+    font-size: 10px;
+    color: #8e8e8e;
+    margin-bottom: 4px;
+}
+
+.comment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    margin-top: 4px;
+    padding: 0 16px;
+    border-top: 1px solid #bbb;
+}
+
+.comment-container input{
+    width: 500px;
+    height: 18px;
+    padding: 0px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.comment-push {
+    height: 18px;
+    font-weight: bold;
+    color: #1F96F7;
 }
 
 aside {
-    broder: 1px solid red;
+    width: 293px;
+    height: 1060px;
+    margin-bottom: 30px;
 }
 
+.my-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    margin: 18px 0 10px;
+}
+
+.my-left {
+    display: flex;
+}
+
+.my-img {
+    width: 56px;
+    border-radius: 50%;
+    border: 1 solid black;
+    margin-right: 12px;
+}
+
+.my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.my-id {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.my-name {
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.my-right {
+    color: #1F96F7;
+    height: 14px;
+    font-weight: bold;
+}
 
 
