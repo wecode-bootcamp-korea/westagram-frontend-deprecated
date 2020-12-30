@@ -1,13 +1,21 @@
-const loginButton = document.getElementsByClassName('bt')[0];
-const button = document.querySelector('.bt')
+const btn = document.getElementById('btn')
 
-loginButton.addEventListener('keyup', function() {
-  const id = document.getElementById('id').Value;
-  const pw = document.getElementById('pw').Value;
-
+document.getElementById('id').addEventListener('keyup', function() {
+  const id = document.getElementById('id').value;
+  const pw = document.getElementById('pw').value;
   if (id.length >= 1 && pw.length >= 1){
-  button.style.opacity = "1"
-} else{
-  button.style.opacity = "0.2"
-}
-});
+    btn.style.opacity = "1";
+  } else{
+    btn.style.opacity = "0.2";
+  }
+})
+
+document.getElementById('pw').addEventListener('keyup', function() {
+  const id = document.getElementById('id').value;
+  const pw = document.getElementById('pw').value;
+  if (id.length >= 1 && pw.length >= 1){
+    btn.style.opacity = "1";
+  } else{
+    btn.style.opacity = "0.2";
+  }
+})

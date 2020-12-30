@@ -13,30 +13,30 @@ main {
   margin: 5px;
 }
 
-.login.mom {
-  width: 300px;
-  border: 1px solid rgb(219, 219, 219);
+.login.wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 30px;
+  width: 300px;
+  border: 1px solid rgb(219, 219, 219);
   overflow: hidden;
 }
 
 .logo {
+  margin: 10px;
   font-family: "Lobster", cursive;
   font-size: 30px;
-  margin: 10px;
 }
 
 .id {
   width: 250px;
   height: 35px;
-  font-size: 14px;
   padding: 10px;
   background-color: #fafafa;
   border: 1px solid rgb(219, 219, 219);
+  font-size: 14px;
 }
 
 .pw {
@@ -47,18 +47,18 @@ main {
   border: 1px solid rgb(219, 219, 219);
 }
 
-.bt {
+.btn {
+  margin-top: 20px;
   width: 250px;
   height: 35px;
   background-color: rgb(187, 224, 252);
   color: white;
   border: none;
-  margin-top: 20px;
 }
 
 .forget {
-  font-size: 12px;
   text-align: center;
   display: block;
   margin-top: 100px;
+  font-size: 12px;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostagram</title>
+  <script defer src="./js/main.js"></script>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <img class="camera" src="./img/instagram.png" alt="camera">       
+        <div class="title">Hostargram</div>
+        <input class="search" type="search" placeholder="검색"> 
+        <div class="rightImg">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="나침반">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png " alt="하트">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="마이페이지">
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="feeds">
+        <article>
+          <div>
+          사진의 주인  
+          </div>
+          <img class="picture"
+            src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/e35/125152755_163994915401973_231789280935019307_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=C2HOC-D1OsgAX_mg_40&tp=1&oh=faea8e42057f20b615acc98de413c4f7&oe=6014B676">
+      <div class="feed_comment">
+        <ul class="list_comment" id="feed_list">
+          <li class="item_comment">
+            <span class="comment_id">hoic</span>
+            <span class="comment_desc">사진이 참 멋진걸?</span>
+          </li>
+        </ul>
+        <div class="feed_entry">
+          <input id="input_feed" placeholder="댓글달기" />
+          <button type="button" id="btn_comment">게시</button>
+        </div>
+      </div>
+        </article>
+      </div>
+    </main>
+  </div>
+  
+  <div class="right">
+    <div class="story">스토리</div>
+    <div class="recommend">추천</div>
+  </div>
+  </div>
+</body>
+
+</html>
