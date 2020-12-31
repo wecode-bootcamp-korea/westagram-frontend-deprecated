@@ -3,11 +3,11 @@ body, button, input, textarea {
     line-height: center;
 }
 
-body {
+/* body {
     display: inlin-flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .logFunction {
     height: 726px;
