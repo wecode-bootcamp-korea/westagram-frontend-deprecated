@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    border-bottom: 1px solid #DBDBDB;
+    height: 54px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    height: 29px;
+    width: 103px;
+}
+
+.searchInput {
+    width: 215px;
+    height: 28px;
+    border: 1px solid  #DBDBDB;
+    background-color: #FAFAFA;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.naviAllIconDiv {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 222px;
+    height: 22px;
+}
+
+.naviAllIconDiv img {
+    height: 22px;
+}
+

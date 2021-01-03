@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin:0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 54px;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+/*feeds*/
+
+.feeds {
+    border: 1px solid red;
+    width: 614px;
+    height: 10000px;
+    padding-top: 30px;
+}
+
+/*aside*/
+aside {
+    margin-bottom: 24px;
+    height: 118px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background-color: #FFFFFF
+}
+
+/*article*/
+
+article {
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    width: 100%;
+    height: 718.33px;
+    background-color: #FFFFFF;
+}
+
+/*articleTop*/
+
+.articleTop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 16px 40px 16px 16px;
+}
+
+.profilePic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.nicknameInarticleTop {
+    display: inline;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*articlePic*/
+
+.articlePic {
+     width: 100%;
+     height: 409.33px;
+}
+
+/*articleBottom*/
+
+.articleBottom {
+    border: 1px solid blue;
+    height: 247px;
+}
+
+.upsideOfCommentInput {
+    border: 1px solid palevioletred;
+    height: 191px;
+    padding: 8px 16px;  /*수정 요망 : 위아래*/
+    font-size: 14px;
+}
+
+.articleBottomsIconsDiv {
+    border: 1px solid purple; 
+}
+
+.clickHeart {
+    height: 24px;
+    width: 24px;
+}
+
+.likeCount{
+    font-weight: bold;
+}
+
+.nickname {
+    font-weight: bold;
+}
+
+.updatedComments {
+    border: 1px solid darkred;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+p {
+    font-size: 8px;
+}
+
+.commentPostbtnDiv {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.commentInput {
+    border:0px;
+    outline:none;
+    font-size: 14px;
+}
+
+.postingBtn {
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+/* mainRight 디브 */
+.mainRight {
+    margin-left: 28px;
+    margin-top: 30px;
+    width: 293px;
+    height: 657px;
+    border: 1px solid orange;
+}
