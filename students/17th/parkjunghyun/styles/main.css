@@ -1,3 +1,4 @@
+/* 상단 nav 바 관련 스타일 */
 .navContainer {
   width: 100%;
   border: #dbdbdb solid 1px;
@@ -56,6 +57,8 @@ nav > * {
   height: 1.5rem;
 }
 
+/* 전체 container(.main) 스티일 */
+
 .main {
   width: 50%;
   height: auto;
@@ -63,11 +66,14 @@ nav > * {
   flex: 1 0.5;
 }
 
+/* .main 내 좌측(-left) container 스타일 */
+
 .main-left {
   width: 65%;
   margin: 2rem 0 1.5rem 0;
 }
 
+/* 다른 사람 프로필 (가로슬라이드) 영역 스타일 */
 .main-left .profiles {
   border: #dbdbdb solid 1px;
   width: 100%;
@@ -111,6 +117,7 @@ nav > * {
   border: purple solid 1px;
 }
 
+/* .main container 내 피드 영역 스타일 */
 .main-left .feeds {
   border: #dbdbdb solid 1px;
   width: 100%;
@@ -177,6 +184,8 @@ nav > * {
   color: gray;
 }
 
+/* .feed 내 댓글 관련 영역 스타일 */
+
 .writeCmt {
   border-top: #dbdbdb solid 1px;
 }
@@ -202,6 +211,25 @@ nav > * {
   padding-right: 5px;
 }
 
+/* 신규 댓글, 좋아요 이미지, 좋아요 수 및 삭제 버튼 style */
+.newCmt {
+  height: 1.5rem;
+}
+
+.newCmt img {
+  width: 15px;
+  height: auto;
+}
+
+.newCmt img:hover {
+  cursor: pointer;
+}
+
+.newCmt > * {
+  float: right;
+}
+
+/* 우측 aside 태그 영역(.main-right) 스타일 */
 .main-right {
   width: 35%;
   margin: 3rem 0 0 2rem;
@@ -259,22 +287,4 @@ nav > * {
 .smblueText {
   color: skyblue;
   font-size: 0.8rem;
-}
-
-/* 신규 댓글, 좋아요 이미지, 좋아요 수 및 삭제 버튼 style */
-.newCmt {
-  height: 1.5rem;
-}
-
-.newCmt img {
-  width: 15px;
-  height: auto;
-}
-
-.newCmt img:hover {
-  cursor: pointer;
-}
-
-.newCmt > * {
-  float: right;
 }

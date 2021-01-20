@@ -9,6 +9,12 @@ function addPost() {
   const likeImg = document.createElement('img');
   const likeCount = document.createElement('span');
   const removeCmt = document.createElement('button');
+  // let classNum = Number(1);
+
+  // newCmt.classList.add(`newCmt${classNum}`);
+  // likeImg.classList.add(`likeImg${classNum}`);
+  // likeCount.classList.add(`likeCount${classNum}`);
+  // removeCmt.classList.add(`removeCmt${classNum}`);
 
   likeImg.src = '/img/heart.png';
   likeCount.innerText = 0;
@@ -24,6 +30,7 @@ function addPost() {
   feeds.appendChild(newCmt);
 
   input.value = '';
+  // classNum += 1;
 
   // 댓글 좋아요 카운트 기능 추가
   const likes = document.querySelectorAll('.newCmt img');
