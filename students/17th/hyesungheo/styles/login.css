@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px;
+}
+
+body{
+    background-color:rgb(250, 250, 250);
+}
+
+.login_container {
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.login-box {
+    margin: 35px;
+
+}
+
+input, textarea {
+    width: 140px;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 7px 12px;
+    
+}
+
+button {
+    background-color: rgb(189, 224, 253);
+    color:white;
+    border: 1px solid;
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding: 7px 12px;
+
+}
