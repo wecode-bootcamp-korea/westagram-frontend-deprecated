@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #FAFAFA;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+#login {
+    width: 350px;
+    height: 380px;
+    text-align: center;
+    margin: auto;
+    margin-top: 64px;
+    border: 1px solid #dbdbdb;
+    padding: 10px 0;
+    background-color: #FFFFFF;
+}
+
+.title {
+    height: 80px;
+    line-height: 80px;
+}
+
+.title h1 {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 40px;
+    
+}
+
+.loginBox {
+    padding: 10px 0;
+}
+
+.loginBox img {
+    width: 220px;
+    height: 88px;
+}
+
+.loginForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.loginForm input {
+    width: 268px;
+    height: 36px;
+    padding: 9px 0px 7px 8px;
+    background-color: #FAFAFA;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.loginForm input:first-child {
+    margin-bottom: 5px;
+}
+
+.loginBtn button {
+    width: 268px;
+    height: 30px;
+    margin: 8px 40px;
+    background-color: #B2dffc;
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginBtn button:focus {
+    border: none;
+    outline: none;
+    background-color: #B2dffc;
+} 
+
+.loginBtn.active button {
+    background-color: #0095F6;
+}
+
+.or {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    width: 268px;
+    height: 15px;
+    margin: 10px 40px 18px;
+    font-size: 12px;
+}
+
+.or span {
+    width: 30px;
+    margin: 0 16px;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    height: 1px;
+    background-color:#dbdbdb;
+    width: 45%;
+}
+
+.otherLogin {
+    width: 268px;
+    outline: none;
+    background-color: transparent;
+    border:transparent;
+    color: #385185;
+    cursor: pointer;
+}
+
+.otherLogin i {
+    margin-right: 8px;
+}
+
+.otherLogin span {
+    font-size: 14px;
+}

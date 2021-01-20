@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 </head>
 <body>
-    
+    <section id="login">
+        <form class="loginBox">
+            <div class="title">
+                <h1>westargram</h1>
+            </div>
+            <div class="loginForm">
+                <input type="text" class="userID" placeholder="전화번호, 사용자 이름 또는 이메일">
+                <input type="password" class="userPW" placeholder="비밀번호">
+                <div class="loginBtn">
+                    <button>로그인</button>
+                </div>
+                <div class="or"><span>또는</span></div>
+                <button class="otherLogin"><i class="fab fa-facebook-square"></i><span>Facebook으로 로그인</span></button>
+                <div><a href="#">비밀번호를 잊으셨나요?</a></div>
+            </div>
+        </form>
+    </section>
+    <script src="js/login.js"></script>
 </body>
 </html>
