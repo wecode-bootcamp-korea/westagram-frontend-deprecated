@@ -12,7 +12,6 @@ body{
     background: #FAFAFA;
     flex-grow: 1;
 }
-
 .navigation-bar-container{
     display: flex;
     justify-content: space-between;
@@ -33,7 +32,6 @@ body{
     font-family: 'Lobster', cursive;
     font-weight: bold;
     font-size: 25px;
-
 }
 .title_nav i,
 .title_nav div{
@@ -72,17 +70,18 @@ body{
     display: flex;
     flex-direction: column;
 }
-.searched-id-list p {
+.searched-id-list div {
+    position: relative;
     border: solid 1px #DBDBDB;
-    line-height: 20px;
-    padding-top: 10px;
-    padding: 10px;
+    height: 30px;
     background: #fafafa;
     z-index: 9;
     width: 100%;
-    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    bottom: -11px;
+    opacity: 0.9;
 }
-
 .icons img{
     width: 22px;
     height: 22px;
@@ -110,7 +109,6 @@ body{
 }
 .settings_icon{
     margin-left: auto;
-
 }
 .round-image{
     border-radius: 50%;
@@ -164,6 +162,8 @@ body{
 }
 .commented-text-remove{
     color: #0095F6;
+    margin-left: auto;
+    font-size: 10px;
 }
 .comment-write-form{
     display: flex;
