@@ -57,17 +57,50 @@ function addPost() {
 }
 
 button.addEventListener('click', addPost);
-window.addEventListener('keydown', (e) => {
+
+// 검색 창 아이디 검색 기능
+const ids = [
+  'wecode',
+  'jung',
+  'hyun',
+  'we',
+  'code',
+  'dasom',
+  'cheerup',
+  'letsgo',
+  'wework',
+];
+
+const search = document.querySelector("input[type ='search']");
+const nav = document.querySelector('.navContainer nav');
+
+function findId(e) {
   if (e.keyCode == 13) {
-    addPost();
-  }
-});
+    const targetId = search.value;
+    const result = ids.filter((id) => id.includes(targetId));
+    const listContainer = document.createElement('div');
+    listContainer.classList.add('listContainer');
 
-const profiles = document.querySelector('.profiles');
-const goNext = document.querySelector('#arrow');
+    if (result[0]) {
+      console.log(result[0]);
+      for (var i = 0; i < result.length; i++) {
+        const matchedList = document.createElement('p');
+        matchedList.classList.add(`matchedIdName`);
+        matchedList.innerText = result[i];
+        listContainer.appendChild(matchedList);
+      }
 
-function scrollToRight() {
-  profiles.scrollLeft += 50;
+      nav.appendChild(listContainer);
+    } else {
+      alert('검색하신 ID가 존재하지 않습니다.');
+    }
+  } else return;
 }
 
-goNext.addEventListener('click', scrollToRight);
+function removeImg() {
+  this.style.setProperty('background-image', 'none');
+}
+
+search.addEventListener('keydown', findId);
+search.addEventListener('keydown', removeImg);
+search.addEventListener('blur', () => window.location.reload());
