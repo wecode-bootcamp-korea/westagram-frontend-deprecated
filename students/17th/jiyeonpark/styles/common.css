@@ -1,0 +1,20 @@
+:root{
+  --container-border: 1px solid #DBDBDB;
+  --container-border-radius: 1px;
+  --light-gray: #FAFAFA;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--light-gray);
+  font-size: 14px;
+  height: 100%;
+}
+
+.instagram_logo{
+  font-family: 'Lobster', cursive;
+}
+
