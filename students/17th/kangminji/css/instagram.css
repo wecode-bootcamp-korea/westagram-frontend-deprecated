@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    background-color: rgb(249 249 249);
+
+}
+.nav{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    /* background-color: coral; */
+    width: 100%;
+    height: 54px;
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-top: solid 1px black;
+    border-bottom: 1px solid rgb(160 163 165);
+    background-color: white;
+   
+ }
+
+.navcenter{
+    display : flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 85%;
+    background-color: white;
+    
+}
+
+.headmark{
+    width: 30px;
+    height: 30px;
+    }
+.r{
+    margin-left:50px ;
+    margin-top: 10px;
+}
+
+.instahead {
+  
+        border-left: black 2px solid;
+        margin-left: 15px;
+       margin-bottom: 5px; 
+        margin-top: 4px;
+        padding-left: 10px;
+    }
+.markright{
+display: flex;
+margin-right: 100px;
+background-color: white;
+
+    
+}
+.center{
+width : 180px;
+background-color: white;
+    
+
+}
+.search {
+    width : 150px;
+}
+
+.markleft{
+display: flex;
+align-self: flex-end;
+margin-left: 30px;
+
+}
+
+.right{
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+
+.container{
+    position: relative;
+/* background-color: rgb(249 249 249); */
+width: 100%;
+height: 900px;
+}
+
+.feeds{
+/* position: absolute; */
+/* width: 45%; */
+width: 600px;
+height : 1000px;
+border: 1px solid rgb(160 163 165);
+ /* left : 220px;
+bottom : 60px;  */
+border-radius: 3px;
+/* top: 50px;  */
+}
+
+.article{
+    position: relative;
+width: 90%;
+height: 90%;
+border: 1px solid rgb(160 163 165);
+border-radius: 3px;
+margin-left: 30px;
+top : 22px;
+
+}
+
+.content-right{
+    /* position: absolute; */
+width : 300px; 
+height : 700px;
+/* border : 1px solid rgb(160 163 165); */
+margin-left: 40px;
+margin-right: 10px;
+ /* right : 13px;
+top : 39px; 
+ margin-left: 10px;  */
+
+}
+
+.rightone{
+    margin-left: -5px;
+}
+
+.profile{
+   
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /* left: 10px;
+    top: 10px;
+    margin: auto; */
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+.head{
+
+ position: absolute;
+    left: 70px;
+    top : 13px;
+    font-size: 15px;
+    margin: auto;
+}
+
+.contentpicture {
+
+  
+    width : 100%;
+    height: 650px;
+    /* top: 30px; */
+   margin-top: 5px; 
+}
+
+.me{
+   
+    width : 50px;
+    height: 50px;
+    border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.profileme{
+position: absolute;
+margin-top: 20px;
+margin-left: 10px;
+}
+.icons{
+
+    display: flex;
+    justify-content: space-between;
+    top : 300px;
+    margin-left: 10px;}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.a{
+    margin-left: 4px;
+}
+.b{
+    margin-right:  2px;
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.likeme{
+width: 25px;
+height: 25px;
+border-radius: 100%;
+}
+
+h3{
+    display: inline;
+    margin-left: 2px;
+}
+p{ color: gray;
+font-size: 15px;
+margin-left: 2px;
+}
+
+.like, .chat{
+    margin-left: 15px;
+    font-size: 15px;
+    
+}
+.like{
+    margin-top: 6px;
+}
+.chat{
+    margin-top: 10px;
+}
+.righttwo{
+    border: 2px rgb(160 163 165) dotted;
+    overflow : scroll;
+    width: 300px;
+    height: 300px;
+
+
+}
+
+.storyhead{
+display: flex;
+justify-content: space-between;
+
+}
+
+.storyheadleft{
+    font-size: 15px;
+    color: grey;
+    margin-left: 12px;
+    margin-top: 7px;
+
+}
+
+.storyheadright{
+
+font: bold 15px;
+margin-right: 10px;
+margin-top: 5px;
+
+}
+
+ul{
+    list-style: none;
+    margin-top: 8px;
+}
+
+.storyphoto{
+ 
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+margin-top: 8px;
+    margin-left: 10px;
+
+}
+
+li{
+    display: flex;
+}
+
+.storyid{
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+.follow{
+
+    color: rgb(61 139 238);
+    margin-top: 17px;
+    margin-left: 50px;
+}
+
+.rightthree{
+margin-top: 35px;
+border: rgb(160 163 165) dotted 2px; 
+overflow : scroll;
+width: 300px;
+height: 300px;
+
+}
+
