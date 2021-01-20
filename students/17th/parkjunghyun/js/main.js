@@ -1,3 +1,5 @@
+// 신규 댓글 추가 관련 기능
+
 const feeds = document.querySelector('.feeds');
 const input = document.querySelector('.postingCmt');
 const button = document.querySelector('#post');
@@ -9,15 +11,8 @@ function addPost() {
   const likeImg = document.createElement('img');
   const likeCount = document.createElement('span');
   const removeCmt = document.createElement('button');
-  // let classNum = Number(1);
-
-  // newCmt.classList.add(`newCmt${classNum}`);
-  // likeImg.classList.add(`likeImg${classNum}`);
-  // likeCount.classList.add(`likeCount${classNum}`);
-  // removeCmt.classList.add(`removeCmt${classNum}`);
 
   likeImg.src = '/img/heart.png';
-  likeCount.innerText = 0;
 
   removeCmt.innerText = '삭제';
 
@@ -30,21 +25,34 @@ function addPost() {
   feeds.appendChild(newCmt);
 
   input.value = '';
-  // classNum += 1;
 
-  // 댓글 좋아요 카운트 기능 추가
+  // 댓글 좋아요 기능 추가(토글 버튼 방식)
   const likes = document.querySelectorAll('.newCmt img');
+  let likeFlag = false;
 
-  function likeUp() {
-    let likeNum = this.previousSibling.innerText;
-    console.log(likeNum);
-    // likeNum = 10;
-
-    // this.parentNode.innerText += 1;
+  function likeChange() {
+    if (!likeFlag) {
+      this.src = '/img/heartRed.png';
+      likeFlag = !likeFlag;
+    } else if (likeFlag) {
+      this.src = '/img/heart.png';
+      likeFlag = !likeFlag;
+    }
   }
 
   likes.forEach((like) => {
-    like.addEventListener('click', likeUp);
+    like.addEventListener('click', likeChange);
+  });
+
+  // 댓글 삭제 기능 추가
+  const removeCmts = document.querySelectorAll('.newCmt button');
+
+  function deleteCmt() {
+    this.parentNode.remove();
+  }
+
+  removeCmts.forEach((rmcmt) => {
+    rmcmt.addEventListener('click', deleteCmt);
   });
 }
 
