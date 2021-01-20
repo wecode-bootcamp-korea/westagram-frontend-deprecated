@@ -14,3 +14,8 @@ body {
 * {
   box-sizing: border-box;
 }
+
+#main_layout {
+  display: flex;
+  flex-direction: column;
+}

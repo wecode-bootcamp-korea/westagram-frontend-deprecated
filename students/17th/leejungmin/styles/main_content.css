@@ -1,12 +1,85 @@
-.main_content_sub {
+/* 총길이 540 그리고 왼쪽패딩 15 오른쪽패딩 35 위쪽 패딩 15 아래쪽 패딩 15
+1개 width값 65 */
+.main_content {
   display: flex;
-  
+  flex-direction: row;
+  margin-top: 80px;
+  justify-content: center;
 }
+/* - - - 왼쪽 전체 - - - */
 
 .main_content_left {
-  background-color: blue;
+  display: flex;
+  flex-direction: column;
 }
 
+/* 왼쪽 story */
+
+.content_story {
+  width: 610px;
+  height: 110px;
+  background-color: white;
+  margin-bottom: 25px;
+  padding: 15px 35px 15px 15px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.content_story .story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin-right: 15px;
+}
+
+.content_story img {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.content_story span {
+  font-size: 12px;
+}
+
+.content_story button {
+  /* all: unset; */
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid rgba(243, 243, 243, 0.9);
+  background-color: white;
+  outline: none;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  color: white;
+}
+
+.content_story i {
+  position: absolute;
+  top: 48px;
+  right: 17px;
+  font-size: 18px;
+  opacity: 0.2;
+}
+
+/* 왼쪽 peed */
+
+.content_peed {
+  width: 610px;
+  height: 1000vh;
+  background: blue;
+}
+
+/* - - - 오른쪽 전체 - - - */
+
 .main_content_right {
+  width: 300px;
+  height: 500px;
   background-color: yellowgreen;
+  margin-left: 25px;
 }

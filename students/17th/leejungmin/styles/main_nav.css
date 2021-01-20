@@ -5,6 +5,7 @@
   background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: fixed;
+  top: 0;
 }
 
 .nav_container_sub {
@@ -12,6 +13,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
   margin-top: 12px;
   margin-bottom: 12px;
 }
@@ -24,30 +26,25 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 2px; */
 }
 
 .nav_left i {
   font-size: 25px;
-  /* margin-top: 2px; */
+  border-right: 1px solid black;
+  padding-right: 15px;
 }
-.nav_bar {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 22px;
-}
+
 .nav_logo {
   font-family: "Lobster", cursive;
   font-size: 25px;
-  /* margin-bottom: 2px; */
+  margin-left: 15px;
 }
 
 /* nav center */
 
 .nav_center {
   display: flex;
-  /* font-size: 22px; */
-  /* align-items: center; */
+  align-items: center;
 }
 
 .nav_center_search {
@@ -96,13 +93,29 @@
 /* nav right */
 
 .nav_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: 25px;
 }
 
 .nav_right i:nth-child(2) {
-  margin-left: 22px;
+  margin-left: 20px;
 }
 
 .nav_right i:nth-child(3) {
-  margin-left: 22px;
+  margin-left: 20px;
+}
+
+.nav_right i:nth-child(4) {
+  margin-left: 20px;
+}
+
+.nav_right img {
+  margin-left: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
