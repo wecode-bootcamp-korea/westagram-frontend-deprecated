@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    font-family: Lobster;
+    font-size: 50px;
+}
+
+#loginBox {
+    width: 400px;
+    margin: 100px auto;
+    border: 1px solid #bbb;
+}
+
+.flexBlock {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#inInputBox {
+    padding: 0 50px 100px 50px;
+}
+
+#inInputBox * {
+    margin-bottom: 5px;
+    height: 35px;
+}
+
+.inboxInput {
+    color: black;
+    border: 1px solid lightgray;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+#loginBtn span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+
+#loginBtn {
+    border: 0;
+    background-color: rgb(197,225, 251);
+}
+
+::placeholder {
+    color: gray;
+}
+
+#loginBox p:last-child {
+    color: #04386a;
+    font-weight: 600;
+}

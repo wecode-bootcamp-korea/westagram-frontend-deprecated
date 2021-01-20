@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  */
+/* header */
+/*  */
+
+.icon {
+    width: 25px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 10px 150px;
+    border-bottom: solid 1px #DBDBDB;
+}
+
+header>div {
+    display: inline-block;
+}
+
+#headerLogoBox {
+    display: flex;
+    align-items: center;
+}
+
+#headerLogoBox * {
+    font-size: 25px;
+}
+
+#logo {
+    font-family: Lobster;
+}
+
+#headerSearchBox {
+    display: flex;
+    height: 25px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+}
+
+#headerSearchBox img {
+    width: 13px;
+    margin-right: 5px;
+}
+
+#headerSearchBox>div {
+    display: flex;
+    justify-content: center;
+}
+
+header>div:last-child * {
+    margin-right: 10px;
+}
+
+/*  */
+/* section */
+/*  */
+
+#mainContents {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    background-color: #FAFAFA;
+}
+
+section {
+    display: flex;
+    width: 600px;
+    height: 100%;
+    /* align-items: flex-end; */
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#storiesBox {
+    display: flex;
+    width: 600px;
+    height: 122px;
+    margin-bottom: 24px;
+    padding: 16px 0 16px 10px;
+    overflow: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    border: solid 1px #DBDBDB;
+    border-radius: 3px;
+}
+
+.persnalStoryBox {
+    display: flex;
+    width: 80px;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.persnalPicture {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.persnalPicture img {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 3px;
+    overflow: hidden;
+    border: solid 2px black;
+    /* border: solid 2px transparent; */
+    /* border-image: round(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%); */
+    /* border-image-slice: 1; */
+    border-radius: 50%;
+}
+
+.persnalId {
+    font-size: 14px;
+}
+
+.feed {
+    width: 600px;
+    background-color: white;
+    border: solid 1px #DBDBDB;
+    border-radius: 3px;
+}
+
+.feedIdBox {
+    display: flex;
+    padding: 16px;
+    border-radius: 50%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #DBDBDB;
+}
+
+.feedIdDetailBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feedIdImg {
+    width: 32px;
+    margin-right: 16px;
+    border: solid 1px #DBDBDB;
+    border-radius: 50%;
+}
+
+.feedIdText {
+    display: flex;
+    justify-self: start;
+    font-weight: bold;
+}
+
+.feedMoreIcon {
+    /* display: flex; */
+    width: 14px;
+    /* align-self: flex-end; */
+}
+
+.feedImg img {
+    width: 100%;
+}
+
+
+/*  */
+/* aside */
+/*  */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 295px;
+}
+
+#myProfileBox {
+    width: 100%;
+    height: 56px;
+    margin: 16px 0;
+    background-color: red;
+}
+
+#recommendFriendsBox {
+    width: 100%;
+    height: 290px;
+    background-color: red;
+}
