@@ -76,7 +76,7 @@ form .input-pw {
 
 form .login-btn {
   height: 30px;
-  background-color: #bbe0fc;
+  background-color: #0095f6;
   border: none;
   border-radius: 3px;
   color: #ffffff;
@@ -84,6 +84,11 @@ form .login-btn {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 20px;
+}
+
+form .login-btn:disabled {
+  background-color: #bbe0fc;
+  cursor: auto;
 }
 
 .divider {

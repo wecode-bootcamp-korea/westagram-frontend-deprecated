@@ -9,19 +9,25 @@
       src="https://kit.fontawesome.com/ee1cbfb3bc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/login.js" defer></script>
   </head>
   <body>
     <section class="log-in">
       <h1>Westagram</h1>
-      <form class="log-in-form" action="">
+      <form class="login-form" action="#">
         <input
           class="input-id"
           type="text"
           placeholder="전화번호, 사용자 이름 또는 이메일"
-          data-placeholder="my placeholder"
+          required
         />
-        <input class="input-pw" type="password" placeholder="비밀번호" />
-        <button class="login-btn" type="button">로그인</button>
+        <input
+          class="input-pw"
+          type="password"
+          placeholder="비밀번호"
+          required
+        />
+        <button class="login-btn" type="button" disabled>로그인</button>
         <div class="divider">
           <span>또는</span>
         </div>
