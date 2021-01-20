@@ -30,16 +30,19 @@ justify-content: center;
 align-items: center;
 width: 600px;
 height: 750px;
-background-color: aquamarine;
-border: 1px solid black;
+
+border: 2px solid gray;
 
 }
 
 
 .a{
     margin-top: 50px;
+   
 }
-
+.b{
+    margin-top: 5px;
+}
 .form{  
   width: 350px;
     height: 50px;
@@ -52,8 +55,9 @@ border: 1px solid black;
 .btn{
     width: 350px;
     height: 50px;
-    background-color: rgb(15, 127, 244);
+    background-color: rgb(83, 196, 255);
     color: white;
+    font-size: 30px;
 
 
 }
@@ -68,16 +72,3 @@ border: 1px solid black;
 
 
 
-/* 
-.instahead{
-    font-family: 'Lobster', cursive;
-
-    font-size: 30px;
-} */
-
-/* .formcontainer{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-} */
