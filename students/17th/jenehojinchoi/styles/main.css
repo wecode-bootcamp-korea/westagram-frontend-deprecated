@@ -1,18 +1,92 @@
 nav{
+    position: relative;
     border: 1px solid grey;
+    top: 20px;
     height: 50px; 
     width: 900px;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+
+p{
+    font-family: "lobster"
+}
+
+#instagram{
+    border: 1px solid transparent;
+}
+
+input{
+    /* position: absolute; */
+    top: 10px;
+    text-align: center;
+    height: 15px;
+    border: 1px solid lightgray;
+}
+
+input::placeholder {
+    font-size: 11px;
+}
+
+.images{
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    /* position: relative; */
+    width: 22px;
+    height: 22px;
+}
+
 
 main{
-    border: 1px solid grey;
+    position: relative;
+    top: 20px;
+    border: 1px solid blue;
+    width: 900px;
+    height: 900px;
+    display: flex;
+    margin: auto;
+    justify-content: flex-end;
+
 }
 
-.feed div{
-    border: 1px solid grey;
+.feed{
+    position: absolute;
+    border: 1px solid red;
+    left: 80px;
+    width: 460px;
+    height: 900px;
+    margin: auto;
+    justify-content: center;
+    /* left: 45px; */
 }
 
-.mainRight div{
-    border: 1px solid grey;
+article {
+    position: absolute;
+    border: 1px solid lightcoral;
+    left: 90px;
+    top: 50px;
+    width: 440px;
+    height: 800px;
+}
+
+.mainRight{
+    position: absolute;
+    border: 1px solid green;
+    width: 300px;
+    height: 500px;
+    left: 560px;
 }
