@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #FAFAFA;
+    margin: 0;
+}
+.login-page{
+    margin-top: 60px;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 350px;
+    height: 606px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #DBDBDB;
+
+}
+.login-form,
+.hasAccount{
+    background:#FFFFFF;
+}
+
+.login-form h1{
+    font-size: 45px;
+    align-self: center;
+    font-family: 'Lobster', cursive;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container :first-child, .input-container input:nth-of-type(2) {
+    width: 266px;
+    height: 37px;
+    margin-bottom: 8px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    outline: none;
+}
+.input-container :last-child{
+    width: 270px;
+    height: 31px;
+    margin-top: 8px;
+    background-color: #B9DFFC;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 4px;
+    outline: none;
+}
+.or-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px ;
+}
+.or-container div{
+    border-top: 1px solid #DBDBDB;
+    padding-left: 103px;
+    margin-top: 7px;
+}
+h1.text-or{
+    font-size: 13px;
+    margin: 0px 20px 10px 20px;
+    color: #8E8E8E;
+}
+
+.facebook-login-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facebook-login-text{
+    color: #475E8F;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+.facebook-login-text i {
+    color: #475E8F;
+    font-size: larger;
+}
+.facebook-login-link a{
+    color: #475E8F;
+    text-decoration: none;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.hasAccount{
+    border: 1px solid #DBDBDB;
+    margin: 10px 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.hasAccount-content a {
+    text-decoration: none;
+    color: #1E9DF7;
+    font-weight: bold;
+}
+.hasAccount-content{
+    margin: 20px auto;
+}
+.download-APP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.download-APP p{
+    font-size: 14px;
+}
+
+.download-button{
+    display: flex;
+}
+
+.download-button a{
+    color: white;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+.apple-icon{
+    height: 40px;
+    width: 134px;
+}
+
+.googleplay-icon{
+    height: 40px;
+    width: 136px;
+}

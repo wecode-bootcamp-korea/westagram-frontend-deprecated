@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #FAFAFA;
+}
+.feed-page{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background: #FAFAFA;
+    flex-grow: 1;
+}
+
+.navigation-bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-self:stretch;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    order: 0;
+    padding: 15px;
+    border-bottom: 1px solid #DBDBDB;
+    order: 0;
+}
+.title_nav{
+    display: flex;
+    justify-content: space-around;
+}
+.title_nav div:last-of-type{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.title_nav i,
+.title_nav div{
+    margin-right: 10px;
+    font-size: 20px
+}
+.title_nav i,
+.title_nav div:first-of-type {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.input{
+    position: relative;
+    display: flex;
+}
+.input input{
+    position: relative;
+    width: 266px;
+    height: 37px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    outline: none;
+}
+.input div:first-of-type{
+    display: flex;
+     position: absolute; 
+     color: #DBDBDB; ;
+     margin-top:10px;
+     padding-left: 120px;
+}
+
+.icons img{
+    width: 22px;
+    height: 22px;
+    margin-left: 22px;
+}
+.feed-header{
+    display: flex;
+    justify-content: flex-start;
+}
+/* main-container */
+.main-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.feed-container{
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
+    position: relative;
+    border: 1px solid #DBDBDB;
+
+}
+.settings_icon{
+    margin-left: auto;
+
+}
+.round-image{
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+
+}
+.feed-header div{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.feed-header div p{
+    margin: 0;
+}
+
+.feed-header{
+    padding-right: 40px;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    padding: 16px;
+    border-bottom: 1px solid #efefef;
+}
+.board-container{
+    margin: 10px 10px;
+}
+.feed-icons-container{
+    margin-bottom: 10px;
+}
+.feed-message-container{
+    margin-bottom: 10px;
+}
+.feed-message-container span:first-of-type{
+    margin-right: 10px;
+}
+.comment-line{
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 10px;
+}
+.each-comment-list{
+    display: flex;
+    justify-content:flex-start;
+    vertical-align: middle;
+
+}
+.commented-user-id,
+.commented-text{
+    margin: 0 10px 0 0;
+    
+}
+.comment-write-form{
+    display: flex;
+}
+.comment-input{
+    display: flex;
+    flex-direction: column;
+    color: #262626;
+    border: 0;
+    outline: 0;
+    text-align: start;
+    height: 18px;
+    resize: none; 
+    /* urgent에는 auto로 주어져있음 이걸 none으로 하니 빗장무늬 사라짐. */
+    background: 0 0;
+    /* 같아짐 색깔 */
+}
+.comment-submit-button{
+    /* pointer-events: none; 나중에 처리할 것.*/
+    border: 0;
+    color: #0095F6;
+    display: inline;
+    padding: 0;
+    text-align: center;
+    background: 0 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+.main-image-container{
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: block;
+    flex-direction: row;
+}
+.main-image{
+    object-fit: cover;
+    height: 100%;
+    left: 0;
+    top:0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 500px;
+    min-height: 500px;
+
+}
+.icons-contianer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icons-contianer i{
+    font-size: 22px;
+    margin: 10px 15px 10px 0px;
+}
+.icons-contianer i:last-of-type{
+    margin-left: auto; 
+    /* 자식을 움직일때 margin-left도 좋은 방법? */
+}
+.round-image-small{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.recomandation-profile{
+    display: flex;
+    justify-content: flex-start;
+}
+.recomandation-profile div:last-of-type{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #0095F6;
+}
+.own-profile-container p{
+    margin: 0;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.recomandation-list div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-right-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.recomandation-image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.recomandation-individual{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recomandation-individual div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 50px;
+}
+.user-follow-status{
+    font-size: 12px;
+}
+.recomandation-individual div:last-of-type{
+    margin-top: 5px;
+}
