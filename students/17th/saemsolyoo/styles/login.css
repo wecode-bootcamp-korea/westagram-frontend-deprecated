@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+section {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  padding: 25px 40px 22px 40px;
+}
+
+section.log-in {
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+section.log-in h1 {
+  font-family: "Cookie", cursive;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+form input {
+  height: 36px;
+  padding-left: 8px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form input::placeholder {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+form .input-id {
+  margin-bottom: 7px;
+}
+
+form .input-pw {
+  margin-bottom: 13px;
+}
+
+form .login-btn {
+  height: 30px;
+  background-color: #bbe0fc;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  display: inline-block;
+  width: 104px;
+  height: 0.5px;
+  background-color: #dbdbdb;
+}
+
+.log-in-facebook {
+  font-size: 14px;
+  font-weight: bold;
+  color: #185385;
+  text-align: center;
+}
+
+.log-in-facebook i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.forgot-pw {
+  font-size: 12px;
+  text-align: center;
+  color: #185385;
+  font-weight: 500;
+}
+
+section.join {
+  flex-direction: row;
+  font-size: 14px;
+}
+
+section.join a {
+  color: #0095f6;
+  font-weight: bold;
+}
