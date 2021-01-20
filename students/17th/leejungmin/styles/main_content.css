@@ -1,0 +1,12 @@
+.main_content_sub {
+  display: flex;
+  
+}
+
+.main_content_left {
+  background-color: blue;
+}
+
+.main_content_right {
+  background-color: yellowgreen;
+}

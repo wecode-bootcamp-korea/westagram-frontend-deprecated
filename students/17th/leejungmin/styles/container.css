@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+@import "login_style.css";
+@import "main_nav.css";
+
+body {
+  background-color: #fafafa;
+  /* height: 1000vh; */
+}
+
+* {
+  box-sizing: border-box;
+}
