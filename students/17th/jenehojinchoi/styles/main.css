@@ -1,0 +1,18 @@
+nav{
+    border: 1px solid grey;
+    height: 50px; 
+    width: 900px;
+    margin: auto;
+}
+
+main{
+    border: 1px solid grey;
+}
+
+.feed div{
+    border: 1px solid grey;
+}
+
+.mainRight div{
+    border: 1px solid grey;
+}
