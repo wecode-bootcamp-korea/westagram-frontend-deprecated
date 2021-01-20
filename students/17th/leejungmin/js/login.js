@@ -15,7 +15,7 @@ function changeColor() {
         weSubmit.style.backgroundColor = '#B2DFFC';
     }
 }
-
+// g2
 
 
 weId.addEventListener("keyup", changeColor);

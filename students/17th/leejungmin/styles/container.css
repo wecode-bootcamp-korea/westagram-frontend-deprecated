@@ -4,6 +4,7 @@
 @import "variables.css";
 @import "login_style.css";
 @import "main_nav.css";
+@import "main_content.css";
 
 body {
   background-color: #fafafa;
