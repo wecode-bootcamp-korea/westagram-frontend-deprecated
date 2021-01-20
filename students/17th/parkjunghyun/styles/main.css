@@ -1,0 +1,280 @@
+.navContainer {
+  width: 100%;
+  border: #dbdbdb solid 1px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+  width: 50%;
+  position: sticky;
+}
+
+nav > * {
+  margin: 0;
+}
+
+.logo {
+  font-size: 1.7rem;
+}
+
+.search {
+  background: no-repeat center/6% url('/img/search.png');
+  background-position: 45% 40%;
+  background-color: #fafafa;
+  border: #dbdbdb solid 1px;
+  border-radius: 2px;
+  height: 1.7rem;
+  width: 23%;
+}
+.search::placeholder {
+  padding: 50%;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+}
+
+.icons img {
+  width: 1.5rem;
+  height: auto;
+}
+
+.icons img:hover {
+  cursor: pointer;
+}
+
+#profileImg {
+  border-radius: 50%;
+  height: 1.5rem;
+}
+
+.main {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex: 1 0.5;
+}
+
+.main-left {
+  width: 65%;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.main-left .profiles {
+  border: #dbdbdb solid 1px;
+  width: 100%;
+  height: auto;
+  padding: 0.2rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.main-left .profiles::-webkit-scrollbar {
+  display: none;
+}
+
+.main-left .profile {
+  margin: 10px;
+}
+
+/* 왼쪽 중앙 가로 슬라이드(스크롤) 화살표 버튼 스타일 */
+#arrow {
+  position: absolute;
+  width: 1%;
+  height: 3%;
+  right: 43%;
+  top: 16%;
+}
+
+#arrow:hover {
+  background-color: rgb(37, 122, 156);
+  cursor: pointer;
+}
+
+.name {
+  text-align: center;
+}
+
+.main-left .profiles img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: purple solid 1px;
+}
+
+.main-left .feeds {
+  border: #dbdbdb solid 1px;
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.author > * {
+  margin: 10px 5px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author #more {
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.feeds > img {
+  width: 100%;
+}
+
+.feeds > p {
+  margin-left: 2rem;
+  font-size: 0.8rem;
+}
+
+.feedIcons {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.feedIcons img {
+  margin: 0 10px;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+.feedIcons img:last-child {
+  margin-left: auto;
+}
+
+#likes,
+#comment {
+  margin: 10px 20px;
+  font-size: 0.8rem;
+}
+
+#writeTime {
+  margin: 10px 20px;
+  font-size: 10px;
+  color: gray;
+}
+
+.writeCmt {
+  border-top: #dbdbdb solid 1px;
+}
+
+.writeCmt > * {
+  background-color: transparent;
+  border-width: 0px;
+  margin: 5px 0;
+}
+
+.writeCmt .postingCmt {
+  width: 78%;
+}
+
+.writeCmt .postingCmt::placeholder {
+  padding-left: 1rem;
+}
+
+.writeCmt > button {
+  color: skyblue;
+  width: 20%;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.main-right {
+  width: 35%;
+  margin: 3rem 0 0 2rem;
+}
+
+#rightProfile {
+  margin-bottom: 1rem;
+}
+
+#rightProfile,
+.recommandedFriend {
+  display: flex;
+  align-items: center;
+}
+
+#rightProfile span,
+.recommandedFriend span {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.recommandedFriend {
+  margin-top: 1rem;
+}
+
+.recommandedFriend img,
+#rightProfileText {
+  margin: 0.3rem;
+}
+
+#rightProfile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.recommand img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.recommand p {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.recommand p span {
+  margin-left: 0;
+}
+
+.smblueText {
+  color: skyblue;
+  font-size: 0.8rem;
+}
+
+/* 신규 댓글, 좋아요 이미지, 좋아요 수 및 삭제 버튼 style */
+.newCmt {
+  height: 1.5rem;
+}
+
+.newCmt img {
+  width: 15px;
+  height: auto;
+}
+
+.newCmt img:hover {
+  cursor: pointer;
+}
+
+.newCmt > * {
+  float: right;
+}

@@ -1,0 +1,6 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Lobster', cursive;
+}
