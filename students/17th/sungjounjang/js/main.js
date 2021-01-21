@@ -9,6 +9,10 @@ commentContents.addEventListener('keyup', function() {
     }
 })
 
+function deleteComment() {
+    this.parentElement.remove();
+}
+
 commentBtn.addEventListener('click', function() {
     if(commentContents.value.length > 1) {
         let feedComment = document.createElement("div");
@@ -25,6 +29,7 @@ commentBtn.addEventListener('click', function() {
         let commentDeleteBtn = document.createElement("button");
         commentDeleteBtn.className = "commentDeleteBtn";
         commentDeleteBtn.innerHTML = "삭제";
+        commentDeleteBtn.onclick = deleteComment;
         feedComment.appendChild(commentDeleteBtn);
 
         document.getElementsByClassName("feedComment")[0].after(feedComment);
@@ -52,15 +57,11 @@ commentContents.addEventListener('keydown', function(e) {
         let commentDeleteBtn = document.createElement("button");
         commentDeleteBtn.className = "commentDeleteBtn";
         commentDeleteBtn.innerHTML = "삭제";
+        commentDeleteBtn.onclick = deleteComment;
+        
         feedComment.appendChild(commentDeleteBtn);
 
         document.getElementsByClassName("feedComment")[0].after(feedComment);
         commentContents.value = "";
     }
 })
-
-const commentDeleteBtn = document.getElementsByClassName("commentDeleteBtn");
-
-// commentDeleteBtn.addEventListener('click', function() {
-    
-// })
