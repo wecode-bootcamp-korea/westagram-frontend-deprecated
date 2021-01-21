@@ -257,6 +257,19 @@ section {
     width: 12px;
 }
 
+.commentDeleteBtn {
+    float: right;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: white;
+    color: #fdcccc;
+}
+
+.commentDeleteBtn:hover {
+    color: #f60015;
+}
+
 .feedPastTime {
     padding: 0;
     margin-bottom: 5px;
