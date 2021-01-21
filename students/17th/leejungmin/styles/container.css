@@ -18,4 +18,5 @@ body {
 #main_layout {
   display: flex;
   flex-direction: column;
+  height: 1000vh;
 }

@@ -1,5 +1,6 @@
 /* 총길이 540 그리고 왼쪽패딩 15 오른쪽패딩 35 위쪽 패딩 15 아래쪽 패딩 15
 1개 width값 65 */
+
 .main_content {
   display: flex;
   flex-direction: row;
@@ -71,8 +72,155 @@
 
 .content_peed {
   width: 610px;
-  height: 1000vh;
-  background: blue;
+  height: 100%;
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 왼쪽 헤더 */
+
+.content_peed_header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  position: relative;
+}
+
+.content_peed_header_left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_peed_header img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.content_peed_header span {
+  margin-left: 15px;
+}
+
+.content_peed_header i {
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+/* 왼쪽 body img */
+
+.content_peed_img,
+.content_peed_img img {
+  width: 100%;
+  height: 610px;
+  /* height */
+}
+
+/* 왼쪽 body option */
+
+.content_peed_option {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+.content_peed_option_header {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  padding-top: 7px;
+  padding-left: 13px;
+  padding-right: 15px;
+  opacity: 0.8;
+}
+
+.peed_option_header_left i {
+  margin-right: 10px;
+}
+
+.content_peed_option_sub_header {
+  padding-top: 10px;
+  padding-left: 13px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.content_peed_text {
+  width: 100%;
+  /* height: 50px; */
+  background-color: white;
+  padding-top: 5px;
+  padding-left: 13px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_peed_text p {
+  /* font-size: 14px; */
+  margin-bottom: 8px;
+  width: 100%;
+  display: block;
+}
+
+.content_peed_text_time {
+  width: 100%;
+  padding-left: 13px;
+  padding-top: 5px;
+  text-align: left;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.content_peed_form {
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.content_peed_reply {
+  width: 100%;
+  height: 30px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-size: 15px;
+}
+
+.content_peed_reply:focus {
+  outline: none;
+}
+
+.content_peed_submit {
+  position: absolute;
+  outline: none;
+  border: none;
+  background-color: white;
+  right: 10px;
+  top: 30px;
+  color: #b2dffc;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content_peed_submit:disabled {
+  cursor: default;
 }
 
 /* - - - 오른쪽 전체 - - - */
