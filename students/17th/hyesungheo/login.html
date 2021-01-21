@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>westagram</title>
-    <link rel="stylesheet" href="login.css">
-    <link href="login.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="styles/login.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d323a629b.js"></script>
+
 </head>
 <body>
     <section class="login_container">
             <p>westagram</p>
         <article class="login-box">
-            <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-            <input type="password" placeholder="비밀번호">
+            <input id = "login_Id" type = "text" placeholder="전화번호, 사용자 이름 또는 이메일">
+            <input id = "login_Pw" type = "password" placeholder="비밀번호"> 
+            <button id = "login_btn">로그인</button></button>
         </article>
-            <button>로그인</button>
+            <h6 class="line-style">또는</h6>
+            <div class="bottom_text">
+                <div class="facebook">
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Facebook으로 로그인</span>
+                </div>
+            <h6>비밀번호를 잊으셨나요?</h6>
+        </div>
     </section>
     
 </body>
+<script src="js/login.js"></script>
 </html>

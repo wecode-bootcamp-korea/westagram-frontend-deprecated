@@ -8,6 +8,8 @@ p {
     font-weight: normal;
     text-align: center;
     padding: 8px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 body{
@@ -16,30 +18,67 @@ body{
 
 .login_container {
     width: 350px;
-    height: 400px;
+    height: 410px;
     background-color: rgb(255, 255, 255);
-    margin: auto;
+    margin: 80px auto;
+    border: 1px solid gainsboro;
 }
 
-.login-box {
-    margin: 35px;
 
-}
-
-input, textarea {
-    width: 140px;
+input, #login_btn {
+    width: 80%;
     font-size: 13px;
+    margin-left: 35px;
     margin-bottom: 5px;
-    padding: 7px 12px;
-    
+    padding: 10px 12px;
+    background-color:#F6F7FA;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
 }
 
-button {
-    background-color: rgb(189, 224, 253);
+#login_btn {
+    background-color: rgb(192, 223, 253);
     color:white;
     border: 1px solid;
-    font-size: 13px;
+    font-size: 15px;
+    margin-top: 10px;
     margin-bottom: 5px;
     padding: 7px 12px;
+    border-radius: 5px;
+}
 
+.line-style {
+    display: flex;
+    flex-basis: 100%;
+    font-size: 13px;
+    text-align: center;
+    color:rgb(172, 172, 172);
+    margin: 10px 0px;
+}
+/*css효과 블로그할것*/
+.line-style::before,
+.line-style::after {
+    content: "";
+    flex-grow: 1;
+    background:rgb(172, 172, 172);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 7px 35px;
+}
+
+.bottom_text {
+    text-align: center;
+    margin-top: 30px;
+    color: #385184;
+}
+
+span {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 12px;
 }
