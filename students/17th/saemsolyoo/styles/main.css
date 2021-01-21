@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+/* navbar */
+nav {
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #ffffff;
+}
+
+.nav-wrapper {
+  width: 935px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-family: "Cookie", cursive;
+  font-size: 30px;
+  margin-right: 100px;
+}
+
+.nav-search {
+  position: relative;
+}
+
+.nav-search input {
+  width: 215px;
+  height: 28px;
+  background-color: #f9f9f9;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+}
+
+.nav-search i {
+  position: absolute;
+  top: 8px;
+  left: 79px;
+  font-size: 12px;
+}
+
+.nav-search input::placeholder,
+.nav-search i {
+  color: #a0a0a0;
+}
+
+.nav-search input::placeholder {
+  text-align: center;
+  font-size: 13px;
+}
+
+.nav-search input:focus {
+  padding-left: 25px;
+  outline: none;
+}
+
+.nav-search input:focus ~ i {
+  left: 10px;
+}
+
+.nav-search input:focus::placeholder {
+  text-align: left;
+}
+
+.nav-icons {
+  width: 198px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-icons i {
+  font-size: 23px;
+}
+
+.nav-icons li {
+  position: relative;
+}
+
+.nav-icons li:nth-child(2) i::after {
+  content: "9+";
+  position: absolute;
+  top: -5px;
+  right: -9px;
+  padding: 3px;
+  font-size: 12px;
+  font-weight: bolder;
+  background-color: #ea404c;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.user-profile {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-color: #d6d6d4;
+  border-radius: 50%;
+  position: relative;
+  top: 1.5px;
+}
