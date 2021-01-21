@@ -5,7 +5,7 @@ loginForm.addEventListener("input", () => {
   const inputPw = document.querySelector(".input-pw");
   const loginBtn = document.querySelector(".login-btn");
 
-  inputId.value.length > 0 && inputPw.value.length > 0
+  inputId.value.length > 0 && inputPw.value.length > 6
     ? loginBtn.removeAttribute("disabled")
     : loginBtn.setAttribute("disabled", "disabled");
 });

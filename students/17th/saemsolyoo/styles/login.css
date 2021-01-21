@@ -40,6 +40,7 @@ section.log-in h1 {
   font-family: "Cookie", cursive;
   font-size: 50px;
   margin-bottom: 40px;
+  user-select: none;
 }
 
 form {
@@ -91,6 +92,14 @@ form .login-btn:disabled {
   cursor: auto;
 }
 
+form .login-btn:focus {
+  outline: none;
+}
+
+form .login-btn:active {
+  background-color: #56b6f9;
+}
+
 .divider {
   width: 100%;
   display: flex;
@@ -118,6 +127,10 @@ form .login-btn:disabled {
   text-align: center;
 }
 
+.log-in-facebook:active {
+  color: #6f7fa2;
+}
+
 .log-in-facebook i {
   font-size: 16px;
   margin-right: 4px;
@@ -130,6 +143,10 @@ form .login-btn:disabled {
   font-weight: 500;
 }
 
+.forgot-pw:active {
+  color: #92a6bb;
+}
+
 section.join {
   flex-direction: row;
   font-size: 14px;
@@ -138,4 +155,8 @@ section.join {
 section.join a {
   color: #0095f6;
   font-weight: bold;
+}
+
+section.join a:active {
+  color: #84c7fb;
 }
