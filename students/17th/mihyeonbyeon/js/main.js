@@ -1,6 +1,5 @@
 const $commentList = document.querySelector(".comment-list");
 const $commentInput = document.querySelector(".comment-input")
-const $commentForm = document.querySelector(".comment-write-form");
 const $commentSubmitButton = document.querySelector(".comment-submit-button");
 const $inputSearchBar = document.querySelector(".input-search-bar");
 const $searchedIdDiv = document.querySelector(".searched-id-list");
