@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+    margin: 0;
+}
+
+.westa_logo{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    padding-left: 55px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-left: 180px;
+    padding-right: 280px;
+    border: 1px solid #DBDBDB;
+}
+
+a {
+    font-size: x-small;
+    z-index: 1;
+    margin-left: 450px;
+    position: absolute;
+    color:#C6C7C9;
+}
+
+.fas fa-search {
+    width: 10px;
+    height: 10px;
+}
+
+input {
+    position: relative;
+    border: 1px solid gainsboro;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    width: 20%;
+    padding: 5px 12px;
+    text-align: center;
+}
+
+ul {
+    font-size: 25px;
+    padding: 0;
+}
+
+.icons {
+    display: flex;
+    margin: 13px 0;
+}
+
+i {
+    margin-right: 30px;
+ 
+}
+
+.mainuser {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
