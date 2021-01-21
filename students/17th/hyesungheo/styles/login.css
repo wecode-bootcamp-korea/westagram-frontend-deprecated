@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-color:#FAFAFA;
+    --boxline-color: #DBDBDB;
+    --box-color: #FFFFFF;
+}
+
 p {
     font-family: 'Lobster', cursive;
     font-size: 45px;
@@ -13,15 +19,15 @@ p {
 }
 
 body{
-    background-color:rgb(250, 250, 250);
+    background-color:var(--background-color);
 }
 
 .login_container {
     width: 350px;
     height: 410px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--box-color);
     margin: 80px auto;
-    border: 1px solid gainsboro;
+    border: 1px solid var(--boxline-color);
 }
 
 
@@ -31,8 +37,8 @@ input, #login_btn {
     margin-left: 35px;
     margin-bottom: 5px;
     padding: 10px 12px;
-    background-color:#F6F7FA;
-    border: 1px solid gainsboro;
+    background-color:var(--background-color);
+    border: 1px solid var(--boxline-color);
     border-radius: 2px;
 }
 
@@ -55,7 +61,7 @@ input, #login_btn {
     color:rgb(172, 172, 172);
     margin: 10px 0px;
 }
-/*css효과 블로그할것*/
+
 .line-style::before,
 .line-style::after {
     content: "";

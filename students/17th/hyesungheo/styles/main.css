@@ -2,8 +2,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background-color:#FAFAFA;
+    --boxline-color: #DBDBDB;
+    --box-color: #FFFFFF;
+}
+
 body {
-    background-color: #FAFAFA;
+    background-color: var(--background-color);
     margin: 0;
 }
 
@@ -18,18 +24,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: var(--box-color);
     padding-left: 180px;
     padding-right: 280px;
-    border: 1px solid #DBDBDB;
+    border: 1px solid var(--boxline-color);
 }
 
 a {
     font-size: x-small;
     z-index: 1;
-    margin-left: 450px;
+    margin-left: 485px;
     position: absolute;
-    color:#C6C7C9;
+    color:#A5A7AB;
 }
 
 .fas fa-search {
@@ -39,12 +45,15 @@ a {
 
 input {
     position: relative;
-    border: 1px solid gainsboro;
-    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--boxline-color);
+    background-color: var(--background-color);
     border-radius: 2px;
-    width: 20%;
-    padding: 5px 12px;
+    width: 21%;
+    padding: 5px 10px;
     text-align: center;
+    color: var(--background-color);
+    font-weight: 100;
+    margin-left: 70px;
 }
 
 ul {
@@ -58,7 +67,7 @@ ul {
 }
 
 i {
-    margin-right: 30px;
+    margin-right: 25px;
  
 }
 
@@ -66,4 +75,25 @@ i {
     width: 35px;
     height: 35px;
     border-radius: 100px;
+}
+
+.top-story-box {
+    width: 600px;
+    height: 120px;
+    background-color: pink;
+    margin-left: 240px;
+    margin-top: 30px;
+    border: 1px solid var(--boxline-color);
+}
+.story-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px double var(--boxline-color);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.stroy-userid {
+ 
 }
