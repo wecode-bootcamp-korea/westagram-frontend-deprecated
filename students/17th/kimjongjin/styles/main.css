@@ -63,6 +63,7 @@ nav {
 #navbar .navbarRight {
     display: flex;
     align-items: center;
+    margin-right: 55px;;
 }
 
 #navbar .navbarRight img {
@@ -84,15 +85,9 @@ nav {
     background-color: transparent;
 }
 
-#mainRight {
-    width: 300px;
-    height: 1000px;
-    border: 1px solid black;
-    background-color: wheat;
-}
 
 .friendList {
-    width: 620px;
+    width: 600px;
     height: 100px;
     padding: 16px 0;
     margin-bottom: 24px; 
@@ -240,4 +235,86 @@ nav {
     font-size: 14px;
     color: #7cc6f8;
     cursor: pointer;
+}
+
+#mainRight {
+    width: 300px;
+    height: 1000px;
+
+    margin-left: 30px;
+}
+
+.myInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.myInfo > div {
+    display: flex;
+}
+
+.myInfo > div a {
+    margin-top: 7px;
+}
+
+.myInfo img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(212, 11, 78);
+    padding: 2px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.myInfo .convert {
+    margin-top: 4px;
+}
+
+.myInfo .convert a {
+    font-size: 14px;
+    font-weight: 700;
+    color:  #0095F6;
+}
+
+.listHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listHead a {
+    margin: 0;
+    font-weight: bold;
+}
+
+.recommend ul {
+    margin-top: 20px;
+}
+
+.recommend ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.recommend ul li img {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+.recommend ul li > div {
+    display: flex;
+}
+
+.recommend ul li > div a {
+    margin: 0;
+}
+
+.recommend .follow {
+    font-size: 14px;
+    color:  #0095F6;
+    font-weight: 700;
 }
