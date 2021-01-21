@@ -1,67 +1,62 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    background: #FAFAFA;
-}
-.feed-page{
+/* navigation*/
+.westargram-whole-container{
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    background: #FAFAFA;
     flex-grow: 1;
+    align-items:flex-start;
+    background: var(--color-white);
 }
 .navigation-bar-container{
     display: flex;
     justify-content: space-between;
     align-self:stretch;
-    background: #FFFFFF;
+    padding: 15px;
     width: 100%;
     height: 100%;
-    order: 0;
-    padding: 15px;
-    border-bottom: 1px solid #DBDBDB;
+    border-bottom: 1px solid var(--color-dark-white);
+    background:  var(--color-lighter-white);
     order: 0;
 }
-.title_nav{
+/* title */
+.title-nav{
     display: flex;
     justify-content: space-around;
 }
-.title_nav div:last-of-type{
-    font-family: 'Lobster', cursive;
+.title-nav div:last-of-type{
+    font-family: var(--font-title);
     font-weight: bold;
     font-size: 25px;
 }
-.title_nav i,
-.title_nav div{
+.title-nav i,
+.title-nav div{
     margin-right: 10px;
     font-size: 20px
 }
-.title_nav i,
-.title_nav div:first-of-type {
+.title-nav i,
+.title-nav div:first-of-type {
     margin-top: 10px;
     margin-left: 10px;
 }
+/* navigation search part */
 .input-search-container{
-    height: 28px;
-    width: 215px;
-    border: 0 solid #000;
     display: flex;
     flex-direction: column;
+    position: relative;
     margin: 0;
     padding: 0;
-    position: relative;
+    height: 28px;
+    width: 215px;
+    border: 0 solid var(--color-black);
 }
 .input-search-bar{
     position: absolute;
-    font-size: 14px;
-    background: #fafafa;
-    border: solid 1px #DBDBDB;
-    outline: 0;
     padding: 3px 10px 3px 26px;
+    border: solid 1px var(--color-dark-white);
     height: 100%;
     width: 100%;
+    font-size: 14px;
+    background: var(--color-white);
+    outline: 0;
 }
 .searched-id-container{
     display: block;
@@ -72,50 +67,70 @@ body{
 }
 .searched-id-list div {
     position: relative;
-    border: solid 1px #DBDBDB;
-    height: 30px;
-    background: #fafafa;
-    z-index: 9;
-    width: 100%;
-    padding: 0;
-    border-radius: 3px;
+    padding-top: 8px;
+    padding-left:10px ;
     bottom: -11px;
+    width: 100%;
+    height: 30px;
+    border: solid 1px var(--color-dark-white);
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    background: var(--color-white);
     opacity: 0.9;
+    z-index: 9;
 }
-.icons img{
+/* navigation right part icons */
+.nav-icons{
+    padding-top: 10px;
+}
+.nav-icons img{
+    margin-left: 22px;
     width: 22px;
     height: 22px;
-    margin-left: 22px;
 }
-.feed-header{
-    display: flex;
-    justify-content: flex-start;
+/* main-page */
+.main-image-container{
+    display: block;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
-/* main-container */
+.main-image{
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 500px;
+    min-height: 500px;
+}
 .main-container{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 .feed-container{
-    flex-direction: column;
-    align-items: stretch;
     display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: stretch;
     margin-right: 30px;
     margin-top: 30px;
-    position: relative;
-    border: 1px solid #DBDBDB;
-
+    border: 1px solid var(--color-dark-white);
+    width:615px;
+    background:var(--color-lighter-white);
 }
-.settings_icon{
-    margin-left: auto;
-}
-.round-image{
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-    margin-right: 10px;
-
+/* main header part */
+.feed-header{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 40px 16px 16px;
+    height: 60px;
+    border-bottom: 1px solid var(--color-light-white);
 }
 .feed-header div{
     display: flex;
@@ -125,18 +140,35 @@ body{
 .feed-header div p{
     margin: 0;
 }
+.settings-icon{
+    margin-left: auto;
+}
+.round-image{
+    margin-right: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--border-round-radius);
+}
 
-.feed-header{
-    padding-right: 40px;
-    align-items: center;
-    flex-direction: row;
-    height: 60px;
-    padding: 16px;
-    border-bottom: 1px solid #efefef;
-}
+/* main page board part */
 .board-container{
-    margin: 10px 10px;
+    padding: 0px 10px 10px 10px;
 }
+/* icons container */
+.icons-contianer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icons-contianer i{
+    margin: 10px 15px 10px 0px;
+    font-size: 22px;
+}
+.icons-contianer i:last-of-type{
+    margin-left: auto; 
+}
+
+/* feed icons */
 .feed-icons-container{
     margin-bottom: 10px;
 }
@@ -146,9 +178,11 @@ body{
 .feed-message-container span:first-of-type{
     margin-right: 10px;
 }
+
+/* comment part */
 .comment-line{
-    border-bottom: 1px solid #efefef;
     margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-light-white);
 }
 .each-comment-list{
     display: flex;
@@ -160,8 +194,15 @@ body{
     display: inline;
     margin: 0 10px 0 0;
 }
+.commented-user-id{
+    float: left;
+}
+.commented-text{
+    font-size: 12px;
+    padding-top: 1px;
+}
 .commented-text-remove{
-    color: #0095F6;
+    color: var(--color-blue);
     margin-left: auto;
     font-size: 10px;
 }
@@ -171,63 +212,30 @@ body{
 .comment-input{
     display: flex;
     flex-direction: column;
-    color: #262626;
-    border: 0;
-    outline: 0;
     text-align: start;
+    border: 0;
     height: 18px;
+    color: #262626;
     resize: none; 
-    /* urgent에는 auto로 주어져있음 이걸 none으로 하니 빗장무늬 사라짐. */
-    background: 0 0;
-    /* 같아짐 색깔 */
+    outline: 0;
+
 }
 .comment-submit-button{
-    /* pointer-events: none; 나중에 처리할 것.*/
-    border: 0;
-    color: #0095F6;
     display: inline;
+    margin-left: auto;
     padding: 0;
     text-align: center;
+    border: 0;
     background: 0 0;
-    margin-left: auto;
+    color: var(--color-blue);
     cursor: pointer;
 }
-.main-image-container{
-    overflow-x: auto;
-    overflow-y: hidden;
-    display: block;
-    flex-direction: row;
-}
-.main-image{
-    object-fit: cover;
-    height: 100%;
-    left: 0;
-    top:0;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    min-width: 500px;
-    min-height: 500px;
 
-}
-.icons-contianer{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.icons-contianer i{
-    font-size: 22px;
-    margin: 10px 15px 10px 0px;
-}
-.icons-contianer i:last-of-type{
-    margin-left: auto; 
-    /* 자식을 움직일때 margin-left도 좋은 방법? */
-}
+/* main right part*/
 .round-image-small{
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: var(--border-round-radius);
 }
 .recomandation-profile{
     display: flex;
@@ -237,12 +245,11 @@ body{
     margin-left: 20px;
     margin-top: 10px;
     font-size: 12px;
-    color: #0095F6;
+    color: var(--color-blue);
 }
 .own-profile-container p{
-    margin: 0;
+    margin: 0 0 0 8px;
     font-size: 15px;
-    margin-left: 8px;
 }
 
 .recomandation-list div:first-of-type{
@@ -250,15 +257,18 @@ body{
     justify-content: space-between;
 }
 
-.main-right-container {
+.right-whole-container{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
+.main-right-container {
+    position: fixed;
+}
 .recomandation-image{
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: var(--border-round-radius);
 }
 .recomandation-individual{
     display: flex;
@@ -276,4 +286,9 @@ body{
 }
 .recomandation-individual div:last-of-type{
     margin-top: 5px;
+}
+@media (max-width:900px){
+    .right-whole-container{
+        display: none;
+    }
 }
