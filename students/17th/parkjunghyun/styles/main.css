@@ -321,3 +321,13 @@ nav > * {
   border-top: gray solid 1px;
   text-align: center;
 }
+
+/* width가 800px 이하로 떨어지면 우측 박스(.main-right) 사라짐 */
+@media screen and (max-width: 800px) {
+  .main-right {
+    display: none;
+  }
+  .main-left {
+    width: 100%;
+  }
+}
