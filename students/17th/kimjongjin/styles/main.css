@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 nav {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     width: 100%;
     border-bottom: 1px solid black;
@@ -62,21 +66,91 @@ nav {
 }
 
 #main {
+    display: flex;
     width: 1000px;
-    height: 500px;
+    height: 1000px;
     border: 1px solid red;
     margin: 0 auto;
-    background-color: yellow;
+    margin-top: 50px;
 }
 
 #feeds {
-    width: 700px;
+    width: 620px;
     height: 1000px;
     border: 1px solid black;
+    background-color: transparent;
 }
 
 #mainRight {
     width: 300px;
     height: 1000px;
     border: 1px solid black;
+    background-color: wheat;
+}
+
+.friendList {
+    width: 620px;
+    height: 100px;
+    padding: 16px 0;
+    margin-bottom: 24px; 
+    border: 1px solid black;
+    background-color: white;
+}
+
+.friendList ul {
+    display: flex;
+}
+
+.friendList img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(212, 11, 78);
+    padding: 2px;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+.friendList p {
+    margin: 0 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pid {
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.pidHead {
+    width: 600px;
+    height: 60px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pidHead > div {
+    display: flex;
+    align-items: center;
+}
+
+.pidHead img {
+    width: 42px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.pidHead span {
+    font-size: 12px;
+}
+
+.pidBody {
+    width: 600px;
+    height: 750px;
+    margin: 0;
+}
+
+.pidBody img {
+    width: 100%;
 }
