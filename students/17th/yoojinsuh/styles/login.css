@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #fafafae5;
 }
@@ -12,18 +14,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 60px auto;
-  width: 350px;
-  height: 450px;
-  border: 1px solid #dbdbdb;
+  margin: 40px auto 0px;
   padding: 10px 0;
+  width: 350px;
+  height: 390px;
+  border: 1px solid #dbdbdb;
 }
 
 h1 {
   margin: 25px auto 0px;
-  font-family: "Lobster Two", cursive;
   width: 200px;
   text-align: center;
+  font-family: "Lobster Two", cursive;
   font-size: 40px;
   font-weight: bold;
 }
@@ -35,66 +37,128 @@ h1 {
 }
 
 input {
+  background-color: #fafafae5;
+  margin: 3px auto;
+  padding: 11px 0px 11px 8px;
   width: 258px;
   height: 36px;
-  background-color: #fafafae5;
   border: 1px solid #dbdbdb;
   border-radius: 2px;
-  margin: 3px auto;
   color: #8e8e8e;
-  padding: 9px 0px 7px 8px;
 }
 
 button {
-  width: 258px;
-  height: 30px;
   background-color: #c0dffd;
-  border: none;
-  border-radius: 5px;
   margin: 10px auto;
   padding: 0;
+  width: 258px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
   color: white;
 }
 
 .orContainer {
   display: flex;
-  width: 350px;
-  height: 30px;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 10px;
-  margin-top: 10px;
+  width: 350px;
+  height: 30px;
+  padding-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .left,
 .right {
   width: 120px;
-  border-top: 1px solid #cdcaca;
   height: 10px;
+  border-top: 1px solid #cdcaca;
 }
 
 .left {
-  margin: 7px 0 3px 45px;
+  margin: 9px 0 3px 45px;
 }
 
 .right {
-  margin: 7px 45px 3px 0;
+  margin: 9px 45px 3px 0;
 }
 
 .orContainer p {
   width: 50px;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #8e8e8e;
 }
 
-span {
-  color: darkblue;
-  padding: 5px;
-  margin: 30px auto;
+.loginFacebook {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
 }
 
-.login-filled {
-  background-color: darkblue;
+.loginFacebook img {
+  width: 20px;
+  margin: 0px 6px;
+}
+
+.loginFacebook p {
+  color: #385085;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.loginContainer span {
+  color: #124172;
+  padding: 5px;
+  margin: 15px auto;
+  font-size: 12px;
+}
+
+.noAccount {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  width: 350px;
+  height: 65px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.noAccount h5 {
+  margin-top: 20px;
+}
+.noAccount span {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #0095f6;
+  font-weight: bold;
+}
+
+.getTheApp {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 350px;
+}
+
+.getTheApp h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.getTheApp .appImage {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.getTheApp img {
+  margin: 0 3px;
+  height: 120px;
 }

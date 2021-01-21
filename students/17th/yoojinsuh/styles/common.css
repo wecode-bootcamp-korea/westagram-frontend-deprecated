@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  max-height: 2000px;
+}
+
+.navbar {
+  background-color: rosybrown;
+  height: 45px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar p {
+  font-size: 25px;
+  font-family: "Lobster Two", cursive;
+
+  margin-left: 20px;
+}
+
+.navbar input {
+  width: 230px;
+  height: 23px;
+  text-align: center;
+}
+
+nav {
+  background-color: yellow;
+  display: flex;
+  width: 120px;
+  flex-direction: row;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 25px;
+}
+
+main {
+  background-color: thistle;
+  height: 1500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.feeds {
+  background-color: burlywood;
+  height: 1200px;
+  width: 600px;
+  margin-left: 20px;
+}
+
+.main-right {
+  background-color: wheat;
+  height: 100%;
+  width: 400px;
+  margin-right: 20px;
+}
+
+.myProfile {
+  background-color: seagreen;
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.suggestions {
+  background-color: silver;
+  width: 100%;
+  height: 260px;
+  margin-top: 30px;
+}
+
+.stories {
+  background-color: royalblue;
+  width: 100%;
+  height: 120px;
+  margin-top: 30px;
+}
+
+article {
+  background-color: salmon;
+  width: 100%;
+  height: 600px;
+  margin-top: 25px;
+}
+
+article header {
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  height: 60px;
+  width: 576px;
+}
+
+article header .accountImage {
+  background-color: lightpink;
+  width: 50px;
+  height: 40px;
+}
+
+article header h1 {
+  background-color: lightskyblue;
+  width: 476px;
+
+  text-align: left;
+  padding-left: 20px;
+}
+
+article header .seeMore {
+  background-color: darkorange;
+  width: 50px;
+  height: 40px;
+  justify-self: flex-end;
+}
+
+article img {
+  width: 100%;
+}
+
+article footer,
+.likes,
+.accountName,
+.contentDetail,
+section {
+  padding-left: 20px;
+}
+
+article footer {
+  background-color: lightseagreen;
+  height: 40px;
+}
+
+article .likes {
+  background-color: lightyellow;
+}
+
+article .accountName {
+  background-color: limegreen;
+  font-weight: bold;
+}
+
+article .contentDetail {
+  background-color: mediumpurple;
+}
+
+section {
+  background-color: mediumturquoise;
+  height: 100px;
+}
+
+section ul {
+  list-style-type: none;
+}
+
+article .addComment {
+  background-color: coral;
+  border: none;
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+}
