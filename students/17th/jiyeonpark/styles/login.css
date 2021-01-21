@@ -1,10 +1,10 @@
-:root{
-  --container-border: 1px solid #DBDBDB;
+:root {
+  --container-border: 1px solid #dbdbdb;
   --container-border-radius: 1px;
-  --light-gray: #FAFAFA;
+  --light-gray: #fafafa;
 }
 
-.login_container{
+.login_container {
   width: 350px;
   height: 400px;
   display: flex;
@@ -15,23 +15,17 @@
   border-radius: var(--container-border-radius);
   margin: 100px auto 0 auto;
   padding: 10px 45px;
-  background-color: #FFFFFF;
-
-
+  background-color: #ffffff;
 }
 
-.instagram_logo{
+.instagram_logo {
   width: 300px;
   margin: 30px 0;
   font-size: 50px;
   text-align: center;
 }
 
-.login_form{
-
-}
-
-.inputbox{
+.inputbox {
   width: 100%;
   height: 36px;
   padding: 10px;
@@ -42,51 +36,76 @@
   font-size: 12px;
 }
 
-
-.login_btn{
+.login_btn {
   width: 100%;
   height: 30px;
   margin-top: 10px;
   border-style: none;
-  background-color: #B2DFFC;
-  color: #FFFFFF;
+  background-color: #b2dffc;
+  color: #ffffff;
 }
 
-.underline_content{
+.underline_content {
   width: 100%;
   height: 15px;
-  margin: 7.5Px 0;
+  margin: 7.5px 0;
   display: flex;
-  
 }
 
-.underline{
+.underline {
   width: 100px;
   height: 1px;
-  background-color: #DBDBDB;
-  position:relative;
+  background-color: #dbdbdb;
+  position: relative;
   top: 7.5px;
 }
 
-.under_text{
+.under_text {
   padding: 0;
   margin: 0px 10px;
-  color: #8E8E8E;
+  color: #8e8e8e;
   font-size: 13px;
 }
 
-.facebook_login_btn{
-  width: 100%;
+.facebook_login {
   all: unset;
-  text-align: center;
+  cursor: pointer;
 }
 
-.facebook_icon{
-  background-image: url(/img/facebook_icon.png);
+.facebook_login img {
+  width: 16px;
+  margin-right: 8px;
+  position: relative;
+  top: 2px;
+  background-image: url("img/facebook_icon.png");
 }
 
-.forget-password{
-  font-size: 12px;
+.facebook_login span {
+  font-size: 14px;
+  color: #385185;
+}
+
+.forget-password {
   color: #00376b;
+  font-size: 12px;
   text-decoration: none;
+}
+
+.create_accout_container {
+  width: 350px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: var(--container-border);
+  border-radius: var(--container-border-radius);
+  margin: 10px auto;
+  padding: 10px 45px;
+  background-color: #ffffff;
+}
+
+.create_accout_container span {
+  color: #0095f6;
+  cursor: pointer;
 }
