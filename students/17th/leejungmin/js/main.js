@@ -29,7 +29,9 @@ function replyEnterAdd(event) {
 
 function replyClickAdd() {
     if(replyInput.value){
-        replyList.append('meeeeen93 '+replyInput.value);
+        const replyP = document.createElement('p');
+        replyP.innerHTML = 'meeeeen93 ' + replyInput.value;
+        replyList.append(replyP);
         replyInput.value = null;
     }
 }

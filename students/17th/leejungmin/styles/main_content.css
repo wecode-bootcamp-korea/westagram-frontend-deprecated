@@ -21,7 +21,7 @@
   height: 110px;
   background-color: white;
   margin-bottom: 25px;
-  padding: 15px 35px 15px 15px;
+  padding: 12px 35px 15px 15px;
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
@@ -35,14 +35,25 @@
   margin-right: 15px;
 }
 
-.content_story img {
-  width: 65px;
-  height: 65px;
-  margin-bottom: 5px;
+.story_border {
+  width: 64px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  background: radial-gradient(circle at bottom left, #f58529 20%, #c42d91);
+}
+
+.content_story img {
+  width: 60px;
+  height: 60px;
+  /* margin-bottom: 5px; */
+  border-radius: 100%;
 }
 
 .content_story span {
+  margin-top: 5px;
   font-size: 12px;
 }
 
@@ -182,6 +193,8 @@
   background-color: white;
 }
 
+/* 왼쪽 폼태그 이하 input */
+
 .content_peed_form {
   width: 100%;
   background-color: white;
@@ -225,9 +238,321 @@
 
 /* - - - 오른쪽 전체 - - - */
 
+/* 오른쪽 my profile */
 .main_content_right {
   width: 300px;
   height: 500px;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   margin-left: 25px;
+}
+
+.sidebar_profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.sidebar_profile_left {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.sidebar_profile_right span {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.sidebar_profile_nametag {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.sidebar_profile_nametag span:nth-child(1) {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.sidebar_profile_nametag span:nth-child(2) {
+  font-size: 15px;
+  color: gray;
+}
+
+.sidebar_profile_left img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+/* 오른쪽 사이드바 바 */
+
+.sidebar_bar {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.sidebar_bar span:nth-child(1) {
+  color: gray;
+  font-weight: bold;
+}
+
+.sidebar_bar span:nth-child(2) {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 오른쪽 친구 추천 */
+
+.sidebar_friend_recommend {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 오른쪽 친구 추천 1번 */
+
+.friend_recommend-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.recommend_left-1 {
+  display: flex;
+  align-items: center;
+}
+
+.recommend_left-1 img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.recommend_profile_nametag-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.recommend_profile_nametag-1 span:nth-child(1) {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.recommend_profile_nametag-1 span:nth-child(2) {
+  font-size: 11px;
+  color: gray;
+}
+
+.recommend_right-1 span {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* 오른쪽 친구 추천 2번 */
+
+.friend_recommend-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.recommend_left-2 {
+  display: flex;
+  align-items: center;
+}
+
+.recommend_left-2 img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.recommend_profile_nametag-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.recommend_profile_nametag-2 span:nth-child(1) {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.recommend_profile_nametag-2 span:nth-child(2) {
+  font-size: 11px;
+  color: gray;
+}
+
+.recommend_right-2 span {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 13px;
+}
+/* 오른쪽 친구 추천 3번 */
+
+.friend_recommend-3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.recommend_left-3 {
+  display: flex;
+  align-items: center;
+}
+
+.recommend_left-3 img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.recommend_profile_nametag-3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.recommend_profile_nametag-3 span:nth-child(1) {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.recommend_profile_nametag-3 span:nth-child(2) {
+  font-size: 11px;
+  color: gray;
+}
+
+.recommend_right-3 span {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 13px;
+}
+/* 오른쪽 친구 추천 4번 */
+
+.friend_recommend-4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.recommend_left-4 {
+  display: flex;
+  align-items: center;
+}
+
+.recommend_left-4 img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.recommend_profile_nametag-4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.recommend_profile_nametag-4 span:nth-child(1) {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.recommend_profile_nametag-4 span:nth-child(2) {
+  font-size: 11px;
+  color: gray;
+}
+
+.recommend_right-4 span {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 13px;
+}
+/* 오른쪽 친구 추천 5번 */
+
+.friend_recommend-5 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.recommend_left-5 {
+  display: flex;
+  align-items: center;
+}
+
+.recommend_left-5 img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.recommend_profile_nametag-5 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.recommend_profile_nametag-5 span:nth-child(1) {
+  font-size: 13px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.recommend_profile_nametag-5 span:nth-child(2) {
+  font-size: 11px;
+  color: gray;
+}
+
+.recommend_right-5 span {
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* 반응형 이미지 구현 */
+
+@media screen and (max-width: 950px) {
+  .main_content_right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .content_story {
+    display: none;
+  }
+
+  .content_peed {
+    width: auto;
+  }
+
+  .nav_center_search {
+    display: none;
+  }
 }
