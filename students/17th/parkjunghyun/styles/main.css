@@ -277,12 +277,47 @@ nav > * {
 /* id 검색 결과 리스트 스타일 */
 .matchedIdName {
   width: 5rem;
-  border: #dbdbdb solid 1px;
-  background-color: white;
+  height: 2rem;
+  display: inline-block;
+  text-align: center;
 }
 
 .listContainer {
+  border: #dbdbdb solid 1px;
+  background-color: white;
   position: absolute;
+  width: 110px;
   left: 45%;
   top: 6.5%;
+  box-shadow: 0 0 5px 3px gainsboro;
+}
+
+.listContainer img {
+  width: 1rem;
+  border-radius: 50%;
+  display: inline;
+  margin: 10px 0px 5px 10px;
+}
+
+/* nav 내 프로필 클릭 메뉴 관련 스타일 */
+.menuContainer {
+  display: none;
+  position: absolute;
+  width: 7rem;
+  top: 7%;
+  right: 25%;
+  background-color: white;
+  border: #dbdbdb solid 1px;
+  box-shadow: 0 0 5px 3px gainsboro;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.menuContainer img {
+  width: 1.5rem;
+}
+
+.menuContainer p {
+  border-top: gray solid 1px;
+  text-align: center;
 }

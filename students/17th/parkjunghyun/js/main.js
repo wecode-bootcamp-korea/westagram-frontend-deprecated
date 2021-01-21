@@ -82,15 +82,28 @@ function findId(e) {
     listContainer.classList.add('listContainer');
 
     if (result[0]) {
-      console.log(result[0]);
+      console.log(result);
       for (var i = 0; i < result.length; i++) {
         const matchedList = document.createElement('p');
+        const profileImg = document.createElement('img');
+
         matchedList.classList.add(`matchedIdName`);
         matchedList.innerText = result[i];
+
+        profileImg.src = '/img/profile.jpeg';
+
+        listContainer.appendChild(profileImg);
         listContainer.appendChild(matchedList);
       }
 
       nav.appendChild(listContainer);
+
+      const coordinate = this.getBoundingClientRect();
+      const targetBottom = coordinate.bottom;
+      const targetLeft = coordinate.left;
+
+      listContainer.top = `${targetBottom + 20}px`;
+      listContainer.left = targetLeft;
     } else {
       alert('검색하신 ID가 존재하지 않습니다.');
     }
@@ -104,3 +117,25 @@ function removeImg() {
 search.addEventListener('keydown', findId);
 search.addEventListener('keydown', removeImg);
 search.addEventListener('blur', () => window.location.reload());
+
+// nav 프로필 사진 클릭 시 메뉴 박스 생성 (Mission 8)
+const navProfile = document.querySelector('#profileImg');
+const menuContainer = document.querySelector('.menuContainer');
+const body = document.querySelector('body');
+
+function showMenu(e) {
+  if (e.target == navProfile) {
+    const coordinate = this.getBoundingClientRect();
+    const targetBottom = coordinate.bottom;
+    const targetLeft = coordinate.left;
+
+    menuContainer.top = `${targetBottom + 20}px`;
+    menuContainer.left = targetLeft;
+
+    menuContainer.style.display = 'block';
+  } else {
+    menuContainer.style.display = 'none';
+  }
+}
+
+body.addEventListener('click', showMenu);
