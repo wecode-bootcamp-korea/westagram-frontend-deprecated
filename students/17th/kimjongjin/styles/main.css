@@ -96,7 +96,7 @@ nav {
     height: 100px;
     padding: 16px 0;
     margin-bottom: 24px; 
-    border: 1px solid black;
+    border: 1px solid #DBDBDB;
     background-color: white;
 }
 
@@ -121,7 +121,7 @@ nav {
 
 .pid {
     margin-top: 20px;
-    border: 1px solid black;
+    border: 1px solid #DBDBDB;
 }
 
 .pidHead {
@@ -150,10 +150,13 @@ nav {
 
 .pidBody {
     width: 600px;
-    height: 750px;
     margin: 0;
+    border: 1px solid #DBDBDB;
 }
 
+.pidImage {
+    height: 750px;
+}
 .pidBody img {
     width: 100%;
     height: 100%;
@@ -164,7 +167,6 @@ nav {
     justify-content: space-between;
     padding: 0 16px;
     margin-top: 4px;
-    border: 1px solid black;
 }
 
 .pidFunc ul {
@@ -178,9 +180,64 @@ nav {
 }
 
 .likeInfo {
-    padding-left: 22px;
+    padding: 0 22px;
     margin-top: 4px;
     font-size: 14px;
-    border: 1px solid black;
 }
 
+.pidInfo {
+    padding: 0 22px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.pidInfo a {
+    font-weight: bold;
+}
+
+.commentInfo {
+    margin-top: 4px;
+    color: #8e8e8e;
+}
+
+.comment {
+    display: flex;
+}
+
+.comment p {
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.comment span {
+    margin-top: 4px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.commentWrite {
+    margin-top: 4px;
+    padding: 10px 22px;
+    width: 600px;
+    display: flex;
+    border-top: 1px solid #DBDBDB;
+}
+.commentWrite input {
+    width: 100%;
+    height: 40px;
+    border: transparent;
+}
+
+.commentWrite input:focus {
+    outline: none;
+}
+
+.commentWrite button {
+    width: 60px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #7cc6f8;
+    cursor: pointer;
+}
