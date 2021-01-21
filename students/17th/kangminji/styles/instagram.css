@@ -10,7 +10,6 @@ position: sticky;
 top: 0;
     font-family: 'Lobster', cursive;
     font-size: 30px;
-    /* background-color: coral; */
     width: 100%;
     height: 54px;
     display : flex;
@@ -66,6 +65,7 @@ background-color: white;
 }
 .search {
     width : 150px;
+    text-align: center;
 }
 
 .markleft{
@@ -83,7 +83,7 @@ margin-left: 30px;
 
 .container{
     position: relative;
-/* background-color: rgb(249 249 249); */
+
 width: 100%;
 height: 900px;
 }
@@ -91,23 +91,24 @@ height: 900px;
 .feeds{
 position: relative;
 width: 600px;
-height : 1000px;
+
+height: auto;
 border: 1px solid rgb(160 163 165);
- /* left : 220px;
-bottom : 60px;  */
+
 border-radius: 3px;
-/* top: 50px;  */
+
 }
 
-.article{
-    position: relative;
+.feed{
+position: relative;
 width: 90%;
-height: 90%;
+height: auto;
 border: 1px solid rgb(160 163 165);
 border-radius: 3px;
 margin-left: 30px;
+margin-bottom: 90px;
 top : 22px;
-
+padding-bottom: 10px;
 }
 
 #comment{
@@ -119,20 +120,18 @@ bottom : 10px;
 }
 
 .content-right{
-    /* position: absolute; */
+
 width : 300px; 
 height : 700px;
-/* border : 1px solid rgb(160 163 165); */
 margin-left: 40px;
 margin-right: 10px;
- /* right : 13px;
-top : 39px; 
- margin-left: 10px;  */
+
 
 }
 
 .rightone{
     margin-left: -5px;
+    margin-bottom: 15px;
 }
 
 .profile{
@@ -140,9 +139,6 @@ top : 39px;
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    /* left: 10px;
-    top: 10px;
-    margin: auto; */
     margin-left: 10px;
     margin-top: 10px;
     
@@ -230,14 +226,13 @@ margin-left: 2px;
 }
 .chat{
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 .righttwo{
     border: 2px rgb(160 163 165) dotted;
     overflow : scroll;
     width: 300px;
     height: 300px;
-
-
 }
 
 .storyhead{
@@ -291,7 +286,6 @@ li{
 position: absolute;
     color: rgb(61 139 238);
     margin-top: 17px;
-    /* margin-left: 50px; */
     right : 14px;
 }
 
@@ -304,3 +298,44 @@ height: 300px;
 
 }
 
+.box{
+   display: grid;
+width: 500px;
+height: auto;
+z-index: 20;
+margin: auto;
+
+}
+
+.text{
+    color: black;
+  
+}
+
+.commentbody{
+    position: relative;
+    margin-top: 70px;
+}
+.commentbox{
+    overflow: hidden;
+    height: auto;
+    width: 500px;
+
+
+margin: auto;
+background-color: green;
+}
+.commentbtn{
+    height: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.deletebtn{
+    width:50px;
+    height: 15px;
+    right:10px;
+    background-color: hotpink;
+}
