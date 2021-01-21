@@ -74,7 +74,6 @@ nav {
     display: flex;
     width: 1000px;
     height: 1000px;
-    border: 1px solid red;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -82,7 +81,6 @@ nav {
 #feeds {
     width: 600px;
     height: 1000px;
-    border: 1px solid black;
     background-color: transparent;
 }
 
@@ -166,6 +164,7 @@ nav {
     justify-content: space-between;
     padding: 0 16px;
     margin-top: 4px;
+    border: 1px solid black;
 }
 
 .pidFunc ul {
@@ -176,5 +175,12 @@ nav {
     font-size: 24px;
     padding: 8px;
     cursor: pointer;
+}
+
+.likeInfo {
+    padding-left: 22px;
+    margin-top: 4px;
+    font-size: 14px;
+    border: 1px solid black;
 }
 
