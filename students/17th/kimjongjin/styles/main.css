@@ -8,6 +8,11 @@ ul {
     list-style: none;
 }
 
+button {
+    background-color: transparent;
+    border: transparent;
+}
+
 nav {
     /* position: fixed; */
     display: flex;
@@ -75,7 +80,7 @@ nav {
 }
 
 #feeds {
-    width: 620px;
+    width: 600px;
     height: 1000px;
     border: 1px solid black;
     background-color: transparent;
@@ -153,4 +158,23 @@ nav {
 
 .pidBody img {
     width: 100%;
+    height: 100%;
 }
+
+.pidFunc {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-top: 4px;
+}
+
+.pidFunc ul {
+    display: flex;
+}
+
+.pidFunc i {
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+}
+
