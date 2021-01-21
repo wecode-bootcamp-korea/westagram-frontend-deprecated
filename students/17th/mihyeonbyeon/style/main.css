@@ -6,6 +6,7 @@
     align-items:flex-start;
     background: var(--color-white);
 }
+
 .navigation-bar-container{
     display: flex;
     justify-content: space-between;
@@ -17,26 +18,31 @@
     background:  var(--color-lighter-white);
     order: 0;
 }
+
 /* title */
 .title-nav{
     display: flex;
     justify-content: space-around;
 }
+
 .title-nav div:last-of-type{
     font-family: var(--font-title);
     font-weight: bold;
     font-size: 25px;
 }
+
 .title-nav i,
 .title-nav div{
     margin-right: 10px;
     font-size: 20px
 }
+
 .title-nav i,
 .title-nav div:first-of-type {
     margin-top: 10px;
     margin-left: 10px;
 }
+
 /* navigation search part */
 .input-search-container{
     display: flex;
@@ -48,6 +54,7 @@
     width: 215px;
     border: 0 solid var(--color-black);
 }
+
 .input-search-bar{
     position: absolute;
     padding: 3px 10px 3px 26px;
@@ -58,13 +65,16 @@
     background: var(--color-white);
     outline: 0;
 }
+
 .searched-id-container{
     display: block;
 }
+
 .searched-id-list{
     display: flex;
     flex-direction: column;
 }
+
 .searched-id-list div {
     position: relative;
     padding-top: 8px;
@@ -79,15 +89,18 @@
     opacity: 0.9;
     z-index: 9;
 }
+
 /* navigation right part icons */
 .nav-icons{
     padding-top: 10px;
 }
+
 .nav-icons img{
     margin-left: 22px;
     width: 22px;
     height: 22px;
 }
+
 /* main-page */
 .main-image-container{
     display: block;
@@ -95,6 +108,7 @@
     overflow-x: auto;
     overflow-y: hidden;
 }
+
 .main-image{
     left: 0;
     top:0;
@@ -106,11 +120,13 @@
     min-width: 500px;
     min-height: 500px;
 }
+
 .main-container{
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 .feed-container{
     display: flex;
     flex-direction: column;
@@ -122,6 +138,7 @@
     width:615px;
     background:var(--color-lighter-white);
 }
+
 /* main header part */
 .feed-header{
     display: flex;
@@ -132,17 +149,21 @@
     height: 60px;
     border-bottom: 1px solid var(--color-light-white);
 }
+
 .feed-header div{
     display: flex;
     flex-direction: column;
     margin: 0;
 }
+
 .feed-header div p{
     margin: 0;
 }
+
 .settings-icon{
     margin-left: auto;
 }
+
 .round-image{
     margin-right: 10px;
     width: 42px;
@@ -154,6 +175,7 @@
 .board-container{
     padding: 0px 10px 10px 10px;
 }
+
 /* icons container */
 .icons-contianer{
     display: flex;
@@ -164,6 +186,7 @@
     margin: 10px 15px 10px 0px;
     font-size: 22px;
 }
+
 .icons-contianer i:last-of-type{
     margin-left: auto; 
 }
@@ -172,9 +195,11 @@
 .feed-icons-container{
     margin-bottom: 10px;
 }
+
 .feed-message-container{
     margin-bottom: 10px;
 }
+
 .feed-message-container span:first-of-type{
     margin-right: 10px;
 }
@@ -184,31 +209,38 @@
     margin-bottom: 10px;
     border-bottom: 1px solid var(--color-light-white);
 }
+
 .each-comment-list{
     display: flex;
     vertical-align: middle;
 }
+
 .commented-user-id,
 .commented-text,
 .commented-text-remove{
     display: inline;
     margin: 0 10px 0 0;
 }
+
 .commented-user-id{
     float: left;
 }
+
 .commented-text{
     font-size: 12px;
     padding-top: 1px;
 }
+
 .commented-text-remove{
     color: var(--color-blue);
     margin-left: auto;
     font-size: 10px;
 }
+
 .comment-write-form{
     display: flex;
 }
+
 .comment-input{
     display: flex;
     flex-direction: column;
@@ -218,8 +250,8 @@
     color: #262626;
     resize: none; 
     outline: 0;
-
 }
+
 .comment-submit-button{
     display: inline;
     margin-left: auto;
@@ -237,16 +269,19 @@
     height: 20px;
     border-radius: var(--border-round-radius);
 }
+
 .recomandation-profile{
     display: flex;
     justify-content: flex-start;
 }
+
 .recomandation-profile div:last-of-type{
     margin-left: 20px;
     margin-top: 10px;
     font-size: 12px;
     color: var(--color-blue);
 }
+
 .own-profile-container p{
     margin: 0 0 0 8px;
     font-size: 15px;
@@ -262,14 +297,17 @@
     flex-direction: column;
     margin-top: 40px;
 }
+
 .main-right-container {
     position: fixed;
 }
+
 .recomandation-image{
     width: 30px;
     height: 30px;
     border-radius: var(--border-round-radius);
 }
+
 .recomandation-individual{
     display: flex;
     justify-content: space-between;
@@ -281,12 +319,15 @@
     margin: 0;
     margin-right: 50px;
 }
+
 .user-follow-status{
     font-size: 12px;
 }
+
 .recomandation-individual div:last-of-type{
     margin-top: 5px;
 }
+
 @media (max-width:900px){
     .right-whole-container{
         display: none;
