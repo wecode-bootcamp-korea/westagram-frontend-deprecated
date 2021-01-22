@@ -104,7 +104,6 @@
 /* main-page */
 .main-image-container{
     display: block;
-    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -143,7 +142,6 @@
 .feed-header{
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
     align-items: center;
     padding: 16px 40px 16px 16px;
     height: 60px;

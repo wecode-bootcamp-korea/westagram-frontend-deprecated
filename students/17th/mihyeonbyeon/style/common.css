@@ -20,7 +20,7 @@
 }
 
 body{
-    background: #FAFAFA;
+    background: var(--color-white);
     margin: 0;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -29,8 +29,4 @@ body{
 
 *{
     box-sizing: border-box;
-}
-
-h1{
-    font-family: 'Lobster', cursive;
 }

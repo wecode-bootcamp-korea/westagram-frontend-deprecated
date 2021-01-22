@@ -24,6 +24,7 @@
 .login-form h1{
     font-size: 45px;
     align-self: center;
+    font-family: var(--font-title);
 }
 
 /* input part*/
