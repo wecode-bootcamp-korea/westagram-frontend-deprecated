@@ -1,0 +1,134 @@
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+hr{
+    border-style: none;
+    border-top: 1px solid lightgray;
+    margin: 10px 10px 0 10px;
+}
+
+.download-app{
+    height: 20px;
+    color: #262626;
+    font-size: 14px;
+    margin: 10px 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fafafa;
+    height: 80vh;
+}
+
+.container{
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    background-color: white;
+    justify-content: center;
+}
+
+.users-form {
+    width: 350px;
+    height: 380px;
+    margin: 0px 0px 10px 0px;
+    padding: 10px 0px;
+}
+
+.or {
+    display: flex;
+}
+
+.sign-up{
+    width: 350px;
+    height: 64px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 10px 0 0 0;
+}
+
+button{
+    width: 135px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-img{
+    width: 455px;
+    height: 620px;
+    background-color: blue;
+    display: none;
+}
+.had-account{
+    margin: 10px 0;
+}
+
+.footer {
+    height: 20vh;
+    background-color: #fafafa;
+}
+
+.footer-menu{
+    margin: 0 auto;
+    width: 60vw;
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.footer-info{
+    text-align: center;
+}
+
+.facebook-logo{
+    width: 30px;
+}
+
+.insta-logo{
+    width: auto;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.btn{
+    width: 258px;
+    height: 36px;
+    background-color: #fafafa;
+    margin: 3px 0px;
+    padding: 9px 0 px 7px 8px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.login{
+    background-color: #C6DEFA;
+    width: 258px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
