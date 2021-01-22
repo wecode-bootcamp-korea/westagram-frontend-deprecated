@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="~/Projects/westagram-frontend/students/17th/minjookim/favicon.ico" />
     <title>Login Page</title>
 </head>
 <body>
@@ -20,20 +21,20 @@
                 <input type="password" class="password btn" placeholder="비밀번호">
                 <button class="login btn">로그인</button>
                 <div class="or">
-                    <hr>
-                    <span>또는</span>
-                    <hr>
+                    <hr id="hr1">
+                    <span id="or-">또는</span>
+                    <hr id="hr2">
                 </div>
                 <div class="login-to-facebook">
-                    <img class="facebook-logo" src="facebook.svg" alt="facebook icon" width="30">
-                    <a href="#">Facebook으로 로그인</a>
+                    <img class="facebook-logo" src="facebook.svg" alt="facebook icon">
+                    <a href="#" class="login-to-fb">Facebook으로 로그인</a>
                     <a href="#" class="forgot-password">비밀번호를 잊으셨나요?</a>
                 </div>
             </div>
 
             <!-- 가입하기 -->
-            <div class="sign-up container">
-                <p class="had-account">계정이 없으신가요?</p>
+            <div class="sign-up container starts">
+                <span class="had-account">계정이 없으신가요?</span>
                 <a href="#" class="sign-up-link">가입하기</a>
             </div>
 
@@ -41,8 +42,8 @@
             
             <div class="download-app">앱을 다운로드하세요.</div>
             <div class="download">
-                    <button>AppStore에서 다운로드하기</button>
-                    <button>다운로드하기</button>
+                    <button><b>AppStore</b>에서 </br>다운로드하기</button>
+                    <button>다운로드하기</br><b>Google Play</b></button>
                     
             </div>
 
@@ -77,11 +78,3 @@
     </div>
 </body>
 </html>
-
-<body>
-    <main>
-        <div class="img"></div>
-        <div class="loginContainer"></div>
-    </main>
-    <footer></footer>
-</body>

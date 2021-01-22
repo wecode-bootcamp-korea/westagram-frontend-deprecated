@@ -13,26 +13,44 @@ a{
     margin: 10px 0;
 }
 
-hr{
+b{
+    color: white;
+}
+
+input{
+    color: black;
+    line-height: normal;
+    padding-left: .8em;
+}
+
+#hr1{
     border-style: none;
     border-top: 1px solid lightgray;
-    margin: 10px 10px 0 10px;
+    margin: 10px 15px 0 45px;
 }
+
+#hr2{
+    border-style: none;
+    border-top: 1px solid lightgray;
+    margin: 10px 45px 0 15px;
+}
+
 
 .download-app{
     height: 20px;
     color: #262626;
     font-size: 14px;
-    margin: 10px 20px;
+    margin: 16px auto;
 }
 
 main{
+    padding-top: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: #fafafa;
     height: 80vh;
+    width: 100vw;
 }
 
 .container{
@@ -45,12 +63,18 @@ main{
 .users-form {
     width: 350px;
     height: 380px;
-    margin: 0px 0px 10px 0px;
-    padding: 10px 0px;
+    padding: 0 0 10px 0;
+}
+
+#or- {
+    width: 80px;
+    font-size: 13px;
 }
 
 .or {
     display: flex;
+    margin-top: 10px;
+    font-weight: 700;
 }
 
 .sign-up{
@@ -67,8 +91,8 @@ button{
     background-color: black;
     color: white;
     border: none;
-    border-radius: 4px;
-    margin: 2px;
+    border-radius: 5px;
+    margin: 4px;
 }
 
 .download{
@@ -98,6 +122,9 @@ button{
     list-style: none;
     font-size: 12px;
     color: #8e8e8e;
+    display: flex;
+    
+    
 }
 
 .footer-info{
@@ -105,13 +132,15 @@ button{
 }
 
 .facebook-logo{
-    width: 30px;
+    width: 16px;
+    padding-top: 10px;
 }
 
 .insta-logo{
     width: auto;
     height: 50px;
-    margin: 20px auto;
+    margin: 30px auto;
+    margin-top: 40px;
 }
 
 .btn{
@@ -121,14 +150,50 @@ button{
     margin: 3px 0px;
     padding: 9px 0 px 7px 8px;
     border: 1px solid lightgray;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .login{
     background-color: #C6DEFA;
-    width: 258px;
+    width: 270px;
     height: 30px;
+    font-size: 14px;
+    font-weight: 600;
     border: none;
     border-radius: 4px;
     color: white;
+    margin-top: 10px
+}
+
+.login-to-facebook{
+    padding-top: 20px;
+}
+
+.login-to-fb{
+    display: inline;
+    font-size: 14px;
+    color: #385185;
+    font-weight: 600;
+    padding-left: 4px;
+}
+.forgot-password{
+    font-size: 12px;
+    color: #00376b;
+    margin: 18px 0;
+}
+.had-account{
+    font-size: 14px;
+    color: black;
+}
+
+.sign-up-link{
+    display: inline;
+    font-size: 14px;
+    color: #0095f6;
+    font-weight: 600;
+    padding-left: 4px;
+}
+.starts{
+    box-sizing: border-box;
+    padding-top: 22px;
 }
