@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}

@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Westagram</title>
+        <link href="styles/common.css" rel="stylesheet" href="text/css" />
+        <link href="styles/login.css" rel="stylesheet" href="text/css" />
+        <link href="styles/reset.css" rel="stylesheet" href="text/css" />
+        <script defer src="js/login.js"></script>
     </head>
     <body>
-        
+        <main class="container">
+            <div class="logo-login-wrap">
+                <img class="logo-img" src="img/westagramLogo.svg" alt="Westagram Logo">
+                <div class="login-container">
+                    <input class="id-input" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                    <input class="pw-input" type="password" placeholder="비밀번호">
+                    <button class="login-btn" disabled="disabled">로그인</button>
+                </div>
+            </div>
+            <a class = "forgot-pw" href="https://www.instagram.com/accounts/password/reset/">비밀번호를 잊으셨나요?</a>
+        </main>
     </body>
 </html>
