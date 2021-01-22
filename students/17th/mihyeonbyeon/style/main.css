@@ -280,7 +280,7 @@
     color: var(--color-blue);
 }
 
-.own-profile_container p{
+.own_profile_container p{
     margin: 0 0 0 8px;
     font-size: 15px;
 }
