@@ -1,0 +1,90 @@
+body {
+    width: 730px;
+    height: 790px;
+    box-sizing: content-box;
+}
+
+.main {
+    margin-left: 430px;
+    margin-top: 50px;
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    width: 690px;
+    height: 700px;
+}
+
+.mainSub {
+    padding-left: 80px;
+}
+
+.insta {
+    box-sizing: content-box;
+    height: 100px;
+    width: 360px;
+    font-size: 90px;
+    margin-left: 70px;
+    margin-top: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    box-sizing: content-box;
+    background-color: #FAFAFA;
+    width: 530px;
+    height: 70px;
+    margin-bottom: 16px;
+    margin-top: 100px;
+    border-radius: 7px;
+    border: 1px solid #dfdfdf;
+}
+
+input[type="text"]::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+    color: rgb(180, 180, 180);
+    font-weight: bolder;
+}
+
+input[type="password"] {
+    background-color: #FAFAFA;
+    width: 530px;
+    height: 70px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    border: 1px solid #dfdfdf;
+}
+
+input[type="password"]::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bolder;
+    color: rgb(180, 180, 180);
+}
+
+button {
+    width: 525px;
+    height: 60px;
+    background-color: #C4E1FB;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600px;
+    color: rgb(252, 252, 252);
+    border: none;
+    box-sizing: content-box;
+    border-radius: 7px;
+}
+
+.forget {
+    font-size: 20px;
+    color: #0a4194;
+    margin-left: 165px;
+    margin-top: 120px;
+    font-weight: bolder;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style:
+}
