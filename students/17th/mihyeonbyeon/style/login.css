@@ -1,6 +1,7 @@
 .login-page{
     margin-top: 60px;
 }
+
 .login-container{
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@
     width: 350px;
     height: 606px;
 }
+
 .login-form{
     display: flex;
     flex-direction: column;
@@ -16,6 +18,7 @@
     border: 1px solid var(--color-dark-white);
 
 }
+
 .login-form,
 .hasAccount{
     background:var(--color-lighter-white);
@@ -34,6 +37,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .input-container :first-child, .input-container input:nth-of-type(2) {
     margin-bottom: 8px;
     width: 266px;
@@ -42,6 +46,7 @@
     background-color: var(--color-white);
     outline: none;
 }
+
 .input-container :last-child{
     margin-top: 8px;
     width: 270px;
@@ -61,11 +66,13 @@
     justify-content: center;
     margin-top: 15px ;
 }
+
 .or-container div{
     margin-top: 7px;
     padding-left: 103px;
     border-top: 1px solid var(--color-dark-white);
 }
+
 h1.text-or{
     margin: 0px 20px 10px 20px;
     font-size: 13px;
@@ -77,22 +84,26 @@ h1.text-or{
     flex-direction: column;
     align-items: center;
 }
+
 .facebook-login-text{
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 14px;
     color: var(--color-dark-blue);
 }
+
 .facebook-login-text i {
     font-size: larger;
     color: var(--color-dark-blue);
 }
+
 .facebook-login-link a{
     margin-bottom: 20px;
     text-decoration: none;
     font-size: 11px;
     color:var(--color-dark-blue);
 }
+
 /* hasAccount part */
 .has-account{
     display: flex;
@@ -102,36 +113,44 @@ h1.text-or{
     font-size: 14px;
     text-decoration: none;
 }
+
 .has-account-content a {
     text-decoration: none;
     font-weight: bold;
     color: #1E9DF7;
 }
+
 .has-account-content{
     margin: 20px auto;
 }
+
 /* download-App part */
 .download-APP{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .download-APP p{
     font-size: 14px;
 }
+
 .download-button{
     display: flex;
 }
+
 .download-button a{
     margin-right: 15px;
     border-radius: var(--border-radius);
     color: var(--color-white);
 
 }
+
 .apple-icon{
     height: 40px;
     width: 134px;
 }
+
 .googleplay-icon{
     height: 40px;
     width: 136px;
