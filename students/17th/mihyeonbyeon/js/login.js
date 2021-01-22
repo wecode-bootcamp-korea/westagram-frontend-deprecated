@@ -4,7 +4,9 @@ const $inputPassword = document.querySelector(".input_password");
 const $loginButton = document.querySelector(".login_button");
 
 const validateLogin = () => {
-    $inputID.value.indexOf("@") !== -1 && $inputPassword.value.length >= 5 ? $loginButton.style.backgroundColor = "#0095F6" : $loginButton.style.backgroundColor = "#B9DFFC";
+    const isValid = $inputID.value.indexOf("@") !== -1 && $inputPassword.value.length >= 5;
+    $loginButton.style.backgroundColor = isValid ? "#0095F6" : "#B9DFFC";
 }
+
 
 $inputContainer.addEventListener("keydown", validateLogin);

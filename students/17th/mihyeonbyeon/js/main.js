@@ -18,15 +18,15 @@ const handleWriting = (event) => {
 const handleSubmit = (event) => {
     const $eachCommentDiv = document.createElement("div");
     $eachCommentDiv.className = `each_comment_list`;
-    $eachCommentDiv.innerHTML = [
-        `<p class="commented_user_id">Sia</p>`,
-        `<p class="commented_text"> ${$commentInput.value}</p>`,
-        `<p class="commented_text_remove">삭제</p>`
-    ].join("")
+    $eachCommentDiv.innerHTML = `
+        <p class="commented_user_id">Sia</p>
+        <p class="commented_text"> ${$commentInput.value}</p>
+        <p class="commented_text_remove">삭제</p>
+    `
     $commentList.appendChild($eachCommentDiv);
     $commentInput.value = "";
     const $commentedTextRemoveAll = document.querySelectorAll(".commented_text_remove");
-    $commentedTextRemoveAll.forEach(item => item.addEventListener("click", removeComment));
+    $commentedTextRemoveAll.forEach(comment => comment.addEventListener("click", removeComment));
     $commentInput.removeEventListener("keydown", handleSubmit, true);
     $commentSubmitButton.removeEventListener("click", handleSubmit, true);
 }
@@ -39,7 +39,7 @@ const removeComment = (event) => {
 const handleSearch = (event) => {
     const declaredSearchTags = document.querySelectorAll(".searched_results");
     if (declaredSearchTags) {
-        declaredSearchTags.forEach(item => item.remove())
+        declaredSearchTags.forEach(tag => tag.remove())
     };
     const $searchResults = document.createElement("div");
     $searchResults.className = "searched_results"
@@ -48,12 +48,8 @@ const handleSearch = (event) => {
         if (!event.shiftKey) {
             event.preventDefault();
             const target = $inputSearchBar.value;
-            const targetResult = IdList.find(item => item.indexOf(target) !== -1);
-            if (targetResult) {
-                $searchResults.textContent = `${targetResult}`
-            } else {
-                $searchResults.textContent = `찾는 결과가 없습니다.`
-            }
+            const targetResult = IdList.find(id => id.indexOf(target) !== -1);
+            $searchResults.textContent = targetResult ? `${targetResult}` : `찾는 결과가 없습니다.`;
             $searchedIdDiv.appendChild($searchResults);
         }
     }
