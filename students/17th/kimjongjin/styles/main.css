@@ -99,6 +99,10 @@ nav {
     display: flex;
 }
 
+.friendList ul li {
+    text-align: center;
+}
+
 .friendList img {
     width: 50px;
     height: 50px;
@@ -136,7 +140,7 @@ nav {
 .pidHead img {
     width: 42px;
     height: 20px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .pidHead span {
@@ -257,13 +261,16 @@ nav {
 .myInfo > div a {
     margin-top: 7px;
 }
+.myInfo > div  p {
+    font-size: 14px;
+    color:  #8e8e8e;
+}
 
 .myInfo img {
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgb(212, 11, 78);
+    width: 55px;
+    height: 55px;
     padding: 2px;
-    border-radius: 25px;
+    border-radius: 28px;
     margin-right: 15px;
 }
 
@@ -313,8 +320,34 @@ nav {
     margin: 0;
 }
 
+.recommend ul li > div p {
+    font-size: 14px;
+    color:  #8e8e8e;
+}
+
 .recommend .follow {
     font-size: 14px;
     color:  #0095F6;
     font-weight: 700;
+}
+
+
+.companyInfo {
+    width: 300px;
+}
+
+.companyInfo ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.companyInfo ul li {
+    font-size: 11px;
+    margin-right: 5px;
+    color: #c7C7c7;
+}
+
+.companyInfo p {
+    font-size: 11px;
+    color: #c7c7c7;
 }
