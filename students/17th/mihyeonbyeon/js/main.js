@@ -1,8 +1,8 @@
-const $commentList = document.querySelector(".comment-list");
-const $commentInput = document.querySelector(".comment-input")
-const $commentSubmitButton = document.querySelector(".comment-submit-button");
-const $inputSearchBar = document.querySelector(".input-search-bar");
-const $searchedIdDiv = document.querySelector(".searched-id-list");
+const $commentList = document.querySelector(".comment_list");
+const $commentInput = document.querySelector(".comment_input")
+const $commentSubmitButton = document.querySelector(".comment_submit_button");
+const $inputSearchBar = document.querySelector(".input_search_bar");
+const $searchedIdDiv = document.querySelector(".searched_id_list");
 
 const IdList = ["ho_ho_ho", "like_birds_set_free", "chandelier", "snowman", "cheap_thrills", "courage_to_change", "titanium", "elastic_heart", "move_your_body", "hey_boy", "candy_cane_lane"];
 
@@ -17,15 +17,15 @@ const handleWriting = (event) => {
 
 const handleSubmit = (event) => {
     const $eachCommentDiv = document.createElement("div");
-    $eachCommentDiv.className = `each-comment-list`;
+    $eachCommentDiv.className = `each_comment_list`;
     $eachCommentDiv.innerHTML = [
-        `<p class="commented-user-id">Sia</p>`,
-        `<p class="commented-text"> ${$commentInput.value}</p>`,
-        `<p class="commented-text-remove">삭제</p>`
+        `<p class="commented_user_id">Sia</p>`,
+        `<p class="commented_text"> ${$commentInput.value}</p>`,
+        `<p class="commented_text_remove">삭제</p>`
     ].join("")
     $commentList.appendChild($eachCommentDiv);
     $commentInput.value = "";
-    const $commentedTextRemoveAll = document.querySelectorAll(".commented-text-remove");
+    const $commentedTextRemoveAll = document.querySelectorAll(".commented_text_remove");
     $commentedTextRemoveAll.forEach(item => item.addEventListener("click", removeComment));
     $commentInput.removeEventListener("keydown", handleSubmit, true);
     $commentSubmitButton.removeEventListener("click", handleSubmit, true);
@@ -37,12 +37,12 @@ const removeComment = (event) => {
 }
 
 const handleSearch = (event) => {
-    const declaredSearchTags = document.querySelectorAll(".searched-results");
+    const declaredSearchTags = document.querySelectorAll(".searched_results");
     if (declaredSearchTags) {
         declaredSearchTags.forEach(item => item.remove())
     };
     const $searchResults = document.createElement("div");
-    $searchResults.className = "searched-results"
+    $searchResults.className = "searched_results"
     $searchResults.textContent = "";
     if (event.keyCode === 13) {
         if (!event.shiftKey) {

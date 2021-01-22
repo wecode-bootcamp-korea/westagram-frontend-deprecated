@@ -1,5 +1,5 @@
 /* navigation*/
-.westargram-whole-container{
+.westargram_whole_container{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -7,7 +7,7 @@
     background: var(--color-white);
 }
 
-.navigation-bar-container{
+.navigation_bar_container{
     display: flex;
     justify-content: space-between;
     align-self:stretch;
@@ -20,31 +20,31 @@
 }
 
 /* title */
-.title-nav{
+.title_nav{
     display: flex;
     justify-content: space-around;
 }
 
-.title-nav div:last-of-type{
+.title_nav div:last-of-type{
     font-family: var(--font-title);
     font-weight: bold;
     font-size: 25px;
 }
 
-.title-nav i,
-.title-nav div{
+.title_nav i,
+.title_nav div{
     margin-right: 10px;
     font-size: 20px
 }
 
-.title-nav i,
-.title-nav div:first-of-type {
+.title_nav i,
+.title_nav div:first-of-type {
     margin-top: 10px;
     margin-left: 10px;
 }
 
 /* navigation search part */
-.input-search-container{
+.input_search_container{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -55,7 +55,7 @@
     border: 0 solid var(--color-black);
 }
 
-.input-search-bar{
+.input_search_bar{
     position: absolute;
     padding: 3px 10px 3px 26px;
     border: solid 1px var(--color-dark-white);
@@ -66,16 +66,16 @@
     outline: 0;
 }
 
-.searched-id-container{
+.searched_id_container{
     display: block;
 }
 
-.searched-id-list{
+.searched_id_list{
     display: flex;
     flex-direction: column;
 }
 
-.searched-id-list div {
+.searched_id_list div {
     position: relative;
     padding-top: 8px;
     padding-left:10px ;
@@ -91,24 +91,24 @@
 }
 
 /* navigation right part icons */
-.nav-icons{
+.nav_icons{
     padding-top: 10px;
 }
 
-.nav-icons img{
+.nav_icons img{
     margin-left: 22px;
     width: 22px;
     height: 22px;
 }
 
 /* main-page */
-.main-image-container{
+.main_image_container{
     display: block;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
-.main-image{
+.main_image{
     left: 0;
     top:0;
     width: 100%;
@@ -120,13 +120,13 @@
     min-height: 500px;
 }
 
-.main-container{
+.main_container{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.feed-container{
+.feed_container{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -139,7 +139,7 @@
 }
 
 /* main header part */
-.feed-header{
+.feed_header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -148,21 +148,21 @@
     border-bottom: 1px solid var(--color-light-white);
 }
 
-.feed-header div{
+.feed_header div{
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
-.feed-header div p{
+.feed_header div p{
     margin: 0;
 }
 
-.settings-icon{
+.settings_icon{
     margin-left: auto;
 }
 
-.round-image{
+.round_image{
     margin-right: 10px;
     width: 42px;
     height: 42px;
@@ -170,76 +170,76 @@
 }
 
 /* main page board part */
-.board-container{
+.board_container{
     padding: 0px 10px 10px 10px;
 }
 
 /* icons container */
-.icons-contianer{
+.icons_contianer{
     display: flex;
     justify-content: flex-start;
 }
 
-.icons-contianer i{
+.icons_contianer i{
     margin: 10px 15px 10px 0px;
     font-size: 22px;
 }
 
-.icons-contianer i:last-of-type{
+.icons_contianer i:last-of-type{
     margin-left: auto; 
 }
 
 /* feed icons */
-.feed-icons-container{
+.feed_icons_container{
     margin-bottom: 10px;
 }
 
-.feed-message-container{
+.feed_message_container{
     margin-bottom: 10px;
 }
 
-.feed-message-container span:first-of-type{
+.feed_message_container span:first-of-type{
     margin-right: 10px;
 }
 
 /* comment part */
-.comment-line{
+.comment_line{
     margin-bottom: 10px;
     border-bottom: 1px solid var(--color-light-white);
 }
 
-.each-comment-list{
+.each_comment_list{
     display: flex;
     vertical-align: middle;
 }
 
-.commented-user-id,
-.commented-text,
-.commented-text-remove{
+.commented_user_id,
+.commented_text,
+.commented_text_remove{
     display: inline;
     margin: 0 10px 0 0;
 }
 
-.commented-user-id{
+.commented_user_id{
     float: left;
 }
 
-.commented-text{
+.commented_text{
     font-size: 12px;
     padding-top: 1px;
 }
 
-.commented-text-remove{
+.commented_text_remove{
     color: var(--color-blue);
     margin-left: auto;
     font-size: 10px;
 }
 
-.comment-write-form{
+.comment_write_form{
     display: flex;
 }
 
-.comment-input{
+.comment_input{
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -250,7 +250,7 @@
     outline: 0;
 }
 
-.comment-submit-button{
+.comment_submit_button{
     display: inline;
     margin-left: auto;
     padding: 0;
@@ -262,67 +262,67 @@
 }
 
 /* main right part*/
-.round-image-small{
+.round_image_small{
     width: 20px;
     height: 20px;
     border-radius: var(--border-round-radius);
 }
 
-.recomandation-profile{
+.recomandation_profile{
     display: flex;
     justify-content: flex-start;
 }
 
-.recomandation-profile div:last-of-type{
+.recomandation_profile div:last-of-type{
     margin-left: 20px;
     margin-top: 10px;
     font-size: 12px;
     color: var(--color-blue);
 }
 
-.own-profile-container p{
+.own-profile_container p{
     margin: 0 0 0 8px;
     font-size: 15px;
 }
 
-.recomandation-list div:first-of-type{
+.recomandation_list div:first-of-type{
     display: flex;
     justify-content: space-between;
 }
 
-.right-whole-container{
+.right_whole_container{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
 }
 
-.main-right-container {
+.main_right_container {
     position: fixed;
 }
 
-.recomandation-image{
+.recomandation_image{
     width: 30px;
     height: 30px;
     border-radius: var(--border-round-radius);
 }
 
-.recomandation-individual{
+.recomandation_individual{
     display: flex;
     justify-content: space-between;
 }
 
-.recomandation-individual div:first-of-type{
+.recomandation_individual div:first-of-type{
     display: flex;
     flex-direction: column;
     margin: 0;
     margin-right: 50px;
 }
 
-.user-follow-status{
+.user_follow_status{
     font-size: 12px;
 }
 
-.recomandation-individual div:last-of-type{
+.recomandation_individual div:last-of-type{
     margin-top: 5px;
 }
 
