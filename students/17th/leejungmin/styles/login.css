@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .container_sub_login {
@@ -14,7 +15,6 @@
   width: 350px;
   height: 380px;
   border: 1px solid #dbdbdb;
-  box-sizing: border-box;
 }
 
 .login_form {
@@ -101,7 +101,6 @@
 
 .login_footer_option1 {
   display: flex;
-  flex-direction: row;
   margin-bottom: 20px;
   color: #8a8a8a;
   font-size: 12px;
