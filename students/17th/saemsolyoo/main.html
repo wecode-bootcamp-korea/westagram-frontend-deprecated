@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/ee1cbfb3bc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <nav>
@@ -41,6 +42,78 @@
       <main>
         <section class="main-stories">
           <ul>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/136978895_110777060922819_1527151541896137636_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=75H61FqUmwMAX9-l9tZ&tp=1&oh=d0097362bab477276f2bd78204753d96&oe=6032B33A"
+                  alt=""
+                />
+                <span class="story-profile-name">leesoo_</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/18094548_373976256332073_6279520749740883968_a.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=xO-x0RuRCncAX9u609z&tp=1&oh=60ee045da85b7319c341e6382a03a193&oe=60354190"
+                  alt=""
+                />
+                <span class="story-profile-name">yooberry</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/23164401_1122987751136861_1064668198781059072_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=93UFDi86qI8AX9ey7uT&tp=1&oh=36cd698779b3f7ef1dc0837a26ad5d0b&oe=6034BEF2"
+                  alt=""
+                />
+                <span class="story-profile-name">thisislongusername</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/17332591_729877933847230_355962199388192768_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=AyTI6zNfv5YAX-LIJCe&tp=1&oh=47351f24eda6cbfd58c3e227b90b89c1&oe=60326C76"
+                  alt=""
+                />
+                <span class="story-profile-name">losmeas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/16229037_1651839208442980_7448588071500513280_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=grJPuz_3So8AX_TO6Wc&tp=1&oh=7d6128642103619c4c52e08d3a2e47ee&oe=6035F123"
+                  alt=""
+                />
+                <span class="story-profile-name">snowman</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/15623665_1746332985685367_960909700239458304_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=YRwSrxwUvyoAX8UB4j7&tp=1&oh=c9bd6fc4f0cf8a972ebdcd1379eb9754&oe=60331F35"
+                  alt=""
+                />
+                <span class="story-profile-name">christmas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/13549447_1651954635126694_652502710_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=YRhztzy4RQAAX82eHKy&tp=1&oh=48f084360da039dece75f20cd60ad282&oe=6035C2D6"
+                  alt=""
+                />
+                <span class="story-profile-name">shopping</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="story-profile">
+                <img
+                  src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/13388719_257549571279526_815606794_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=mtLIw5zl2O8AX-O7FgO&tp=1&oh=7031e5110f2e2d4e3353ec97b4549f69&oe=6032BE6F"
+                  alt=""
+                />
+                <span class="story-profile-name">withberry</span>
+              </a>
+            </li>
             <li>
               <a href="#" class="story-profile">
                 <img
@@ -156,13 +229,12 @@
             </ul>
             <span class="feed-uploaded-time">22시간 전</span>
           </div>
-          <form action="">
-            <textarea
-              placeholder="댓글 달기..."
+          <form action="" class="feed-comment-form">
+            <input
+              type="text"
               class="feed-comment-input"
-              cols="30"
-              rows="10"
-            ></textarea>
+              placeholder="댓글 달기..."
+            />
             <button class="feed-comment-submit" type="submit" disabled>
               게시
             </button>
@@ -209,13 +281,12 @@
             </ul>
             <span class="feed-uploaded-time">1일 전</span>
           </div>
-          <form action="">
-            <textarea
-              placeholder="댓글 달기..."
+          <form action="" class="feed-comment-form">
+            <input
+              type="text"
               class="feed-comment-input"
-              cols="30"
-              rows="10"
-            ></textarea>
+              placeholder="댓글 달기..."
+            />
             <button class="feed-comment-submit" type="submit" disabled>
               게시
             </button>
@@ -259,13 +330,12 @@
             <span class="feed-uploaded-time">1일 전</span>
           </div>
 
-          <form action="">
-            <textarea
-              placeholder="댓글 달기..."
+          <form action="" class="feed-comment-form">
+            <input
+              type="text"
               class="feed-comment-input"
-              cols="30"
-              rows="10"
-            ></textarea>
+              placeholder="댓글 달기..."
+            />
             <button class="feed-comment-submit" type="submit" disabled>
               게시
             </button>

@@ -319,6 +319,15 @@ aside {
 
 .main-stories ul {
   display: flex;
+  overflow: scroll;
+}
+
+.main-stories ul {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.main-stories ul::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 .main-stories ul li {
