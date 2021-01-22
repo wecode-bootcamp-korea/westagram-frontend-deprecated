@@ -1,33 +1,11 @@
 'use strict';
 
+const passwordBox = document.getElementById('login_Pw');
+passwordBox.addEventListener('keyup', function (event) {
+    const idInputValue = document.getElementById('login_Id').value;
+    const pwInputValue = document.getElementById('login_Pw').value;
+    const loginBtn = document.getElementById('login_btn');
 
-//ID -> PW 순으로 입력시 실행
-const pwbox = document.getElementById('login_Pw');
-pwbox.addEventListener('keyup',function(event){
-    const idboxs = document.getElementById('login_Id').value;
-    const pwboxs = document.getElementById('login_Pw').value;
-    const change = document.getElementById('login_btn');
-
-    if(idboxs&&pwboxs) {
-        change.style.backgroundColor ='#0896F7';
-      }else {
-        change.style.backgroundColor ='#C0DFFD';
-      }
+    const isValidInput = idInputValue && pwInputValue
+    loginBtn.style.backgroundColor = isValidInput ? '#0896F7' : '#C0DFFD';
 });
-
-//PW -> ID 순으로 입력시 실행
-const idbox = document.getElementById('login_Id');
-idbox.addEventListener('keyup',function(event){
-    const idboxs = document.getElementById('login_Id').value;
-    const pwboxs = document.getElementById('login_Pw').value;
-    const change = document.getElementById('login_btn');
-
-    if(idboxs&&pwboxs) {
-        change.style.backgroundColor ='#0896F7';
-      }else {
-        change.style.backgroundColor ='#C0DFFD';
-      }
-});
-
-
-
