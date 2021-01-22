@@ -1,7 +1,11 @@
 const replyInput = document.querySelector('.content_peed_reply');
 const replySubmit = document.querySelector('.content_peed_submit');
 const replyList = document.querySelector('.content_peed_text');
+const navProfileBtn = document.querySelector('.nav_bar_profile_btn');
+const navMenuDrop = document.querySelector('.drop_box_main');
+const navMenuDropDia = document.querySelector('.drop_box_diamond');
 
+let dropDownUp = 0;
 
 function colorChange() {
     
@@ -18,11 +22,9 @@ function colorChange() {
 
 function replyEnterAdd(event) {
     if(event.keyCode === 13 && replyInput.value){
-        // event.preventDefault();
         const replyP = document.createElement('p');
         replyP.innerHTML = 'meeeeen93 ' + replyInput.value;
         replyList.append(replyP);
-        // replyList.append('meeeeen93 '+replyInput.value);
         replyInput.value = null;
     }
 }
@@ -36,8 +38,21 @@ function replyClickAdd() {
     }
 }
 
+function menuDrop() {
+    if(dropDownUp === 0) {
+        navMenuDrop.style.display = 'block';
+        navMenuDropDia.style.display = 'block';
+        dropDownUp = 1;
+    }else if(dropDownUp === 1){
+        navMenuDrop.style.display = 'none';
+        navMenuDropDia.style.display = 'none';
+        dropDownUp = 0;
+    }
+}
+
 
 
 replyInput.addEventListener('keyup', colorChange);
 replyInput.addEventListener('keydown', replyEnterAdd);
 replySubmit.addEventListener('click', replyClickAdd);
+navProfileBtn.addEventListener('click', menuDrop);

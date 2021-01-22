@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 @import "reset.css";
-@import "variables.css";
-@import "login_style.css";
+
+@import "login.css";
+
 @import "main_nav.css";
 @import "main_content.css";
+@import "main_mediaqueries";
 
 body {
   background-color: #fafafa;
-  /* height: 1000vh; */
 }
 
 * {
@@ -18,5 +19,5 @@ body {
 #main_layout {
   display: flex;
   flex-direction: column;
-  height: 1000vh;
+  height: 100%;
 }
