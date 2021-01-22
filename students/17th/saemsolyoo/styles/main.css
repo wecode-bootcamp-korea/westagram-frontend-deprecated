@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #fafafa;
+  padding-top: 54px;
 }
 
 /* navbar */
@@ -28,6 +29,9 @@ nav {
   height: 54px;
   border-bottom: 1px solid #d6d6d6;
   background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .nav-wrapper {
@@ -124,4 +128,125 @@ nav {
   border-radius: 50%;
   position: relative;
   top: 1.5px;
+}
+
+/* main  layout*/
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 935px;
+}
+
+main {
+  width: 614px;
+  height: 100%;
+  /* background-color: lavender; */
+  padding-top: 30px;
+}
+
+aside {
+  width: 293px;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* main-story */
+.main-stories {
+  width: 100%;
+  height: 118px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+/* main-feed */
+.main-feed {
+  width: 100%;
+  height: 849px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  margin-bottom: 60px;
+}
+
+.main-feed header {
+  height: 60px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.feed-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.feed-info a {
+  font-size: 14px;
+  font-weight: 700;
+  width: max-content;
+}
+
+.feed-info a:first-child {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.feed-info a:first-child:hover {
+  text-decoration: underline;
+}
+
+.feed-info a:nth-child(2) {
+  font-size: 12px;
+  margin-top: 3px;
+  font-weight: 400;
+}
+
+.main-feed header i {
+  color: #5b5b5b;
+  font-size: 15px;
+}
+
+.feed-image {
+  width: 100%;
+}
+
+/* feed-comment */
+.feed-comment {
+  padding: 5px 12px;
+}
+
+.feed-icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 9px;
+}
+
+.feed-icons-left {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.feed-icons i {
+  cursor: pointer;
+}
+
+.feed-likes {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.feed-comment-input {
+  width: 100%;
 }
