@@ -23,13 +23,13 @@ nav > * {
 }
 
 .search {
+  height: 1.7rem;
+  width: 23%;
+  border: #dbdbdb solid 1px;
+  border-radius: 2px;
   background: no-repeat center/6% url('/img/search.png');
   background-position: 45% 40%;
   background-color: #fafafa;
-  border: #dbdbdb solid 1px;
-  border-radius: 2px;
-  height: 1.7rem;
-  width: 23%;
 }
 .search::placeholder {
   padding: 50%;
@@ -59,35 +59,35 @@ nav > * {
 /* 전체 container(.main) 스티일 */
 
 .main {
-  width: 50%;
-  height: auto;
   display: flex;
   flex: 1 0.5;
+  width: 50%;
+  height: auto;
 }
 
 /* .main 내 좌측(-left) container 스타일 */
 
-.main-left {
+.mainLeft {
   width: 65%;
   margin: 2rem 0 1.5rem 0;
 }
 
 /* 다른 사람 프로필 (가로슬라이드) 영역 스타일 */
-.main-left .profiles {
-  border: #dbdbdb solid 1px;
+.mainLeft .profiles {
+  display: flex;
+  flex-wrap: nowrap;
   width: 100%;
   height: auto;
   padding: 0.2rem 0;
-  display: flex;
-  flex-wrap: nowrap;
+  border: #dbdbdb solid 1px;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
-.main-left .profiles::-webkit-scrollbar {
+.mainLeft .profiles::-webkit-scrollbar {
   display: none;
 }
 
-.main-left .profile {
+.mainLeft .profile {
   margin: 10px;
 }
 
@@ -95,7 +95,7 @@ nav > * {
   text-align: center;
 }
 
-.main-left .profiles img {
+.mainLeft .profiles img {
   width: 65px;
   height: 65px;
   border-radius: 50%;
@@ -103,11 +103,11 @@ nav > * {
 }
 
 /* .main container 내 피드 영역 스타일 */
-.main-left .feeds {
-  border: #dbdbdb solid 1px;
+.mainLeft .feeds {
   width: 100%;
   height: auto;
   margin-top: 1.5rem;
+  border: #dbdbdb solid 1px;
 }
 
 .author {
@@ -176,9 +176,9 @@ nav > * {
 }
 
 .writeCmt > * {
-  background-color: transparent;
-  border-width: 0px;
   margin: 5px 0;
+  border-width: 0px;
+  background-color: transparent;
 }
 
 .writeCmt .postingCmt {
@@ -215,7 +215,7 @@ nav > * {
 }
 
 /* 우측 aside 태그 영역(.main-right) 스타일 */
-.main-right {
+.mainRight {
   width: 35%;
   margin: 3rem 0 0 2rem;
 }
@@ -283,20 +283,20 @@ nav > * {
 }
 
 .listContainer {
-  border: #dbdbdb solid 1px;
-  background-color: white;
   position: absolute;
   width: 110px;
   left: 45%;
   top: 6.5%;
+  border: #dbdbdb solid 1px;
+  background-color: white;
   box-shadow: 0 0 5px 3px gainsboro;
 }
 
 .listContainer img {
-  width: 1rem;
-  border-radius: 50%;
   display: inline;
+  width: 1rem;
   margin: 10px 0px 5px 10px;
+  border-radius: 50%;
 }
 
 /* nav 내 프로필 클릭 메뉴 관련 스타일 */
@@ -324,10 +324,10 @@ nav > * {
 
 /* width가 800px 이하로 떨어지면 우측 박스(.main-right) 사라짐 */
 @media screen and (max-width: 800px) {
-  .main-right {
+  .mainRight {
     display: none;
   }
-  .main-left {
+  .mainLeft {
     width: 100%;
   }
 }

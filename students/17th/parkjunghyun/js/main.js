@@ -12,48 +12,50 @@ function addPost() {
   const likeCount = document.createElement('span');
   const removeCmt = document.createElement('button');
 
-  likeImg.src = '/img/heart.png';
+  if (cmtText) {
+    likeImg.src = '/img/heart.png';
 
-  removeCmt.innerText = '삭제';
+    removeCmt.innerText = '삭제';
 
-  newCmt.classList.add('newCmt');
-  newCmt.innerText = cmtText;
-  newCmt.appendChild(removeCmt);
-  newCmt.appendChild(likeCount);
-  newCmt.appendChild(likeImg);
+    newCmt.classList.add('newCmt');
+    newCmt.innerText = cmtText;
+    newCmt.appendChild(removeCmt);
+    newCmt.appendChild(likeCount);
+    newCmt.appendChild(likeImg);
 
-  feeds.appendChild(newCmt);
+    feeds.appendChild(newCmt);
 
-  input.value = '';
+    input.value = '';
 
-  // 댓글 좋아요 기능 추가(토글 버튼 방식)
-  const likes = document.querySelectorAll('.newCmt img');
-  let likeFlag = false;
+    // 댓글 좋아요 기능 추가(토글 버튼 방식)
+    const likes = document.querySelectorAll('.newCmt img');
+    let likeFlag = false;
 
-  function likeChange() {
-    if (!likeFlag) {
-      this.src = '/img/heartRed.png';
-      likeFlag = !likeFlag;
-    } else if (likeFlag) {
-      this.src = '/img/heart.png';
-      likeFlag = !likeFlag;
+    function likeChange() {
+      if (!likeFlag) {
+        this.src = '/img/heartRed.png';
+        likeFlag = !likeFlag;
+      } else {
+        this.src = '/img/heart.png';
+        likeFlag = !likeFlag;
+      }
     }
-  }
 
-  likes.forEach((like) => {
-    like.addEventListener('click', likeChange);
-  });
+    likes.forEach((like) => {
+      like.addEventListener('click', likeChange);
+    });
 
-  // 댓글 삭제 기능 추가
-  const removeCmts = document.querySelectorAll('.newCmt button');
+    // 댓글 삭제 기능 추가
+    const removeCmts = document.querySelectorAll('.newCmt button');
 
-  function deleteCmt() {
-    this.parentNode.remove();
-  }
+    function deleteCmt() {
+      this.parentNode.remove();
+    }
 
-  removeCmts.forEach((rmcmt) => {
-    rmcmt.addEventListener('click', deleteCmt);
-  });
+    removeCmts.forEach((rmcmt) => {
+      rmcmt.addEventListener('click', deleteCmt);
+    });
+  } else return;
 }
 
 button.addEventListener('click', addPost);
@@ -81,8 +83,7 @@ function findId(e) {
     const listContainer = document.createElement('div');
     listContainer.classList.add('listContainer');
 
-    if (result[0]) {
-      console.log(result);
+    if (targetId && result[0]) {
       for (var i = 0; i < result.length; i++) {
         const matchedList = document.createElement('p');
         const profileImg = document.createElement('img');
@@ -139,3 +140,23 @@ function showMenu(e) {
 }
 
 body.addEventListener('click', showMenu);
+
+// 가로 슬라이드 형 프로필 & 우측 프로필 반복 부분/ html -> js 로 수정(추가)
+
+function populateProfiles() {
+  const leftProfileUnit = `<div class="profile"> <img src="img/profile.jpeg" /> <div class="name">asdf</div> </div>`;
+  const rightProfileUnit = `<div class="recommandedFriend"> <img src="/img/profile.jpeg" /> <div id="rightProfileText"> <b>mardsdf </b><br />
+<span>회원님을 위한 추천</span></div><div class="smblueText">팔로우</div></div>`;
+  const profiles = document.querySelector('.profiles');
+  const recommand = document.querySelector('.recommand');
+
+  for (var i = 0; i < 10; i++) {
+    profiles.innerHTML += leftProfileUnit;
+  }
+
+  for (var i = 0; i < 5; i++) {
+    recommand.innerHTML += rightProfileUnit;
+  }
+}
+
+populateProfiles();
