@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+#biggest{
+    border: 1px dotted black;
+    width: 100%;
+    height: 1300px;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px dotted black;
+    width: 100%;
+    height: 70px;
+    
+}
+
+
+#firstOfNav{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;
+    height: 100%;
+    width: 200px;
+}
+
+#logoPic{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#westargramFont{
+    padding-left: 10px;
+    display: inline-block;
+    border-left: 1px solid black;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+#middleOfNav{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: azure; */
+    height: 100%;
+    width: 300px;
+}
+
+#searchText{
+    height: 25px;
+    width: 200px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    text-align: center;
+}
+
+#dotbogi{
+    position: absolute;
+    left: 120px;
+    right: 2px;
+    width: 17px;
+
+    
+}
+/* #searchText::placeholder{
+    text-align: center;
+} */
+
+
+
+
+#endOfNav{
+    /* background-color: beige; */
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly
+
+}
+
+i{
+    color:rgb(211, 211, 211);
+}
