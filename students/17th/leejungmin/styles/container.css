@@ -4,9 +4,9 @@
 
 @import "login.css";
 
+@import "main_mediaqueries.css";
 @import "main_nav.css";
 @import "main_content.css";
-@import "main_mediaqueries";
 
 body {
   background-color: #fafafa;

@@ -8,8 +8,8 @@
 /* left */
 
 .main_content_left {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 /* left story */
@@ -78,7 +78,7 @@
 
 .content_peed {
   width: 610px;
-  height: 100%;
+  height: 920px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -523,3 +523,42 @@
   font-weight: bold;
   font-size: 13px;
 }
+
+/* 
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  /* will-change는 그래픽카드를 이용해서 애니메이션을 가속화 시킨다 브라우저도 도와줌 */
+  animation: heartBeat 1s linear infinite;
+} */

@@ -8,18 +8,20 @@
   }
 }
 
-/* nav */
+@media screen and (max-width: 650px) {
+  .main_content_left > .content_peed {
+    width: auto;
+  }
+}
 
-@media screen and (max-width: 620px) {
-  .content_story {
+/* nav, story */
+
+@media screen and (max-width: 630px) {
+  .nav_center_search {
     display: none;
   }
 
-  .content_peed {
-    width: auto;
-  }
-
-  .nav_center_search {
+  .main_content_left > .content_story {
     display: none;
   }
 }
