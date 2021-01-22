@@ -25,7 +25,7 @@ function replyEnterAdd(event) {
         const replyP = document.createElement('p');
         replyP.innerHTML = 'meeeeen93 ' + replyInput.value;
         replyList.append(replyP);
-        replyInput.value = null;
+        replyInput.value = "";
     }
 }
 
