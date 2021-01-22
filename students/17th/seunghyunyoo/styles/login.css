@@ -1,0 +1,170 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: bolder;
+}
+
+.main-box {
+    width: 350px;
+    height: 380px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+
+    margin-bottom: 10px;
+
+}
+
+
+h1 {
+    font-family: 'Cookie', cursive;
+    color: black;
+    font-size : 46px;
+    margin: 22px auto 36px;
+    text-align: center;
+}
+
+.login-btn, .login-ID, .login-PW{
+    display: block;
+    border-radius: 4px;
+
+}
+
+.login-ID, .login-PW{
+    width: 268px;
+    height: 36px;
+
+    font-size: 11px;
+
+    color: #8e8e8e;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    margin: 5px auto;
+    padding: 0px 5px 0px 5px;
+    border: solid 1px rgba(var(--ca6,219,219,219),1);
+
+}
+
+.login-btn{
+    width: 268px;
+    height: 30px;
+
+    font-size: 13px;
+    background-color: rgba(var(--d69,0,149,246),1);
+    color : white;
+    margin: 13px auto;
+
+}
+
+.new-account-box, .and, .and-box, .facebook, .main-box a, app-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-box a, .new-account-box a {
+    text-decoration: none;
+}
+
+
+.and {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 268px;
+    height: 30px;
+    color: #9d9d9d;
+    font-weight: bold;
+}
+
+.and-box{
+    white-space: nowrap;
+    font-size: 13px;
+    margin: 0px 20px 0px 20px;
+}
+
+.border-box {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(var(--b38,219,219,219),1);
+}
+
+.facebook{
+    background-color:unset;
+    margin: 14px auto 0px auto;
+    width: 268px;
+    height: 20px;
+    color: #28567d;
+}
+
+.facebook:focus{
+    outline: none;
+}
+
+.facebook:hover {
+    cursor: pointer;
+}
+
+.facebook span{
+
+    color: #385185;
+}
+
+.facebook-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+
+}
+
+.main-box a {
+    width: 268px;
+
+    margin: 12px auto 0px auto;
+    font-size: 11px;
+    color : #00376b;
+    
+}
+
+
+.new-account-box{
+    width: 350px;
+    height: 63px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    font-size: 13px;
+}
+
+.new-account-box a {
+    color: #219bf7;
+}
+
+.app {
+    width: 350px;
+    height: 102px;
+}
+
+.app-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+
+
+}
+
+.app h2 {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 20px;
+}
+
+.app-download img {
+    display: inline;
+
+    margin: 0px 2.5px;
+    width: 136px;
+    height: 40px;
+}
