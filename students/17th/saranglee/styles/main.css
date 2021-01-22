@@ -3,8 +3,6 @@ body {
   background-color: #fafafa;
 }
 
-/* Nav */
-
 nav {
   display: flex;
   align-items: center;
@@ -88,5 +86,115 @@ nav {
   margin-left: 24px;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: stretch;
+  margin: auto;
+  padding-top: 94px;
+  width: 935px;
+}
 
+.feeds {
+  max-width: 616px;
+  margin-right: 28px;
+}
+
+.main-right {
+  position: fixed;
+  width: 293px;
+}
+
+.user-profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.feed {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.feed-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+  height: 60px;
+}
+
+.feed-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-location {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.user-link-location {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+
+.user-location, .user-link {
+  margin: 2px;
+}
+
+.user-link {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.feed-img {
+  width: 614px;
+}
+
+.feed-info {
+  padding: 16px;
+}
+
+.user-profile, .menu-btn {
+  display: inline-block;
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+}
+
+.menu-icon {
+  width: 16px;
+  height: 16px;
+  color: #262626;
+}
+
+.my-profile {
+  display: flex;
+
+  width: 100%;
+  height: 56px;
+}
+
+.my-profile-img {
+  width: 48px;
+  height: 48dpx;
+  border-radius: 50%;
+}
+
+/*
+* {
+  border: 1px solid red !important;
+}
+*/
 
