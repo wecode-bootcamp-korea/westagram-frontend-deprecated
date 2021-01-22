@@ -23,7 +23,7 @@ commenttext.innerHTML=form.value;
 commentcontainer.appendChild(commentbtnbox);
 commentbtnbox.appendChild(commenttext);
 commentbtnbox.appendChild(deletebtn);
-
+form.value='';
 
 deletebtn.addEventListener('click',(event)=>{
 

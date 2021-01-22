@@ -23,25 +23,29 @@ top: 0;
    
  }
 
+ .markleft{
+    display: flex;
+    align-self: flex-end;
+    margin-left: 30px;
+    
+    }
+
 .navcenter{
     display : flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 85%;
-    background-color: white;
-    
+    background-color: white;    
 }
-
 .headmark{
     width: 30px;
     height: 30px;
     }
-.r{
+.l{
     margin-left:50px ;
     margin-top: 10px;
 }
-
 .instahead {
   
         border-left: black 2px solid;
@@ -68,12 +72,12 @@ background-color: white;
     text-align: center;
 }
 
-.markleft{
+/* .markleft{
 display: flex;
 align-self: flex-end;
 margin-left: 30px;
 
-}
+} */
 
 .right{
     margin-right: 30px;
