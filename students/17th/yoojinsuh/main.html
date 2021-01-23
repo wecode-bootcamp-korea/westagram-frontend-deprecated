@@ -7,52 +7,135 @@
     <link rel="shortcut icon" href="img/instagram.png" type="imag/png">
     <link href="styles/common.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    
 </head>
 <body>
     <div class="navbar">
         <p class="logo"> Westagram </p>
-        <input class="search" type="text" placeholder="Search">
+        <div class="searchContainer">
+            <i class="fas fa-search"></i>
+            <input class="search" type="text" placeholder="Search">
+        </div>
         <nav class="navIcons">
-            <img src="img/explore.png" alt="explore">
-            <img src="img/heart.png" alt="heart">
-            <img src="img/profile.png" alt="profile">
+            <i class="fas fa-home"></i>
+            <i class="far fa-paper-plane"></i>
+            <i class="far fa-heart"></i>
+            <i class="far fa-user"></i>
         </nav>
     </div>
     <main>
         <div class="feeds">
-            <div class="stories"></div>
+            <div class="stories">
+                <div class = "story1">
+                    <img src="img/story1.jpeg">
+                    <p>03_yjs</p>
+                </div>
+                <div class = "story2">
+                    <img src="img/story2.jpeg">
+                    <p>suukju</p>
+                </div>
+                <div class = "story3">
+                    <img src="img/story3.jpeg">
+                    <p>dobie_fan</p>
+                </div>
+                <div class = "story4">
+                    <img src="img/story4.jpeg">
+                    <p>anna908</p>
+                </div>
+                <div class = "story5">
+                    <img src="img/story5.jpeg">
+                    <p>soonapshot</p>
+                </div>
+            </div>
             <article>
                 <header>
-                    <img class="accountImage">
-                    <h1> hi_dobie </h1>
-                    <img class="seeMore">
+                    <div class="accountContainer">
+                        <img src="img/dobieprofile.jpeg">
+                        <h1> hi_dobie </h1>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
                 </header>
-                <img src="img/dobie.jpeg" alt="dobie">
+                <img class="mainImage" src="img/dobie.jpeg" alt="dobie">
                 <footer>
-                    <img>
-                    <img>
-                    <img>
-                    <img>
+                    <div class="footerNav">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <div class="footerSave">
+                        <i class="far fa-bookmark"></i>
+                    </div>
                 </footer>
                 <p class="likes"> 329 likes </p>
-                <p class="accountName"> hi_dobie </p>
-                <p class="contentDetail"> Happy New Year!</p>
+                <div class="contentContainer">
+                    <p class="accountName"> hi_dobie </p>
+                    <p class="contentDetail"> Dobie's biggest smile ^_^</p>
+                </div>
                 <section class="comments">
                     <div class="commentsLog">
-                        <ul>
-                            <li> Merry Christmas! </li>
-                            <li> Hi, Dobie! </li>
+                        <ul class=commentsContainer>
+                            <li><span><span class="userAccount">suukju</span> I'm suukju without underbar</span></li>
+                            <li><span><span class="userAccount">soonapshot</span>Hi, Dobie!</span></li>
                         </ul>
+                        <p>10 HOURS AGO</p>
                     </div>
                 </section>
-                <input class="addComment" type="text" placeholder="Add a comment">
             </article>
+            <form class="addComment" onsubmit="return false">
+                <input class="inputComment" type="text" placeholder="Add a comment">
+                <input class="inputSubmit" value="Post" type="submit">
+            </form>
         </div>
         <div class="main-right">
-            <div class="myProfile"></div>
-            <div class="suggestions"></div>
+            <div class="myProfile">
+                <img src="img/profilepic.jpeg">
+                <div class="accountInfo">
+                    <h1>hi_yoojins</h1>
+                    <h2>Rylie YooJin Suh</h2>
+                </div>
+            </div>
+            <div class="suggestions">
+                <div class="header">
+                    <p class="suggestForYou">Suggestions For You</p>
+                    <p class="seeAll">See All</p>
+                </div>
+                <div class="suggestProfiles">
+                    <div class="suggestProfile1">
+                        <div class="imageAndName">
+                            <img src="img/suggest1.jpeg">
+                            <div class="profileContainer">
+                                <p class="name">sunah9404</p>
+                                <p class="detail">Suggested for you</p>
+                            </div>
+                        </div>
+                        <p class="follow">Follow</p>
+                    </div>
+                    <div class="suggestProfile2">
+                        <div class="imageAndName">
+                            <img src="img/suggest2.jpeg">
+                            <div class="profileContainer">
+                                <p class="name">yejin__ohhh</p>
+                                <p class="detail">Followed by soonapshot + 2 more</p>
+                            </div>
+                        </div>
+                        <p class="follow">Follow</p>
+                    </div>
+                    <div class="suggestProfile3">
+                        <div class="imageAndName">
+                            <img src="img/suggest3.jpeg">
+                            <div class="profileContainer">
+                                <p class="name">__bona321</p>
+                                <p class="detail">New to Instagram</p>
+                            </div>
+                        </div>
+                        <p class="follow">Follow</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <script src = "js/main.js"></script>
 </body>
 </html>

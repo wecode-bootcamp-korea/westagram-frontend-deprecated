@@ -59,6 +59,10 @@ button {
   color: white;
 }
 
+.darkBtn {
+  background-color: #1c7ed6;
+}
+
 .orContainer {
   display: flex;
   flex-direction: row;

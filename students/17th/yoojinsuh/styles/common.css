@@ -2,18 +2,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 15px;
+  font-weight: normal;
+  font-family: "Lato", sans-serif;
+  color: black;
+  background-color: #ffffff;
 }
 
 body {
+  background-color: #fafafa;
   margin: 0 auto;
-  max-width: 1000px;
-  max-height: 2000px;
+  max-height: 3000px;
+  max-width: 1200px;
 }
 
 .navbar {
-  background-color: rosybrown;
   height: 45px;
   width: 100%;
 
@@ -21,36 +24,54 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .navbar p {
+  margin-left: 20px;
   font-size: 25px;
   font-family: "Lobster Two", cursive;
-
-  margin-left: 20px;
 }
 
-.navbar input {
+.searchContainer {
+  position: relative;
+}
+
+.searchContainer i {
+  width: 10px;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 75px;
+  color: #b6b4b4;
+}
+
+.searchContainer input {
+  background-color: #fafafae5;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  padding: 13px 0px 13px 8px;
+  color: #b6b4b4;
   width: 230px;
   height: 23px;
   text-align: center;
+  font-size: 14px;
 }
 
 nav {
-  background-color: yellow;
   display: flex;
-  width: 120px;
+  width: 150px;
   flex-direction: row;
   margin-right: 20px;
   justify-content: space-between;
 }
 
-nav img {
-  width: 25px;
+nav i {
+  font-size: 25px;
 }
 
 main {
-  background-color: thistle;
+  background-color: #fafafa;
   height: 1500px;
   display: flex;
   flex-direction: row;
@@ -58,83 +79,127 @@ main {
 }
 
 .feeds {
-  background-color: burlywood;
-  height: 1200px;
+  background-color: #fafafa;
+  height: 2000px;
   width: 600px;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-right {
-  background-color: wheat;
+  background-color: #fafafa;
   height: 100%;
   width: 400px;
   margin-right: 20px;
-}
-
-.myProfile {
-  background-color: seagreen;
-  width: 100%;
-  height: 100px;
-  margin-top: 30px;
-}
-
-.suggestions {
-  background-color: silver;
-  width: 100%;
-  height: 260px;
-  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .stories {
-  background-color: royalblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: 120px;
   margin-top: 30px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+}
+
+.stories img {
+  width: 70px;
+  margin-left: 15px;
+  padding: 2px;
+
+  border-radius: 35px;
+  border: 2px solid #c62e61;
+}
+
+.stories .story1,
+.story2,
+.story3,
+.story4,
+.story5 {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stories p {
+  text-align: center;
+  font-size: 13px;
+  padding-left: 10px;
 }
 
 article {
-  background-color: salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
-  height: 600px;
+  height: 850px;
   margin-top: 25px;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
 }
 
 article header {
-  background-color: cornsilk;
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
-  width: 576px;
+  height: 50px;
+  width: 100%;
 }
 
-article header .accountImage {
-  background-color: lightpink;
-  width: 50px;
-  height: 40px;
+.accountContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.accountContainer img {
+  width: 30px;
+  border-radius: 30px;
+  margin-left: 20px;
 }
 
 article header h1 {
-  background-color: lightskyblue;
   width: 476px;
+  padding-left: 20px;
 
   text-align: left;
-  padding-left: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+header i {
+  margin-right: 20px;
+  color: #595757;
 }
 
 article header .seeMore {
-  background-color: darkorange;
   width: 50px;
   height: 40px;
   justify-self: flex-end;
 }
 
-article img {
+article .mainImage {
   width: 100%;
+  height: 600px;
 }
 
-article footer,
+article footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 0 20px;
+}
+
+footerNav,
 .likes,
 .accountName,
 .contentDetail,
@@ -142,37 +207,215 @@ section {
   padding-left: 20px;
 }
 
-article footer {
-  background-color: lightseagreen;
-  height: 40px;
+.footerNav {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer i {
+  width: 20px;
+  font-size: 25px;
+}
+
+footerNav i {
+  margin-right: 20px;
 }
 
 article .likes {
-  background-color: lightyellow;
-}
-
-article .accountName {
-  background-color: limegreen;
   font-weight: bold;
 }
 
-article .contentDetail {
-  background-color: mediumpurple;
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+  max-height: 25px;
 }
 
-section {
-  background-color: mediumturquoise;
-  height: 100px;
+article .accountName {
+  font-weight: bold;
 }
 
-section ul {
+.commentsContainer {
   list-style-type: none;
 }
 
-article .addComment {
-  background-color: coral;
-  border: none;
-  height: 60px;
+.userAccount {
+  font-weight: bold;
+}
+
+.commentsLog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.commentsLog li {
+  margin-top: 3px;
+}
+
+.commentsLog span {
+  margin-right: 10px;
+}
+
+.commentsLog p {
+  font-size: 10px;
+  color: #959595;
+  margin-top: 10px;
+}
+
+.main-right .myProfile {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
-  padding-left: 20px;
+  height: 120px;
+  margin-top: 30px;
+}
+
+.main-right img {
+  width: 70px;
+  border-radius: 70px;
+}
+
+.main-right .accountInfo {
+  background-color: #fafafa;
+  margin-left: 15px;
+}
+
+.main-right h1,
+h2 {
+  background-color: #fafafa;
+  text-align: left;
+}
+
+.main-right h1 {
+  font-weight: bold;
+}
+
+.main-right h2 {
+  margin-top: 3px;
+  color: rgb(145, 144, 144);
+}
+
+.addComment {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-radius: 2px;
+  padding: 15px 20px 15px 20px;
+}
+
+.inputComment {
+  width: 500px;
+  border: none;
+  outline: none;
+}
+
+.inputSubmit {
+  color: #c0dffd;
+  width: 30px;
+  border: none;
+}
+
+.darkBtn {
+  color: #1c7ed6;
+}
+
+.suggestions {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 260px;
+  margin-top: 20px;
+}
+
+.suggestions .header {
+  background-color: #fafafa;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.suggestions .suggestForYou {
+  background-color: #fafafa;
+  color: rgb(145, 144, 144);
+  font-weight: bold;
+}
+
+.suggestions .seeAll {
+  background-color: #fafafa;
+  color: #262626;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.suggestProfiles {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.suggestProfile1,
+.suggestProfile2,
+.suggestProfile3 {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.imageAndName {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.imageAndName img {
+  width: 35px;
+  border-radius: 35px;
+  margin-right: 15px;
+}
+
+.profileContainer .name {
+  background-color: #fafafa;
+  font-weight: bold;
+}
+
+.profileContainer .detail {
+  background-color: #fafafa;
+  color: rgb(145, 144, 144);
+  font-size: 13px;
+}
+
+.suggestProfiles .follow {
+  background-color: #fafafa;
+  color: #0095f6;
+  font-size: 13px;
+}
+
+.backgroundColor {
+  background-color: #fafafa;
 }
