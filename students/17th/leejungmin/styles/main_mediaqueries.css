@@ -12,6 +12,9 @@
   .main_content_left > .content_peed {
     width: auto;
   }
+  .content_peed_text_reply * {
+    font-size: small;
+  }
 }
 
 /* nav, story */

@@ -8,8 +8,8 @@
 /* left */
 
 .main_content_left {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 }
 
 /* left story */
@@ -148,8 +148,26 @@
   opacity: 0.8;
 }
 
-.peed_option_header_left i {
-  margin-right: 10px;
+.peed_option_header_left i:nth-child(1) {
+  /* margin-right: 5px; */
+  cursor: pointer;
+}
+
+.likeit_change {
+  color: #ed4956;
+  animation: heartBeat 0.5s;
+}
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.3);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .content_peed_option_sub_header {
@@ -164,14 +182,28 @@
   padding-top: 5px;
   padding-left: 13px;
   padding-right: 15px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
-.content_peed_text p {
-  margin-bottom: 8px;
-  width: 100%;
-  display: block;
+.content_peed_text_main {
+  display: flex;
+  flex-direction: row;
+}
+
+.content_peed_text_main span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.content_peed_text_reply {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.content_peed_text_reply i:hover {
+  cursor: pointer;
 }
 
 .content_peed_text_time {
@@ -182,6 +214,13 @@
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
   background-color: white;
+}
+
+/* 댓글 좋아요 기능 */
+
+.reply_likeit {
+  color: #ed4956;
+  animation: heartBeat 0.5s;
 }
 
 /* left form input */
@@ -523,42 +562,3 @@
   font-weight: bold;
   font-size: 13px;
 }
-
-/* 
-.open-post__heart-count {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  font-size: 12px;
-}
-
-.open-post__heart-count span {
-  margin-left: 3px;
-}
-
-@keyframes heartBeat {
-  0% {
-    color: white;
-    transform: none;
-  }
-  50% {
-    color: tomato;
-    transform: scale(1.5);
-  }
-  100% {
-    color: white;
-    transform: none;
-  }
-}
-
-.open-post__heart-count:hover i {
-  will-change: transform;
-  /* will-change는 그래픽카드를 이용해서 애니메이션을 가속화 시킨다 브라우저도 도와줌 */
-  animation: heartBeat 1s linear infinite;
-} */

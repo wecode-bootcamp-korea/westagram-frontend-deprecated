@@ -1,58 +1,21 @@
-const replyInput = document.querySelector('.content_peed_reply');
-const replySubmit = document.querySelector('.content_peed_submit');
-const replyList = document.querySelector('.content_peed_text');
-const navProfileBtn = document.querySelector('.nav_bar_profile_btn');
-const navMenuDrop = document.querySelector('.drop_box_main');
-const navMenuDropDia = document.querySelector('.drop_box_diamond');
+const likeCheck = document.querySelector('.likeit'),
+likeCounter = document.querySelector('.peed_option_sub_header_like');
 
-let dropDownUp = 0;
+let likeColorChange = 0;
 
-function colorChange() {
-    
-    if(replyInput.value){
-        replySubmit.removeAttribute('disabled');
-        replySubmit.style.color = '#0095f6';
-    }else {
-        replySubmit.setAttribute('disabled', 'true');
-        replySubmit.style.color = '#B2DFFC';
+
+// 게시글 좋아요와 좋아요 갯수 추가
+
+function likeItPlus () {
+    if(likeColorChange === 0){
+        likeCheck.classList.add("likeit_change");
+        document.querySelector('.peed_option_sub_header_like').innerHTML = '좋아요 286개';
+        likeColorChange = 1;
+    }else if(likeColorChange != 0){
+        likeCheck.classList.remove("likeit_change");
+        document.querySelector('.peed_option_sub_header_like').innerHTML = '좋아요 285개';
+        likeColorChange = 0;
     }
 }
 
-
-
-function replyEnterAdd(event) {
-    if(event.keyCode === 13 && replyInput.value){
-        const replyP = document.createElement('p');
-        replyP.innerHTML = 'meeeeen93 ' + replyInput.value;
-        replyList.append(replyP);
-        replyInput.value = "";
-    }
-}
-
-function replyClickAdd() {
-    if(replyInput.value){
-        const replyP = document.createElement('p');
-        replyP.innerHTML = 'meeeeen93 ' + replyInput.value;
-        replyList.append(replyP);
-        replyInput.value = null;
-    }
-}
-
-function menuDrop() {
-    if(dropDownUp === 0) {
-        navMenuDrop.style.display = 'block';
-        navMenuDropDia.style.display = 'block';
-        dropDownUp = 1;
-    }else if(dropDownUp === 1){
-        navMenuDrop.style.display = 'none';
-        navMenuDropDia.style.display = 'none';
-        dropDownUp = 0;
-    }
-}
-
-
-
-replyInput.addEventListener('keyup', colorChange);
-replyInput.addEventListener('keydown', replyEnterAdd);
-replySubmit.addEventListener('click', replyClickAdd);
-navProfileBtn.addEventListener('click', menuDrop);
+likeCheck.addEventListener('click', likeItPlus);
