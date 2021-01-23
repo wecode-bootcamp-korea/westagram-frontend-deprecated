@@ -2,24 +2,30 @@
     box-sizing: border-box;
 }
 
-#biggest{
-    border: 1px dotted black;
-    width: 100%;
-    height: 1300px;
-}
 
 nav{
+    background-color: white;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px dotted black;
+    justify-content: center;
+    /* border: 1px dotted black; */
     width: 100%;
-    height: 70px;
+    height: 54px;
+    z-index: 1;
     
+}
+
+.navGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 975px;
+    height: 100%;
+    padding: 0 20px ;
+    /* border: 1px dotted black; */
 }
 
 
@@ -27,15 +33,16 @@ nav{
     /* background-color: antiquewhite; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex;
     align-items: center ;
     height: 100%;
-    width: 200px;
+    width: 360px;
 }
 
 #logoPic{
     display: inline-block;
     margin-right: 10px;
+    /* border-left: 1px solid black;  */
 }
 
 #westargramFont{
@@ -54,23 +61,25 @@ nav{
     justify-content: center;
     /* background-color: azure; */
     height: 100%;
-    width: 300px;
+    width: 215px;
 }
 
 #searchText{
-    height: 25px;
+    height: 28px;
     width: 200px;
     background-color: rgb(245, 245, 245);
     border: 1px solid rgb(211, 211, 211);
     border-radius: 4px;
     text-align: center;
+    padding: 7px;
 }
 
-#dotbogi{
+.fa-search{
     position: absolute;
     left: 120px;
     right: 2px;
     width: 17px;
+    color:rgb(211, 211, 211);
 
     
 }
@@ -78,20 +87,95 @@ nav{
     text-align: center;
 } */
 
-
-
-
 #endOfNav{
     /* background-color: beige; */
     height: 100%;
-    width: 200px;
+    width: 360px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-evenly
+    justify-content: flex-end;
 
 }
 
-i{
-    color:rgb(211, 211, 211);
+.far{
+    padding-left: 70px;
 }
+
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    position: relative;
+    margin-top: 45px;
+    width: 100%;
+    height : 1300px;
+    /* border: 2px dotted red; */
+    background-color: #f2f4ed
+}
+
+#feeds{
+    width: 624px;
+    height: 1000px;
+    margin: 50px 8px 0 -10px;
+    background-color: aliceblue;
+    border: 1px dotted black;
+}
+
+#asideInMain{
+    width :313px;
+    height: auto;
+    background-color:blanchedalmond;
+}
+
+.navInSection{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(211, 211, 211) ;
+}
+
+#firstSectionNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+#imgCircle{
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    background-image: url("https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/120349966_422763662018714_7835598670003667169_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=KRctBvoTtD0AX9KVMiT&tp=1&oh=c98d8b1dda7b9948db4f1268485cdf00&oe=6033973E");
+    background-size: 30px;
+    background-position: center;
+    display: block;
+    border: 0.5px solid gray;
+    border-radius: 100%;
+}
+
+ul,li{
+    list-style: none;
+    font-size: 11px;
+}
+
+ul{
+    display: inline;
+    margin-left: -30px;
+}
+
+#liName{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.fa-ellipsis-h{
+    margin-right: 15px;
+}
+
+
+
