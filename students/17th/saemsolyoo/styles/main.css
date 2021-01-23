@@ -360,3 +360,114 @@ aside {
   white-space: nowrap;
   text-align: center;
 }
+
+/* aside */
+aside {
+  position: sticky;
+  top: 83px;
+  margin-top: 30px;
+  padding-top: 27px;
+  background-color: inherit;
+}
+
+.my-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.my-profile img {
+  width: 53px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.my-profile-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.my-profile-info span {
+  font-size: 14px;
+}
+
+.my-profile-info span:first-child {
+  color: #262626;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.my-profile-info span:last-child {
+  color: #8e8e8e;
+  font-weight: 600;
+}
+
+.my-profile > span {
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.recommend-profile > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.recommend-profile > div h4 {
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.recommend-profile > div span {
+  font-size: 12px;
+  color: #262626;
+  font-weight: 700;
+}
+
+.recommend-profile ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.recommend-profile ul li img {
+  width: 33px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.recommend-profile ul li div {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recommend-profile ul li > span {
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.recommend-profile ul div span {
+  font-size: 14px;
+}
+
+.recommend-profile ul div span:first-child {
+  color: #262626;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.recommend-profile ul div span:last-child {
+  font-size: 12px;
+  color: #8e8e8e;
+  font-weight: 600;
+}
