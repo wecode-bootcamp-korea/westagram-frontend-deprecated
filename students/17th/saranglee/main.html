@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav>
-      <div class="nav-items-container">
+      <div class="nav-container">
         <div class="logo-container">
           <img class="instagram-icon" src="img/instagram.svg" alt="Instagram Icon">
           <div class="line"></div>
@@ -37,13 +37,15 @@
         <article class="feed">
           <div class="feed-info">
             <div class="feed-link">
-              <a href="https://www.instagram.com/wecode_bootcamp/"><img class="user-profile" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=kOXo6ygOobYAX8nSm-B&tp=1&oh=ea29749f472aaa1cf139f1adecf2f25f&oe=6034E720" alt="User profile image"></a>
+              <a href="https://www.instagram.com/wecode_bootcamp/">
+                <img class="user-profile-medium" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=kOXo6ygOobYAX8nSm-B&tp=1&oh=ea29749f472aaa1cf139f1adecf2f25f&oe=6034E720" alt="User profile image">
+              </a>
               <div class="user-link-location">
                   <a class="user-link" href="https://www.instagram.com/wecode_bootcamp/">wecode_bootcamp</a>
                   <a class="user-location" href="https://www.instagram.com/explore/locations/2294533633944994/wecode/">Wecode</a>
               </div>                            
             </div>
-            <button class="menu-btn"><img class="menu-icon" src="img/menu.svg" alt="Menu icon"></button>
+            <button class="more-icon btn"><img class="more-icon-img" src="img/menu.svg" alt="Menu icon"></button>
           </div>
           <img class="feed-img" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/141109165_400699351033882_4895876127081157341_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=1&_nc_ohc=HVLAmzzTN5sAX-dChaC&tp=1&oh=86acf7ca339417aa742da3918a7f9d5f&oe=6032FE30" alt="Feed image">
           <div class="feed-function">
@@ -56,13 +58,13 @@
               <button class="feed-icon-right"><img src="img/bookmark.svg" alt=""></button>
             </div>
             <div class="likes-num">
-              <a href="https://www.instagram.com/illustration_festa/"><img src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/74359821_545447859628744_8418376912249815040_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Kx4-_JVEGKYAX9rwBnF&tp=1&oh=14b864c11d0f16a131b850ceecb453a1&oe=6034FC22" alt="Profile thumbnail"></a>
-              <p><a class="user-link" href="https://www.instagram.com/illustration_festa/">illustration_festa</a>님<a class="user-link" href="">외 1033명</a>이 좋아합니다</p>
+              <a href="https://www.instagram.com/illustration_festa/"><img class="user-profile-small" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s320x320/74359821_545447859628744_8418376912249815040_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=Kx4-_JVEGKYAX9rwBnF&tp=1&oh=14b864c11d0f16a131b850ceecb453a1&oe=6034FC22" alt="Profile thumbnail"></a>
+              <p><a class="user-link" href="https://www.instagram.com/illustration_festa/">illustration_festa</a>님 <button class="likes-users btn">외 1033명</button>이 좋아합니다</p>
             </div>
             <div class="feed-content">
               <a class="user-link" href="">polaathome</a>
               <p>위워크에서 진행한 베이킹 클래스...</p>
-              <button class="view-more-btn">더 보기</button>
+              <button class="view-more btn">더 보기</button>
             </div>
             <div class="comment-written">
               <a class="user-link" href="">pepe_sad</a>
@@ -71,7 +73,7 @@
             <p class="time">4시간 전</p>
             <div class="comment">
               <input class="comment-input" type="text" placeholder="댓글 달기...">
-              <button class="comment-btn">게시</button>
+              <button class="comment-submit btn">게시</button>
             </div>
             
           </div>
@@ -87,18 +89,6 @@
             <div class="aside-title-container">
               <span class="aside-title">스토리</span>
               <a class="show-all" href="https://www.instagram.com/">모두 보기</a>
-            </div>
-            <div class="story">
-              <div class="img-user-info">
-                <div class="story-thumbnail">
-                  <div class="story-border"></div>
-                  <img class="thumbnail-img" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/129759615_3047958562097727_6091874149977329798_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=eSk2hO_v8bMAX9UQUzM&tp=1&oh=f4561edb197edd12a4b6b7fbe2389d25&oe=6037C94A" alt="">
-                </div>
-                <div class="user-id-time">
-                  <span class="user-id">user_id_ddder_id_ddddd1</span>
-                  <span class="story-time">16분 전</span>
-                </div>
-              </div>
             </div>
             <div class="story">
               <div class="img-user-info">
@@ -130,21 +120,6 @@
               </div>
               <button class="follow btn">팔로우</button>
             </div>
-            <div class="story">
-              <div class="img-user-info">
-                <div class="story-thumbnail">
-                  <img class="thumbnail-img" src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/129759615_3047958562097727_6091874149977329798_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=eSk2hO_v8bMAX9UQUzM&tp=1&oh=f4561edb197edd12a4b6b7fbe2389d25&oe=6037C94A" alt="">
-                </div>
-                <div class="user-id-time">
-                  <span class="user-id">user_irdd1</span>
-                  <span class="story-time">16분 전</span>
-                </div>
-              </div>
-              <button class="follow btn">팔로우</button>
-            </div>
-            
-
-            
           </div>
           <footer>
             <a href="https://about.instagram.com/">소개</a><span> •</span>

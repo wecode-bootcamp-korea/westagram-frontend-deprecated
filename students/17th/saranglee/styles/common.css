@@ -11,10 +11,3 @@ a {
     text-decoration: inherit;
     color: inherit;
 }
-
-
-.btn {
-  margin: none;
-  border: none;
-  background-color: transparent;
-}

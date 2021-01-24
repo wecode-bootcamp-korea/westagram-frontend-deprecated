@@ -3,6 +3,29 @@ body {
   background-color: #fafafa;
 }
 
+.btn {
+  padding: none;
+  margin: none;
+  border: none;
+  background-color: transparent;
+}
+
+.user-profile-medium {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.user-link, .likes-users {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.likes-users {
+  margin: inherit;
+  padding: inherit;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -15,11 +38,10 @@ nav {
   border-bottom: 1px solid #dbdbdb;
 }
 
-.nav-items-container {
+.nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
   width: 975px;
   padding: 0 20px;
 }
@@ -52,12 +74,12 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 7px;
 }
 
 .search {
   width: 215px;
   height: 28px;
+  margin: 0 20px;
   background-color: #fafafa;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
@@ -65,17 +87,16 @@ nav {
 
 .search-placeholder {
   position: absolute;
+  color: #8e8e8e;
 }
 
 .fa-search {
   font-size: 10px;
-  color: #8e8e8e;
 }
 
 .search-placeholder span {
     font-size: 14px;
     font-weight: 300;
-    color: #8e8e8e;
 }
 
 .nav-icons {
@@ -89,41 +110,31 @@ nav {
 
 main {
   display: flex;
-  justify-content: space-between;
   position: relative;
-  align-items: stretch;
   margin: auto;
   padding-top: 94px;
   width: 935px;
 }
 
 .feeds {
-  display: inline;
+  display: block;
   max-width: 616px;
   margin-right: 28px;
 }
 
-
-
-.user-profile {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-}
-
 .feed {
   width: 100%;
-  background-color: #fff;
   margin-bottom: 60px;
+  background-color: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
 
 .feed-info {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 16px;
   border-bottom: 1px solid #dbdbdb;
   width: 100%;
   height: 60px;
@@ -131,7 +142,33 @@ main {
 
 .feed-link {
   display: flex;
-  justify-content: space-between;
+}
+
+.user-link-location {
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+
+.user-location {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.more-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.more-icon-img {
+  width: 16px;
+  height: 16px;
+  color: #262626;
+}
+
+.feed-img {
+  width: 100%;
 }
 
 .feed-icons {
@@ -146,78 +183,13 @@ main {
   width: 40px;
   height: 40px;
   padding: 8px;
-  background-color: #fff;
+  background-color: transparent;
   border: none;
 }
 
 .feed-icons img {
   width: 24px;
   height: 24px;
-}
-
-.user-location {
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.user-link-location {
-  display: flex;
-  flex-direction: column;
-  margin-left: 14px;
-}
-
-.user-location, .user-link {
-  margin: 2px;
-}
-
-.user-link {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.feed-img {
-  width: 614px;
-}
-
-.feed-info {
-  padding: 16px;
-}
-
-.user-profile, .menu-btn {
-  display: inline-block;
-}
-
-.menu-btn {
-  width: 40px;
-  height: 40px;
-  border: none;
-  background-color: #fff;
-}
-
-.menu-icon {
-  width: 16px;
-  height: 16px;
-  color: #262626;
-}
-
-
-
-.likes-num img {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.likes-num {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 8px;
-}
-
-.view-more-btn {
-  border: none;
-  background-color: #fff;
-  color: #8e8e8e;
 }
 
 .likes-num, .feed-content, .comment-written, .time {
@@ -228,41 +200,61 @@ main {
   margin-bottom: 4px;
 }
 
+.likes-num {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.user-profile-small {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.view-more {
+  color: #8e8e8e;
+}
+
 .likes-num p, .feed-content p, .comment-written p {
   font-size: 14px;
   padding-left: 5px;
 }
 
 .time {
+  margin: 10px 0;
   font-size: 12px;
   color: #8e8e8e;
-  margin: 10px 0;
 }
 
 .comment {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px;
   height: 56px;
   border-top: 1px solid #dbdbdb;
 }
 
-.comment-btn {
-  min-width: fit-content;
-  margin: 0 16px;
+.comment-input {
+  width: 100%;
   border: none;
-  background-color: transparent;
+}
+
+.comment-submit {
+  min-width: fit-content;
   color: #0095f6;
   font-weight: 600;
 }
 
-.comment-input {
-  width: 100%;
-  height: fit-content;
-  padding: 16px;
-  border: none;
-  border-radius: none;
-}
+
+
+
+
+
+
+
+
 
 .wrap-main-right {
   width: 293px;
