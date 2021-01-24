@@ -48,7 +48,6 @@ input {
     width: 21%;
     margin-left: 70px;
     padding: 5px 10px;
-    color: var(--background-color);
     background-color: var(--background-color);
     border: 1px solid var(--boxline-color);
     border-radius: 2px;
@@ -164,23 +163,17 @@ i {
 }
 
 .comment-icons {
-    margin-top: 0px;
-    margin-left: 10px;
-    
+    margin: 0 0 0 10px;
+    padding-top: 10px;
 }
 
 .comment-box {
     height: 50px;
+    padding-top: 10px;
     background-color:var(--box-color);
     border-left:1px solid var(--boxline-color);
     border-right: 1px solid var(--boxline-color);
     border-bottom: 1px solid var(--boxline-color);
-}
-
-.time {
-    margin: 0 10px 0 10px;
-    font-size: 10px;
-    color: var(--small-font);
 }
 
 .add-comment {
@@ -189,7 +182,7 @@ i {
     background-color: var(--box-color);
     border:1px solid var(--boxline-color);
 }
-.comment-line {
+#comment-line {
     width: 530px;
     height: 60px;
     margin-left: 0;
@@ -199,7 +192,7 @@ i {
     text-align: left;
 }
 
-button {
+#submit-box {
     color: #C0D0FD;
     border: none;
     background-color: var(--box-color);
@@ -208,8 +201,7 @@ button {
 
 .feed-user {
     display: inline-block;
-    margin-top: 0px;
-    margin-left: 10px;
+    margin: 0 0 14px 10px;
     padding-top: 5px;
     font-size: 14px;
     font-weight: bold;
@@ -229,24 +221,22 @@ span {
 
 .side {
     height: 100px;
-    margin-top: 25px;
-    margin-left: 0px;
+    margin: 25px 0 0 0;
 }
 
 .img-side-user {
+    float: left;
     width: 70px;
     height: 70px;
-    float: left;
+    margin: 15px 0 0 10px;
     border-radius: 100%;
-    margin-top: 15px;
-    margin-left: 10px;
 }
 
 .side-user-id {
     display: inline-block;
     margin: 0 80px 0 0;
-    font-weight: bold;
     padding: 43px 0 0 20px;
+    font-weight: bold;
 }
 
 .side-text {
@@ -263,17 +253,16 @@ span {
 }
 
 .iu-img {
+    float: left;
+    margin: 5px 5px 0 20px;
     width: 45px;
     height: 45px;
     border-radius: 100px;
-    margin: 5px 5px 0 20px;
-    float: left;
 }
 
 .small-text-1 {
     display: inline-block;
-    margin-left: 15px;
-    margin-right: 100px;
+    margin: 16px 100px 16px 15px;
     font-weight: bold;
 }
 

@@ -1,10 +1,36 @@
 'use strict';
 
-//1.입력받으면 입력값 초기화
-//2. 입력값 댓글로들어가기
-//댓글 입력 후 엔터키를 누르거나 게시 버튼 클릭 시 댓글이 추가될 수 있도록 구현해주세요.
-//함수 로직이 같은 경우 함수를 분리해서 코드를 재활용해주세요.
-//로그인 버튼 활성화 기능도, 댓글 기능도 자바스크립트 함수와 조건문에 대한 기본 지식을 충분히 쌓을 수 있도록 많이 연습해주세요 :)
+const commentInput = document.getElementById('comment-line');
+const submitClick = document.getElementById('submit-box');
 
-const clickBtn = document.getElementById('')
+commentInput.addEventListener('keyup', function (event) {
+    const commentValue = document.getElementById('comment-line').value;
+    const submitBtn = document.getElementById('submit-box');
 
+    submitBtn.style.color = commentValue ? '#0896F7' : '#C0DFFD';
+});
+
+const superUser = "2929_9999";
+
+function commentWrite() { 
+    let btag = document.createElement("b");
+    btag.innerHTML = superUser;    
+    let commentViewSpan = document.createElement('span'); 
+    let commentText = commentInput.value;       
+    commentViewSpan.innerHTML = commentText;
+    let result = document.getElementsByClassName("comment-box");
+    result.appendChild(btag);    
+    result.appendChild(commentViewSpan);
+    let brtag = document.createElement("br");
+    result.appendChild(brtag);  
+}
+
+submitClick.addEventListener("click", function() {
+    commentWrite();
+});
+
+commentInput.addEventListener('keydown', function(e) {    
+    if (e.keyCode === 13 ) {
+        commentWrite();
+    }
+})
