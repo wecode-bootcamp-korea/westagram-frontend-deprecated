@@ -1,73 +1,51 @@
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    background-color:white;
-    position: relative;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: relative;
+}
+.background {
+  position: relative;
+  display: flex;
+  height: 1000px;
+  justify-content: center;
+  background-color: thistle;
+  align-items: center;
+}
+.container {
+  font-family: "Lobster", cursive;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 750px;
+  border: 10px double hotpink;
 }
 
-.background{
-    position: relative;
-    display: flex;
-    height: 1000px;
-  
-    justify-content: center;
-background-color: thistle;
-    align-items: center; 
- 
+.a {
+  margin-top: 50px;
 }
-.container{
-font-family: 'Lobster', cursive;
-
-font-size: 70px;
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 600px;
-height: 750px;
-
-border: 10px double hotpink;
-
+.b {
+  margin-top: 5px;
 }
-
-
-.a{
-    margin-top: 50px;
-   
-}
-.b{
-    margin-top: 5px;
-}
-.form{  
+.form {
   width: 350px;
-    height: 50px;
-} 
-
-.instahead{
-    margin-top: 0px;
+  height: 50px;
 }
-
-.btn{
-    width: 350px;
-    height: 50px;
-    background-color: rgb(185, 216, 256);
-    color: white;
-    font-size: 30px;
-    border-radius: 5px;
-
-
+.instahead {
+  margin-top: 0px;
 }
-
-
-.c{
-    margin-top: 20px;
+.btn {
+  width: 350px;
+  height: 50px;
+  background-color: rgb(185, 216, 256);
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
 }
-
-
-
-
-
-
+.c {
+  margin-top: 20px;
+}

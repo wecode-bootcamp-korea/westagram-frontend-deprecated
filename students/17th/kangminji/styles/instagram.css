@@ -3,7 +3,6 @@
     margin:0;
     padding:0;
     background-color: rgb(249 249 249);
-
 }
 .nav{
 position: sticky;
@@ -20,16 +19,13 @@ top: 0;
     border-bottom: 1px solid rgb(160 163 165);
     background-color: white;
     z-index: 100;
-   
- }
 
+ }
  .markleft{
     display: flex;
     align-self: flex-end;
     margin-left: 30px;
-    
     }
-
 .navcenter{
     display : flex;
     flex-direction: row;
@@ -57,52 +53,33 @@ top: 0;
 .markright{
 display: flex;
 margin-right: 100px;
-background-color: white;
-
-    
+background-color: white;  
 }
 .center{
 width : 180px;
 background-color: white;
-    
-
 }
 .search {
     width : 150px;
     text-align: center;
 }
-
-/* .markleft{
-display: flex;
-align-self: flex-end;
-margin-left: 30px;
-
-} */
-
 .right{
     margin-right: 30px;
     margin-top: 10px;
 }
-
-
 .container{
     position: relative;
 
 width: 100%;
 height: 900px;
 }
-
 .feeds{
 position: relative;
 width: 600px;
-
 height: auto;
 border: 1px solid rgb(160 163 165);
-
 border-radius: 3px;
-
 }
-
 .feed{
 position: relative;
 width: 90%;
@@ -114,7 +91,6 @@ margin-bottom: 90px;
 top : 22px;
 padding-bottom: 10px;
 }
-
 #comment{
     position: absolute;
 width : 90%;
@@ -122,66 +98,52 @@ height: 45px;
 left: 30px;
 bottom : 10px;
 }
-
 .content-right{
-
 width : 300px; 
 height : 700px;
 margin-left: 40px;
 margin-right: 10px;
-
-
 }
-
 .rightone{
+    position: relative;
     margin-left: -5px;
     margin-bottom: 15px;
 }
-
 .profile{
-   
+
     width: 50px;
     height: 50px;
     border-radius: 50px;
     margin-left: 10px;
     margin-top: 10px;
-    
 }
-
 .head{
-
- position: absolute;
+    position: absolute;
     left: 70px;
     top : 13px;
     font-size: 15px;
     margin: auto;
 }
-
 .contentpicture {
-
-  
     width : 100%;
     height: 650px;
-    /* top: 30px; */
-   margin-top: 5px; 
+    margin-top: 5px; 
 }
-
 .me{
-   
-    width : 50px;
-    height: 50px;
-    border-radius: 50px;
+  width : 50px;
+  height: 50px;
+  border-radius: 50px;
   margin-top: 10px;
   margin-left: 15px;
+  border: 3px dotted hotpink;
 }
-
 .profileme{
 position: absolute;
 margin-top: 20px;
 margin-left: 10px;
+font-size: 20px;
 }
 .icons{
-
     display: flex;
     justify-content: space-between;
     top : 300px;
@@ -190,21 +152,17 @@ margin-left: 10px;
     width: 30px;
     height: 30px;
 }
-
 .a{
     margin-left: 4px;
 }
 .b{
     margin-right:  2px;
 }
-
 .two{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    
 }
-
 .likeme{
 width: 25px;
 height: 25px;
@@ -223,7 +181,6 @@ margin-left: 2px;
 .like, .chat{
     margin-left: 15px;
     font-size: 15px;
-    
 }
 .like{
     margin-top: 6px;
@@ -250,72 +207,54 @@ justify-content: space-between;
     color: grey;
     margin-left: 12px;
     margin-top: 7px;
-
 }
-
 .storyheadright{
-
 font: bold 15px;
 margin-right: 10px;
 margin-top: 5px;
-
 }
-
 ul{
     list-style: none;
     margin-top: 8px;
 }
-
 .storyphoto{
- 
     width: 50px;
     height: 50px;
     border-radius: 50px;
-margin-top: 8px;
+    margin-top: 8px;
     margin-left: 10px;
-
 }
-
 li{
     display: flex;
     position: relative;
 }
-
 .storyid{
     margin-top: 17px;
     margin-left: 10px;
 }
-
 .follow{
 position: absolute;
     color: rgb(61 139 238);
     margin-top: 17px;
     right : 14px;
 }
-
 .rightthree{
 margin-top: 35px;
 border: rgb(160 163 165) dotted 2px; 
 overflow : scroll;
 width: 300px;
 height: 300px;
-
 }
-
 .box{
-   display: grid;
+display: grid;
 width:95%;
 height: auto;
 z-index: 20;
 margin: auto;
-
 }
-
 .text{
-    color: black;
-  
+    color: black; 
 }
-
 .commentbody{
     position: relative;
     margin-top: 70px;
@@ -324,10 +263,8 @@ margin: auto;
     overflow: hidden;
     height: auto;
     width: 500px;
-
-
-margin: auto;
-background-color: green;
+    margin: auto;
+    background-color: green;
 }
 .commentbtn{
     height: 5px;
@@ -348,4 +285,46 @@ background-color: green;
     width : 15px;
     height : 15px;
     margin-right: 15px;
+}
+.arrow_box {
+	position: absolute;
+    background: #d4b7d5;
+    width: 170px;
+    height:165px;
+    z-index: 1000;
+    top: 88px;
+    left: 0px;
+}
+.arrow_box:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(212, 183, 213, 0);
+	border-bottom-color: #d4b7d5;
+	border-width: 20px;
+    margin-left: -20px;
+    z-index: 1000;
+}
+.profileclickphoto{
+    width : 35px;
+    height: 35px;
+    background-color: #d4b7d5;
+}
+.profileclicklist{
+background-color: #d4b7d5;
+border: 2px dashed rgb(236, 224, 230);
+font-family: 'Lobster', cursive;
+font-size: 25px;
+}
+.outside{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    opacity: 0%;
 }
