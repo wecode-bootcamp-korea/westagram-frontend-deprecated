@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+#biggest{
+    /* border: 1px dotted black; */
+    width: 100%;
+    height: 1300px;
+    margin: 0 0;
+    padding: 0 0;
+}
 
 nav{
     background-color: white;
@@ -11,7 +18,7 @@ nav{
     left: 0;
     right: 0;
     justify-content: center;
-    /* border: 1px dotted black; */
+    border-bottom: 1px solid rgb(211, 211, 211);
     width: 100%;
     height: 54px;
     z-index: 1;
@@ -55,7 +62,7 @@ nav{
 
 #middleOfNav{
     position: relative;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -66,7 +73,7 @@ nav{
 
 #searchText{
     height: 28px;
-    width: 200px;
+    width: 215px;
     background-color: rgb(245, 245, 245);
     border: 1px solid rgb(211, 211, 211);
     border-radius: 4px;
@@ -76,16 +83,10 @@ nav{
 
 .fa-search{
     position: absolute;
-    left: 120px;
+    left: 75px;
     right: 2px;
-    width: 17px;
-    color:rgb(211, 211, 211);
-
-    
+    color:rgb(211, 211, 211);   
 }
-/* #searchText::placeholder{
-    text-align: center;
-} */
 
 #endOfNav{
     /* background-color: beige; */
@@ -98,7 +99,7 @@ nav{
 
 }
 
-.far{
+#heart, .fa-user{
     padding-left: 70px;
 }
 
@@ -111,17 +112,17 @@ main{
     position: relative;
     margin-top: 45px;
     width: 100%;
-    height : 1300px;
-    /* border: 2px dotted red; */
-    background-color: #f2f4ed
+    height : auto;
+    /* border-top: 1px solid rgb(211, 211, 211); */
+    background-color: #fafafa
 }
 
 #feeds{
     width: 624px;
-    height: 1000px;
+    height: auto;
     margin: 50px 8px 0 -10px;
-    background-color: aliceblue;
-    border: 1px dotted black;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
 }
 
 #asideInMain{
@@ -173,9 +174,172 @@ ul{
     font-weight: bold;
 }
 
-.fa-ellipsis-h{
+.dot1{
     margin-right: 15px;
 }
 
+#centerImage{
+    width: 622px;
+    height: 622px;
+    background-image: url(https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.122.1245.1245a/s640x640/121593628_832090380867575_5615781536090597816_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=ZHN3cHurZiQAX9Vt6Kz&tp=1&oh=fe343bf93d402fc2419a9dd30bb65e56&oe=6035EF70);
+    background-size:620px;
+    background-position:center;
+}
 
+footer{
+    display: inline-block;
+    width: 622px;
+    height: auto;
+}
+
+#firstLineFooter{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    background-color: white;
+    align-items: center;
+
+}
+
+.leftIcons{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    
+}
+
+.buttonInLeft{
+    display: inline;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-right: 16px;
+    border: 0;
+    background-color: white;
+    text-align: center;
+}
+
+.middleIcons{
+    display: inline-block;
+    padding:0;
+}
+
+.dot{
+    display: inline-block
+}
+
+.rightIcons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+}
+
+.middleIcons{
+    display: flex;
+    width: 222px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+.fa-bookmark{
+    margin-left: 175px;
+}
+
+#secondLineFooter{
+    display: flex;
+    width: 100%;
+    height: 24px;
+    margin-top: 3px;
+    padding: 0 16px;
+    align-items: center;
+    background-color: white;    
+}
+
+#imgCircle2{
+    display: inline;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: 0;
+    background-image: url(https://instagram.fplm4-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fplm4-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=pQ0Fm-UKB3UAX8KBX2t&oh=ad27c700ccff31f38cef72554a80b9e1&oe=6038598F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2);
+    background-size: 22px;
+    border: 1.5px solid gray;
+    border-radius: 100%;
+}
+
+#nextCircle2{
+    padding: 2px 0 0 8px;
+}
+
+#thirdLineFooter{
+    padding: 0 16px;
+    margin-top: 10px;
+}
+
+#fourthLineFooter{
+    width: 100%;
+    height: 38px;
+    padding: 0 16px;
+}
+
+#fourthLineFooter > div{
+    display: inline;
+    
+}
+
+#aCase{
+    width: 100%;
+    display: inline;
+}
+
+a:link, a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+#더보기{display: inline;
+    color: gray;
+}
+
+#smallTime{
+    font-size: 6px;
+    margin: 5px 0 5px 16px;
+}
+
+#lastOfFooter{
+    display: flex;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background-color: white;
+    border-top: 1px solid rgb(211, 211, 211);
+}
+
+#댓글창{
+    width: 557.77px; 
+    padding: 18px 0;
+    font-size: 15px;
+    border:0;
+}
+
+#댓글창::placeholder{
+    font-size: 15px;
+    font-weight:500;
+}
+
+#lastFooterButton{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: white;
+    opacity: 25%;
+}
 
