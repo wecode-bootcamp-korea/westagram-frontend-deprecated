@@ -1,0 +1,45 @@
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+}
+
+#userId,
+#userPassword {
+  outline: none;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px 300px 5px 300px;
+  width: 350px;
+  background-color: #f9f9f7;
+  font-weight: bold;
+}
+
+button {
+  outline: none;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px 300px 5px 300px;
+  width: 384px;
+  background-color: #b2dffc;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  margin: 100px 0 30px 0;
+}

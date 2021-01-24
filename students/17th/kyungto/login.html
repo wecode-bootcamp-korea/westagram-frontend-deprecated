@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style/login.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="westagram.ico" />
+    <title>westagram</title>
   </head>
   <body>
-    <div logInPage>
+    <div class="mainPage">
       <h1>westagram</h1>
-      <input type="text" id="id" placeholder="전화번호, 사용자 이름 또는 이메일" /></br>
-      <input type="password" id="password" placeholder="비밀번호" />
+      <input
+        type="text"
+        id="userId"
+        placeholder="전화번호, 사용자 이름 또는 이메일"
+      />
+      <input type="password" id="userPassword" placeholder="비밀번호" />
+      <button class="logInButton" type="button">로그인</button>
+      <p>비밀번호를 잊으셨나요?</p>
     </div>
+    <script src="js/login.js"></script>
   </body>
 </html>
