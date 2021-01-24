@@ -1,5 +1,5 @@
 body {
-  display: block; ??
+  display: block;
   background-color: #fafafa;
 }
 
@@ -8,6 +8,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: 64px;
   background-color: #fff;
@@ -97,14 +98,12 @@ main {
 }
 
 .feeds {
+  display: inline;
   max-width: 616px;
   margin-right: 28px;
 }
 
-.main-right {
-  position: fixed;
-  width: 293px;
-}
+
 
 .user-profile {
   width: 32px;
@@ -115,6 +114,7 @@ main {
 .feed {
   width: 100%;
   background-color: #fff;
+  margin-bottom: 60px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
@@ -132,6 +132,27 @@ main {
 .feed-link {
   display: flex;
   justify-content: space-between;
+}
+
+.feed-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+}
+
+.feed-icons button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: #fff;
+  border: none;
+}
+
+.feed-icons img {
+  width: 24px;
+  height: 24px;
 }
 
 .user-location {
@@ -179,18 +200,207 @@ main {
   color: #262626;
 }
 
+
+
+.likes-num img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.likes-num {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.view-more-btn {
+  border: none;
+  background-color: #fff;
+  color: #8e8e8e;
+}
+
+.likes-num, .feed-content, .comment-written, .time {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  padding: 0 16px;
+  margin-bottom: 4px;
+}
+
+.likes-num p, .feed-content p, .comment-written p {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.time {
+  font-size: 12px;
+  color: #8e8e8e;
+  margin: 10px 0;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.comment-btn {
+  min-width: fit-content;
+  margin: 0 16px;
+  border: none;
+  background-color: transparent;
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.comment-input {
+  width: 100%;
+  height: fit-content;
+  padding: 16px;
+  border: none;
+  border-radius: none;
+}
+
+.wrap-main-right {
+  width: 293px;
+}
+
 .my-profile {
   display: flex;
-
-  width: 100%;
+  align-items: center;
+  width: 56px;
   height: 56px;
 }
 
 .my-profile-img {
   width: 48px;
-  height: 48dpx;
+  height: 48px;
+  border: 1px solid #dbdbdb;
   border-radius: 50%;
 }
+
+.main-right {
+  position: fixed;
+  width: 293px;
+}
+
+.link {
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.stories, .recommendation {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  margin-top: 10px;
+  padding: 16px 16px 0 16px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+.aside-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+
+.show-all {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.story {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.img-user-info {
+  display: inline-flex;
+  align-items: center;
+}
+
+.user-id-time {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+  font-size: 14px;
+  
+}
+
+.user-id {
+  padding-bottom: 4px;
+  font-weight: 600;
+}
+
+.story-time {
+  font-weight: 400;
+  color: #8e8e8e;
+}
+
+.story-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.story-border {
+  border: 2px solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+	background-image: var(), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
+}
+
+.thumbnail-img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+}
+
+.follow {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #c7c7c7;
+}
+
+.language {
+  padding: 0;
+  font-size: 12px;
+  color: #c7c7c7;
+  background-color: transparent;
+  border: none;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
 
 /*
 * {

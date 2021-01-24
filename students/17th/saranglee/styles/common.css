@@ -3,7 +3,18 @@
     font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 a {
     text-decoration: inherit;
     color: inherit;
+}
+
+
+.btn {
+  margin: none;
+  border: none;
+  background-color: transparent;
 }
