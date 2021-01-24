@@ -1,52 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
+@import url(./reset.css);
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fafafa;
   padding-top: 54px;
+  background-color: #fafafa;
 }
 
-/* navbar */
 nav {
-  width: 100%;
-  height: 54px;
-  border-bottom: 1px solid #d6d6d6;
-  background-color: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 54px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .nav-wrapper {
-  width: 935px;
-  height: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 935px;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .nav-logo {
+  margin-right: 100px;
   font-family: "Cookie", cursive;
   font-size: 30px;
-  margin-right: 100px;
 }
 
 .nav-search {
@@ -74,8 +59,8 @@ nav {
 }
 
 .nav-search input::placeholder {
-  text-align: center;
   font-size: 13px;
+  text-align: center;
 }
 
 .nav-search input:focus {
@@ -92,11 +77,11 @@ nav {
 }
 
 .nav-icons {
-  width: 198px;
-  height: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 198px;
+  height: 22px;
 }
 
 .nav-icons i {
@@ -113,24 +98,23 @@ nav {
   top: -5px;
   right: -9px;
   padding: 3px;
-  font-size: 12px;
-  font-weight: bolder;
   background-color: #ea404c;
   border-radius: 8px;
   color: #ffffff;
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 .user-profile {
-  width: 22px;
-  height: 22px;
-  display: inline-block;
-  background-color: #d6d6d4;
-  border-radius: 50%;
   position: relative;
   top: 1.5px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #d6d6d4;
+  border-radius: 50%;
 }
 
-/* main  layout*/
 .main-container {
   display: flex;
   justify-content: space-between;
@@ -140,7 +124,6 @@ nav {
 main {
   width: 614px;
   height: 100%;
-  /* background-color: lavender; */
   padding-top: 30px;
 }
 
@@ -150,38 +133,36 @@ aside {
   background-color: #fff;
 }
 
-/* main-story */
 .main-stories {
   width: 100%;
   height: 118px;
+  margin-bottom: 24px;
   background-color: #fff;
   border: 1px solid #d7d7d7;
   border-radius: 3px;
-  margin-bottom: 24px;
 }
 
-/* main-feed */
 .main-feed {
   width: 100%;
-  /* height: 849px; */
+  margin-bottom: 60px;
   background-color: #fff;
   border: 1px solid #d7d7d7;
   border-radius: 3px;
-  margin-bottom: 60px;
 }
 
 .main-feed header {
-  height: 60px;
-  padding: 0 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
+  padding: 0 14px;
 }
+
 .feed-profile img {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
   margin-right: 14px;
+  border-radius: 50%;
 }
 
 .feed-info {
@@ -191,9 +172,9 @@ aside {
 }
 
 .feed-info a {
+  width: max-content;
   font-size: 14px;
   font-weight: 700;
-  width: max-content;
 }
 
 .feed-info a:first-child {
@@ -206,8 +187,8 @@ aside {
 }
 
 .feed-info a:nth-child(2) {
-  font-size: 12px;
   margin-top: 3px;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -220,7 +201,6 @@ aside {
   width: 100%;
 }
 
-/* feed-comment */
 .feed-comment {
   padding: 5px 12px;
 }
@@ -228,8 +208,8 @@ aside {
 .feed-icons {
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
   margin-bottom: 9px;
+  font-size: 24px;
 }
 
 .feed-icons-left {
@@ -244,9 +224,9 @@ aside {
 
 .feed-likes {
   display: inline-block;
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 5px;
 }
 
 .feed-comment-list li {
@@ -254,9 +234,9 @@ aside {
 }
 
 .feed-comment-list li a {
+  margin-right: 3px;
   font-size: 14px;
   font-weight: 600;
-  margin-right: 3px;
 }
 
 .feed-comment-list li span {
@@ -264,28 +244,26 @@ aside {
 }
 
 .feed-uploaded-time {
-  font-size: 10px;
   color: #8e8e8e;
+  font-size: 10px;
 }
 
 .main-feed form {
-  width: 100%;
-  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #f1f1f1;
+  width: 100%;
+  height: 56px;
   padding: 0 12px;
+  border-top: 1px solid #f1f1f1;
 }
 
 .feed-comment-input {
   width: 100%;
   height: 18px;
-  /* max-height: 80px; */
   border: none;
   font-family: inherit;
   resize: none;
-  /* flex-grow: 1; */
 }
 
 .feed-comment-input:focus {
@@ -310,7 +288,6 @@ aside {
   cursor: unset;
 }
 
-/* story */
 .main-stories {
   display: flex;
   align-items: center;
@@ -336,9 +313,9 @@ aside {
 
 .main-stories ul li a img {
   width: 60px;
-  border-radius: 50%;
   padding: 2px;
   margin-bottom: 5px;
+  border-radius: 50%;
 }
 
 .main-stories ul li a {
@@ -348,12 +325,12 @@ aside {
 }
 
 .story-profile-name {
-  color: #262626;
   display: block;
+  max-width: 60px;
+  color: #262626;
   font-size: 12px;
   line-height: 14px;
   font-weight: 600;
-  max-width: 60px;
   overflow: hidden;
   text-align: center;
   text-overflow: ellipsis;
@@ -361,7 +338,6 @@ aside {
   text-align: center;
 }
 
-/* aside */
 aside {
   position: sticky;
   top: 83px;
@@ -385,10 +361,10 @@ aside {
 }
 
 .my-profile-info {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .my-profile-info span {
@@ -396,8 +372,8 @@ aside {
 }
 
 .my-profile-info span:first-child {
-  color: #262626;
   margin-bottom: 3px;
+  color: #262626;
   font-weight: 700;
 }
 
@@ -424,8 +400,8 @@ aside {
 }
 
 .recommend-profile > div span {
-  font-size: 12px;
   color: #262626;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -439,15 +415,15 @@ aside {
 
 .recommend-profile ul li img {
   width: 33px;
-  border-radius: 50%;
   margin-right: 15px;
+  border-radius: 50%;
 }
 
 .recommend-profile ul li div {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .recommend-profile ul li > span {
@@ -461,13 +437,13 @@ aside {
 }
 
 .recommend-profile ul div span:first-child {
-  color: #262626;
   margin-bottom: 3px;
+  color: #262626;
   font-weight: 700;
 }
 
 .recommend-profile ul div span:last-child {
-  font-size: 12px;
   color: #8e8e8e;
+  font-size: 12px;
   font-weight: 600;
 }

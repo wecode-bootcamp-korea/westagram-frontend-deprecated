@@ -1,34 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  text-decoration: none;
-}
-
-a {
-  color: inherit;
-}
+@import url(./reset.css);
 
 body {
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
   background-color: #fafafa;
 }
 
 section {
-  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 350px;
+  padding: 25px 40px 22px 40px;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
   border-radius: 1px;
-  padding: 25px 40px 22px 40px;
 }
 
 section.log-in {
@@ -37,9 +28,9 @@ section.log-in {
 }
 
 section.log-in h1 {
-  font-family: "Cookie", cursive;
-  font-size: 50px;
   margin-bottom: 40px;
+  font-size: 50px;
+  font-family: "Cookie", cursive;
   user-select: none;
 }
 
@@ -77,6 +68,7 @@ form .input-pw {
 
 form .login-btn {
   height: 30px;
+  margin-bottom: 20px;
   background-color: #0095f6;
   border: none;
   border-radius: 3px;
@@ -84,7 +76,6 @@ form .login-btn {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 20px;
 }
 
 form .login-btn:disabled {
@@ -101,14 +92,14 @@ form .login-btn:active {
 }
 
 .divider {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
   color: #8e8e8e;
   font-size: 13px;
   font-weight: bold;
-  margin-bottom: 25px;
 }
 
 .divider::before,
@@ -121,9 +112,9 @@ form .login-btn:active {
 }
 
 .log-in-facebook {
+  color: #185385;
   font-size: 14px;
   font-weight: bold;
-  color: #185385;
   text-align: center;
 }
 
@@ -132,15 +123,16 @@ form .login-btn:active {
 }
 
 .log-in-facebook i {
-  font-size: 16px;
   margin-right: 4px;
+  font-size: 16px;
 }
 
 .forgot-pw {
+  color: #185385;
   font-size: 12px;
   text-align: center;
-  color: #185385;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .forgot-pw:active {
