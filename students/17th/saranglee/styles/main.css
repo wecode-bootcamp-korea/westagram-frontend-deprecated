@@ -215,6 +215,11 @@ main {
   padding: 0 16px;
 }
 
+.comment-written {
+  display: flex;
+  align-items: center;
+}
+
 .likes-num {
   margin-bottom: 8px;
   font-size: 14px;
@@ -225,7 +230,7 @@ main {
   color: #8e8e8e;
 }
 
-.likes-num p, .feed-content p, .comment-written p {
+.likes-num p, .feed-content p, .comment-container p {
   padding-left: 5px;
   font-size: 14px;  
 }
@@ -248,6 +253,10 @@ main {
 .comment-input {
   width: 100%;
   border: none;
+}
+
+.comment-text {
+  font-size: 12px;
 }
 
 .comment-submit {
@@ -381,3 +390,8 @@ footer {
 .copyright {
   margin-top: 24px;
 }
+
+
+* {
+  border: 1px solid red !important;
+  }
