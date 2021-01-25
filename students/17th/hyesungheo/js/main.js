@@ -13,15 +13,19 @@ commentInput.addEventListener('keyup', function (event) {
 const superUser = "2929_9999";
 
 function commentWrite() { 
-    let btag = document.createElement("b");
-    btag.innerHTML = superUser;    
+    let makeDiv = document.createElement("div");
     let commentViewSpan = document.createElement('span'); 
+    let commentSpan = document.createElement('span'); 
+
+    let result = document.getElementsByClassName("comment-box");
+    
+    btag.innerHTML = superUser;    
+   
     let commentText = commentInput.value;       
     commentViewSpan.innerHTML = commentText;
-    let result = document.getElementsByClassName("comment-box");
-    result.appendChild(btag);    
+    
+    result.appendChild(MakeDiv);    
     result.appendChild(commentViewSpan);
-    let brtag = document.createElement("br");
     result.appendChild(brtag);  
 }
 
