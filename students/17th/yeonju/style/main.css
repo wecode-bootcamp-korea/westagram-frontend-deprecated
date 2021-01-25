@@ -123,7 +123,6 @@ body {
 
 .main-feed {
     width: 600px;
-    /* height: 900px; */
     margin-top: 130px;
     background-color: white;
     border: 1px solid rgb(207, 205, 205);
@@ -171,49 +170,37 @@ body {
     color: rgb(63, 62, 62);
 }
 
-.comment-plus {
-    margin-left: 15px;
+.comment-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-.comment-plus2 {
-    position: relative;
+.comment-plus {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .comment-like {
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 .comment-text {
-    margin-top: -10px;
-    margin-right: 150px;
-    font-size: 18px;
-    font-weight: bolder;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0px 15px 0px 0px;
 }
 
 .comment-text2 {
-    position: relative;
-    bottom: 40px;
-    left: 100px;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.comment-user {
-    position: relative;
-    font-weight: bolder;
-    bottom: 40px;
-}
-
-.comment-msg {
-    position: relative;
-    bottom: 78px;
-    left: 150px;
-}
-
-.comment-box {
-    width: 593px;
-    height: 35px;
+    font-size: 15px;
+    margin: 0px;
 }
 
 .type-comment {
@@ -221,8 +208,9 @@ body {
 }
 
 .comment-input {
-    width: 595px;
-    height: 60px;
+    width: 583px;
+    height: 50px;
+    padding-left: 15px;
     border: 1px solid rgb(221, 221, 221);
 }
 

@@ -1,14 +1,18 @@
 const button = document.querySelector(".button");
 let input = document.querySelector(".comment-input");
-let comment = document.querySelector(".comments-box");
+let comment = document.querySelector(".comment-plus");
 
 button.addEventListener("click", handleinput);
 
 function handleinput() {
-    let p = document.createElement("p");
-    p.innerHTML = input.value;
-    comment.appendChild(p);
+    let newDiv = document.createElement("div");
+    newDiv.classList.add("comment-line");
+    newDiv.innerHTML = `<p class="comment-text">yeonju</p>` + input.value + '</div>';
+    comment.appendChild(newDiv);
+    input.value = "";
 }
+
+
 
 //enter key = 13
 
@@ -23,7 +27,7 @@ function handleinput() {
 // }
 
 
-
-
-
-//리액트
+/// input.value = ""; -> input값에 남지 않는 이유 
+/// 객체.classList.add(html에서 사용하는 class명)
+/// ' 백틱을 사용해야하는 이유? 
+///
