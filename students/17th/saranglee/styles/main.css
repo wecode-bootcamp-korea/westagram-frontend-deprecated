@@ -247,18 +247,21 @@ main {
   font-weight: 600;
 }
 
-
-
-
-
-
-
-
-
-
 .wrap-main-right {
   width: 293px;
 }
+
+.main-right {
+  position: fixed;
+  width: 293px;
+}
+
+
+
+
+
+
+
 
 .my-profile {
   display: flex;
@@ -274,10 +277,7 @@ main {
   border-radius: 50%;
 }
 
-.main-right {
-  position: fixed;
-  width: 293px;
-}
+
 
 .link {
   padding-left: 16px;
