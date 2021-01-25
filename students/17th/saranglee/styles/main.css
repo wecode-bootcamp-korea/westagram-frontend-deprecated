@@ -4,19 +4,33 @@ body {
 }
 
 .btn {
-  padding: none;
   margin: none;
-  border: none;
+  padding: none;
   background-color: transparent;
+  border: none;
 }
 
-.user-profile-medium {
-  width: 32px;
-  height: 32px;
+.user-profile-img {
+  border: 1px solid #dbdbdb;
   border-radius: 50%;
 }
 
-.user-link, .likes-users {
+.img-small {
+  width: 20px;
+  height: 20px;
+}
+
+.img-medium {
+  width: 32px;
+  height: 32px;
+}
+
+.img-large {
+  width: 48px;
+  height: 48px;
+}
+
+.user-id, .likes-users {
   font-size: 14px;
   font-weight: 600;
 }
@@ -111,9 +125,9 @@ nav {
 main {
   display: flex;
   position: relative;
+  width: 935px;
   margin: auto;
   padding-top: 94px;
-  width: 935px;
 }
 
 .feeds {
@@ -134,24 +148,25 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
-  border-bottom: 1px solid #dbdbdb;
   width: 100%;
   height: 60px;
+  padding: 0 16px;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .feed-link {
   display: flex;
+  align-items: center;
 }
 
-.user-link-location {
+.feed-user-info {
   display: flex;
   flex-direction: column;
   margin-left: 14px;
 }
 
 .user-location {
-  margin-top: 4px;
+  margin-top: 2px;
   font-size: 12px;
   font-weight: 400;
 }
@@ -196,20 +211,14 @@ main {
   display: flex;
   justify-content: column;
   align-items: center;
-  padding: 0 16px;
   margin-bottom: 4px;
+  padding: 0 16px;
 }
 
 .likes-num {
+  margin-bottom: 8px;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 8px;
-}
-
-.user-profile-small {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
 }
 
 .view-more {
@@ -217,8 +226,8 @@ main {
 }
 
 .likes-num p, .feed-content p, .comment-written p {
-  font-size: 14px;
   padding-left: 5px;
+  font-size: 14px;  
 }
 
 .time {
@@ -231,8 +240,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
   height: 56px;
+  padding: 16px;
   border-top: 1px solid #dbdbdb;
 }
 
@@ -243,8 +252,12 @@ main {
 
 .comment-submit {
   min-width: fit-content;
-  color: #0095f6;
   font-weight: 600;
+  color: #0095f6;
+}
+
+.comment-submit:disabled {
+  opacity: 0.3;
 }
 
 .wrap-main-right {
@@ -256,33 +269,14 @@ main {
   width: 293px;
 }
 
-
-
-
-
-
-
-
 .my-profile {
   display: flex;
   align-items: center;
-  width: 56px;
-  height: 56px;
+  margin-bottom: 20px;
 }
 
-.my-profile-img {
-  width: 48px;
-  height: 48px;
-  border: 1px solid #dbdbdb;
-  border-radius: 50%;
-}
-
-
-
-.link {
+.my-profile .user-id {
   padding-left: 16px;
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .stories, .recommendation {
@@ -313,7 +307,7 @@ main {
   color: #262626;
 }
 
-.story {
+.story, .recommended-account {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -331,7 +325,6 @@ main {
   flex-direction: column;
   margin-left: 8px;
   font-size: 14px;
-  
 }
 
 .user-id {
@@ -339,34 +332,30 @@ main {
   font-weight: 600;
 }
 
-.story-time {
+.aside-user-info {
+  font-size: 12px;
   font-weight: 400;
   color: #8e8e8e;
 }
 
-.story-thumbnail {
+.aside-img {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 }
 
 .story-border {
-  border: 2px solid;
   width: 100%;
   height: 100%;
+  border: 2px solid #ff0000;
   border-radius: 50%;
-	background-image: var(), linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
 }
 
-.thumbnail-img {
+.story img {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #dbdbdb;
-  border-radius: 50%;
 }
 
 .follow {
@@ -374,10 +363,10 @@ main {
   font-weight: 600;
 }
 
-
 footer {
-  margin-top: 20px;
+  margin-top: 16px;
   font-size: 12px;
+  line-height: 16px;
   color: #c7c7c7;
 }
 
@@ -390,13 +379,5 @@ footer {
 }
 
 .copyright {
-  margin-top: 20px;
+  margin-top: 24px;
 }
-
-
-/*
-* {
-  border: 1px solid red !important;
-}
-*/
-
