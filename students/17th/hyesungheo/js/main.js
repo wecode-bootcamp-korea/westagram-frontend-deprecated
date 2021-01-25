@@ -2,6 +2,8 @@
 
 const commentInput = document.getElementById('comment-line');
 const submitClick = document.getElementById('submit-box');
+let result = document.querySelector(".commentBox");
+
 
 commentInput.addEventListener('keyup', function (event) {
     const commentValue = document.getElementById('comment-line').value;
@@ -10,29 +12,19 @@ commentInput.addEventListener('keyup', function (event) {
     submitBtn.style.color = commentValue ? '#0896F7' : '#C0DFFD';
 });
 
-const superUser = "2929_9999";
-
-function commentWrite() { 
-    let makeDiv = document.createElement("div");
-    let commentViewSpan = document.createElement('span'); 
-    let commentSpan = document.createElement('span'); 
-
-    let result = document.getElementsByClassName("comment-box");
-      
-    let commentText = commentInput.value;       
-    commentViewSpan.innerHTML = commentText;
-    
-    result.appendChild(makeDiv);    
-    result.appendChild(commentViewSpan);
-    result.appendChild(commentSpan);  
+function commentWrite(event) {
+    if(event.keyCode === 13){
+        event.preventDefault();
+    const makeDiv = document.createElement("div");
+    const superUser = document.createElement("span");
+    const commentViewSpan = document.createElement("span");
+    superUser.classList.add("feed-user");
+    superUser.textContent = "2929_9999";
+    commentViewSpan.textContent = commentInput.value;
+    makeDiv.appendChild(superUser);
+    makeDiv.appendChild(commentViewSpan);
+    result.appendChild(makeDiv);
+    }
 }
 
-submitClick.addEventListener("click", function() {
-    commentWrite();
-});
-
-commentInput.addEventListener('keydown', function(e) {    
-    if (e.keyCode === 13 ) {
-        commentWrite();
-    }
-})
+commentInput.addEventListener('keydown', commentWrite);

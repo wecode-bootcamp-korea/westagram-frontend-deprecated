@@ -167,13 +167,19 @@ i {
     padding-top: 10px;
 }
 
-.comment-box {
-    height: 50px;
+.commentBox {
+    height: 100px;
     padding-top: 10px;
     background-color:var(--box-color);
     border-left:1px solid var(--boxline-color);
     border-right: 1px solid var(--boxline-color);
     border-bottom: 1px solid var(--boxline-color);
+}
+
+.far fa-bookmark {
+    float: right;
+    font-size: 25px;
+    
 }
 
 .add-comment {
@@ -182,6 +188,7 @@ i {
     background-color: var(--box-color);
     border:1px solid var(--boxline-color);
 }
+
 #comment-line {
     width: 530px;
     height: 60px;
@@ -201,7 +208,7 @@ i {
 
 .feed-user {
     display: inline-block;
-    margin: 0 0 14px 10px;
+    margin: 0 0 5px 10px;
     padding-top: 5px;
     font-size: 14px;
     font-weight: bold;
