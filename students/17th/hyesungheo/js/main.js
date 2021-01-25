@@ -18,15 +18,13 @@ function commentWrite() {
     let commentSpan = document.createElement('span'); 
 
     let result = document.getElementsByClassName("comment-box");
-    
-    btag.innerHTML = superUser;    
-   
+      
     let commentText = commentInput.value;       
     commentViewSpan.innerHTML = commentText;
     
-    result.appendChild(MakeDiv);    
+    result.appendChild(makeDiv);    
     result.appendChild(commentViewSpan);
-    result.appendChild(brtag);  
+    result.appendChild(commentSpan);  
 }
 
 submitClick.addEventListener("click", function() {
