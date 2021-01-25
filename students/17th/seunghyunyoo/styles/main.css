@@ -1,0 +1,43 @@
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navigationBar {
+  display: flex;
+}
+
+.logo {
+  font-family: 'Cookie', cursive;
+  font-size: 40px;
+}
+
+.navIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.line {
+  width: 16px;
+  height: 16px;
+  border-right: solid 1px gray;
+}
+
+.feed {
+  width: 450px;
+  height: 500px;
+  background-color: red;
+}
+
+.feedIdImg {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
+
+.feedImg {
+  width: 400px;
+  height: 400px;
+}
