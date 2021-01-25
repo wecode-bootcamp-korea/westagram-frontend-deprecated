@@ -64,6 +64,10 @@
 
 /* login form */
 
+.color_change {
+  background-color: #0095f6;
+}
+
 .login_form_submit {
   width: 260px;
   height: 30px;

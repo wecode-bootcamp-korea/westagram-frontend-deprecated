@@ -5,11 +5,10 @@ weSubmit = document.querySelector(".login_form_submit");
 function changeColor() {
     if((weId.value && wePwd.value) && (wePwd.value.length >= 5) && (weId.value.indexOf("@") >= 0)){
         weSubmit.removeAttribute('disabled');
-        weSubmit.style.backgroundColor = '#0095f6';
+        weSubmit.classList.add("color_change");
         weSubmit.style.cursor = 'pointer';
     }else{
         weSubmit.setAttribute('disabled', 'true');
-        weSubmit.style.backgroundColor = '#B2DFFC';
         weSubmit.style.cursor = 'default';
     }
 }
