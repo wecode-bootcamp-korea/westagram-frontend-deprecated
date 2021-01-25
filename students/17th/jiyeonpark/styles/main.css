@@ -159,6 +159,7 @@ main .feed_icon{
   margin-bottom: 8px;
   padding: 0 16px;
   display: flex;
+  align-items: center;
 }
 
 .like_account_img{
@@ -168,7 +169,6 @@ main .feed_icon{
 }
 
 .like_account div{
-  justify-content: center;
   margin-left: 5px;
 }
 
@@ -178,12 +178,10 @@ main .feed_icon{
   align-items: center;
   justify-content:space-between;
   flex-direction: row;
-  
   width: 100%;
   height: 56px;
   margin-top: 4px;
   padding: 0 16px;
-  background-color: wheat;
   border-top: var(--container-border);
   font-size: 14px;
 }
@@ -196,16 +194,18 @@ main .feed_icon{
 
 .comment_input textarea{
   width: 100%;
-  resize: none;
+  height: 25px;
   border: 0;
-  height: 18px;
+  resize: none;
 }
 
 .inactive_button, .active_button{
   all: unset;
-  width: 100%;  
+  display: block;
+  width: 30px;
 }
 
+/* common.css 로 이동 */
 .inactive_button{
   color: var(--inactive-color);
 }
@@ -214,8 +214,20 @@ main .feed_icon{
   cursor: pointer;
 }
 
+.comment_list{
+  padding: 0 16px;
+  margin: 10px 0;
+}
 
+.comment_list div{
+  margin: 10px 0;
+}
 
+.comment_list a{
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+}
 
 
 
