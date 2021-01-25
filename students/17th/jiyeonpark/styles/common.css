@@ -2,7 +2,8 @@
   --container-border: 1px solid #DBDBDB;
   --container-border-radius: 1px;
   --light-gray: #FAFAFA;
-  
+  --inactive-color: #b2dffc;
+  --active-color: #0095F6;
 }
 
 *{

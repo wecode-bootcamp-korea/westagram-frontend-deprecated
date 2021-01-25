@@ -15,7 +15,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
   flex-direction: row;
   justify-content: space-between;
   width: 935px;
@@ -29,14 +28,23 @@ nav div {
 
 nav input {
   border: var(--container-border);
-  background-color: var(--light-gray);
-}
+  box-sizing: border-box;
 
+  background-color: var(--light-gray);
+  padding: 3px;
+  background-repeat: no-repeat;
+}
+nav input::-webkit-input-placeholder{
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png) ;
+  background-size: contain;
+  background-position: 50px center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
 .icon {
   display: inline-block;
-  justify-content: space-between;
-  width: 222px;
-  background-color: aqua
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 nav img {
@@ -69,33 +77,18 @@ main {
   width: 100%;
 }
 
-/* div.main-right */
-.main-right {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  right: 0;
-  height: 100vh;
-}
-
-.right_container{
-  width: 293px;
-  display: block;
-  position: fixed;
-  background-color: gray;
-}
 
 /* article */
 article{
   display: inline-block;
   vertical-align: top;
   width: 614px;
-  height: 914px;
   margin-bottom: 60px;
   border: var(--container-border);
   background-color: #ffffff;
 }
 
+/* article header */
 article header{
   width: 100%;
   height: 60px;
@@ -132,13 +125,116 @@ header button{
   cursor: pointer;
 }
 
+/* feed_img */
 .feed_img{
   width: 100%;
   height: 100%;
 }
 
+/* feed_detail */
 .feed_detail{
-  background-color: brown;
+  width: 100%;
+  margin-top: 4px;
 }
 
+/* feed_detail feed_icon */
+main .feed_icon{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+}
+
+.icon button{
+  all: unset;
+  left: -8px;
+  margin-left: -8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* feed_detail feed_like_account */
+.like_account{
+  margin-bottom: 8px;
+  padding: 0 16px;
+  display: flex;
+}
+
+.like_account_img{
+  margin-right: 4px;
+  width: 24px;
+  border-radius: 100%;
+}
+
+.like_account div{
+  justify-content: center;
+  margin-left: 5px;
+}
+
+/* comment_input */
+.comment_input{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction: row;
+  
+  width: 100%;
+  height: 56px;
+  margin-top: 4px;
+  padding: 0 16px;
+  background-color: wheat;
+  border-top: var(--container-border);
+  font-size: 14px;
+}
+.comment_input form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.comment_input textarea{
+  width: 100%;
+  resize: none;
+  border: 0;
+  height: 18px;
+}
+
+.inactive_button, .active_button{
+  all: unset;
+  width: 100%;  
+}
+
+.inactive_button{
+  color: var(--inactive-color);
+}
+.active_button{
+  color: var(--active-color);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* div.main-right */
+.main-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  right: 0;
+  height: 100vh;
+}
+
+.right_container{
+  width: 293px;
+  display: block;
+  position: fixed;
+  background-color: gray;
+}
 

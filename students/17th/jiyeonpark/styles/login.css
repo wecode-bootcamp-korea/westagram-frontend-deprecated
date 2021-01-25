@@ -46,11 +46,11 @@
 
 
 .inactive_btn {
-  background-color: #b2dffc;
+  background-color: var(--inactive-coloracut) 
 }
 
 .active_btn {
-  background-color: #0095F6;
+  background-color: var(--active-color);
   cursor: pointer;
 }
 
