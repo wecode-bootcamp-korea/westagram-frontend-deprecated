@@ -1,16 +1,14 @@
-const thisIsButton = document.getElementById('b0tn_login')
+const thisisIDPW = document.getElementsByClassName('first_div')[0];
 
-thisIsButton.addEventListener('click' function() {
+thisisIDPW.addEventListener('keyup', function() {
     const id = document.getElementById('userID').value;
     const password = document.getElementById('userPW').value;
+    const button = document.getElementById('btn_login');
 
-    if (!id) {
-        alert('전화번호, 사용자 이름 또는 이메일을 입력해주세요!')
-        return;
-
-        if (!password) {
-            alert('비밀번호를 입력해주세요!')
-returnl}
-alert('로그인 성공!')
+    if (id.length > 0 && password.length > 0) {
+        return button.removeAttribute('disabled');
     }
-}
+    else {
+        return button.setAttribute('disabled','disabled')
+    }   
+})

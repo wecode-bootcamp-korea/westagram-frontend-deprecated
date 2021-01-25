@@ -44,16 +44,31 @@ h1 {
   border: 1px solid #c0c0c0;
   outline: none;
 }
+
+.login:focus {
+  width: 280px;
+  height: 30px;
+}
+
 #btn_login {
   width: 280px;
   height: 30px;
   margin: 13px;
-  background-color: #b2dffc;
+  background-color: #0095f6;
   border: none;
   border-radius: 3px;
   color: white;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+#btn_login:focus {
+  outline: none;
+}
+
+#btn_login:disabled {
+  background-color: #b2dffc;
 }
 
 .or_box {
