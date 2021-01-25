@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
@@ -10,20 +10,20 @@ body {
 }
 
 .loginContainer {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 40px auto 0px;
-  padding: 10px 0;
   width: 350px;
   height: 390px;
+  margin: 40px auto 0px;
+  padding: 10px 0;
+  background-color: #ffffff;
   border: 1px solid #dbdbdb;
 }
 
 h1 {
-  margin: 25px auto 0px;
   width: 200px;
+  margin: 25px auto 0px;
   text-align: center;
   font-family: "Lobster Two", cursive;
   font-size: 40px;
@@ -37,26 +37,26 @@ h1 {
 }
 
 input {
-  background-color: #fafafae5;
-  margin: 3px auto;
-  padding: 11px 0px 11px 8px;
   width: 258px;
   height: 36px;
+  margin: 3px auto;
+  padding: 11px 0px 11px 8px;
+  color: #8e8e8e;
+  background-color: #fafafae5;
   border: 1px solid #dbdbdb;
   border-radius: 2px;
-  color: #8e8e8e;
 }
 
 button {
-  background-color: #c0dffd;
-  margin: 10px auto;
-  padding: 0;
   width: 258px;
   height: 30px;
+  margin: 10px auto;
+  padding: 0;
+  color: white;
+  background-color: #c0dffd;
   border: none;
   border-radius: 5px;
   font-weight: bold;
-  color: white;
 }
 
 .darkBtn {
@@ -69,9 +69,9 @@ button {
   justify-content: space-between;
   width: 350px;
   height: 30px;
-  padding-top: 5px;
   margin-top: 0px;
   margin-bottom: 20px;
+  padding-top: 5px;
 }
 
 .left,
@@ -91,10 +91,10 @@ button {
 
 .orContainer p {
   width: 50px;
+  color: #8e8e8e;
   text-align: center;
   font-size: 13px;
   font-weight: bold;
-  color: #8e8e8e;
 }
 
 .loginFacebook {
@@ -115,9 +115,9 @@ button {
 }
 
 .loginContainer span {
-  color: #124172;
   padding: 5px;
   margin: 15px auto;
+  color: #124172;
   font-size: 12px;
 }
 
@@ -125,11 +125,11 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: white;
-  border: 1px solid #dbdbdb;
   width: 350px;
   height: 65px;
   margin: 15px auto;
+  background-color: white;
+  border: 1px solid #dbdbdb;
   text-align: center;
 }
 
@@ -137,23 +137,23 @@ button {
   margin-top: 20px;
 }
 .noAccount span {
-  font-size: 13px;
   margin-top: 20px;
   color: #0095f6;
+  font-size: 13px;
   font-weight: bold;
 }
 
 .getTheApp {
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
   width: 350px;
+  margin: 0 auto;
 }
 
 .getTheApp h3 {
   margin-top: 10px;
-  text-align: center;
   font-size: 13px;
+  text-align: center;
 }
 
 .getTheApp .appImage {
@@ -163,6 +163,6 @@ button {
 }
 
 .getTheApp img {
-  margin: 0 3px;
   height: 120px;
+  margin: 0 3px;
 }

@@ -10,7 +10,7 @@ function loginUpdate() {
     let mustId = '@';
 
     if (idValue && pwValue) {
-        if (idValue.includes(mustId) && pwValue.length >=6 ) {
+        if (idValue.includes(mustId) && pwValue.length >= 6) {
             thisIsLogIn.classList.add('darkBtn');
             thisIsLogIn.disabled = "false";
             thisIsLogIn.style.cursor = "pointer";

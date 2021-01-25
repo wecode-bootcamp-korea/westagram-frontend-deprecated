@@ -2,29 +2,28 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: black;
+  background-color: #ffffff;
   font-size: 15px;
   font-weight: normal;
   font-family: "Lato", sans-serif;
-  color: black;
-  background-color: #ffffff;
 }
 
 body {
-  background-color: #fafafa;
-  margin: 0 auto;
   max-height: 3000px;
   max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fafafa;
 }
 
 .navbar {
-  height: 45px;
-  width: 100%;
-
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  height: 45px;
+  width: 100%;
   border-bottom: 1px solid #dbdbdb;
 }
 
@@ -39,31 +38,31 @@ body {
 }
 
 .searchContainer i {
-  width: 10px;
   position: absolute;
+  width: 10px;
   margin-top: 7px;
   margin-left: 75px;
   color: #b6b4b4;
 }
 
 .searchContainer input {
+  width: 230px;
+  height: 23px;
+  padding: 13px 0px 13px 8px;
+  color: #b6b4b4;
   background-color: #fafafae5;
   border: 1px solid #dbdbdb;
   border-radius: 2px;
-  padding: 13px 0px 13px 8px;
-  color: #b6b4b4;
-  width: 230px;
-  height: 23px;
-  text-align: center;
   font-size: 14px;
+  text-align: center;
 }
 
 nav {
   display: flex;
-  width: 150px;
   flex-direction: row;
-  margin-right: 20px;
   justify-content: space-between;
+  width: 150px;
+  margin-right: 20px;
 }
 
 nav i {
@@ -71,28 +70,30 @@ nav i {
 }
 
 main {
-  background-color: #fafafa;
-  height: 1500px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 1500px;
+  background-color: #fafafa;
+  
 }
 
 .feeds {
-  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
   height: 2000px;
   width: 600px;
   margin-left: 20px;
-  display: flex;
-  flex-direction: column;
+  background-color: #fafafa;
 }
 
 .main-right {
-  background-color: #fafafa;
   height: 100%;
   width: 400px;
+  margin-top: 30px;
   margin-right: 20px;
   margin-left: 30px;
+  background-color: #fafafa;
 }
 
 .stories {
@@ -102,8 +103,7 @@ main {
   justify-content: flex-start;
   width: 100%;
   height: 120px;
-  margin-top: 30px;
-
+  margin-top: 60px;
   border: 1px solid #dbdbdb;
   border-radius: 2px;
 }
@@ -112,7 +112,6 @@ main {
   width: 70px;
   margin-left: 15px;
   padding: 2px;
-
   border-radius: 35px;
   border: 2px solid #c62e61;
 }
@@ -122,9 +121,9 @@ main {
 .story3,
 .story4,
 .story5 {
-  width: 90px;
   display: flex;
   flex-direction: column;
+  width: 90px;
 }
 
 .stories p {
@@ -138,7 +137,6 @@ article {
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
-  height: 850px;
   margin-top: 25px;
   border: 1px solid #dbdbdb;
   border-radius: 2px;
@@ -149,8 +147,8 @@ article header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
   width: 100%;
+  height: 50px;
 }
 
 .accountContainer {
@@ -162,16 +160,15 @@ article header {
 
 .accountContainer img {
   width: 30px;
-  border-radius: 30px;
   margin-left: 20px;
+  border-radius: 30px;
 }
 
 article header h1 {
   width: 476px;
   padding-left: 20px;
-
-  text-align: left;
   color: black;
+  text-align: left;
   font-weight: bold;
 }
 
@@ -183,7 +180,6 @@ header i {
 article header .seeMore {
   width: 50px;
   height: 40px;
-  justify-self: flex-end;
 }
 
 article .mainImage {
@@ -208,15 +204,25 @@ section {
 }
 
 .footerNav {
-  width: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100px;
 }
 
 footer i {
   width: 20px;
   font-size: 25px;
+}
+
+
+.filledFooterHeart, .filledCommentHeart {
+  color: red;
+
+}
+
+.filledCommentHeart {
+  color: red;
 }
 
 footerNav i {
@@ -244,14 +250,20 @@ article .accountName {
   list-style-type: none;
 }
 
-.userAccount {
-  font-weight: bold;
-}
-
 .commentsLog {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.commentsContainer li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userAccount {
+  font-weight: bold;
 }
 
 .commentsLog li {
@@ -263,13 +275,12 @@ article .accountName {
 }
 
 .commentsLog p {
-  font-size: 10px;
-  color: #959595;
   margin-top: 10px;
+  color: #959595;
+  font-size: 10px;
 }
 
 .main-right .myProfile {
-  background-color: #fafafa;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -277,6 +288,7 @@ article .accountName {
   width: 100%;
   height: 120px;
   margin-top: 30px;
+  background-color: #fafafa;
 }
 
 .main-right img {
@@ -285,8 +297,8 @@ article .accountName {
 }
 
 .main-right .accountInfo {
-  background-color: #fafafa;
   margin-left: 15px;
+  background-color: #fafafa;
 }
 
 .main-right h1,
@@ -305,16 +317,17 @@ h2 {
 }
 
 .addComment {
-  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
+  padding: 15px 20px 15px 20px;
   border-right: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
   border-left: 1px solid #dbdbdb;
   border-radius: 2px;
-  padding: 15px 20px 15px 20px;
+  
 }
 
 .inputComment {
@@ -324,8 +337,8 @@ h2 {
 }
 
 .inputSubmit {
-  color: #c0dffd;
   width: 30px;
+  color: #c0dffd;
   border: none;
 }
 
@@ -333,64 +346,72 @@ h2 {
   color: #1c7ed6;
 }
 
+.commentsContainer i {
+  margin-right: 20px;
+  align-items: center;;
+  color: darkgrey;
+  font-size: 13px;
+}
+
 .suggestions {
-  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
   height: 260px;
   margin-top: 20px;
+  background-color: #fafafa;
 }
 
 .suggestions .header {
-  background-color: #fafafa;
-  width: 100%;
-  height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 30px;
   margin-bottom: 10px;
+  background-color: #fafafa;
+  
 }
 
 .suggestions .suggestForYou {
-  background-color: #fafafa;
   color: rgb(145, 144, 144);
+  background-color: #fafafa;
   font-weight: bold;
 }
 
 .suggestions .seeAll {
-  background-color: #fafafa;
   color: #262626;
+  background-color: #fafafa;
   font-weight: bold;
   font-size: 13px;
 }
 
 .suggestProfiles {
-  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #fafafa;
 }
 
 .suggestProfile1,
 .suggestProfile2,
 .suggestProfile3 {
-  background-color: #fafafa;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  background-color: #fafafa;
 }
 
 .imageAndName {
-  background-color: #fafafa;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  background-color: #fafafa;
 }
 
 .imageAndName img {
@@ -405,14 +426,14 @@ h2 {
 }
 
 .profileContainer .detail {
-  background-color: #fafafa;
   color: rgb(145, 144, 144);
+  background-color: #fafafa;
   font-size: 13px;
 }
 
 .suggestProfiles .follow {
-  background-color: #fafafa;
   color: #0095f6;
+  background-color: #fafafa;
   font-size: 13px;
 }
 

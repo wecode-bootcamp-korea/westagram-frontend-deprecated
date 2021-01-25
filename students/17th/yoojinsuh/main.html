@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <link rel="shortcut icon" href="img/instagram.png" type="imag/png">
     <link href="styles/common.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lobster+Two:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
 </head>
+
 <body>
     <div class="navbar">
         <p class="logo"> Westagram </p>
@@ -28,39 +32,39 @@
     <main>
         <div class="feeds">
             <div class="stories">
-                <div class = "story1">
-                    <img src="img/story1.jpeg">
+                <div class="story1">
+                    <img alt="story1" src="img/story1.jpeg">
                     <p>03_yjs</p>
                 </div>
-                <div class = "story2">
-                    <img src="img/story2.jpeg">
+                <div class="story2">
+                    <img alt="story2" src="img/story2.jpeg">
                     <p>suukju</p>
                 </div>
-                <div class = "story3">
-                    <img src="img/story3.jpeg">
+                <div class="story3">
+                    <img alt="story3" src="img/story3.jpeg">
                     <p>dobie_fan</p>
                 </div>
-                <div class = "story4">
-                    <img src="img/story4.jpeg">
+                <div class="story4">
+                    <img alt="story4" src="img/story4.jpeg">
                     <p>anna908</p>
                 </div>
-                <div class = "story5">
-                    <img src="img/story5.jpeg">
+                <div class="story5">
+                    <img alt="story5" src="img/story5.jpeg">
                     <p>soonapshot</p>
                 </div>
             </div>
             <article>
                 <header>
                     <div class="accountContainer">
-                        <img src="img/dobieprofile.jpeg">
+                        <img alt="dobie profile" src="img/dobieprofile.jpeg">
                         <h1> hi_dobie </h1>
                     </div>
                     <i class="fas fa-ellipsis-h"></i>
                 </header>
-                <img class="mainImage" src="img/dobie.jpeg" alt="dobie">
+                <img class="mainImage" alt="dobie" src="img/dobie.jpeg">
                 <footer>
                     <div class="footerNav">
-                        <i class="far fa-heart"></i>
+                        <i class="far fa-heart" id="footerHeart" onclick="fillHeartForFooter()"></i>
                         <i class="far fa-comment"></i>
                         <i class="far fa-paper-plane"></i>
                     </div>
@@ -76,8 +80,14 @@
                 <section class="comments">
                     <div class="commentsLog">
                         <ul class=commentsContainer>
-                            <li><span><span class="userAccount">suukju</span> I'm suukju without underbar</span></li>
-                            <li><span><span class="userAccount">soonapshot</span>Hi, Dobie!</span></li>
+                            <li>
+                                <div><span class="userAccount">suukju</span><span> How are y'all?!</span>
+                                </div><i class="far fa-heart" id="commentHeart" onclick="fillHeartForComment()"></i>
+                            </li>
+                            <li>
+                                <div><span class="userAccount">soonapshot</span><span>I miss you, Dobie</span></div><i
+                                    class="far fa-heart" id="commentHeart" onclick="fillHeartForComment()"></i>
+                            </li>
                         </ul>
                         <p>10 HOURS AGO</p>
                     </div>
@@ -90,7 +100,7 @@
         </div>
         <div class="main-right">
             <div class="myProfile">
-                <img src="img/profilepic.jpeg">
+                <img alt="myProfile pic" src="img/profilepic.jpeg">
                 <div class="accountInfo">
                     <h1>hi_yoojins</h1>
                     <h2>Rylie YooJin Suh</h2>
@@ -104,7 +114,7 @@
                 <div class="suggestProfiles">
                     <div class="suggestProfile1">
                         <div class="imageAndName">
-                            <img src="img/suggest1.jpeg">
+                            <img alt="suggest1" src="img/suggest1.jpeg">
                             <div class="profileContainer">
                                 <p class="name">sunah9404</p>
                                 <p class="detail">Suggested for you</p>
@@ -114,7 +124,7 @@
                     </div>
                     <div class="suggestProfile2">
                         <div class="imageAndName">
-                            <img src="img/suggest2.jpeg">
+                            <img alt="suggest2" src="img/suggest2.jpeg">
                             <div class="profileContainer">
                                 <p class="name">yejin__ohhh</p>
                                 <p class="detail">Followed by soonapshot + 2 more</p>
@@ -124,7 +134,7 @@
                     </div>
                     <div class="suggestProfile3">
                         <div class="imageAndName">
-                            <img src="img/suggest3.jpeg">
+                            <img alt="suggest3" src="img/suggest3.jpeg">
                             <div class="profileContainer">
                                 <p class="name">__bona321</p>
                                 <p class="detail">New to Instagram</p>
@@ -136,6 +146,7 @@
             </div>
         </div>
     </main>
-    <script src = "js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
