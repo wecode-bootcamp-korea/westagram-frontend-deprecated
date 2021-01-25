@@ -4,6 +4,7 @@
 
 #biggest{
     /* border: 1px dotted black; */
+    position: relative;
     width: 100%;
     height: 1300px;
     margin: 0 0;
@@ -110,8 +111,8 @@ main{
     flex-direction: row;
     justify-content:center;
     position: relative;
-    margin-top: 45px;
-    width: 100%;
+    margin: 45px 25px 0 25px;
+    width: auto;
     height : auto;
     /* border-top: 1px solid rgb(211, 211, 211); */
     background-color: #fafafa
@@ -155,7 +156,7 @@ main{
     background-size: 30px;
     background-position: center;
     display: block;
-    border: 0.5px solid gray;
+    border: 0.5px solid rgb(211, 211, 211);
     border-radius: 100%;
 }
 
@@ -270,7 +271,7 @@ footer{
     background-repeat: 0;
     background-image: url(https://instagram.fplm4-1.fna.fbcdn.net/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=instagram.fplm4-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=pQ0Fm-UKB3UAX8KBX2t&oh=ad27c700ccff31f38cef72554a80b9e1&oe=6038598F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2);
     background-size: 22px;
-    border: 1.5px solid gray;
+    border: 1.5px solid rgb(211, 211, 211);
     border-radius: 100%;
 }
 
@@ -284,6 +285,7 @@ footer{
 }
 
 #fourthLineFooter{
+    flex-direction: column;
     width: 100%;
     height: 38px;
     padding: 0 16px;
@@ -300,12 +302,22 @@ footer{
 }
 
 a:link, a:visited{
-    color: blue;
+    color: #00376b;
     text-decoration: none;
 }
 
-#더보기{display: inline;
+#더보기{
+    display: inline;
     color: gray;
+}
+
+.replyContainer{
+  display: flex;
+  flex-direction: column;
+  width: 622px;
+  height: auto;
+  padding: 0 16px;
+  background-color: white;
 }
 
 #smallTime{
@@ -322,16 +334,25 @@ a:link, a:visited{
     border-top: 1px solid rgb(211, 211, 211);
 }
 
-#댓글창{
+#comment{
     width: 557.77px; 
     padding: 18px 0;
     font-size: 15px;
     border:0;
+    resize: none;
 }
 
-#댓글창::placeholder{
+#comment::placeholder{
     font-size: 15px;
     font-weight:500;
+}
+
+.subInButton{
+    color: #b5d2ec;
+}
+
+.activeSubInButton{
+    color: #0095f6;
 }
 
 #lastFooterButton{
@@ -340,6 +361,62 @@ a:link, a:visited{
     margin: 0;
     border: 0;
     background-color: white;
-    opacity: 25%;
 }
+
+#asideInMain{
+    position: relative;
+    background-color: white;
+
+}
+
+#asideSection{
+    position: fixed;
+    width: 313px;
+    height: 700px;
+    padding-left: 15px;
+    background-color: wheat;
+    
+}
+
+.asideProfileGroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border: 1px dotted black;
+    margin-top: 55px;
+    
+    
+    
+}
+
+#leftImageAndText{
+    display: inline-flex;
+    align-items: center;
+    width: 200px
+    
+}
+
+#imgCircle3{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/120349966_422763662018714_7835598670003667169_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=KRctBvoTtD0AX9KVMiT&tp=1&oh=c98d8b1dda7b9948db4f1268485cdf00&oe=6033973E");
+    background-position: center;
+    background-repeat: none;
+    background-size: 50px;
+    border: 0.5px solid rgb(211, 211, 211);
+    border-radius: 100%;
+}
+
+#leftAsideContent{
+    color: rgb(211, 211, 211);
+}
+
+#transition{
+    font-size: 13px;
+    color: #0095f6;
+}
+
 
