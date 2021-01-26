@@ -11,3 +11,13 @@ memo.addEventListener("keydown", function (event) {
     comBtn.classList.remove("commentsStart");
   }
 });
+
+const commentsSave = document.querySelector(".articleWrite");
+
+comBtn.addEventListener("click", clickButton);
+
+function clickButton() {
+  const listItems = document.createElement("li");
+  listItems.innerHTML = memo.value;
+  commentsSave.appendChild(listItems);
+}
