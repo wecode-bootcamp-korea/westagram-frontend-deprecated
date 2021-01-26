@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.mainLayoutBox {
+  display: flex;
+}
+
 .navigationBar {
   display: flex;
 }
@@ -25,10 +29,10 @@
   border-right: solid 1px gray;
 }
 
-.feed {
+.feeds {
   width: 450px;
   height: 500px;
-  background-color: red;
+  background-color:thistle;
 }
 
 .feedIdImg {
@@ -40,4 +44,47 @@
 .feedImg {
   width: 400px;
   height: 400px;
+}
+
+.replyBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  background-color: rosybrown;
+}
+
+.replyText {
+  position: relative;
+  display: flex;
+  width: 380px;
+  height: 30px;
+
+}
+
+.replyBtn {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  background-color:unset;
+  border: 0;
+  color : blue;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+.replyBtn:focus {
+  outline: none;
+}
+
+.myId {
+  color : red;
+  background-color: blue;
+}
+
+.replyHeart {
+  width: 20px;
+  height: 20px;
+  background-color: red;
 }

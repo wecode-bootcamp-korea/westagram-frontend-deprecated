@@ -13,21 +13,24 @@
 </head>
 
 <body>
-  <nav class="navigationBar">
-    <img class="navIcon" alt="logo"
-      src="/Users/seunghyunyoo/OneDrive/coding/wecode/wecode_westagram/westagram-frontend/students/17th/seunghyunyoo/img/mainpage/logo.png" />
-    <div class="line"></div>
-    <div class="logo">Westagram</div>
-    <input type="search" placeholder="검색"></input>
-    <img class="navIcon" alt="GPS" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" />
-    <img class="navIcon" alt="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
-    <img class="navIcon" alt="mypage"
-      src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" />
-  </nav>
+  <header>
+    <nav class="navigationBar">
+      <img class="navIcon" alt="logo"
+        src="/Users/seunghyunyoo/OneDrive/coding/wecode/wecode_westagram/westagram-frontend/students/17th/seunghyunyoo/img/mainpage/logo.png" />
+      <div class="line"></div>
+      <div class="logo">Westagram</div>
+      <input type="search" placeholder="검색"></input>
+      <img class="navIcon" alt="GPS" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" />
+      <img class="navIcon" alt="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
+      <img class="navIcon" alt="mypage"
+        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" />
+    </nav>
+  </header>
 
-  <section class="main">
+
+  <main class="mainLayoutBox">
     <div class="feedBox">
-      <article class="feed">
+      <article class="feeds">
         <div class="feedIdBox">
           <span class="feedIdImg">logo</span>
           <span class="feedId">wecode-bootcamp</span>
@@ -36,25 +39,37 @@
           <img class="feedImg"
             src="https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/s150x150/139295517_1048459365666935_3810822540657450701_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_ohc=e3lpERB4J6IAX-Yx9Ec&tp=1&oh=8b10769472b68f3d6a3dc9d83838d3c4&oe=6038A8CB" />
         </div>
-        <img class="feedIcon" alt="heart"
+        <img class="feedIcon" alt="heart icon"
           src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
-        <img class="feedIcon" alt="heart"
+        <img class="feedIcon" alt="reply icon"
           src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
-        <img class="feedIcon" alt="heart"
+        <img class="feedIcon" alt="download icon"
           src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
-      </article>
+        <div>
+          <span>img</span>
+          <span>comment</span>
+        </div>
+        <ul class="replyUl">
+          
+        </ul>
+        <form class="replyBox">
+          <input type="text" class="replyText" placeholder="댓글달기..." />
+          <input type="button" class="replyBtn" value="게시" />
+        </form>
+        </article>
     </div>
 
-    <div class="mainRight">
-      <div class="myID"></div>
-      <div class="storyBox"></div>
-      <div class="followBox"></div>
-    </div>
-
-  </section>
+    <sidebar class="sidebarLayoutBox">
+      <div class="myId">ID_example</div>
+      <div class="storyBox">storyBox</div>
+      <div class="followBox">FollowBox</div>
+    </sidebar>
 
 
+  </main>
 
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

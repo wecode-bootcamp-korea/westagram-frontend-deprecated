@@ -70,8 +70,8 @@ h1 {
 }
 
 .newAccountBox,
-.devider,
-.deviderText,
+.divider,
+.dividerText,
 .facebook,
 .mainBox a,
 .appDownload,
@@ -87,6 +87,7 @@ h1 {
 }
 
 .divider {
+  position: relative;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 268px;
@@ -98,12 +99,12 @@ h1 {
 
 .dividerText {
   white-space: nowrap;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 20px;
   color: gray;
   font-size: 12px;
 }
 
-.deviderBox {
+.dividerBox {
   width: 100%;
   height: 1px;
   background-color: rgba(var(--b38, 219, 219, 219), 1);
