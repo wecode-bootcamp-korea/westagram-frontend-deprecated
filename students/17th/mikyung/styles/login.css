@@ -72,14 +72,12 @@ h1 {
 }
 
 .or_box {
-  border: 1px solid #dbdbdb;
-  border-right: none;
-  border-left: none;
-  border-top: none;
+  border-left: 1px solid #dbdbdb;
   width: 280px;
   position: relative;
   margin: 8px auto;
 }
+
 span.or_under {
   color: #8e9cbd;
   font-size: 13px;
