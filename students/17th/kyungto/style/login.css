@@ -43,3 +43,7 @@ button {
 p {
   margin: 100px 0 30px 0;
 }
+
+.changBtn {
+  background-color: #0095f6;
+}

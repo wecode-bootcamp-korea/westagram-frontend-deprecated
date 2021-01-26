@@ -4,6 +4,7 @@ header {
   right: 0;
   top: 0;
   height: 50px;
+  z-index: 10;
 }
 
 .nav {
@@ -11,78 +12,154 @@ header {
   border-bottom: 1px solid #dbdbdb;
   align-items: center;
   justify-content: space-between;
-  height: 55px;
+  height: 57px;
   background-color: white;
 }
 
-/* .navItems {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-  } */
-
-.navLeftItem {
+.navLogo {
   font-family: "Lobster", cursive;
   font-size: 20px;
   margin: 0 0 0 300px;
 }
 
-.navCenterItem {
-  outline: none;
-  border: 1px solid #dbdbdb;
+.navSearch {
   border-radius: 5px;
-  margin-left: 30px;
+  margin: 29px;
+  background-color: #fafafa;
 }
 
-.navRightItem {
+.navSearch input {
+  width: 300px;
+  height: 25px;
+}
+
+.navIconWrapper {
   display: flex;
   justify-content: space-between;
   margin: 0 300px 0 0;
   padding: 10px;
 }
 
-.navRightItem i {
+.navIconWrapper i {
   margin-left: 30px;
 }
 
 .mainPage {
   display: flex;
-  /* padding: 30%; */
-  border: 1px solid #dbdbdb;
+  height: 1000px;
+  background-color: #fafafa;
   margin: 55px auto;
-  flex-wrap: wrap;
 }
 
 .feeds {
+  display: flex;
   border: 1px solid #dbdbdb;
+  border-radius: 3px;
   top: 50px;
   justify-content: center;
+  align-items: center;
+  margin: 30px 350px 0 290px;
+  padding: 0 45px 0 0;
+  width: 900px;
+  height: 125px;
 }
 
-.imgItems {
-  width: 600px;
-  height: 100px;
-  justify-content: space-around;
-  /* align-items: center; */
-}
-
-img {
+.feeds img {
   height: 60px;
   width: 60px;
   border-radius: 50px;
-  /* justify-content: center; */
-}
-
-.article {
-  background-color: red;
-  width: 400px;
-  height: 500px;
+  margin: 0 10px 0 10px;
 }
 
 .mainRight {
-  display: flex;
-  width: 400px;
+  border: 1px solid #dbdbdb;
+  width: 500px;
   height: 500px;
-  background-color: yellow;
+  position: relative;
+  right: 300px;
+  top: 30px;
+  padding: 20px;
+}
+
+.article {
+  display: flex;
+  width: 606px;
+  height: 500px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: absolute;
+  margin-top: 185px;
+  margin-left: 290px;
+}
+
+.articleUser img {
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  top: 15px;
+  left: 15px;
+  position: absolute;
+}
+
+.articleMainImg img {
+  display: flex;
+  width: 605px;
+  height: 750px;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+}
+
+.articleUser span {
+  top: 20px;
+  left: 65px;
+  position: absolute;
+}
+
+.articleUser i {
+  top: 25px;
+  left: 570px;
+  position: absolute;
+}
+
+.articleCommentsContain {
+  height: 600px;
+}
+
+.articleWrite {
+  top: 810px;
+  width: 604px;
+  height: 200px;
+  position: absolute;
+  border: 1px solid #dbdbdb;
+}
+
+.articleComments {
+  outline: none;
+  top: 1012px;
+  bottom: 100px;
+  border: 1px solid #dbdbdb;
+  position: absolute;
+}
+
+.articleComments input {
+  width: 600px;
+  height: 50px;
+  margin-bottom: 300px;
+}
+/* button으로만 했을때 commentstart가 적용이 됨. 점수 문제인거 같음. */
+button {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  color: #b2dffc;
+  background-color: white;
+  border: white;
+  font-size: bold;
+}
+/* 여기서 css셀렉터 점수를 높이는 방법이 있는지? */
+.commentsStart {
+  color: #0095f6;
 }
