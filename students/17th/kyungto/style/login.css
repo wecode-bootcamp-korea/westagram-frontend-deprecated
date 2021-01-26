@@ -15,8 +15,8 @@ h1 {
   font-size: 60px;
 }
 
-#userId,
-#userPassword {
+.userId,
+.userPassword {
   outline: none;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
@@ -44,6 +44,6 @@ p {
   margin: 100px 0 30px 0;
 }
 
-.changBtn {
+.activeBtn {
   background-color: #0095f6;
 }

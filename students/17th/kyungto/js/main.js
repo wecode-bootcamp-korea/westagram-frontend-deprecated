@@ -1,9 +1,7 @@
-"use strict";
-
 const memo = document.querySelector(".comments");
 const comBtn = document.querySelector(".commentsBtn");
 
-memo.addEventListener("keydown", function (event) {
+memo.addEventListener("keyup", function (event) {
   if (memo.value.length > 0) {
     comBtn.removeAttribute("disabled");
     comBtn.classList.add("commentsStart");
@@ -22,7 +20,7 @@ function clickButton() {
   commentsSave.appendChild(listItems);
 }
 
-memo.addEventListener("keydown", function (event) {
+memo.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     clickButton();
   }

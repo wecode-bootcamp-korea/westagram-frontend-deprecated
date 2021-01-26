@@ -1,16 +1,13 @@
-// btn , userId , userPassword
-"use strict";
+const loginBtn = document.querySelector(".logInButton");
+const inputContainer = document.querySelector(".inputContainer");
 
-const pw = document.getElementById("userPassword");
-const btn = document.querySelector(".logInButton");
+inputContainer.addEventListener("keyup", function (event) {
+  const idValue = document.querySelector(".userId").value;
+  const pwValue = document.querySelector(".userPassword").value;
 
-pw.addEventListener("keydown", function (event) {
-  const id = document.getElementById("userId").value;
-
-  if (id != null && pw.value.length > 1) {
-    btn.removeAttribute("disabled");
-    btn.classList.add("changBtn");
+  if (idValue !== null && pwValue.length > 1) {
+    loginBtn.classList.add("activeBtn");
   } else {
-    btn.classList.remove("changBtn");
+    loginBtn.classList.remove("activeBtn");
   }
 });
