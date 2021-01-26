@@ -111,7 +111,13 @@ header {
 }
 
 .articleUser span {
-  top: 20px;
+  top: 10px;
+  left: 65px;
+  position: absolute;
+}
+
+.articleUser p {
+  top: 15px;
   left: 65px;
   position: absolute;
 }
@@ -132,6 +138,7 @@ header {
   height: 200px;
   position: absolute;
   border: 1px solid #dbdbdb;
+  list-style: none;
 }
 
 .articleComments {

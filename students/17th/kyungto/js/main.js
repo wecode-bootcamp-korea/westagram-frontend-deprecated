@@ -21,3 +21,9 @@ function clickButton() {
   listItems.innerHTML = memo.value;
   commentsSave.appendChild(listItems);
 }
+
+memo.addEventListener("keydown", function (event) {
+  if (event.keyCode === 13) {
+    clickButton();
+  }
+});
