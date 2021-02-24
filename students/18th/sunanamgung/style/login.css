@@ -1,0 +1,99 @@
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+  padding-top: 32px;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 350px;
+  /* height: 606px; */
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  color: #262626;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 175px;
+  /* height: 51px; */
+  margin: 22px auto 12px;
+  font-size: 1.7em;
+  font-family: "Lobster", cursive;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.input-box {
+  margin: 32px 0 16px 0;
+}
+
+.login {
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+}
+
+.login.data {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 40px 6px 0;
+  padding: 9px 0 7px 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  cursor: text;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.login.button:not {
+  background-color: rgba(0, 149, 246, 0.3);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 5px 9px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  background-color: #0095f6;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.find-password {
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+}
