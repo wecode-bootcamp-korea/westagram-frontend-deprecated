@@ -1,0 +1,214 @@
+body {
+    width            : 100%;
+    height           : 100vh;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    background-color : #fafafa;
+
+}
+.login-container {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+
+}
+.login-left-section {
+    position     : relative;
+    margin-right : 17px;
+}
+.login-left-section img {
+    width  : 414px;
+    height : 618px;
+}
+.img-slide {
+    position         : absolute;
+    top              : 92px;
+    left             : 137px;
+    width            : 243px;
+    height           : 433px;
+    overflow         : hidden;
+    background-color : white;
+}
+.img-slide .img-slide-list {
+    position : absolute;
+    width    : 100%;
+    height   : 100%;
+    opacity  : 0;
+}
+
+.img-slide-in {
+    animation-name      : loginImgSlideIn;
+    animation-duration  : 1s;
+    animation-fill-mode : forwards;
+}
+.img-slide-out {
+    animation-name      : loginImgSlideOut;
+    animation-duration  : 1s;
+    animation-fill-mode : forwards;
+}
+@keyframes loginImgSlideIn {
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity : 1;
+    }
+}
+@keyframes loginImgSlideOut {
+    from {
+        opacity : 1;
+    }
+    to {
+        opacity : 0;
+    }
+}
+
+.login-right-section {
+    width          : 350px;
+    height         : 590px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+}
+.logo {
+    margin-bottom : 25px;
+}
+.logo h1 {
+    font-family : 'Lobster', cursive;
+    font-size   : 50px;
+}
+.login-form {
+    width            : 100%;
+    height           : 380px;
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : center;
+    align-items      : center;
+    margin-bottom    : 15px;
+    background-color : #ffffff;
+}
+.login-input-form {
+    width           : 100%;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+}
+.login-input-form input {
+    width            : 100%;
+    height           : 40px;
+    padding-left     : 10px;
+    border           : 1px solid #dbdbdc;
+    border-radius    : 4px;
+    background-color : #fafafa;
+}
+.input-action-box {
+    position      : relative;
+    width         : 80%;
+    height        : 40px;
+    margin-bottom : 5px;
+}
+.input-action-box span {
+    position   : absolute;
+    top        : 36%;
+    width      : 100%;
+    padding    : 0 12px;
+    color      : #8e8e8e;
+    font-size  : 14px;
+    transition : all 0.1s;
+}
+/* 로그인 input 액션창 */
+.input-span-transform {
+    transform  : scale(.7333) translateY(-10px) translateX(-50px);
+    transition : all 0.1s;
+}
+.input-move-y {
+    padding-top : 17px;
+    font-size   : 12px;
+}
+.login-btn {
+    height           : 30px;
+    width            : 80%;
+    margin           : 17px;
+    border           : none;
+    border-radius    : 4px;
+    background-color : #c0dffe;
+    color            : white;
+}
+.login-btn:hover {
+    cursor : pointer;
+}
+.line {
+    width           : 80%;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    margin-bottom   : 25px;
+}
+.line-draw {
+    border : 1px solid #999999;
+    width  : 40%;
+    height : 0px;
+}
+.line-text {
+    color     : #999999;
+    font-size : 15px;
+}
+.login-facebook {
+    font-size     : 15px;
+    margin-bottom : 20px;
+    color         : #385185;
+    font-weight   : bold;
+}
+.search-pw {
+    font-size : 13px;
+    color     : #1c4878;
+}
+
+.join-form {
+    width            : 100%;
+    height           : 63px;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    font-size        : 14px;
+    margin-bottom    : 15px;
+    background-color : #ffffff;
+}
+.join-form p a {
+    color       : #2d9ef7;
+    font-weight : bold;
+}
+
+.app-install {
+    width            : 100%;
+    height           : 100px;
+    display          : flex;
+    flex-direction   : column;
+    align-items      : center;
+    justify-content  : center;
+    background-color : #fafafa;
+}
+.app-install p {
+    margin-bottom : 20px;
+    font-size     : 14px;
+}
+.app-image {
+    width         : 135px;
+    height        : 40px;
+    border-radius : 4px;
+}
+.app-image:hover {
+    cursor : pointer;
+}
+
+.login-form, .join-form {
+    border : 1px solid #dbdbdb;
+}
+
+@media (max-width : 875px) {
+    .login-left-section {
+        display : none;
+    }
+}

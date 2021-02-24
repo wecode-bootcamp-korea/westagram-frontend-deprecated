@@ -1,0 +1,61 @@
+.container {
+    width  : 100%;
+    height : 100vh;
+}
+
+/* nav 부분*/
+.nav {
+    width           : 100%;
+    height          : 50px;
+    border-bottom   : 1px solid #dbdbdb;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+.nav-container {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+    max-width       : 950px;
+}
+.nav-container .nav-text h1 {
+    font-family : 'Lobster', cursive;
+    font-size   : 24px;
+}
+.nav-container .nav-search {
+    width           : 100%;
+    max-width       : 215px;
+    height          : 30px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    border          : 1px solid #dbdbdb;
+    border-radius   : 4px;
+    background-color: #fafafa;
+}
+.nav-container .nav-search i {
+    border    : none;
+    font-size : 13px;
+    margin    : 0 5px;
+    color     : #c7c7c7;
+}
+.nav-container .nav-search input {
+    border : none;
+    width  : 100%;
+    background-color: #fafafa;
+}
+.nav-menu-list i {
+    font-size: 23px;
+    color: #262627;
+}
+.nav-menu-list a:not(:last-child) {
+    margin-right: 21px;
+}
+/* main */
+.main {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    background-color: #fafafa;
+}
