@@ -3,7 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Westagram - Login</title>
+    <title>Westagram</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/Instagram.ico" />
+    <script
+      src="https://kit.fontawesome.com/5c412fbd82.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/login.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <section class="loginImage">
+        <img src="img/insta-left.png" alt="" />
+      </section>
+      <section class="loginBox">
+        <div class="loginMain">
+          <div class="loginTitle">
+            <span>Westagram</span>
+          </div>
+          <form class="loginInput" action="">
+            <input
+              id="loginEmail"
+              type="text"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+            />
+            <input id="loginPassword" type="password" placeholder="비밀번호" />
+
+            <button
+              type="button"
+              id="loginBtn"
+              onclick="location.href='main.html' "
+            >
+              로그인
+            </button>
+          </form>
+          <div class="divider"></div>
+          <div class="facebook">
+            <i class="fab fa-facebook-square"></i>
+            <a href="#">
+              <span class="facebookLogin">Facebook으로 로그인</span>
+            </a>
+          </div>
+          <div class="forgetPassword">
+            <span>비빌번호를 잊으셨나요 ?</span>
+          </div>
+        </div>
+        <div class="loginSignup">
+          <span>계정이 없으신가요 ?</span>
+          <a href="#"><span class="signUp">가입하기</span></a>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

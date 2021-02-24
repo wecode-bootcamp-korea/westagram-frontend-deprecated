@@ -1,0 +1,31 @@
+:root {
+  --blue: #3333ff;
+  --gray-border: rgba(0, 0, 0, 0.2);
+  --light-gray: rgba(0, 0, 0, 0.3);
+  --middle-gray: rgba(0, 0, 0, 0.5);
+  --deep-gray: rgba(0, 0, 0, 0.9);
+  --deep-blue: #0095f6;
+  --light-blue: #0095f7;
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2); /*grey border*/
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.nav {
+  height: 50px;
+  background-color: whitesmoke;
+  display: flex;
+}
+
+input {
+  border: 1px solid var(--gray-border);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.insta {
+  font-size: 27px;
+}
