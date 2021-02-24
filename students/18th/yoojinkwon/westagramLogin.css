@@ -1,0 +1,104 @@
+div.loginBox{
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    width: 400px; height: 420px;
+    margin: auto;
+    position: relative;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.inputBox{
+    box-sizing: border-box;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    width: 250px; height: 35px;
+    padding: 2px;
+    background-color: rgb(247, 247, 247);
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#idBox{
+    top: 150px;
+}
+
+#passwordBox{
+    top: 190px;
+}
+
+#loginButton{
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 5px;
+    width: 250px; height: 33px;
+    padding: auto;
+    background-color: #0096f6;
+    opacity: 0.5;
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 235px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+div.breakLine{
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    position: absolute;
+    top: 270px;
+    left: 75px;
+}
+
+div.line{
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 6px;
+    width: 90px;;
+}
+
+#or{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+    margin: 0 12px;
+}
+
+#facebookButton{
+    position: absolute;
+    top: 320px;
+    left: auto;
+    width: 400px;
+    color: #385185;
+    border-style: none;
+    background: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#forgetPassword{
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #385185;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+}
