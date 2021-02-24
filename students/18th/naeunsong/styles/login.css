@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    align-items: center;
+}
+  
+.container{
+    width: 350px;
+    height: 380px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+  
+.logo{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+    
+input{
+    font-size: 12px;
+    padding: 9px 0 7px 8px;
+    border-radius: 4px;
+    line-height: 18px;
+    width: 70%;
+    margin: 4px;
+    border: 1px solid #dbdbdb;
+}
+    
+button {
+    border: 1px solid transparent;
+    opacity: 0.5;
+    background-color: #0095f6;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    line-height: 18px;
+    width: 70%;
+    margin: 8px 0px 60px 0px;
+}
+  
+.activeBtn{
+    opacity: 1;
+}
+  
+.checkPassword{
+    font-size: 12px;
+}

@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+} 
+
+input, button{
+    outline: none;
+}
