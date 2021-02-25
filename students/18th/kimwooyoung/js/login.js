@@ -2,10 +2,11 @@ let txtwrite = document.getElementsByClassName('login_txt')[0];
 let pwdwrite = document.getElementsByClassName('login_pwd')[0];
 let btnclick = document.getElementsByClassName('login_btn')[0];
 
-let a = txtwrite.addEventListener('keypress', function() {
-    btnclick.style.backgroundColor = 'blue';
-});
-
-let b = pwdwrite.addEventListener('keypress', function()  {
-    btnclick.style.backgroundColor = 'blue';
-});
+document.addEventListener('keyup', function(){
+    if( txtwrite.value.length > 0 && pwdwrite.value.length >= 6 ){
+      return btnclick.style.backgroundColor = "#0095F6";
+    }
+    else{
+      return btnclick.style.backgroundColor = "#B2DFFC";
+    }
+  });
