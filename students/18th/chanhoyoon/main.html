@@ -20,7 +20,7 @@
             <div class="nav-text"><h1>Instagram</h1></div>
             <div class="nav-search">
                <i class="fas fa-search"></i>
-               <input type="text" class="search" placeholder="" />
+               <input type="text" class="search" placeholder=""/>
                <i class="fas fa-times-circle"></i>
             </div>
             <div class="nav-menu">
@@ -36,21 +36,48 @@
       </nav>
       <section class="main">
          <div class="left-section">
-            <div class="left-content-header"></div>
+            <div class="left-content-header">
+               <ul class="left-content-header-ul">
+                  <!-- js에서 데이터 넣는 곳 -->
+               </ul>
+            </div>
             <div class="left-content">
-               <div class="left-content-list"></div>
+               <article class="left-content-list">
+                  <header class="content-list-header">
+                     <div class="list-left-box">
+                        <div class="content-list-header-img"></div>
+                        <div class="list-channel">
+                           <a href="#" class="list-channel-name">wecode_bootcamp</a>
+                           <a href="#" class="list-channel-location">wecode</a>
+                        </div>
+                     </div>
+                     <div class="left-content-list-viewmore">
+                        <i class="fas fa-ellipsis-h"></i>
+                     </div>
+                  </header>
+                  <div class="content-list-main">
+                     <div class="list-main-img">
+                        <ul class="list-main-img-ul">
+                           <li class="img-list"></li>
+                        </ul>
+                     </div>
+                  </div>
+               </article>
             </div>
          </div>
          <div class="right-section">
-            <div class="right-section-header"></div>
-            <div class="right-section-recommend">
-               <div class="right-section-recommend-header"></div>
-               <div class="right-section-recommend-list"></div>
+            <div class="right-section-fixed">
+               <div class="right-section-header"></div>
+               <div class="right-section-recommend">
+                  <div class="right-section-recommend-header"></div>
+                  <div class="right-section-recommend-list"></div>
+               </div>
+               <div class="right-section-footer"></div>
             </div>
-            <div class="right-section-footer"></div>
          </div>
       </section>
    </main>
 </section>
+<script src="js/main.js"></script>
 </body>
 </html>

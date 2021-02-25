@@ -92,7 +92,6 @@ getLoginPw.addEventListener('keyup', ( e ) => {
     checkLoginText();
     transActionPw();
 });
-
 loginBtn.addEventListener('click', () => {
     checkLoginSubmit();
 });

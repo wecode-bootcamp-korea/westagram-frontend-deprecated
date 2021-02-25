@@ -1,16 +1,26 @@
 .container {
-    width  : 100%;
-    height : 100vh;
+    width            : 100%;
+    background-color : #efefef;
+}
+
+.main-container {
+    position       : relative;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
 }
 
 /* nav 부분*/
 .nav {
-    width           : 100%;
-    height          : 50px;
-    border-bottom   : 1px solid #dbdbdb;
-    display         : flex;
-    justify-content : center;
-    align-items     : center;
+    position         : fixed;
+    width            : 100%;
+    height           : 50px;
+    border-bottom    : 1px solid #dbdbdb;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    background-color : #ffffff;
+    z-index          : 10;
 }
 .nav-container {
     display         : flex;
@@ -24,15 +34,15 @@
     font-size   : 24px;
 }
 .nav-container .nav-search {
-    width           : 100%;
-    max-width       : 215px;
-    height          : 30px;
-    display         : flex;
-    justify-content : space-between;
-    align-items     : center;
-    border          : 1px solid #dbdbdb;
-    border-radius   : 4px;
-    background-color: #fafafa;
+    width            : 100%;
+    max-width        : 215px;
+    height           : 30px;
+    display          : flex;
+    justify-content  : space-between;
+    align-items      : center;
+    border           : 1px solid #dbdbdb;
+    border-radius    : 4px;
+    background-color : #fafafa;
 }
 .nav-container .nav-search i {
     border    : none;
@@ -41,21 +51,180 @@
     color     : #c7c7c7;
 }
 .nav-container .nav-search input {
-    border : none;
-    width  : 100%;
-    background-color: #fafafa;
+    border           : none;
+    width            : 100%;
+    background-color : #fafafa;
 }
 .nav-menu-list i {
-    font-size: 23px;
-    color: #262627;
+    font-size : 23px;
+    color     : #262627;
 }
 .nav-menu-list a:not(:last-child) {
-    margin-right: 21px;
+    margin-right : 21px;
 }
-/* main */
-.main {
-    width: 100%;
-    height: 100vh;
-    border: 2px solid red;
-    background-color: #fafafa;
+
+/* main big layout*/
+section.main {
+    position         : relative;
+    width            : 100%;
+    max-width        : 950px;
+    margin-top       : 50px;
+    display          : flex;
+    justify-content  : center;
+    border           : 2px solid red;
+    background-color : #efefef;
+}
+section.main .left-section {
+    width        : 100%;
+    max-width    : 645px;
+    margin-right : 20px;
+    border       : 3px solid green;
+}
+.left-section .left-content {
+    width : 100%;
+}
+.left-section .left-content .left-content-list {
+    background-color : #ffffff;
+}
+.left-section .left-content-header {
+    width      : 100%;
+    height     : 100px;
+    border     : 2px solid darkorange;
+    margin-top : 30px;
+}
+
+section.main .right-section {
+    position  : relative;
+    width     : 100%;
+    max-width : 285px;
+    height    : 100%;
+}
+section.main .right-section .right-section-fixed {
+    position  : fixed;
+    width     : 100%;
+    max-width : 285px;
+    height    : calc(100% - 50px);
+    top       : 50px;
+    border    : 7px solid blueviolet;
+}
+
+.right-section-fixed .right-section-header {
+    width      : 100%;
+    height     : 56px;
+    margin-top : 30px;
+    border     : 2px solid greenyellow;
+}
+.right-section-fixed .right-section-recommend {
+    width  : 100%;
+    height : 300px;
+    border : 2px solid lightseagreen;
+}
+.right-section-fixed .right-section-footer {
+    width  : 100%;
+    height : 106px;
+    border : 2px solid orangered;
+}
+
+/* 세분화 부분 ------------------------------------- */
+.left-content-header {
+    margin-bottom    : 20px;
+    background-color : #ffffff;
+}
+.left-content-header-ul {
+    width           : 100%;
+    height          : 100%;
+    display         : flex;
+    justify-content : flex-start;
+    align-items     : center;
+    padding         : 10px;
+    overflow        : hidden;
+}
+.left-content-header-ul .header-list {
+    width  : 75px;
+    height : 75px;
+    margin : 0px 10px;
+}
+.header-list .header-list-btn {
+    width           : 100%;
+    height          : 100%;
+    position        : relative;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+}
+.header-list-btn .header-list-img-sircle {
+    position      : absolute;
+    width         : 58px;
+    height        : 58px;
+    top           : 0px;
+    border        : 1px solid black;
+    border-radius : 50%;
+
+}
+.header-list-btn .header-list-img {
+    width           : 55px;
+    height          : 55px;
+    border-radius   : 50%;
+    background-size : cover;
+    margin-bottom   : 5px;
+}
+.header-list-btn .header-list-name {
+    font-size : 9px;
+}
+.left-content .left-content-list {
+    width         : 100%;
+    height        : 100%;
+    border        : 3px solid goldenrod;
+    margin-bottom : 65px;
+}
+.content-list-header {
+    height          : 55px;
+    padding         : 0px 13px;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    border          : 1px solid red;
+}
+.list-left-box {
+    display : flex;
+}
+.content-list-header-img {
+    width            : 32px;
+    height           : 32px;
+    margin-right     : 13px;
+    border-radius    : 50%;
+    /*background-image : url('https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=91HPV9vMJ5YAX8puYhc&tp=1&oh=dd8faa56de8a190fe7ca403a41c7efa5&oe=60604BF0');*/
+    background-size  : cover;
+}
+.content-list-header-img:hover {
+    cursor : pointer;
+}
+.content-list-header .list-channel {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+}
+.left-content-list-viewmore {
+
+}
+.content-list-header .list-channel .list-channel-name {
+    font-size     : 14px;
+    font-weight   : bold;
+    color         : black;
+    margin-bottom : 4px;
+}
+.list-channel-name:hover {
+    text-decoration : underline;
+}
+.content-list-header .list-channel .list-channel-location {
+    font-size : 11px;
+    color     : black;
+}
+
+/* 반응형*/
+@media (max-width : 1000px) {
+    .right-section {
+        display : none;
+    }
 }
