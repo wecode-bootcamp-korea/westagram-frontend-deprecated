@@ -11,7 +11,6 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="css/main.css" />
-        <link rel="stylesheet" href="css/common.css" />
         <title>Westagram_main</title>
     </head>
     <body>
@@ -19,11 +18,16 @@
             <div class="nav_container">
                 <div class="nav_title">Westagram</div>
                 <div class="nav_search">
-                    <span class="search_icon"
-                        ><i class="fas fa-search"></i
-                    ></span>
-                    <span class="search_span">검색</span>
-                    <input class="search" type="text" placeholder="검색" />
+                    <div class="search_container">
+                        <span class="search_icon"
+                            ><i class="fas fa-search"></i
+                        ></span>
+                        <span class="search_span">검색</span>
+                        <input class="search" type="text" placeholder="검색" />
+                    </div>
+                    <button class="cancle_search_btn">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
                 </div>
                 <div class="nav_icons">
                     <i class="fas fa-home"></i>
@@ -136,15 +140,23 @@
                                     <i class="far fa-bookmark"></i>
                                 </div>
                             </div>
-                            <div class="img_likes">좋아요 33개</div>
+                            <div class="img_likes">
+                                좋아요 <span class="likes_num">0</span>개
+                            </div>
                             <article>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Omnis sequi eaque consequatur,
-                                maxime asperiores impedit expedita! Est at
-                                quidem distinctio doloremque deserunt veritatis
-                                facilis a, minima, optio rerum, provident
-                                tempora!
+                                <p class="img_articles">
+                                    orem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Omnis sequi eaque
+                                    consequatur, maxime asperiores impedit
+                                    expedita! Est at quidem distinctio
+                                    doloremque deserunt veritatis facilis a,
+                                    minima, optio rerum, provident tempora!
+                                </p>
+                                <button class="show_all_article">
+                                    더 보기
+                                </button>
                             </article>
+                            <time class="img_dates">2일전</time>
                         </div>
                         <div class="comments_column">
                             <i class="far fa-smile"></i>
@@ -194,15 +206,23 @@
                                     <i class="far fa-bookmark"></i>
                                 </div>
                             </div>
-                            <div class="img_likes">좋아요 33개</div>
+                            <div class="img_likes">
+                                좋아요 <span class="likes_num">0</span>개
+                            </div>
                             <article>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Omnis sequi eaque consequatur,
-                                maxime asperiores impedit expedita! Est at
-                                quidem distinctio doloremque deserunt veritatis
-                                facilis a, minima, optio rerum, provident
-                                tempora!
+                                <p class="img_articles">
+                                    orem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Omnis sequi eaque
+                                    consequatur, maxime asperiores impedit
+                                    expedita! Est at quidem distinctio
+                                    doloremque deserunt veritatis facilis a,
+                                    minima, optio rerum, provident tempora!
+                                </p>
+                                <button class="show_all_article">
+                                    더 보기
+                                </button>
                             </article>
+                            <time class="img_dates">2일전</time>
                         </div>
                         <div class="comments_column">
                             <i class="far fa-smile"></i>
@@ -252,15 +272,23 @@
                                     <i class="far fa-bookmark"></i>
                                 </div>
                             </div>
-                            <div class="img_likes">좋아요 33개</div>
+                            <div class="img_likes">
+                                좋아요 <span class="likes_num">0</span>개
+                            </div>
                             <article>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Omnis sequi eaque consequatur,
-                                maxime asperiores impedit expedita! Est at
-                                quidem distinctio doloremque deserunt veritatis
-                                facilis a, minima, optio rerum, provident
-                                tempora!
+                                <p class="img_articles">
+                                    orem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Omnis sequi eaque
+                                    consequatur, maxime asperiores impedit
+                                    expedita! Est at quidem distinctio
+                                    doloremque deserunt veritatis facilis a,
+                                    minima, optio rerum, provident tempora!
+                                </p>
+                                <button class="show_all_article">
+                                    더 보기
+                                </button>
                             </article>
+                            <time class="img_dates">2일전</time>
                         </div>
                         <div class="comments_column">
                             <i class="far fa-smile"></i>
@@ -310,15 +338,89 @@
                                     <i class="far fa-bookmark"></i>
                                 </div>
                             </div>
-                            <div class="img_likes">좋아요 33개</div>
+                            <div class="img_likes">
+                                좋아요 <span class="likes_num">0</span>개
+                            </div>
                             <article>
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Omnis sequi eaque consequatur,
-                                maxime asperiores impedit expedita! Est at
-                                quidem distinctio doloremque deserunt veritatis
-                                facilis a, minima, optio rerum, provident
-                                tempora!
+                                <p class="img_articles">
+                                    orem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Omnis sequi eaque
+                                    consequatur, maxime asperiores impedit
+                                    expedita! Est at quidem distinctio
+                                    doloremque deserunt veritatis facilis a,
+                                    minima, optio rerum, provident tempora!
+                                </p>
+                                <button class="show_all_article">
+                                    더 보기
+                                </button>
                             </article>
+                            <time class="img_dates">2일전</time>
+                        </div>
+                        <div class="comments_column">
+                            <i class="far fa-smile"></i>
+                            <input
+                                class="comments_text"
+                                type="text"
+                                placeholder="댓글 달기..."
+                            />
+                            <button
+                                class="add_comment_btn blue_text"
+                                type="button"
+                            >
+                                게시
+                            </button>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="section_header general_column">
+                            <div class="column_left">
+                                <img
+                                    class="left_img img_small"
+                                    src="https://images.unsplash.com/photo-1530041539828-114de669390e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+                                    alt="smallImage"
+                                />
+                                <div class="left_text">
+                                    <div class="text_name">Doggy</div>
+                                    <div class="text_des">dog</div>
+                                </div>
+                            </div>
+                            <div class="column_right">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                        <img
+                            class="main_img"
+                            src="https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"
+                            alt="mainImage"
+                        />
+                        <div class="img_contents">
+                            <div class="img_icons general_column">
+                                <div class="img_column_left">
+                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-comment"></i>
+                                    <i class="far fa-paper-plane"></i>
+                                </div>
+                                <div class="img_column_right">
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="img_likes">
+                                좋아요 <span class="likes_num">0</span>개
+                            </div>
+                            <article>
+                                <p class="img_articles">
+                                    orem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Omnis sequi eaque
+                                    consequatur, maxime asperiores impedit
+                                    expedita! Est at quidem distinctio
+                                    doloremque deserunt veritatis facilis a,
+                                    minima, optio rerum, provident tempora!
+                                </p>
+                                <button class="show_all_article">
+                                    더 보기
+                                </button>
+                            </article>
+                            <time class="img_dates">2일전</time>
                         </div>
                         <div class="comments_column">
                             <i class="far fa-smile"></i>
@@ -372,7 +474,9 @@
                                 />
                                 <div class="recommend_text">
                                     <div class="recommend_id">friend</div>
-                                    <div class="recommend_name">John doe</div>
+                                    <div class="recommend_name">
+                                        회원님을 위한 추천
+                                    </div>
                                 </div>
                             </div>
                             <button
@@ -391,7 +495,9 @@
                                 />
                                 <div class="recommend_text">
                                     <div class="recommend_id">friend</div>
-                                    <div class="recommend_name">John doe</div>
+                                    <div class="recommend_name">
+                                        회원님을 위한 추천
+                                    </div>
                                 </div>
                             </div>
                             <button
@@ -410,7 +516,9 @@
                                 />
                                 <div class="recommend_text">
                                     <div class="recommend_id">friend</div>
-                                    <div class="recommend_name">John doe</div>
+                                    <div class="recommend_name">
+                                        회원님을 위한 추천
+                                    </div>
                                 </div>
                             </div>
                             <button
@@ -429,7 +537,9 @@
                                 />
                                 <div class="recommend_text">
                                     <div class="recommend_id">friend</div>
-                                    <div class="recommend_name">John doe</div>
+                                    <div class="recommend_name">
+                                        회원님을 위한 추천
+                                    </div>
                                 </div>
                             </div>
                             <button
@@ -448,7 +558,9 @@
                                 />
                                 <div class="recommend_text">
                                     <div class="recommend_id">friend</div>
-                                    <div class="recommend_name">John doe</div>
+                                    <div class="recommend_name">
+                                        회원님을 위한 추천
+                                    </div>
                                 </div>
                             </div>
                             <button
@@ -467,7 +579,9 @@
                                 />
                                 <div class="recommend_text">
                                     <div class="recommend_id">friend</div>
-                                    <div class="recommend_name">John doe</div>
+                                    <div class="recommend_name">
+                                        회원님을 위한 추천
+                                    </div>
                                 </div>
                             </div>
                             <button
