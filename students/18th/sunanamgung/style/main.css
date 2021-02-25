@@ -1,0 +1,75 @@
+/* 인스타그램 개발자도구 참고는 가로/세로, 여백, 색깔, 폰트 크기, border-radius 같은 것만 참고해 주세요. 참고해야 할 요소와 그렇지 않은 요소를 잘 구별하고 스스로 기획하며 레이아웃을 작성해야 UI 레이아웃 구성에 대한 이해가 높아지고 유지 보수가 수월해집니다.*/
+
+/* 피드는 하나만 만드셔도 됩니다.
+댓글 input 창에 엔터치거나 "게시" 누르면 댓글 추가되도록 createElement로 요소 생성해서, input에 입력한 값이 추가 되어야합니다. */
+
+/* navigation */
+.nav-search {
+  font-family: FontAwesome;
+  font-style: normal;
+}
+
+/* 아이콘 이미지 설정 */
+.like {
+  display: inline-block;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  color: transparent;
+}
+
+.message,
+.inbox {
+  display: inline-block;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  color: transparent;
+}
+
+.explore {
+  display: inline-block;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  color: transparent;
+}
+
+.activity {
+  display: inline-block;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  color: transparent;
+}
+
+.comment {
+  display: inline-block;
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  color: transparent;
+}
+
+/* main story-navition */
+
+/* main feed */
+
+/* main feed comment */
+
+/* main-right */
