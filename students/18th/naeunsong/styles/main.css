@@ -1,181 +1,198 @@
-* {
-    background-color: rgba(250,250,250,1);
-  }
-  
-  a {
-    font-weight: bold;
-  }
-  
-  p{
-    margin-left:-5px;
-    color:rgb(134, 128, 128);
-  }
-  
-  header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: solid 1px #dbdbdb; 
-    height: 54px;
-    background-color: white;
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-  }
-  
-  .logo{
-    font-family: 'Lobster', cursive;
-    font-size: 29px;
-  }
-  
-  .searchBar img{
-  position: absolute;
+
+a {
+  font-weight: bold;
+}
+
+p{
+  margin-left:-5px;
+  color:rgb(104, 69, 69);
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px #dbdbdb; 
+  height: 54px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+
+.logo{
+  font-family: 'Lobster', cursive;
+  font-size: 29px;
+  background-color: white;
+}
+
+.searchBar {
+  position:relative;
+}
+
+.searchBar img{
+  position:absolute;
   height: 10px;
-  left: 48%;
-  top: 29px;
-  }
-  
-  .searchBar input{
+  top: 10px;
+  left: 80px;
+}
+
+#search{
   padding: 7px;
   width: 215px;
   text-align:center;
   border: solid 1px #dbdbdb;
+}
+
+#clicksearch{
+  text-align:left;
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+  width: 10%;
+  background-color: white;
+}
+
+nav img {
+  height: 22px;
+  background-color: white;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
   }
-  
-  nav{
-    display:flex;
-    justify-content: space-around;
-    width: 10%;
-  }
-  
-  nav img {
-    height: 22px;
-  }
-  
-  main{
-    display: flex;
-    justify-content: center;
-    padding-top: 90px;
-    width: 100%;
-    }
-  
-  .article{
-    padding-bottom: 10px;
-  }
-  
-  .articleProfile{
+
+.article{
+  padding-bottom: 10px;
+}
+
+.articleProfile{
   display: flex;
   height: 60px;
   padding: 16px;
-  }
-  
-  .articleProfile img, .feedinfo img {
+}
+
+.articleProfile img, .feedinfo img {
   border-radius: 80px;
   height: 32px;
-  }
-  
-  .feeds{
-    max-width: 614px;
-    border: solid 1px #dbdbdb;
-    margin-right: 28px;
-    background-color:white;
-  }
-  
-  .info{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-  }
-  
-  .feed1 img{
-    width: 100%;
-  }
-  
-  .feedInfo{
-    padding: 0px 16px;
-  }
-  
-  .feedInfo a{
-    margin: -5px;
-  }
-  
-  .likeShare{
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  
-  .likeShare img{
-    width: 24px;
-  }
-  
-  .comment{
+}
+
+.feeds{
+  border: solid 1px #dbdbdb;
+  margin-right: 28px;
+  background-color:white;
+  max-width: 642px;
+}
+
+.info{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.feed img{
+  width: 100%;
+}
+
+.feedInfo{
+  padding: 0px 16px;
+}
+
+.commentArea{
+  padding: 0;
+}
+.likeShare{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.likeShare img{
+  width: 24px;
+}
+
+.comment{
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #dbdbdb;
+  margin-top: 4px;
+  padding: 0px 16px;
+  height: 55px;
+  background-color: white;
+}
+
+.comment img{
+  height: 24px;
+}
+
+.comment input{
+  width: 500px;
+  border: 0px;
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+.comment button{
+  border: 0;
+  color: #0095f6;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor:pointer;
+}
+
+.mainRight{
+  display: none;
+}
+
+@media (min-width: 900px){
+  .main{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: solid 1px #dbdbdb;
-    margin-top: 4px;
-    padding: 0px 16px;
-    height: 55px;
+    justify-content: space-between;
+  }
+  .mainRight{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 100px;
+    top: 88px;
+    height: 100%;
+    max-width: 293px;
+  }
+  .mainRight .info{
+    width: 20vw;
+  }
+  .mainRightProfile img{
+    height: 32px;
   }
   
-  .comment img{
-    height: 24px;
+  .mainRight img {
+    height: 56px;
+    border-radius: 50px;
   }
-  
-  .comment input{
-    width: 500px;
-    border: 0px;
-    padding-left: 16px;
-    font-size: 18px;
-  }
-  
-  .comment button{
-    border: 0;
+  .changeUser, .follow{
     color: #0095f6;
-    background-color: white;
-    font-weight: bold;
-    font-size: 18px;
-    cursor:pointer;
+    width: 6vw;
+    text-align: end;
   }
-  
-  .main-right{
-    display: none;
+  .mainRightProfile,.recommendInfo2, .recommendInfo1{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
   }
-  
-  @media (min-width: 900px){
-    .main{
-      display: flex;
-      justify-content: space-between;
-    }
-    .main-right{
-      display: flex;
-      flex-direction: column;
-      top: 88px;
-      height: 100%;
-      max-width: 293px;
-    }
-    .main-right img {
-      height: 56px;
-      border-radius: 50px;
-    }
-    .main-rightProfile img{
-      height: 32px;
-    }
-    .recommend{
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-    }
-    .recommendText{
-      padding: 4px 16px;
-    }
-    .main-rightProfile,.recommend_info2, .recommend_info1{
-      display: flex;
-      padding: 8px 16px;
-    }
-    .recommend img{
-      height: 32px;
-    }
+
+  .recommend{
+    display: flex;
+    flex-direction: column;
   }
+  .recommendText{
+    padding: 4px 16px;
+  }
+  .recommend img{
+    height: 32px;
+  }
+}
