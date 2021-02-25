@@ -1,0 +1,22 @@
+@media (max-width: 1100px) {
+  .nav-wrap {
+    max-width: 935px;
+  }
+  .main-right {
+    display: none;
+  }
+  .main-content {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 650px) {
+  .search-wrap {
+    display: none;
+  }
+  .sub-wrap {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+}

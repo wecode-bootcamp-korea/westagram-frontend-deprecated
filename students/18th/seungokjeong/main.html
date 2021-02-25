@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westagram</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f9ac1e29b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <script type="module" src="js/main.js"></script>
+    <script src="js/loginCheck.js"></script>
+    <script type="module" src="js/infinityScroll.js"></script>
+</head>
+<body>
+    <section class="main">
+        <nav class="main-nav">
+            <div class="nav-wrap">
+                <a class="logo-wrap" href="main.html">
+                    <img class="logo-img" src="image/instagram.png" alt="">
+                    <h1 class="logo">Westagram</h1>
+                </a>
+                <div class="search-wrap">
+                    <input id="search" type="text" placeholder="검색"/>
+                    <ul class="search-view"></ul>
+                    <div class="triangle-content"></div>
+                </div>
+                <ul class="sub-wrap">
+                    <li class="sub-list"><img src="image/explore.png" alt=""></li>
+                    <li class="sub-list"><img src="image/heart.png" alt=""></li>
+                    <li class="sub-list profile"><img src="image/profile.png" alt=""></li>
+                    <div class="sub-option">
+                        <ul class="option-wrap">
+                            <li class="option-list">
+                                <i class="far fa-user-circle"></i>
+                                <span>프로필</span>
+                            </li>
+                            <li class="option-list">
+                                <i class="far fa-bookmark"></i>
+                                <span>저장됨</span>
+                            </li>
+                            <li class="option-list">
+                                <i class="fas fa-cog"></i>
+                                <span>설정</span>
+                            </li>
+                            <li class="option-list logout">로그아웃</li>
+                        </ul>
+                        <span class="triangle-content"></span>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="main-content">
+                <div class="content-wrap">
+                    <div class="content-feed">
+                        <ul class="feed-wrap"></ul>
+                    </div>
+                </div>
+                <div class="scroll-trigger">
+                    <div class="load-spinning"></div>
+                </div>
+                <div class="main-right">
+                    <div class="right-user">
+                        <img src="image/default_profile.jpg" alt="">
+                        <div class="user-info">
+                        </div>
+                        <a>전환</a>
+                    </div>
+                    <div class="right-recommend">
+                        <div class="recommend-title">
+                            <span>회원님을 위한 추천</span>
+                            <a>모두 보기</a>
+                        </div>
+                        <div class="recommend-list">
+                            <img src="image/side_profile/hwang.png" alt="">
+                            <div class="list-info">
+                                <a>hwang_gwang</a>
+                                <span>회원님을 팔로우합니다</span>
+                            </div>
+                            <a>팔로우</a>
+                        </div>
+                        <div class="recommend-list">
+                            <img src="image/side_profile/sehyung.png" alt="">
+                            <div class="list-info">
+                                <a>sehyung_bari</a>
+                                <span>회원님을 팔로우합니다</span>
+                            </div>
+                            <a>팔로우</a>
+                        </div>
+                        <div class="recommend-list">
+                            <img src="image/side_profile/pooconi.jpg" alt="">
+                            <div class="list-info">
+                                <a>pooconi_free</a>
+                                <span>회원님을 위한 추천</span>
+                            </div>
+                            <a>팔로우</a>
+                        </div>
+                        <div class="recommend-list">
+                            <img src="image/side_profile/front.jpeg" alt="">
+                            <div class="list-info">
+                                <a>front_jeon</a>
+                                <span>회원님을 위한 추천</span>
+                            </div>
+                            <a>팔로우</a>
+                        </div>
+                        <div class="recommend-list">
+                            <img src="image/side_profile/jojo.png" alt="">
+                            <div class="list-info">
+                                <a>jojo_seho</a>
+                                <span>회원님을 위한 추천</span>
+                            </div>
+                            <a>팔로우</a>
+                        </div>
+                    </div>
+                    <footer>
+                        <ul class="footer-nav">
+                            <li class="footer-list"><a>소개</a></li>
+                            <li class="footer-list"><a>도움말</a></li>
+                            <li class="footer-list"><a>홍보 센터</a></li>
+                            <li class="footer-list"><a>API</a></li>
+                            <li class="footer-list"><a>채용 정보</a></li>
+                            <li class="footer-list"><a>개인정보처리방침</a></li>
+                            <li class="footer-list"><a>약관</a></li>
+                            <li class="footer-list"><a>위치</a></li>
+                            <li class="footer-list"><a>인기 계정</a></li>
+                            <li class="footer-list"><a>해시태그</a></li>
+                            <li class="footer-list"><a>언어</a></li>
+                        </ul>
+                        <p>© 2021 WESTAGRM FROM SEUNGOK</p>
+                    </footer>
+                </div>
+            </div>
+        </main>
+    </section>
+    <div class="popup-wrap">
+        <ul class="popup-select">
+            <li class="select-type delete">삭제</li>
+            <li class="select-type cancel">취소</li>
+        </ul>
+    </div>
+</body>
+</html>
