@@ -1,4 +1,4 @@
-const Btn = document.querySelector('.btn')
+const btn = document.querySelector('.btn')
 const id = document.getElementById('id'); //id 입력창
 const password = document.getElementById('password'); //password 입력창
 
@@ -16,11 +16,11 @@ function allClear() {
 function btnOn(allClear) {
     const check = allClear();
     function yes() {
-        Btn.style.opacity = "1";
+        btn.style.opacity = "1";
     }
 
     function no() {
-        Btn.style.opacity = "0.3";
+        btn.style.opacity = "0.3";
     }
 
     return (check ? yes() : no())
