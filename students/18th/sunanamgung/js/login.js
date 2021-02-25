@@ -1,21 +1,15 @@
-// added in ES 5
-// use this for Vanilla JavaScript.
-'use strict';
+const loginBtn = document.querySelector(".button");
+const user = document.querySelector("#user");
+const pw = document.querySelector("#password");
 
-<!-- id, pw 에 각각 한 글자 이상 써야 버튼이 활성화 되도록 해주세요. 원래 연한 파란색이었다가 -> 활성화 되면 파란색으로! -->
-
-
-function hasData() {
-  var user = document.getElementById("user");
-  var pw = document.getElementById("password");
-  if (user.length !=== 0 && pw.length !===0) {
-    
+const hasData = () => {
+  const userId = user.value;
+  const userPw = pw.value; 
+  if (userId.includes("@") && userPw.length >= 5) {
+    loginBtn.classList.add("active");
   } else {
-
+    loginBtn.classList.remove("active");
   }
-}
-
-
-function doLogin(hasLetter) {
-  return(hasLetter ? 'true':'false');
-}
+} 
+user.addEventListener('keyup', hasData);
+pw.addEventListener('keyup', hasData);
