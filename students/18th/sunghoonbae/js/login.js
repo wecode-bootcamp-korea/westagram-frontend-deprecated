@@ -16,6 +16,5 @@ loginPw.addEventListener('keyup', function(e) {
 });
 
 function changeLoginBtnColor() {
-   console.log(loginIdValue.length, loginPwValue.length)
    return (loginIdValue.length >= 1 && loginPwValue.length >= 1) ? loginBtn.classList.add('login__color') : loginBtn.classList.remove('login__color');
 }
