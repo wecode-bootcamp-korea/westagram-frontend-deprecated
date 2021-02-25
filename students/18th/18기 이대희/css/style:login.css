@@ -104,7 +104,7 @@ button{
     background-color: rgb(192,223,253);
     color:white;
     font-size: 14px;
-    outline:none;
+    /* outline:none; */
 }
 
 .t1{
