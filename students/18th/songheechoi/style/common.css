@@ -7,7 +7,12 @@
     Arial, sans-serif;
   --main-border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   background-color: #fafafa;
 }
@@ -15,6 +20,23 @@ input:focus,
 button:focus {
   outline: none;
 }
+button:not([disabled]) {
+  cursor: pointer;
+}
+button[disabled] {
+  cursor: default;
+}
+/* button:active:hover:not([disabled]) {
+  cursor: pointer;
+} */
 .logo {
   font-family: "Lobster", cursive;
+}
+
+.btn-none {
+  cursor: pointer;
+  appearance: none;
+  background: 0 0;
+  border: none;
+  padding: 0;
 }

@@ -1,3 +1,5 @@
+@import "./user-component.css";
+
 nav {
   height: 55px;
   display: flex;
@@ -6,7 +8,26 @@ nav {
   padding: 12px 0px;
   border-bottom: var(--main-border);
   background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 45px;
+}
+.main-right {
+  width: 293px;
+  position: fixed;
+  top: 88px;
+  left: calc(50% + 320px);
+  /* height: 100px; */
+}
+
 .inPad {
   padding: 10px 15px;
 }
@@ -158,9 +179,6 @@ main {
 }
 
 .comment__btn-post {
-  appearance: none;
-  background: 0 0;
-  border: none;
   color: #0095f6;
   font-weight: 600;
   font-size: 14px;
@@ -187,15 +205,17 @@ main {
   cursor: pointer;
 }
 
-.main-right {
-  background-color: tomato;
-  width: 293px;
-  height: 100px;
+.site-info {
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  padding: 15px 0px;
 }
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+.site-info div:last-child {
+  padding: 15px 0px;
+}
+.site-info li:not(:last-of-type)::after {
+  content: "\00B7";
+  margin: 0 0.25em 0 0.25em;
 }
