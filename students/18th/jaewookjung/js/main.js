@@ -33,6 +33,32 @@ searchCancleBtn.addEventListener("click", function () {
     searchSpan.style.display = "flex";
 });
 
+function addComment(i) {
+    if (addCommentBtnList[i].style.opacity === "1") {
+        if (imgDateList[i].previousElementSibling.tagName !== "UL") {
+            let parentTag = imgDateList[i].parentElement;
+            let ul = document.createElement("ul");
+            ul.className = "comments_container";
+            parentTag.insertBefore(ul, imgDateList[i]);
+        }
+        let comment = commentsInputList[i].value;
+        let li = document.createElement("li");
+        let commentContents = document.createElement("div");
+        let commentUser = document.createElement("span");
+        let commentLike = document.createElement("i");
+        commentContents.className = "comment_contents";
+        commentUser.className = "comment_user";
+        commentLike.className = "far fa-heart comment_like";
+        commentUser.innerHTML = "Jhon Doe";
+        commentContents.appendChild(commentUser);
+        commentUser.after(comment);
+        li.appendChild(commentContents);
+        commentContents.after(commentLike);
+        imgDateList[i].previousElementSibling.appendChild(li);
+        commentsInputList[i].value = "";
+    }
+}
+
 //feed 내의 이벤트
 for (let i = 0; i < sectionList.length; i++) {
     //더보기 버튼 이벤트
@@ -52,46 +78,29 @@ for (let i = 0; i < sectionList.length; i++) {
 
     //댓글 달기 이벤트
     addCommentBtnList[i].addEventListener("click", function () {
-        if (addCommentBtnList[i].style.opacity === "1") {
-            if (imgDateList[i].previousElementSibling.tagName !== "UL") {
-                let parentTag = imgDateList[i].parentElement;
-                let ul = document.createElement("ul");
-                ul.className = "comments_container";
-                parentTag.insertBefore(ul, imgDateList[i]);
-            }
-            let comment = commentsInputList[i].value;
-            let li = document.createElement("li");
-            let commentContents = document.createElement("div");
-            let commentUser = document.createElement("span");
-            let commentLike = document.createElement("i");
-            commentContents.className = "comment_contents";
-            commentUser.className = "comment_user";
-            commentLike.className = "far fa-heart comment_like";
-            commentUser.innerHTML = "Jhon Doe";
-            commentContents.appendChild(commentUser);
-            commentUser.after(comment);
-            li.appendChild(commentContents);
-            commentContents.after(commentLike);
-            imgDateList[i].previousElementSibling.appendChild(li);
-            commentsInputList[i].value = "";
-
-            //좋아요 기능 구현중
-            // const commentLikeBtn = document.querySelectorAll(".comment_like");
-
-            // for (let j = 0; j < commentLikeBtn.length; j++) {
-            //     commentLikeBtn[j].addEventListener("click", function () {
-            //         commentLikeBtn[j].style.color === "red"
-            //             ? ((commentLikeBtn[j].style.color = "black"),
-            //               (commentLikeBtn[j].className =
-            //                   "far fa-heart comment_like"),
-            //               likesCount--)
-            //             : ((commentLikeBtn[j].style.color = "red"),
-            //               (commentLikeBtn[j].className =
-            //                   "fas fa-heart comment_like"),
-            //               likesCount++);
-            //         likesNum[i].innerHTML = likesCount;
-            //     });
-            // }
+        addComment(i);
+    });
+    commentsInputList[i].addEventListener("keyup", function (e) {
+        if (e.keyCode === 13) {
+            addComment(i);
         }
     });
+
+    //좋아요 기능 구현중
+    // const commentLikeBtn = document.querySelectorAll(".comment_like");
+
+    // for (let j = 0; j < commentLikeBtn.length; j++) {
+    //     commentLikeBtn[j].addEventListener("click", function () {
+    //         commentLikeBtn[j].style.color === "red"
+    //             ? ((commentLikeBtn[j].style.color = "black"),
+    //               (commentLikeBtn[j].className =
+    //                   "far fa-heart comment_like"),
+    //               likesCount--)
+    //             : ((commentLikeBtn[j].style.color = "red"),
+    //               (commentLikeBtn[j].className =
+    //                   "fas fa-heart comment_like"),
+    //               likesCount++);
+    //         likesNum[i].innerHTML = likesCount;
+    //     });
+    // }
 }
