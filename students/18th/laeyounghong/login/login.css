@@ -69,6 +69,11 @@ button {
     padding: 5px 9px;
     margin: 8px 40px;
     font-weight: 600;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 span {
