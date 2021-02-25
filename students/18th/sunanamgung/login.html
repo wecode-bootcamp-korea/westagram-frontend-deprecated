@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Westagram Login Page</title>
+    <link
+      rel="icon"
+      href="/students/18th/sunanamgung/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="/students/18th/sunanamgung/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
@@ -12,7 +22,6 @@
     />
     <link rel="stylesheet" href="./style/common.css" />
     <link rel="stylesheet" href="./style/login.css" />
-    <script src="login.js"></script>
   </head>
   <body>
     <div class="background">
@@ -23,20 +32,17 @@
           </h1>
         </div>
 
-        <form class="login-box" id="loginForm" method="post">
+        <form class="login-box" id="loginForm" method="post" action="#">
           <div>
             <div class="input-box">
               <input
                 type="text"
-                placeholder="전화번호, 사용자 이름 또는 이메일"
+                placeholder="전화번호, 사용자 이름 또는 이메일
+                "
                 class="login data"
                 id="user"
               />
               <input
-                aria-label="비밀번호"
-                aria-required="true"
-                autocapitalize="off"
-                autocorrect="off"
                 name="password"
                 type="password"
                 placeholder="비밀번호"
@@ -45,14 +51,15 @@
               />
             </div>
             <div class="button-box">
-              <button type="button" class="login button">로그인</button>
+              <button type="submit" class="login button">로그인</button>
             </div>
           </div>
-          <div class="find-password">
-            <a href="#">비밀번호를 잊으셨나요?</a>
-          </div>
         </form>
+        <div class="find-password">
+          <a href="#">비밀번호를 잊으셨나요?</a>
+        </div>
       </section>
     </div>
+    <script src="js/login.js"></script>
   </body>
 </html>

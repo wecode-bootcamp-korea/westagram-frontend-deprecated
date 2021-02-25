@@ -1,5 +1,4 @@
 .background {
-  width: 100%;
   height: 100vh;
   background-color: #fafafa;
   padding-top: 32px;
@@ -68,12 +67,6 @@
   white-space: nowrap;
 }
 
-.login.button:not {
-  background-color: rgba(0, 149, 246, 0.3);
-  opacity: 0.3;
-  pointer-events: none;
-}
-
 .button {
   position: relative;
   display: flex;
@@ -84,16 +77,21 @@
   border: 1px solid transparent;
   border-radius: 4px;
   text-align: center;
-  text-transform: inherit;
-  text-overflow: ellipsis;
   background-color: #0095f6;
   color: #fff;
-  cursor: pointer;
   font-weight: 600;
+  opacity: 0.3;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.button.active {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .find-password {
-  margin-top: 60px;
+  margin: 60px 0 30px 0;
   font-size: 14px;
   text-align: center;
 }
