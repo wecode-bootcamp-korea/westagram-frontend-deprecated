@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.login-box {
+    width: 400px;
+    height: 450px;
+    border: 3px solid magenta;
+    display: flex block;
+    position: absolute;
+    left: calc(50%-400px);
+    background-color: white;
+}
+
+.logo {
+    width: 400px;
+    height: 115px;
+    border: 1px solid orange;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.text-box {
+    width: 400px;
+    border: 1px solid blue;
+    height: 265px;
+}
+
+.pwd-finder {
+    width: 400px;
+    height: 65px;
+    display: flex;
+    border: 1px solid purple;
+    color: #2d5780;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    border: 2px solid #efefef;
+    background-color: #fafafa;
+    border-radius: 3px;
+    font-size: 25px;;
+    display: block;
+    color: #cacaca;
+    margin: 5px;
+}
+
+input::placeholder {
+    
+    font-size: 13px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+button {
+    border: none;
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+    background-color: #c5e1fa;
+    color: white;
+    border-radius: 3px;
+}
+
+h1 {
+    margin: 0;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0080ff;
+}
+
+a {
+    justify-content: center;
+}
