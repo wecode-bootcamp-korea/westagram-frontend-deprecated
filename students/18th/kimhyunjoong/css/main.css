@@ -1,5 +1,5 @@
 body {
-  height: 400vh;
+  height: 200vh;
 }
 * {
   box-sizing: border-box;
@@ -10,6 +10,7 @@ body {
   position: fixed;
   justify-content: space-around;
   width: 100%;
+  z-index: 99;
   border-bottom: 1px solid var(--gray-border);
 }
 
@@ -178,8 +179,13 @@ img {
   border-radius: 50%;
   background-color: black;
 }
+.feedMain {
+  display: flex;
+  overflow: hidden;
+}
 
 .feedMain img {
+  overflow: hidden;
   width: 100%;
   height: 500px;
 }
@@ -264,6 +270,9 @@ img {
 .main-right {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  top: 0px;
+  right: 286px;
 }
 
 .main-right .main-right__profile {

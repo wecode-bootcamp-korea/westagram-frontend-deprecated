@@ -10,23 +10,17 @@ loginEmail.addEventListener("keyup", () => {
   const loginEmail = document.getElementById("loginEmail").value;
   const loginPassword = document.getElementById("loginPassword").value;
 
-  if (loginEmail && loginPassword.length >= 5) {
-    onActiveBtn();
-  }
-  if (!loginEmail.includes("@") || loginPassword.length < 5) {
-    unActiveBtn();
-  }
+  loginEmail.includes("@") && loginPassword.length >= 5
+    ? onActiveBtn()
+    : unActiveBtn();
 });
 
 loginPassword.addEventListener("keyup", () => {
   const loginEmail = document.getElementById("loginEmail").value;
   const loginPassword = document.getElementById("loginPassword").value;
-  if (loginEmail.includes("@") && loginPassword.length >= 5) {
-    onActiveBtn();
-  }
-  if (!loginEmail.includes("@") || loginPassword.length < 5) {
-    unActiveBtn();
-  }
+  loginEmail.includes("@") && loginPassword.length >= 5
+    ? onActiveBtn()
+    : unActiveBtn();
 });
 
 function onActiveBtn() {

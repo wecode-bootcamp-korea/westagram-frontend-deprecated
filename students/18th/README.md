@@ -29,3 +29,4 @@ You can click it again. Decrease the number by 1 and change to a blank Heart
 
 <img src="img/comments.png" width=600px>
 If you add comments, you can delete nicknames and comments. If you press delete button, the comments will be deleted. If you press like button, the heart shape will change.
+students\18th\kimhyunjoong\img\button_active.png
