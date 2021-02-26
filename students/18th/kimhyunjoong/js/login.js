@@ -13,7 +13,7 @@ loginEmail.addEventListener("keyup", () => {
   if (loginEmail && loginPassword.length >= 5) {
     onActiveBtn();
   }
-  if (!loginPassword) {
+  if (!loginEmail.includes("@") || loginPassword.length < 5) {
     unActiveBtn();
   }
 });
@@ -21,10 +21,10 @@ loginEmail.addEventListener("keyup", () => {
 loginPassword.addEventListener("keyup", () => {
   const loginEmail = document.getElementById("loginEmail").value;
   const loginPassword = document.getElementById("loginPassword").value;
-  if (loginEmail && loginPassword.length >= 5) {
+  if (loginEmail.includes("@") && loginPassword.length >= 5) {
     onActiveBtn();
   }
-  if (!loginPassword) {
+  if (!loginEmail.includes("@") || loginPassword.length < 5) {
     unActiveBtn();
   }
 });
@@ -35,7 +35,7 @@ function onActiveBtn() {
 }
 
 function unActiveBtn() {
-  loginBtn.style.z = skyBlue;
+  loginBtn.style.backgroundColor = skyBlue;
   loginBtn.disabled = true;
 }
 

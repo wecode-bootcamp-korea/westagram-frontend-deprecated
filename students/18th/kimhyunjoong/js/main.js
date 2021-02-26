@@ -4,8 +4,10 @@ const deleteBtn = document.getElementById("deleteBtn");
 const comments = document.querySelector(".comments");
 const heartBtn = document.getElementById("heartBtn");
 const feeds = document.querySelectorAll(".feeds");
-const moreBtn = document.getElementById(".moreBtn");
-
+const moreBtn = document.getElementById("moreBtn");
+const moreSentence = document.querySelector(".moreSentence");
+const likeBtn = document.getElementById("likeBtn");
+const likeCountNumber = document.getElementById("likeCountNumber");
 const deepBlue = "#0095F6"; // 버튼 활성화 색상
 const skyBlue = "#b2dffc"; // 버튼 비활성화 색상
 const fixNickName = "Hyunjoong";
@@ -82,7 +84,6 @@ function createComment(text) {
   commentLeft.appendChild(commentContent);
   commentRight.appendChild(deleteBtn);
   commentRight.appendChild(heartBtn);
-
   comment.appendChild(commentLeft);
   comment.appendChild(commentRight);
 
@@ -108,6 +109,29 @@ commentInput.addEventListener("keyup", () => {
   }
   if (!commentInput) {
     unActiveBtn();
+  }
+});
+
+moreBtn.addEventListener("click", () => {
+  moreSentence.visibility = visible;
+});
+
+likeBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+});
+
+likeBtn.addEventListener("click", () => {
+  let currentNumber = parseInt(likeCountNumber.innerText, 10);
+  if (likeBtn.value === "false") {
+    // 하트가 빈하트면
+    likeBtn.innerHTML = '<i class="fas fa-heart"></i>';
+    likeBtn.value = "ture";
+    likeCountNumber.innerText = currentNumber + 1;
+  } else {
+    // 하트가 눌려져 있으면
+    likeBtn.innerHTML = '<i class="far fa-heart"></i>';
+    likeBtn.value = "false";
+    likeCountNumber.innerText = currentNumber - 1;
   }
 });
 

@@ -105,7 +105,9 @@
             <div class="feedFooter">
               <div class="actions">
                 <div class="actionsLeft">
-                  <a href="#"><i class="far fa-heart"></i></a>
+                  <button type="button" id="likeBtn" value="false">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                  </button>
                   <a href="#"><i class="far fa-comment"></i></a>
                   <a href="#"><i class="far fa-compass"></i></a>
                 </div>
@@ -120,7 +122,9 @@
               </div>
 
               <div class="likeCount">
-                <span>좋아요 30개</span>
+                <span>좋아요</span>
+                <span id="likeCountNumber">30</span>
+                <span>개</span>
               </div>
               <div class="sentence">
                 <span>Hyunjoong</span>
@@ -129,7 +133,7 @@
                   '영원한사랑','사랑의맹세','행복한사랑'.'순결함'을 의미합니다.
                   사랑하는 사람이 있다면 꽃을 전해 보...</span
                 >
-                <span>시지 말고 돈을 아껴 보세요.</span>
+                <span class="moreSentence">시지 말고 돈을 아껴 보세요.</span>
                 <button type="button" id="moreBtn">더보기</button>
               </div>
               <!-- 댓글 창-->
