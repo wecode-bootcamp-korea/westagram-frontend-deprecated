@@ -28,9 +28,9 @@ button {
 .pointer {
   cursor: pointer;
 }
-img.story-active {
+.story-active {
+  background: linear-gradient(45deg, #f9984a, #ca3690);
   padding: 2px;
-  border: 2px outset #cc2c41ab;
 }
 i.fas.fa-heart {
   color: red;
@@ -122,4 +122,55 @@ i.fas.fa-heart {
   border-bottom: 10px solid #fff;
   opacity: 0;
   transition: all 0.2s;
+}
+::-webkit-resizer {
+  display: none;
+}
+.article-img {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.article-slide {
+  position: relative;
+  display: flex;
+  height: 100%;
+  transition: all 0.3s;
+}
+.slide-list {
+  height: 100%;
+}
+.article-slide img {
+  height: 100%;
+  object-fit: cover;
+}
+.slide-button-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+}
+.slide-button {
+  display: block;
+  width: 40px;
+  background: url(../image/instagram_icons.png) no-repeat;
+  background-size: 510px 477px;
+  visibility: hidden;
+  opacity: 0;
+}
+.slide-button.prev {
+  background-position: -291px -225px;
+}
+.slide-button.next {
+  background-position: -294px -270px;
+}
+.slide-button.active {
+  visibility: visible;
+  opacity: 1;
 }

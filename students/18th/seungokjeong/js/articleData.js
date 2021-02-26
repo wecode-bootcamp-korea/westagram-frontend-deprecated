@@ -3,7 +3,11 @@ const articleData = [
     username: "infinity_challenge",
     userplace: "상암 MBC",
     imgURL1: "image/feeds/inifinity.gif",
-    imgURL2: "image/article/article2.jpg",
+    imgURL2: [
+      "image/article/article2.jpg",
+      "image/article/article3.jpg",
+      "image/article/article4.jpg",
+    ],
     storyActive: true,
     time: 2,
     likeMain: "대한민국",

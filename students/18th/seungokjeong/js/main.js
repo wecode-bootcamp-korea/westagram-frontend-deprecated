@@ -1,6 +1,8 @@
 import userData from "./userData.js";
 window.onload = function () {
+  const body = document.querySelector("body");
   const feedWrap = document.querySelector(".feed-wrap");
+  const feedButtonWrap = document.querySelector(".feed-button-wrap");
   const profile = document.querySelector(".profile");
   const search = document.querySelector("#search");
   const searchView = document.querySelector(".search-view");
@@ -8,6 +10,17 @@ window.onload = function () {
   const logoutBtn = document.querySelector(".logout");
   const userInfo = document.querySelector(".user-info");
   const rightRecommand = document.querySelector(".right-recommend");
+  const prevButton = document.querySelector(".feed-prev");
+  const nextButton = document.querySelector(".feed-next");
+
+  const initStoryButton = () => {
+    const feedList = document.querySelectorAll(".feed-list");
+    const feed = feedList[0];
+    const totalWidth = (feed.clientWidth + 15) * feedList.length;
+    if (totalWidth > feedWrap.clientWidth) {
+      nextButton.classList.add("active");
+    }
+  };
 
   const initProfiile = () => {
     const userData = JSON.parse(localStorage.getItem("user"));
@@ -16,19 +29,19 @@ window.onload = function () {
     <span>${userData.koreanName}</span>`;
   };
 
-  const initialFeed = () => {
+  const initStory = () => {
     const filterData = userData.filter(data => data.storyActive === true);
     filterData.map(data => {
       const feedList = document.createElement("li");
       feedList.classList.add("feed-list");
       feedList.innerHTML = `
-    <img class="story-active" src="${data.imgUrl}" alt="피드"/>
+    <div class="story-box story-active"><img src="${data.imgUrl}" alt="피드"/></div>
     <p>${data.username}</p>`;
       feedWrap.append(feedList);
     });
   };
 
-  const recommnedList = () => {
+  const initRecommend = () => {
     const notFriends = userData.filter(data => data.friend === false);
     notFriends.map(notfriend => {
       const recommendList = document.createElement("div");
@@ -40,17 +53,74 @@ window.onload = function () {
       <span>회원님을 팔로우합니다</span>
       </div>
       <a>팔로우</a>`;
+      rightRecommand.append(recommendList);
     });
-    rightRecommand.append;
+  };
+
+  let left = 0;
+  const moveStory = e => {
+    const target = e.target;
+    const feedList = document.querySelectorAll(".feed-list");
+    const feed = feedList[0];
+    const totalWidth = (feed.clientWidth + 15) * feedList.length;
+    const feedWrapWidth = feedWrap.clientWidth;
+    const widthGap = totalWidth - feedWrapWidth;
+    let moveSize;
+
+    if (feedWrapWidth + 15 < 243) {
+      moveSize = feedWrapWidth + 15;
+    } else {
+      moveSize = widthGap + 15 >= 243 ? 243 : widthGap;
+    }
+    if (target === prevButton) {
+      if (left + widthGap >= 243) {
+        left = 0;
+        feedWrap.style.left = `${left}px`;
+        prevButton.classList.remove("active");
+        nextButton.classList.add("active");
+      } else {
+        left += moveSize;
+        if (left > 0) {
+          feedWrap.style.left = `0px`;
+          prevButton.classList.remove("active");
+          nextButton.classList.add("active");
+        } else {
+          feedWrap.style.left = `${left}px`;
+          prevButton.classList.add("active");
+          nextButton.classList.add("active");
+        }
+      }
+    } else if (target === nextButton) {
+      if (widthGap + left < 243) {
+        left = -(widthGap + 15);
+        feedWrap.style.left = `${left}px`;
+        prevButton.classList.add("active");
+        nextButton.classList.remove("active");
+      } else {
+        left -= moveSize;
+        if (left * -1 > widthGap) {
+          feedWrap.style.left = `${-(widthGap + 15)}px`;
+          prevButton.classList.remove("active");
+          nextButton.classList.add("active");
+        } else {
+          feedWrap.style.left = `${left}px`;
+          prevButton.classList.add("active");
+          nextButton.classList.add("active");
+        }
+      }
+    } else return;
   };
 
   const toggleProfile = () => {
     subOption.classList.toggle("active");
   };
 
+  initStory();
+  initStoryButton();
   initProfiile();
-  initialFeed();
+  initRecommend();
   profile.addEventListener("click", toggleProfile);
+  feedButtonWrap.addEventListener("click", moveStory);
   search.addEventListener("keyup", e => {
     const value = e.target.value;
     if (value) {
@@ -79,8 +149,6 @@ window.onload = function () {
     localStorage.removeItem("user");
     location.href = "login.html";
   });
-
-  const body = document.querySelector("body");
   body.addEventListener("click", e => {
     const target = e.target;
     if (target === profile) return;

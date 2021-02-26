@@ -8,6 +8,12 @@
   .main-content {
     padding: 30px 20px;
   }
+  .content-wrap {
+    margin: 0 auto;
+  }
+  .scroll-trigger {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 650px) {
   .search-wrap {
@@ -18,5 +24,8 @@
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+  }
+  .comment-wrap {
+    padding-right: 15%;
   }
 }

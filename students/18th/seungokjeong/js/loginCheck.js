@@ -1,4 +1,9 @@
-if (window.location.pathname === "/main.html") {
+const urlInformation = window.location.pathname.split("/");
+const nowPage = urlInformation.pop();
+if (nowPage === "main.html") {
   const getUserData = JSON.parse(localStorage.getItem("user"));
-  if (!getUserData) window.location.href = "/login.html";
+  if (!getUserData) {
+    urlInformation.push("login.html");
+    window.location.pathname = urlInformation.join("/");
+  }
 }

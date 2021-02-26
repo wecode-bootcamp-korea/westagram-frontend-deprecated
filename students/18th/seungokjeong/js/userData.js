@@ -12,7 +12,7 @@ const userData = [
     username: "wecode_bootcamp",
     name: ">wecode | 위코드",
     imgUrl: "image/feeds/wecode1.jpg",
-    storyActive: false,
+    storyActive: true,
     friend: true,
   },
   {
@@ -117,11 +117,12 @@ const userData = [
     name: "조세호",
     imgUrl: "image/side_profile/jojo.png",
     storyActive: false,
+    friend: false,
   },
   {
     id: 15,
     username: "front_jeon",
-    name: "",
+    name: "전진",
     imgUrl: "image/side_profile/front.jpeg",
     storyActive: false,
     friend: false,
@@ -136,7 +137,7 @@ const userData = [
   },
   {
     id: 17,
-    username: "jeong_ok12",
+    username: "seung_ok12",
     name: "정승옥",
     imgUrl: "image/default_profile.jpg",
     email: "vsnm25@naver.com",

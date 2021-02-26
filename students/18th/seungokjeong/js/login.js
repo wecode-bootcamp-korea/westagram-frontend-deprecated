@@ -32,8 +32,7 @@ window.onload = function () {
     const loginUser = userData.filter(
       data => data.email === id && data.password === password
     )[0];
-    console.log(loginUser);
-    if (loginUser.length === 0) {
+    if (loginUser === undefined) {
       alert("입력한 정보가 정확하지 않습니다");
       return;
     }

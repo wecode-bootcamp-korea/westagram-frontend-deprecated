@@ -109,6 +109,7 @@ body {
   align-items: flex-start;
   margin-left: 10px;
   font-size: 14px;
+  line-height: 20px;
 }
 .search-description > h2 {
   font-weight: 700;
@@ -161,6 +162,7 @@ body {
 }
 .option-list > span {
   margin-left: 10px;
+  margin-top: 3px;
   pointer-events: none;
 }
 .option-list:nth-child(2) > i {
@@ -191,14 +193,18 @@ main {
   max-width: 614px;
 }
 .content-feed {
+  position: relative;
   padding: 15px 0;
   border: 1px solid #dbdbdbdb;
   border-radius: 3px;
   background: #fff;
-  overflow: scroll;
+  overflow: hidden;
 }
 .feed-wrap {
+  position: relative;
+  left: 0;
   display: flex;
+  transition: all 0.2s;
 }
 .feed-list {
   display: flex;
@@ -208,16 +214,65 @@ main {
   margin-left: 15px;
   cursor: pointer;
 }
-.feed-list > img {
+.feed-list .story-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.feed-list img {
   width: 66px;
   height: 66px;
   object-fit: cover;
   border-radius: 50%;
+  border: 2px solid #fff;
 }
 .feed-list > p {
+  width: 66px;
   margin-top: 5px;
   font-size: 14px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   color: #292929;
+}
+.feed-button-wrap {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.feed-button {
+  display: inline-block;
+  height: 100%;
+  background: url("../image/instagram_icons.png") no-repeat;
+  background-size: 510px 477px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.feed-button.feed-prev {
+  width: 42px;
+  background-position: -291px -225px;
+}
+.feed-button.feed-next {
+  width: 49px;
+  background-position: -290px -270px;
+}
+.feed-button.feed-prev.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.feed-button.feed-next.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 .content-article {
   margin: 25px 0;
@@ -231,9 +286,14 @@ main {
   padding: 15px;
   background: #fff;
 }
-.article-title > img {
+.article-profile {
+  display: flex;
+  border-radius: 50%;
+}
+.article-profile > img {
   width: 32px;
   height: 32px;
+  border: 2px solid #fff;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -276,17 +336,53 @@ main {
 .comments-list {
   margin-top: 10px;
 }
-.comments-list > p {
+.comments-list > li {
   position: relative;
   margin-bottom: 10px;
   font-size: 14px;
   color: #262626;
 }
-.comments-list > p .delete-wrap {
+.comment-wrap {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 525px;
+}
+.comment-wrap .other-main {
+  font-weight: 700;
+}
+.comment-text {
+  max-width: 415px;
+  word-break: break-all;
+}
+.comment-text.close {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.more-comment {
+  display: flex;
+  width: 30px;
+  margin: 0 10px;
+  font-size: 12px;
+  line-height: 14px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+}
+.more-comment:hover {
+  text-decoration: underline;
+}
+.more-comment.active {
+  display: flex;
+  align-items: flex-end;
+  visibility: visible;
+  opacity: 1;
+}
+.comments-list .delete-wrap {
   opacity: 0;
   transition: all 0.2s;
 }
-.comments-list > p:hover .delete-wrap {
+.list-other:hover .delete-wrap {
   opacity: 1;
 }
 .comments-list span > a {
@@ -294,7 +390,7 @@ main {
 }
 .user-main,
 .other-main {
-  margin-right: 3px;
+  margin-right: 5px;
 }
 .like-main:hover,
 .user-main:hover,
@@ -324,13 +420,17 @@ main {
   background: #fff;
 }
 .article-myComment .fa-smile {
-  margin-right: 10px;
   font-size: 24px;
 }
-.article-myComment > input {
+.article-myComment > textarea {
+  flex: 1;
+  height: 15px;
+  margin: 0 10px;
+  padding: 0;
   border: none;
   outline: none;
-  flex: 1;
+  resize: vertical;
+  overflow: visible;
 }
 .myComment-add {
   font-size: 14px;
