@@ -64,24 +64,24 @@ input {
 }
 
 .line-l {
+  width: 95px;
   margin-top: 5px;
   margin-bottom: 20px;
-  width: 95px;
   border: 0.5px solid lightgray;
 }
 
 .centerchar {
+  color: lightslategray;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 13px;
   font-weight: bold;
-  color: lightslategray;
 }
 
 .line-r {
+  width: 95px;
   margin-top: 5px;
   margin-bottom: 20px;
-  width: 95px;
   border: 0.5px solid lightgray;
 }
 
@@ -92,7 +92,7 @@ input {
   margin-bottom: 15px;
 }
 
-.fb-icon {
+.fa-facebook-square {
   width: 15px;
   height: 15px;
 }
@@ -101,8 +101,8 @@ input {
   width: 50%;
   cursor: pointer;
   background-color: white;
-  border: 0;
   color: navy;
+  border: 0;
   font-weight: bold;
 }
 
@@ -113,18 +113,18 @@ input {
 }
 
 .forget {
-  font-size: 12px;
   cursor: pointer;
   background-color: white;
   border: 0;
+  font-size: 12px;
 }
 
 .joinform {
   display: flex;
   justify-content: center;
-  margin-top: 22px;
   width: 100%;
   height: 60px;
+  margin-top: 22px;
   border: 1px solid lightgray;
 }
 
@@ -138,10 +138,10 @@ input {
 .btn-join {
   display: flex;
   align-items: center;
-  padding: 5px;
-  color: blue;
   cursor: pointer;
   background-color: white;
+  color: blue;
+  padding: 5px;
   border: 0;
   font-weight: bold;
 }
