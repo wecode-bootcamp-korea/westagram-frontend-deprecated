@@ -17,7 +17,8 @@ body {
     right: 0;
     height: 56px;
     top: 0;
-    border: 1px solid gray;
+    border-bottom:  1px solid #DBDBDB;
+    background-color: #ffffff;
 }
 
 .mainFeeds {
@@ -27,18 +28,18 @@ body {
 }
 
 .storys {
-    border: 1px solid gray;
-    /* width: 489px; */
+    border: 1px solid #DBDBDB;
     height: 84px;
     margin-bottom: 24px;
+    background-color: #ffffff;
 }
 
 .mainFeeds .feeds {
     display: flex;
     justify-content: center;
-    border: 1px solid gray;
-    /* width: 489px; */
+    border: 1px solid #DBDBDB;
     height: 710px;
+    background-color: #ffffff;
 }
 
 .feedBox {
@@ -46,7 +47,7 @@ body {
 }
 
 .mainRight {
-    border: 1px solid gray;
+    border: 1px solid DBDBDB;
     width: 321px;
     height: 869px;
     position: fixed;
@@ -66,9 +67,10 @@ body {
 input {
     width: 200px;
     height: 29px;
-    border: 1px solid gray;
+    border: 1px solid #DBDBDB;
     border-radius: 3px;
     text-align: center;
+    background-color: #fafafa;
 
 }
 
@@ -79,15 +81,14 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
 }
 
 .nav-bar a {
     font-family: 'Lobster', cursive;
     font-size: 30px;
-    /* display: flex;
-     justify-content: center; */
-    /* align-items: center; */
     text-align: center;
+    
 }
 
 .imgBox>img {
@@ -96,7 +97,9 @@ input {
 
 .fas.fa-search {
     position: absolute;
-    left: 15px;
+    left: 72px;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 8px;
+    color: #A4A7AA;
 }
