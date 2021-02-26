@@ -1,112 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 /* body {
     font-family: 'Lobster', cursive;
 } */
+
 /* .body__container{
    
     display:flex;
     justify-content: center;
     align-items: center;
 } */
-/* //공통 */
-.input{
-    background-color: rgb(250,250,250);
 
-    padding:10px;
+/* //공통 */
+
+.input {
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
     border: 1px solid #EFEFEF;
-    width:80%;
-    margin-bottom:10px;
+    width: 80%;
+    margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-.btn{
- background: rgb(178,223,252);
-color: white;
-/* width:80%; */
-text-align: center;
-/* padding:5px 0; */
-box-sizing: border-box;
-border-radius: 5px;
-border:none;
-font-weight: 900;
-
+.btn {
+    background: rgb(178, 223, 252);
+    color: white;
+    /* width:80%; */
+    text-align: center;
+    /* padding:5px 0; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    font-weight: 900;
 }
-
-
 
 /*  */
+
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-.body{
-    background:#FAFAFA;
-}   
-.body__container{
-    background-color: rgb(250,250,250);
+.body {
+    background: #FAFAFA;
+}
+
+.body__container {
+    background-color: rgb(250, 250, 250);
     /* border:1px solid rgb(255, 24, 62); */
-    display:flex;
+    display: flex;
     align-items: center;
 }
-.container{
-    border:1px solid rgb(219,219,219);
-    width:350px;
-    margin:50px auto;
-text-align: center;
-position: relative;
-background:rgb(255,255,255);
+
+.container {
+    border: 1px solid rgb(219, 219, 219);
+    width: 350px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    background: rgb(255, 255, 255);
 }
-.logo{
+
+.logo {
     font-family: 'Lobster', cursive;
     font-size: 45px;
-    color:#262626;
-    margin-top:30px;
+    color: #262626;
+    margin-top: 30px;
     margin-bottom: 40px;
-
-}
-.logIn{
-text-align: center;
 }
 
-.logInBtn{
-margin: 0 auto;
-margin-top:10px;
-margin-bottom:20px;
+.logIn {
+    text-align: center;
 }
-.line{
-display:flex;
-align-items: center;
-justify-content: center;
-}
-.line .lineGray{
-background:rgb(219,219,219);
-height:1px;
-width:103px;
 
+.logInBtn {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-.line .or{
-    font-size:13px;
-    color:#8e8e8e;
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line .lineGray {
+    background: rgb(219, 219, 219);
+    height: 1px;
+    width: 103px;
+}
+
+.line .or {
+    font-size: 13px;
+    color: #8e8e8e;
     font-weight: 700;
     margin: 0 10px;
 }
-.facebookLogin{
+
+.facebookLogin {
     margin: 10px 0;
 }
-.facebookLogin .text{
-    color:rgb(56,81,133);
+
+.facebookLogin .text {
+    color: rgb(56, 81, 133);
     font-size: 14px;
     font-weight: 900;
-
 }
-.notice{
+
+.notice {
     margin: 10px 0;
     /* position:absolute;
     bottom:10px;
     right:50%; */
-   text-align: center;
-    font-size:12px;
+    text-align: center;
+    font-size: 12px;
 }
