@@ -9,10 +9,11 @@ commentBtn.addEventListener("click", function(){
     const ul = document.querySelector(".commentArea");
     li.innerHTML = `<a>${userId}</a> ${comment}`;
     ul.appendChild(li);
-    // comment = '';
+    document.querySelector(".textArea").value = "";
 });
 
 textArea.addEventListener("keydown", function(e){
     if (e.keyCode == 13){
-        commentBtn.click();
+        let a = commentBtn.click();
 }})
+
