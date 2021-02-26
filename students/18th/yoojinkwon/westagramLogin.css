@@ -1,32 +1,35 @@
 div.loginBox{
-    box-sizing: border-box;
-    border: 1px solid lightgrey;
-    width: 400px; height: 420px;
-    margin: auto;
     position: relative;
+    top: 200px;
+    box-sizing: border-box;
+    width: 400px; 
+    height: 420px;
+    margin: auto;
+    border: 1px solid lightgrey;
 }
 
 h1{
-    font-family: 'Lobster', cursive;
-    font-weight: 100;
-    font-size: 50px;
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 50px;
 }
 
 input.inputBox{
-    box-sizing: border-box;
-    border: 1px solid lightgrey;
-    border-radius: 2px;
-    width: 250px; height: 35px;
-    padding: 2px;
-    background-color: rgb(247, 247, 247);
-    font-size: 12px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 250px; 
+    height: 35px;
+    padding: 2px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    background-color: rgb(247, 247, 247);
+    font-size: 12px;
 }
 
 #idBox{
@@ -38,19 +41,20 @@ input.inputBox{
 }
 
 #loginButton{
-    box-sizing: border-box;
-    border-style: none;
-    border-radius: 5px;
-    width: 250px; height: 33px;
-    padding: auto;
-    background-color: #0096f6;
-    opacity: 0.5;
-    font-size: 15px;
-    color: white;
     position: absolute;
     top: 235px;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 250px; 
+    height: 33px;
+    padding: auto;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #0096f6;
+    opacity: 0.5;
+    font-size: 15px;
+    color: white;
     cursor: pointer;
 }
 
@@ -64,17 +68,17 @@ div.breakLine{
 }
 
 div.line{
-    border-bottom: 1px solid lightgrey;
-    margin-bottom: 6px;
     width: 90px;;
+    margin-bottom: 6px;
+    border-bottom: 1px solid lightgrey;
 }
 
 #or{
+    margin: 0 12px;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 12px;
     font-weight: 600;
     color: gray;
-    margin: 0 12px;
 }
 
 #facebookButton{
@@ -82,12 +86,12 @@ div.line{
     top: 320px;
     left: auto;
     width: 400px;
-    color: #385185;
     border-style: none;
     background: none;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    color: #385185;
     cursor: pointer;
 }
 
@@ -96,9 +100,9 @@ div.line{
     top: 370px;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #385185;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 11px;
     font-weight: 500;
+    color: #385185;
     cursor: pointer;
 }
