@@ -16,7 +16,7 @@ body {
   font-size: 45px;
   margin: 40px;
 }
-.bigbox {
+.mainlayout {
   display: flex;
   flex-direction: column;
 }
@@ -56,7 +56,7 @@ input {
   border-radius: 3px;
 }
 
-.or {
+.divider {
   display: flex;
   flex-direction: low;
   justify-content: center;
@@ -106,13 +106,13 @@ input {
   font-weight: bold;
 }
 
-.forget-box {
+.password-container {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
 
-.forget {
+.btn-password {
   cursor: pointer;
   background-color: white;
   border: 0;
