@@ -194,10 +194,36 @@ article{
     position: relative;
     top:-5px;
     margin:0 20px;
+    /* border:solid 3px red; */
 }
-/* .cominfo{
-    border:solid 1px black;
+
+/* .comment{
+    display: flex;
 } */
+
+.textremove{
+    /* border:solid 3px black; */
+    position: absolute;
+    right:30px;
+}
+
+.textremove{
+    border:none;
+    background-color: white;
+    color: rgb(219,219,219);
+    outline: none;
+}
+
+.textremove:hover{
+    color:rgb(58, 58, 58);
+}
+
+.div_heart{ 
+    display:inline;
+    position: absolute;
+    right:3px;
+    color: rgb(219,219,219);
+}
 
 .inputcomment{
     border-top:solid 1px rgb(230,230,230);

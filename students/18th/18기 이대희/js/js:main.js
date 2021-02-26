@@ -6,37 +6,43 @@ const wename = document.querySelector('.name').innerHTML;
 const article = document.querySelector('article');
 const wenames = wename.bold(); 
 
-let a = 1;
 inputbox.addEventListener('keydown', (e) => {
 
     if (e.key === 'Enter') {
         const btn = document.createElement('button');
-        btn.innerHTML = 'X';
-
-        let aa = document.querySelector('.comment'+a);
+        btn.className='textremove';
+        let p = document.createElement('i');
+        p.className='fas fa-ellipsis-h';
+        btn.appendChild(p);
+        
+        const div_heart = document.createElement('div');
+        div_heart.className='div_heart';
+        const heart = document.createElement('i');
+        heart.className='far fa-heart';
+        div_heart.appendChild(heart);
+       
         let makeul = document.createElement('li');
-        makeul.className='comment'+a;
+        makeul.className='comment';
         makeul.innerHTML=`${wenames} ${inputbox.value}`;
         makeul.appendChild(btn);
+        makeul.appendChild(div_heart);
         ul.appendChild(makeul);
         console.log(makeul);
-        a++;
 
+        inputbox.value = '';
+        
         btn.addEventListener('click', () =>{   
-            makeul.remove()
-           
-        }
-        )
+        makeul.remove();        
+        })
+        div_heart.addEventListener('click', () =>{  
+            
+            if(div_heart.style.color==='red'){
+                div_heart.style.color='rgb(219,219,219)';
+            }else{
+                div_heart.style.color='red';
+            }
+            console.log(div_heart.style.color);        
+        })
     }
 
 });
-
-// btn.addEventListener('click', () =>{
-//     // a++;
-//     ul2.parentNode.removeChild(ul2);
-//     // console.log(ul2.a);
-
-//     console.log(ul2);
-// })
-
-// console.log(document.createElement('a',asd));
