@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 } 
 
-input, button{
+input, button, textarea{
     outline: none;
 }
 

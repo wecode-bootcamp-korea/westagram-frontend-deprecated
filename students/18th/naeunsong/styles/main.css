@@ -129,10 +129,10 @@ main{
   height: 24px;
 }
 
-.comment input{
+.textArea{
   width: 500px;
   border: 0px;
-  padding-left: 16px;
+  padding-left: 16px; 
   font-size: 18px;
 }
 
