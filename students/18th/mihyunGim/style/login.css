@@ -9,22 +9,59 @@
     justify-content: center;
     align-items: center;
 } */
+/* //공통 */
+.input{
+    background-color: rgb(250,250,250);
+
+    padding:10px;
+    border: 1px solid #EFEFEF;
+    width:80%;
+    margin-bottom:10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn{
+ background: rgb(178,223,252);
+color: white;
+/* width:80%; */
+text-align: center;
+/* padding:5px 0; */
+box-sizing: border-box;
+border-radius: 5px;
+border:none;
+font-weight: 900;
+
+}
+
+
+
+/*  */
+body {
+    margin:0;
+    padding:0;
+}
+
 .body{
     background:#FAFAFA;
+}   
+.body__container{
+    background-color: rgb(250,250,250);
+    /* border:1px solid rgb(255, 24, 62); */
+    display:flex;
+    align-items: center;
 }
 .container{
-    width:500px;
-    height:60vh;
-    border: 1px solid #E9E9E9;
-    
-    padding: 30px;
-    margin:10% auto;
+    border:1px solid rgb(219,219,219);
+    width:350px;
+    margin:50px auto;
 text-align: center;
 position: relative;
+background:rgb(255,255,255);
 }
 .logo{
     font-family: 'Lobster', cursive;
-    font-size: 60px;
+    font-size: 45px;
     color:#262626;
     margin-top:30px;
     margin-bottom: 40px;
@@ -37,9 +74,39 @@ text-align: center;
 .logInBtn{
 margin: 0 auto;
 margin-top:10px;
+margin-bottom:20px;
+}
+.line{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.line .lineGray{
+background:rgb(219,219,219);
+height:1px;
+width:103px;
+
+}
+.line .or{
+    font-size:13px;
+    color:#8e8e8e;
+    font-weight: 700;
+    margin: 0 10px;
+}
+.facebookLogin{
+    margin: 10px 0;
+}
+.facebookLogin .text{
+    color:rgb(56,81,133);
+    font-size: 14px;
+    font-weight: 900;
+
 }
 .notice{
-    margin-top:120px;
+    margin: 10px 0;
+    /* position:absolute;
+    bottom:10px;
+    right:50%; */
    text-align: center;
-    color:#1A4977;
+    font-size:12px;
 }
