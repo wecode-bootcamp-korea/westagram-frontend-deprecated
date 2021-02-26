@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    background: #fafafa;
+}
+
+.nav-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 56px;
+    top: 0;
+    border: 1px solid gray;
+}
+
+.mainFeeds {
+    width: 900px;
+    margin: 80px auto 0;
+
+}
+
+.storys {
+    border: 1px solid gray;
+    /* width: 489px; */
+    height: 84px;
+    margin-bottom: 24px;
+}
+
+.mainFeeds .feeds {
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    /* width: 489px; */
+    height: 710px;
+}
+
+.feedBox {
+    width: 550px;
+}
+
+.mainRight {
+    border: 1px solid gray;
+    width: 321px;
+    height: 869px;
+    position: fixed;
+    left: calc(50% + 130px);
+    top: 80px;
+}
+
+
+.searchBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* border:1px solid black; */
+}
+
+input {
+    width: 200px;
+    height: 29px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    text-align: center;
+
+}
+
+.navBox {
+    height: 100%;
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    /* display: flex;
+     justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.imgBox>img {
+    width: 30px;
+}
+
+.fas.fa-search {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
