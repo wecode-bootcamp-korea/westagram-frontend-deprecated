@@ -8,7 +8,7 @@ let heartx2 = document.querySelector('.heartx2');
 let delicon = document.querySelector('.heartx2');
 const iconbox = document.querySelector('.iconbox'); 
 
-inputbox.addEventListener('keyup', (e) => {
+inputbox.addEventListener('keydown', (e) => {
 
     if (e.key === 'Enter') {
         const btn = document.createElement('button');
@@ -31,7 +31,7 @@ inputbox.addEventListener('keyup', (e) => {
         ul.appendChild(makeul);
         console.log(makeul);
 
-        // inputbox.value = '';
+        inputbox.value = '';
         // console.log(inputbox.value);
         // if(inputbox.value===''){return;}
         //댓글 삭제
