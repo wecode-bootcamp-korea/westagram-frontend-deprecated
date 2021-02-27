@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #d8d8d8;
+   }
+
+   nav {
+       background-color: white;
+       border: 1px solid red;
+       height: 60px;
+       font-family: 'Lobster', cursive;
+       padding: 10px;
+   }
+
+   .navBox {
+        background-color: white;
+        
+        /* .navBox 안의 요소를 정렬 */
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        
+        /* .navBox를 nav의 가운데 정렬 */
+        width: 85%;
+        margin: 0 auto;
+   }
+
+   .navBox span {
+    font-size: 25px;
+    background-color: white;
+
+   }
+
+   .icons {
+    background-color: white;
+   }
+
+   .icons img {
+       background-color: white;
+       width: 30px;
+       height: 30px;
+   }
+
+
+
+
+
+
+
+
+   main {
+       border: 1px solid yellow;
+       height: auto;
+       background-color: #d8d8d8;
+       
+   }
+
+   .centerBox {
+    border: 1px solid green;
+    /* .navBox와 똑같이 맞춤 */
+    width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    
+   }
+
+   .feeds {
+    border: 1px solid blue;
+    width: 500px;
+    height: auto;
+    background-color: white;
+   }
+
+   div article {
+    border: 1px solid purple;
+    width: 450px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: white;
+   }
+
+   div article img {
+       width: 100%
+   }
+
+
+
+
+
+
+
+
+
+   .main-right {
+    border: 1px solid cyan;
+    width: 320px;
+    height: 400px;
+   }
+
+   .myId img {
+       width: 60px;
+       border-radius: 50%; //사진 원형으로
+   }
+
+
+   .story {
+    background-color: white;
+    border: 1px solid #575757;
+    height: 100px;
+   }
+
+   .recommend {
+    background-color: white;
+    border: 1px solid #575757;
+    height: 100px;
+   }
+
+   .copyright span {
+       font-size: 12px;
+       color: #575757;
+   }
+
