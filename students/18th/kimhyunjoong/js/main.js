@@ -8,8 +8,9 @@ const moreBtn = document.getElementById("moreBtn");
 const moreSentence = document.querySelector(".moreSentence");
 const likeBtn = document.getElementById("likeBtn");
 const likeCountNumber = document.getElementById("likeCountNumber");
-const deepBlue = "#0095F6"; // 버튼 활성화 색상
-const skyBlue = "#b2dffc"; // 버튼 비활성화 색상
+
+const deepBlue = "#0095F6";
+const skyBlue = "#b2dffc";
 const fixNickName = "Hyunjoong";
 
 unActiveBtn();
@@ -136,13 +137,13 @@ likeBtn.addEventListener("click", () => {
 });
 
 function onActiveBtn() {
-  // 버튼 활성화
-  submitBtn.style.color = deepBlue;
+  submitBtn.classList.remove("unactiveBtn");
+  submitBtn.classList.add("activeBtn");
   submitBtn.disabled = false;
 }
 
 function unActiveBtn() {
-  // 버튼 비활성화
-  submitBtn.style.color = skyBlue;
+  submitBtn.classList.remove("activeBtn");
+  submitBtn.classList.add("unactiveBtn");
   submitBtn.disabled = true;
 }

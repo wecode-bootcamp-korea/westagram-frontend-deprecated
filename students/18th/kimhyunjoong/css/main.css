@@ -261,18 +261,15 @@ img {
 }
 
 .main-right {
-  padding: 80px 20px 0px 20px;
-  width: 350px;
-  height: 800px;
-  background-color: #fafafa;
-}
-
-.main-right {
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 0px;
   right: 286px;
+  padding: 80px 20px 0px 20px;
+  width: 350px;
+  height: 800px;
+  background-color: #fafafa;
 }
 
 .main-right .main-right__profile {
@@ -393,13 +390,16 @@ img {
   height: 100%;
   padding: 5px 0;
 }
-
-#submit {
+.unactiveBtn {
+  color: #b2dffc;
   background-color: transparent;
-  color: var(--light-blue);
   font-weight: 600;
 }
-
+.activeBtn {
+  color: #0095f6;
+  background-color: transparent;
+  font-weight: 600;
+}
 #commentInput {
   font-size: 15px;
   width: 80%;

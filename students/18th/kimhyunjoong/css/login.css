@@ -48,7 +48,6 @@ main {
 }
 
 .loginInput button {
-  background-color: #b2dffc;
   color: white;
   font-weight: 600;
   margin: 7px 25px;
@@ -109,4 +108,10 @@ input::placeholder {
   .loginImage {
     display: none;
   }
+}
+.unactiveBtn {
+  background-color: #b2dffc;
+}
+.activeBtn {
+  background-color: #0095f6;
 }
