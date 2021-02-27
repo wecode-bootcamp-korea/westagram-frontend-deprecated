@@ -3,7 +3,6 @@ const inputbox = document.querySelector('.inputbox');
 const wename = document.querySelector('.name').innerHTML;
 const article = document.querySelector('article');
 const wenames = wename.bold(); 
-// const heartx2_2 = document.querySelector('.heartx2_2');
 let heartx2 = document.querySelector('.heartx2');
 let delicon = document.querySelector('.heartx2');
 const iconbox = document.querySelector('.iconbox'); 
@@ -32,8 +31,6 @@ inputbox.addEventListener('keydown', (e) => {
         console.log(makeul);
 
         inputbox.value = '';
-        // console.log(inputbox.value);
-        // if(inputbox.value===''){return;}
         //댓글 삭제
         btn.addEventListener('click', () =>{   
         makeul.remove();        
@@ -54,8 +51,6 @@ inputbox.addEventListener('keydown', (e) => {
 
 heartx2.addEventListener('click', (e) => {   
     
-    // if(heartx2.id === 'ch1'){
-        console.log('a342');
         heartx2.remove();
         let a = document.createElement('a');
         a.className="heartx2";
@@ -65,22 +60,6 @@ heartx2.addEventListener('click', (e) => {
         p1.className="fas fa-heart fa-2x";
         p1.style.color='red';
         a.appendChild(p1);
-        console.log(heartx2);
-    // }
-    // console.log(heartx2.id);
-    // console.log()
-
-    // if(heartx2.id === 'ch1'){
-    //     let aa = document.createElement('a');
-    //     aa.className="heartx2";
-    //     aa.id='ch2';
-    //     iconbox.prepend(aa);
-    //     let p1 = document.createElement('i');
-    //     p1.className="far fa-heart fa-2x";
-    //     a.appendChild(p1);
-    //     console.log('1');
-    // }
-
 });
 
 

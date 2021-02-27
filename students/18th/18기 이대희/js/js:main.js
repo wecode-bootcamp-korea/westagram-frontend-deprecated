@@ -1,10 +1,11 @@
 const ul = document.querySelector('.comments');
-// const li = document.querySelectorAll('.comment2');
-// const li2 = document.querySelectorAll('li');
 const inputbox = document.querySelector('.inputbox');
 const wename = document.querySelector('.name').innerHTML;
 const article = document.querySelector('article');
 const wenames = wename.bold(); 
+let heartx2 = document.querySelector('.heartx2');
+let delicon = document.querySelector('.heartx2');
+const iconbox = document.querySelector('.iconbox'); 
 
 inputbox.addEventListener('keydown', (e) => {
 
@@ -30,10 +31,11 @@ inputbox.addEventListener('keydown', (e) => {
         console.log(makeul);
 
         inputbox.value = '';
-        
+        //댓글 삭제
         btn.addEventListener('click', () =>{   
         makeul.remove();        
         })
+        //댓글 좋아요
         div_heart.addEventListener('click', () =>{  
             
             if(div_heart.style.color==='red'){
@@ -44,5 +46,21 @@ inputbox.addEventListener('keydown', (e) => {
             console.log(div_heart.style.color);        
         })
     }
-
 });
+ 
+
+heartx2.addEventListener('click', (e) => {   
+    
+        heartx2.remove();
+        let a = document.createElement('a');
+        a.className="heartx2";
+        a.id = 'ch2';
+        iconbox.prepend(a)
+        let p1 = document.createElement('i');
+        p1.className="fas fa-heart fa-2x";
+        p1.style.color='red';
+        a.appendChild(p1);
+});
+
+
+
