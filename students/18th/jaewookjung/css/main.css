@@ -295,6 +295,18 @@ article {
     margin-bottom: 10px;
 }
 
+.comment_icons i {
+    margin-left: 10px;
+}
+
+.comments_icons .fas {
+    color: red;
+}
+
+.comments_icons .far {
+    color: black;
+}
+
 .comment_contents {
     font-size: 14px;
 }
@@ -331,7 +343,6 @@ article {
     width: 90%;
     height: 18px;
     padding: 3px;
-    resize: none;
     border: none;
     outline: none;
 }
@@ -341,10 +352,6 @@ article {
     height: 24px;
     font-weight: 600;
     opacity: 0.3;
-}
-
-.comments_text:focus {
-    outline: none;
 }
 
 /* aside */

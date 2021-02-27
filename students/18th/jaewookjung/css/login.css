@@ -38,7 +38,7 @@ body {
 }
 
 /* pw input과 show_pw를 감싸는 div */
-.pwBox {
+.pw_box {
     display: flex;
     justify-content: space-between;
     white-space: normal;
@@ -78,8 +78,8 @@ body {
 }
 
 a {
-    text-decoration: none;
     margin-top: 80px;
     color: #00376b;
+    text-decoration: none;
     font-size: 12px;
 }

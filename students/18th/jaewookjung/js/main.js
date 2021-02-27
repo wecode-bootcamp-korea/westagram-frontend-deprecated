@@ -11,14 +11,9 @@ const showAllArticleBtn = document.querySelectorAll(".show_all_article");
 const commentsInputList = document.querySelectorAll(".comments_text");
 const addCommentBtnList = document.querySelectorAll(".add_comment_btn");
 const commentsBlockList = document.querySelectorAll(".comments_column");
-const likesNum = document.querySelectorAll(".likes_num");
-
-// //좋아요 개수 변수
-// let likesCount = 0;
 
 //naviation bar에 검색창 클릭 이벤트
 searchContainer.addEventListener("click", function (e) {
-    console.log(e.target.childNodes, e.target.children);
     searchInput.style.display = "flex";
     searchInput.focus();
     searchCancleBtn.style.display = "flex";
@@ -33,34 +28,59 @@ searchCancleBtn.addEventListener("click", function () {
     searchSpan.style.display = "flex";
 });
 
+//댓글달기 이벤트 callback
 function addComment(i) {
     if (addCommentBtnList[i].style.opacity === "1") {
         if (imgDateList[i].previousElementSibling.tagName !== "UL") {
             let parentTag = imgDateList[i].parentElement;
             let ul = document.createElement("ul");
+            ul.id = i;
             ul.className = "comments_container";
             parentTag.insertBefore(ul, imgDateList[i]);
         }
         let comment = commentsInputList[i].value;
         let li = document.createElement("li");
         let commentContents = document.createElement("div");
+        let commentIcons = document.createElement("div");
         let commentUser = document.createElement("span");
         let commentLike = document.createElement("i");
+        let commentDelete = document.createElement("i");
         commentContents.className = "comment_contents";
+        commentIcons.className = "comment_icons";
         commentUser.className = "comment_user";
         commentLike.className = "far fa-heart comment_like";
+        commentDelete.className = "far fa-trash-alt comment_delete";
         commentUser.innerHTML = "Jhon Doe";
         commentContents.appendChild(commentUser);
         commentUser.after(comment);
+        commentIcons.appendChild(commentDelete);
+        commentIcons.appendChild(commentLike);
         li.appendChild(commentContents);
-        commentContents.after(commentLike);
+        commentContents.after(commentIcons);
         imgDateList[i].previousElementSibling.appendChild(li);
+        li.id = "0" + li.parentElement.childElementCount;
         commentsInputList[i].value = "";
+
+        //localStorage 저장
+        let commentListObj = {
+            id: li.id,
+            body: comment,
+        };
+        if (localStorage.getItem(i) === null) {
+            let commentList = [];
+            commentList.push(commentListObj);
+            localStorage.setItem(i, JSON.stringify(commentList));
+        } else {
+            let storageComment = JSON.parse(localStorage.getItem(i));
+            storageComment.push(commentListObj);
+            localStorage.setItem(i, JSON.stringify(storageComment));
+        }
     }
 }
 
 //feed 내의 이벤트
 for (let i = 0; i < sectionList.length; i++) {
+    commentNum = 0;
     //더보기 버튼 이벤트
     showAllArticleBtn[i].addEventListener("click", function () {
         showAllArticleBtn[i].style.display = "none";
@@ -69,11 +89,9 @@ for (let i = 0; i < sectionList.length; i++) {
 
     //댓글창 입력시 게시버튼 활성화 이벤트
     commentsInputList[i].addEventListener("keyup", function () {
-        if (commentsInputList[i].value === "") {
-            addCommentBtnList[i].style.opacity = 0.3;
-        } else {
-            addCommentBtnList[i].style.opacity = 1;
-        }
+        commentsInputList[i]
+            ? (addCommentBtnList[i].style.opacity = 1)
+            : (addCommentBtnList[i].style.opacity = 0.3);
     });
 
     //댓글 달기 이벤트
@@ -85,22 +103,4 @@ for (let i = 0; i < sectionList.length; i++) {
             addComment(i);
         }
     });
-
-    //좋아요 기능 구현중
-    // const commentLikeBtn = document.querySelectorAll(".comment_like");
-
-    // for (let j = 0; j < commentLikeBtn.length; j++) {
-    //     commentLikeBtn[j].addEventListener("click", function () {
-    //         commentLikeBtn[j].style.color === "red"
-    //             ? ((commentLikeBtn[j].style.color = "black"),
-    //               (commentLikeBtn[j].className =
-    //                   "far fa-heart comment_like"),
-    //               likesCount--)
-    //             : ((commentLikeBtn[j].style.color = "red"),
-    //               (commentLikeBtn[j].className =
-    //                   "fas fa-heart comment_like"),
-    //               likesCount++);
-    //         likesNum[i].innerHTML = likesCount;
-    //     });
-    // }
 }

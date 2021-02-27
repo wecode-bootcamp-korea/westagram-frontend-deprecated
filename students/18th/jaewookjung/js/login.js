@@ -5,17 +5,15 @@ const showPasswordBtn = document.querySelector(".show_pw");
 
 // 이벤트 콜백함수 정의
 function runLoginBtn() {
-    userId.value !== "" && password.value !== ""
+    userId.value && password.value
         ? (loginBtn.style.opacity = "1")
-        : (logtinBtn.style.opacity = "0.3");
+        : (loginBtn.style.opacity = "0.3");
 }
 
 function showBtn() {
-    if (password.value !== "") {
-        showPasswordBtn.style.display = "flex";
-    } else {
-        showPasswordBtn.style.display = "none";
-    }
+    password.value
+        ? (showPasswordBtn.style.display = "flex")
+        : (showPasswordBtn.style.display = "none");
 }
 
 // 이벤트 등록
