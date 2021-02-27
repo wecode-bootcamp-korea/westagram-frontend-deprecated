@@ -40,7 +40,7 @@ nav .rightimg{
     padding-left: 20px;
     border-left: solid 2px gray;
     font-family: 'Lobster', cursive;
-    font-size: 30px;;
+    font-size: 30px;
 }
 
 .left img{
@@ -82,7 +82,7 @@ nav .rightimg{
     width:610px;
 }
 
-.main-right{
+.mainRight{
     width:330px;
     height: 600px;
     margin-top:20px;
@@ -137,7 +137,7 @@ article{
     font-size:15px;
 }
 
-.imagesection img{
+.imageSection img{
     width:607.5px;
     height:565px;
     border:solid 1px black;
@@ -151,7 +151,7 @@ article{
     margin-top:0px;
 }
 
-.iconbox{
+.iconBox{
     display: flex;
     justify-content: space-between;
     width:150px;
@@ -196,14 +196,14 @@ article{
     color:rgb(58, 58, 58);
 }
 
-.div_heart{ 
+.divHeart{ 
     display:inline;
     position: absolute;
     right:3px;
     color: rgb(219,219,219);
 }
 
-.inputcomment{
+.inputComment{
     border-top:solid 1px rgb(230,230,230);
     display: flex;
     position: relative;
@@ -228,7 +228,7 @@ article{
 }
 
 
-.inputcomment button{
+.inputComment button{
     width: 70px;
     height: 55px;
     border:none;
@@ -237,24 +237,24 @@ article{
     outline:none;
 }
 
-.rightprofile img{
+.rightProfile img{
     border-radius: 40px;
     width: 60px;
     height: 60px;
 }
 
-.rightprofile{
+.rightProfile{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 90px;
 }
 
-.name_pro{
+.nameProfile{
     margin-right: 60px;
 }
 
-.mainname{
+.mainName{
     font-weight: bold;
     font-size: 15px;
 }
@@ -288,25 +288,25 @@ article{
     color:gray;
 }
 
-.num1_img img{
+.num1Img img{
     height: 40px;
     width: 40px;
     margin-top: 3px;
     border-radius: 40px;
 }
 
-.right_num1{
+.rightNum1{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 5px 0;
 }
 
-.num1_name{
+.num1Name{
     margin-right: 70px;
 }
 
-.num1_subname{
+.num1Subname{
     color:gray;
     font-size: 13px;
 }
