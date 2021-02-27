@@ -3,27 +3,40 @@
  flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+}
 nav{
- border: 1px solid gray;
+ border-bottom: 1px solid gray;
+ background-color: white;
  width: 100%;
  height: 50px;
  position: fixed;
  left: 0;
  top: 0;
  font-family: 'Lobster', cursive;
- display: flex;
- justify-content: space-evenly;
+ /* display: flex;
+ flex-direction: column; */
+ justify-content: center;
+ box-sizing: border-box;
+}
+.nav_screen{
+    width: 1015px;
+    height: 40px;
+    display: flex;
+    margin-left: 170px;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .nav_title{
     font-size: 30px;
-    width: 20px;
-    height: 20px;
+    width: 130px;
 }
 
 .nav_text{
   width: 220px;
-  height: 30px;
+  height: 25px;
   margin: auto 0;
   text-align: center;
   font-family: "Font Awesome 5 Free";
@@ -36,45 +49,51 @@ nav{
     justify-content: space-around;
 }
 
-.nav_img1{
-    margin: auto 0;    
-    width: 30px;
-    height: 30px;
-}
-
-.nav_img2{
-    margin: auto 0;    
-    width: 30px;
-    height: 30px;
-}
-
-.nav_img3{
+.nav_img{
     margin: auto 0;    
     width: 30px;
     height: 30px;
 }
 
 main{
-border: 1px solid gray;
 width: 100%;
-height: 800px;
+height: 900px;
 display: flex;
 margin-top: 50px;
 }
 
 .feeds{
-    border: 1px solid gray;
     width: 700px;
     height: 100%;
     margin-left: 10%;
 }
 
-header{
+.header_box{
     border: 1px solid gray;
     width: 680px;
-    height: 10%;
-    margin: 5px auto;
+    height: 100px;
+    margin: 10px auto;
+    padding-left: 0;
+    display: flex;
+    overflow: auto;
+    overflow: hidden;
+}
 
+.header_box li{
+    list-style: none;
+    padding: 5px 0;
+    margin-left: 10px;
+}
+
+.header_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid red;   
+}
+
+.header_text{
+    text-align: center;
 }
 
 article{
@@ -84,10 +103,187 @@ article{
     margin: 20px auto;
 }
 
+
+.section_id{
+    height: 10%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section_id_logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.section_id_link{
+    position: relative;
+    bottom: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.section_id_more{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.section_img{
+    border: 0 solid gray;
+    height: 60%;
+}
+.section_img_png{
+    width: 100%;
+    height: 100%;
+}
+.section_icon{
+    height: 6%;
+    padding: 0 8px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_icon_img{
+  width: 25px;
+  height: 25px;
+  padding: 4px;
+}
+
+.section_like{
+    height: 4%;
+    display: block;
+    padding: 0 12px;
+    color: black;
+    font-weight: bold;
+}
+
+.section_hashtag{
+    height: 12%;
+    padding: 0 12px;
+}
+
+.section_hashtag_id{
+    color: black;
+    font-weight: bold;
+}
+
+.time_before{
+    font-size: 10px;
+    color: #8e8e8e;
+}
+
+.section_comment{
+    border-top: 1px solid gray;
+    height: 8%;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.comment_emoticon{
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: white;
+}
+
+.comment_emoticon img{
+    width: 24px;
+    height: 24px;
+}
+
+.comment_textarea{
+    width: 500px;
+    height: 18px;
+    max-height: 80px;
+    resize: none;
+}
+
+.comment_post{
+    width: 40px;
+    height: 20px;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+}
+
 .main-right{
     border: 1px solid gray;
     width: 300px;
     height: 400px;
     position: fixed;
     left: 70%;
+}
+.right_me{
+    border: 1px solid gray;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.right_img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.right_id_link{
+    position: relative;
+    bottom: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.right_name{
+    position: relative;
+    left: 70px;
+    bottom: 25px;
+    color: gray;
+}
+
+.right_me button{
+    border: none;
+    background-color: white;
+}
+
+.right_other{
+    border: 1px solid gray;
+    width: 300px;
+    height: 300px;
+}
+
+.others_pick{
+    border: 1px solid gray;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.others_pick div{
+    font-size: 14px;
+    color: gray;
+}
+
+.others_pick a{
+    color: black;
+    font-size: 13px;
+}
+
+.others{
+    border: 1px solid gray;
+    width: 300px;
+    height: 50px;
 }

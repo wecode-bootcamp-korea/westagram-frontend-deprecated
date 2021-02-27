@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="logo.png" rel="shortcut icon" type="image/x-icon">
+        <link href="images/logo.png" rel="shortcut icon" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <link rel="stylesheet" href="style/main.css">
@@ -12,20 +12,118 @@
     <body>
     <div class="screen">
         <nav>
-            <span class="nav_title">westagram</span>
-            <input class="nav_text" type="text" placeholder="&#xf002; 검색">
-            <span class="nav_imgbox">
-                <img class="nav_img1" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="search">
-                <img class="nav_img2" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart">
-                <img class="nav_img3" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="mypage">       
-            </span>
-        </nav>
-        <main>main
-            <div class="feeds">feeds
-                <header>header</header>
-                <article>article</article>
+            <div class="nav_screen">
+                <div class="nav_title">westagram</div>
+                <input class="nav_text" type="text" placeholder="&#xf002; 검색">
+                <span class="nav_imgbox">
+                     <img class="nav_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="search">
+                     <img class="nav_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart">
+                     <img class="nav_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="mypage">
+                </span>
             </div>
-            <div class="main-right">main-right</div>
+        </nav>
+        <main>
+            <div class="feeds">
+                <header class="header_box">
+                    <li>
+                       <img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                       <div class="header_text">wine</div>
+                    </li>
+                    <li>
+                         <img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li><img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li><img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li><img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li>
+                        <img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li>
+                        <img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li>
+                        <img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li>
+                        <img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                    <li>
+                        <img class="header_img" src="images/jocelyn.jpg" alt="wine">
+                        <div class="header_text">wine</div>
+                    </li>
+                </header>
+                <article>
+                    <section class="section_id">
+                        <li><img class="section_id_logo" src="images/jocelyn.jpg" alt="wine">
+                            <a class="section_id_link" href="#">wooyoung</a>
+                        </li>
+                        <li><a href="#"><img class="section_id_more" src="images/more.png" alt="more"></a></li>
+                    </section>
+
+                    <section class="section_img">
+                        <img class="section_img_png" src="images/jocelyn.jpg" alt="wine">
+                    </section>
+
+                    <section class="section_icon">
+                        <li><a href="#"><img class="section_icon_img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart"></a>
+                            <a href="#"><img class="section_icon_img" src="images/chat.png" alt="chat"></a>
+                            <a href="#"><img class="section_icon_img" src="images/navigation.png" alt="navigation"></a>
+                        </li>
+                        <li><a href="#"><img class="section_icon_img" src="images/bookmark.png" alt="bookmark"></a></li>
+                    </section>
+
+                    <a class="section_like" href="#">좋아요 552개</a>
+
+                    <section class="section_hashtag">
+                        <div>
+                            <a class="section_hashtag_id" href="#">wooyoung</a>
+                            "화이트 와인? 레드 와인?""
+                            <br>
+                            <a href="#">#wine</a>                          
+                            <a href="#">#와인</a>
+                        </div>
+                        <a class="time_before" href="#"><time datetime="#">4시간 전</time></a>                    
+                    </section>
+
+                    <section class="section_comment">
+                        <button class="comment_emoticon"><img src="images/smile.png" alt="smile"></button>
+                        <textarea class="comment_textarea"></textarea>
+                        <button class="comment_post">게시</button>
+                    </section>
+                </article>
+            </div>
+            <sidebar class="main-right">
+                <aside class="right_me">
+                    <li>
+                        <img class="right_img" src="images/jocelyn.jpg" alt="wine">
+                        <a class="right_id_link" href="#">wooyoung</a>
+                        <div class="right_name">김우영</div>
+                    </li>
+                    <li><button>게시</button></li>
+                </aside>
+                <aside class="right_other">
+                    <div class="others_pick">
+                        <div>회원님을 위한 추천</div>
+                        <a href="#">모두보기</a>                   
+                    </div>
+                    <div class="others"></div>
+                    <div class="others"></div>
+                    <div class="others"></div>
+                    <div class="others"></div>
+                    <div class="others"></div>
+                </aside>
+            </sidebar>
         </main>
     </div>
 </body>
