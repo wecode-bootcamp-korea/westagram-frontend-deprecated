@@ -1,7 +1,5 @@
-// 스토리 부분
-const headerImgList = document.querySelector('.left-content-header-ul');
-// 게시글 부분
-const leftContent = document.querySelector('.left-content');
+const headerImgList = document.querySelector('.main-content-header-ul');
+const mainContent = document.querySelector('.main-content');
 const contentHeaderImg = document.querySelector('.content-list-header-img');
 
 const contentHeaderObj = [

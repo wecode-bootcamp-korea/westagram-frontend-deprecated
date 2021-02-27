@@ -76,13 +76,13 @@
     max-width    : 645px;
     margin-right : 20px;
 }
-.main-section .left-content {
+.main-section .main-content {
     width : 100%;
 }
-.main-section .left-content .left-content-list {
+.main-section .main-content .main-content-list {
     background-color : #ffffff;
 }
-.main-section .left-content-header {
+.main-section .main-content-header {
     width      : 100%;
     height     : 100px;
     margin-top : 30px;
@@ -122,11 +122,11 @@
 }
 
 
-.left-content-header {
+.main-content-header {
     margin-bottom    : 20px;
     background-color : #ffffff;
 }
-.left-content-header-ul {
+.main-content-header-ul {
     display         : flex;
     justify-content : flex-start;
     align-items     : center;
@@ -134,7 +134,7 @@
     height          : 100%;
     padding         : 10px;
 }
-.left-content-header-ul .header-list {
+.main-content-header-ul .header-list {
     width  : 75px;
     height : 75px;
     margin : 0px 10px;
@@ -167,7 +167,7 @@
 .header-list-btn .header-list-name {
     font-size : 9px;
 }
-.left-content .left-content-list {
+.main-content .main-content-list {
     width         : 100%;
     height        : 100%;
     margin-bottom : 65px;
@@ -180,7 +180,7 @@
     height          : 55px;
     padding         : 0px 13px;
 }
-.list-left-box {
+.list-main-box {
     display : flex;
 }
 .content-list-header-img {
@@ -199,7 +199,7 @@
     flex-direction  : column;
     justify-content : center;
 }
-.left-content-list-viewmore {
+.main-content-list-viewmore {
     position        : relative;
     display         : flex;
     align-items     : center;
@@ -321,7 +321,6 @@
     color       : #d3e5f6;
 }
 
-/* 반응형*/
 @media (max-width : 1000px) {
     .aside-section {
         display : none;
