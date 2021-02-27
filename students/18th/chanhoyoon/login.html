@@ -1,66 +1,68 @@
 <!doctype html>
 <html lang="ko">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/common.css">
-   <link rel="stylesheet" href="css/login.css">
-   <link href="img/instagramlogo.png" rel="shortcut icon" type="image/x-icon">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-   <title>westagram login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link href="img/instagramlogo.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <title>westagram login</title>
 </head>
 <body>
 <div class="login">
-   <div class="login-container">
-      <div class="login-left-section">
-         <img src="/img/instagramlogin.png" alt="loginImage">
-         <article class="img-slide">
-            <img src="/img/loginImg1.png" class="img-slide-list" alt="image">
-            <img src="/img/loginImg2.png" class="img-slide-list" alt="image">
-            <img src="/img/loginImg3.png" class="img-slide-list" alt="image">
-            <img src="/img/loginImg4.png" class="img-slide-list" alt="imgae">
-         </article>
+  <div class="login-container">
+    <div class="login-left-section">
+      <img src="/img/instagramlogin.png" alt="loginImage">
+      <article class="img-slide">
+        <img src="/img/loginImg1.png" class="img-slide-list" alt="image">
+        <img src="/img/loginImg2.png" class="img-slide-list" alt="image">
+        <img src="/img/loginImg3.png" class="img-slide-list" alt="image">
+        <img src="/img/loginImg4.png" class="img-slide-list" alt="imgae">
+      </article>
+    </div>
+    <div class="login-right-section">
+      <div class="login-form">
+        <div class="logo">
+          <h1>Instagram</h1>
+        </div>
+        <form class="login-input-form" action="#">
+          <label for="login-id" class="input-action-box">
+            <span class="span-id">전화번호, 사용자 이름 또는 이메일</span>
+            <input type="text" class="login-id" id="login-id">
+          </label>
+          <label for="login-pw" class="input-action-box">
+            <span class="span-pw">비밀번호</span>
+            <input type="password" class="login-pw" id="login-pw">
+          </label>
+          <button class="login-btn" type="submit">
+            로그인
+          </button>
+        </form>
+        <div class="line">
+          <div class="line-draw"></div>
+          <div class="line-text">또는</div>
+          <div class="line-draw"></div>
+        </div>
+        <a href="" class="login-facebook">Facebook으로 로그인</a>
+        <a href="" class="search-pw">비밀번호를 잊으셨나요?</a>
       </div>
-      <div class="login-right-section">
-         <div class="login-form">
-            <div class="logo">
-               <h1>Instagram</h1>
-            </div>
-            <form class="login-input-form" action="#">
-               <label for="input-id" class="input-action-box">
-                  <span class="span-id">전화번호, 사용자 이름 또는 이메일</span>
-                  <input type="text" class="login-id" id="input-id">
-               </label>
-               <label for="input-pw" class="input-action-box">
-                  <span class="span-pw">비밀번호</span>
-                  <input type="password" class="login-pw" id="input-pw">
-               </label>
-               <button class="login-btn" type="submit">
-                  로그인
-               </button>
-            </form>
-            <div class="line">
-               <div class="line-draw"></div>
-               <div class="line-text">또는</div>
-               <div class="line-draw"></div>
-            </div>
-            <a href="" class="login-facebook">Facebook으로 로그인</a>
-            <a href="" class="search-pw">비밀번호를 잊으셨나요?</a>
-         </div>
-         <div class="join-form">
-            <p>계정이 없으신가요? <a a href="">가입하기</a></p>
-         </div>
-         <div class="app-install">
-            <p>앱을 다운로드하세요.</p>
-            <div class="app-link">
-               <a href=""><img src="img/appApple.png" alt="" class="app-image"></a>
-               <a href=""><img src="img/appAnd.png" alt="" class="app-image"></a>
-            </div>
-         </div>
+      <div class="join-form">
+        <p>계정이 없으신가요? <a a href="">가입하기</a></p>
       </div>
-   </div>
+      <div class="app-install">
+        <p>앱을 다운로드하세요.</p>
+        <div class="app-link">
+          <a href=""><img src="img/appApple.png" alt="" class="app-image"></a>
+          <a href=""><img src="img/appAnd.png" alt="" class="app-image"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="js/login.js"></script>
 </body>

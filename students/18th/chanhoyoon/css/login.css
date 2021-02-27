@@ -1,9 +1,9 @@
 body {
-    width            : 100%;
-    height           : 100vh;
     display          : flex;
     justify-content  : center;
     align-items      : center;
+    width            : 100%;
+    height           : 100vh;
     background-color : #fafafa;
 
 }
@@ -24,11 +24,11 @@ body {
 .img-slide {
     position         : absolute;
     top              : 92px;
-    left             : 137px;
     width            : 243px;
     height           : 433px;
-    overflow         : hidden;
+    left             : 137px;
     background-color : white;
+    overflow         : hidden;
 }
 .img-slide .img-slide-list {
     position : absolute;
@@ -65,11 +65,11 @@ body {
 }
 
 .login-right-section {
-    width          : 350px;
-    height         : 590px;
     display        : flex;
     flex-direction : column;
     align-items    : center;
+    width          : 350px;
+    height         : 590px;
 }
 .logo {
     margin-bottom : 25px;
@@ -79,21 +79,21 @@ body {
     font-size   : 50px;
 }
 .login-form {
-    width            : 100%;
-    height           : 380px;
     display          : flex;
     flex-direction   : column;
     justify-content  : center;
     align-items      : center;
+    width            : 100%;
+    height           : 380px;
     margin-bottom    : 15px;
     background-color : #ffffff;
 }
 .login-input-form {
-    width           : 100%;
     display         : flex;
     flex-direction  : column;
     align-items     : center;
     justify-content : center;
+    width           : 100%;
 }
 .login-input-form input {
     width            : 100%;
@@ -135,46 +135,45 @@ body {
     border-radius    : 4px;
     background-color : #c0dffe;
     color            : white;
+    cursor           : pointer;
 }
-.login-btn:hover {
-    cursor : pointer;
-}
+
 .line {
-    width           : 80%;
     display         : flex;
     justify-content : space-between;
     align-items     : center;
+    width           : 80%;
     margin-bottom   : 25px;
 }
 .line-draw {
-    border : 1px solid #999999;
     width  : 40%;
     height : 0px;
+    border : 1px solid #999999;
 }
 .line-text {
     color     : #999999;
     font-size : 15px;
 }
 .login-facebook {
-    font-size     : 15px;
     margin-bottom : 20px;
     color         : #385185;
+    font-size     : 15px;
     font-weight   : bold;
 }
 .search-pw {
-    font-size : 13px;
     color     : #1c4878;
+    font-size : 13px;
 }
 
 .join-form {
-    width            : 100%;
-    height           : 63px;
     display          : flex;
     justify-content  : center;
     align-items      : center;
-    font-size        : 14px;
+    width            : 100%;
+    height           : 63px;
     margin-bottom    : 15px;
     background-color : #ffffff;
+    font-size        : 14px;
 }
 .join-form p a {
     color       : #2d9ef7;
@@ -182,12 +181,12 @@ body {
 }
 
 .app-install {
-    width            : 100%;
-    height           : 100px;
     display          : flex;
     flex-direction   : column;
     align-items      : center;
     justify-content  : center;
+    width            : 100%;
+    height           : 100px;
     background-color : #fafafa;
 }
 .app-install p {
@@ -198,11 +197,8 @@ body {
     width         : 135px;
     height        : 40px;
     border-radius : 4px;
+    cursor        : pointer;
 }
-.app-image:hover {
-    cursor : pointer;
-}
-
 .login-form, .join-form {
     border : 1px solid #dbdbdb;
 }

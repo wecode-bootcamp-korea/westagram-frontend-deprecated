@@ -2,23 +2,20 @@
     width            : 100%;
     background-color : #efefef;
 }
-
 .main-container {
     position       : relative;
     display        : flex;
     flex-direction : column;
     align-items    : center;
 }
-
-/* nav 부분*/
 .nav {
     position         : fixed;
-    width            : 100%;
-    height           : 50px;
-    border-bottom    : 1px solid #dbdbdb;
     display          : flex;
     justify-content  : center;
     align-items      : center;
+    width            : 100%;
+    height           : 55px;
+    border-bottom    : 1px solid #dbdbdb;
     background-color : #ffffff;
     z-index          : 10;
 }
@@ -28,116 +25,114 @@
     align-items     : center;
     width           : 100%;
     max-width       : 950px;
+    margin          : 0 20px;
 }
-.nav-container .nav-text h1 {
+.nav-container .nav-text {
     font-family : 'Lobster', cursive;
     font-size   : 24px;
+    cursor      : pointer;
 }
 .nav-container .nav-search {
-    width            : 100%;
-    max-width        : 215px;
-    height           : 30px;
     display          : flex;
     justify-content  : space-between;
     align-items      : center;
+    width            : 100%;
+    max-width        : 215px;
+    height           : 30px;
     border           : 1px solid #dbdbdb;
     border-radius    : 4px;
     background-color : #fafafa;
 }
 .nav-container .nav-search i {
+    margin    : 0 5px;
     border    : none;
     font-size : 13px;
-    margin    : 0 5px;
     color     : #c7c7c7;
 }
 .nav-container .nav-search input {
-    border           : none;
     width            : 100%;
+    border           : none;
     background-color : #fafafa;
 }
 .nav-menu-list i {
-    font-size : 23px;
     color     : #262627;
+    font-size : 23px;
 }
 .nav-menu-list a:not(:last-child) {
     margin-right : 21px;
 }
 
-/* main big layout*/
-section.main {
+.container .main {
     position         : relative;
-    width            : 100%;
-    max-width        : 950px;
-    margin-top       : 50px;
     display          : flex;
     justify-content  : center;
-    border           : 2px solid red;
+    width            : 100%;
+    max-width        : 950px;
+    margin-top       : 55px;
     background-color : #efefef;
 }
-section.main .left-section {
+.container .main .main-section {
     width        : 100%;
     max-width    : 645px;
     margin-right : 20px;
-    border       : 3px solid green;
 }
-.left-section .left-content {
+.main-section .left-content {
     width : 100%;
 }
-.left-section .left-content .left-content-list {
+.main-section .left-content .left-content-list {
     background-color : #ffffff;
 }
-.left-section .left-content-header {
+.main-section .left-content-header {
     width      : 100%;
     height     : 100px;
-    border     : 2px solid darkorange;
     margin-top : 30px;
+    border     : 1px solid #dbdbdb;
 }
 
-section.main .right-section {
+.container .main .aside-section {
     position  : relative;
     width     : 100%;
     max-width : 285px;
     height    : 100%;
 }
-section.main .right-section .right-section-fixed {
+.container .main .aside-section .aside-section-fixed {
     position  : fixed;
+    top       : 50px;
     width     : 100%;
     max-width : 285px;
     height    : calc(100% - 50px);
-    top       : 50px;
-    border    : 7px solid blueviolet;
+    border    : 1px solid blueviolet;
 }
 
-.right-section-fixed .right-section-header {
+.aside-section-fixed .aside-section-header {
     width      : 100%;
     height     : 56px;
     margin-top : 30px;
     border     : 2px solid greenyellow;
 }
-.right-section-fixed .right-section-recommend {
+.aside-section-fixed .aside-section-recommend {
     width  : 100%;
     height : 300px;
     border : 2px solid lightseagreen;
 }
-.right-section-fixed .right-section-footer {
+.aside-section-fixed .aside-section-footer {
     width  : 100%;
     height : 106px;
     border : 2px solid orangered;
 }
 
-/* 세분화 부분 ------------------------------------- */
+
 .left-content-header {
     margin-bottom    : 20px;
     background-color : #ffffff;
 }
 .left-content-header-ul {
-    width           : 100%;
-    height          : 100%;
     display         : flex;
     justify-content : flex-start;
     align-items     : center;
+    width           : 100%;
+    height          : 100%;
     padding         : 10px;
-    overflow        : hidden;
 }
 .left-content-header-ul .header-list {
     width  : 75px;
@@ -155,9 +150,9 @@ section.main .right-section .right-section-fixed {
 }
 .header-list-btn .header-list-img-sircle {
     position      : absolute;
+    top           : 0px;
     width         : 58px;
     height        : 58px;
-    top           : 0px;
     border        : 1px solid black;
     border-radius : 50%;
 
@@ -165,9 +160,9 @@ section.main .right-section .right-section-fixed {
 .header-list-btn .header-list-img {
     width           : 55px;
     height          : 55px;
+    margin-bottom   : 5px;
     border-radius   : 50%;
     background-size : cover;
-    margin-bottom   : 5px;
 }
 .header-list-btn .header-list-name {
     font-size : 9px;
@@ -175,27 +170,26 @@ section.main .right-section .right-section-fixed {
 .left-content .left-content-list {
     width         : 100%;
     height        : 100%;
-    border        : 3px solid goldenrod;
     margin-bottom : 65px;
+    border        : 1px solid #dbdbdb;
 }
 .content-list-header {
-    height          : 55px;
-    padding         : 0px 13px;
     display         : flex;
     align-items     : center;
     justify-content : space-between;
-    border          : 1px solid red;
+    height          : 55px;
+    padding         : 0px 13px;
 }
 .list-left-box {
     display : flex;
 }
 .content-list-header-img {
-    width            : 32px;
-    height           : 32px;
-    margin-right     : 13px;
-    border-radius    : 50%;
-    /*background-image : url('https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=91HPV9vMJ5YAX8puYhc&tp=1&oh=dd8faa56de8a190fe7ca403a41c7efa5&oe=60604BF0');*/
-    background-size  : cover;
+    position        : relative;
+    width           : 32px;
+    height          : 32px;
+    margin-right    : 13px;
+    border-radius   : 50%;
+    background-size : cover;
 }
 .content-list-header-img:hover {
     cursor : pointer;
@@ -206,25 +200,134 @@ section.main .right-section .right-section-fixed {
     justify-content : center;
 }
 .left-content-list-viewmore {
-
+    position        : relative;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 24px;
+    height          : 24px;
 }
+
+.content-list-main {
+    width  : 100%;
+    height : 100%;
+}
+.list-main-img-ul {
+    display  : flex;
+    width    : 100%;
+    overflow : hidden;
+}
+.list-main-img-ul .img-list img {
+    width  : 643px;
+    height : 100%;
+}
+
 .content-list-header .list-channel .list-channel-name {
+    margin-bottom : 4px;
+    color         : black;
     font-size     : 14px;
     font-weight   : bold;
-    color         : black;
-    margin-bottom : 4px;
 }
 .list-channel-name:hover {
     text-decoration : underline;
 }
 .content-list-header .list-channel .list-channel-location {
-    font-size : 11px;
     color     : black;
+    font-size : 11px;
+}
+
+.list-description-header, .list-description-like, .list-description-post-content, .list-description-date {
+    padding : 8px;
+}
+.content-list-description {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : flex-start;
+    width           : 100%;
+}
+.content-list-description .list-description-header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+    height          : 40px;
+    margin-bottom   : 6px;
+}
+
+.list-description-header i {
+    font-size : 21px;
+}
+.list-description-header .header-icon button {
+    margin-right : 15px;
+}
+.list-description-header .header-img-length-icon {
+    margin-right : 100px;
+}
+.content-list-description .list-description-like {
+    height      : 18px;
+    font-weight : bold;
+    font-size   : 14px;
+}
+.like-count {
+    color : black;
+}
+.list-description-post-content {
+    width       : 100%;
+    line-height : 18px;
+    font-size   : 13px;
+}
+.channel-name {
+    font-weight : bold;
+    color       : black;
+}
+.channel-name:hover {
+    cursor : pointer;
+}
+.post-content-hashtag {
+    color       : #02539d;
+    font-weight : bold;
+}
+.list-description-date {
+    width         : 100%;
+    height        : 19px;
+    margin-bottom : 10px;
+    color         : #9f989e;
+    font-size     : 11px;
+}
+.list-description-comment {
+    display     : flex;
+    align-items : center;
+    width       : 100%;
+    min-height  : 56px;
+    padding     : 0px 8px;
+    border-top  : 1px solid #efefef;
+}
+.description-comment-form {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+}
+.comment-icon {
+    font-size : 23px;
+}
+
+.comment-input {
+    width       : 90%;
+    border      : none;
+}
+.comment-submit-btn {
+    font-weight : bold;
+    color       : #d3e5f6;
 }
 
 /* 반응형*/
 @media (max-width : 1000px) {
-    .right-section {
+    .aside-section {
         display : none;
+    }
+
+    .container .main .main-section {
+        margin : 0;
     }
 }
