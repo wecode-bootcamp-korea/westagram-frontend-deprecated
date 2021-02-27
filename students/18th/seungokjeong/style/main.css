@@ -97,9 +97,14 @@ body {
 .search-list:hover {
   background: #fafafa;
 }
-.search-list > img {
+.search-img-box {
+  display: flex;
+  border-radius: 50%;
+}
+.search-img-box img {
   width: 54px;
   height: 54px;
+  border: 2px solid #fff;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -276,7 +281,6 @@ main {
 }
 .content-article {
   margin: 25px 0;
-  border: 1px solid #dbdbdb;
   border-radius: 3px;
 }
 .article-title {
@@ -284,6 +288,9 @@ main {
   display: flex;
   align-items: center;
   padding: 15px;
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
   background: #fff;
 }
 .article-profile {
@@ -318,6 +325,8 @@ main {
 }
 .article-comments {
   padding: 10px;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
   background: #fff;
 }
 .comments-reaction {
@@ -392,6 +401,9 @@ main {
 .other-main {
   margin-right: 5px;
 }
+.user-main {
+  font-weight: 700;
+}
 .like-main:hover,
 .user-main:hover,
 .other-main:hover {
@@ -417,6 +429,9 @@ main {
   justify-content: flex-start;
   align-items: center;
   border-top: 1px solid #efefef;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
   background: #fff;
 }
 .article-myComment .fa-smile {

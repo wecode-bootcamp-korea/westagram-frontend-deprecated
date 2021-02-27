@@ -6,7 +6,6 @@ const scrollTrigger = document.querySelector(".scroll-trigger");
 const getUserName = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
-
 const { name } = getUserName();
 
 const toggleHeart = e => {
@@ -218,7 +217,7 @@ const loadArticle = () => {
 
     const articleImg = article.querySelector(".article-img");
     if (contentWrap.clientWidth - 70 > 300) {
-      articleImg.style.height = `${contentWrap.clientWidth - 114}px`;
+      articleImg.style.height = `${contentWrap.clientWidth - 151}px`;
     } else {
       articleImg.style.height = `300px`;
     }
@@ -228,7 +227,7 @@ const loadArticle = () => {
       const slideList = document.createElement("li");
       slideList.classList.add("slide-list");
       slideList.innerHTML = `
-      <img src="${image}" width="${articleSlide.clientWidth}" alt="게시물 이미지"/>`;
+      <img src="${image}" alt="게시물 이미지"/>`;
       articleSlide.append(slideList);
     });
 
@@ -283,23 +282,24 @@ loadArticle();
 observer.observe(scrollTrigger);
 
 window.addEventListener("resize", () => {
-  const slideList = document.querySelectorAll(".slide-list");
   const articleImg = document.querySelectorAll(".article-img");
 
-  slideList.forEach(list => {
-    const image = list.querySelector("img");
-    image.width = contentWrap.clientWidth - 2;
-  });
   articleImg.forEach(article => {
     const articleSlide = article.querySelector(".article-slide");
+    const leftValue = Number(articleSlide.style.left.split("px")[0]);
     const prevButton = article.querySelector(".prev");
     const nextButton = article.querySelector(".next");
 
-    articleSlide.style.left = `0px`;
-    prevButton.classList.remove("active");
-    nextButton.classList.add("active");
-    if (contentWrap.clientWidth - 114 > 300) {
-      article.style.height = `${contentWrap.clientWidth - 114}px`;
+    if (leftValue !== 0) {
+      articleSlide.style.left = `0px`;
+      prevButton.classList.remove("active");
+      nextButton.classList.add("active");
+    }
+
+    article.style.width = `${contentWrap.clientWidth}px`;
+    // 이미지 min-height는 300px
+    if (contentWrap.clientWidth - 151 > 300) {
+      article.style.height = `${contentWrap.clientWidth - 151}px`;
     } else {
       article.style.height = `300px`;
     }

@@ -1,4 +1,5 @@
 import userData from "./userData.js";
+
 window.onload = function () {
   const body = document.querySelector("body");
   const feedWrap = document.querySelector(".feed-wrap");
@@ -12,6 +13,10 @@ window.onload = function () {
   const rightRecommand = document.querySelector(".right-recommend");
   const prevButton = document.querySelector(".feed-prev");
   const nextButton = document.querySelector(".feed-next");
+
+  const toggleProfile = () => {
+    subOption.classList.toggle("active");
+  };
 
   const initStoryButton = () => {
     const feedList = document.querySelectorAll(".feed-list");
@@ -57,7 +62,6 @@ window.onload = function () {
     });
   };
 
-  let left = 0;
   const moveStory = e => {
     const target = e.target;
     const feedList = document.querySelectorAll(".feed-list");
@@ -65,77 +69,63 @@ window.onload = function () {
     const totalWidth = (feed.clientWidth + 15) * feedList.length;
     const feedWrapWidth = feedWrap.clientWidth;
     const widthGap = totalWidth - feedWrapWidth;
+    let leftValue = Number(feedWrap.style.left.split("px")[0]);
     let moveSize;
 
     if (feedWrapWidth + 15 < 243) {
+      // 화면크기가 243px 보다 작을 경우
       moveSize = feedWrapWidth + 15;
     } else {
       moveSize = widthGap + 15 >= 243 ? 243 : widthGap;
     }
     if (target === prevButton) {
-      if (left + widthGap >= 243) {
-        left = 0;
-        feedWrap.style.left = `${left}px`;
+      leftValue += moveSize;
+      if (leftValue >= 0) {
+        leftValue = 0;
+        feedWrap.style.left = `${leftValue}px`;
         prevButton.classList.remove("active");
         nextButton.classList.add("active");
       } else {
-        left += moveSize;
-        if (left > 0) {
-          feedWrap.style.left = `0px`;
-          prevButton.classList.remove("active");
-          nextButton.classList.add("active");
-        } else {
-          feedWrap.style.left = `${left}px`;
-          prevButton.classList.add("active");
-          nextButton.classList.add("active");
-        }
+        feedWrap.style.left = `${leftValue}px`;
+        prevButton.classList.add("active");
+        nextButton.classList.add("active");
       }
     } else if (target === nextButton) {
-      if (widthGap + left < 243) {
-        left = -(widthGap + 15);
-        feedWrap.style.left = `${left}px`;
+      leftValue -= moveSize;
+      if (leftValue * -1 >= widthGap) {
+        feedWrap.style.left = `${-(widthGap + 15)}px`;
         prevButton.classList.add("active");
         nextButton.classList.remove("active");
       } else {
-        left -= moveSize;
-        if (left * -1 > widthGap) {
-          feedWrap.style.left = `${-(widthGap + 15)}px`;
-          prevButton.classList.remove("active");
-          nextButton.classList.add("active");
-        } else {
-          feedWrap.style.left = `${left}px`;
-          prevButton.classList.add("active");
-          nextButton.classList.add("active");
-        }
+        feedWrap.style.left = `${leftValue}px`;
+        prevButton.classList.add("active");
+        nextButton.classList.add("active");
       }
     } else return;
-  };
-
-  const toggleProfile = () => {
-    subOption.classList.toggle("active");
   };
 
   initStory();
   initStoryButton();
   initProfiile();
   initRecommend();
+
   profile.addEventListener("click", toggleProfile);
   feedButtonWrap.addEventListener("click", moveStory);
   search.addEventListener("keyup", e => {
     const value = e.target.value;
     if (value) {
       searchView.innerHTML = "";
-      searchView.classList.add("active");
       const filterData = userData.filter(data => data.username.includes(value));
-      if (filterData.length === 0) searchView.classList.remove("active");
+      if (filterData.length === 0) return;
       else {
+        searchView.classList.add("active");
         filterData.map(data => {
           const searchList = document.createElement("li");
           searchList.classList.add("search-list");
           searchList.innerHTML = `
-          <img class="${data.storyActive ? "story-active" : ""}" src="${
-            data.imgUrl
-          }" alt="프로필"/>
+          <div class="${
+            data.storyActive ? "story-active" : ""
+          } search-img-box"><img src="${data.imgUrl}" alt="프로필"/></div>
           <div class="search-description">
             <h2>${data.username}</h2>
             <span>${data.name}</span>
@@ -158,3 +148,16 @@ window.onload = function () {
     }
   });
 };
+
+window.addEventListener("resize", () => {
+  const feedWrap = document.querySelector(".feed-wrap");
+  const leftValue = Number(feedWrap.style.left.split("px")[0]);
+  const prevButton = document.querySelector(".feed-prev");
+  const nextButton = document.querySelector(".feed-next");
+
+  if (leftValue !== 0) {
+    feedWrap.style.left = "0px";
+    prevButton.classList.remove("active");
+    nextButton.classList.add("active");
+  } else return;
+});
