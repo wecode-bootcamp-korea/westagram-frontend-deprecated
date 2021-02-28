@@ -40,17 +40,8 @@ inputComment.addEventListener('submit', (e) => {
     }
 })
  
-
-
-heartIcon.addEventListener('click', (e) => {   
-    
-        heartIcon.remove();
-        let a = document.createElement('a');
-        a.className="heartIcon";
-        iconBox.prepend(a)
-        let i = document.createElement('i');
-        i.className="fas fa-heart fa-2x";
-        i.style.color='red';
-        a.appendChild(i);
-});
+heartIcon.addEventListener('click', () => {   
+        heartIcon.style.color==='red' ?(heartIcon.innerHTML='<i class="far fa-heart fa-2x"></i>', heartIcon.style.color='black') 
+        :(heartIcon.innerHTML='<i class="fas fa-heart fa-2x"></i>', heartIcon.style.color='red')
+});//게시글 좋아요
 
