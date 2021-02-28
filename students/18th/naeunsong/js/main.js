@@ -6,7 +6,7 @@ const userId = "songbetter";
 commentBtn.addEventListener("click", function(){
     const comment = document.querySelector(".textArea").value;
     const li = document.createElement('li');
-    const ul = document.querySelector(".commentArea");
+    const ul = document.querySelector(".commentList");
     li.innerHTML = `<a>${userId}</a> ${comment}`;
     ul.appendChild(li);
     document.querySelector(".textArea").value = "";
@@ -14,6 +14,6 @@ commentBtn.addEventListener("click", function(){
 
 textArea.addEventListener("keydown", function(e){
     if (e.keyCode == 13){
-        let a = commentBtn.click();
+        commentBtn.click()
 }})
 

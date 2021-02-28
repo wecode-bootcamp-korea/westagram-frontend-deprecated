@@ -16,38 +16,41 @@
         <h1 class="logo">Westagram</h1>
         <div class="searchBar">
         <input type="text" placeholder="검색" class="search">
-        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" height="20px">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png" height="20px" alt="search icon">
       </div>
         <nav>
-          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
-          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="explore icon"> 
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart icon">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="mypage icon">
         </nav>
     </header>
     <main>
-      <div class="feeds">
-            <div class="article">
-                <div class="articleProfile">
-                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=G1pc0slT5dYAX-0PnDa&tp=1&oh=a7a51c4739ea8b87566b329ecdc33b43&oe=605C5770">
+      <article class="feeds">
+            <article class="feed">
+                <section class="articleProfile">
+                    <img alt="wecode 프로필 이미지" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=G1pc0slT5dYAX-0PnDa&tp=1&oh=a7a51c4739ea8b87566b329ecdc33b43&oe=605C5770">
                     <div class="info">
                     <a>wecode_bootcamp</a>
                     <span>WeCode - 위코드</span>
                     </div>
-                </div>
-                <div class="feed1">
-                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/150915321_179560660629368_165943275422580666_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=uCmsp3r2d7MAX930Q5z&tp=1&oh=40938acaff43a67bb9a8187dccb1abc0&oe=605FCAA5">
-                  <div class="likeShare">
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--하트이미지-->
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--댓글이미지-->
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--공유-->
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--저장-->
-                 </div>
-                </div>
-                <div class="feedInfo">
+                </section>
+                <section class="feedImg">
+                    <img alt="위코드 부트캠프 실내 이미지 안에 SOLDOUT이라고 쓰여있다." src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/150915321_179560660629368_165943275422580666_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=uCmsp3r2d7MAX930Q5z&tp=1&oh=40938acaff43a67bb9a8187dccb1abc0&oe=605FCAA5">
+                </section>
+                <section class="likeShare">
+                    <img alt="heart icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" width="24px">
+                    <img alt="heart icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" width="24px">  
+                    <img alt="heart icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" width="24px"> 
+                    <img alt="heart icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" width="24px">
+                    <h4>좋아요 100개</h4>
+                </section>
+                <section class="feedInfo">
                   <div class="feedInfo1">
                     <a>wecode_bootcamp</a> <span>위코드는 단순 교육업체가 아닌 개발자 커뮤니티 입니다. wecode에서 배우고 저는 총 5개 회사에서 오퍼를 받았습니다.</span>
                   </div>
-                  <ul class="commentArea">
+                </section>
+                <section class="commentArea">
+                  <ul class="commentList">
                     <li>
                       <a>songbetter</a>
                       <span>저도 가고 싶어요!</span>
@@ -57,70 +60,31 @@
                       <span>저도 가고 싶어요!</span>
                     </li>
                   </ul>
-                  <p>1시간 전</p>
-                </div>
+                  <span>1시간 전</span>
                 <div class="comment">
-                  <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
+                  <img alt="emoji icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" height="24px">
                   <textarea placeholder="댓글 달기..." class="textArea"></textarea>
                   <button class="commentBtn">게시</button>
                 </div>
-            </div>
-            <div class="article">
-                <div class="articleProfile">
-                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=G1pc0slT5dYAX-0PnDa&tp=1&oh=a7a51c4739ea8b87566b329ecdc33b43&oe=605C5770">
-                    <div class="info">
-                    <a>wecode_bootcamp</a>
-                    <span>WeCode - 위코드</span>
-                    </div>
-                </div>
-                <div class="feed">
-                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/150915321_179560660629368_165943275422580666_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=uCmsp3r2d7MAX930Q5z&tp=1&oh=40938acaff43a67bb9a8187dccb1abc0&oe=605FCAA5">
-                  <div class="likeShare">
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--하트이미지-->
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--댓글이미지-->
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--공유-->
-                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> <!--저장-->
-                 </div>
-                </div>
-                <div class="feedInfo">
-                  <div class="feedInfo1">
-                    <a>wecode_bootcamp</a> <span>위코드는 단순 교육업체가 아닌 개발자 커뮤니티 입니다. wecode에서 배우고 저는 총 5개 회사에서 오퍼를 받았습니다.</span>
-                  </div>
-                  <ul class="commentArea">
-                    <li>
-                      <a>songbetter</a>
-                      <span>저도 가고 싶어요!</span>
-                    </li>
-                    <li>
-                      <a>songbetter</a>
-                      <span>저도 가고 싶어요!</span>
-                    </li>
-                  </ul>
-                  <p>1시간 전</p>
-                </div>
-                <div class="comment">
-                  <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
-                  <textarea placeholder="댓글 달기..." class="textArea"></textarea>
-                  <button class="commentBtn">게시</button>
-                </div>
-            </div>
-        </div>
-        <div class="mainRight">
-            <div class="mainRightProfile">
-                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/120448479_975679696266669_3341802946101100591_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=3Y26-0VV8lUAX-Q-nEI&tp=1&oh=465a7e09af8e32eecf62d726ffa9ecdd&oe=605C9F0B">
+              </section>
+            </article>
+        </article>
+        <aside class="mainRight">
+            <section class="mainRightProfile">
+                <img alt="sonbetter 프로필 이미지" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/120448479_975679696266669_3341802946101100591_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=3Y26-0VV8lUAX-Q-nEI&tp=1&oh=465a7e09af8e32eecf62d726ffa9ecdd&oe=605C9F0B">
                 <div class="info">
                 <a>songbetter</a>
                 <span>송나은</span>
                 </div>
                 <div class="changeUser"><a>전환</a>
                 </div>
-            </div>
-            <div class="recommend">
+            </section>
+            <section class="recommend">
                 <div class="recommendText">
                     <span>회원님을 위한 추천</span>
                 </div>
                 <div class="recommendInfo1">
-                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/120448479_975679696266669_3341802946101100591_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=3Y26-0VV8lUAX-Q-nEI&tp=1&oh=465a7e09af8e32eecf62d726ffa9ecdd&oe=605C9F0B">
+                    <img alt="sonbetter 프로필 이미지" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/120448479_975679696266669_3341802946101100591_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=3Y26-0VV8lUAX-Q-nEI&tp=1&oh=465a7e09af8e32eecf62d726ffa9ecdd&oe=605C9F0B">
                     <div class="info">
                         <a>songbetter</a>
                         <span>송나은</span>
@@ -128,15 +92,15 @@
                     <div class="follow"><a>팔로우</a></div>
                 </div>
                 <div class="recommendInfo2">
-                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=G1pc0slT5dYAX-0PnDa&tp=1&oh=a7a51c4739ea8b87566b329ecdc33b43&oe=605C5770">
+                    <img alt="wecode 프로필 이미지" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=G1pc0slT5dYAX-0PnDa&tp=1&oh=a7a51c4739ea8b87566b329ecdc33b43&oe=605C5770">
                     <div class="info">
                     <a>wecode_bootcamp</a>
                     <span>WeCode - 위코드</span>
                     </div>
                     <div class="follow"><a>팔로우</a></div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </aside>
     </main>
     <script src="./js/main.js"></script>
 </body>

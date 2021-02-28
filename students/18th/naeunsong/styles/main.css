@@ -64,7 +64,7 @@ main{
   padding-top: 90px;
   }
 
-.article{
+.feed{
   padding-bottom: 10px;
 }
 
@@ -93,25 +93,16 @@ main{
   margin-left: 10px;
 }
 
-.feed img{
+.feedImg{
   width: 100%;
 }
 
-.feedInfo{
+.feedInfo,.likeShare, .commentArea{
   padding: 0px 16px;
 }
 
-.commentArea{
-  padding: 0;
-}
-
-.likeShare{
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.likeShare img{
-  width: 24px;
+.commentList{
+  padding: 0px;
 }
 
 .comment{
@@ -122,10 +113,6 @@ main{
   padding: 0px 16px;
   height: 55px;
   background-color: white;
-}
-
-.comment img{
-  height: 24px;
 }
 
 .textArea{
@@ -154,6 +141,7 @@ main{
     display: flex;
     justify-content: space-between;
   }
+
   .mainRight{
     display: flex;
     flex-direction: column;
@@ -163,9 +151,11 @@ main{
     height: 100%;
     max-width: 293px;
   }
+
   .mainRight .info{
     width: 20vw;
   }
+
   .mainRightProfile img{
     height: 32px;
   }
@@ -174,11 +164,13 @@ main{
     height: 56px;
     border-radius: 50px;
   }
+
   .changeUser, .follow{
     color: #0095f6;
     width: 6vw;
     text-align: end;
   }
+
   .mainRightProfile,.recommendInfo2, .recommendInfo1{
     display: flex;
     align-items: center;
@@ -189,9 +181,11 @@ main{
     display: flex;
     flex-direction: column;
   }
+
   .recommendText{
     padding: 4px 16px;
   }
+  
   .recommend img{
     height: 32px;
   }

@@ -3,7 +3,7 @@ body{
     align-items: center;
 }
   
-.container{
+section{
     width: 350px;
     height: 380px;
     border: 1px solid #dbdbdb;
@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: auto;
     background-color: white;
 }

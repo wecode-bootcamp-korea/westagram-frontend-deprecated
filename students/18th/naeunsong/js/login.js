@@ -5,10 +5,5 @@ thisIsPw.addEventListener("keyup", function(){
     const user_id = document.getElementById('user_id').value;
     const user_password = document.getElementById('user_password').value;
     
-    if(user_id && user_password){
-        login_btn.className = "active_btn"
-    }
-    else{
-        login_btn.className = "" 
-    }
+    login_btn.className = user_id && user_password ? 'active_btn' : ''
 })
