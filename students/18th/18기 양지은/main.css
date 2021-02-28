@@ -60,10 +60,14 @@ body {
   margin-right: 17px;
 }
 
-main {
+.main_container {
   position: relative;
   width: 900px;
   height: 1300px;
+}
+
+.total-section {
+  position: relative;
 }
 
 .feeds {
@@ -210,13 +214,20 @@ main {
   margin-top: 25px;
 }
 
+.wrap_sideright {
+  porition: absolute;
+}
+
+.sideright_container {
+  position: absolute;
+}
+
 .side_right {
   position: fixed;
   z-index: 6;
   width: 300px;
   top: 100px;
-  right: 190px;
-  border: 2px solid black;
+  right: 180px;
 }
 
 .about_me {
@@ -231,6 +242,56 @@ main {
   border-radius: 70%;
 }
 
-.total-section {
+.yang {
+  margin-top: 12px;
+  margin-left: 13px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.first {
   display: flex;
+  justify-content: space-between;
+}
+
+.id {
+  color: grey;
+  margin-top: -30px;
+  margin-left: 72px;
+  font-size: 14px;
+}
+
+.change {
+  color: rgb(40, 169, 250);
+  margin-top: -40px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend {
+  color: rgb(125, 139, 153);
+  margin-top: 13px;
+  margin-left: 13px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.recommend_side {
+  margin-top: 13px;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.their_description {
+  color: grey;
+  margin-top: -30px;
+  margin-left: 73px;
+  font-size: 12px;
 }

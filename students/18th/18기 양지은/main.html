@@ -1,79 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Westagram main page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westagram main page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="header">
-    <div class="header_container">
-      <h1 class="name">Westagram</h1>
-    <div class="header_bar">
-        <input class="search_bar" type="text"></input>
-        <i class="fas fa-search"></i>
-    </div>
-      <div class ="icons">
-        <i class="fas fa-home"></i>
-        <i class="far fa-comments"></i>
-        <i class="far fa-compass"></i>
-        <i class="far fa-heart"></i>
-        <img class="myaccount" src="https://media.vlpt.us/images/poohv7/post/d60edb23-650d-4c2b-8880-b5b6aa66d320/my%20profile.jpg">
-      </div>
-     </div>
-     </nav>
-        <main class="main_container">
-            <section class="total-section">
-        <div class="feeds">
-            <section class="section1">
-            <div class="accouninfo">
-                <img class="profile" src="https://media.vlpt.us/images/poohv7/post/d60edb23-650d-4c2b-8880-b5b6aa66d320/my%20profile.jpg">
-                <div class="account_id">yang_ji_eun</div>
-                <div class="information">•••</div>
+    <nav class="header">
+        <div class="header_container">
+            <h1 class="name">Westagram</h1>
+            <div class="header_bar">
+                <input class="search_bar" type="text"></input>
+                <i class="fas fa-search"></i>
             </div>
-            <div class="wrap_location">
-                <div class="location">Brisbane Australia</div>
-            </div>   
-            </section>
-            <section class="section2">
-                <img class="main_photo" src="https://media.vlpt.us/images/poohv7/post/ab43d22f-6e37-4150-be54-3e425a973086/main%20photo.jpg">
-            </section>
-            <section class="section3">
-                <div class="icons2">
-                <i class="fas fa-grin-hearts" onclick="change_color()"></i>
-                <i class="far fa-comment-dots"></i>
-                <i class="far fa-paper-plane"></i>
+            <div class ="icons">
+                <i class="fas fa-home"></i>
+                <i class="far fa-comments"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+                <img class="myaccount" src="https://media.vlpt.us/images/poohv7/post/d60edb23-650d-4c2b-8880-b5b6aa66d320/my%20profile.jpg">
             </div>
-                <i class="far fa-bookmark"></i>
-            </section>
-            <section class="section4">
-                <div class="like_number">좋아요 20,549개</div>
-                <div class="descriptioninfo">
-                <div class="description">yang_ji_eun</div> 
-                <div class="description2">조명맛집들</div>
-            </div>
-                <div class="time">5시간 전</div>
-            </section>
-            <section class="comment_bar">
-                <div class="comment_box">
-                <i class="far fa-smile"></i>
-                <input class="textarea" type="text" placeholder="댓글 달기..."></input>
-            </div>
-                <div class="enter">게시</div>
-            </section>
         </div>
-        <div class="side_right">
+    </nav>
+    <main class="main_container">
+        <section class="total-section">
+            <div class="feeds">
+                <section class="section1">
+                    <div class="accouninfo">
+                        <img class="profile" src="https://media.vlpt.us/images/poohv7/post/d60edb23-650d-4c2b-8880-b5b6aa66d320/my%20profile.jpg">
+                        <div class="account_id">yang_ji_eun</div>
+                        <div class="information">•••</div>
+                    </div>
+                    <div class="wrap_location">
+                        <div class="location">Brisbane Australia</div>
+                    </div>
+                </section>
+                <section class="section2">
+                    <img class="main_photo" src="https://media.vlpt.us/images/poohv7/post/ab43d22f-6e37-4150-be54-3e425a973086/main%20photo.jpg">
+                </section>
+                <section class="section3">
+                    <div class="icons2">
+                        <i class="fas fa-grin-hearts" onclick="change_color()"></i>
+                        <i class="far fa-comment-dots"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <i class="far fa-bookmark"></i>
+                </section>
+                <section class="section4">
+                    <div class="like_number">좋아요 20,549개</div>
+                    <div class="descriptioninfo">
+                        <div class="description">yang_ji_eun</div>
+                        <div class="description2">조명맛집들</div>
+                    </div>
+                    <div class="time">5시간 전</div>
+                </section>
+                <section class="comment_bar">
+                    <div class="comment_box">
+                        <i class="far fa-smile"></i>
+                        <input class="textarea" type="text" placeholder="댓글 달기..."></input>
+                    </div>
+                    <div class="enter">게시</div>
+                </section>
+            </div>
+            <section class="wrap_sideright">
+            <div class="side_right">
+                <div class="about_me">
+                    <img class="me" src="https://media.vlpt.us/images/poohv7/post/d60edb23-650d-4c2b-8880-b5b6aa66d320/my%20profile.jpg">
+                    <div class="yang">yang_ji_eun</div>
+                </div>
+                    <div class="first">
+                    <div class="id">지은</div>
+                    <div class="change">전환</div>
+                </div>
+                <div class="second">
+                <div class="recommend">회원님을 위한 추천</div>
+                <div class="recommend_side">모두 보기</div>
+            </div>
             <div class="about_me">
-            <img class="me" src="https://media.vlpt.us/images/poohv7/post/d60edb23-650d-4c2b-8880-b5b6aa66d320/my%20profile.jpg">yang_ji_eun</div>
-            <div class="change"></div>
+                <img class="me" src="https://media.vlpt.us/images/poohv7/post/8011c9a2-97ac-4f26-9a59-4226809b10fa/KakaoTalk_20210225_133013188.jpg">
+                <div class="yang">wombat</div>
+            </div>
+                <div class="first">
+                <div class="their_description">안녕하세요 웜뱃입니다.</div>
+                <div class="change">팔로우</div>
+            </div>
+            <div class="about_me">
+                <img class="me" src="https://media.vlpt.us/images/poohv7/post/821a116f-1508-4417-b100-905ffa4e473d/KakaoTalk_20210225_132834557.jpg">
+                <div class="yang">cat</div>
+            </div>
+                <div class="first">
+                <div class="their_description">My favorite food is cake! F4F</div>
+                <div class="change">팔로우</div>
+            </div>
+            <div class="about_me">
+                <img class="me" src="https://media.vlpt.us/images/poohv7/post/34d9f7e2-0921-46bc-aacc-6a33a85781c5/KakaoTalk_20210225_133012878.jpg">
+                <div class="yang">platypus</div>
+            </div>
+                <div class="first">
+                <div class="their_description">92년생, 주로 물가에 서식</div>
+                <div class="change">팔로우</div>
+            </div>
+            <div class="about_me">
+                <img class="me" src="https://media.vlpt.us/images/poohv7/post/2b4246cc-4cb9-46ee-a9d8-fb938612384f/KakaoTalk_20210225_133011781.jpg">
+                <div class="yang">i_am_a_dog</div>
+            </div>
+                <div class="first">
+                <div class="their_description">강아지(30)</div>
+                <div class="change">팔로우</div>
+            </div>
+            <div class="about_me">
+                <img class="me" src="https://media.vlpt.us/images/poohv7/post/be1b1e79-b823-4aae-9cfb-096281eda8e4/1.jpg">
+                <div class="yang">quokka</div>
+            </div>
+                <div class="first">
+                <div class="their_description">이런 귀한 곳에 누추한 분이...</div>
+                <div class="change">팔로우</div>
+            </div>
         </div>
-    </section>
+            </section>
+            </section>
         </main>
-<script type="text/javascript" src="main.js"></script>    
-</body>
+        <script type="text/javascript" src="main.js"></script>    
+    </body>
 </html>
