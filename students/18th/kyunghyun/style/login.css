@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /*길이에 border까지 포함*/
     background-color: #ececec;
    }
 
@@ -8,18 +8,18 @@
     background-color: white;
     width: 550px;
     height: 600px;
-    margin: 100px auto;
+    margin: 100px auto; /*블록 요소 가운데 정렬*/
     padding: 70px;
     border: 1.5px solid #cecece;
     border-radius: 2px;
-    position: relative; /*p.text에 position: absolute; 주기 위해*/
+    position: relative; /*하단 텍스트 p.text에 position: absolute; 주기 위해*/
 }
 
 h1 {
     background-color: white;
     font-family: 'Lobster', cursive;
     font-size: 60px;
-    text-align: center;
+    text-align: center; /*텍스트 가운데 정렬*/
     margin: 0 0 50px 0;
 }
 
@@ -31,17 +31,17 @@ input {
     display: block;
     width: 100%;
     height: 50px;
-    margin: 8px auto;
+    margin: 8px 0;
     padding: 8px;
     border: 1px solid #cecece;
     border-radius: 5px;
     font-size: 14px;    
 }
 
+/*input 안의 텍스트 색깔 바꾸기*/
 input::placeholder {  
     color: #a1a1a1; 
-} /*input 안의 텍스트 색깔 바꾸기*/
-
+} 
 
 
 .btn {
@@ -51,14 +51,13 @@ input::placeholder {
     display: block;
     width: 100%;
     height: 50px;
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 8px;
     border-radius: 5px;
     border: none;
     font-size: 18px;
     opacity: 0.3;
 }
-
 
 a.text {
     background-color: white;
@@ -68,7 +67,6 @@ a.text {
 
     position: absolute; /*부모인 .border에 relative를 줌*/
     left: 0;
-    right: 0;   /*left:0;과 right: 0;을 동시에 주면 width:100% 준 것과 같은 효과*/
+    right: 0; /*left:0;과 right: 0;을 동시에 주면 width:100% 준 것과 같은 효과*/
     bottom: 30px;
-
 }

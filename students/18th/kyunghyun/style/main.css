@@ -1,47 +1,46 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    background-color: #d8d8d8;
+    color: #424242;
+    font-size: 14px;
    }
 
-   nav {
+   nav { /*상단바 전체*/
        background-color: white;
-       border: 1px solid red;
        height: 60px;
        font-family: 'Lobster', cursive;
        padding: 10px;
    }
 
-   .navBox {
-        background-color: white;
-        
+   .navBox { /*상단바 중앙 박스*/
         /* .navBox 안의 요소를 정렬 */
         display: flex;  
         justify-content: space-between;
         align-items: center;
         
         /* .navBox를 nav의 가운데 정렬 */
-        width: 85%;
+        width: 70%;
         margin: 0 auto;
    }
 
-   .navBox span {
+   .navBox span { /*Westagram*/
     font-size: 25px;
-    background-color: white;
-
    }
 
-   .icons {
-    background-color: white;
+   .searchInput { /*검색창*/
+       background-color: #eeeeee;
+       border: 1px solid #c0c0c0;
+       border-radius: 3px;
+       width: 190px;
+       height: 27px;
+       text-align: center;
    }
 
-   .icons img {
-       background-color: white;
-       width: 30px;
-       height: 30px;
+   .icons img { /*인덱스 아이콘*/
+       width: 25px;
+       height: 25px;
+       margin: 0 5px;
    }
-
-
 
 
 
@@ -49,41 +48,116 @@
 
 
    main {
-       border: 1px solid yellow;
-       height: auto;
-       background-color: #d8d8d8;
-       
+       background-color: #eeeeee;
    }
 
-   .centerBox {
-    border: 1px solid green;
+   .centerBox { /*메인 중앙 박스*/
     /* .navBox와 똑같이 맞춤 */
-    width: 85%;
+    width: 70%;
     margin: 0 auto;
+    padding: 15px 0;
 
     display: flex;
     justify-content: space-between;
     
    }
 
-   .feeds {
-    border: 1px solid blue;
+   .storiesAndFeeds { /*메인 왼쪽 스토리&피드*/
+    /* border: 2px solid orange; */
     width: 500px;
-    height: auto;
-    background-color: white;
    }
 
-   div article {
-    border: 1px solid purple;
-    width: 450px;
-    height: 700px;
-    margin: 0 auto;
+   .stories { 
     background-color: white;
+    border: 1px solid #c0c0c0;
+    height: 90px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
    }
 
-   div article img {
+
+   .story {
+    width: 50px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+   }
+
+   .story img {
+    width: 50px;
+    border-radius: 50%; 
+    margin-bottom: 3px;
+   }
+
+
+   .story span {
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+   }
+
+
+
+
+   .feeds {
+    background-color: #eeeeee;
+    margin: 15px 0;
+   }
+
+   .feed {
+    background-color: white;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 50px;
+   }
+
+   .profile {
+       height: 50px;
+       font-weight: 700;
+       display: flex;
+       align-items: center;
+   }
+
+   .smallProfile {
+       width: 30px;
+       border-radius: 50%;
+       margin: 10px; 
+   }
+
+
+   .feedImg {
        width: 100%
    }
+
+
+   .reply {
+       height: auto;
+       padding: 10px;
+   }
+
+   .userId {
+       font-weight: 800;
+       margin-right: 5px;
+   }
+   .reply ul {
+       list-style: none;
+       padding-left: 0px; 
+    }
+
+   .replyInput {
+       border-top: 1px solid #c0c0c0;
+       border-bottom: none;
+       border-left: none;
+       border-right: none;
+   
+       width: 100%;
+       height: 45px;
+       padding: 10px;
+   }
+
+
+
 
 
 
@@ -94,31 +168,81 @@
 
 
    .main-right {
-    border: 1px solid cyan;
+    /* border: 1px solid #c0c0c0; */
     width: 320px;
-    height: 400px;
+    margin-left: 20px;
    }
+
+   .myId {
+       display: flex;
+       align-items: center;
+       padding: 10px;
+       font-weight: 700;
+   }
+
 
    .myId img {
-       width: 60px;
-       border-radius: 50%; //사진 원형으로
+       width: 50px;
+       border-radius: 50%; 
+       margin-right: 10px;
    }
 
-
-   .story {
-    background-color: white;
-    border: 1px solid #575757;
-    height: 100px;
+   .recommends {
+       border: 1px solid #c0c0c0;
+       background-color: white;
+       height: auto;
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+       font-weight: 700;
    }
+
 
    .recommend {
-    background-color: white;
-    border: 1px solid #575757;
-    height: 100px;
+       display: flex;
+       align-items: center;
+       margin-top: 10px;
+       position: relative;
+   }
+
+   .grey {
+       color: #b8b8b8;
+       font-size: 12px;
+   }
+
+   .recommend img {
+       width: 30px;
+       border-radius: 50%;
+       margin-right: 10px;
+}
+
+   .recommendText {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .recommendText .grey {
+       font-size: 10px;
+       font-weight: 400;
+   }
+
+   .follow {
+       position: absolute;
+       right: 0;
+       font-size: 12px;
+       color: #3eaffa;
+   }
+
+
+
+
+
+   .copyright {
+    padding: 10px;
    }
 
    .copyright span {
-       font-size: 12px;
-       color: #575757;
+       font-size: 11px;
+       color: #b8b8b8;
    }
 
