@@ -19,7 +19,7 @@
         align-items: center;
         
         /* .navBox를 nav의 가운데 정렬 */
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
    }
 
@@ -53,7 +53,7 @@
 
    .centerBox { /*메인 중앙 박스*/
     /* .navBox와 똑같이 맞춤 */
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding: 15px 0;
 
