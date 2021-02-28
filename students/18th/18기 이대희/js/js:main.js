@@ -1,11 +1,8 @@
 const ul = document.querySelector('.comments');
 const inputBox = document.querySelector('.inputBox');
 const weName = document.querySelector('.name').innerHTML.bold();
-const article = document.querySelector('article');
-let heartIcon = document.querySelector('.heartIcon');
-let delIcon = document.querySelector('.heartx2');
+const heartIcon = document.querySelector('.heartIcon');
 const iconBox = document.querySelector('.iconBox'); 
-const submitBtn = document.querySelector('.submitBtn');
 const inputComment = document.querySelector('.inputComment');
 
 inputComment.addEventListener('submit', (e) => {
