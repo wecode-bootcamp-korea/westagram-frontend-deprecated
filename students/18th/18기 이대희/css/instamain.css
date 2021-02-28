@@ -11,6 +11,10 @@ nav{
     border-bottom: solid 1px rgb(199,199,199);
 }
 
+body{
+    display: flex;
+    justify-content: center;
+}
 .left{
     display: flex;
     align-items: center;
@@ -83,6 +87,7 @@ nav .rightimg{
 }
 
 .mainRight{
+    right:10px;
     width:330px;
     height: 600px;
     margin-top:20px;
@@ -97,7 +102,7 @@ nav .rightimg{
     border:solid 1px rgb(219,219,219);
 }
 
-article{
+section{
     width:610px;
     background-color: rgb(255, 255, 255);
     border:solid 1px rgb(219,219,219);
@@ -116,7 +121,7 @@ article{
 }
 
 .header2{
-    margin-top: 4px;
+    margin-top: 10px;
 }
 
 .dotIcon{
@@ -142,6 +147,7 @@ article{
     height:565px;
     border:solid 1px black;
 }
+
 
 .iconline{
     display: flex;

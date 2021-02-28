@@ -5,10 +5,13 @@ const article = document.querySelector('article');
 let heartIcon = document.querySelector('.heartIcon');
 let delIcon = document.querySelector('.heartx2');
 const iconBox = document.querySelector('.iconBox'); 
+const submitBtn = document.querySelector('.submitBtn');
+const inputComment = document.querySelector('.inputComment');
 
-inputBox.addEventListener('keyup', (e) => {
+inputComment.addEventListener('submit', (e) => {
+        e.preventDefault();
 
-    if (e.key === 'Enter') {
+        if(inputBox.value !==''){
         const btn = document.createElement('button');
         btn.className='textremove';
         const i = document.createElement('i');
@@ -27,10 +30,12 @@ inputBox.addEventListener('keyup', (e) => {
         ul.append(makeli);
 
         inputBox.value = '';
+        
         //댓글 삭제
         btn.addEventListener('click', () =>{   
             makeli.remove();        
         })
+        
         //댓글 좋아요
         makeDiv.addEventListener('click', () =>{  
             makeDiv.style.color = makeDiv.style.color==='red' ? makeDiv.style.color='rgb(219,219,219)': makeDiv.style.color='red';   
@@ -38,6 +43,7 @@ inputBox.addEventListener('keyup', (e) => {
     }
 })
  
+
 
 heartIcon.addEventListener('click', (e) => {   
     
@@ -50,6 +56,4 @@ heartIcon.addEventListener('click', (e) => {
         i.style.color='red';
         a.appendChild(i);
 });
-
-
 
