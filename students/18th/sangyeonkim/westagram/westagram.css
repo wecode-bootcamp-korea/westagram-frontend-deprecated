@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#container {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.structure {
+  border: 1px solid lightgray;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.side {
+  border: 1px solid lightgray;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.side-in {
+  margin-left: 5px;
+}
+
+.foot {
+  border: 1px solid lightgray;
+  width: 350px;
+  height: 40px;
+  text-align: center;
+}
+
+.aa {
+  position: relative;
+  top: 25px;
+  font-family: "Lobster";
+  width: 200px;
+  font-size: 40px;
+  text-align: center;
+  /* border: solid 2px black; */
+}
+
+.login-page {
+  width: 280px;
+}
+
+button {
+  width: 140%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  background-color: skyblue;
+}
+
+.id {
+  width: 280px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: none;
+  color: gray;
+  background-color: rgb(238, 236, 236);
+}
+
+.pw {
+  margin-top: 10px;
+  width: 280px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: none;
+  color: gray;
+  background-color: rgb(238, 236, 236);
+}
+
+.login {
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.or {
+  display: flex;
+}
+
+.or-center {
+  height: 30px;
+  padding-top: 20px;
+}
+
+.or-left {
+  width: 115px;
+  border-top: 1px solid lightgray;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.or-right {
+  width: 115px;
+  border-top: 1px solid lightgray;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.facebook {
+  height: 50px;
+  display: flex;
+}
+
+.facebook-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.facebook-image {
+  width: 50px;
+  height: 20px;
+  margin-top: 15px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.facebook-login {
+  color: blue;
+  padding-top: 18px;
+}
+
+.forget {
+  font-size: 12px;
+}
+
+.instagram {
+  height: 100px;
+}
+
+.download {
+  margin-top: 10px;
+}

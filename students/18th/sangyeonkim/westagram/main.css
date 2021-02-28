@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-top {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  padding-top: 10px;
+}
+
+.westa {
+  display: flex;
+  padding-top: 5px;
+}
+
+.westa-name {
+  border-left: 1px solid black;
+  height: 20px;
+  padding-left: 10px;
+}
+
+.westa-title {
+  padding-top: 5px;
+}
+
+.div-images {
+  width: 20px;
+}
+
+.images {
+  display: flex;
+  padding-top: 5px;
+}
+
+.first-icon,
+.second-icon,
+.third-icon,
+.forth-icon {
+  margin-right: 15px;
+}
+
+.search {
+  height: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.main-page {
+  display: flex;
+}
+
+.westa-feeds {
+  position: relative;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.westa-nike {
+  width: 640px;
+  height: 700px;
+}
+
+.westa-main-right {
+  width: 400px;
+}
+
+.westa-images {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.westaIcons {
+  display: flex;
+}
+
+.westa-icon-images {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.good,
+.adidas {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.good {
+  margin: 10px 0;
+}
+
+.adidas {
+  margin: 10px 0;
+}
+
+.minute {
+  color: lightgray;
+  margin: 10px 0;
+}
+
+.total-search {
+  display: flex;
+}
+
+.search-bottom {
+  padding-left: 10px;
+}
+
+.search-second {
+  width: 550px;
+  margin: 10px 0px 10px 10px;
+}
+
+.string-second {
+  width: 40px;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.string {
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+.smile {
+  padding-top: 10px;
+  margin-left: 20px;
+}
