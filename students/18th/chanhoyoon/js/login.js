@@ -27,8 +27,8 @@ function opacityImg() {
 }
 
 function loginActivationCheck() {
-  if(loginId && loginPw) {
-    loginBtn.style.backgroundColor = '#0095f6'
+  if (loginId && loginPw) {
+    loginBtn.style.backgroundColor = '#0095f6';
     loginForm.addEventListener('submit', loginFormSubmit);
   } else {
     loginBtn.style.backgroundColor = '#c0dffe';
@@ -65,24 +65,23 @@ function loignIdPwCheck( e ) {
   loginActivationCheck();
 }
 
-function loginFormSubmit (e) {
-  const id = e.target[0].value
-  const pw = e.target[1].value
-  const dbTestId = e.target[0].value
-  const dbTestPw = e.target[1].value
+function loginFormSubmit( e ) {
+  const id = e.target[0].value;
+  const pw = e.target[1].value;
+  const dbTestId = e.target[0].value;
+  const dbTestPw = e.target[1].value;
 
-  if(id === dbTestId) {
+  if (id === dbTestId) {
     if (pw === dbTestPw) {
-      alert("로그인 성공!")
+      alert('로그인 성공!');
     } else {
-      alert("로그인 실패!")
+      alert('로그인 실패!');
     }
   }
 }
 
 loginForm.addEventListener('keyup', loignIdPwCheck);
 loginForm.addEventListener('submit', loginFormSubmit);
-
 
 function init() {
   for (let i = 0; i < imgSlide.length; i++) {
@@ -92,4 +91,5 @@ function init() {
     imgArr[( imgArr.length - 1 )].classList.add('img-slide-in');
   setInterval(opacityImg, 2000);
 }
-init();
+
+window.addEventListener('load', init);

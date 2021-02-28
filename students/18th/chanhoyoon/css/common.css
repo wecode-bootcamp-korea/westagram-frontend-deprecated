@@ -4,20 +4,25 @@
 }
 a {
     text-decoration : none;
+    color: black;
 }
 input:focus, button:focus {
     outline : none;
 }
 button {
     background-color : rgba(255, 255, 255, 0);
-    border: none;
-    margin: 0;
-    padding: 0;
+    border           : none;
+    margin           : 0;
+    padding          : 0;
 }
 button:hover {
-    cursor: pointer;
+    cursor : pointer;
 }
-
 textarea:focus {
-    outline: none;
+    outline : none;
+}
+.blue-link {
+    color     : #0194f8;
+    font-size : 13px;
+    font-weight: bold;
 }

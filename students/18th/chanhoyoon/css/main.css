@@ -1,6 +1,6 @@
 .container {
     width            : 100%;
-    background-color : #efefef;
+    background-color : #f4f5f6;
 }
 .main-container {
     position       : relative;
@@ -54,9 +54,22 @@
     border           : none;
     background-color : #fafafa;
 }
+.nav-menu-list {
+    display     : flex;
+    align-items : center;
+}
 .nav-menu-list i {
     color     : #262627;
     font-size : 23px;
+}
+.nav-profile {
+    display     : flex;
+    align-items : center;
+}
+.nav-menu-list .nav-profile img {
+    width         : 24px;
+    height        : 24px;
+    border-radius : 50%;
 }
 .nav-menu-list a:not(:last-child) {
     margin-right : 21px;
@@ -69,7 +82,7 @@
     width            : 100%;
     max-width        : 950px;
     margin-top       : 55px;
-    background-color : #efefef;
+    background-color : #f4f5f6;
 }
 .container .main .main-section {
     width        : 100%;
@@ -92,36 +105,125 @@
 .container .main .aside-section {
     position  : relative;
     width     : 100%;
-    max-width : 285px;
+    max-width : 280px;
     height    : 100%;
 }
 .container .main .aside-section .aside-section-fixed {
     position  : fixed;
-    top       : 50px;
+    top       : 55px;
     width     : 100%;
-    max-width : 285px;
+    max-width : 280px;
     height    : calc(100% - 50px);
-    border    : 1px solid blueviolet;
 }
 
 .aside-section-fixed .aside-section-header {
-    width      : 100%;
-    height     : 56px;
-    margin-top : 30px;
-    border     : 2px solid greenyellow;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+    padding         : 10px 0px;
+    margin-top      : 30px;
+    margin-bottom   : 10px;
 }
+.aside-section-header-img {
+    width        : 58px;
+    height       : 58px;
+    margin-right : 18px;
+}
+.aside-section-header-img img {
+    width         : 58px;
+    height        : 58px;
+    border-radius : 50%;
+    cursor        : pointer;
+}
+.aside-section-header-content {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    width           : 60%;
+}
+.aside-section-header-content-profilename {
+    margin-bottom : 3px;
+}
+.aside-section-header-content-profilename a {
+    color       : #262527;
+    font-size   : 15px;
+    font-weight : bold;
+}
+.aside-section-header-content-name {
+    color     : #9a9b9b;
+    font-size : 14px;
+}
+
 .aside-section-fixed .aside-section-recommend {
-    width  : 100%;
-    height : 300px;
-    border : 2px solid lightseagreen;
+    width         : 100%;
+    margin-bottom : 35px;
+}
+.aside-section-recommend-header {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+    margin-bottom   : 10px;
+}
+.aside-recommend-comment {
+    color       : #8e8e8e;
+    font-size   : 14px;
+    font-weight : 600;
+}
+.aside-recomment-link {
+    color       : #242725;
+    font-size   : 13px;
+    font-weight : bold;
+}
+.aside-section-recommend-list {
+    width : 100%;
+}
+.recommend-list-profile {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+    margin-bottom   : 12px;
+}
+.recommend-list-profile-img img {
+    display       : flex;
+    align-items   : center;
+    width         : 40px;
+    height        : 40px;
+    border-radius : 50%;
+    cursor        : pointer;
+}
+.recommend-list-profile-nickname {
+    width       : 65%;
+    color       : #242726;
+    font-size   : 14px;
+    font-weight : bold;
+}
+.recommend-list-profile-nickname:hover {
+    text-decoration : underline;
 }
 .aside-section-fixed .aside-section-footer {
     width  : 100%;
     height : 106px;
-    border : 2px solid orangered;
 }
-
-
+.aside-section-nav-list {
+    display : inline-block;
+}
+.aside-section-nav-list a {
+    color     : #a5a5a5;
+    font-size : 11px;
+}
+.aside-section-footer .aside-section-nav-list:not(:last-child)::after {
+    margin    : 0px 2px;
+    color     : #a5a5a5;
+    font-size : 11px;
+    content   : '\00B7';
+}
+.aside-section-nav-copy {
+    color     : #a5a5a5;
+    font-size : 11px;
+}
 .main-content-header {
     margin-bottom    : 20px;
     background-color : #ffffff;
@@ -300,7 +402,7 @@
     width       : 100%;
     min-height  : 56px;
     padding     : 0px 8px;
-    border-top  : 1px solid #efefef;
+    border-top  : 1px solid #f4f5f6;
 }
 .description-comment-form {
     display         : flex;
@@ -313,8 +415,8 @@
 }
 
 .comment-input {
-    width       : 90%;
-    border      : none;
+    width  : 90%;
+    border : none;
 }
 .comment-submit-btn {
     font-weight : bold;
