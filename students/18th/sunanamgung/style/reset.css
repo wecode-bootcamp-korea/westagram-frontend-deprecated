@@ -1,0 +1,49 @@
+/* Reset CSS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2d3d;
+  line-height: 1.25;
+}
+
+p,
+span {
+  font-size: 12px;
+  line-height: 14px;
+}

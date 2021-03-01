@@ -3,48 +3,64 @@
   margin: 0;
 }
 
-/* body {
-  font-family: "DM Sans", sans-serif;
-} */
-
-/* Reset CSS */
-a {
-  /* 색상 상속 받아라 */
-  color: inherit;
-  text-decoration: none;
+body {
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0;
 }
 
-button,
-input,
-textarea {
-  /* 폰트가 다르게 먹는 부분 수정 */
-  font-family: "DM Sans", sans-serif;
-  /* 폰트 사이즈가 일반 텍스트보다 작게 들어가는 부분 수정 */
-  font-size: 16px;
+.logo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7em;
+  font-family: "Lobster", cursive;
+  font-weight: 400;
 }
 
-button:focus,
-button:active,
-input:focus,
-input:active,
-textarea:focus,
-textarea:active {
-  /* 암기: 눌러서 포커스 했을 때 파란색 윤곽선 뜨는 부분 스타일 초기화 */
-  outline: none;
-  box-shadow: none;
+/*폰트 설정 */
+.gray {
+  color: #8e8e8e;
+  font-weight: 400;
 }
 
-ul,
-ol,
-li {
-  /* list-style-type: none; */
-  padding-left: 0;
-  margin-left: 0;
+.blue {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  padding: 0;
+  text-align: right;
+  cursor: pointer;
+  color: #0095f6;
+  font-weight: 600;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2b292d;
-  letter-spacing: -0.01em;
+.bold {
+  position: relative;
+  display: block;
+  padding: 0;
+  font-weight: 600;
+}
+
+/* 아이콘 이미지 설정 */
+.nav-btn,
+.icon {
+  width: 22px;
+  height: 22px;
+}
+
+.nav-btn {
+  display: inline-block;
+}
+
+.feed-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border: 0;
+  font-size: 40px;
+  background-color: transparent;
+  cursor: pointer;
 }

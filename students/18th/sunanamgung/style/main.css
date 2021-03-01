@@ -1,75 +1,367 @@
-/* 인스타그램 개발자도구 참고는 가로/세로, 여백, 색깔, 폰트 크기, border-radius 같은 것만 참고해 주세요. 참고해야 할 요소와 그렇지 않은 요소를 잘 구별하고 스스로 기획하며 레이아웃을 작성해야 UI 레이아웃 구성에 대한 이해가 높아지고 유지 보수가 수월해집니다.*/
-
-/* 피드는 하나만 만드셔도 됩니다.
-댓글 input 창에 엔터치거나 "게시" 누르면 댓글 추가되도록 createElement로 요소 생성해서, input에 입력한 값이 추가 되어야합니다. */
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+}
 
 /* navigation */
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #fff;
+}
+
+.nav-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  width: 975px;
+  padding: 0 20px;
+}
+
 .nav-search {
-  font-family: FontAwesome;
-  font-style: normal;
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+  background-position: 65px 5px;
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 215px;
+  height: 28px;
+  padding: 7px;
+  margin-left: 120px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #828282;
+  cursor: text;
 }
 
-/* 아이콘 이미지 설정 */
-.like {
-  display: inline-block;
-  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+.nav-serarch:focus {
+  background-position: 4% center;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 22px;
-  width: 22px;
-  height: 22px;
-  border: none;
-  color: transparent;
+  outline: none;
 }
 
-.message,
-.inbox {
-  display: inline-block;
-  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
-  background-repeat: no-repeat;
-  background-size: 22px;
-  width: 22px;
-  height: 22px;
-  border: none;
-  color: transparent;
+.nav-btns {
+  position: relative;
+  display: flex;
+  padding: 0 0 0 24px;
 }
 
-.explore {
-  display: inline-block;
-  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
-  background-repeat: no-repeat;
-  background-size: 22px;
-  width: 22px;
-  height: 22px;
-  border: none;
-  color: transparent;
+.nav-btn {
+  margin-left: 22px;
 }
 
-.activity {
-  display: inline-block;
-  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
-  background-repeat: no-repeat;
-  background-size: 22px;
+.nav-btn,
+.feed-btn {
+  position: relative;
+  display: flex;
   width: 22px;
   height: 22px;
-  border: none;
-  color: transparent;
+  font-size: 22px;
 }
 
-.comment {
-  display: inline-block;
-  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
-  background-repeat: no-repeat;
-  background-size: 22px;
+.far,
+.fas {
+  font-size: 22px;
+}
+
+.menu-img {
   width: 22px;
   height: 22px;
-  border: none;
-  color: transparent;
+  border-radius: 50%;
+}
+
+/* main */
+main {
+  position: relative;
+  width: 935px;
+  height: auto;
+  margin: 0 auto;
+  padding: 84px 0 30px 0;
+}
+
+.main-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  float: left;
+  width: 614px;
+  margin-right: 28px;
+  padding: 0;
 }
 
 /* main story-navition */
+#story-nav {
+  display: flex;
+  align-items: center;
+  width: 612px;
+  height: 84px;
+  padding: 16px 0;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
 
 /* main feed */
+.feeds {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.feed-header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 60px;
+  padding: 16px;
+}
+
+.profile-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.user-img {
+  position: relative;
+  width: 614px;
+  z-index: 0;
+}
+
+.feed-img-btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.img-btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.feed-reaction {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+}
+
+.feed-btns {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
 
 /* main feed comment */
+.feed-article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.feed-content {
+  position: relative;
+  display: flex;
+}
+
+.feed-comments {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+li > h3,
+li > span,
+.comment-btn {
+  display: inline-block;
+}
+
+li > div {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.comment-btn {
+  position: absolute;
+  right: 0;
+}
+
+.comment-btn,
+.comment-like {
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+}
+
+.input-comment {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  padding: 0 16px;
+  border-top: 1px solid #efefef;
+}
+
+.fa-smile {
+  padding: 8px 16px 8px 0;
+  font-size: 24px;
+}
+
+.comment {
+  display: flex;
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 18px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  text-align: start;
+  overflow: hidden;
+}
+
+.comment-submit {
+  display: block;
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+}
 
 /* main-right */
+.main-right {
+  display: inline-block;
+  position: fixed;
+  top: 88px;
+  flex-direction: column;
+  align-items: stretch;
+  width: 293px;
+  height: 100vh;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.profile-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 18px 0 10px 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.card-img {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 18px;
+  width: auto;
+  margin-left: 12px;
+}
+
+.user-recommend {
+  margin-bottom: 12px;
+}
+
+.recommend-title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 19px;
+  width: 100%;
+  padding: 4px 0 4px;
+  margin-top: 12px;
+}
+
+.recommend-title p {
+  color: #262626;
+}
+
+.recommend-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.recommend-users {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 8px 0 8px 16px;
+}
+
+/*footer*/
+.footer {
+  position: relative;
+}
+
+.insta-footer {
+  position: relative;
+  font-size: 11px;
+  color: #c7c7c7;
+  line-height: 18px;
+}
