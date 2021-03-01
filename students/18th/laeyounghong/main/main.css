@@ -1,62 +1,59 @@
-body {
-    margin: 0;
-}
-
+/* nav */
 nav {
     display: flex;
-    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
     width: 100%;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+    background: rgba(var(--d87,255,255,255),1);
 }
 
 .topMenu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 935px;
     width: 100%;
+    max-width: 935px;
     height: 54px;
-    padding: 0 20px;
     margin: auto;
+    padding: 0 20px;
 }
 
 .logo {
     display: flex;
-    font-family: 'Lobster', cursive;
-    height: 29px;
     min-width: 40px;
+    line-height: 29px;
     font-weight: lighter;
+    font-family: 'Lobster', cursive;
 }
 
 .inputBox {
     position: relative;
     display: flex;
-    background-color: #FAFAFA;
-    min-width: 125px;
     width: 215px;
+    min-width: 125px;
     height: 28px;
+    left: 60px;
 }
 
 .searchIcon {
     position: absolute;
-    opacity: 30%;
     top: 9px;
     left: 13px;
+    opacity: 30%;
 }
 
-input {
+.inputBox input {
     width: 215px;
+    padding: 3px 10px 3px 26px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 3px;
     color: rgba(var(--i1d,38,38,38),1);
-    background: rgba(var(--b3f,250,250,250),1);
     outline: 0;
-    padding: 3px 10px 3px 26px;
 }
 
 ul {
     display: flex;
-    padding-left: 20px;
     margin: 0;
+    padding-left: 20px;
     list-style: none;
 }
 
@@ -64,10 +61,7 @@ li:not(:first-child) {
     margin-left: 22px;
 }
 
-main {
-    background-color: rgba(var(--b3f,250,250,250),1);;
-}
-
+/* main */
 .mainWrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -84,33 +78,262 @@ main {
 .topFeedBox {
     width: 614px;
     height: 84px;
-    background: rgba(var(--d87,255,255,255),1);
-    border: 1px solid rgba(var(--b6a,219,219,219),1);
-    border-radius: 3px;
     margin-bottom: 24px;
     margin-top: 0;
     padding: 16px 0;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    background: rgba(var(--d87,255,255,255),1);
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 12px;
+}
+
+.topFeedBox li {
+    text-align: center;
+}
+
+.topFeedBox img {
+    height: 56px;
+    padding: 2px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 50%;
 }
 
 article {
     display: flex;
     flex-direction: column;
     width: 614px;
-    height: 1000px;
+    margin-bottom: 60px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 3px;
     background: rgba(var(--d87,255,255,255),1);
 }
 
 .profileImage {
-    border: 1px solid rgba(var(--b6a,219,219,219),1);
-    border-radius: 20px;
+    border: 0.5px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 50%;
 }
 
+.articleHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 16px;
+}
+
+.Username {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 14px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Username:hover {
+    text-decoration-line: underline;
+}
+
+.articleOptionBtn {
+    position: absolute;
+    right: 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.articleIcons {
+    align-content: center;
+    margin-top: 4px;
+    padding: 0 16px;
+}
+
+.articleIcons ul {
+    padding: 0;
+}
+
+.articleIcons li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.articleIcons svg, .commentsInput svg {
+    padding: 8px 0;
+}
+
+.articleLikes {
+    margin-bottom: 8px;
+    padding: 0 16px;
+    font-weight: 600;
+}
+
+.articleComments {
+    padding: 0 16px;
+}
+
+.articleComments ul {
+    flex-direction: column;
+    padding: 0;
+}
+
+.articleComments li {
+    margin: 0 0 4px;
+}
+
+.articleComments a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.articleComments a:hover {
+    text-decoration-line: underline;
+}
+
+.commentsInputContainer {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    border-top: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
+.emoticons {
+    margin: 0;
+    padding: 8px 16px 8px 0px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.articleTime {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    font-size: 10px;
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+.commentsInput {
+    width: 514px;
+    height: 18px;
+    padding: 0;
+    outline: none;
+    border: 0;
+    background-color: white;
+}
+
+.postingBtn {
+    padding: 0;
+    color: rgba(var(--d69,0,149,246),1);
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+.postingBtn[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* aside */
 .mainRightSide {
+    position: relative;
+    width: 100%;
     max-width: 293px;
     height: 500px;
-    width: 100%;
-    border: 1px solid rgba(var(--b6a,219,219,219),1);
 }
 
+.asideAccount{
+    display: flex;
+    align-items: center;
+    margin: 18px 0 10px;
+}
+
+.asideAccount .Username:hover {
+    text-decoration-line: none;
+}
+
+.asideProfile img {
+    width: 56px;
+    height: 56px;
+}
+
+.asideNickname {
+    margin-left: 14px;
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+.asideBtn {
+    position: absolute;
+    right: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    color: rgba(var(--d69,0,149,246),1);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.recommendComments {
+    display: flex;
+    margin-top: 20px;
+    font-weight: 600;
+    color: rgba(var(--f52,142,142,142),1);
+}
+
+.recommendComments .asideBtn {
+    color: black;
+}
+
+.recommend {
+    width: 32px;
+    height: 32px;
+}
+
+.recommendContainer {
+    margin-bottom: 20px;
+    padding: 8px 0;
+}
+
+.recommendInfo {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.recommendInfo .asideNickname {
+    font-size: 12px;
+}
+
+.asidePolicies {
+    color: rgba(var(--edc,199,199,199),1);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.asidePolicies ul {
+    padding: 3px 0;
+}
+
+.asidePolicies li {
+    margin: 0;
+}
+
+.moreInfo a, .moreInfo span {
+    color: rgba(var(--edc,199,199,199),1);
+    text-decoration: none;
+}
+
+.moreInfo:not(:last-of-type)::after {
+    content: '\00B7';
+    margin-right: 2.75px;
+}

@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="login.css" rel="stylesheet">
+    <link href="common.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="wrapper">
+    <section class="wrapper">
         <h1 class="logo">Westagram</h1>
-        <div class="loginBox">
+        <form class="loginBox">
             <div class="textBox">
                 <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" class="loginId">
             </div>
@@ -20,11 +21,11 @@
                 <input type="password" placeholder="비밀번호" class="loginPassword">
             </div>
             <div>
-                <button class="loginBtn">로그인</button>
+                <button class="loginBtn" disabled="">로그인</button>
             </div>
-        </div>
+        </form>
         <span><a href="https://www.google.co.kr">비밀번호를 잊으셨나요?</a></span>
-    </div>
+    </section>
     <script src="login.js"></script>
 </body>
 </html>
