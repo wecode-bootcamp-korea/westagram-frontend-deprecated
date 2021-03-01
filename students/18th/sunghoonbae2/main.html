@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrgram</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/02048a51dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav_bar">
+        <div class="nav_bar_container">
+          <div class="nav_bar_container_logo">instagram</div>
+          <div class="nav_bar_container_search">
+            <input type="text" placeholder="검색" />
+          </div>
+          <div class="nav_bar_container_icon">
+            <i class="fas fa-home fa-lg mr-10"></i>
+            <i class="far fa-paper-plane fa-lg mr-10"></i>
+            <i class="far fa-compass fa-lg mr-10"></i>
+            <i class="far fa-heart fa-lg mr-10"></i>
+            <i class="far fa-user fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="main_section">
+      <div class="main_section_container">
+        <div class="main_section_container_box">
+          <div class="friend_list container_border">
+            <div class="friend_list_profile_img_id mr-10">
+              <div class="friend_item friend_profile_img">
+                <img
+                  src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/80452228_1276431125887357_5922463548440576_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=wY4iQCIOuHoAX8ndO_G&oh=a141327480860a5c3c021e47b42ce8d3&oe=6064E32E"
+                  alt="친구 프로필 사진"
+                />
+              </div>
+              <div class="friend_item friend_name">hooe__eegbhnm,eee</div>
+            </div>
+            <div class="friend_list_profile_img_id">
+              <div class="friend_item friend_profile_img">
+                <img
+                  src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/80452228_1276431125887357_5922463548440576_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=wY4iQCIOuHoAX8ndO_G&oh=a141327480860a5c3c021e47b42ce8d3&oe=6064E32E"
+                  alt="친구 프로필 사진"
+                />
+              </div>
+              <div class="friend_name">hooe__easdfasdfaeeee</div>
+            </div>
+          </div>
+          <div class="feeds container_border">
+            <div class="feeds_header feeds_area">
+              <div class="feeds_header_img mr-10">
+                <img src="./img/1.JPG" alt="사진" />
+              </div>
+              <div class="feeds_header_id mr-10">
+                asdfjklasdfkjhqaweikrufhiouasegfjuyasgfjkyasdgjkfhagsejkuyfrgakuyerwfgikuyasdfhjsdjkfhkajsdfhkjasdfhjkawegfkuiyagseufkgasuwekyfgasuyekf
+              </div>
+              <div class="feeds_header_icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <div class="feeds_body">
+              <img src="./img/2.jpg" alt="메인 사진" />
+            </div>
+            <div class="feeds_area">
+              <div class="feeds_icon">
+                <i class="far fa-heart fa-2x icon_cursor mr-10"></i>
+                <i class="far fa-comment fa-2x icon_cursor mr-10"></i>
+                <i class="far fa-paper-plane fa-2x icon_cursor mr-10"></i>
+                <i class="far fa-square fa-2x icon_cursor"></i>
+              </div>
+              <div class="feeds_like mt-10">
+                <div>좋아요 <span id="feeds_like"> 174 </span>개</div>
+              </div>
+              <div class="feeds_container mt-10" id="feeds_container">
+                <div class="feeds_content">hoon__503</div>
+                <!--댓글영역-->
+              </div>
+              <div class="feeds_time mt-10">3시간</div>
+            </div>
+            <div class="feeds_comment_input_area feeds_area">
+              <i class="far fa-smile fa-2x mr-10"></i>
+              <textarea
+                class="mr-10"
+                placeholder="댓글달기..."
+                id="comment_textarea"
+              ></textarea>
+              <div class="comment_btn icon_cursor" id="comment_btn">게시</div>
+            </div>
+          </div>
+        </div>
+        <aside class="right_box test">aside</aside>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
