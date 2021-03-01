@@ -34,7 +34,11 @@
   border: none;
   border-radius: 10px;
   color: white;
-  background-color: #B2DFFC;
+  background-color: #0095F6;
+}
+
+.login_btn:disabled {
+  background-color: #C0DFFD;
 }
 
 a{
