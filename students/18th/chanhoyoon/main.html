@@ -77,7 +77,7 @@
             <div class="content-list-description">
               <div class="list-description-header">
                 <div class="header-icon">
-                  <button class="img-heart"><i class="far fa-heart"></i></button>
+                  <button class="img-heart" onclick="clickLike(this)"><i class="far fa-heart"></i></button>
                   <button class="img-comment"><i class="far fa-comment"></i></button>
                   <button class="img-share"><i class="far fa-paper-plane"></i></button>
                 </div>
@@ -92,6 +92,7 @@
                 <a href="#" class="like-count">좋아요 68개</a>
               </div>
               <div class="list-description-post-content">
+                <div class="list-description-post-content-main">
                         <span><a class="channel-name">wecode_bootcamp</a> 🙆🏻‍♀️함께해서 위코드다🙆🏻‍♂️
                            <br><br>
                            오늘도 멘토님과 수강생 분들이 열심히🔥
@@ -99,24 +100,33 @@
                            <br><br>
                            수강생들을 위해 끊임없이 고민하고 연구하시는<br>
                            멘토 종택님과 병민님의 멋진 모습 📸</span>
-                <br><br>
-                <a class="post-content-hashtag" href="#" tabindex="0">#함께해서위코드다</a>
-                <br><br>
-                <a class="post-content-hashtag" href="#" tabindex="0">#위코드</a>
-                <a class="post-content-hashtag" href="#" tabindex="0">#코딩부트캠프</a>
-                <a class="post-content-hashtag" href="#" tabindex="0">#부트캠프</a>
-                <a class="post-content-hashtag" href="#" tabindex="0">#코딩</a>
+                  <br><br>
+                  <a class="post-content-hashtag" href="#" tabindex="0">#함께해서위코드다</a>
+                  <br><br>
+                  <a class="post-content-hashtag" href="#" tabindex="0">#위코드</a>
+                  <a class="post-content-hashtag" href="#" tabindex="0">#코딩부트캠프</a>
+                  <a class="post-content-hashtag" href="#" tabindex="0">#부트캠프</a>
+                  <a class="post-content-hashtag" href="#" tabindex="0">#코딩</a>
+                </div>
+                <div class="list-description-post-content-comment">
+                  <div class="comment-count">
+                    <button class="comment-count-btn">댓글 3개</button>
+                  </div>
+                  <div class="comment-main-box">
+                    <!-- js에서 데이터 넣는 곳 -->
+                  </div>
+                </div>
               </div>
               <div class="list-description-date">
                 <span class="description-date-time">23시간 전</span>
               </div>
               <div class="list-description-comment">
                 <form action="#" class="description-comment-form">
-                  <div class="comment-icon">
+                  <div class="comment-emoticon-icon">
                     <i class="far fa-smile"></i>
                   </div>
                   <textarea placeholder="댓글 달기..." rows="1" class="comment-input" style="resize: none;"></textarea>
-                  <button class="comment-submit-btn" type="submit">
+                  <button class="comment-submit-btn" id="comment-submit-btn" type="submit">
                     <span>게시</span>
                   </button>
                 </form>

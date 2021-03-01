@@ -27,13 +27,7 @@ function opacityImg() {
 }
 
 function loginActivationCheck() {
-  if (loginId && loginPw) {
-    loginBtn.style.backgroundColor = '#0095f6';
-    loginForm.addEventListener('submit', loginFormSubmit);
-  } else {
-    loginBtn.style.backgroundColor = '#c0dffe';
-    loginForm.removeEventListener('submit', loginFormSubmit);
-  }
+  ( loginId && loginPw ) ? loginBtn.style.backgroundColor = '#0095f6' : loginBtn.style.backgroundColor = '#c0dffe';
 }
 
 function transActionInput() {
@@ -70,7 +64,20 @@ function loginFormSubmit( e ) {
   const pw = e.target[1].value;
   const dbTestId = e.target[0].value;
   const dbTestPw = e.target[1].value;
-
+  const idRegExp = /^[A-Za-z0-9_][A-Za-z0-9._]*[@]{1}[a-z]*[.]+[a-z]{1,3}$/;
+  const pwRegExp = /^[A-Za-z0-9!@#$%^&*()-_=+?/,.<>][A-Za-z0-9!@#$%^&*()-_=+?/,.<>]{4,}$/;
+  if (!idRegExp.test(id)) {
+    getLoginId.focus();
+    getLoginId.value = null;
+    alert('이메일을 정확히 입력해주세요!');
+    return;
+  }
+  if (!pwRegExp.test(pw)) {
+    getLoginPw.focus();
+    getLoginPw.value = null;
+    alert('5글자 이상 입력해야 합니다.');
+    return;
+  }
   if (id === dbTestId) {
     if (pw === dbTestPw) {
       alert('로그인 성공!');

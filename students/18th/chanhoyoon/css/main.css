@@ -62,11 +62,9 @@
     color     : #262627;
     font-size : 23px;
 }
-.nav-profile {
-    display     : flex;
-    align-items : center;
-}
+
 .nav-menu-list .nav-profile img {
+    display       : block;
     width         : 24px;
     height        : 24px;
     border-radius : 50%;
@@ -242,13 +240,13 @@
     margin : 0px 10px;
 }
 .header-list .header-list-btn {
-    width           : 100%;
-    height          : 100%;
     position        : relative;
     display         : flex;
     flex-direction  : column;
     align-items     : center;
     justify-content : center;
+    width           : 100%;
+    height          : 100%;
 }
 .header-list-btn .header-list-img-sircle {
     position      : absolute;
@@ -362,6 +360,9 @@
 .list-description-header .header-icon button {
     margin-right : 15px;
 }
+.header-icon .img-heart i {
+    transition : 0.6s all;
+}
 .list-description-header .header-img-length-icon {
     margin-right : 100px;
 }
@@ -377,6 +378,9 @@
     width       : 100%;
     line-height : 18px;
     font-size   : 13px;
+}
+.list-description-post-content-main {
+    margin-bottom : 5px;
 }
 .channel-name {
     font-weight : bold;
@@ -410,8 +414,8 @@
     align-items     : center;
     width           : 100%;
 }
-.comment-icon {
-    font-size : 23px;
+.comment-emoticon-icon i {
+    font-size : 22px;
 }
 
 .comment-input {
@@ -421,6 +425,59 @@
 .comment-submit-btn {
     font-weight : bold;
     color       : #d3e5f6;
+}
+.comment-count-btn {
+    margin-bottom : 7px;
+    color         : #8e8e8e;
+    font-size     : 14px;
+}
+.comment-main-box {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+}
+.comment-box {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+    margin-bottom   : 3px;
+}
+.comment-left-section {
+    width : calc(100% - 37px);
+}
+.comment-icon {
+    width : 32px;
+}
+.comment-nickname-link {
+    font-size   : 13px;
+    font-weight : bold;
+}
+.comment-text {
+    font-size : 14px;
+}
+.comment-icon i {
+    font-size  : 15px;
+    color      : #9f989e;
+    transition : 0.6s all;
+}
+.like-scale-action {
+    animation-name     : likeBtnAction;
+    animation-duration : 0.5s;
+}
+
+@keyframes likeBtnAction {
+    0% {
+        transform : scale(1);
+    }
+    50% {
+        transform : scale(1.3);
+    }
+    100% {
+        transform : scale(1);
+    }
 }
 
 @media (max-width : 1000px) {

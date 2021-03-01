@@ -4,6 +4,12 @@ const mainContent = document.querySelector('.main-content');
 const contentHeaderImg = document.querySelector('.content-list-header-img');
 const asideRecommnedHeader = document.querySelector('.aside-section-header');
 const asideRecommendList = document.querySelector('.aside-section-recommend-list');
+const commentMainBox = document.querySelector('.comment-main-box');
+const commentInputValue = document.querySelector('.comment-input');
+const getCommentValue = document.querySelector('.description-comment-form');
+const commentSubmitBtn = document.querySelector('.comment-submit-btn');
+const commentCountBtn = document.querySelector('.comment-count-btn');
+const commentDeleteBtn = document.querySelector('.comment-delete-btn');
 
 const accountObj = {
   'imgUrl'  : 'https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/97068965_1104613089889899_6711635906152890368_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=a4AyxE5aC5EAX-qWt8N&tp=1&oh=f8a633045f9500d179fc52eff7740e1b&oe=6062F5BE',
@@ -79,6 +85,7 @@ function addHeaderImg() {
 
 function addMainContent() {
   contentHeaderImg.style.backgroundImage = `url(${mainContentObj[0]['channelProfileImg']})`;
+  commentCountBtn.innerText = `댓글 ${0}개 `;
 }
 
 function addAsideRecommend() {
@@ -118,6 +125,63 @@ function addNavProfileImg() {
   `;
 }
 
+function addEnterComment( e ) {
+  if (e.target.value.length !== 0) {
+    if (e.target.value === ' ') {
+      commentInputValue.focus();
+      commentInputValue.value = commentInputValue.value.replace(' ', '');
+    } else {
+      commentSubmitBtn.style.color = '#267eb8';
+    }
+  } else {
+    commentSubmitBtn.style.color = '#d3e5f6';
+  }
+  if (e.key === 'Enter') {
+    addSubmitComment(e);
+  }
+}
+
+function addSubmitComment( e ) {
+  e.preventDefault();
+  if (commentInputValue.value.length !== 0 || commentInputValue.value.replace(/(\s*)/g, '')) {
+    commentMainBox.innerHTML += `
+      <div class="comment-box">
+        <div class="comment-left-section">
+          <span class="comment-nickname-link"><a href="#" class="nickname-link"></a>${accountObj['nickname']}</span>
+          <span class="comment-text">${commentInputValue.value}</span>
+        </div>
+        <div class="comment-icon">
+          <button class="comment-like-btn" onclick="clickLike(this)"><i class="far fa-heart"></i></button>
+          <button class="comment-delete-btn" onclick="deleteComment(this)"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+    `;
+    commentInputValue.value = null;
+    commentSubmitBtn.style.color = '#d3e5f6';
+  }
+  commentCountBtn.innerText = `댓글 ${commentMainBox.children.length}개`;
+}
+
+function clickLike( e ) {
+  if (e.children[0].className === "far fa-heart") {
+    e.classList.add('like-scale-action');
+    e.children[0].className = "fas fa-heart";
+    e.children[0].style.color = 'red';
+  } else {
+    e.classList.add('like-scale-action');
+    e.children[0].className = "far fa-heart";
+    e.parentNode.className === "header-icon" ? e.children[0].style.color = 'black' : e.children[0].style.color = '#9f989e';
+  }
+  setTimeout(() => {
+    e.classList.remove('like-scale-action');
+  },400)
+}
+
+function deleteComment( e ) {
+  commentMainBox.removeChild(e.parentNode.parentNode);
+  commentCountBtn.innerText = `댓글 ${commentMainBox.children.length}개`;
+}
+
 function init() {
   addNavProfileImg();
   addHeaderImg();
@@ -126,4 +190,8 @@ function init() {
   addAsideRecommend();
 }
 
-init();
+window.addEventListener('load', init);
+
+commentInputValue.addEventListener('keyup', addEnterComment);
+getCommentValue.addEventListener('submit', addSubmitComment);
+
