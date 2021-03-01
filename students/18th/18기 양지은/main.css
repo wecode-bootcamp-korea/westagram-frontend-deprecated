@@ -17,7 +17,7 @@ body {
   height: 60px;
 }
 
-.name {
+.logo {
   margin-left: 150px;
   font-family: "Lobster", cursive;
   font-size: 25px;
@@ -53,7 +53,7 @@ body {
   margin-right: 17px;
 }
 
-.myaccount {
+.profile_img {
   width: 22px;
   height: 22px;
   border-radius: 70%;
@@ -63,29 +63,28 @@ body {
 .main_container {
   position: relative;
   width: 900px;
-  height: 1300px;
+  height: 1600px;
 }
 
-.total-section {
+.whole_section {
   position: relative;
 }
 
 .feeds {
   position: absolute;
   width: 600px;
-  height: 1000px;
   left: 17%;
   margin-top: 100px;
   border: 0.5px solid lightgray;
 }
 
-.section1 {
+.feeds_header {
   margin-top: 15px;
   margin-left: 10px;
   margin-bottom: 15px;
 }
 
-.accouninfo {
+.account_info {
   display: flex;
   justify-content: space-between;
 }
@@ -103,6 +102,11 @@ body {
   margin-right: 430px;
 }
 
+.more_info {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 .wrap_location {
   display: flex;
   flex-direction: row;
@@ -114,17 +118,12 @@ body {
   margin-top: -13px;
 }
 
-.information {
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
 .main_photo {
   width: 600px;
   height: 750px;
 }
 
-.section3 {
+.section_footer {
   display: flex;
   justify-content: space-around;
 }
@@ -157,18 +156,20 @@ body {
   margin-left: 10px;
 }
 
-.descriptioninfo {
+.wrap_description {
   display: flex;
-  justify-content: low;
+}
+
+.section_description {
   margin-top: 8px;
   margin-left: 11px;
 }
 
-.description {
+.nickname {
   font-weight: bold;
 }
 
-.description2 {
+.description {
   font-size: 13px;
   margin-top: 4px;
   margin-left: 6px;
@@ -181,7 +182,7 @@ body {
   color: gray;
 }
 
-.comment_bar {
+.section_comment {
   display: flex;
   flex-direction: low;
   justify-content: space-around;
@@ -199,7 +200,7 @@ body {
   padding-top: 10px;
 }
 
-.textarea {
+.input_comment {
   width: 500px;
   height: 40px;
   font-size: 14px;
