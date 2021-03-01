@@ -216,7 +216,7 @@ body {
 }
 
 .wrap_sideright {
-  porition: absolute;
+  position: absolute;
 }
 
 .sideright_container {
