@@ -5,16 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Westagram Main Page</title>
-    <link
-      rel="icon"
-      href="/students/18th/sunanamgung/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="shortcut icon"
-      href="/students/18th/sunanamgung/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -121,7 +113,11 @@
                     </div>
                     <div class="feed-btn">
                       <i class="far fa-comment"></i>
-                      <a href="#" aria-label="코멘트" class="icon comment"></a>
+                      <a
+                        href="#"
+                        aria-label="코멘트"
+                        class="icon comment-page"
+                      ></a>
                     </div>
                     <div class="feed-btn">
                       <i class="far fa-paper-plane"></i>
@@ -148,40 +144,44 @@
                   </p>
                 </div>
                 <div class="feed-comments">
-                  <ol>
+                  <ul class="comments-list">
                     <li>
                       <h3 class="user-name">hellowecode</h3>
                       <span class="user-comment">댓글1치키차카초코초코초</span>
-                      <div class="comment-btn">
-                        <i class="far fa-heart comment-like"></i>
-                        <a href="#" aria-label="좋아요" class="comment-like"></a>
-                      </div>
+                      <i
+                        aria-label="좋아요"
+                        class="far fa-heart comment-like comment-btn"
+                      ></i>
                     </li>
                     <li>
                       <h3 class="user-name">byevscode</h3>
                       <span class="user-comment">댓글2치키차카초코초코초</span>
-                      <div class="comment-btn">
-                        <i class="far fa-heart comment-like"></i>
-                        <a href="#" aria-label="좋아요" class="comment-like"></a>
-                      </div>
-                    </li>
+                      <i
+                        aria-label="좋아요"
+                        class="far fa-heart comment-like comment-btn"
+                      ></i>
                     </li>
                     <li>
                       <h3 class="user-name">goodtoseeyou</h3>
                       <span class="user-comment">댓글3치키차카초코초코초</span>
-                      <div class="comment-btn">
-                        <i class="far fa-heart comment-like"></i>
-                        <a href="#" aria-label="좋아요" class="comment-like"></a>
-                      </div>
+                      <i
+                        aria-label="좋아요"
+                        class="far fa-heart comment-like comment-btn"
+                      ></i>
                     </li>
-                    </li>
-                  </ol>
+                  </ul>
                 </div>
               </div>
 
               <form class="input-comment">
                 <i class="far fa-smile"></i>
-                <textarea aria-label="댓글달기..."  placeholder="댓글 달기..." class="comment"></textarea>
+                <textarea
+                  aria-label="댓글달기..."
+                  placeholder="댓글 달기..."
+                  id="comment"
+                  class="comment"
+                  autocomplete="off"
+                ></textarea>
                 <button type="submit" class="comment-submit blue">게시</button>
               </form>
             </article>

@@ -122,6 +122,7 @@ main {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   margin-bottom: 24px;
+  background-color: #fff;
 }
 
 /* main feed */
@@ -133,6 +134,7 @@ main {
   flex-direction: column;
   justify-content: center;
   margin: 0;
+  background-color: #fff;
 }
 
 .feed-header {
