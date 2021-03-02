@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  font-size: 14px;
+  color: #424242;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 10px;
+  background-color: white;
+  font-family: "Lobster", cursive;
+} 
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+nav h1 {
+  font-size: 25px;
+}
+
+.searchInput {
+  width: 190px;
+  height: 27px;
+  background-color: #eeeeee;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+
+main {
+  padding-top: 60px; /*상단바 고정시켜서 가려지는 만큼*/
+  background-color: #eeeeee;
+}
+
+.centerBox {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.storiesAndFeeds {
+  width: 500px;
+}
+
+.stories {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.story img {
+  width: 50px;
+  margin-bottom: 3px;
+  border-radius: 50%;
+}
+
+.story span {
+  background-color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.feeds {
+  margin: 15px 0;
+  background-color: #eeeeee;
+}
+
+.feed {
+  margin-bottom: 50px;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-weight: 700;
+}
+
+.profile img {
+  width: 30px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.feed > img {
+  width: 100%;
+}
+
+.dots {
+  position: absolute;
+  right: 15px;
+  font-size: 16px;
+}
+
+.reply {
+  height: auto;
+  padding: 10px;
+}
+
+.userId {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.reply ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.reply li {
+  height: 25px;
+}
+
+.replyInput {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-top: 1px solid #c0c0c0;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.main-right {
+  width: 320px;
+  margin-left: 20px;
+}
+
+.myId {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.myId img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.recommends {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: white;
+  border: 1px solid #c0c0c0;
+  font-weight: 700;
+}
+
+.recommend {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.recommend img {
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.recommendText {
+  display: flex;
+  flex-direction: column;
+}
+
+.grey {
+  color: #b8b8b8;
+  font-size: 12px;
+}
+
+.recommendText .grey {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.follow {
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: #3eaffa;
+}
+
+.copyright {
+  padding: 10px;
+}
+
+.copyright span {
+  font-size: 11px;
+  color: #b8b8b8;
+}
