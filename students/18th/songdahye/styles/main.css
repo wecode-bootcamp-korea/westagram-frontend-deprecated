@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+body{
+  width: 100%; 
+  background-color: #FAFAFA;
+}
+
+h3, p, span{
+  font-size: 14px;
+}
+
+
+/*nav*/
+nav{
+ display: flex;
+ height: 50px;
+ padding: 10px 0;
+ background-color: white;
+ border-bottom: 1px solid #DBDBDB;
+}
+
+#logo{
+  margin-left: 170px;
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+  font-size: 23px;
+}
+
+.search_bar{
+  width: 220px;
+  height: 27px;
+  margin: 0 auto;
+
+  border: solid 1px #DBDBDB;
+  border-radius: 2px;
+  background-color: #FAFAFA;;
+  text-align: center;
+}
+
+.icon_btn{
+  margin-right: 150px;
+}
+
+.icon_btn > a{
+  float: left;
+  margin-right: 30px;
+}
+
+.icon_btn > a > img{
+  width: 22px;
+  height: 22px;
+}
+
+
+/*main*/
+main{
+  width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/*westa_story*/
+main > .westa_story{
+  float: left;   /*main-right를 westa_story 오른쪽에 두기 위함*/
+  display: flex; /*story > a들을 정렬하기 위함*/
+  flex-direction: row;
+  justify-content: center;
+
+  height: 110px;
+  width: 620px;
+  padding: 15px;
+  margin-left: 130px;
+
+  background-color: white;
+  border: solid 1px #DBDBDB;
+  border-radius: 3px;
+}
+
+.westa_story > a{
+  display: block;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.westa_story > a > img{
+  width: 65px;
+  border-radius: 65px;
+  border: solid 2px #C42D91;
+}
+
+
+/*main-right*/
+.main-right{
+  float: right;
+  width: 300px;
+  height: 400px;
+  padding: 20px 10px;
+  margin-right: 130px;
+}
+
+.my_profile{
+  height: 60px;
+}
+
+.my_profile > img{
+  vertical-align: middle;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 65px;
+  border: solid 1px #DBDBDB;
+}
+
+.my_profile > h3{
+  display: inline-block;
+  font-size: 14px;
+}
+
+.my_profile > span{
+  margin-left: 95px;
+  color: #0095F6;
+  font-weight: bold;
+  font-size: 12px
+}
+
+/*회원님을 위한 추천 text*/
+.recommend{
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.recommend > h3{
+  display: inline-block;
+  color: #8E8E8E;
+}
+
+.recommend > span{
+  margin-left: 97px;
+  font-size: 12px;
+}
+
+/*추천 아이디*/
+.recommend_id > img{
+  flex-wrap: wrap;
+  width: 40px;
+  border-radius: 40px;
+  border: solid 1px #DBDBDB;
+  vertical-align: middle;
+  margin: 5px 0;
+}
+
+.recommend_id > h3{
+  display: inline-block;
+  margin-left: 10px;
+
+}
+
+.recommend_id > span{
+  margin-left: 130px;
+  color: #0095F6;
+  font-weight: bold;
+  font-size: 12px
+}
+
+
+/*feeds*/
+.feeds{
+  float: left;
+  height: 880px;
+  width: 620px;
+  margin-left: 130px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+  background-color: white;
+  border: solid 1px #DBDBDB;
+  border-radius: 3px;
+}
+
+/*profile_info*/
+.profile_info{
+  height: 60px;
+  padding: 15px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.profile_info > img{
+  width: 30px;
+  border-radius: 30px;
+  border: solid 1px #DBDBDB;
+  vertical-align: middle;
+}
+
+.profile_info > h3{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.feeds_img{
+  width: 618px;
+  height: 578px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+
+/*reaction 창*/
+.reaction{
+  padding: 10px 15px;
+}
+
+.reaction >span > a{
+  color: #989898;
+}
+
+/*reaction 아이콘*/
+.reaction_icon > a {
+  margin-right: 13px;
+}
+
+.reaction_icon > a > img{
+  width: 25px;
+  height: 25px;
+}
+
+.icon_bookmark{
+  float: right;
+}
+
+.reaction > h3{
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.user_id{
+  display: inline-block;
+  font-weight: bold;
+}
+
+.timelog{
+  font-size: 10px;
+  color: #ADADAD;
+  padding: 10px 0;
+}
+
+/*댓글 달기*/
+.comment{
+  border-top: 1px solid #EFEFEF;
+  padding: 15px;
+}
+
+.comment > img{
+  width: 23px;
+  vertical-align: middle;
+}
+
+.comment > span{
+  display: inline-block;
+  color: #939393;
+  margin-left: 10px;
+}
