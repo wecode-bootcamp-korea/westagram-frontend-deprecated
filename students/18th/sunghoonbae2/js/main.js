@@ -21,5 +21,29 @@ comment_btn.addEventListener('click', function() {
     comment.value = '';
 });
 
+const heartcolor = document.querySelector("#like_color");
+
+
+heartcolor.addEventListener('click', function() {
+    heartcolor.classList.toggle('fa-heart-color');
+    heartcolor.classList.toggle('far');
+    heartcolor.classList.toggle('fas');
+
+    const isContainsFas = heartcolor.classList.contains('fas');
+    const like = document.querySelector("#feeds_like");
+    let likeNumber = Number(like.innerText);
+    like.innerText = isContainsFas ? likeNumber += 1 : likeNumber -= 1;
+});
+
+
+
+
+
+
+
+
+
+
+
 
 

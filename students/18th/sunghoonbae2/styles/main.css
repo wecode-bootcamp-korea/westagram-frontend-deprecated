@@ -4,12 +4,11 @@
   box-sizing: border-box;
 }
 
-
 .nav {
   display: flex;
   justify-content: center;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #DBDBDB;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .nav_bar {
@@ -30,11 +29,10 @@
 }
 
 .nav_bar_container_search input {
-  
   text-align: center;
   font-size: 12px;
   padding: 4px 20px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .nav_bar_container_icon {
@@ -45,7 +43,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .main_section_container {
@@ -76,7 +74,7 @@
 .friend_profile_img img {
   width: 75px;
   border-radius: 50%;
-} 
+}
 
 .friend_name {
   text-align: center;
@@ -123,22 +121,23 @@
 }
 
 .feeds_comment_input_area {
-  border-top: 1px solid #DBDBDB;
+  border-top: 1px solid #dbdbdb;
   display: flex;
   align-items: center;
 }
 
 .feeds_comment_input_area textarea {
-  width: 100%; 
+  width: 100%;
   border: none;
   outline: none;
   vertical-align: middle;
+  resize: none;
 }
 
 .comment_btn {
   margin-left: auto;
   white-space: nowrap; /* 줄바꿈 ㄴㄴ */
-  color: #B3DFFC;
+  color: #b3dffc;
 }
 
 .right_box {
@@ -229,17 +228,21 @@
 }
 
 .font_color_blue {
-  color: #0095F6;
+  color: #0095f6;
 }
 
 .bgcolor_white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .container_border {
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
 }
 
 .font_bold {
   font-weight: bold;
+}
+
+.fa-heart-color {
+  color: #ed4956;
 }

@@ -75,13 +75,13 @@
             </div>
             <div class="feeds_area">
               <div class="feeds_icon flex">
-                <i class="far fa-heart fa-2x icon_cursor mr-10"></i>
+                <i class="far fa-heart fa-2x icon_cursor mr-10" id="like_color" value="false"></i>
                 <i class="far fa-comment fa-2x icon_cursor mr-10"></i>
                 <i class="far fa-paper-plane fa-2x icon_cursor mr-10"></i>
                 <i class="far fa-square fa-2x icon_cursor"></i>
               </div>
               <div class="feeds_like mt-10">
-                <div>좋아요 <span id="feeds_like"> 174 </span>개</div>
+                <div>좋아요 <span id="feeds_like">174</span>개</div>
               </div>
               <div class="feeds_container mt-10" id="feeds_container">
                 <div class="feeds_content">hoon__503</div>
@@ -89,10 +89,11 @@
               </div>
               <div class="feeds_time mt-10">3시간</div>
             </div>
-            <div class="feeds_comment_input_area feeds_area">
+            <div class="feeds_comment_input_area feeds_area" >
               <i class="far fa-smile fa-2x mr-10"></i>
               <textarea
                 class="mr-10"
+                type="text"
                 placeholder="댓글달기..."
                 id="comment_textarea"
               ></textarea>
