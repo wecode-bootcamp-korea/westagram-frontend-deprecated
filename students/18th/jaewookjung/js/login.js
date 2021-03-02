@@ -5,7 +5,7 @@ const showPasswordBtn = document.querySelector(".show_pw");
 
 // 이벤트 콜백함수 정의
 function runLoginBtn() {
-    userId.value && password.value
+    userId.value && password.value.length >= 5
         ? (loginBtn.style.opacity = "1")
         : (loginBtn.style.opacity = "0.3");
 }
