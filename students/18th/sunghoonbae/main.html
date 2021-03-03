@@ -8,156 +8,127 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="shortcut icon" href="./img/favicon-32x32.png" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/02048a51dd.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="navbar__main__box">
-        <div class="navbar__second__box">
-          <div class="navbar__header">
-            <h1>Instrgram</h1>
-          </div>
-          <div class="navbar__search">
+    <nav class="nav">
+      <div class="nav_bar">
+        <div class="nav_bar_container">
+          <div class="nav_bar_container_logo">instagram</div>
+          <div class="nav_bar_container_search">
             <i class="fas fa-search fa-xs"></i>
-            <input type="text" placeholder="검색"/>
+            <input class="container_border" type="text" placeholder="검색" />
           </div>
-          <div class="navbar__icon">
-            <div class="navbar__icon__second">
-              <i class="fas fa-home fa-lg"></i>
-              <i class="far fa-paper-plane fa-lg"></i>
-              <i class="far fa-compass fa-lg"></i>
-              <i class="far fa-heart fa-lg"></i>
-              <i class="far fa-user fa-lg"></i>
-            </div>
+          <div class="nav_bar_container_icon">
+            <i class="fas fa-home fa-lg mr-10"></i>
+            <i class="far fa-paper-plane fa-lg mr-10"></i>
+            <i class="far fa-compass fa-lg mr-10"></i>
+            <i class="far fa-heart fa-lg mr-10"></i>
+            <i class="far fa-user fa-lg"></i>
           </div>
         </div>
       </div>
     </nav>
-    <main>
-      <div class="main__box">
-          <section>
-            <div class="main__second__box">
-              <div class="feeds__friend__box">
-                <div class="friend__list">
-                  <div class="friend__list__box">
-                    <div class="img__id__box1">
-                      <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/80452228_1276431125887357_5922463548440576_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=wY4iQCIOuHoAX8ndO_G&oh=a141327480860a5c3c021e47b42ce8d3&oe=6064E32E" alt="계정 사진" />
-                      <div class="id">hooneeeee</div>
-                    </div>
-                    <div class="img__id__box2">
-                      <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/117350299_597863607572038_1485637149936799204_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=qjsBVMLwvlEAX9vTuTQ&amp;oh=41dbfb45f7c8258db7773148afa3c9a8&amp;oe=6063B2AD" alt="계정 사진" />
-                      <div class="id">hyunnjinnnn</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="feeds__box">
-                  <header>
-                    <div class="header__box">
-                      <div class="img">
-                        <img src="./img/1.JPG" alt="계정 사진">
-                      </div>
-                      <div class="content">
-                        <div class="id">hoon__503</div>
-                        <i class="fas fa-ellipsis-h"></i>
-                      </div>
-                    </div>
-                  </header>
-                  <article>
-                    <div class="img__box">
-                      <img src="./img/2.jpg" alt="메인 사진">
-                    </div>
-                  </article>
-                  <div class="icon__box">
-                    <div class="icon">
-                      <span>
-                        <button type="button">
-                            <i class="far fa-heart fa-2x"></i>
-                        </button>
-                      </span>
-                      <span>
-                        <button type="button">
-                          <i class="far fa-comment fa-2x"></i>
-                        </button>
-                      </span>
-                      <span>
-                        <button type="button">
-                          <i class="far fa-paper-plane fa-2x"></i>
-                        </button>
-                      </span>
-                    </div>
-                    <div class="icon">
-                      <span>
-                        <button type="button">
-                          <i class="far fa-square fa-2x"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="comment__box">
-                      <div class="like__count">좋아요 248개</div>
-                      <div class="comment__list">
-                        <span class="id">hoon__503</span>
-                        <span class="commnet__content"> 담양 메타스퀘어 길!!</span>
-                      </div>
-                      <div class="time">3시간</div>
-                      <div class="comment">
-                        <div class="comment__column">
-                          <i class="far fa-smile fa-lg"></i>
-                        </div>
-                        <div class="comment__column">
-                          <input type="text" placeholder="댓글달기..">
-                        </div>
-                        <div class="comment__column">
-                          <span>게시</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <aside class="right__box">
-                  <div class="myinfo">
-                    <div class="img">
-                      <i class="fas fa-user-circle fa-4x"></i>
-                    </div>
-                    <div class="id__name">
-                      <div class="id">tjdgns503</div>
-                      <div class="name">배성훈</div>
-                    </div>
-                    <div class="change">
-                      <div>전환</div>
-                    </div>
-                  </div>
-                  <div class="like">
-                    <div class="me__like">회원님을 위한 추천</div>
-                    <div class="like__view">모두 보기</div>
-                  </div>
-                  <div class="follow__list">
-                    <div class="follow__list__box1">
-  
-                      <div class="img">
-                        <i class="fas fa-user-circle fa-2x"></i>
-                      </div>
-  
-                      <div class="id__follow__content">
-                        <div class="id">su_woooooo</div>
-                        <div class="follow__content">hyunnnjinnnn님이 팔로우합니다</div>
-                      </div>
-  
-                      <div class="follow">
-                        <div>팔로우</div>
-                      </div>
-                    </div>
-                  </div>
-                </aside>
+    <section class="main_section">
+      <div class="main_section_container">
+        <div class="main_section_container_box">
+          <div class="friend_list container_border bgcolor_white">
+            <div class="friend_list_profile_img_id mr-10">
+              <div class="friend_item friend_profile_img">
+                <img
+                  src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/80452228_1276431125887357_5922463548440576_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=wY4iQCIOuHoAX8ndO_G&oh=a141327480860a5c3c021e47b42ce8d3&oe=6064E32E"
+                  alt="친구 프로필 사진"
+                />
               </div>
-          </section>
+              <div class="friend_item friend_name">hooeeeeee</div>
+            </div>
+            <div class="friend_list_profile_img_id">
+              <div class="friend_item friend_profile_img">
+                <img
+                  src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/117350299_597863607572038_1485637149936799204_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=SObQx0g4z7AAX_Txmgg&amp;oh=626fbe438f5a7674d415603ba2025a3a&amp;oe=60661C55"
+                  alt="친구 프로필 사진"
+                />
+              </div>
+              <div class="friend_name">hyunnnjinnnn</div>
+            </div>
+          </div>
+          <div class="feeds container_border bgcolor_white">
+            <div class="feeds_header feeds_area">
+              <div class="feeds_header_img mr-10">
+                <img src="./img/1.JPG" alt="사진" />
+              </div>
+              <div class="feeds_header_id mr-10">
+                hoon__503
+              </div>
+              <div class="feeds_header_icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+            </div>
+            <div class="feeds_body">
+              <img src="./img/2.jpg" alt="메인 사진" />
+            </div>
+            <div class="feeds_area">
+              <div class="feeds_icon flex">
+                <i class="far fa-heart fa-2x icon_cursor mr-10" id="like_color" value="false"></i>
+                <i class="far fa-comment fa-2x icon_cursor mr-10"></i>
+                <i class="far fa-paper-plane fa-2x icon_cursor mr-10"></i>
+                <i class="far fa-square fa-2x icon_cursor"></i>
+              </div>
+              <div class="feeds_like mt-10">
+                <div>좋아요 <span id="feeds_like">174</span>개</div>
+              </div>
+              <div class="feeds_container mt-10" id="feeds_container">
+                <div class="feeds_content">hoon__503</div>
+                <!--댓글영역-->
+              </div>
+              <div class="feeds_time mt-10">3시간</div>
+            </div>
+            <div class="feeds_comment_input_area feeds_area" >
+              <i class="far fa-smile fa-2x mr-10"></i>
+              <textarea
+                class="mr-10"
+                type="text"
+                placeholder="댓글달기..."
+                id="comment_textarea"
+              ></textarea>
+              <div class="comment_btn icon_cursor" id="comment_btn">게시</div>
+            </div>
+          </div>
+        </div>
+        <aside class="right_box">
+          <div class="my_profile mt-20">
+            <i class="fas fa-user-circle fa-3x font_color_gray"></i>
+            <div class="my_profile_id_name ml-10">
+              <div class="my_profile_id right_box_font_size">tjdgns503</div>
+              <div class="my_profile_name right_box_font_size mt-5">배성훈</div>
+            </div>
+            <div class="my_profile_change right_box_font_size font_color_blue">전환</div>
+          </div>
+          <div class="friend_recommend_container mt-20">
+            <div class="me_friend_recommend right_box_font_size font_bold font_color_gray">회원님을 위한 추천</div>
+            <div class="friend_recommned_all right_box_font_size font_bold font_color_black">모두 보기</div>
+          </div>
+          <div class="friend_recommend_list mt-20">
+            <div class="flex_align_center">
+              <i class="fas fa-user-circle fa-2x font_color_gray"></i>
+              <div class="friend__recommend_id ml-10">
+               <div class="right_box_font_size font_color_id">hyjinnnnnnn</div>
+                <div class="right_box_font_size font_color_gray mt-5">회원님을 팔로우 합니다</div>
+              </div>
+              <div class="follow right_box_font_size font_color_blue">팔로우</div>
+            </div>
+          <!-- <footer>
+            <div class="test">푸터 영역</div>
+          </footer> -->
+        </aside>
       </div>
-    </main>
-  </body>  
+    </section>
+    <script src="js/main.js"></script>
+  </body>
 </html>
