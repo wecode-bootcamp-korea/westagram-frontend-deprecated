@@ -41,13 +41,13 @@ body {
   }
   
    .login__btn {
+    margin-top: 20px;
+    border: 1px none;
+    border-radius: 10px;
     padding: 8px 0px;
     color: #f5fafe;
     background-color: #c4e1fb;
     font-size: 25px;
-    border: 1px none;
-    border-radius: 10px;
-    margin-top: 20px;
   }
   
   .help__password {
