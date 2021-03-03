@@ -28,6 +28,16 @@
   font-size: 30px;
 }
 
+.nav_bar_container_search {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 65px;
+}
+
 .nav_bar_container_search input {
   text-align: center;
   font-size: 12px;
