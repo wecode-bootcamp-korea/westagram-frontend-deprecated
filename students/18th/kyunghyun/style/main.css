@@ -220,7 +220,7 @@ main {
   padding: 10px;
 }
 
-.copyright span {
+.copyright small {
   font-size: 11px;
   color: #b8b8b8;
 }
