@@ -1,18 +1,4 @@
-/* nav {
-  height: 50px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1000px;
-  margin: 0 auto;
-} */
-.testa {
+.NavMain {
   height: 50px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
@@ -21,7 +7,7 @@
   left: 0;
   right: 0;
 }
-.testb {
+.NavContent {
   height: 50px;
   display: flex;
   align-items: center;
@@ -31,7 +17,9 @@
 }
 .NavSearch {
   margin-left: 20px;
-  width: 333px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
 }
 .NavSearchInput {
   width: 200px;
@@ -47,13 +35,13 @@
 }
 .NavTools {
   display: flex;
-  width: 333px;
+  width: 450px;
   justify-content: flex-end;
 }
 .NavLogo {
-  width: 333px;
+  width: 350px;
   display: flex;
-  justify-content: right;
+  justify-content: flex-start;
   font-size: 24px;
   margin-left: 20px;
   font-family: "Lobster", cursive;
