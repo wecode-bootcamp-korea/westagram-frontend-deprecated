@@ -1,0 +1,63 @@
+
+body{
+    background-color: #FAFAFA;
+}
+.login_box{
+    background-color: white;
+    width: 350px;
+    height: 378px;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 80px auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+.logo h1{
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 145px;
+}
+input,button{
+    display: block;
+    width: 250px;
+    height: 36px;
+    margin: 0 auto;
+}
+.forget_pw{
+    position: absolute;
+    bottom: 20px;
+    width: 350px;
+}
+.forget_link{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #00376b;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#login_btn{
+margin-top: 10px;
+background-color: #B2DFFC;
+border: none;
+color:white;
+font-weight: bold;
+font-size: 15px;
+border-radius: 5px;;
+}
+
+
+
+
