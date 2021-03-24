@@ -1,0 +1,77 @@
+body {
+    background-color: #FAFAFA;
+}
+.whitebox1 {
+    width: 350px;
+    height: 370px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 42px;
+}
+img {
+    width: 50%;
+    padding: 20px 87.5px 26px 87.5px;
+}
+input {
+    width: 250px;
+    height: 20px;
+    padding: 9px 8px 7px 8px;
+    color: #000000;
+    font-size: 12px;
+    border : 1px solid #DEDEDE;
+    border-radius: 2px;
+    background-color: #FAFAFA;
+    outline: none;
+}
+.inputid {
+    margin: 4px 42px 6px 42px;
+}
+.inputpw {
+    margin: 0px 42px 0px 42px;
+}
+.login {
+    width: 268px;
+    height: 30px;
+    background-color: #0095F6;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    margin: 16px 42px 16px 42px;
+}
+.whitebox2 {
+    width: 350px;
+    height: 43px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.facelogin {
+    font-size: 14px;
+    color: #385185;
+    font-weight: bold;
+    border: none;
+    background-color: #ffffff;
+}
+.facelogo {
+    width: 16px;
+    padding: 0;
+}
+.signup {
+    color: #0095F6;
+    font-weight: bold;
+    text-decoration: none;
+}
+.facelink {
+    text-decoration: none;
+    color: #385185;
+}
