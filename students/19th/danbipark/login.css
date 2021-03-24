@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.main-container {
+  width: 350px;
+  height: 380px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+}
+
+header {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+  margin-bottom: 35px;
+}
+
+.input-container {
+  text-align: center;
+}
+
+input {
+  width: 268px;
+  height: 38px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  border-radius: 4px;
+  margin: 5px;
+  text-indent: 7px;
+}
+
+.id-container {
+  position: relative;
+}
+
+.id-container label,
+.password-container label {
+  position: absolute;
+  left: 50px;
+  bottom: 15px;
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.password-container {
+  position: relative;
+}
+
+.login-button {
+  width: 268px;
+  height: 38px;
+  background-color: #b2dffb;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin: 10px;
+  color: white;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+footer {
+  font-size: 13px;
+  color: #083669;
+  line-height: 12;
+}
+
+footer:hover {
+  cursor: pointer;
+}
+
+.label-moving {
+  transform: scale(0.8) translate(-13%, -80%);
+  transition: 0.1s ease-in-out;
+}
+
+.input-padding {
+  padding-top: 17px;
+}
