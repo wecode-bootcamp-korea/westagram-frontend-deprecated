@@ -1,0 +1,68 @@
+.background {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+}
+
+.login {
+  position: absolute;
+  width: 350px;
+  height: 380px;
+  margin: 100px 500px;
+  background-color: white;
+  border: solid rgb(230, 230, 230) 1px;
+}
+
+.logo {
+  font-family: "Lobster", cursive;
+  height: 20%;
+}
+.name {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  font-weight: 100;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+input {
+  display: block;
+  width: 258px;
+  height: 36px;
+  margin: 5px auto;
+  background-color: rgb(250, 250, 250);
+  border: solid rgb(242, 242, 242) 1px;
+  border-radius: 3px;
+}
+
+.id {
+  margin-top: 30px;
+}
+button {
+  background-color: rgb(196, 224, 251);
+  border: solid rgb(196, 224, 251) 1px;
+  border-radius: 3px;
+  height: 30px;
+  width: 262px;
+  margin-top: 10px;
+  margin-left: 44px;
+}
+span {
+  color: white;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 5px auto;
+}
+.forgot {
+  position: absolute;
+
+  bottom: 20px;
+  width: 350px;
+}
+
+a {
+  font-size: 13px;
+  left: 100px;
+  text-decoration: none;
+  margin-left: 100px;
+}
