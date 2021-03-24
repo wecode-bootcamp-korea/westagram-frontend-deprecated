@@ -1,0 +1,117 @@
+.LoginDisplayWestagram {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+}
+.LoginDisplay {
+  width: 350px;
+  height: 380px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.LoginDisplayWestagram {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.LoginDisplayEmail,
+.LoginDisplayPassword {
+  width: 270px;
+  height: 35px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.LoginDisplayEmail,
+.LoginDisplayPassword {
+  margin-bottom: 5px;
+  position: relative;
+}
+.LoginDisplayEmail::placeholder,
+.LoginDisplayPassword::placeholder {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+.LoginDisplayButton {
+  margin-top: 5px;
+  width: 280px;
+  height: 30px;
+  background-color: #0095f7;
+  border: 1px #0095f7;
+  border-radius: 5px;
+}
+
+.LoginDisplayButton > div {
+  color: white;
+}
+.LoginDisplayInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LineOr {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+.LineOrOr {
+  padding-top: 10px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.LineOrLine {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: 115px;
+  margin-bottom: 5px;
+}
+.LineOrLineLeft {
+  margin-right: 10px;
+}
+.LineOrLineRight {
+  margin-left: 10px;
+}
+
+.OtherLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.OtherLogin a {
+  text-decoration: none;
+}
+.LoginFacebook {
+  color: #385185;
+}
+.ForgetPassword {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #244d7b;
+}
+
+.SignUp {
+  width: 350px;
+  height: 60px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NoAccount {
+  font-size: 14px;
+}
+
+.NoAccount span {
+  color: #0095f7;
+}
