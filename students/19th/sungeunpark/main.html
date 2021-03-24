@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" href="imgs/instagram_favicon.png" />
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="js/main.js" defer></script>
+    <title>Westagram</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar">
+      <div class="navbar_title">
+        <i class="fab fa-instagram"></i>
+        <span class="navbar_title_logo"> | Westagram</span>
+      </div>
+      <div class="navbar_search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="검색" />
+      </div>
+      <div class="navbar_icons">
+        <button><img src="/imgs/explore.png" alt="explore" /></button>
+        <button><img src="/imgs/heart.png" alt="heart" /></button>
+        <button><img src="/imgs/profile.png" alt="profile" /></button>
+      </div>
+    </nav>
+    <!-- main container -->
+    <main id="main_container">
+      <!-- main left contents-->
+      <section class="main_left">
+        <article class="main_left_slider">
+          <img src="/imgs/friend_profile1.jpg" alt="friend_profile1" />
+          <img src="/imgs/friend_profile2.jpg" alt="friend_profile2" />
+          <img src="/imgs/friend_profile3.jpg" alt="friend_profile3" />
+          <img src="/imgs/friend_profile4.jpg" alt="friend_profile4" />
+          <img src="/imgs/friend_profile5.jpg" alt="friend_profile5" />
+          <img src="/imgs/friend_profile6.jpg" alt="friend_profile6" />
+          <img src="/imgs/friend_profile8.jpg" alt="friend_profile7" />
+          <img src="/imgs/friend_profile9.jpg" alt="friend_profile8" />
+          <img src="/imgs/friend_profile10.jpg" alt="friend_profile9" />
+          <img src="/imgs/friend_profile1.jpg" alt="friend_profile1" />
+          <img src="/imgs/friend_profile2.jpg" alt="friend_profile2" />
+        </article>
+        <article class="main_left_feeds">
+          <div class="feeds_navbar">
+            <div class="feeds_navbar_left">
+              <img
+                src="imgs/friend_profile1.jpg"
+                alt="friend_profile1"
+                class="feeds_navbar_profile"
+              />
+              <span class="feeds_navbar_user">sujin_lee</span>
+            </div>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="imgs/feed image2.jpg" alt="feed images" class="feeds_img" />
+          <div class="feeds_info">
+            <div class="feeds_info_icons_left">
+              <svg height="24" viewBox="0 0 48 48" width="24">
+                <path
+                  d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                ></path>
+              </svg>
+              <svg height="24" viewBox="0 0 48 48" width="24">
+                <path
+                  clip-rule="evenodd"
+                  d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+              <svg height="24" viewBox="0 0 48 48" width="24">
+                <path
+                  d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                ></path>
+              </svg>
+            </div>
+            <div class="feeds_info_icons_right">
+              <svg height="24" viewBox="0 0 48 48" width="24">
+                <path
+                  d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"
+                ></path>
+              </svg>
+            </div>
+            <div class="feeds_info_description">
+              <div class="feeds_info_description_like">
+                elena_park님 외 여러 명이 좋아합니다.
+              </div>
+              <span class="feeds_info_description_user">sujin_lee</span>
+              <span class="feeds_info_description_text"
+                >맛있는 녹차파운드!</span
+              >
+              <span>1일 전</span>
+            </div>
+            <div class="feeds_info_comment">
+              <button class="feed_info_comment_emoji">
+                <svg height="24" viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"
+                  ></path>
+                  <path
+                    d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"
+                  ></path>
+                </svg>
+              </button>
+              <input
+                type="text"
+                class="feed_info_comment_input"
+                placeholder="댓글 달기.."
+              />
+              <button class="feed_info_comment_submit">게시</button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--  main right contents  -->
+      <div class="main_right_container">
+        <section class="main_right">
+          <!-- main right user profile -->
+          <article class="main_right_user_profile">
+            <img src="/imgs/user profile image.jpg" alt="user profile image" />
+            <div class="main_right_user_profile_name">
+              <span>elena_park33</span>
+              <span>박성은</span>
+            </div>
+            <button>전환</button>
+          </article>
+          <article class="main_right_recommendation">
+            <span>회원님을 위한 추천</span>
+            <button>모두 보기</button>
+            <!-- main right recommendation list -->
+            <ul class="main_right_recommendation_list">
+              <li>
+                <img
+                  src="/imgs/user profile image.jpg"
+                  alt="user profile image"
+                />
+                <div class="main_right_recommendation_name">
+                  <span>elena_park33</span>
+                  <span>박성은</span>
+                </div>
+                <button>전환</button>
+              </li>
+              <li>
+                <img
+                  src="/imgs/user profile image.jpg"
+                  alt="user profile image"
+                />
+                <div class="main_right_recommendation_name">
+                  <span>elena_park33</span>
+                  <span>박성은</span>
+                </div>
+                <button>전환</button>
+              </li>
+            </ul>
+          </article>
+          <ul class="main_right_footer">
+            <li><a href="#">소개</a></li>
+            <li><a href="#">도움말</a></li>
+            <li><a href="#">홍보</a></li>
+            <li><a href="#">센터</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">제품 정보</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">약관</a></li>
+            <li><a href="#">위치</a></li>
+            <li><a href="#">인기 계정</a></li>
+            <li><a href="#">해시태그</a></li>
+            <li><a href="#">언어</a></li>
+            <div>© 2021 Instagram from Facebook</div>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

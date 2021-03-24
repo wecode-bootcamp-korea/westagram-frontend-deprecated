@@ -1,0 +1,67 @@
+:root {
+    --my-border-radius: 6px;
+    --my-font-weight: bold;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  .container {
+    width: 500px;
+    height: 500px;
+    max-width: 1000px;
+    text-align: center;
+    padding: 50px;
+    margin: 200px auto;
+    border: 1px solid lightgray;
+  }
+  
+  .header {
+    font-family: "Lobster", cursive;
+    font-size: 70px;
+    color: #262626;
+    padding-bottom: 20px;
+  }
+  
+  .login_area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 40px 0;
+  }
+  
+  .login_area_id,
+  .login_area_pw {
+    margin: 3px 0;
+    padding: 15px;
+    font-weight: var(--my-font-weight);
+    border: 1px solid lightgray;
+    border-radius: var(--my-border-radius);
+    color: black;
+    background-color: #fafafa;
+  }
+  
+  .login_area_btn {
+    margin: 20px 0;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: var(--my-font-weightt);
+    border-radius: var(--my-border-radius);
+    color: white;
+    background-color: #c4e1fb;
+  }
+  
+  .find_pw {
+    padding-top: 15px;
+  }
+  
+  .find_pw a {
+    color: #2a5682;
+    font-weight: var(--my-font-weight);
+  }
+  
+  .pressed {
+    background-color: #0095f6;
+  }
+  
