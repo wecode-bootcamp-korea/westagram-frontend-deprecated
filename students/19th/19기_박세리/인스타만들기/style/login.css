@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+body{
+    background-color:#FAFAFA;
+}
+.wrapper{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width:100vw;
+    height:100vh;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    background-color: #FFF;
+    margin:0 auto;
+    width:60vw;
+    height:80vh;
+    border:2px solid #cccccc;
+    align-self: center;
+}
+header{
+    text-align: center;
+    height:30vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster Two', cursive;
+    font-size:2.2rem;
+    font-weight:100;
+}
+#form{
+    height:40vh;
+    width:80%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+#id_text{
+    background-color:aliceblue;
+    width:100%;
+    height:20%;
+    border-radius: 5px;
+    margin-bottom:2rem;
+}
+#pw_text{
+    background-color:aliceblue;
+    width:100%;
+    height:20%;
+    border-radius:5px;
+    margin-bottom:2rem;
+}
+#login_btn{
+    width:100%;
+    height:14%;
+    color:#fff;
+    font-weight:900;
+    font-size:1.2rem;
+    background-color:blue;
+    border-radius:10px;
+}
+input{
+    border:1px solid #cccccc;
+}
+footer{
+    height:10vh;   
+    text-align:center;
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+.find_pw{
+    margin-bottom: 30px;
+    color:#000;
+}
