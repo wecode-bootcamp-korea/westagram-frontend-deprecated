@@ -1,0 +1,141 @@
+
+            body{
+                margin-top: 32px;
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
+            }
+            #mainRight-box{
+                margin-top: 12px;
+            }
+            body section{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column wrap;
+                width: 348px;
+                height: 358px;
+                border: 1px solid #DBDBDB;
+                margin-bottom: 10px;
+            }
+            body h1, body span{
+                display: block;
+            }
+            body h1{
+                font-size: 40px;
+                color: #262626;
+                margin-bottom: 20px;
+            }
+            body section div{
+                width: 250px;
+                height: 20px;
+            }
+            body section input{
+                background-color: #FAFAFA;
+            }
+            #login-button{
+                width: 268px;
+                height: 30px;
+                line-height: 30px;
+                vertical-align: middle;
+                border: 1px solid blak;
+                background-color: #AFDCF9;
+                border-radius: 3px;
+                color: white;
+                font-weight: bold;
+                margin: 8px 0;
+            }
+            section input {
+                border-radius: 3px;
+                border: 1px solid #DBDBDB;
+                color: #8E8E8E;
+                margin: 2px 0;
+                width: 250px;
+                height: 36px;
+                padding: 9px 8px 7px 8px;
+            }
+            section input:hover{
+                color: #8E8E8E;
+                cursor: text;
+            } 
+            .sectionInput-width{
+                width: 266px;
+                display: flex;
+                justify-content: center;
+            }
+            .section-width{
+                display: flex;
+                justify-content: center;
+                width: 346px;
+            }
+            section>div:first-of-type{
+                height: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0 18px 0;
+                border: 0;    
+            }
+            section>div:first-of-type>div{
+                width: 103px;
+                height: 1px;
+                border:0;
+                background-color: rgba(var(--b38,219,219,219),1);
+            }
+            section>.login-facebook>span{
+                background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+                background-repeat: no-repeat;
+                background-position: -414-259px;
+                height: 16px;
+                width:  16px;
+                margin-right: 8px;
+            }
+            section>.login-facebook>a{
+                font-weight: bold;
+                color: #385185;
+            }
+            #fogot-passwd{
+                margin-top: 12px;
+                height: 12px;
+                color: #00376B;
+            }
+            #sign-up{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 41px;
+                padding: 10px 0;
+                border: 1px solid #DBDBDB;
+                margin-bottom: 10px;
+            }
+            #sign-up>p>a{
+                font-weight: bold;
+                color: #0095F6;
+            }
+            #app-down{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #app-down>p{
+                height: 17.6px;
+                margin: 10px 20px;
+            }
+            #app-img{
+                display: flex;
+                justify-content:center;
+                margin: 10px 0;
+            }
+            #app-down img:first-of-type{
+                height: 40px;
+                width: 136px;
+            }
+            #app-down img:nth-last-of-type(1){
+                height: 40px;
+                width: 134px;
+                margin-left: 10px;
+            }
+            a, img{
+                cursor: pointer;
+            }
