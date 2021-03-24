@@ -55,3 +55,7 @@ table {
 ul {
 	padding:0;
 }
+
+button {
+	outline: none;
+}
