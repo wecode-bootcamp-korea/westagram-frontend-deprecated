@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login_flex">
+        <section class="login_container">
+            <h1 class="login_title">Westargram</h1>
+    
+            <form class="login_form" action="">
+                <div class="login_id_div">
+                    <span class="login_id_span">전화번호, 사용자 이름 또는 이메일</span>
+                    <input id="login_id" type="text">
+                </div>
+                <div class="login_pw_div">
+                    <span class="login_pw_span">비밀번호</span>
+                    <input id="login_pw" type="password" >
+                </div>
+                <p class="view_password">비밀번호 표시</p>
+    
+                <button type="submit" class="login_btn" disabled="true">로그인</button>
+            </form>
+    
+            <a class="reset_pw_a" href="#">비밀번호를 잊으셨나요?</a>
+        </section>
+    </div>
+    
+
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+.login_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #FAFAFA;
+}
+.login_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 380px;
+
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+
+    background-color: white;
+}
+
+.login_title{
+    margin-bottom: 5px;
+
+    font-size: 39px;
+    font-family: 'Lobster', cursive;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    width: 348px;
+    height: 211px;
+}
+
+.login_id_div, .login_pw_div {
+    width: 268px;
+    height: 36px;
+
+    margin: 5px auto;
+}
+
+.login_id_span, .login_pw_span {
+    position: absolute;
+    width:  267px;
+    height: 36px;
+
+    margin-top: 5px;
+    margin-left: 1px;
+
+    padding-top: 12px;
+    padding-left: 9px;
+
+    font-size: 12px;
+    color: #999999;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+}
+#login_id, #login_pw{
+    position: relative;
+
+    width: 268px;
+    height: 36px;
+
+    margin: 5px auto;
+    padding: 8px 0px 5px 7px;
+
+    border: 1px solid #EFEFEF;
+    border-radius: 3px;
+    color: #999999;
+    background-color: #fafafa00;
+
+    font-size: 12px;
+}
+
+#login_id:focus, #login_pw:focus {
+    outline: 0px solid white;
+    border-radius: 3px;
+    border: 1px solid rgba(184, 184, 184, 0.87);
+}
+
+#login_id::placeholder, #login_pw::placeholder {
+    color: #999999;
+}
+
+.view_password {
+    position: absolute;
+
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+
+    border: 0px;
+    background-color: #FAFAFA;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    display: none;
+}
+
+.view_password:hover {
+    cursor: pointer;
+}
+
+.login_btn{
+    width: 268px;
+    height: 30px;
+ 
+    margin: 10px auto;
+
+    color: #fff;
+    background-color: #67c2ff;
+    border: 0px solid #fff;
+    border-radius: 5px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login_btn:focus {
+    outline: none;
+}
+
+.login_btn:disabled {
+    background-color: #B2DFFC;
+    cursor:unset;
+}
+
+.reset_pw_a{
+    margin-top: 40px;
+
+    color: #2F5984;
+    font-weight: normal;
+    font-size: 12px;
+
+    text-decoration: none;
+}
