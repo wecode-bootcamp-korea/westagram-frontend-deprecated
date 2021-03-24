@@ -1,0 +1,88 @@
+:root {
+  /* Color */
+  --lightgray-color: #fafafa;
+  --bordergray-color: rgb(221, 218, 218);
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--lightgray-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main div */
+main {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  background-color: white;
+  border: 1px solid var(--bordergray-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 60px;
+  font-family: "Lobster", cursive;
+  margin: 35px;
+}
+/* Login box */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.login_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.id-pw:focus {
+  outline: 1px solid rgb(204, 198, 198);
+  border-radius: 3px;
+}
+.id-pw {
+  background-color: var(--lightgray-color);
+  width: 320px;
+  height: 40px;
+  border: 1px solid var(--bordergray-color);
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  font-size: 15px;
+}
+
+.login_btn:focus {
+  border: 0;
+}
+.login_btn {
+  width: 340px;
+  height: 40px;
+  background-color: #c0dffd;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* forgot */
+.forgot {
+  color: #385185;
+  position: absolute;
+  bottom: 25px;
+}
+a:visited {
+  color: #385185;
+}
