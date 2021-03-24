@@ -1,0 +1,105 @@
+#login-body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+} 
+.login-box {
+    width: 360px;
+    height: 370px;
+    border: var(--main-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+.title-login{
+    font-size: 40px;
+    margin: 22px auto 50px;
+}
+
+/*login ID and Password */
+
+.login-info {
+    width: 270px;
+}
+
+.login-form input {
+    width: 270px;
+    height: 40px;
+    background-color: #FAFAFA;
+    border-style: none;
+    border: var(--main-border);
+    padding: 10px;
+}
+
+
+
+#id {
+    margin-bottom: 10px;
+}
+
+#password {
+    margin-bottom: 20px;
+}
+
+/*placeholder*/
+
+.login-info::placeholder {
+    transition: font-size 0.3s, tranform 0.3s;
+}
+
+.login-info:focus::placeholder {
+    font-size: 10px;
+    transform: scale(1.0) translateY(-13px);
+}
+
+
+/*login button*/
+.login-button {
+    width: 270px;
+    height: 35px;
+    background-color: var(--main-button-color);
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    opacity: 0.3;
+    cursor:not-allowed;
+}
+
+
+#login-button-disabled{
+    opacity: 0.3;
+    cursor:not-allowed;
+}
+
+#login-botton-enabled {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/*forgot password button*/
+.forgot-password  {
+    margin-top: 50px;
+    font-size: 12px;
+
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: navy;
+}
