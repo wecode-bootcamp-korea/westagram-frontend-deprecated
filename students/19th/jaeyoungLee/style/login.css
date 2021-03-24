@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.loginContainer {
+    border: 2px solid #e6e6e6;
+    width: 350px;
+    height: 380px;
+    margin: 0 auto;
+}
+
+.logoName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logoName > h1 {
+    font-family: "Lobster", cursive;
+    width: 175px;
+    height: 52px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.loginInfo {
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.loginInfo > input {
+    width: 268px;
+    height: 38px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid #efefef;
+    background: #fafafa;
+    color: #9c9c9c;
+    font-size: 14px;
+}
+
+.loginInfo > input:focus {
+    outline-color: gray;
+}
+
+.loginInfo > .loginBt {
+    width: 268px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 3px;
+    background: #c4e1fb;
+    color: #ffffff;
+    border-style: none;
+}
+
+.loginInfo > button:focus {
+    outline: none;
+}
+
+.forgetPassword{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.forgetPassword > a {
+    color: #043569; text-decoration: none;
+}

@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+.navInfo {
+    border-bottom: 1px solid #bbbbbb;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.nav {
+    width: 935px;
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navLogo {
+    width: 360px;
+    background-color: #ffffff;
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.navSearch {
+    width: 215px;
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 3px;
+}
+
+.search {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #fafafa;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    color: #bbbbbb;
+    top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.searchimg {
+    position: absolute;
+    top: 20px;
+    left: 77px;
+    font-size: 10px;
+    color: #a5a7aa;
+}
+
+.navImg {
+    width: 360px;
+    background-color: #ffffff;
+    position: relative;
+}
+.navImg > span{
+    position: absolute;
+}
+
+.profileimg {
+    right: 0px;;
+    top: 14px;
+    background-color: #ffffff;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.heartimg {
+    background-color: #ffffff;
+    right: 50px;
+    top: 14px;
+    font-size: 25px;
+}
+
+.compassimg {
+    background-color: #ffffff;
+    right: 100px;
+    top: 14px;
+    font-size: 25px;
+}
+
+.planeimg {
+    background-color: #ffffff;
+    right: 150px;
+    top: 14px;
+    font-size: 25px;
+}
+
+.homeimg {
+    background-color: #ffffff;
+    right: 200px;
+    top: 14px;
+    font-size: 25px;
+}
+
+.main {
+    position: relative;
+    width: 935px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.stroy {
+    width: 612px;
+    height: 116px;
+    margin-top: 90px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.feeds {
+    width: 612px;
+    height: 900px;
+    margin-top: 30px;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.mainRight {
+    border: 1px solid black;
+    position: absolute;
+    width: 293px;
+    height: 389px;
+    top: 0px;
+    left: 642px;
+}
+
+
+
+.stroycontents {
+    position: relative;
+}
+
+.stroycontents > li {
+    position: absolute;
+}
+
+.stroyli1 {
+    top: 70px;
+    left: 70px;
+}
+
+.feedsheader {
+    width: 610px;
+    height: 59px;
+    background-color: #fff;
+    position: relative;
+}
+
+.feedprofile {
+    width: 30px;
+    border: 1px solid #bbbbbb;
+    border-radius: 70%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.pname {
+    text-decoration: none;
+}
+
+.feedprofilename {
+    color: black;
+    background-color: #fff;
+    font-family: "Lobster", cursive;
+    position: absolute;
+    top: 20px;
+    left: 65px;
+}
+
+.option {
+    font-size: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 570px;
+}
+
+.feedimg {
+    
+    width: 610px;
+    height: 614px;
+}
+
+.fimg {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.feedbutton {
+    position: relative;
+}
+
+.fbheart {
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.fbcomment {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+
+.fbplane {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 120px;
+}
+
+.fbbookmark {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 570px;
+}
+
+.feedlike {
+    position: relative;
+    background-color: #fff;
+}
+
+.likeamount {
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.bold {
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.feedcontent {
+    background-color: #fff;
+    position: relative;
+}
+
+.fc {
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.feedcomment {
+    margin-top: 120px;
+    padding-left: 19px;
+    background-color: #fff;
+    color: #bbbbbb;
+}
