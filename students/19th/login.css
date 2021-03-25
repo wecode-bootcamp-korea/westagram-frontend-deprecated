@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 /* Variable(global) */
 :root {
   /* Color */
@@ -50,6 +52,10 @@ input::placeholder {
 }
 
 /* Typography */
+h1 {
+  font-family: "Lobster", cursive;
+}
+
 span {
   color: var(--color-dark-blue);
   font-size: 11px;
@@ -72,8 +78,10 @@ span {
   flex-direction: column;
 }
 
-.loginForm__header {
-  padding: 5px;
+.loginForm__logo {
+  text-align: center;
+  margin: 20px 0px 40px 0px;
+  font-size: 40px;
 }
 
 .loginForm__btn {
@@ -87,6 +95,10 @@ span {
   cursor: pointer;
   padding: 6px 0px;
   margin-top: 10px;
+}
+
+.change-btn {
+  background-color: var(--color-blue);
 }
 
 .loginForm__link {
