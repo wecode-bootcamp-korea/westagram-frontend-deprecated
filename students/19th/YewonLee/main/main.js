@@ -44,6 +44,7 @@ const postCommentsByButton = commentsButton.addEventListener("click", function()
         commentByButton.innerHTML = commentsInput.value;
         console.log(commentByButton);
         commentsList.appendChild(commentByButton);
+        commentsInput.value = "";
     }
 })
 
@@ -60,6 +61,7 @@ const postCommentsByEnter = commentsInput.addEventListener("keypress", function(
             commentByEnter.innerHTML = commentsInput.value;
             console.log(commentByEnter);
             commentsList.appendChild(commentByEnter);
+            commentsInput.value = "";
         }
     }
 });
