@@ -29,6 +29,10 @@ button:focus{
     align-items: center;
 }
 
+.navbar-wrap a {
+    text-decoration: none;
+}
+
 .logo {
     font-family: 'Lobster', cursive;
     font-size: 24px;
@@ -133,7 +137,6 @@ button:focus{
     padding: 8px;
     color: #8e8e8e;
     font-size: 14px;
-    font-weight: 400;
 }
 
 .icon-wrap {
@@ -191,7 +194,6 @@ button:focus{
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    font-weight: 400;
 }
 
 .profile-list li:hover {
@@ -284,6 +286,9 @@ button:focus{
 }
 
 .insta-story ul li p {
+    text-overflow: ellipsis;
+    max-width: 60px;
+    overflow: hidden;
     margin: 0;
     font-size: 12px;
     letter-spacing: 0.1px;
@@ -359,7 +364,17 @@ article {
     margin: 0 5px;
 }
 
-.reply-list {
+.feed-content {
+    padding: 0px 16px;
+}
+
+.feed-content p {
+    margin: 0;
+    padding: 0;
+    color: #8e8e8e;
+}
+
+.reply-list{
     padding: 2px 16px 12px 16px;
 }
 

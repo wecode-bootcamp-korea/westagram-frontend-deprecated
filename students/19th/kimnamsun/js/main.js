@@ -30,7 +30,7 @@ class Reply {
 
 //댓글 추가
 const addComment = () => {
-    let commentInputValue = commentInput.value;
+    let commentInputValue = commentInput.value.trim();
     if (commentInputValue.length > 0) {
         const ul = document.querySelector('.reply-list');
         const li = document.querySelector('.reply-list li');
@@ -83,9 +83,9 @@ const scroll = (direction) => {
 
     const slide = setInterval((e) => {
         if (direction === 'left') {
-            instaStoryUl.scrollLeft -= 10;
+            instaStoryUl.scrollLeft -= 15;
         } else {
-            instaStoryUl.scrollLeft += 10;
+            instaStoryUl.scrollLeft += 15;
         }
         scrollAmount += 10;
         if (scrollAmount >= 100) {
@@ -218,7 +218,7 @@ const id = [
     {
         id: 'quokka_zzang',
         profile: 'https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/121710511_811898466235784_3838790021771545916_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=uiUoG9pXJCkAX9AcFrK&ccb=7-4&oh=dfa31dcf48a50e756132df78c69d8c42&oe=60839AB0&_nc_sid=5cbaad',
-        desc: '쿼카 보고싶어..',
+        desc: 'quokka instagram',
     },
     {
         id: 'wework',
@@ -239,16 +239,16 @@ const search = () => {
         let hasResult = 0;
 
         id.filter((obj) => {
-            const noResult = document.querySelector('.noResult')
+            const noResult = document.querySelector('.noResult');
             if (noResult) {
                 noResult.remove();
             }
-            if (obj.id.includes(searchInput.value)) {
+            if (obj.id.includes(searchInput.value.toLowerCase())) {
                 hasResult++;
                 createLi(obj.id, obj.profile, obj.desc);
             } else {
                 hasResult === 0
-                    ? searchList.innerHTML = '<span class="noResult">검색결과가 없습니다.</span>'
+                    ? searchList.innerHTML = '<span class="noResult light">검색결과가 없습니다.</span>'
                     : '';
             }
         })

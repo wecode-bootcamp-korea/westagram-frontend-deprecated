@@ -35,8 +35,12 @@ ul {
 }
 
 /* 자주 쓰이는 속성 */
-.weight {
+.bold {
     font-weight: 600;
+}
+
+.light {
+    font-weight: 400;
 }
 
 .black {
