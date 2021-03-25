@@ -1,0 +1,36 @@
+.FeedStory {
+  width: 620px;
+  height: 120px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  overflow-x: scroll;
+}
+.FeedStory::-webkit-scrollbar {
+  display: none;
+}
+.FeedStoryContent {
+  height: 100px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.FeedStoryContentProfile {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.FeedStoryContentName {
+  font-size: 14px;
+  text-overflow: ellipsis;
+  width: 70px;
+  overflow: hidden;
+  padding-top: 10px;
+  text-align: center;
+}

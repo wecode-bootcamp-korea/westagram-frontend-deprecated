@@ -1,0 +1,89 @@
+.RightFixMain {
+  margin-left: 30px;
+  width: 300px;
+  height: 360px;
+  position: fixed;
+  /* border: 1px solid black; */
+}
+.RightFixProfile {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.RightFixMyProfileImage {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.RightFixMyProfile {
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+
+.RightFixMyProfileId {
+  font-weight: bold;
+  font-size: 15px;
+}
+.RightFixMyProfileName {
+  padding-top: 3px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.RightFixMyProfileChange {
+  color: #0096f6;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.RightFixRecommend {
+  display: flex;
+  justify-content: space-between;
+}
+.RightFixForMe {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(142, 142, 142);
+}
+.RightFixViewAll {
+  font-size: 12px;
+  font-weight: bold;
+}
+.RightFixRecommendPerson {
+  padding: 15px 0 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.RightFixRecommendPersonImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.RightFixRecommendPersonProfile {
+  display: flex;
+}
+.RightFixRecommendPersonInformation {
+  padding: 3px 0 0 7px;
+}
+.RightFixRecommendPersonID {
+  font-size: 14px;
+  font-weight: bold;
+}
+.RightFixRecommendPersonContent {
+  padding-top: 2px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.RightFixRecommendFollow {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  color: #0096f6;
+  font-size: 12px;
+  font-weight: bold;
+}
