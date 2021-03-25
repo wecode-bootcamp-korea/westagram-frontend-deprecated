@@ -1,4 +1,31 @@
 const loginButton = document.getElementById('login-button');
+let passwdInput = document.getElementById('passwd-input');
+
+window.onload = function(){
+    loginButton.disable = false;
+}
+
+passwdInput.addEventListener('keydown', function(){
+    const userId = document.getElementById('userId-input');
+    const password = document.getElementById('passwd-input');
+
+    let idLength = userId.value.length;
+    let passwdLength =password.value.length;
+
+    if(idLength === 0 ){
+        alert('아이디부터 입력해주세요');
+        userId.focus();
+        return;
+    }
+
+    if(idLength >= 0 && passwdLength >= 0){
+        loginButton.style.backgroundColor = 'blue';
+        loginButton.disable = false;
+    }else{
+        loginButton.disable = true;
+    }
+})
+
 
 loginButton.addEventListener('click', function(){
     const userId = document.getElementById('userId-input');
