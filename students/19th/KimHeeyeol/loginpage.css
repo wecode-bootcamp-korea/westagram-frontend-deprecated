@@ -77,6 +77,12 @@ body {
     border-radius: 5px;
 }
 
+.logInButton:focus,
+.changeColorId:focus,
+.changeColorPw:focus {
+    outline: none;
+}
+
 .dividers {
     display: flex;
     justify-content: center;

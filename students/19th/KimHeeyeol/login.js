@@ -1,16 +1,20 @@
 'use strict';
 
-const changeLoginButtonColor = () => {
-    let idForChangeColor = document.getElementsByClassName('changeColorId').value;
-    let pwForChangeColor = document.getElementsByClassName('changeColorPw').value;
+const idForChangeColor = document.body.querySelector(".changeColorId");
+const pwForChangeColor = document.body.querySelector(".changeColorPw");
 
-    // let loginButtonOpacity = document.getElementsByClassName('logInButton');
+idForChangeColor.addEventListener("keyup", function () {
+    const loginButtonOpacity = document.body.querySelector('.logInButton');
 
-    idForChangeColor !== "" && pwForChangeColor !== ""
-    ? ( document.getElementsByClassName('logInButton').style.opacity = '1' )
-    : ( document.getElementsByClassName('logInButton').style.opacity = '0.3');
+    idForChangeColor.value.length !== 0 && pwForChangeColor.value.length !== 0
+    ? ( loginButtonOpacity.style.opacity = '1' )
+    : ( loginButtonOpacity.style.opacity = '0.3');
+});
 
-}
+pwForChangeColor.addEventListener("keyup", function () {
+    const loginButtonOpacity = document.body.querySelector('.logInButton');
 
-
-console.log(changeLoginButtonColor());
+    idForChangeColor.value.length !== 0 && pwForChangeColor.value.length !== 0
+    ? ( loginButtonOpacity.style.opacity = '1' )
+    : ( loginButtonOpacity.style.opacity = '0.3');
+});

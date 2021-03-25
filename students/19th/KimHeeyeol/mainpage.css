@@ -33,8 +33,18 @@ header {
     height: 38px;
 }
 
-.headerInput {
+.headerInput input{
+    width: 220px;
+    height: 25px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+}
 
+.headerInput input:focus{
+    outline: none;
+}
+
+.headerInput ::placeholder {
+    text-align: center;
 }
 
 .headerNav {
@@ -46,7 +56,7 @@ header {
 .headerNav i:nth-child(3),
 .headerNav i:nth-child(4),
 .headerNav i:nth-child(5) {
-    margin-left: 17px;
+    margin-left: 10px;
 }
 
 .mainCenter {
@@ -55,17 +65,6 @@ header {
     height: 100vh;
     margin: 0 auto;
     padding-top: 30px;
-}
-
-nav {
-    width: 35%;
-    border: 1px solid rgba(var(--b6a,219,219,219),1);
-}
-
-.navContainer {
-    position: fixed;
-    width: 316px;
-    height: 500px;
 }
 
 main {
@@ -79,6 +78,36 @@ main {
     height: 100px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     margin-bottom: 30px;
+}
+
+.storyIcons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.storyIcons div {
+    width: 60px;
+    overflow: hidden;
+    font-size: 11px;
+    text-align: center;
+}
+
+.storyIcons li {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 50%;
+    list-style: none;
+    overflow: hidden;
+    border: 2px solid #DB2F75;
+}
+
+.storyIcons li img {
+    width: 100%;
+    height: 100%;
 }
 
 .feed {
@@ -249,4 +278,15 @@ main {
     margin-top: 10px;
     font-size: 10px;
     color: gray;
+}
+
+.mainRight {
+    width: 35%;
+}
+
+.mainRightContainer {
+    position: fixed;
+    width: 316px;
+    height: 500px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
 }
