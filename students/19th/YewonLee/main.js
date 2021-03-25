@@ -5,6 +5,8 @@ const searchInput = document.getElementById("search-input");
 const commentsInput = document.getElementById("comments-input");
 const commentsButton = document.getElementById("comments-button");
 
+const commentsList = document.getElementsByClassName("comments-list")[0];
+
 //Move search icon and placeholder when clicked & go back to initial position when unclicked
 
 const moveSearchBarElements = searchInput.addEventListener("click", function(){
@@ -21,14 +23,11 @@ const moveSearchBarElements = searchInput.addEventListener("click", function(){
     })
 });
 
-
-
-
 //Enable comments post button
 const enableCommentsButton = commentsInput.addEventListener("keyup", function(){
-    let commentsValue = commentsInput.value;
     
-    if(commentsValue !== "") {
+    
+    if(commentsInput.value !== "") {
         commentsButton.removeAttribute("disabled");
         commentsButton.id = "comments-button-enabled";
         } else {
@@ -36,22 +35,31 @@ const enableCommentsButton = commentsInput.addEventListener("keyup", function(){
         commentsButton.id = "comments-button-disabled";
     }    
 
-    const postComments = commentsInput.addEventListener("keypress", function(e) {
+    });
 
-        const commentsList = document.getElementsByClassName("comments-list")[0];
-        
-            if(e.key === 'Enter') {
-                
-                const comment = document.createElement('p');
-                comment.innerHTML = commentsValue;
-                console.log(comment);
-                commentsList.appendChild(comment);
-                
-            }
-        
-    })
+//Post comments by Button
+const postCommentsByButton = commentsButton.addEventListener("click", function() {
+    if(commentsInput.value !== "") {
+        const commentByButton = document.createElement('span');
+        commentByButton.innerHTML = commentsInput.value;
+        console.log(commentByButton);
+        commentsList.appendChild(commentByButton);
+    }
+})
 
+
+
+
+
+//Post comments by Enter
+
+const postCommentsByEnter = commentsInput.addEventListener("keypress", function(e) {
+    if(commentsInput.value !== "") {
+        if(e.key === 'Enter') {
+            const commentByEnter = document.createElement('span');
+            commentByEnter.innerHTML = commentsInput.value;
+            console.log(commentByEnter);
+            commentsList.appendChild(commentByEnter);
+        }
+    }
 });
-
-//Post comments
-
