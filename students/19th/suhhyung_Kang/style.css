@@ -1,0 +1,154 @@
+.weStagram{
+    width: 510px;
+    height: 577px;
+    margin: 32px;
+    padding: 32px;
+
+}
+
+.login{
+    border-radius: 5px;
+    background-color:lightskyblue;
+    color: white;
+    margin: 8px 40px;
+    width: 268px;
+    height: 30px;
+    border-style: none;
+}
+
+.login:hover{
+   background-color:rgb(207, 232, 247);
+}
+
+.colorBox{
+    background-color: white;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 380px;
+    align-items: center;
+    margin: 0 0 10px;
+    padding: 10px 0px;
+}
+
+.colorBox h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    height: 51px;
+    width: 175px;
+    background-size: 440px 411px;
+    background-position: 0 -129px;
+    margin: 22px 54.5px 12px;
+    font-size: 35px;
+}
+
+.colorBox2{
+    background-color: white;
+    border: white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 380px;
+    align-items: center;
+}
+
+input[type="text"]{
+    padding: 9px 0px 7px 8px;
+    border-color: lightgray;
+    border:1px solid lightgray;
+    width: 258px;
+    height: 36px;
+    color:gray;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+
+input[type="password"]{
+    padding: 9px 0px 7px 8px;
+    border-radius: 3px;
+    border-color: lightgray;
+    width: 258px;
+    height: 36px;
+    margin: 5px;
+    border:1px solid lightgray;
+}
+
+input::placeholder{
+    color: lightgray;
+}
+
+.or{
+color:#8c8c8c;
+color:rgba(var(--f52,142,142,142),1);
+font-size: 13px;
+margin: 0px 18px;
+padding:0;
+width: 22.5px;
+height: 15px;
+}
+
+.line{
+    margin: 10px 40px 10px 40px;
+    background-color:lightgray;
+    height: 1px;
+    width: 80px;
+}
+
+.underBox{
+    display:flex;
+    align-items: center ;
+    margin: 10px 40px 18px;
+   
+}
+
+.faceBook{
+    width: 170px;
+    height: 15px;
+    background-color: white;
+    border:0;
+    color:rgba(var(--d69,0,149,246),1);
+    padding:0;
+    color: #00376b;;
+    margin:
+}
+.face{
+    color:#00376b;
+}
+
+.forGet{
+    text-align: center;
+    margin: 12px 0px 0px;
+    font-size: 12px;
+    color:#00376b;
+    text-decoration: none;
+    line-height: 14px;
+
+}
+
+.memberShip{
+    background-color: white;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px;
+    width: 350px;;
+    height: 63px;
+    padding: 10px 0px;
+}
+.none{
+    width: 189.938px;
+    height: 48px;
+    margin: -3px 0 -4px;
+    font-size: 15px;   
+}
+.hi{
+    color:#0095f6;
+    color: rgba(var(--d69,0,149,246),1);
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
