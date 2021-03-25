@@ -1,197 +1,294 @@
 body {
-    /* max-width: 1000px; */
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  /* navbar styling */
-  #navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background-color: #fff;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  .navbar_title {
-    font-size: 20px;
-  }
-  
-  .navbar_title_logo {
-    font-family: "Lobster", cursive;
-  }
-  
-  .navbar_search {
-    position: relative;
-  }
-  
-  .navbar_search input {
-    padding: 3px 10px;
-    border: 1px solid lightgray;
-  }
-  
-  .navbar_search input::-webkit-input-placeholder {
-    text-align: center;
-  }
-  
-  .navbar_search .fa-search {
-    position: absolute;
-    left: 35%;
-    top: 8px;
-    font-size: 3px;
-  }
-  
-  .navbar_icons button {
-    background-color: white;
-  }
-  
-  .navbar_icons img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  
-  /* main container */
-  
-  #main_container {
-    display: flex;
-    /* padding: 50px; */
-    max-width: 1100px;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-  
-  .main_left {
-    margin-right: 20px;
-    width: 70%;
-  }
-  .main_left_slider {
-    display: flex;
-    /* background-color: blue; */
-    border: 1px solid lightgray;
-    padding: 10px;
-    overflow: hidden;
-  }
-  
-  .main_left_slider img {
-    width: 70px;
-    height: 70px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: 3px solid red;
-  }
-  
-  .main_left_feeds {
-    border: 1px solid lightgray;
-    margin-top: 30px;
-    overflow: hidden;
-  }
-  
-  .feeds_navbar {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
-  }
-  
-  .feeds_navbar_left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .feeds_navbar_left img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-    border: 3px solid red;
-  }
-  
-  .main_right {
-    position: fixed;
-    padding-top: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-  }
-  
-  .main_right_user_profile {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .main_right_user_profile,
-  .main_right_recommendation {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .main_right_user_profile_name {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main_right_user_profile button {
-    background-color: white;
-    color: #0095f6;
-  }
-  
-  .main_right_recommendation button {
-    background-color: white;
-    color: #0095f6;
-  }
-  .main_right_recommendation_list {
-    margin-top: 20px;
-  }
-  
-  .main_right_recommendation_list li {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  
-  .main_right_user_profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .main_right_recommendation_list img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-  
-  .main_right_recommendation_list button {
-    background-color: white;
-  }
-  
-  .main_right_recommendation_name {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .main_right_footer {
-    margin-top: 20px;
-    text-align: left;
-  }
-  
-  .main_right_footer li {
-    display: inline-block;
-  }
-  
-  .main_right_footer a,
-  .main_right_footer div {
-    color: lightgray;
-  }
-  
-  .main_right_footer div {
-    margin-top: 15px;
-  }
-  
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* navbar styling */
+#navbar {
+  /* navbar에 max-width를 지정하더라도  */
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar_container {
+  /* max-width로 navbar_title, navbar_search, navbar_icons다 감싸준 후 
+  #navbar에 설정했던 모든 값들 중 border만 뺀 후 옮겨준다 */
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+
+  background-color: #fff;
+}
+
+.navbar_title {
+  font-size: 20px;
+}
+
+.navbar_title_logo {
+  font-family: "Lobster", cursive;
+}
+
+.navbar_search {
+  position: relative;
+}
+
+.navbar_search input {
+  padding: 3px 10px;
+  border: 1px solid lightgray;
+}
+
+.navbar_search input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.navbar_search .fa-search {
+  position: absolute;
+  left: 35%;
+  top: 8px;
+  font-size: 3px;
+}
+
+.navbar_icons button {
+  background-color: white;
+}
+
+.navbar_icons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* main container */
+
+#main_container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* main left */
+
+.main_left {
+  width: 70%;
+  margin-right: 20px;
+}
+.main_left_slider {
+  position: relative;
+  display: flex;
+  border: 1px solid lightgray;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.main_left_slider img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+
+.main_left_feeds {
+  border: 1px solid lightgray;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.main_left_feeds .feeds_navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+
+.main_left_feeds .feeds_img {
+  width: 100%;
+}
+
+.main_left_feeds .feeds_navbar .feeds_navbar_left {
+  display: flex;
+  align-items: center;
+}
+
+.main_left_feeds .feeds_navbar .feeds_navbar_profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid red;
+}
+
+.feeds_info_icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.feeds_info_icons_left svg {
+  margin-right: 10px;
+}
+
+.feeds_info_description {
+  text-align: left;
+  padding: 10px;
+}
+
+.feeds_info_description_like {
+  margin-bottom: 5px;
+}
+
+.feeds_info_description_like .bold,
+.feeds_info_description_user {
+  font-weight: bold;
+}
+
+.feeds_info_description_days {
+  font-size: 12px;
+  color: gray;
+}
+
+.feeds_info_comment {
+  border-top: 1px solid lightgray;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed_info_comment_emoji {
+  flex-basis: 5%;
+}
+.feeds_info_comment form {
+  flex-basis: 95%;
+  position: relative;
+  /* width: 600px; */
+}
+
+.feed_info_comment_input {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+
+.feed_info_comment_submit {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #b3dffc;
+  font-size: 15px;
+  padding: 0 5px;
+}
+
+.pressed {
+  color: #3baef8;
+  font-weight: bold;
+}
+
+/* main right */
+
+.main_right_container {
+  width: 100%;
+  /* background-color: powderblue; */
+}
+
+.main_right {
+  position: sticky;
+  top: 60px;
+  width: 100%;
+  /* padding: 40px 20px; */
+  /* background-color: pink; */
+}
+
+.main_right_user_profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.main_right_user_profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.profile_container {
+  display: flex;
+  align-items: center;
+}
+
+.profile_name {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.title_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.title_container div {
+  font-weight: bold;
+  color: darkgray;
+}
+
+.main_right_user_profile button,
+.recommendation_list_friend button {
+  color: #0095f6;
+  font-weight: bold;
+}
+
+.recommendation_list_friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recommendation_list_friend img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.recommendation_container {
+  display: flex;
+}
+
+.friend_name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* main right footer */
+
+.main_right_footer {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.main_right_footer li {
+  display: inline-block;
+}
+
+.main_right_footer a,
+.main_right_footer div {
+  color: lightgray;
+}
+
+.main_right_footer div {
+  margin-top: 15px;
+}
