@@ -33,13 +33,13 @@ input {
     flex-direction: column;
 }
 
-.login_input .email_password {
+.login_input #email_password {
     margin-top: 5px;
     border: 1px solid #dbdbdb;
     color: #9E9E9E;
 }
 
-.login_input .login_password {
+.login_input #login_password {
     margin-top: 5px;
     border: 1px solid #dbdbdb;
     color: #9E9E9E;

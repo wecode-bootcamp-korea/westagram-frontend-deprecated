@@ -1,13 +1,21 @@
-const button = document.getElementById('login_btn');
-const input = document.getElementsByClassName('login_input')[0];
-const email = document.getElementsByClassName('email_password')[0];
-const pw = documet.getElementsByClassName('login_password')[0];
+const inputId = document.querySelector("#email_password");
+const inputPassword = document.querySelector("#login_password");
+const button = document.querySelector(".login_btn");
 
-function changeColor() {
-    if(email.value && pw.value) {
-        // button.removeAttribute('disabled');
-        button.style.backgroundColor= '#0095f6';
+function loginBtn() {
+    let idValue = inputId.value;
+    let passwordValue = inputPassword.value;
+
+    if(idValue.length > 0 && passwordValue.length > 0) {
+        button.disabled = false;
+        button.style.cursor = "pointer";
+        button.style.backgroundColor = "#1c7ed6";
+    }else {
+        button.disabled = true;
+        button.style.cursor = "default";
+        button.style.backgroundColor = "#bfdffd";
     }
-}
+};
 
-input.addEventListener('keyup',changeColor);
+inputId.addEventListener('keyup', loginBtn);
+inputPassword.addEventListener('keyup', loginBtn);
