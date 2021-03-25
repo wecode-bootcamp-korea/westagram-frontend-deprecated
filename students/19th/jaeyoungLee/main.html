@@ -12,71 +12,91 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <div class="mainLayout">
-    <nav class="navInfo">
-        <div class="nav">
-            <div class="navLogo">
-                instagram
+    <nav>
+        <div class="navcontents">
+            <div class="navleft">
+                <div class="navleftcontents">
+                    <span class="logo"><i class="fab fa-instagram"></i></span>
+                    <h1 class="logoname">westagram</h1>
+                </div>
             </div>
-            <div class="navSearch">
-                <input type="text" class="search" placeholder="검색">
-                <span class="searchimg"><i class="fas fa-search"></i></span>
+            <div class="navcenter">
+                <div class="navcentercontents">
+                    <input class="search" type="text" placeholder="검색">
+                    <span class="searchimg"><i class="fas fa-search"></i></span>
+                </div>
             </div>
-            <div class="navImg">
-                <span class="homeimg"><i class="fas fa-home"></i></span>
-                <span class="planeimg"><i class="far fa-paper-plane"></i></span>
-                <span class="compassimg"><i class="far fa-compass"></i></span>
-                <span class="heartimg"><i class="far fa-heart"></i></span>
-                <span class="profileimg"></span>
+            <div class="navright">
+                <div class="navrightcontents">
+                    <img class="navexplore" src="img/explore.jpg" alt="탐험">
+                    <img class="navheart" src="img/heart.jpg" alt="하트">
+                    <img class="navprofile" src="img/profile.jpg" alt="프로필">
+                </div>
             </div>
         </div>
     </nav>
     <div class="main">
-        <div class="feedcontents">
-            <div class="stroy">
-                <!-- <ul class="stroycontents">
-                    <li class="stroyli1"><span class="storyimg1"></span></li>
-                    <li class="storyli2"></li>
-                    <li class="storyli3"></li>
-                    <li class="storyli4"></li>
-                    <li class="storyli5"></li>
-                    <li class="storyli6"></li>
-                    <li class="storyli7"></li>
-                </ul> -->
+        <div class="feeds">
+            <div class="story"><!--전체스토리 부모-->
+                <div class="storyimgbox"><!--flex받음-->
+                    <div class="storycontents"><!--내용스토리 부모-->
+                        <div class="storyprofile"><!--flex받음-->
+                            <div class="storylastbox"><!--내용 부모-->
+                                <div class="storylast"><!--flex받음-->
+                                    <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
+                                    <p class="storyp1">손흥민</p>
+                                </div>
+                                <div class="storylast"><!--flex받음-->
+                                    <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
+                                    <p class="storyp1">손흥민</p>
+                                </div>
+                                <div class="storylast"><!--flex받음-->
+                                    <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
+                                    <p class="storyp1">손흥민</p>
+                                </div>
+                                <div class="storylast"><!--flex받음-->
+                                    <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
+                                    <p class="storyp1">손흥민</p>
+                                </div>
+                                <div class="storylast"><!--flex받음-->
+                                    <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
+                                    <p class="storyp1">손흥민</p>
+                                </div>
+                                <div class="storylast"><!--flex받음-->
+                                    <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
+                                    <p class="storyp1">손흥민</p>
+                                </div>
+                                <div class="storylast"><!--flex받음-->
+                                    <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
+                                    <p class="storyp1">손흥민</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="feeds">
-                <div class="feedsheader">
-                    <a class="fprofile" href=""><img class="feedprofile" src="img/축구공.jpg" alt="프로필1"></a>
-                    <a class="pname" href=""><p class="feedprofilename">Football</p></a>
-                    <p class="option">...</p>
+            <article>
+                <div class="articleheader">
+                    <div class="articleheadercontents">
+                        <img class="headerimg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=sQeUd39qUKoAX9VnaGA&ccb=7-4&oh=17b03b2b8a140f6c76f50d5dc9fa4bc5&oe=6083E470&_nc_sid=c982ba
+                        Request Method: GET" alt="피드프로필">
+                        <div class="headername">
+                            <div class="headerlast">
+                                <p class="hname">wecode</p>
+                                <span class="hlast"><i class="fas fa-ellipsis-h"></i></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feedimg">
-                    <img class="fimg" src="img/손흥민.jpg" alt="손흥민">
+                <div class="articleimgbox">
+                    <img class="articleimg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/162896348_2049003231907899_4671236219368728456_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=5D9Igvqa1a0AX8tO1KZ&ccb=7-4&oh=432e5e8374a7f075279d22cbefa7481a&oe=6083D466&_nc_sid=c982ba">
                 </div>
-                <div class="feedbutton">
-                    <span class="fbheart"><i class="fas fa-heart"></i></span>
-                    <span class="fbcomment"><i class="far fa-comment"></i></span>
-                    <span class="fbplane"><i class="far fa-paper-plane"></i></span>
-                    <span class="fbbookmark"><i class="far fa-bookmark"></i></span>
-                </div>
-                <div class="feedlike">
-                    <span class="likeamount"><span class="bold">2wo0_0</span>님 <span class="bold">여러 명</span>이 좋아합니다</span>
-                </div>
-                <div class="feedcontent">
-                    <span class="fc"><span class="bold">Son</span> 나는 오늘도 골을 넣는다.</span>
-                </div>
-                <div class="feedcomment">
-                    댓글 모두보기
-                </div>
-                <div class="feedday">
-                    1일전
-                </div>
-            </div>
+                
+            </article>
         </div>
-        <div class="mainRight">
+        <div class="main-right">
 
         </div>
-    </div>
     </div>
 </body>
 </html>
