@@ -430,12 +430,14 @@ article > img {
 
 .recommend-header .log-out {
     width:30%;
-    margin-right:0;
-    font-size:14px;
-    font-weight:700;
+    justify-self: end;
+}
+
+.recommend-blue{
+    font-size:12px;
+    font-weight:600;
     color:#0094f6;
     text-align:right;
-    justify-self: end;
 }
 
 .recommend-header-id {
@@ -461,6 +463,7 @@ article > img {
 .recommend-title {
     width:100%;
     height:40px;
+    margin-bottom:5px;
 }
 .recommend-title-left {
     float:left;
@@ -477,4 +480,43 @@ article > img {
 .friend-list {
     width:100%;
     height:300px;
+}
+
+.friend-list {
+    width:100%;
+    height:auto;
+}
+
+.friend-list ul {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    position:relative;
+}
+
+.friend-list ul li {
+    margin-bottom:10px;
+}
+.friend-list ul li:nth-child(2) {
+    position:absolute;
+    left:15%;
+}
+
+.friend-list ul li img {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-top:2px;
+    margin-right:20px;
+}
+
+.friends-id {
+    font-size:15px;
+    font-weight:700;
+}
+
+.friends-follow {
+    margin-top:6px;
+    font-size:13px;
+    color:#888;
 }
