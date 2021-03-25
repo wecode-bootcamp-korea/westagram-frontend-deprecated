@@ -124,7 +124,7 @@ main{
     overflow: hidden;
 }
 
-.btn-div{
+.story-btn-box{
     width: 614px;
     height: 20px;
 
@@ -156,7 +156,7 @@ main{
     border-radius: 50%;
 }
 
-.story-div-list{
+.story-list{
     height: 100px;
 
     display: flex;
@@ -165,7 +165,7 @@ main{
 }
 
 
-.story-div {
+.story-content {
     width: 70px;
     height: 80px;
 
@@ -173,11 +173,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     margin: auto 7.5px;
 }
 
-.story-img {
+.story-content-icon {
     width: 66px;
     height: 66px;
 
@@ -186,8 +187,9 @@ main{
     border: 2px solid burlywood;
     border-radius: 50%;
 }
-.story-span{
+.story-content-nickname{
     font-size: 12px;
+    text-align: center;
 }
 
 article{
@@ -199,19 +201,14 @@ article{
     margin-bottom: 40px;
 }
 
-header{
+.article-header{
     height: 60px;    
 
-}
-
-.article-div{
     display: flex;
     align-items: center;
-
 }
 
-
-.header-image{
+.article-hd-image{
     width: 32px;
     height: 32px;
 
@@ -219,7 +216,7 @@ header{
     margin: 5px 5px 5px 15px;
 }
 
-.header-content{
+.article-hd-content{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -228,20 +225,20 @@ header{
     width: 574px;
 }
 
-.nickname-a{
+.article-hd-nickname{
     margin-left: 10px;
     color:black;
     text-decoration: none;
 }
 
-.header-btn {
+.article-hd-more {
     width: 12px;
     height: 12px;
 
     margin-right: 20px;
 }
 
-.main-image {
+.article-image {
     width: 614px;
     max-height: 800px;
 
@@ -249,7 +246,7 @@ header{
     border-radius: 0;
 }
 
-.section{
+.section-box{
     padding: 0 16px;
 }
 
@@ -257,7 +254,6 @@ header{
 .section-content-left > img, .section-content-right > img {
     width: 24px;
     height: 24px;
-
 }
 
 .section-content-left > img{
@@ -273,6 +269,9 @@ header{
 
 .section-content{
     height: 40px;
+
+    display: flex;
+    align-items: center;
 }
 
 .section-content-box{
@@ -409,7 +408,7 @@ header{
     width: 200px;
 }
 
-.nickname {
+.main-right-nickname {
     margin-bottom: 5px;
 
     font-size: 14px;
@@ -417,7 +416,7 @@ header{
     color: rgb(73, 73, 73);
 }
 
-.name {
+.main-right-name {
     color: gray;
     font-size: 12px;
 }

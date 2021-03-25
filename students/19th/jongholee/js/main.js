@@ -5,7 +5,7 @@ const container = document.getElementsByClassName('container')[0];
 
 const storyPrevBtn = document.getElementsByClassName("story-previous")[0];
 const storyNextBtn = document.getElementsByClassName("story-next")[0];
-const storyList = document.getElementsByClassName('story-div-list')[0];
+const storyList = document.getElementsByClassName('story-list')[0];
 const storyContainer = document.getElementsByClassName('story-container')[0];
 
 const STORY_MOVE_VALUE = 200;
