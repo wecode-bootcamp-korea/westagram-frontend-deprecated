@@ -1,7 +1,7 @@
 body {
     background-color: #FAFAFA;
 }
-.whitebox1 {
+.loginbox {
     width: 350px;
     height: 370px;
     background-color: #FFFFFF;
@@ -9,6 +9,12 @@ body {
     padding-top: 10px;
     margin: auto;
     margin-top: 42px;
+}
+.instalogo {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    margin: 22px auto 40px;
+    padding-left: 90px;
 }
 img {
     width: 50%;
@@ -31,7 +37,7 @@ input {
 .inputpw {
     margin: 0px 42px 0px 42px;
 }
-.login {
+.loginbutton {
     width: 268px;
     height: 30px;
     background-color: #0095F6;
@@ -42,8 +48,10 @@ input {
     text-align: center;
     border-radius: 4px;
     margin: 16px 42px 16px 42px;
+    cursor: pointer;
+    outline: none;
 }
-.whitebox2 {
+.signupbox {
     width: 350px;
     height: 43px;
     background-color: #FFFFFF;
@@ -74,4 +82,8 @@ input {
 .facelink {
     text-decoration: none;
     color: #385185;
+}
+.facebook {
+    margin: 30px 90px;
+    outline: none;
 }

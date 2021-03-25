@@ -1,13 +1,87 @@
-nav {
-    width: 975px;
-    height: 54px;
-    border: 1px solid black;
+body {
+    background-color: #FAFAFA;
 }
-main {
 
+nav {
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid #DBDBDB;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
 }
+
+.instalogo {
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+}
+
+.search {
+    width: 215px;
+    height: 25px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.personal {
+    text-align: center;
+}
+
+.storybox {
+    width: 614px;
+    height: 118px;
+    border: 1px solid #DBDBDB;
+    background-color: #ffffff;
+    margin: 0 0 24px;
+}
+
+header {
+    width: 614px;
+    height: 60px;
+    border: 1px solid #DBDBDB;
+    background-color: #ffffff;
+    margin-top: 16px;
+}
+
 div.feeds {
     width: 600px;
     height: 700px;
     border: 1px black;
+}
+
+.feed {
+    width: 614px;
+    height: 614px;
+    border: 1px solid #DBDBDB;
+    background-color: #ffffff;
+}
+
+.tera {
+    width: 614px;
+    height: 614px;
+}
+
+.main-right {
+    width: 293px;
+    height: 709px;
+    display: flex;
+    justify-content:
+
+}
+
+.myprofile {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #DBDBDB;
+    border-radius: 50%;
+}
+
+.nav1 {
+    margin: auto 0;
+    padding-left: 20px;
 }
