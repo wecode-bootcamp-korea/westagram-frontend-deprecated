@@ -7,7 +7,7 @@ body{
     background-color: rgba(0, 0, 0, 0.03);
 }
 
-div{
+section{
     width: 400px;
     margin: 0 auto;
     padding: 10px 0;;
@@ -21,14 +21,25 @@ h3{
     font-family: 'Lobster', cursive;
 }
 
-input{
+div{
     width: 270px;
     height: 38px;
+    margin: 0 auto;
     padding-left: 8px;
     margin-bottom: 8px;
     border: 1px solid #ddd;
     border-radius: 2px;
     background: #fafafa;
+    /*background: rgba(var(--b3f,250,250,250),1);*/
+}
+
+input{
+    width: 260px;
+    height: 38px;
+    margin: 0 auto;
+    border: 0;
+    background: none;
+    outline:none;
     /*background: rgba(var(--b3f,250,250,250),1);*/
 }
 
@@ -51,6 +62,7 @@ p{
 }
 
 a{
+    margin: 100px 0 13px 0;
     font-size: 15px;
     color: #00376b;
     text-decoration: none;
