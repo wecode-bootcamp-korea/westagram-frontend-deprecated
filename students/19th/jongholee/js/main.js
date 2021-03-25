@@ -1,5 +1,3 @@
-
-// 다크 모드 기능 지원
 const darkmodeBtn = document.getElementsByClassName("darkmode-btn")[0];
 const container = document.getElementsByClassName('container')[0];
 
@@ -8,12 +6,34 @@ const storyNextBtn = document.getElementsByClassName("story-next")[0];
 const storyList = document.getElementsByClassName('story-list')[0];
 const storyContainer = document.getElementsByClassName('story-container')[0];
 
+const ul_tag = document.getElementsByClassName('section-content-list')[0];
+
+const commentText = document.getElementsByClassName('comment-text')[0];
+const commentBtn = document.getElementsByClassName('comment-btn')[0];
+
 const STORY_MOVE_VALUE = 200;
+
 
 darkmodeBtn.addEventListener("click", darkBtnClickEvent);
 
 storyPrevBtn.addEventListener("click", prevClickEvent);
 storyNextBtn.addEventListener("click", nextClickEvent);
+
+commentText.addEventListener('input', commentTextInput);
+
+commentBtn.addEventListener("click", function() {
+    enterInput();
+
+    commentText.value = '';
+});
+
+commentText.addEventListener("keydown", function(e){
+    if (e.keyCode == 13){
+        enterInput();
+
+        commentText.value = '';
+    }
+})
 
 initPage();
 
@@ -24,7 +44,6 @@ function initPage(){
 }
 
 function darkBtnClickEvent() {
-    console.log(container.style.backgroundColor)
     if(container.style.backgroundColor === 'rgb(250, 250, 250)' || container.style.backgroundColor === ''){
         container.style.backgroundColor = "rgb(32, 32, 32)";
         darkmodeBtn.innerHTML = "white"
@@ -33,6 +52,7 @@ function darkBtnClickEvent() {
         darkmodeBtn.innerHTML = "dark"
     }
 }
+
 function prevClickEvent() {
     if(!isPrevEnd()){
         storyList.style.transition= "0.4s";
@@ -75,11 +95,6 @@ function isNextEndBefore(){
     return (storyList.offsetWidth + storyList.offsetLeft -STORY_MOVE_VALUE < storyContainer.offsetWidth) ? true: false
 }
 
-const commentText = document.getElementsByClassName('comment-text')[0];
-const commentBtn = document.getElementsByClassName('comment-btn')[0];
-
-commentText.addEventListener('input', commentTextInput)
-
 function commentTextInput() {
     if(commentText.value.length > 0) {
         commentBtn.disabled = false;
@@ -90,27 +105,10 @@ function commentTextInput() {
     }
 }
 
-commentBtn.addEventListener("click", function() {
-    enterInput();
-
-    commentText.value = '';
-});
-
-commentText.addEventListener("keydown", function(e){
-    if (e.keyCode == 13){
-        enterInput();
-
-        commentText.value = '';
-    }
-})
-
-const ul_tag = document.getElementsByClassName('section-content-list')[0];
-
 // 댓글 입력 후 엔터 이벤트
 function enterInput() {
     addComment(document.getElementsByClassName('comment-text')[0].value);
 }
-
 
 // 댓글 추가 기능
 function addComment(input_value) {
@@ -130,5 +128,4 @@ function addComment(input_value) {
     new_comment_li.appendChild(new_comment_content);
 
     ul_tag.appendChild(new_comment_li);
-
 }
