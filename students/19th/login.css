@@ -122,7 +122,24 @@ span {
   background-color: var(--color-blue);
 }
 
-.loginForm__link {
+.loginForm__forget {
   display: flex;
   justify-content: center;
+}
+
+.loginForm__facebook {
+  display: flex;
+  justify-content: center;
+  color: var(--color-dark-blue);
+  margin-top: 15px;
+}
+
+.loginForm__facebook__icon {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.loginForm__facebook__text {
+  font-size: 14px;
+  font-weight: 700;
 }
