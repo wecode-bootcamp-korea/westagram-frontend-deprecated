@@ -1,7 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
 
-body{
-    border: 1px solid #ddd;
+body {
+  border: 1px solid #ddd;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feeds {
+  width: 65%;
+}
+x .story ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story ul li img {
+  width: 50px;
+}
+
+.sidebar {
+  width: 32%;
+}
+
+.sidebar02_2 {
+  width: 100%;
+}
+
+.sidebar02_2 ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar02_2 img {
+  width: 50px;
 }
