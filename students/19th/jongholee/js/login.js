@@ -2,8 +2,8 @@ const login_id = document.getElementById('login_id');
 const login_pw = document.getElementById('login_pw');
 const login_btn = document.getElementsByClassName('login_btn')[0];
 const view_password = document.getElementsByClassName('view_password')[0];
-const login_id_span = document.getElementsByClassaNme("login_id_span")[0];
-const login_pw_span = document.getElementsByClassName("login_pw_span")[0];
+const login_id_span = document.getElementsByClassName('login_id_span')[0];
+const login_pw_span = document.getElementsByClassName('login_pw_span')[0];
 
 
 
