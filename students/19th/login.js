@@ -8,11 +8,7 @@ const loginBtn = document.querySelector('.loginForm__btn');
 const changeBtn = () => {
     const inputIdValue = inputId.value.length;
     const inputPwValue = inputPw.value.length;
-    if (inputIdValue > 0 && inputPwValue > 5) {
-        loginBtn.classList.add('change-btn')
-    } else {
-        loginBtn.classList.remove('change-btn')
-    }
+    (inputIdValue > 0 && inputPwValue > 5 ? loginBtn.classList.add('change-btn') : loginBtn.classList.remove('change-btn'))
 }
 
 inputId.addEventListener('input', changeBtn);
