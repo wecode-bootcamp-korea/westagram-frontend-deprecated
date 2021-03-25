@@ -5,13 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #DBDBDB;
-    background-color: #fff;
+    border: 1px solid var(--border);
+    background-color: var(--white);
 }
 
 .logo {
     margin: 40px 0;
-    font-family: 'Lobster', cursive;
     font-size: 40px;
 }
 
@@ -26,8 +25,8 @@
     height: 40px;
     margin: 3px 0px;
     padding: 14px 10px 14px 10px;
-    background: #FAFAFA;
-    border: 1px solid #DBDBDB;
+    background: var(--background);
+    border: 1px solid var(--border);
     border-radius: 3px;
 }
 .login-wrap input:focus {
@@ -44,26 +43,34 @@
     margin: 10px 0px;
     border: 0px;
     border-radius: 5px;
-    background-color: #B9DFFC;
-    color: #fff;
+    background-color: var(--disabled);
+    color: var(--white);
     font-weight: 700;
     font-size: 15px;
 }
 
 .find-password {
     margin: 60px 0 20px 0;
-    text-align: center;
     color: #00376b;
+    text-align: center;
     font-size: 12px;
 }
 
 /* login keyup event */
-.enabledBtn {
-    background-color: #0095F6;
+.enabled-btn {
+    background-color: var(--enabled);
     cursor: pointer;
 }
 
-.disabledBtn {
-    background-color: #B9DFFC;
+.disabled-btn {
+    background-color: var(--disabled);
     cursor: default;
+}
+
+/* 반응형 */
+@media (max-width: 450px) {
+    .container {
+        background-color: var(--background);
+        border: 0;
+    }
 }

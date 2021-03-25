@@ -8,11 +8,11 @@ const enabledBtn = () => {
     if ((idValue.length > 0 && idValue.indexOf('@') > -1)
         && pwValue.length >= 5) {
         loginBtn.disabled = false;
-        loginBtn.classList.remove('disabledBtn');
-        loginBtn.classList.add('enabledBtn');
+        loginBtn.classList.remove('disabled-btn');
+        loginBtn.classList.add('enabled-btn');
     } else {
-        loginBtn.classList.add('disabledBtn');
-        loginBtn.classList.remove('enabledBtn');
+        loginBtn.classList.add('disabled-btn');
+        loginBtn.classList.remove('enabled-btn');
     }
 }
 

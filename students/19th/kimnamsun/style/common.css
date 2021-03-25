@@ -2,8 +2,19 @@
     box-sizing: border-box;
 }
 
+* {
+    --background : #FAFAFA;
+    --black :#000;
+    --white: #fff;
+    --enabled : #0095F6;
+    --disabled : #B9DFFC;
+    --border: #DBDBDB;
+    --gray: #8e8e8e;
+
+}
+
 body {
-    background-color: #FAFAFA;
+    background-color: var(--background);
     margin: 0;
     padding: 0;
 }
@@ -34,6 +45,10 @@ ul {
     padding: 0;
 }
 
+.logo {
+    font-family: cursive, 'Lobster';
+}
+
 /* 자주 쓰이는 속성 */
 .bold {
     font-weight: 600;
@@ -44,7 +59,7 @@ ul {
 }
 
 .black {
-    color: #000;
+    color: var(--black);
 }
 
 .pointer {

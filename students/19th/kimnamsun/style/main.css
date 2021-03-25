@@ -15,17 +15,17 @@ button:focus{
 
 .nav-bar {
     height: 54px;
-    background-color: #fff;
-    border-bottom: 1px solid #dbdbdb;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
 }
 
 .navbar-wrap {
     width: 935px;
     height: 100%;
     display: flex;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
     align-items: center;
 }
 
@@ -34,11 +34,10 @@ button:focus{
 }
 
 .logo {
-    font-family: 'Lobster', cursive;
-    font-size: 24px;
     margin: auto 0;
     margin-right: 80px;
-    color: #000;
+    color: var(--black);
+    font-size: 24px;
 }
 
 .search-wrap {
@@ -51,8 +50,8 @@ button:focus{
     width: 215px;
     height: 28px;
     margin: auto 0;
-    background-color: #fafafa;
-    border: 1px solid #dbdbdb;
+    background-color: var(--background);
+    border: 1px solid var(--border);
     border-radius: 3px;
     text-indent: 22px;
 }
@@ -74,7 +73,7 @@ button:focus{
     padding-left: 25px;
     text-align: left;
     text-indent: 0;
-    color: #8e8e8e;
+    color: var(--gray);
 }
 
 /* 검색결과창 */
@@ -82,17 +81,16 @@ button:focus{
     position: absolute;
     width: 150%;
     left: 50%;
-    transform:translateX(-50%);
     margin: 15px 0;
+    transform:translateX(-50%);
 }
 
 .speech-bubble {
     width: 15px;
     height: 15px;
-    transform: rotate(45deg);
-    margin: 0 auto;
-    background-color: #fff;
     margin: -7px auto;
+    transform: rotate(45deg);
+    background-color: var(--white);
     z-index: 0;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
@@ -101,7 +99,7 @@ button:focus{
     position: relative;
     padding: 8px 16px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: var(--white);
     z-index: 999;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
@@ -121,21 +119,21 @@ button:focus{
 }
 
 .search-list li div span:last-child {
-    color: #8e8e8e;
+    color: var(--gray);
 }
 
 .search-list li img {
     width: 44px;
     border-radius: 50%;
-    border: 1px solid #dbdbdb;
+    border: 1px solid var(--border);
 }
 
 .noResult {
     height: 350px;
+    padding: 8px;
     align-items: center;
     justify-content: center;
-    padding: 8px;
-    color: #8e8e8e;
+    color: var(--gray);
     font-size: 14px;
 }
 
@@ -160,8 +158,8 @@ button:focus{
 }
 
 .profile-img {
-    border-radius: 50%;
     width: 22px;
+    border-radius: 50%;
 }
 
 /* 프로필 메뉴박스 */
@@ -180,8 +178,8 @@ button:focus{
 
 .profile-menu {
     position: relative;
+    background-color: var(--white);
     border-radius: 5px;
-    background-color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     z-index: 2;
 }
@@ -192,12 +190,12 @@ button:focus{
 
 .profile-list li {
     display: flex;
-    align-items: center;
     padding: 10px 15px;
+    align-items: center;
 }
 
 .profile-list li:hover {
-    background-color: #fafafa;
+    background-color: var(--background);
 }
 
 .profile-list li div {
@@ -205,9 +203,13 @@ button:focus{
 }
 
 .logout {
-    border-top: 1px solid #DBDBDB;
-    padding: 13px;
+    border-top: 1px solid var(--border);
 }
+
+.logout a {
+    padding-top: 2px;
+}
+
 
 /* 메인 */
 .main {
@@ -229,7 +231,7 @@ button:focus{
     width: 614px;
     padding: 16px 0px;
     margin-bottom: 30px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid var(--border);
     border-radius: 3px;
 }
 
@@ -241,10 +243,10 @@ button:focus{
 .scroll-btn-wrap button {
     width: 25px;
     height: 25px;
-    border-radius: 50%;
-    background-color: #fff;
-    border: 0;
     margin: 5px;
+    background-color: var(--white);
+    border: 0;
+    border-radius: 50%;
     mix-blend-mode: screen;
     box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
 }
@@ -272,9 +274,9 @@ button:focus{
     width: 60px;
     height: 60px;
     display: flex;
+    margin-bottom: 5px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
     border-radius: 100%;
     background: radial-gradient(circle at bottom left, #F58529 20%, #C42D91);
 }
@@ -282,7 +284,7 @@ button:focus{
 .gradient-wrap img {
     border-radius: 50%;
     width: 56px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
 }
 
 .insta-story ul li p {
@@ -298,18 +300,18 @@ button:focus{
 /* 피드 */
 article {
     width: 100%;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
     display: flex;
     flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: 3px;
 }
 
 .feed-nav {
-    background-color: #fff;
-    align-items: center;
-    display: flex;
     height: 60px;
     padding: 16px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
 }
 
 .feed-nav .profile-img {
@@ -317,8 +319,8 @@ article {
 }
 
 .id-wrap {
-    margin-left: 14px;
     width: 536px;
+    margin-left: 14px;
     justify-content: space-between;
 }
 
@@ -332,11 +334,12 @@ article {
 }
 
 .feed-content {
-    background-color: #fff;
+    background-color: var(--white);
+    
 }
 
 .feed-icon {
-    padding: 0 8px;
+    padding: 5px 8px;
 }
 
 .feed-icon svg {
@@ -357,21 +360,21 @@ article {
 .like-list .profile-img {
     width: 20px;
     border-radius: 50%;
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--border);
 }
 
 .like-list span {
     margin: 0 5px;
 }
 
-.feed-content {
-    padding: 0px 16px;
+.feed-article {
+    padding: 0 16px;
 }
 
 .feed-content p {
     margin: 0;
     padding: 0;
-    color: #8e8e8e;
+    color: var(--gray);
 }
 
 .reply-list{
@@ -379,24 +382,24 @@ article {
 }
 
 .like-heart {
-    font-size: 14px;
     margin: 1px 4px 1px 0px;
     float: right;
+    font-size: 14px;
 }
 
 .delete-reply {
-    font-size: 16px;
     float: right;
+    font-size: 16px;
 }
 
 /* 댓글입력 */
 .add-comment {
     height: 50px;
     display: flex;
+    padding: 0 15px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
-    border-top: 1px solid #dbdbdb;
+    border-top: 1px solid var(--border);
 }
 
 .add-comment svg {
@@ -410,30 +413,30 @@ article {
 }
 
 .add-comment-btn {
-    color: #B9DFFC;
     border: 0px;
-    background-color: #fff;
+    background-color: var(--white);
+    color: var(--disabled);
 }
 
 /* main-right */
 .main-right {
-    padding-left: 5px;
+    width: 293px;
     position: fixed;
     left: 887px;
     top: 88px;
-    width: 293px;
+    padding-left: 5px;
     z-index: -1;
 }
 
 .account {
     display: flex;
-    align-items: center;
     padding: 20px 0px;
+    align-items: center;
 }
 
 .account img {
-    border-radius: 50%;
     width: 56px;
+    border-radius: 50%;
 }
 
 .main-right .id-wrap {
@@ -458,7 +461,7 @@ article {
 }
 
 .recommend-list span span:first-child {
-    color: #8E8E8E;
+    color: var(--gray);
 }
 
 .recommend-for-user a {
@@ -467,9 +470,9 @@ article {
 
 .recommend-list li {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 8px 0px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .recommend-list li div {
@@ -478,7 +481,7 @@ article {
 
 .recommend-list li div span:last-child {
     font-size: 12px;
-    color: #8e8e8e;
+    color: var(--gray);
 }
 
 .recommend-list li img {
@@ -487,21 +490,43 @@ article {
 }
 
 .account a, .follow {
-    color: #0095f6;
+    color: var(--enabled);
     font-size: 12px;
 }
 
 /* keyup event */
-.enabledBtn {
-    color: #0095F6;
+.enabled-btn {
+    color: var(--enabled);
     cursor: pointer;
 }
 
-.disabledBtn {
-    color: #B9DFFC;
+.disabled-btn {
+    color: var(--disabled);
     cursor: default;
 }
 
 .hidden {
     display: none;
+}
+
+/* 반응형 */
+@media (max-width: 1078px) {
+    .main-right {
+        display: none;
+    }
+
+    .main {
+        justify-content: center;
+    }
+
+    .navbar-wrap {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .search-wrap {
+        display: none;
+    }
 }

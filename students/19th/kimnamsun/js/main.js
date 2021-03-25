@@ -5,17 +5,15 @@ const enabledBtn = () => {
     let commentInputValue = commentInput.value;
     if (commentInputValue.length > 0) {
         addCommentBtn.disabled = false;
-        addCommentBtn.classList.remove('disabledBtn');
-        addCommentBtn.classList.add('enabledBtn');
+        addCommentBtn.classList.remove('disabled-btn');
+        addCommentBtn.classList.add('enabled-btn');
     } else {
-        addCommentBtn.classList.add('disabledBtn');
-        addCommentBtn.classList.remove('enabledBtn');
+        addCommentBtn.classList.add('disabled-btn');
+        addCommentBtn.classList.remove('enabled-btn');
     }
 }
 
 commentInput.addEventListener('keyup', enabledBtn);
-
-
 
 //댓글배열
 const replyArr = [];
@@ -37,15 +35,29 @@ const addComment = () => {
         const newComment = li.cloneNode(true);
 
         //아이디
-        newComment.childNodes[1].innerHTML = 'ididididid';
+        newComment.childNodes[1].innerHTML = 'new-ID';
         //댓글내용
         newComment.childNodes[3].innerText = commentInput.value;
 
         ul.appendChild(newComment);
 
         //댓글객체 생성하고 배열에 푸쉬
-        replyArr.push(new Reply('ididididid', commentInput.value, false));
+        replyArr.push(new Reply('new-ID', commentInput.value, false));
         // console.log(replyArr);
+
+        // for (let i in replyArr) {
+        //     if (replyArr[i].isLike) {
+        //         console.log('')
+        //     }
+        // }
+
+        // for (let element of likeBtn) {
+        //     element.addEventListener('click', (e) => {
+        //         likeReply(e.target);
+        //     })
+        // };
+
+        // repeatFunction(likeBtn, likeReply, 'click');
 
         //초기화
         commentInput.value = '';
@@ -60,10 +72,6 @@ commentInput.addEventListener('keyup', (e) => {
     }
 });
 
-
-
-
-
 //스토리 슬라이더
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -76,18 +84,19 @@ nextBtn.addEventListener('click', (e) => {
     scroll('right');
 });
 
-
 const scroll = (direction) => {
     const instaStoryUl = document.querySelector('.insta-story ul');
     let scrollAmount = 0;
 
     const slide = setInterval((e) => {
+
         if (direction === 'left') {
             instaStoryUl.scrollLeft -= 15;
         } else {
             instaStoryUl.scrollLeft += 15;
         }
-        scrollAmount += 10;
+
+        scrollAmount += 5;
         if (scrollAmount >= 100) {
             window.clearInterval(slide);
         }
@@ -98,8 +107,8 @@ const scroll = (direction) => {
 const likeBtn = document.querySelectorAll('.like-heart');
 
 const likeReply = (e) => {
-    e.classList.toggle("replyLike");
-    if (e.classList.contains('replyLike')) {
+    e.classList.toggle('reply-like');
+    if (e.classList.contains('reply-like')) {
         e.classList.remove('xi-heart-o');
         e.classList.add('xi-heart');
         alert('Like!!!');
@@ -128,9 +137,9 @@ repeatFunction(deleteBtn, deleteReply, 'click');
 const feedLikeBtn = document.querySelector('.like-btn');
 
 const feedLike = (e) => {
-    e.target.classList.toggle("feedLike");
+    e.target.classList.toggle('feed-like');
 
-    if (e.target.classList.contains('feedLike')) {
+    if (e.target.classList.contains('feed-like')) {
         feedLikeBtn.setAttribute('fill', '#ed4956');
         // feedLikeBtn.innerHTML = '<path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>'
         alert('Like!!!');
@@ -142,8 +151,6 @@ const feedLike = (e) => {
 }
 
 feedLikeBtn.addEventListener('click', feedLike);
-
-
 
 //댓글아이콘 클릭하면 focus
 const replyBtn = document.querySelector('.reply-btn');
@@ -225,7 +232,7 @@ const id = [
         profile: 'https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/119993917_266185074428695_5135767518355660666_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=g4ZMdTis9QgAX_3D-ZV&ccb=7-4&oh=aae2176b16a0ee83d0417df48cc72618&oe=6083E41C&_nc_sid=5cbaad',
         desc: '선릉 2호점',
     },
-]
+];
 
 const searchInput = document.querySelector('.search-input');
 const searchResult = document.querySelector('.search-result-wrap');
@@ -251,14 +258,13 @@ const search = () => {
                     ? searchList.innerHTML = '<span class="noResult light">검색결과가 없습니다.</span>'
                     : '';
             }
-        })
+        });
     } else {
         searchResult.classList.add('hidden');
     }
 }
 
 searchInput.addEventListener('keyup', search);
-
 
 // 프로필메뉴박스 클릭시 보이게 하기
 const profile = document.querySelector('.profile-img');
@@ -275,7 +281,6 @@ document.addEventListener('click', (e) => {
     closeMenu(profileMenu, profile, e);
     closeMenu(searchResult, searchInput, e);
 });
-
 
 const closeMenu = (menubox, includedClass, e) => {
     if (!menubox.contains(e.target) && !includedClass.contains(e.target)) {
