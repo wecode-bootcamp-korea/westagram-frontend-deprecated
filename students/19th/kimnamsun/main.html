@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westagram</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="nav-bar">
+            <div class="navbar-wrap">
+                <h1 class="logo">Westagram</h1>
+                <div class="search-wrap">
+                    <input type="text" class="search-input" placeholder="검색">
+                    <div class="search-result-wrap hidden">
+                        <div class="speech-bubble">
+                        </div>
+                        <div class="search-result">
+                            <ul class="search-list weight">
+                                <li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon-wrap">
+                    <a href="#">
+                        <svg class="nav-icon" viewBox="0 0 48 48">
+                            <path
+                                d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="nav-icon" viewBox="0 0 48 48">
+                            <path
+                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="nav-icon" viewBox="0 0 48 48">
+                            <path clip-rule="evenodd"
+                                d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="nav-icon" viewBox="0 0 48 48">
+                            <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                        </svg>
+                    </a>
+                    <div class="profile-wrap zIndex">
+                        <a href="#">
+                            <img alt="profile" class="profile-img"
+                                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/21042108_123408488308642_162793317946359808_a.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=dNYrSrarQiIAX-G37Vy&amp;ccb=7-4&amp;oh=11f32acd151a8b5da3c7d685ea00c444&amp;oe=607FAF16">
+                        </a>
+                        <div class="profile-menu-wrap hidden zIndex">
+                            <div class="speech-bubble">
+                            </div>
+                            <div class="profile-menu">
+                                <ul class="profile-list weight">
+                                    <li>
+                                        <svg viewBox="0 0 32 32">
+                                            <path
+                                                d="M16 0C7.2 0 0 7.1 0 16c0 4.8 2.1 9.1 5.5 12l.3.3C8.5 30.6 12.1 32 16 32s7.5-1.4 10.2-3.7l.3-.3c3.4-3 5.5-7.2 5.5-12 0-8.9-7.2-16-16-16zm0 29c-2.8 0-5.3-.9-7.5-2.4.5-.9.9-1.3 1.4-1.8.7-.5 1.5-.8 2.4-.8h7.2c.9 0 1.7.3 2.4.8.5.4.9.8 1.4 1.8-2 1.5-4.5 2.4-7.3 2.4zm9.7-4.4c-.5-.9-1.1-1.5-1.9-2.1-1.2-.9-2.7-1.4-4.2-1.4h-7.2c-1.5 0-3 .5-4.2 1.4-.8.6-1.4 1.2-1.9 2.1C4.2 22.3 3 19.3 3 16 3 8.8 8.8 3 16 3s13 5.8 13 13c0 3.3-1.2 6.3-3.3 8.6zM16 5.7c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm0 11c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z">
+                                            </path>
+                                        </svg>
+                                        <div>
+                                            <a href="#" class="black">프로필</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 32 32">
+                                            <path
+                                                d="M28.7 32c-.4 0-.8-.2-1.1-.4L16 19.9 4.4 31.6c-.4.4-1.1.6-1.6.3-.6-.2-.9-.8-.9-1.4v-29C1.8.7 2.5 0 3.3 0h25.4c.8 0 1.5.7 1.5 1.5v29c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM4.8 3v23.9l9.4-9.4c.9-.9 2.6-.9 3.5 0l9.4 9.4V3H4.8z">
+                                            </path>
+                                        </svg>
+                                        <div>
+                                            <a href="#" class="black">저장됨</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 32 32">
+                                            <path
+                                                d="M31.2 13.4l-1.4-.7c-.1 0-.2-.1-.2-.2v-.2c-.3-1.1-.7-2.1-1.3-3.1v-.1l-.2-.1v-.3l.5-1.5c.2-.5 0-1.1-.4-1.5l-1.9-1.9c-.4-.4-1-.5-1.5-.4l-1.5.5H23l-.1-.1h-.1c-1-.5-2-1-3.1-1.3h-.2c-.1 0-.1-.1-.2-.2L18.6.9c-.2-.5-.7-.9-1.2-.9h-2.7c-.5 0-1 .3-1.3.8l-.7 1.4c0 .1-.1.2-.2.2h-.2c-1.1.3-2.1.7-3.1 1.3h-.1l-.1.2h-.3l-1.5-.5c-.5-.2-1.1 0-1.5.4L3.8 5.7c-.4.4-.5 1-.4 1.5l.5 1.5v.5c-.5 1-1 2-1.3 3.1v.2c0 .1-.1.1-.2.2l-1.4.7c-.6.2-1 .7-1 1.2v2.7c0 .5.3 1 .8 1.3l1.4.7c.1 0 .2.1.2.2v.2c.3 1.1.7 2.1 1.3 3.1v.1l.2.1v.3l-.5 1.5c-.2.5 0 1.1.4 1.5l1.9 1.9c.3.3.6.4 1 .4.2 0 .3 0 .5-.1l1.5-.5H9l.1.1h.1c1 .5 2 1 3.1 1.3h.2c.1 0 .1.1.2.2l.7 1.4c.2.5.7.8 1.3.8h2.7c.5 0 1-.3 1.3-.8l.7-1.4c0-.1.1-.2.2-.2h.2c1.1-.3 2.1-.7 3.1-1.3h.1l.1-.1h.3l1.5.5c.1 0 .3.1.5.1.4 0 .7-.1 1-.4l1.9-1.9c.4-.4.5-1 .4-1.5l-.5-1.5V23l.1-.1v-.1c.5-1 1-2 1.3-3.1v-.2c0-.1.1-.1.2-.2l1.4-.7c.5-.2.8-.7.8-1.3v-2.7c0-.5-.4-1-.8-1.2zM16 27.1c-6.1 0-11.1-5-11.1-11.1S9.9 4.9 16 4.9s11.1 5 11.1 11.1-5 11.1-11.1 11.1z">
+                                            </path>
+                                        </svg>
+                                        <div>
+                                            <a href="#" class="black">설정</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg viewBox="0 0 32 32">
+                                            <path
+                                                d="M10.3 10.7c0-.8-.7-1.5-1.5-1.5H4.9C7.2 5.4 11.4 3 16 3c3.6 0 7 1.5 9.5 4.1.5.6 1.5.6 2.1.1.6-.6.6-1.5.1-2.1-3-3.2-7.3-5-11.7-5C10.7 0 6 2.5 3 6.7V3.5C3 2.7 2.3 2 1.5 2S0 2.7 0 3.5v7.2c0 .8.7 1.5 1.5 1.5h7.3c.8 0 1.5-.6 1.5-1.5zm20.2 9.1h-7.2c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h3.8C24.8 26.6 20.6 29 16 29c-3.6 0-7-1.5-9.5-4.1-.5-.6-1.5-.6-2.1-.1-.6.6-.6 1.5-.1 2.1 3 3.2 7.3 5 11.7 5 5.3 0 10-2.5 13-6.7v3.2c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5v-7.2c0-.8-.7-1.4-1.5-1.4z">
+                                            </path>
+                                        </svg>
+                                        <div>
+                                            <a href="#" class="black">계정전환</a>
+                                        </div>
+                                    </li>
+                                    <li class="logout">
+                                        <a href="login.html" class="black">로그아웃</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="main">
+        <section class="feeds">
+            <section class="insta-story">
+                <div class="scroll-btn-wrap">
+                    <button class="prev-btn pointer">
+                        <i class="xi-angle-left-min"></i>
+                    </button>
+                    <button class="next-btn pointer">
+                        <i class="xi-angle-right-min"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>idididid</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>idididid</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>idididid</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>1</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>1</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>idididid</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>3</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>3</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>2222</p>
+                    </li>
+                    <li>
+                        <div class="gradient-wrap">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35617106_606708549698151_3931011754452058112_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=HLjA4uar8ZgAX_IClXP&ccb=7-4&oh=56c4e654a35ea110bf5129488f541402&oe=60805D09"
+                                alt="">
+                        </div>
+                        <p>마지막</p>
+                    </li>
+                </ul>
+            </section>
+            <article>
+                <div class="feed-nav">
+                    <img alt="profile-img" class="profile-img"
+                        src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/137255047_1000732240416118_2803328627797788827_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=5hYaOkfYH9MAX9naMcr&amp;ccb=7-4&amp;oh=8dc7e35940e77eab51ae89749939f0d4&amp;oe=608113A9">
+                    <div class="id-wrap weight">
+                        <a href="#" class="black">aaaa</a>
+                        <i class="xi-ellipsis-h"></i>
+                    </div>
+                </div>
+                <img src="" alt="" class="feed-img"
+                    srcset="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/162173893_4377365445625023_267223272361727905_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=103&amp;_nc_ohc=gYpW0t8TYm0AX-YPVb2&amp;ccb=7-4&amp;oh=511917cdfc82c167e82188648ba1712a&amp;oe=607FDAA9 640w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/162173893_4377365445625023_267223272361727905_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=103&amp;_nc_ohc=gYpW0t8TYm0AX-YPVb2&amp;ccb=7-4&amp;oh=1b254c1177203faca97581552d9f7867&amp;oe=6083476D 750w,https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/162173893_4377365445625023_267223272361727905_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=103&amp;_nc_ohc=gYpW0t8TYm0AX-YPVb2&amp;ccb=7-4&amp;oh=48101d45ab006a419366d008ea5f6866&amp;oe=6080CB93 1080w"
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/162173893_4377365445625023_267223272361727905_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_cat=103&amp;_nc_ohc=gYpW0t8TYm0AX-YPVb2&amp;ccb=7-4&amp;oh=48101d45ab006a419366d008ea5f6866&amp;oe=6080CB93"
+                    style="object-fit: cover;">
+                <div class="feed-content">
+                    <section class="feed-icon">
+                        <svg viewBox="0 0 48 48" class="nav-icon like-btn pointer">
+                            <path
+                                d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 48 48" class="nav-icon reply-btn pointer">
+                            <path clip-rule="evenodd"
+                                d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <svg viewBox="0 0 48 48" class="nav-icon pointer">
+                            <path
+                                d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 48 48" class="nav-icon pointer">
+                            <path
+                                d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                            </path>
+                        </svg>
+                    </section>
+                    <section class="like-list">
+                        <img class="profile-img"
+                            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/18947565_448326618857685_8479464545633435648_a.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=m4X1SMYXvpMAX8nMy7e&ccb=7-4&oh=edf81851a6509c867b388fd009961a28&oe=60810516"
+                            alt="">
+                        <span>
+                            <a href="#" class="weight black">aaa</a>님
+                            <a href="#" class="weight black">외 9209명</a>이 좋아합니다
+                        </span>
+                    </section>
+                    <ul class="reply-list">
+                        <li>
+                            <a href="#" class="weight black">aaa</a>
+                            <span class="reply-content">댓글내용</span>
+                            <i class="xi-close-min delete-reply pointer"></i>
+                            <i class="xi-heart-o like-heart pointer"></i>
+                        </li>
+                        <li>
+                            <a href="#" class="weight black">aaa</a>
+                            <span>댓글내용</span>
+                            <i class="xi-close-min delete-reply pointer"></i>
+                            <i class="xi-heart-o like-heart pointer"></i>
+                        </li>
+                        <li>
+                            <a href="#" class="weight black">aaa</a>
+                            <span>댓글내용</span>
+                            <i class="xi-close-min delete-reply pointer"></i>
+                            <i class="xi-heart-o like-heart pointer"></i>
+                        </li>
+                    </ul>
+                    <section class="add-comment">
+                        <svg fill="#262626" viewBox="0 0 48 48">
+                            <path
+                                d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z">
+                            </path>
+                            <path
+                                d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z">
+                            </path>
+                        </svg>
+                        <input type="text" class="input-comment" placeholder="댓글 달기...">
+                        <button class="add-comment-btn" disabled>게시</button>
+                    </section>
+                </div>
+            </article>
+        </section>
+        <section class="main-right">
+            <div class="account">
+                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/21042108_123408488308642_162793317946359808_a.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Ucb42Uat1L4AX_hM_9c&ccb=7-4&oh=2e9b3750947301d942c84e83c0de7421&oe=6083A396"
+                    alt="">
+                <div class="id-wrap weight">
+                    <span>skdjfakd</span>
+                    <a href="#">전환</a>
+                </div>
+            </div>
+            <ul class="recommend-list weight">
+                <span class="recommend-for-user">
+                    <span>회원님을 위한 추천</span>
+                    <a href="#" class="black">모두 보기</a>
+                </span>
+                <li>
+                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/40951123_295765164349862_8347291724577505280_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2v7bfvNBUY4AX_ag9Fa&ccb=7-4&oh=8f27a38fe97bbfc84053400ff3e8709b&oe=60811063"
+                        alt="">
+                    <div>
+                        <a href="#" class="black">skdjfakd</a>
+                        <span>회원님을 팔로우합니다</span>
+                    </div>
+                    <a href="#" class="follow">팔로우</a>
+                </li>
+                <li>
+                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/40951123_295765164349862_8347291724577505280_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2v7bfvNBUY4AX_ag9Fa&ccb=7-4&oh=8f27a38fe97bbfc84053400ff3e8709b&oe=60811063"
+                        alt="">
+                    <div>
+                        <a href="#" class="black">skdjfakd</a>
+                        <span>회원님을 팔로우합니다</span>
+                    </div>
+                    <a href="#" class="follow">팔로우</a>
+                </li>
+                <li>
+                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/40951123_295765164349862_8347291724577505280_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2v7bfvNBUY4AX_ag9Fa&ccb=7-4&oh=8f27a38fe97bbfc84053400ff3e8709b&oe=60811063"
+                        alt="">
+                    <div>
+                        <a href="#" class="black">skdjfakd</a>
+                        <span>회원님을 팔로우합니다</span>
+                    </div>
+                    <a href="#" class="follow">팔로우</a>
+                </li>
+                <li>
+                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/40951123_295765164349862_8347291724577505280_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2v7bfvNBUY4AX_ag9Fa&ccb=7-4&oh=8f27a38fe97bbfc84053400ff3e8709b&oe=60811063"
+                        alt="">
+                    <div>
+                        <a href="#" class="black">skdjfakd</a>
+                        <span>회원님을 팔로우합니다</span>
+                    </div>
+                    <a href="#" class="follow">팔로우</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+</body>
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link { 
+    text-decoration: none;
+}
+
+a:visited { 
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 자주 쓰이는 속성 */
+.weight {
+    font-weight: 600;
+}
+
+.black {
+    color: #000;
+}
+
+.pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,492 @@
+a,span {
+    font-size: 14px;
+}
+
+button:focus{ 	
+    border: none;
+    outline:none;
+}
+
+/* nav bar */
+.nav-container {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar {
+    height: 54px;
+    background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar-wrap {
+    width: 935px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+    margin: auto 0;
+    margin-right: 80px;
+    color: #000;
+}
+
+.search-wrap {
+    position: relative;
+}
+
+.search-input {
+    flex: 0 1 auto;
+    min-width: 125px;
+    width: 215px;
+    height: 28px;
+    margin: auto 0;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    text-indent: 22px;
+}
+
+.search-input::placeholder {
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+    background-size: contain;
+    background-position: 70px center;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-indent: 0;
+}
+
+.search-input:focus::placeholder { 
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+    background-size: contain;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    text-align: left;
+    text-indent: 0;
+    color: #8e8e8e;
+}
+
+/* 검색결과창 */
+.search-result-wrap {
+    position: absolute;
+    width: 150%;
+    left: 50%;
+    transform:translateX(-50%);
+    margin: 15px 0;
+}
+
+.speech-bubble {
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    background-color: #fff;
+    margin: -7px auto;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.search-result {
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.search-list span {
+    display: flex;
+}
+
+.search-list li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.search-list li div {
+    margin: 0px 10px;
+}
+
+.search-list li div span:last-child {
+    color: #8e8e8e;
+}
+
+.search-list li img {
+    width: 44px;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+}
+
+.noResult {
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: #8e8e8e;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.icon-wrap {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-wrap a {
+    height: 22px;
+}
+
+.nav-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.profile-wrap {
+    padding-top: 5px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 22px;
+}
+
+/* 프로필 메뉴박스 */
+.profile-menu-wrap {
+    width: 230px;
+    position: absolute;
+    margin: 15px 0;
+    right: 15%;
+    z-index: 2;
+}
+
+.profile-menu-wrap .speech-bubble {
+    position: absolute;
+    right: 15%;
+}
+
+.profile-menu {
+    position: relative;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 2;
+}
+
+.profile-list svg {
+    width: 16px;
+}
+
+.profile-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.profile-list li:hover {
+    background-color: #fafafa;
+}
+
+.profile-list li div {
+    margin: 0px 10px;
+}
+
+.logout {
+    border-top: 1px solid #DBDBDB;
+    padding: 13px;
+}
+
+/* 메인 */
+.main {
+    width: 935px;
+    display: flex;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.feeds {
+    width: 614px;
+    justify-content: center;
+}
+
+/* 스토리 */
+.insta-story {
+    display: flex;
+    align-items: center;
+    width: 614px;
+    padding: 16px 0px;
+    margin-bottom: 30px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.scroll-btn-wrap {
+    width: 43%;
+    position: absolute;
+}
+
+.scroll-btn-wrap button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 0;
+    margin: 5px;
+    mix-blend-mode: screen;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+
+.scroll-btn-wrap .next-btn {
+    float: right;
+}
+
+.insta-story ul::-webkit-scrollbar {
+    display: none;
+}
+
+.insta-story ul {
+    display: flex;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.insta-story ul li {
+    margin: 0 10px;
+}
+
+.insta-story ul li .gradient-wrap {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 100%;
+    background: radial-gradient(circle at bottom left, #F58529 20%, #C42D91);
+}
+
+.gradient-wrap img {
+    border-radius: 50%;
+    width: 56px;
+    border: 2px solid #fff;
+}
+
+.insta-story ul li p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+/* 피드 */
+article {
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-nav {
+    background-color: #fff;
+    align-items: center;
+    display: flex;
+    height: 60px;
+    padding: 16px;
+}
+
+.feed-nav .profile-img {
+    width: 32px;
+}
+
+.id-wrap {
+    margin-left: 14px;
+    width: 536px;
+    justify-content: space-between;
+}
+
+.id-wrap i {
+    float: right;
+}
+
+.feed-img {
+    width: 613px;
+    height: 613px;
+}
+
+.feed-content {
+    background-color: #fff;
+}
+
+.feed-icon {
+    padding: 0 8px;
+}
+
+.feed-icon svg {
+    margin: 8px;
+}
+
+.feed-icon svg:last-child {
+    float: right;
+}
+
+.like-list {
+    padding: 0 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.like-list .profile-img {
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #E6E6E6;
+}
+
+.like-list span {
+    margin: 0 5px;
+}
+
+.reply-list {
+    padding: 2px 16px 12px 16px;
+}
+
+.like-heart {
+    font-size: 14px;
+    margin: 1px 4px 1px 0px;
+    float: right;
+}
+
+.delete-reply {
+    font-size: 16px;
+    float: right;
+}
+
+/* 댓글입력 */
+.add-comment {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.add-comment svg {
+    width: 24px;
+    height: 24px;
+}
+
+.add-comment input {
+    width: 85%;
+    border: 0;
+}
+
+.add-comment-btn {
+    color: #B9DFFC;
+    border: 0px;
+    background-color: #fff;
+}
+
+/* main-right */
+.main-right {
+    padding-left: 5px;
+    position: fixed;
+    left: 887px;
+    top: 88px;
+    width: 293px;
+    z-index: -1;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.account img {
+    border-radius: 50%;
+    width: 56px;
+}
+
+.main-right .id-wrap {
+    width: 100%;
+}
+
+.main-right .id-wrap span{
+    margin: 0 10px;
+}
+
+.main-right .id-wrap a {
+    float: right;
+}
+
+.recommend-for-user {
+    padding-bottom: 10px;
+}
+
+.recommend-list span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend-list span span:first-child {
+    color: #8E8E8E;
+}
+
+.recommend-for-user a {
+    font-size: 12px;
+}
+
+.recommend-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+
+.recommend-list li div {
+    width: 70%;
+}
+
+.recommend-list li div span:last-child {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.recommend-list li img {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.account a, .follow {
+    color: #0095f6;
+    font-size: 12px;
+}
+
+/* keyup event */
+.enabledBtn {
+    color: #0095F6;
+    cursor: pointer;
+}
+
+.disabledBtn {
+    color: #B9DFFC;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
