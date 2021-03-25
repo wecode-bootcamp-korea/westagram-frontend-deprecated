@@ -386,7 +386,7 @@ article > img {
     outline:none;
 }
 
-.submit {
+.comment-write li button {
     background-color:#fff;
     border:none;
     font-size:16px;
