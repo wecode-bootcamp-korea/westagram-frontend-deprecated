@@ -1,7 +1,9 @@
 .weStagram{
     width: 510px;
     height: 577px;
-    margin: 32px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 32px;
 
 }
@@ -11,8 +13,8 @@
     background-color:lightskyblue;
     color: white;
     margin: 8px 40px;
-    width: 268px;
-    height: 30px;
+    width: 258px;
+    height: 36px;
     border-style: none;
 }
 
@@ -49,8 +51,8 @@
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 380px;
     align-items: center;
+    margin-top:24px;
 }
 
 input[type="text"]{
@@ -62,6 +64,8 @@ input[type="text"]{
     color:gray;
     border-radius: 3px;
     margin: 5px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 
@@ -73,6 +77,8 @@ input[type="password"]{
     height: 36px;
     margin: 5px;
     border:1px solid lightgray;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 input::placeholder{
@@ -84,13 +90,13 @@ color:#8c8c8c;
 color:rgba(var(--f52,142,142,142),1);
 font-size: 13px;
 margin: 0px 18px;
-padding:0;
 width: 22.5px;
 height: 15px;
+padding:10px;
 }
 
 .line{
-    margin: 10px 40px 10px 40px;
+    
     background-color:lightgray;
     height: 1px;
     width: 80px;
@@ -100,7 +106,9 @@ height: 15px;
     display:flex;
     align-items: center ;
     margin: 10px 40px 18px;
-   
+    width: 350px;
+    justify-content: center;
+
 }
 
 .faceBook{
@@ -111,7 +119,7 @@ height: 15px;
     color:rgba(var(--d69,0,149,246),1);
     padding:0;
     color: #00376b;
-    margin: 24px 0 0;
+    
 }
 .face{
     color:#00376b;
@@ -119,7 +127,7 @@ height: 15px;
 
 .forGet{
     text-align: center;
-    margin: 12px 0px 0px;
+    margin: 20px;
     font-size: 12px;
     color:#00376b;
     text-decoration: none;
@@ -133,15 +141,16 @@ height: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 10px;
+    margin-top: 10px;
     width: 350px;;
     height: 63px;
     padding: 10px 0px;
+    
 }
 .none{
     width: 189.938px;
     height: 48px;
-    margin: -3px 0 -4px;
+    margin-top:45px;
     font-size: 15px;   
 }
 .hi{
@@ -149,6 +158,26 @@ height: 15px;
     color: rgba(var(--d69,0,149,246),1);
     align-items: center;
 }
+
 a{
+    text-decoration: none;
+}
+
+.downLoad{
+    width: 381px;
+    height: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.appleApp{
+    justify-content: space-around;
+}
+.Rt8TI{
+    width: 136px;
+    height: 40px;
     text-decoration: none;
 }
