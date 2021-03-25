@@ -1,0 +1,117 @@
+* { box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+
+* input:focus{
+   outline: none;
+}
+
+button:focus{
+   outline: none;
+}
+
+header {
+   border: 1px solid #dbdbdb;
+   width: 330px;
+   height: 380px;
+   display: flex;
+   flex-flow: column wrap;
+   margin-top: 50px;   
+}
+
+h1 {
+   font-size: 40px;
+   font-family: 'Lobster', cursive;   
+   margin: 38px auto;
+
+}
+
+.login .Id, .Pw{
+   width: 258px;
+   height: 36px; 
+   font-size: 11px;
+   color: #8e8e8e;
+   padding: 8px;
+   background-color: #fafafa;
+   border: 1px solid rgb(219, 219, 219);
+   border-radius: 3px;
+   margin: 3px auto;
+}
+
+.login .logInButton{
+   font-size: 13px;
+   font-style: bold;
+   color: #ffffff;
+   background-color:rgb(178, 223, 252);
+   width: 258px;
+   height: 28px;
+   border: none;
+   border-radius: 3px;
+   margin: 8px auto;
+}
+
+.orLine {
+   width: 268px;
+   display: flex;
+   flex-wrap: nowrap; 
+   justify-content: space-around;
+   margin: 8px auto;
+}
+.sideLine {
+   width: 105px;
+   height: 9px;
+   border-bottom: 1px solid #dbdbdb;
+}
+
+.orLetter{
+   font-size: 13px;
+   color: #8e8e8e;
+}
+
+
+.otherMethod{
+   width: 248px;
+   margin: 12px auto;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+a {
+   text-decoration: none;
+}
+
+.facebook img {
+   margin: 0px 5px 0px 0px;
+}
+.facebook span {
+   font-size: 13px;
+   color: #385185;
+   vertical-align: baseline;
+}
+
+.forgotPw a{
+   font-size: 10px;
+   color: #00376b;
+  }
+
+  .signUp {
+     width: 330px;
+     height: 48px;
+     font-size: 13px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid  #dbdbdb;
+     margin-top: 10px; 
+  }
+
+  .signUp a{
+     color: #0095f6;
+  }
+
