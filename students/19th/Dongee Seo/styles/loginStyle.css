@@ -7,6 +7,8 @@
 
 * input:focus{
    outline: none;
+   box-shadow: 0 0 0 1px gray;
+   
 }
 
 button:focus{
@@ -41,17 +43,25 @@ h1 {
    margin: 3px auto;
 }
 
-.login .logInButton{
+.logInButton{
    font-size: 13px;
    font-style: bold;
    color: #ffffff;
-   background-color:rgb(178, 223, 252);
    width: 258px;
    height: 28px;
    border: none;
    border-radius: 3px;
    margin: 8px auto;
 }
+
+.login button:hover {
+   background-color: rgb(3, 149, 246);
+}
+
+.login button {
+  background-color: rgb(178, 223, 252);
+}
+
 
 .orLine {
    width: 268px;
