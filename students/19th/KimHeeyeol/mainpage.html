@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westagram</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+
+    <header>
+        <div class="headerContainer">
+            <div class="headerLogo">
+                <img src="img/logoImage.png" alt="">
+            </div>
+            <div class="headerInput">
+                <input type="text">
+            </div>
+            <div class="headerNav">
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="mainCenter">
+
+        <main>
+            <article class="story"></article>
+
+            <!-- article의 기본 height와 펼쳤을 때 height 어떻게 지정하지? -->
+            <article class="feed">
+                <section class="author">
+                    <div class="authorImage">
+                        <img src="img/wecode.jpg" alt="">
+                    </div>
+                    <div class="authorName">
+                        <span>_wecode</span>
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </section>
+                <div class="content">
+                    <img src="img/content1.png" alt="">
+                </div>
+                <section class="commentContainer">
+                    <div class="emoticon">
+                        <div class="emoticonLeft">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div class="emoticonRight">
+                            <i class="far fa-flag"></i>
+                        </div>
+                    </div>
+                    <div class="like">좋아요 1,563개</div>
+
+                    <div class="comment">
+
+                        <div class="authorMentionContainer">
+                                <div>
+                                    <span class="authorMentionName">wecode</span>
+                                    <span class="authorMentionComent">다들 안녕?</span>
+                                </div>
+                        </div>
+
+                        <div class="comentUnfold">
+                            <a href="">댓글 <span>22개</span> 모두 보기</a>
+                        </div>
+
+                        <div class="replierMentionContainer">
+                            <div class="replierMention">
+                                <div>
+                                    <span class="replierMentionName">Hereizhere</span>
+                                    <span class="replierMentionComent">그래 안녕.</span>.</span>
+                                </div>
+                                <div class="commentHeart"><i class="far fa-heart"></i></div>
+                            </div>
+                            <div class="replierMention">
+                                <div>
+                                    <span class="replierMentionName">Wecoder</span>
+                                    <span class="replierMentionComent">Hi! 😊</span>
+                                </div>
+                                <div class="commentHeart"><i class="far fa-heart"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="createdTime">
+                        11시간 전
+                    </div>
+
+                </section>
+                <section class="createComment">
+                    <div class="createButton">
+                        <div>
+                            <button>
+                                <div class="emoticonButton">
+                                    <i class="far fa-smile-wink"></i>
+                                </div>
+                            </button>
+                            <input type="text" value="댓글달기...">
+                        </div>
+                        <div>
+                            <button class="uploadComment">
+                                <a href="">
+                                    <span>게시</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <article class="feed">
+                <section class="author">
+                    <div class="authorImage">
+                        <img src="img/profile2.png" alt="">
+                    </div>
+                    <div class="authorName">
+                        <span>someone</span>
+                        <span><i class="fas fa-ellipsis-h"></i></span>
+                    </div>
+                </section>
+                <div class="content">
+                    <img src="img/profile.png" alt="">
+                </div>
+                <section class="commentContainer">
+                    <div class="emoticon">
+                        <div class="emoticonLeft">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div class="emoticonRight">
+                            <i class="far fa-flag"></i>
+                        </div>
+                    </div>
+                    <div class="like">좋아요 564개</div>
+
+                    <div class="comment">
+
+                        <div class="authorMentionContainer">
+                                <div>
+                                    <span class="authorMentionName">someone</span>
+                                    <span class="authorMentionComent">내 포즈가 어때?</span>
+                                </div>
+                        </div>
+
+                        <div class="comentUnfold">
+                            <a href="">댓글 <span>16개</span> 모두 보기</a>
+                        </div>
+
+                        <div class="replierMentionContainer">
+                            <div class="replierMention">
+                                <div>
+                                    <span class="replierMentionName">Hereizhere</span>
+                                    <span class="replierMentionComent">그냥 그래.</span>
+                                </div>
+                                <div class="commentHeart"><i class="far fa-heart"></i></div>
+                            </div>
+                            <div class="replierMention">
+                                <div>
+                                    <span class="replierMentionName">Wecoder</span>
+                                    <span class="replierMentionComent">Hi! 😊</span>
+                                </div>
+                                <div class="commentHeart"><i class="far fa-heart"></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="createdTime">
+                        11시간 전
+                    </div>
+
+                </section>
+                <section class="createComment">
+                    <div class="createButton">
+                        <div>
+                            <button>
+                                <div class="emoticonButton">
+                                    <i class="far fa-smile-wink"></i>
+                                </div>
+                            </button>
+                            <input type="text" value="댓글달기...">
+                        </div>
+                        <div>
+                            <button class="uploadComment">
+                                <a href="">
+                                    <span>게시</span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+        </main>
+
+        <nav>
+            <div class="navContainer"></div>
+        </nav>
+
+    </div>
+
+</body>
+</html>
