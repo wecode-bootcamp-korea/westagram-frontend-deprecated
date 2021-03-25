@@ -143,10 +143,6 @@ main {
     top:-3px; left:-3px;
 }
 
-.story-list li:nth-child(1)::after,
-.story-list li:nth-child(2)::after {
-    border-color: linear-gradient( 45deg, yellow, red );
-}
 .story-wrap li a img {
     width:100%;
     width:60px;
@@ -358,8 +354,9 @@ article > img {
 
 .comment-write {
     width:94%;
-    height:50px;
+    height:auto;
     margin:auto;
+    padding:5px 0;
     display:flex;
     align-items: center;
     border-top:1px solid #ddd;
@@ -485,6 +482,7 @@ article > img {
 .friend-list {
     width:100%;
     height:auto;
+    mar
 }
 
 .friend-list ul {
@@ -518,5 +516,29 @@ article > img {
 .friends-follow {
     margin-top:6px;
     font-size:13px;
+    color:#888;
+}
+
+footer {
+    width:100%;
+    height:70px;
+    margin-top:20px;
+}
+
+footer ul {
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+footer ul li {
+    font-size:12px;
+    color:#888;
+    margin-bottom:10px;
+    position:relative;
+    margin-right:15px;
+}
+
+.made {
+    font-size:12px;
     color:#888;
 }
