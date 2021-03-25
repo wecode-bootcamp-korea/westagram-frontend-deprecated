@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
     display: flex;
     justify-content: center;
@@ -14,14 +16,16 @@ body .center {
     height: 366px;
 }
 
+p {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
 input {
     width: 254px;
     height: 33px;
-}
-
-img {
-    width: 264px;
-    margin-bottom: 14px;
 }
 
 .login_input { 
@@ -52,12 +56,12 @@ button {
     outline: 0;
 }
 
-.password_btn {
+.rePassword_btn {
     color:#244F7C;
     display: flex;
     margin-top: auto;
 }
 
-.password_btn h3{
+.rePassword_btn h3{
     font-size: 14px;
 }
