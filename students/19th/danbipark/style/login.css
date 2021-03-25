@@ -1,13 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #fafafa;
+  background-color: var(--color-lightgray);
 }
 
 .main-container {
@@ -33,7 +29,7 @@ input {
   width: 268px;
   height: 38px;
   border: 1px solid #dbdbdb;
-  background-color: #fafafa;
+  background-color: var(--color-lightgray);
   border-radius: 4px;
   margin: 5px;
   text-indent: 7px;

@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-lightgray: #fafafa;
+  --color-midgray: #a5a3a3;
+  --color-darkgray: #3a3a3a;
+  --color-border: #e0e0e0;
+  --color-text-add: #8e8e8e;
+  --color-hashtag: #00376b;
+
+  --avatar-size: 36px;
+  --avatar-my-size: 56px;
+  --avatar-friends: 32px;
+  --avatar-padding: 16px;
+
+  --font-size: 14px;
+  --font-padding: 4px;
+}

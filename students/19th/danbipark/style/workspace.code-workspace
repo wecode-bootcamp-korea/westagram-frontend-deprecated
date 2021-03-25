@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../../Coding/youtubeclonecoding"
+	},
+	{
+		"path": "../../../../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "wecode",
+    "liveServer.settings.port": 5501
+  }
+}
