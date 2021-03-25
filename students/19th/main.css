@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* Variable(global) */
+:root {
+  /* Color */
+  --color-white-grey: #fafafa;
+  --color-grey: #dbdbdb;
+  --color-white: #ffffff;
+  --color-white-blue: #c0dffd;
+  --color-blue: #0095f6;
+  --color-dark-blue: #385185;
+
+  /* Font size */
+  --font-size-medium: ;
+  --font-size-small: ;
+  --font-size-micro: ;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  border: 1px solid black;
+}
+/* Navbar menu */
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu__icon {
+  font-size: 20px;
+}
+
+.navbar__menu__line {
+  height: 20px;
+  width: 0px;
+  border-right: 1px solid black;
+  margin: 0px 10px 5px 10px;
+}

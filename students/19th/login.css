@@ -5,6 +5,7 @@
   /* Color */
   --color-white-grey: #fafafa;
   --color-grey: #dbdbdb;
+  --color-dark-grey: #8e8e8e;
   --color-white: #ffffff;
   --color-white-blue: #c0dffd;
   --color-blue: #0095f6;
@@ -97,6 +98,24 @@ span {
   cursor: pointer;
   padding: 6px 0px;
   margin-top: 10px;
+}
+
+.loginForm__divide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm__divide__line {
+  width: 100px;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.loginForm__divide__text {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-dark-grey);
+  margin: 15px 18px;
 }
 
 .change-btn {
