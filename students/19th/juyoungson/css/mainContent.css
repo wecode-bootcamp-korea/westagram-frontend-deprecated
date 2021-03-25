@@ -1,0 +1,107 @@
+.mainWrapper{
+    height: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.mainBoxWrapper{
+    height: 100%;
+    width: 100%;
+    max-width: 935px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    /* position: relative; */
+}
+
+.mainBox{
+    height: 100%;
+    width: 100%;
+    max-width: 614px;
+    margin-right: 28px;
+}
+
+.mainHead{
+    position: relative;
+    height: 118px;
+    width: 612px;
+    border: 1px solid #c9c9c9;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.headBox {
+    display: flex;
+    position: absolute;
+    margin: 16px 0;
+}
+
+.headBox li{
+    position: relative;
+    height: 84px;
+    width: 80px;
+}
+
+.headBox li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4px;
+}
+
+.qw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 66px;
+    background-image: url("../images/img.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.qw img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 70%;
+}
+
+.feedWrapper{
+    height:100%;
+    width: 612px;
+    border: 1px solid #c9c9c9;
+}
+
+.recommendBox{
+    height: 100vh;
+    width: 100%;
+    max-width: 293px;
+    background-color: violet;
+    position: fixed;
+    right: 0;
+    left: 1005px;
+}
+
+.feedBox{
+    height: 1046.5px;
+    /* width: 100%; */
+    background-color: tomato;
+}
+
+.feedHeaderBox{
+    height: 60px;
+    background-color: teal;
+}
+
+.feedImgBox{
+    height: 767.5px;
+    background-color: thistle;
+}
+
+.feedFooterBox{
+    height: 219px;
+    background-color: wheat;
+}

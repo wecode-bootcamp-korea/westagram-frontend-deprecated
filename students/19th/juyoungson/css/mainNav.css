@@ -1,63 +1,54 @@
-.navWrapper{
-    background-color: aqua;
+.navWrapper {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    height: 50px;
+    border: 1px solid #c9c9c9;
+    height: 54px;
 }
 
-.navContentWrapper{
+.navContentWrapper {
     display: flex;
     justify-content: space-between;
-    background-color: tomato;
-    height: 100%;
+    width: 100%;
     padding: 0 20px;
-    max-width: 975px
+    max-width: 975px;
 }
 
-.navLogoBox{
+.logoBox {
     display: flex;
     align-items: center;
-    height: 100%;
     width: 360px;
-
 }
 
-.navInput{
+.navInputWrapper {
     display: flex;
     align-items: center;
-    height: 100%;
     width: 215px;
-    background-color: violet;
+    min-width: 125px;
 }
 
-.navIcon{
+.navIconWrapper {
     display: flex;
     align-items: center;
-    height: 100%;
     width: 360px;
-    background-color: teal;
 }
 
-.iconBox {
+.iconFlexBox {
+    height: 22px;
+    width: 100%;
+}
+
+.iconControlBox {
     display: flex;
     justify-content: flex-end;
-    height: 22px;
-    width: 360px;
-}
-
-.iconBox img, div{
-    margin-left: 5px;
-}
-
-.navIcon img{
     height: 100%;
-    width: 22px;
+}
+
+.iconControlBox>* {
+    margin-left: 22px;
 }
 
 .profile {
     border-radius: 10px;
-    height: 100%;
     width: 22px;
     background-image: url("../images/juyoung.jpg");
     background-position: center;
