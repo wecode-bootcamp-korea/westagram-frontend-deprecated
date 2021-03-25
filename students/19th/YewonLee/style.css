@@ -1,6 +1,6 @@
 /*imports*/
-@import "main.css";
-@import "login.css";
+@import "./login/login.css";
+@import "./main/main.css";
 
 * {
     box-sizing: border-box;
