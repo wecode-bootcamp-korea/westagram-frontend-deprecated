@@ -47,12 +47,12 @@ main {
   align-items: center;
 }
 
-.id-pw:focus {
+.id_pw:focus {
   outline: 1px solid rgb(204, 198, 198);
   border-radius: 3px;
 }
 
-.id-pw {
+.id_pw {
   background-color: var(--lightgray-color);
   width: 258px;
   height: 30px;
@@ -87,7 +87,7 @@ main {
 }
 
 /* forgot */
-.forgot {
+.forgotBox {
   color: #385185;
   position: absolute;
   bottom: 25px;
