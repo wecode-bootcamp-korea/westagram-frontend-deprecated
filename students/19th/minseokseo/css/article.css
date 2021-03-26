@@ -1,0 +1,92 @@
+article {
+  padding-top: 30px;
+}
+.FeedContent {
+  width: 620px;
+  height: 900px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.FeedContentNavImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: pink;
+}
+.FeedContentNav {
+  width: 620px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.FeedContentNavProfile {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.FeedContentNavSettings {
+  width: 15px;
+  padding-right: 20px;
+}
+.FeedContentNavId {
+  padding: 5px 0 0 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.FeedContentImg {
+  width: 620px;
+  height: 620px;
+  background-size: 100%;
+
+  background-image: url("/image/quokka.png");
+}
+
+.FeedContentInterest {
+  padding: 15px 0 0 5px;
+  width: 620px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FeedContentLCS {
+  display: flex;
+}
+.FeedContentLCS > img {
+  width: 45px;
+  height: 25px;
+}
+.FeedContentSave {
+  width: 45px;
+  height: 25px;
+}
+
+.FeedContentLikeCount {
+  display: flex;
+  width: 620px;
+  height: 25px;
+  padding: 5px 0 0 15px;
+}
+.FeedContentLikeCount > p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.FeedContentCount {
+  font-size: 14px;
+  font-weight: bold;
+}
+.FeedContentIdTitle {
+  padding-left: 15px;
+  display: flex;
+}
+.FeedContentId {
+  font-weight: bold;
+  font-size: 15px;
+}
+.FeedContentTitle {
+  padding-left: 10px;
+  font-size: 15px;
+}

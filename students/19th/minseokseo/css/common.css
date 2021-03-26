@@ -2,7 +2,7 @@ main {
   width: 1000px;
   margin: 0 auto;
   display: flex;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 feeds {
   padding-left: 20px;

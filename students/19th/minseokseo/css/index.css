@@ -3,6 +3,7 @@
 @import "story.css";
 @import "common.css";
 @import "rightMain.css";
+@import "article.css";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap"); /* westagram 폰트 font-family: 'Lobster', cursive; */
 body {
   background-color: rgb(250, 250, 250);
