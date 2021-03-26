@@ -45,20 +45,6 @@ const addComment = () => {
         replyArr.push(new Reply('new-ID', commentInput.value, false));
         // console.log(replyArr);
 
-        // for (let i in replyArr) {
-        //     if (replyArr[i].isLike) {
-        //         console.log('')
-        //     }
-        // }
-
-        // for (let element of likeBtn) {
-        //     element.addEventListener('click', (e) => {
-        //         likeReply(e.target);
-        //     })
-        // };
-
-        // repeatFunction(likeBtn, likeReply, 'click');
-
         //초기화
         commentInput.value = '';
     }
