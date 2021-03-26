@@ -1,0 +1,261 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* nav styling */
+  #nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .nav_title {
+    font-size: 20px;
+  }
+
+  .nav_title_logo {
+    font-family: "Lobster", cursive;
+  }
+
+  .search {
+    position: relative;
+  }
+
+  .search input {
+    padding: 3px 10px;
+    border: 1px solid lightgray;
+  }
+
+  .search input::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  .search .fa-search {
+    position: absolute;
+    left: 35%;
+    top: 8px;
+    font-size: 3px;
+  }
+
+  .nav_icons button {
+    background-color: white;
+  }
+
+  .nav_icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  /* main container */
+
+  #main_container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .main_left {
+    margin-right: 20px;
+    width: 70%;
+  }
+  .main_slider {
+    display: flex;
+    border: 1px solid lightgray;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .main_slider img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 3px solid #f1714f;
+  }
+
+  .main_left_feeds {
+    border: 1px solid lightgray;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  .feeds_navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .feeds_navbar_left {
+    display: flex;
+    align-items: center;
+  }
+
+  .feeds_info_description {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .feeds_info_icons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+  .feeds_info_icons_left img{
+   width: 28px;
+ }
+
+  .feeds_info_description_like {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+
+  .feeds_info_description_like img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+  .feeds_navbar_left img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #f1714f;
+  }
+
+  .feeds_info_description_day {
+    font-size: 5px;
+    color: gray;
+  }
+
+  .feed_info_comment_emoji {
+    background-color: white;
+  }
+
+  .feed_info_comment_input {
+    width: 529px;
+    height: 61px;
+    border: none;
+    border-right:0px; 
+    border-top:0px; 
+    border-left:0px; 
+    border-bottom:0px;
+    margin-left: 5px;
+  }
+
+  .feed_info_comment_submit {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: skyblue;
+    background-color: white;
+  }
+
+  .main_right {
+    position: fixed;
+    padding-top: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+  }
+
+  .bold_Name {
+      font-weight: bold;
+      color: #797979;
+  }
+
+  .feeds_navbar {
+      text-align: left;
+  }
+
+  .main_right_user_profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .main_right_user_profile, .main_right_recommendation {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main_right_user_profile_name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_right_user_profile button {
+    background-color: white;
+    color: #0095f6;
+  }
+
+  .main_right_recommendation button {
+    background-color: white;
+    color: #0095f6;
+  }
+  .main_right_recommendation_list {
+    margin-top: 20px;
+  }
+
+  .main_right_recommendation_list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .main_right_user_profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .main_right_recommendation_list img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .main_right_recommendation_list button {
+    background-color: white;
+  }
+
+  .main_right_recommendation_name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_right_footer {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .main_right_footer li {
+    display: inline-block;
+  }
+
+  .main_right_footer a,
+  .main_right_footer div {
+    color: lightgray;
+  }
+
+  .main_right_footer div {
+    margin-top: 15px;
+  }

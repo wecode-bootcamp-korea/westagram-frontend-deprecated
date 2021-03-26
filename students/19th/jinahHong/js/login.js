@@ -3,14 +3,14 @@ const inputPassword = document.querySelector("#login_password");
 const button = document.querySelector(".login_btn");
 
 function loginBtn() {
-    let idValue = inputId.value;
-    let passwordValue = inputPassword.value;
+    const idValue = inputId.value;
+    const passwordValue = inputPassword.value;
 
     if(idValue.length > 0 && passwordValue.length > 0) {
         button.disabled = false;
         button.style.cursor = "pointer";
         button.style.backgroundColor = "#1c7ed6";
-    }else {
+    } else {
         button.disabled = true;
         button.style.cursor = "default";
         button.style.backgroundColor = "#bfdffd";
