@@ -15,6 +15,7 @@ passwdInput.addEventListener('keydown', function(){
     if(idLength === 0 ){
         alert('아이디부터 입력해주세요');
         userId.focus();
+        password.value = "";
         return;
     }
 
@@ -31,12 +32,17 @@ loginButton.addEventListener('click', function(){
     const userId = document.getElementById('userId-input');
     const password = document.getElementById('passwd-input');
 
-    if (!userId) {
+    let idLength = userId.value.length;
+    let passwdLength =password.value.length;
+
+    if (idLength === 0) {
         alert('id를 입력해주세요!');
+        userId.focus();
         return;
     }
     
-    if (!password) {
+    if (passwdLength === 0) {
+        password.focus();
         alert('비밀번호를 입력해주세요!');
         return;
     }
