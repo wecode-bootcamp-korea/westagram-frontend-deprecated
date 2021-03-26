@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="./js/main.js"></script>
 </head>
 <body>
     <nav>
@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="storylast"><!--flex받음-->
                                     <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
-                                    <p class="storyp1">손흥민</p>
+                                    <p class="storyp1">이재영</p>
                                 </div>
                                 <div class="storylast"><!--flex받음-->
                                     <img class="storyimg1" src="img/손흥민.jpg" alt="프로필1">
@@ -91,11 +91,124 @@
                 <div class="articleimgbox">
                     <img class="articleimg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/162896348_2049003231907899_4671236219368728456_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=5D9Igvqa1a0AX8tO1KZ&ccb=7-4&oh=432e5e8374a7f075279d22cbefa7481a&oe=6083D466&_nc_sid=c982ba">
                 </div>
-                
+                <div class="article_button">
+                    <div class="article_button_left">
+                        <svg class="article_button_like"  height="24" viewBox="0 0 48 48" width="24">
+                            <path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
+                        </svg>
+                        <svg class="article_button_comment"  height="24" viewBox="0 0 48 48" width="24">
+                            <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
+                        </svg>
+                        <svg class="article_button_share"  height="24" viewBox="0 0 48 48" width="24">
+                            <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
+                        </svg>
+                    </div>
+                    <div class="article_button_right">
+                        <svg class="article_button_save" height="24" viewBox="0 0 48 48" width="24">
+                            <path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="number_of_likes">
+                    <p class="likes_friend"><span class="like_font">2wo0_0</span>님 <span class="like_font">여러 명</span>이 좋아합니다.</p>
+                </div>
+                <div class="friend_comment">
+                    <p class="explanation"><span class="like_font">wecode</span>  코딩이란..</p>
+                </div>
+                <div class="time">
+                    <p class="a_few_hours_ago">7시간 전</p>
+                </div>
+                <div class="leave_comment_box">
+                    <div class="leave_comment">
+                        <span class="smilebox">
+                            <svg class="smile" height="24" viewBox="0 0 48 48" width="24">
+                                <path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><path d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"></path>
+                            </svg>
+                        </span>
+                        <div class="inputbox">
+                            <input class="inputcomment" type="text" placeholder="댓글 달기...">
+                        </div>
+                        <div class="posting">
+                            <button class="posting_button" type="submit" disabled>게시</button>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
         <div class="main-right">
-
+            <div class="my_profile">
+                <img class="my_profileimg" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/141997127_1523884024669097_6148385093252095280_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=ldPmBqcpW3kAX9esSCC&amp;ccb=7-4&amp;oh=6503a99b1b0096ad362012fef7e72aed&amp;oe=6085537E&amp;_nc_sid=7b02f1" alt="">
+                <div class="my_info">
+                    <p class="mynickname">2wo0_0</p>
+                    <p class="myname">이재영</p>
+                </div>
+                <button class="profile_transform" disabled>전환</button>
+            </div>
+            <div class="recommendation">
+                <div class="recommendation_header">
+                    <p class="recommendation_left">회원님을 위한 추천</p>
+                    <p class="recommendation_right">모두 보기</p>
+                </div>
+                <div class="recommendation_info">
+                    <div class="recommendation_box">
+                        <img class="friend_profile" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/156650140_116853317083347_8770042214751161261_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=-evbCZABANYAX_WcDzP&amp;edm=AEF8tYYAAAAA&amp;ccb=7-4&amp;oh=5eb6e52a64b2ad8c98bff45dab473831&amp;oe=60880D5B&amp;_nc_sid=a9513d" alt="다른프로필">
+                        <div class="friend_info">
+                        <p class="friend_nickname">ryu_d_g</p>
+                        <p class="other_friend">1996yunsi님 외 13명이 팔로우합니다</p>
+                        </div>
+                        <button class="follow" disabled>팔로우</button>
+                    </div>
+                    <div class="recommendation_box">
+                        <img class="friend_profile" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/156650140_116853317083347_8770042214751161261_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=-evbCZABANYAX_WcDzP&amp;edm=AEF8tYYAAAAA&amp;ccb=7-4&amp;oh=5eb6e52a64b2ad8c98bff45dab473831&amp;oe=60880D5B&amp;_nc_sid=a9513d" alt="다른프로필">
+                        <div class="friend_info">
+                        <p class="friend_nickname">ryu_d_g</p>
+                        <p class="other_friend">1996yunsi님 외 13명이 팔로우합니다</p>
+                        </div>
+                        <button class="follow" disabled>팔로우</button>
+                    </div>
+                    <div class="recommendation_box">
+                        <img class="friend_profile" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/156650140_116853317083347_8770042214751161261_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=-evbCZABANYAX_WcDzP&amp;edm=AEF8tYYAAAAA&amp;ccb=7-4&amp;oh=5eb6e52a64b2ad8c98bff45dab473831&amp;oe=60880D5B&amp;_nc_sid=a9513d" alt="다른프로필">
+                        <div class="friend_info">
+                        <p class="friend_nickname">ryu_d_g</p>
+                        <p class="other_friend">1996yunsi님 외 13명이 팔로우합니다</p>
+                        </div>
+                        <button class="follow" disabled>팔로우</button>
+                    </div>
+                    <div class="recommendation_box">
+                        <img class="friend_profile" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/156650140_116853317083347_8770042214751161261_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=-evbCZABANYAX_WcDzP&amp;edm=AEF8tYYAAAAA&amp;ccb=7-4&amp;oh=5eb6e52a64b2ad8c98bff45dab473831&amp;oe=60880D5B&amp;_nc_sid=a9513d" alt="다른프로필">
+                        <div class="friend_info">
+                        <p class="friend_nickname">ryu_d_g</p>
+                        <p class="other_friend">1996yunsi님 외 13명이 팔로우합니다</p>
+                        </div>
+                        <button class="follow" disabled>팔로우</button>
+                    </div>
+                    <div class="recommendation_box">
+                        <img class="friend_profile" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/156650140_116853317083347_8770042214751161261_n.jpg?tp=1&amp;_nc_ht=scontent-ssn1-1.cdninstagram.com&amp;_nc_ohc=-evbCZABANYAX_WcDzP&amp;edm=AEF8tYYAAAAA&amp;ccb=7-4&amp;oh=5eb6e52a64b2ad8c98bff45dab473831&amp;oe=60880D5B&amp;_nc_sid=a9513d" alt="다른프로필">
+                        <div class="friend_info">
+                        <p class="friend_nickname">ryu_d_g</p>
+                        <p class="other_friend">1996yunsi님 외 13명이 팔로우합니다</p>
+                        </div>
+                        <button class="follow" disabled>팔로우</button>
+                    </div>
+                </div>
+            </div>
+            <div class="westagram_info">
+                <ul class="westagram_contents_box">
+                    <li class="westagram_contents">소개</li>
+                    <li class="westagram_contents">도움말</li>
+                    <li class="westagram_contents">홍보 센터</li>
+                    <li class="westagram_contents">API</li>
+                    <li class="westagram_contents">채용 정보</li>
+                    <li class="westagram_contents">개인정보처리방침</li>
+                    <br/>
+                    <li class="westagram_contents">약관</li>
+                    <li class="westagram_contents">위치</li>
+                    <li class="westagram_contents">인기 계정</li>
+                    <li class="westagram_contents">해시태그</li>
+                    <li class="westagram_contents">언어</li>
+                </ul>
+                <p class="westagram_facebook">© 2021 INSTAGRAM FROM FACEBOOK</p>
+            </div>
         </div>
     </div>
 </body>

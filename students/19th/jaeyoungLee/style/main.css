@@ -155,16 +155,16 @@ nav {
 
 article {
     width: 612px;
-    height: 900px;
+    height: auto;
+    background-color: #fff;
     margin-top: 24px;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
 }
 
 .main-right {
-    border: 1px solid black;
     width: 293px;
-    height: 385px;
+    height: 612px;
     position: fixed;
     top: 85px;
     left: 885px;
@@ -213,4 +213,241 @@ article {
     width: 614px;
     height: 614px;
     object-fit: cover;
+}
+
+.article_button {
+    width: 582px;
+    height: 49px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_button_like {
+    padding: 8px;
+}
+
+.article_button_comment {
+    padding: 8px;
+}
+
+.article_button_share {
+    padding: 8px;
+}
+
+.article_button_save {
+    padding: 8px;
+}
+
+.number_of_likes {
+    width: 582px;
+    height: 18px;
+    margin: 0 auto;
+    padding-left: 5px;
+}
+
+.likes_friend {
+    font-size: 14px;
+}
+
+.like_font {
+    color: #262626;
+    font-weight: bold;
+}
+
+.friend_comment {
+    width: 582px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 8px;
+    padding-left: 5px;
+}
+
+.explanation {
+    font-size: 14px;
+}
+
+.time {
+    width: 598px;
+    padding-left: 18px;
+}
+
+.a_few_hours_ago {
+    font-size: 10px;
+    color: #8e8e8e;
+}
+
+.leave_comment_box {
+    border-top: 1px solid #dbdbdb;
+    margin-top: 10px;
+}
+
+.leave_comment {
+    width: 582px;
+    height: 55px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smilebox {
+    padding: 8px 15px 8px 0px;
+}
+
+.inputcomment {
+    width: 510px;
+    border: 0;
+}
+
+.inputcomment:focus {
+    outline: none;
+}
+
+.posting_button {
+    color: #0095f6;
+    border: 0;
+}
+
+.my_profile {
+    width: 293px;
+    height: 56px;
+    margin: 18px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_profileimg {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.my_info {
+    width: 202px;
+    height: 30px;
+}
+
+.mynickname {
+    width: 190px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 12px;
+    color: #262626; 
+}
+
+.myname {
+    width: 190px;
+    font-size: 14px;
+    margin-left: 12px;
+    color: #8e8e8e;
+}
+
+.profile_transform {
+    font-weight: 600;
+    font-size: 12px;
+    border: 0;
+    color: #0095f6;
+}
+
+.recommendation {
+    width: 291px;
+    height: 325px;
+}
+
+.recommendation_header {
+    width: 293px;
+    height: 11px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommendation_left {
+    width: 248px;
+    font-size: 14px;
+    color: #8e8e8e;
+    font-weight: 600;
+}
+
+.recommendation_right {
+    width: 45px;
+    font-size: 12px;
+    color: #262626;
+    font-weight: 600;
+}
+
+.recommendation_info {
+    width: 289px;
+    height: 240px;
+    margin-top: 20px;
+}
+
+.recommendation_box {
+    width: 289px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.friend_profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.friend_info {
+    width: 206px;
+    height: 28px;
+}
+
+.friend_nickname {
+    width: 205px;
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.other_friend {
+    width: 205px;
+    color: #8e8e8e;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.follow {
+    height: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+    border: 0;
+    color: #0095f6;
+}
+
+.westagram_info {
+    width: 293px;
+    height: 68px;
+}
+
+.westagram_contents_box {
+    width: 293px;
+}
+
+.westagram_contents {
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    display: inline;
+}
+
+.westagram_facebook {
+    width: 205px;
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 20px;
 }
