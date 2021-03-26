@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: auto;
+}
+header {
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid rgb(142, 142, 142);
+}
+
+nav {
+    width: 935px;
+    height: 47px;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.mainLogo {
+    width: 340px;
+    height: 30px;
+    font-family: 'Lobster', cursive;
+    font-size: 23px;
+    justify-content: flex-start;
+    margin: 0 0 0 40px;
+}
+
+.searchBar {
+    width: 215px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+.searchText {
+    width: 215px; 
+    height: 24px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(219, 219, 219);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+    
+}
+
+.fa-search {
+    font-size: 11px;
+    color: rgb(219, 219, 219);
+    position: absolute;
+    margin-top: 7px;
+    margin-right: 70px;
+}
+
+.navIcon {
+    width: 198px;
+    height: 22px; 
+    display: flex;
+    flex-direction: row;
+
+}
+.navIcon img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    margin-top: 2px;
+
+}
+
+.navIcon i {
+    font-size: 20px;  
+    padding-top: 3px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}    
+
+section {
+    width: 600px;
+    height: 900px;
+    background-color: yellow;
+
+}
+
+aside {
+    width: 293px;
+    height: 900px;
+    background-color: green;
+}

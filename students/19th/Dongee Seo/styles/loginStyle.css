@@ -96,10 +96,21 @@ a {
    text-decoration: none;
 }
 
-.facebook img {
+.facebook {
+   width: 268px;
+   height: 30;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+i {
    margin: 0px 5px 0px 0px;
+   width: 16px;
+   height: 16px;
+   color: #385185;
 }
 .facebook span {
+   margin-bottom: 3px;
    font-size: 13px;
    color: #385185;
    vertical-align: baseline;
@@ -125,3 +136,28 @@ a {
      color: #0095f6;
   }
 
+.getAppLetter , .getAppStore {
+    width: 330px;
+    display: flex;
+    justify-content: center;
+}
+.getAppLetter {
+   font-size: 14px;
+   padding: 20px;
+
+}
+
+.apple , .play {
+   width: 136px;
+   height: 40px;
+   padding: 0px;
+}
+
+.apple {
+   margin-right: -20px;
+}
+
+
+.play {
+   margin-left: -20px;
+}
