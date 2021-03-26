@@ -6,7 +6,7 @@ const pwForChangeColor = document.body.querySelector(".changeColorPw");
 idForChangeColor.addEventListener("keyup", function () {
     const loginButtonOpacity = document.body.querySelector('.logInButton');
 
-    idForChangeColor.value.length !== 0 && pwForChangeColor.value.length !== 0
+    idForChangeColor.value && pwForChangeColor.value
     ? ( loginButtonOpacity.style.opacity = '1' )
     : ( loginButtonOpacity.style.opacity = '0.3');
 });
@@ -14,7 +14,7 @@ idForChangeColor.addEventListener("keyup", function () {
 pwForChangeColor.addEventListener("keyup", function () {
     const loginButtonOpacity = document.body.querySelector('.logInButton');
 
-    idForChangeColor.value.length !== 0 && pwForChangeColor.value.length !== 0
+    idForChangeColor.value && pwForChangeColor.value
     ? ( loginButtonOpacity.style.opacity = '1' )
     : ( loginButtonOpacity.style.opacity = '0.3');
 });

@@ -96,6 +96,9 @@ main {
 }
 
 .storyIcons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
@@ -106,8 +109,10 @@ main {
 }
 
 .storyIcons li img {
-    width: 100%;
-    height: 100%;
+    width: 52px;
+    height: 52px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 50%;
 }
 
 .feed {
@@ -228,6 +233,7 @@ main {
     margin-left: 10px;
     border: transparent;
     color: gray;
+    background-color: transparent;
     font-size: 14px;
 }
 
@@ -250,15 +256,15 @@ main {
     color: gray;
 }
 
-.comentUnfold {
+.commentUnfold {
     margin-top: 3px;
     font-size: 15px;
     color: gray;
 }
 
-.comentUnfold a:link,
-.comentUnfold a:active,
-.comentUnfold a:visited {
+.commentUnfold a:link,
+.commentUnfold a:active,
+.commentUnfold a:visited {
     color: gray;
     text-decoration: none;
 }
@@ -269,8 +275,8 @@ main {
     font-weight: bolder;
 }
 
-.authorMentionComent, 
-.replierMentionComent {
+.authorMentionComment, 
+.replierMentionComment {
     font-size: 14px;
 }
 
@@ -288,5 +294,127 @@ main {
     position: fixed;
     width: 316px;
     height: 500px;
+    /*border: 1px solid rgba(var(--b6a,219,219,219),1);*/
+}
+
+.mainRightProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.mainRightProfileContainer {
+    display: flex;
+    align-items: center;
+}
+
+.mainRightProfileImage {
+    width: 50px;
+    height: 50px;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mainRightProfileImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainRightProfilename ul {
+    padding-left: 20px;
+}
+
+.mainRightProfilename li {
+    list-style: none;
+}
+
+.mainRightProfilename li:nth-child(1) {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.mainRightProfilename li:nth-child(2) {
+    font-size: 14px;
+    color: gray;
+}
+
+.mainRightProfileChange {
+    font-size: 13px;
+    font-weight: bolder;
+    color: #0095F6;
+}
+
+.mainRigntRecomment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.mainRigntRecommentForMe {
+    font-size: 14px;
+    font-weight: bolder;
+    color: gray;
+}
+
+.mainRigntRecommentAll {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.recommentList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0 20px;
+}
+
+.recommentListLeft {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.recommentListImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #DB2F75;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.recommentListImage img {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 50%;
+}
+
+.recommentListCenter {
+    list-style: none;
+    padding: 0;
+}
+
+.recommentListCenter li:nth-child(1) {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.recommentListCenter li:nth-child(2) {
+    font-size: 12px;
+    color: gray;
+}
+
+.recommentListFollow {
+    font-size: 13px;
+    color: #0095F6;
 }
