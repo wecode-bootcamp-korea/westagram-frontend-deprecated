@@ -273,9 +273,6 @@ ul {
   border: none;
   background-color: transparent;
   color: var(--color-action);
-}
-
-.upload-button:hover {
   cursor: pointer;
 }
 
@@ -285,4 +282,31 @@ ul {
 
 .user-comment ul li {
   height: 22.5px;
+}
+
+/*add-comment from js*/
+.del-btn {
+  position: absolute;
+  right: var(--avatar-padding);
+  border: none;
+  outline: none;
+  background-color: white;
+  color: var(--color-action);
+  font-size: calc(var(--font-size) * 0.8);
+  cursor: pointer;
+}
+
+.like-btn {
+  position: absolute;
+  right: calc(var(--avatar-padding) * 3);
+  border: none;
+  outline: none;
+  background-color: white;
+  color: var(--color-action);
+  font-size: calc(var(--font-size) * 0.8);
+  cursor: pointer;
+}
+
+.comment-container {
+  display: flex;
 }
