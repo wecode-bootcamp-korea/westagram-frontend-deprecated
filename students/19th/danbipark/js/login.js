@@ -3,6 +3,7 @@ const   idBox = document.querySelector("#id-input"),
         loginBtn = document.querySelector(".login-button"),
         label = document.getElementsByTagName("label"),
         input = document.getElementsByTagName("input");
+        
 const labelMoving = "label-moving";
 const inputPadding = "input-padding";
 
