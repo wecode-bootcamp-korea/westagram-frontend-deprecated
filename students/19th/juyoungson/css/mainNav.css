@@ -43,12 +43,12 @@
     height: 100%;
 }
 
-.iconControlBox>* {
+.iconControlBox > * {
     margin-left: 22px;
 }
 
 .profile {
-    border-radius: 10px;
+    border-radius: 70px;
     width: 22px;
     background-image: url("../images/juyoung.jpg");
     background-position: center;

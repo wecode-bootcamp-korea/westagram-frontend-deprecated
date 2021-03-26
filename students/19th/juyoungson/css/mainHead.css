@@ -1,0 +1,45 @@
+.mainHead{
+    position: relative;
+    border: 1px solid #c9c9c9;
+    overflow: hidden;
+    margin-bottom: 24px;
+    height: 118px;
+    width: 612px;
+}
+
+.headBox {
+    display: flex;
+    position: absolute;
+    margin: 16px 0;
+}
+
+.headBox li{
+    position: relative;
+    height: 84px;
+    width: 80px;
+}
+
+.headBox li a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4px;
+}
+
+.headImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+    width: 66px;
+    background-image: url("../images/img.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.headImgBox img{
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 70%;
+}
