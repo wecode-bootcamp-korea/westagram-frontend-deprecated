@@ -23,25 +23,8 @@ function addClassName(i) {
 }
 
 function changeBtnColor() {
-    (passwordBox.value.length >= 5 && idBox.value.length >= 1) ?
+    (passwordBox.value.length >= 5 && idBox.value.includes('@')) ?
         loginBtn.style.backgroundColor = "#2f95f6" : 
         loginBtn.style.backgroundColor = "#b2dffb" 
 };
-
-// for(let i in input) {
-//     input[i].addEventListener('input', () => {
-//         for(let i in input) {
-//          addClassName(i);
-//          changeBtnColor(i);
-//          delMovedLabel(i);
-//         }
-//     })
-// }
-
-// function delMovedLabel() {
-//     if (passwordBox.value.length == 0 || idBox.value.length == 0) {
-//         input[i].classList.remove(inputPadding);
-//         label[i].classList.remove(labelMoving);
-//     }
-// }
 
