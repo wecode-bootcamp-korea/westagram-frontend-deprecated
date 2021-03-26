@@ -182,11 +182,14 @@ header {
 }
 
 .user-comment .input-comment {
-  width: 600px;
+  position: relative;
+  width: 598px;
   height: 56px;
+  font-size: var(--font-size);
   outline: none;
   border: none;
   border-top: 1px solid var(--color-border);
+  padding-left: var(--avatar-padding);
 }
 
 /*main-right*/
@@ -195,8 +198,6 @@ header {
   height: 90px;
   display: flex;
   position: relative;
-
-  /* padding: 20px; */
 }
 
 .my-info img {
@@ -235,6 +236,10 @@ ul {
   flex-direction: column;
 }
 
+.friends-list {
+  position: relative;
+}
+
 .friends-list img {
   width: var(--avatar-friends);
   height: var(--avatar-friends);
@@ -242,8 +247,42 @@ ul {
   margin-right: 20px;
 }
 
+.friends-info span:nth-child(3) {
+  position: absolute;
+  right: 0;
+  font-size: calc(var(--font-size) * 0.8);
+  color: var(--color-action);
+}
+
 .add-info {
   display: block;
   font-size: var(--font-size);
   color: var(--color-text-add);
+}
+
+/*commnet*/
+.comment-container {
+  position: relative;
+}
+
+.upload-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: var(--avatar-padding);
+  border: none;
+  background-color: transparent;
+  color: var(--color-action);
+}
+
+.upload-button:hover {
+  cursor: pointer;
+}
+
+.upload-button:focus {
+  outline: none;
+}
+
+.user-comment ul li {
+  height: 22.5px;
 }
