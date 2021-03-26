@@ -102,13 +102,17 @@ main {
     margin-right:30px;
 }
 
-.story-wrap {
+.story {
     width:100%;
     height:120px;
     background-color:#fff;
     margin-top:90px;
     margin-bottom:30px;
     border:1px solid #ddd;
+}
+
+.story-wrap {
+    padding-top:20px;
     display:flex;
     justify-content:flex-start;
     align-items:center;
@@ -250,7 +254,7 @@ article > img {
 }
 
 .feeds-bottom ul {
-    width:97%;
+    width:100%;
     height:45px;
     margin:auto;
     display:flex;
@@ -267,7 +271,10 @@ article > img {
     font-size:22px;
 }
 
-.feeds-iconbox {
+.feeds-bottom > ul {
+    width:95%;
+}
+.feeds-iconbox{
     width:100%;
     height:40px;
     display:flex;
@@ -305,12 +312,7 @@ article > img {
     font-weight:700;
 }
 
-.comment {
-    width:100%;
-    height:auto;
-}
-
-.author-content {
+.content-write {
     width:94%;
     margin:auto;
     display:flex;
@@ -318,11 +320,11 @@ article > img {
     margin-bottom:10px;
 }
 
-.friend-content {
-    width:94%;
-    margin:auto;
+.friend-comment-list {
+    width:100%;
+    height:30px;
     display:flex;
-    justify-content: flex-start;
+    justify-content:flex-start;
     position:relative;
 }
 
@@ -335,15 +337,14 @@ article > img {
     color:#888;
 }
 
-.friend-content button {
+.friend-comment-list button {
     position:absolute;
     top:-5px;
     right:0;
 }
 
-.friend-content button img {
-    width:15px;
-    height:15px;
+.friend-comment-list button i {
+    font-size:15px;
 }
 
 .time {
@@ -401,7 +402,7 @@ article > img {
 /* main-right style */
 
 .main-right {
-    width:22%;
+    max-width:22%;
     height:600px;
     margin-top:90px;
     position:fixed;
@@ -422,13 +423,14 @@ article > img {
     position:relative;
 }
 
-.recommend-header li:nth-child(2) {
-    margin-left:-25%;
+.recommend-header .log-out {
+    float:right;
 }
 
-.recommend-header .log-out {
-    width:30%;
-    justify-self: end;
+.recommend-header-flex {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .recommend-blue{
@@ -440,6 +442,7 @@ article > img {
 
 .recommend-header-id {
     font-weight:700;
+    margin-left:10px;
 }
 .recommend-header li:first-child::after {
     width:64px;
@@ -514,23 +517,37 @@ article > img {
     color:#888;
 }
 
+/* footer */
+
 footer {
     width:100%;
     height:70px;
     margin-top:20px;
 }
 
-footer ul {
-    display:flex;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-}
 footer ul li {
     font-size:12px;
     color:#888;
     margin-bottom:10px;
     position:relative;
-    margin-right:15px;
+    padding-left:5px;
+    padding-right:10px;
+    display:inline-block;
+}
+
+footer ul li:after {
+    width:3px;
+    height:3px;
+    border-radius: 50%;
+    position:absolute;
+    top:25%; left:95%;
+    content:"";
+    background-color:#888;
+}
+
+footer ul li:nth-child(6)::after,
+footer ul li:last-child::after {
+    display:none;
 }
 
 .made {
