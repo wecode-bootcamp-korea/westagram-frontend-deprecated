@@ -1,0 +1,79 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #8e8e8e;
+  width: 100%;
+  height: 54px;
+  background-color: white;
+  padding: 0 17.5%;
+  padding-right: 15%;
+}
+.left_box {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.right_box {
+  width: 222px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+}
+.camera {
+  height: 24px;
+  width: 24px;
+}
+.camera_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  width: 20px;
+  margin: 0 5px;
+  font-size: 29px;
+  margin-top: 5px;
+  text-align: center;
+}
+.logo {
+  width: 103px;
+  height: 29px;
+}
+.logo_box {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  width: 215px;
+  height: 28px;
+  border: 1px solid #8e8e8e;
+  background-color: #fafafa;
+}
+.search_box {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.search::placeholder {
+  text-align: center;
+  color: #8e8e8e;
+}
+.magnifier_box {
+  position: absolute;
+  top: 33%;
+  left: 38%;
+}
+.magnifier {
+  width: 10px;
+  height: 10px;
+}
+.compass,
+.heart,
+.profile {
+  width: 22px;
+  height: 22px;
+}

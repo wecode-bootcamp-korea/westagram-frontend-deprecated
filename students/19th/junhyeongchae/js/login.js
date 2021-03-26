@@ -7,3 +7,7 @@ getLoginform.addEventListener("keyup", function(){
   const changeColor = getId.value.includes('@') && getPw.value.length > 5;
   getSubmit.disabled = changeColor ? false : true;
 })
+
+function moveMain(){
+  location.href = 'main.html'
+}
