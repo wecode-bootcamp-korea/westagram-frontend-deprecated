@@ -1,15 +1,19 @@
 const Email = document.getElementById("InputEmail");
 const Password = document.getElementById("InputPassword");
-const ButtonBlue = document.getElementById("BlueBotton")
+const ButtonBlue = document.getElementById("BlueButton");
 
 const LoginBlue = () =>{
-    if(Email.value !== undefined && Password.value !== undefined){
-
+    if(Email.value !== "" && Password.value !== ""){
+        ButtonBlue.style.backgroundColor = "rgb(0,149,247)";
     }
-    ButtonBlue.style.backgroundColor = "red";
+    if(Email.value == "" && Password.value == ""){
+        ButtonBlue.style.backgroundColor = "rgba(0, 149, 247, 0.5)";
+    }
 }
 
-
-
-
-// LoginBlue();
+Email.addEventListener("keyup", function(){
+    LoginBlue();
+})
+Password.addEventListener("keyup", function(){
+    LoginBlue();
+})
