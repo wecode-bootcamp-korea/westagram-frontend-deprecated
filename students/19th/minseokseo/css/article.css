@@ -90,3 +90,64 @@ article {
   padding-left: 10px;
   font-size: 15px;
 }
+.FeedContentOtherComment {
+  margin-top: 10px;
+  padding-left: 15px;
+  width: 620px;
+  height: 120px;
+}
+.FeedContentInputBox {
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.FeedContentInputBoxEmoticon {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.FeedContentInputBoxCommentInput {
+  width: 520px;
+  border: none;
+  user-select: none;
+}
+.FeedContentInputBoxCommentInput::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.FeedContentInputBoxCommentInput:focus {
+  outline: none;
+}
+.FeedContentInputBoxPost {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #0096f6;
+  font-size: 14px;
+  font-weight: bold;
+}
+ul {
+  list-style-type: "m1nsoku ";
+  font-size: 16px;
+  font-weight: bold;
+  list-style-type: bold;
+  list-style-position: inside;
+  padding: 0;
+}
+li {
+  padding-bottom: 5px;
+}
+li > span {
+  font-size: 13px;
+  font-weight: normal;
+}
