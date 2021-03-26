@@ -25,7 +25,7 @@ function inputEvent() {
 
         changeStyle(login_id_span, styleObj);
     }
-    else{
+    else {
         const styleObj = {
             transition: "0.1s",
             paddingTop: "12px",
@@ -46,7 +46,7 @@ function inputEvent() {
 
         changeStyle(login_pw_span, styleObj);
     }
-    else{
+    else {
         const styleObj = {
             transition: "0.1s",
             paddingTop: "12px",
@@ -58,36 +58,36 @@ function inputEvent() {
     }
 
 
-    login_id.value.length >= 1 && login_pw.value.length >= 5 ? disabledLoginBtn(login_btn, false, "#0095F6") : disabledLoginBtn(login_btn, true, "#B2DFFC");
+    login_id.value.includes('@') && login_pw.value.length >= 5 ? disabledLoginBtn(login_btn, false, "#0095F6") : disabledLoginBtn(login_btn, true, "#B2DFFC");
 
-    login_pw.value.length >= 1 ? changeStyle(view_password, {display: "block"}) : changeStyle(view_password, {display: "none"})
+    login_pw.value.length >= 1 ? changeStyle(view_password, { display: "block" }) : changeStyle(view_password, { display: "none" })
 }
 
 function loginBtnMouseDown() {
-    changeStyle(login_btn, {backgroundColor: "#67c2ff"});
+    changeStyle(login_btn, { backgroundColor: "#67c2ff" });
 }
 
 function loginBtnMouseUp() {
-    changeStyle(login_btn, {backgroundColor: "#0095F6"});
+    changeStyle(login_btn, { backgroundColor: "#0095F6" });
 }
 
 function viewPasswordClick() {
-    if (login_pw.type == "password"){ 
+    if (login_pw.type == "password") {
         login_pw.type = "text";
         view_password.innerHTML = "숨기기";
-        changeStyle(view_password, {marginLeft: "250px"})
+        changeStyle(view_password, { marginLeft: "250px" })
     }
-    else{ 
+    else {
         login_pw.type = "password";
         view_password.innerHTML = "비밀번호 표시";
-        changeStyle(view_password, {marginLeft: "200px"})
+        changeStyle(view_password, { marginLeft: "200px" })
     }
 }
 
 
 function disabledLoginBtn(dom, disabled, backgroundColor) {
     dom.disabled = disabled;
-    changeStyle(dom, {backgroundColor});
+    changeStyle(dom, { backgroundColor });
 }
 
 
