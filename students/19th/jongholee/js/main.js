@@ -167,3 +167,176 @@ deleteIcon.addEventListener('click', function (e) {
 function clickDelete(e) {
     e.target.parentElement.remove();
 }
+
+const navSearchInput = document.getElementsByClassName('nav-search-input')[0];
+
+const navSearchContainer = document.getElementsByClassName('nav-search-container')[0];
+
+navSearchInput.addEventListener('focus', function (e) {
+    e.target.parentNode.firstElementChild.style.marginLeft = '5px';
+    // e.target.placeholder.style.textAlign = 'left';
+
+    // 검색 창 보이기
+    navSearchContainer.style.display = 'inline-block';
+
+    // next버튼 안보이게 하기
+    storyNextBtn.style.display = 'none';
+})
+
+navSearchInput.addEventListener('focusout', function (e) {
+    e.target.parentNode.firstElementChild.style.marginLeft = '79px';
+    // e.target.placeholder.style.textAlign = 'center';
+
+    navSearchContainer.style.display = 'none';
+    storyNextBtn.style.display = 'inline-block';
+})
+const navSearchList = document.getElementsByClassName('nav-search-list')[0];
+
+// 키 입력시 값을 찾는다.
+navSearchInput.addEventListener('input', function () {
+    // input의 값을 변수에 저장 == keyword
+    const keyword = navSearchInput.value;
+
+    if (keyword.length == 0) {
+        navSearchList.innerHTML = ''
+        return
+    }
+    // key에 해당하는 값들을 배열에 담음
+    const arr = findFriend(friend_list, keyword);
+    // 해당 값을 ul에 넣는다.
+
+    arr.forEach((friend, index) => {
+        let new_li = document.createElement('li')
+        let new_nickname = document.createElement('span');
+        let new_name = document.createElement('span')
+
+        new_nickname.innerHTML = friend.nickname;
+        new_name.innerHTML = friend.name;
+        new_li.appendChild(new_nickname)
+        new_li.appendChild(new_name)
+
+        navSearchList.appendChild(new_li);
+    })
+})
+// 42개의 친구 목록
+const friend_list = makeSumNickname();
+
+function makeSumNickname() {
+    let friend_list = [];
+
+    for (let i = 0; i < 42; i++) {
+        let arr = []
+
+        arr.push(makeChar(arr))
+        arr.push('_')
+        arr.push(makeNum(arr));
+
+        friend_list.push(arr.join(''))
+    }
+    friend_list = makeKor(friend_list)
+
+    return friend_list
+}
+
+function makeKor(friend_list) {
+    let kor_arr = [
+        '강서형'
+        , '김근호'
+        , '김남선'
+        , '김도희'
+        , '김동현'
+        , '김영훈'
+        , '김태현'
+        , '김현영'
+        , '김효진'
+        , '김희열'
+        , '문희원'
+        , '박단비'
+        , '박성은'
+        , '박세리'
+        , '박형섭'
+        , '백승찬'
+        , '서동이'
+        , '서득영'
+        , '서민석'
+        , '손주영'
+        , '신지원'
+        , '안정현'
+        , '양명진'
+        , '원재연'
+        , '유동헌'
+        , '윤서준'
+        , '이명진'
+        , '이병재'
+        , '이서진'
+        , '이예원'
+        , '이윤형'
+        , '이재영'
+        , '이재은'
+        , '이종호'
+        , '정새미'
+        , '정재유'
+        , '채준형'
+        , '함경재'
+        , '홍진아'
+        , '홍태경'
+        , '황수민'
+        , '황재원'
+    ]
+    // let new_friend_list = friend_list.map((item, index) => {
+    //     return item + '_' + kor_arr[index]
+    // })
+
+    // return new_friend_list
+    let new_friend_list = [];
+
+    friend_list.forEach((item, index) => {
+        let obj = {
+            nickname: item,
+            name: kor_arr[index]
+        }
+
+        new_friend_list.push(obj)
+    })
+
+    return new_friend_list
+}
+
+function makeChar(arr) {
+    let len = ranFunc(3, 5)
+
+    for (let j = 0; j < len; j++) {
+        let ran_num = ranFunc(97, 122)
+        let ascii = String.fromCharCode(ran_num)
+        arr.push(ascii)
+    }
+
+    return arr;
+}
+
+function makeNum(arr) {
+    let len = ranFunc(3, 5)
+
+    for (let j = 0; j < len; j++) {
+        let ran_num = ranFunc(0, 9)
+        arr.push(ran_num)
+    }
+}
+
+function ranFunc(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function findFriend(friends, keyword) {
+    let result = []
+
+    friends.forEach(a => {
+        if (a.nickname.match(keyword) != null) {
+            result.push(a)
+        } else if (a.name.match(keyword) != null) {
+            result.push(a)
+        }
+    })
+
+    return result;
+}
