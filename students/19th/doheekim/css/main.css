@@ -253,7 +253,7 @@ article > img {
     height:auto;
 }
 
-.feeds-bottom ul {
+.feeds-bottom-flex{
     width:100%;
     height:45px;
     margin:auto;
@@ -315,19 +315,11 @@ article > img {
 .content-write {
     width:94%;
     margin:auto;
-    display:flex;
-    justify-content: flex-start;
+}
+
+.content-write li {
     margin-bottom:10px;
 }
-
-.friend-comment-list {
-    width:100%;
-    height:30px;
-    display:flex;
-    justify-content:flex-start;
-    position:relative;
-}
-
 .chat-id {
     font-weight:700;
     margin-right:10px;
