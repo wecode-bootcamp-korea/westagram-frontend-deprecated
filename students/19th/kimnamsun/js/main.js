@@ -15,35 +15,34 @@ const enabledBtn = () => {
 
 commentInput.addEventListener('keyup', enabledBtn);
 
-//댓글배열
-const replyArr = [];
-//댓글 객체 만들기 위한 클래스
-class Reply {
-    constructor(id, content, isLike) {
-        this.id = id;
-        this.content = content;
-        this.isLike = isLike;
-    }
-}
+let idValue = 0;
 
 //댓글 추가
 const addComment = () => {
     let commentInputValue = commentInput.value.trim();
+
     if (commentInputValue.length > 0) {
         const ul = document.querySelector('.reply-list');
         const li = document.querySelector('.reply-list li');
         const newComment = li.cloneNode(true);
 
+        idValue++;
+
         //아이디
-        newComment.childNodes[1].innerHTML = 'new-ID';
+        newComment.childNodes[1].innerHTML = `newId${idValue}`;
         //댓글내용
         newComment.childNodes[3].innerText = commentInput.value;
 
         ul.appendChild(newComment);
 
-        //댓글객체 생성하고 배열에 푸쉬
-        replyArr.push(new Reply('new-ID', commentInput.value, false));
-        // console.log(replyArr);
+        //이벤트 추가
+        newComment.childNodes[7].addEventListener('click', (e) => {
+            likeReply(e.target);
+        });
+
+        newComment.childNodes[5].addEventListener('click', (e) => {
+            deleteReply(e.target);
+        });
 
         //초기화
         commentInput.value = '';
@@ -74,9 +73,6 @@ const scroll = (direction) => {
     const instaStoryUl = document.querySelector('.insta-story ul');
     let scrollAmount = 0;
 
-    console.log(instaStoryUl.scrollTo);
-
-
     const slide = setInterval((e) => {
 
         if (direction === 'left') {
@@ -91,6 +87,7 @@ const scroll = (direction) => {
         }
     }, 20);
 }
+
 
 //좋아요 버튼
 const likeBtn = document.querySelectorAll('.like-heart');
@@ -123,6 +120,7 @@ const deleteReply = (e) => {
 }
 
 repeatFunction(deleteBtn, deleteReply, 'click');
+
 
 //좋아요아이콘 클릭하면 빨간색하트
 const feedLikeBtn = document.querySelector('.like-btn');
