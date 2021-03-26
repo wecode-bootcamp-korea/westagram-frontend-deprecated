@@ -1,5 +1,5 @@
 a,span {
-    font-size: 14px;
+    font-size: 0.875rem
 }
 
 button:focus{ 	
@@ -14,13 +14,13 @@ button:focus{
 }
 
 .nav-bar {
-    height: 54px;
+    height: 3.375rem;
     background-color: var(--white);
     border-bottom: 1px solid var(--border);
 }
 
 .navbar-wrap {
-    width: 935px;
+    width: 58.44rem;
     height: 100%;
     display: flex;
     margin: 0 auto;
@@ -35,9 +35,9 @@ button:focus{
 
 .logo {
     margin: auto 0;
-    margin-right: 80px;
+    margin-right: 5rem;
     color: var(--black);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .search-wrap {
@@ -46,20 +46,20 @@ button:focus{
 
 .search-input {
     flex: 0 1 auto;
-    min-width: 125px;
-    width: 215px;
-    height: 28px;
+    min-width: 7.813rem;
+    width: 13.44rem;
+    height: 1.75rem;
     margin: auto 0;
     background-color: var(--background);
     border: 1px solid var(--border);
-    border-radius: 3px;
-    text-indent: 22px;
+    border-radius: 0.1875rem;
+    text-indent: 1.375rem;
 }
 
 .search-input::placeholder {
     background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
     background-size: contain;
-    background-position: 70px center;
+    background-position: 4.375rem center;
     background-repeat: no-repeat;
     text-align: center;
     text-indent: 0;
@@ -68,9 +68,9 @@ button:focus{
 .search-input:focus::placeholder { 
     background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
     background-size: contain;
-    background-position: 5px center;
+    background-position: 0.3125rem center;
     background-repeat: no-repeat;
-    padding-left: 25px;
+    padding-left: 1.563rem;
     text-align: left;
     text-indent: 0;
     color: var(--gray);
@@ -81,25 +81,28 @@ button:focus{
     position: absolute;
     width: 150%;
     left: 50%;
-    margin: 15px 0;
+    margin: 0.9375rem 0;
     transform:translateX(-50%);
 }
 
 .speech-bubble {
-    width: 15px;
-    height: 15px;
-    margin: -7px auto;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    margin: -0.4375rem auto;
     transform: rotate(45deg);
     background-color: var(--white);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0.0625em 0.0625em, 
+                rgba(0, 0, 0, 0.25) 0 0.125em 0.5em, 
+                rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .search-result {
     position: relative;
-    padding: 8px 16px;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3125rem;
     background-color: var(--white);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 0.8125rem 1.688rem -0.3125rem,
+                rgba(0, 0, 0, 0.3) 0 0.5rem 1rem -0.5rem;
 }
 
 .search-list span {
@@ -109,11 +112,11 @@ button:focus{
 .search-list li {
     display: flex;
     align-items: center;
-    padding: 8px 0px;
+    padding: 0.5rem 0;
 }
 
 .search-list li div {
-    margin: 0px 10px;
+    margin: 0 0.625rem;
 }
 
 .search-list li div span:last-child {
@@ -121,50 +124,50 @@ button:focus{
 }
 
 .search-list li img {
-    width: 44px;
+    width: 2.75rem;
     border-radius: 50%;
     border: 1px solid var(--border);
 }
 
 .noResult {
-    height: 350px;
-    padding: 8px;
+    height: 21.88rem;
+    padding: 0.5rem;
     align-items: center;
     justify-content: center;
     color: var(--gray);
-    font-size: 14px;
+    font-size: 0.85rem;
 }
 
 .icon-wrap {
-    width: 200px;
+    width: 12.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .icon-wrap a {
-    height: 22px;
+    height: 1.375rem;
 }
 
 .nav-icon {
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
 }
 
 .profile-wrap {
-    padding-top: 5px;
+    padding-top: 0.3125rem;
 }
 
 .profile-img {
-    width: 22px;
+    width: 1.375rem;
     border-radius: 50%;
 }
 
 /* 프로필 메뉴박스 */
 .profile-menu-wrap {
-    width: 230px;
+    width: 14.38rem;
     position: absolute;
-    margin: 15px 0;
+    margin: 1rem 0;
     right: 15%;
     z-index: 2;
 }
@@ -177,17 +180,18 @@ button:focus{
 .profile-menu {
     position: relative;
     background-color: var(--white);
-    border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 0.3125rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 0.8125rem 1.688rem -0.3125rem, 
+                rgba(0, 0, 0, 0.3) 0 0.5rem 1rem -0.5rem;
 }
 
 .profile-list svg {
-    width: 16px;
+    width: 1rem;
 }
 
 .profile-list li {
     display: flex;
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
     align-items: center;
 }
 
@@ -196,7 +200,7 @@ button:focus{
 }
 
 .profile-list li div {
-    margin: 0px 10px;
+    margin: 0 0.625rem;
 }
 
 .logout {
@@ -204,20 +208,20 @@ button:focus{
 }
 
 .logout a {
-    padding-top: 2px;
+    padding-top: 0.0625rem;
 }
 
 
 /* 메인 */
 .main {
-    width: 935px;
+    width: 58.44rem;
     display: flex;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 5rem 0;
 }
 
 .feeds {
-    width: 614px;
+    width: 38.38rem;
     justify-content: center;
 }
 
@@ -225,27 +229,27 @@ button:focus{
 .insta-story {
     display: flex;
     align-items: center;
-    width: 614px;
-    padding: 16px 0px;
-    margin-bottom: 30px;
+    /* width: 38.38rem; */
+    padding: 1rem 0;
+    margin-bottom: 1.875rem;
     border: 1px solid var(--border);
-    border-radius: 3px;
+    border-radius: 0.1875rem;
 }
 
 .scroll-btn-wrap {
-    width: 43%;
+    width: 38.38rem;
     position: absolute;
 }
 
 .scroll-btn-wrap button {
-    width: 25px;
-    height: 25px;
-    margin: 5px;
+    width: 1.563rem;
+    height: 1.563rem;
+    margin: 0.3125rem;
     background-color: var(--white);
     border: 0;
     border-radius: 50%;
     mix-blend-mode: screen;
-    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0 0.4375rem 1.813rem 0;
 }
 
 .scroll-btn-wrap .next-btn {
@@ -264,14 +268,14 @@ button:focus{
 }
 
 .insta-story ul li {
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 .insta-story ul li .gradient-wrap {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
@@ -280,16 +284,16 @@ button:focus{
 
 .gradient-wrap img {
     border-radius: 50%;
-    width: 56px;
+    width: 3.5rem;
     border: 2px solid var(--white);
 }
 
 .insta-story ul li p {
     text-overflow: ellipsis;
-    max-width: 60px;
+    max-width: 3.75rem;
     overflow: hidden;
     margin: 0;
-    font-size: 12px;
+    font-size: 0.75rem;
     letter-spacing: 0.1px;
     text-align: center;
 }
@@ -300,24 +304,24 @@ article {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border);
-    border-radius: 3px;
+    border-radius: 0.1875rem;
 }
 
 .feed-nav {
-    height: 60px;
-    padding: 16px;
+    height: 3.75rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     background-color: var(--white);
 }
 
 .feed-nav .profile-img {
-    width: 32px;
+    width: 2rem;
 }
 
 .id-wrap {
-    width: 536px;
-    margin-left: 14px;
+    width: 33.5rem;
+    margin-left: 0.85rem;
     justify-content: space-between;
 }
 
@@ -326,8 +330,8 @@ article {
 }
 
 .feed-img {
-    width: 613px;
-    height: 613px;
+    width: 38.31rem;
+    height: 38.31rem;
 }
 
 .feed-content {
@@ -336,11 +340,11 @@ article {
 }
 
 .feed-icon {
-    padding: 5px 8px;
+    padding: 0.3125rem 0.5rem;
 }
 
 .feed-icon svg {
-    margin: 8px;
+    margin: 0.5rem;
 }
 
 .feed-icon svg:last-child {
@@ -348,24 +352,24 @@ article {
 }
 
 .like-list {
-    padding: 0 16px;
-    margin-bottom: 8px;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
 }
 
 .like-list .profile-img {
-    width: 20px;
+    width: 1.25rem;
     border-radius: 50%;
     border: 1px solid var(--border);
 }
 
 .like-list span {
-    margin: 0 5px;
+    margin: 0 0.3125rem;
 }
 
 .feed-article {
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 .feed-content p {
@@ -375,33 +379,33 @@ article {
 }
 
 .reply-list{
-    padding: 2px 16px 12px 16px;
+    padding: 0 1rem 0.75rem 1rem;
 }
 
 .like-heart {
-    margin: 1px 4px 1px 0px;
+    margin: 0.15rem 0.2rem 0.15rem 0rem;
     float: right;
-    font-size: 14px;
+    font-size: 0.85rem;
 }
 
 .delete-reply {
     float: right;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* 댓글입력 */
 .add-comment {
-    height: 50px;
+    height: 3.125rem;
     display: flex;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--border);
 }
 
 .add-comment svg {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .add-comment input {
@@ -410,29 +414,29 @@ article {
 }
 
 .add-comment-btn {
-    border: 0px;
+    border: 0;
     background-color: var(--white);
     color: var(--disabled);
 }
 
 /* main-right */
 .main-right {
-    width: 293px;
+    width: 18.31rem;
     position: fixed;
-    left: 887px;
-    top: 88px;
-    padding-left: 5px;
+    left: 55.44rem;
+    top: 5.5rem;
+    padding-left: 0.3125rem;
     z-index: -1;
 }
 
 .account {
     display: flex;
-    padding: 20px 0px;
+    padding: 1.25rem 0;
     align-items: center;
 }
 
 .account img {
-    width: 56px;
+    width: 3.5rem;
     border-radius: 50%;
 }
 
@@ -441,7 +445,7 @@ article {
 }
 
 .main-right .id-wrap span{
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 
 .main-right .id-wrap a {
@@ -449,7 +453,7 @@ article {
 }
 
 .recommend-for-user {
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 }
 
 .recommend-list span {
@@ -462,12 +466,12 @@ article {
 }
 
 .recommend-for-user a {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .recommend-list li {
     display: flex;
-    padding: 8px 0px;
+    padding: 0.5rem 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -477,18 +481,18 @@ article {
 }
 
 .recommend-list li div span:last-child {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--gray);
 }
 
 .recommend-list li img {
-    width: 32px;
+    width: 2rem;
     border-radius: 50%;
 }
 
 .account a, .follow {
     color: var(--enabled);
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 /* keyup event */

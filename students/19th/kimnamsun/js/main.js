@@ -74,6 +74,9 @@ const scroll = (direction) => {
     const instaStoryUl = document.querySelector('.insta-story ul');
     let scrollAmount = 0;
 
+    console.log(instaStoryUl.scrollTo);
+
+
     const slide = setInterval((e) => {
 
         if (direction === 'left') {
@@ -97,10 +100,12 @@ const likeReply = (e) => {
     if (e.classList.contains('reply-like')) {
         e.classList.remove('xi-heart-o');
         e.classList.add('xi-heart');
+        e.style.color = '#ed4956';
         alert('Like!!!');
     } else {
         e.classList.add('xi-heart-o');
         e.classList.remove('xi-heart');
+        e.style.color = '#000';
         alert('unLike!!!');
     }
 }
