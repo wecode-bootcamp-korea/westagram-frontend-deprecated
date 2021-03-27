@@ -2,7 +2,7 @@ const commentInput = document.querySelector('.input-comment');
 const addCommentBtn = document.querySelector('.add-comment-btn');
 
 const enabledBtn = () => {
-    let commentInputValue = commentInput.value;
+    let commentInputValue = commentInput.value.trim();
     if (commentInputValue.length > 0) {
         addCommentBtn.disabled = false;
         addCommentBtn.classList.remove('disabled-btn');
@@ -15,9 +15,8 @@ const enabledBtn = () => {
 
 commentInput.addEventListener('keyup', enabledBtn);
 
-let idValue = 0;
-
 //댓글 추가
+let idValue = 0;
 const addComment = () => {
     let commentInputValue = commentInput.value.trim();
 
@@ -88,7 +87,6 @@ const scroll = (direction) => {
     }, 20);
 }
 
-
 //좋아요 버튼
 const likeBtn = document.querySelectorAll('.like-heart');
 
@@ -121,7 +119,6 @@ const deleteReply = (e) => {
 
 repeatFunction(deleteBtn, deleteReply, 'click');
 
-
 //좋아요아이콘 클릭하면 빨간색하트
 const feedLikeBtn = document.querySelector('.like-btn');
 
@@ -147,26 +144,17 @@ replyBtn.addEventListener('click', (e) => {
 
 //li 생성 함수
 const createLi = (id, imgSrc, desc) => {
-
-    //ul
     const ul = document.querySelector('.search-list');
-
-    //li만들기
     const li = document.createElement('li');
+    const div = document.createElement('div');
 
-    //프로필사진
     const img = document.createElement('img');
     img.src = imgSrc;
 
-    //div
-    const div = document.createElement('div');
-
-    //아이디
     const profileId = document.createElement('a');
     profileId.className = 'black';
     profileId.innerHTML = id;
 
-    //desc
     const profileDesc = document.createElement('span');
     profileDesc.innerHTML = desc;
 
@@ -227,7 +215,6 @@ const searchList = document.querySelector('.search-list');
 const keywordDelBtn = document.querySelector('.keyword-delete-btn');
 
 const search = () => {
-
     if (searchInput.value.length > 0) {
         keywordDelBtn.classList.remove('hidden');
         searchResult.classList.remove('hidden');
@@ -259,9 +246,6 @@ keywordDelBtn.addEventListener('click', (e) => {
     keywordDelBtn.classList.add('hidden');
 })
 
-
-
-
 // 프로필메뉴박스 클릭시 보이게 하기
 const profile = document.querySelector('.profile-img');
 const profileMenu = document.querySelector('.profile-menu-wrap');
@@ -282,4 +266,8 @@ const closeMenu = (menubox, includedClass, e) => {
     if (!menubox.contains(e.target) && !includedClass.contains(e.target)) {
         menubox.classList.add('hidden');
     }
+}
+
+const goToLogin = () => {
+    window.location.href = 'login.html';
 }

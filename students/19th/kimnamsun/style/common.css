@@ -10,7 +10,6 @@
     --disabled : #B9DFFC;
     --border: #DBDBDB;
     --gray: #8e8e8e;
-
 }
 
 body {
@@ -49,7 +48,6 @@ ul {
     font-family: cursive, 'Lobster';
 }
 
-/* 자주 쓰이는 속성 */
 .bold {
     font-weight: 600;
 }

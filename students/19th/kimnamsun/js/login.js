@@ -16,11 +16,8 @@ const enabledBtn = () => {
     }
 }
 
-repeatFunction(input, enabledBtn, 'keyup');
+repeatFunction(input, enabledBtn, 'input');
 
-//메인으로 가기
 const goToMain = () => {
     window.location.href = 'main.html';
 }
-
-loginBtn.addEventListener('click', goToMain);

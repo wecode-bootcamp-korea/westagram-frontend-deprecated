@@ -7,7 +7,6 @@ button:focus{
     outline:none;
 }
 
-/* nav bar */
 .nav-container {
     position: fixed;
     width: 100%;
@@ -90,7 +89,6 @@ button:focus{
     color: var(--gray);
 }
 
-/* 검색결과창 */
 .search-result-wrap {
     position: absolute;
     width: 150%;
@@ -177,7 +175,6 @@ button:focus{
     border-radius: 50%;
 }
 
-/* 프로필 메뉴박스 */
 .profile-menu-wrap {
     width: 14.38rem;
     position: absolute;
@@ -225,8 +222,6 @@ button:focus{
     padding-top: 0.0625rem;
 }
 
-
-/* 메인 */
 .main {
     width: 58.44rem;
     display: flex;
@@ -239,11 +234,9 @@ button:focus{
     justify-content: center;
 }
 
-/* 스토리 */
 .insta-story {
     display: flex;
     align-items: center;
-    /* width: 38.38rem; */
     padding: 1rem 0;
     margin-bottom: 1.875rem;
     border: 1px solid var(--border);
@@ -277,8 +270,6 @@ button:focus{
 .insta-story ul {
     display: flex;
     overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 .insta-story ul li {
@@ -312,7 +303,6 @@ button:focus{
     text-align: center;
 }
 
-/* 피드 */
 article {
     width: 100%;
     display: flex;
@@ -407,7 +397,6 @@ article {
     font-size: 1rem;
 }
 
-/* 댓글입력 */
 .add-comment {
     height: 3.125rem;
     display: flex;
@@ -433,7 +422,6 @@ article {
     color: var(--disabled);
 }
 
-/* main-right */
 .main-right {
     width: 18.31rem;
     position: fixed;
@@ -509,7 +497,6 @@ article {
     font-size: 0.75rem;
 }
 
-/* keyup event */
 .enabled-btn {
     color: var(--enabled);
     cursor: pointer;
@@ -524,7 +511,6 @@ article {
     display: none;
 }
 
-/* 반응형 */
 @media (max-width: 1078px) {
     .main-right {
         display: none;
