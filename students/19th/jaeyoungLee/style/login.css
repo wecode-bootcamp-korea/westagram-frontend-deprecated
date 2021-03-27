@@ -48,14 +48,18 @@
     outline-color: gray;
 }
 
-.loginInfo > .loginBt {
+.loginBt {
     width: 268px;
     height: 30px;
     margin-top: 5px;
     border-radius: 3px;
-    background: #c4e1fb;
+    background-color: #2795f6;
     color: #ffffff;
     border-style: none;
+}
+
+.loginBt:disabled {
+    background-color:#b2dffc;
 }
 
 .loginInfo > button:focus {

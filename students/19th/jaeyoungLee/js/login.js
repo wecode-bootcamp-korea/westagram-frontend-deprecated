@@ -2,22 +2,22 @@ const loginButton = document.querySelector(".loginBt");
 const inputtext = document.querySelector(".loginId");
 const inputpassword = document.querySelector(".loginPs");
 
-const loginButtonActivation = () => {//활성화
+const activationLoginButton = () => {//활성화
     const email= document.querySelector(".loginId").value;
     const password = document.querySelector(".loginPs").value;
 
-    email && password ? loginButton.style.backgroundColor = "#2795f6" : 0;
+    email && password ? loginButton.disabled = false  : 0;
 }
 
-const loginButtonDisabled = () => {//비 활성화
+const disabledLoginButton= () => {//비 활성화
     const email= document.querySelector(".loginId").value;
     const password = document.querySelector(".loginPs").value;
 
-    email && password ? 0 : loginButton.style.backgroundColor = "#b2dffc";
+    email && password ? 0 : loginButton.disabled = true;
 }
 
 
-inputtext.addEventListener('keyup', loginButtonActivation);
-inputpassword.addEventListener('keyup', loginButtonActivation);
-inputtext.addEventListener('keyup', loginButtonDisabled);
-inputpassword.addEventListener('keyup', loginButtonDisabled);
+inputtext.addEventListener('input', activationLoginButton);
+inputpassword.addEventListener('input', activationLoginButton);
+inputtext.addEventListener('input', disabledLoginButton);
+inputpassword.addEventListener('input', disabledLoginButton);
