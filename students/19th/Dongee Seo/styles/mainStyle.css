@@ -7,46 +7,49 @@
 
 body {
     margin: auto;
+    
 }
 header {
     width: 100%;
     height: 47px;
     border-bottom: 1px solid rgb(142, 142, 142);
+    position: fixed;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
     width: 935px;
     height: 47px;
+    padding: 0 0 0 40px;
     display: flex;
     justify-content: flex-start; 
     align-items: center;
 }
 
 .mainLogo {
-    width: 340px;
+    width: 270px;
     height: 30px;
     font-family: 'Lobster', cursive;
     font-size: 23px;
     justify-content: flex-start;
-    margin: 0 0 0 40px;
+    margin: 0px;
 }
 
 .searchBar {
-    width: 215px;
+    width: 200px;
     display: flex;
     justify-content: center;
     position: relative;
-   
 }
+   
 .searchText {
     width: 215px; 
     height: 24px;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     color: rgb(219, 219, 219);
     border: 1px solid rgb(219, 219, 219);
-    border-radius: 2px;
-    
+    border-radius: 3px; 
 }
 
 .fa-search {
@@ -62,35 +65,83 @@ nav {
     height: 22px; 
     display: flex;
     flex-direction: row;
-
+    padding-left: 30px;
 }
+
 .navIcon img {
     width: 22px;
     height: 22px;
     border-radius: 50px;
     margin-top: 2px;
+}
 
+.navIcon a {
+    text-decoration: none;
 }
 
 .navIcon i {
     font-size: 20px;  
     padding-top: 3px;
+    white-space: nowrap;
+    margin-right: 20px;
+    
 }
 
 main {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    
 }    
 
 section {
-    width: 600px;
+    width: 935px;
+    height: 1000px;
+    padding-top: 77px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.feedBox {
+    max-width: 560px;
+    width: 100%;
     height: 900px;
     background-color: yellow;
+    margin:0 0 0 40px;
+    display: flex;
+    flex-direction: column;
 
 }
 
 aside {
-    width: 293px;
+    max-width: 270px;
+    width: 100%;
     height: 900px;
     background-color: green;
+    position: fixed;
+    top: 77px;
+    right: 330px;
+
+}
+
+.storyBox {
+    width: 614px;
+    height: 60px;  
+}
+
+.storyImg {
+    width: 56px;
+    height: 56px;
+
+}
+
+.mainBox {
+    width: 614px;
+    height: 614px;
+    background-color: skyblue;
+}
+
+.talkBox {
+    width: 614px;
+    height: 175px;
+    background-color: olive;
+
 }
