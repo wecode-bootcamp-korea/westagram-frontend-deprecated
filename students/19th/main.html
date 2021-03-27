@@ -77,7 +77,6 @@
                     <div class="FeedStoryContentName">m1nsoku</div>
                 </span>
 
-               
             </div>
             <article>
                 <div class="FeedContent">
@@ -107,7 +106,7 @@
                         <div class="FeedContentTitle">愛しい❤️</div>
                     </div>
                     <div class="FeedContentOtherComment">
-                        <ul>
+                        <ul class="FeedContentCommentList">
                             <li><span>쿼카 바보</span></li>
                             <li><span>쿼카야 사랑해 ♥️</span></li>
                             
@@ -118,8 +117,8 @@
             </article>
             <div class="FeedContentInputBox">
                 <div class="FeedContentInputBoxEmoticon">😀</div>
-                <input class="FeedContentInputBoxCommentInput" type="text" placeholder="댓글 달기...">
-                <div onclick="console.log(123)" class="FeedContentInputBoxPost">게시</div>
+                <input class="FeedContentInputBoxCommentInput"  onkeypress="Enter(event)"  type="text" placeholder="댓글 달기...">
+                <div onclick="AddComment()" class="FeedContentInputBoxPost">게시</div>
             </div>
         </feeds>
         <mainRight>
@@ -191,6 +190,6 @@
         </mainRight>
 
     </main>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

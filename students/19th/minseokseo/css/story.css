@@ -6,7 +6,9 @@
   border-radius: 5px;
   display: flex;
   overflow-x: scroll;
+  position: relative;
 }
+
 .FeedStory::-webkit-scrollbar {
   display: none;
 }
