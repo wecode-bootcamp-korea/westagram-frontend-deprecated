@@ -1,0 +1,108 @@
+header{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  border-bottom: 1px solid lightgray;
+  padding: 0px 20px;
+  
+}
+
+.h1{
+  font-family: 'Lobster', cursive;
+  font-size: 23px;
+  width: 320px;
+  height: 29px;
+  margin-left: 220px;
+  margin-top: 8px;
+  
+}
+.head{
+ width: 250px;
+ height: 54px;
+ padding: 0px 20px;
+ position:relative;
+}
+
+input{
+  width: 215px;
+  height: 29px;
+  padding: 8px;
+  background: #ffff;
+  background-color: rgb(241, 236, 236)
+}
+
+input::placeholder{
+  text-align: center;
+}
+
+.img{
+  width: 198px;
+  height: 29px;
+  display:flex;
+  margin-top:10px;
+  margin-left: 140px;
+  justify-content: space-between;
+}
+
+
+.fa-search{
+  color: lightgray;
+  position: absolute;
+  margin-top:15px;
+  margin-left:100px;
+}
+
+.profile{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.img i{
+  font-size:20px;
+}
+
+section{
+  margin: 0 122px;
+  padding-top: 30px;
+}
+
+nav{
+  width: 600px;
+  height: 22076.9px;
+}
+
+
+.followers{
+  width:600px;
+  height:118px;
+  border: 1px solid lightgray;
+  display:flex;
+  align-items: center;
+  margin: 0 0 24px;
+  padding: 16px 0;
+}
+
+*{
+  list-style:none;
+}
+
+.people{
+  
+}
+
+.people img{
+  
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  justify-content: space-between;
+}
+
+
+.headName{
+  width:600px;
+  height: 60px;
+  padding: 16px 40px 16px 16px;
+
+}

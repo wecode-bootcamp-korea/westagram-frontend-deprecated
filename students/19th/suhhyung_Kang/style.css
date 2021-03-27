@@ -68,6 +68,10 @@ input[type="text"]{
     padding: 5px;
 }
 
+input:focus{
+    outline:none;
+    box-shadow: 0 0 1px gr;
+}
 
 input[type="password"]{
     padding: 9px 0px 7px 8px;
@@ -142,7 +146,7 @@ padding:10px;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    width: 350px;;
+    width: 350px;
     height: 63px;
     padding: 10px 0px;
     
