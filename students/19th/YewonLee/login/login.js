@@ -10,7 +10,7 @@ loginInfo.forEach((item) =>
 
 		if (idValue && idValue.includes("@") && passwordValue.length >= 5) {
 			loginButton.removeAttribute("disabled");
-			loginButton.id = "login-botton-enabled";
+			loginButton.id = "login-button-enabled";
 		} else {
 			loginButton.setAttribute("disabled", "");
 			loginButton.id = "login-button-disabled";

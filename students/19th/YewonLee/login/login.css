@@ -1,5 +1,4 @@
 #login-body {
-	width: 100vw;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -79,7 +78,7 @@
 	cursor: not-allowed;
 }
 
-#login-botton-enabled {
+#login-button-enabled {
 	cursor: pointer;
 	opacity: 1;
 }

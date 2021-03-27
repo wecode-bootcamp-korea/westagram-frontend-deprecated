@@ -1,244 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../style.css" />
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Westagram</title>
-	</head>
 
-	<body id="main-body">
-		<nav class="header">
-			<header id="header-main">
-				<i class="fab fa-instagram fa-2x"></i>
-				<div class="separator"></div>
-				<span class="title">Westagram</span>
-			</header>
-			<div class="search">
-				<input id="search-input" type="text" placeholder="검색" />
-				<i id="search-icon" class="fas fa-search fa-sm"></i>
-				<i id="cancel-icon" class="fas fa-times-circle fa-sm"></i>
-			</div>
-			<div class="nav-right">
-				<i class="far fa-compass fa-2x"></i>
-				<i class="far fa-heart fa-2x"></i>
-				<i class="far fa-user fa-2x"></i>
-			</div>
-		</nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <title>Westagram</title>
+</head>
 
-		<main>
-			<div class="feeds">
-				<div class="feeds-header">
-					<div class="profile-info-description">
-						<img
-							class="profile-info-img"
-							alt="wecode's profile picture"
-							src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=-j1lmRii5IgAX8_8L10&ccb=7-4&oh=8c73048cdfe9212ffd68dccd68af95fe&oe=607FEFF0"
-						/>
-						<div class="profile-info-texts">
-							<span class="user-id">wecode_bootcamp</span>
-						</div>
-					</div>
-					<i class="fas fa-ellipsis-h"></i>
-				</div>
-				<article>
-					<img
-						class="article-img"
-						src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/161342772_792602644682701_5684032460726315608_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=b5KsVNfeKRYAX--xRO9&ccb=7-4&oh=3b5b7a9e79a4e9b935dc390994722161&oe=6082A37C"
-						alt="photo by wecode"
-					/>
+<body id="main-body">
+    <nav class="header">
+        <header id="header-main">
+            <i class="fab fa-instagram fa-2x"></i>
+            <div class="separator"></div>
+            <span class="title">Westagram</span>
+        </header>
+        <div class="search">
+            <input id="search-input" type="text" placeholder="검색" />
+            <i id="search-icon" class="fas fa-search fa-sm"></i>
+            <i id="cancel-icon" class="fas fa-times-circle fa-sm"></i>
+        </div>
+        <div class="nav-right">
+            <i class="far fa-compass fa-2x"></i>
+            <i class="far fa-heart fa-2x"></i>
+            <i class="far fa-user fa-2x"></i>
+        </div>
+    </nav>
 
-					<div class="article-icons">
-						<img class="article-icon" src="../icons/heart.png" />
-						<img class="article-icon" src="../icons/speech-bubble.png" />
-						<img class="article-icon" src="../icons/export.png" />
-						<img class="article-icon" src="../icons/bookmark.png" />
-					</div>
-					<div class="article-contents">
-						<div class="likes-number">
-							<span
-								><strong>aineworld</strong>님 <strong>외 10명</strong>이
-								좋아합니다</span
-							>
-						</div>
-						<div class="caption">
-							<span
-								>함께해서 >wecode 18기 위니또 소식🥰⠀ 벌써 위코드에 오신지 한
-								달이나 지나 두달차를 보내고계신 18기 분들 시간이 정말
-								빠르게 흘러가는 것 같아요 ✨...</span
-							>
-							<span id="caption-more">더 보기</span>
-						</div>
-						<span id="time">54분 전</span>
-					</div>
-					<div class="comments-list"> </div>
-					<div class="comments-box">
-						<input id="comments-input" type="text" placeholder="댓글 달기..." />
-						<button id="comments-button" disabled>게시</button>
-					</div>
-				</article>
-			</div>
+    <main>
+        <div class="feeds">
+            <div class="feeds-header">
+                <div class="profile-info-description">
+                    <img class="profile-info-img" alt="wecode's profile picture"
+                        src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=-j1lmRii5IgAX8_8L10&ccb=7-4&oh=8c73048cdfe9212ffd68dccd68af95fe&oe=607FEFF0" />
+                    <div class="profile-info-texts">
+                        <span class="user-id">wecode_bootcamp</span>
+                    </div>
+                </div>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <article>
+                <img class="article-img"
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/161342772_792602644682701_5684032460726315608_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=b5KsVNfeKRYAX--xRO9&ccb=7-4&oh=3b5b7a9e79a4e9b935dc390994722161&oe=6082A37C"
+                    alt="photo by wecode" />
 
-			<div class="main-right">
-				<div class="profile-info-description">
-					<img
-						class="profile-info-img-big"
-						alt="wecode's profile picture"
-						src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=-j1lmRii5IgAX8_8L10&ccb=7-4&oh=8c73048cdfe9212ffd68dccd68af95fe&oe=607FEFF0"
-					/>
-					<div class="profile-info-texts">
-						<span class="user-id">wecode_bootcamp</span>
-						<span class="user-description">WeCode - 위코드</span>
-					</div>
-				</div>
-				<div class="stories-follow-suggestions">
-					<div class="stories-suggestions">
-						<header class="stories-title">
-							<span>스토리</span>
-							<span>모두 보기</span>
-						</header>
-						<ul class="profile-list">
-							<li class="profile-info-description">
-								<div class="profile-info-img-wrap">
-									<img
-										class="profile-info-img stories-profile"
-										alt="profile picture"
-										src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/158122894_447868959784963_4100443008018383153_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=tu95oA3THwYAX9bYRgp&ccb=7-4&oh=c12c0c753d0544294a810b476f826f50&oe=6085FBE4&_nc_sid=48a2a6"
-									/>
-								</div>
-								<div class="profile-info-texts">
-									<span class="user-id">junghyun0515</span>
-									<span class="user-description">16분 전</span>
-								</div>
-							</li>
-							<li class="profile-info-description">
-								<div class="profile-info-img-wrap">
-									<img
-										class="profile-info-img stories-profile"
-										alt="profile picture"
-										src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/81649156_503044973949595_4191357854298406912_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=7Lz4_t3hbH4AX9I4zaA&ccb=7-4&oh=9ffc4354b4968704d7c0450a7200bea6&oe=60852A9E&_nc_sid=48a2a6"
-									/>
-								</div>
-								<div class="profile-info-texts">
-									<span class="user-id">tennistv</span>
-									<span class="user-description">3시간 전</span>
-								</div>
-							</li>
-							<li class="profile-info-description">
-								<div class="profile-info-img-wrap">
-									<img
-										class="profile-info-img stories-profile"
-										alt="profile picture"
-										src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/162909864_459347605411027_3957180093226145641_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MIeMHIE6IwUAX8z9Sqr&ccb=7-4&oh=b5e3af430377becdba3b204b8b35425a&oe=60836671&_nc_sid=48a2a6"
-									/>
-								</div>
-								<div class="profile-info-texts">
-									<span class="user-id">domithiemteam</span>
-									<span class="user-description">20시간 전</span>
-								</div>
-							</li>
-							<li class="profile-info-description">
-								<div class="profile-info-img-wrap">
-									<img
-										class="profile-info-img stories-profile"
-										alt="profile picture"
-										src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90670034_1091346454563695_5111844151276601344_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=TfoPp8uV6VEAX9z_4qa&ccb=7-4&oh=1ad047751589ee826e7922036f307903&oe=6085CE64&_nc_sid=48a2a6"
-									/>
-								</div>
-								<div class="profile-info-texts">
-									<span class="user-id">kygomusic</span>
-									<span class="user-description">21시간 전</span>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="follow-suggestions">
-						<header class="suggestions-title">
-							<span>회원님을 위한 추천</span>
-							<span>모두 보기</span>
-						</header>
-						<ul class="profile-list">
-							<li class="profile-info-description">
-								<img
-									class="profile-info-img"
-									alt="profile picture"
-									src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/161599129_1801795143336601_7346804126673758537_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=pA7bGfbpka4AX966tZg&ccb=7-4&oh=43a21e58ee1537e27777fa493cbdcb78&oe=60840137&_nc_sid=acd11b"
-								/>
-								<div class="profile-info-texts">
-									<span class="user-id">pieces.kr</span>
-									<span class="user-description"
-										>swoon님 외 1명이 팔로우합니다</span
-									>
-								</div>
-								<button class="follow-button">팔로우</button>
-							</li>
-							<li class="profile-info-description">
-								<img
-									class="profile-info-img"
-									alt="profile picture"
-									src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/159116618_4319753811374779_1929304625812395884_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=YImgxB83NcYAX-FnHbL&ccb=7-4&oh=e9ac1b4a55ca72c4eb683d3828faef6e&oe=6082C7A8&_nc_sid=acd11b"
-								/>
-								<div class="profile-info-texts">
-									<span class="user-id">devaine.c</span>
-									<span class="user-description"
-										>canon.mj님 외 5명이 팔로우합니다</span
-									>
-								</div>
-								<button class="follow-button">팔로우</button>
-							</li>
-							<li class="profile-info-description">
-								<img
-									class="profile-info-img"
-									alt="profile picture"
-									src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/118570862_2093060344159002_8700948584721123822_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=QjSXptR-tboAX-ztA3K&ccb=7-4&oh=480e9b9807715c0786628e1c174f4973&oe=608590A2&_nc_sid=7bff83"
-								/>
-								<div class="profile-info-texts">
-									<span class="user-id">domithiem</span>
-									<span class="user-description"
-										>tennistv님 외 12명이 팔로우합니다</span
-									>
-								</div>
-								<button class="follow-button">팔로우</button>
-							</li>
-						</ul>
-					</div>
-				</div>
+                <div class="article-icons">
+                    <img class="article-icon" src="../icons/heart.png" />
+                    <img class="article-icon" src="../icons/speech-bubble.png" />
+                    <img class="article-icon" src="../icons/export.png" />
+                    <img class="article-icon" src="../icons/bookmark.png" />
+                </div>
+                <div class="article-contents">
+                    <div class="likes-number">
+                        <span><strong>aineworld</strong>님 <strong>외 10명</strong>이
+                            좋아합니다</span>
+                    </div>
+                    <div class="caption">
+                        <span>함께해서 >wecode 18기 위니또 소식🥰⠀ 벌써 위코드에 오신지 한
+                            달이나 지나 두달차를 보내고계신 18기 분들 시간이 정말
+                            빠르게 흘러가는 것 같아요 ✨...</span>
+                        <span id="caption-more">더 보기</span>
+                    </div>
+                    <span id="time">54분 전</span>
+                </div>
+                <div class="comments-list"> </div>
+                <div class="comments-box">
+                    <input id="comments-input" type="text" placeholder="댓글 달기..." />
+                    <button id="comments-button" disabled>게시</button>
+                </div>
+            </article>
+        </div>
 
-				<nav id="footer">
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Help</a></li>
-						<li><a href="#">Press</a></li>
-						<li><a href="#">API</a></li>
-						<li><a href="#">Jobs</a></li>
-						<li><a href="#">Privacy</a></li>
+        <div class="main-right">
+            <div class="profile-info-description">
+                <img class="profile-info-img-big" alt="wecode's profile picture"
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=-j1lmRii5IgAX8_8L10&ccb=7-4&oh=8c73048cdfe9212ffd68dccd68af95fe&oe=607FEFF0" />
+                <div class="profile-info-texts">
+                    <span class="user-id">wecode_bootcamp</span>
+                    <span class="user-description">WeCode - 위코드</span>
+                </div>
+            </div>
+            <div class="stories-follow-suggestions">
+                <div class="stories-suggestions">
+                    <header class="stories-title">
+                        <span>스토리</span>
+                        <span>모두 보기</span>
+                    </header>
+                    <ul class="profile-list">
+                        <li class="profile-info-description">
+                            <div class="profile-info-img-wrap">
+                                <img class="profile-info-img stories-profile" alt="profile picture"
+                                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/158122894_447868959784963_4100443008018383153_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=tu95oA3THwYAX9bYRgp&ccb=7-4&oh=c12c0c753d0544294a810b476f826f50&oe=6085FBE4&_nc_sid=48a2a6" />
+                            </div>
+                            <div class="profile-info-texts">
+                                <span class="user-id">junghyun0515</span>
+                                <span class="user-description">16분 전</span>
+                            </div>
+                        </li>
+                        <li class="profile-info-description">
+                            <div class="profile-info-img-wrap">
+                                <img class="profile-info-img stories-profile" alt="profile picture"
+                                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/81649156_503044973949595_4191357854298406912_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=7Lz4_t3hbH4AX9I4zaA&ccb=7-4&oh=9ffc4354b4968704d7c0450a7200bea6&oe=60852A9E&_nc_sid=48a2a6" />
+                            </div>
+                            <div class="profile-info-texts">
+                                <span class="user-id">tennistv</span>
+                                <span class="user-description">3시간 전</span>
+                            </div>
+                        </li>
+                        <li class="profile-info-description">
+                            <div class="profile-info-img-wrap">
+                                <img class="profile-info-img stories-profile" alt="profile picture"
+                                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/162909864_459347605411027_3957180093226145641_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MIeMHIE6IwUAX8z9Sqr&ccb=7-4&oh=b5e3af430377becdba3b204b8b35425a&oe=60836671&_nc_sid=48a2a6" />
+                            </div>
+                            <div class="profile-info-texts">
+                                <span class="user-id">domithiemteam</span>
+                                <span class="user-description">20시간 전</span>
+                            </div>
+                        </li>
+                        <li class="profile-info-description">
+                            <div class="profile-info-img-wrap">
+                                <img class="profile-info-img stories-profile" alt="profile picture"
+                                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90670034_1091346454563695_5111844151276601344_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=TfoPp8uV6VEAX9z_4qa&ccb=7-4&oh=1ad047751589ee826e7922036f307903&oe=6085CE64&_nc_sid=48a2a6" />
+                            </div>
+                            <div class="profile-info-texts">
+                                <span class="user-id">kygomusic</span>
+                                <span class="user-description">21시간 전</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="follow-suggestions">
+                    <header class="suggestions-title">
+                        <span>회원님을 위한 추천</span>
+                        <span>모두 보기</span>
+                    </header>
+                    <ul class="profile-list">
+                        <li class="profile-info-description">
+                            <img class="profile-info-img" alt="profile picture"
+                                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/161599129_1801795143336601_7346804126673758537_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=pA7bGfbpka4AX966tZg&ccb=7-4&oh=43a21e58ee1537e27777fa493cbdcb78&oe=60840137&_nc_sid=acd11b" />
+                            <div class="profile-info-texts">
+                                <span class="user-id">pieces.kr</span>
+                                <span class="user-description">swoon님 외 1명이 팔로우합니다</span>
+                            </div>
+                            <button class="follow-button">팔로우</button>
+                        </li>
+                        <li class="profile-info-description">
+                            <img class="profile-info-img" alt="profile picture"
+                                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/159116618_4319753811374779_1929304625812395884_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=YImgxB83NcYAX-FnHbL&ccb=7-4&oh=e9ac1b4a55ca72c4eb683d3828faef6e&oe=6082C7A8&_nc_sid=acd11b" />
+                            <div class="profile-info-texts">
+                                <span class="user-id">devaine.c</span>
+                                <span class="user-description">canon.mj님 외 5명이 팔로우합니다</span>
+                            </div>
+                            <button class="follow-button">팔로우</button>
+                        </li>
+                        <li class="profile-info-description">
+                            <img class="profile-info-img" alt="profile picture"
+                                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/118570862_2093060344159002_8700948584721123822_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=QjSXptR-tboAX-ztA3K&ccb=7-4&oh=480e9b9807715c0786628e1c174f4973&oe=608590A2&_nc_sid=7bff83" />
+                            <div class="profile-info-texts">
+                                <span class="user-id">domithiem</span>
+                                <span class="user-description">tennistv님 외 12명이 팔로우합니다</span>
+                            </div>
+                            <button class="follow-button">팔로우</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Locations</a></li>
-						<li><a href="#">Top Accounts</a></li>
-						<li><a href="#">Hashtags</a></li>
-						<li><a href="#">Language</a></li>
-					</ul>
-					<div
-						>Icons made by <a href="" title="Those Icons">Those Icons</a> from
-						<a href="https://www.flaticon.com/" title="Flaticon"
-							>www.flaticon.com</a
-						></div
-					>
-					<span>© 2021 INSTAGRAM FROM FACEBOOK</span>
-				</nav>
-			</div>
-		</main>
-		<script src="main.js"></script>
-	</body>
+            <nav id="footer">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Privacy</a></li>
+
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Top Accounts</a></li>
+                    <li><a href="#">Hashtags</a></li>
+                    <li><a href="#">Language</a></li>
+                </ul>
+                <div>Icons made by <a href="" title="Those Icons">Those Icons</a> from
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </div>
+                <span>© 2021 INSTAGRAM FROM FACEBOOK</span>
+            </nav>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
 </html>

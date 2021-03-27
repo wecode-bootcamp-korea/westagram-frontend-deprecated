@@ -1,15 +1,13 @@
 const searchIcon = document.getElementById("search-icon");
 const searchInput = document.getElementById("search-input");
 const cancelIcon = document.getElementById("cancel-icon");
-
 const commentsInput = document.getElementById("comments-input");
 const commentsButton = document.getElementById("comments-button");
-
 const commentsList = document.getElementsByClassName("comments-list")[0];
 
 searchInput.addEventListener("click", moveSearchBarElements);
 commentsInput.addEventListener("keyup", enableCommentsButton);
-commentsButton.addEventListener("click", postCommentsByButton);
+commentsButton.addEventListener("click", postCommenstsByButton);
 
 //Move search icon and placeholder when clicked & go back to initial position when unclicked
 
@@ -66,7 +64,6 @@ function postComments() {
 	const deleteIcon = document.createElement("i");
 	deleteIcon.classList.add("far", "fa-trash-alt");
 	deleteButton.appendChild(deleteIcon);
-
 	deleteButton.addEventListener("click", function () {
 		eachComment.remove();
 	});
