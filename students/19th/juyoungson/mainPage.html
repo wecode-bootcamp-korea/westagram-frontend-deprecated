@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/mainNav.css" />
     <link rel="stylesheet" href="./css/mainContent.css" />
     <link rel="stylesheet" href="./css/mainHead.css" />
+    <link rel="stylesheet" href="./css/recommendBox.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
@@ -152,7 +153,6 @@
               </li>
             </ul>
           </nav>
-
           <article class="feedWrapper">
             <div class="feedBox">
               <header class="feedHeader">
@@ -195,9 +195,7 @@
                 <section class="likeBox">
                   <a href="">좋아요 <span>23</span>개</a>
                 </section>
-                <div class="commentBox">
-
-                </div>
+                <div class="commentBox"></div>
 
                 <div class="inputCommentBox">
                   <form class="inputCommentForm" action="">
@@ -217,10 +215,37 @@
             </div>
           </article>
         </div>
+        
+        <aside class="recommendBox">
+          <div class="recommendProfile">
+            <div class="profile"></div>
+            <div class="profileName">
+                <a href="">95.s.guri</a>
+                <span>손주영</span>
+            </div>
+            <div class="followBox">
+              <button class="followtBtn">전환</button>
+            </div>
+          </div>
+          <div class="recommendMe">
+              <span>회원님을 위한 추천</span>
+              <button class="followtBtn">모두 보기</button>
+          </div>
 
-        <div class="recommendBox">
+          <div class="recommendedProfile">
+            <div class="recommendedImg">
+              <img src="images/juyoung.jpg" alt="">
+            </div>
+            <div class="profileName">
+                <a href="">95.s.guri</a>
+                <span>Instagram 신규 가입</span>
+            </div>
+            <div class="followBox">
+              <button class="followtBtn">팔로우</button>
+            </div>
+          </div>
 
-        </div>
+        </aside>
       </section>
     </main>
     <script src="./js/createComment.js"></script>

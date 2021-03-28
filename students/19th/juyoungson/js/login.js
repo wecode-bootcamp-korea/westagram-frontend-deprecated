@@ -1,26 +1,32 @@
 const loginButton = document.querySelector(".loginButton");
 
-function loginCheck() {
+function checkInput() {
     loginButton.addEventListener("click", () => {
         const id = document.getElementById("inputId").value;
         const pw = document.getElementById("inputPw").value;
         
-        if(!id || !pw) {
-            alert("ID/PW를 입력해주세요");
-            return;
-        }
+        const testId = "123@123";
+        const testPw = "12345";
 
-        if(id !== pw) {
+        if((id !== testId || pw !== testPw )|| (!id || !pw) ) {
             alert("ID/PW를 확인해주세요");
             return;
         }
 
-        if(id !== pw) {
+        if(id === testId && pw === testPw) {
+            if(id.indexOf("@") === -1){
+                alert("e-mail형식으로 입력해주세요");
+                return;
+            }
+            if(pw.length < 5){
+                alert("pw를 5글자 이상 입력해주세요");
+                return;
+            }
             alert("환영합니다.");
             return;
         }
     });
 }
 
-loginCheck();
+checkInput();
 

@@ -1,0 +1,89 @@
+.recommendBox{
+    position: fixed;
+    right: 0;
+    left: 930px;
+    height: 100vh;
+    width: 100%;
+    max-width: 293px;
+}
+
+.recommendBox span{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.recommendProfile{
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.recommendBox .profile{
+    height: 56px;
+    width: 56px;
+}
+
+.profileName {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 187px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.followBox{
+    display: flex;
+    align-items: center;
+}
+
+.followtBtn{
+    background-color: white;
+    color: #0095f6;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.recommendMe{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.recommendMe .followtBtn{
+    color: black;
+}
+
+.recommendMe span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.recommendedProfile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommendedImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+}
+
+.recommendedImg > img{
+    height: 32px;
+    width: 32px;
+    border-radius: 70px;
+}
+
+
+
+
+
+
+
