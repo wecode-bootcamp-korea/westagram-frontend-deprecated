@@ -27,7 +27,7 @@ function addComment(){
 
   }
 }
-//엔터했을때 댓글 추가가 가능하게끔
+//엔터했을때 댓글 추가가 가능하게끔  --- 반복을 줄인 Version
 inputText.addEventListener('keypress', function(e){
   if(e.keyCode === 13){
         addComment();
