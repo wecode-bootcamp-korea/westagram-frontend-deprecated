@@ -2,6 +2,7 @@
   font-family: "Lobster", cursive;
   font-size: 50px;
 }
+
 .LoginDisplay {
   width: 350px;
   height: 380px;
@@ -27,17 +28,20 @@
   border-radius: 5px;
   padding-left: 10px;
 }
+
 .LoginDisplayEmail,
 .LoginDisplayPassword {
   margin-bottom: 5px;
   position: relative;
 }
+
 .LoginDisplayEmail::placeholder,
 .LoginDisplayPassword::placeholder {
   position: absolute;
   left: 10px;
   top: 12px;
 }
+
 .LoginDisplayButton {
   margin-top: 5px;
   width: 280px;
@@ -50,6 +54,7 @@
 .LoginDisplayButton > div {
   color: white;
 }
+
 .LoginDisplayInput {
   display: flex;
   flex-direction: column;
@@ -61,6 +66,7 @@
   justify-content: center;
   padding-top: 5px;
 }
+
 .LineOrOr {
   padding-top: 10px;
   font-size: 12px;
@@ -71,9 +77,11 @@
   width: 115px;
   margin-bottom: 5px;
 }
+
 .LineOrLineLeft {
   margin-right: 10px;
 }
+
 .LineOrLineRight {
   margin-left: 10px;
 }
@@ -84,12 +92,15 @@
   align-items: center;
   margin: 20px;
 }
+
 .OtherLogin a {
   text-decoration: none;
 }
+
 .LoginFacebook {
   color: #385185;
 }
+
 .ForgetPassword {
   margin-top: 20px;
   font-size: 12px;

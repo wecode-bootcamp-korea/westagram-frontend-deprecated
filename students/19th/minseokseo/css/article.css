@@ -96,6 +96,7 @@ article {
   width: 620px;
   height: 120px;
 }
+
 .FeedContentInputBox {
   display: flex;
   justify-content: space-between;
@@ -150,4 +151,9 @@ li {
 li > span {
   font-size: 13px;
   font-weight: normal;
+}
+.RemoveCommnet {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
 }

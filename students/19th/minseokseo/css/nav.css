@@ -7,6 +7,7 @@
   left: 0;
   right: 0;
 }
+
 .NavContent {
   height: 50px;
   display: flex;
@@ -15,12 +16,14 @@
   width: 1000px;
   margin: 0 auto;
 }
+
 .NavSearch {
   margin-left: 20px;
   width: 200px;
   display: flex;
   justify-content: center;
 }
+
 .NavSearchInput {
   width: 200px;
   height: 25px;
@@ -28,16 +31,19 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
 }
+
 .NavSearch ::placeholder {
   margin: 0 auto;
   padding-left: 75px;
   color: rgba(0, 0, 0, 0.3);
 }
+
 .NavTools {
   display: flex;
   width: 450px;
   justify-content: flex-end;
 }
+
 .NavLogo {
   width: 350px;
   display: flex;
@@ -46,28 +52,34 @@
   margin-left: 20px;
   font-family: "Lobster", cursive;
 }
+
 .NavToolsHome > img {
   width: 22px;
   height: 22px;
 }
+
 .NavToolsDirect > img {
   width: 22px;
   height: 22px;
 }
+
 .NavToolsExplore > img {
   width: 22px;
   height: 22px;
 }
+
 .NavToolsLike {
   width: 22px;
   height: 22px;
 }
+
 .NavToolsMyprofile > img {
   width: 22px;
   height: 22px;
   background-color: black;
   border-radius: 10px;
 }
+
 .NavTools a:nth-child(n) {
   width: 45px;
   height: 45px;

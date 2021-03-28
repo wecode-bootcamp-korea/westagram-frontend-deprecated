@@ -12,6 +12,7 @@
 .FeedStory::-webkit-scrollbar {
   display: none;
 }
+
 .FeedStoryContent {
   height: 100px;
   width: 80px;
@@ -22,12 +23,14 @@
   padding-left: 15px;
   padding-top: 10px;
 }
+
 .FeedStoryContentProfile {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   border: 1px solid red;
 }
+
 .FeedStoryContentName {
   font-size: 14px;
   text-overflow: ellipsis;

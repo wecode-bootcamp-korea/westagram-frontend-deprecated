@@ -12,33 +12,26 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 <body>
-    <div class="LoginDisplay">
-        <span class="LoginDisplayInput">
+    <section class="LoginDisplay">
+        <form class="LoginDisplayInput">
             <div class="LoginDisplayWestagram">Minstagram</div>
             <input type="email" id="InputEmail" class="LoginDisplayEmail" placeholder="전화번호, 사용자 이름 또는 이메일">
             <input type="password" id="InputPassword" class="LoginDisplayPassword" placeholder="비밀번호">
             <button id="BlueButton" onclick="EmailAt()" class="LoginDisplayButton" type="submit"><div>로그인</div></button>
-        </span>
-    
+        </form>
         <div class="LineOr">
             <div class="LineOrLine LineOrLineLeft"></div>
             <div class="LineOrOr">또는</div>
             <div class="LineOrLine LineOrLineLeft"></div>
         </div>
-
         <div class="OtherLogin">
             <a href="https://www.facebook.com/" target="_blank"><div class="LoginFacebook"><i class="fab fa-facebook-square"></i>&nbsp; Facebook으로 로그인</div></a>
             <div class="ForgetPassword">비밀번호를 잊으셨나요?</div>
         </div>
-    </div>
+    </section>
     <div class="SignUp">
         <span class="NoAccount">계정이 없으신가요?&nbsp;<span>가입하기</span></span>
     </div>
-    
-    
-    </div>
-
-    
     <script src="js/login.js"></script>
 </body>
 </html>
