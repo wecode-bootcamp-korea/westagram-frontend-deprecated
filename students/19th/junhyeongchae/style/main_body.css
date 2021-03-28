@@ -1,0 +1,181 @@
+.main-container {
+  background-color: #fafafa;
+  height: 1400px;
+  display: flex;
+  position: relative;
+}
+.article {
+  margin-left: 17.5%;
+}
+.story {
+  background-color: white;
+  height: 118px;
+  width: 600px;
+  overflow: scroll;
+  margin-bottom: 25px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+.main-right {
+  background-color: white;
+  width: 330px;
+  height: 400px;
+}
+.feed {
+  background-color: white;
+  width: 600px;
+  height: 1062px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: relative;
+}
+.story_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.story_circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: -15px;
+}
+
+.story_circle img {
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+}
+.story_list {
+  list-style: none;
+}
+.profile_wrap img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin-right: 8px;
+}
+.profile_wrap span {
+  font-size: 17px;
+}
+.profile_wrap i {
+  position: relative;
+  left: 465px;
+}
+.profile_wrap {
+  width: 600px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5%;
+}
+.content img {
+  width: 599px;
+  height: 660px;
+}
+.react_wrap img {
+  width: 24px;
+  height: 24px;
+}
+.react_wrap i {
+  width: 24px;
+  height: 24px;
+}
+#mark {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 1.5%;
+}
+.react_wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.react_wrap_left {
+  width: 200px;
+  position: absolute;
+  left: 1.5%;
+}
+.react_wrap_left img {
+  margin-right: 3%;
+}
+.react_like img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.react_like {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  position: relative;
+  left: 1.5%;
+}
+.others_like {
+  height: 17px;
+}
+.comment_box {
+  width: 98.5%;
+  height: 20px;
+  position: relative;
+  left: 1.5%;
+  margin-top: 1%;
+}
+.comment {
+  font-size: 17px;
+}
+#more {
+  font-size: 18px;
+  color: #8e8e8e;
+}
+.comment_box_wrap {
+  width: 100%;
+  height: 18px;
+  display: flex;
+}
+.input_box {
+  width: 100%;
+  background-color: white;
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+}
+.input_box img {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 1.5%;
+  margin-right: 20px;
+}
+.input_box input {
+  width: 500px;
+  height: 24px;
+  border: none;
+  outline: none;
+}
+.submit_button {
+  width: 48px;
+  height: 24px;
+  border: none;
+  background-color: white;
+  color: #0094e6;
+  outline: none;
+  font-weight: bold;
+}
+.submit_button:disabled {
+  color: #a3deff;
+}
+.thatComment {
+  background-color: white;
+  width: 98.5%;
+  height: 100px;
+  position: relative;
+  left: 1.5%;
+}

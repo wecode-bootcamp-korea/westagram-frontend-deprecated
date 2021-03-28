@@ -44,6 +44,7 @@
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   font-size: 13px;
+  outline: none;
 }
 
 .login_pw {
@@ -54,6 +55,7 @@
   background-color: #fafafa;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
+  outline: none;
 }
 
 /* 로그인 버튼 form사용 */
