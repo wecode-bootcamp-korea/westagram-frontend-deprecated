@@ -21,6 +21,10 @@
     justify-content: center;
 }
 
+form {
+    display: grid;
+}
+
 .login-wrap input {
     height: 2.5rem;
     margin: 0.1875rem 0px;

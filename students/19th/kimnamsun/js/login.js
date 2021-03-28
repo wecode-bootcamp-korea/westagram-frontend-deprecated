@@ -5,7 +5,7 @@ const enabledBtn = () => {
     const idValue = document.querySelector('.id-input').value;
     const pwValue = document.querySelector('.pw-input').value;
 
-    if ((idValue.length > 0 && idValue.indexOf('@') > -1)
+    if ((idValue && idValue.indexOf('@') > -1)
         && pwValue.length >= 5) {
         loginBtn.disabled = false;
         loginBtn.classList.remove('disabled-btn');
@@ -17,7 +17,3 @@ const enabledBtn = () => {
 }
 
 repeatFunction(input, enabledBtn, 'input');
-
-const goToMain = () => {
-    window.location.href = 'main.html';
-}

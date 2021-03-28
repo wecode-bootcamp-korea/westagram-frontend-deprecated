@@ -2,8 +2,8 @@ const commentInput = document.querySelector('.input-comment');
 const addCommentBtn = document.querySelector('.add-comment-btn');
 
 const enabledBtn = () => {
-    let commentInputValue = commentInput.value.trim();
-    if (commentInputValue.length > 0) {
+    const commentInputValue = commentInput.value.trim();
+    if (commentInputValue) {
         addCommentBtn.disabled = false;
         addCommentBtn.classList.remove('disabled-btn');
         addCommentBtn.classList.add('enabled-btn');
@@ -13,12 +13,12 @@ const enabledBtn = () => {
     }
 }
 
-commentInput.addEventListener('keyup', enabledBtn);
+commentInput.addEventListener('input', enabledBtn);
 
 //댓글 추가
 let idValue = 0;
 const addComment = () => {
-    let commentInputValue = commentInput.value.trim();
+    const commentInputValue = commentInput.value.trim();
 
     if (commentInputValue.length > 0) {
         const ul = document.querySelector('.reply-list');

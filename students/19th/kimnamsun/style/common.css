@@ -34,7 +34,7 @@ a:hover {
     text-decoration: underline;
 }
 
-input:focus {
+input {
     outline: none;
 }
 
