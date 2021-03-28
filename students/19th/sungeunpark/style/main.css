@@ -3,25 +3,25 @@ body {
   margin: 0 auto;
 }
 
-/* navbar styling */
-#navbar {
-  /* navbar에 max-width를 지정하더라도  */
-  border-bottom: 1px solid lightgray;
+/* navbar */
+
+.dropdown_container {
   position: sticky;
   top: 0;
   z-index: 1;
 }
 
+#navbar {
+  border-bottom: 1px solid lightgray;
+}
+
 .navbar_container {
-  /* max-width로 navbar_title, navbar_search, navbar_icons다 감싸준 후 
-  #navbar에 설정했던 모든 값들 중 border만 뺀 후 옮겨준다 */
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
-
   background-color: #fff;
 }
 
@@ -38,7 +38,8 @@ body {
 }
 
 .navbar_search input {
-  padding: 3px 10px;
+  padding: 3px 25px;
+  width: 160px;
   border: 1px solid lightgray;
 }
 
@@ -61,6 +62,54 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 10px;
+}
+
+.search_dropdown_content_container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.search_dropdown_content {
+  position: absolute;
+  display: none;
+  background-color: #f1f1f1;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.profile_dropdown_content_container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile_dropdown_content {
+  position: absolute;
+  display: none;
+  background-color: #f1f1f1;
+  width: 100%;
+  max-width: 1100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.search_dropdown_content a,
+.profile_dropdown_content a {
+  display: block;
+  padding: 10px;
+}
+
+.profile_dropdown_content a:hover,
+.search_dropdown_content a:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.search_dropdown_content.show,
+.profile_dropdown_content.show {
+  display: block;
 }
 
 /* main container */
@@ -167,7 +216,11 @@ body {
 .feeds_info_comment form {
   flex-basis: 95%;
   position: relative;
-  /* width: 600px; */
+}
+
+.comment_user_span {
+  margin-right: 5px;
+  font-weight: bold;
 }
 
 .feed_info_comment_input {
@@ -192,19 +245,20 @@ body {
   font-weight: bold;
 }
 
+.change_heart_color {
+  color: red;
+}
+
 /* main right */
 
 .main_right_container {
   width: 100%;
-  /* background-color: powderblue; */
 }
 
 .main_right {
   position: sticky;
   top: 60px;
   width: 100%;
-  /* padding: 40px 20px; */
-  /* background-color: pink; */
 }
 
 .main_right_user_profile {
@@ -291,4 +345,20 @@ body {
 
 .main_right_footer div {
   margin-top: 15px;
+}
+
+/* 추가 구현 4. 반응형 구현 (모바일 화면일 때 오른쪽 섹션 제거) */
+
+@media screen and (max-width: 768px) {
+  .main_right_container {
+    display: none;
+  }
+
+  #main_container {
+    justify-content: center;
+  }
+
+  .main_left {
+    margin-right: 0;
+  }
 }

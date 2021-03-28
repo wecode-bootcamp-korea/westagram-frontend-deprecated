@@ -22,23 +22,42 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav id="navbar">
-      <div class="navbar_container">
-        <div class="navbar_title">
-          <i class="fab fa-instagram"></i>
-          <span class="navbar_title_logo"> | Westagram</span>
+    <div class="dropdown_container">
+      <nav id="navbar">
+        <div class="navbar_container">
+          <div class="navbar_title">
+            <i class="fab fa-instagram"></i>
+            <span class="navbar_title_logo"> | Westagram</span>
+          </div>
+          <div class="navbar_search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="검색" />
+          </div>
+          <div class="navbar_icons">
+            <button class="exploreBtn">
+              <img src="/imgs/explore.png" alt="explore" />
+            </button>
+            <button class="heartBtn">
+              <img src="/imgs/heart.png" alt="heart" />
+            </button>
+            <button class="profileBtn">
+              <img src="/imgs/profile.png" alt="profile" />
+            </button>
+          </div>
         </div>
-        <div class="navbar_search">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="검색" />
-        </div>
-        <div class="navbar_icons">
-          <button><img src="/imgs/explore.png" alt="explore" /></button>
-          <button><img src="/imgs/heart.png" alt="heart" /></button>
-          <button><img src="/imgs/profile.png" alt="profile" /></button>
+      </nav>
+      <div class="search_dropdown_content_container">
+        <div class="search_dropdown_content"></div>
+      </div>
+      <div class="profile_dropdown_content_container">
+        <div class="profile_dropdown_content">
+          <a href="#">프로필</a>
+          <a href="#">저장됨</a>
+          <a href="#">설정</a>
+          <a href="#">로그아웃</a>
         </div>
       </div>
-    </nav>
+    </div>
     <!-- main container -->
     <main id="main_container">
       <!-- main left contents-->
@@ -111,7 +130,7 @@
               <div class="feeds_info_description_text">
                 어제 먹은 말차파운드! 또 먹고싶다..❤
               </div>
-              <span class="feeds_info_description_days">1일 전</span>
+              <div class="feeds_info_description_days">1일 전</div>
             </div>
             <div class="feeds_info_comment">
               <button class="feed_info_comment_emoji">
