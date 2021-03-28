@@ -70,26 +70,32 @@ article {
   height: 25px;
   padding: 5px 0 0 15px;
 }
+
 .FeedContentLikeCount > p {
   font-size: 14px;
   font-weight: bold;
 }
+
 .FeedContentCount {
   font-size: 14px;
   font-weight: bold;
 }
+
 .FeedContentIdTitle {
   padding-left: 15px;
   display: flex;
 }
+
 .FeedContentId {
   font-weight: bold;
   font-size: 15px;
 }
+
 .FeedContentTitle {
   padding-left: 10px;
   font-size: 15px;
 }
+
 .FeedContentOtherComment {
   margin-top: 10px;
   padding-left: 15px;
@@ -106,6 +112,7 @@ article {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .FeedContentInputBoxEmoticon {
   width: 50px;
   height: 50px;
@@ -115,17 +122,21 @@ article {
   justify-content: center;
   background-color: white;
 }
+
 .FeedContentInputBoxCommentInput {
   width: 520px;
   border: none;
   user-select: none;
 }
+
 .FeedContentInputBoxCommentInput::placeholder {
   color: rgba(0, 0, 0, 0.2);
 }
+
 .FeedContentInputBoxCommentInput:focus {
   outline: none;
 }
+
 .FeedContentInputBoxPost {
   width: 50px;
   height: 50px;
@@ -145,15 +156,27 @@ ul {
   list-style-position: inside;
   padding: 0;
 }
+
 li {
   padding-bottom: 5px;
 }
+
 li > span {
   font-size: 13px;
   font-weight: normal;
 }
-.RemoveCommnet {
+
+.RemoveComment {
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
+}
+
+.Remove {
+  display: flex;
+}
+
+.Remove :nth-child(1) {
+  padding-right: 10px;
+  color: black;
 }
