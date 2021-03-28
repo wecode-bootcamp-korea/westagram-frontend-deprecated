@@ -25,7 +25,8 @@
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   background-color: var(--color-white-grey);
 }
@@ -37,6 +38,7 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 input {
@@ -56,13 +58,6 @@ input::placeholder {
 /* Typography */
 h1 {
   font-family: "Loved by the King", cursive;
-}
-
-span {
-  color: var(--color-dark-blue);
-  font-size: 11px;
-  position: absolute;
-  bottom: 15px;
 }
 
 /* Login form */
@@ -125,6 +120,13 @@ span {
 .loginForm__forget {
   display: flex;
   justify-content: center;
+}
+
+.loginForm__forget__text {
+  color: var(--color-dark-blue);
+  font-size: 11px;
+  position: absolute;
+  bottom: 15px;
 }
 
 .loginForm__facebook {

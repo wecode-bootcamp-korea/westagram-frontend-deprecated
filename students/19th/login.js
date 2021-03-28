@@ -1,15 +1,12 @@
-'use strict';
-
 const inputId = document.querySelector('.input-id');
 const inputPw = document.querySelector('.input-pw');
 const loginBtn = document.querySelector('.loginForm__btn');
 
-// Change Button Color
-const changeBtn = () => {
-    const inputIdValue = inputId.value.length;
-    const inputPwValue = inputPw.value.length;
-    (inputIdValue > 0 && inputPwValue > 5 ? loginBtn.classList.add('change-btn') : loginBtn.classList.remove('change-btn'))
+const changeBtnColor = () => {
+    const inputIdLength = inputId.value.length;
+    const inputPwLength = inputPw.value.length;
+    (inputIdLength > 0 && inputPwLength > 5 ? loginBtn.classList.add('change-btn') : loginBtn.classList.remove('change-btn'));
 }
 
-inputId.addEventListener('input', changeBtn);
-inputPw.addEventListener('input', changeBtn);
+inputId.addEventListener('input', changeBtnColor);
+inputPw.addEventListener('input', changeBtnColor);
