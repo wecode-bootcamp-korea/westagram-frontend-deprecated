@@ -5,6 +5,21 @@
     margin-right: auto;
 }
 
+* ul {
+    list-style: none;
+}
+
+* a {
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+}
+
+* button {
+    background: none ;
+    outline: none;
+    border: none;
+}
+
 body {
     margin: auto;
     
@@ -12,9 +27,10 @@ body {
 header {
     width: 100%;
     height: 47px;
-    border-bottom: 1px solid rgb(142, 142, 142);
+    border-bottom: 1px solid rgb(219, 219, 219);
     position: fixed;
     background-color: rgb(255, 255, 255);
+    z-index: 2;
 }
 
 nav {
@@ -89,6 +105,9 @@ nav {
 
 main {
     margin: auto;
+    background-color: #FAFAFA;
+    position: relative;
+    z-index: 1;
     
 }    
 
@@ -111,6 +130,235 @@ section {
 
 }
 
+
+.storyBox {
+    box-sizing: content-box;
+    width: 560px;
+    height: 84px;
+    padding: 16px 0px; 
+    background-color: #ffffff; 
+    border: 1px solid  rgb(219, 219, 219);
+    border-radius: 3px;
+    padding: 16px 0px;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.storyUl {
+    width: 20px;
+    height: 84px;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.storyList {
+    width: 80px;
+    height: 112px;
+   
+}
+
+.storyBig {
+    width: 80px;
+    height: 122;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.storyBig button {
+    width: 64px;
+    height: 68px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    
+}
+
+.storySmall {
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bigCanvas {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: -4px;
+    left: -10px;
+    
+}
+
+.storySmall span {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 2px;
+    left: -4px;
+}
+
+.storyUser {
+    width: 62px;
+    height: 14px;  
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+    position: absolute;
+    top: 68px;
+    left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.storyImg {
+    width: 56px;
+    height: 56px; 
+    border-radius: 70px;  
+    border: 1px solid rgb(219, 219, 219);
+}
+
+
+
+.viewBox {
+    width: 560px;
+    height: 614px;
+    background-color: #ffffff;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.writer {
+    width: 560px;
+    height: 60px;
+}
+.userInfo {
+    width: 550px;
+    height: 55px;
+    padding: 7px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goMypage {
+    width: 42px;
+    height: 42px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goMypage .storySmall {
+    width: 42px;
+    height: 42px;
+    display: flex;   
+}
+
+.storySmall .smallCanvas {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: -9px;
+}
+
+.storySmall span{
+    width: 32px;
+    height: 32px;
+}
+
+.smallImg img {
+    width: 32px;
+    height: 32px;
+    border-radius: 70px;
+    position: absolute;
+    left: 5px;
+    top: 5px;    
+}
+
+.userName {
+    width: 500px;
+    height: 36px;
+    position: relative;
+}
+
+.linkName {
+    font-style: bold;
+    font-size: 13px;
+    width: 117px;
+    height: 15px;
+    position: absolute;
+    left: 12px;
+}
+
+.linkMap {
+    font-size: 11px;
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    left: 12px;
+    top: 20px;
+}
+   
+.mainImg {
+    width: 560px;
+    height: 560px;
+    position: relative;
+}
+.bigImg img {
+    width: 560px;
+    height: 560px;
+}
+
+.tagIcon, .tagBtn{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagBtn {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+}
+
+.fa-user-circle {
+    font-size: 25px;
+}
+
+.mainImg .fa-user-circle {
+    display: none;
+}
+.mainImg:hover .fa-user-circle {
+    display: block;
+}
+
+.talkBox {
+    width: 614px;
+    height: 175px;
+    background-color: olive;
+}
+
+
+
 aside {
     max-width: 270px;
     width: 100%;
@@ -118,30 +366,5 @@ aside {
     background-color: green;
     position: fixed;
     top: 77px;
-    right: 330px;
-
-}
-
-.storyBox {
-    width: 614px;
-    height: 60px;  
-}
-
-.storyImg {
-    width: 56px;
-    height: 56px;
-
-}
-
-.mainBox {
-    width: 614px;
-    height: 614px;
-    background-color: skyblue;
-}
-
-.talkBox {
-    width: 614px;
-    height: 175px;
-    background-color: olive;
-
+    right: 330px;   
 }
