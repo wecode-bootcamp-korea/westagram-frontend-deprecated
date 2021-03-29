@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+* {
+    box-sizing:border-box;
+}
 body {
     background-color:#fafafa;
 }
