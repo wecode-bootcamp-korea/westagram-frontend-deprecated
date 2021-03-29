@@ -32,14 +32,14 @@
 }
 
 body {
-  background-color: var(--color-white-grey);
   height: 100vh;
+  background-color: var(--color-white-grey);
 }
 
 ul {
+  padding: 0;
   text-decoration: none;
   list-style: none;
-  padding: 0;
 }
 
 button {
@@ -96,27 +96,27 @@ span {
 }
 
 .navbar__search__input {
-  background-color: var(--color-white-grey);
-  border: 1px solid var(--color-grey);
-  border-radius: 2px;
-  padding: 1px 2px;
   width: 215px;
   height: 28px;
+  padding: 1px 2px;
+  border: 1px solid var(--color-grey);
+  border-radius: 2px;
+  background-color: var(--color-white-grey);
   outline: none;
 }
 
 .navbar__search__icon {
+  position: absolute;
   color: var(--color-dark-grey);
   font-size: 10px;
-  position: absolute;
 }
 
 .navbar__search__text {
-  color: var(--color-dark-grey);
-  font-size: 13px;
   position: absolute;
   top: 7px;
   right: 90px;
+  color: var(--color-dark-grey);
+  font-size: 13px;
 }
 
 .navbar__search__icon {
@@ -148,9 +148,9 @@ span {
 }
 
 .main__wrapper {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
 }
 
 /* Feeds */
@@ -176,23 +176,23 @@ span {
 }
 
 .feeds__list {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
 }
 
 .feeds__list__item {
-  cursor: pointer;
   text-align: center;
+  cursor: pointer;
 }
 
 .feeds__list__item-border-active {
   width: 62px;
   height: 62px;
+  padding: 1px;
   border: 2px solid var(--color-pink);
   border-radius: 50%;
-  padding: 1px;
 }
 
 .feeds__list__item-border {
@@ -210,7 +210,6 @@ span {
 }
 
 .feeds__list__item-text-active {
-  font-size: var(--font-size-medium);
   font-size: var(--font-size-micro);
 }
 
@@ -241,11 +240,11 @@ span {
 }
 
 .feed__header__wrapper {
-  width: 100%;
-  height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .feed__header__logo {
@@ -288,8 +287,8 @@ span {
 .feed__menu {
   height: 45px;
   border: 1px solid var(--color-grey);
-  border-bottom: none;
   border-top: none;
+  border-bottom: none;
   background-color: var(--color-white);
   transform: translateY(-5px);
 }
@@ -301,11 +300,11 @@ span {
 }
 
 .feed__menu__wrapper {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .feed__menu__list {
@@ -313,8 +312,8 @@ span {
 }
 
 .feed__menu__list-item {
-  margin-right: 10px;
   display: flex;
+  margin-right: 10px;
   transition: all var(--annimation-duration) linear;
 }
 
@@ -324,19 +323,19 @@ span {
 
 .feed__menu__ellipsis-icon {
   margin-right: 50px;
-  font-size: var(--font-size-large);
   color: var(--color-dark-grey);
+  font-size: var(--font-size-large);
 }
 
 .feed__content {
-  width: 100%;
-  padding: 16px 16px 0px 16px;
-  border: 1px solid var(--color-grey);
-  border-top: none;
-  background-color: var(--color-white);
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
+  width: 100%;
+  padding: 16px 16px 0px 16px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey);
+  border-top: none;
   transform: translateY(-5px);
 }
 
@@ -346,8 +345,8 @@ span {
 }
 
 .feed__content-comment > a > span {
-  color: var(--color-dark-blue);
   width: 100%;
+  color: var(--color-dark-blue);
 }
 
 .feed__content-comment > span {
@@ -359,8 +358,8 @@ span {
 }
 
 .feed__content-comment-ago {
-  font-size: var(--font-size-micro);
   color: var(--color-dark-grey);
+  font-size: var(--font-size-micro);
 }
 
 .add-comment-lists {
@@ -384,9 +383,9 @@ span {
 }
 
 .feed__content__chat-button {
+  color: var(--color-blue);
   font-size: var(--font-size-medium);
   font-weight: 600;
-  color: var(--color-blue);
   opacity: 0.3;
   cursor: default;
 }
@@ -397,9 +396,9 @@ span {
 }
 
 .feed__content__chat__line {
+  position: absolute;
   width: 100%;
   border-top: 1px solid var(--color-grey);
-  position: absolute;
   transform: translateX(-16px);
 }
 /* Sidebar */
@@ -409,9 +408,9 @@ span {
 }
 
 .sidebar__container {
-  padding-top: 30px;
   width: 100%;
   height: 100%;
+  padding-top: 30px;
 }
 
 .sidebar__wrapper {
@@ -438,14 +437,14 @@ span {
 .sidebar__user-logo-img {
   width: 56px;
   height: 56px;
-  border-radius: 50%;
   margin-right: 20px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .sidebar__user-text > span > strong {
-  font-size: 15px;
   color: var(--color--white-black);
+  font-size: 15px;
 }
 
 .sidebar__user-text > span:nth-child(3) {
@@ -453,9 +452,9 @@ span {
 }
 
 .sidebar__user-button {
+  color: var(--color-blue);
   font-size: var(--font-size-small);
   font-weight: 600;
-  color: var(--color-blue);
 }
 
 .sidebar__friend__recommend {
@@ -483,17 +482,17 @@ span {
 .sidebar__friend__list__item-img {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .sidebar__friend__list__item-img-active {
   width: 34px;
   height: 34px;
+  margin-right: 9px;
+  padding: 1px;
   border: 2px solid var(--color-pink);
   border-radius: 50%;
-  padding: 1px;
-  margin-right: 9px;
 }
 
 .sidebar__friend__list__item-text > span:nth-child(3) {

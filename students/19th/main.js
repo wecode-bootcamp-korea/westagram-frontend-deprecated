@@ -1,5 +1,3 @@
-'use strict';
-
 const chatInput = document.querySelector('.feed__content__chat-input');
 const chatButton = document.querySelector('.feed__content__chat-button');
 const chatComment = document.querySelector('.add-comment-lists');
