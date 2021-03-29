@@ -16,11 +16,10 @@
     width: 258px;
     height: 36px;
     border-style: none;
+    outline:none;
 }
 
-.login:hover{
-   background-color:rgb(207, 232, 247);
-}
+
 
 .colorBox{
     background-color: white;

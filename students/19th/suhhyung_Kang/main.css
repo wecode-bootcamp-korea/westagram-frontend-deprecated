@@ -68,8 +68,8 @@ section{
 }
 
 nav{
-  width: 600px;
-  height: 22076.9px;
+  width: 612px;
+  height: 100px;
 }
 
 
@@ -77,8 +77,6 @@ nav{
   width:600px;
   height:118px;
   border: 1px solid lightgray;
-  display:flex;
-  align-items: center;
   margin: 0 0 24px;
   padding: 16px 0;
 }
@@ -87,22 +85,94 @@ nav{
   list-style:none;
 }
 
-.people{
-  
+.people {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
 }
 
 .people img{
-  
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  justify-content: space-around;
+}
+
+.easter{
+  flex-direction: column;
+}
+
+article{
+  width: 600px;
+  height: 100%;
+}
+
+.headName{
+  width: 600px;
+  height: 60px;
+  
+  border: 1px solid lightgray;
+  margin-top: 70px;
+  
+}
+
+.profilePhoto{
+  font-size: 12px;
+  display:flex;
+  flex-direction: row
+}
+
+.profilePhoto img{
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.profilePhoto1{
+  padding-left:10px;
+}
+
+.name{
+  margin-top: 20px;
+  padding-left: 18px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dot{
+  padding-left :450px;
+  font-size:18px;
+  margin-top: 19px;
+}
+
+.mainPhoto img{
+  width: 600px;
+  height: 600px;
+}
+
+.mainPhotoComment{
+  width: 568px;
+  height: 187px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border: 1px solid lightgray;
+}
+
+.mainPhotoIcon{
+  font-size: 24px;
+  padding-left: 10px;
+  margin-top: 8px;
   justify-content: space-between;
 }
 
+.fa-comment,
+.fa-paper-plane{
+  margin-left:8px;
+}
 
-.headName{
-  width:600px;
-  height: 60px;
-  padding: 16px 40px 16px 16px;
-
+.fa-bookmark{
+  margin-left:430px;
 }
