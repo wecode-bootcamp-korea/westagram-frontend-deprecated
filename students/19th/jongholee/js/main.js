@@ -190,34 +190,108 @@ navSearchInput.addEventListener('focusout', function (e) {
     navSearchContainer.style.display = 'none';
     storyNextBtn.style.display = 'inline-block';
 })
+const navSearchShadow = document.getElementsByClassName('nav-search-shadow')[0];
 const navSearchList = document.getElementsByClassName('nav-search-list')[0];
-
+const navSearchTriangle = document.getElementsByClassName('nav-search-triangle')[0];
 // 키 입력시 값을 찾는다.
 navSearchInput.addEventListener('input', function () {
     // input의 값을 변수에 저장 == keyword
     const keyword = navSearchInput.value;
 
+    navSearchList.innerHTML = '';
+    navSearchShadow.innerHTML = '';
     if (keyword.length == 0) {
-        navSearchList.innerHTML = ''
+        navSearchTriangle.style.display = 'none';
         return
-    }
+    };
+    navSearchTriangle.style.display = 'inline-block';
     // key에 해당하는 값들을 배열에 담음
     const arr = findFriend(friend_list, keyword);
     // 해당 값을 ul에 넣는다.
 
+    if (arr.length == 0) {
+        navSearchTriangle.style.display = 'none';
+        return
+    }
+
     arr.forEach((friend, index) => {
         let new_li = document.createElement('li')
+        let new_image = new Image(40, 40);
+        let new_li_box = document.createElement('div')
         let new_nickname = document.createElement('span');
         let new_name = document.createElement('span')
 
+
+        // 새 이미지를 랜덤으로 뽑는다.
+
+        // 랜덤 이미지 하나 선택
+        let new_image_src = image_list[ranFunc(0, image_list.length)];
+
+        new_image.src = `./images/${new_image_src}`;
+        new_image.style.borderRadius = '50%';
+
         new_nickname.innerHTML = friend.nickname;
         new_name.innerHTML = friend.name;
-        new_li.appendChild(new_nickname)
-        new_li.appendChild(new_name)
 
+
+        setStyle(new_li, {
+            display: 'flex',
+            // justifyContent: 'space-between',
+            alignItems: 'center',
+            padding: '15px'
+        })
+        setStyle(new_image, {
+            borderRadius: '50%'
+        })
+        setStyle(new_li_box, {
+            display: 'flex',
+            flexDirection: 'column',
+            width: '200px',
+            marginLeft: '15px'
+        })
+        setStyle(new_nickname, {
+            marginBottom: '5px',
+
+            fontSize: '14px',
+            fontWeight: 'bold'
+        })
+        setStyle(new_name, {
+            fontSize: '14px'
+        })
+
+        new_li_box.appendChild(new_nickname)
+        new_li_box.appendChild(new_name)
+
+        new_li.appendChild(new_image)
+        new_li.appendChild(new_li_box)
+
+        navSearchShadow.appendChild(new_li);
         navSearchList.appendChild(new_li);
+
     })
 })
+
+function setStyle(dom, style_obj) {
+    for (const key in style_obj) {
+        dom.style[key] = style_obj[key];
+    }
+}
+
+const image_list = [
+    'alcohol.jpg',
+    'bottle.jpg',
+    'h_1.jpg',
+    'h_2.jpg',
+    'h_3.jpg',
+    'h_4.jpg',
+    'h_5.jpg',
+    'house.jpg',
+    'jongho.png',
+    'sunset.jpg',
+    'tablet.jpg',
+    'wedding.jpg',
+    'woman.jpg'
+]
 // 42개의 친구 목록
 const friend_list = makeSumNickname();
 

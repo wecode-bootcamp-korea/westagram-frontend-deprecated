@@ -97,9 +97,12 @@ nav > h1 {
 
 .nav-search-shadow {
   width: 375px;
-  height: 200px;
+  /* height: 200px; */
 
-  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
   left: -187.5px;
   top: 10px;
 
@@ -111,8 +114,10 @@ nav > h1 {
   width: 20px;
   height: 20px;
 
-  position: relative;
-  top: -200px;
+  display: none;
+
+  position: absolute;
+  top: 0px;
 
   background-color: white;
 
@@ -122,13 +127,48 @@ nav > h1 {
 }
 .nav-search-list {
   width: 375px;
-  height: 200px;
+  /* height: 200px; */
 
-  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
   left: -187.5px;
-  top: -210px;
+  top: 10px;
 
   background-color: white;
+}
+
+.nav-search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+}
+
+.nav-search-item-image {
+  border-radius: 50%;
+}
+
+.nav-search-item-box {
+  display: flex;
+  flex-direction: column;
+
+  width: 200px;
+
+  margin-left: 15px;
+}
+
+.nav-search-item-nickname {
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-search-item-name {
+  font-size: 14px;
 }
 
 .nav-content {
