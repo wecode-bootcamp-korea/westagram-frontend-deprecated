@@ -17,8 +17,7 @@ const innerComment = (e) => {
     } else if (e.code == 'Enter' || e.type == 'click') {
         const createElement = document.createElement('li');
         const appendElement = chatComment.appendChild(createElement)
-        const result = appendElement.innerHTML = `<span><strong class="add-comment-list">nakiaathome</strong>${inputValue}</span>`;
-        return result; 
+        appendElement.innerHTML = `<span><strong class="add-comment-list">nakiaathome</strong>${inputValue}</span>`;
     }
 }
 
