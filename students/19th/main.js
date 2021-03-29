@@ -12,9 +12,9 @@ const changeBtnColor = () => {
 // 필수 구현사항: 댓글 추가
 const innerComment = (e) => {
     const inputValue = chatInput.value;
-    if (e.code == 'Backspace' || inputValue.length == 0) {
+    if (e.code === 'Backspace' || inputValue.length === 0) {
         return;
-    } else if (e.code == 'Enter' || e.type == 'click') {
+    } else if (e.code === 'Enter' || e.type === 'click') {
         const createElement = document.createElement('li');
         const appendElement = chatComment.appendChild(createElement)
         appendElement.innerHTML = `<span><strong class="add-comment-list">nakiaathome</strong>${inputValue}</span>`;
