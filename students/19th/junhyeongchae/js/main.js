@@ -17,7 +17,7 @@ function addComment(){
   commentContents.className = 'newComment';
   commentContents.innerHTML = inputText.value;
   profileId.className = 'myId';
-  profileId.innerHTML = 'junhyeongchae  ';
+  profileId.innerHTML = 'junhyeongchae';
 
   if (inputText.value !==""&& inputText.value.trim() !==""){
     commentBoard.appendChild(profileId) +
