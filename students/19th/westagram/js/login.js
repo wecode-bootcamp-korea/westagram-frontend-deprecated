@@ -5,11 +5,11 @@ const container = document.querySelector('section');
 
 // userId.addEventListener("keyup", handleInput);
 // userPw.addEventListener("keyup", handleInput);
-container.addEventListener("keyup", handleInput);
+container.addEventListener("input", handleInput);
 
 
 function handleInput() {
-        const changeColor = userId.value.includes('@') && userPw.value.length > 1;
+        const changeColor = userId.value.includes('@') && userPw.value.length >= 5;
     console.log('loginBtn keyup funtion');
 
     // changeColor ? (loginBtn.style.backgroundColor = "#0094f6")
