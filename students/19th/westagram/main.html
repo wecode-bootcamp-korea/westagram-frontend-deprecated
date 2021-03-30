@@ -7,13 +7,12 @@
     <link rel="stylesheet" type="text/css" href="./style/common.css">
     <link rel="stylesheet" type="text/css" href="./style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <script defer src="./js/main.js"></script>
 </head>
 <body>
     <nav>
         <h4>Westagram</h4>
         <div class="main_search">
-            <img src="" alt="">
+            <i class="fas fa-search"></i>
             <input type="text" placeholder="검색">
         </div>
 
@@ -23,26 +22,27 @@
             <i class="far fa-compass" onclick=""></i>
             <i class="far fa-heart" onclick=""></i>
             <span onclick="location.href=''">
-            <img src="" alt="">
+            <img src="./sidebar_img/01.jpeg" alt="">
             </span>
         </div>
     </nav>
     <main>
+        <div class="main_feed">
         <article class="feeds">
             <section class="story">
                 <ul>
-                    <li><img src="./story_img/01.jpeg" alt="">yiseungin</li>
-                    <li><img src="./story_img/02.jpeg" alt="">sky__1031</li>
-                    <li><img src="./story_img/03.jpeg" alt="">summerinbk</li>
-                    <li><img src="./story_img/04.jpeg" alt="">e__naa</li>
-                    <li><img src="./story_img/05.jpeg" alt="">os_5959</li>
-                    <li><img src="./story_img/06.jpeg" alt="">nayoungkee</li>
-                    <li><img src="./story_img/07.jpeg" alt="">kim.asha.1</li>
-                    <li><img src="./story_img/08.jpeg" alt="">youlakk</li>
-                    <li><img src="./story_img/09.jpeg" alt="">czzzzzzha_x</li>
-                    <li><img src="./story_img/10.jpeg" alt="">hyeri_0609</li>
-                    <li><img src="./story_img/11.jpeg" alt="">r_yuhyeju</li>
-                    <li><img src="./story_img/12.jpeg" alt="">kxngg.94</li>
+                    <li><img src="./story_img/01.jpeg" alt=""><p>yiseungin</p></li>
+                    <li><img src="./story_img/02.jpeg" alt=""><p>ysky__1031</p></li>
+                    <li><img src="./story_img/03.jpeg" alt=""><p>ysummerinbk</p></li>
+                    <li><img src="./story_img/04.jpeg" alt=""><p>ye__naa</p></li>
+                    <li><img src="./story_img/05.jpeg" alt=""><p>yos_5959</p></li>
+                    <li><img src="./story_img/06.jpeg" alt=""><p>ynayoungkee</p></li>
+                    <li><img src="./story_img/07.jpeg" alt=""><p>kim.asha.1</p></li>
+                    <li><img src="./story_img/08.jpeg" alt=""><p>youlakk</p></li>
+                    <li><img src="./story_img/09.jpeg" alt=""><p>czzzzzzha_x</p></li>
+                    <li><img src="./story_img/10.jpeg" alt=""><p>hyeri_0609</p></li>
+                    <li><img src="./story_img/11.jpeg" alt=""><p>r_yuhyeju</p></li>
+                    <li><img src="./story_img/12.jpeg" alt=""><p>kxngg.94</p></li>
                 </ul>
             </section>
             <section class="post">
@@ -54,6 +54,25 @@
                     </span>
                     <i class="fas fa-ellipsis-h"></i>
                 </div>
+                <div class="post_img">
+                    <img src="./sidebar_img/01.jpeg" alt="post_main_img">
+                </div>
+                <div class="post_icon">
+                    <span>
+                    <i class="fas fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <i class="far fa-bookmark"></i>
+                </div>
+                <div class="post_like">
+                    <img src="./sidebar_img/01.jpeg" alt="">
+                    <p>님 외 8명이 좋아합니다.</p>
+                </div>
+                <div class="post_text">
+                    <h5>summer_01</h5><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi est neque omnis illum quidem ipsum reiciendis, natus ut iusto, unde minus, in voluptas nemo minima necessitatibus? Cupiditate sed mollitia nemo.</p>
+                </div>
+                <div class="post_review"><input type="text" placeholder="댓글 달기 ..."> </div>
             </section>
         </article>
 
@@ -65,7 +84,7 @@
             </section>
 
             <section class="sidebar02">
-                <div>
+                <div class="sidebar02_1">
                     <p>회원님을 위한 추천</p>
                     <a href="">모두보기</a>
                 </div>
@@ -115,11 +134,10 @@
             </section>
 
         </article>
+        </div>
     </main>
 
-    <main>
-        
-    </main>
+<script defer src="./js/main.js"></script>
 
 </body>
 </html>

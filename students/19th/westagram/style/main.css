@@ -2,18 +2,58 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid #ddd;
 }
 
 body {
-  border: 1px solid #ddd;
+  margin: 0;
 }
 
 nav {
-  width: 80%;
+  width: 85%;
+  height: 80px;
+  font-size: 25px;
+  font-family: "Lobster", cursive;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.main_search {
+  width: 210px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-search {
+  font-size: 15px;
+}
+
+.main_search input {
+  width: 100px;
+  height: 28px;
+  margin-left: 10px;
+  border: 0;
+  background-color: transparent !important;
+}
+
+.nav_icons {
+  width: 25%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_icons img {
+  width: 35px;
+  border-radius: 50%;
 }
 
 li {
@@ -21,7 +61,14 @@ li {
 }
 
 main {
-  width: 80%;
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.main_feed {
+  width: 85%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -30,29 +77,209 @@ main {
 .feeds {
   width: 65%;
 }
-x .story ul {
+
+.story {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.story ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.story ul li {
+  width: 70px;
+  height: 80px;
+  margin-right: 10px;
+  text-align: center;
+}
+.story ul li p {
+  position: relative;
+  top: -13px;
+  overflow: hidden;
 }
 
 .story ul li img {
   width: 50px;
+  border-radius: 50%;
+}
+
+.post {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 25px;
+}
+
+.post_header {
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.post_header img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.post_header span {
+  height: 45px;
+  position: absolute;
+  left: 60px;
+}
+
+.post_header span p {
+  line-height: 0;
+}
+
+.post_name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.city {
+  font-size: 12px;
+}
+
+.fa-ellipsis-h {
+  color: #999;
+}
+
+.post_img img {
+  width: 100%;
+  height: 400px;
+}
+
+.post_icon {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_icon span {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_like {
+  clear: both;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 8px;
+  display: flex;
+  font-size: 5px;
+  font-weight: bold;
+}
+
+.post_like img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.post_text {
+  clear: both;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  font-size: 10px;
+  align-items: baseline;
+}
+
+.post_text h5 {
+  font-weight: bold;
+}
+
+.post_review {
+  width: 95%;
+  height: 30px;
+  margin: 0 auto;
+  color: #999;
+  border: 1px solid #999;
+}
+
+.post_review input {
+  width: 100%;
+  height: 28px;
+  margin: 0 auto;
+  border: 0;
 }
 
 .sidebar {
   width: 32%;
+  padding-top: 20px;
+}
+
+.sidebar01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar01 p {
+  position: absolute;
+  left: 75px;
+  font-weight: bold;
+}
+
+.sidebar01 img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.sidebar02_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar02_1 p {
+  font-weight: bold;
+  color: #999;
 }
 
 .sidebar02_2 {
   width: 100%;
 }
 
+.sidebar02_2 ul {
+  padding: 0;
+  position: relative;
+  line-height: 50px;
+}
+
 .sidebar02_2 ul li {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 .sidebar02_2 img {
-  width: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.sidebar02_2 ul li span {
+  line-height: 0;
+  position: absolute;
+  left: 60px;
+}
+
+.sidebar02_2 ul li span p {
+  font-size: 13px;
+  color: #888;
 }
