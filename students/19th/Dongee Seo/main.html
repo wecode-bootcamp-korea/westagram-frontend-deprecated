@@ -3,29 +3,23 @@
 <html>
     <head>
         <meta charset="uft-8">
-        <meta name = "viewport" content = "width = device-width">
-        
+        <meta name = "viewport" content = "width = device-width">        
         <title> mainPage </title>  
-
         <link href = "styles/mainStyle.css" type = "text/css" rel = "stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/11a9ca21b7.js" crossorigin="anonymous"></script>
-
     </head>
-
     <body>
         <header>
             <nav>
-                <div class = "mainLogo"> Westagram </div>
-            
+                <div class = "mainLogo"> Westagram </div>           
                 <div class = "searchBar">
                     <i class="fas fa-search"></i>
                     <input class = "searchText" type = "text" placeholder = "Search">    
                 </div>
-
                 <div class = "navIcon">
                     <a href = ""><i class="fas fa-home"></i></a>
                     <a href = ""><i class="far fa-paper-plane"></i></a>
@@ -35,9 +29,8 @@
                 </div>
             </nav>
         </header>    
-
         <main>
-            <section>
+            <section class = "feed">
                 <div class = "feedBox">
                     <div class = "storyBox">
                         <ul class = "storyUl">
@@ -46,7 +39,6 @@
                                 <button class = "storyBtn">
                                     <div class = "storySmall">
                                       <canvas class = "storyCanvas">
-
                                       </canvas>
                                     <span class ="storyBoxCircle">
                                       <img  alt = "no img" class = "storyImg" src = "img/hoian.jpg">
@@ -61,7 +53,6 @@
                                 <button class = "storyBtn">
                                     <div class = "storySmall">
                                       <canvas class = "storyCanvas">
-
                                       </canvas>
                                     <span class ="storyBoxCircle">
                                       <img alt = "no img" class = "storyImg" src = "img/bicycle.jpg"> 
@@ -76,7 +67,6 @@
                                 <button class = "storyBtn">
                                     <div class = "storySmall">
                                       <canvas class = "storyCanvas">
-
                                       </canvas>
                                     <span class ="storyBoxCircle">
                                         <img alt = "no img" class = "storyImg" src = "img/cafe.jpg">
@@ -134,8 +124,7 @@
                                 <div class = "storyBig">
                                   <button class = "storyBtn">
                                       <div class = "storySmall">
-                                        <canvas class = "storyCanvas">
-  
+                                        <canvas class = "storyCanvas">  
                                         </canvas>
                                       <span class ="storyBoxCircle">
                                           <img alt = "no img" class = "storyImg" src = "img/surfing.jpg"> 
@@ -148,8 +137,7 @@
                                 <div class = "storyBig">
                                   <button class = "storyBtn">
                                       <div class = "storySmall">
-                                        <canvas class = "bigCanvas">
-  
+                                        <canvas class = "bigCanvas">  
                                         </canvas>
                                       <span class ="storyBoxCircle">
                                           <img alt = "no img" class = "storyImg" src = "img/violet.jpg"> 
@@ -160,8 +148,7 @@
                                 </div>
                               </li>
                         </ul>
-                    </div> 
-
+                    </div>
                     <div class = "viewBox">
                       <div class = "writer"> 
                         <div class = "userInfo">
@@ -184,33 +171,116 @@
                                   <a href = "">동이네집</a>
                               </div>
                           </div>
-                        <div class = "moreInfo">
+                          <div class = "moreInfo">
                             <i class="fas fa-ellipsis-h"></i>
-                        </div>   
-                      </div>  
-                    </div>
-                        <div class = "mainImg">
-                            <div class = "bigImg">
-                                <img src = "img/madeleine.jpg" >
-                            </div>
-                            
-                              <button class = "tagBtn">
-                                  <div class = "tagIcon">
-                                    <i class="fas fa-user-circle"></i>
-                                  </div>
-                              </button>
-                            
+                          </div>  
                         </div> 
-                    </div>                       
-                </div>
-
-            
-
-
-            
-                <aside>
-                </aside>
-            </section>
+                      </div>                        
+                      <div class = "mainImg">
+                        <div class = "bigImg">
+                            <img src = "img/madeleine.jpg" >
+                        </div>                            
+                          <button class = "tagBtn">
+                              <div class = "tagIcon">
+                                <i class="fas fa-user-circle"></i>
+                              </div>
+                            </button>
+                       </div>                     
+                       <div class = "talkBox">
+                          <div class = "talkIcon">
+                            <span class = "heartIcon">
+                              <button class = "heartIcon_">
+                                <i class="far fa-heart"></i>
+                              </button>
+                            </span>
+                            <span class = "allCommentIcon">
+                              <button class = "allCommentIcon_">
+                                <i class="far fa-comment"></i>
+                              </button>
+                            </span>
+                            <span class = "dmIcon">
+                              <button class = "dmIcon_">
+                                <i class="far fa-paper-plane"></i>
+                              </button>
+                            </span>
+                            <span class = "bookmarkIcon">
+                              <button class = "bookmarkIcon_">
+                                <i class="far fa-bookmark"></i>
+                              </button>
+                            </span>
+                          </div>
+                          <div class = "likeBox">
+                              <a href ="">
+                                 <span> 42</span>
+                                 likes
+                              </a>
+                          </div>
+                          <div class = "talkUsers">
+                            <div class = "mainTalker">
+                                <span class = "linkUser">
+                                  <a href = "https://www.instagram.com/dongee_209/" alt = "does not exist">dongee_209</a>
+                                </span>
+                                <span class = "userWrite">
+                                할로윈 기념 가오나시 마들렌. 내일 양이랑 뚜떵이한테 나눠줘야지. 졸귀탱이네
+                                </span>
+                                <span class = "moreText">
+                                  <a href = "" alt = "does not exist">more</a>
+                                </span>
+                            </div>
+                            <div class = "comment">
+                                <div class = "viewAllComment">
+                                  <a href= "">View all 2 comments </a>
+                                </div>
+                                <div class = "commenter">
+                                  <span class = "linkUser">
+                                    <a href = "https://www.instagram.com/dongee_209/" alt = "does not exist">sheep_citizen</a>
+                                  </span>
+                                  <span class = "linkFriend">
+                                    <a href = "https://www.instagram.com/dongee_209/" alt = "does not exist">@dongee_209</a>
+                                  </span>
+                                  <span class = "userWrite">
+                                  맛은...?
+                                  </span>
+                                  <span class = "heartIcon">
+                                    <button class = "heartIcon_">
+                                      <i class="far fa-heart"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                                <div class = "commenter">
+                                  <span class = "linkUser">
+                                    <a href = "https://www.instagram.com/dongee_209/" alt = "does not exist">crystal_in</a>
+                                  </span>
+                                  <span class = "linkFriend">
+                                    <a href = "https://www.instagram.com/dongee_209/" alt = "does not exist"> mun_sh</a>
+                                  </span>
+                                  <span class = "userWrite">
+                                  떵희 나와라!
+                                  </span>
+                                  <span class = "heartIcon">
+                                    <button class = "heartIcon_">
+                                      <i class="far fa-heart"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                            </div>
+                          </div>                
+                          <div class = "talkDate">
+                            
+                          </div>
+                          <div class = "addComment">
+                            <span class = "smileIcon">
+                              <button class = "smileIcon_">
+                                <i class="fas fa-smile"></i>
+                              </button>
+                            </span>
+                          </div>
+                      </div> 
+                    </div>
+               </div>                
+            </section>   
+            <aside>
+            </aside>
          
            
         </main>
