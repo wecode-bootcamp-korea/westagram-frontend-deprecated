@@ -115,7 +115,7 @@ main {
 
 main section {
     width: 935px;
-    /* height: 1000px; */
+    height: 1000px;
     padding-top: 77px;
     display: flex;
     flex-flow: row nowrap;
@@ -125,11 +125,13 @@ main section {
     max-width: 560px;
     width: 100%;
     height: 1000px;
+    background-color: yellow;
     margin:0 0 0 40px;
     display: flex;
     flex-direction: column;
     display:inline-block;
 }
+
 
 .storyBox {
     box-sizing: content-box;
@@ -222,7 +224,7 @@ main section {
 
 .viewBox {
     width: 560px;
-    height: 830px;
+    height: 840px;
     background-color: #ffffff;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 3px;
@@ -311,10 +313,6 @@ main section {
     left: 12px;
     top: 20px;
 }
-
-.addTextBtn button {
-    color:rgb(179, 223, 252)
-}
    
 .mainImg {
     width: 560px;
@@ -358,7 +356,6 @@ main section {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 .talkIcon {
@@ -498,63 +495,13 @@ span.bookmarkIcon {
     height: 18px;
 }
 
-.talkDateBox {
-    width: 540px;
-    height: 19px;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 11px;
-    color: rgb(142, 142, 142);
-    margin: 0px;
+
+aside {
+    max-width: 270px;
+    width: 100%;
+    height: 900px;
+    background-color: green;
+    position: fixed;
+    top: 77px;
+    right: 330px;   
 }
-
-.talkDateBox p {
-    margin: 12px 0 0 10px;
-}
-
-.addComment {
-    width: 560px;
-    height: 40px;
-    border-top: 1px solid rgb(219, 219, 219);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 20px 0 0 0 ;
-    position: absolute;
-    top: 145px;
-    left: -3px;
-
-}
-
-.smileIcon {
-    width: 40px;
-    height: 40px;
-    margin: 0px;
-    padding: 10px;
-}
-
-.smileIcon button {
-    width: 24px;
-    height: 24px;
-    padding: 0px;
-}
-
-.smileIcon i {
-    font-size: 20px;
-}
-
-.addTextBox {
-    width: 450px;
-    height: 18px;
-}
-
-.addTextBox textarea{
-    width: 450px;
-    height: 18px;
-    border: none;
-    color: rgb(142, 142, 142);
-    resize: none;
-    overflow: hidden;
-}
-
