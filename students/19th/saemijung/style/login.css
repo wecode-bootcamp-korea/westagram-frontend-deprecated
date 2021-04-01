@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body{
     background-color: #FAFAFA;
 }
+
 .login_box{
     width: 350px;
     height: 378px;
@@ -27,17 +29,20 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+
 input,button{
     width: 250px;
     height: 36px;
     margin: 0 auto;
     display: block;
 }
+
 .forget_pw{
     width: 349px;
     position: absolute;
     bottom: -70px;
 }
+
 .forget_link{
     display: block;
     text-align: center;
@@ -47,17 +52,12 @@ input,button{
     font-weight: bold;
 }
 
-
-#login_btn{
-margin-top: 10px;
-background-color: #B2DFFC;
-border: none;
-border-radius: 5px;
-color:white;
-font-weight: bold;
-font-size: 15px;
+.login_btn{
+    margin-top: 10px;
+    background-color: #B2DFFC;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
 }
-
-
-
-

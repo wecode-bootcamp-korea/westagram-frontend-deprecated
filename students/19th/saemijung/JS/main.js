@@ -1,19 +1,20 @@
 const inputComment = document.getElementsByClassName('comment_input')[0];
 const commentBtn = document.getElementsByClassName("comment_btn")[0];
 
-const str1 = inputComment.value;
+const commentBox = document.body.querySelector(".comment");
 
-function addPtag(){
-    const pTag = document.createElement('p');
-    const comment = document.querySelector('.comment');
-    comment.appendChild(pTag);
+function addCommentPtag(){
+    let addPtag = document.createElement('p');
+    addPtag.className="comment_text";
+    addPtag.innerHTML=inputComment.value;
+    commentBox.appendChild(addPtag);
 }
 
-inputComment.addEventListener('keyup',function(e){
-
-    if(e.keyCode === 13){
-        addPtag();
-        pTag.innerHTML=str1;
-    };
-    
+commentBtn.addEventListener("click",function(){
+    addCommentPtag();  
 });
+
+inputComment.addEventListener("keypress",function(e){
+    if(e.keyCode===13){addCommentPtag();}
+});
+

@@ -5,18 +5,23 @@
     background-color: #FAFAFA;
     position: relative;
 }
+
 .top{
     width: 100vw;
     height: 54px;
     border-top: 1px solid var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 280px;
-    padding-right: 280px;
     position: fixed;
 }
+
+.nav{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo_box{
     height: 54px;
     /* border: 1px solid yellow; */
@@ -98,7 +103,7 @@
     border:1px solid var(--light-gray);
     width: 614px;
     height: 118px;
-    padding: 16px 0px;
+    padding: 16px 16px;
     margin-bottom: 24px;
     display: flex;
     align-items: center;
