@@ -1,0 +1,68 @@
+body {
+    background-color: #fafafa;
+}
+
+.loginWrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 32px 0 25px;
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font:40px 'Lobster', cursive;
+}
+
+.loginForm {
+    margin: 35px 40px 120px;
+}
+
+.inputContainer {
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 3px 0;
+    padding: 12px 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+input::placeholder, input::-webkit-input-placeholder, input:-ms-input-placeholder {
+    color: #8e8e8e;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #a8a8a8;
+}
+
+button {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: #0095f6;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: .3;
+    pointer-events: none;
+}
+
+.findPw {
+    color: #00376b;
+    font-size: 13px;
+}
