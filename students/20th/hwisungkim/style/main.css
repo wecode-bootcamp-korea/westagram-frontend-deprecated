@@ -88,7 +88,6 @@
     background-color: #F3F3F3;
     flex-direction: column;
     justify-content: space-around;
-    
 ;
 }
 .main .main-right .profile{
@@ -96,6 +95,7 @@
     height: 50px;
     background-color: #F3F3F3;
 }
+
 
 /* 스토리글자 */
 .main .main-right .story{
@@ -110,13 +110,12 @@
     padding: 10px;
 }
 /* 모두보기 글자 */
-.main .main-right .story .seeAll{ 
+.main .main-right .story .seeAll_1{ 
+    margin-left: 170px;
     font-family: sans-serif;
     font-weight: bold;
     color:black;
 }
-
-
 
 /* 추천 */
 .main .main-right .recommend{
@@ -129,10 +128,11 @@
     font-family: sans-serif;
     color:#868787;
     padding: 10px;
+    background-color: blue;
     
 }
 /* 모두보기 */
-.main .main-right .recommend .seeAll_2{
+.main .main-right .for_recommend .seeAll_2{
     font-family: sans-serif;
     font-weight: bold;
     color:black;
