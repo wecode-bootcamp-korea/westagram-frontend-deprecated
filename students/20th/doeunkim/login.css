@@ -1,0 +1,240 @@
+@font-face {
+    font-family: instaStyleFont; 
+    src: url("./Demo_Fonts/blue_vinyl_regular_ps_ot.otf");
+  }
+
+@font-face {
+    font-family: instaStyleFont;
+    src: url("./Demo_Fonts/blue_vinyl_bold_ps_ot.otf");
+    font-weight: bold;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+html {
+    text-align: center;
+    background-color: #FAFAFA;
+    font-size: 14px;
+}
+
+.flexcontainer {
+    display: flex;
+    max-width: 935px;
+    padding: 30px 75px;
+}
+
+.iphone {
+    display: none;
+}
+
+.defaultBox {
+    position: relative;
+    left: -15px;
+}
+
+.loginBox {
+    background-color: white;
+    width: 350px;
+    height: 380px;
+    border: 1px solid #DBDBDB;
+    border-radius: 2px;
+    color: black;
+}
+
+.logo {
+    width: 175px;
+    height: 50px;
+    margin: 22px auto 12px;
+    font-size: 22px;
+}
+
+.logo h1 {
+    font-family: instaStyleFont;
+    
+}
+
+.login {
+    width: 348px;
+    height: 213px;
+    margin-top: 50px;
+    padding: 0 40px
+}
+
+.login input {
+    width: 100%;
+    height: 38px;
+    background-color: #FAFAFA;
+    margin-bottom: 5px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px;
+}
+
+.login input.typing {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.login input:focus   {
+    border-color: #A8A8A8;
+}
+
+
+.login div {
+    position: relative;
+}
+
+.login label {
+    color: #8E8E8E;
+    font-size: 12px;
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    transition: 0.3s;
+}
+
+.login label.typing {
+    font-size: 6px;
+    position: absolute;
+    top: 2px;
+}
+
+.showPw {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-weight: 700;
+}
+
+.showPw:hover {
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+#loginBtn {
+    width: 268px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #B2DFFC;
+    margin-top: 10px;
+    outline: none;
+}
+
+.or {
+    display: flex;
+}
+
+.or p {
+    color: #8E8E8E;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #DBDBDB;
+}
+
+.signupBox {
+    background-color: white;
+    margin-top: 10px;
+    padding: 20px;
+    width: 350px;
+    height: 63px;
+    border: 1px solid #DBDBDB;
+}
+
+.signupBox span {
+    color: #4295F6;
+    font-weight: bolder;
+}
+
+.facebook {
+    position: relative;
+    top: 15px;
+    color: #385185;
+    font-weight: bolder;
+}
+
+.facebook img {
+    width: 16px;
+    margin: 0 8px;
+    transform: translateY(2px);
+}
+
+.forgot {
+    color: #00376B;
+    font-size: 12px;
+}
+
+.download p {
+    margin: 20px;
+}
+
+.download img {
+    height: 40px;
+    margin: 0 2px;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 60px; 
+}
+
+footer * {
+    color: #8E8E8E;
+    font-size: 12px;
+}
+
+footer ul {
+    margin-bottom: 15px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer li {
+    margin: 2px 8px;
+    /* word-break: keep-all; */
+    white-space: nowrap;
+}
+
+footer form {
+    display: inline;
+}
+
+footer select {
+    border: none;
+    background: none;
+    outline: none;
+    margin: 0 8px;
+}
+
+footer p {
+    display: inline;
+}
+
+@media (min-width: 875px) {
+    .iphone {
+        display: block;
+    }
+}
