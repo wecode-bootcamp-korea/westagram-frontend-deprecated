@@ -1,0 +1,27 @@
+/* Reset CSS*/
+a {
+  text-decoration: none;
+}
+
+button,
+textarea {
+  border: none;
+}
+
+button:active,
+button:focus,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
