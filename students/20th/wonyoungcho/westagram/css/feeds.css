@@ -6,6 +6,7 @@
   display: flex;
   height: 100%;
   background-color: var(--body-color);
+  margin-top: 200px;
 }
 
 .feeds {
@@ -14,19 +15,29 @@
   margin: 0px auto;
   position: absolute;
   left: 0;
-  margin-left: 400px;
+  margin-left: 410px;
 }
 
 .post {
-  width: 600px;
+  width: 100%;
+  border: 1px solid var(--grey-border);
+  border-radius: 2px;
+  background-color: white;
+}
+
+.post-header {
+  display: flex;
+  padding: 10px 10px;
 }
 
 .post-header__image img {
   display: flex;
-  width: 60px;
+  width: 30px;
+  border-radius: 70%;
+  border: 1px solid var(--grey-border);
 }
 
 .post-mainimage img {
   display: flex;
-  width: 600px;
+  width: 100%;
 }
