@@ -1,20 +1,18 @@
 'use strict'
+//댓글 버튼 활성화
 const commentInput = document.querySelector('.commentInput');
 const commentBtn = document.querySelector('.commentBtn');
-
-console.log(commentInput);
-
-commentBtn.innerHTML.style.color = "red";
-
-
+console.log(commentBtn.innerHTML);
 function active() {
     if (commentInput.value) {
         commentBtn.toggleAttribute('disabled');
-        commentBtn.innerHTML.style.color = 'rgb(0, 149, 246)';
+        commentBtn.style.color = '#0095F6';
     } else {
         commentBtn.toggleAttribute('disabled');
-        commentBtn.innerHTML.style.color = 'rgb(179,223,252)';
+        commentBtn.style.color = '#B3DFFC';
     }
 };
 
 commentInput.addEventListener('input', active);
+
+
