@@ -1,0 +1,32 @@
+@import "reset.css";
+@import "variables.css";
+
+/* screens */
+@import "login.css";
+@import "main.css";
+
+/* components */
+@import "feed.css";
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  background-color: var(--lightgray);
+}
+
+main {
+  display: flex;
+  margin-top: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}

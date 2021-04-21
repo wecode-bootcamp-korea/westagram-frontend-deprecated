@@ -1,0 +1,9 @@
+:root {
+  --blue: #0095f6;
+  --sub-text-gray: #8e8e8e;
+  --lightgray: #fafafa;
+  --facebook_blue: #385185;
+  /* 언더바 수정필요 */
+  --border_gray_style: 1px solid #dbdbdb;
+  --border-gray: #dbdbdb;
+}
