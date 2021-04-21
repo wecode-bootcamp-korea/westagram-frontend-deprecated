@@ -122,6 +122,8 @@ img {
 
 .section-article1 {
   border: 1px solid var(--color-border);
+  margin-right: 30px;
+  border-radius: 5px;
 }
 
 .section-article1__user {
@@ -156,4 +158,46 @@ img {
 
 .section-article1__img {
   width: 100%;
+}
+
+.section-article1__iconbar {
+  display: flex;
+}
+
+/* aside */
+.aside-top {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.aside-top__img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.aside-top__contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-top__contents a {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aside-center__contents {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+}
+
+.aside-center__topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.aside-center__content__img {
+  width: 40px;
 }
