@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-color);
+  height: 100vh;
+}
+
+/* log-in main */
+
+.login-main {
+  background-color: var(--login-main-color);
+  height: 380px;
+  width: 350px;
+  border: var(--main-border);
+  border-radius: 1px;
+}
+
+/* westagram-header */
+
+.westa-header {
+  font-family: "Lobster", cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* log-in inputs */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 50px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.login-form input {
+  display: flex;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: var(--input-border);
+  background-color: var(--input-color);
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/* log-in buttons */
+
+.login-form button {
+  margin-top: 10px;
+  padding: 12px 5px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  background-color: rgba(197, 225, 251, 0.7);
+  color: white;
+  font-weight: bold;
+}
+
+/* forgot-password */
+
+.forgot-password {
+  text-align: center;
+  font-size: 12px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #114271;
+}

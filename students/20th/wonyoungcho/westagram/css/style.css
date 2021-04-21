@@ -1,0 +1,7 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import "login.css";
+@import "main.css";
+@import "common.css";
+@import "reset.css";
