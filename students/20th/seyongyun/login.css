@@ -1,0 +1,55 @@
+.new {
+    box-sizing: border-box;
+  }
+
+body {
+    display:flex;
+    justify-content: center;
+
+}
+
+.boundary {
+    border: 1px solid lightgrey;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.loginArea {
+    text-align: center;
+    width: 400px;
+    
+}
+
+input {
+    width: 70%;
+    background-color: #f7f7f7;
+    padding :10px;
+    border-radius: 5px;
+    border-width: 0.3px;
+    border-color: lightgrey;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}
+
+button {
+    width: 70%;
+    background-color: rgb(175, 217, 245);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.pwFind {
+    margin-top: 150px;
+    text-align: center;
+    color:darkblue;
+    font-size: 12px;
+}
