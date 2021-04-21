@@ -17,8 +17,8 @@ const checkValue = () => {
 
 
 const init = () => {
-    loginId.addEventListener('keydown', checkValue);
-    loginPw.addEventListener('keydown', checkValue);
+    loginId.addEventListener('keyup', checkValue);
+    loginPw.addEventListener('keyup', checkValue);
 }
 init();
 
