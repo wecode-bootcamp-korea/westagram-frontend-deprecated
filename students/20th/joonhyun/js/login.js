@@ -1,11 +1,15 @@
-const id = document.querySelector (".userId");
-const pw = document.querySelector (".userPw");
+const id = document.getElementById ("userId");
+const pw = document.getElementById ("userPw");
+
 
 function actLogin(){
-    const loginButton = document.querySelector("#userLogin");
+    const loginButton = document.getElementById("userLoginBtn");
     id.value.length >= 1  && pw.value.length >=6 ? (
-    loginButton.style.backgroundColor = "rgb(25,151,243)"
+    loginButton.style.backgroundColor = "#1997F3"
     ) : (
-    loginButton.style.backgroundColor = "rgb(178,223,252)"
-    )
+    loginButton.style.backgroundColor = "#B2DFFC"
+    );
 }
+const eventCheck = document.querySelector("form");
+eventCheck.addEventListener("keyup", actLogin)
+

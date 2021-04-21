@@ -50,20 +50,20 @@ form input:focus {
 	outline: none;
   	border: 1px solid rgb(118, 118, 118);
 }
-form #userLogin {
+button#userLoginBtn {
     background-color: rgb(178,223,252);
     height: 70px;
     border: none;
     border-radius: 3px;
 }
 
-form #userLogin .login {
+button#userLoginBtn .login {
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
     color : white;
 }
-form #userLogin:focus {
+button #userLoginBtn:focus {
 	outline: none;
   	border: 1px solid  rgb(178,223,252);
 }
