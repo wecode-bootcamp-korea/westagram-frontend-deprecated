@@ -1,0 +1,16 @@
+:root {
+  /* background-color */
+  --input-lignt-gray: #fafafa;
+  --button-blue: #0095f6;
+
+  /* border-color */
+  --border-line: #dbdbdb;
+
+  /* font-color */
+  --dark-gray: #a9a9a9;
+  --dark-blue: #244f7b;
+  --light-blue: #0066ff;
+
+  /* icon-color */
+  --heart-color: #f84f50;
+}

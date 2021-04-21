@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import "CSS/reset.css";
+@import "CSS/variable.css";
+
+/* screen */
+@import "CSS/screens/login.css";
+@import "CSS/screens/main.css";
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #fafafa;
+}
