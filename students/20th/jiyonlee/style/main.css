@@ -1,0 +1,324 @@
+:root {
+    --main-padding: 10px;
+    --comment-fontSize: 13px;
+    --aside-fontSize: 12px;
+    --border-color: #e6e6e6;
+}
+
+/* nav */
+nav {
+    height: 54px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #fff;
+    border-bottom: 1px solid var(--border-color);
+    z-index: 100;
+}
+.nav__logo {
+    display: flex;
+    position: relative;
+}
+.nav__logo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.nav__logoTitle {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Lobster", cursive;
+}
+.nav__logo .nav__logoTitle::before {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+}
+.nav__search {
+    text-align: center;
+    width: 215px;
+    height: 28px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.nav__link img {
+    width: 22px;
+    margin-left: 10px;
+}
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    border-top: 1px solid #e6e6e6;
+    background-color: #fafafa;
+}
+/* main > feeds */
+main .feeds {
+    width: 500px;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+}
+/* article  */
+.article__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--main-padding);
+}
+.article__header .profileImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.article__header .profileName {
+    font-weight: bold;
+    font-size: var(--comment-fontSize);
+}
+.article__header .viewMore {
+    position: absolute;
+    right: 10px;
+    color: #525252;
+    font-size: 0.8rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.article__img {
+    width: 100%;
+}
+.article__lnb {
+    display: flex;
+    position: relative;
+    padding: var(--main-padding);
+    padding-bottom: 0;
+}
+.article__lnb a {
+    margin-right: 10px;
+}
+.lnbImg {
+    background: url("../images/sprite.png");
+    width: 25px;
+    height: 25px;
+}
+
+.article__lnb .heartImg {
+    background-position: -130px -478px;
+}
+.article__lnb .msgImg {
+    background-position: -307px -401px;
+}
+.article__lnb .shareImg {
+    background-position: -517px -364px;
+}
+
+.article__lnb .bookmarkImg {
+    position: absolute;
+    right: 10px;
+    background-position: -517px -260px;
+}
+
+/* article > comment */
+.article__comment {
+    position: relative;
+    padding: var(--main-padding);
+    margin-bottom: 10px;
+}
+.article__comment .articleLikes {
+    font-size: var(--comment-fontSize);
+    margin-bottom: 15px;
+}
+.article__comment .articleLikes span {
+    font-weight: bold;
+    font-size: var(--comment-fontSize);
+}
+.article__comment .comments {
+    position: relative;
+    margin-bottom: 5px;
+}
+.article__comment .commenter {
+    font-weight: bold;
+    font-size: var(--comment-fontSize);
+}
+.article__comment .myComment {
+    display: inline-block;
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: var(--comment-fontSize);
+}
+.article__comment .comment {
+    font-size: var(--comment-fontSize);
+}
+
+.article__comment .commentBtn {
+    position: absolute;
+    right: 0;
+    color: #868686;
+    font-size: 0.8rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.article__comment .fa-heart {
+    position: absolute;
+    right: 0;
+}
+.article__comment .commentDeleteBtn {
+    right: 20px;
+}
+.article__comment .commentTime {
+    position: absolute;
+    bottom: -5px;
+    font-size: var(--comment-fontSize);
+    color: #999999;
+}
+/* 댓글달기 */
+.article__postComment {
+    position: relative;
+}
+.postCommentInput {
+    width: 100%;
+    padding: 15px var(--main-padding);
+    padding-right: 55px;
+    border: none;
+    border-top: 1px solid #efefef;
+}
+.postCommentInput::placeholder {
+    font-size: 13px;
+}
+.postCommentInput:focus {
+    outline: none;
+}
+.article__postComment .smile {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+.article__postComment .postCommentBtn {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    color: #72c2fa;
+    font-size: 13px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/*  aside > profile*/
+aside {
+    width: 293px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.aside__profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.profile__img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.profile__id {
+    font-size: var(--aside-fontSize);
+    font-weight: bold;
+}
+.profile__name {
+    font-size: var(--aside-fontSize);
+    color: grey;
+}
+/* aside container(스토리, 추천) */
+.aside__container {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    margin-bottom: 10px;
+}
+.aside__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.aside__header .title {
+    color: grey;
+    font-size: 13px;
+    font-weight: bold;
+}
+.aside__header .viewMore {
+    font-weight: bold;
+    font-size: 13px;
+}
+.aside__main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.aside__main .imgAndDesc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.aside__main img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.aside__main img::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: block;
+    border: 1px solid red;
+}
+.aside__main .aside__desc {
+    font-size: var(--aside-fontSize);
+}
+.aside__main .id {
+    margin-bottom: 5px;
+}
+
+/* style */
+.bold {
+    font-weight: bold;
+}
+.grey {
+    color: grey;
+}
+.blue {
+    color: blue !important;
+}
+.red {
+    color: red;
+}
+.hide {
+    /* display: none; */
+    visibility: hidden;
+}
+li {
+    display: inline-block;
+}
