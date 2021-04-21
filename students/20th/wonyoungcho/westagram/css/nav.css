@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .nav-bar {
   display: flex;
   position: fixed;
@@ -11,13 +15,14 @@
 .nav-bar__left {
   display: flex;
   align-items: center;
+  margin-left: 200px;
 }
 
 .nav-bar__left a {
   text-decoration: none;
   color: black;
   font-family: "Lobster", cursive;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .nav-bar__search {
@@ -28,21 +33,28 @@
 
 .nav-bar__search input {
   text-align: center;
-  padding: 6px 26px;
+  padding: 6px 35px;
   border-radius: 5px;
   border: var(--input-border);
 }
 
 .nav-bar__search i {
   position: absolute;
+  color: var(--grey-color);
+  margin-left: 80px;
 }
 
 .nav-bar__right {
   display: flex;
   align-items: center;
+  margin-right: 200px;
 }
 
 .nav-bar__right ul {
   display: flex;
   align-items: center;
+}
+
+.nav-bar__right ul > li {
+  margin: 0px 10px;
 }

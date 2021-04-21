@@ -1,4 +1,5 @@
 @import "nav.css";
+@import "feeds.css";
 
 body {
   display: flex;

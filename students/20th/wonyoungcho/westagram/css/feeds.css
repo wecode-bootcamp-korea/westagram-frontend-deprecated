@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  background-color: var(--body-color);
+}
+
+.feeds {
+  height: 855px;
+  width: 600px;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  margin-left: 400px;
+}
+
+.post {
+  width: 600px;
+}
+
+.post-header__image img {
+  display: flex;
+  width: 60px;
+}
+
+.post-mainimage img {
+  display: flex;
+  width: 600px;
+}

@@ -5,6 +5,7 @@
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
   --grey-border: rgba(0, 0, 0, 0.2);
   --input-border: 1px solid rgba(0, 0, 0, 0.1);
+  --grey-color: rgba(0, 0, 0, 0.3);
 }
 
 button {
