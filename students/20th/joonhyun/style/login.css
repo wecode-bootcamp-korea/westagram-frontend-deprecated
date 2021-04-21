@@ -1,0 +1,89 @@
+.logMain {
+    width : 800px;
+    height: 800px;
+    margin: 10px auto;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+}
+h1.logTitle {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display : flex;
+    justify-content: center;
+    font-family : 'Lobster', cursive;
+    font-size: 100px;
+}
+form {
+    width : 600px;
+    height : 350px;
+    margin: 0 auto;
+    border-radius: 3px;
+    display : flex;
+    flex-direction: column;
+    justify-content:space-around;
+    font-size: 16px;
+    color :rgba(var(--i1d,38,38,38),1);
+}
+
+form input#userId {
+    width: 606px;
+    height: 84px;
+    padding:10px;
+    align-items: center;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+    font-size: 25px;
+}
+form input#userPw {
+    width: 606px;
+    height: 84px;
+    padding:10px;
+    align-items: center;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    border-radius: 3px;
+    font-size: 25px;
+}
+form input:hover{
+    border-color: rgb(118, 118, 118);
+}
+form input:focus {
+	outline: none;
+  	border: 1px solid rgb(118, 118, 118);
+}
+form #userLogin {
+    background-color: rgb(178,223,252);
+    height: 70px;
+    border: none;
+    border-radius: 3px;
+}
+
+form #userLogin .login {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color : white;
+}
+form #userLogin:focus {
+	outline: none;
+  	border: 1px solid  rgb(178,223,252);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+footer .lossPw {
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: #00376b;
+}
+footer:link{
+    color : #00376b;
+}
+footer:visited {
+    color :  #00376b;
+}
