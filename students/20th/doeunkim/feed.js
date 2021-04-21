@@ -39,22 +39,22 @@ function leaveaComment(text) {
     newComment.className="blahblah";
     const id = document.createElement("p");
     id.className = "id";
-    inputId? id.innerHTML = inputId+' ' : id.innerHTML = 'wecode_bootcamp ';
+    inputId? id.innerHTML = inputId+' ' : id.innerHTML = 'unknown ';
     const say = document.createElement("p");
     say.innerHTML = text;
 
     const likeComment = document.createElement("img");
-    likeComment.setAttribute('src', './heart.png');
+    likeComment.setAttribute('src', './img/heart.png');
     likeComment.className = "likeComment";
     const likeCommentRed = document.createElement("img");
-    likeCommentRed.setAttribute('src', './redheart.png');
+    likeCommentRed.setAttribute('src', './img/redheart.png');
     likeCommentRed.className = "likeComment liked hide";
 
     likeComment.addEventListener("click", ()=>{likeCommentRed.classList.toggle('hide')});
     likeCommentRed.addEventListener("click", ()=>{likeCommentRed.classList.toggle('hide')});
 
     const delBtn = document.createElement("img");
-    delBtn.setAttribute('src', './dot.png');
+    delBtn.setAttribute('src', './img/dot.png');
     delBtn.id = "smalldot";
     delBtn.addEventListener("click", delComment);
 
