@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="./img/instagram.png"
+      rel="shortcut icon"
+      type="image/instagram-icon"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <article>
+      <div class="westagram">
+        <h1>Westagram</h1>
+
+        <section>
+          <form action="submit" id="loginForm" method="GET">
+            <label for="userid"></label>
+            <input
+              type="text"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+              required
+              id="user_id"
+            />
+
+            <label for="password"></label>
+            <input
+              type="password"
+              placeholder="비밀번호"
+              minlength="5"
+              maxlength="13"
+              required
+              id="password"
+            />
+
+            <button id="btn_login" disabled>로그인</button>
+          </form>
+        </section>
+        <a href="">비밀번호를 잊으셨나요?</a>
+      </div>
+    </article>
+  </body>
+  <script src="./login.js"></script>
+</html>
