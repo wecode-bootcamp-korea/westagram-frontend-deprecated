@@ -38,6 +38,10 @@ nav > img {
   margin-left: 20px;
 }
 
+label {
+  cursor: text;
+}
+
 .search-section {
   position: relative;
 }

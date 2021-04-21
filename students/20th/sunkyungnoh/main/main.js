@@ -3,6 +3,7 @@
 const commentInput = document.querySelector('.commentInput');
 const commentBtn = document.querySelector('.commentBtn');
 console.log(commentBtn.innerHTML);
+
 function active() {
     if (commentInput.value) {
         commentBtn.toggleAttribute('disabled');
