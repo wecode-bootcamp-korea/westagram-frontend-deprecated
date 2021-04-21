@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+/* 전체 섹션 */
+.loginSection {
+    width: 350px;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    background-color: white;
+}
+
+/* 로고 */
+.westaLogo {
+    font-family:'Lobster', cursive;
+    font-size: 50px;
+}
+
+/* input 두개 */
+.inputId{
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+    height: 36px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+/* 각각의 input */
+.inputId input{
+    padding: 9px 0 7px 8px;
+    margin: 3px; 
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background-color:rgba(var(--b3f,250,250,250),1);
+}
+
+/* input클릭시 테두리 없애기 */
+.inputId input:focus{
+    outline: none;
+}
+
+/* 로그인버튼 */
+.loginBtn {
+    width: 248px;
+    height: 30px;
+    background-color: rgba(0,149,246,.3);
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+
+/* 로그인버튼 클릭시 테두리없애기 */
+.loginBtn:focus{
+    outline: none;
+    border: none;
+}
+
+/* 비밀번호 잊으셨나요? */
+footer {
+    margin-top: 60px;
+    font-size: 15px;
+    color: #385185;
+    font-weight: 600;
+}
