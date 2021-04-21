@@ -1,0 +1,59 @@
+body {
+  background: #fafafa;
+}
+
+#main {
+  width: 350px;
+  height: 380px;
+  margin: 100px auto 100px auto;
+  background: #fff;
+  border: 1px solid lightgrey;
+}
+
+.logoText {
+  font-size: 38px;
+  width: 175px;
+  height: 51px;
+  margin: 22px auto 32px auto;
+}
+
+.input {
+  width: 250px;
+  margin: auto;
+}
+
+.input > input,
+button {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 7px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.input > input {
+  padding: 9px 8px;
+  height: 42px;
+  color: #b1b1b1;
+  background: #fafbfa;
+  outline: none;
+}
+
+.input > button {
+  height: 32px;
+  color: white;
+  font-weight: bold;
+  background: #b2dffc;
+  border: 0;
+  margin: 20px 0 80px 0;
+}
+
+#main > a {
+  display: block;
+  width: 250px;
+  margin: auto;
+  color: #032952;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}

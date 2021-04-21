@@ -1,0 +1,296 @@
+body {
+  background: #fafafa;
+}
+
+/* nav */
+.mainNav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background: #fff;
+  border-bottom: 1px solid lightgrey;
+}
+
+.maxWidth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 975px;
+}
+.mainNav > .maxWidth > .logo {
+  width: 150px;
+  font-size: 22px;
+}
+
+.mainNav > .maxWidth > .logo > img {
+  width: 20px;
+}
+
+.mainNav > .maxWidth > .bar {
+  color: #c7c7c7;
+}
+.mainNav > .maxWidth > .bar > I {
+  position: relative;
+  left: 40%;
+  font-size: 12px;
+  color: #929191;
+}
+.mainNav > .maxWidth > .bar > input {
+  width: 200px;
+  height: 26px;
+  padding: 7px;
+  background: #fafbfa;
+  border: 0.5px solid #c7c7c7;
+  text-align: center;
+  outline: none;
+}
+
+.mainNav > .maxWidth > ul {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.mainNav > .maxWidth > ul > li :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+/* section */
+body > div {
+  width: 955px;
+  margin: auto;
+}
+
+section.main {
+  margin: 160px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* article */
+article {
+  width: 620px;
+}
+
+/* article > header*/
+article > header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+  border: 1px solid lightgrey;
+  width: 100%;
+  padding: 16px;
+}
+
+article > header > img {
+  width: 32px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+article > header > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+article > header > div > a:first-child {
+  margin-left: 14px;
+}
+
+/* article > content*/
+article > .content {
+  width: 620px;
+}
+
+article > .content > img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* article > contentBottom*/
+article > .contentBottom {
+  border: 1px solid lightgrey;
+  font-size: 14px;
+}
+article > .contentBottom > section:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+article > .contentBottom > section:first-child > div > button,
+article > .contentBottom > section:first-child > button {
+  font-size: 24px;
+  padding: 8px;
+}
+
+article > .contentBottom > section:nth-child(2) > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+article > .contentBottom > section:nth-child(2) > div > img {
+  width: 22px;
+  border-radius: 50%;
+}
+
+article > .contentBottom > section:nth-child(2) > div > img + span {
+  padding-left: 5px;
+  font-weight: 800;
+}
+
+article > .contentBottom > section:nth-child(2) > div :nth-last-child(2) {
+  padding-left: 5px;
+  font-weight: 800;
+}
+article > .contentBottom > div > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  padding: 4px 12px;
+}
+
+article > .contentBottom > div > div > div > span {
+  font-weight: 800;
+}
+
+/* 댓글 달기 */
+article > .contentBottom > section:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+  padding: 16px 8px;
+}
+
+article > .contentBottom > section:last-child > .textarea {
+  width: 90%;
+  height: 18px;
+  resize: none;
+  overflow: hidden;
+}
+
+article > .contentBottom > .commentList > div > div > .delBtn {
+  padding: 0 8px;
+  color: #eceaea;
+  cursor: pointer;
+}
+
+article > .contentBottom > .commentList > div > div > .delBtn:hover {
+  color: #363434;
+}
+
+article > .contentBottom > section:last-child > button {
+  font-weight: 800;
+  color: #8abdff;
+}
+
+/* aside*/
+aside {
+  position: fixed;
+  width: 300px;
+}
+
+aside > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+aside > div > img {
+  width: 56px;
+  border-radius: 50%;
+}
+
+aside > div > p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+aside > div > p > span:first-child {
+  font-weight: 800;
+}
+
+/* aside content*/
+aside > section {
+  background: #fff;
+  border: 1px solid lightgrey;
+  margin: 12px 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+aside > section > .head {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+aside > section > .head > div {
+  color: #a09e9e;
+}
+
+aside > section > .storyList > div {
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+aside > section > .storyList > div > div {
+  color: #a8a7a7;
+  margin-left: 16px;
+}
+
+aside > section > .storyList > div > img {
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid #b21b85;
+}
+
+aside > section > .storyList > div > div > p:first-child {
+  color: rgb(20, 20, 20);
+  font-weight: 800;
+}
+
+aside > section:nth-child(3) > .storyList > div > button {
+  width: 60px;
+  color: #4695fc;
+}
+
+aside > section:nth-child(3) > .storyList > div > div > p:last-child {
+  height: 12px;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+/* aside > nav*/
+aside > nav,
+aside > nav > ul > li > a {
+  font-size: 12px;
+  color: #929191;
+}
+
+aside > nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+aside > nav > ul > li {
+  margin: 0 8px 8px 0;
+}
