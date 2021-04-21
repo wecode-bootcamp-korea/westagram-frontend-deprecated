@@ -1,0 +1,129 @@
+.login_container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width: 350px;
+	height: auto;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	border: 1px solid var(--border-color);
+}
+
+.logo {
+	font-family: 'Lobster Two', cursive;
+	font-size: calc(var(--fs-medium) * 3);
+	font-weight: lighter;
+	margin-bottom: 30px;
+}
+
+.login-form {
+	font-family: inherit;
+	width: 100%;
+}
+
+.login-data {
+	font-size: var(--fs-medium);
+	padding: 10px 0;
+}
+
+.login-data input {
+	display: block;
+	width: 100%;
+	background-color: var(--bg-color);
+	font-family: inherit;
+	font-size: var(--fs-small);
+	border: 1px solid var(--border-color);
+	border-radius: 3px;
+	padding: 10px;
+	margin-bottom: 10px;
+	outline: none;
+	transition: border 200ms ease-in;
+}
+
+.login-data input::placeholder {
+	color: var(--grey);
+}
+
+.login-data input:focus {
+	border: 1px solid var(--grey);
+}
+
+#login-btn {
+	width: 100%;
+	background-color: #b2dffc;
+	font-family: inherit;
+	font-size: var(--fs-small);
+	font-weight: bold;
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+	outline: none;
+	transition: background-color 200ms ease-in;
+}
+
+#login-btn.validUserId.validPassword {
+	background-color: #0195f7;
+	transition: background-color 200ms ease-in;
+}
+
+#login-btn.validUserId.validPassword:hover {
+	background-color: #0195f7;
+	cursor: pointer;
+}
+
+#login-btn.validUserId.validPassword:active {
+	background-color: #b2dffc;
+}
+
+.login_or {
+	color: var(--grey);
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+
+}
+
+.login_or::before {
+	content: '';
+	width: 40%;
+	height: 1px;
+	background-color: var(--grey);
+	position: absolute;
+	left: 0;
+	top: 50%;
+
+}
+
+.login_or::after {
+	content: '';
+	width: 40%;
+	height: 1px;
+	background-color: var(--grey);
+	position: absolute;
+	right: 0;
+	top: 50%;
+
+}
+
+.login_facebook {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.forgot-password {
+	font-size: var(--fs-small);
+	color: #2c5379;
+	text-decoration: none;
+}

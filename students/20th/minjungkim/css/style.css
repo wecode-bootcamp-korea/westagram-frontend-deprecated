@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital@0;1&family=Roboto&display=swap');
+/* @import url('./reset.css'); */
+@import url('./login.css');
+@import url('./main.css');
+
+:root {
+	/* color */
+	--white: #ffff;
+	--grey: #8e8e8e;
+	--bg-color: #fafafa;
+	--border-color: #dbdbdb;
+	--border-color-light: #f1eded;
+	/* size */
+	--fs-xs: 12px;
+	--fs-small: 14px;
+	--fs-medium: 16px;
+	--fs-large: 18px;
+	--fs-xl: 20px;
+	--fs-xxl: 22px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--bg-color);
+}
+
+a {
+	text-decoration: none;
+	color: #1a3c5e;
+}
+
+li {
+	list-style: none;
+}
+
+button,
+input {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-family: inherit;
+}
+
+i {
+	cursor: pointer;
+}
