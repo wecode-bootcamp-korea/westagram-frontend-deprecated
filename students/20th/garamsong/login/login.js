@@ -1,16 +1,25 @@
 'use strict'
 
-const loginInputValue = document.querySelector('input').value;
+const loginId = document.querySelector('.loginId');
+const loginPassword = document.querySelector('.loginPassword');
+const loginBtn = document.querySelector('.loginBtn');
 
-console.log(loginInputValue);
+loginId.addEventListener('input', activeBtn);
+loginPassword.addEventListener('input', activeBtn);
 
-// loginInputValue.addEventListener('keyup', activeLoginBtn);
 
-// function activeLoginBtn(){
-//     const loginInputId = document.querySelector('.loginId').value;
-//     const loginInputPassword = document.querySelector('.loginPassword').value;
-//     const loginBtn = document.querySelector('.loginBtn');
-//     if(!loginInputId && !loginInputPassword){
-//         return;
-//     } return loginBtn.style.backgroundColor = "rgba(0,149,246,1)"
-// }
+function activeBtn(){
+    let loginIdValue = loginId.value;
+    let loginPasswordValue = loginPassword.value;
+    if((loginIdValue.length) && (loginPasswordValue.length)){
+        
+        loginBtn.style.backgroundColor ="rgba(0,149,246,1)";
+        
+    } else{
+        return; 
+    }
+};
+
+
+
+
