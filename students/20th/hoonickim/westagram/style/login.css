@@ -1,0 +1,55 @@
+header {
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.container {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background-color: white;
+  width: 330px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  box-sizing: border-box;
+  width: 258px;
+  height: 36px;
+  font-size: 12px;
+  padding: 9px 0 7px 8px;
+  background-color: #f7f7f7;
+  margin-top: 7px;
+  outline-color: #dbdbdb;
+  outline-width: 1px;
+}
+
+button {
+  width: 258px;
+  height: 36px;
+  background-color: rgba(0, 149, 246, 0.3);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 70px;
+  color: white;
+  outline: none;
+}
+
+footer {
+  font-size: 13px;
+}
