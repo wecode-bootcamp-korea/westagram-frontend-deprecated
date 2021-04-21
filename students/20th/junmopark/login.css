@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    background-color: #fff;
+    padding: 50px 50px 20px 50px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+.login-container .logo{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.login-container .input-container input{
+    display: block;
+    width: 250px;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+.login-container .btn-container .loginBtn{
+    display: block;
+    width: 100%;
+    background-color: rgba(0,149,246,.3);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 7px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.login-container .btn-container .forgotPwBtn{
+    display: block;
+    background-color: #fff;
+    border: none;
+    text-align: center;
+    color: #00376b;
+    margin: 0 auto;
+    cursor: pointer;
+}
