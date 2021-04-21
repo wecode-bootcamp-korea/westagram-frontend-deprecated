@@ -153,16 +153,12 @@ article {
 }
 
 div.main-right {
-  border: 1px solid rgb(219, 219, 219);
-  border-radius: 1px;
   width: 293px;
   height: 100vh;
   position: fixed;
   left: 707px;
   right: 0;
   top: 88px;
-
-  background-color: lightpink;
 }
 
 /* feed */
@@ -224,7 +220,7 @@ header > button > div {
   width: 100%;
   height: 40px;
   padding: 0 8px;
-  position: relative;
+
   display: flex;
   align-items: center;
 }
@@ -238,11 +234,7 @@ header > button > div {
 }
 
 .feedOptions button:last-of-type {
-  position: absolute;
-  right: 16px;
-  margin-left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 464px;
 }
 .photoDes {
   font-size: 14px;
@@ -262,6 +254,11 @@ li {
   list-style: none;
   list-style-position: inside;
 }
+
+.invisible {
+  display: none;
+}
+
 article img {
   width: 24px;
   height: 24px;
@@ -292,4 +289,40 @@ form input {
 form > button:last-of-type {
   color: rgba(0, 149, 246, 0.4);
   padding: 8px 0px 8px 16px;
+}
+
+/* side */
+.userProfile-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+}
+
+.userProfile-section > img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: white;
+  margin-right: 16px;
+}
+
+.userInfo {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userInfo > p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.userProfile-section > button {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(0, 149, 246);
 }

@@ -127,11 +127,13 @@
                 </div>
 
                 <div class="comments">
-                    <ul>
-                        <li>
-                            <span>hoho</span>
-                            <span>이거 맛있겠다</span>
-                            <span><i class="far fa-heart"></i></span>
+                    <ul class="commentList">
+                        <li class="comment invisible" >
+                                <span class="ID">아이디</span>
+                                <span class="CM">댓글이다!</span>
+                                <span>
+                                    <i class="far fa-heart"></i>
+                                </span>
                         </li>
                         
                     </ul>
@@ -139,25 +141,95 @@
                         <button>
                             <i class="far fa-heart"></i>
                         </button>
-                        <input class="commentInput" type="text" placeholder="댓글 달기 ...">
-                        <button class="commentBtn" disabled >게시</button>
+
+                        <input class="commentInput" name="commentInput" method='post' type="text" placeholder="댓글 달기 ...">
+
+                        <button type="submit" class="commentBtn" disabled >
+                            게시
+                        </button>
+
                     </form>
                 </div>
                 
             </article>
+
+            <article>
+                <header>
+                    <div class="userPic header"></div>
+                    <p class="userID">dory</p>
+                    <button>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                </header>
+            
+                <img src="" alt="" class="photo">
+            
+                <section class="feedOptions">
+                    <button>
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button>
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button>
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <button>
+                        <i class="far fa-heart"></i>
+                    </button>
+                </section>
+            
+                <div class="photoDes">
+                    <p class="numOfLikes">좋아요 &nbsp;<span>123</span>개</p>
+                    <p class="userID">dory</p>
+                    <p>존맛탱 감자조림</p>
+                </div>
+            
+                <div class="comments">
+                    <ul class="commentList">
+                        <li class="comment invisible">
+                            <span class="ID">아이디</span>
+                            <span class="CM">댓글이다!</span>
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </li>
+            
+                    </ul>
+                    <form action="">
+                        <button>
+                            <i class="far fa-heart"></i>
+                        </button>
+            
+                        <input class="commentInput" name="commentInput" method='post' type="text" placeholder="댓글 달기 ...">
+            
+                        <button type="submit" class="commentBtn" disabled>
+                            게시
+                        </button>
+            
+                    </form>
+                </div>
+            
+            </article>
+            
         </div>
 
         <div class="main-right">
             <div class="userProfile-section">
+
                 <img src="https://raw.githubusercontent.com/celline1637/1/main/%ED%88%AC%EB%AA%85%EA%B3%B0.png" alt="userProfile">
                 
                 <div class="userInfo">
                     <p>celline2508</p>
                     <p class="userMessage">🎆🌌✨</p>
                 </div>
+
                 <button aria-label="계정 전환">전환</button>
+
             </div>
-            div
+            
 
         </div>
     </main>
