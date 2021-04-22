@@ -3,7 +3,11 @@ const postCommentBtn = document.querySelector(".postCommentBtn");
 const postCommentInput = document.querySelector(".postCommentInput");
 const commentTime = document.querySelector(".commentTime");
 
+let stopflag = false;
+
 const clickCommentBtn = () => {
+    postCommentBtn.classList.remove("blue");
+
     const comments = document
         .querySelector(".commentContainer")
         .cloneNode(true);
@@ -27,29 +31,43 @@ const clickCommentBtn = () => {
         });
     });
 
-    //toggle로 하면 forEach문이 실행한 후 끝까지 돌면서, 짝수 혹은 홀수일때만 좋아요가 눌리는 문제
-
+    // toggle로 하면 forEach문이 실행한 후 끝까지 돌면서, 짝수 혹은 홀수일때만 좋아요가 눌리는 문제
+    //stopflag 를 이용했는데 코드가 너무 안좋아보임...
     const commentLikesBtn = document.querySelectorAll(".commentLikesBtn");
-    commentLikesBtn.forEach((e, i, arr) => {
-        {
-            e.addEventListener("click", (event) => {
-                const emptyHeart = e.querySelector(".emptyHeart");
-                const redHeart = e.querySelector(".redHeart");
+    commentLikesBtn.forEach((e, i) => {
+        e.addEventListener("click", () => {
+            let emptyHeart = e.querySelector(".emptyHeart");
+            let redHeart = e.querySelector(".redHeart");
 
-                emptyHeart.classList.toggle("hide");
-                redHeart.classList.toggle("hide");
-            });
-        }
+            toggleHeart(emptyHeart, redHeart);
+        });
     });
+};
+
+const toggleHeart = (emptyHeart, redHeart) => {
+    if (stopflag) {
+        return;
+    }
+    emptyHeart.classList.toggle("hide");
+    redHeart.classList.toggle("hide");
+
+    stopflag = true;
+    setTimeout(() => {
+        stopflag = false;
+    }, 4);
 };
 
 postCommentBtn.addEventListener("click", () => {
     clickCommentBtn();
 });
 
-postCommentInput.addEventListener("input", (e) => {
-    e.keyCode === 13 ? clickCommentBtn() : null;
+postCommentInput.addEventListener("keyup", (e) => {
     postCommentInput.value.length > 0
         ? postCommentBtn.classList.add("blue")
         : postCommentBtn.classList.remove("blue");
+    if (e.keyCode !== 13) {
+        return;
+    } else {
+        clickCommentBtn();
+    }
 });

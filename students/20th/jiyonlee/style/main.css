@@ -194,8 +194,7 @@ main .feeds {
 }
 .postCommentInput {
     width: 100%;
-    padding: 15px var(--main-padding);
-    padding-right: 55px;
+    padding: 15px 55px 15px 40px;
     border: none;
     border-top: 1px solid #efefef;
 }
@@ -207,7 +206,7 @@ main .feeds {
 }
 .article__postComment .smile {
     position: absolute;
-    left: 0;
+    left: 5px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
@@ -238,14 +237,15 @@ aside {
     margin-bottom: 10px;
 }
 .profile__img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
     border-radius: 50%;
 }
 .profile__id {
     font-size: var(--aside-fontSize);
     font-weight: bold;
+    margin-bottom: 5px;
 }
 .profile__name {
     font-size: var(--aside-fontSize);
