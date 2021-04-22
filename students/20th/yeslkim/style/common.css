@@ -71,6 +71,11 @@ img {
     width: 100%;
 }
 
+input {
+	border: none;
+	background: none;
+}
+
 input:focus {
     outline: none;
 }

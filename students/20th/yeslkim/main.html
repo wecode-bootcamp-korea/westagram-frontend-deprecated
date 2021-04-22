@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
+    <script defer src="js/main.js"></script>
     <title>Westagram</title>
 </head>
 <body>
@@ -44,8 +45,8 @@
     <main>
         <section class="feeds">
             <article>
-                <header class="flex-vertical-center space-between">
-                    <div class="flex-vertical-center">
+                <header class="align-item-center space-between">
+                    <div class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/122493551_276052993647146_2009192636666657519_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=zK_EvJTWqwAAX9zB93x&edm=AEF8tYYBAAAA&ccb=7-4&oh=00a7fd638bc158820530230c64543d99&oe=60A6166E&_nc_sid=a9513d" alt="오브젠탈 프로필 사진">
                         </a>
@@ -76,14 +77,15 @@
                     <p class="likesNumber"><a>좋아요 503개</a></p>
                     <p class="description">
                         <span class="userName">objental</span>
-                        미니멀 아크릴 사각 트레이 4가지 컬러로 준비하였어요💙<br><br>
+                        <span>미니멀 아크릴 사각 트레이 4가지 컬러로 준비하였어요💙<br><br>
                         | SIZE |<br>
-                        W400mm * D280mm * H45mm
+                        W400mm * D280mm * H45mm</span>
                     </p>
-                    <div class="comments">
+                    <div class="comments js-comments">
                         <p>
                             <span class="userName">objental</span>
-                            <a href="#">@5write</a> 사이트 주방 또는 데코 카테고리에서 상품 확인 가능하세요😊
+                            <a href="#">@5write</a>
+                            사이트 주방 또는 데코 카테고리에서 상품 확인 가능하세요😊
                         </p>
                         <p>
                             <span class="userName">jerrysmarket.official</span>
@@ -91,19 +93,17 @@
                         </p>
                     </div>
                 </section>
-                <form class="commentForm">
-                    <div class="flex-vertical-center space-between">
-                        <button type="button">
-                            <img src="image/emoticon.svg" alt="이모티콘">
-                        </button>
-                        <button type="submit" class="submitComment">게시</button>
-                    </div>
-                    <input type="text" placeholder="댓글 달기..." class="inputComment">
+                <form class="commentForm align-item-center space-between" name="commentForm">
+                    <button type="button">
+                        <img src="image/emoticon.svg" alt="이모티콘">
+                    </button>
+                    <input type="text" placeholder="댓글 달기..." class="inputComment" name="inputComment">
+                    <input type="submit" class="submitComment" name="submitComment" value="게시" disabled>
                 </form>
             </article>
         </section>
         <div class="main-right">
-            <div class="user-profile flex-vertical-center">
+            <div id="user-profile" class="align-item-center">
                 <a href="#" class="profileImage-big">
                     <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/159201707_1370690073293044_5504838793282701571_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=X3ZreJYCwS8AX8sC9GN&edm=AIQHJ4wBAAAA&ccb=7-4&oh=e71b1eb1001374c111da7a1a5feee831&oe=60A4F7CF&_nc_sid=7b02f1" alt="yesl.k님의 프로필 사진">
                 </a>
@@ -116,7 +116,7 @@
                     <a href="#">모두 보기</a>
                 </header>
                 <ul>
-                    <li class="flex-vertical-center">
+                    <li class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/103766508_267505241160259_6988402942883626618_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MCGB5wt3c6MAX8LYXCb&edm=ALlQn9MBAAAA&ccb=7-4&oh=91329cb8aac0070a51f477ab5f2c4c42&oe=60A63740&_nc_sid=48a2a6" alt="gwilee님의 프로필 사진">
                         </a>
@@ -125,7 +125,7 @@
                             <p class="grey-txt">16분 전</p>
                         </div>
                     </li>
-                    <li class="flex-vertical-center">
+                    <li class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/119800358_354868989042273_770246469915109902_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=SC4MI4G04iwAX_pNBiw&edm=ALlQn9MBAAAA&ccb=7-4&oh=d0576912d5db7559f72c084879ccf297&oe=60A553C4&_nc_sid=48a2a6" alt="moaol님의 프로필 사진">
                         </a>
@@ -134,7 +134,7 @@
                             <p class="grey-txt">3시간 전</p>
                         </div>
                     </li>
-                    <li class="flex-vertical-center">
+                    <li class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/42707193_247868809232568_1670895075900522496_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Mvb0zQo602YAX-TrVzE&edm=AAeKFY8BAAAA&ccb=7-4&oh=1008ecf199e4b5e4aa36034e3d89a173&oe=60A4D9A2&_nc_sid=c982ba" alt="hyukyc님의 프로필 사진">
                         </a>
@@ -143,7 +143,7 @@
                             <p class="grey-txt">20시간 전</p>
                         </div>
                     </li>
-                    <li class="flex-vertical-center">
+                    <li class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/125458184_678698426183599_3935567234361894070_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=pcZm0-kFu2gAX_vHPBe&edm=ALlQn9MBAAAA&ccb=7-4&oh=208557571af9f85e3bfb824977d0f8c5&oe=60A6680C&_nc_sid=48a2a6" alt="mozzi_na님의 프로필 사진">
                         </a>
@@ -160,7 +160,7 @@
                     <a href="#">모두 보기</a>
                 </header>
                 <ul>
-                    <li class="flex-vertical-center">
+                    <li class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90086118_217157622737807_4136651709092986880_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=alw4C05kP50AX-ui58O&edm=AEF8tYYBAAAA&ccb=7-4&oh=4924ec7c2bb571b7e3cb83eaf57a5f49&oe=60A70F51&_nc_sid=a9513d" alt="photo.by.ruby님의 프로필 사진">
                         </a>
@@ -170,7 +170,7 @@
                         </div>
                         <button type="button" class="followBtn align-right">팔로우</button>
                     </li>
-                    <li class="flex-vertical-center">
+                    <li class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/53848849_278758776351950_4301671031279452160_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=X0_HmKlmFoIAX9fYyzb&edm=AEF8tYYAAAAA&ccb=7-4&oh=3d9c8e270fbef2b4240f9c222c5c0255&oe=60A78C31&_nc_sid=a9513d" alt="yuhemian님의 프로필 사진">
                         </a>
@@ -180,7 +180,7 @@
                         </div>
                         <button type="button" class="followBtn align-right">팔로우</button>
                     </li>
-                    <li class="flex-vertical-center">
+                    <li class="align-item-center">
                         <a href="#" class="profileImage-small">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/43912989_342504699845205_26342821132763136_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=1CznibMktiwAX9OVJJi&edm=AEF8tYYBAAAA&ccb=7-4&oh=3a2627949490d51a80c39569334f52de&oe=60A5878C&_nc_sid=a9513d" alt="outofstyle.ig님의 프로필 사진">
                         </a>

@@ -9,7 +9,7 @@ header {
     font-weight: 600;
 }
 
-button {
+button, .submitComment {
     display: block;
     padding: 8px;
     width: 40px;
@@ -18,7 +18,7 @@ button {
     color: #0095f6;
 }
 
-.flex-vertical-center {
+.align-item-center {
     display: flex;
     align-items: center;
 }
@@ -105,7 +105,7 @@ main {
     width: 100%;
     max-width: 610px;
     height: 100vh;
-}
+}x
 
 .main-right {
     position: sticky;
@@ -115,7 +115,7 @@ main {
     height: 0;
 }
 
-.user-profile {
+#user-profile {
     padding: 0 8px;
 }
 
@@ -258,35 +258,23 @@ article > header{
 
     /* 댓글 달기 */
 .commentForm {
-    position: relative;
+    padding: 0 8px;
     height: 56px;
 }
 
-.inputComment, .commentForm > div {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 8px;
-    right: 8px;
-}
-
 .inputComment {
-    padding: 0 48px;
-    width: 98%;
-    box-sizing: border-box;
-    border: none;
-    background-color: transparent;
+    width: calc(100% - 96px);
 }
 
 .submitComment {
-    display: block;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: none;
-    color: #0095f6;
-    font-weight: 600;
+    width: auto;
+    font-size: 14px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.submitComment:disabled {
+    opacity: .3;
 }
 
 /* 메인 콘텐츠 우측 */
