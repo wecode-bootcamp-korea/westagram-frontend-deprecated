@@ -120,7 +120,8 @@ main .feeds {
     border-radius: 50%;
 }
 
-.articleHeader.profileName {
+.articleHeader .profileName {
+    color: black;
     font-weight: bold;
     font-size: var(--comment-fontSize);
 }
@@ -341,7 +342,7 @@ aside {
     margin-left: 10px;
 }
 
-.asideMain .imgAndDesc {
+.asideMain .imgAndId {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -363,7 +364,7 @@ aside {
     border: 1px solid red;
 }
 
-.asideMain .asideDesc {
+.asideMain .imgAndId {
     font-size: var(--aside-fontSize);
 }
 

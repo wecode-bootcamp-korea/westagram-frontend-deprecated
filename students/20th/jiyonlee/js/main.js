@@ -1,10 +1,10 @@
-const articleComment = document.querySelector(".article__comment");
+const articleComment = document.querySelector(".articleComment");
 const postCommentBtn = document.querySelector(".postCommentBtn");
 const postCommentInput = document.querySelector(".postCommentInput");
 const commentTime = document.querySelector(".commentTime");
 const pushLike = document.querySelector(".heartImg");
 const likeNum = document.querySelector(".likeNum");
-const navSearch = document.querySelector(".nav__search");
+const navSearch = document.querySelector(".navSearch");
 const searchPopup = document.querySelector(".searchPopup");
 const users = [
     { id: "jiyon", img: "./images/hao.jpg" },
@@ -23,6 +23,44 @@ const userIds = users.reduce((pre, cur) => {
 const userImgs = users.reduce((pre, cur) => {
     return [...pre, cur.img];
 }, []);
+
+const createProfileLists = (dom, imgsrc, profileName, postedTime) => {
+    const asideMain = document.querySelector(`${dom} .asideMain`);
+    const imgAndId = document.createElement("div");
+    const asideProfileImg = document.createElement("img");
+    const idAndTime = document.createElement("div");
+    const profileId = document.createElement("div");
+    const postTime = document.createElement("div");
+
+    imgAndId.classList.add("imgAndId");
+    asideProfileImg.classList.add("asideProfileImg");
+    idAndTime.classList.add("idAndTime");
+    profileId.classList.add("profileId");
+    postTime.classList.add("postTime");
+    postTime.classList.add("grey");
+
+    idAndTime.append(profileId);
+    idAndTime.append(postTime);
+    imgAndId.append(asideProfileImg);
+    imgAndId.append(idAndTime);
+    asideMain.append(imgAndId);
+
+    profileId.textContent = profileName;
+    postTime.textContent = postedTime;
+    asideProfileImg.setAttribute("src", imgsrc);
+};
+
+users.forEach((user) => {
+    createProfileLists(".story", user.img, user.id, "20분 전");
+});
+users.forEach((user) => {
+    createProfileLists(
+        ".recommend",
+        user.img,
+        user.id,
+        "000님이 팔로우합니다."
+    );
+});
 
 navSearch.addEventListener("keyup", () => {
     if (userIds.includes(navSearch.value)) {
@@ -50,7 +88,7 @@ navSearch.addEventListener("blur", () => {
     searchPopup.innerHTML = "";
 });
 navSearch.addEventListener("click", () => {
-    alert("유저id를 쳐보세요");
+    alert("유저id를 쳐보세요 ex) iu, kakashi ...");
 });
 
 pushLike.addEventListener("click", (e) => {
