@@ -2,8 +2,8 @@ const commentBar = document.querySelector('.feed__commentBar');
 const commentLists = document.querySelector('.feed__comments__lists');
 const commentUploadBtn = document.querySelector('.feed__comment__upload');
 
-// addComment
 
+// addComment
 const addComment = () => {
     const commentList = document.createElement('li');
     const comentPara = document.createElement('p');
@@ -12,16 +12,13 @@ const addComment = () => {
     const delBtn = document.createElement('div');
     const delIcon = document.createElement('i');
 
-
     // addComment
     commentList.className = 'feed__comments__list';
     comentPara.className = 'feed__comments__contents';
     goodBtn.className = 'feed__comments__goodBtn';
-    goodIcon.className = 'fas fa-heart fa-xs goodBtn';
+    goodIcon.className = 'fas fa-heart fa-xs';
     delBtn.className = 'feed__comments__delBtn';
     delIcon.className = 'fas fa-minus-circle delBtn';
-
-    comentPara.innerText = commentBar.value;
 
     commentLists.appendChild(commentList);
     commentList.appendChild(comentPara);
@@ -30,23 +27,24 @@ const addComment = () => {
     commentList.appendChild(delBtn);
     delBtn.appendChild(delIcon);
 
+    comentPara.innerText = commentBar.value;
     commentBar.value = '';
 
     // goodBtn
-    goodBtn.addEventListener('click', function() {
-        if(goodIcon.style.color === 'inherit') {
-            goodIcon.style.color = 'var(--heart-color)';
+    goodBtn.addEventListener('click', () => {
+        const changeGood = goodIcon.classList;
+
+        if(changeGood.contains('goodBtn')) {
+            changeGood.remove('goodBtn');
         } else {
-            goodIcon.style.color = 'inherit';
+            changeGood.add('goodBtn');
         }
     })
     
-
     // delBtn
-    delBtn.addEventListener('click', function() {
+    delBtn.addEventListener('click', () => {
         commentLists.removeChild(commentList);
     })
-
 };
 
 // init
@@ -66,16 +64,38 @@ const addCommentInit = () => {
 addCommentInit();
 
 
-
 // profile__nav
-
 const profileBtn = document.querySelector('.profile__navBtn');
 const profileNav = document.querySelector('.profile__nav');
 
-profileBtn.addEventListener('click', function() {
-    if(profileNav.classList.contains('profile__nav__showHide') === false){
-        profileNav.classList.add('profile__nav__showHide');
+profileBtn.addEventListener('click', () => {
+    const profileClass = profileNav.classList;
+
+    if(!profileClass.contains('profile__nav__showHide')){
+        profileClass.add('profile__nav__showHide');
     } else {
-        profileNav.classList.remove('profile__nav__showHide');
+        profileClass.remove('profile__nav__showHide');
     }
     });
+
+
+// search__people__container
+const searchContianer = document.querySelector('.search__people__container');
+const searchBar = document.querySelector('.nav__searchBar');
+
+searchBar.addEventListener('focus', () => {
+    const searchBarClass = searchContianer.classList;
+
+    if(searchBarClass.contains('profile__nav__showHide')){
+        searchBarClass.remove('profile__nav__showHide');
+    }
+})
+
+searchBar.addEventListener('blur', () => {
+    const searchBarClass = searchContianer.classList;
+
+    if(!searchBarClass.contains('profile__nav__showHide')){
+        searchBarClass.add('profile__nav__showHide');
+    }
+})
+

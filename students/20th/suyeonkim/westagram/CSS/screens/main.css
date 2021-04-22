@@ -221,7 +221,7 @@
 }
 
 .goodBtn {
-  color: inherit;
+  color: var(--heart-color);
 }
 
 .feed__comments__delBtn {
