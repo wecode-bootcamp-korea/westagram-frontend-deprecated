@@ -102,27 +102,36 @@ pushLike.addEventListener("click", (e) => {
     }
 });
 
+const toggleHeart = () => {
+    console.log("h");
+};
 const clickCommentBtn = () => {
     const commentWrap = document.createElement("div");
     const commenter = document.createElement("span");
     const comment = document.createElement("span");
     const commentDeleteBtn = document.createElement("button");
     const commentLikesBtn = document.createElement("button");
+    const commentDeleteBtns = document.querySelectorAll(".commentDeleteBtn");
 
     commentWrap.classList.add("commentWrap");
     commenter.classList.add("commenter");
     comment.classList.add("comment");
     commentDeleteBtn.classList.add("commentBtn");
+    commentDeleteBtn.classList.add("commentDeleteBtn");
     commentLikesBtn.classList.add("commentBtn");
+    commentLikesBtn.classList.add("commentLikesBtn");
 
-    // 구현중
-    // commentDeleteBtn.innerHTML = `<i class="far fa-trash-alt"></i>`;
-    // commentLikesBtn.innerHTML = `<i class="emptyHeart far fa-heart"></i><i class="redHeart fas fa-heart red hide"></i>`;
+    //TODO: 구현중 : 댓글 좋아요
+    commentLikesBtn.addEventListener("click", toggleHeart());
 
     commentWrap.append(commenter);
     commentWrap.append(comment);
+    commentWrap.append(commentDeleteBtn);
+    commentWrap.append(commentLikesBtn);
     articleComment.append(commentWrap);
 
+    commentDeleteBtn.innerHTML = `<i class="far fa-trash-alt"></i>`;
+    commentLikesBtn.innerHTML = `<i class="emptyHeart far fa-heart"></i><i class="redHeart fas fa-heart red hide"></i>`;
     commenter.textContent = "Shaman_king";
     comment.textContent = postCommentInput.value;
 
@@ -131,29 +140,23 @@ const clickCommentBtn = () => {
     commentTime.textContent = "방금";
     postCommentBtn.classList.remove("blue");
 
-    // 구현중 delete, like btn 클릭시
-    const commentDeleteBtns = document.querySelectorAll(".commentDeleteBtn");
-    commentDeleteBtns.forEach((e, i) => {
-        // 0번째 인덱스는 cloneNode를 위한 것이므로 실제 댓글인 첫번째 인덱스부터 잡는다.
-        if (i == 0) {
-            return;
-        }
-        e.addEventListener("click", () => {
-            e.parentNode.remove();
+    commentDeleteBtns.forEach((commentDeleteBtn) => {
+        commentDeleteBtn.addEventListener("click", () => {
+            commentDeleteBtn.parentNode.remove();
         });
     });
 
     // toggle로 하면 forEach문이 실행한 후 끝까지 돌면서, 짝수 혹은 홀수일때만 좋아요가 눌리는 문제
-    const commentLikesBtns = document.querySelectorAll(".commentLikesBtn");
-    commentLikesBtns.forEach((e, i) => {
-        e.addEventListener("click", () => {
-            let emptyHeart = e.querySelector(".emptyHeart");
-            let redHeart = e.querySelector(".redHeart");
+    // const commentLikesBtns = document.querySelectorAll(".commentLikesBtn");
+    // commentLikesBtns.forEach((e, i) => {
+    //     e.addEventListener("click", () => {
+    //         let emptyHeart = e.querySelector(".emptyHeart");
+    //         let redHeart = e.querySelector(".redHeart");
 
-            emptyHeart.classList.toggle("hide");
-            redHeart.classList.toggle("hide");
-        });
-    });
+    //         emptyHeart.classList.toggle("hide");
+    //         redHeart.classList.toggle("hide");
+    //     });
+    // });
 };
 
 postCommentBtn.addEventListener("click", () => {

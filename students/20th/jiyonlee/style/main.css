@@ -218,6 +218,8 @@ main .feeds {
 .articleComment .commentBtn {
     position: absolute;
     right: 0;
+    width: 12.8px;
+    height: 12.8px;
     border: none;
     background-color: transparent;
     color: #868686;
