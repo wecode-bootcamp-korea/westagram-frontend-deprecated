@@ -106,6 +106,17 @@
   width: 80%;
 }
 
+.js-comment-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-comment-btn {
+  all: unset;
+  margin-left: 10px;
+}
+
 .feed__time {
   font-size: 10px;
   color: var(--sub-text-gray);
@@ -130,6 +141,7 @@
 
 .feed__submit-btn {
   all: unset;
+  font-weight: 600;
   color: var(--blue);
 }
 
@@ -193,4 +205,8 @@
   .main-right {
     display: none;
   }
+}
+
+.fas.fa-heart {
+  color: tomato;
 }
