@@ -9,7 +9,7 @@ header {
     font-weight: 600;
 }
 
-button, .submitComment {
+button, .submit-comment {
     display: block;
     padding: 8px;
     width: 40px;
@@ -32,7 +32,7 @@ button, .submitComment {
     margin-left: auto;
 }
 
-.profileImage-big {
+.profile-image-big {
     display: block;
     margin-right: 16px;
     width: 56px;
@@ -42,7 +42,7 @@ button, .submitComment {
     overflow: hidden;
 }
 
-.profileImage-small {
+.profile-image-small {
     display: block;
     margin-right: 16px;
     width: 32px;
@@ -52,24 +52,23 @@ button, .submitComment {
     overflow: hidden;
 }
 
-.userName {
+.user-name {
     color: #262626;
     font-weight: 800;
     font-size: 14px;
 }
 
-.userName:hover {
+.user-name:hover {
     text-decoration: underline;
 }
 
-.grey-txt {
+.dtail-info {
     color: #8e8e8e;
     font-size: 12px;
     line-height: 14px;
 }
 
 /* 레이아웃 */
-    /* 네비게이션 */
 nav {
     position: fixed;
     top: 0;
@@ -94,7 +93,6 @@ nav {
     box-sizing: border-box;
 }
     
-    /* 메인 콘텐츠 */
 main {
     display: flex;
     justify-content: center;
@@ -104,8 +102,7 @@ main {
 .feeds {
     width: 100%;
     max-width: 610px;
-    height: 100vh;
-}x
+}
 
 .main-right {
     position: sticky;
@@ -134,7 +131,8 @@ article, .story, .recommendation {
     background-color: #fff;
 }
 
-/* 위스타그램 로고 */
+/* 스타일 */
+    /* 네비게이션 */
 h1 a {
     display: flex;
     align-items: center;
@@ -154,7 +152,6 @@ h1 a span {
     font: 28px 'Lobster', cursive;
 }
 
-/* 검색 */
 .search {
     display: flex;
     align-items: center;
@@ -184,7 +181,6 @@ h1 a span {
     outline: none;
 }
 
-/* 네비게이션 우측 메뉴 */
 .menu {
     display: flex;
 }
@@ -199,13 +195,13 @@ h1 a span {
     display: block;
 }
 
-/* 게시물 */
+    /* 메인 콘텐츠 */
 article {
     margin-bottom: 60px;
 }
 
 article > header{
-    padding: 16px;
+    padding: 8px 16px;
 }
 
 .contents {
@@ -213,51 +209,48 @@ article > header{
     border-bottom: 1px solid #efefef;
 }
 
-.moreIcon{
+.more-icon{
     margin-right: -12px;
     padding: 12px;
 }
 
-.postedImage {
+.posted-image {
     position: relative;
     padding-bottom: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.postedImage img {
+.posted-image img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
 }
 
-    /* 게시물 버튼 */
-.btnWrap {
+.btn-wrap {
     display:flex;
     margin-top: 4px;
 }
 
-.btnWrap button:first-child {
+.btn-wrap button:first-child {
     margin-left:-8px;
 }
 
-.btnWrap button:last-child {
+.btn-wrap button:last-child {
     margin-right:-8px;
 }
 
-.likesNumber a {
+.likes-number a {
     font-weight: 600;
     cursor: pointer;
 }
 
-    /* 게시물 설명, 댓글 */
 .contents p {
     margin-bottom: 5px;
 }
 
-    /* 댓글 달기 */
-.commentForm {
+.comment-form {
     padding: 0 8px;
     height: 56px;
 }
@@ -266,14 +259,14 @@ article > header{
     width: calc(100% - 96px);
 }
 
-.submitComment {
+.submit-comment {
     width: auto;
     font-size: 14px;
     opacity: 1;
     cursor: pointer;
 }
 
-.submitComment:disabled {
+.submit-comment:disabled {
     opacity: .3;
 }
 
@@ -282,7 +275,7 @@ article > header{
     padding: 8px 0;
 }
 
-.followBtn {
+.follow {
     margin-right: -8px;
     width: auto;
 }
