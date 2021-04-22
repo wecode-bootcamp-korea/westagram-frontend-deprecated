@@ -2,7 +2,6 @@
 
 const loginForm = document.querySelector('.loginForm');
 const inputLogin = document.querySelectorAll('input');
-
 const inputID = document.querySelectorAll('input')[0];
 const inputPW = document.querySelectorAll('input')[1];
 const loginBtn = document.querySelector('.login.btn');
@@ -26,10 +25,10 @@ inputPW.addEventListener('input', () => { moveToUpside(inputPW, descriptionPW)})
 function active() {
     if (inputID.value && inputPW.value) {
         loginBtn.removeAttribute('disabled');
-        loginBtn.style.backgroundColor = 'rgb(0, 149, 246)';
+        loginBtn.classList.add('active');  
     } else {
-        loginBtn.setAttribute('disabled','disabled');
-        loginBtn.style.backgroundColor = 'rgb(179,223,252)';
+        loginBtn.setAttribute('disabled', 'disabled');
+        loginBtn.classList.remove('active')
     }
 };
 
