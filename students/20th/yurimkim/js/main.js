@@ -4,21 +4,21 @@ const search = document.querySelector('.search');
 const searchBar = document.querySelector('.searchBar');
 const searchList = document.querySelector('.searchList');
 
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
   let x =  article.getBoundingClientRect();
   searchBar.style.left = `${x.left+320}px`;
 })
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', () => {
   let x =  article.getBoundingClientRect();
   searchBar.style.left = `${x.left+320}px`;
 })
 
-search.addEventListener('click', function() {
+search.addEventListener('click', () => {
   searchBar.style.display = "block"
 })
 
-window.addEventListener('click', function(e) {
+window.addEventListener('click', (e) => {
   if (e.target.className !== 'search'){
     searchBar.style.display = "none"
   } 
@@ -52,7 +52,7 @@ const commentList = document.querySelector('.commentList');
 const addBtn = document.querySelector('.addBtn');
 const textArea = document.querySelector('.textarea');
 
-function onAdd () {
+const  onAdd = () => {
   const comment = textArea.value;
   const newDiv= document.createElement('div');
   newDiv.className = 'delList';
@@ -62,25 +62,25 @@ function onAdd () {
   addBtn.className = 'addBtnReset';
 }
 
-textArea.addEventListener('keyup', function(e) {
+textArea.addEventListener('keyup', (e) => {
   addBtn.className = 'addBtnColor';
   if (e.keyCode === 13 ) {
     onAdd ();
   }
 });
 
-addBtn.addEventListener('click', function() {
+addBtn.addEventListener('click', () => {
     onAdd ();
 })
 
-commentList.addEventListener('click', function(e) {
+commentList.addEventListener('click', (e) => {
   if  (e.target.className == 'fas fa-times') {
     const delList =e.target.parentNode;
     delList.parentNode.parentNode.remove();
   }
 })
 
-commentList .addEventListener('click', function(e) {
+commentList .addEventListener('click', (e) => {
   if  (e.target.className == 'far fa-heart') {
     const heart=e.target.parentNode;
     heart.innerHTML = `<i class="fas fa-heart"></i>`;
@@ -88,7 +88,7 @@ commentList .addEventListener('click', function(e) {
   }
 })
 
-commentList .addEventListener('click', function(e) {
+commentList .addEventListener('click', (e) => {
   if  (e.target.className == 'fas fa-heart') {
     const heart=e.target.parentNode;
     heart.innerHTML = `<i class="far fa-heart"></i>`;
@@ -99,12 +99,12 @@ commentList .addEventListener('click', function(e) {
 const aside = document.querySelector('aside');
 const article = document.querySelector('article');
 
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
   let x =  article.getBoundingClientRect();
   aside.style.left = `${x.left+660}px`;
 })
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', () => {
   let x =  article.getBoundingClientRect();
   aside.style.left = `${x.left+660}px`;
 })
