@@ -10,104 +10,136 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- nav -->
-    <nav class="nav-bar">
-        <header class="nav-bar__header">
+    <nav class="navBar">
+        <header class="navBar__header">
             <i class="fab fa-instagram"></i>
             <span class="header__title">
                 Westagram
             </span>
         </header>
-        <div class="nav__search">
-            <div class="nav__search-bar-icon">
-                <i class="fas fa-search"></i>
+        <div class="navBar__search">
+            <div class="navBar__searchBar">
+                <div class="navBar__search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" placeholder="검색" class="nav__searchBar" />
             </div>
-            <input type="text" placeholder="검색" class="nav__search-bar" />
+            <ul class="search__people__container">
+                <li class="search__person">
+                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/129741778_216837503231079_6685225582053225698_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=OsXOshCpdBAAX_-MWzw&edm=AAeKFY8AAAAA&ccb=7-4&oh=596148d14220aba2f5bf68fa87228ad5&oe=60A318BA&_nc_sid=c982ba">
+                    <div class="search__personNames">
+                        <div class="search__person__nickName">
+                            daybeat_
+                        </div>
+                        <div class="search__person__realName">
+                            16분 전
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class="nav-bar__myInfo">
+        <div class="navBar__myState">
             <img src="images/explore.png" />
             <img src="images/heart.png" />
-            <img src="images/profile.png" />
+            <div class="profile__btn">
+                <img src="images/profile.png" class="profile__navBtn" />
+                <section class="profile__nav profile__nav__showHide">
+                    <ul class="profile__nav__lists">
+                        <li class="profile__nav__list">
+                            <i class="far fa-user-circle"></i>
+                            <div class="profile__nav__listName">
+                                프로필
+                            </div>
+                        </li>
+                        <li class="profile__nav__list">
+                            <i class="far fa-bookmark"></i>
+                            <div class="profile__nav__listName">
+                                저장됨
+                            </div>
+                        </li>
+                        <li class="profile__nav__list">
+                            <i class="fas fa-cog"></i>
+                            <div class="profile__nav__listName">
+                                설정
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="logOut__btn">
+                        로그아웃
+                    </div>
+                </section>
+            </div>
         </div>
     </nav>
-
-    <!-- main -->
     <main class="main-page">
-        <article class="feeds">
-            <!-- feeds__author -->
-            <div class="feeds-top">
-                <div class="feeds__author">
-                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/123271536_359050162036558_1424946650206103847_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2v5XHC4LRQsAX_LtfEj&tn=lwet4BCvlQe948M5&edm=AMY84vgAAAAA&ccb=7-4&oh=147b538e9d11b9e9ee5795071f90c4e6&oe=60A3CFE2&_nc_sid=860c2e" class="author__avator" />
-                    <span class="author__name">
-                        <a href="">suyeon02</a>
-                    </span>
-                </div>
-                <div class="feeds-top__btn">
-                    <i class="fas fa-ellipsis-h"></i>
-                </div>
-            </div>
-
-            <!-- feeds__image -->
-            <div class="feeds__contants">
-                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/176103490_186915709818068_3864201109085152462_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=t1vmOhCoUwcAX_Y9RKG&edm=AAeKFY8AAAAA&ccb=7-4&oh=465960583032f093db8ef464bdd1b716&oe=60A35F69&_nc_sid=c982ba" class="feeds__photos" />
-            </div>
-
-            <!-- feeds__btn -->
-            <div class="feeds__btn">
-                <div class="feeds__btn__interact">
-                    <div class="feeds__btn__like">
-                        <i class="far fa-heart"></i>
+        <ul class="feeds-page">
+            <li class="feeds">
+                <article class="feed">
+                    <div class="feed-top">
+                        <div class="feed__author">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/123271536_359050162036558_1424946650206103847_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2v5XHC4LRQsAX_LtfEj&tn=lwet4BCvlQe948M5&edm=AMY84vgAAAAA&ccb=7-4&oh=147b538e9d11b9e9ee5795071f90c4e6&oe=60A3CFE2&_nc_sid=860c2e" class="author__avator" />
+                            <span class="author__name">
+                                <a href="">suyeon02</a>
+                            </span>
+                        </div>
+                        <div class="feed-top__btn">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
                     </div>
-                    <div class="feeds__btn__comment">
-                        <i class="far fa-comment"></i>
+                    <div class="feed__contants">
+                        <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s750x750/176103490_186915709818068_3864201109085152462_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=t1vmOhCoUwcAX_Y9RKG&edm=AAeKFY8AAAAA&ccb=7-4&oh=465960583032f093db8ef464bdd1b716&oe=60A35F69&_nc_sid=c982ba" class="feed__photos" />
                     </div>
-                    <div class="feeds__btn__upload">
-                        <i class="far fa-share-square"></i>
+                    <div class="feed__btn">
+                        <div class="feed__btn__interact">
+                            <div class="feed__btn__like">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="feed__btn__comment">
+                                <i class="far fa-comment"></i>
+                            </div>
+                            <div class="feed__btn__upload">
+                                <i class="far fa-share-square"></i>
+                            </div>
+                        </div>
+                        <div class="feed__btn__marker">
+                            <i class="far fa-bookmark"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="feeds__btn__marker">
-                    <i class="far fa-bookmark"></i>
-                </div>
-            </div>
-
-            <!-- feeds__info -->
-            <div class="feeds__who-like">
-                <img src="images/whoLike.png">
-                <div class="who-like__info">
-                    <span class="feeds__who-like__name">Wecode</span>님 외 36명이 좋아합니다
-                </div>
-            </div>
-            <div class="feeds__info">
-                <p class="feeds__info__paragraph">
-                    <a href="">wecode</a> 2주차!!! 모두 홧팅~~ ;)
-                </p>
-                <ul class="feeds__comments__lists">
-                </ul>
-                <div class="feeds__info__date">
-                    42분 전
-                </div>
-            </div>
-            <div class="feeds__comments">
-                <input type="text" placeholder="댓글 달기..." class="feeds__commentBar" />
-                <button type="button" class="feeds__comment__upload">게시</button>
-            </div>
-        </article>
-
-        <!-- aside -->
-        <aside class="aside__other-link">
-            <div class="aside__my-info">
+                    <div class="feed__whoLike">
+                        <img src="images/whoLike.png">
+                        <div class="who-like__info">
+                            <span class="feed__who-like__name">Wecode</span>님 외 36명이 좋아합니다
+                        </div>
+                    </div>
+                    <div class="feed__info">
+                        <p class="feed__info__paragraph">
+                            <a href="">wecode</a> 2주차!!! 모두 홧팅~~ ;)
+                        </p>
+                        <ul class="feed__comments__lists">
+                        </ul>
+                        <div class="feed__info__date">
+                            42분 전
+                        </div>
+                    </div>
+                    <div class="feed__comments">
+                        <input type="text" placeholder="댓글 달기..." class="feed__commentBar" />
+                        <button type="button" class="feed__comment__upload">게시</button>
+                    </div>
+                </article>
+            </li>
+        </ul>
+        <aside class="aside__links">
+            <section class="aside__myInfo">
                 <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/123271536_359050162036558_1424946650206103847_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=2v5XHC4LRQsAX_LtfEj&tn=lwet4BCvlQe948M5&edm=AMY84vgAAAAA&ccb=7-4&oh=147b538e9d11b9e9ee5795071f90c4e6&oe=60A3CFE2&_nc_sid=860c2e" class="aside__my-avator">
-                <div class="aside__my-names">
-                    <div class="aside__my-nickname">
+                <div class="aside__myNames">
+                    <div class="aside__myNickname">
                         syeon02
                     </div>
-                    <div class="aside__my-realname">
+                    <div class="aside__myRealname">
                         Su Yeon
                     </div>
                 </div>
-            </div>
-
-            <!-- people story -->
+            </section>
             <section class="people__story">
                 <div class="people__story-top">
                     <div class="people__story__title">
@@ -129,12 +161,32 @@
                             </div>
                         </div>
                     </li>
+                    <li class="people__story__person">
+                        <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/129741778_216837503231079_6685225582053225698_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=OsXOshCpdBAAX_-MWzw&edm=AAeKFY8AAAAA&ccb=7-4&oh=596148d14220aba2f5bf68fa87228ad5&oe=60A318BA&_nc_sid=c982ba">
+                        <div class="person__info">
+                            <div class="person__nickname">
+                                daybeat_
+                            </div>
+                            <div class="person__online">
+                                16분 전
+                            </div>
+                        </div>
+                    </li>
+                    <li class="people__story__person">
+                        <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/129741778_216837503231079_6685225582053225698_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=OsXOshCpdBAAX_-MWzw&edm=AAeKFY8AAAAA&ccb=7-4&oh=596148d14220aba2f5bf68fa87228ad5&oe=60A318BA&_nc_sid=c982ba">
+                        <div class="person__info">
+                            <div class="person__nickname">
+                                daybeat_
+                            </div>
+                            <div class="person__online">
+                                16분 전
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </section>
-
-            <!-- recommend people -->
             <section class="recommend__people">
-                <div class="recommend__people__top">
+                <div class="recommend__people-top">
                     <div class="recommend__people__title">
                         회원님을 위한 추천
                     </div>
@@ -143,7 +195,7 @@
                     </div>
                 </div>
                 <ul class="recommend__people__person__list">
-                    <li class="recommend__people__person">
+                    <li class="recommend__person">
                         <div class="recommend__person__info">
                             <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/165180100_486058029230071_8234944855139302586_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MMiqlztef1oAX_LwD6h&edm=AEF8tYYAAAAA&ccb=7-4&oh=b6dd9cb236f3f9ee8f0f88930cdf6445&oe=60A2432C&_nc_sid=a9513d" />
                             <div class="recommend__person__title">
@@ -155,14 +207,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="recommend__person__follow-btn">
+                        <div class="recommend__person__followBtn">
+                            팔로우
+                        </div>
+                    </li>
+                    <li class="recommend__person">
+                        <div class="recommend__person__info">
+                            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/165180100_486058029230071_8234944855139302586_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MMiqlztef1oAX_LwD6h&edm=AEF8tYYAAAAA&ccb=7-4&oh=b6dd9cb236f3f9ee8f0f88930cdf6445&oe=60A2432C&_nc_sid=a9513d" />
+                            <div class="recommend__person__title">
+                                <div class="recommend__person__name">
+                                    puts_officail_
+                                </div>
+                                <div class="recommend__person__state">
+                                    회원을 위한 추천
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend__person__followBtn">
                             팔로우
                         </div>
                     </li>
                 </ul>
             </section>
-
-            <!-- aside footer -->
             <footer class="footer">
                 <ul class="footer__links">
                     <li class="footer__link">

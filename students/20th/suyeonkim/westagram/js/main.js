@@ -1,6 +1,6 @@
-const commentBar = document.querySelector('.feeds__commentBar');
-const commentLists = document.querySelector('.feeds__comments__lists');
-const commentUploadBtn = document.querySelector('.feeds__comment__upload');
+const commentBar = document.querySelector('.feed__commentBar');
+const commentLists = document.querySelector('.feed__comments__lists');
+const commentUploadBtn = document.querySelector('.feed__comment__upload');
 
 // addComment
 
@@ -12,12 +12,13 @@ const addComment = () => {
     const delBtn = document.createElement('div');
     const delIcon = document.createElement('i');
 
+
     // addComment
-    commentList.className = 'feeds__comments__list';
-    comentPara.className = 'feeds__comments__contents';
-    goodBtn.className = 'feeds__comments__goodBtn';
+    commentList.className = 'feed__comments__list';
+    comentPara.className = 'feed__comments__contents';
+    goodBtn.className = 'feed__comments__goodBtn';
     goodIcon.className = 'fas fa-heart fa-xs goodBtn';
-    delBtn.className = 'feeds__comments__delBtn';
+    delBtn.className = 'feed__comments__delBtn';
     delIcon.className = 'fas fa-minus-circle delBtn';
 
     comentPara.innerText = commentBar.value;
@@ -48,7 +49,6 @@ const addComment = () => {
 
 };
 
-
 // init
 const addCommentInit = () => {
     commentBar.addEventListener('keydown', function(e){
@@ -65,3 +65,17 @@ const addCommentInit = () => {
 }
 addCommentInit();
 
+
+
+// profile__nav
+
+const profileBtn = document.querySelector('.profile__navBtn');
+const profileNav = document.querySelector('.profile__nav');
+
+profileBtn.addEventListener('click', function() {
+    if(profileNav.classList.contains('profile__nav__showHide') === false){
+        profileNav.classList.add('profile__nav__showHide');
+    } else {
+        profileNav.classList.remove('profile__nav__showHide');
+    }
+    });

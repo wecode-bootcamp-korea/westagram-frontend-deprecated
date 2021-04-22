@@ -1,6 +1,8 @@
 :root {
   /* background-color */
-  --input-lignt-gray: #fafafa;
+  --lignt-gray: #fafafa;
+
+  /* button */
   --button-blue: #0095f6;
 
   /* border-color */
