@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <title>Instagram</title>
 </head>
+
 <body>
-    
+    <section class="section">
+        <nav class="nav">
+            <div class="navItem">
+                <h1 class="title">Instagram</h1>
+            </div>
+            <div class="navItem">
+                <input type="text" class="search" placeholder="검색">
+            </div>
+            <div class="navItem">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="quest">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="like">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="profile">
+            </div>
+        </nav>
+        <main class="main">
+            <div class="feed">
+                <div class="header">
+                    <div class="headerLeft">
+                        <div>
+                            <img class="feedProfileImg" src="/students/20th/junmopark/ Assets/profileImg.jpeg"
+                                alt="feedProfileImg">
+                        </div>
+                        <div>
+                            <p class="nickname">wecode</p>
+                        </div>
+                    </div>
+                    <div class="headerRight">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="feedImg">
+                    <img src="/students/20th/junmopark/ Assets/feedImg.jpeg" alt="feedImg">
+                </div>
+                <div class="contents">
+                    <div class="btnBox">
+                        <div>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="far fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <i class="far fa-bookmark"></i>
+                        </div>
+                    </div>
+                    <div class="paragraphBox">
+                        <p>좋아요 999개</p>
+                        <p> <span class="userId">wecode_bootcamp</span> 위코드는 단순 교육업체가 아닌 개발자 커뮤니티입니다.</p>
+                        <p>댓글 4개 모두 보기</p>
+                        <p>4월 21일</p>
+                    </div>
+                    <form class="commentBox">
+                        <input class="commentInput" type="text" placeholder="댓글 달기...">
+                        <button>게시</button>
+                    </form>
+                </div>
+            </div>
+            <aside class="aside">
+                <div class="asideProfile">
+                    <div class="asideProfileLeft">
+                        <div>
+                            <img src="/students/20th/junmopark/ Assets/profileImg.jpeg" alt="profileImg">
+                        </div>
+                        <div>
+                            <p>wecode</p>
+                        </div>
+                    </div>
+                    <div class="asideProfileRight">
+                        <p>전환</p>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div>
+                        <p>회원님을 위한 추천</p>
+                    </div>
+                    <div>
+                        <p>모두 보기</p>
+                    </div>
+                </div>
+                <div class="userRecommend">
+                    <div class="userRecommendLeft">
+                        <div class="userRecommendImg">
+                            <img src="/students/20th/junmopark/ Assets/profileImg.jpeg" alt="profileImg">
+                        </div>
+                        <div class="userRecommendText">
+                            <p>wecode</p>
+                            <p>junmopark님이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <div class="userRecommendRight">
+                        <p>팔로우</p>
+                    </div>
+                </div>
+                <div class="userRecommend">
+                    <div class="userRecommendLeft">
+                        <div class="userRecommendImg">
+                            <img src="/students/20th/junmopark/ Assets/profileImg.jpeg" alt="profileImg">
+                        </div>
+                        <div class="userRecommendText">
+                            <p>wecode</p>
+                            <p>junmopark님이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <div class="userRecommendRight">
+                        <p>팔로우</p>
+                    </div>
+                </div>
+                <div class="userRecommend">
+                    <div class="userRecommendLeft">
+                        <div class="userRecommendImg">
+                            <img src="/students/20th/junmopark/ Assets/profileImg.jpeg" alt="profileImg">
+                        </div>
+                        <div class="userRecommendText">
+                            <p>wecode</p>
+                            <p>junmopark님이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <div class="userRecommendRight">
+                        <p>팔로우</p>
+                    </div>
+                </div>
+                <div class="userRecommend">
+                    <div class="userRecommendLeft">
+                        <div class="userRecommendImg">
+                            <img src="/students/20th/junmopark/ Assets/profileImg.jpeg" alt="profileImg">
+                        </div>
+                        <div class="userRecommendText">
+                            <p>wecode</p>
+                            <p>junmopark님이 팔로우합니다</p>
+                        </div>
+                    </div>
+                    <div class="userRecommendRight">
+                        <p>팔로우</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="infoLink">
+                        <p>소개</p>
+                        <p>도움</p>
+                        <p>홍보 센터</p>
+                        <p>API</p>
+                        <p>채용정보</p>
+                        <p>개인정보처리방침</p>
+                        <p>약관</p>
+                        <p>위치</p>
+                        <p>인기 계정</p>
+                        <p>해시태그</p>
+                        <p>언어</p>
+                    </div>
+                    <div class="copyright">
+                        <p>© 2021 INSTAGRAM FROM FACEBOOK</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </section>
+    <script src="main.js"></script>
 </body>
+
 </html>

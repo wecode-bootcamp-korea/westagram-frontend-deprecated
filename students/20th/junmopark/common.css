@@ -43,3 +43,9 @@ table {
 	border-spacing: 0;
 }
 /*reset css end*/
+html{
+	font-size: 12px;
+}
+*{
+	box-sizing: border-box;
+}

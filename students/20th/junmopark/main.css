@@ -1,0 +1,191 @@
+body{
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+.section .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 50px;
+    background-color: fff;
+    border-bottom: 1px solid #bbb;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18%;
+    background-color: #fff;
+}
+.section .nav .navItem .title {
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+}
+.section .nav .navItem .search{
+    text-align: center;
+    color: #bbb;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    padding: 5px;
+}
+input:focus{
+    outline: none;
+}
+.section .nav .navItem img{
+    width: 23px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18%;
+    margin-top: 80px;
+}
+.main .feed{
+    width: 65%;
+    margin-bottom: 150px;
+}
+.main .feed .header{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-bottom: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.main .feed .header .headerLeft{
+    display: flex;
+    align-items: center;
+}
+.main .feed .header .headerLeft .feedProfileImg{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main .feed .feedImg img{
+    width: 100%;
+}
+.main .feed .contents{
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-top: none;
+    margin-top: -5px;
+    padding: 15px;
+}
+.main .feed .contents .btnBox{
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .feed .contents .btnBox
+.fa-heart,
+.fa-comment,
+.fa-paper-plane{
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.fa-bookmark{
+    font-size: 25px;
+    cursor: pointer;
+}
+.main .feed .contents .paragraphBox p{
+    margin-bottom: 10px;
+}
+.main .feed .contents .paragraphBox p:nth-child(1){
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main .feed .contents .paragraphBox .userId{
+    font-weight: 600;
+}
+.main .feed .contents .paragraphBox p:nth-child(3){
+    color: #bbb;
+}
+.main .feed .contents .paragraphBox p:nth-child(4){
+    font-size: 8px;
+    color: #bbb;
+}
+.main .feed .contents .commentBox{
+    display: flex;
+    justify-content: space-between;
+}
+.main .feed .contents .commentBox .commentInput{
+    border: none;
+    width: 90%;
+}
+.main .feed .contents .commentBox button{
+    color: #0095f6;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+}
+.main .aside{
+    width: 20%;
+    position: fixed;
+    right: 18%;
+}
+.main .aside .asideProfile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.main .aside .asideProfile .asideProfileLeft{
+    display: flex;
+    align-items: center;
+}
+.main .aside .asideProfile .asideProfileLeft img{
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.main .aside .asideProfile .asideProfileRight{
+    color: #0095f6;
+    cursor: pointer;
+}
+.main .aside .recommend{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.main .aside .recommend div:first-child p{
+    font-weight: 600;
+    color: #aaa;
+    display: inline-block;
+}
+.main .aside .userRecommend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.main .aside .userRecommend .userRecommendLeft{
+    display: flex;
+    align-items: center;
+}
+.main .aside .userRecommend .userRecommendLeft .userRecommendImg img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.main .aside .userRecommend .userRecommendLeft .userRecommendText p:last-child{
+    color: #bbb;
+}
+.main .aside .userRecommend .userRecommendRight p{
+    color: #0095f6;
+    cursor: pointer;
+}
+.main .aside .info .infoLink p{
+    display: inline-block;
+    color: #bbb;
+    font-size: 11px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.main .aside .info .copyright{
+    color: #bbb;
+    font-size: 11px;
+    margin-top: 5px;
+}
