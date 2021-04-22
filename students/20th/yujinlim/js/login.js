@@ -3,7 +3,7 @@ const pwInput = document.getElementsByClassName("login-form__input")[1];
 const submitBtn = document.querySelector(".login-form__button");
 const OPACITY = "login-form__button--opacity";
 
-function removeOpacity(isEveryInputValueExists) {
+function activeSubmitBtn(isEveryInputValueExists) {
   if (isEveryInputValueExists) {
     submitBtn.classList.remove(OPACITY);
     submitBtn.disabled = false;
@@ -21,7 +21,7 @@ function checkInputValue() {
   const idInputValue = idInput.value;
   const pwInputValue = pwInput.value;
   const isEveryInputValueExists = idInputValue && pwInputValue ? true : false;
-  removeOpacity(isEveryInputValueExists);
+  activeSubmitBtn(isEveryInputValueExists);
 }
 
 function init() {
