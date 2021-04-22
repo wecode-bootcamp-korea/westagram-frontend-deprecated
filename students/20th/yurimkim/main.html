@@ -12,17 +12,26 @@
   <title>Westagram</title>
 </head>
 <body>
-  <!-- nav -->
   <nav class="mainNav">
     <div class="maxWidth">
       <div class="logo">
-        <img src="imgs/instagram.png" alt="instagram">
+        <img alt="instagram" src="imgs/instagram.png" >
         <span>|</span>
         <span class="logoText">Westagram</span>
       </div>
       <div class="bar">
         <i class="fas fa-search"></i>
-        <input type="text" placeholder="검색">
+        <input class="search" type="text" placeholder="검색">
+      </div>
+      <div class="searchBar">
+        <header class="searchTitle">
+          <p>최근 검색 항목</p>
+          <button>모두 지우기</button>
+        </header>
+        <ul class="searchList">
+          <li><a href="#"><img alt="bts" src="imgs/btsjpg.jpg" /><div><div><p>bts</p><p>BTS world</p></div><button class="searchDel">×</button></div></a></li>
+          <li><a href="#"><img alt="bts" src="imgs/wecode.png" /><div><div><p>wecode</p><p>>wecode | 위코드 • 팔로잉</p></div><button class="searchDel">×</button></div></a></li>
+        </ul>
       </div>
       <ul>
         <li><a href="#"><i class="far fa-compass"></i></a></li>
@@ -31,81 +40,69 @@
       </ul>
     </div>
   </nav>
-
   <div>
-    <!-- section-->
     <section class="main">
-      <!-- article-->
-      <article>
-        <!-- header-->
+      <article class="feeds">
         <header>
-          <img src="imgs/wecode.png" alt="wecode">
+          <img src="imgs/wecode.png" alt="wecode" />
           <div>
             <a href="#">wecode</a>
             <a href="#"><i class="fas fa-ellipsis-h"></i></a>
           </div>
         </header>
-  
-        <!-- content -->
-        <div class="content">
-          <img src="imgs/content.jpg" alt="article">
-        </div>
+        <main class="feedContent">
+          <img alt="instagram feed"src="imgs/content.jpg" />
+        </main>
         <div class="contentBottom">
-          <section >
-            <div>
-              <button><i class="far fa-heart"></i></button>
-              <button><i class="far fa-comment"></i></button>
-              <button><i class="fas fa-external-link-alt"></i></button>
-            </div>
+          <section>
+            <ul>
+              <li><button><i class="far fa-heart"></i></button></li>
+              <li><button><i class="far fa-comment"></i></button></li>
+              <li><button><i class="fas fa-external-link-alt"></i></button></li>
+            </ul>
             <button><i class="far fa-bookmark"></i></button>
           </section>
           <section>
-            <div>
-              <img src="imgs/bts_v.jpg" alt="bts v"><span>bts_v</span>님<span>외 10명</span>이 좋아합니다</div>
+            <div><img alt="bts v" src="imgs/bts_v.jpg" /><span>bts_v</span>님<span>외 10명</span>이 좋아합니다</div>
           </section>
-          <!-- 댓글 보기 -->
           <div class="commentList">
             <div class="delList"><div><span>yurim4545</span>일이삼사오육칠팔구십,😂<span class="delBtn"><i class="fas fa-times"></i></span></div><button><i class="far fa-heart"></i></button></div>
             <div class="delList"><div><span>ving9</span>힘내요 🤗<span class="delBtn"><i class="fas fa-times"></i></span></div><button><i class="far fa-heart"></i></button></div>
           </div>
-        <!-- 댓글 달기-->
-          <section>
+          <section class="addComment">
             <input class="textarea" placeholder="😀댓글 달기..." wrap="hard"></input>
             <button class="addBtn">게시</button>
           </section>
         </div>
       </article>
-  
-    <!-- aside-->
       <aside>
-        <div>
-          <img src="imgs/wecode.png" alt="wecode">
+        <div class="myAccount">
+          <img alt="wecode" src="imgs/wecode.png" />
           <p><span>wecode</span>wecode | 위코드</p>
         </div>
         <section>
-          <div class="head">
+          <header class="head">
             <div>스토리</div>
             <a herf="#">모두 보기</a>
-          </div>
-          <div class="storyList">
-            <div><img src="imgs/bts_v2.jpg" alt="bts"><div><p>bts_v</p><p>16분 전</p></div></div>
-            <div><img src="imgs/bts.jpg" alt="bts"><div><p>bts</p><p>34분 전</p></div></div>
-            <div><img src="imgs/bts_jimin.jpg" alt="bts"><div><p>bts_jimin</p><p>1시간 전</p></div></div>
-            <div><img src="imgs/btsjpg.jpg" alt="bts"><div><p>bts_world</p><p>2시간 전</p></div></div>
-          </div>
+          </header>
+          <ul class="storyList">
+            <li><img alt="bts" src="imgs/bts_v2.jpg" /><div><p class="title">bts_v</p><p>16분 전</p></div></li>
+            <li><img alt="bts" src="imgs/bts.jpg" /><div><p class="title">bts</p><p>34분 전</p></div></li>
+            <li><img alt="bts" src="imgs/bts_jimin.jpg" /><div><p class="title">bts_jimin</p><p>1시간 전</p></div></li>
+            <li><img alt="bts" src="imgs/btsjpg.jpg" /><div><p class="title">bts_world</p><p>2시간 전</p></div></li>
+          </ul>
         </section>
         <section>
-          <div class="head">
+          <header class="head">
             <div>회원님을 위한 추천</div>
             <a herf="#">모두 보기</a>
-          </div>
-          <div class="storyList">
-            <div><img src="imgs/btsjpg.jpg" alt="bts"><div><p>bts</p><p>yurim4545님 외 1000명이 팔로우합니다</p></div><button>팔로우</button></div>
-            <div><img src="imgs/bts_jimin.jpg" alt="bts"><div><p>bts_jimin</p><p>yurim4545님 외 123명이 팔로우합니다</p></div><button>팔로우</button></div>
-            <div><img src="imgs/bts_v.jpg" alt="bts"><div><p>bts_v</p><p>yurim4545님 외 456명이 팔로우합니다</p></div><button>팔로우</button></div>
-            <div><img src="imgs/bts.jpg" alt="bts"><div><p>bts</p><p>yurim4545님 외 100명이 팔로우합니다</p></div><button>팔로우</button></div>
-
-          </div>
+          </header>
+          <ul class="storyList">
+            <li><img alt="bts" src="imgs/btsjpg.jpg" /><div><p class="title">bts</p><p>yurim4545님 외 1000명이 팔로우합니다</p></div><button>팔로우</button></li>
+            <li><img alt="bts" src="imgs/bts_jimin.jpg" /><div><p class="title">bts_jimin</p><p>yurim4545님 외 123명이 팔로우합니다</p></div><button>팔로우</button></li>
+            <li><img alt="bts" src="imgs/bts_v.jpg" /><div><p class="title">bts_v</p><p>yurim4545님 외 456명이 팔로우합니다</p></div><button>팔로우</button></li>
+            <li><img alt="bts" src="imgs/bts.jpg" ><div><p class="title">bts</p><p>yurim4545님 외 100명이 팔로우합니다</p></div><button>팔로우</button></li>
+          </ul>
         </section>
         <nav>
           <ul>
@@ -119,14 +116,11 @@
             <li><a href="https://www.instagram.com/explore/locations/">위치</a></li>
             <li><a href="https://www.instagram.com/directory/profiles/">인기 계정</a></li>
           </ul>
-  
-          <div>© 2021 INSTAGRAM FROM FACEBOOK</div>
+          <p>© 2021 INSTAGRAM FROM FACEBOOK</p>
         </nav>
       </aside>
     </section>
-</div>
-  
+  </div>
 <script src="js/main.js"></script>
-
 </body>
 </html>

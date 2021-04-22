@@ -2,7 +2,6 @@ body {
   background: #fafafa;
 }
 
-/* nav */
 .mainNav {
   position: fixed;
   top: 0;
@@ -36,9 +35,10 @@ body {
 .mainNav > .maxWidth > .bar > I {
   position: relative;
   left: 40%;
-  font-size: 12px;
   color: #929191;
+  font-size: 12px;
 }
+
 .mainNav > .maxWidth > .bar > input {
   width: 200px;
   height: 26px;
@@ -47,6 +47,87 @@ body {
   border: 0.5px solid #c7c7c7;
   text-align: center;
   outline: none;
+}
+
+.searchBar {
+  position: absolute;
+  top: 50px;
+  width: 375px;
+  height: 362px;
+  display: none;
+  color: #747272;
+  background: #fff;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  z-index: 1;
+}
+
+.searchBar > .searchTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 16px;
+}
+
+.searchBar > .searchTitle > p {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.searchBar > .searchTitle > button {
+  color: #82b7fc;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.searchBar > .searchList > li > a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.searchBar > .searchList > li:hover {
+  background: #f3f1f1;
+  overflow: hidden;
+}
+
+.searchBar > .searchList > li > a > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.searchBar > .searchList > li > a > div > div > p:first-child {
+  color: #585858;
+  font-weight: 800;
+}
+
+.searchBar > .searchList > li > a > div > button {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.searchBar > .searchList > li > a > img {
+  width: 44px;
+  border-radius: 50%;
+}
+
+.searchBar > .searchList > li > a > div > p:first-child {
+  color: rgb(20, 20, 20);
+  font-weight: 800;
+}
+
+.searchBar > .searchList > li > a > span {
+  display: flex;
+  align-items: center;
+  color: #929191;
+}
+
+.searchBar:focus {
+  display: block;
 }
 
 .mainNav > .maxWidth > ul {
@@ -62,25 +143,22 @@ body {
   flex-direction: column;
 }
 
-/* section */
 body > div {
   width: 955px;
   margin: auto;
 }
 
 section.main {
-  margin: 160px 0;
   display: flex;
   justify-content: space-between;
+  margin: 160px 0;
 }
 
-/* article */
-article {
+article.feeds {
   width: 620px;
 }
 
-/* article > header*/
-article > header {
+.feeds > header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -90,145 +168,149 @@ article > header {
   padding: 16px;
 }
 
-article > header > img {
+.feeds > header > img {
   width: 32px;
   margin-left: 15px;
   border-radius: 50%;
 }
 
-article > header > div {
-  width: 100%;
+.feeds > header > div {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
-article > header > div > a:first-child {
+.feeds > header > div > a:first-child {
   margin-left: 14px;
 }
 
-/* article > content*/
-article > .content {
+.feeds > .feedContent {
   width: 620px;
 }
 
-article > .content > img {
+.feeds > .feedContent > img {
   width: 100%;
   vertical-align: bottom;
 }
 
-/* article > contentBottom*/
-article > .contentBottom {
+.feeds > .contentBottom {
   border: 1px solid lightgrey;
   font-size: 14px;
 }
-article > .contentBottom > section:first-child {
+
+.feeds > .contentBottom > section:first-child,
+.feeds > .contentBottom > section:first-child > ul {
   display: flex;
   justify-content: space-between;
 }
 
-article > .contentBottom > section:first-child > div > button,
-article > .contentBottom > section:first-child > button {
-  font-size: 24px;
+.feeds > .contentBottom > section:first-child button {
   padding: 8px;
+  font-size: 24px;
 }
 
-article > .contentBottom > section:nth-child(2) > div {
+.feeds > .contentBottom > section:nth-child(2) > div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 8px;
   margin-bottom: 8px;
+  padding: 8px;
 }
 
-article > .contentBottom > section:nth-child(2) > div > img {
+.feeds > .contentBottom > section:nth-child(2) > div > img {
   width: 22px;
   border-radius: 50%;
 }
 
-article > .contentBottom > section:nth-child(2) > div > img + span {
+.feeds > .contentBottom > section:nth-child(2) > div > img + span {
   padding-left: 5px;
   font-weight: 800;
 }
 
-article > .contentBottom > section:nth-child(2) > div :nth-last-child(2) {
+.feeds > .contentBottom > section:nth-child(2) > div :nth-last-child(2) {
   padding-left: 5px;
   font-weight: 800;
 }
-article > .contentBottom > div > div {
+
+.feeds > .contentBottom > div > div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4px;
   padding: 4px 12px;
 }
 
-article > .contentBottom > div > div > div > span {
+.feeds > .contentBottom > div > div > div > span {
   font-weight: 800;
 }
 
-/* 댓글 달기 */
-article > .contentBottom > section:last-child {
+.feeds > .contentBottom > section:last-child.addComment {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid lightgrey;
   padding: 16px 8px;
+  border-top: 1px solid lightgrey;
 }
 
-article > .contentBottom > section:last-child > .textarea {
+.feeds > .contentBottom > section:last-child.addComment > .textarea {
   width: 90%;
   height: 18px;
   resize: none;
   overflow: hidden;
 }
 
-article > .contentBottom > .commentList > div > div > .delBtn {
+.feeds > .contentBottom > .commentList > div > div > .delBtn {
   padding: 0 8px;
   color: #eceaea;
   cursor: pointer;
 }
 
-article > .contentBottom > .commentList > div > div > .delBtn:hover {
+.feeds > .contentBottom > .commentList > div > div > .delBtn:hover {
   color: #363434;
 }
 
-article > .contentBottom > section:last-child > button {
-  font-weight: 800;
+.addBtn,
+.addBtnReset {
   color: #8abdff;
+  font-weight: 800;
 }
 
-/* aside*/
+.addBtnColor {
+  color: #0366d6;
+  font-weight: 800;
+}
+
 aside {
   position: fixed;
   width: 300px;
+  z-index: -1;
 }
 
-aside > div {
+aside > .myAccount {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-aside > div > img {
+aside > .myAccount > img {
   width: 56px;
   border-radius: 50%;
 }
 
-aside > div > p {
+aside > .myAccount > p {
   display: flex;
   flex-direction: column;
   margin-left: 12px;
 }
 
-aside > div > p > span:first-child {
+aside > .myAccount > p > span:first-child {
   font-weight: 800;
 }
 
-/* aside content*/
 aside > section {
+  height: 200px;
+  margin: 12px 0;
   background: #fff;
   border: 1px solid lightgrey;
-  margin: 12px 0;
-  height: 200px;
   overflow: hidden;
 }
 
@@ -244,45 +326,44 @@ aside > section > .head > div {
   color: #a09e9e;
 }
 
-aside > section > .storyList > div {
+aside > section > .storyList > li {
   display: flex;
   justify-content: flex-start;
   padding: 6px 16px;
   font-size: 14px;
 }
 
-aside > section > .storyList > div > div {
-  color: #a8a7a7;
+aside > section > .storyList > li > div {
   margin-left: 16px;
+  color: #a8a7a7;
 }
 
-aside > section > .storyList > div > img {
+aside > section > .storyList > li > img {
   width: 32px;
-  border-radius: 50%;
   border: 2px solid #b21b85;
+  border-radius: 50%;
 }
 
-aside > section > .storyList > div > div > p:first-child {
+aside > section > .storyList > li > div > p:first-child.title {
   color: rgb(20, 20, 20);
   font-weight: 800;
 }
 
-aside > section:nth-child(3) > .storyList > div > button {
+aside > section:nth-child(3) > .storyList > li > button {
   width: 60px;
   color: #4695fc;
 }
 
-aside > section:nth-child(3) > .storyList > div > div > p:last-child {
+aside > section:nth-child(3) > .storyList > li > div > p:last-child {
   height: 12px;
   font-size: 12px;
   overflow: hidden;
 }
 
-/* aside > nav*/
 aside > nav,
 aside > nav > ul > li > a {
-  font-size: 12px;
   color: #929191;
+  font-size: 12px;
 }
 
 aside > nav > ul {

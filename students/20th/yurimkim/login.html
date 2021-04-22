@@ -9,21 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style/common.css">
   <link rel="stylesheet" href="style/login.css">
-  
   <title>Westagram Login</title>
 </head>
 <body>
-  <!-- login -->
-  <div id="main">
+  <main class="loginMain">
       <h1 class="logoText">Westagram</h1>
-      <form class="input" name = "login" action="main.html">
-        <input id = "idName" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-        <input id = "pw" type="password" placeholder="비밀번호">
+      <form class="loginForm" name = "login" action="main.html" />
+        <input id = "idName" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+        <input id = "pw" type="password" placeholder="비밀번호" />
         <button  disabled>로그인</button>
       </form>
       <a href="#">비밀번호를 잊으셨나요?</a>
-  </div>
-
+  </main>
   <script src="js/login.js"></script>
 </body>
 </html>

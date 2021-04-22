@@ -1,21 +1,20 @@
 'use strict';
 
-/* 버튼 활성화 */
 const idName = document.querySelector('#idName');
 const pwd = document.querySelector('#pw');
 const btn = document.querySelector('button');
 
 function login() {
-  if  ((idName.value.includes('@')) && (3< pwd.value.length)) {
+  if  ((idName.value.includes('@')) && (4< pwd.value.length)) {
     btn.disabled = false;
-    btn.style.backgroundColor = '#032952';
+    btn.className = 'activeBtn';
   };
 };
 
-idName.addEventListener('keypress', function() {
+idName.addEventListener('keyup', function() {
   login();
 });
 
-pwd.addEventListener('keypress', function() {
+pwd.addEventListener('keyup', function() {
   login();
 });
