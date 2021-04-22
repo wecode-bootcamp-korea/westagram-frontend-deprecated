@@ -51,6 +51,7 @@ main {
     background-color: #c5e1fa;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 .blueBackgroundColor {
     background-color: blue;
