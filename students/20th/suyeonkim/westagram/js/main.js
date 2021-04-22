@@ -78,7 +78,6 @@ profileBtn.addEventListener('click', () => {
     }
     });
 
-
 // search__people__container
 const searchContianer = document.querySelector('.search__people__container');
 const searchBar = document.querySelector('.nav__searchBar');
@@ -99,3 +98,34 @@ searchBar.addEventListener('blur', () => {
     }
 })
 
+// search__id
+const peopleList = [{name: 'syeon', img: 'images/avator.JPG', state: 'it is me'}, {name: 'junmo', img: 'images/avator.JPG', state: 'Good_man'}, {name: 'ojea', img: 'images/avator.JPG', state: 'first_team'}, {name: 'wecode', img: 'images/avator.JPG', state: 'learning_place'}, {name:'wongeun', img: 'images/avator.JPG', state: 'funny'}];
+
+const searchContainerPerson = document.querySelector('.search__people__container');
+
+searchBar.addEventListener('keyup', (e) => {
+    const searchBarValue = searchBar.value;
+    if(searchBar.value === '') {
+        return
+    }
+
+    peopleList.map(element => {
+        const objName = element.name;
+
+        if(searchBarValue.slice(0, searchBarValue.length + 1) === objName.slice(0, searchBarValue.length)){
+            searchContainerPerson.innerHTML = `
+            <li class="search__person">
+                <img src="${element.img}">
+                <div class="search__personNames">
+                    <div class="search__person__nickName">
+                        ${element.name}
+                    </div>
+                    <div class="search__person__realName">
+                        ${element.state}
+                    </div>
+                </div>
+            </li>
+            `
+        }
+    })
+})
