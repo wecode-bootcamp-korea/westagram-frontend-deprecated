@@ -1,4 +1,12 @@
 'use strict'
+//검색창 에니메이션
+const searchBar = document.querySelector('.search-section');
+
+searchBar.addEventListener('click', () => {
+    const searchDes = document.querySelector('.search')
+    searchDes.classList.toggle('move')
+})
+
 //댓글 버튼 활성화
 const commentInput = document.querySelector('.commentInput');
 const commentBtn = document.querySelector('.commentBtn');
@@ -31,7 +39,7 @@ function addComment(crrInput) {
 //댓글 추가 이벤트 실행
 const commentForm = document.querySelector('form');
 
-commentBtn.addEventListener('submit', (e) => {
+commentForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const crrInput = commentForm.elements.commentInput.value;

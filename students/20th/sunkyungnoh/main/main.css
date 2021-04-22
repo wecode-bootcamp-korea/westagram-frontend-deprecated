@@ -54,6 +54,7 @@ label {
   border-radius: 4px;
   border: 1px solid rgb(219, 219, 219);
   outline: none;
+  padding-left: 20px;
 }
 
 .search {
@@ -63,11 +64,17 @@ label {
   transform: translate(-50%, -50%);
   font-size: 14px;
   color: #8e8e8e;
+  font-weight: 300;
+}
+
+.move {
+  left: 25px;
 }
 
 .fas {
-  font-size: 14px;
-  color: #8e8e8e;
+  font-size: 10px;
+  color: rgb(142, 142, 142);
+  margin-right: 4px;
 }
 
 .menu-section {
@@ -84,6 +91,14 @@ label {
   width: 22px;
   height: 22px;
   margin-right: 20px;
+}
+.menu-section i {
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-section i:hover {
+  color: rgb(0, 0, 0);
 }
 
 .menu {
@@ -298,6 +313,7 @@ form > button:last-of-type {
   display: flex;
   padding-top: 16px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .userProfile-section > img {
@@ -333,20 +349,22 @@ form > button:last-of-type {
 }
 .recommendTitle > span:first-child {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   color: rgb(142, 142, 142);
 }
 
 .recommendTitle > span:last-child {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
 }
 
 .recommendation {
   margin-top: 16px;
   display: flex;
-  padding: 8px;
+  padding: 8px 0px 8px;
+  width: 100%;
+  justify-content: space-between;
 }
 .recommendation > img {
   width: 32px;
@@ -361,6 +379,16 @@ form > button:last-of-type {
   font-weight: bold;
   color: rgb(0, 149, 246);
   margin-left: 16px;
+  padding: 0;
+}
+.recommendation .userInfo {
+  width: 190px;
+}
+
+.recommendation .userMessage {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  font-weight: 400;
 }
 
 .footer {
