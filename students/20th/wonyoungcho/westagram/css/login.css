@@ -1,9 +1,15 @@
-body {
+.main-login {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  display: flex;
   background-color: var(--body-color);
   height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 /* log-in main */
@@ -12,6 +18,8 @@ body {
   background-color: var(--login-main-color);
   height: 380px;
   width: 350px;
+  justify-content: center;
+  align-items: center;
   border: var(--main-border);
   border-radius: 1px;
 }
