@@ -3,13 +3,21 @@
 const comment = document.querySelector('.section-article__commentInput');
 
 // 댓글 남기기 함수
-function leaveComment() {
-  let commentValue = comment.value;
+const leaveComment = function () {
+  const commentValue = comment.value;
   const ulTag = document.querySelector('.section-article__comment');
   const listTag = document.createElement('li');
   ulTag.appendChild(listTag);
   listTag.innerHTML = `<div class='section-article__commentContents'><p><a class='section-article__fanslink' href='#'>yongmin</a> ${commentValue}</p><button class='section-article__commentLinkButton'><i class='far fa-heart'></i></button></div>`;
-}
+};
+
+//엔터버튼 눌렀을때 작동
+
+const pressEnter = function (e) {
+  if (e.keyCode === 13) {
+    leaveComment();
+  }
+};
 
 // 댓글 작성시 게시 버튼 활성화
 const activeCommentLeaveButton = function () {
@@ -30,6 +38,7 @@ const activeCommentLeaveButton = function () {
       commentUploadButton.disabled = true;
     }
   });
+  comment.addEventListener('keydown', pressEnter);
 };
 
 function init() {

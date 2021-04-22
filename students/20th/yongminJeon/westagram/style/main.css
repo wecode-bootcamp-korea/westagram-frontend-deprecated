@@ -239,6 +239,10 @@ body {
   resize: none;
 }
 
+.section-article__commentInput::-webkit-scrollbar {
+  display: none;
+}
+
 .section-article__commentContents {
   display: flex;
   line-height: 30px;
