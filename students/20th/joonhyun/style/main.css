@@ -1,0 +1,50 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 10 auto;
+}
+nav .leftWrapper {
+    width : 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.leftWrapper .instaIcon {
+    align-items: center;
+    margin-right : 20px;
+    padding-right: 30px;
+    border-right: 1px solid rgb(127,127,127);
+    font-size: 25px;
+}
+.leftWrapper .logTitle{
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.center{
+    position: relative;
+    align-items: center;
+}
+
+.center .search {
+    background-color: rgb(250, 250, 250);
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: rgb(118, 118, 118);
+    text-align: center;
+}
+.center .search:focus {
+	outline: none;
+  	border: 1px solid rgb(118, 118, 118);
+}
+.center .serchIcon{
+    position: absolute;
+    top:0;
+    font-size:25px;
+}
