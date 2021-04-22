@@ -43,6 +43,7 @@ function active() {
         loginBtn.style.backgroundColor = 'rgb(179,223,252)';
     }
 };
+//-> inline style로 하기보다는, class로 부여하기!!!
 
 inputID.addEventListener('input', active);
 inputPW.addEventListener('input', active);

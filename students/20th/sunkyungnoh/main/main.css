@@ -54,12 +54,12 @@ label {
   border-radius: 4px;
   border: 1px solid rgb(219, 219, 219);
   outline: none;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .search {
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 14px;
@@ -67,10 +67,16 @@ label {
   font-weight: 300;
 }
 
-.move {
-  left: 25px;
+#search:focus::placeholder {
+  transform: none;
+}
+#search::placeholder {
+  transform: translateX(40%);
 }
 
+.search-section:focus-within .fas {
+  transform: translateX(-76px);
+}
 .fas {
   font-size: 10px;
   color: rgb(142, 142, 142);

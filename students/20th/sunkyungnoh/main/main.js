@@ -1,11 +1,4 @@
 'use strict'
-//검색창 에니메이션
-const searchBar = document.querySelector('.search-section');
-
-searchBar.addEventListener('click', () => {
-    const searchDes = document.querySelector('.search')
-    searchDes.classList.toggle('move')
-})
 
 //댓글 버튼 활성화
 const commentInput = document.querySelector('.commentInput');
