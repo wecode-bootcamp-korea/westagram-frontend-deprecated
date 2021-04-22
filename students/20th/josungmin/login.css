@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+
+.login {
+    width: 348px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+   
+}
+
+
+.westaLogo {
+    font-family:'Lobster', cursive;
+    font-size: 50px;
+}
+
+
+.inputText{
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+    height: 36px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+
+.inputText input{
+    padding: 9px 0 7px 8px;
+    margin: 3px; 
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background-color:rgba(var(--b3f,250,250,250),1);
+}
+
+
+.inputText input:focus{
+    outline: none;
+}
+
+
+.loginButton {
+    width: 248px;
+    height: 30px;
+    background-color: rgba(0,149,246,.3);
+    color: white;
+    border-radius: 3px;
+    border: none;
+}
+
+
+a {
+    margin-top: 60px;
+    font-size: 12px;
+    color: #385185;
+    font-weight: 600;
+}
