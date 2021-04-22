@@ -2,8 +2,19 @@ const articleComment = document.querySelector(".article__comment");
 const postCommentBtn = document.querySelector(".postCommentBtn");
 const postCommentInput = document.querySelector(".postCommentInput");
 const commentTime = document.querySelector(".commentTime");
+const pushLike = document.querySelector(".heartImg");
+const likeNum = document.querySelector(".likeNum");
 
-let stopflag = false;
+pushLike.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (pushLike.style.backgroundPosition.slice(0, 4) === "-156") {
+        pushLike.style.backgroundPosition = `-130px -478px`;
+        likeNum.textContent = Number(likeNum.textContent) + 1;
+    } else {
+        pushLike.style.backgroundPosition = `-156px -478px`;
+        likeNum.textContent = Number(likeNum.textContent) - 1;
+    }
+});
 
 const clickCommentBtn = () => {
     postCommentBtn.classList.remove("blue");
@@ -43,6 +54,8 @@ const clickCommentBtn = () => {
         });
     });
 };
+
+let stopflag = false;
 
 const toggleHeart = (emptyHeart, redHeart) => {
     if (stopflag) {
