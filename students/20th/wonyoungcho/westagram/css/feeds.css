@@ -10,8 +10,8 @@
 }
 
 .feeds {
-  height: 855px;
-  width: 600px;
+  height: 700px;
+  width: 620px;
   margin: 0px auto;
   position: absolute;
   left: 0;
@@ -20,6 +20,7 @@
 
 .post {
   width: 100%;
+  height: 100%;
   border: 1px solid var(--grey-border);
   border-radius: 2px;
   background-color: white;
@@ -37,7 +38,116 @@
   border: 1px solid var(--grey-border);
 }
 
+.user {
+  display: flex;
+}
+
+.user-name {
+  display: flex;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+
+.user-name a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.more {
+  display: flex;
+}
+
+.more i {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 585px;
+}
+
 .post-mainimage img {
   display: flex;
   width: 100%;
+  height: 430px;
+}
+
+.post-icons {
+  display: flex;
+  padding: 28px 10px;
+}
+
+.post-icons__left {
+  display: flex;
+  position: absolute;
+  top: 498px;
+}
+
+.post-icons__left i {
+  margin: 0px 5px;
+}
+
+.post-icons__right {
+  display: flex;
+  position: absolute;
+  top: 498px;
+  left: 580px;
+}
+
+.post-likes {
+  display: flex;
+  position: absolute;
+  padding: 15px 10px;
+  top: 520px;
+}
+
+.post-likes__count {
+  font-weight: bold;
+}
+
+.post-user {
+  position: absolute;
+  top: 545px;
+  padding: 15px 10px;
+}
+
+.post-user__id {
+  font-weight: bold;
+}
+
+.post-time {
+  display: flex;
+  position: absolute;
+  top: 605px;
+  padding: 15px 10px;
+}
+
+.post-time__period {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.comments {
+  display: flex;
+  padding: 15px 10px;
+  position: absolute;
+  top: 645px;
+  border-top: 1px solid var(--grey-border);
+}
+
+.comments-input textarea {
+  background-color: transparent;
+  border: 0px solid;
+  height: 20px;
+  width: 549px;
+  color: #ccc;
+  resize: none;
+  padding-left: 20px;
+}
+
+.comments-post button {
+  padding: 0px;
+  border: none;
+  background: none;
+  color: rgb(173, 216, 230, 0.7);
 }
