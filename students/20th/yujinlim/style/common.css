@@ -6,7 +6,7 @@
 @import "main.css";
 
 /* components */
-@import "feed.css";
+@import "components/top-nav.css";
 
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");

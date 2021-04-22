@@ -13,7 +13,7 @@
   align-items: center;
   margin-bottom: 10px;
   padding: 10px 0px;
-  border: var(--border_gray_style);
+  border: var(--border-gray-style);
   border-radius: 1px;
   background-color: white;
 }
@@ -37,7 +37,7 @@
   width: 268px;
   margin-bottom: 7px;
   padding: 0px 10px;
-  border: var(--border_gray_style);
+  border: var(--border-gray-style);
   border-radius: 3px;
   background-color: var(--lightgray);
   font-size: 12px;
@@ -92,12 +92,12 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  color: var(--facebook_blue);
+  color: var(--facebook-blue);
 }
 
 .icons8-Facebook-Filled {
   margin-right: 5px;
-  fill: var(--facebook_blue);
+  fill: var(--facebook-blue);
 }
 
 .login-box__find-password {
@@ -110,7 +110,7 @@
 
 .find-password__text {
   font-size: 12px;
-  color: var(--facebook_blue);
+  color: var(--facebook-blue);
 }
 
 .join-box {
@@ -121,7 +121,7 @@
   align-items: center;
   margin-bottom: 10px;
   padding: 10px 0px;
-  border: var(--border_gray_style);
+  border: var(--border-gray-style);
   border-radius: 1px;
   background-color: white;
 }
