@@ -1,0 +1,314 @@
+body {
+    padding-top: 54px;
+    background-color: #fafafa;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+header {
+    font-weight: 600;
+}
+
+button {
+    display: block;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    color: #0095f6;
+}
+
+.flex-vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.profileImage-big {
+    display: block;
+    margin-right: 16px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileImage-small {
+    display: block;
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.userName {
+    color: #262626;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.userName:hover {
+    text-decoration: underline;
+}
+
+.grey-txt {
+    color: #8e8e8e;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/* 레이아웃 */
+    /* 네비게이션 */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.inner-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 975px;
+    box-sizing: border-box;
+}
+    
+    /* 메인 콘텐츠 */
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.feeds {
+    width: 100%;
+    max-width: 610px;
+    height: 100vh;
+}
+
+.main-right {
+    position: sticky;
+    top: 84px;
+    margin-left: 30px;
+    width: 295px;
+    height: 0;
+}
+
+.user-profile {
+    padding: 0 8px;
+}
+
+.story {
+    margin: 16px 0;
+    height: 200px;
+    overflow: auto;
+}
+
+.story, .recommendation {
+    padding: 8px 16px;
+}
+
+article, .story, .recommendation {
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+/* 위스타그램 로고 */
+h1 a {
+    display: flex;
+    align-items: center;
+    color: #262626;
+}
+
+h1 a img {
+    margin-right: 15px;
+    padding-right: 14px;
+    width: 22px;
+    height: 22px;
+    border-right: 2px solid #262626;
+}
+
+h1 a span {
+    padding-bottom: 7px;
+    font: 28px 'Lobster', cursive;
+}
+
+/* 검색 */
+.search {
+    display: flex;
+    align-items: center;
+    padding: 3px 10px 3px 26px;
+    width: 215px;
+    min-width: 125px;
+    height: 28px;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+.search input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;   
+    background-color: transparent;
+}
+
+.search input::placeholder {
+    text-align: center;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+/* 네비게이션 우측 메뉴 */
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 22px;
+    width: 22px;
+    height: 22px;
+}
+
+.menu li a {
+    display: block;
+}
+
+/* 게시물 */
+article {
+    margin-bottom: 60px;
+}
+
+article > header{
+    padding: 16px;
+}
+
+.contents {
+    padding: 0 16px 16px;
+    border-bottom: 1px solid #efefef;
+}
+
+.moreIcon{
+    margin-right: -12px;
+    padding: 12px;
+}
+
+.postedImage {
+    position: relative;
+    padding-bottom: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.postedImage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+    /* 게시물 버튼 */
+.btnWrap {
+    display:flex;
+    margin-top: 4px;
+}
+
+.btnWrap button:first-child {
+    margin-left:-8px;
+}
+
+.btnWrap button:last-child {
+    margin-right:-8px;
+}
+
+.likesNumber a {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    /* 게시물 설명, 댓글 */
+.contents p {
+    margin-bottom: 5px;
+}
+
+    /* 댓글 달기 */
+.commentForm {
+    position: relative;
+    height: 56px;
+}
+
+.inputComment, .commentForm > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+}
+
+.inputComment {
+    padding: 0 48px;
+    width: 98%;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+}
+
+.submitComment {
+    display: block;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    color: #0095f6;
+    font-weight: 600;
+}
+
+/* 메인 콘텐츠 우측 */
+.story li, .story header, .recommendation li, .recommendation header{
+    padding: 8px 0;
+}
+
+.followBtn {
+    margin-right: -8px;
+    width: auto;
+}
+
+.story header span, .recommendation header span {
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.story header a, .recommendation header a {
+    color: #262626;
+    font-size: 12px;
+}
+
+.main-right button {
+    font-size: 12px;
+}
