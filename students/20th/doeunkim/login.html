@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/b2ea2f7114.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
   <div class="flexcontainer">
     <div class="iphone">
       <img src="./img/iphone.png">
@@ -16,7 +17,7 @@
         <h1>westagram</h1>
         </div>
         <div class="login">
-          <form action="./feed.html">
+          <form action="./feed.html" onsubmit="return checkValidation()">
             <div>
               <input type="text" id="id" name="id">
               <label for="id">전화번호, 사용자 이름 또는 이메일</label>
@@ -36,6 +37,8 @@
           <div class="facebook">
             <a><img src="./img/facebook.png" />Facebook으로 로그인</a>
           </div>
+        </div>
+        <div class="invalid">
         </div>
         <div class="forgot">
           <a>비밀번호를 잊으셨나요?</a>
@@ -83,6 +86,7 @@
       </form>
       <p>© 2021 Instagram from Facebook</p>
     </footer>
-    <script src="login.js"></script>
+    <script src="login.js">
+    </script>
   </body>
 </html>

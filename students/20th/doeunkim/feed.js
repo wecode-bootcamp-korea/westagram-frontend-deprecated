@@ -100,16 +100,144 @@ red.addEventListener("click", sublike);
 
 
 //아이디 검색
+
 const typing = document.querySelector(".search input");
-const idList = document.querySelector(".idList");
+const searchList = document.querySelector(".searchList");
 
-const idArray = ['apple', 'banana', 'cacao'];
+const usersToSearch = [{
+    id: 'skuukzky',
+    profileImg: './img/skuukzky.jpg',
+    description: '숮이 💄💅👡👠🎀👙🌂👗🌂🎀💋💌'
+}, {
+    id: '_imyour_joy',
+    profileImg: './img/_imyour_joy.jpg',
+    description: 'Joy 🌺'
+}, {
+    id: 'cafeknotted',
+    profileImg: './img/cafeknotted.jpg',
+    description: '노티드 Cafe Knotted'
+}, {
+    id: 'jennierubyjane',
+    profileImg: './img/jennierubyjane.jpg',
+    description: 'J'
+}, {
+    id: 'bts.bighotofficial',
+    profileImg: './img/bts.bighotofficial.jpg',
+    description: 'BTS | BANGTAN | 방탄소년단'
+}, {
+    id: 'skawngur',
+    profileImg: './img/skawngur.jpg',
+    description: '남주혁'
+}, {
+    id: '_victoria_bakery',
+    profileImg: './img/_victoria_bakery.jpg',
+    description: 'Victoria Bakery'
+}, {
+    id: 'yeojin9oo',
+    profileImg: './img/yeojin9oo.jpg',
+    description: '여진구 Yeo Jin Goo'
+}, {
+    id: 'akmu_suhyun',
+    profileImg: './img/akmu_suhyun.jpg',
+    description: '이수현 1999.05.04'
+}, {
+    id: 'nct_dream',
+    profileImg: './img/nct_dream.jpg',
+    description: 'NCT DREAM OFFICIAL'
+}, {
+    id: 'wm_ohmygirl',
+    profileImg: './img/wm_ohmygirl.jpg',
+    description: 'OHMYGIRL (오마이걸) WM ENT 오마이걸 공식 인스타그램'
+}, {
+    id: 'twicetagram',
+    profileImg: './img/twicetagram.jpg',
+    description: 'TWICE'
+}, {
+    id: 'youngji_02',
+    profileImg: './img/youngji_02.jpg',
+    description: '이영지'
+}, {
+    id: 'saddlerhaus_bakery',
+    profileImg: './img/saddlerhaus_bakery.jpg',
+    description: 'french waffle'
+}, {
+    id: 'onyourm__ark',
+    profileImg: './img/onyourm__ark.jpg',
+    description: 'Mark 🐯🌱'
+}, {
+    id: 'songkang_b',
+    profileImg: './img/songkang_b.jpg',
+    description: '송강'
+}, {
+    id: 'roses_are_rosie',
+    profileImg: './img/roses_are_rosie.jpg',
+    description: 'ROSÉ'
+}, {
+    id: 'dlwlrma',
+    profileImg: './img/dlwlrma.jpg',
+    description: '이지금 IU'
+}];
 
-
-typing.addEventListener('input', () => {
-if(typing.value) {
-    const matchedIds = idArray.map((i) => {i.startsWith(typing.value)})
-    console.log(matchedIds);
-    const matchId = document.createElement("li");
+function showAllId() {
+    searchList.innerHTML="";
+    usersToSearch.forEach(i => {
+        const matchedId = document.createElement('div');
+        matchedId.innerHTML = `<div class="searchedUser">
+        <img src=${i.profileImg}>
+        <div class="userId">
+        <p class="id">${i.id}</p>
+        <p class="gray twelve" id="description">${i.description}</p>
+        </div>
+        </div>`
+        searchList.appendChild(matchedId);
+    }
+    )}
+    
+    function showSomeId() {
+        searchList.innerHTML="";
+    const matchedUsers = [];
+    usersToSearch.forEach((i) => {  
+    i.id.startsWith(typing.value)? matchedUsers.push(i) : null;
+    });
+    if(matchedUsers.length === 0) {
+        searchList.innerHTML='<p>검색결과가 없습니다.</p>';
+    }
+    matchedUsers.forEach(i => {
+        const matchedId = document.createElement('div');
+        matchedId.innerHTML = `<div class="searchedUser">
+        <img src=${i.profileImg}>
+        <div class="userId">
+          <p class="id">${i.id}</p>
+          <p class="gray twelve" id="description">${i.description}</p>
+        </div>
+        </div>`
+        searchList.appendChild(matchedId);
+    })
 }
+
+typing.addEventListener('click', showAllId);
+typing.addEventListener('input', () => !typing.value? showAllId() : showSomeId());
+
+
+
+//추천 친구
+
+const recommendList = document.querySelector(".recommend");
+const recommendUsers = usersToSearch.slice(6, 11);
+recommendUsers.forEach((i) => {
+    const friend = document.createElement("div");
+    friend.innerHTML = `<div class="user">
+    <div class="profile">
+    <img src="./img/${i.id}.jpg">
+    </div>
+    <div class="userid">
+    <p class="id">${i.id}</p>
+    <p class="gray twelve">${i.description}</p>
+    </div>
+    <div class="follow">
+    <p class="blue">팔로우</p>
+    </div>
+    </div>`
+    recommendList.appendChild(friend);
 });
+

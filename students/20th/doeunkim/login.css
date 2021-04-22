@@ -38,10 +38,11 @@ html {
 .loginBox {
     background-color: white;
     width: 350px;
-    height: 380px;
+    min-height: 380px;
     border: 1px solid #DBDBDB;
     border-radius: 2px;
     color: black;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -130,6 +131,13 @@ html {
     background-color: #B2DFFC;
     margin-top: 10px;
     outline: none;
+}
+
+.invalid p {
+    color: rgb(255, 70, 70);
+    font-size: 13px;
+    padding: 0 30px 20px 30px;
+ 
 }
 
 .or {
