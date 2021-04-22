@@ -1,16 +1,16 @@
-const inputContainer = document.querySelector('.inputContainer');
+const inputBox = document.querySelector('.js-input-box');
     
 
-function checkBtnDisabled() {
-    const btn = document.querySelector('.loginBtn'),
-        userId = document.querySelector('.inputId').value,
-        userPw = document.querySelector('.inputPw').value;
+function active() {
+    const btn = document.querySelector('.js-login-btn'),
+        userId = document.querySelector('.js-input-id').value,
+        userPw = document.querySelector('.js-input-pw').value;
 
     btn.disabled = userId.length < 1 ? true : (userPw.length < 6 ? true : false);
 }
 
 function init() {
-    inputContainer.addEventListener('keyup', checkBtnDisabled)
+    inputBox.addEventListener('keyup', active)
 }
 
 init();

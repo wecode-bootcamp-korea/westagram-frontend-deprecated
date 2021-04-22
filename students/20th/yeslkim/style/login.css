@@ -2,7 +2,7 @@ body {
     background-color: #fafafa;
 }
 
-.loginWrap {
+.login-wrap {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -19,11 +19,11 @@ h1 {
     font:40px 'Lobster', cursive;
 }
 
-.loginForm {
+.login-form {
     margin: 35px 40px 120px;
 }
 
-.inputContainer {
+.input-box {
     margin-bottom: 15px;
 }
 
@@ -62,7 +62,7 @@ button:disabled {
     pointer-events: none;
 }
 
-.findPw {
+.find-pw {
     color: #00376b;
     font-size: 13px;
 }
