@@ -1,0 +1,196 @@
+.main-page {
+  justify-content: center;
+}
+
+.feed-box {
+  display: flex;
+  flex-direction: column;
+  width: 616px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  border: var(--border-gray-style);
+  border-radius: 3px;
+  background-color: white;
+}
+
+.feed__author-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 5px 15px;
+}
+
+.feed__author-profile {
+  display: flex;
+  align-items: center;
+}
+
+.feed__author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.feed__author-info-text:first-child {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.feed__feature {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+.feed__feature-btn-box {
+  display: flex;
+}
+
+.feed__feature-btn-list:not(:last-child) {
+  margin-right: 15px;
+}
+
+.feed__feature-btn {
+  all: unset;
+}
+
+.feed__texts {
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+
+.feed__texts-column:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.feed__likes {
+  font-weight: 600;
+}
+
+.feed__summary {
+  display: flex;
+  align-items: center;
+}
+
+.feed__summary-id {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.feed__summary-btn {
+  all: unset;
+  margin-left: 10px;
+  color: var(--sub-text-gray);
+}
+
+.js-feed-comments div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.js-feed-comments div span:first-of-type {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.js-feed-comments div span:nth-of-type(2) {
+  width: 80%;
+}
+
+.feed__time {
+  font-size: 10px;
+  color: var(--sub-text-gray);
+}
+
+.feed__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-top: var(--border-gray-style);
+}
+
+.feed__form > .fa-smile {
+  font-size: 25px;
+}
+
+.feed__input {
+  width: 87%;
+  border: none;
+}
+
+.feed__submit-btn {
+  all: unset;
+  color: var(--blue);
+}
+
+.feed__submit-btn--opacity {
+  opacity: 30%;
+}
+
+.main-right {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  height: 1px;
+  margin-left: 30px;
+}
+
+.main-right__my-account {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  padding: 20px 10px;
+}
+
+.main-right__my-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--sub-text-gray);
+}
+
+.main-right__my-id {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  padding: 0px 5px;
+  font-size: 11px;
+  color: #c7c7c7;
+}
+
+.main-footer__nav {
+  margin-bottom: 10px;
+  list-style: "-";
+}
+
+.main-footer__list {
+  display: inline-block;
+  margin-right: 5px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 1090px) {
+  .main-right {
+    display: none;
+  }
+}

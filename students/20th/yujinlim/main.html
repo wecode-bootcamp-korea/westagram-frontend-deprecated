@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/common.css" />
+    <title>Westagram | main</title>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="top-nav__column">
+        <i class="fab fa-instagram"></i>
+        <span class="top-nav__left-text">|</span>
+        <span class="top-nav__left-text"
+          ><a href="main.html">Instagram</a></span
+        >
+      </div>
+      <div class="top-nav__column">
+        <input class="top-nav__input" type="text" placeholder="검색" />
+        <i class="fas fa-search top-nav__search"></i>
+      </div>
+      <div class="top-nav__column">
+        <ul class="top-nav__menus">
+          <li class="top-nav__menu">
+            <button class="top-nav__menu-btn">
+              <i class="far fa-compass"></i>
+            </button>
+          </li>
+          <li class="top-nav__menu">
+            <button class="top-nav__menu-btn">
+              <i class="far fa-heart"></i>
+            </button>
+          </li>
+          <li class="top-nav__menu">
+            <button class="top-nav__menu-btn">
+              <i class="far fa-user"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-page">
+      <div class="feed-box">
+        <article class="feed">
+          <section class="feed__author-box">
+            <div class="feed__author-profile">
+              <img
+                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/94003553_231199768097287_5780010293664940032_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=EjeCkaUjMMgAX9m0Dym&edm=AEF8tYYAAAAA&ccb=7-4&oh=70612d83cfbfb530e39c0695f4af134b&oe=60A4EFD6&_nc_sid=a9513d"
+                alt="rilip_official님의 프로필사진"
+                class="circle-profile circle-profile--feed-author"
+              />
+              <div class="feed__author-info">
+                <span class="feed__author-info-text">rilip_official</span>
+                <span class="feed__author-info-text">suwon</span>
+              </div>
+            </div>
+            <div>
+              <span><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </section>
+          <img
+            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/175260006_501085961251601_2268575138294333749_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=RJE0N2r6OsQAX8n_B-z&edm=AIQHJ4wAAAAA&ccb=7-4&oh=25fe99fccac6c74f937965f44b445884&oe=60A31BE1&_nc_sid=7b02f1"
+            alt="rilip_official님의 사진"
+          />
+          <section class="feed__feature">
+            <ul class="feed__feature-btn-box">
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </li>
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-comment"></i>
+                </button>
+              </li>
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-paper-plane"></i>
+                </button>
+              </li>
+            </ul>
+            <ul class="feed__feature-btn-box">
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </li>
+            </ul>
+          </section>
+          <section class="feed__texts">
+            <div class="feed__texts-column feed__likes">
+              <span>좋아요 12개</span>
+            </div>
+            <div class="feed__texts-column feed__summary">
+              <span class="feed__summary-id">rilip_official</span>
+              <span>위워크에서 진행한 베이크 클래스</span>
+              <span>...</span>
+              <button class="feed__summary-btn">더 보기</button>
+            </div>
+            <div class="feed__texts-column js-feed-comments"></div>
+            <div class="feed__time feed__texts-column">
+              <span>17시간 전</span>
+            </div>
+          </section>
+          <form name="comment-form" class="feed__form" onsubmit="return false;">
+            <i class="far fa-smile"></i>
+            <input type="text" placeholder="댓글달기..." class="feed__input" />
+            <button class="feed__submit-btn feed__submit-btn--opacity">
+              게시
+            </button>
+          </form>
+        </article>
+        <article class="feed">
+          <section class="feed__author-box">
+            <div class="feed__author-profile">
+              <img
+                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/43778288_543710792708920_7607289634233516032_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=pWeqQfWFVmcAX_kmyQF&edm=AEF8tYYAAAAA&ccb=7-4&oh=4ec3ccefbd37ce11dc957b7838b77d05&oe=60A634E6&_nc_sid=a9513d"
+                alt="krtigersugar님의 프로필사진"
+                class="circle-profile circle-profile--feed-author"
+              />
+              <div class="feed__author-info">
+                <span class="feed__author-info-text">krtigersugar</span>
+                <span class="feed__author-info-text"></span>
+              </div>
+            </div>
+            <div>
+              <span><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </section>
+          <img
+            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/175810080_497894738013789_23924597793451987_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=Tu_Wnsa9tiwAX80ztR3&edm=AIQHJ4wAAAAA&ccb=7-4&oh=d91ccc0c9d232e280584d62e6c2b4652&oe=60A513B3&_nc_sid=7b02f1"
+            alt="krtigersugar님의 사진"
+          />
+          <section class="feed__feature">
+            <ul class="feed__feature-btn-box">
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </li>
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-comment"></i>
+                </button>
+              </li>
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-paper-plane"></i>
+                </button>
+              </li>
+            </ul>
+            <ul class="feed__feature-btn-box">
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </li>
+            </ul>
+          </section>
+          <section class="feed__texts">
+            <div class="feed__texts-column feed__likes">
+              <span>좋아요 301개</span>
+            </div>
+            <div class="feed__texts-column feed__summary">
+              <span class="feed__summary-id">krtigersugar</span>
+              <span>✨신메뉴 소문내기 이벤트✨</span>
+              <span>...</span>
+              <button class="feed__summary-btn">더 보기</button>
+            </div>
+            <div class="feed__texts-column js-feed-comments"></div>
+            <div class="feed__time feed__texts-column">
+              <span>17시간 전</span>
+            </div>
+          </section>
+          <form name="comment-form" class="feed__form" onsubmit="return false;">
+            <i class="far fa-smile"></i>
+            <input type="text" placeholder="댓글달기..." class="feed__input" />
+            <button class="feed__submit-btn feed__submit-btn--opacity">
+              게시
+            </button>
+          </form>
+        </article>
+        <article class="feed">
+          <section class="feed__author-box">
+            <div class="feed__author-profile">
+              <img
+                src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/163663946_197803795082398_1924950408015660072_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Jvc5nBmQBVYAX-SQowW&edm=AEF8tYYAAAAA&ccb=7-4&oh=f33f3a525c2908fd436991a6de94643d&oe=60A7CC97&_nc_sid=a9513d"
+                alt="anko_8090님의 프로필사진"
+                class="circle-profile circle-profile--feed-author"
+              />
+              <div class="feed__author-info">
+                <span class="feed__author-info-text">anko_8090</span>
+                <span class="feed__author-info-text"></span>
+              </div>
+            </div>
+            <div>
+              <span><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </section>
+          <img
+            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/176282393_1404333343292706_135428849258000862_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=tH6ZNMQ8JUoAX9tGaTC&tn=E3vZwT1zJnhTn-R6&edm=AIQHJ4wAAAAA&ccb=7-4&oh=53efa849b2a73835e8ea08a5f35ce7dc&oe=60A6C3FF&_nc_sid=7b02f1"
+            alt="anko_8090님의 사진"
+            class="feed__img"
+          />
+          <section class="feed__feature">
+            <ul class="feed__feature-btn-box">
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-heart"></i>
+                </button>
+              </li>
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-comment"></i>
+                </button>
+              </li>
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-paper-plane"></i>
+                </button>
+              </li>
+            </ul>
+            <ul class="feed__feature-btn-box">
+              <li class="feed__feature-btn-list">
+                <button class="feed__feature-btn">
+                  <i class="far fa-bookmark"></i>
+                </button>
+              </li>
+            </ul>
+          </section>
+          <section class="feed__texts">
+            <div class="feed__texts-column feed__likes">
+              <span>좋아요 73개</span>
+            </div>
+            <div class="feed__texts-column feed__summary">
+              <span class="feed__summary-id">anko_8090</span>
+              <span>알박기 제법...</span>
+              <span>...</span>
+              <button class="feed__summary-btn">더 보기</button>
+            </div>
+            <div class="feed__texts-column js-feed-comments"></div>
+            <div class="feed__time feed__texts-column">
+              <span>17시간 전</span>
+            </div>
+          </section>
+          <form name="comment-form" class="feed__form" onsubmit="return false;">
+            <i class="far fa-smile"></i>
+            <input type="text" placeholder="댓글달기..." class="feed__input" />
+            <button class="feed__submit-btn feed__submit-btn--opacity">
+              게시
+            </button>
+          </form>
+        </article>
+      </div>
+      <aside class="main-right">
+        <section class="main-right__my-account">
+          <img
+            src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+            alt="내 프로필 사진"
+            class="circle-profile circle-profile--main-right-my-account"
+          />
+          <div class="main-right__my-infos">
+            <span class="main-right__my-id">wecode_bootcamp</span>
+            <span>WeCode | 위코드</span>
+          </div>
+        </section>
+        <section class="main-right-section">
+          <div class="main-right-section__title">
+            <h6>스토리</h6>
+            <button class="main-right-section__all-btn">모두 보기</button>
+          </div>
+          <div>
+            <ul>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <div
+                    class="circle-profile__story-border circle-profile__story-border--main-right-user"
+                  ></div>
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>16분전</span>
+                </div>
+              </li>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <div
+                    class="circle-profile__story-border circle-profile__story-border--main-right-user"
+                  ></div>
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>16분전</span>
+                </div>
+              </li>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <div
+                    class="circle-profile__story-border circle-profile__story-border--main-right-user"
+                  ></div>
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>16분전</span>
+                </div>
+              </li>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <div
+                    class="circle-profile__story-border circle-profile__story-border--main-right-user"
+                  ></div>
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>16분전</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-right-section">
+          <div class="main-right-section__title">
+            <h6>회원님을 위한 추천</h6>
+            <button class="main-right-section__all-btn">모두 보기</button>
+          </div>
+          <div>
+            <ul>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>Instagram 신규 가입</span>
+                </div>
+                <button class="main-right-section__recommend-follow">
+                  팔로우
+                </button>
+              </li>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <div
+                    class="circle-profile__story-border circle-profile__story-border--main-right-user"
+                  ></div>
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>Instagram 신규 가입</span>
+                </div>
+                <button class="main-right-section__recommend-follow">
+                  팔로우
+                </button>
+              </li>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <div
+                    class="circle-profile__story-border circle-profile__story-border--main-right-user"
+                  ></div>
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>Instagram 신규 가입</span>
+                </div>
+                <button class="main-right-section__recommend-follow">
+                  팔로우
+                </button>
+              </li>
+              <li class="main-right-section__item-row">
+                <div class="main-right-section__user-img-box">
+                  <img
+                    src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/64219646_866712363683753_7365878438877462528_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=fZBB-70QdV0AX9iZy7F&edm=ABfd0MgAAAAA&ccb=7-4&oh=55dfd4c5aa0657dcdf5cf7c0a098157d&oe=60A452F0&_nc_sid=7bff83"
+                    alt=""
+                    class="circle-profile circle-profile--main-right-user"
+                  />
+                </div>
+                <div class="main-right-section__texts">
+                  <span class="main-right-section__account-id"
+                    >계정 아이디</span
+                  >
+                  <span>Instagram 신규 가입</span>
+                </div>
+                <button class="main-right-section__recommend-follow">
+                  팔로우
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer class="main-footer">
+          <nav class="main-footer__nav">
+            <ul>
+              <li class="main-footer__list">소개</li>
+              <li class="main-footer__list">도움말</li>
+              <li class="main-footer__list">홍보 센터</li>
+              <li class="main-footer__list">API</li>
+              <li class="main-footer__list">채용 정보</li>
+              <li class="main-footer__list">개인정보처리방침</li>
+              <li class="main-footer__list">약관</li>
+              <li class="main-footer__list">위치</li>
+              <li class="main-footer__list">인기 계정</li>
+              <li class="main-footer__list">해시태그</li>
+              <li class="main-footer__list">언어</li>
+            </ul>
+          </nav>
+          <p>© 2021 INSTAGRAM FROM FACEBOOK</p>
+        </footer>
+      </aside>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/8ae89e08ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

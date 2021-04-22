@@ -1,0 +1,44 @@
+.circle-profile {
+  border: var(--border-gray-style);
+  border-radius: 50%;
+}
+
+.circle-profile--feed-author {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+.circle-profile--main-right-my-account {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+
+.circle-profile--main-right-user {
+  width: 32px;
+  height: 32px;
+}
+
+.circle-profile__story-border {
+  position: absolute;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    )
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.circle-profile__story-border--main-right-user {
+  width: 38px;
+  height: 38px;
+}

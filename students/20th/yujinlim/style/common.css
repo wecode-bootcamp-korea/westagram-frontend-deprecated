@@ -2,11 +2,13 @@
 @import "variables.css";
 
 /* screens */
-@import "login.css";
-@import "main.css";
+@import "screens/login.css";
+@import "screens/main.css";
 
 /* components */
 @import "components/top-nav.css";
+@import "components/circle-profile.css";
+@import "components/main-right-section.css";
 
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
