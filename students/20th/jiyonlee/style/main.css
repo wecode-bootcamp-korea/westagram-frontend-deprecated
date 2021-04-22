@@ -4,54 +4,62 @@
     --aside-fontSize: 12px;
     --border-color: #e6e6e6;
 }
+
 nav {
-    height: 54px;
-    display: flex;
     position: fixed;
-    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 54px;
+    width: 100%;
     padding: 0 83px;
     background-color: #fff;
     border-bottom: 1px solid var(--border-color);
     z-index: 100;
 }
-.nav__logo {
-    display: flex;
+
+.navLogo {
     position: relative;
+    display: flex;
 }
-.nav__logo img {
+
+.navLogo img {
     width: 20px;
     height: 20px;
     margin-right: 20px;
 }
-.nav__logoTitle {
-    font-size: 20px;
+
+.navLogoTitle {
     line-height: 20px;
+    font-size: 20px;
     font-family: "Lobster", cursive;
 }
-.nav__logo .nav__logoTitle::before {
+
+.navLogo .navLogoTitle::before {
+    content: "";
     position: absolute;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
-    content: "";
     display: block;
     width: 1px;
     height: 20px;
     background-color: black;
 }
-.nav__searchWrap {
+
+.navSearchWrap {
     position: relative;
 }
-.nav__search {
-    text-align: center;
+
+.navSearch {
     width: 215px;
     height: 28px;
     background-color: #fafafa;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
+    text-align: center;
 }
+
 .searchPopup {
     position: absolute;
     top: 35px;
@@ -64,18 +72,21 @@ nav {
     overflow: auto;
     z-index: 100;
 }
+
 .searchPopup li {
     display: block;
     display: flex;
     margin: 10px;
 }
+
 .searchPopup li img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
     border-radius: 50%;
 }
-.nav__link img {
+
+.navLink img {
     width: 22px;
     margin-left: 10px;
 }
@@ -87,157 +98,183 @@ main {
     border-top: 1px solid #e6e6e6;
     background-color: #fafafa;
 }
+
 main .feeds {
     width: 614px;
     margin-top: 50px;
     background-color: #fff;
     border: 1px solid #e6e6e6;
 }
-.article__header {
+
+.articleHeader {
     position: relative;
     display: flex;
     align-items: center;
     padding: 14px;
 }
-.article__header .profileImg {
+
+.articleHeader .profileImg {
     width: 30px;
     height: 30px;
     margin-right: 10px;
     border-radius: 50%;
 }
-.article__header .profileName {
+
+.articleHeader.profileName {
     font-weight: bold;
     font-size: var(--comment-fontSize);
 }
-.article__header .viewMore {
+
+.articleHeader .viewMore {
     position: absolute;
     right: 10px;
-    color: #525252;
-    font-size: 0.8rem;
     background-color: transparent;
+    font-size: 0.8rem;
+    color: #525252;
     outline: none;
     border: none;
 }
-.article__img {
+
+.articleImg {
     width: 100%;
 }
-.article__lnb {
+
+.articleLnb {
     display: flex;
     position: relative;
     padding: var(--main-padding);
     padding-bottom: 0;
 }
-.article__lnb a {
+
+.articleLnb a {
     margin-right: 10px;
 }
+
 .lnbImg {
     background: url("../images/sprite.png");
     width: 25px;
     height: 25px;
 }
 
-.article__lnb .heartImg {
+.articleLnb .heartImg {
     background-position: -130px -478px;
 }
-.article__lnb .msgImg {
+
+.articleLnb .msgImg {
     background-position: -307px -401px;
 }
-.article__lnb .shareImg {
+
+.articleLnb .shareImg {
     background-position: -517px -364px;
 }
-.article__lnb .bookmarkImg {
+
+.articleLnb.bookmarkImg {
     position: absolute;
     right: 14px;
     background-position: -517px -260px;
 }
 
-.article__comment {
+.articleComment {
     position: relative;
     padding: var(--main-padding);
     margin-bottom: 10px;
 }
-.article__comment .articleLikes {
+
+.articleComment .articleLikes {
     font-size: var(--comment-fontSize);
     margin-bottom: 15px;
 }
-.article__comment .articleLikes span {
+
+.articleComment .articleLikes span {
     font-weight: bold;
-    font-size: var(--comment-fontSize);
-}
-.article__comment .comments {
-    position: relative;
-    margin-bottom: 5px;
-}
-.article__comment .commenter {
-    font-weight: bold;
-    font-size: var(--comment-fontSize);
-}
-.article__comment .myComment {
-    display: inline-block;
-    width: 190px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: var(--comment-fontSize);
-}
-.article__comment .comment {
     font-size: var(--comment-fontSize);
 }
 
-.article__comment .commentBtn {
+.articleComment .comments {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.articleComment .commenter {
+    font-weight: bold;
+    font-size: var(--comment-fontSize);
+}
+
+.articleComment .myComment {
+    display: inline-block;
+    width: 190px;
+    font-size: var(--comment-fontSize);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.articleComment .comment {
+    font-size: var(--comment-fontSize);
+}
+
+.articleComment .commentBtn {
     position: absolute;
     right: 0;
+    border: none;
+    background-color: transparent;
     color: #868686;
     font-size: 0.8rem;
-    background-color: transparent;
     outline: none;
-    border: none;
     cursor: pointer;
 }
-.article__comment .fa-heart {
+
+.articleComment .fa-heart {
     position: absolute;
     right: 0;
 }
-.article__comment .commentDeleteBtn {
+
+.articleComment .commentDeleteBtn {
     right: 20px;
 }
-.article__comment .commentTime {
+
+.articleComment .commentTime {
     position: absolute;
     bottom: -5px;
     font-size: var(--comment-fontSize);
     color: #999999;
 }
 
-.article__postComment {
+.articlePostComment {
     position: relative;
 }
+
 .postCommentInput {
     width: 100%;
     padding: 15px 55px 15px 40px;
     border: none;
     border-top: 1px solid #efefef;
 }
+
 .postCommentInput::placeholder {
     font-size: 13px;
 }
+
 .postCommentInput:focus {
     outline: none;
 }
-.article__postComment .smile {
+
+.articlePostComment .smile {
     position: absolute;
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px;
     background-color: transparent;
+    font-size: 20px;
     border: none;
 }
-.article__postComment .postCommentBtn {
+
+.articlePostComment .postCommentBtn {
     position: absolute;
     right: 10px;
     height: 100%;
-    color: #72c2fa;
     font-size: 13px;
+    color: #72c2fa;
     background-color: transparent;
     outline: none;
     border: none;
@@ -250,78 +287,90 @@ aside {
     margin-top: 50px;
     margin-left: 20px;
 }
-.aside__profile {
+
+.asideProfile {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.profile__img {
+
+.profileImg {
     width: 50px;
     height: 50px;
     margin-right: 10px;
     border-radius: 50%;
 }
-.profile__id {
+
+.profileId {
     font-size: var(--aside-fontSize);
     font-weight: bold;
     margin-bottom: 5px;
 }
-.profile__name {
+
+.profileName {
     font-size: var(--aside-fontSize);
     color: grey;
 }
 
-.aside__container {
+.asideContainer {
     background-color: #fff;
     border: 1px solid var(--border-color);
     margin-bottom: 10px;
 }
-.aside__header {
+
+.asideHeader {
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
-.aside__header .title {
+
+.asideHeader .title {
     color: grey;
     font-size: 13px;
     font-weight: bold;
 }
-.aside__header .viewMore {
+
+.asideHeader .viewMore {
     font-weight: bold;
     font-size: 13px;
 }
-.aside__main {
+
+.asideMain {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
-.aside__main .imgAndDesc {
+
+.asideMain .imgAndDesc {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.aside__main img {
+
+.asideMain img {
     position: relative;
     width: 40px;
     height: 40px;
     margin-right: 10px;
     border-radius: 50%;
 }
-.aside__main img::after {
+
+.asideMain img::after {
+    content: "";
     position: absolute;
     top: 0;
-    content: "";
     display: block;
     border: 1px solid red;
 }
-.aside__main .aside__desc {
+
+.asideMain .asideDesc {
     font-size: var(--aside-fontSize);
 }
-.aside__main .id {
+
+.asideMain .id {
     margin-bottom: 5px;
 }
 
-/* style */
 .bold {
     font-weight: bold;
 }
@@ -337,6 +386,7 @@ aside {
 .hide {
     visibility: hidden;
 }
+
 li {
     display: inline-block;
 }
