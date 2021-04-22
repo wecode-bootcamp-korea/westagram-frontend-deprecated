@@ -1,4 +1,4 @@
-body {
+.main-page {
   height: 100vh;
   width: 100%;
 }
@@ -69,13 +69,15 @@ body {
 
 .main-container {
   display: flex;
+  justify-content: center;
   background-color: var(--body-color);
   width: 100%;
+  height: 80%;
 }
 
 .feeds {
   width: 620px;
-  margin: 0px auto;
+  margin-right: 30px;
 }
 
 .post {
@@ -87,11 +89,14 @@ body {
 
 .post-header {
   display: flex;
+  flex-direction: row;
   padding: 10px 10px;
 }
 
 .post-header__image img {
   display: flex;
+  align-items: center;
+  margin-left: 5px;
   width: 30px;
   border-radius: 70%;
   border: 1px solid var(--grey-border);
@@ -106,6 +111,9 @@ body {
 }
 
 .user-name a {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -117,6 +125,8 @@ body {
 
 .more i {
   display: flex;
+  align-items: center;
+  margin-left: 400px;
 }
 
 .post-mainimage img {
@@ -127,7 +137,8 @@ body {
 
 .post-icons {
   display: flex;
-  padding: 28px 10px;
+  justify-content: space-between;
+  padding: 15px 10px;
 }
 
 .post-icons__left {
@@ -135,11 +146,16 @@ body {
 }
 
 .post-icons__left i {
+  display: flex;
   margin: 0px 5px;
 }
 
 .post-icons__right {
   display: flex;
+}
+
+.post-icons__right i {
+  margin-right: 11px;
 }
 
 .post-likes {
@@ -187,4 +203,8 @@ body {
   border: none;
   background: none;
   color: rgb(173, 216, 230, 0.7);
+}
+
+.feeds-right {
+  border: 1px solid;
 }
