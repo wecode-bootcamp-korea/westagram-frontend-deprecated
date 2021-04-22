@@ -83,13 +83,13 @@
 
 .main .feed .feed_account{
     padding: 7px;
-    /* background-color: blue; */
     height: 40px;
+    background-color: white;
 }
 
 .main .feeds #feed_account{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 .main .feed .feed_account span{
 background-color: blue;
@@ -108,13 +108,18 @@ background-color: blue;
     background-color: #F3F3F3;
     flex-direction: column;
     justify-content: space-around;
-;
 }
 .main .main-right .profile{
+    display: flex;;
     width:100%;
     height: 50px;
     background-color: #F3F3F3;
 }
+.main .main-right .profile .wecode_img{
+    width: 20px;
+    height: 20px;
+}
+
 .main .main-right .story_list_img{
     width: 20px;
     height: 20px;
@@ -138,7 +143,7 @@ background-color: blue;
     padding:10px;
 }
 .main .main-right .story_list .story_list1_img{
-    width:20px;
+    width: 20px;
     height: 20px;
 }
 /* 모두보기 글자 */
