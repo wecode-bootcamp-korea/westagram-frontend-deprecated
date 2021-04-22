@@ -73,17 +73,37 @@
 .main .feeds{
     width: 500px;
     height: 700px;
+    border:1px solid #D9D9D9;
+    border-radius: 3px;
 }
 .main .feed{
     width:100%;
     height: 100%;
-    background-color: black;
 }
+
+.main .feed .feed_account{
+    padding: 7px;
+    /* background-color: blue; */
+    height: 40px;
+}
+
+.main .feeds #feed_account{
+    width: 20px;
+    height: 20px;
+}
+.main .feed .feed_account span{
+background-color: blue;
+}
+
+.main .feed img{
+    width:100%;
+}
+
 
 /* 사이드 피드 */
 .main .main-right{
     display: flex;
-    width: 300px;
+    width: 250px;
     height:500px;
     background-color: #F3F3F3;
     flex-direction: column;
@@ -95,10 +115,18 @@
     height: 50px;
     background-color: #F3F3F3;
 }
+.main .main-right .story_list_img{
+    width: 20px;
+    height: 20px;
+}
 
+.main .main-right .recommend_list_img{
+    width: 20px;
+    height: 20px;
+}
 
 /* 스토리글자 */
-.main .main-right .story{
+.main .main-right .story_list{
     width: 100%;
     height: 120px;
     border:1px solid #D9D9D9;
@@ -107,13 +135,16 @@
     font-size: 12px;
     font-family: sans-serif;
     color:#868787;
-    padding: 10px;
+    padding:10px;
+}
+.main .main-right .story_list .story_list1_img{
+    width:20px;
+    height: 20px;
 }
 /* 모두보기 글자 */
-.main .main-right .story .seeAll_1{ 
-    margin-left: 170px;
+.main .main-right .story_list .seeAll_1{ 
+    margin-left: 150px;
     font-family: sans-serif;
-    font-weight: bold;
     color:black;
 }
 
@@ -128,15 +159,18 @@
     font-family: sans-serif;
     color:#868787;
     padding: 10px;
-    background-color: blue;
     
 }
+
+.main .main-right .recommend .recommend_list1_img{
+    width: 20px;
+    height: 20px;
+}
 /* 모두보기 */
-.main .main-right .for_recommend .seeAll_2{
+.main .main-right .recommend .seeAll_2{
     font-family: sans-serif;
-    font-weight: bold;
     color:black;
-    background-color: red;
+    margin-left: 90px;
 }
 
 
