@@ -4,8 +4,6 @@
     --aside-fontSize: 12px;
     --border-color: #e6e6e6;
 }
-
-/* nav */
 nav {
     height: 54px;
     display: flex;
@@ -43,6 +41,9 @@ nav {
     height: 20px;
     background-color: black;
 }
+.nav__searchWrap {
+    position: relative;
+}
 .nav__search {
     text-align: center;
     width: 215px;
@@ -51,28 +52,47 @@ nav {
     border: 1px solid #dbdbdb;
     border-radius: 3px;
 }
-
+.searchPopup {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: auto;
+    z-index: 100;
+}
+.searchPopup li {
+    display: block;
+    display: flex;
+    margin: 10px;
+}
+.searchPopup li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
 .nav__link img {
     width: 22px;
     margin-left: 10px;
 }
-/* main */
+
 main {
     display: flex;
     justify-content: center;
     padding-top: 30px;
-    /* padding-right: 300px; */
     border-top: 1px solid #e6e6e6;
     background-color: #fafafa;
 }
-/* main > feeds */
 main .feeds {
     width: 614px;
     margin-top: 50px;
     background-color: #fff;
     border: 1px solid #e6e6e6;
 }
-/* article  */
 .article__header {
     position: relative;
     display: flex;
@@ -131,7 +151,6 @@ main .feeds {
     background-position: -517px -260px;
 }
 
-/* article > comment */
 .article__comment {
     position: relative;
     padding: var(--main-padding);
@@ -188,7 +207,7 @@ main .feeds {
     font-size: var(--comment-fontSize);
     color: #999999;
 }
-/* 댓글달기 */
+
 .article__postComment {
     position: relative;
 }
@@ -224,7 +243,7 @@ main .feeds {
     border: none;
     cursor: pointer;
 }
-/*  aside > profile*/
+
 aside {
     width: 293px;
     height: 500px;
@@ -251,7 +270,7 @@ aside {
     font-size: var(--aside-fontSize);
     color: grey;
 }
-/* aside container(스토리, 추천) */
+
 .aside__container {
     background-color: #fff;
     border: 1px solid var(--border-color);
@@ -316,7 +335,6 @@ aside {
     color: red;
 }
 .hide {
-    /* display: none; */
     visibility: hidden;
 }
 li {

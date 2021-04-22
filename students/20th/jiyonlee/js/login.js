@@ -11,17 +11,3 @@ loginInputs.forEach((loginInput) => {
             : loginBtn.classList.remove("blueBackgroundColor");
     });
 });
-
-// 위에랑 비슷한 코드인데  addEventListener를 먼저 쓰는게 좋은지 forEach를 먼저 쓰는게 좋은지 궁금
-
-// const login = document.querySelector(".login");
-// loginInputs.addEventListener("input", () => {
-//     loginInput.forEach((e) => {
-//         const inputId = document.querySelector(".loginId");
-//         const inputPw = document.querySelector(".loginPw");
-
-//         inputId.value.length > 0 && inputPw.value.length > 0
-//             ? console.log("hi")
-//             : null;
-//     });
-// });

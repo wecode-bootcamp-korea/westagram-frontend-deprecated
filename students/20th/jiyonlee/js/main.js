@@ -4,6 +4,54 @@ const postCommentInput = document.querySelector(".postCommentInput");
 const commentTime = document.querySelector(".commentTime");
 const pushLike = document.querySelector(".heartImg");
 const likeNum = document.querySelector(".likeNum");
+const navSearch = document.querySelector(".nav__search");
+const searchPopup = document.querySelector(".searchPopup");
+const users = [
+    { id: "jiyon", img: "./images/hao.jpg" },
+    { id: "Shaman_king", img: "./images/hao2.jpg" },
+    { id: "iu", img: "./images/iu.jpg" },
+    { id: "Jeon_dongseok", img: "./images/dongseok.jpg" },
+    { id: "kakashi", img: "./images/kakashi.png" },
+    { id: "gaara", img: "./images/gaara.jpg" },
+    { id: "hyoshin", img: "./images/hyoshin.jpeg" },
+    { id: "lock-li", img: "./images/lock-li.jpg" },
+    { id: "naruto", img: "./images/naruto.jpg" },
+];
+const userIds = users.reduce((pre, cur) => {
+    return [...pre, cur.id];
+}, []);
+const userImgs = users.reduce((pre, cur) => {
+    return [...pre, cur.img];
+}, []);
+
+navSearch.addEventListener("keyup", () => {
+    if (userIds.includes(navSearch.value)) {
+        const searchedList = document.createElement("li");
+        const profileImg = document.createElement("img");
+        const idAndNickname = document.createElement("div");
+        const userid = document.createElement("div");
+        const nickname = document.createElement("div");
+
+        userid.textContent = navSearch.value;
+        let userIdIndex = userIds.indexOf(navSearch.value);
+        profileImg.setAttribute("src", users[userIdIndex].img);
+
+        idAndNickname.append(userid);
+        idAndNickname.append(nickname);
+        searchedList.append(profileImg);
+        searchedList.append(idAndNickname);
+        searchPopup.append(searchedList);
+    }
+    if (navSearch.value.length === 0) {
+        searchPopup.innerHTML = "";
+    }
+});
+navSearch.addEventListener("blur", () => {
+    searchPopup.innerHTML = "";
+});
+navSearch.addEventListener("click", () => {
+    alert("유저id를 쳐보세요");
+});
 
 pushLike.addEventListener("click", (e) => {
     e.preventDefault();
