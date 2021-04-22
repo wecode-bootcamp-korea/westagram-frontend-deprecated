@@ -1,11 +1,13 @@
 /* Reset CSS*/
 a {
   text-decoration: none;
+  color: black;
 }
 
 button,
 textarea {
   border: none;
+  background-color: transparent;
 }
 
 button:active,

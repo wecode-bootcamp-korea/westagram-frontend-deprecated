@@ -1,197 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yongmin's Westagram main</title>
-    <link rel="stylesheet" href="./style/common.css" />
-    <link rel="stylesheet" href="./style/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header-nav">
-        <div class="header-nav__leftSide">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/512px-Instagram_font_awesome.svg.png"
-            alt="instagram_imoticon"
-            class="header-nav__leftSide__img"
-          />
-          <a href="#" class="header-nav__leftSide__title">Instagram</a>
-        </div>
-        <div class="header-nav__center">
-          <input type="text" class="header-nav__input" placeholder="검색" />
-          <i class="fas fa-search"></i>
-        </div>
-        <div class="header-nav__rightSide">
-          <a href="#"
-            ><img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-              alt="explore right menu"
-              class="header-nav__rightSide__img1"
-          /></a>
-          <button>
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-              alt="heart"
-              class="header-nav__rightSide__img2"
-            />
-          </button>
-          <button>
-            <img
-              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-              alt="mypage"
-              class="header-nav__rightSide__img3"
-            />
-          </button>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="section">
-        <article class="section-article1">
-          <div class="section-article1__user">
-            <div>
-              <a href="#" class=""
-              >
-              <img src="./img/drake-profile.jpg" alt="drake profile" 
-              class = "section-article1__user__img">
-            <a href="" class="section-article1__username">drakeofficial</a>
-            </div>
-            <button class="section-article1__modal"><i class="fas fa-ellipsis-h"></i></button>
-          </div>
-          <img
-            src="./img/drake-img.jpg"
-            alt=""
-            class="section-article1__img"
-          />
-          <div class="section-article1__iconbar">
-            <div>
-              <button class="section-article1__like">좋아요</button>
-              <button class="section-article1__comment">코멘트</button>
-              <button class="section-article1__upload">업로드</button>
-            </div>
-            <button class="section-article1__bookmark">북마크</button>
-          </div>
-          <img src="" alt="조그마한 아이콘" />
-          <button>aineworld님 외 10명이 좋아합니다.</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yongmin's Westagram main</title>
+  <link rel="stylesheet" href="./style/common.css" />
+  <link rel="stylesheet" href="./style/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <div class="header-nav__leftSide">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/512px-Instagram_font_awesome.svg.png"
+          alt="instagram_imoticon" class="header-nav__leftSide__img" />
+        <a href="#" class="header-nav__leftSide__title">Instagram</a>
+      </div>
+      <div class="header-nav__center">
+        <input type="text" class="header-nav__input" placeholder="검색" />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="header-nav__rightSide">
+        <a href="#"><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+            alt="explore right menu" class="header-nav__rightSide__img1" /></a>
+        <button>
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart"
+            class="header-nav__rightSide__img2" />
+        </button>
+        <button>
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="mypage"
+            class="header-nav__rightSide__img3" />
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section">
+      <article class="section-article">
+        <div class="section-article__user">
           <div>
-            <div>
-              <span>canon_mg 위워크에서 진행한 베이킹 클래스</span>
-              <button>더 보기</button>
-            </div>
-            <div>
-              <span>거봐 좋았잖아~~~~~~</span>
-              <button><img src="" alt="하트" /></button>
-            </div>
-            <p>42분 전</p>
+            <a href="#" class="">
+              <img src="./img/drake-profile.jpg" alt="drake profile" class="section-article__user__img">
+              <a href="" class="section-article__username">drakeofficial</a>
           </div>
-          <form action="">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="댓글 달기..."
-            ></textarea>
-            <button type="submit">게시</button>
-          </form>
-        </article>
-      </section>
-      <aside class="aside">
-        <div class="aside-top">
-          <a href=#>
-            <img src="./img/wecode_icon.jpg" alt="위코드 이모티콘" class="aside-top__img"/>
-          </a>
-          <div class="aside-top__contents">
-            <a href="#">wecode_bootcamp</a>
-            <span>WeCode | 위코드</span>
-          </div>
+          <button class="section-article__modal"><i class="fas fa-ellipsis-h"></i></button>
         </div>
-        <div class="aside-center__container">
-          <div class="aside-center__topbar">
-            <span>스토리</span>
-            <button>모두 보기</button>
+        <img src="./img/drake-img.jpg" alt="" class="section-article__img" />
+        <div class="section-article__container">
+          <div class="section-article__iconbar">
+            <div class="section-article__iconbar__leftSide">
+              <button class="section-article__likeButton">
+                <i class="far fa-heart"></i>
+              </button>
+              <button class="section-article__commentButton">
+                <i class="far fa-comment"></i>
+              </button>
+              <button class="section-article__uploadButton">
+                <i class="far fa-paper-plane"></i>
+              </button>
+            </div>
+            <button class="section-article__bookmarkButton">
+              <i class="far fa-bookmark"></i>
+            </button>
           </div>
-          <div class="aside-center__content">
-            <div>
-              <a href="">
-                <img src="./img/drake-profile.jpg" alt="" class="aside-center__content__img">
-              </a>
-              <div>
-                <a href="">_yums</a>
-                <span>16분전</span>
+          <button class="section-article__likeNumber">좋아요 21,622개</button>
+          <div>
+            <div class="section-article__commentList">
+              <p><a href="#" class="section-article__userlink">
+                  drakeofficials
+                </a> in LA 😍😍😍
+                <button class="section-article__showFullComment">더 보기</button>
+              </p>
+              <div class="section-article__commentContents">
+                <p><a href="#" class="section-article__fanslink">
+                    yongmin
+                  </a>
+                  I love your songs
+                </p>
+                <button class="section-article__commentLinkButton"><i class="far fa-heart"></i></button>
               </div>
             </div>
+            <p class="section-article__sinceCommentTime">42분 전</p>
           </div>
+        </div>
+        <form action="" class="section-article__commentContents">
+          <textarea name="" id="" cols="" rows="" placeholder="댓글 달기..."
+            class="section-article__commentInput"></textarea>
+          <button type="submit" class="section-article__commentUpload">게시</button>
+        </form>
+      </article>
+    </section>
+    <aside class="aside">
+      <div class="aside-top">
+        <a href=#>
+          <img src="./img/wecode_icon.jpg" alt="위코드 이모티콘" class="aside-top__img" />
+        </a>
+        <div class="aside-top__contents">
+          <a href="#">wecode_bootcamp</a>
+          <span>WeCode | 위코드</span>
+        </div>
+      </div>
+      <div class="aside-center__container">
+        <div class="aside-center__topbar">
+          <span>스토리</span>
+          <button>모두 보기</button>
+        </div>
+        <div class="aside-center__content">
+          <div>
+            <a href="">
+              <img src="./img/drake-profile.jpg" alt="" class="aside-center__content__img">
+            </a>
+            <div>
+              <a href="">_yums</a>
+              <span>16분전</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span>회원을 위환 추천</span>
+          <a href="">모두보기</a>
         </div>
         <div>
+          <a href="">프로필이미지</a>
           <div>
-            <span>회원을 위환 추천</span>
-            <a href="">모두보기</a>
+            <span>ioaaaaaahye</span>
+            <span>_legend_a님 외 2명이...</span>
           </div>
-          <div>
-            <a href="">프로필이미지</a>
-            <div>
-              <span>ioaaaaaahye</span>
-              <span>_legend_a님 외 2명이...</span>
-            </div>
-            <button>팔로우</button>
-          </div>
-          <div>
-            <a href="">프로필이미지</a>
-            <div>
-              <span>ioaaaaaahye</span>
-              <span>_legend_a님 외 2명이...</span>
-            </div>
-            <button>팔로우</button>
-          </div>
-          <div>
-            <a href="">프로필이미지</a>
-            <div>
-              <span>ioaaaaaahye</span>
-              <span>_legend_a님 외 2명이...</span>
-            </div>
-            <button>팔로우</button>
-          </div>
-          <div>
-            <a href="">프로필이미지</a>
-            <div>
-              <span>ioaaaaaahye</span>
-              <span>_legend_a님 외 2명이...</span>
-            </div>
-            <button>팔로우</button>
-          </div>
-          <div>
-            <a href="">프로필이미지</a>
-            <div>
-              <span>ioaaaaaahye</span>
-              <span>_legend_a님 외 2명이...</span>
-            </div>
-            <button>팔로우</button>
-          </div>
+          <button>팔로우</button>
         </div>
-        <footer>
-          <p>
-            <a href="">소개</a><a href="">도움말</a><a href="">홍보센터</a
-            ><a href="">API</a><a href="">채용정보</a
-            ><a href="">개인정보처리방침</a><a href="">약관</a
-            ><a href="">디렉터리</a><a href="">프로필</a><a href="">프로필</a
-            ><a href="">해시태그</a><a href="">언어</a>
-          </p>
-          <p>2021 INSTAGRAM</p>
-        </footer>
-      </aside>
-    </main>
-  </body>
+        <div>
+          <a href="">프로필이미지</a>
+          <div>
+            <span>ioaaaaaahye</span>
+            <span>_legend_a님 외 2명이...</span>
+          </div>
+          <button>팔로우</button>
+        </div>
+        <div>
+          <a href="">프로필이미지</a>
+          <div>
+            <span>ioaaaaaahye</span>
+            <span>_legend_a님 외 2명이...</span>
+          </div>
+          <button>팔로우</button>
+        </div>
+        <div>
+          <a href="">프로필이미지</a>
+          <div>
+            <span>ioaaaaaahye</span>
+            <span>_legend_a님 외 2명이...</span>
+          </div>
+          <button>팔로우</button>
+        </div>
+        <div>
+          <a href="">프로필이미지</a>
+          <div>
+            <span>ioaaaaaahye</span>
+            <span>_legend_a님 외 2명이...</span>
+          </div>
+          <button>팔로우</button>
+        </div>
+      </div>
+      <footer>
+        <p>
+          <a href="">소개</a><a href="">도움말</a><a href="">홍보센터</a><a href="">API</a><a href="">채용정보</a><a
+            href="">개인정보처리방침</a><a href="">약관</a><a href="">디렉터리</a><a href="">프로필</a><a href="">프로필</a><a
+            href="">해시태그</a><a href="">언어</a>
+        </p>
+        <p>2021 INSTAGRAM</p>
+      </footer>
+    </aside>
+  </main>
+</body>
+
 </html>
