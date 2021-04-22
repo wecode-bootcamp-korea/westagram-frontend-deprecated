@@ -44,17 +44,17 @@ function leaveaComment(text) {
     say.innerHTML = text;
 
     const likeComment = document.createElement("img");
-    likeComment.setAttribute('src', './img/heart.png');
+    likeComment.setAttribute('src', 'img/heart.png');
     likeComment.className = "likeComment";
     const likeCommentRed = document.createElement("img");
-    likeCommentRed.setAttribute('src', './img/redheart.png');
+    likeCommentRed.setAttribute('src', 'img/redheart.png');
     likeCommentRed.className = "likeComment liked hide";
 
     likeComment.addEventListener("click", ()=>{likeCommentRed.classList.toggle('hide')});
     likeCommentRed.addEventListener("click", ()=>{likeCommentRed.classList.toggle('hide')});
 
     const delBtn = document.createElement("img");
-    delBtn.setAttribute('src', './img/dot.png');
+    delBtn.setAttribute('src', 'img/dot.png');
     delBtn.id = "smalldot";
     delBtn.addEventListener("click", delComment);
 
@@ -106,75 +106,75 @@ const searchList = document.querySelector(".searchList");
 
 const usersToSearch = [{
     id: 'skuukzky',
-    profileImg: './img/skuukzky.jpg',
+    profileImg: 'img/skuukzky.jpg',
     description: '숮이 💄💅👡👠🎀👙🌂👗🌂🎀💋💌'
 }, {
     id: '_imyour_joy',
-    profileImg: './img/_imyour_joy.jpg',
+    profileImg: 'img/_imyour_joy.jpg',
     description: 'Joy 🌺'
 }, {
     id: 'cafeknotted',
-    profileImg: './img/cafeknotted.jpg',
+    profileImg: 'img/cafeknotted.jpg',
     description: '노티드 Cafe Knotted'
 }, {
     id: 'jennierubyjane',
-    profileImg: './img/jennierubyjane.jpg',
+    profileImg: 'img/jennierubyjane.jpg',
     description: 'J'
 }, {
     id: 'bts.bighotofficial',
-    profileImg: './img/bts.bighotofficial.jpg',
+    profileImg: 'img/bts.bighotofficial.jpg',
     description: 'BTS | BANGTAN | 방탄소년단'
 }, {
     id: 'skawngur',
-    profileImg: './img/skawngur.jpg',
+    profileImg: 'img/skawngur.jpg',
     description: '남주혁'
 }, {
     id: '_victoria_bakery',
-    profileImg: './img/_victoria_bakery.jpg',
+    profileImg: 'img/_victoria_bakery.jpg',
     description: 'Victoria Bakery'
 }, {
     id: 'yeojin9oo',
-    profileImg: './img/yeojin9oo.jpg',
+    profileImg: 'img/yeojin9oo.jpg',
     description: '여진구 Yeo Jin Goo'
 }, {
     id: 'akmu_suhyun',
-    profileImg: './img/akmu_suhyun.jpg',
+    profileImg: 'img/akmu_suhyun.jpg',
     description: '이수현 1999.05.04'
 }, {
     id: 'nct_dream',
-    profileImg: './img/nct_dream.jpg',
+    profileImg: 'img/nct_dream.jpg',
     description: 'NCT DREAM OFFICIAL'
 }, {
     id: 'wm_ohmygirl',
-    profileImg: './img/wm_ohmygirl.jpg',
+    profileImg: 'img/wm_ohmygirl.jpg',
     description: 'OHMYGIRL (오마이걸) WM ENT 오마이걸 공식 인스타그램'
 }, {
     id: 'twicetagram',
-    profileImg: './img/twicetagram.jpg',
+    profileImg: 'img/twicetagram.jpg',
     description: 'TWICE'
 }, {
     id: 'youngji_02',
-    profileImg: './img/youngji_02.jpg',
+    profileImg: 'img/youngji_02.jpg',
     description: '이영지'
 }, {
     id: 'saddlerhaus_bakery',
-    profileImg: './img/saddlerhaus_bakery.jpg',
+    profileImg: 'img/saddlerhaus_bakery.jpg',
     description: 'french waffle'
 }, {
     id: 'onyourm__ark',
-    profileImg: './img/onyourm__ark.jpg',
+    profileImg: 'img/onyourm__ark.jpg',
     description: 'Mark 🐯🌱'
 }, {
     id: 'songkang_b',
-    profileImg: './img/songkang_b.jpg',
+    profileImg: 'img/songkang_b.jpg',
     description: '송강'
 }, {
     id: 'roses_are_rosie',
-    profileImg: './img/roses_are_rosie.jpg',
+    profileImg: 'img/roses_are_rosie.jpg',
     description: 'ROSÉ'
 }, {
     id: 'dlwlrma',
-    profileImg: './img/dlwlrma.jpg',
+    profileImg: 'img/dlwlrma.jpg',
     description: '이지금 IU'
 }];
 
@@ -228,7 +228,7 @@ recommendUsers.forEach((i) => {
     const friend = document.createElement("div");
     friend.innerHTML = `<div class="user">
     <div class="profile">
-    <img src="./img/${i.id}.jpg">
+    <img src="img/${i.id}.jpg">
     </div>
     <div class="userid">
     <p class="id">${i.id}</p>
@@ -241,3 +241,53 @@ recommendUsers.forEach((i) => {
     recommendList.appendChild(friend);
 });
 
+
+
+//스토리
+
+const storyBox = document.querySelector(".storyBox");
+const storySpan = document.querySelector(".storySpan");
+const usersForStory = [...usersToSearch].reverse();
+
+usersForStory.forEach(i => {
+    const story = document.createElement("div");
+    story.className = "story";
+    story.innerHTML = `
+    <div>
+    <img src="img/storyring.png" id="storyring">
+    <img src="img/${i.id}.jpg" id="storyprofile">
+    </div>
+    <p>${i.id}</p>
+    `;
+    storySpan.appendChild(story);
+})
+
+const ids = document.querySelectorAll(".story p");
+ids.forEach(i => {
+    if(i.innerHTML.length > 10) {
+        const longId = i.innerHTML;
+        i.innerHTML = longId.slice(0, 8)+'...';
+    }
+})
+
+const prevBtn = document.querySelector(".fa-chevron-circle-left");
+const nextBtn = document.querySelector(".fa-chevron-circle-right");
+let right;
+storySpan.style.right? right = parseInt(storySpan.style.right) : right = 0;
+
+function next() {
+    if(right < 795) {
+        right += 265;
+        storySpan.style.right = `${right}px`;
+    }
+}
+
+function prev() {
+    if(right > 0) {
+        right -= 265;
+        storySpan.style.right = `${right}px`;
+    }
+}
+
+nextBtn.addEventListener("click", next);
+prevBtn.addEventListener("click", prev);

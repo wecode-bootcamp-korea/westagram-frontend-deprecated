@@ -73,9 +73,12 @@ const validId = /\W/;
 function checkValidation() {
     if((validId.exec(id.value)) || (pw.value !== 'wecode')) {
         const invalid = document.querySelector(".invalid");
-        const invalidMessage = document.createElement('p');
-        invalidMessage.innerHTML = "아이디는 영문, 숫자, '_'로 구성되어야 합니다.<br />패스워드는 'wecode'입니다.";
-        invalid.appendChild(invalidMessage);
-        return false;
+        if(invalid.querySelector("p") === null) {
+            const invalidMessage = document.createElement('p');
+            invalidMessage.innerHTML = "아이디는 영문, 숫자, '_'로 구성되어야 합니다.<br />패스워드는 'wecode'입니다.";
+            invalid.appendChild(invalidMessage);
+            return false;
+        }
+        return false; 
     }
 }

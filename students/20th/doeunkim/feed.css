@@ -162,19 +162,88 @@ a {
     margin-right: 0;
 }
 
-div.mainContainer {
+.mainContainer {
     display: flex;
     width: 960px;
     margin-top: 30px;
 }
 
-article {
+
+.storyBox, article {
     width: 614px;
+    font-size: 14px;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
+    margin-bottom: 30px;
     background-color: white;
-    font-size: 14px;
-    margin-bottom: 20px;
+}
+
+.storyBox {
+    overflow-x: scroll;
+    padding: 15px;
+    position: relative;
+}
+
+.storyBox::-webkit-scrollbar {
+    display: none;
+}
+
+.storyBox i {
+    font-size: 22px;
+    color: white;
+    text-shadow: 0 0 5px #8E8E8E;
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-left {
+    left: 10px;
+}
+
+.fa-chevron-circle-right {
+    right: 10px;
+}
+
+.storySpan {
+    display: flex;
+    position: relative;
+    transition: 1s;
+    right: 0;
+}
+
+.story {
+    width: 70px;
+    font-size: 12px;
+    margin: 5px;
+    text-align: center;
+}
+
+.story div {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+#storyring {
+    width: 66px;
+    transition: 4s;
+}
+
+
+.story:hover #storyring {
+    transform: rotate(3turn);
+}
+
+#storyprofile {
+    width: 56px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-54%);
+    cursor: pointer;
 }
 
 .profile img {
