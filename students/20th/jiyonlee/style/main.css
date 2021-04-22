@@ -191,7 +191,7 @@ main .feeds {
     font-size: var(--comment-fontSize);
 }
 
-.articleComment .comments {
+.articleComment .commentWrap {
     position: relative;
     margin-bottom: 5px;
 }
@@ -199,6 +199,7 @@ main .feeds {
 .articleComment .commenter {
     font-weight: bold;
     font-size: var(--comment-fontSize);
+    margin-right: 10px;
 }
 
 .articleComment .myComment {

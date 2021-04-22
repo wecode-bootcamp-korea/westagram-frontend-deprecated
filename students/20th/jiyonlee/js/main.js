@@ -26,7 +26,7 @@ const userImgs = users.reduce((pre, cur) => {
 
 const createProfileLists = (dom, imgsrc, profileName, postedTime) => {
     const asideMain = document.querySelector(`${dom} .asideMain`);
-    const imgAndId = document.createElement("div");
+    const imgAndId = document.createElement("li");
     const asideProfileImg = document.createElement("img");
     const idAndTime = document.createElement("div");
     const profileId = document.createElement("div");
@@ -103,22 +103,37 @@ pushLike.addEventListener("click", (e) => {
 });
 
 const clickCommentBtn = () => {
-    postCommentBtn.classList.remove("blue");
+    const commentWrap = document.createElement("div");
+    const commenter = document.createElement("span");
+    const comment = document.createElement("span");
+    const commentDeleteBtn = document.createElement("button");
+    const commentLikesBtn = document.createElement("button");
 
-    const comments = document
-        .querySelector(".commentContainer")
-        .cloneNode(true);
-    comments.classList.remove("hide");
-    comments.querySelector(".commenter").textContent = "Shaman king";
-    comments.querySelector(".comment").textContent = postCommentInput.value;
+    commentWrap.classList.add("commentWrap");
+    commenter.classList.add("commenter");
+    comment.classList.add("comment");
+    commentDeleteBtn.classList.add("commentBtn");
+    commentLikesBtn.classList.add("commentBtn");
 
-    articleComment.append(comments);
+    // 구현중
+    // commentDeleteBtn.innerHTML = `<i class="far fa-trash-alt"></i>`;
+    // commentLikesBtn.innerHTML = `<i class="emptyHeart far fa-heart"></i><i class="redHeart fas fa-heart red hide"></i>`;
+
+    commentWrap.append(commenter);
+    commentWrap.append(comment);
+    articleComment.append(commentWrap);
+
+    commenter.textContent = "Shaman_king";
+    comment.textContent = postCommentInput.value;
+
     postCommentInput.value = "";
     postCommentInput.focus();
     commentTime.textContent = "방금";
+    postCommentBtn.classList.remove("blue");
 
-    const commentDeleteBtn = document.querySelectorAll(".commentDeleteBtn");
-    commentDeleteBtn.forEach((e, i) => {
+    // 구현중 delete, like btn 클릭시
+    const commentDeleteBtns = document.querySelectorAll(".commentDeleteBtn");
+    commentDeleteBtns.forEach((e, i) => {
         // 0번째 인덱스는 cloneNode를 위한 것이므로 실제 댓글인 첫번째 인덱스부터 잡는다.
         if (i == 0) {
             return;
@@ -129,31 +144,16 @@ const clickCommentBtn = () => {
     });
 
     // toggle로 하면 forEach문이 실행한 후 끝까지 돌면서, 짝수 혹은 홀수일때만 좋아요가 눌리는 문제
-    //stopflag 를 이용했는데 코드가 너무 안좋아보임...
-    const commentLikesBtn = document.querySelectorAll(".commentLikesBtn");
-    commentLikesBtn.forEach((e, i) => {
+    const commentLikesBtns = document.querySelectorAll(".commentLikesBtn");
+    commentLikesBtns.forEach((e, i) => {
         e.addEventListener("click", () => {
             let emptyHeart = e.querySelector(".emptyHeart");
             let redHeart = e.querySelector(".redHeart");
 
-            toggleHeart(emptyHeart, redHeart);
+            emptyHeart.classList.toggle("hide");
+            redHeart.classList.toggle("hide");
         });
     });
-};
-
-let stopflag = false;
-
-const toggleHeart = (emptyHeart, redHeart) => {
-    if (stopflag) {
-        return;
-    }
-    emptyHeart.classList.toggle("hide");
-    redHeart.classList.toggle("hide");
-
-    stopflag = true;
-    setTimeout(() => {
-        stopflag = false;
-    }, 4);
 };
 
 postCommentBtn.addEventListener("click", () => {
