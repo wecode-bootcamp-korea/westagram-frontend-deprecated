@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="utf-8">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href = "./common.css" rel = "stylesheet" type = "text/css">
         <link href = "./login.css" rel = "stylesheet" type = "text/css">
         <title>westagram</title>
     </head>
     <body>
-        <div class = "loginContainer">
+        <section class = "loginContainer">
             <div class = "loginLogoContainer">
-                <h1 class = "loginLogoText">Westagram</h1> 
-            </div><!--loginLogoContainer-->    
-                
+                <h1 class = "loginLogo">Westagram</h1> 
+            </div>
             <form class = "loginInputContainer">
-                
-                <input class = "loginValue loginInputValue loginId" type = "text" placeholder = "전화번호, 사용자이름 또는 이메일">
-                <input class = "loginValue loginInputValue loginPassword" type = "password" placeholder = "비밀번호">
-                
+                <input aria-label ="type ID here" class = "loginValue loginInputValue loginId" type = "text" placeholder = "전화번호, 사용자이름 또는 이메일">
+                <input aria-label ="type PW here" class = "loginValue loginInputValue loginPassword" type = "password" placeholder = "비밀번호">
                 <button class = "loginValue loginBtn">로그인</button>
-            </form><!--loginInputContainer-->
-
-            <p class = "forgotPasswordText"><a href="">비밀번호를 잊으셨나요?</a></p>
-
-        </div><!--loginContainer-->
-
+            </form>
+            <p class = "forgotPasswordText"><a href="#">비밀번호를 잊으셨나요?</a></p>
+        </section>
         <script src="./login.js"></script>
     </body>
 </html>
