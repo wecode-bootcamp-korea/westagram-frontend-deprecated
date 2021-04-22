@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
 </head>
-
 <body>
   <header class="header">
     <nav class="header-nav">
@@ -20,7 +19,7 @@
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/512px-Instagram_font_awesome.svg.png"
           alt="instagram_imoticon" class="header-nav__leftSide__img" />
-        <a href="#" class="header-nav__leftSide__title">Instagram</a>
+        <h1><a href="#" class="header-nav__leftSide__title">Instagram</a></h1>
       </div>
       <div class="header-nav__center">
         <input type="text" class="header-nav__input" placeholder="검색" />
@@ -77,27 +76,32 @@
                 </a> in LA 😍😍😍
                 <button class="section-article__showFullComment">더 보기</button>
               </p>
-              <div class="section-article__commentContents">
-                <p><a href="#" class="section-article__fanslink">
-                    yongmin
-                  </a>
-                  I love your songs
-                </p>
-                <button class="section-article__commentLinkButton"><i class="far fa-heart"></i></button>
-              </div>
+              <ul class="section-article__comment">
+                <li>
+                  <div class="section-article__commentContents">
+                    <p><a href="#" class="section-article__fanslink">
+                        yongmin
+                      </a>
+                      I love your songs
+                    </p>
+                    <button class="section-article__commentLinkButton"><i class="far fa-heart"></i></button>
+                  </div>
+                </li>
+              </ul>
             </div>
             <p class="section-article__sinceCommentTime">42분 전</p>
           </div>
         </div>
-        <form action="" class="section-article__commentContents">
+        <div class="section-article__commentContents">
+          <button><i class="far fa-smile"></i></button>
           <textarea name="" id="" cols="" rows="" placeholder="댓글 달기..."
             class="section-article__commentInput"></textarea>
-          <button type="submit" class="section-article__commentUpload">게시</button>
-        </form>
+          <button type="submit" class="section-article__commentUpload" disabled>게시</button>
+        </div>
       </article>
     </section>
     <aside class="aside">
-      <div class="aside-top">
+      <header class="aside-top">
         <a href=#>
           <img src="./img/wecode_icon.jpg" alt="위코드 이모티콘" class="aside-top__img" />
         </a>
@@ -105,19 +109,46 @@
           <a href="#">wecode_bootcamp</a>
           <span>WeCode | 위코드</span>
         </div>
-      </div>
+      </header>
       <div class="aside-center__container">
         <div class="aside-center__topbar">
           <span>스토리</span>
           <button>모두 보기</button>
         </div>
-        <div class="aside-center__content">
+        <div class="aside-center__contents">
           <div>
-            <a href="">
-              <img src="./img/drake-profile.jpg" alt="" class="aside-center__content__img">
+            <a href="#">
+              <img src="./img/drake-profile.jpg" alt="profile-image" class="aside-center__content__img">
             </a>
-            <div>
-              <a href="">_yums</a>
+            <div class="aside-center__content">
+              <a href="#">yums</a>
+              <span>16분전</span>
+            </div>
+          </div>
+          <div>
+            <a href="#">
+              <img src="./img/drake-profile.jpg" alt="profile-image" class="aside-center__content__img">
+            </a>
+            <div class="aside-center__content">
+              <a href="#">yums</a>
+              <span>16분전</span>
+            </div>
+          </div>
+          <div>
+            <a href="#">
+              <img src="./img/drake-profile.jpg" alt="profile-image" class="aside-center__content__img">
+            </a>
+            <div class="aside-center__content">
+              <a href="#">yums</a>
+              <span>16분전</span>
+            </div>
+          </div>
+          <div>
+            <a href="#">
+              <img src="./img/drake-profile.jpg" alt="profile-image" class="aside-center__content__img">
+            </a>
+            <div class="aside-center__content">
+              <a href="#">yums</a>
               <span>16분전</span>
             </div>
           </div>
@@ -127,38 +158,6 @@
         <div>
           <span>회원을 위환 추천</span>
           <a href="">모두보기</a>
-        </div>
-        <div>
-          <a href="">프로필이미지</a>
-          <div>
-            <span>ioaaaaaahye</span>
-            <span>_legend_a님 외 2명이...</span>
-          </div>
-          <button>팔로우</button>
-        </div>
-        <div>
-          <a href="">프로필이미지</a>
-          <div>
-            <span>ioaaaaaahye</span>
-            <span>_legend_a님 외 2명이...</span>
-          </div>
-          <button>팔로우</button>
-        </div>
-        <div>
-          <a href="">프로필이미지</a>
-          <div>
-            <span>ioaaaaaahye</span>
-            <span>_legend_a님 외 2명이...</span>
-          </div>
-          <button>팔로우</button>
-        </div>
-        <div>
-          <a href="">프로필이미지</a>
-          <div>
-            <span>ioaaaaaahye</span>
-            <span>_legend_a님 외 2명이...</span>
-          </div>
-          <button>팔로우</button>
         </div>
         <div>
           <a href="">프로필이미지</a>
@@ -179,6 +178,7 @@
       </footer>
     </aside>
   </main>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

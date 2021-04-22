@@ -9,6 +9,7 @@
   --color-border: rgb(219, 219, 219);
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
+  --color-red: ;
 }
 
 body {
@@ -16,23 +17,15 @@ body {
   height: 100vh;
 }
 
-img {
-  display: inline-block;
-}
-
-button {
-  cursor: pointer;
-}
-
 /* main */
 
 .main {
   display: flex;
+  flex-flow: row nowrap;
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
   padding-top: 120px;
-  flex-flow: row nowrap;
 }
 
 /* header-nav */
@@ -107,9 +100,9 @@ button {
 }
 
 .header-nav__rightSide {
-  width: 130px;
   display: flex;
   justify-content: space-between;
+  width: 130px;
 }
 
 .header-nav__rightSide button:nth-child(2),
@@ -130,12 +123,12 @@ button {
   border: 1px solid var(--color-border);
   margin-right: 30px;
   border-radius: 5px;
+  margin-bottom: 50px;
 }
 
 .section-article__user {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-border);
   padding: 10px 20px;
 }
 
@@ -221,8 +214,16 @@ button {
   justify-content: space-between;
 }
 
+.section-article__commentContents .fa-smile {
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 15px;
+}
+
 .section-article__commentLinkButton {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 /* section-article-commentInput */
@@ -243,7 +244,16 @@ button {
   font-size: 15px;
   font-weight: bold;
   color: rgb(0, 149, 246);
+  opacity: 0.5;
   width: 80px;
+}
+
+.section-article__commentUpload.active {
+  opacity: 1;
+}
+
+.section-article__commentUpload.active:hover {
+  cursor: pointer;
 }
 
 /* aside */
@@ -274,17 +284,44 @@ button {
   font-weight: bold;
 }
 
-.aside-center__contents {
+.aside-center__container {
   border: 1px solid var(--color-border);
   border-radius: 5px;
+  padding: 10px;
+  height: 200px;
+  overflow: auto;
 }
 
 .aside-center__topbar {
   display: flex;
+  position: sticky;
   justify-content: space-between;
-  padding: 10px;
+  margin-bottom: 10px;
+  top: 0;
+  background-color: white;
+}
+
+.aside-center__contents div {
+  display: flex;
+}
+
+.aside-center div:first-child a {
+  margin-right: 10px;
 }
 
 .aside-center__content__img {
   width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.aside-center__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.aside-center__content::-webkit-scrollbar {
+  display: none;
 }
