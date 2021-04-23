@@ -10,7 +10,7 @@
   border-bottom: var(--border-gray-style);
   background-color: white;
   font-size: 25px;
-  z-index: 99;
+  z-index: 90;
 }
 
 .top-nav__column {

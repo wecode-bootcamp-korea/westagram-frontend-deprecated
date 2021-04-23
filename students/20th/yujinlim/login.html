@@ -22,13 +22,16 @@
         <form class="login-form" action="main.html">
           <input
             class="login-form__input"
-            type="text"
+            type="email"
             placeholder="전화번호, 사용자 이름 또는 이메일"
+            required
           />
           <input
             class="login-form__input"
             type="password"
             placeholder="비밀번호"
+            required
+            minlength="5"
           />
           <button class="login-form__button login-form__button--opacity">
             로그인

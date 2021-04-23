@@ -1,7 +1,10 @@
-const idInput = document.getElementsByClassName("login-form__input")[0];
-const pwInput = document.getElementsByClassName("login-form__input")[1];
+const loginInputs = Array.from(
+  document.getElementsByClassName("login-form__input")
+);
 const submitBtn = document.querySelector(".login-form__button");
 const OPACITY = "login-form__button--opacity";
+let isIdExists;
+let isPwExists;
 
 function activateSubmitBtn(isEveryInputValueExists) {
   if (isEveryInputValueExists) {
@@ -17,17 +20,27 @@ function activateSubmitBtn(isEveryInputValueExists) {
   }
 }
 
-function checkInputValue() {
-  const idInputValue = idInput.value;
-  const pwInputValue = pwInput.value;
-  const isEveryInputValueExists = idInputValue && pwInputValue ? true : false;
+function checkInputValue(e) {
+  const inputValue = e.target.value;
+  const inputType = e.target.type;
+
+  if (inputType === "email") {
+    inputValue ? (isIdExists = true) : (isIdExists = false);
+  }
+  if (inputType === "password") {
+    inputValue ? (isPwExists = true) : (isPwExists = false);
+  }
+
+  const isEveryInputValueExists = isIdExists && isPwExists ? true : false;
+
   activateSubmitBtn(isEveryInputValueExists);
 }
 
 function init() {
   submitBtn.disabled = true;
+  loginInputs.forEach((input) =>
+    input.addEventListener("keyup", checkInputValue)
+  );
 }
 
-idInput.addEventListener("keyup", checkInputValue);
-pwInput.addEventListener("keyup", checkInputValue);
 init();

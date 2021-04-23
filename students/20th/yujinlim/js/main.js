@@ -10,8 +10,18 @@ const submitBtns = commentInputDivs.map((el) => {
 const feedLikeBtns = Array.from(
   document.querySelectorAll(".feed__feature-btn .fa-heart")
 );
+
+const modal = document.querySelector(".modal-container");
+const MODALOPEN = "modal-open";
+const userBtn = document.querySelector(".top-nav__menu:last-child");
+
 const myID = document.querySelector(".main-right__my-id").innerText;
 const OPACITY = "feed__submit-btn--opacity";
+
+function nthParent(element, n) {
+  while (n-- && element) element = element.parentNode;
+  return element;
+}
 
 function removeSubmitBtnOpacity(commentInputValue, submitBtn) {
   if (commentInputValue) {
@@ -44,7 +54,7 @@ function toggleCommentLike() {
 }
 
 function deleteComment() {
-  const selectedComment = this.parentNode.parentNode;
+  const selectedComment = nthParent(this, 2);
   selectedComment.remove();
 }
 
@@ -80,7 +90,7 @@ function makeComment(e) {
 
   const commentInput = e.target.parentNode.querySelector(".feed__input");
   const commentInputValue = commentInput.value;
-  const commentList = e.target.parentNode.parentNode
+  const commentList = nthParent(e.target, 2)
     .querySelector(".feed__texts")
     .querySelector(".js-feed-comments");
 
@@ -91,9 +101,7 @@ function makeComment(e) {
     commentAuthor.innerText = myID;
     commentBtns.innerHTML = `<button class="js-comment-btn like-btn"><i class="far fa-heart"></i></button><button class="js-comment-btn delete-btn"><i class="fas fa-times"></i></button>`;
 
-    commentColumn.appendChild(commentAuthor);
-    commentColumn.appendChild(commentContent);
-    commentColumn.appendChild(commentBtns);
+    commentColumn.append(commentAuthor, commentContent, commentBtns);
 
     const materialsForAddComment = {
       commentColumn,
@@ -115,7 +123,7 @@ function handleSubmitBtn(e) {
 
 function toggleFeedLike() {
   const isFeedLikePressed = this.classList.contains("fas");
-  const likesCountSpan = this.parentNode.parentNode.parentNode.parentNode.parentNode
+  const likesCountSpan = nthParent(this, 5)
     .querySelector(".feed__texts")
     .querySelector(".feed__likes")
     .querySelector(".js-likes-count");
@@ -132,14 +140,24 @@ function toggleFeedLike() {
   }
 }
 
-commentInputs.forEach((el) => {
-  el.addEventListener("keyup", getCommentValues);
-});
+function openModal() {
+  modal.classList.toggle(MODALOPEN);
+}
 
-submitBtns.forEach((el) => {
-  el.addEventListener("click", handleSubmitBtn);
-});
+function init() {
+  commentInputs.forEach((el) => {
+    el.addEventListener("keyup", getCommentValues);
+  });
 
-feedLikeBtns.forEach((el) => {
-  el.addEventListener("click", toggleFeedLike);
-});
+  submitBtns.forEach((el) => {
+    el.addEventListener("click", handleSubmitBtn);
+  });
+
+  feedLikeBtns.forEach((el) => {
+    el.addEventListener("click", toggleFeedLike);
+  });
+
+  userBtn.addEventListener("click", openModal);
+}
+
+init();
