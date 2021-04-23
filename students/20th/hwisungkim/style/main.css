@@ -61,21 +61,29 @@
     width:20px;
     height: 20px;
 }
-
 /* 메인피드 */
 .main{
     display: flex;
     justify-content: center;
     justify-content: space-around;
     margin-top: 30px;
-
+    margin: auto;
+    width:900px;
+    
 }
-.main .feeds{
+
+.main .feeds_box{
     width: 500px;
     height: 700px;
     border:1px solid #D9D9D9;
     border-radius: 3px;
 }
+
+.main .feeds_box #feed_account{
+    width: 30px;
+    height: 30px;
+}
+
 .main .feed{
     width:100%;
     height: 100%;
@@ -87,17 +95,35 @@
     background-color: white;
 }
 
-.main .feeds #feed_account{
-    width: 30px;
-    height: 30px;
-}
 .main .feed .feed_account span{
 background-color: blue;
 }
 
-.main .feed img{
+.main .feeds_box .feed img{
     width:100%;
 }
+
+.main .feeds_box .feed .status{
+
+    display: flex;
+    width: 100%;
+
+}
+.main .feeds_box .feed .status img{
+    display: flex;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+}
+main .feeds_box .feed .status .status_like{
+    
+}
+
+.main .feeds_box .feed .reply{
+    
+}
+
+
 
 
 /* 사이드 피드 */
@@ -111,13 +137,33 @@ background-color: blue;
 }
 .main .main-right .profile{
     display: flex;;
-    width:100%;
+    width: 100%;
     height: 50px;
     background-color: #F3F3F3;
 }
 .main .main-right .profile .wecode_img{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.main .main-right .profile .wecode_info{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+.main .main-right .profile .wecode_info .wecode_id{
+
+}
+
+.main .main-right .profile .wecode_info .wecode_name{
+
+    color:#868787;
+}
+
+
+.main .main-right .profile .wecode_info:first-child:first-child{
+    font-size: 10px;
 }
 
 .main .main-right .story_list_img{
@@ -142,9 +188,16 @@ background-color: blue;
     color:#868787;
     padding:10px;
 }
-.main .main-right .story_list .story_list1_img{
-    width: 20px;
-    height: 20px;
+
+.main .main-right .story_list .story_list_info{
+    display: flex;
+    justify-content: center;
+}
+
+.main .main-right .story_list .story_list_img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
 }
 /* 모두보기 글자 */
 .main .main-right .story_list .seeAll_1{ 
@@ -177,8 +230,6 @@ background-color: blue;
     color:black;
     margin-left: 90px;
 }
-
-
 /* 정보 */
 .main .main-right .info{
     background-color: #F3F3F3;
@@ -186,9 +237,6 @@ background-color: blue;
     font-size: 10px;
     color:#C7C7C7;
 }
-
-
-
 body{
     background-color:#F3F3F3;
 }
