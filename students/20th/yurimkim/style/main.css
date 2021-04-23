@@ -32,6 +32,7 @@ body {
 .mainNav > .maxWidth > .bar {
   color: #c7c7c7;
 }
+
 .mainNav > .maxWidth > .bar > I {
   position: relative;
   left: 40%;
@@ -138,9 +139,58 @@ body {
   font-size: 20px;
 }
 
-.mainNav > .maxWidth > ul > li :nth-child(2) {
+.mainNav > .maxWidth > ul > li {
   display: flex;
   flex-direction: column;
+}
+
+.mainNav > .maxWidth > ul > li:last-child li:hover {
+  background: #a8a7a7;
+}
+
+.mainNav > .maxWidth > ul > li:last-child img {
+  width: 25px;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+
+.profilePage {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 230px;
+  height: 160px;
+  color: #747272;
+  font-weight: 800;
+  background: #fff;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  z-index: 1;
+}
+
+.profilePage > ul {
+  padding: 8px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.profilePage > ul > li > a {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 16px;
+}
+
+.profilePage > ul > li > a > p {
+  padding: 0 16px;
+}
+
+.profilePage > p:hover,
+.profilePage > ul > li:hover {
+  background: #f1f0f0;
+}
+
+.profilePage > p {
+  padding: 16px 16px;
 }
 
 body > div {
@@ -374,4 +424,10 @@ aside > nav > ul {
 
 aside > nav > ul > li {
   margin: 0 8px 8px 0;
+}
+
+@media screen and (max-width: 950px) {
+  aside {
+    display: none;
+  }
 }

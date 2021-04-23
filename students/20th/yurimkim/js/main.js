@@ -26,8 +26,8 @@ window.addEventListener('click', (e) => {
 
 const idArr = ['yurim', 'wecode01기', 'wecode_bootcamp', 'wecode10기', 'wecode20기', 'BTS', 'bts'];
 const searchResult = idArr => {
-  const a = idArr.filter(x => x.includes(search.value))
-    a.forEach(elem => {
+  const idFilter = idArr.filter(x => x.includes(search.value))
+    idFilter.forEach(elem => {
       const newDivList= document.createElement('li');
       searchList.append(newDivList);
       newDivList.innerHTML = `
@@ -48,13 +48,28 @@ searchDel .addEventListener('click', (e) => {
   e.target.parentNode.parentNode.parentNode.parentNode.remove();
 })
 
+const profilePage = document.querySelector('.profilePage');
+const profileImg = document.querySelector('.profileImage');
+const profilePageList = document.querySelector('.profilePageList');
+
+profileImg.addEventListener('click', () => {
+  profilePage.style.display = "block";
+})
+
+window.addEventListener('click', (e) => {
+  console.log(e.target.className, e.target.tagName);
+  if (e.target.tagName !== 'IMG'){
+    profilePage.style.display = "none"
+  }
+})
+
 const commentList = document.querySelector('.commentList');
 const addBtn = document.querySelector('.addBtn');
 const textArea = document.querySelector('.textarea');
 
 const  onAdd = () => {
   const comment = textArea.value;
-  const newDiv= document.createElement('div');
+  const newDiv = document.createElement('div');
   newDiv.className = 'delList';
   commentList.append(newDiv);
   newDiv.innerHTML = `<div><span>yurim4545</span>${comment}<span class="delBtn"><i class="fas fa-times"></i></span></div><button><i class="far fa-heart"></i></button>`;
