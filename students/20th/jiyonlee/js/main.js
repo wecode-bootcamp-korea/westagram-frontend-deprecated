@@ -62,7 +62,11 @@ users.forEach((user) => {
     );
 });
 
-navSearch.addEventListener("keyup", () => {
+navSearch.addEventListener("input", (e) => {
+    if (e.keyCode === 13) {
+        return;
+    }
+
     if (userIds.includes(navSearch.value)) {
         const searchedList = document.createElement("li");
         const profileImg = document.createElement("img");
@@ -79,6 +83,8 @@ navSearch.addEventListener("keyup", () => {
         searchedList.append(profileImg);
         searchedList.append(idAndNickname);
         searchPopup.append(searchedList);
+    } else {
+        searchPopup.innerHTML = "";
     }
     if (navSearch.value.length === 0) {
         searchPopup.innerHTML = "";
