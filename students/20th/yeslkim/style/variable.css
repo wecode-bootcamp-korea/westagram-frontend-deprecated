@@ -1,0 +1,13 @@
+:root {
+    --bg-light-grey: #fafafa;
+    --bg--darken: #fafafa;
+
+    --main-border-color: #dbdbdb;
+    --border-color--light: #efefef;
+    --border-color--dark: #5b5b5b;
+    --main-font-color: #262626;
+    --font-color--grey: #8e8e8e;
+    --font-color--blue: #01376b;
+    --btn-color--red: #ed4956;
+    --btn-color--blue: #0095f6;
+}

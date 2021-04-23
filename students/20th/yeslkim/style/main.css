@@ -254,6 +254,30 @@ article > header{
     margin-bottom: 5px;
 }
 
+.comment {
+    position: relative;
+}
+
+.comment:hover .delete-btn {
+    display: block;
+}
+
+.comment .delete-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    margin-top: -20px;
+    background: #fff;
+    color: #262626;
+    line-height: 24px;
+    opacity: .2;
+}
+
+.comment:hover .delete-btn:hover {
+    opacity: .5;
+}
+
 .comment .like-btn {
     padding: 0;
     width: 12px;
