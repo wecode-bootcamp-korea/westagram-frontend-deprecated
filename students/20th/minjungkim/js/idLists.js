@@ -34,8 +34,8 @@ const searchResultLists = document.querySelector('.search_result_lists');
 searchInput.addEventListener('input', () => {
 	searchInputValue = searchInput.value;
 	if (searchInputValue) {
-		let newArray = idListsData.filter((idList) => {
-			return idList.id.includes(searchInputValue);
+		const newArray = USER_LIST.filter((user) => {
+			return user.id.includes(searchInputValue);
 		});
 		newArray.map((idList) => {
 			idList = `
@@ -66,4 +66,3 @@ function displaySearchResult(newArray) {
 	//to be continue...
 
 }
-
