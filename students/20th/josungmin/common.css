@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
+}
 
+p, span {
+    font-size: 14px;
 }
 
 
