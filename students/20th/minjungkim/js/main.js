@@ -72,40 +72,30 @@ function makeCommentList(newComment) {
 			<div class="feed_comment">
 				<span class="friend_id">travellingthroughtheworld</span>
 				<span class="friend_comment">${newComment}</span>
-			</div>`;
-
-	const likeBtn = document.createElement('span');
-	likeBtn.classList.add('like_btn');
-	likeBtn.innerHTML = `<i class="far fa-heart"></i> `;
-
-	const deleteBtn = document.createElement('span');
-	deleteBtn.classList.add('delete_btn');
-	deleteBtn.innerHTML = `<i class="far fa-trash-alt"></i>`;
-
-	const feedControls = document.createElement('div');
-	feedControls.setAttribute('class', 'feed_controls');
-
-	feedControls.appendChild(likeBtn);
-	feedControls.appendChild(deleteBtn);
-	li.appendChild(feedControls);
+			</div>
+			<div class="feed_controls">
+				<span onclick="onClickLikeBtn(this)" class="like_btn">
+					<i class="far fa-heart"></i>
+				</span>
+				<span onclick="onClickDeleteBtn(this)" class="delete_btn">
+					<i class="far fa-trash-alt"></i>
+				</span>
+			</div>			
+			`;
 	feedCommentContainer.appendChild(li);
-
 	postingBtn.classList.remove('active');
 	feedInput.value = '';
 	feedInput.focus();
-	
-	likeBtn.addEventListener('click', onClickLikeBtn);
-	deleteBtn.addEventListener('click', onClickDeleteBtn);
+}
 
-	function onClickLikeBtn() {
-		likeBtn.classList.toggle('active');
-		likeBtn.childNodes[0].classList.toggle('fas');
-		likeBtn.childNodes[0].classList.toggle('far');
-	}
+function onClickLikeBtn(that) {
+	that.classList.toggle('active');
+	that.children[0].classList.toggle('fas');
+	that.children[0].classList.toggle('far');
+}
 
-	function onClickDeleteBtn() {
-		deleteBtn.closest('li').remove();
-	}
+function onClickDeleteBtn(that) {
+	that.closest('li').remove();
 }
 
 // To do's
