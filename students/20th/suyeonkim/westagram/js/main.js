@@ -34,11 +34,7 @@ const addComment = () => {
     goodBtn.addEventListener('click', () => {
         const changeGood = goodIcon.classList;
 
-        if(changeGood.contains('goodBtn')) {
-            changeGood.remove('goodBtn');
-        } else {
-            changeGood.add('goodBtn');
-        }
+        return (changeGood.contains('goodBtn') ? changeGood.remove('goodBtn') : changeGood.add('goodBtn'));
     })
     
     // delBtn
@@ -50,19 +46,18 @@ const addComment = () => {
 // init
 const addCommentInit = () => {
     commentBar.addEventListener('keydown', function(e){
-        if(e.keyCode == 13 && commentBar.value !== '') {
-            addComment();
+        if(e.keyCode == 13 && commentBar.value) {
+            addComment(commentBar.value);
         }
     })
 
     commentUploadBtn.addEventListener('click', function() {
-        if(commentBar.value !== '') {
-            addComment();
+        if(commentBar.value) {
+            addComment(commentBar.value);
         }
     })
 }
 addCommentInit();
-
 
 // profile__nav
 const profileBtn = document.querySelector('.profile__navBtn');
@@ -71,35 +66,28 @@ const profileNav = document.querySelector('.profile__nav');
 profileBtn.addEventListener('click', () => {
     const profileClass = profileNav.classList;
 
-    if(!profileClass.contains('profile__nav__showHide')){
-        profileClass.add('profile__nav__showHide');
-    } else {
-        profileClass.remove('profile__nav__showHide');
-    }
+    return (!profileClass.contains('profile__nav__showHide') ? profileClass.add('profile__nav__showHide') : profileClass.remove('profile__nav__showHide'));
     });
 
 // search__people__container
 const searchContianer = document.querySelector('.search__people__container');
 const searchBar = document.querySelector('.nav__searchBar');
+const searchBarClass = searchContianer.classList;
+
+const searchBarGetSet = () => {
+    return (searchBarClass.contains('profile__nav__showHide') ? searchBarClass.remove('profile__nav__showHide') : searchBarClass.add('profile__nav__showHide'));
+}
 
 searchBar.addEventListener('focus', () => {
-    const searchBarClass = searchContianer.classList;
-
-    if(searchBarClass.contains('profile__nav__showHide')){
-        searchBarClass.remove('profile__nav__showHide');
-    }
+    searchBarGetSet();
 })
 
 searchBar.addEventListener('blur', () => {
-    const searchBarClass = searchContianer.classList;
-
-    if(!searchBarClass.contains('profile__nav__showHide')){
-        searchBarClass.add('profile__nav__showHide');
-    }
+    searchBarGetSet();
 })
 
 // search__id
-const peopleList = [
+const PEOPLE_LIST = [
     {
         name: 'syeon',
         img: 'images/avator.JPG',
@@ -134,17 +122,17 @@ const searchContainerPerson = document.querySelector('.search__people__container
 
 searchBar.addEventListener('keyup', (e) => {
     const searchBarValue = searchBar.value;
-    if(searchBar.value === '') {
+    if(!searchBar.value) {
         return
     }
-
     searchContainerPerson.innerHTML = '';
 
-    peopleList.map(element => {
+    PEOPLE_LIST.map(element => {
         const objName = element.name;
         
-        if(searchBarValue.slice(0, searchBarValue.length) === objName.slice(0, searchBarValue.length)){
-            const searchContainerLi = document.createElement('li');    
+        if(searchBarValue === objName.slice(0, searchBarValue.length)){
+            const searchContainerLi = document.createElement('li');
+
             searchContainerLi.innerHTML = `
             <li class="search__person">
                 <img src="${element.img}">

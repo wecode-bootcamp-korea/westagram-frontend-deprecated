@@ -74,6 +74,7 @@
   background-color: white;
   box-shadow: -10px 0px 13px -7px var(--dark-gray),
     10px 0px 13px -7px var(--dark-gray), 5px 5px 15px 5px rgba(153, 153, 153, 0);
+  overflow-y: scroll;
 }
 
 .search__person {
@@ -164,13 +165,14 @@
   align-items: center;
 }
 
-.feed__btn__interact div,
+.feed__btn__interact button,
 .feed__btn__maker {
   font-size: 30px;
 }
 
-.feed__btn__interact div {
+.feed__btn__interact button {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .feed__whoLike {

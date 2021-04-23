@@ -25,7 +25,7 @@ init();
 // validation
 const validation = () => {
     loginBtn.addEventListener('click', () => {
-        if(loginBars[0].value.indexOf('@') === -1) {
+        if(!loginBars[0].value.includes('@')) {
             alert('You should insert @ in ID')
         }
     })
