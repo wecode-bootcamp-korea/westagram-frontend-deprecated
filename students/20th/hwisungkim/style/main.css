@@ -1,11 +1,11 @@
 .navi{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height:50px;
     background-color: white;
-    align-items: center;
 }
-/* 왼쪽로고 */
+
 .navi .insta_logo{
     display: flex;
     justify-content: space-around;
@@ -20,11 +20,10 @@
     font-family:'Lobster', cursive;
 }
 
-/* 검색바 */
 .navi .search_act{
     position: relative;
-    top: 15%;
     height:40px;
+    top: 15%;
 }
 
 .navi .search{
@@ -36,13 +35,12 @@
 }
 .navi .search_bar{
     text-align: center;
-    border-radius: 3px;
-    border:1px solid #D9D9D9;
-    background-color: #F3F3F3;
     height: 70%;
+    border:1px solid #D9D9D9;
+    border-radius: 3px;
+    background-color: #F3F3F3;
 }
 
-/* 유저활동 */
 .navi .act{
     display: flex;
     justify-content: space-around;
@@ -61,22 +59,21 @@
     width:20px;
     height: 20px;
 }
-/* 메인피드 */
+
 .main{
     display: flex;
     justify-content: center;
     justify-content: space-around;
+    width:900px;
     margin-top: 30px;
     margin: auto;
-    width:900px;
-    
 }
 
 .main .feeds_box{
     width: 500px;
     height: 700px;
-    border:1px solid #D9D9D9;
     border-radius: 3px;
+    border:1px solid #D9D9D9;
 }
 
 .main .feeds_box #feed_account{
@@ -90,13 +87,13 @@
 }
 
 .main .feed .feed_account{
-    padding: 7px;
     height: 40px;
+    padding: 7px;
     background-color: white;
 }
 
 .main .feed .feed_account span{
-background-color: blue;
+    background-color: blue;
 }
 
 .main .feeds_box .feed img{
@@ -104,63 +101,49 @@ background-color: blue;
 }
 
 .main .feeds_box .feed .status{
-
     display: flex;
     width: 100%;
-
 }
+
 .main .feeds_box .feed .status img{
     display: flex;
     justify-content: space-around;
     width: 30px;
     height: 30px;
 }
-main .feeds_box .feed .status .status_like{
-    
-}
 
-.main .feeds_box .feed .reply{
-    
-}
-
-
-
-
-/* 사이드 피드 */
 .main .main-right{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 250px;
     height:500px;
     background-color: #F3F3F3;
-    flex-direction: column;
-    justify-content: space-around;
 }
+
 .main .main-right .profile{
     display: flex;;
     width: 100%;
     height: 50px;
     background-color: #F3F3F3;
 }
+
 .main .main-right .profile .wecode_img{
     width: 40px;
     height: 40px;
     border-radius: 100%;
 }
+
 .main .main-right .profile .wecode_info{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
     margin-left: 10px;
 }
-.main .main-right .profile .wecode_info .wecode_id{
-
-}
 
 .main .main-right .profile .wecode_info .wecode_name{
-
     color:#868787;
 }
-
 
 .main .main-right .profile .wecode_info:first-child:first-child{
     font-size: 10px;
@@ -176,17 +159,16 @@ main .feeds_box .feed .status .status_like{
     height: 20px;
 }
 
-/* 스토리글자 */
 .main .main-right .story_list{
     width: 100%;
     height: 120px;
-    border:1px solid #D9D9D9;
-    background-color: white;
-    border-radius: 5px;
-    font-size: 12px;
-    font-family: sans-serif;
-    color:#868787;
     padding:10px;
+    border:1px solid #D9D9D9;
+    border-radius: 5px;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    color:#868787;
 }
 
 .main .main-right .story_list .story_list_info{
@@ -199,44 +181,43 @@ main .feeds_box .feed .status .status_like{
     height: 30px;
     border-radius: 100%;
 }
-/* 모두보기 글자 */
+
 .main .main-right .story_list .seeAll_1{ 
     margin-left: 150px;
     font-family: sans-serif;
     color:black;
 }
 
-/* 추천 */
 .main .main-right .recommend{
     width: 100%;
     height: 200px;
-    border:1px solid #D9D9D9;
-    background-color: white;
-    border-radius: 5px;
-    font-size: 12px;
-    font-family: sans-serif;
-    color:#868787;
     padding: 10px;
-    
+    border:1px solid #D9D9D9;
+    border-radius: 5px;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    color:#868787;
 }
 
 .main .main-right .recommend .recommend_list1_img{
     width: 20px;
     height: 20px;
 }
-/* 모두보기 */
+
 .main .main-right .recommend .seeAll_2{
+    margin-left: 90px;
     font-family: sans-serif;
     color:black;
-    margin-left: 90px;
 }
-/* 정보 */
+
 .main .main-right .info{
     background-color: #F3F3F3;
     font-family: sans-serif;
     font-size: 10px;
     color:#C7C7C7;
 }
+
 body{
     background-color:#F3F3F3;
 }
