@@ -1,12 +1,22 @@
 'use strict';
-const comment = document.querySelector('.section-article__commentInput');
+const comment = document.querySelector('.sectionArticleCommentInput');
 
 const leaveComment = function () {
   const commentValue = comment.value;
-  const ulTag = document.querySelector('.section-article__comment');
+  const ulTag = document.querySelector('.sectionArticleComment');
   const listTag = document.createElement('li');
   ulTag.appendChild(listTag);
-  listTag.innerHTML = `<div class='section-article__commentContents'><p><a class='section-article__fanslink' href='#'>yongmin</a> ${commentValue}</p><button class='section-article__commentLinkButton'><i class='far fa-heart'></i></button></div>`;
+  listTag.innerHTML = `<div class='sectionArticleCommentContents'>
+    <p>
+      <a class='sectionArticleFanslink' href='#'>
+        yongmin
+      </a> 
+      ${commentValue}
+    </p>
+    <button class='sectionArticleCommentLinkButton'>
+      <i class='far fa-heart'></i>
+    </button>
+  </div>`;
 };
 
 const pressEnter = function (e) {
@@ -19,7 +29,7 @@ const activeCommentLeaveButton = function () {
   comment.addEventListener('input', function () {
     const commentValue = comment.value;
     const commentUploadButton = document.querySelector(
-      '.section-article__commentUpload'
+      '.sectionArticleCommentUpload'
     );
 
     if (commentValue.length > 0) {

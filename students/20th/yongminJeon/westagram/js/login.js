@@ -1,8 +1,8 @@
 'use strict';
 
-const idInput = document.querySelector('.login_input_id');
-const passwordInput = document.querySelector('.login_input_password');
-const loginButton = document.querySelector('.login_button');
+const idInput = document.querySelector('.loginInputId');
+const passwordInput = document.querySelector('.loginInputPassword');
+const loginButton = document.querySelector('.loginButton');
 
 const checkIdAndPassword = function () {
   loginButton.addEventListener('click', function (e) {
@@ -30,10 +30,11 @@ const checkValueInInput = function () {
   const passwordInputValue = passwordInput.value;
 
   if (idInputValue.length > 0 && passwordInputValue.length > 0) {
-    loginButton.disabled = false;
     loginButton.classList.add('active');
+    loginButton.disabled = false;
   } else {
     loginButton.classList.remove('active');
+    loginButton.disabled = true;
   }
 };
 
