@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/btn_font.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="./img/instagram.png"
+      rel="shortcut icon"
+      type="image/instagram-icon"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="./comment.js" defer></script>
+    <title>Westagram</title>
+  </head>
+  <body>
+    <div>
+    <nav>
+      <div id="top_box">
+        <div id="title">
+          <h1>Instagram</h1>
+        </div>
+
+        <form action="submit">
+          <input type="text" id="search"/>
+          <div class="search_box">
+          <span><i class="fas fa-search"></i></span>
+          <span class="">검색</span>
+          </div>
+        </form>
+
+        <div class="right_wrapper">
+          <div class="images">
+            <a href=""><img src="./img/home.png" alt="home_image" class="emoji"></a>
+            <a href=""><img src="./img/dm.png" alt="dm_image" class="emoji"></a>
+            <a href=""><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="" class="emoji"></a>
+            <a href=""><img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="" class="emoji"></a>
+            <a href=""><img src="./img/profile.jpeg" alt="profile_image" id="profile"></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </nav>
+   
+      <main>
+        <div class="top_emtied_box"></div>
+
+        <section>
+          <article class="left_layout">
+            
+            <div class="feed_title">
+              <img alt="profile_small_image" src="./img/profile.jpeg" class="profile_small_img">
+              <div class="nickname">
+                <span>old_popSensors</span>
+                <img src="./img/dot.png" alt="dot_image" id="dot_image">
+              </div>
+            </div>
+
+            <div class="profile_box">
+              <img src="./img/feed_profile.jpeg" alt="feed_profile" class="feed_image"/>
+            
+              <div class="post_box">
+                <div class="post_icon">
+                  <button><img src="./img/redheart.png" alt="red_heart" class="emoji"></button>
+                  <button><img src="./img/comment.jpg" alt="comment_image" class="emoji"></button>
+                  <button><img src="./img/dm.png" alt="dm_image" class="emoji"></button>
+                  <!-- <div>
+                    <img src="./img/save_the_post.png" alt="save_post" id="save_post">
+                  </div> -->
+                  
+                </div>
+                <div class="post">
+                  <p>오늘의 날씨에 너라는 날씨가 찾아왔다, 눈이 부셨다 눈이 멀었다 앞이 안보인다 그만큼 너는 아름답기에..</p>
+                  <span><a href="#">#안과</a></span>
+                  <span><a href="#">#실명</a></span>
+                  <span><a href="#">#아무고토_안보이지롱</a></span>
+                </div>
+
+
+                <div class="comment_storage">
+                  <div>
+                    <span class="comment_User"></span>
+                    <span class="comment_Msg"></span>
+                  </div>
+                </div>
+
+                <div class="type_comment">
+                  <input type="text" placeholder="댓글 달기.." id="messageInputBox">
+                  <span><button type="submit" id="comment_btn">게시</button></span>
+                </div> 
+
+
+              </div>
+            </div>
+            
+          </article>
+          
+          <aside class="right_layout">
+            <div class="follow_myInfo">
+            <a href="#"><img src="./img/feed_profile.jpeg" alt="" id="side_profile">
+            <div id="myName_box">
+              <p>wonkeun_Choi</p>
+              <p id="myName">최원근</p>
+            </a>
+            </div>
+            <a href="#"><span>전환</span></a>
+          </div>
+
+          <div class="follow_box">
+            <span id="user_recommend_font">회원님을 위한 추천</span>
+            <a href="#"><span style="font-weight: bold; font-size: 14px;" >모두 보기</span></a>
+
+            <div class="follower_user_box">
+              <ul>
+                <li> <img src="./img/profile.jpeg" alt="" style="width: 32px; height: 32px; border-radius: 30px;"/></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+
+          </aside>
+        </section>
+      </main>
+    
+  </body>
+  
+</html>

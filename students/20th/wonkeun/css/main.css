@@ -3,35 +3,163 @@
   box-sizing: border-box;
 }
 
-nav {
+main {
   width: 100%;
-  height: 54px;
-  border-bottom: 1px solid #d3d3d3;
+  height: 1130px;
+  background-color: #fafafa;
 }
-#top_box {
+
+section {
+  display: flex;
+  top: 100px;
+  margin: 0 auto;
+  max-width: 990px;
+}
+
+section .left_layout {
+  width: 100%;
+  height: 1000px;
+  top: 100px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  background-color: white;
+}
+
+section .right_layout {
+  position: sticky;
+  top: 100px;
+  height: 100%;
+  margin-left: 3%;
+  width: 500px;
+  background-color: #fafafa;
+}
+
+.top_emtied_box {
   display: block;
+  width: 100%;
+  height: 100px;
+}
+
+.feed_title {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  background-color: white;
+  border: 1px solid rgb(241, 238, 238);
+  border-radius: 3px;
+}
+
+.profile_small_img {
+  width: 35px;
+  height: 35px;
+  margin-left: 15px;
+  margin-top: 10px;
+  border: 1px solid darkgray;
+  border-radius: 18px;
+}
+
+.feed_image {
+  width: 100%;
+  height: 100%;
+}
+
+.profile_box {
+  position: absolute;
+  width: 636px;
+  height: 650px;
+}
+
+.nickname {
+  position: absolute;
+  display: inline;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 3.5%;
+  margin-left: 2%;
+}
+
+.nickname #dot_image {
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  margin-left: 67%;
+}
+
+.post_box {
+  display: inline;
+  border: 1px solid darkgrey;
+  width: 100%;
+  height: 38%;
+}
+
+.post {
+  width: 90%;
+  height: 8%;
+  margin: 19px;
+}
+
+.comment_storage {
+  margin-left: 16px;
+  width: 90%;
+  height: 16%;
+}
+
+/* /----------------------------------- */
+
+.right_layout #side_profile {
+  width: 55px;
+  height: 55px;
+  border-radius: 30px;
+  border: 0.5px solid darkgrey;
+}
+
+.right_layout .follow_myInfo {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 975px;
-  height: 54px;
-  background-color: wheat;
+  width: 100%;
+  height: 100%;
 }
 
-#title {
-  width: 360px;
-  height: 36px;
+.right_layout .follow_myInfo p {
+  display: block;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-#title h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 29px;
+#myName_box {
+  width: 65%;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+
+#myName {
+  font-weight: inherit;
+  color: #8e8e8e;
+}
+
+.follow_myInfo span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0095f6;
+}
+
+.follow_box {
+  width: 96%;
+  height: 350px;
+  margin-top: 30px;
+}
+
+.right_layout .follow_box #user_recommend_font {
+  margin-right: 40%;
+  font-size: 17px;
+  color: #8e8e8e;
   font-weight: inherit;
 }
 
-input {
-  padding: 3px 10px 3px 26px;
-  border: 1px solid #d3d3d3;
-  border-radius: 3px;
+.follower_user_box {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  border: 1px solid darkgrey;
 }
