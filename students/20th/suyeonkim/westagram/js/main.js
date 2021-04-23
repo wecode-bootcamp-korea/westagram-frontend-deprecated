@@ -99,7 +99,36 @@ searchBar.addEventListener('blur', () => {
 })
 
 // search__id
-const peopleList = [{name: 'syeon', img: 'images/avator.JPG', state: 'it is me'}, {name: 'junmo', img: 'images/avator.JPG', state: 'Good_man'}, {name: 'ojea', img: 'images/avator.JPG', state: 'first_team'}, {name: 'wecode', img: 'images/avator.JPG', state: 'learning_place'}, {name:'wongeun', img: 'images/avator.JPG', state: 'funny'}];
+const peopleList = [
+    {
+        name: 'syeon',
+        img: 'images/avator.JPG',
+        state: 'it is me'
+    },
+    
+    {
+        name: 'junmo',
+        img: 'images/avator.JPG',
+        state: 'Good_man'
+    },
+    
+    {
+        name: 'ojea',
+        img: 'images/avator.JPG',
+        state: 'first_team'
+    },
+
+    {
+        name: 'wecode',
+        img: 'images/avator.JPG',
+        state: 'learning_place'
+    },
+    
+    {
+        name:'wongeun',
+        img: 'images/avator.JPG',
+        state: 'funny'
+}];
 
 const searchContainerPerson = document.querySelector('.search__people__container');
 
@@ -109,11 +138,14 @@ searchBar.addEventListener('keyup', (e) => {
         return
     }
 
+    searchContainerPerson.innerHTML = '';
+
     peopleList.map(element => {
         const objName = element.name;
-
-        if(searchBarValue.slice(0, searchBarValue.length + 1) === objName.slice(0, searchBarValue.length)){
-            searchContainerPerson.innerHTML = `
+        
+        if(searchBarValue.slice(0, searchBarValue.length) === objName.slice(0, searchBarValue.length)){
+            const searchContainerLi = document.createElement('li');    
+            searchContainerLi.innerHTML = `
             <li class="search__person">
                 <img src="${element.img}">
                 <div class="search__personNames">
@@ -126,6 +158,7 @@ searchBar.addEventListener('keyup', (e) => {
                 </div>
             </li>
             `
+            searchContainerPerson.appendChild(searchContainerLi);
         }
     })
 })
