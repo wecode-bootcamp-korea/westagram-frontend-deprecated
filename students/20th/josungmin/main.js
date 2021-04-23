@@ -16,7 +16,7 @@ commentBtn.addEventListener('click', function(){
 commentInput.addEventListener('keydown', function(e){
     if (commentInput.value) {
         if (e.which === 13) {
-            var newComment = document.createElement('li')
+            const newComment = document.createElement('li')
             newComment.innerHTML = `<span><span class="point-span userID">thisisyourhyung</span>` + this.value
             commentList.appendChild(newComment);
             this.value = "";
