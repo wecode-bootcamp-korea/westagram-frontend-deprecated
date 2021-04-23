@@ -250,6 +250,23 @@ article > header{
     margin-bottom: 5px;
 }
 
+.contents .like-btn {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+}
+
+.like-btn svg {
+    fill: none;
+    stroke: #5b5b5b;
+    stroke-width: 45px;
+}
+
+.like-btn svg.clicked {
+    fill: #ed4956;
+    stroke: #ed4956;
+}
+
 .comment-form {
     padding: 0 8px;
     height: 56px;

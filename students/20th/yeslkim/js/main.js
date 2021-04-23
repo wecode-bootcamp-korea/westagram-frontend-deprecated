@@ -1,7 +1,13 @@
 const commentForm = document.commentForm,
     inputComment = commentForm.inputComment,
-    submitBtn = commentForm.submitComment;
-    
+    submitBtn = commentForm.submitComment,
+    likeBtns = document.querySelectorAll('.js-like-btn > svg'),
+    _LIKE_CLASSNAME = 'clicked';
+
+function active() {
+    submitBtn.disabled = inputComment.value.length > 0 ? false : true;
+    return;
+}
 
 function addComment(e) {
     e.preventDefault();
@@ -20,10 +26,13 @@ function addComment(e) {
     inputComment.value = '';
 }
 
-function active() {
-    submitBtn.disabled = inputComment.value.length > 0 ? false : true;
-    return;
+function like() {
+    this.classList.toggle(_LIKE_CLASSNAME);
 }
 
 inputComment.addEventListener('keyup', active);
 submitBtn.addEventListener('click', addComment);
+
+for (let i = 0; i < likeBtns.length; i++) {
+    likeBtns[i].addEventListener('click', like)
+}
