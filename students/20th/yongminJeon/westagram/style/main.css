@@ -236,7 +236,7 @@ body {
   height: 50px;
   padding: 10px 20px;
   font-size: 15px;
-  resize: none;
+  border: none;
 }
 
 .section-article__commentInput::-webkit-scrollbar {

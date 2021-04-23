@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
 </head>
+
 <body>
   <header class="header">
     <nav class="header-nav">
@@ -50,7 +51,7 @@
           </div>
           <button class="section-article__modal"><i class="fas fa-ellipsis-h"></i></button>
         </div>
-        <img src="./img/drake-img.jpg" alt="" class="section-article__img" />
+        <img src="./img/drake-img.jpg" alt="feed image" class="section-article__img" />
         <div class="section-article__container">
           <div class="section-article__iconbar">
             <div class="section-article__iconbar__leftSide">
@@ -94,9 +95,8 @@
         </div>
         <div class="section-article__commentContents">
           <button><i class="far fa-smile"></i></button>
-          <textarea name="" id="" cols="" rows="" placeholder="댓글 달기..."
-            class="section-article__commentInput"></textarea>
-          <button type="submit" class="section-article__commentUpload" disabled>게시</button>
+          <input placeholder="댓글 달기..." class="section-article__commentInput" maxlength="25"></input>
+          <button type="button" class="section-article__commentUpload" disabled>게시</button>
         </div>
       </article>
     </section>
