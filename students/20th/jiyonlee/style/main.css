@@ -60,6 +60,12 @@ nav {
     text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+    .navSearch {
+        display: none;
+    }
+}
+
 .searchPopup {
     position: absolute;
     top: 35px;
@@ -86,6 +92,10 @@ nav {
     border-radius: 50%;
 }
 
+.navLink {
+    min-width: 130px;
+}
+
 .navLink img {
     width: 22px;
     margin-left: 10px;
@@ -97,6 +107,12 @@ main {
     padding-top: 30px;
     border-top: 1px solid #e6e6e6;
     background-color: #fafafa;
+}
+
+@media screen and (max-width: 1000px) {
+    main aside {
+        display: none;
+    }
 }
 
 main .feeds {
@@ -287,6 +303,8 @@ main .feeds {
 }
 
 aside {
+    position: sticky;
+    top: 83px;
     width: 293px;
     height: 500px;
     margin-top: 50px;
