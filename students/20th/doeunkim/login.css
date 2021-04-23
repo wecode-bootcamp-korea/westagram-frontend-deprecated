@@ -10,14 +10,14 @@
   }
 
 * {
-    box-sizing: border-box;
     margin: auto;
+    box-sizing: border-box;
 }
 
 html {
-    text-align: center;
     background-color: #FAFAFA;
     font-size: 14px;
+    text-align: center;
 }
 
 .flexcontainer {
@@ -36,13 +36,13 @@ html {
 }
 
 .loginBox {
-    background-color: white;
     width: 350px;
     min-height: 380px;
+    padding-bottom: 20px;
+    color: black;
+    background-color: white;
     border: 1px solid #DBDBDB;
     border-radius: 2px;
-    color: black;
-    padding-bottom: 20px;
 }
 
 .logo {
@@ -67,41 +67,40 @@ html {
 .login input {
     width: 100%;
     height: 38px;
-    background-color: #FAFAFA;
     margin-bottom: 5px;
+    padding: 10px;
+    background-color: #FAFAFA;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     outline: none;
-    padding: 10px;
 }
 
 .login input.typing {
-    font-size: 12px;
     padding-top: 20px;
+    font-size: 12px;
 }
 
 .login input:focus   {
     border-color: #A8A8A8;
 }
 
-
 .login div {
     position: relative;
 }
 
 .login label {
-    color: #8E8E8E;
-    font-size: 12px;
     position: absolute;
     top: 9px;
     left: 11px;
+    color: #8E8E8E;
+    font-size: 12px;
     transition: 0.3s;
 }
 
 .login label.typing {
-    font-size: 6px;
     position: absolute;
     top: 2px;
+    font-size: 6px;
 }
 
 .showPw {
@@ -120,24 +119,28 @@ html {
     display: block;
 }
 
-#loginBtn {
+.loginBtn {
     width: 268px;
     height: 30px;
+    margin-top: 10px;
+    color: white;
+    background-color: #B2DFFC;
     border: none;
     border-radius: 4px;
-    color: white;
+    outline: none;
     font-weight: 700;
     font-size: 14px;
-    background-color: #B2DFFC;
-    margin-top: 10px;
-    outline: none;
+}
+
+.active {
+    background-color: #4295F6 !important;
+    cursor: pointer !important;
 }
 
 .invalid p {
+    padding: 0 30px 20px 30px;
     color: rgb(255, 70, 70);
     font-size: 13px;
-    padding: 0 30px 20px 30px;
- 
 }
 
 .or {
@@ -145,12 +148,12 @@ html {
 }
 
 .or p {
-    color: #8E8E8E;
-    font-size: 13px;
-    font-weight: bold;
     display: inline-block;
     width: 100px;
     margin: 10px;
+    color: #8E8E8E;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .line {
@@ -160,11 +163,11 @@ html {
 }
 
 .signupBox {
-    background-color: white;
-    margin-top: 10px;
-    padding: 20px;
     width: 350px;
     height: 63px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
     border: 1px solid #DBDBDB;
 }
 
@@ -222,7 +225,6 @@ footer div {
 
 footer li {
     margin: 2px 8px;
-    /* word-break: keep-all; */
     white-space: nowrap;
 }
 
@@ -231,10 +233,10 @@ footer form {
 }
 
 footer select {
-    border: none;
-    background: none;
-    outline: none;
     margin: 0 8px;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 footer p {

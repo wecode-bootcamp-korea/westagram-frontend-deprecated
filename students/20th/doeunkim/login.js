@@ -2,16 +2,14 @@
 
 const id = document.querySelectorAll('.login input')[0],
 pw =  document.querySelectorAll('.login input')[1];
-const btn = document.querySelector('#loginBtn');
+const btn = document.querySelector('.loginBtn');
 
 function activateBtn() {
     if((id.value) && (pw.value.length >= 6)) {
-        btn.style.backgroundColor = "#4295F6";
-        btn.style.cursor = "pointer";
+        btn.classList.add("active");
         btn.removeAttribute('disabled');
     } else {
-        btn.style.backgroundColor = "#B2DFFC";
-        btn.style.cursor = "default";
+        btn.classList.remove("active");
         btn.setAttribute('disabled', 'disabled');
     }
 }
@@ -51,7 +49,7 @@ pw.addEventListener('input', typePw);
 
 
 
-//비밀번호 표시&숨김
+//비밀번호 표시 & 숨김
 
 function showAndHide() {
     if(pw.type === "password") {

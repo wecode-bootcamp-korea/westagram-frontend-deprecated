@@ -7,12 +7,10 @@ const commentForm = document.querySelector(".comments form");
 
 function activate() {
     if(comment.value) {
-        btn.style.color = "#4295F6";
-        btn.style.cursor = "pointer";
+        btn.classList.add("active");
         btn.removeAttribute('disabled');
     } else {
-        btn.style.color = "#B2DFFC";
-        btn.style.cursor = "default";
+        btn.classList.remove("active");
         btn.setAttribute("disabled", "disabled");
     }
 }
