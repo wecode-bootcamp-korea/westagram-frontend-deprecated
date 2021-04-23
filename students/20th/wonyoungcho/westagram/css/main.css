@@ -1,78 +1,77 @@
-.main-page {
-  height: 100vh;
-  width: 100%;
-}
-
 * {
   box-sizing: border-box;
 }
 
-/* Nav */
-.nav-bar {
+.bodyContainer {
+  height: 100vh;
+  width: 100%;
+}
+
+.navBar {
   display: flex;
+  justify-content: space-around;
   position: fixed;
   background-color: white;
-  justify-content: space-around;
-  width: 100%;
   top: 0px;
+  width: 100%;
   padding: 20px 50px;
 }
 
-.nav-bar__left {
+.navBarLeft {
   display: flex;
   align-items: center;
   margin-left: 200px;
 }
 
-.nav-bar__left a {
-  text-decoration: none;
+.navBarLeft a {
   color: black;
   font-family: "Lobster", cursive;
   font-size: 25px;
+  text-decoration: none;
 }
 
-.nav-bar__search {
+.navBarSearch {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.nav-bar__search input {
+.navBarSearch input {
+  border-radius: 5px;
+  border: var(--inputBorder);
   text-align: center;
   padding: 6px 35px;
-  border-radius: 5px;
-  border: var(--input-border);
 }
 
-.nav-bar__search i {
+.navBarSearch i {
   position: absolute;
-  color: var(--grey-color);
+  color: var(--greyBorder);
   margin-left: 80px;
 }
 
-.nav-bar__right {
+.navBarRight {
   display: flex;
   align-items: center;
   margin-right: 200px;
 }
 
-.nav-bar__right ul {
+.navBarRight ul {
   display: flex;
   align-items: center;
 }
 
-.nav-bar__right ul > li {
+.navBarRight ul > li {
   margin: 0px 10px;
 }
 
 /* feeds */
 
-.main-container {
+.mainContainer {
   display: flex;
   justify-content: center;
-  background-color: var(--body-color);
-  width: 100%;
+  background-color: var(--greyColor);
   height: 75%;
+  width: 100%;
 }
 
 .feeds {
@@ -81,43 +80,43 @@
 }
 
 .post {
+  background-color: var(--whiteColor);
+  border: 1px solid var(--greyBorder);
+  border-radius: 2px;
   width: 100%;
   margin-bottom: 55px;
-  border: 1px solid var(--grey-border);
-  border-radius: 2px;
-  background-color: white;
 }
 
-.post-header {
+.postHeader {
   display: flex;
   flex-direction: row;
   padding: 10px 10px;
 }
 
-.post-header__image img {
+.postHeaderImage img {
   display: flex;
   align-items: center;
-  margin-left: 5px;
-  width: 30px;
+  border: 1px solid var(--greyBorder);
   border-radius: 70%;
-  border: 1px solid var(--grey-border);
+  width: 30px;
+  margin-left: 5px;
 }
 
 .user {
   display: flex;
 }
 
-.user-name {
+.userName {
   display: flex;
 }
 
-.user-name a {
+.userName a {
   display: flex;
   align-items: center;
-  margin-left: 15px;
-  text-decoration: none;
   color: black;
+  text-decoration: none;
   font-weight: bold;
+  margin-left: 15px;
 }
 
 .more {
@@ -132,8 +131,8 @@
 
 .post-mainimage img {
   display: flex;
-  width: 100%;
   height: 430px;
+  width: 100%;
 }
 
 .post-icons {
@@ -188,10 +187,10 @@
 
 .comments {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid var(--greyBorder);
   padding: 12px 12px;
-  border-top: 1px solid var(--grey-border);
 }
 
 .comments-icon i {
@@ -202,18 +201,18 @@
 .comments-input textarea {
   background-color: transparent;
   border: 0px solid;
+  color: #ccc;
   height: 20px;
   width: 530px;
-  color: #ccc;
   resize: none;
   padding-left: 20px;
 }
 
 .comments-post button {
-  padding: 0px;
-  border: none;
   background: none;
-  color: rgb(173, 216, 230, 0.7);
+  border: none;
+  color: var(--postBtnColor);
+  padding: 0px;
 }
 
 .user-info {
@@ -221,8 +220,8 @@
 }
 
 .user-info__image img {
-  width: 55px;
   border-radius: 70%;
+  width: 55px;
 }
 
 .user-info__container {
@@ -237,7 +236,7 @@
 }
 
 .user-info__name a {
-  color: #949494;
+  color: var(--userInfoColor);
 }
 
 .suggestion-header {
@@ -264,9 +263,9 @@
 }
 
 .suggestion-list__picture img {
-  width: 30px;
-  border-radius: 70%;
   border: 1px solid var(--grey-border);
+  border-radius: 70%;
+  width: 30px;
 }
 
 .suggestion-list__info {
@@ -294,5 +293,5 @@
   padding: 0;
   border: none;
   background: none;
-  color: #0096f6;
+  color: var(--blueButton);
 }

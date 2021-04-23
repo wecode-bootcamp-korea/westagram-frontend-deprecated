@@ -1,11 +1,15 @@
 :root {
-  --body-color: #fafafa;
-  --login-main-color: #ffffff;
-  --input-color: #fafafa;
-  --main-border: 1px solid rgba(0, 0, 0, 0.2);
-  --grey-border: rgba(0, 0, 0, 0.2);
-  --input-border: 1px solid rgba(0, 0, 0, 0.1);
-  --grey-color: rgba(0, 0, 0, 0.3);
+  --userInfoColor: #949494;
+  --loginBoxColor: #ffffff;
+  --loginBoxBorder: 1px solid rgba(0, 0, 0, 0.2);
+  --blueButton: #0096f6;
+  --darkBlueButton: #114271;
+  --postBtnColor: rgb(173, 216, 230, 0.7);
+  --inputBorder: 1px solid rgba(0, 0, 0, 0.1);
+  --greyBorder: rgba(0, 0, 0, 0.2);
+  --greyColor: #fafafa;
+  --blackColor: black;
+  --whiteColor: white;
 }
 
 button {

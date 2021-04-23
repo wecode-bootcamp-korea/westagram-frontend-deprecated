@@ -1,79 +1,67 @@
-.main-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   display: flex;
-  background-color: var(--body-color);
-  height: 100vh;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: var(--greyColor);
+  height: 100vh;
 }
 
-/* log-in main */
+.mainLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.login-main {
-  background-color: var(--login-main-color);
+.loginBox {
+  background-color: var(--loginBoxColor);
+  border: var(--loginBoxBorder);
+  border-radius: 1px;
   height: 380px;
   width: 350px;
-  justify-content: center;
-  align-items: center;
-  border: var(--main-border);
-  border-radius: 1px;
 }
 
-/* westagram-header */
-
-.westa-header {
-  font-family: "Lobster", cursive;
+.loginHeader {
   display: flex;
   justify-content: center;
+  font-family: "Lobster", cursive;
   font-size: 35px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* log-in inputs */
-
-.login-form {
+.loginForm {
   display: flex;
   flex-direction: column;
-  margin: 0px 50px;
   color: rgba(0, 0, 0, 0.2);
+  margin: 0px 50px;
 }
 
-.login-form input {
+.loginForm input {
   display: flex;
+  background-color: var(--greyColor);
+  border: var(--inputBorder);
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.2);
   padding: 12px 10px;
   margin-bottom: 10px;
-  border-radius: 2px;
-  border: var(--input-border);
-  background-color: var(--input-color);
-  color: rgba(0, 0, 0, 0.2);
 }
 
-/* log-in buttons */
-
-.login-form button {
+.loginForm button {
   margin-top: 10px;
   padding: 12px 5px;
   margin-bottom: 70px;
   border-radius: 3px;
   background-color: rgba(197, 225, 251, 0.7);
-  color: white;
+  color: var(--whiteColor);
   font-weight: bold;
 }
 
-/* forgot-password */
-
-.forgot-password {
+.forgotPassword {
   text-align: center;
   font-size: 12px;
 }
 
-.forgot-password a {
+.forgotPassword a {
   text-decoration: none;
-  color: #114271;
+  color: var(--darkBlueButton);
 }
