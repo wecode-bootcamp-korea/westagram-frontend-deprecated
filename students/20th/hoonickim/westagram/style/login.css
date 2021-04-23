@@ -1,4 +1,4 @@
-header {
+h1.logoText {
   font-family: "Lobster", cursive;
   font-size: 45px;
   margin-top: 10px;
@@ -25,7 +25,12 @@ body {
   align-items: center;
 }
 
-input {
+.input {
+  text-align: center;
+}
+
+/*id,pw 상자 */
+#id {
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   box-sizing: border-box;
   width: 258px;
@@ -38,10 +43,24 @@ input {
   outline-width: 1px;
 }
 
+#pw {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  box-sizing: border-box;
+  width: 258px;
+  height: 36px;
+  font-size: 12px;
+  padding: 9px 0 7px 8px;
+  background-color: #f7f7f7;
+  margin-top: 7px;
+  outline-color: #dbdbdb;
+  outline-width: 1px;
+}
+
+/* 버튼 상자 */
 button {
   width: 258px;
   height: 36px;
-  background-color: rgba(0, 149, 246, 0.3);
+  background-color: #bfdffd;
   border: 1px solid transparent;
   border-radius: 4px;
   margin-top: 15px;
