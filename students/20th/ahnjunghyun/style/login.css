@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+div.outlineBox {
+  margin: 30px auto;
+  padding: 30px 20px;
+  width: 400px;
+  height: 500px;
+}
+
+div.outlineBox div.loginBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+
+div.outlineBox div.loginBox header h1 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: "Lobster", cursive;
+}
+
+div.outlineBox div.loginBox form div.loginIdAndPassword input {
+  display: block;
+  width: 300px;
+  margin-bottom: 8px;
+  padding: 10px;
+  color: lightgray;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: rgb(248, 246, 246);
+}
+
+div.outlineBox div.loginBox section.loginButton #loginBtn {
+  display: block;
+  width: 300px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding: 6px;
+  color: white;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  background-color: skyblue;
+}
+
+div.outlineBox div.loginBox section.loginButton #loginBtn:hover {
+  background-color: cornflowerblue;
+}
+
+div.outlineBox div.loginBox section.forgotPassword a {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
