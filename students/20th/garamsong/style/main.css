@@ -1,42 +1,311 @@
 @import url('./common.css');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-
 body{
     width: 100%;
-    height:100vh;
-
+    height: 100vh;
+    font-size: .7rem;
 }
 
-.nav{
-    width:100%;
-    height:55px;
-    position:relative;
-    top:0;
-    display:flex;
+nav{
+    display: flex;
     justify-content: center;
-    border:1px solid #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background-color:#fff;
+    border-bottom:1px solid rgba(150, 150, 150, .2);
 }
 
 .navContainer{
-    width:80%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    border:1px solid #000;
+    width: 70%;
 }
 
 .logoContainer{
-    width: 15%;
-    border:1px solid #000;
-}
-
-.logoContainer a{
-   
+    width: 13%;
 }
 
 .logoImg{
     width:100%;
 }
 
-/*네스팅이 잘 될 수 있게*/
+.iconContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    height:50%;
+}
+
+.navIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.navIconImg{
+    width: 80%;
+    height: 80%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.profileImgRadius{
+    border-radius: 50%;
+}
+
+.contentsBox{
+    width: 80%;
+    padding-top: 30px;
+    display: flex;
+}
+
+.leftContent{
+    width: 60%;
+    padding: 10px;
+    font-size: .7rem;
+}
+
+.storyBoxContents{
+    display:flex;
+    justify-content:space-between;
+    overflow:hidden;
+    padding:5px;
+}
+
+.eachStory{
+    width: 15%;
+    padding: 5px;
+    text-align:center;
+    font-size:.7rem;
+}
+
+.eachStory img{
+    width: 100%;
+}
+
+.feedsBox{
+    margin-top:10px;
+}
+
+.feed{
+    padding:10px;
+
+}
+
+.feedInfo{
+    display:flex;
+    justify-content: space-between;
+}
+
+.feedProfilePhoto{
+    display:flex;
+    justify-content: flex-start;
+    padding:3px;
+}
+
+.feedProfilePhoto img{
+    width:45px;
+}
+
+.feedInfoRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+}
+
+.feedInfoText{
+    font-size:.7rem;
+    color:#222;
+}
+
+.feedUserName{
+    margin-bottom:5px;
+    font-weight: bold;
+}
+
+.feedLocation{
+    font-weight: lighter;
+    font-size: .6rem;
+}
+
+.moreInfo{
+    color: rgba(50,50,50,1);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.feedPhoto{
+    width:100%;
+}
+
+.feedPhoto img{
+    width:100%;
+}
+
+.replyIcons{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.replyCountLike{
+    display: flex;
+    align-items: center;
+    font-size:.7rem;
+}
+
+.replyCountLike img{
+    margin-right:3px;
+}
+
+.feedDescription{
+    display:flex;
+    margin:3px auto;
+    font-size:.7rem;
+}
+
+.feedDescription h4, .reply h4{
+    margin-right:5px;
+    font-weight: bold;
+}
+
+.seeAllReply{
+    margin:3px auto;
+    font-size:.7rem;
+}
+
+.replyValue{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    position:relative;
+    width:100%;
+    margin-bottom:3px;
+}
+
+.userId{
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.like{
+    position:absolute;
+    right:10px;
+    background:none;
+    border:none;    
+    font-size:.6rem;
+}
+
+.date{
+    color:(50,50,50,.5);
+}
+
+.replyBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 0;
+    padding:5px;
+    border-top:1px solid #000;
+}
+
+.emoji{
+    font-size:2rem;
+}
+
+.typeBar{
+    width:80%;
+    height:30px;
+    background-color: transparent;
+    border:none;
+    resize:none;
+
+}
+
+.typeBar:focus{
+    outline:none;
+}
+
+.post{
+    width:15%;
+    background:transparent;
+
+}
+
+.rightContent{
+    width:40%;
+    padding: 10px;
+}
+
+.myProfileBox{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profilePhoto{
+    width:20%;
+}
+
+.profilePhoto img{
+    width:100%;
+}
+
+.profileName{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:78%;
+    padding:5px 10px;
+}
+
+.recommendBox{
+    margin-top:10px;
+}
+
+.recommendTitleBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 0;
+
+}
+
+.otherUserBox{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    font-size: .5rem;
+    color: #999;
+}
+
+.footerText{
+    margin:30px 0;
+    padding:0;
+}
+
+.footerText li{
+    display: inline-block;
+    list-style: none;
+}
+
+.footerText li a{
+    text-decoration: none;
+    color:#999;
+    cursor:pointer;
+}
