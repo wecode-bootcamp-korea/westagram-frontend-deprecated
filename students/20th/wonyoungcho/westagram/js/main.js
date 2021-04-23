@@ -10,21 +10,20 @@ function commentAdd () {
   const newDiv = document.createElement('div');
   newDiv.className = 'post-user';
 
-  let newLine = idName + newComment;
   comment.append(newDiv);
-  newDiv.innerHTML = newLine;
+  newDiv.innerHTML = `<div class = 'post-user'><span class = 'post-user__id'>${idName}</span> ${newComment}</div>`;
   textArea.value = ''; 
   addButton.style.color = '#8abdff';
 }
 
-textArea.addEventListener('keydown', function(x) {
+textArea.addEventListener('keypress', function(event) {
   addButton.style.color = '#0366D6';
-  if (x.key === 'Enter') {
-    commentAdd ();
+  if (event.key === 'Enter') {
+    commentAdd();
   }
 });
 
 addButton.addEventListener('click', function() {
-    commentAdd ();
-})
+    commentAdd();
+});
 
