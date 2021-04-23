@@ -100,13 +100,6 @@ input:focus{
 .main .feed .contents .paragraphBox .userId{
     font-weight: 600;
 }
-.main .feed .contents .paragraphBox p:nth-child(3){
-    color: #bbb;
-}
-.main .feed .contents .paragraphBox p:nth-child(4){
-    font-size: 8px;
-    color: #bbb;
-}
 .main .feed .contents .commentBox{
     display: flex;
     justify-content: space-between;
