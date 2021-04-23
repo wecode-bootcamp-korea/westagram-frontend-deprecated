@@ -25,10 +25,16 @@ nav>div {
     justify-content: space-between;
 }
 
-hr {
-    border-top: 1px solid #DBDBDB;
-    border-bottom: none;
+nav {
+    width:100%;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 0;
+    left:50%;
+    border-bottom: 1px solid #DBDBDB;
+    z-index: 999;
 }
+
 
 nav * {
     margin: auto 8px;
@@ -96,7 +102,7 @@ a {
     border-radius: 5px;
     box-shadow: 0 0 4px #bebebe;
     text-align: center;
-    overflow: hidden;
+    overflow: scroll;
     z-index: 10;
 }
 
@@ -167,7 +173,7 @@ a {
 .mainContainer {
     display: flex;
     width: 960px;
-    margin-top: 30px;
+    margin-top: 84px;
 }
 
 

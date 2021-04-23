@@ -3,7 +3,6 @@
 const input = document.getElementsByTagName("input")[0];
 const comment = document.getElementsByTagName("input")[1];
 const btn = document.querySelector("button");
-const commentForm = document.querySelector(".comments form");
 
 function activate() {
     if(comment.value) {
@@ -20,6 +19,8 @@ comment.addEventListener("input", activate);
 
 
 //댓글 추가&좋아요&삭제
+
+const commentForm = document.querySelector(".comments form");
 
 function handlesubmit(e) {
     e.preventDefault();
