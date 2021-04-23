@@ -62,39 +62,44 @@ users.forEach((user) => {
     );
 });
 
-navSearch.addEventListener("input", (e) => {
-    if (e.keyCode === 13) {
+const createSearchLists = (searchInputValue) => {
+    if (searchPopup.childNodes.length > 0) {
         return;
     }
+    const searchedList = document.createElement("li");
+    const profileImg = document.createElement("img");
+    const idAndNickname = document.createElement("div");
+    const userid = document.createElement("div");
+    const nickname = document.createElement("div");
 
-    if (userIds.includes(navSearch.value)) {
-        const searchedList = document.createElement("li");
-        const profileImg = document.createElement("img");
-        const idAndNickname = document.createElement("div");
-        const userid = document.createElement("div");
-        const nickname = document.createElement("div");
+    userid.textContent = searchInputValue;
+    let userIdIndex = userIds.indexOf(searchInputValue);
+    profileImg.setAttribute("src", users[userIdIndex].img);
 
-        userid.textContent = navSearch.value;
-        let userIdIndex = userIds.indexOf(navSearch.value);
-        profileImg.setAttribute("src", users[userIdIndex].img);
+    idAndNickname.append(userid);
+    idAndNickname.append(nickname);
+    searchedList.append(profileImg);
+    searchedList.append(idAndNickname);
+    searchPopup.append(searchedList);
+};
 
-        idAndNickname.append(userid);
-        idAndNickname.append(nickname);
-        searchedList.append(profileImg);
-        searchedList.append(idAndNickname);
-        searchPopup.append(searchedList);
+navSearch.addEventListener("input", (e) => {
+    if (e.target.value.length === 0) {
+        searchPopup.innerHTML = "";
     } else {
-        searchPopup.innerHTML = "";
-    }
-    if (navSearch.value.length === 0) {
-        searchPopup.innerHTML = "";
+        for (i = 0; i < userIds.length; i++) {
+            if (userIds[i].startsWith(e.target.value)) {
+                createSearchLists(userIds[i]);
+                break;
+            } else {
+                searchPopup.innerHTML = "";
+            }
+        }
     }
 });
+
 navSearch.addEventListener("blur", () => {
     searchPopup.innerHTML = "";
-});
-navSearch.addEventListener("click", () => {
-    alert("유저id를 쳐보세요 ex) iu, kakashi ...");
 });
 
 pushLike.addEventListener("click", (e) => {
@@ -146,7 +151,6 @@ const clickCommentBtn = () => {
     commentLikesBtn.addEventListener("click", (e) => {
         let emptyHeart = e.currentTarget.querySelector(".emptyHeart");
         let redHeart = e.currentTarget.querySelector(".redHeart");
-        console.log(e.currentTarget, emptyHeart, redHeart);
         emptyHeart.classList.toggle("hide");
         redHeart.classList.toggle("hide");
     });
