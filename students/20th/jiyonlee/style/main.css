@@ -234,7 +234,8 @@ main .feeds {
 }
 
 .articleComment .commentDeleteBtn {
-    right: 20px;
+    right: 24px;
+    top: 4px;
 }
 
 .articleComment .commentTime {

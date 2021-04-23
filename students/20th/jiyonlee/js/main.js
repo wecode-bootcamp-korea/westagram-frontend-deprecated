@@ -102,16 +102,12 @@ pushLike.addEventListener("click", (e) => {
     }
 });
 
-const toggleHeart = () => {
-    console.log("h");
-};
 const clickCommentBtn = () => {
     const commentWrap = document.createElement("div");
     const commenter = document.createElement("span");
     const comment = document.createElement("span");
     const commentDeleteBtn = document.createElement("button");
     const commentLikesBtn = document.createElement("button");
-    const commentDeleteBtns = document.querySelectorAll(".commentDeleteBtn");
 
     commentWrap.classList.add("commentWrap");
     commenter.classList.add("commenter");
@@ -120,9 +116,6 @@ const clickCommentBtn = () => {
     commentDeleteBtn.classList.add("commentDeleteBtn");
     commentLikesBtn.classList.add("commentBtn");
     commentLikesBtn.classList.add("commentLikesBtn");
-
-    //TODO: 구현중 : 댓글 좋아요
-    commentLikesBtn.addEventListener("click", toggleHeart());
 
     commentWrap.append(commenter);
     commentWrap.append(comment);
@@ -140,23 +133,20 @@ const clickCommentBtn = () => {
     commentTime.textContent = "방금";
     postCommentBtn.classList.remove("blue");
 
+    commentLikesBtn.addEventListener("click", (e) => {
+        let emptyHeart = e.currentTarget.querySelector(".emptyHeart");
+        let redHeart = e.currentTarget.querySelector(".redHeart");
+        console.log(e.currentTarget, emptyHeart, redHeart);
+        emptyHeart.classList.toggle("hide");
+        redHeart.classList.toggle("hide");
+    });
+
+    const commentDeleteBtns = document.querySelectorAll(".commentDeleteBtn");
     commentDeleteBtns.forEach((commentDeleteBtn) => {
         commentDeleteBtn.addEventListener("click", () => {
             commentDeleteBtn.parentNode.remove();
         });
     });
-
-    // toggle로 하면 forEach문이 실행한 후 끝까지 돌면서, 짝수 혹은 홀수일때만 좋아요가 눌리는 문제
-    // const commentLikesBtns = document.querySelectorAll(".commentLikesBtn");
-    // commentLikesBtns.forEach((e, i) => {
-    //     e.addEventListener("click", () => {
-    //         let emptyHeart = e.querySelector(".emptyHeart");
-    //         let redHeart = e.querySelector(".redHeart");
-
-    //         emptyHeart.classList.toggle("hide");
-    //         redHeart.classList.toggle("hide");
-    //     });
-    // });
 };
 
 postCommentBtn.addEventListener("click", () => {
