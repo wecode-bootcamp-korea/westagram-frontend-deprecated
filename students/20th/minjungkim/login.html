@@ -4,39 +4,38 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/c539d32fc7.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>westagram</title>
 	</head>
 	<body>
 		<div class="login_container">
 			<main>
-				<h1 class="logo">Instagram</h1>
-				<form class="login-form" action='./main.html'>
-					<div class="login-data">
+				<h1 class="logo">Westagram</h1>
+				<form class="login_form" action="./main.html">
+					<div class="login_data">
 						<input
-							id="user-id"
+							id="user_id"
 							type="text"
 							placeholder="전화번호, 사용자 이름 또는 이메일"
 							autocomplete="off"
 							autofocus
 						/>
 						<input id="password" type="password" placeholder="비밀번호" />
-						<!-- <span class="password_show">비밀번호 표시</span> -->
+						<span class="display_password">비밀번호 표시</span>
+						<span class="hide_password">숨기기</span>
 					</div>
-					<button id="login-btn" type="submit">로그인</button>
+					<button id="login_btn" type="submit" disabled>로그인</button>
 				</form>
-				<div class="login_or">또는</div>
+				<div class="login_alternative">또는</div>
 				<div class="login_facebook">
-					<!-- <i class="fab fa-facebook-square"></i> -->
-					<a href="#">Facebook으로 로그인</a>
+					<a href="https://ko-kr.facebook.com/" target="_blank">
+						<i class="fab fa-facebook-square"></i>Facebook으로 로그인</a
+					>
 				</div>
-				<a class="forgot-password" href="#">비밀번호를 잊으셨나요?</a>
+				<a class="forgot_password" href="https://www.instagram.com/accounts/password/reset/" target='_blank'>비밀번호를 잊으셨나요?</a>
 			</main>
 		</div>
-		<script src="./js/loginPage.js"></script>
+		<script src="./js/login.js"></script>
 	</body>
-	</html>
-	
-<!-- password -->
+</html>

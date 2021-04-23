@@ -25,18 +25,18 @@ main {
 	margin-bottom: 30px;
 }
 
-.login-form {
+.login_form {
 	font-family: inherit;
 	width: 100%;
 }
 
-.login-data {
+.login_data {
 	font-size: var(--fs-medium);
 	padding: 10px 0;
+	position: relative;
 }
 
-.login-data input {
-	display: block;
+.login_data input {
 	width: 100%;
 	background-color: var(--bg-color);
 	font-family: inherit;
@@ -49,17 +49,33 @@ main {
 	transition: border 200ms ease-in;
 }
 
-.login-data input::placeholder {
+.login_data input::placeholder {
 	color: var(--grey);
 }
 
-.login-data input:focus {
+.login_data input:focus {
 	border: 1px solid var(--grey);
 }
 
-#login-btn {
+.display_password,
+.hide_password {
+	font-size: var(--fs-small);
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	bottom: 30px;
+	cursor: pointer;
+	display:none;
+}
+
+.display_password.show,
+.hide_password.show {
+	display:block;
+}
+
+#login_btn {
 	width: 100%;
-	background-color: #b2dffc;
+	background-color: var(--inactive-color);
 	font-family: inherit;
 	font-size: var(--fs-small);
 	font-weight: bold;
@@ -72,30 +88,29 @@ main {
 	transition: background-color 200ms ease-in;
 }
 
-#login-btn.validUserId.validPassword {
-	background-color: #0195f7;
+#login_btn.active {
+	background-color: var(--active-color);
 	transition: background-color 200ms ease-in;
 }
 
-#login-btn.validUserId.validPassword:hover {
-	background-color: #0195f7;
+#login_btn.active:hover {
 	cursor: pointer;
 }
 
-#login-btn.validUserId.validPassword:active {
-	background-color: #b2dffc;
+#login_btn:active {
+	background-color: var(--inactive-color);
 }
 
-.login_or {
-	color: var(--grey);
+.login_alternative {
 	width: 100%;
+	color: var(--grey);
+	font-size: var(--fs-small);
 	text-align: center;
 	margin-bottom: 30px;
 	position: relative;
-
 }
 
-.login_or::before {
+.login_alternative::before {
 	content: '';
 	width: 40%;
 	height: 1px;
@@ -103,10 +118,9 @@ main {
 	position: absolute;
 	left: 0;
 	top: 50%;
-
 }
 
-.login_or::after {
+.login_alternative::after {
 	content: '';
 	width: 40%;
 	height: 1px;
@@ -114,15 +128,22 @@ main {
 	position: absolute;
 	right: 0;
 	top: 50%;
-
 }
 
 .login_facebook {
+	color: #385185;
+	font-size: var(--fs-small);
 	font-weight: bold;
+	letter-spacing: 0.5px;
 	margin-bottom: 10px;
 }
 
-.forgot-password {
+.login_facebook i {
+	font-size: var(--fs-large);
+	margin-right: 5px;
+}
+
+.forgot_password {
 	font-size: var(--fs-small);
 	color: #2c5379;
 	text-decoration: none;
