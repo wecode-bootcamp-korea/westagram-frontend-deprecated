@@ -103,6 +103,10 @@ pushLike.addEventListener("click", (e) => {
 });
 
 const clickCommentBtn = () => {
+    if (postCommentInput.value.length == 0) {
+        return;
+    }
+
     const commentWrap = document.createElement("div");
     const commenter = document.createElement("span");
     const comment = document.createElement("span");
@@ -128,10 +132,10 @@ const clickCommentBtn = () => {
     commenter.textContent = "Shaman_king";
     comment.textContent = postCommentInput.value;
 
-    postCommentInput.value = "";
     postCommentInput.focus();
     commentTime.textContent = "방금";
     postCommentBtn.classList.remove("blue");
+    postCommentInput.value = "";
 
     commentLikesBtn.addEventListener("click", (e) => {
         let emptyHeart = e.currentTarget.querySelector(".emptyHeart");
