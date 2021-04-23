@@ -11,7 +11,7 @@ body {
   width: 100%;
   height: 53px;
   background: #fff;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .maxWidth {
@@ -30,13 +30,13 @@ body {
 }
 
 .mainNav > .maxWidth > .bar {
-  color: #c7c7c7;
+  color: var(--color-light-grey);
 }
 
 .mainNav > .maxWidth > .bar > I {
   position: relative;
   left: 40%;
-  color: #929191;
+  color: var(--color-grey);
   font-size: 12px;
 }
 
@@ -45,7 +45,7 @@ body {
   height: 26px;
   padding: 7px;
   background: #fafbfa;
-  border: 0.5px solid #c7c7c7;
+  border: 0.5px solid var(--color-grey);
   text-align: center;
   outline: none;
 }
@@ -56,9 +56,9 @@ body {
   width: 375px;
   height: 362px;
   display: none;
-  color: #747272;
+  color: var(--color-dark-grey);
   background: #fff;
-  border: 1px solid lightgray;
+  border: 1px solid var(--color-border);
   box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
   z-index: 1;
 }
@@ -71,13 +71,13 @@ body {
 
 .searchBar > .searchTitle > p {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 .searchBar > .searchTitle > button {
-  color: #82b7fc;
+  color: var(--color-blue);
   font-size: 16px;
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 .searchBar > .searchList > li > a {
@@ -89,7 +89,7 @@ body {
 }
 
 .searchBar > .searchList > li:hover {
-  background: #f3f1f1;
+  background: var(--color-back);
   overflow: hidden;
 }
 
@@ -102,8 +102,8 @@ body {
 }
 
 .searchBar > .searchList > li > a > div > div > p:first-child {
-  color: #585858;
-  font-weight: 800;
+  color: var(--color-dark-grey);
+  font-weight: var(--weight-bold);
 }
 
 .searchBar > .searchList > li > a > div > button {
@@ -117,14 +117,14 @@ body {
 }
 
 .searchBar > .searchList > li > a > div > p:first-child {
-  color: rgb(20, 20, 20);
-  font-weight: 800;
+  color: var(--color-black);
+  font-weight: var(--weight-bold);
 }
 
 .searchBar > .searchList > li > a > span {
   display: flex;
   align-items: center;
-  color: #929191;
+  color: var(--color-dark-grey);
 }
 
 .searchBar:focus {
@@ -145,7 +145,7 @@ body {
 }
 
 .mainNav > .maxWidth > ul > li:last-child li:hover {
-  background: #a8a7a7;
+  background: var(--color-back);
 }
 
 .mainNav > .maxWidth > ul > li:last-child img {
@@ -161,17 +161,17 @@ body {
   right: 10px;
   width: 230px;
   height: 160px;
-  color: #747272;
-  font-weight: 800;
+  color: var(--color-dark-grey);
+  font-weight: var(--weight-bold);
   background: #fff;
-  border: 1px solid lightgray;
+  border: 1px solid var(--color-border);
   box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
   z-index: 1;
 }
 
 .profilePage > ul {
   padding: 8px 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .profilePage > ul > li > a {
@@ -186,7 +186,7 @@ body {
 
 .profilePage > p:hover,
 .profilePage > ul > li:hover {
-  background: #f1f0f0;
+  background: var(--color-back);
 }
 
 .profilePage > p {
@@ -213,7 +213,7 @@ article.feeds {
   justify-content: flex-start;
   align-items: center;
   background: #fff;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--color-border);
   width: 100%;
   padding: 16px;
 }
@@ -244,7 +244,7 @@ article.feeds {
 }
 
 .feeds > .contentBottom {
-  border: 1px solid lightgrey;
+  border: 1px solid var(--color-border);
   font-size: 14px;
 }
 
@@ -274,12 +274,12 @@ article.feeds {
 
 .feeds > .contentBottom > section:nth-child(2) > div > img + span {
   padding-left: 5px;
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 .feeds > .contentBottom > section:nth-child(2) > div :nth-last-child(2) {
   padding-left: 5px;
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 .feeds > .contentBottom > div > div {
@@ -290,7 +290,7 @@ article.feeds {
 }
 
 .feeds > .contentBottom > div > div > div > span {
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 .feeds > .contentBottom > section:last-child.addComment {
@@ -298,7 +298,7 @@ article.feeds {
   justify-content: space-between;
   align-items: center;
   padding: 16px 8px;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid var(--color-border);
 }
 
 .feeds > .contentBottom > section:last-child.addComment > .textarea {
@@ -310,23 +310,23 @@ article.feeds {
 
 .feeds > .contentBottom > .commentList > div > div > .delBtn {
   padding: 0 8px;
-  color: #eceaea;
+  color: var(--color-light-grey);
   cursor: pointer;
 }
 
 .feeds > .contentBottom > .commentList > div > div > .delBtn:hover {
-  color: #363434;
+  color: var(--color-dark-grey);
 }
 
 .addBtn,
 .addBtnReset {
-  color: #8abdff;
-  font-weight: 800;
+  color: var(--color-light-blue);
+  font-weight: var(--weight-bold);
 }
 
 .addBtnColor {
-  color: #0366d6;
-  font-weight: 800;
+  color: var(--color-blue);
+  font-weight: var(--weight-bold);
 }
 
 aside {
@@ -353,14 +353,14 @@ aside > .myAccount > p {
 }
 
 aside > .myAccount > p > span:first-child {
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 aside > section {
   height: 200px;
   margin: 12px 0;
   background: #fff;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--color-border);
   overflow: hidden;
 }
 
@@ -369,7 +369,7 @@ aside > section > .head {
   justify-content: space-between;
   padding: 16px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 aside > section > .head > div {
@@ -396,12 +396,12 @@ aside > section > .storyList > li > img {
 
 aside > section > .storyList > li > div > p:first-child.title {
   color: rgb(20, 20, 20);
-  font-weight: 800;
+  font-weight: var(--weight-bold);
 }
 
 aside > section:nth-child(3) > .storyList > li > button {
   width: 60px;
-  color: #4695fc;
+  color: var(--color-blue);
 }
 
 aside > section:nth-child(3) > .storyList > li > div > p:last-child {
@@ -412,7 +412,7 @@ aside > section:nth-child(3) > .storyList > li > div > p:last-child {
 
 aside > nav,
 aside > nav > ul > li > a {
-  color: #929191;
+  color: var(--color-grey);
   font-size: 12px;
 }
 

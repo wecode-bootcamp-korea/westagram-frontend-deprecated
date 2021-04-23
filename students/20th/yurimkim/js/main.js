@@ -1,5 +1,6 @@
 'use strict';
 
+/* 검색바 */
 const search = document.querySelector('.search');
 const searchBar = document.querySelector('.searchBar');
 const searchList = document.querySelector('.searchList');
@@ -24,6 +25,7 @@ window.addEventListener('click', (e) => {
   } 
 })
 
+/* 검색 리스트 */
 const idArr = ['yurim', 'wecode01기', 'wecode_bootcamp', 'wecode10기', 'wecode20기', 'BTS', 'bts'];
 const searchResult = idArr => {
   const idFilter = idArr.filter(x => x.includes(search.value))
@@ -57,12 +59,12 @@ profileImg.addEventListener('click', () => {
 })
 
 window.addEventListener('click', (e) => {
-  console.log(e.target.className, e.target.tagName);
   if (e.target.tagName !== 'IMG'){
     profilePage.style.display = "none"
   }
 })
 
+/* 댓글*/
 const commentList = document.querySelector('.commentList');
 const addBtn = document.querySelector('.addBtn');
 const textArea = document.querySelector('.textarea');
@@ -111,6 +113,7 @@ commentList .addEventListener('click', (e) => {
   }
 })
 
+/* asdie 위치 고정*/
 const aside = document.querySelector('aside');
 const article = document.querySelector('article');
 

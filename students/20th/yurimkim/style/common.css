@@ -1,6 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-grey: #dbdbdb;
+  --color-grey: #c7c7c7;
+  --color-dark-grey: #747272;
+  --color-light-blue: #82b7fc;
+  --color-blue: #0366d6;
+  --color-dark-blue: #a1a1a1;
+  --color-black: #221f1f;
+  --color-border: #cccccc;
+  --color-back:#f3f1f1
+
+  /* Font weight */
+  --weight-bold: 800;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
