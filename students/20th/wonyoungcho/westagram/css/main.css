@@ -129,58 +129,58 @@
   margin-left: 400px;
 }
 
-.post-mainimage img {
+.postMainImage img {
   display: flex;
   height: 430px;
   width: 100%;
 }
 
-.post-icons {
+.postIcons {
   display: flex;
   justify-content: space-between;
   padding: 15px 10px;
 }
 
-.post-icons__left {
+.postIconsLeft {
   display: flex;
 }
 
-.post-icons__left i {
+.postIconsLeft i {
   display: flex;
   margin: 0px 5px;
 }
 
-.post-icons__right {
+.postIconsRight {
   display: flex;
 }
 
-.post-icons__right i {
+.postIconsRight i {
   margin-right: 11px;
 }
 
-.post-likes {
+.postLikes {
   display: flex;
   padding: 6px 12px;
 }
 
-.post-likes__count {
+.postLikesCount {
   font-weight: bold;
 }
 
-.post-user {
+.postUser {
   padding: 6px 12px;
 }
 
-.post-user__id {
+.postUserId {
   font-weight: bold;
 }
 
-.post-time {
+.postTime {
   display: flex;
   padding: 6px 12px;
 }
 
-.post-time__period {
+.postTimePeriod {
   font-size: 12px;
   font-weight: lighter;
 }
@@ -193,103 +193,103 @@
   padding: 12px 12px;
 }
 
-.comments-icon i {
+.commentsIcon i {
   display: flex;
   align-items: center;
 }
 
-.comments-input textarea {
+.commentsInput textarea {
   background-color: transparent;
   border: 0px solid;
-  color: #ccc;
+  color: var(--whiteColor);
   height: 20px;
   width: 530px;
   resize: none;
   padding-left: 20px;
 }
 
-.comments-post button {
+.commentsPost button {
   background: none;
   border: none;
   color: var(--postBtnColor);
   padding: 0px;
 }
 
-.user-info {
+.userInfo {
   display: flex;
 }
 
-.user-info__image img {
+.userInfoImage img {
   border-radius: 70%;
   width: 55px;
 }
 
-.user-info__container {
+.userInfoContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 15px;
 }
 
-.user-info__id a {
+.userInfoId a {
   font-weight: bold;
 }
 
-.user-info__name a {
+.userInfoName a {
   color: var(--userInfoColor);
 }
 
-.suggestion-header {
+.suggestionHeader {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px 10px 0px;
 }
 
-.suggestion-header__tag {
+.suggestionHeaderTag {
   color: #949494;
   font-size: 14px;
 }
 
-.suggestion-header a {
+.suggestionHeader a {
   font-size: 14px;
 }
 
-.suggestion-list {
+.suggestionList {
   flex-direction: column;
 }
 
-.suggestion-list__container {
+.suggestionListContainer {
   display: flex;
 }
 
-.suggestion-list__picture img {
+.suggestionListPicture img {
   border: 1px solid var(--grey-border);
   border-radius: 70%;
   width: 30px;
 }
 
-.suggestion-list__info {
+.suggestionListInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 15px;
 }
 
-.suggestion-list__id {
+.suggestionListId {
   font-size: 12px;
 }
 
-.suggestion-list__id__suggest {
+.suggestionListIdSuggest {
   font-size: 12px;
 }
 
-.suggestion-button {
+.suggestionButton {
   display: flex;
   align-items: center;
   margin-left: 90px;
 }
 
-.suggestion-button button {
+.suggestionButton button {
   padding: 0;
   border: none;
   background: none;

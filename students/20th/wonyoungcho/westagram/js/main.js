@@ -1,9 +1,9 @@
 'user strict';
 
 const idName = 'wychrischo ';
-const comment = document.querySelector('.post-user__container');
-const addButton = document.querySelector('.comments-post__button');
-const textArea = document.querySelector('.comments-input__comment');
+const comment = document.querySelector('.postUserContainer');
+const addButton = document.querySelector('.commentsPostButton');
+const textArea = document.querySelector('.commentsInputComment');
 
 function commentAdd () {
   const newComment = textArea.value;
@@ -11,7 +11,7 @@ function commentAdd () {
   newDiv.className = 'post-user';
 
   comment.append(newDiv);
-  newDiv.innerHTML = `<div class = 'post-user'><span class = 'post-user__id'>${idName}</span> ${newComment}</div>`;
+  newDiv.innerHTML = `<div class = 'postUser'><span class = 'postUserId'>${idName}</span> ${newComment}</div>`;
   textArea.value = ''; 
   addButton.style.color = '#8abdff';
 }
