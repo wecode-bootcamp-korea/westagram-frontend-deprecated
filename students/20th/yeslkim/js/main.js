@@ -6,7 +6,6 @@ const commentForm = document.commentForm,
 
 function active() {
     submitBtn.disabled = inputComment.value.length > 0 ? false : true;
-    return;
 }
 
 function addComment(e) {
@@ -15,10 +14,11 @@ function addComment(e) {
     const p = document.createElement('p'),
         span = document.createElement('span'),
         myId = document.querySelector('#user-profile .js-user-name').textContent,
-        comment = document.createTextNode(` ${inputComment.value}`),
+        comment = document.createTextNode(inputComment.value),
         commentBox = document.querySelector('.js-comments');
 
     span.className = 'user-name';
+    p.className = 'comment align-item-center';
     span.innerText = myId;
     p.appendChild(span);
     p.appendChild(comment);
@@ -30,9 +30,10 @@ function like() {
     this.classList.toggle(_LIKE_CLASSNAME);
 }
 
-inputComment.addEventListener('keyup', active);
-submitBtn.addEventListener('click', addComment);
-
-for (let i = 0; i < likeBtns.length; i++) {
-    likeBtns[i].addEventListener('click', like)
+function init() {
+    inputComment.addEventListener('keyup', active);
+    submitBtn.addEventListener('click', addComment);
+    likeBtns.forEach( btn => btn.addEventListener('click', like) );
 }
+
+init();

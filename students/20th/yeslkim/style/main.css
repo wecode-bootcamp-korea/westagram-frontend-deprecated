@@ -62,6 +62,10 @@ button, .submit-comment {
     text-decoration: underline;
 }
 
+.comment a, .user-name {
+    margin-right: 4px;
+}
+
 .detail-info {
     color: #8e8e8e;
     font-size: 12px;
@@ -250,7 +254,7 @@ article > header{
     margin-bottom: 5px;
 }
 
-.contents .like-btn {
+.comment .like-btn {
     padding: 0;
     width: 12px;
     height: 12px;
@@ -272,7 +276,7 @@ article > header{
     height: 56px;
 }
 
-.inputComment {
+.input-comment {
     width: calc(100% - 96px);
 }
 
