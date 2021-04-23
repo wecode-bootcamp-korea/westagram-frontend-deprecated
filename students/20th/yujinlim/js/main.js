@@ -7,10 +7,13 @@ const commentInputs = commentInputDivs.map((el) => {
 const submitBtns = commentInputDivs.map((el) => {
   return el.querySelector(".feed__submit-btn");
 });
+const feedLikeBtns = Array.from(
+  document.querySelectorAll(".feed__feature-btn .fa-heart")
+);
 const myID = document.querySelector(".main-right__my-id").innerText;
 const OPACITY = "feed__submit-btn--opacity";
 
-function removeOpacity(commentInputValue, submitBtn) {
+function removeSubmitBtnOpacity(commentInputValue, submitBtn) {
   if (commentInputValue) {
     submitBtn.classList.remove(OPACITY);
   }
@@ -21,20 +24,23 @@ function removeOpacity(commentInputValue, submitBtn) {
 }
 
 function getCommentValues(e) {
-  const commentInput = e.target;
-  const commentInputValue = commentInput.value;
-  const commentInputDiv = e.target.parentNode;
-  const submitBtn = commentInputDiv.querySelector(".feed__submit-btn");
-  removeOpacity(commentInputValue, submitBtn);
+  const commentInputValue = e.target.value;
+  const submitBtn = e.target.parentNode.querySelector(".feed__submit-btn");
+  removeSubmitBtnOpacity(commentInputValue, submitBtn);
 }
 
-function updateLikeCount() {
-  this.querySelector(".far").classList.replace("far", "fas");
-  // const likesCountSpan = this.parentNode.parentNode.parentNode.parentNode
-  //   .querySelector(".feed__likes")
-  //   .querySelector(".js-likes-count");
-  // const currentLikeCount = parseInt(likesCountSpan.innerText);
-  // likesCountSpan.innerText = currentLikeCount + 1;
+function toggleCommentLike() {
+  const isCommentLikePressed = this.querySelector("i").classList.contains(
+    "fas"
+  );
+
+  if (!isCommentLikePressed) {
+    this.querySelector("i").classList.replace("far", "fas");
+  }
+
+  if (isCommentLikePressed) {
+    this.querySelector("i").classList.replace("fas", "far");
+  }
 }
 
 function deleteComment() {
@@ -42,22 +48,13 @@ function deleteComment() {
   selectedComment.remove();
 }
 
-function addComment(
-  commentColumn,
-  commentAuthor,
-  commentContent,
-  commentBtns,
-  commentList,
-  commentInput,
-  submitBtn
-) {
-  commentColumn.appendChild(commentAuthor);
-  commentColumn.appendChild(commentContent);
-  commentColumn.appendChild(commentBtns);
-  commentList.appendChild(commentColumn);
+function addComment(materialsForAddComment) {
+  materialsForAddComment.commentList.appendChild(
+    materialsForAddComment.commentColumn
+  );
 
-  commentInput.value = "";
-  submitBtn.classList.add(OPACITY);
+  materialsForAddComment.commentInput.value = "";
+  materialsForAddComment.submitBtn.classList.add(OPACITY);
 
   const commentDeleteBtns = Array.from(
     document.getElementsByClassName("delete-btn")
@@ -70,7 +67,7 @@ function addComment(
     el.addEventListener("click", deleteComment);
   });
   commentLikeBtns.forEach((el) => {
-    el.addEventListener("click", updateLikeCount);
+    el.addEventListener("click", toggleCommentLike);
   });
 }
 
@@ -94,15 +91,18 @@ function makeComment(e) {
     commentAuthor.innerText = myID;
     commentBtns.innerHTML = `<button class="js-comment-btn like-btn"><i class="far fa-heart"></i></button><button class="js-comment-btn delete-btn"><i class="fas fa-times"></i></button>`;
 
-    addComment(
+    commentColumn.appendChild(commentAuthor);
+    commentColumn.appendChild(commentContent);
+    commentColumn.appendChild(commentBtns);
+
+    const materialsForAddComment = {
       commentColumn,
-      commentAuthor,
-      commentContent,
-      commentBtns,
       commentList,
       commentInput,
-      submitBtn
-    );
+      submitBtn,
+    };
+
+    addComment(materialsForAddComment);
   } else {
     return false;
   }
@@ -113,10 +113,33 @@ function handleSubmitBtn(e) {
   makeComment(e);
 }
 
+function toggleFeedLike() {
+  const isFeedLikePressed = this.classList.contains("fas");
+  const likesCountSpan = this.parentNode.parentNode.parentNode.parentNode.parentNode
+    .querySelector(".feed__texts")
+    .querySelector(".feed__likes")
+    .querySelector(".js-likes-count");
+  const currentLikeCount = parseInt(likesCountSpan.innerText);
+
+  if (!isFeedLikePressed) {
+    likesCountSpan.innerText = currentLikeCount + 1;
+    this.classList.replace("far", "fas");
+  }
+
+  if (isFeedLikePressed) {
+    likesCountSpan.innerText = currentLikeCount - 1;
+    this.classList.replace("fas", "far");
+  }
+}
+
 commentInputs.forEach((el) => {
   el.addEventListener("keyup", getCommentValues);
 });
 
 submitBtns.forEach((el) => {
   el.addEventListener("click", handleSubmitBtn);
+});
+
+feedLikeBtns.forEach((el) => {
+  el.addEventListener("click", toggleFeedLike);
 });
