@@ -42,9 +42,11 @@ function leaveaComment(text) {
     say.innerHTML = text;
 
     const likeComment = document.createElement("img");
+    likeComment.setAttribute('alt', 'like comment');
     likeComment.setAttribute('src', 'img/heart.png');
     likeComment.className = "likeComment";
     const likeCommentRed = document.createElement("img");
+    likeCommentRed.setAttribute('alt', 'liked comment');
     likeCommentRed.setAttribute('src', 'img/redheart.png');
     likeCommentRed.className = "likeComment liked hide";
 
@@ -52,6 +54,7 @@ function leaveaComment(text) {
     likeCommentRed.addEventListener("click", ()=>{likeCommentRed.classList.toggle('hide')});
 
     const delBtn = document.createElement("img");
+    delBtn.setAttribute('alt', 'comment ellipsis');
     delBtn.setAttribute('src', 'img/dot.png');
     delBtn.id = "smalldot";
     delBtn.addEventListener("click", delComment);
@@ -181,7 +184,7 @@ function showAllId() {
     usersToSearch.forEach(i => {
         const matchedId = document.createElement('div');
         matchedId.innerHTML = `<div class="searchedUser">
-        <img src=${i.profileImg}>
+        <img alt="user's profile image" src=${i.profileImg}>
         <div class="userId">
         <p class="id">${i.id}</p>
         <p class="gray twelve" id="description">${i.description}</p>
@@ -203,7 +206,7 @@ function showAllId() {
     matchedUsers.forEach(i => {
         const matchedId = document.createElement('div');
         matchedId.innerHTML = `<div class="searchedUser">
-        <img src=${i.profileImg}>
+        <img alt="user's profile image" src=${i.profileImg}>
         <div class="userId">
           <p class="id">${i.id}</p>
           <p class="gray twelve" id="description">${i.description}</p>
@@ -226,7 +229,7 @@ recommendUsers.forEach((i) => {
     const friend = document.createElement("div");
     friend.innerHTML = `<div class="user">
     <div class="profile">
-    <img src="img/${i.id}.jpg">
+    <img alt="user's profile image" src="img/${i.id}.jpg">
     </div>
     <div class="userid">
     <p class="id">${i.id}</p>
@@ -253,7 +256,7 @@ usersForStory.forEach(i => {
     story.innerHTML = `
     <div>
     <img src="img/storyring.png" id="storyring">
-    <img src="img/${i.id}.jpg" id="storyprofile">
+    <img alt="user's profile image" src="img/${i.id}.jpg" id="storyprofile">
     </div>
     <p>${i.id}</p>
     `;
