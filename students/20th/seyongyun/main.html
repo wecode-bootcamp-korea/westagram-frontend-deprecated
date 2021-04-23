@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>westagram main</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css"/>
+    <link href="style/main.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+    <nav class="navArea">
+        <nav class="navList"> 
+            <img class="instLogo" alt="logo" src="img\instagram.png"/>
+            <span class="titleFont titleSize">westagram</span>
+        </nav>
+        <nav class="navCenter">
+            <input class="searchTab" type="text" placeholder="검색"/>
+        </nav>
+        <nav class=navRight>
+            <img class="iconCompass" alt="iconCompass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"/>
+            <img class="iconHeart" alt="iconHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+            <img class="iconMyPage" alt="iconMyPage" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"/>
+        </nav>
+    </nav>
+
+    <main class="mainArea">
+        <div class="feedArea">
+            <article class="articleArea">
+                <div class="profileLine">
+                    <img class="profileThumnail" alt="profile thumnail" src="img\profileThumnail.png"/>
+                    <div>
+                        <p>archedemus</p>
+                        <p>wecode 선릉</p>
+                    </div>
+                </div>
+                <img class="feedImage" alt="feedImg" src="img/wecodelife.jpeg">
+                <div class="interactionButtonArea">
+                    <img class="iconHeart iconSize" alt="iconHeart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                    <img class="iconReply iconSize" alt="iconReply" src="img/reply.png"/>
+                    <img class="iconShare iconSize" alt="iconShare" src="img/share.png"/>
+                    <img class="iconBookmark iconSize" alt="iconBookmark" src="img/bookmark.png"/>
+                </div>
+                <div><!--왜 div가 작은가-->
+                    <img class="recentLikeProfile" alt="recentLikePf" src="img/profileThumnail.png"/>
+                    <span>archedemus 님 외 150명이 좋아합니다.</span><br> <!--br을쓰는 방법 뿐인가-->
+                </div>
+                <div>
+                    <span class="userId">archedemus</span>
+                    <span class="normalText">위코드에서 함께 공부해서 즐겁습니다.</span>
+                    <p class="postTimePassed">15시간</p>
+                </div>
+                <div class="reply">
+                    <input class="replyInput" type="text" placeholder="댓글달기..."/>
+                    <button class="replyButton">게시</button>
+                </div>
+                <div class="replyLocation">
+                    <!--댓글들어오는 위치-->
+                </div>
+            </article>
+        </div>
+
+        <div class="mainRightArea">
+            <div class="myProfile">
+                <img class="profileThumnailRight" alt="profileThRight" src="img\profileThumnail.png"/>
+                <div class="rightProfileId">
+                    <p class="rightProfileIdFont">archedemus</p>
+                    <p class="rightProfileIdFont">윤세용</p>
+                </div>
+            </div>
+            <div class="rightStoryArea">
+                <div class="rightStoryTitle">
+                    <span class="rightStoryFont">스토리</span>
+                    <span class="rightStoryFont">모두 보기</span>
+                </div>
+                <div class="rightStoryAccounts">
+                    <ol>
+                        <li class="rightStoryEachAccount">
+                            <img class="rightStoryProfileThumnail" alt="profile thumnail" src="img\profileThumnail.png"/>
+                            <div>
+                                <p>archedemus</p>
+                                <p>2시간전</p>
+                            </div>
+                        </li>
+                        <li class="rightStoryEachAccount">
+                            <img class="rightStoryProfileThumnail" alt="profile thumnail" src="img\profileThumnail.png"/>
+                            <div>
+                                <p>archedemus</p>
+                                <p>4시간전</p>
+                            </div>
+                        </li>
+                        <li class="rightStoryEachAccount">
+                            <img class="rightStoryProfileThumnail" alt="profile thumnail" src="img\profileThumnail.png"/>
+                            <div>
+                                <p>archedemus</p>
+                                <p>8시간전</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="rightRecommendArea">
+                <div class="rightStoryTitle">
+                    <span class="rightStoryFont">스토리</span>
+                    <span class="rightStoryFont">모두 보기</span>
+                </div>
+                <div class="rightStoryAccounts">
+                    <ol>
+                        <li class="rightStoryEachAccount">
+                            <img class="rightStoryProfileThumnail" alt="profile thumnail" src="img\profileThumnail.png"/>
+                            <div>
+                                <p>archedemus</p>
+                                <p>2시간전</p>
+                            </div>
+                        </li>
+                        <li class="rightStoryEachAccount">
+                            <img class="rightStoryProfileThumnail" alt="profile thumnail" src="img\profileThumnail.png"/>
+                            <div>
+                                <p>archedemus</p>
+                                <p>4시간전</p>
+                            </div>
+                        </li>
+                        <li class="rightStoryEachAccount">
+                            <img class="rightStoryProfileThumnail" alt="profile thumnail" src="img\profileThumnail.png"/>
+                            <div>
+                                <p>archedemus</p>
+                                <p>8시간전</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        </div.main-right>
+    </main>
+    
+
+    <script src="js\main.js"></script>
+</body>
+</html>

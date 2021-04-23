@@ -1,0 +1,153 @@
+.navArea {
+    display : flex;
+    align-items : center;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.instLogo {
+    width: 30px;
+    margin-left: 200px;
+}
+
+.titleSize {
+    padding-left: 25px;
+    margin-left: 25px;
+    border-left: 1px solid lightgrey;
+    font-size: 25px;
+}
+
+.iconCompass {
+    width: 30px;
+}
+
+.iconHeart {
+    width: 30px;
+}
+
+.iconMyPage {
+    width: 30px;
+}
+
+.navCenter {
+    margin: 15px;
+}
+
+.searchTab {
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feedArea {
+    width: 600px;
+    margin-left: 100px;
+}
+
+.articleArea {
+    margin-top: 20px;
+}
+
+.profileThumnail {
+    width: 35px;
+}
+
+.profileLine {
+    font-size: 5px;
+}
+
+.profileLine {
+    display: flex;
+    flex-flow: row;
+}
+
+.feedImage {
+    width: 100%;
+}
+
+.interactionButtonArea {
+    position: relative;
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+}/*왜 flex를 안걸면 폭이 좁아지고 width도 안먹나??*/
+
+.iconBookmark {
+    position: absolute;
+    right:0;
+}
+
+.likesArea {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.recentLikeProfile {
+    width: 20px;
+}
+
+.postTimePassed {
+    color:gray;
+    font-size: 5px;
+}
+
+.replyInput {
+    width: 70%;
+}/*왜 옆으로 살짝 나오는지?*/
+
+.replyButton {
+    color:rgb(79, 79, 255);
+    background-color: white;
+}
+
+.myProfile {
+    display:flex;
+    flex-flow: row;
+    align-items: center;
+    width: 150px;
+}
+
+.profileThumnailRight {
+    width: 25%;
+}
+
+.rightProfileId {
+    font-size: 10px;
+}
+
+.rightProfileIdFont {
+    margin: 2px;
+}
+
+.rightStoryArea {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.rightStoryFont {
+    font-size: 10px;
+}
+
+ol {
+    list-style:none;
+    padding: 3px;
+}
+
+.rightStoryEachAccount{
+    display:flex;
+    flex-flow: row;
+    margin: 4px;
+    font-size: 8px;
+}
+
+.rightStoryProfileThumnail {
+    width: 23%;
+    margin: 0px 5px;
+}
+
+.mainArea {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}

@@ -2,29 +2,26 @@
 <html>
 <head>
     <title>westagram login</title>
-    <link href="login.css" rel="stylesheet" type="text/css" />
+    <link href="style/common.css" rel="stylesheet" type="text/css"/>
+    <link href="style/login.css" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
 
 </head>
 <body>
-    <div class="boundary">
-        <p class="title">westagram</p>
+    <div class="totalBoundary">
+        <h1 class="titleFont titleSize">westagram</h1>
         <div class="loginArea">
-            <p><input type="text" placeholder="전화번호,사용자 이름 또는 이메일"></p>
-            <p><input type="password" placeholder="비밀번호"></p>
+            <p><input class="idInput" type="text" placeholder="전화번호,사용자 이름 또는 이메일"/></p>
+            <p><input class="passwordInput" type="password" placeholder="비밀번호"/></p>
             <div class=buttonArea>
-                <button>로그인</button>  
-        </div>
-             
+                <button class="loginButton">로그인</button>  
+            </div> 
         </div>
         <div class="pwFind">
             <p>비밀번호를 잊으셨나요?</p>
         </div>
-       
-    
     </div>
-    
-
+    <script src="js\login.js"></script>
 </body>
 </html>
