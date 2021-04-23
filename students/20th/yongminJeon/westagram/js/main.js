@@ -7,7 +7,6 @@ const leaveComment = function () {
   const listTag = document.createElement('li');
   ulTag.appendChild(listTag);
   listTag.innerHTML = `<div class='section-article__commentContents'><p><a class='section-article__fanslink' href='#'>yongmin</a> ${commentValue}</p><button class='section-article__commentLinkButton'><i class='far fa-heart'></i></button></div>`;
-  comment.value = '';
 };
 
 const pressEnter = function (e) {
