@@ -3,7 +3,6 @@ const pw = document.getElementById ("userPw");
 
 
 function activeButton(loginButton){
-    console.log("active");
     loginButton.disabled = false;
     loginButton.style.backgroundColor = "#1997F3";
 }
