@@ -181,6 +181,15 @@ body {
   margin-right: 15px;
 }
 
+.section-article__commentlist__scroll {
+  overflow: auto;
+  height: 50px;
+}
+
+.section-article__commentlist__scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .section-article__commentList {
   margin-bottom: 20px;
 }

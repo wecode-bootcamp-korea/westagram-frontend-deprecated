@@ -18,6 +18,10 @@ const checkIdAndPassword = function () {
       alert('아이디와 비밀번호를 확인하시기 바랍니다.');
       e.preventDefault();
     }
+
+    if (!idInput.value.includes('@')) {
+      alert('이메일 형식이어야 합니다.');
+    }
   });
 };
 
@@ -34,8 +38,10 @@ const checkValueInInput = function () {
 };
 
 const activeLoginButton = function () {
-  idInput.addEventListener('keyup', checkValueInInput);
-  passwordInput.addEventListener('keyup', checkValueInInput);
+  const inputArray = [idInput, passwordInput];
+  inputArray.forEach((element) =>
+    element.addEventListener('keyup', checkValueInInput)
+  );
   checkIdAndPassword();
 };
 

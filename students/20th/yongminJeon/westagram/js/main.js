@@ -12,12 +12,11 @@ const leaveComment = function () {
 const pressEnter = function (e) {
   if (e.keyCode === 13) {
     leaveComment();
-    console.log(comment.value);
   }
 };
 
 const activeCommentLeaveButton = function () {
-  comment.addEventListener('keyup', function (e) {
+  comment.addEventListener('input', function () {
     const commentValue = comment.value;
     const commentUploadButton = document.querySelector(
       '.section-article__commentUpload'
@@ -33,6 +32,8 @@ const activeCommentLeaveButton = function () {
     if (commentValue.length === 0) {
       commentUploadButton.classList.remove('active');
       commentUploadButton.disabled = true;
+      commentUploadButton.removeEventListener('click', leaveComment);
+      comment.removeEventListener('keydown', pressEnter);
     }
   });
 };
