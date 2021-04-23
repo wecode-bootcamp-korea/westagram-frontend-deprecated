@@ -13,18 +13,19 @@ commentBtn.addEventListener('click', function(){
     }
 })
 
-
 commentInput.addEventListener('keydown', function(e){
-    if (window.event === 13) {
-        const newComment = document.createElement('li')
-        newComment.innerHTML = `<span><span class="point-span userID">josungmin</span>` + this.value;
-        commentList.appendChild(newComment);
-        this.value = "";
-}
+    if (commentInput.value) {
+        if (e.which === 13) {
+            var newComment = document.createElement('li')
+            newComment.innerHTML = `<span><span class="point-span userID">thisisyourhyung</span>` + this.value
+            commentList.appendChild(newComment);
+            this.value = "";
+        }
+    }
 })
 
-    
- 
+
+
 
 commentInput.addEventListener('keyup', function(event) {
     if (commentInput.value) {

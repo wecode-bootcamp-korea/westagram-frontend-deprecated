@@ -4,21 +4,24 @@ const loginBtn = document.getElementsByClassName("loginButton")[0];
 
 
 
-inputId.addEventListener('keyup', function(){
-    if(inputId.value.length > 0 && inputPw.value.length > 0){
-
-
-        loginBtn.style.backgroundColor = "#0095f6";
+inputId.addEventListener('keyup', function(event) {
+    if (inputId.value && inputPw.value) {
+        loginBtn.disabled = false;
+        
     }
+    else {
+        loginBtn.disabled = true;
+        
+    }
+})
 
-    })
-
-
-
-inputPw.addEventListener('keyup', function(){
-        if(inputId.value.length > 0 && inputPw.value.length > 0){
-            loginBtn.style.backgroundColor = "#0095f6";
-        }
-
-        })
-
+inputPw.addEventListener('keyup', function(event) {
+    if (inputId.value && inputPw.value) {
+        loginBtn.disabled = false;
+        
+    }
+    else {
+        loginBtn.disabled = true;
+    }
+})
+       

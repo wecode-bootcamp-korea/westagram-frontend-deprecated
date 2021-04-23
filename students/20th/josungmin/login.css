@@ -56,7 +56,7 @@ body {
 .loginButton {
     width: 248px;
     height: 30px;
-    background-color: rgba(0,149,246,.3);
+    background-color: #0095f6;
     color: white;
     border-radius: 3px;
     border: none;
@@ -69,3 +69,23 @@ a {
     color: #385185;
     font-weight: 600;
 } 
+
+.loginButton:disabled {
+    background-color: #B9DFFC;
+}
+
+
+.loginButton:disabled:hover {
+    cursor: default;
+}
+
+
+.loginButton:enabled:hover {
+    cursor: pointer;
+}
+
+
+
+.loginButton:focus {
+    outline: none;
+}
