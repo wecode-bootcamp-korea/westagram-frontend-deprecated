@@ -1,84 +1,96 @@
 body{
     background-color: rgba(var(--b3f,250,250,250),1);
 }
-.section .nav {
+section .topNav {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     display: flex;
-    height: 50px;
-    background-color: fff;
-    border-bottom: 1px solid #bbb;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
     padding: 0 18%;
-    background-color: #fff;
+    background-color: fff;
+    border-bottom: 1px solid #bbb;
 }
-.section .nav .navItem .title {
+
+section .topNav .navTopItem .title {
     font-family: 'Lobster', cursive;
     font-size: 28px;
 }
-.section .nav .navItem .search{
-    text-align: center;
-    color: #bbb;
+
+section .topNav .navTopItem .search{
+    padding: 5px;
     background-color: rgba(var(--b3f,250,250,250),1);
     border: 1px solid #bbb;
     border-radius: 3px;
-    padding: 5px;
+    text-align: center;
+    color: #bbb;
 }
+
 input:focus{
     outline: none;
 }
-.section .nav .navItem img{
+
+section .topNav .navTopItem img{
     width: 23px;
     margin-right: 12px;
     cursor: pointer;
 }
-.main{
+
+main{
     display: flex;
     justify-content: space-between;
     padding: 0 18%;
     margin-top: 80px;
 }
-.main .feed{
+
+main .feed{
     width: 65%;
     margin-bottom: 150px;
 }
-.main .feed .header{
+
+main .feed header{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
     background-color: #fff;
     border: 1px solid #bbb;
     border-bottom: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
 }
-.main .feed .header .headerLeft{
+
+main .feed header .headerLeft{
     display: flex;
     align-items: center;
 }
-.main .feed .header .headerLeft .feedProfileImg{
+
+main .feed header .headerLeft .ProfileImg{
     width: 30px;
-    border-radius: 50%;
     margin-right: 10px;
+    border-radius: 50%;
 }
-.main .feed .feedImg img{
+
+main .feed .feedImg img{
     width: 100%;
 }
-.main .feed .contents{
+
+main .feed .reaction{
+    margin-top: -5px;
+    padding: 15px;
     background-color: #fff;
     border: 1px solid #bbb;
     border-top: none;
-    margin-top: -5px;
-    padding: 15px;
 }
-.main .feed .contents .btnBox{
-    margin-bottom: 12px;
+
+main .feed .reaction .btnBox{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 12px;
 }
-.main .feed .contents .btnBox
+
+main .feed .reaction .btnBox
 .fa-heart,
 .fa-comment,
 .fa-paper-plane{
@@ -86,99 +98,120 @@ input:focus{
     font-size: 25px;
     cursor: pointer;
 }
+
 .fa-bookmark{
     font-size: 25px;
     cursor: pointer;
 }
-.main .feed .contents .paragraphBox p{
+
+main .feed .reaction .paragraphBox p{
     margin-bottom: 10px;
 }
-.main .feed .contents .paragraphBox p:nth-child(1){
-    font-weight: 600;
+
+main .feed .reaction .paragraphBox p:nth-child(1){
     margin-bottom: 10px;
+    font-weight: 600;    
 }
-.main .feed .contents .paragraphBox .userId{
+
+main .feed .reaction .paragraphBox .userId{
     font-weight: 600;
 }
-.main .feed .contents .commentBox{
+
+main .feed .reaction .commentBox{
     display: flex;
     justify-content: space-between;
 }
-.main .feed .contents .commentBox .commentInput{
-    border: none;
+
+main .feed .reaction .commentBox .commentInput{
     width: 90%;
+    border: none;   
 }
-.main .feed .contents .commentBox button{
-    color: #0095f6;
+
+main .feed .reaction .commentBox button{
+    padding: 0;
     background-color: #fff;
     border: none;
-    padding: 0;
+    color: #0095f6;
 }
-.main .aside{
-    width: 20%;
+
+main .aside{
     position: fixed;
     right: 18%;
+    width: 20%;
 }
-.main .aside .asideProfile{
+
+main .aside .asideProfile{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
-.main .aside .asideProfile .asideProfileLeft{
+
+main .aside .asideProfile .asideProfileLeft{
     display: flex;
     align-items: center;
 }
-.main .aside .asideProfile .asideProfileLeft img{
+
+main .aside .asideProfile .asideProfileLeft img{
     width: 55px;
-    border-radius: 50%;
     margin-right: 15px;
+    border-radius: 50%;
 }
-.main .aside .asideProfile .asideProfileRight{
+
+main .aside .asideProfile .asideProfileRight{
     color: #0095f6;
     cursor: pointer;
 }
-.main .aside .recommend{
+
+main .aside .recommend{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.main .aside .recommend div:first-child p{
+
+main .aside .recommend div:first-child p{
+    display: inline-block;
     font-weight: 600;
     color: #aaa;
-    display: inline-block;
 }
-.main .aside .userRecommend{
+
+main .aside .userRecommend{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.main .aside .userRecommend .userRecommendLeft{
+
+main .aside .userRecommend .userRecommendLeft{
     display: flex;
     align-items: center;
 }
-.main .aside .userRecommend .userRecommendLeft .userRecommendImg img{
+
+main .aside .userRecommend .userRecommendLeft .userRecommendImg img{
     width: 40px;
-    border-radius: 50%;
     margin-right: 8px;
+    border-radius: 50%;
 }
-.main .aside .userRecommend .userRecommendLeft .userRecommendText p:last-child{
+
+main .aside .userRecommend .userRecommendLeft .userRecommendText p:last-child{
     color: #bbb;
 }
-.main .aside .userRecommend .userRecommendRight p{
+
+main .aside .userRecommend .userRecommendRight p{
     color: #0095f6;
     cursor: pointer;
 }
-.main .aside .info .infoLink p{
+
+main .aside .info .infoLink p{
     display: inline-block;
+    margin-bottom: 5px;
     color: #bbb;
     font-size: 11px;
-    margin-bottom: 5px;
     cursor: pointer;
 }
-.main .aside .info .copyright{
+
+main .aside .info .copyright{
+    margin-top: 5px;
     color: #bbb;
     font-size: 11px;
-    margin-top: 5px;
 }
