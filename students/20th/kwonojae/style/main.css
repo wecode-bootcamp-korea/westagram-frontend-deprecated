@@ -298,3 +298,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.commentLineTemplate {
+  display: none;
+}
