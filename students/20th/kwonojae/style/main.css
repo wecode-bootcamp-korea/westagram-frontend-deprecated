@@ -1,294 +1,300 @@
-.topNav {
-    position: fixed;
-    width: 100%;
-    height: 53px;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px solid #DBDBDB;
-    background-color: white;
+.mainNav {
+  width: 100%;
+  height: 54px;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navTitle {
-    font-family: 'Lobster', cursive;
-    font-size: 41px;
-    
+  font-family: "Lobster", cursive;
+  font-size: 41px;
 }
 
 .navSearch {
-    position: relative;
-    width: 215px;
-    height: 28px;
+  width: 215px;
+  height: 28px;
+  position: relative;
 }
 
 .navSearch input {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .navSearch input::placeholder {
-    text-align: center;
+  text-align: center;
 }
 
-.navIcon {
-    width: 222px;
-    display: flex;
-    justify-content: space-between;
-
+.navIcons {
+  width: 222px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navIcon i {
-    font-size: 24px;
+.navIcons i {
+  font-size: 24px;
 }
 
-.navIcon img {
-    width: 24px;
-    border-radius: 50%;
+.navIcons img {
+  width: 24px;
+  border-radius: 50%;
 }
 
 .feeds {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: start;
 }
 
 .feeds article {
-    width: 600px;
-    border: 1px solid #DBDBDB;
-    margin-right: 2px;
+  width: 600px;
+  margin-right: 20px;
+  border: 1px solid #dbdbdb;
 }
 
 .feedHeader {
-    width: 600px;
-    height: 60px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
+  width: 600px;
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 }
 
 .writer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .writer img {
-    width: 32px;
-    border-radius: 50%;
+  width: 32px;
+  border-radius: 50%;
 }
 
 .writer h5 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .feedHeader button {
-    background-color: white;
-    border: none;
+  background-color: white;
+  border: none;
 }
 
-.feedImage img{
-    width: 600px;
-    height: 600px;
-    padding: 0px;
+.feedImage img {
+  width: 600px;
+  height: 600px;
+  padding: 0px;
 }
 
-.feedBottom {
-    width: 600px;
-    background-color: white;
-    
+.feedBottomBox {
+  width: 600px;
+  background-color: white;
 }
 
 .feedButtons Button {
-    font-size: 24px;
-    border: none;
-    background-color: white;
+  font-size: 24px;
+  border: none;
+  background-color: white;
 }
 
 .feedButtons {
-    width: 600px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    align-items: center;
-    margin: 0px;
-    padding-left: 12px;
-    padding-right: 16px;
+  width: 600px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
-
-
 .feedLike {
-    width: 600px;
-    height: 18px;
-    background-color: white;
-    padding-left: 16px;
-    margin-top: 6px;
+  width: 600px;
+  height: 18px;
+  background-color: white;
+  padding-left: 16px;
+  margin-top: 6px;
 }
 
 .feedLike button {
-    all: unset;
+  all: unset;
 }
 
 .feedText {
-    width: 600px;
-    background-color: white;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 10px;
+  width: 600px;
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 10px;
+}
+
+.feedComment {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .feedText button {
-    all: unset;
+  all: unset;
+}
+
+.feedComment button {
+  all: unset;
 }
 
 .feedTime {
-    width: 600px;
-    background-color: white;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 12px;
+  width: 600px;
+  background-color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 12px;
 }
 
-.writeComment {
-    width: 600px;
-    height: 56px;
-    background-color: white ;
-    padding: 0px 16px 0px 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: 1px solid #DBDBDB;
-    margin-top: 12px;
+.writeHereComment {
+  width: 600px;
+  height: 56px;
+  background-color: white;
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #dbdbdb;
+  margin-top: 12px;
 }
 
-.writeComment i {
-    font-size: 24px;
+.writeHereComment i {
+  font-size: 24px;
 }
 
-.writeComment input{
-    width: 80%;
-    height: 100%;
-    background-color: white ;
-    border: none;
+.writeHereComment input {
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  border: none;
 }
 
-.writeComment button{
-    all: unset;
+.writeHereComment button {
+  all: unset;
 }
 
 .mainAside {
-    margin-top: 53px;
-    width: 40%;
-    height: 100%;
-    background-color: white;
-    position: fixed;
-    right: 0;
-    top: 0;
+  margin-top: 55px;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 .profilewithrecommend {
-    margin-top: 50px;
-    margin-left: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
 }
 
 .myProfile {
-    width: 300px;
-    height: 56px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    background-color: white;
-
+  width: 300px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
 }
 
 .myProfile img {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }
 
 .myProfile dl {
-    margin-left: 20px;
-    width: 196px;
-    font-size: 14px;
+  margin-left: 20px;
+  width: 196px;
+  font-size: 14px;
 }
 
 .myProfile button {
-    all: unset;
-    font-size: 12px;
+  all: unset;
+  font-size: 12px;
 }
 
 .recommendForYou {
-    width: 300px;
-    background-color: white;
-    margin-top: 20px;
-    /* padding: 0px 8px 0px 8px; */
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+  width: 300px;
+  background-color: white;
+  margin-top: 20px;
+  /* padding: 0px 8px 0px 8px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
 .recommendForYou span {
-    width: 250px;
-    font-size: 14px;
+  width: 250px;
+  font-size: 14px;
 }
 
 .recommendForYou button {
-    all: unset;
-    font-size: 12px;
+  all: unset;
+  font-size: 12px;
 }
 
 .recommnedList {
-    width: 300px;
-    background-color: white;
+  width: 300px;
+  background-color: white;
 }
 
 .recommendProfile {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    background-color: white;
-    margin-top: 16px;
-
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  margin-top: 16px;
 }
 
-.recommendProfile img{
-    width: 32px;
-    border-radius: 50%;
+.recommendProfile img {
+  width: 32px;
+  border-radius: 50%;
 }
 
 .recommendProfile dl {
-    margin-left: 20px;
-    width: 210px;
-    font-size: 14px;
+  margin-left: 20px;
+  width: 210px;
+  font-size: 14px;
 }
 
 .recommendProfile button {
-    all: unset;
-    font-size: 12px;
+  all: unset;
+  font-size: 12px;
 }
 
 .mainPage {
-    margin-top: 53px;
-    margin-right: 40%;
-    width: 60%;
-    background-color: white;
+  margin-top: 55px;
+  width: 60%;
+  background-color: white;
 }
 
-.feedButtons img{
-    width: 24px;
-    height: 24px;
+.feedButtons img {
+  width: 24px;
+  height: 24px;
 }
 
+.commentLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
