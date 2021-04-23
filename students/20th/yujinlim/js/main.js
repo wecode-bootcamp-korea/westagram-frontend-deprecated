@@ -99,7 +99,13 @@ function makeComment(e) {
   if (commentInputValue) {
     commentContent.innerText = commentInputValue;
     commentAuthor.innerText = myID;
-    commentBtns.innerHTML = `<button class="js-comment-btn like-btn"><i class="far fa-heart"></i></button><button class="js-comment-btn delete-btn"><i class="fas fa-times"></i></button>`;
+    commentBtns.innerHTML = `
+    <button class="js-comment-btn like-btn">
+    <i class="far fa-heart"></i>
+    </button>
+    <button class="js-comment-btn delete-btn">
+    <i class="fas fa-times"></i>
+    </button>`;
 
     commentColumn.append(commentAuthor, commentContent, commentBtns);
 
