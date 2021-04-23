@@ -29,11 +29,18 @@ const commentForm = document.querySelector('form');
 
 commentForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    console.log(e.currentTarget);
+
     const crrInput = commentForm.elements.commentInput.value;
-    if (!crrInput) {
-        alert("댓글을 입력해주세요!")
-    } else {
-      addComment(crrInput);
-    }
+    addComment(crrInput);
     commentForm.elements.commentInput.value = '';
 })
+
+
+
+
+
+
+
+
+
