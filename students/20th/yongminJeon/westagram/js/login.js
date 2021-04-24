@@ -28,8 +28,10 @@ const checkIdAndPassword = function () {
 const checkValueInInput = function () {
   const idInputValue = idInput.value;
   const passwordInputValue = passwordInput.value;
+  const buttonActiveCondition =
+    idInputValue.length > 0 && passwordInputValue.length > 0;
 
-  if (idInputValue.length > 0 && passwordInputValue.length > 0) {
+  if (buttonActiveCondition) {
     loginButton.classList.add('active');
     loginButton.disabled = false;
   } else {
@@ -39,10 +41,8 @@ const checkValueInInput = function () {
 };
 
 const activeLoginButton = function () {
-  const inputArray = [idInput, passwordInput];
-  inputArray.forEach((element) =>
-    element.addEventListener('keyup', checkValueInInput)
-  );
+  const inputs = [idInput, passwordInput];
+  inputs.forEach((input) => input.addEventListener('keyup', checkValueInInput));
   checkIdAndPassword();
 };
 

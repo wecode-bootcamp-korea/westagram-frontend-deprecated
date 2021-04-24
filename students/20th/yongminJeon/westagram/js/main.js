@@ -1,18 +1,49 @@
 'use strict';
 const comment = document.querySelector('.sectionArticleCommentInput');
+const commentUploadButton = document.querySelector(
+  '.sectionArticleCommentUpload'
+);
 
-const eraseCommentAfterUpload = function () {
-  const commentUploadButton = document.querySelector(
-    '.sectionArticleCommentUpload'
-  );
+function pressEnter(e) {
+  if (e.keyCode === 13) {
+    leaveComment();
+  }
+}
+
+function eraseCommentAfterUpload() {
   comment.value = '';
+  buttonDeactive();
+}
+
+function buttonActive() {
+  commentUploadButton.classList.add('active');
+  commentUploadButton.disabled = false;
+  commentUploadButton.addEventListener('click', leaveComment);
+  comment.addEventListener('keydown', pressEnter);
+}
+
+function buttonDeactive() {
   commentUploadButton.classList.remove('active');
   commentUploadButton.disabled = true;
   commentUploadButton.removeEventListener('click', leaveComment);
   comment.removeEventListener('keydown', pressEnter);
-};
+}
 
-const leaveComment = function () {
+function commentLeaveButtonHandler() {
+  comment.addEventListener('input', function () {
+    const commentValue = comment.value;
+
+    if (commentValue.length > 0) {
+      buttonActive();
+    }
+
+    if (commentValue.length === 0) {
+      buttonDeactive();
+    }
+  });
+}
+
+function leaveComment() {
   const commentValue = comment.value;
   const ulTag = document.querySelector('.sectionArticleComment');
   const listTag = document.createElement('li');
@@ -29,39 +60,10 @@ const leaveComment = function () {
     </button>
   </div>`;
   eraseCommentAfterUpload();
-};
-
-const pressEnter = function (e) {
-  if (e.keyCode === 13) {
-    leaveComment();
-  }
-};
-
-const activeCommentLeaveButton = function () {
-  comment.addEventListener('input', function () {
-    const commentValue = comment.value;
-    const commentUploadButton = document.querySelector(
-      '.sectionArticleCommentUpload'
-    );
-
-    if (commentValue.length > 0) {
-      commentUploadButton.classList.add('active');
-      commentUploadButton.disabled = false;
-      commentUploadButton.addEventListener('click', leaveComment);
-      comment.addEventListener('keydown', pressEnter);
-    }
-
-    if (commentValue.length === 0) {
-      commentUploadButton.classList.remove('active');
-      commentUploadButton.disabled = true;
-      commentUploadButton.removeEventListener('click', leaveComment);
-      comment.removeEventListener('keydown', pressEnter);
-    }
-  });
-};
+}
 
 function init() {
-  activeCommentLeaveButton();
+  commentLeaveButtonHandler();
 }
 
 init();
