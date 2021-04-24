@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 38px;
   padding: 30px 100px;
   border-bottom: var(--border-gray-style);
@@ -54,6 +54,8 @@
 
 .top-nav__menus {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0px 10px;
 }
 
@@ -63,4 +65,36 @@
 
 .top-nav__menu-btn {
   all: unset;
+}
+
+/* 모바일 */
+@media screen and (max-width: 414px) {
+  .top-nav {
+    height: 48px;
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+  .top-nav__column:nth-of-type(1) i {
+    display: none;
+  }
+
+  .top-nav__column:nth-of-type(2) i {
+    display: none;
+  }
+
+  .top-nav__left-text:nth-of-type(1) {
+    display: none;
+  }
+
+  .top-nav__menus {
+    margin: 0;
+  }
+
+  .top-nav__menu:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  .top-nav__input {
+    display: none;
+  }
 }

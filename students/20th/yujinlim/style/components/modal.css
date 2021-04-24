@@ -6,7 +6,7 @@
 .modal {
   position: fixed;
   top: 60px;
-  right: 100px;
+  right: 90px;
   width: 230px;
   height: 157px;
   box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
@@ -46,7 +46,7 @@
 .modal__arrow {
   position: fixed;
   top: 53px;
-  right: 122px;
+  right: 105px;
   width: 14px;
   height: 14px;
   box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
@@ -56,4 +56,23 @@
 
 .modal-open {
   display: block;
+}
+
+/* 모바일 */
+@media screen and (max-width: 414px) {
+  .modal {
+    top: 47px;
+    right: 0px;
+    width: 230px;
+    height: 157px;
+  }
+
+  .modal__arrow {
+    top: 40px;
+    right: 13px;
+  }
+
+  .modal__line {
+    top: 160px;
+  }
 }

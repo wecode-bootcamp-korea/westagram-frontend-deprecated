@@ -23,9 +23,17 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
   margin-top: 100px;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+/* 모바일 */
+@media screen and (max-width: 414px) {
+  main {
+    margin-top: 70px;
+  }
 }

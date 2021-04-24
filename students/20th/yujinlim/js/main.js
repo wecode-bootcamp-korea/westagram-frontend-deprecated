@@ -1,28 +1,79 @@
-const commentInputDivs = Array.from(
-  document.getElementsByClassName("feed__form")
-);
-const commentInputs = commentInputDivs.map((el) => {
-  return el.querySelector(".feed__input");
-});
-const submitBtns = commentInputDivs.map((el) => {
-  return el.querySelector(".feed__submit-btn");
-});
-const feedLikeBtns = Array.from(
-  document.querySelectorAll(".feed__feature-btn .fa-heart")
-);
-
-const modal = document.querySelector(".modal-container");
-const MODALOPEN = "modal-open";
-const userBtn = document.querySelector(".top-nav__menu:last-child");
+const feeds = Array.from(document.querySelectorAll(".feed"));
+const commentInputs = Array.from(document.querySelectorAll(".feed__input"));
+const buttons = Array.from(document.querySelectorAll("button"));
 
 const myID = document.querySelector(".main-right__my-id").innerText;
 const OPACITY = "feed__submit-btn--opacity";
 
-function nthParent(element, n) {
-  while (n-- && element) element = element.parentNode;
-  return element;
-}
+//버튼 클릭시 새로고침 막기
+buttons.forEach((button) =>
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+  })
+);
 
+//상위 요소 feed에 이벤트 할당
+feeds.forEach((feed) =>
+  feed.addEventListener("click", function (e) {
+    const commentInput = feed.querySelector(".feed__input");
+    const commentList = feed.querySelector(".js-feed-comments");
+    const inputValue = commentInput.value;
+    const commentColumn = document.createElement("div");
+    const likesCountSpan = feed.querySelector(".js-likes-count");
+    const FEED_COMMENT = `
+      <div class="js-feed-comment">
+        <span>${myID}</span>
+        <span>${inputValue}</span>
+        <div class="js-comment-btns">
+            <button class="js-comment-btn like-btn">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="js-comment-btn delete-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+      </div>
+        `;
+    commentColumn.innerHTML = FEED_COMMENT;
+
+    //이벤트 위임. e path[0]을 가지고 판단
+    //게시 버튼
+    if (e.target && e.target.className === "feed__submit-btn") {
+      commentList.appendChild(commentColumn);
+      commentInput.value = "";
+      e.target.classList.add(OPACITY);
+    } else if (
+      //좋아요 버튼
+      (e.target && e.target.className === "far fa-heart") ||
+      (e.target && e.target.className === "fas fa-heart")
+    ) {
+      const isFeedLikePressed = e.target.classList.contains("fas");
+      const currentLikeCount = parseInt(likesCountSpan.innerText);
+
+      if (!isFeedLikePressed) {
+        likesCountSpan.innerText = currentLikeCount + 1;
+        e.target.classList.replace("far", "fas");
+      }
+
+      if (isFeedLikePressed) {
+        likesCountSpan.innerText = currentLikeCount - 1;
+        e.target.classList.replace("fas", "far");
+      }
+    } else if (
+      //댓글 삭제 버튼
+      e.target &&
+      e.target.className === "fas fa-times"
+    ) {
+      const selectedComment = e.target.closest(".js-feed-comment");
+      selectedComment.remove();
+    } else {
+      //그 외 의도하지 않은 다른 요소에 클릭 이벤트가 발생했을 경우
+      return;
+    }
+  })
+);
+
+//input입력시 버튼 활성화
 function removeSubmitBtnOpacity(commentInputValue, submitBtn) {
   if (commentInputValue) {
     submitBtn.classList.remove(OPACITY);
@@ -39,131 +90,6 @@ function getCommentValues(e) {
   removeSubmitBtnOpacity(commentInputValue, submitBtn);
 }
 
-function toggleCommentLike() {
-  const isCommentLikePressed = this.querySelector("i").classList.contains(
-    "fas"
-  );
-
-  if (!isCommentLikePressed) {
-    this.querySelector("i").classList.replace("far", "fas");
-  }
-
-  if (isCommentLikePressed) {
-    this.querySelector("i").classList.replace("fas", "far");
-  }
-}
-
-function deleteComment() {
-  const selectedComment = nthParent(this, 2);
-  selectedComment.remove();
-}
-
-function addComment(materialsForAddComment) {
-  materialsForAddComment.commentList.appendChild(
-    materialsForAddComment.commentColumn
-  );
-
-  materialsForAddComment.commentInput.value = "";
-  materialsForAddComment.submitBtn.classList.add(OPACITY);
-
-  const commentDeleteBtns = Array.from(
-    document.getElementsByClassName("delete-btn")
-  );
-  const commentLikeBtns = Array.from(
-    document.getElementsByClassName("like-btn")
-  );
-
-  commentDeleteBtns.forEach((el) => {
-    el.addEventListener("click", deleteComment);
-  });
-  commentLikeBtns.forEach((el) => {
-    el.addEventListener("click", toggleCommentLike);
-  });
-}
-
-function makeComment(e) {
-  const commentColumn = document.createElement("div");
-  const commentContent = document.createElement("span");
-  const commentAuthor = document.createElement("span");
-  const commentBtns = document.createElement("div");
-  commentBtns.classList.add("js-comment-btns");
-
-  const commentInput = e.target.parentNode.querySelector(".feed__input");
-  const commentInputValue = commentInput.value;
-  const commentList = nthParent(e.target, 2)
-    .querySelector(".feed__texts")
-    .querySelector(".js-feed-comments");
-
-  const submitBtn = e.target;
-
-  if (commentInputValue) {
-    commentContent.innerText = commentInputValue;
-    commentAuthor.innerText = myID;
-    commentBtns.innerHTML = `
-    <button class="js-comment-btn like-btn">
-    <i class="far fa-heart"></i>
-    </button>
-    <button class="js-comment-btn delete-btn">
-    <i class="fas fa-times"></i>
-    </button>`;
-
-    commentColumn.append(commentAuthor, commentContent, commentBtns);
-
-    const materialsForAddComment = {
-      commentColumn,
-      commentList,
-      commentInput,
-      submitBtn,
-    };
-
-    addComment(materialsForAddComment);
-  } else {
-    return false;
-  }
-}
-
-function handleSubmitBtn(e) {
-  e.preventDefault();
-  makeComment(e);
-}
-
-function toggleFeedLike() {
-  const isFeedLikePressed = this.classList.contains("fas");
-  const likesCountSpan = nthParent(this, 5)
-    .querySelector(".feed__texts")
-    .querySelector(".feed__likes")
-    .querySelector(".js-likes-count");
-  const currentLikeCount = parseInt(likesCountSpan.innerText);
-
-  if (!isFeedLikePressed) {
-    likesCountSpan.innerText = currentLikeCount + 1;
-    this.classList.replace("far", "fas");
-  }
-
-  if (isFeedLikePressed) {
-    likesCountSpan.innerText = currentLikeCount - 1;
-    this.classList.replace("fas", "far");
-  }
-}
-
-function openModal() {
-  modal.classList.toggle(MODALOPEN);
-}
-
-function init() {
-  commentInputs.forEach((el) => {
-    el.addEventListener("keyup", getCommentValues);
-  });
-
-  submitBtns.forEach((el) => {
-    el.addEventListener("click", handleSubmitBtn);
-  });
-
-  feedLikeBtns.forEach((el) => {
-    el.addEventListener("click", toggleFeedLike);
-  });
-
-  userBtn.addEventListener("click", openModal);
-}
-
-init();
+commentInputs.forEach((el) => {
+  el.addEventListener("keyup", getCommentValues);
+});

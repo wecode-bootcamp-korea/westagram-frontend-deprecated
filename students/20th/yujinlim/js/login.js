@@ -21,18 +21,15 @@ function activateSubmitBtn(isEveryInputValueExists) {
 }
 
 function checkInputValue(e) {
-  const inputValue = e.target.value;
-  const inputType = e.target.type;
+  const { value, type } = e.target;
 
-  if (inputType === "email") {
-    inputValue ? (isIdExists = true) : (isIdExists = false);
+  if (type === "email") {
+    value ? (isIdExists = true) : (isIdExists = false);
   }
-  if (inputType === "password") {
-    inputValue ? (isPwExists = true) : (isPwExists = false);
+  if (type === "password") {
+    value ? (isPwExists = true) : (isPwExists = false);
   }
-
-  const isEveryInputValueExists = isIdExists && isPwExists ? true : false;
-
+  const isEveryInputValueExists = isIdExists && isPwExists;
   activateSubmitBtn(isEveryInputValueExists);
 }
 
