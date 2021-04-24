@@ -265,10 +265,10 @@ usersForStory.forEach(i => {
 })
 
 const ids = document.querySelectorAll(".story p");
-ids.forEach(i => {
-    if(i.innerTEXT.length > 10) {
-        const longId = i.innerTEXT;
-        i.innerTEXT = longId.slice(0, 8)+'...';
+ids.forEach(id => {
+    if(id.innerHTML.length > 10) {
+        const longId = id.innerHTML;
+        id.innerHTML = longId.slice(0, 8)+'...';
     }
 })
 
