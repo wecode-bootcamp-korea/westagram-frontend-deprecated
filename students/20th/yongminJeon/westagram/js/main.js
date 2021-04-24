@@ -32,12 +32,14 @@ function buttonDeactive() {
 function commentLeaveButtonHandler() {
   comment.addEventListener('input', function () {
     const commentValue = comment.value;
+    const commentValueActiveCondition = commentValue.length > 0;
+    const commentValueDeactiveCondition = commentValue.length === 0;
 
-    if (commentValue.length > 0) {
+    if (commentValueActiveCondition) {
       buttonActive();
     }
 
-    if (commentValue.length === 0) {
+    if (commentValueDeactiveCondition) {
       buttonDeactive();
     }
   });
