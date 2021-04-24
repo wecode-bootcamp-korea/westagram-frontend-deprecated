@@ -296,7 +296,7 @@
 
 .asideCenterContainer {
   height: 200px;
-  padding: 10px;
+  padding: 0 10px 10px;
   border: 1px solid var(--color-border);
   border-radius: 5px;
   overflow: auto;
@@ -305,7 +305,9 @@
 .asideCenterTopbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
+  height: 35px;
   top: 0;
   margin-bottom: 10px;
   background-color: white;
