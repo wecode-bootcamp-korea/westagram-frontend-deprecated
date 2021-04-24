@@ -1,43 +1,35 @@
-* {
-    box-sizing: border-box;
+.mainPage {
+    position: relative;
+    height: 100vh;
 }
 
-body {
-    margin: 0;
-}
-/* 전체 */
-.mainPage{
-    background-color: silver;
-    height: 100vh;
-    position: relative;
-}
- /* 네비게이션 바 */
-nav {
-    width: 100%;
+.mainPage nav {
     position: fixed;
-    height: 54px;
-    background-color: #FFFFFF;
-    border-bottom: rgb(219, 219, 219) solid 1px;
     top: 0px;
     left: 0px;
     right: 0px;
-}
-.mainNav {
-    padding: 0 20px;
-    margin: 0px auto;
-    width: 975px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: center;
-    position: relative;
+    width: 100%;
+    background-color: var(--main-backgroundColor);
+    border-bottom: var(--border-color) solid 1px;
 }
 
-.mainNav_logo{
-    height: 100%;
+.mainNav {
     display: flex;
+    position: relative;
     align-items: center;
+    justify-content: center;
+    width: 975px;
+    height: 100%;
+    padding: 0 20px;
+    margin: 10px auto;
+    background-color: var(--main-backgroundColor);
+}
+
+.mainNav_logo {
+    display: flex;
     position: absolute;
+    align-items: center;
+    height: 100%;
     left: 30px;
 }
 .mainNav_logo img {
@@ -45,101 +37,103 @@ nav {
     height: 35px;
 }
 
-.mainNav_search input{
+.mainNav_search input {
     padding: 3px 10px 3px 26px;
+}
+
+.mainNav_search input:focus {
+    outline: none;
 }
 
 .mainNav_icons {
     display: flex;
-    height: 22px;
     position: absolute;
     right: 20px;
     justify-content: space-around;
+    height: 22px;
 }
 
-/* 인스타그램 스토리 */
-.instaStory img{
+.instaStory img {
     width: 56px;
     height: 56px;
-    border-radius: 50%;
     margin-bottom: 5px;
+    border-radius: 50%;
 }
 
 .instaStory {
-    height: 119px;
-    background-color: #FFFFFF;
-    border: rgb(219, 219, 219) solid 1px;
-    margin-bottom: 30px;
-    padding: 16px 0 16px 10px;
     display: flex;
+    height: 119px;
+    padding: 16px 0 16px 10px;
+    margin-bottom: 30px;
+    border: var(--border-color) solid 1px;
+    background-color: var(--main-backgroundColor);
 }
 
-.instaStory_profile{
-    margin: 0px 10px;
+.instaStory_profile {
     display: flex;
     flex-direction:column ;
+    margin: 0px 10px;
     padding: 5px 10px 10px 10px;
 
 }
 
-/* 메인 */
-.mainSection{
-    background-color: #FAFAFA;
-    height: 100vh;
+.mainSection {
     display: flex;
     justify-content: center;
+    height: 100vh;
     padding: 90px 0 ;
     margin: 0px auto;
-
+    background-color: var(--sub-backgrouondColor);
+    
 }
 
 .feeds {
-    margin-right: 10px;
-    background-color: #FAFAFA;
-    height: 100%;
     width: 619px;
+    height: 100%;
+    margin-right: 10px;
+    background-color: var(--sub-backgrouondColor);
     
 }
-/* 인스타그램 게시글 */
-.instaPost{
+
+.instaPost {
     height: auto;
-    background-color: #FFFFFF;
-    border: 1px solid rgb(219, 219, 219);
+    background-color: var(--main-backgroundColor);
+    border: 1px solid var(--border-color);
 
 }
 
-.instaPost_header{
-    padding: 16px;
-    width: 100%;
-    height: 60px;
+.instaPost_header {
     display: flex;
     align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 16px;
 }
 
-.instaPost_header img{
+.instaPost_header img {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
     margin-right: 10px;
+    border-radius: 50%;
 }
 
-.instaPost_img img{
+.instaPost_img img {
     width: 100%;
     height:100% ;
 }
 
 .instaPost_icons {
     display: flex;
+    position: relative;
     align-items: center;
     height: 40px;
     margin: 0px 10px;
-    position: relative;
 }
 
 .instaPost_icons img {
+    margin: 3px;
     width: 24px;
     height: 24px;
-    margin: 3px;
 }
 
 .bookmark_icon {
@@ -151,86 +145,103 @@ nav {
     margin: 0px 16px;
 }
 
-.instaPost_comments p {
-    font-size: 10px;
-    color: #8E8E8E;
-    padding:10px 0 ;
+.instaPost_time {
     margin: 0;
-    border-bottom: rgb(219, 219, 219) solid 1px;
-}
-.instaPost_like{
-    font-weight: 700;
-    margin-bottom: 5px;
+    padding:10px 0 ;
+    color: #8E8E8E;
+    font-size: 10px;
+    border-bottom: var(--border-color) solid 1px;
 }
 
-.instaPost_id{
+.instaPost_content{
+    display: flex;
+    position: relative;
+}
+
+.instaPost_like {
+    margin-bottom: 5px;
     font-weight: 700;
+}
+
+.instaPost_content p {
+    margin: 0px 10px 0px 0px;
+}
+
+.instaPost_id {
+    font-weight: 700;
+}
+
+.deleteBtn {
+    position: absolute;
+    right: 10px;
+    background-color: var(--main-backgroundColor);
+    border: none;
+    cursor: pointer;
 }
 
 .instaPost_commentsBar {
     display: flex;
 }
-.instaPost_commentsBar img{
+
+.instaPost_commentsBar img {
     width: 24px;
     height: 24px;
     margin: 10px;
 }
 
-.instaPost_input{
+.instaPost_input {
     width: 100%;
     padding: 10px 10px 10px 0px;
     border: none;
-
 }
 
-.instaPost_input:focus{
+.instaPost_input:focus {
     outline: none;
 }
 
 .submit {
-    font-size: 14px;
-    border: 0;
-    outline: 0;
-    background-color: #FFFFFF;
-    color: #0095F6;
     width: 50px;
+    border: 0;
+    color: #0095F6;
+    background-color: var(--main-backgroundColor);
+    font-size: 14px;
+    outline: 0;
     cursor: pointer;
 }
 
-.
-/* 옆에 사이드바 */
-.main-right{
-    background-color: #FAFAFA;
+.main-right {
     width: 293px;
+    background-color: var(--sub-backgrouondColor);
 }
 
 .myProfile {
     display: flex;
+    align-items: center;
     margin-top: 13px;
     padding-left: 20px;
-    align-items: center;
 }
 
 .myProfile img {
     width: 56px ;
     height: 56px;
-    border-radius: 50%;
     margin: 10px;
+    border-radius: 50%;
 }
 
-.myProfile_name_id{
+.myProfile_name_id {
     margin: 0px;
 }
-.myProfile_name_introduce{
+
+.myProfile_name_introduce {
     margin: 0px;
     color: gray;
 }
 
 .friendRecommend_description {
     display: flex;
+    position: relative;
     align-items: center;
     margin: 20px;
-    position: relative;
 }
 
 .friendProfile {
@@ -238,28 +249,28 @@ nav {
     align-items: center;
 }
 
-.friendProfile img{
+.friendProfile img { 
     width: 32px;
     height: 32px;
-    border-radius: 50%;
     margin: 10px;
+    border-radius: 50%;
 }
 
 .friendProfile_name_id {
     margin: 0px;
 }
 
-.freindProfile_name_description{
+.freindProfile_name_description {
     margin: 0px;
     color: gray;
 }
 
-.friendRecommend_description_one{
-    font-size: 14px;
+.friendRecommend_description_one {
     color: gray;
+    font-size: 14px;
 }
 
-.friendRecommend_description_two{
+.friendRecommend_description_two {
     position: absolute;
     right: 10px;
     font-size: 12px;
