@@ -8,11 +8,11 @@ const checkIdAndPassword = function () {
   loginButton.addEventListener('click', function (e) {
     const idInputValue = idInput.value;
     const passwordInputValue = passwordInput.value;
-
-    if (
+    const checkIdAndPasswordCondition =
       idInputValue === 'dydalsdl1414@gmail.com' &&
-      passwordInputValue === '1234'
-    ) {
+      passwordInputValue === '1234';
+
+    if (checkIdAndPasswordCondition) {
       alert('로그인했습니다.');
     } else {
       alert('아이디와 비밀번호를 확인하시기 바랍니다.');
