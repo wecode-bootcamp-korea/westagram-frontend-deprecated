@@ -23,10 +23,25 @@ const addComment = () => {
         const newTag_Of_AddComment = document.createElement('li');
         newTag_Of_AddComment.innerHTML = commentTextarea.value;
         conmmentBox.appendChild(newTag_Of_AddComment);
+        commentTextarea.value= "";
+        commentInputButton.style.color ="#B2EBF4";
     } 
 }
 
 commentInputButton.addEventListener("click", addComment)
+
+const addCommentEnter = (e) => {
+    const keyCode = e.keyCode;
+    if(keyCode == 13) {
+        const newTag_Of_AddComment = document.createElement('li');
+        newTag_Of_AddComment.innerHTML = commentTextarea.value;
+        conmmentBox.appendChild(newTag_Of_AddComment);
+        commentTextarea.value= "";
+        commentInputButton.style.color ="#B2EBF4";
+    }
+}
+
+commentTextarea.addEventListener("keydown", addCommentEnter)
 
 
 
