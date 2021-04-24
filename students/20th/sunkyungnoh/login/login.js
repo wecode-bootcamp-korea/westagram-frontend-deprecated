@@ -19,7 +19,7 @@ function moveToUpside(input) {
 };
 
 function active() {
-    if (inputID.value && inputPW.value) {
+    if (inputID.value.includes('@') && inputPW.value.length >= 6) {
         loginBtn.removeAttribute('disabled');
         loginBtn.classList.add('active');  
     } else {
@@ -27,6 +27,17 @@ function active() {
         loginBtn.classList.remove('active')
     }
 };
+
+// function validation(){
+//     if (inputID.value.includes('@')) {
+//         alert('ID는 반드시 @를 포함해야합니다.')
+//     }
+//     if (inputPW.value.length >= 6) {
+//         alert('6글자 이상인 비밀번호를 입력해주세요.')
+//     }
+// }
+
+// loginForm.addEventListener('submit', validation);
 
 const login = () => {
     inputLogin.forEach(input => {
