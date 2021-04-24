@@ -18,7 +18,7 @@ function moveToUpside(input) {
     }
 };
 
-function active() {
+function activeBtn() {
     if (inputID.value.includes('@') && inputPW.value.length >= 6) {
         loginBtn.removeAttribute('disabled');
         loginBtn.classList.add('active');  
@@ -30,7 +30,7 @@ function active() {
 
 const login = () => {
     inputLogin.forEach(input => {
-        input.addEventListener('input', active)
+        input.addEventListener('input', activeBtn)
         input.addEventListener('input', () => moveToUpside(input))
     })
 };
