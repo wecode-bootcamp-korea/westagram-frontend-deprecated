@@ -25,20 +25,23 @@ const commentForm = document.querySelector(".comments form");
 function handlesubmit(e) {
     e.preventDefault();
     const currentValue = comment.value;
-    leaveaComment(currentValue);
+    leaveComment(currentValue);
     comment.value = "";
 }
 
 const inputValue = document.location.search;
 const inputId = inputValue.slice(4, inputValue.indexOf('&'));
 
-function leaveaComment(text) {
+function leaveComment(text) {
     const newComment = document.createElement("div");
     const contents = document.querySelector(".contents");
     newComment.className="blahblah";
+
     const id = document.createElement("p");
     id.className = "id";
+
     inputId? id.innerHTML = inputId+' ' : id.innerHTML = 'unknown ';
+    
     const say = document.createElement("p");
     say.innerHTML = text;
 
@@ -81,23 +84,23 @@ commentForm.addEventListener("submit", handlesubmit);
 //좋아요&취소
 
 const likes = document.querySelector("#likes");
-const red = document.querySelector("#red");
+const redHeart = document.querySelector("#red");
 const likeBtn = document.querySelector(".tab img");
 
-function addlike() {
+function addLike() {
     likeBtn.classList.toggle("pop");
-    setTimeout(() => {red.style.display = "inline"}, 200);
+    setTimeout(() => {redHeart.style.display = "inline"}, 200);
     likes.innerHTML = "좋아요 20개";
 }
 
-function sublike() {
+function subLike() {
     likeBtn.classList.toggle("pop");
-    red.style.display = "none";
+    redHeart.style.display = "none";
     likes.innerHTML = "좋아요 19개";
 }
 
-likeBtn.addEventListener("click", addlike);
-red.addEventListener("click", sublike);
+likeBtn.addEventListener("click", addLike);
+redHeart.addEventListener("click", subLike);
 
 
 
@@ -106,7 +109,7 @@ red.addEventListener("click", sublike);
 const typing = document.querySelector(".search input");
 const searchList = document.querySelector(".searchList");
 
-const usersToSearch = [{
+const USERS = [{
     id: 'skuukzky',
     profileImg: 'img/skuukzky.jpg',
     description: '숮이 💄💅👡👠🎀👙🌂👗🌂🎀💋💌'
@@ -182,7 +185,7 @@ const usersToSearch = [{
 
 function showAllId() {
     searchList.innerHTML="";
-    usersToSearch.forEach(i => {
+    USERS.forEach(i => {
         const matchedId = document.createElement('div');
         matchedId.innerHTML = `<div class="searchedUser">
         <img alt="user's profile image" src=${i.profileImg}>
@@ -195,37 +198,34 @@ function showAllId() {
     }
     )}
     
-    function showSomeId() {
+    function showMatchedId() {
         searchList.innerHTML="";
-    const matchedUsers = [];
-    usersToSearch.forEach((i) => {  
-    i.id.startsWith(typing.value)? matchedUsers.push(i) : null;
-    });
-    if(matchedUsers.length === 0) {
-        searchList.innerHTML='<p>검색결과가 없습니다.</p>';
+        const matchedUsers = USERS.filter(users => users.id.startsWith(typing.value));
+        if(matchedUsers.length === 0) {
+            searchList.innerHTML='<p>검색결과가 없습니다.</p>';
+        }
+        matchedUsers.forEach(i => {
+            const matchedId = document.createElement('div');
+            matchedId.innerHTML = `<div class="searchedUser">
+            <img alt="user's profile image" src=${i.profileImg}>
+            <div class="userId">
+              <p class="id">${i.id}</p>
+              <p class="gray twelve" id="description">${i.description}</p>
+            </div>
+            </div>`
+            searchList.appendChild(matchedId);
+        })
     }
-    matchedUsers.forEach(i => {
-        const matchedId = document.createElement('div');
-        matchedId.innerHTML = `<div class="searchedUser">
-        <img alt="user's profile image" src=${i.profileImg}>
-        <div class="userId">
-          <p class="id">${i.id}</p>
-          <p class="gray twelve" id="description">${i.description}</p>
-        </div>
-        </div>`
-        searchList.appendChild(matchedId);
-    })
-}
 
 typing.addEventListener('click', showAllId);
-typing.addEventListener('input', () => !typing.value? showAllId() : showSomeId());
+typing.addEventListener('input', () => !typing.value? showAllId() : showMatchedId());
 
 
 
 //추천 친구
 
 const recommendList = document.querySelector(".recommend");
-const recommendUsers = usersToSearch.slice(6, 11);
+const recommendUsers = USERS.slice(6, 11);
 recommendUsers.forEach((i) => {
     const friend = document.createElement("div");
     friend.innerHTML = `<div class="user">
@@ -249,7 +249,7 @@ recommendUsers.forEach((i) => {
 
 const storyBox = document.querySelector(".storyBox");
 const storySpan = document.querySelector(".storySpan");
-const usersForStory = [...usersToSearch].reverse();
+const usersForStory = [...USERS].reverse();
 
 usersForStory.forEach(i => {
     const story = document.createElement("div");
@@ -266,9 +266,9 @@ usersForStory.forEach(i => {
 
 const ids = document.querySelectorAll(".story p");
 ids.forEach(i => {
-    if(i.innerHTML.length > 10) {
-        const longId = i.innerHTML;
-        i.innerHTML = longId.slice(0, 8)+'...';
+    if(i.innerTEXT.length > 10) {
+        const longId = i.innerTEXT;
+        i.innerTEXT = longId.slice(0, 8)+'...';
     }
 })
 
@@ -277,16 +277,19 @@ const nextBtn = document.querySelector(".fa-chevron-circle-right");
 let right;
 storySpan.style.right? right = parseInt(storySpan.style.right) : right = 0;
 
+
+const F00 = 265;
+
 function next() {
     if(right < 795) {
-        right += 265;
+        right += F00;
         storySpan.style.right = `${right}px`;
     }
 }
 
 function prev() {
     if(right > 0) {
-        right -= 265;
+        right -= F00;
         storySpan.style.right = `${right}px`;
     }
 }

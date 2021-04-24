@@ -25,19 +25,21 @@ pwLabel =  document.querySelectorAll('.login label')[1];
 const showPw = document.querySelector('.showPw');
 
 function typeId() {
-    id.classList.add('typing')
-    idLabel.classList.add('typing');
-    if(!id.value) {
+    if(id.value){
+        id.classList.add('typing')
+        idLabel.classList.add('typing');
+    } else {
         id.classList.remove('typing')
         idLabel.classList.remove('typing');
     }
 }
 
 function typePw() {
-    pwLabel.classList.add('typing');
-    pw.classList.add('typing');
-    showPw.classList.add('show');
-    if(!pw.value) {
+    if(pw.value) {
+        pwLabel.classList.add('typing');
+        pw.classList.add('typing');
+        showPw.classList.add('show');
+    } else {
         pw.classList.remove('typing');
         pwLabel.classList.remove('typing');
         showPw.classList.remove('show');

@@ -103,6 +103,7 @@ a {
     box-shadow: 0 0 4px #bebebe;
     text-align: center;
     overflow: scroll;
+    overflow-x: hidden;
     z-index: 10;
 }
 
@@ -332,7 +333,14 @@ article>img {
     animation: shrink 0.2s linear 0s 1 alternate;
 }
 
-#red {
+@keyframes pop {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.2);}
+}
+
+@keyframes shrink {
+    0% {transform: scale(1.2);}
+    100% {transform: scale(1);}
 }
 
 .bookmark img {
@@ -567,14 +575,4 @@ footer li::after {
     .sidebar {
         display: none;
     }
-}
-
-@keyframes pop {
-    0% {transform: scale(1);}
-    100% {transform: scale(1.2);}
-}
-
-@keyframes shrink {
-    0% {transform: scale(1.2);}
-    100% {transform: scale(1);}
 }

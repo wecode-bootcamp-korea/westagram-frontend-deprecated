@@ -28,6 +28,24 @@ html {
 
 .iphone {
     display: none;
+    position: relative;
+}
+
+.screen {
+    position: absolute;
+    top: 97px;
+    right: 61px;
+    width: 245px;
+    height: 433px;
+    animation: imgchange 6s linear infinite;
+}
+
+@keyframes imgchange {
+    0% {background-image: url("img/screen1.jpg");}
+    25% {background-image: url("img/screen2.jpg");}
+    50% {background-image: url("img/screen3.jpg");}
+    75% {background-image: url("img/screen4.jpg");}
+    100% {background-image: url("img/screen1.jpg");}
 }
 
 .defaultBox {
