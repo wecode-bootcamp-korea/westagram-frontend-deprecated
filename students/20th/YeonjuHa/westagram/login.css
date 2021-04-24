@@ -1,13 +1,3 @@
-* {
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  border-collapse: collapse;
-  margin: 0px;
-  padding: 0px;
-  color: #000;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -15,14 +5,14 @@ body {
 }
 
 .outbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 2px solid #d5d5d5;
   width: 500px;
   height: 520px;
   padding: 50px 30px;
   margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 form.id_pw {

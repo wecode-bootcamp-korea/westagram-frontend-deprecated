@@ -5,14 +5,14 @@ const conmmentBox = document.querySelector(".feeds_upload_comments")
 
 console.log(commentTextarea)
 
-
 const buttonActivation = () => {
     if(commentTextarea.value) {
-        commentInputButton.removeAttribute("disabled", "");
-        commentInputButton.style.color ="blue"
+        commentInputButton.removeAttribute("disabled","");
+        commentInputButton.style.color ="#1993A8";
+        commentInputButton.style.fontWeight = "900";
     } else {
         commentInputButton.setAttribute("disabled","");
-        commentInputButton.style.color ="skyblue"
+        commentInputButton.style.color ="#B2EBF4";
     }
 }
 

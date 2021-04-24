@@ -4,52 +4,94 @@
     <meta charset="utf-8">
     <title>WESTAGRAM_main</title>
     <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   </head>
   <body>
-      <nav> 
-      <head><h1>westagram</h1> </head>
-      <div class ="search">
-      <i class="fas fa-search"></i>
-      <input type = "text" placeholder="검색" />
-      </div>
-      <div class ="icon_right">
-      <i class="fas fa-home"></i>
-      <i class="far fa-paper-plane"></i>
-      <i class="far fa-compass"></i>
-      <i class="far fa-heart"></i>
-      </div>
+    <!-- main page top nav -->
+      <nav class="page_top_nav">
+        <div>
+          <head><h1 class="page_name">westagram</h1> </head>     
+          <div class ="search">
+            <div>
+              <i class="fas fa-search icon"></i>
+              <input type = "text" placeholder="검색" />
+            </div>
+          </div>
+          <div class ="icon_right">
+            <i class="fas fa-home icon"></i>
+            <i class="far fa-paper-plane icon"></i>
+            <i class="far fa-compass icon"></i>
+            <i class="far fa-heart icon"></i>
+            <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35986726_903848573151322_399536158729568256_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=oGlfWXPE-bcAX9atN7M&edm=ABfd0MgAAAAA&ccb=7-4&oh=f611f5be4a0ab8559d5e52a25ec6441e&oe=60A9E126&_nc_sid=7bff83" alt="나의 프로필 사진">
+          </div>
+        </div>
       </nav>    
+
+    <!-- main page feeds section -->
       <main>
         <div class = "feeds">
+          <!-- main page feeds_story -->
           <div class= "feeds_story">
-              스토리
+              <ul class= "feeds_story_list">
+                <li>
+                  <div class="gradient-wrap">
+                  <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35986726_903848573151322_399536158729568256_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=oGlfWXPE-bcAX9atN7M&edm=ABfd0MgAAAAA&ccb=7-4&oh=f611f5be4a0ab8559d5e52a25ec6441e&oe=60A9E126&_nc_sid=7bff83" alt="나의 프로필 사진">
+                  </div>
+                </li>
+                <div class="gradient-wrap">
+                <li>
+                  <img src="http://file3.instiz.net/data/cached_img/upload/2020/12/13/12/25b0643c8fe29ff2248fcf03c1b44106.jpg" alt="태연 프로필 사진">
+                </li>
+                </div>
+                <div class="gradient-wrap">
+                <li>
+                  <img src="https://dispatch.cdnser.be/wp-content/uploads/2018/03/2da3a9715f273c35f60a038061679457.png" alt="아이유 프로필 사진">
+                </li>
+                </div>
+                <div class="gradient-wrap">
+                <li>
+                  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0rfwn%2Fbtq2niMNw5P%2F3G3gG7dt8YUYgEV6xxf4f0%2Fimg.png" alt="이해리 프로필 사진">
+                </li>
+                </div>
+                <div class="gradient-wrap">
+                <li>
+                  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FotT26%2Fbtq2wLTL1P0%2Fn8fzhXS3TbSHYncSk29tv1%2Fimg.png" alt="강민경 프로필 사진">
+                </li>
+                </div>
+              </ul>
           </div>
+
+          <!-- main page feeds -->
           <article class = "feeds_upload"> 
               <div class = "feeds_upload_content">
                   <div class = "feeds_upload_idname">
-                    <img src="" alt="">
-                    <div><span>yyeon_jju</span></div>
+                    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35986726_903848573151322_399536158729568256_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=oGlfWXPE-bcAX9atN7M&edm=ABfd0MgAAAAA&ccb=7-4&oh=f611f5be4a0ab8559d5e52a25ec6441e&oe=60A9E126&_nc_sid=7bff83" alt="yyeon_jju profile image">
+                    <div><span class="feeds_uploader">yyeon_jju</span></div>
                     <i class="far fa-ellipsis-h"></i>
                   </div>
                   <div class ="feeds_upload_image">
-                    <img src="" alt="">
+                    <img src="https://www.medigatenews.com/file/news/214795" alt="벚꽃">
                   </div>
                   <div class ="feeds_upload_icons">
-                    <button><i class="far fa-heart buttonicon"></i></button>
-                    <button><i class="far fa-comment buttonicon"></i></button>
-                    <button> <i class="far fa-paper-plane buttonicon"></i></button>
-                    <button> <i class="far fa-bookmark buttonicon"></i></button>
+                    <div>
+                      <button><i class="far fa-heart buttonicon icon"></i></button>
+                      <button><i class="far fa-comment buttonicon icon"></i></button>
+                      <button> <i class="far fa-paper-plane buttonicon icon"></i></button>
+                      <button> <i class="far fa-bookmark buttonicon icon"></i></button>
+                    </div>
                   </div>
                   <div class ="feeds_upload_likes">
-                      <p>좋아요 3000개</p>
+                      <p class="count_likes">좋아요 3000개</p>
                   </div>
                   <div class ="feeds_upload_comments">
-                      <li>너무 예뻐요~~</li>
+                      <li><span class="comment_writer">yyeon_jju</span>
+                        <span class="comment_content">너무 예뻐요~~</span></li>
                   </div>
                   <div class ="feeds_upload_time">
-                      <span> 2시간 전</span>
+                      <span class="time_pass"> 2시간 전</span>
                   </div>
                   <div class ="feeds_upload_wright">
                     <i class="far fa-smile icon"></i>
@@ -59,10 +101,50 @@
               </div>
           </article>
         </div>
-        <div class = "main_right"> 
-            메인오른쪽
-        </div>
+
+        <!-- main page aside right section -->
+        <aside class = "main_right"> 
+          <header class ="right_side_top">
+            <img class="right_side_myprofile" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/35986726_903848573151322_399536158729568256_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=oGlfWXPE-bcAX9atN7M&edm=ABfd0MgAAAAA&ccb=7-4&oh=f611f5be4a0ab8559d5e52a25ec6441e&oe=60A9E126&_nc_sid=7bff83" alt="나의 프로필 사진">
+            <h1 class="right_side_myid"> yyeon_jju</h1>          
+            <button class="right_side_mybutton"><a href="">전환</a></button>
+          </header> 
+          <article class="right_side_article">
+            <span>회원님을 위한 추천</span>
+            <button><a href="">모두 보기</a></button>
+          </article>
+          <section>
+            <ul>
+                <li class= "right_side_recommend">
+                  <img src="http://file3.instiz.net/data/cached_img/upload/2020/12/13/12/25b0643c8fe29ff2248fcf03c1b44106.jpg" alt="태연 프로필 사진">
+                  <div class="recommend_id">taeyeon_ss</div>
+                  <button><a href="">팔로우</a></button>
+                </li>
+                <li class= "right_side_recommend">
+                  <img src="https://dispatch.cdnser.be/wp-content/uploads/2018/03/2da3a9715f273c35f60a038061679457.png" alt="아이유 프로필 사진">
+                  <div class="recommend_id">dlwlrma</div>
+                  <button><a href="">팔로우</a></button>
+                </li>
+                <li class= "right_side_recommend">
+                  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F0rfwn%2Fbtq2niMNw5P%2F3G3gG7dt8YUYgEV6xxf4f0%2Fimg.png" alt="이해리 프로필 사진">
+                  <div class="recommend_id">dlgofl85</div>
+                  <button><a href="">팔로우</a></button>
+                </li>
+                <li class= "right_side_recommend">
+                  <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FotT26%2Fbtq2wLTL1P0%2Fn8fzhXS3TbSHYncSk29tv1%2Fimg.png" alt="강민경 프로필 사진">
+                  <div class="recommend_id">iammingki</div>
+                  <button><a href="">팔로우</a></button>
+                </li>         
+            </ul>
+          </section>
+        </aside>
     </main>
 <script src="main.js"></script>
 </body>
 </html>
+
+
+<!-- 피드 이미지 삽입
+스토리/오른쪽 이미지 (리스트로 삽입)
+
+댓글 기능 인풀으로 수정하고 js는 submit으로? -->
