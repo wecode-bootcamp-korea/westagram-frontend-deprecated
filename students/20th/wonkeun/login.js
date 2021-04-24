@@ -31,7 +31,3 @@ password.addEventListener('keydown', function () {
     console.log('비밀번호 통과');
   }
 });
-
-// button.addEventListener('click', function (event) {
-
-// });

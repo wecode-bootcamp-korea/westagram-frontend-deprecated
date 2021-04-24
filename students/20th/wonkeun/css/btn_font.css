@@ -26,3 +26,31 @@ button {
   font-weight: bold;
   color: #6495ed;
 }
+
+.follower_img {
+  width: 33px;
+  height: 32px;
+  border-radius: 30px;
+}
+
+.follower_user_box .followr_nickname {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.follower_user_box .follower_info {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.follower_user_box button span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0095f6;
+  margin-bottom: 4px;
+}
+
+.follower_user_box button {
+  margin: 0px;
+  background-color: #fafafa;
+}

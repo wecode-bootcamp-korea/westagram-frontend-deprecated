@@ -5,7 +5,6 @@
 
 main {
   width: 100%;
-  height: 1130px;
   background-color: #fafafa;
 }
 
@@ -89,7 +88,7 @@ section .right_layout {
   display: inline;
   border: 1px solid darkgrey;
   width: 100%;
-  height: 38%;
+  height: auto;
 }
 
 .post {
@@ -139,7 +138,7 @@ section .right_layout {
 }
 
 .follow_myInfo span {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #0095f6;
 }
@@ -159,7 +158,20 @@ section .right_layout {
 
 .follower_user_box {
   width: 100%;
-  height: 300px;
   margin-top: 20px;
-  border: 1px solid darkgrey;
+}
+
+.follower_user_box li {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.follower_user_box .follwer_storage {
+  display: inline;
+  width: 79%;
+}
+.follower_user_box .follwer_storage span {
+  display: block;
+  margin-left: 12px;
+  margin-bottom: 3px;
 }
