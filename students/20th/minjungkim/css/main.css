@@ -3,8 +3,8 @@ nav {
 	background-color: var(--white);
 	font-size: var(--fs-medium);
 	border-bottom: 1px solid var(--border-color);
-	padding: 10px 20px;
-	margin-bottom: 20px;
+	padding: var(--space-medium) var(--space-xl);
+	margin-bottom: var(--space-xl);
 }
 
 .nav_container {
@@ -47,7 +47,7 @@ nav {
 	background-color: var(--bg-color);
 	font-size: var(--fs-medium);
 	color: var(--grey);
-	padding: 5px 30px;
+	padding: var(--space-small) var(--space-xxl);
 	border: 1px solid var(--border-color);
 	border-radius: 4px;
 }
@@ -84,7 +84,7 @@ nav {
 	border-radius: 4px;
 	opacity: 0;
 	box-shadow: 1px 1px 5px 1px #cecccc;
-	padding: 20px 15px;
+	padding: var(--space-xl) var(--space-large);
 }
 
 .nav_search_result::before {
@@ -107,7 +107,7 @@ nav {
 .search_result_header {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 20px;
+	padding-bottom: var(--space-xl);
 }
 
 .search_history {
@@ -128,7 +128,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 10px;
+	padding-bottom: var(--space-medium);
 }
 
 .search_result_lists li i {
@@ -149,7 +149,7 @@ nav {
 }
 
 .nav_icons i {
-	padding-right: 15px;
+	padding-right: var(--space-large);
 }
 
 .user_icon {
@@ -200,12 +200,12 @@ nav {
 }
 
 .user_menu li {
-	padding: 10px;
+	padding: var(--space-medium);
 }
 
 .user_menu li:last-child {
 	border-top: 1px solid var(--border-color);
-	padding: 10px 20px;
+	padding: var(--space-medium) var(--space-xl);
 }
 
 .user_menu li:hover {
@@ -213,7 +213,7 @@ nav {
 }
 
 .user_menu li i {
-	padding: 0 10px;
+	padding: 0 var(--space-medium);
 }
 
 .main_container {
@@ -226,7 +226,7 @@ nav {
 section {
 	width: 620px;
 	overflow: hidden;
-	margin-right: 30px;
+	margin-right: var(--space-xxl);
 }
 
 article {
@@ -235,7 +235,7 @@ article {
 	flex-direction: column;
 	border: 1px solid var(--border-color);
 	border-radius: 4px;
-	margin-bottom: 30px;
+	margin-bottom: var(--space-xxl);
 }
 
 .feed_header {
@@ -243,7 +243,7 @@ article {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px;
+	padding: var(--space-large);
 }
 
 .feeder_info {
@@ -258,7 +258,7 @@ article {
 	border-radius: 50%;
 	border: 2px solid red;
 	padding: 3px;
-	margin-right: 15px;
+	margin-right: var(--space-large);
 }
 
 .feed_image {
@@ -268,7 +268,7 @@ article {
 }
 
 .feed_contents {
-	padding: 15px;
+	padding: var(--space-large);
 }
 
 .feed_icons_row {
@@ -278,7 +278,7 @@ article {
 }
 
 .feed_icons i {
-	margin-right: 15px;
+	margin-right: var(--space-large);
 }
 
 .feed_icons i:first-child {
@@ -286,11 +286,11 @@ article {
 }
 
 .feed_likes {
-	padding: 10px 0px;
+	padding: var(--space-medium) 0;
 }
 
 .feed_user_comment {
-	padding: 5px 0px;
+	padding: var(--space-small) 0;
 }
 .feeder_id {
 	font-weight: bold;
@@ -300,7 +300,7 @@ article {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px 0px;
+	padding: var(--space-small) 0;
 }
 
 .friend_id {
@@ -308,7 +308,7 @@ article {
 }
 
 .like_btn {
-	margin-right: 5px;
+	margin-right: var(--space-small);
 }
 
 .like_btn.active {
@@ -326,7 +326,7 @@ article {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 15px;
+	padding: var(--space-large);
 }
 
 .feed_text {
@@ -337,12 +337,12 @@ article {
 
 .feed_text i {
 	font-size: var(--fs-xxl);
-	margin-right: 10px;
+	margin-right: var(--space-medium);
 }
 
 .feed_input {
 	width: 100%;
-	padding: 10px 0px;
+	padding: var(--space-medium) 0;
 }
 
 .posting_btn {
@@ -358,7 +358,7 @@ article {
 aside .user {
 	display: flex;
 	align-items: center;
-	margin-bottom: 15px;
+	margin-bottom: var(--space-large);
 }
 
 .user_img {
@@ -366,7 +366,7 @@ aside .user {
 	height: 56px;
 	object-fit: cover;
 	border-radius: 50%;
-	margin-right: 15px;
+	margin-right: var(--space-large);
 }
 
 .user_img.small {
@@ -374,7 +374,7 @@ aside .user {
 	height: 46px;
 	object-fit: cover;
 	border-radius: 50%;
-	margin-right: 15px;
+	margin-right: var(--space-large);
 }
 
 .user_info {
@@ -388,7 +388,7 @@ aside .user {
 
 .user_id {
 	font-weight: bold;
-	margin-bottom: 5px;
+	margin-bottom: var(--space-small);
 }
 
 .user_name {
@@ -401,8 +401,8 @@ aside .user {
 	overflow: hidden;
 	border: 1px solid var(--border-color);
 	border-radius: 4px;
-	padding: 15px;
-	margin-bottom: 15px;
+	padding: var(--space-large);
+	margin-bottom: var(--space-large);
 }
 
 .sidebox_header {
@@ -413,7 +413,7 @@ aside .user {
 .sidebox_title {
 	color: var(--grey);
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom: var(--space-large);
 }
 
 .sidebox_show_all {
@@ -424,7 +424,7 @@ aside .user {
 	width: 310px;
 	font-size: var(--fs-small);
 	color: var(--grey);
-	margin-bottom: 15px;
+	margin-bottom: var(--space-large);
 }
 
 footer {
@@ -457,7 +457,7 @@ footer {
 	}
 
 	.feed_contents {
-		padding: 10px;
+		padding: var(--space-medium);
 	}
 
 	.feed_image {

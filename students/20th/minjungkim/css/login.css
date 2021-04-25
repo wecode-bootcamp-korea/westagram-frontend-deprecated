@@ -14,7 +14,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 30px;
+	padding: var(--space-xxl);
 	border: 1px solid var(--border-color);
 }
 
@@ -22,7 +22,7 @@ main {
 	font-family: 'Lobster Two', cursive;
 	font-size: calc(var(--fs-medium) * 3);
 	font-weight: lighter;
-	margin-bottom: 30px;
+	margin-bottom: var(--space-xxl);
 }
 
 .login_form {
@@ -32,7 +32,7 @@ main {
 
 .login_data {
 	font-size: var(--fs-medium);
-	padding: 10px 0;
+	padding: var(--space-medium) 0;
 	position: relative;
 }
 
@@ -43,7 +43,7 @@ main {
 	font-size: var(--fs-small);
 	border: 1px solid var(--border-color);
 	border-radius: 3px;
-	padding: 10px;
+	padding: var(--space-medium);
 	margin-bottom: 10px;
 	outline: none;
 	transition: border 200ms ease-in;
@@ -83,7 +83,7 @@ main {
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-bottom: var(--space-xl);
 	outline: none;
 	transition: background-color 200ms ease-in;
 }
@@ -106,7 +106,7 @@ main {
 	color: var(--grey);
 	font-size: var(--fs-small);
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: var(--space-xxl);;
 	position: relative;
 }
 
@@ -135,12 +135,12 @@ main {
 	font-size: var(--fs-small);
 	font-weight: bold;
 	letter-spacing: 0.5px;
-	margin-bottom: 10px;
+	margin-bottom: var(--space-medium);
 }
 
 .login_facebook i {
 	font-size: var(--fs-large);
-	margin-right: 5px;
+	margin-right: var(--space-small);
 }
 
 .forgot_password {
