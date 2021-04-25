@@ -4,7 +4,7 @@ const loginBtn = document.getElementsByClassName("loginBtn")[0];
 
 function active(){
     if(inputID.value && inputPW.value){
-        loginBtn.removeAttribute('disabled',"");
+        loginBtn.removeAttribute('disabled');
         loginBtn.style.backgroundColor = "rgba(0, 149, 246)";
     } else {
         loginBtn.setAttribute('disabled',"");

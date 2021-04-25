@@ -1,7 +1,7 @@
 body{
-    background-color: rgba(var(--b3f,250,250,250),1);
+    background-color: var(--main--bg--color);
 }
-section .topNav {
+section .navTop {
     position: fixed;
     top: 0;
     right: 0;
@@ -11,18 +11,18 @@ section .topNav {
     align-items: center;
     height: 50px;
     padding: 0 18%;
-    background-color: fff;
+    background-color: #fff;
     border-bottom: 1px solid #bbb;
 }
 
-section .topNav .navTopItem .title {
+section .navTop .navTopItem .title {
     font-family: 'Lobster', cursive;
     font-size: 28px;
 }
 
-section .topNav .navTopItem .search{
+section .navTop .navTopItem .search{
     padding: 5px;
-    background-color: rgba(var(--b3f,250,250,250),1);
+    background-color: var(--main--bg--color);
     border: 1px solid #bbb;
     border-radius: 3px;
     text-align: center;
@@ -33,7 +33,13 @@ input:focus{
     outline: none;
 }
 
-section .topNav .navTopItem img{
+section .navTop .navTopItem li{
+    display: inline-block;
+}
+
+
+section .navTop .navTopItem li img{
+    display: inline-block;
     width: 23px;
     margin-right: 12px;
     cursor: pointer;
@@ -131,11 +137,12 @@ main .feed .reaction .commentBox button{
     padding: 0;
     background-color: #fff;
     border: none;
-    color: #0095f6;
+    color: var(--main--point--color);
 }
 
 main .aside{
     position: fixed;
+    top: 70px;
     right: 18%;
     width: 20%;
 }
@@ -156,11 +163,6 @@ main .aside .asideProfile .asideProfileLeft img{
     width: 55px;
     margin-right: 15px;
     border-radius: 50%;
-}
-
-main .aside .asideProfile .asideProfileRight{
-    color: #0095f6;
-    cursor: pointer;
 }
 
 main .aside .recommend{
@@ -198,7 +200,7 @@ main .aside .userRecommend .userRecommendLeft .userRecommendText p:last-child{
 }
 
 main .aside .userRecommend .userRecommendRight p{
-    color: #0095f6;
+    color: var(--main--point--color);
     cursor: pointer;
 }
 

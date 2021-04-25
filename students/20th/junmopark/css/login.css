@@ -3,7 +3,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f1f1f1;
+    background-color: var(--main--bg--color);
 }
 
 .loginContainer{
@@ -23,12 +23,12 @@ body{
     width: 250px;
     padding: 10px;
     margin-bottom: 7px;
-    background-color: #f1f1f1;
+    background-color: var(--main--bg--color);
     border: 1px solid #bbb;
     border-radius: 3px;
 }
 
-.loginContainer .btnContainer .loginBtn{
+.loginContainer .inputContainer .loginBtn{
     display: block;
     width: 100%;
     padding: 7px;
@@ -40,12 +40,12 @@ body{
     cursor: pointer;
 }
 
-.loginContainer .btnContainer .forgotPwBtn{
+.loginContainer .inputContainer .forgotPwBtn{
     display: block;
     margin: 0 auto;
     background-color: #fff;
     border: none;
     text-align: center;
-    color: #00376b;
+    color: var(--main--point--color);
     cursor: pointer;
 }
