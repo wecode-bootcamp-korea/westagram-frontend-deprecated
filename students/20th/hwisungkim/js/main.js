@@ -1,12 +1,12 @@
 const reply = document.querySelector(".reply");
-const post = document.querySelector(".post");;
+const post = document.querySelector(".post");
 const reply_list = document.querySelector(".reply_list_all");
 const ilike = document.querySelector(".iLike");
 const del = document.querySelector(".del");
 const search_bar=document.querySelector(".search_bar");
 
 search_bar.addEventListener('keydown',function(e){
-    
+        
 })
 
 reply.addEventListener('keydown', function (e) {
