@@ -6,6 +6,7 @@
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
   --color-gray: rgb(179, 179, 179);
+  --color-blue: #0066ff;
 }
 
 /* main */
@@ -266,7 +267,7 @@
 
 /* aside */
 
-.aside {
+.asideSection {
   position: sticky;
   top: 120px;
   width: 400px;
@@ -318,6 +319,7 @@
 .asideCenterTopbar button {
   font-size: 15px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .asideCenterContents div {
@@ -334,11 +336,23 @@
   border-radius: 50%;
 }
 
+.asideCenterContentYongminImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
 .asideCenterContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 5px;
+}
+
+.asideCenterContent span {
+  color: var(--color-gray);
+  font-weight: bold;
 }
 
 .asideBottomContainer {
@@ -356,7 +370,7 @@
   align-items: center;
   position: sticky;
   margin-bottom: 10px;
-  height: 35px;
+  height: 40px;
   background-color: white;
   top: 0;
 }
@@ -364,6 +378,39 @@
 .asideBottomTopBar a {
   font-size: 15px;
   font-weight: bold;
+}
+
+.recommendOfUser {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.recommendOfUserContent {
+  display: flex;
+}
+
+.recommendOfUserProfileInformation {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.recommendOfUserProfileInformation span:last-child {
+  color: var(--color-gray);
+  font-weight: 700;
+}
+
+.recommendOfUserProfileImg {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.recommendOfUser button {
+  color: var(--color-blue);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /* footer-section*/
@@ -374,4 +421,16 @@
 
 .footerContainer a {
   color: var(--color-gray);
+}
+
+.copyrightOfInstagram {
+  color: var(--color-gray);
+}
+
+/* hide aside bar */
+
+@media screen and (max-width: 1024px) {
+  .asideSection {
+    display: none;
+  }
 }
