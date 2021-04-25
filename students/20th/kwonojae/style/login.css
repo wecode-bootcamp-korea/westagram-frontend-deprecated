@@ -1,11 +1,11 @@
 .loginContainer {
-  width: 350px;
-  height: 380px;
-  margin: 50px auto 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 350px;
+  height: 380px;
+  margin: 50px auto 0px auto;
   border: 1px solid #dbdbdb;
   border-radius: 1px;
 }
@@ -21,8 +21,8 @@
   width: 268px;
   height: 38px;
   padding: 9px 0px 7px 8px;
-  border: rgb(219, 219, 219) 1px solid;
   background-color: #fafafa;
+  border: rgb(219, 219, 219) 1px solid;
   border-radius: 3px;
 }
 
@@ -31,20 +31,20 @@
 }
 
 .inputID {
-  margin-top: 36px;
+  margin: 36px 0px 0px 0px;
 }
 
 .inputPW {
-  margin-top: 6px;
+  margin: 6px 0px 0px 0px;
 }
 
 .loginBtn {
+  margin-top: 14px;
   width: 268px;
   height: 30px;
-  margin-top: 14px;
+  color: white;
   border: none;
   border-radius: 4px;
-  color: white;
   font-size: 14px;
   font-weight: 600;
 }
@@ -58,7 +58,7 @@
 }
 
 .main span {
-  margin-top: 99px;
+  margin: 99px 0px 0px 0px;
   color: #00376b;
   font-size: 12px;
 }

@@ -11,11 +11,7 @@ function inputValueCheck() {
 }
 
 function inputValidation() {
-  if (inputID.value.includes("@") && inputPW.value.length >= 5) {
-    alert("로그인 성공!");
-  } else {
-    alert("로그인 정보가 잘못되었습니다.");
-  }
+  return inputID.value.includes("@") && inputPW.value.length >= 5 ? alert("로그인 성공!") : alert("로그인 정보가 잘못되었습니다.");
 }
 
 inputID.addEventListener("keyup", inputValueCheck);

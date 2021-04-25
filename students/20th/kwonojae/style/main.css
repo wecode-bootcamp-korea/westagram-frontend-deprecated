@@ -1,15 +1,15 @@
 .mainNav {
-  width: 100%;
-  height: 54px;
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
-  border-bottom: 1px solid #dbdbdb;
-  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 54px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .navTitle {
@@ -18,9 +18,9 @@
 }
 
 .navSearch {
+  position: relative;
   width: 215px;
   height: 28px;
-  position: relative;
 }
 
 .navSearch input {
@@ -33,9 +33,9 @@
 }
 
 .navIcons {
-  width: 222px;
   display: flex;
   justify-content: space-between;
+  width: 222px;
 }
 
 .navIcons i {
@@ -61,13 +61,13 @@
 }
 
 .feedHeader {
-  width: 600px;
-  height: 60px;
-  padding: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 600px;
+  height: 60px;
+  padding: 16px;
   background-color: white;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .writer h5 {
-  margin-left: 10px;
+  margin: 0px 0px 0px 10px;
 }
 
 .feedHeader button {
@@ -92,9 +92,9 @@
 }
 
 .feedImage img {
+  padding: 0px;
   width: 600px;
   height: 600px;
-  padding: 0px;
 }
 
 .feedBottomBox {
@@ -103,30 +103,29 @@
 }
 
 .feedButtons Button {
-  font-size: 24px;
-  border: none;
   background-color: white;
+  border: none;
+  font-size: 24px;
 }
 
 .feedButtons {
-  width: 600px;
-  height: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
   align-items: center;
   margin: 0px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0px 12px;
+  width: 600px;
+  height: 40px;
+  background-color: white;
 }
 
 .feedLike {
   width: 600px;
   height: 18px;
+  margin: 6px 0px 0px 0px;
+  padding: 0px 0px 0px 16px;
   background-color: white;
-  padding-left: 16px;
-  margin-top: 6px;
 }
 
 .feedLike button {
@@ -134,16 +133,14 @@
 }
 
 .feedText {
+  padding: 0px 16px;
+  margin: 10px 0px 0px 0px;
   width: 600px;
   background-color: white;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 10px;
 }
 
 .feedComment {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0px 16px;
 }
 
 .feedText button {
@@ -156,22 +153,21 @@
 
 .feedTime {
   width: 600px;
+  margin: 12px 0px 0px 0px;
+  padding: 0px 16px;
   background-color: white;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 12px;
 }
 
 .writeHereComment {
-  width: 600px;
-  height: 56px;
-  background-color: white;
-  padding: 0px 16px 0px 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 600px;
+  height: 56px;
+  margin: 12px 0px 0px 0px;
+  padding: 0px 16px;
+  background-color: white;
   border-top: 1px solid #dbdbdb;
-  margin-top: 12px;
 }
 
 .writeHereComment i {
@@ -190,27 +186,26 @@
 }
 
 .mainAside {
-  margin-top: 55px;
-  width: 40%;
-  height: 100%;
-  background-color: white;
   position: fixed;
   right: 0;
   top: 0;
+  width: 40%;
+  height: 100%;
+  margin: 55px 0px 0px 0px;
+  background-color: white;
 }
 
 .profilewithrecommend {
-  margin-top: 50px;
-  margin-left: 20px;
+  margin: 50px 0px 0px 20px;
 }
 
 .myProfile {
-  width: 300px;
-  height: 56px;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  width: 300px;
+  height: 56px;
   background-color: white;
 }
 
@@ -221,7 +216,7 @@
 }
 
 .myProfile dl {
-  margin-left: 20px;
+  margin: 0px 0px 0px 20px;
   width: 196px;
   font-size: 14px;
 }
@@ -232,13 +227,12 @@
 }
 
 .recommendForYou {
-  width: 300px;
-  background-color: white;
-  margin-top: 20px;
-  /* padding: 0px 8px 0px 8px; */
   display: flex;
   flex-direction: row;
   justify-content: start;
+  width: 300px;
+  margin: 20px 0px 0px 0px;
+  background-color: white;
 }
 
 .recommendForYou span {
@@ -257,13 +251,13 @@
 }
 
 .recommendProfile {
-  width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  width: 300px;
+  margin: 16px 0px 0px 0px;
   background-color: white;
-  margin-top: 16px;
 }
 
 .recommendProfile img {
@@ -272,7 +266,7 @@
 }
 
 .recommendProfile dl {
-  margin-left: 20px;
+  margin: 0px 0px 0px 20px;
   width: 210px;
   font-size: 14px;
 }
@@ -283,7 +277,7 @@
 }
 
 .mainPage {
-  margin-top: 55px;
+  margin: 55px 0px 0px 0px;
   width: 60%;
   background-color: white;
 }
