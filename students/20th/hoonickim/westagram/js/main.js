@@ -14,5 +14,3 @@ function activate() {
 };
 
 text.addEventListener('input', activate);
-
-const 

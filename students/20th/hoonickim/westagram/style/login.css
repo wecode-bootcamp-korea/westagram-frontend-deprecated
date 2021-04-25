@@ -1,28 +1,28 @@
 h1.logoText {
-  font-family: "Lobster", cursive;
-  font-size: 45px;
   margin-top: 10px;
   margin-bottom: 20px;
+  font-family: "Lobster", cursive;
+  font-size: 45px;
   font-weight: 700;
 }
 
 body {
-  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  background-color: #f7f7f7;
 }
 
 .container {
-  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-  background-color: white;
-  width: 330px;
-  height: 350px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  width: 330px;
+  height: 350px;
+  background-color: white;
 }
 
 .input {

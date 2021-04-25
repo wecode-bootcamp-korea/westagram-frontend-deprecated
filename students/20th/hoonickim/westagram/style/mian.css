@@ -7,7 +7,6 @@ body {
 }
 
 nav {
-  /* background-color: lightgreen; */
   display: flex;
   justify-content: space-around;
   background-color: white;
@@ -15,12 +14,11 @@ nav {
 }
 
 .navTop {
-  width: 975px;
-  height: 54px;
-  /* background-color: greenyellow; */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 975px;
+  height: 54px;
 }
 
 .instaImg {
@@ -38,11 +36,11 @@ nav {
 }
 
 .navRightIcon {
-  width: 222px;
-  height: 22px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 222px;
+  height: 22px;
 }
 
 .mainContainer {
@@ -95,26 +93,26 @@ article {
 }
 
 .feedHeader {
+  display: flex;
+  align-items: center;
   width: 614px;
   height: 60px;
   background-color: white;
-  display: flex;
-  align-items: center;
 }
 
 .feedHeaderText {
-  font-size: 14px;
-  font-weight: 700;
   position: relative;
   left: 25px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .feedHeader img {
+  position: relative;
+  left: 15px;
   width: 32px;
   height: 32px;
   border-radius: 70%;
-  position: relative;
-  left: 15px;
 }
 
 .feedImage {
@@ -138,9 +136,9 @@ article {
 }
 
 .iconBar {
-  height: 40px;
   display: flex;
   align-items: center;
+  height: 40px;
   background-color: white;
 }
 
@@ -177,10 +175,10 @@ article {
 }
 
 .comment {
-  height: 56px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 56px;
   border-top: 1px solid #dbdbdb;
   padding: 0px 10px;
 }
