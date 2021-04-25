@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/common.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -12,16 +13,16 @@
     <title>Welcome to westagram</title>
 </head>
 <body>
-    <div class="login-wrap">
-        <h1>westagram</h1>
+    <main class="login-wrap give-border">
+        <h1 class="logo">westagram</h1>
         <form class="login-form">
-            <div class="input-box js-input-box">
+            <div class="login-form__input-box js-input-box">
                 <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" class="js-input-id">
                 <input type="password" placeholder="비밀번호" class="js-input-pw">
             </div>
                 <button disabled class="js-login-btn">로그인</button>
         </form>
         <a href="#" class="find-pw">비밀번호를 잊으셨나요?</a>
-    </div>
+    </main>
 </body>
 </html>

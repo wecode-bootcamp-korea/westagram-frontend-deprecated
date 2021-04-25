@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/base.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
@@ -17,13 +19,13 @@
             <h1>
                 <a href="#">
                     <img alt="logo" src="image/instagram.svg">
-                    <span>westagram</span>
+                    <span class="logo">westagram</span>
                 </a>
             </h1>
-            <form class="search">
+            <form class="nav__search">
                 <input type="search" placeholder="검색">
             </form>
-            <ul class="menu">
+            <ul class="nav__menu">
                 <li>
                     <a href="#">
                         <img alt="탐색" src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png">
@@ -44,98 +46,98 @@
     </nav>
     <main>
         <section class="feeds">
-            <article>
-                <header class="align-item-center">
-                    <a href="#" class="profile-image-small">
+            <article class="feed give-border">
+                <header class="feed__header align-item-center">
+                    <a href="#" class="profile-image--small">
                         <img alt="오브젠탈 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/122493551_276052993647146_2009192636666657519_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=zK_EvJTWqwAAX9zB93x&edm=AEF8tYYBAAAA&ccb=7-4&oh=00a7fd638bc158820530230c64543d99&oe=60A6166E&_nc_sid=a9513d">
                     </a>
                     <a href="#" class="user-name">objental</a>
-                    <button class="more-icon align-right" type="button">
+                    <button class="feed__header__more-icon align-right" type="button">
                         <img alt="더보기" src="image/more.svg">
                     </button>
                 </header>
-                <section class="posted-image">
+                <div class="feed__image">
                     <img alt="photo by 오브젠탈 on April 19, 2021." src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/175327568_462795788160917_5319447458414571704_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=XX9lh8ufxbMAX9Ud_M6&edm=AP_V10EBAAAA&ccb=7-4&oh=841cbea35c0fa15f1b7109264004e91d&oe=60A41F19&_nc_sid=4f375e">
-                </section>
-                <section class="contents">
-                    <div class="btn-wrap">
-                        <button type="button">
-                            <img alt="좋아요" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
-                        </button>
-                        <button type="button">
-                            <img alt="댓글" src="image/comment.svg">
-                        </button>
-                        <button type="button">
-                            <img alt="공유하기" src="image/send.svg">
-                        </button>
-                        <button class="align-right">
-                            <img alt="북마크" src="image/bookmark.svg">
-                        </button>
-                    </div>
-                    <p class="likes-number"><a>좋아요 503개</a></p>
+                </div>
+                <div class="feed__btns">
+                    <button type="button">
+                        <img alt="좋아요" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png">
+                    </button>
+                    <button type="button">
+                        <img alt="댓글" src="image/comment.svg">
+                    </button>
+                    <button type="button">
+                        <img alt="공유하기" src="image/send.svg">
+                    </button>
+                    <button class="align-right">
+                        <img alt="북마크" src="image/bookmark.svg">
+                    </button>
+                </div>
+                <p class="feed__likes-number"><a>좋아요 503개</a></p>
+                <div class="feed__description">
                     <p>
                         <span class="user-name">objental</span>
                         <span>미니멀 아크릴 사각 트레이 4가지 컬러로 준비하였어요💙<br><br>
                         | SIZE |<br>
                         W400mm * D280mm * H45mm</span>
                     </p>
-                    <div class="js-comments">
-                        <p class="comment align-item-center">
-                            <span class="user-name">objental</span>
-                            <a href="#">@5write</a>
-                            사이트 주방 또는 데코 카테고리에서 상품 확인 가능하세요😊
-                            <button class="delete-btn js-delete-btn">x</button>
-                            <button class="like-btn align-right js-like-btn">
-                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 -45 580 580" xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                </svg>
-                            </button>
-                        </p>
-                        <p class="comment align-item-center">
-                            <span class="user-name">jerrysmarket.official</span>
-                            와 너무 예뻐요
-                            <button class="delete-btn js-delete-btn">x</button>
-                            <button class="like-btn align-right js-like-btn">
-                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 -45 580 580" xml:space="preserve">
-                                    <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
-                                        c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
-                                        c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
-                                        s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
-                                        C512,93.417,453.532,30,376,30z"/>
-                                </svg>
-                            </button>
-                        </p>
-                    </div>
-                </section>
-                <form class="comment-form align-item-center space-between" name="commentForm">
+                </div>
+                <div class="feed__comments js-comments">
+                    <p class="feed__comment align-item-center">
+                        <span class="user-name">objental</span>
+                        <a href="#">@5write</a>
+                        사이트 주방 또는 데코 카테고리에서 상품 확인 가능하세요😊
+                        <button class="delete-btn js-delete-btn">x</button>
+                        <button class="like-btn align-right js-like-btn">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 -45 580 580" xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                    c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                    c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                    s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                    C512,93.417,453.532,30,376,30z"/>
+                            </svg>
+                        </button>
+                    </p>
+                    <p class="feed__comment align-item-center">
+                        <span class="user-name">jerrysmarket.official</span>
+                        와 너무 예뻐요
+                        <button class="delete-btn js-delete-btn">x</button>
+                        <button class="like-btn align-right js-like-btn">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 -45 580 580" xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                    c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                    c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                    s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                    C512,93.417,453.532,30,376,30z"/>
+                            </svg>
+                        </button>
+                    </p>
+                </div>
+                <form class="feed__form align-item-center space-between" name="commentForm">
                     <button type="button">
                         <img alt="이모티콘" src="image/emoticon.svg">
                     </button>
-                    <input type="text" placeholder="댓글 달기..." class="input-comment" name="inputComment">
-                    <input type="submit" class="submit-comment" name="submitComment" value="게시" disabled>
+                    <input type="text" placeholder="댓글 달기..." class="feed__input-comment" name="inputComment">
+                    <input type="submit" class="feed__submit-comment" name="submitComment" value="게시" disabled>
                 </form>
             </article>
         </section>
         <div class="main-right">
-            <section id="user-profile" class="align-item-center">
-                <a href="#" class="profile-image-big">
+            <section class="user-profile align-item-center">
+                <a href="#" class="profile-image--big">
                     <img alt="yesl.k님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/159201707_1370690073293044_5504838793282701571_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=X3ZreJYCwS8AX8sC9GN&edm=AIQHJ4wBAAAA&ccb=7-4&oh=e71b1eb1001374c111da7a1a5feee831&oe=60A4F7CF&_nc_sid=7b02f1">
                 </a>
                 <a href="#" class="user-name js-user-name">yesl.k</a>
                 <button type="button" class="align-right">전환</button>
             </section>
-            <section class="story">
-                <header class="space-between">
-                    <span>스토리</span>
+            <section class="story give-border">
+                <header class="story__header space-between">
+                    <span class="story__title">스토리</span>
                     <a href="#">모두 보기</a>
                 </header>
                 <ul>
-                    <li class="align-item-center">
-                        <a href="#" class="profile-image-small">
+                    <li class="story__item align-item-center">
+                        <a href="#" class="profile-image--small">
                             <img alt="gwilee님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/103766508_267505241160259_6988402942883626618_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=MCGB5wt3c6MAX8LYXCb&edm=ALlQn9MBAAAA&ccb=7-4&oh=91329cb8aac0070a51f477ab5f2c4c42&oe=60A63740&_nc_sid=48a2a6">
                         </a>
                         <div>
@@ -143,8 +145,8 @@
                             <p class="detail-info">16분 전</p>
                         </div>
                     </li>
-                    <li class="align-item-center">
-                        <a href="#" class="profile-image-small">
+                    <li class="story__item align-item-center">
+                        <a href="#" class="profile-image--small">
                             <img alt="moaol님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/119800358_354868989042273_770246469915109902_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=SC4MI4G04iwAX_pNBiw&edm=ALlQn9MBAAAA&ccb=7-4&oh=d0576912d5db7559f72c084879ccf297&oe=60A553C4&_nc_sid=48a2a6">
                         </a>
                         <div>
@@ -152,8 +154,8 @@
                             <p class="detail-info">3시간 전</p>
                         </div>
                     </li>
-                    <li class="align-item-center">
-                        <a href="#" class="profile-image-small">
+                    <li class="story__item align-item-center">
+                        <a href="#" class="profile-image--small">
                             <img alt="hyukyc님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/42707193_247868809232568_1670895075900522496_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=Mvb0zQo602YAX-TrVzE&edm=AAeKFY8BAAAA&ccb=7-4&oh=1008ecf199e4b5e4aa36034e3d89a173&oe=60A4D9A2&_nc_sid=c982ba">
                         </a>
                         <div>
@@ -161,8 +163,8 @@
                             <p class="detail-info">20시간 전</p>
                         </div>
                     </li>
-                    <li class="align-item-center">
-                        <a href="#" class="profile-image-small">
+                    <li class="story__item align-item-center">
+                        <a href="#" class="profile-image--small">
                             <img alt="mozzi_na님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/125458184_678698426183599_3935567234361894070_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=pcZm0-kFu2gAX_vHPBe&edm=ALlQn9MBAAAA&ccb=7-4&oh=208557571af9f85e3bfb824977d0f8c5&oe=60A6680C&_nc_sid=48a2a6">
                         </a>
                         <div>
@@ -172,14 +174,14 @@
                     </li>
                 </ul>
             </section>
-            <aside class="recommendation">
-                <header class="space-between">
-                    <span>회원님을 위한 추천</span>
+            <aside class="recommendation give-border">
+                <header class="recommendation__header space-between">
+                    <span class="recommendation__title">회원님을 위한 추천</span>
                     <a href="#">모두 보기</a>
                 </header>
                 <ul>
-                    <li class="align-item-center">
-                        <a href="#" class="profile-image-small">
+                    <li class="recommendation__item align-item-center">
+                        <a href="#" class="profile-image--small">
                             <img alt="photo.by.ruby님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/90086118_217157622737807_4136651709092986880_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=alw4C05kP50AX-ui58O&edm=AEF8tYYBAAAA&ccb=7-4&oh=4924ec7c2bb571b7e3cb83eaf57a5f49&oe=60A70F51&_nc_sid=a9513d">
                         </a>
                         <div>
@@ -188,8 +190,8 @@
                         </div>
                         <button type="button" class="follow align-right">팔로우</button>
                     </li>
-                    <li class="align-item-center">
-                        <a href="#" class="profile-image-small">
+                    <li class="recommendation__item align-item-center">
+                        <a href="#" class="profile-image--small">
                             <img alt="yuhemian님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/53848849_278758776351950_4301671031279452160_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=X0_HmKlmFoIAX9fYyzb&edm=AEF8tYYAAAAA&ccb=7-4&oh=3d9c8e270fbef2b4240f9c222c5c0255&oe=60A78C31&_nc_sid=a9513d">
                         </a>
                         <div>
@@ -198,8 +200,8 @@
                         </div>
                         <button type="button" class="follow align-right">팔로우</button>
                     </li>
-                    <li class="align-item-center">
-                        <a href="#" class="profile-image-small">
+                    <li class="recommendation__item align-item-center">
+                        <a href="#" class="profile-image--small">
                             <img alt="outofstyle.ig님의 프로필 사진" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/43912989_342504699845205_26342821132763136_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=1CznibMktiwAX9OVJJi&edm=AEF8tYYBAAAA&ccb=7-4&oh=3a2627949490d51a80c39569334f52de&oe=60A5878C&_nc_sid=a9513d">
                         </a>
                         <div>

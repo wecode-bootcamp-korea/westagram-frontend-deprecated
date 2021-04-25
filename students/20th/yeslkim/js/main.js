@@ -4,8 +4,8 @@ const commentForm = document.commentForm,
     likeBtns = document.querySelectorAll('.js-like-btn'),
     deleteBtns = document.querySelectorAll('.js-delete-btn');
 
-function active() {
-    submitBtn.disabled = inputComment.value.length > 0 ? false : true;
+function activateBtn() {
+    submitBtn.disabled = !(inputComment.value.length > 0);
 }
 
 function addComment(e) {
@@ -15,16 +15,16 @@ function addComment(e) {
         span = document.createElement('span'),
         likeBtn = document.createElement('button'),
         deleteBtn = document.createElement('button'),
-        myId = document.querySelector('#user-profile .js-user-name').textContent,
         comment = document.createTextNode(inputComment.value),
-        commentBox = document.querySelector('.js-comments');
+        commentBox = document.querySelector('.js-comments'),
+        MY_ID = 'yesl.k';
 
-    p.className = 'comment align-item-center';
+    p.className = 'feed__comment align-item-center';
     span.className = 'user-name';
     likeBtn.className = 'like-btn align-right js-like-btn';
     deleteBtn.className = 'delete-btn js-delete-btn';
 
-    span.innerText = myId;
+    span.innerText = MY_ID;
     likeBtn.innerHTML = `
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-50 -45 580 580" xml:space="preserve">
             <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
@@ -55,7 +55,7 @@ function like() {
 }
 
 function init() {
-    inputComment.addEventListener('keyup', active);
+    inputComment.addEventListener('keyup', activateBtn);
     submitBtn.addEventListener('click', addComment);
     likeBtns.forEach( btn => btn.addEventListener('click', like) );
     deleteBtns.forEach( btn => btn.addEventListener('click', deleteComment) );

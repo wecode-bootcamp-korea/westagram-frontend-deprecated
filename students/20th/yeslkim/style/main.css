@@ -1,75 +1,6 @@
 body {
     padding-top: 54px;
-    background-color: #fafafa;
-    font-size: 14px;
     line-height: 18px;
-}
-
-header {
-    font-weight: 600;
-}
-
-button, .submit-comment {
-    display: block;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-    font-weight: 600;
-    color: #0095f6;
-}
-
-.align-item-center {
-    display: flex;
-    align-items: center;
-}
-
-.space-between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.align-right {
-    margin-left: auto;
-}
-
-.profile-image-big {
-    display: block;
-    margin-right: 16px;
-    width: 56px;
-    height: 56px;
-    border: 1px solid #dbdbdb;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-image-small {
-    display: block;
-    margin-right: 16px;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #dbdbdb;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.user-name {
-    color: #262626;
-    font-weight: 800;
-    font-size: 14px;
-}
-
-.user-name:hover {
-    text-decoration: underline;
-}
-
-.comment a, .user-name {
-    margin-right: 4px;
-}
-
-.detail-info {
-    color: #8e8e8e;
-    font-size: 12px;
-    line-height: 14px;
 }
 
 /* 레이아웃 */
@@ -82,7 +13,7 @@ nav {
     display: flex;
     align-items: center;
     height: 54px;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid var(--main-border);
     background-color: #fff;
 }
 
@@ -116,31 +47,16 @@ main {
     height: 0;
 }
 
-#user-profile {
-    padding: 0 8px;
-}
-
-.story {
-    margin: 16px 0;
-    height: 200px;
-    overflow: auto;
-}
-
-.story, .recommendation {
-    padding: 8px 16px;
-}
-
-article, .story, .recommendation {
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
-}
-
 /* 스타일 */
     /* 네비게이션 */
+header {
+    font-weight: 600;
+}
+
 h1 a {
     display: flex;
     align-items: center;
-    color: #262626;
+    color: var(--main-font);
 }
 
 h1 a img {
@@ -148,15 +64,16 @@ h1 a img {
     padding-right: 14px;
     width: 22px;
     height: 22px;
-    border-right: 2px solid #262626;
+    box-sizing: content-box;
+    border-right: 2px solid var(--main-font);
 }
 
 h1 a span {
     padding-bottom: 7px;
-    font: 28px 'Lobster', cursive;
+    font-size: 28px;
 }
 
-.search {
+.nav__search {
     display: flex;
     align-items: center;
     padding: 3px 10px 3px 26px;
@@ -164,121 +81,118 @@ h1 a span {
     min-width: 125px;
     height: 28px;
     box-sizing: border-box;
-    border: 1px solid #dbdbdb;
+    border: 1px solid var(--main-border);
     border-radius: 3px;
-    background-color: #fafafa;
+    background-color: var(--bg-light-grey);
 }
 
-.search input {
-    display: block;
-    width: 100%;
+.nav__search input {
     height: 100%;
-    border: none;   
     background-color: transparent;
 }
 
-.search input::placeholder {
+.nav__search input::placeholder {
     text-align: center;
 }
 
-.search input:focus {
-    outline: none;
-}
-
-.menu {
+.nav__menu {
     display: flex;
 }
 
-.menu li {
+.nav__menu li {
     margin-left: 22px;
     width: 22px;
     height: 22px;
 }
 
-.menu li a {
+.nav__menu li a {
     display: block;
 }
 
     /* 메인 콘텐츠 */
-article {
+.feed {
     margin-bottom: 60px;
 }
 
-article > header{
+.feed__header{
     padding: 8px 16px;
 }
 
-.contents {
-    padding: 0 16px 16px;
-    border-bottom: 1px solid #efefef;
-}
-
-.more-icon{
+.feed__header__more-icon{
     margin-right: -12px;
     padding: 12px;
 }
 
-.posted-image {
+.feed__image {
     position: relative;
     padding-bottom: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.posted-image img {
+.feed__image img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
 }
 
-.btn-wrap {
+.feed__btns {
     display:flex;
     margin-top: 4px;
+    padding: 0 8px;
 }
 
-.btn-wrap button:first-child {
-    margin-left:-8px;
+.feed__likes-number {
+    margin-bottom: 5px;
+    padding: 0 16px;
 }
 
-.btn-wrap button:last-child {
-    margin-right:-8px;
-}
-
-.likes-number a {
+.feed__likes-number a {
+    color: var(--main-font);
     font-weight: 600;
     cursor: pointer;
 }
 
-.contents p {
+.feed__description {
+    margin-bottom: 5px;
+    padding: 0 16px;
+}
+
+.feed__comments {
+    padding: 0 16px 16px;
+    border-bottom: 1px solid var(--border--lighten);
+}
+
+.feed__comment {
+    position: relative;
     margin-bottom: 5px;
 }
 
-.comment {
-    position: relative;
+.feed__comment a{
+    margin-right: 4px;
 }
 
-.comment:hover .delete-btn {
+.feed__comment:hover .delete-btn {
     display: block;
 }
 
-.comment .delete-btn {
+.feed__comment .delete-btn {
     display: none;
     position: absolute;
     top: 50%;
     right: 8px;
     margin-top: -20px;
-    background: #fff;
-    color: #262626;
+    color: var(--main-font);
     line-height: 24px;
     opacity: .2;
 }
 
-.comment:hover .delete-btn:hover {
+.feed__comment:hover .delete-btn:hover {
     opacity: .5;
 }
 
-.comment .like-btn {
+.feed__comment .like-btn {
     padding: 0;
     width: 12px;
     height: 12px;
@@ -286,55 +200,66 @@ article > header{
 
 .like-btn svg {
     fill: none;
-    stroke: #5b5b5b;
+    stroke: var(--border--darken);
     stroke-width: 45px;
 }
 
 .like-btn svg.clicked {
-    fill: #ed4956;
-    stroke: #ed4956;
+    fill: var(--btn--red);
+    stroke: var(--btn--red);
 }
 
-.comment-form {
+.feed__form {
     padding: 0 8px;
     height: 56px;
 }
 
-.input-comment {
+.feed__input-comment {
     width: calc(100% - 96px);
 }
 
-.submit-comment {
+.feed__submit-comment {
     width: auto;
     font-size: 14px;
-    opacity: 1;
-    cursor: pointer;
-}
-
-.submit-comment:disabled {
-    opacity: .3;
+    font-weight: 600;
+    color: var(--btn--blue);
 }
 
 /* 메인 콘텐츠 우측 */
-.story li, .story header, .recommendation li, .recommendation header{
+.user-profile {
+    padding: 0 8px;
+}
+
+.story {
+    margin: 16px 0;
+    padding: 8px 16px;
+    height: 220px;
+    overflow: auto;
+}
+
+.recommendation {
+    padding: 8px 16px;
+}
+
+.story__item , .story__header, .recommendation__item, .recommendation__header{
     padding: 8px 0;
 }
 
-.follow {
-    margin-right: -8px;
-    width: auto;
-}
-
-.story header span, .recommendation header span {
-    color: #8e8e8e;
+.story__title, .recommendation__title {
+    color: var(--font--grey);
     font-size: 14px;
 }
 
-.story header a, .recommendation header a {
-    color: #262626;
+.story__header a, .recommendation__header a {
+    color: var(--main-font);
     font-size: 12px;
 }
 
 .main-right button {
     font-size: 12px;
+}
+
+.follow {
+    margin-right: -8px;
+    width: auto;
 }
