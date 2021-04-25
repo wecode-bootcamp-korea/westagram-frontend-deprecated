@@ -15,6 +15,25 @@ function eraseCommentAfterUpload() {
   buttonDeactive();
 }
 
+function leaveComment() {
+  const commentValue = comment.value;
+  const ulTag = document.querySelector('.sectionArticleComment');
+  const listTag = document.createElement('li');
+  ulTag.appendChild(listTag);
+  listTag.innerHTML = `<div class='sectionArticleCommentContents'>
+    <p>
+      <a class='sectionArticleFanslink' href='#'>
+        yongmin
+      </a> 
+      ${commentValue}
+    </p>
+    <button class='sectionArticleCommentLinkButton'>
+      <i class='far fa-heart'></i>
+    </button>
+  </div>`;
+  eraseCommentAfterUpload();
+}
+
 function buttonActive() {
   commentUploadButton.classList.add('active');
   commentUploadButton.disabled = false;
@@ -43,25 +62,6 @@ function commentLeaveButtonHandler() {
       buttonDeactive();
     }
   });
-}
-
-function leaveComment() {
-  const commentValue = comment.value;
-  const ulTag = document.querySelector('.sectionArticleComment');
-  const listTag = document.createElement('li');
-  ulTag.appendChild(listTag);
-  listTag.innerHTML = `<div class='sectionArticleCommentContents'>
-    <p>
-      <a class='sectionArticleFanslink' href='#'>
-        yongmin
-      </a> 
-      ${commentValue}
-    </p>
-    <button class='sectionArticleCommentLinkButton'>
-      <i class='far fa-heart'></i>
-    </button>
-  </div>`;
-  eraseCommentAfterUpload();
 }
 
 function init() {
