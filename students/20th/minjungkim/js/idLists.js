@@ -1,4 +1,4 @@
-let idListsData = [
+const ID_LIST_DATA = [
 	{
 		imgUrl:
 			'https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/165624425_157218146270973_7029745587477918295_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=k-dq3a2OjuoAX9rqmaF&edm=AGeOuZUAAAAA&ccb=7-4&oh=b37a8b5bf0cc8bddb9080ce09202f6d3&oe=60A5D7E5&_nc_sid=924bfa',
@@ -21,11 +21,6 @@ let idListsData = [
 		certifiedPerson: true,
 	},
 ];
-
-// console.log(idListsData)
-// console.log(idListsData[0].imgUrl);
-// console.log(idListsData[0].id)
-// console.log(idListsData[0].name)
 
 const searchInput = document.querySelector('.nav_input');
 let searchInputValue;
