@@ -49,8 +49,8 @@ search.addEventListener('keyup', (e) => {
 
 const searchDel = document.querySelector('.searchDel');
 searchDel.addEventListener('click', (e) => {
-  console.log(e.target);
-  // e.target.parentNode.parentNode.parentNode.parentNode.remove();
+  const DelList = e.target.closest('.searchListLi')
+  DelList.remove();
 })
 
 const profilePage = document.querySelector('.profilePage');

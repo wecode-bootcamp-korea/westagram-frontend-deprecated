@@ -336,6 +336,7 @@ aside {
   position: fixed;
   left: 60vw;
   width: 300px;
+  z-index: -1;
 }
 
 aside > .myAccount {
