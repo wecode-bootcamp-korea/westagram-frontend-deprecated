@@ -183,16 +183,20 @@ article {
   padding: 0px 10px;
 }
 
-.text {
+.commentInput {
   width: 500px;
   outline: none;
   border: none;
 }
 
-.comment button {
+.commentButton {
   font-weight: 600;
   outline: none;
   border: none;
   background-color: white;
   color: #b2dffc;
+}
+
+.buttonActive {
+  color: rgb(0, 149, 246);
 }
