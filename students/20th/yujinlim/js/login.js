@@ -23,12 +23,9 @@ function activateSubmitBtn(isEveryInputValueExists) {
 function checkInputValue(e) {
   const { value, type } = e.target;
 
-  if (type === "email") {
-    value ? (isIdExists = true) : (isIdExists = false);
-  }
-  if (type === "password") {
-    value ? (isPwExists = true) : (isPwExists = false);
-  }
+  if (type === "email") isIdExists = !!value;
+  if (type === "password") isPwExists = !!value;
+
   const isEveryInputValueExists = isIdExists && isPwExists;
   activateSubmitBtn(isEveryInputValueExists);
 }
@@ -36,7 +33,7 @@ function checkInputValue(e) {
 function init() {
   submitBtn.disabled = true;
   loginInputs.forEach((input) =>
-    input.addEventListener("keyup", checkInputValue)
+    input.addEventListener("keypress", checkInputValue)
   );
 }
 
