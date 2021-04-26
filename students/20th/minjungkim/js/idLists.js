@@ -52,12 +52,10 @@ searchInput.addEventListener('input', () => {
 			console.log(idList);
 			return idList;
 		});
-		displaySearchResult(newArray)
+		displaySearchResult(newArray);
 	}
 });
 
 function displaySearchResult(newArray) {
-
 	//to be continue...
-
 }
