@@ -6,7 +6,7 @@ const inputID = document.querySelectorAll('input')[0];
 const inputPW = document.querySelectorAll('input')[1];
 const loginBtn = document.querySelector('.login.btn');
 
-function moveToUpside(input) {
+function moveLabelUp(input) {
     const descriptionType = input.previousElementSibling
 
     if (input.value) {
@@ -18,7 +18,7 @@ function moveToUpside(input) {
     }
 };
 
-function activeBtn() {
+function enableLogIn() {
     if (inputID.value.includes('@') && inputPW.value.length >= 6) {
         loginBtn.removeAttribute('disabled');
         loginBtn.classList.add('active');  
@@ -30,8 +30,8 @@ function activeBtn() {
 
 const login = () => {
     inputLogin.forEach(input => {
-        input.addEventListener('input', activeBtn)
-        input.addEventListener('input', () => moveToUpside(input))
+        input.addEventListener('input', enableLogIn)
+        input.addEventListener('input', () => moveLabelUp(input))
     })
 };
 

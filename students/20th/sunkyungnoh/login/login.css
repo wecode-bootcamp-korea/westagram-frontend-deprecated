@@ -23,8 +23,7 @@ div.login {
   justify-content: center;
   align-items: center;
   width: 348px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px auto;
   margin-bottom: 10px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(219, 219, 219);
@@ -33,8 +32,7 @@ div.login {
 
 h1 {
   height: 51px;
-  margin-top: 22px;
-  margin-bottom: 12px;
+  margin: 22px auto 12px auto;
   font-family: "Lobster", "cursive";
   font-size: 42px;
   text-align: center;
@@ -134,7 +132,6 @@ a.forgotPw {
 
 .loginOption > p {
   display: flex;
-  flex-basis: 100%;
   align-items: center;
   margin-top: 10px;
   margin-bottom: 18px;
@@ -167,7 +164,6 @@ a.forgotPw {
   justify-content: center;
   width: 268px;
   height: 20px;
-  background-color: transparent;
   outline: none;
   border: none;
   cursor: pointer;
