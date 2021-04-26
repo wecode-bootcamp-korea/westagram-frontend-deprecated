@@ -137,7 +137,7 @@ div.feeds {
   margin-right: 28px;
 }
 
-div.storyBox {
+.storyBox {
   display: flex;
   width: 600px;
   margin-bottom: 24px;
