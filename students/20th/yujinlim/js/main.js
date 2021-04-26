@@ -123,3 +123,13 @@ function getCommentValues(e) {
 commentInputs.forEach((el) => {
   el.addEventListener("keyup", getCommentValues);
 });
+
+const modal = document.querySelector(".modal-container");
+const MODALOPEN = "modal-open";
+const userBtn = document.querySelector(".top-nav__menu:last-child");
+
+function openModal() {
+  modal.classList.toggle(MODALOPEN);
+}
+
+userBtn.addEventListener("click", openModal);
