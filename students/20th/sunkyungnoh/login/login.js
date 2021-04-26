@@ -1,7 +1,6 @@
 'use strict'
 
 const loginForm = document.querySelector('.loginForm');
-const inputLogin = document.querySelectorAll('input');
 const inputID = document.querySelectorAll('input')[0];
 const inputPW = document.querySelectorAll('input')[1];
 const loginBtn = document.querySelector('.login.btn');
@@ -28,11 +27,8 @@ function enableLogIn() {
     }
 };
 
-const login = () => {
-    inputLogin.forEach(input => {
-        input.addEventListener('input', enableLogIn)
-        input.addEventListener('input', () => moveLabelUp(input))
-    })
-};
+loginForm.addEventListener('input', (e) => {
+  enableLogIn();
+  moveLabelUp(e.target);
+});
 
-login();
