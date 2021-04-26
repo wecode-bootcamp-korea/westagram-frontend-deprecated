@@ -33,7 +33,7 @@ div.login {
 h1 {
   height: 51px;
   margin: 22px auto 12px auto;
-  font-family: "Lobster", "cursive";
+  font-family: 'Lobster', 'cursive';
   font-size: 42px;
   text-align: center;
 }
@@ -140,7 +140,7 @@ a.forgotPw {
 }
 
 .loginOption > p::before {
-  content: "";
+  content: '';
   flex-grow: 1;
   background: rgb(219, 219, 219);
   height: 1px;
@@ -150,7 +150,7 @@ a.forgotPw {
 }
 
 .loginOption > p::after {
-  content: "";
+  content: '';
   flex-grow: 1;
   background: rgb(219, 219, 219);
   height: 1px;
@@ -197,7 +197,6 @@ div.create-account {
   background-color: white;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 1px;
-  
 }
 
 .create-account > p {
