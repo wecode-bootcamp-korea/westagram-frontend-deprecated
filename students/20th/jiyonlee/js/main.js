@@ -48,11 +48,13 @@ const createProfileLists = (dom, imgsrc, profileName, postedTime) => {
     profileId.textContent = profileName;
     postTime.textContent = postedTime;
     asideProfileImg.setAttribute("src", imgsrc);
+    asideProfileImg.setAttribute("alt", "프로필이미지");
 };
 
 users.forEach((user) => {
     createProfileLists(".story", user.img, user.id, "20분 전");
 });
+
 users.forEach((user) => {
     createProfileLists(
         ".recommend",

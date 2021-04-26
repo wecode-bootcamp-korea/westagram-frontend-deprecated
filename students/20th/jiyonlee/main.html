@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style/common.css" />
         <link rel="stylesheet" href="./style/main.css" />
+        <link rel="stylesheet" href="./style/reset.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
@@ -24,33 +25,33 @@
     <body>
         <nav>
             <a class="navLogo" href="main.html">
-                <img src="./images/instagram.png" alt="logo" />
+                <img src="./images/instagram.png" alt="위스타그램 로고" />
                 <div class="navLogoTitle">Westagram</div>
             </a>
             <div class="navSearchWrap">
-                <input class="navSearch" placeholder="검색" />
+                <input class="navSearch" type="text" placeholder="검색" />
                 <ul class="searchPopup"></ul>
             </div>
             <ul class="navLink">
                 <li>
                     <a href="#"
                         ><img
+                            alt="추천하는 사람들"
                             src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
-                            alt=""
                     /></a>
                 </li>
                 <li>
                     <a href="#"
                         ><img
+                            alt="새롭게 나를 팔로우한 사람들"
                             src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-                            alt=""
                     /></a>
                 </li>
                 <li>
                     <a href="#"
                         ><img
+                            alt="내 계정"
                             src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
-                            alt=""
                     /></a>
                 </li>
             </ul>
@@ -60,13 +61,21 @@
             <div class="feeds">
                 <article>
                     <div class="articleHeader">
-                        <img class="profileImg" src="./images/hao.jpg" />
+                        <img
+                            alt="일본 애니메이션 샤먼킹 하오 이미지"
+                            class="profileImg"
+                            src="./images/hao.jpg"
+                        />
                         <div class="profileName">jiyon</div>
                         <button class="viewMore">
                             <i class="fas fa-ellipsis-h"></i>
                         </button>
                     </div>
-                    <img class="articleImg" src="./images/nature.jpg" />
+                    <img
+                        alt="구름이 뒤덮인 푸르른 산 정상"
+                        class="articleImg"
+                        src="./images/nature.jpg"
+                    />
                     <div class="articleLnb">
                         <a href="#"><div class="lnbImg heartImg"></div></a>
                         <a href="#"><div class="lnbImg msgImg"></div></a>
@@ -75,8 +84,7 @@
                     </div>
                     <div class="articleComment">
                         <div class="articleLikes">
-                            <a href="#"><img src="" alt="" /></a
-                            ><span>wecode</span>님
+                            <a href="#"></a><span>wecode</span>님
                             <span>외 <span class="likeNum">10</span>명</span>이
                             좋아합니다
                         </div>
@@ -113,7 +121,11 @@
             <!-- aside -->
             <aside>
                 <div class="asideProfile">
-                    <img class="profileImg" src="./images/hao2.jpg" />
+                    <img
+                        alt="하늘을 바라보고 누워있는 하오의 얼굴"
+                        class="profileImg"
+                        src="./images/hao2.jpg"
+                    />
                     <div class="profileInfo">
                         <div class="profileId">Shaman_king</div>
                         <div class="profileName">하오</div>
