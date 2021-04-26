@@ -16,10 +16,8 @@ buttons.forEach((button) =>
 feeds.forEach((feed) =>
   feed.addEventListener("click", function (e) {
     const commentInput = feed.querySelector(".feed__input");
-    const commentList = feed.querySelector(".js-feed-comments");
     const inputValue = commentInput.value;
     const commentColumn = document.createElement("div");
-    const likesCountSpan = feed.querySelector(".js-likes-count");
     const FEED_COMMENT = `
       <div class="js-feed-comment">
         <span>${myID}</span>
@@ -37,41 +35,73 @@ feeds.forEach((feed) =>
     commentColumn.innerHTML = FEED_COMMENT;
 
     //이벤트 위임. e path[0]을 가지고 판단
-    //게시 버튼
     if (e.target && e.target.className === "feed__submit-btn") {
-      commentList.appendChild(commentColumn);
-      commentInput.value = "";
-      e.target.classList.add(OPACITY);
+      //게시 버튼
+      addComment(this, commentColumn);
     } else if (
-      //좋아요 버튼
       (e.target && e.target.className === "far fa-heart") ||
       (e.target && e.target.className === "fas fa-heart")
     ) {
-      const isFeedLikePressed = e.target.classList.contains("fas");
-      const currentLikeCount = parseInt(likesCountSpan.innerText);
-
-      if (!isFeedLikePressed) {
-        likesCountSpan.innerText = currentLikeCount + 1;
-        e.target.classList.replace("far", "fas");
-      }
-
-      if (isFeedLikePressed) {
-        likesCountSpan.innerText = currentLikeCount - 1;
-        e.target.classList.replace("fas", "far");
-      }
-    } else if (
+      // feed 좋아요 버튼
+      pressLikeBtn(this, e);
+    } else if (e.target && e.target.className === "fas fa-times") {
       //댓글 삭제 버튼
-      e.target &&
-      e.target.className === "fas fa-times"
-    ) {
-      const selectedComment = e.target.closest(".js-feed-comment");
-      selectedComment.remove();
+      deleteComment(e);
     } else {
       //그 외 의도하지 않은 다른 요소에 클릭 이벤트가 발생했을 경우
-      return;
+      return false;
     }
   })
 );
+
+//submit
+function addComment(feed, commentColumn) {
+  const commentInput = feed.querySelector(".feed__input");
+  const commentList = feed.querySelector(".js-feed-comments");
+  const submitBtn = feed.querySelector(".feed__submit-btn");
+  commentList.appendChild(commentColumn);
+  commentInput.value = "";
+  submitBtn.classList.add(OPACITY);
+}
+
+//like button
+function pressLikeBtn(feed, e) {
+  let isFeedLikeBtn = e.target.parentNode.classList.contains(
+    "feed__feature-btn"
+  );
+  let isCommentLikeBtn = e.target.parentNode.classList.contains(
+    "js-comment-btn"
+  );
+  const likesCountSpan = feed.querySelector(".js-likes-count");
+  const isFeedLikePressed = e.target.classList.contains("fas");
+  const currentLikeCount = parseInt(likesCountSpan.innerText);
+
+  //feed like btn
+  if (isFeedLikeBtn && !isFeedLikePressed) {
+    likesCountSpan.innerText = currentLikeCount + 1;
+    e.target.classList.replace("far", "fas");
+  }
+
+  if (isFeedLikeBtn && isFeedLikePressed) {
+    likesCountSpan.innerText = currentLikeCount - 1;
+    e.target.classList.replace("fas", "far");
+  }
+
+  //comment like btn
+  if (isCommentLikeBtn && !isFeedLikePressed) {
+    e.target.classList.replace("far", "fas");
+  }
+
+  if (isCommentLikeBtn && isFeedLikePressed) {
+    e.target.classList.replace("fas", "far");
+  }
+}
+
+//delete comment
+function deleteComment(e) {
+  const selectedComment = e.target.closest(".js-feed-comment");
+  selectedComment.remove();
+}
 
 //input입력시 버튼 활성화
 function removeSubmitBtnOpacity(commentInputValue, submitBtn) {
