@@ -310,7 +310,7 @@ form > button:last-of-type {
   color: rgb(0, 149, 246) !important;
 }
 
-div.main-right {
+.main-right {
   position: fixed;
   left: 707px;
   right: 0;

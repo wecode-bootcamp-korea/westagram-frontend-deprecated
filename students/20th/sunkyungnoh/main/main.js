@@ -3,7 +3,7 @@
 const commentInput = document.querySelector('.commentInput');
 const commentBtn = document.querySelector('.commentBtn');
 
-function active() {
+function changeColorOfBtn() {
     if (commentInput.value) {
         commentBtn.removeAttribute('disabled');
         commentBtn.classList.add('active');
@@ -13,7 +13,7 @@ function active() {
     }
 };
 
-commentInput.addEventListener('input', active);
+commentInput.addEventListener('input', changeColorOfBtn);
 
 function addComment(crrInput) {
     const commentModel = document.querySelector('.comment');
