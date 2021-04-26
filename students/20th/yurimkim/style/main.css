@@ -15,11 +15,13 @@ body {
 }
 
 .maxWidth {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 975px;
 }
+
 .mainNav > .maxWidth > .logo {
   width: 150px;
   font-size: 22px;
@@ -52,7 +54,8 @@ body {
 
 .searchBar {
   position: absolute;
-  top: 50px;
+  top: 35px;
+  left: 335px;
   width: 375px;
   height: 362px;
   display: none;
@@ -331,8 +334,8 @@ article.feeds {
 
 aside {
   position: fixed;
+  left: 60vw;
   width: 300px;
-  z-index: -1;
 }
 
 aside > .myAccount {

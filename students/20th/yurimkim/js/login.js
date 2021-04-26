@@ -1,20 +1,23 @@
 'use strict';
 
-const idName = document.querySelector('#idName');
-const pwd = document.querySelector('#pw');
+const idName = document.querySelector('.idName');
+const pwd = document.querySelector('.pw');
 const btn = document.querySelector('button');
+const loginInput = document.querySelectorAll('.loginInput');
 
-function login() {
-  if  ((idName.value.includes('@')) && (4< pwd.value.length)) {
+// ID, PW validation
+function checkFormInput() {
+  if  ((idName.value.includes('@')) && (pwd.value.length > 4)) {
     btn.disabled = false;
     btn.className = 'activeBtn';
-  };
+  } else {
+    btn.disabled = true;
+    btn.classList.remove('activeBtn');
+  }
 };
 
-idName.addEventListener('keyup', function() {
-  login();
-});
-
-pwd.addEventListener('keyup', function() {
-  login();
-});
+loginInput.forEach(loginInputBox => {
+  loginInputBox.addEventListener('keyup', function() {
+    checkFormInput();
+  })
+})

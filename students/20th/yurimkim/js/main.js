@@ -5,15 +5,30 @@ const search = document.querySelector('.search');
 const searchBar = document.querySelector('.searchBar');
 const searchList = document.querySelector('.searchList');
 
-window.addEventListener('load', () => {
-  let x =  article.getBoundingClientRect();
-  searchBar.style.left = `${x.left+320}px`;
-})
-
-window.addEventListener('resize', () => {
-  let x =  article.getBoundingClientRect();
-  searchBar.style.left = `${x.left+320}px`;
-})
+/* 아이디 검색 기능 */
+const idArr = ['yurim', 'wecode01기', 'wecode_bootcamp', 'wecode10기', 'wecode20기', 'BTS', 'bts'];
+const searchResult = idArr => {
+  if (!search.value) {
+    alert ("검색할 단어를 입력해주세요!");
+  } 
+  const idFilter = idArr.filter(id => id.includes(search.value))
+  idFilter.forEach(elem => {
+  searchList.innerHTML = `
+    <li>
+      <a href="#">
+      <img alt="bts" src="imgs/btsjpg.jpg" />
+      <div>
+        <div>
+          <p>${elem}</p>
+          <p>${elem} world</p>
+        </div>
+        <button class="searchDel">×</button>
+      </div>
+      </a>
+    </li>
+    `;
+  });
+}
 
 search.addEventListener('click', () => {
   searchBar.style.display = "block"
@@ -25,19 +40,6 @@ window.addEventListener('click', (e) => {
   } 
 })
 
-/* 검색 리스트 */
-const idArr = ['yurim', 'wecode01기', 'wecode_bootcamp', 'wecode10기', 'wecode20기', 'BTS', 'bts'];
-const searchResult = idArr => {
-  const idFilter = idArr.filter(x => x.includes(search.value))
-    idFilter.forEach(elem => {
-      const newDivList= document.createElement('li');
-      searchList.append(newDivList);
-      newDivList.innerHTML = `
-      <a href="#"><img alt="bts" src="imgs/btsjpg.jpg" /><div><div><p>${elem}</p><p>${elem} world</p></div><button class="searchDel">×</button></div></a>
-        `;
-    });
-}
-
 search.addEventListener('keyup', (e) => {
   searchResult(idArr);
   if (e.keyCode == 8){
@@ -46,8 +48,9 @@ search.addEventListener('keyup', (e) => {
 });
 
 const searchDel = document.querySelector('.searchDel');
-searchDel .addEventListener('click', (e) => {
-  e.target.parentNode.parentNode.parentNode.parentNode.remove();
+searchDel.addEventListener('click', (e) => {
+  console.log(e.target);
+  // e.target.parentNode.parentNode.parentNode.parentNode.remove();
 })
 
 const profilePage = document.querySelector('.profilePage');
@@ -64,7 +67,7 @@ window.addEventListener('click', (e) => {
   }
 })
 
-/* 댓글*/
+/* 댓글 */
 const commentList = document.querySelector('.commentList');
 const addBtn = document.querySelector('.addBtn');
 const textArea = document.querySelector('.textarea');
@@ -74,7 +77,13 @@ const  onAdd = () => {
   const newDiv = document.createElement('div');
   newDiv.className = 'delList';
   commentList.append(newDiv);
-  newDiv.innerHTML = `<div><span>yurim4545</span>${comment}<span class="delBtn"><i class="fas fa-times"></i></span></div><button><i class="far fa-heart"></i></button>`;
+  newDiv.innerHTML = `
+    <div>
+      <span>yurim4545</span>
+      ${comment}
+      <span class="delBtn"><i class="fas fa-times"></i></span>
+    </div>
+    <button><i class="far fa-heart"></i></button>`;
   textArea.value = ''; 
   addBtn.className = 'addBtnReset';
 }
@@ -111,18 +120,4 @@ commentList .addEventListener('click', (e) => {
     heart.innerHTML = `<i class="far fa-heart"></i>`;
     heart.style.color = 'black';
   }
-})
-
-/* asdie 위치 고정*/
-const aside = document.querySelector('aside');
-const article = document.querySelector('article');
-
-window.addEventListener('load', () => {
-  let x =  article.getBoundingClientRect();
-  aside.style.left = `${x.left+660}px`;
-})
-
-window.addEventListener('resize', () => {
-  let x =  article.getBoundingClientRect();
-  aside.style.left = `${x.left+660}px`;
 })
