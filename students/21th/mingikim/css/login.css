@@ -1,0 +1,107 @@
+@import "/students/21th/mingikim/css/reset.css";
+
+:root {
+  --thin_border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+.main-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 380px;
+  width: 350px;
+  background-color: white;
+  padding-top: 10px;
+  border: var(--thin_border);
+}
+
+.login-box .logo {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  margin: 22px 86.5px 12px;
+}
+
+.login-box__form {
+  margin-top: 25px;
+}
+
+.login-box__form .input {
+  font-size: 12px;
+  padding: 9px 0px 7px 8px;
+  line-height: 18px;
+  width: 268px;
+  height: 38px;
+  background-color: #fafafa;
+}
+
+.login-box__form .input {
+  margin-top: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: var(--thin_border);
+}
+
+.login-box,
+.login-box__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes click {
+  from {
+    transform: scale(0.98);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.login-box__button {
+  margin-top: 18px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  height: 38px;
+  cursor: pointer;
+}
+
+.login-box__button:active {
+  animation: click 0.1s linear;
+}
+
+.login-box__button:disabled {
+  background-color: #c4e1fb;
+}
+
+.forgot-box {
+  margin-bottom: 15px;
+}
+
+.forgot-box__message {
+  text-decoration: none;
+  color: #003569;
+  font-weight: 400;
+  font-size: 10px;
+}
