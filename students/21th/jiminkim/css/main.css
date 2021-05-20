@@ -1,0 +1,351 @@
+#main-wrap {
+    margin: auto;
+    height: 100%;
+}
+
+#wrapper nav.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 54px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    z-index: 9;
+}
+
+#wrapper nav.header div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 975px;
+    width: 100%;
+    position: relative;
+}
+
+#wrapper nav.header hgroup {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrapper nav.header hgroup h1.logo-icon {
+    background-repeat: no-repeat;
+    background-position: -371px -279px;
+    height: 40px;
+    width: 42px;
+}
+
+#wrapper nav.header hgroup h1.logo-title {
+    background-repeat: no-repeat;
+    background-position: -120px -224px;
+    height: 33px;
+    width: 110px;
+}
+
+#wrapper nav.header #search-box {
+    width: 200px;
+}
+
+#wrapper nav.header #search-box input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #8e8e8e;
+    background-color: #fafafa;
+    border-radius: 3px;
+}
+
+#wrapper nav.header ul.list-icon {
+   list-style: none;
+}
+
+#wrapper nav.header ul.list-icon li {
+    display: inline;
+    padding: 0 10px;
+ }
+
+ #wrapper nav.header ul.list-icon li div {
+    display: inline-block;
+ }
+
+#wrapper nav.header ul.list-icon li .box,
+#wrapper nav.header ul.list-icon li .box img {
+    width: 25px;
+    height: 25px;
+ }
+
+ #wrapper #container {
+     padding-top: 54px;
+ }
+
+ #wrapper #container main {
+     background-color: #fafafa;
+     height: 100%;
+ }
+
+ #wrapper #container main section {
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}
+ 
+ #wrapper #container main div.feeds {
+    max-width: 614px;
+    width: 100%;
+}
+
+#wrapper #container main div.feeds article {
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    flex-basis: 600px;
+    margin: 35px 0;
+}
+
+#wrapper #container main div.feeds article header {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#wrapper #container main div.feeds article header .box,
+#wrapper #container main div.feeds article header .box img {
+    width: 42px;
+    height: 42px;
+    margin: 0 10px 0 0;
+}
+
+#wrapper #container main div.feeds article .feeds-picture,
+#wrapper #container main div.feeds article .feeds-navigation,
+#wrapper #container main div.feeds article .feeds-likes,
+#wrapper #container main div.feeds article .feeds-content,
+#wrapper #container main div.feeds article .feeds-date,
+#wrapper #container main div.feeds article .feeds-comment,
+#wrapper #container main div.feeds article .feeds-comment-list {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+#wrapper #container main div.feeds article .feeds-picture {
+    width: 600px;
+    height: 600px;
+    align-items: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#wrapper #container main div.feeds article .feeds-picture img {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+#wrapper #container main div.feeds article .feeds-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#wrapper #container main div.feeds article .feeds-likes {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#wrapper #container main div.feeds article .feeds-likes .box,
+#wrapper #container main div.feeds article .feeds-likes .box img {
+    width: 22px;
+    height: 22px;
+    margin: 0 10px 0 0;
+}
+
+#wrapper #container main div.feeds article .feeds-comment {
+    line-height: 18px;
+    min-height: 56px;
+    border-top: 1px solid rgba(var(--ce3, 239,239,239),1);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#wrapper #container main div.feeds article .feeds-comment-list ul li {
+    position: relative;
+}
+
+#wrapper #container main div.feeds article .feeds-comment-list ul li .comment {
+    flex-grow: 1;
+    padding: 0 0 0 10px;   
+    overflow-wrap: break-word;
+}
+
+#wrapper #container main div.feeds article .feeds-comment-list ul li .button-list {  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#wrapper #container main div.feeds article .feeds-comment-list ul li .button-list button {  
+    width: 15px;
+    background: 0 0;
+    border: 0;
+}
+
+#wrapper #container main div.feeds article .feeds-comment-list ul li .button-list button:not(:last-of-type) {
+    margin-right: 3px;
+}
+
+#wrapper #container main div.feeds article .feeds-comment .emoji {
+    padding: 8px 16px 8px 0;
+}
+
+#wrapper #container main div.feeds article .feeds-comment textarea {
+    background: 0 0 ;
+    border: 0;
+    display: flex;
+    flex-grow: 1;
+    height: 18px;
+    max-height: 80px;
+    outline: 0;
+    width: 0;
+    resize: none;
+}
+
+#wrapper #container main div.feeds article .feeds-comment button {
+    background: 0 0;
+    border: 0;
+    color: rgba(var(--d69,0,149,246),1);
+    display: inline;
+    padding: 0 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* main-right */
+#wrapper #container main div.main-right {
+    height: 700px;
+    width: 300px;
+    max-width: 530px;
+    background-color: #fafafa;
+    padding: 41px 5px 10px;
+    /*position: fixed;
+    right: 30px;
+    top: 54px;
+    */
+}
+
+#wrapper #container main div.main-right header .box {
+    float: left;
+}
+
+#wrapper #container main div.main-right header .box,
+#wrapper #container main div.main-right header .box img {
+    width: 42px;
+    height: 42px;
+    margin: 0 10px 0 0;
+}
+
+#wrapper #container main div.main-right .main-right-story-box,
+#wrapper #container main div.main-right .main-right-friend-box {
+    width: 100%;
+    min-height: 185px;
+    max-height: 320px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    margin: 18px 0 0 0;
+    padding: 10px 12px;
+    position: relative;
+}
+
+#wrapper #container main div.main-right .main-right-story-box h3,
+#wrapper #container main div.main-right .main-right-friend-box h3 {
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+#wrapper #container main div.main-right .main-right-story-box div.all_view,
+#wrapper #container main div.main-right .main-right-friend-box div.all_view {
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#wrapper #container main div.main-right .main-right-story-box .box,
+#wrapper #container main div.main-right .main-right-story-box .box img,
+#wrapper #container main div.main-right .main-right-friend-box .box,
+#wrapper #container main div.main-right .main-right-friend-box .box img {
+    width: 42px;
+    height: 42px;
+    margin: 0 12px 0 0;
+}
+
+#wrapper #container main div.main-right .main-right-story-box .box,
+#wrapper #container main div.main-right .main-right-friend-box .box {
+    float: left;
+}
+
+#wrapper #container main div.main-right .main-right-story-box ul li,
+#wrapper #container main div.main-right .main-right-friend-box ul li {
+    clear: both;
+    padding: 7px 0;
+}
+
+#wrapper #container main div.main-right footer {
+    width: 100%;
+    color: #d0d0d0;  
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: none;
+    padding-top: 10px; 
+}
+
+#wrapper #container main div.main-right footer ul {
+    color: #d0d0d0;  
+}
+
+#wrapper #container main div.main-right footer ul li {
+    display: inline;
+}
+
+#wrapper #container main div.main-right footer ul li:not(:last-of-type)::after {
+    content: '\00B7';
+    margin: 0 .25em;
+}
+
+#wrapper #container main div.main-right footer .copylight {
+   padding-top: 20px; 
+   display: block;
+}
+
+.live-view {
+    width: 52px !important;
+    height: 52px !important;
+    border-style: solid;
+    border-color: red;
+    border-image-slice: 1;
+    border-radius: 70%;
+    border-spacing: 3px;
+    position: relative;
+}
+
+.live-view img {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-image-slice: 1;
+    border-radius: 70%;
+    border-spacing: 3px;
+}

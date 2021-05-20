@@ -1,0 +1,63 @@
+#login-wrap {
+    background-color: #fafafa;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#login-wrap .login-area {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #eee;
+    margin: auto;
+    width: 450px;
+    height: 480px;
+    padding: 30px;
+}
+
+#login-wrap .login-area h1.title {
+    /*margin:22px auto 25px;
+    background-repeat: no-repeat;
+    background-position: 0 -130px;*/
+    font-family: Billabong;
+    height: 51px;
+    width: 100%;
+    text-align: center;
+}
+
+#login-wrap .login-area input {
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1px solid #efefef;
+}
+
+#login-wrap .login-area button {
+    background-color: #0f76dc;
+    border: 1px solid #0566c7;
+    color: white;
+    margin: 15px 5px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#login-wrap .login-area button.inactive {
+    opacity: .3;
+    cursor: none;
+}
+
+#login-wrap .login-area button:hover {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+#login-wrap .login-area .find-passwd-str {
+    color: #003469;
+    cursor: pointer;
+    padding-top: 100px;
+    align-self: center;
+}
