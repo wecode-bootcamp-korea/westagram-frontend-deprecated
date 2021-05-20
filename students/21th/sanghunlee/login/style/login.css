@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+body, button, input, textarea {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height: 18px;
+    font-size: 14px;
+    color: #262626;
+}
+
+body {
+    height: 100%;
+}
+
+a, a:visited {
+    color: #00376b;
+    text-decoration: none;
+}
+
+article, div, footer, header, main, nav, section {
+    align-items: stretch;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-shrink: 0;
+    width: 100%;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+.contentsBox {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 32px auto 10px;
+    padding: 15px 0;
+    border: 1px solid #DBDBDB;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.logo {
+    font-family: lobster;
+    font-size: 40px;
+    display: flex;
+    width: 175px;
+    height: 51px;
+    margin: 22px auto 12px;
+}
+
+.formWrap {
+    margin-top: 24px;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: stretch;
+    margin: 0 40px 6px;
+    padding: 0;
+}
+
+.username, .password {
+    flex: 1 0 auto;
+    width: inherit;
+    line-height: 36px;
+    height: 36px;
+    color: rgba(var(--i1d,38,3s8,38),1);
+    border: 1px solid #dbdbdb;
+    background: rgba(250,250,250,1);
+    padding: 9px 8px 7px 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin: 0;
+    outline: 0;
+    font-size: 12px;
+    transform-origin: left;
+    white-space: nowrap;
+}
+
+.username::placeholder {
+    display: inline;
+    vertical-align: middle ;
+}
+
+.buttonBox {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: stretch;
+    margin: 14px 40px;
+}
+
+.loginButton {
+    width: auto;
+    background-color: #0095f6;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    opacity: 1;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+}
+
+.sepBox {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 10px 40px 18px;
+    padding: 0;
+    color: rgba(38,38,38,1);
+    border: 0 solid #000;
+}
+
+.beforePara, .afterPara {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(219,219,219,1);
+    height: 1px;
+    position: relative;
+    top: .45em;
+    align-items: stretch;
+    border: 0 solid #000;
+    margin: 0;
+    padding: 0;
+    content: " ";
+}
+
+.sepPara {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    align-items: stretch;
+    flex-direction: column;
+    color: rgba(142,142,142,1);
+}
+
+.facebookLoginBox {
+    display: flex;
+    margin: 8px 40px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+    padding: 0;
+}
+
+.facebookLoginButton {
+    border: 0;
+    color: rgba(0,149,246,1);
+    display: inline;
+    padding: 0;
+    background: 0 0;
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: auto;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.facebookLogo {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    top: 3px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    content: "";
+    background-image: url("../icon/facebook.png");
+}
+
+.facebookPara {
+    color: #385185;
+    cursor: pointer;
+    text-align: center;
+    font: inherit;
+}
+
+.forgottenPassward, .forgottenPassward:hover, .forgottenPassward:visited {
+    color: rgba(0,55,107,1);
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.subContentsBox {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font: inherit;
+    align-items: center;
+    color: #262626;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 auto 10px;
+    padding: 10px 0;
+}
+
+.acoountBox {
+    display: block;
+    color: #8e8e8e;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3px 0 -4px;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.checkAccount {
+    color: #262626;
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.join, .join:visited {
+    color: #0095f6;
+}
+
+.recommandBox {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #262626;
+    margin: 0 auto 10px;
+}
+
+.recommandPara {
+    width: 350px;
+    flex-direction: column;
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+}
+
+.recommandLinkBox {
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+    align-items: stretch;
+    display: flex;
+    flex-shrink: 0;
+    padding: 0;
+    color: #262626;
+}
+
+.recommandLink {
+    margin-right: 8px;
+}
+
+.recommandImg {
+    height: 40px;
+}
+
+footer {
+    background-color: #fafafa;
+    padding-left: 16px;
+    padding-right: 16px;
+    order: 5;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: stretch;
+    margin: 0;
+    color: #262626;
+}
+
+.footerInner {
+    margin-bottom: 52px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+
+
