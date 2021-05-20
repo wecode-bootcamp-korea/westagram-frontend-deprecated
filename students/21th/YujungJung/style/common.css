@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  box-sizing: border-box;
+  outline: 0px;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
