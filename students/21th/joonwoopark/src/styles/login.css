@@ -70,21 +70,21 @@ input {
   color: var(--divide_font_color);
 }
 
-.login-divide__line-first,
-.login-divide__line-second {
+.login-divide-line-first,
+.login-divide-line-second {
   width: 40%;
   border: 1px solid var(--divide_line_color);
 }
 
-.login-social__app,
-.login-forget__password {
+.login-social-app,
+.login-forget-password {
   margin: 1.5vmax;
   color: var(--facebook-text_color);
   font-weight: 600;
   text-decoration: none;
 }
 
-.login-forget__password {
+.login-forget-password {
   font-size: 1vmax;
   margin-bottom: 2.5vmin;
 }
@@ -119,7 +119,7 @@ input {
   margin-bottom: 3vmax;
 }
 
-.download-container__icons > img {
+.download-container-icons > img {
   width: 17vmax;
   cursor: pointer;
 }
@@ -134,15 +134,15 @@ footer {
   font-size: 1vmin;
 }
 
-.footer-upper__deck > span {
+.footer-upper-deck > span {
   margin-right: 2vw;
 }
 
-.footer-lower__deck {
+.footer-lower-deck {
   margin-top: 2vw;
 }
 
-.footer-lower__deck > select {
+.footer-lower-deck > select {
   margin-right: 2vw;
   border: 0;
   color: var(--footer_text_color);

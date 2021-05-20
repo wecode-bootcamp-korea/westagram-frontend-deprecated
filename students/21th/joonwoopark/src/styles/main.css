@@ -143,13 +143,13 @@ main {
   background-color: var(--background_color);
 }
 
-.feed-personal__info {
+.feed-personal-info {
   display: flex;
   align-items: center;
   padding: 2em 1em;
 }
 
-.feed-personal__info > span {
+.feed-personal-info > span {
   margin-right: 1em;
 }
 
@@ -397,7 +397,7 @@ main {
     background-color: var(--background_color);
   }
 
-  .feed-personal__info {
+  .feed-personal-info {
     border: 1px solid var(--section_border_color);
   }
 
