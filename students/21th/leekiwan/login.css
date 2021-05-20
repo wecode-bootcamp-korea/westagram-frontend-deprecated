@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    background-color: #fcfcfc;
+    height: 100%; 
+}
+
+.contentAll{
+    height: 100vh;
+}
+
+.loginBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #f1f3f5;
+}
+
+.inner{
+    width: 350px;
+    height: 380px;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+}
+
+.headerLogo {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.loginBox input{
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+    height: 37px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+}
+
+.loginBox input::placeholder{
+    font-size: 12px;
+    font-weight:100;
+}
+
+.loginBox input:focus {
+    outline:none;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+}
+
+.ordinaryLogin {
+    height: 37px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.unactivatedLoginColor {
+    background-color: #acd5e8;
+}
+
+.activatedLoginColor {
+    background-color: #00aeff;
+}
+
+.loginBox * {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inlineToBlock {
+    display: block;
+}
+
+
+.loginBox {
+    background-color: #fcfcfc;
+    padding: 10px auto;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+}
+
+
+.loginProblem {
+    background-color: #fcfcfc;
+    margin-top: 70px;
+    padding: 10px;
+    width: 100%;
+}
+
+.loginProblem p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    width: 160px; 
+}
+
+.loginProblem p a{
+    font-weight: 600;
+    color: #248ae3;
+    text-decoration: none;
+}
+
