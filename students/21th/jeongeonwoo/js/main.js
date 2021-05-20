@@ -1,7 +1,9 @@
 const mainRight = document.querySelector('#main-right');
-const inputComment = document.querySelectorAll('.article-bottom-input-commnet')
-const postingButton = document.querySelectorAll('.article-bottom-input-posting')
+const inputComment = document.querySelectorAll('.article-bottom-input-commnet');
+const postingButton = document.querySelectorAll('.article-bottom-input-posting');
 const commentText = document.querySelectorAll('.article-bottom-commnet.last');
+
+console.log(postingButton);
 
 //mainRight fixed move left
 mainRight.style.left = `${167 + (window.innerWidth / 2)}px`;

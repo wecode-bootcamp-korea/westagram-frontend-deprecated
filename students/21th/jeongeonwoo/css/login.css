@@ -9,17 +9,17 @@ main {
 
 .login-box {
     display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 380px;
-    border: 1px solid #ccc;
     padding: 10px 0;
     margin: 0 0 10px;
+    width: 350px;
+    height: 380px;
+    flex-direction: column;
+    border: 1px solid #ccc;
 }
 
 .title {
-    font-family: 'Lobster', cursive;
     margin: 22px auto 12px;
+    font-family: 'Lobster', cursive;
     font-size: 40px;
 }
 
@@ -28,25 +28,25 @@ main {
 }
 
 .input-boxes input {
-    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 36px;
+    padding: 9px 0 7px 8px;
     background: #fafafa;
+    color: #262626;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
-    color: #262626;
     font-size: 14px;
-    position: relative;
-    padding: 9px 0 7px 8px;
-    width: 100%;
     margin-top: 6px;
-    height: 36px;
+    align-items: center;
 }
 
 #login-button {
-    margin: 8px 40px;
     padding: 5px 9px;
+    margin: 8px 40px;
+    background-color: #0095f6;
     font-size: 14px;
     line-height: 18px;
-    background-color: #0095f6;
     border: 1px solid transparent;
     color: #fff;
     opacity: 1;
@@ -62,31 +62,31 @@ main {
 
 .progerss-bar {
     display: flex;
-    flex-direction: row;
     padding: 10px 40px 18px;
+    flex-direction: row;
     align-items: center;
 }
 
 .grogress-bar-left {
     height: 1px;
+    top: 0.45em;
     background-color: #dbdbdb;
     flex-grow: 1;
-    top: .45em;
 }
 
 .preogress-bar-text{
+    margin: 0 18px;
+    color: #8e8e8e;
     font-size: 16px;
     font-weight: 600;
     line-height: 15px;
-    margin: 0 18px;
-    color: #8e8e8e;
 }
 
 .grogress-bar-right {
-    background-color: #dbdbdb;
     height: 1px;
+    background-color: #dbdbdb;
+    top: 0.45em;
     flex-grow: 1;
-    top: .45em;
 }
 
 .sign-up-box {
@@ -96,20 +96,20 @@ main {
 button.facebook-button {
     margin: 8px 80px;
     height: 20px;
+    color: #385185;
     border: 0;
     background: transparent;
-    color: #385185;
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;   
 }
 
 #facebooke-login span img{
+    position: relative;
+    top: -2px;
     width: 16px;
     height: 16px;
     margin-right: 8px;
-    position: relative;
-    top: -2px;
 }
 
 button#forget-password {
@@ -118,24 +118,24 @@ button#forget-password {
 }
 
 .sign-up-box {
-    align-items: center;
+    padding: 10px 0;
     background-color: #fff;
     border: 1px solid #dbdbdb;
     border-radius: 1px;
-    padding: 10px 0;
     border: 1px solid #ccc;
+    align-items: center;
 }
 
 .sign-up-box div {
+    margin: 15px;
     color: #262626;
     font-size: 14px;
-    margin: 15px;
     text-align: center;
 }
 
 .sign-up-box div a{
-    font-weight: 600;
     color: #0095f6;
+    font-weight: 600;
 }
 
 .sign-up-box div a:hover {
