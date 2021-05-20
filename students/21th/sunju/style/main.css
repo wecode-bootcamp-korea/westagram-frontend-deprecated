@@ -1,0 +1,359 @@
+body{
+    background-color:#fafafa;
+}
+
+nav{
+    width:100%;
+    background-color: white;
+    position:fixed;
+    top:0;
+}
+
+.mainLogo,.searchWrapper,.iconWrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconWrapper img{
+    width:24px;
+}
+
+.navWrapper{
+    border-bottom: 1px solid gray;
+    height:56px;
+}
+
+.navBox{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 150px;
+    height: 100%;
+}
+
+.mainLogo span{
+    font-size:30px;
+    font-family: 'Lobster', cursive;
+}
+
+.search{
+    width: 200px;
+    height:25px;
+    text-align: center;
+    background-color: #fafafa;
+    border:1px solid #e0e0e0;
+    border-radius: 3px;
+}
+
+.searchWrapper i{
+    color:gray;
+    font-size:13px;
+}
+
+.iconWrapper{
+    width:200px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.iconWrapper .myProfile{
+    border-radius: 50%;
+}
+
+/*main*/
+
+
+.mainWrapper{
+    display:flex;
+    flex-direction: row;
+    margin: 100px 100px;
+}
+
+.main-left{
+    width: 800px;
+    margin:0 40px;
+}
+
+/*스토리부분*/
+
+.storyBox, article{
+    border: 1px solid #e0e0e0;
+}
+
+.storyBox{
+    margin-bottom:30px;
+    background-color:white;
+    border-radius:5px;
+}
+
+.storyBox img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px palevioletred;
+}
+
+.storyBox ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin:20px 20px 15px 20px;
+}
+
+.storyBox li{
+    text-align: center;
+}
+
+.storyBox i{
+    color:#e0e0e0;
+    margin-top:20px;
+}
+
+.storyBox p{
+    margin-top:5px;
+}
+
+
+
+/*피드부분*/
+article{
+    border-radius: 5px;
+}
+
+.feedUpper, .feedLower{
+    background-color:white;
+}
+
+.feedUpper{
+    display:flex;
+    flex-direction: row;
+    height: 60px;
+}
+
+.feedUpper img{
+    margin:18px;
+}
+
+.mainProfile{
+    width:24px;
+    height:24px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px palevioletred;
+}
+
+.feedProfile{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.feedUpper strong{
+    margin:18px 0;
+}
+
+.feedImage{
+    width:100%;
+}
+
+/*feedlower*/
+.contentWrapper, .iconSpace{
+    margin-left:15px;
+}
+
+.feedIcon{
+    display:flex;
+    justify-content:space-between;
+    padding-top:10px;
+}
+
+.icon-left{
+    display: inline-block;
+    width: 100px;
+}
+
+.iconSpace{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.icon-right{
+    display:inline-block;
+    margin-right:15px;
+}
+
+.contentWrapper .clickGood{
+    margin: 10px 0;
+    display:flex;
+    align-items: center;
+}
+
+.contentWrapper img{
+    width:18px;
+    border-radius: 50%;
+    margin-right:5px;
+}
+
+.myContent, .contentWrapper a, .firstComment, .secondComment{
+    margin-bottom:4px;
+}
+
+.contentWrapper a{
+    display:block;
+    text-decoration: none;
+    color:gray;
+}
+
+.contentWrapper p{
+    font-size: 11px;
+    margin: 10px 0;
+    color:gray;
+}
+
+form{
+    height:55px;
+    border-top:1px solid #e0e0e0;
+    display:flex;
+    flex-direction: row;
+}
+
+form img{
+    width:20px;
+    height:20px;
+    margin:18px 15px;
+}
+
+form .inputBox{
+    width:100%;
+    display:flex;
+}
+
+.inputBox input, .inputBox button{
+    margin:20px 0;
+}
+
+.inputBox input{
+    flex:9;
+    border:none;
+    font-size:15px;
+}
+
+.inputBox button{
+    flex:1;
+    border:none;
+    background-color: white;
+    color:#1182d9;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.inputBox button:hover{
+    cursor: pointer;
+}
+
+/*main-rigth*/
+.main-right{
+    width:420px;
+    margin-left:60px;
+}
+
+.profileBox{
+    display:flex;
+    flex-direction: row;
+}
+
+.profileBox .imageContainer{
+    display:inline-block;
+    flex:2;
+}
+
+.profileBox img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+.columnBox{
+    display:flex;
+    flex-direction: column;
+}
+
+.profileBox .columnBox{
+    flex:7;
+    padding-top:7px;
+}
+
+.profileBox button{
+    flex:1;
+    border:none;
+    background-color: #fafafa;
+    color:#1182d9;
+}
+
+.profileBox button:hover{
+    cursor: pointer;
+}
+
+.recommendBox{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0;
+}
+
+.recommendContent{
+    color: gray;
+}
+
+.recommendAll{
+    font-size:12px;
+}
+
+.followBox ul{
+    list-style: none;
+}
+
+.followBox li{
+    height:50px;
+    position:relative;
+}
+
+.followBox img{
+    width:24px;
+    height:24px;
+    margin-top:5px;
+    border-radius: 50%;
+    position:absolute;
+    left:0;
+}
+
+.followBox .columnBox{
+    position:absolute;
+    left:35px;
+}
+
+.columnBox span{
+    color:gray;
+    font-size:13px;
+}
+
+.followBox .followButton{
+    position:absolute;
+    right:0;
+    margin-top:5px;
+    color:#1182d9;
+    font-size:13px;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+footer span{
+    color:gray;
+    font-size:13px;
+}

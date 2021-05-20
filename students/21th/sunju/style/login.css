@@ -1,0 +1,73 @@
+html, body{
+    height : 100%;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+.login_container{
+    border:2px solid #dbdbdb;
+    width : 600px;
+    height: 650px;
+}
+
+header{
+    margin-top:30px;
+    margin-bottom:60px;
+}
+
+
+.mainLogo{
+    font-family: 'Lobster', cursive;
+    font-size: 75px;
+}
+
+main{
+    display:flex;
+    flex-direction :column;
+    justify-content:center;
+    align-items: center;
+}
+
+.id, .password{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color:rgba(242, 242, 242,0.6);
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width:350px;
+    height:45px;
+}
+
+.button:disabled{
+    background-color: #1182d9;
+    opacity:0.4;
+}
+
+.button:enabled{
+    cursor: pointer;
+}
+
+.button{
+    color: white;
+    background-color:#1182d9;
+    border:none;
+    border-radius: 5px;
+    width:350px;
+    height:40px;
+    margin-top:10px;
+    font-size:17px;
+}
+
+.findPassword{
+    margin: 100px;
+    padding: 100px;
+}
+
+.findPassword a{
+    text-decoration: none;
+    color:gray;
+}
+
