@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Westagram</title>
+</head>
+
+<body>
+    <nav>
+        <div class="title-container">
+            <h3>Westagram</h3>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="검색">
+            <div class="search-result-triangle"></div>
+            <section class="search-result">
+            </section>
+        </div>
+        <div class="nav-button-container">
+            <i class="fas fa-home"></i>
+            <i class="far fa-paper-plane"></i>
+            <i class="far fa-compass"></i>
+            <i class="far fa-heart"></i>
+            <section class="nav-personal-menu-container">
+                <span class="nav-button-profile"></span>
+                <div class="personal-menu-triangle"></div>
+                <article class="personal-menu">
+                    <div class="menu-profile">
+                        <i class="far fa-user-circle"></i>
+                        <span>프로필</span>
+                    </div>
+                    <div class="menu-bookmark">
+                        <i class="far fa-bookmark"></i>
+                        <span>북마크</span>
+                    </div>
+                    <div class="menu-setting">
+                        <i class="fas fa-cog"></i>
+                        <span>설정</span>
+                    </div>
+                    <div class="menu-convert">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>계정 전환</span>
+                    </div>
+                    <div class="menu-logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>로그아웃</span>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </nav>
+    <main>
+        <section class="left-container">
+            <div class="story-container"></div>
+            <div class="feeds-container">
+                <header class="feed-personal__info">
+                    <span class="personal-photo"></span>
+                    <span class="personal-id">front_devpark</span>
+                </header>
+                <section class="feed-photo-container">
+                    <img src="/src/images/feeds/jeju_blossom.jpeg" alt="feed photo" class="feed-photo">
+                </section>
+                <section class="feed-activity">
+                    <article class="activity-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                        <i class="far fa-bookmark"></i>
+                    </article>
+                    <article class="activity-good-number">좋아요 12개</article>
+                    <article class="activity-info">
+                        <span class="info-personal-id">front_devpark</span>
+                        <span class="info-personal-content">제주도 유채꽃 벚꽃</span>
+                    </article>
+                    <ul class="comment-list"></ul>
+                    <article class="activity-time">11시간 전</article>
+                </section>
+                <section class="input-container">
+                    <i class="far fa-grin"></i>
+                    <input type="text" class="input-comment" placeholder="댓글 달기...">
+                    <span class="input-submit">게시</span>
+                </section>
+            </div>
+        </section>
+        <aside class="right-container">
+            <section class="login-user-container">
+                <span class="user-picture">
+                    <img src="./src/images/profile.png" alt="user profile">
+                </span>
+                <span class="user-nickname">
+                    front_devpark
+                </span>
+                <a href="#" class="user-convert">전환</a>
+            </section>
+            <section class="user-recommend-container">
+                <header>
+                    <h3>회원님을 위한 추천</h3>
+                    <span>모두 보기</span>
+                </header>
+            </section>
+            <footer>
+                <div class="footer-upper-deck">
+                    <span>소개</span>
+                    <span>블로그</span>
+                    <span>채용 정보</span>
+                    <span>도움말</span>
+                    <span>API</span>
+                    <span>개인정보처리방침</span>
+                    <span>약관</span>
+                    <span>인기 계정</span>
+                    <span>해시태그</span>
+                    <span>위치</span>
+                </div>
+                <div class="footer-lower-deck">
+                    <span> 2021 Westagram from Wecode</span>
+                </div>
+            </footer>
+        </aside>
+    </main>
+    <script type="module" src="src/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+:root {
+  --background_color: #fafafa;
+  --comment_submit_color: #b3dffc;
+  --divide_line_color: #cfcfcf;
+  --divide_font_color: #b3b3b3;
+  --facebook-text_color: #385185;
+  --footer_text_color: #909090;
+  --header_color: #ffffff;
+  --home_button_color: #272727;
+  --input_color: #fafafa;
+  --input_border_color: #dfdfdf;
+  --login_button_color: #b2dffc;
+  --main_background_color: #efefef;
+  --nav_background_color: #fafafa;
+  --nav_input_border_color: #dbdbdb;
+  --nav_input_background_color: #fafafa;
+  --nav_input_text_color: #fafafa;
+  --nav_profile_color: #b3b3b3;
+  --recommend_follow_text_color: #0195f6;
+  --register-text_color: #0095f6;
+  --section_color: #ffffff;
+  --section_border_color: #dbdbdb;
+  --story_availiable_color: #e3538e;
+  --story_border_color: #de346c;
+  --title_color: RGB(38, 38, 38);
+  --upload_time_color: #939393;
+}

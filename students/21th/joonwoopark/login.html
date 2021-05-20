@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Westagram</title>
+</head>
+
+<body>
+    <main>
+        <section class="login-container">
+            <h3 class="login-title">Westagram</h3>
+            <input class="login-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" autofocus />
+            <input class="login-password" type="password" placeholder="비밀번호" autofocus />
+            <button class="login-button" disabled="disabled">로그인</button>
+            <div class="login-divide">
+                <div class="login-divide__line-first"></div>
+                <div class="login-divide__text">또는</div>
+                <div class="login-divide__line-second"></div>
+            </div>
+            <a href="#" class="login-social__app">
+                <i class="fab fa-facebook-square"></i>
+                Facebook으로 로그인
+            </a>
+            <a href="#" class="login-forget__password">비밀번호를 잊으셨나요?</a>
+        </section>
+        <section class="register-container">
+            <p>계정이 없으신가요?</p>
+            <a href="#">가입하기</a>
+        </section>
+        <section class="mobile-download-container">
+            <p>앱을 다운로드하세요.</p>
+            <div class="download-container__icons">
+                <img src="/src/images/download_at_apple.png" alt="app download at apple">
+                <img src="/src/images/download_at_google.png" alt="app download at google">
+            </div>
+        </section>
+        <footer>
+            <div class="footer-upper__deck">
+                <span>소개</span>
+                <span>블로그</span>
+                <span>채용 정보</span>
+                <span>도움말</span>
+                <span>API</span>
+                <span>개인정보처리방침</span>
+                <span>약관</span>
+                <span>인기 계정</span>
+                <span>해시태그</span>
+                <span>위치</span>
+            </div>
+            <div class="footer-lower__deck">
+                <select>
+                    <option value="한국어">한국어</option>
+                    <option value="영어">영어</option>
+                    <option value="스페인어">스페인어</option>
+                </select>
+                <span> 2021 Westagram from Wecode</span>
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="/src/js/login.js"></script>
+</body>
+
+</html>
