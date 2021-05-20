@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-div">
+        <div class="logo-link-img">
+          <a href="#">
+            <img src="./images/instagram.png" alt="instagram" />
+          </a>
+        </div>
+        <div class="logo-link-span">
+          <a href="#">
+            <span>westagram</span>
+          </a>
+        </div>
+      </div>
+      <div class="search-div">
+        <div class="search-input">
+          <input type="text" class="searchInput" placeholder="검색" />
+        </div>
+        <div class="search-result" style="visibility: hidden"></div>
+      </div>
+      <div class="link-img-div">
+        <div class="explore-link-img">
+          <a href="#"
+            ><img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
+              alt="explore"
+            />
+          </a>
+        </div>
+        <div class="heart-link-img">
+          <a href="#">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+              alt="heart"
+            />
+          </a>
+        </div>
+        <div class="profile-link-img">
+          <a href="#">
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+              alt="profile"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="feeds">
+        <div class="feeds-user-profile">
+          <div class="user-profile">
+            <div class="user-profile-link-middie-img">
+              <a href="#">
+                <img src="./images/man.jpeg" />
+              </a>
+            </div>
+            <div class="user-profile-link-middie-span">
+              <a href="#">
+                <span class="user-name">게시자</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="feeds-user-post">
+          <div class="user-post">
+            <div class="user-post-img">
+              <img src="./images/img2.jpeg" />
+            </div>
+          </div>
+          <div class="user-post">
+            <div class="user-post-comment-button-list">
+              <div class="user-post-feedback-button-list">
+                <div class="heart-button">
+                  <a href="#">
+                    <svg
+                      aria-label="좋아요 취소"
+                      fill="#ed4956"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="comment-button">
+                  <a href="#">
+                    <svg
+                      aria-label="댓글 달기"
+                      fill="#262626"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <div class="share-button">
+                  <a href="#">
+                    <svg
+                      aria-label="게시물 공유"
+                      fill="#262626"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="user-post-feedback-button-list">
+                <div class="save-button">
+                  <a href="#">
+                    <svg
+                      aria-label="저장"
+                      fill="#262626"
+                      height="24"
+                      viewBox="0 0 48 48"
+                      width="24"
+                    >
+                      <path
+                        d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="user-post-comment-list">
+              <div class="user-profile">
+                <div class="user-profile-link-small-img">
+                  <a href="#">
+                    <img src="./images/man.jpeg" />
+                  </a>
+                </div>
+                <div class="user-profile-link-small-span">
+                  <a href="#">
+                    <span class="user-name">좋아요 사용자</span>
+                  </a>
+                </div>
+                <div class="user-small-span">
+                  <span>
+                    님
+                    <div class="user-profile-link-small-span">
+                      <a href="#">
+                        <span class="user-name">외 18명</span>
+                      </a>
+                    </div>
+                    좋아합니다.
+                  </span>
+                </div>
+              </div>
+              <div class="user-post-info">
+                <div class="user-small-span">
+                  <span class="user-profile-link-small-span">
+                    <a href="#">
+                      <span class="user-name">게시자</span>
+                    </a>
+                  </span>
+                  <span> 내용내용내용내용내용🪴 </span>
+                </div>
+              </div>
+              <ul class="comment-list"></ul>
+            </div>
+            <div class="user-post-comment">
+              <div class="smile">
+                <svg
+                  aria-label="이모티콘"
+                  fill="#262626"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  width="24"
+                >
+                  <path
+                    d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"
+                  ></path>
+                  <path
+                    d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="user-post-comment-input">
+                <input
+                  type="text"
+                  name="comment"
+                  placeholder="댓글 달기..."
+                  class="comment"
+                />
+              </div>
+              <div>
+                <button class="comment-posting-button" disabled>게시</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
