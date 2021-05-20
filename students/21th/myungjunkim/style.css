@@ -1,0 +1,14 @@
+@import "/css/reset.css";
+@import "/css/screens/login.css";
+@import "/css/screens/main.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.not-disabled {
+  background-color: #0295f6;
+  cursor: pointer;
+}
