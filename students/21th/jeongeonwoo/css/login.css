@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 380px;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    margin: 0 0 10px;
+}
+
+.title {
+    font-family: 'Lobster', cursive;
+    margin: 22px auto 12px;
+    font-size: 40px;
+}
+
+.input-boxes {
+    margin: 24px 40px 8px 40px;
+}
+
+.input-boxes input {
+    align-items: center;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    color: #262626;
+    font-size: 14px;
+    position: relative;
+    padding: 9px 0 7px 8px;
+    width: 100%;
+    margin-top: 6px;
+    height: 36px;
+}
+
+#login-button {
+    margin: 8px 40px;
+    padding: 5px 9px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #0095f6;
+    border: 1px solid transparent;
+    color: #fff;
+    opacity: 1;
+    border-radius: 4px;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+#login-button:disabled {
+    background-color: #0095f6;
+    opacity: 0.3;
+}
+
+.progerss-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 40px 18px;
+    align-items: center;
+}
+
+.grogress-bar-left {
+    height: 1px;
+    background-color: #dbdbdb;
+    flex-grow: 1;
+    top: .45em;
+}
+
+.preogress-bar-text{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    color: #8e8e8e;
+}
+
+.grogress-bar-right {
+    background-color: #dbdbdb;
+    height: 1px;
+    flex-grow: 1;
+    top: .45em;
+}
+
+.sign-up-box {
+    position: relative;
+}
+
+button.facebook-button {
+    margin: 8px 80px;
+    height: 20px;
+    border: 0;
+    background: transparent;
+    color: #385185;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;   
+}
+
+#facebooke-login span img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    position: relative;
+    top: -2px;
+}
+
+button#forget-password {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.sign-up-box {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.sign-up-box div {
+    color: #262626;
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.sign-up-box div a{
+    font-weight: 600;
+    color: #0095f6;
+}
+
+.sign-up-box div a:hover {
+    text-decoration: none;
+}
