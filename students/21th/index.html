@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Document</title>
+</head>
+<body>
+    <div id="login-page-container">
+        <header class="login-title">
+            <h1>Westagram</h1>
+        </header>
+        <main class="login-page">
+            <div class="login-form">
+                <input type="text" class="login-input-id" placeholder="전화번호, 사용자 이름 또는 이메일">
+                <input type="number" class="login-input-password" placeholder="비밀번호">
+                <button class="login-button">로그인</button>
+            </div>
+        </main>
+        <footer class="forgot-password">
+            <a href="#">비밀번호를 잊으셨나요?</a>
+        </footer>
+    </div>
+    <div id="main-page-container" style="display: none;">
+        <nav>
+           <div class="home">
+               <a href="#" class="home-icon"></a>
+               <div class="home-bar">|</div>
+               <a href="#" class="home-title">Westagram</a>
+           </div>
+           <form class="search-input">
+               <input type="text">
+               <button type="reset">
+                   <span>X</span>
+               </button>
+               <i class="fas fa-search"></i> 
+           </form>
+           <div class="menu-icon">
+               <div></div>
+               <div></div>
+               <div></div>
+           </div>  
+        </nav>
+        <main>
+            <div class="feeds">
+                <article>
+                    <div class="feeds-title">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="profile">
+                        <span class="feeds-title-id">canon-mj</span>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="feeds-image">
+                        <img src="http://cdn.sheknows.com/articles/2013/05/woman-baking-in-kitchen-vert.jpg" alt="baking">
+                    </div>
+                    <div class="feeds-tab">
+                        <i class="fas fa-heart fa-lg"></i>
+                        <i class="far fa-comment fa-lg"></i>
+                        <div class='upload'></div>
+                        <i class="far fa-bookmark fa-lg"></i>
+                    </div>
+                    <div class="feeds-like">
+                        <img src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg" alt="profile">
+                        <div><span>aineworld</span>님 외 <span>10명</span>이 좋아합니다</div>
+                    </div>
+                    <div class="feeds-description">
+                        <span>canon_mj</span>
+                        <div>위워크에서 진행한 베이킹 클래스... <span>더 보기</span></div>
+                    </div>
+                    <div class="feeds-comment">
+                        <ul class="feeds-comment-lists"></ul>
+                    </div>
+                    <form class="feeds-comment-form">
+                        <input type="text" placeholder="댓글 달기...">
+                        <button>게시</button>
+                    </form>
+                </article>
+            </div>
+            <div class="main-right">
+                <div class="wecode">
+                    <div class="wecode-profile">
+                        <img src="https://media.vlpt.us/images/inyong_pang/post/f0ea605d-c2d9-460c-aedc-a0ec77e6759f/wecode.png" alt="profile">
+                    </div>
+                    <div class="wecode-description">
+                        <span>wecode_bootcamp</span>
+                        <span>WeCode | 위코드</span>
+                    </div> 
+                </div>
+                <div class="story">
+                    <div class="story-header">
+                        <span>스토리</span>
+                        <span>모두 보기</span>
+                    </div>
+                    <div class="story-lists">
+                        <div class="story-list">
+                            <div class="story-profile">
+                                <img src="http://www.mandysam.com/img/random.jpg" alt="profile">
+                            </div>
+                            <div class="story-description">
+                                <span>_yum_s</span>
+                                <span>16분 전</span>
+                            </div>
+                        </div>
+                        <div class="story-list">
+                            <div class="story-profile">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxD9usOwVzRuZI3KTmkwoV9MIUfkgpNvJ2Mu_YRRyIOEyXm_5p3K3jXuZuluDoUybt-8&usqp=CAU" alt="profile">
+                            </div>
+                            <div class="story-description"> 
+                                <span>drink_eat_drink</span>
+                                <span>3시간 전</span>
+                            </div>
+                        </div>
+                        <div class="story-list">
+                            <div class="story-profile">
+                                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Among-Us-Random-Name-Generator.jpg" alt="profile">
+                            </div>
+                            <div class="story-description">
+                                <span>hyukyc</span>
+                                <span>20시간 전</span>
+                            </div>
+                        </div>
+                        <div class="story-list">
+                            <div class="story-profile">
+                                <img src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg" alt="profile">
+                            </div>
+                            <div class="story-description">
+                                <span>jminkeek</span>
+                                <span>2일 전</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div class="recommend-header">
+                        <span>회원님을 위한 추천</span>
+                        <span>모두 보기</span>
+                    </div>
+                    <div class="recommend-lists">
+                        <div class="recommend-list">
+                            <div class="recommend-profile">
+                                <img src="https://picsum.photos/id/237/536/354" alt="profile">
+                            </div>
+                            <div class="recommend-description">
+                                <span>joaaaaahye</span>
+                                <span>_legend_a님 외 2명이...</span>
+                            </div>
+                            <div class="recommend-follow">
+                                <span>팔로우</span>
+                            </div>
+                        </div>
+                        <div class="recommend-list">
+                            <div class="recommend-profile">
+                                <img src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg" alt="profile">
+                            </div>
+                            <div class="recommend-description">
+                                <span>rampart81</span>
+                                <span>ringo.in.seoul님 외 12...</span>
+                            </div>
+                            <div class="recommend-follow">
+                                <span>팔로우</span>
+                            </div>
+                        </div>
+                        <div class="recommend-list">
+                            <div class="recommend-profile">
+                                <img src="https://i.pinimg.com/originals/12/46/9c/12469c8a50bcb6e344589c43eb7db72c.jpg" alt="profile">
+                            </div>
+                            <div class="recommend-description">
+                                <span>shawnjjoo</span>
+                                <span>jimmylee1220님 외 1...</span>
+                            </div>
+                            <div class="recommend-follow">
+                                <span>팔로우</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer><span>instagram 정보 · 지원 · 홍보 센터 · API · 채용 정보 · 개인정보처리방침 · 약관 · 디렉터리 · 프로필 · 해시태그 · 언어 <br/> © 2019 INSTAGRAM</span></footer>
+            </div>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/8047cee532.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

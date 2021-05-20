@@ -1,0 +1,501 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#login-page-container {
+  max-width: 400px;
+  min-width: 300px;
+  max-height: 500px;
+  min-height: 400px;
+  width: 80%;
+  height: 45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+}
+
+.login-title {
+  font-family: "Lobster", cursive;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 5%;
+}
+
+.login-page {
+  width: 100%;
+}
+
+.login-form {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #efefef;
+}
+
+.login-form button {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #c5e1fc;
+  cursor: pointer;
+}
+
+.forgot-password {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-password a {
+  font-size: 15px;
+  color: #1a365b;
+}
+
+#main-page-container {
+  width: 100%;
+  height: 100%;
+}
+
+#main-page-container nav {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.home {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home-icon {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  background-image: url("https://w7.pngwing.com/pngs/674/221/png-transparent-logo-computer-icons-organization-color-business-instagram-miscellaneous-company-service-thumbnail.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.home-bar {
+  font-size: 35px;
+  font-weight: lighter;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.home-title {
+  font-family: "Lobster", cursive;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  color: black;
+}
+
+.search-input {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+}
+
+.search-input input {
+  width: 100%;
+  height: 30px;
+  padding: 0 35px;
+  border: 1px solid #e6e6e6;
+}
+
+.search-input button {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 10px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input button span {
+  font-size: 10px;
+}
+
+.search-input i {
+  position: absolute;
+  color: grey;
+  left: 10px;
+}
+
+.menu-icon {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-icon div {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  margin-left: 20px;
+}
+
+.menu-icon div:nth-child(1) {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu-icon div:nth-child(2) {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu-icon div:nth-child(3) {
+  background-image: url("https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#main-page-container main {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.feeds {
+  width: 60%;
+  max-width: 600px;
+  margin-left: 20px;
+  border: 1px solid #e6e6e6;
+}
+
+.feeds-title {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.feeds-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.feeds-title i {
+  position: absolute;
+  right: 20px;
+}
+
+.feeds-image img {
+  width: 100%;
+  height: 500px;
+}
+
+.feeds-tab {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.feeds-tab i {
+  margin-left: 10px;
+  color: grey;
+}
+
+.feeds-tab i:nth-child(1) {
+  color: tomato;
+}
+
+.feeds-tab i:nth-child(4) {
+  position: absolute;
+  right: 20px;
+}
+
+.feeds-tab .upload {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-image: url("./upload.png");
+  background-size: cover;
+  color: grey;
+}
+
+.feeds-like {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.feeds-like img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.feeds-like div span {
+  font-weight: bold;
+}
+
+.feeds-description {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  display: flex;
+}
+
+.feeds-description span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.feeds-description div span {
+  color: #9c9c9c;
+}
+
+.feeds-comment {
+  margin-left: 10px;
+  font-size: 15px;
+  position: relative;
+}
+
+.feeds-comment-name {
+  font-weight: bold;
+}
+
+.feeds-comment-time {
+  color: #9c9c9c;
+}
+
+.feeds-comment-heart {
+  position: absolute;
+  right: 20px;
+  color: grey;
+}
+
+.feeds-comment-form {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-top: 1px solid #e6e6e6;
+}
+
+.feeds-comment-form input {
+  width: 90%;
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+}
+
+.feeds-comment-form button {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  right: 5px;
+  font-size: 15px;
+  border: none;
+  background: none;
+  color: #c5e1fc;
+}
+
+.main-right {
+  width: 300px;
+  margin-left: 30px;
+}
+
+.wecode {
+  display: flex;
+  align-items: center;
+}
+
+.wecode-profile {
+  width: 50px;
+  height: 50px;
+}
+
+.wecode-profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.wecode-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.wecode-description span:nth-child(2) {
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+.story {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.story-header span:nth-child(1) {
+  color: #aaaaaa;
+}
+
+.story-profile {
+  width: 45px;
+  height: 45px;
+}
+
+.story-profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid tomato;
+  padding: 2px;
+}
+
+.story-list {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.story-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.story-description span:nth-child(2) {
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+.recommend {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.recommend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommend-header span:nth-child(1) {
+  color: #aaaaaa;
+}
+
+.recommend-profile {
+  width: 45px;
+  height: 45px;
+}
+
+.recommend-profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid tomato;
+  padding: 2px;
+}
+
+.recommend-list {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.recommend-description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.recommend-description span:nth-child(2) {
+  color: #aaaaaa;
+  font-weight: normal;
+}
+
+.recommend-follow {
+  color: dodgerblue;
+  margin-left: 10px;
+}
+
+.main-right footer {
+  margin-top: 20px;
+  color: #cbcbcb;
+}
