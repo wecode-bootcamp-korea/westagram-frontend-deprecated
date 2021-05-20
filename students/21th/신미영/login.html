@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/common.css" />
+        <link rel="stylesheet" href="./styles/login.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+        <title>Westagram - Log In</title>
+    </head>
+    <body>
+        <section>
+            <div class="mainImages">
+                <img src="./images/login/smartphone.png" alt="smartphone image"/>
+                <img class="thumbnailImage" src="./images/login/rolling-1.jpeg" alt="instagram thumbnail image" />
+            </div>
+        </section>
+        <section class="contents">
+            <article class="logInBox">
+                <h1 class="title">Westagram</h1>
+                <div class="accountInput" id="idBox">
+                    <input id="idInput" type="text" required />
+                    <label class="placeholder">Phone number, username, or email</label>
+                </div>
+                <div class="accountInput">
+                    <input id="passwordInput" type="password" />
+                    <label class="placeholder">Password</label>
+                    <button class="toggleButton">Show</button>
+                </div>
+                <button class="logInButton" disabled="disabled">Log in</button>
+                <div class="or">
+                    <div class="orLine"></div>
+                    <div class="orText">OR</div>
+                    <div class="orLine"></div>
+                </div>
+                <div class="logInFacebook">
+                    <a href="#">
+                        <img src="./images/login/facebook.png" alt="facebook icon" />
+                        <p>Log in with Facebook</p>
+                    </a>
+                    </div>
+                <div class="forgotPassword">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </article>
+            <article class="signUpBox">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </article>
+            <article class="getTheApp">
+                <p>Get the app.</p>
+            </article>
+            <article>
+                <a href="#"><img class="appDownloadButton" src="./images/login/appstore-button.png" alt="app store button" /></a>
+                <a href="#"><img class="appDownloadButton" src="./images/login/googleplay-button.png" alt="googleplay button" /></a>
+            </article>
+        </section>
+        <script src="./js/login.js"></script>
+    </body>
+</html>

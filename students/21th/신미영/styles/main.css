@@ -1,0 +1,399 @@
+body {
+    flex-direction: column;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 54px;
+    padding: 0 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+nav div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+}
+
+.search {
+    display: none;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav div .nav-icons img {
+    width: 22px;
+    height: 22px;
+    margin: 0 10px;
+}
+
+#myProfile-img {
+    border-radius: 50%;
+}
+
+section {
+    position: fixed;
+    top: 54px;
+}
+
+article, aside{
+    margin: 15px;
+}
+
+.stories {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    padding: 0 10px;
+}
+
+.stories .story {
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.story .storyProfile {
+    width: 60px;
+    height: 60px;
+    margin-top: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+.story .storyBg {
+    width: 65px;
+    height: 65px;
+    margin: 3px;
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+    border-radius: 50%;
+}
+
+.feeds {
+    width: 100vw;
+    border-top: 1px solid rgb(230, 230, 230);
+}
+
+.feeds div {
+    width: 100%;
+}
+
+.feed-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.feed-head #account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feed-head #account div {
+    padding-left: 10px;
+}
+
+.feed-head img {
+    width: 32px;
+    height: 32px;;
+    border-radius: 50%;
+}
+
+.feed-head #account-more {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.feed-picture {
+    max-width: 100%;
+}
+
+.feed-reaction {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.feed-reaction img {
+    width: 22px;
+    margin: 0 5px 3px 5px;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float: right;
+}
+
+.feedInfo {
+    padding: 0 20px;
+}
+
+.feedInfo-likes {
+    clear: both;
+    font-weight: bolder;
+}
+
+.feedInfo-date {
+    color: rgb(145, 145, 145);
+    font-size: 11px;
+}
+
+.feedInfo-commentsList ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.feedInfo-commentsList ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentId {
+    font-weight: bolder;
+}
+
+.commentText {
+    flex: 2;
+    padding-left: 10px;
+}
+
+.commentHeartIcon img{
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+.main-right {
+    display: none;
+}
+
+.feed-comment {
+    display: none;
+}
+
+@media screen and (min-width: 501px) {
+    .search {
+        display: flex;
+        flex-shrink: 0;
+        position: relative;
+        width: 215px;
+        height: 28px;
+        border: 1px solid rgb(230, 230, 230);
+        border-radius: 3px;
+        background-color: rgb(250, 250, 250);
+        font-size: 15px;
+    }
+
+    .search input {
+        width: 95%;
+    }
+
+    .search input::placeholder {
+        color:rgb(145, 145, 145);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 100;
+        text-indent: 20px;
+    }
+
+    .search i {
+        position: absolute;
+        left: 45px;
+        margin-left: 25px;
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width: 512px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav div {
+        display: flex;
+        justify-content: center;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stories {
+        height: 110px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(230, 230, 230);
+        background-color: #ffffff;
+    }
+
+    .feeds {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        border: 1px solid rgb(230, 230, 230);
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 736px) {
+    .feed-comment {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px;
+        border-top: 1px solid rgb(230, 230, 230);; 
+    }
+
+    .feed-comment input {
+        width: 90%;
+        background-color: #ffffff;
+        font-size: 15px;
+    }
+
+    .feed-comment img {
+        width: 22px;
+        margin-right: 15px;
+    }
+
+    .feed-comment button {
+        background-color: #ffffff;
+        font-size: 15px;
+    }
+
+    .postButtonOn {
+        color: #4D95F6;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    nav div {
+        width: 920px;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-right {
+        display: inline-block;
+        width: 295px;
+    }
+
+    .myAccount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 0;
+    }
+
+    .myAccount div {
+        font-weight: 700;
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .myAccount-id {
+        width: 170px;
+        font-weight: bolder;
+    }
+
+    .sideButton {
+        color: #4d95f6;
+        background-color: rgb(250, 250, 250);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .myAccount img {
+        width: 56px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .suggestions div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .suggestionTitle {
+        display: flex;
+        margin-top: 35px;
+        color: rgb(145, 145, 145);
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+
+    .suggestionTitle div {
+        flex-grow: 1;
+    }
+
+    .suggestionTitle button {
+        color: black;
+        background-color: rgb(250, 250, 250);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .suggestedList {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 0;
+    }
+    .suggestedList img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .suggestedList div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+
+    .suggestedList div div{
+        margin: 0;
+    }
+
+    .suggestedList div .suggestedId {
+        font-weight: 700;
+    }
+
+    .suggestedList div .suggestedText {
+        color: rgb(145, 145, 145);
+    }
+}

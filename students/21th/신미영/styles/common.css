@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(250, 250, 250);
+    font-size: 15px;
+}
+
+article {
+    margin: 0;
+}
+
+input {
+    background-color: rgb(250, 250, 250);
+    border: none;
+    outline: none;
+}
+
+button {
+    color: #B2DFFC;
+    border: none;
+}

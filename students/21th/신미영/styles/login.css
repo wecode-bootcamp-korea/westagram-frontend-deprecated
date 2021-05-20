@@ -1,0 +1,214 @@
+.mainImages {
+    position: relative;
+}
+
+.thumbnailImage {
+    position: absolute;
+    top: 100px;
+    left: 151px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logInBox {
+    width: 350px;
+    margin: 0 0 10px;
+    padding: 20px 45px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+.accountInput {
+    position: relative;
+    width: 258px;
+    height: 36px;
+    background-color: rgb(250, 250, 250);
+    margin: 5px auto;
+}
+
+.accountInput #idInput,
+.accountInput #passwordInput  {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 95%;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 258px;
+    height: 35px;
+    padding-top: 8px;
+    padding-left: 5px;
+    color: rgb(168, 168, 168);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+    text-align: left;
+    cursor: text;
+}
+
+#idInput:focus ~ .placeholder,
+#passwordInput:focus ~ .placeholder {
+    border: 1px solid rgb(131, 131, 131);
+}
+
+.toggleButton {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    display: none;
+    color: black;
+    background-color: rgb(250, 250, 250);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.toggleButtonOn {
+    display: inline-block;
+}
+
+.logInButton {
+    width: 258px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: white;
+    background-color: #B2DFFC;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
+
+.logInButtonOn {
+    background-color: #4D95F6;
+    cursor: pointer;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.orLine {
+   width: 45%;
+   border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.orText {
+   margin: 0 15px;
+   color: rgb(168, 168, 168);
+   font-weight: 800; 
+}
+
+.logInFacebook a  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.logInFacebook a p {
+    margin-left: 7px;
+    color: #385185;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.logInFacebook img {
+   width: 18px;
+   padding-bottom: 4px;
+}
+
+.inputAlert {
+    padding-bottom: 15px;
+    color: red;
+}
+
+.forgotPassword a{
+    margin: 10px 0px;
+    color: rgb(27, 55, 107);
+    text-decoration: none;
+}
+
+.signUpBox {
+    width: 350px;
+    height: 63px;
+    padding-top: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    font-size: 1em;
+    text-align: center;
+}
+
+.signUpBox p a {
+    color: #4D95F6;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.getTheApp p{
+    margin: 20px 0;
+}
+
+.appDownloadButton {
+    width: 134px;
+}
+
+@media screen and (max-width: 875px) {
+    .mainImages {
+        display: none;
+    }
+}
+
+.filledLabel {
+    animation-name: inputLabelChange;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+}
+  
+@keyframes inputLabelChange {
+    0% {
+        padding-top: 8px;
+        font-size: 1em;
+    }
+    100% {
+        padding-top: 3px;
+        font-size: 0.8em;
+    }
+}
+
+.filledInput {
+    animation-name: inputChange;
+    animation-duration:100ms;
+    animation-fill-mode: both;
+}
+  
+@keyframes inputChange {
+    0% {
+        top: 10px;
+    }
+    100% {
+        top: 15px;
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/common.css" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <title>Westagram</title>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <div class="title">Westagram</div>
+                <div class="search">
+                    <i class="fas fa-search fa-sm search-icon"></i>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <div class="nav-icons">
+                    <img src="./images/main/icon/home_black.png" alt="home icon" />
+                    <img src="./images/main/icon/send.png" alt="send icon"/>
+                    <img src="./images/main/icon/compass.png" alt="compass icon"/>
+                    <img src="./images/main/icon/heart.png" alt="heart icon" />
+                    <img id="myProfile-img" src="./images/main/profile/my-profile.jpeg" alt="my profile image"/>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <article>
+                <div class="stories">
+                    <div class="story">
+                        <div class="storyBg">
+                            <img class="storyProfile" src="./images/main/profile/dlwlrma-profile.jpeg" alt="dlwlrma profile image" />
+                        </div>
+                        <div class="storyId">dlwlrma</div>
+                    </div>
+                </div>
+                <div class="feeds">
+                    <div class="feed-head">
+                        <div id="account">
+                            <img src="./images/main/profile/my-profile.jpeg" alt="my profile image" />
+                            <div>my_sshin</div>
+                        </div>
+                        <div id="account-more">・・・</div>
+                    </div>
+                    <div class="feed-body">
+                        <img class="feed-picture" src="./images/main/feed-image.JPG" alt="feed picture" />
+                        <div class="feed-reaction">
+                            <img class="float-left" src="./images/main/icon/heart.png" alt="heart icon" />
+                            <img class="float-left" src="./images/main/icon/chat.png" alt="chat icon" />
+                            <img class="float-left" src="./images/main/icon/send.png" alt="send icon" />
+                            <img class="float-right" src="./images/main/icon/bookmark_white.png" alt="bookmark icon" />
+                        </div>
+                        <div class="feedInfo">
+                            <div class="feedInfo-likes">
+                                15 likes
+                            </div>
+                            <div class="feedInfo-contents">
+                                <span class="myAccount-id">my_sshin</span> 어딜가나 그림같은 카페
+                            </div>
+                            <div class="feedInfo-commentsList">
+                                <ul>
+                                    <li>
+                                        <span class="commentId">xsnxmxik </span>
+                                        <sapn class="commentText">너무 예뻐</sapn>
+                                        <span class="commentDeleteButton">delete</span>
+                                        <span class="commentHeartIcon"><img src="./images/main/icon/heart.png" alt="heart icon"/></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="feedInfo-date">
+                                42 MINUTES AGO
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-comment">
+                        <img src="./images/main/icon/smile.png" alt="emoticon button" />
+                        <input id="commentInput" type="text" placeholder="Add a comment..."/>
+                        <button id="postButton" disabled="disabled">Post</button>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="main-right">
+                    <div class="myAccount">
+                        <img src="./images/main/profile/my-profile.jpeg" alt="my profile image" />
+                        <div class="myAccount-id">my_sshin</div>
+                        <button class="sideButton">Swicth</button>
+                    </div>
+                    <div class="suggestions">
+                        <div class="suggestionTitle">
+                            <div>Suggestions For You</div>
+                            <button>See All</button>
+                        </div>
+                        <div class="suggestedList">
+                            <img src="./images/main/profile/my-profile.jpeg" alt="suggested User's profile image" />
+                            <div>
+                                <div class="suggestedId">my_sshin</div>
+                                <div class="suggestedText">Suggested for you</div>
+                            </div>
+                            <button class="sideButton">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    <script src="./js/main.js"></script>
+    </body>
+</html>
