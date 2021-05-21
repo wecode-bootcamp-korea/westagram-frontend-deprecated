@@ -1,5 +1,3 @@
-console.log("123");
-
 const postButton = document.querySelector(".buttonBox");
 const commmentInput = document.querySelector(".inputBox");
 const commentsList = document.querySelector(".commentList");

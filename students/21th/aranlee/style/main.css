@@ -1,41 +1,31 @@
 
 .header{
-display: flex;
-align-items: center;
-justify-content: space-around;
-background-color: #fff;
-border-bottom: 1px solid #8e8e8e;
-height: 54px;
-
-
-
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-bottom: 1px solid #8e8e8e;
+    height: 54px;
 }
 .leftSide, .rightSide,.middleSide{
     display: flex;
-   
 }
 .icon{
     padding: 0;
     margin: 0;
-   
 }
 .leftIcon{
     height: 50%;
-
 }
 
 .rightIcon, .imageIcon{
     height: 30px;
     margin: 0 0 25px 10px;
-
 }
-
-
 
 .rightSide{
     margin-top: 30px;
 }
-
 
 .inputSearch{
     height: 28px;
@@ -49,9 +39,7 @@ height: 54px;
     left: 0;
     background-color: #FFFFFF;
     text-align: center;
-  
 }
-
 
 .position{
     position: relative;
@@ -59,14 +47,12 @@ height: 54px;
 
 .search{
     position: absolute;
-    
-
 }
 .searchWords{
-
     top: 100px;
     left: 100px;
 }
+
 .westagramLogo{
     padding:0;
     margin-top :40px;
@@ -92,37 +78,27 @@ height: 54px;
     justify-content: space-around;    
 }
 
-
 .profile{
-height: 22px;
-border-radius: 50%;
+    height: 22px;
+    border-radius: 50%;
 }
+
 .uploadedPicture{
-    
     position: absolute;
-    top: 100px;
     height: 767.5px;
     width: 614px;
+    top: 100px;
 }
 aside{
-
     display: flex;
     background-color: gray;
-
-    
 }
-
-
 
 .side{
-    
-    margin-left: 700px;
     margin-top: 100px;
-    flex-direction: column;
-    
+    margin-left: 700px;
+    flex-direction: column;    
 }
-
-
 
 .body{
     display: flex;
@@ -130,31 +106,26 @@ aside{
 }
 
 
-
 .feedBottom {
-margin-top: 700px;
- position: absolute;
+    position: absolute;
+    margin-top: 700px;
 }
 
 .feed_article{
+    position: absolute;
     margin-top: 900px;
- position: absolute;
 }
 
 .inputContainer{
-
-  margin-top: 900px;
- position: absolute;
+    position: absolute;
+    margin-top: 900px;   
 }
 
 .search{
-    position: absolute;
-       bottom: 5px;
+    bottom: 5px;
     left: 85px;
+    position: absolute;
     color: #8e8e8e;
-
-    
-
 }
 
 li{
