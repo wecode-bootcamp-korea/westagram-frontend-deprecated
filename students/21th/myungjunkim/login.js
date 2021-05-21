@@ -1,5 +1,5 @@
 const loginContainer = document.querySelector(".js__login-input");
-const loginButton = document.querySelector(".login-button");
+const loginButton = document.querySelector(".js__login-button");
 
 loginContainer.addEventListener("keyup", function () {
   const id = document.getElementById("js__input-id"),
@@ -11,7 +11,7 @@ loginContainer.addEventListener("keyup", function () {
     button.disabled = false;
   }
 
-  id.value.length !== 0 && password.value.length !== 0
+  id.value.length > 4 && password.value.length > 4
     ? checkValue()
     : loginButton.classList.remove("not-disabled");
 });

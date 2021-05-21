@@ -1,5 +1,5 @@
 .main-container {
-  height: 100vh;
+  height: 1000px;
   width: 100vw;
   background-color: #fafafa;
 }
@@ -7,8 +7,12 @@
 .main-nav {
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100vw;
+  margin-top: -10px;
   background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
+  z-index: 2;
 }
 
 .main-nav__container {
@@ -64,18 +68,19 @@
   background-color: tomato;
 }
 
-main {
+.main {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: #fafafa;
+  margin-top: 60px;
   padding-top: 7px;
+  background-color: #fafafa;
 }
 
 .main-feeds-container {
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  height: 1500px;
   width: 935px;
 }
 
@@ -100,6 +105,7 @@ main {
 .main-story ul li {
   margin-left: 11px;
   margin-right: 11px;
+  z-index: 1;
 }
 
 .profile-container {
@@ -133,12 +139,12 @@ main {
 
 .profile__image-wrapper {
   position: relative;
-  overflow: hidden;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
   top: 3px;
   left: 3px;
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .profile__image-small-wrapper {
@@ -147,8 +153,8 @@ main {
   left: -100%;
   right: -100%;
   bottom: -100%;
-  margin: auto;
   height: 100px;
+  margin: auto;
   min-width: 100%;
   min-height: 100%;
   background-color: #fff;
@@ -171,7 +177,6 @@ main {
 }
 
 .main-contents {
-  height: 920px;
   border: 1px solid #dbdbdb;
   background-color: #fff;
 }
@@ -261,40 +266,44 @@ b {
 }
 
 .comment-container li {
+  width: 100%;
   margin-bottom: 5px;
+  margin-right: 10px;
 }
 
-.comment-container li b {
-  margin-right: 3px;
+.comment-container li button {
+  float: right;
+  cursor: pointer;
+  outline: none;
 }
 
 .comment-input-container {
-  height: 80px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-top: 1px solid #dbdbdb;
-}
-
-.comment-input-container-small {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  padding: 4px;
+  height: 80px;
+  margin-top: 20px;
+  padding: 4px 16px 4px 16px;
+  border-top: 1px solid #dbdbdb;
 }
 
-.comment-input-container-small div {
+.comment-input-container div {
   font-size: 24px;
   margin-right: 16px;
+}
+
+.comment-input-container form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .comment-input-container textarea {
   height: 35px;
   width: 500px;
   resize: none;
-  padding: 5px;
+  padding-top: 6px;
   border: none;
-  max-height: 80px;
 }
 
 .comment-input-container textarea:focus {
@@ -302,10 +311,14 @@ b {
 }
 
 .comment-input-container button {
+  width: 40px;
   border: none;
   background-color: #fff;
+  color: #0095f6;
+}
+
+.comment-input-container button:disabled {
   color: #5fbdfc;
-  line-height: 18px;
 }
 
 .main-right {
