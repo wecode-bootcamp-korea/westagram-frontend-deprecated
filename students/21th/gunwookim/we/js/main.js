@@ -51,7 +51,6 @@ var data = [
   { name: "kimsuna_officia" },
 ];
 
-// 태그 지정
 const comment = document.querySelector(".comment");
 const commentList = document.querySelector(".comment-list");
 const commentPostingButton = document.querySelector(".comment-posting-button");
@@ -59,7 +58,6 @@ const searchInput = document.querySelector(".searchInput");
 const searchResult = document.querySelector(".search-result");
 const profileLinkImg = document.querySelector(".profile-link-img");
 
-// 기본 댓글
 const commentPosting2 = () => {
   const liTag = document.createElement("li");
 
@@ -69,7 +67,6 @@ const commentPosting2 = () => {
   comment.value = "";
 };
 
-// 댓글에 버튼 추가
 const commentPosting = () => {
   const liTag = document.createElement("li");
   const divCommentTag = document.createElement("div");
@@ -96,14 +93,12 @@ const commentPosting = () => {
   comment.value = "";
 };
 
-// 하트 버튼 변경
 const heartButtonClick = (e) => {
   const spanButtonTag = e.target;
   const spanButtonTagText = spanButtonTag.innerText;
   spanButtonTag.innerText = spanButtonTagText === "🖤" ? "❤️" : "🖤";
 };
 
-// 삭제 버튼
 const delButtonClick = (e) => {
   const liTags = document.querySelectorAll("li");
   liTags.forEach((liTag) => {
@@ -111,16 +106,13 @@ const delButtonClick = (e) => {
   });
 };
 
-// 댓글 추가
 const commentPostingButtonControl = (e) => {
   if (comment.value.trim() && (e.code === "Enter" || e.type === "click")) {
     commentPosting();
   }
-
   commentPostingButton.disabled = comment.value.trim() ? false : true;
 };
 
-// 찾기 버튼
 const searchUser = (e) => {
   const searchUserName = searchInput.value;
   const resultUserList = data.filter((user) =>
@@ -130,7 +122,6 @@ const searchUser = (e) => {
   searchResult.innerHTML = resultUserList.map((user) => listFormat(user.name));
 };
 
-// 찾기 리스트 포맷
 const listFormat = (name) =>
   `<div class="user-profile">
         <div class="user-profile-link-middie-img">
@@ -157,7 +148,6 @@ const clickProfileLinkImg = (e) => {
     : userInfo.classList.add("displayNone");
 };
 
-// 이벤트 추가
 comment.addEventListener("keyup", commentPostingButtonControl);
 commentPostingButton.addEventListener("click", commentPostingButtonControl);
 searchInput.addEventListener("keyup", searchUser);

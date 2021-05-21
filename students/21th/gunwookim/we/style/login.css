@@ -6,7 +6,6 @@ body {
   height: 100%;
 }
 
-/*  로그인 */
 .loginContainer {
   width: 350px;
   height: 450px;
@@ -19,7 +18,6 @@ body {
   flex-flow: column;
 }
 
-/*  로고 위치 */
 .logoContainer {
   font-family: "Lobster", cursive;
   font-size: 48px;
@@ -28,7 +26,6 @@ body {
   padding-top: 20px;
 }
 
-/*  로그인 메인 */
 main {
   display: flex;
   flex-flow: column;
@@ -37,7 +34,6 @@ main {
   height: 70%;
 }
 
-/*  로그인 입력 및 버튼 */
 input,
 button {
   width: 90%;
@@ -56,7 +52,6 @@ button {
   color: white;
 }
 
-/* 로그인 버튼 */
 .loginButton:disabled {
   background-color: #c1dffd;
 }
@@ -65,30 +60,13 @@ button {
   background-color: #0095f6;
 }
 
-/*  입력 */
 input:focus {
   border: 2px solid gray;
 }
 
-/*  비밀번호 찾기 */
 a {
   text-decoration: none;
   color: blue;
   font-size: 12px;
   margin-top: 50px;
 }
-
-/*  
-.lightBlueButton {
-  background-color: #c1dffd;
-  cursor: default;
-}
-
-.darkBlueButton {
-  background-color: #0095f6;
-}
-
-.darkBlueButton:hover {
-  cursor: pointer;
-}
-*/
