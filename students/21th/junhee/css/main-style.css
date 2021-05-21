@@ -196,8 +196,8 @@ main{
 
 
 .writtenCommentsContainer{
-    width:600px;
-    height: 240px;
+    width: 600px;
+    height: 100%;
     border: 1px solid #dbdbdb;
     background-color: white;
     position:relative;
@@ -265,7 +265,7 @@ main{
 }
 
 .list-container{
-    margin-left: 4px;
+    margin-left: 0px;
     list-style: none;
 }
 

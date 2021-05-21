@@ -9,6 +9,7 @@ const addComment = () =>{
     newComment.innerHTML = contentValue;
     newComment.classList.add('comment-content')
     listContainer.appendChild(newComment);
+    commentContent.value = "";
 }
  
 uploadButton.addEventListener('click',addComment);
