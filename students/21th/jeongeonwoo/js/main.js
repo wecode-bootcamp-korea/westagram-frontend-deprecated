@@ -47,7 +47,7 @@ const postButton = (i) => {
 
 for (let i = 0; i < inputComment.length; i++) {
     inputComment[i].addEventListener('keypress', (e) => {
-        if (e.code == 'Enter') {
+        if (e.code == 'Enter' && inputComment[i].value) {
             postButton(i);
         }
     })
