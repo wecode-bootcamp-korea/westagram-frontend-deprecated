@@ -1,0 +1,168 @@
+
+.header{
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: #fff;
+border-bottom: 1px solid #8e8e8e;
+height: 54px;
+
+
+
+}
+.leftSide, .rightSide,.middleSide{
+    display: flex;
+   
+}
+.icon{
+    padding: 0;
+    margin: 0;
+   
+}
+.leftIcon{
+    height: 50%;
+
+}
+
+.rightIcon, .imageIcon{
+    height: 30px;
+    margin: 0 0 25px 10px;
+
+}
+
+
+
+.rightSide{
+    margin-top: 30px;
+}
+
+
+.inputSearch{
+    height: 28px;
+    width: 215px;
+    border: 1px solid #8e8e8e;
+    border-radius: 3px;
+    color: #8e8e8e;
+    cursor: text;
+    font-size: 14px;
+    font-weight: 300;
+    left: 0;
+    background-color: #FFFFFF;
+    text-align: center;
+  
+}
+
+
+.position{
+    position: relative;
+}
+
+.search{
+    position: absolute;
+    
+
+}
+.searchWords{
+
+    top: 100px;
+    left: 100px;
+}
+.westagramLogo{
+    padding:0;
+    margin-top :40px;
+}
+
+.replyList{
+    list-style: none;
+}
+
+.sectionWrap{
+    position: relative;
+}
+
+
+.myId{
+    position: absolute;
+    top: 50px;
+
+
+}
+.idWrap{
+    display: flex;
+    justify-content: space-around;    
+}
+
+
+.profile{
+height: 22px;
+border-radius: 50%;
+}
+.uploadedPicture{
+    
+    position: absolute;
+    top: 100px;
+    height: 767.5px;
+    width: 614px;
+}
+aside{
+
+    display: flex;
+    background-color: gray;
+
+    
+}
+
+
+
+.side{
+    
+    margin-left: 700px;
+    margin-top: 100px;
+    flex-direction: column;
+    
+}
+
+
+
+.body{
+    display: flex;
+    margin: 0 252px;
+}
+
+
+
+.feedBottom {
+margin-top: 700px;
+ position: absolute;
+}
+
+.feed_article{
+    margin-top: 900px;
+ position: absolute;
+}
+
+.inputContainer{
+
+  margin-top: 900px;
+ position: absolute;
+}
+
+.search{
+    position: absolute;
+       bottom: 5px;
+    left: 85px;
+    color: #8e8e8e;
+
+    
+
+}
+
+li{
+    list-style: none;
+}
+
+.inputBox{
+    height: 30px;
+    width: 300px;
+}
+

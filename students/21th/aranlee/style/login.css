@@ -1,0 +1,63 @@
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;   
+}
+
+
+.container{
+    height: 550px;
+    width: 400px;
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid gray;
+  }
+
+
+
+.westagramLogo{
+    margin: 20px 0 ; 
+    padding: 10px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px; 
+}
+
+.login{
+    height: 50px;
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+
+.login, .loginButton{
+    width: 300px;
+    margin: 5px 0 5px 10px;
+    border: 0.5px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+
+.loginButton{
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #c3dbf6;
+    font-weight: bold;
+    color: white;
+}
+
+.loginButton:enabled{
+    background-color: #0095f6;
+    cursor: pointer;
+}
+
+
+
+span{
+    color: #30618A;
+    margin-top: 160px;
+}
+
