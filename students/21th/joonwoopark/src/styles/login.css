@@ -134,8 +134,13 @@ footer {
   font-size: 1vmin;
 }
 
-.footer-upper-deck > span {
-  margin-right: 2vw;
+.footer-upper-deck {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-upper-deck > li {
+  margin-left: 1rem;
 }
 
 .footer-lower-deck {

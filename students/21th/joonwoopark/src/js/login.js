@@ -5,10 +5,8 @@ const loginButton = document.querySelector('.login-button');
 let idValue, passwordLength;
 
 const validateInputLength = (name, e) => {
-  name === 'id' ? (idValue = e.target.value) : (passwordLength = e.target.value.length);
-  logginedID = idValue;
-  console.log(logginedID);
-  if (idValue.length > 0 && idValue.includes('@') && passwordLength > 0) {
+  name === 'id' ? (idValue = e.target.value) : (passwordValue = e.target.value);
+  if (idValue.length > 0 && idValue.includes('@') && passwordValue) {
     loginButton.classList.add('active');
     loginButton.removeAttribute('disabled');
   } else {

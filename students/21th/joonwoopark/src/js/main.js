@@ -11,24 +11,22 @@ const searchResultTriangle = document.querySelector('.search-result-triangle');
 let comment = '';
 
 const changeLikeButtonColor = (e) => {
-  if (!e.target.className.includes('active')) {
-    e.target.classList.add('active');
-  } else {
-    e.target.classList.remove('active');
-  }
+  !e.target.className.includes('active')
+    ? e.target.classList.add('active')
+    : e.target.classList.remove('active');
 };
 
-const removeComment = (e) => {
-  e.target.parentNode.remove();
+const removeComment = (li) => {
+  li.remove();
 };
 
 const displayComment = () => {
   if (comment) {
-    const li = document.createElement('li');
+    const commentLiTag = document.createElement('li');
     const commentId = document.createElement('span');
     const commentText = document.createElement('span');
-    const commentLike = document.createElement('span');
-    const commentRemove = document.createElement('span');
+    const commentLike = document.createElement('button');
+    const commentRemove = document.createElement('button');
 
     commentId.textContent = 'xoxoxo_S2';
     commentId.classList.add('commentor-id');
@@ -39,38 +37,37 @@ const displayComment = () => {
     commentLike.addEventListener('click', (e) => changeLikeButtonColor(e));
     commentRemove.textContent = '삭제';
     commentRemove.classList.add('comment-remove-button');
-    commentRemove.addEventListener('click', (e) => removeComment(e));
+    commentRemove.addEventListener('click', () => removeComment(commentLiTag));
 
-    li.appendChild(commentId);
-    li.appendChild(commentText);
-    li.appendChild(commentLike);
-    li.appendChild(commentRemove);
-    commentList.appendChild(li);
-  } else {
-    return;
+    commentLiTag.appendChild(commentId);
+    commentLiTag.appendChild(commentText);
+    commentLiTag.appendChild(commentLike);
+    commentLiTag.appendChild(commentRemove);
+    commentList.appendChild(commentLiTag);
+
+    comment = '';
+    inputComment.value = '';
   }
-  comment = '';
-  inputComment.value = '';
 };
 
 const addCommentHandler = (e) => {
   comment = e.target.value;
 
-  if (e.key === 'Enter' && comment.length !== 0) {
+  if (e.key === 'Enter' && comment) {
     displayComment();
   }
 };
 
-const displayStory = (value) => {
+const displayStory = (storyDataObj) => {
   const storyDataContainer = document.querySelector('.story-container');
   const storyData = document.createElement('div');
   const storyPicture = document.createElement('img');
   const storyUserId = document.createElement('span');
 
-  const { id, img_url } = value;
+  const { id, img_url } = storyDataObj;
 
-  storyPicture.setAttribute('src', img_url);
   storyPicture.setAttribute('alt', `user: ${id} profile image`);
+  storyPicture.setAttribute('src', img_url);
   storyPicture.classList.add('story-picture');
   storyUserId.textContent = `${id.slice(0, 9)}...`;
   storyUserId.classList.add('story-user');
@@ -93,18 +90,18 @@ const displayPersonalMenu = (e) => {
   }
 };
 
-const displayRecommendUser = (value) => {
+const displayRecommendUser = (recommendUserObj, index) => {
   const recommendUserContainer = document.querySelector('.user-recommend-container');
   const userRecommendSection = document.createElement('section');
   const userImage = document.createElement('img');
   const userId = document.createElement('span');
   const followText = document.createElement('span');
 
-  const { index, id, img_url } = value;
+  const { id, img_url } = recommendUserObj;
 
   if (index < 5) {
-    userImage.setAttribute('src', img_url);
     userImage.setAttribute('alt', `user: ${id} profile image`);
+    userImage.setAttribute('src', img_url);
     userImage.classList.add('recommend-user-picture');
     userId.textContent = id;
     userId.classList.add('recommend-user-id');
@@ -115,8 +112,6 @@ const displayRecommendUser = (value) => {
     userRecommendSection.appendChild(followText);
     userRecommendSection.classList.add('recommend-section');
     recommendUserContainer.appendChild(userRecommendSection);
-  } else {
-    return;
   }
 };
 
@@ -137,8 +132,8 @@ const displaySearchResults = (value) => {
 };
 
 const init = () => {
-  personalInfo.forEach((value) => {
-    displayStory(value), displayRecommendUser(value);
+  personalInfo.forEach((value, idx) => {
+    displayStory(value), displayRecommendUser(value, idx);
   });
 };
 

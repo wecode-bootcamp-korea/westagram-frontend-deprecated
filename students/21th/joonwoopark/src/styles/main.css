@@ -222,6 +222,11 @@ main {
   padding-right: 1rem;
 }
 
+.comment-list > li > button {
+  border: 0;
+  background-color: var(--comment_button_color);
+}
+
 .comment-list > li > span:not(:first-child) {
   padding-left: 0.5rem;
 }
@@ -591,8 +596,8 @@ main {
     justify-content: center;
   }
 
-  .footer-upper-deck > span {
-    margin: 0.5rem 0.3rem;
+  .footer-upper-deck > li {
+    margin-right: 0.4rem;
   }
 
   .footer-lower-deck {
