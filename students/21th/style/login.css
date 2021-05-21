@@ -1,0 +1,234 @@
+body {
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  padding-top: 6rem;
+}
+
+section {
+  width: 35rem;
+  margin: 1.1rem 0;
+}
+
+.iphoneImage {
+  width: 45rem;
+  background-image: url(./../image/iphone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.grayBorder {
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.loginSection {
+  height: 38rem;
+  margin-top: 3rem;
+  flex-direction: column;
+}
+
+#logo {
+  font-family: 'Lobster', cursive;
+  font-size: 4.4rem;
+  margin: 2.6rem 0;
+}
+
+.loginBox {
+  width: 78%;
+  max-width: 35rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.loginCotentsBox {
+  width: 100%;
+  height: 3.8rem;
+  padding: 0 1rem;
+  margin-bottom: 0.8rem;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  position: relative;
+  text-align: left;
+}
+
+.placeholderText {
+  font-size: 1.2rem;
+  line-height: 3.7rem;
+  color: #8e8e8e;
+}
+
+.loginCotentsBox > input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  background-color: #ffffff00;
+}
+
+.passwordViewButton {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  border: 0;
+  background: #ffffff00;
+  color: #262626;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 3.7rem;
+  cursor: pointer;
+  display: none;
+}
+
+.focusActive {
+  border: 1px solid #8e8e8e !important;
+}
+
+.placeholderActive {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.writeActive {
+  font-size: 1.2rem !important;
+  margin: 0.8rem 1rem !important;
+}
+
+.viewActive {
+  display: block;
+}
+
+.loginButton {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem 0;
+  background: rgba(0, 149, 246, 0.3);
+  border: 0px;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.loginButtonActive {
+  background: #0095f6;
+  cursor: pointer;
+}
+
+.or {
+  display: flex;
+  margin: 1.4rem 0;
+}
+
+.orBorder {
+  width: 40%;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.orText,
+.facebookLogin > span,
+.forgotPassword {
+  font-size: 1.2rem;
+}
+
+.orText {
+  font-weight: bold;
+  line-height: 0.2;
+  color: #8e8e8e;
+  margin: 0 1.3rem;
+}
+
+.facebookLogin {
+  color: #385185;
+  font-weight: bold;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.facebookIcon {
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-right: 0.3rem;
+  background-position: -414px -259px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_32f0a4f27407.png/32f0a4f27407.png);
+}
+
+.forgotPassword {
+  margin: 1rem 0;
+}
+
+.findAccont > div,
+.findAccont > a,
+.downloadApp > div {
+  font-size: 1.4rem;
+}
+
+.findAccont {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.sign {
+  color: #0095f6;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.downloadApp {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.appButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.appButtons > a > img {
+  width: 14rem;
+  margin: 2rem 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+.link,
+.detail {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.link > ul > li > a,
+.detail > ul > li > a {
+  padding: 0.8rem;
+  color: #8e8e8e;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 875px) {
+  .iphoneImage {
+    display: none;
+  }
+}
