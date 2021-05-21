@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:white;
+}
+
+.logo{
+    font-family: 'Pattaya', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    Width: 100%;
+    margin-top:160px;
+}
+h1{
+    display: flex;
+    text-align: center;   
+}
+
+.login_section{
+    padding-top:16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.id{
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    Width: 289px;
+    height: 32px;
+}
+
+.id_input{
+    color:rgb(70, 70, 70);
+    margin-top:32px;;
+    width: 289px;
+    height: 40px;
+    border-radius: 5px;
+    text-indent:8px;
+    border: solid 1px rgb(197, 197, 197);
+    background-color: rgb(253, 253, 253);
+    outline: none;
+}
+
+.id_input::placeholder{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pw{
+    margin-top:24px;
+    margin-bottom:8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    Width: 289px;
+    height: 32px;
+}
+
+.pw_input{
+    text-indent:8px;
+    color:rgb(70, 70, 70);
+    margin-top:16px;
+    width: 289px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px rgb(216, 216, 216);
+    background-color: rgb(253, 253, 253);
+    outline: none;
+}
+
+
+.pw_input::placeholder{
+  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input::placeholder{
+    
+    color:gray;
+
+    font-weight: bold;
+}
+
+
+.login{
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    Width: 289px;
+    height: 32px;
+}
+
+.login .login_Btn{
+    margin-top:32px;
+    width: 289px;
+    height: 32px;
+    border-radius: 5px;
+    border-style:  none;
+    background-color: rgba(64, 149, 225,0.35);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span{
+    color:rgb(255, 255, 255);
+}
+
+footer{
+    margin: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+footer .forget{
+    color:rgb(15, 47, 153);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+}
