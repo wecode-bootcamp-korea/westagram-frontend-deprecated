@@ -7,8 +7,12 @@ passwordForm.addEventListener('keyup', listener);
 
 function listener() {
     switch (!(emailForm.value && passwordForm.value)) {
-        case true: loginButton.disabled = true; break;
-        case false: loginButton.disabled = false; break;
+        case true:
+            loginButton.disabled = true;
+            break;
+        case false:
+            loginButton.disabled = false;
+            break;
     }
 }
 
