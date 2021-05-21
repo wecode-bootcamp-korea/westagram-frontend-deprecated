@@ -105,8 +105,10 @@ const heartButtonClick = (e) => {
 
 // 삭제 버튼
 const delButtonClick = (e) => {
-  const liTag = e.path[2];
-  liTag.remove();
+  const liTags = document.querySelectorAll("li");
+  liTags.forEach((liTag) => {
+    liTag.contains(e.target) ? liTag.remove() : "";
+  });
 };
 
 // 댓글 추가
