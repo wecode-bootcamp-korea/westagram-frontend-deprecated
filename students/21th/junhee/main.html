@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westagram</title>
+    <link rel="icon" href="icon/instagram.svg">
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav_container">
+            <a href="#" id="logo">Westagram</a>
+            <div class="search-wrapper">
+                <input type="text" name="input1" id="search-input" placeholder="검색">
+            </div>
+            <div class="icon_wrapper">
+                <img src="icon/Home.svg" alt="home_icon" id="home-icon">
+                <img src="icon/share.svg" alt="directmessage-icon" id="message-icon">
+                <img src="icon/nav.svg" alt="explore-icon" id="explore-icon">
+                <img src="icon/heart.svg" alt="heart-icon" id="heart-icon">
+                <img src="img/my_profile.png" alt="my-Profile" id= "myProfile">
+            </div>
+        </div>
+    </nav>
+    <main>
+            <div class="feeds">
+                <article>
+                    <div>
+                    <header class="feedArticleHeader">
+                        <div class="feedProfileWrapper">
+                            <img src="img/sohee_profile.png" alt="Profile" class= "feedProfile">
+                        </div>
+                        <div class="articleHeaderWrapper">
+                            <a href="#" class="userId">xeesoxee</a>
+                            <img src="icon/more.svg" alt="more-icon" class="moreIcon">
+                        </div>
+                    </header>
+                    <div class="photoWrapper">
+                        <img src="img/한소희.png" alt="article-photo" class="articlePhoto">
+                    </div>
+                    <div>
+                        <section class="writtenCommentsContainer">
+                            <div class="comment_iconWrapper">
+                                <div class="left-icon">
+                                    <img src="icon/heart.svg" alt="heart-icon" id="heart-icon2">
+                                    <img src="icon/messenger.svg" alt="comment-icon2" id="comment-icon">
+                                    <img src="icon/share.svg" alt="directmessage-icon" id="message-icon2">
+                                </div>
+                                <div>
+                                    <img src="icon/bookmark.svg" alt="bookmark-icon" id="bookmark-icon">
+                                </div>
+                            </div>
+                            <div class="writtenInfo">
+                                <a href="#" class="otheruserId">july_thefirst</a>
+                                <span class="likeInfo">님 여러 명이 좋아합니다</span>
+                                <div class="user-comment">
+                                    <a href="" id="userIdinComment">xeesoxee</a>
+                                    <span>다시 만난 소희🦋</span>
+                                </div>
+                                <p id="comment_num">댓글 1,706개 모두 보기</p>
+                                <!-- <div class="otheruser-comment">
+                                    <a href="" class="otheruserId">ceyeday</a>
+                                    <span>여신아니야..? 언니 결혼해주세요</span>
+                                </div> -->
+                                <!-- <div class="otheruser-comment">
+                                    <a href="" class="otheruserId">_ocean_zoo</a>
+                                    <span>언니 제 사랑입니다</span>
+                                </div> -->
+                                <ul class="list-container">
+                                    <li class="comment-content">
+                                        <span></span>
+                                    </li>
+                                </ul>
+                                <!-- <a href="" id="comment-time">2분 전</a> -->
+                            </div>
+                            <section class="commentContainer">
+                                <img src="icon/smile.svg" alt="smile_emoji" id="smileEmoji">
+                                <article class="commentInputWrapper">
+                                    <input name="" class="commentText" placeholder="댓글 달기..."></input>
+                                    <button class="uploadBtn">게시</button>
+                                </article>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+                </article>
+            </div>
+                <aside class="aside-right">
+                    <div class="myProfileContanier">
+                        <a href="#" id="myProfileWrapper">
+                            <img src="img/my_profile.png" alt="my_profile_img" class="myProfileImg">
+                        </a>
+                        <a href="#" id="myNametext">
+                            juneee__kang
+                        </a>
+                        <button class="swtichBtn">전환</button>
+                    </div>
+                    <div class="recommend_text_Wrapper">
+                        <p id="recommend_text">회원님을 위한 추천</p>
+                        <a href="#" id="seeall">모두 보기</a>
+                    </div>
+                    <ul class="user-recommend">
+                        <li class="user-list">
+                            <img src="img/user1_profile.png" alt="user1-profile" id="user1-profile">
+                            <div class="recommend_list_wrapper">
+                            <a href="" class="recommend_id">liz_doooo</a>
+                            <p class="follower_info">hye_kim님 외 9명이 팔로우합니다</p>
+                            </div>
+                            <button class="followBtn">팔로우</button>
+                        </li>
+                        <li class="user-list">
+                            <img src="img/user2_profile.png" alt="user1-profile" id="user1-profile">
+                            <div class="recommend_list_wrapper">
+                            <a href="" class="recommend_id">hwdpm</a>
+                            <p class="follower_info">guyoung_n님 외 51명이 팔로우합니다</p>
+                            </div>
+                            <button class="followBtn">팔로우</button>
+                        </li>
+                        <li class="user-list">
+                            <img src="img/user3_profile.png" alt="user1-profile" id="user1-profile">
+                            <div class="recommend_list_wrapper">
+                            <a href="" class="recommend_id">horim_you</a>
+                            <p class="follower_info">j_vely_님 외 12명이 팔로우합니다</p>
+                            </div>
+                            <button class="followBtn">팔로우</button>
+                        </li>
+                        <li class="user-list">
+                            <img src="img/user5_profile.png" alt="user1-profile" id="user1-profile">
+                            <div class="recommend_list_wrapper">
+                            <a href="" class="recommend_id">ore_vintage</a>
+                            <p class="follower_info">ae_morning님 외 6명이 팔로우합니다</p>
+                            </div>
+                            <button class="followBtn">팔로우</button>
+                        </li>
+                        <li class="user-list">
+                            <img src="img/user4_profile.png" alt="user1-profile" id="user1-profile">
+                            <div class="recommend_list_wrapper">
+                            <a href="" class="recommend_id">premtoj</a>
+                            <p class="follower_info">orange__님 외 38명이 팔로우합니다</p>
+                            </div>
+                            <button class="followBtn">팔로우</button>
+                        </li>
+                    </ul>
+                    <footer>
+                        <p class="footer_text">
+                            소개ㆍ도움말ㆍ홍보 센터ㆍAPIㆍ채용 정보ㆍ개인정보처리방침ㆍ<br> 약관ㆍ위치ㆍ인기 계정ㆍ해시태그ㆍ언어
+                        </p>
+                        <p class="footer_text">
+                            © 2021 INSTAGRAM FROM FACEBOOK  
+                        </p>
+                    </footer>
+                </aside>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+/* nav */
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+    position: fixed;
+    height: 55px;
+    width:100%;
+    z-index: 2;
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 920px;
+}
+
+.search-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA ;
+    width: 215px;
+    height: 25px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.icon_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+#logo{
+    font-family: 'Lobster', cursive;
+    color: #252529;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#search-input{
+    background-color:#FAFAFA ;
+    width: 160px;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+#search-input::placeholder{
+    text-align: center;
+    color: rgb(138, 138, 138);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/* feeds */
+
+.feeds{
+    margin-right: 30px;
+}
+
+article{
+    display: flex;
+}
+
+main{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%
+}
+
+#myProfile{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+}
+
+.feedProfile{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #dbdbdb ;
+    border-radius: 50%;
+}
+
+.feedArticleHeader{
+    width:568px;
+    height:27px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    padding:16px;
+}
+
+.feedProfileWrapper{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.articleHeaderWrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.userId{
+    margin-left: 14px;
+    text-decoration: none;
+    color: #262626;
+    font-size: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.userId:hover, .otheruserId:hover {
+    text-decoration:underline;
+}
+
+
+.otheruserId{
+    text-decoration: none;
+    color: #262626;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+#comment_num{
+    margin: 5px 0px;
+}
+
+.moreIcon{
+    width:24px;
+}
+
+.articlePhoto{
+    width:600px;
+    height: 600px;
+}
+
+.photoWrapper{
+    width:600px;
+    height: 600px;
+    border: 1px solid #dbdbdb;
+}
+
+/*  */
+
+
+.comment_iconWrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    padding: 10px 16px;
+}
+
+.left-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+#heart-icon, #explore-icon, #message-icon, #home-icon {
+    width:24px;
+}
+
+#heart-icon2, #message-icon2, #comment-icon, #bookmark-icon{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+.writtenCommentsContainer{
+    width:600px;
+    height: 240px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    position:relative;
+}
+
+#comment_num{
+    font-size: 13px;
+    color: gray;
+}
+.user-comment{
+    margin: 5px 0px;
+}
+
+#userIdinComment{
+    text-decoration: none;
+    color: #262626;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#userIdinComment:hover{
+    text-decoration: underline;
+}
+
+.otheruser-comment{
+    margin: 4px 0px;
+}
+
+#comment-time{
+    font-size: 11px;
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    margin: 5px 0px;
+}
+
+#smileEmoji{
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+}
+
+.commentInputWrapper{
+    display: inline;
+}
+
+.commentText{
+    resize: none;
+    width: 500px ;
+    border: none;
+    outline: none;
+    margin-top: 1px;
+}
+
+.commentText::placeholder{
+    color: rgb(139, 139, 139);
+}
+
+.commentContainer{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dbdbdb;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+}
+
+.list-container{
+    margin-left: 4px;
+    list-style: none;
+}
+
+
+
+.uploadBtn{
+    position: absolute;
+    right:16px;
+    background-color: white;
+    border: none;
+    color: #0095F6;
+    font-weight: 600;
+}
+
+.uploadBtn:hover{
+    cursor: pointer;
+}
+
+.writtenInfo{
+    margin-left:16px;
+}
+
+
+/* aside */
+
+.aside-right{
+    width: 293px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    
+}
+
+.recommend_text_Wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0px 0px 0px;
+}
+
+.myProfileContanier{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+#myProfileWrapper{
+    text-decoration: none;
+}
+
+.myProfileImg{
+    width: 50px;
+    border: 1px solid #dbdbdb ;
+    border-radius: 50%;
+}
+
+#myNametext{
+    color:#252529;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left:16px;
+}
+
+#recommend_text{
+    display: inline-block;
+    color:rgb(133, 133, 133);
+    font-weight:600;
+}
+
+#seeall{
+    color:#252529;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.user-recommend{
+    position: relative;
+    list-style: none;
+    padding: 10px 0px;
+    width:100%;
+}
+
+.user-list{
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.recommend_list_wrapper{
+    display: inline-block;
+}
+
+#user1-profile{
+    width: 32px;
+    margin-right:12px;
+}
+
+.recommend_id{
+    font-weight: 600;
+    text-decoration: none;
+    color: #262626;
+}
+
+.recommend_id:hover{
+    text-decoration: underline;
+}
+
+.follower_info{
+    font-size: 12px;
+    color: rgb(139, 139, 139);
+}
+
+.followBtn, .swtichBtn{
+    position: absolute;
+    right: 0px;
+    background-color: #fafafa;
+    border: none;
+    color: #0095F6;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.followBtn:hover, .swtichBtn:hover{
+    cursor: pointer;
+}
+
+.footer_text{
+    font-size: 11px;
+    color: rgb(196, 196, 196);
+    line-height: 160%;
+    padding: 10px 0px;
+}

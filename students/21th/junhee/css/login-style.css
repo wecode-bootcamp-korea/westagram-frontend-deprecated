@@ -1,0 +1,203 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.login-logo{
+    margin-bottom: 30px;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    color: #252529;
+    text-align: center;
+    font-size: 35px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 348px;
+    height: 358px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+}
+
+.userIdWrapper, .userPasswordWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 268px;
+    height: 38px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#userId, #userPassword{
+    width: 250px;
+    height: 30px;
+    margin-left: 10px;
+    outline-style: none;
+    border : none;
+    background-color: #fafafa;
+}
+
+#userId::placeholder, #userPassword::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    color:#9a9a9a 
+}
+
+#loginButton{
+    width: 268px;
+    height: 30px;
+    margin-top: 10px;
+    outline-style: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #0195F6;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#loginButton:hover{
+    cursor: pointer;
+}
+
+.orContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.leftLine, .rightLine{
+    width: 105px;
+    height: 1px;
+    border-top: 1px solid #dbdbdb;
+}
+
+#orText{
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color:#9d9d9d;
+}
+
+.facebookLoginWrapper{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.facebookText{
+    font-size: 14px;
+    font-weight: 600;
+    color: #1777f2;
+}
+
+#facebook-logo{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.forgetPasswordText{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #373737;
+}
+
+.noAccountText{
+    font-size: 14px;
+    color: #252529
+}
+
+.SignUpLink{
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0195F6;
+}
+
+.join-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 348px;
+    height: 41px;
+    padding: 10px 0px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    
+}
+
+.downloadAppText{
+    font-size: 14px;
+    color: #252529;
+    text-align: center;
+    padding:20px;
+}
+
+.downloadButtonWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.downloadButton{
+    width: 136px;
+    height: 40px;
+    margin: 0px 3px 60px 3px;
+}
+
+.downloadButton:hover{
+    cursor: pointer;
+}
+
+#appstoreButton, #googlePlayButton{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    width:550px;
+}
+
+.footerText{
+    font-size: 12px;
+    color: rgb(138, 138, 138);
+    text-align: center;
+    margin: 10px 0px;
+}
+
