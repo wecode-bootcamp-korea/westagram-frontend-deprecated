@@ -47,12 +47,11 @@
 
 #login-wrap .login-area button.inactive {
     opacity: .3;
-    cursor: none;
 }
 
-#login-wrap .login-area button:hover {
-    opacity: 70%;
+#login-wrap .login-area button:not(.inactive):hover {
     cursor: pointer;
+    opacity: 70%;
 }
 
 #login-wrap .login-area .find-passwd-str {

@@ -18,21 +18,37 @@ let setLoginButtonActive = (event) => {
 
 // 로그인 버튼 클릭 이벤트
 let clickLoginButton = () => {
-    if (textLoginId.value === '') {
+
+    let txtLoginId = textLoginId.value;
+    let txtLoginPw = textLoginPw.value;
+
+    if (txtLoginId === '') {
         alert('Id를 입력해 주세요.');
         textLoginId.focus();
         return;
     }
-    if (textLoginPw.value === '') {
+    if (txtLoginPw === '') {
         alert('패스워드를 입력해 주세요.');
         textLoginPw.focus();
         return;
     }
-    if (textLoginId.value === 'test' && textLoginPw.value === 'password') {
-        location.href = './main.html';
-    } else {
-        alert('회원정보가 없습니다.');
+
+    // email 주소 유효성 체크 - 정규식으로
+    const reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-])+(\.[0-9a-zA-Z_-]+){1,2}$/;
+    if (!reg_email.test(txtLoginId)) {
+        alert('e-mail 양식이 유효하지 않습니다.');
+        textLoginId.focus();
+        return;
     }
+
+    // 패스워드 유효성 체크
+    if (txtLoginPw.length < 5) {
+        alert('패스워드는 5글자 이상 입력해 주세요.');
+        textLoginPw.focus();
+        return;
+    }
+
+    location.href = './main.html';
 }
 
 textLoginId.addEventListener('keyup', setLoginButtonActive);

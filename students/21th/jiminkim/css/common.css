@@ -86,3 +86,11 @@ ul.list-style-none li.icon:not(:last-of-type) {
 .none-pointer {
     pointer-events: none;
 }
+
+.display-none {
+    display: none;
+}
+
+div {
+    position: relative;
+}
