@@ -1,19 +1,19 @@
 nav {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 5.4rem;
   background-color: white;
   border: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
 }
 
 .mainWrap {
-  width: 97.5rem;
-  height: 100%;
-  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 97.5rem;
+  height: 100%;
+  padding: 0 2rem;
 }
 
 #logo {
@@ -22,22 +22,22 @@ nav {
 }
 
 .serachBox {
+  display: none;
   width: 21.5rem;
   height: 2.8rem;
   padding: 0 1rem;
   border: 1px solid #e4e4e4;
   background-color: #fafafa;
-  display: none;
 }
 
 .serachIcon {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.5rem;
-  opacity: 0.5;
   background: url(.././image/serach.png) no-repeat;
   background-size: 100%;
   background-position: center;
+  opacity: 0.5;
 }
 
 .serachText {
@@ -62,9 +62,9 @@ nav {
 }
 
 .myAccount > img {
-  border-radius: 100%;
   width: 2.4rem;
   height: 2.4rem;
+  border-radius: 100%;
 }
 
 section {
@@ -85,17 +85,17 @@ section {
 }
 
 .borderBox {
+  margin-bottom: 2rem;
   border: 1px solid #eaeaea;
   border-radius: 3px;
   background-color: white;
-  margin-bottom: 2rem;
 }
 
 .storiesBox {
-  padding: 2rem 1.4rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 1.4rem 1.4rem;
 }
 
 .story {
@@ -105,37 +105,37 @@ section {
 }
 
 .colorfulCircle {
-  width: 6.6rem;
-  height: 6.6rem;
-  background: linear-gradient(120deg, #c82d8e 0%, #f99d4c 100%);
-  border-radius: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 6.6rem;
+  height: 6.6rem;
+  background: linear-gradient(120deg, #c82d8e 0%, #f99d4c 100%);
+  border-radius: 100%;
 }
 
 .profilePhoto {
+  position: absolute;
   width: 6.2rem;
   height: 6.2rem;
   border: 2px solid white;
   border-radius: 100%;
-  position: absolute;
   background: url(.././image/cafe.jpg) no-repeat;
   background-position: center;
   background-size: 100%;
 }
 
 .userId {
-  font-size: 1.2rem;
   margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
 header {
-  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 6rem;
   padding: 2rem;
 }
 
@@ -145,32 +145,32 @@ header {
 }
 
 .smallProfile {
-  width: 4.2rem;
-  height: 4.2rem;
-  background: linear-gradient(120deg, #c82d8e 0%, #f99d4c 100%);
-  border-radius: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 4.2rem;
+  height: 4.2rem;
   margin-right: 10px;
+  background: linear-gradient(120deg, #c82d8e 0%, #f99d4c 100%);
+  border-radius: 100%;
 }
 
 .smallProfilePhoto {
+  position: absolute;
   width: 3.8rem;
   height: 3.8rem;
   border: 0.2rem solid white;
   border-radius: 100%;
-  position: absolute;
   background: url(.././image/cafe.jpg) no-repeat;
   background-position: center;
   background-size: 100%;
 }
 
 .boldUserId {
+  flex: 2;
   font-size: 1.4rem;
   font-weight: 700;
-  flex: 2;
 }
 
 .viewMore {
@@ -198,8 +198,8 @@ header {
 }
 
 .postComments > div {
-  font-size: 1.4rem;
   padding: 0.4rem 0;
+  font-size: 1.4rem;
 }
 
 .postSetting {
@@ -212,9 +212,9 @@ header {
 }
 
 .postingDate {
+  padding-top: 1rem;
   font-size: 1rem !important;
   color: gray;
-  padding-top: 1rem;
 }
 
 .profile {
@@ -231,9 +231,9 @@ header {
 }
 
 .newComment {
-  border: 0rem;
   width: 47rem;
   height: 1.8rem;
+  border: 0rem;
   resize: none;
   overflow: hidden;
 }
@@ -244,9 +244,9 @@ header {
 }
 
 .myProfile {
-  padding: 2rem 0;
   display: flex;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .myProfile > .colorfulCircle {
@@ -307,9 +307,9 @@ footer > ul {
 
 footer > ul > li > a,
 .mainInfo {
+  color: #c7c7c7;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #c7c7c7;
   letter-spacing: -0.08rem;
   line-height: 1;
 }
@@ -332,10 +332,10 @@ footer > ul > li:nth-last-child(1) > a::after {
   }
 
   .newCommentBox {
-    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 6rem;
     padding: 2rem;
     border-top: 1px solid #eaeaea;
   }
