@@ -57,6 +57,7 @@ const commentList = document.querySelector(".comment-list");
 const commentPostingButton = document.querySelector(".comment-posting-button");
 const searchInput = document.querySelector(".searchInput");
 const searchResult = document.querySelector(".search-result");
+const profileLinkImg = document.querySelector(".profile-link-img");
 
 // 기본 댓글
 const commentPosting2 = () => {
@@ -97,7 +98,7 @@ const commentPosting = () => {
 
 // 하트 버튼 변경
 const heartButtonClick = (e) => {
-  const spanButtonTag = e.path[0];
+  const spanButtonTag = e.target;
   const spanButtonTagText = spanButtonTag.innerText;
   spanButtonTag.innerText = spanButtonTagText === "🖤" ? "❤️" : "🖤";
 };
@@ -146,9 +147,19 @@ const focusSearchInput = (e) => {
   searchResult.style.visibility = e.type === "focus" ? "visible" : "hidden";
 };
 
+const clickProfileLinkImg = (e) => {
+  const userInfo = document.querySelector(".user-info");
+
+  profileLinkImg.contains(e.target)
+    ? userInfo.classList.remove("displayNone")
+    : userInfo.classList.add("displayNone");
+};
+
 // 이벤트 추가
 comment.addEventListener("keyup", commentPostingButtonControl);
 commentPostingButton.addEventListener("click", commentPostingButtonControl);
 searchInput.addEventListener("keyup", searchUser);
 searchInput.addEventListener("focus", focusSearchInput);
 searchInput.addEventListener("blur", focusSearchInput);
+profileLinkImg.addEventListener("click", clickProfileLinkImg);
+document.body.addEventListener("click", clickProfileLinkImg);

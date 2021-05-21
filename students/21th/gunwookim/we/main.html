@@ -28,28 +28,34 @@
       </div>
       <div class="link-img-div">
         <div class="explore-link-img">
-          <a href="#"
-            ><img
+          <button>
+            <img
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"
               alt="explore"
             />
-          </a>
+          </button>
         </div>
         <div class="heart-link-img">
-          <a href="#">
+          <button>
             <img
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
               alt="heart"
             />
-          </a>
+          </button>
         </div>
         <div class="profile-link-img">
-          <a href="#">
+          <button>
             <img
               src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
               alt="profile"
             />
-          </a>
+          </button>
+        </div>
+        <div class="user-info displayNone">
+          <div>프로필</div>
+          <div>저장됨</div>
+          <div>설정</div>
+          <div>로그아웃</div>
         </div>
       </div>
     </nav>
@@ -59,7 +65,7 @@
           <div class="user-profile">
             <div class="user-profile-link-middie-img">
               <a href="#">
-                <img src="./images/man.jpeg" />
+                <img src="./images/man.jpeg" alt="user" />
               </a>
             </div>
             <div class="user-profile-link-middie-span">
@@ -72,7 +78,7 @@
         <div class="feeds-user-post">
           <div class="user-post">
             <div class="user-post-img">
-              <img src="./images/img2.jpeg" />
+              <img src="./images/img2.jpeg" alt="post" />
             </div>
           </div>
           <div class="user-post">
@@ -148,7 +154,7 @@
               <div class="user-profile">
                 <div class="user-profile-link-small-img">
                   <a href="#">
-                    <img src="./images/man.jpeg" />
+                    <img src="./images/man.jpeg" alt="user" />
                   </a>
                 </div>
                 <div class="user-profile-link-small-span">
@@ -212,8 +218,75 @@
           </div>
         </div>
       </div>
+      <div class="main-right">
+        <div class="user-profile">
+          <div class="user-profile-link-large-img">
+            <a href="#">
+              <img src="./images/man.jpeg" alt="user" />
+            </a>
+          </div>
+          <div class="user-profile-link-large-span">
+            <a href="#">
+              <span class="user-name">로그인사용자</span>
+            </a>
+          </div>
+        </div>
+        <div class="user-recommend">
+          <div>
+            <div>회원님을 위한 추천</div>
+            <div class="user-profile-link-small-span">
+              <a href="#">
+                <span class="user-name">모두보기</span>
+              </a>
+            </div>
+          </div>
+          <div class="user-profile-recommend">
+            <div class="user-profile">
+              <div class="user-profile-link-middie-img">
+                <a href="#">
+                  <img src="./images/man.jpeg" alt="user" />
+                </a>
+              </div>
+              <div class="user-profile-link-small-span">
+                <a href="#">
+                  <span class="user-name">추천사용자</span>
+                </a>
+              </div>
+            </div>
+            <div class="user-profile-link-small-span">
+              <a href="#">
+                <span class="follow">팔로우</span>
+              </a>
+            </div>
+          </div>
+          <div class="user-profile-recommend">
+            <div class="user-profile">
+              <div class="user-profile-link-middie-img">
+                <a href="#">
+                  <img src="./images/man.jpeg" alt="user" />
+                </a>
+              </div>
+              <div class="user-profile-link-small-span">
+                <a href="#">
+                  <span class="user-name">추천사용자</span>
+                </a>
+              </div>
+            </div>
+            <div class="user-profile-link-small-span">
+              <a href="#">
+                <span class="follow">팔로우</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="company">
+          <span>westagram 정보 지원 홍보센터 API</span>
+          <span>채용정보 개인정보처리방침 약관</span>
+          <span>디렉터리 프로필 해시태그 언어</span>
+          <span>2021 westagram</span>
+        </div>
+      </div>
     </main>
-
     <script src="./js/main.js"></script>
   </body>
 </html>

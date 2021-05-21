@@ -1,10 +1,13 @@
 /* 상단 */
 nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   border-bottom: 1px solid lightgray;
   height: 60px;
+  z-index: 1;
 }
 
 nav > div {
@@ -15,6 +18,8 @@ nav > div {
 
 /* 하단 */
 main {
+  position: relative;
+  top: 50px;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -57,9 +62,10 @@ main {
   margin: 5px;
 }
 /* 링크 이미지 링크이미지 */
-.link-img-div > div > a > img {
+.link-img-div > div > button > img {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 /* 상단 사용자 정보 */
@@ -196,4 +202,81 @@ li > div > span {
 
 .search-result > div {
   margin-left: 10px;
+}
+
+/* 아이디 추천 */
+.main-right {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  margin-left: 20px;
+  width: 300px;
+}
+
+/* 사용자 프로필 링크 큼 */
+.user-profile-link-large-span {
+  font-size: 25px;
+}
+.user-profile-link-large-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+/* 추천 사용자 목록 */
+.user-recommend {
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid lightgray;
+}
+.user-recommend > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+/* 팔로우 */
+.follow {
+  color: #0095f6;
+}
+
+/* 회사정보 */
+.company {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-size: 15px;
+  color: lightgray;
+}
+
+/* 사용자 정보 */
+.user-info {
+  position: fixed;
+  display: flex;
+  top: 35px;
+  flex-flow: column;
+  align-items: flex-start;
+  border: 1px solid lightgray;
+  width: 150px;
+  padding: 10px;
+  z-index: 0;
+  background-color: white;
+}
+.user-info > div {
+  margin: 5px;
+}
+
+.displayNone {
+  display: none;
+}
+
+/* 반응형 */
+@media screen and (max-width: 700px) {
+  .main-right {
+    display: none;
+  }
 }
