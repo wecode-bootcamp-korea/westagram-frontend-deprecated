@@ -1,6 +1,5 @@
 const postingBtn = document.querySelector('.postingButton');
 const postingText = document.querySelector('.postingTextarea');
-
 postingText.addEventListener('keyup', addComment);
 
 function addComment(e) {
@@ -27,6 +26,6 @@ function addComment(e) {
     makeParaCommentWrap.appendChild(makeMainPara);
     makeCommentContent.appendChild(makePostingUser);
 
-    postingText.value = ' ';
+    postingText.value = '';
   }
 }

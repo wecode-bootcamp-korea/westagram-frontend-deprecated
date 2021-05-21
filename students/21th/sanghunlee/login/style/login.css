@@ -1,46 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body,
-button,
-input,
-textarea {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  line-height: 18px;
-  font-size: 14px;
-  color: #262626;
-}
-
-body {
-  height: 100%;
-}
-
-a,
-a:visited {
-  color: #00376b;
-  text-decoration: none;
-}
-
-article,
-div,
-footer,
-header,
-main,
-nav,
-section {
-  align-items: stretch;
-  border: 0 solid #000;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -49,7 +6,6 @@ section {
   flex-shrink: 0;
   width: 100%;
   border: 0 solid #000;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
@@ -102,16 +58,13 @@ form {
 .userPw {
   flex: 1 0 auto;
   width: inherit;
-  line-height: 36px;
-  height: 36px;
-  color: rgba(var(--i1d, 38, 3s8, 38), 1);
+  line-height: 18px;
+  color: rgba(38, 38, 38, 1);
   border: 1px solid #dbdbdb;
   background: rgba(250, 250, 250, 1);
   padding: 9px 8px 7px 8px;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
   margin: 0;
   outline: 0;
   font-size: 12px;
@@ -302,12 +255,13 @@ form {
 }
 
 .recommandPara {
+  display: flex;
   width: 350px;
   flex-direction: column;
   color: #262626;
   font-size: 14px;
   line-height: 18px;
-  margin: 10px 20px 10px 20px;
+  margin: 10px 20px;
   text-align: center;
   padding: 0;
   border: 0;

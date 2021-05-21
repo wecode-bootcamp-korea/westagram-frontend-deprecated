@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/login.css">
-    <link rel="stylesheet" href="./style/common.css">
-    <title>Westagram</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/login.css">
+  <link rel="stylesheet" href="./style/common.css">
+  <title>Westagram</title>
 </head>
+
 <body>
-        <main>
-            <section class="container">
-                <article class="contentsBox">
-                    <h1 class="logo">westagram</h1>
-                    <div class="formWrap">
-                        <form method="POST">
-                            <div class="inputBox"><input type="text" maxlength="75" name="userId" class="userId" placeholder="전화번호, 사용자 이름 또는 이메일" autocomplete="off"></div>
-                            <div class="inputBox"><input type="password" name="userPw" class="userPw" placeholder="비밀번호" autocomplete="off"></div>
-                            <div class="buttonBox"><button class="loginButton" disabled type="submit">로그인</button></div>
-                            <div class="sepBox">
-                                    <div class="beforePara"></div>
-                                    <div class="sepPara">또는</div>
-                                    <div class="afterPara"></div>
-                            </div>
-                            <div class="facebookLoginBox">
-                                <button class="facebookLoginButton">
-                                    <span class="facebookLogo"></span>
-                                    <span class="facebookPara">Facebook으로 로그인</span>
-                                </button>
-                            </div>
-                            <a href="" class="forgottenPassword">비밀번호를 잊으셨나요?</a>
-                        </form>
-                    </div>
-                </article>
-                <article class="subContentsBox">
-                    <div class="acoountBox">
-                        <p class="checkAccount">
-                            계정이 없으신가요?
-                            <a href="" class="join">가입하기</a>
-                        </p>
-                    </div>
-                </article>
-                <article class="recommandBox">
-                    <p class="recommandPara">앱을 다운로드하세요.</p>
-                    <div class="recommandLinkBox">
-                        <a href="" class="recommandLink">
-                            <img class="recommandImg" src="./icon/appstore.png" alt="App Store에서 이용 가능">
-                        </a>
-                        <a href="" class="recommandLink">
-                            <img class="recommandImg" src="./icon/android.png"alt="Google Play에서 이용 가능">
-                        </a>
-                    </div>
-                </article>
-            </section>
-        </main>
-    <script src="./js/login.js"></script>
+  <main>
+    <section class="container">
+      <section class="contentsBox">
+        <h1 class="logo">westagram</h1>
+        <div class="formWrap">
+          <form method="POST">
+            <div class="inputBox"><input type="text" maxlength="75" name="userId" class="userId"
+                placeholder="전화번호, 사용자 이름 또는 이메일" autocomplete="off"></div>
+            <div class="inputBox"><input type="password" name="userPw" class="userPw" placeholder="비밀번호"
+                autocomplete="off"></div>
+            <div class="buttonBox"><button class="loginButton" disabled type="submit">로그인</button></div>
+            <div class="sepBox">
+              <hr class="beforePara">
+              </hr>
+              <div class="sepPara">또는</div>
+              <hr class="afterPara">
+              </hr>
+            </div>
+            <div class="facebookLoginBox">
+              <button class="facebookLoginButton" type="button">
+                <span class="facebookLogo"></span>
+                <span class="facebookPara">Facebook으로 로그인</span>
+              </button>
+            </div>
+            <a href="" class="forgottenPassword">비밀번호를 잊으셨나요?</a>
+          </form>
+        </div>
+      </section>
+      <section class="subContentsBox">
+        <div class="acoountBox">
+          <p class="checkAccount">
+            계정이 없으신가요?
+            <a href="" class="join">가입하기</a>
+          </p>
+        </div>
+      </section>
+      <section class="recommandBox">
+        <p class="recommandPara">앱을 다운로드하세요.</p>
+        <div class="recommandLinkBox">
+          <a href="" class="recommandLink">
+            <img class="recommandImg" src="./icon/appstore.png" alt="App Store에서 이용 가능">
+          </a>
+          <a href="" class="recommandLink">
+            <img class="recommandImg" src="./icon/android.png" alt="Google Play에서 이용 가능">
+          </a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="./js/login.js"></script>
 </body>
+
 </html>
