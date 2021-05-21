@@ -24,8 +24,6 @@ const paintId = (text) => {
     searchedList.appendChild(searchedName);
     searchBox.classList.add("showing");
     searchBox.appendChild(searchedList);
-  } else {
-    deleteId();
   }
 };
 
