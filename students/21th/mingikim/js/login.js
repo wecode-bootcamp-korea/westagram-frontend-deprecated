@@ -12,18 +12,20 @@ function logIn(event) {
 
 function checkId(event) {
   const idValue = event.target.value;
-  idValue.length === 0 && passwordInput.value.length === 0
-    ? (loginButton.disabled = true)
-    : idValue.includes("@") && passwordInput.value.length >= 5
+  if (idValue && passwordInput.value) {
+    return (loginButton.disabled = true);
+  }
+  idValue.includes("@") && passwordInput.value.length >= 5
     ? (loginButton.disabled = false)
     : (loginButton.disabled = true);
 }
 
 function checkPassword(event) {
   const passwordValue = event.target.value;
-  passwordValue.length === 0 && idInput.value.length === 0
-    ? (loginButton.disabled = true)
-    : idInput.value.includes("@") && passwordValue.length >= 5
+  if (!passwordValue.length && !idInput.value.length) {
+    return (loginButton.disabled = true);
+  }
+  idInput.value.includes("@") && passwordValue.length >= 5
     ? (loginButton.disabled = false)
     : (loginButton.disabled = true);
 }
