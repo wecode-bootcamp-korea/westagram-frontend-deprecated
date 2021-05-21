@@ -14,10 +14,10 @@
                 <article class="contentsBox">
                     <h1 class="logo">westagram</h1>
                     <div class="formWrap">
-                        <form>
-                            <div class="inputBox"><input type="text" maxlength="75" name="username" class="username" placeholder="전화번호, 사용자 이름 또는 이메일"></div>
-                            <div class="inputBox"><input type="password" name="password" class="password" placeholder="비밀번호"></div>
-                            <div class="buttonBox"><button class="loginButton" type="submit">로그인</button></div>
+                        <form method="POST">
+                            <div class="inputBox"><input type="text" maxlength="75" name="userId" class="userId" placeholder="전화번호, 사용자 이름 또는 이메일" autocomplete="off"></div>
+                            <div class="inputBox"><input type="password" name="userPw" class="userPw" placeholder="비밀번호" autocomplete="off"></div>
+                            <div class="buttonBox"><button class="loginButton" disabled type="submit">로그인</button></div>
                             <div class="sepBox">
                                     <div class="beforePara"></div>
                                     <div class="sepPara">또는</div>
@@ -29,7 +29,7 @@
                                     <span class="facebookPara">Facebook으로 로그인</span>
                                 </button>
                             </div>
-                            <a href="" class="forgottenPassward">비밀번호를 잊으셨나요?</a>
+                            <a href="" class="forgottenPassword">비밀번호를 잊으셨나요?</a>
                         </form>
                     </div>
                 </article>

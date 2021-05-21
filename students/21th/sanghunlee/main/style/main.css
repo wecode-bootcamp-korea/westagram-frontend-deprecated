@@ -1,1125 +1,1281 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100%;
-    background: #fff;
-    overflow-y: scroll;
+  height: 100%;
+  background: #fff;
+  overflow-y: scroll;
 }
 
-body, button, input, textarea {
-    color: #262626;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+body,
+button,
+input,
+textarea {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-article, div, footer, header, main, nav, section {
-    align-items: stretch;
-    border: 0 solid #000;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0;
-    position: relative;
+article,
+div,
+footer,
+header,
+main,
+nav,
+section {
+  align-items: stretch;
+  border: 0 solid #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-a, a:visited {
-    color: #262626;
-    text-decoration: none;
+a,
+a:visited {
+  color: #262626;
+  text-decoration: none;
 }
 
 .innerBody {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .menu {
-    order: 0;
-    background-color: #fafafa;
-    width: 100%;
-    height: 54px;
+  order: 0;
+  background-color: #fafafa;
+  width: 100%;
+  height: 54px;
 }
 
 .flexBlank {
-    flex-basis: 54px;
+  flex-basis: 54px;
 }
 
 .menuInner {
-    align-items: center;
-    height: 54px;
-    background-color: #fff;
-    border-bottom: 1px solid #dbdbdb;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
+  align-items: center;
+  height: 54px;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 }
 
 .CompWrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 975px;
-    height: 54px;
-    padding: 0 20px;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 975px;
+  height: 54px;
+  padding: 0 20px;
+  align-items: center;
+  width: 100%;
 }
 
 .logoContainer {
-    flex: 1 9999 0%;
-    min-width: 40px;
+  flex: 1 9999 0%;
+  min-width: 40px;
 }
 
 .logoBox {
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    align-content: stretch;
-    cursor: pointer;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+  cursor: pointer;
 }
 
 .logo {
-    margin-top: 7px;
+  margin-top: 7px;
 }
 
 .logoImg {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .searchingContainer {
-    position: relative;
-    height: 28px;
-    flex: 0 1 auto;
-    min-width: 125px;
-    width: 215px;
+  position: relative;
+  height: 28px;
+  flex: 0 1 auto;
+  min-width: 125px;
+  width: 215px;
 }
 
 .searchingBar {
-    background: #fafafa;
-    border: solid 1px #dbdbdb;
-    border-radius: 3px;
-    outline: 0;
-    padding: 3px 10px 3px 26px;
-    z-index: 2;
-    color: #262626;
-    height: 100%;
-    width: 100%;
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  outline: 0;
+  padding: 3px 10px 3px 26px;
+  z-index: 2;
+  color: #262626;
+  height: 100%;
+  width: 100%;
 }
 
 .searchingBar::placeholder {
-    font-size: 14px;
-    color: #8e8e8e;
-    font-weight: 200
+  font-size: 14px;
+  color: #8e8e8e;
+  font-weight: 200;
 }
 
 .searchIcon {
-    display: inline-block;
-    background-image: url("../icon/search.png");
-    background-size: 10px 10px;
-    background-repeat: no-repeat;
-    height: 10px;
-    width: 10px;
-    position: absolute;
-    top: 32%;
-    left: 11px;
-    z-index: 3;
-    content: "";
+  display: inline-block;
+  background-image: url('../icon/search.png');
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 32%;
+  left: 11px;
+  z-index: 3;
+  content: '';
 }
 
 .buttonsBox {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex: 1 0 0%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1 0 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .buttonsWrap {
-    display: flex;
-    flex-direction: row;
-    padding-left: 24px;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+  white-space: nowrap;
 }
 
 .button {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .button:not(:first-child) {
-    margin-left: 22px;
-    white-space: nowrap;
+  margin-left: 22px;
+  white-space: nowrap;
 }
 
 .iconSvg {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 
 svg:not(:root) {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .myProfile {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .myProfileWrap {
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
-    background-color: #fafafa;
-    border-radius: 50%;
-    display: block;
-    flex: 0 0 auto;
-    overflow: hidden;
-    position: relative;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .myProfile::after {
-    border: 1px solid rgba(0,0,0,.0975);
-    border-radius: 50%;
-    bottom: 0;
-    content: "";
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
 }
 
 .main {
-    background-color: #fafafa;
-    flex-grow: 1;
-    order: 4;
+  background-color: #fafafa;
+  flex-grow: 1;
+  order: 4;
 }
 
 .mainContainer {
-    padding-top: 30px;
-    display: flex;
-    flex-flow: row nowrap;
-    max-width: 935px;
-    flex-grow: 1;
-    margin: 0 auto;
-    width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 935px;
+  flex-grow: 1;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .feedsBox {
-    float: left;
-    margin-right: 28px;
-    max-width: 614px;
-    width: 100%;
+  float: left;
+  margin-right: 28px;
+  max-width: 614px;
+  width: 100%;
 }
 
 .feeds {
-    flex-direction: column;
-    padding-top: 0px;
+  flex-direction: column;
+  padding-top: 0px;
 }
 
 .feed {
-    padding: 0;
-    margin-bottom: 60px;
-    border-radius: 3px;
-    border: 1px solid #dbdbdb;
-    background-color: #fff;
-    margin-left: -1px;
-    margin-right: -1px;
+  padding: 0;
+  margin-bottom: 60px;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  margin-left: -1px;
+  margin-right: -1px;
 }
 
 .feedTitle {
-    align-items: center;
-    flex-direction: row;
-    height: 60px;
-    padding: 16px;
-    border-bottom: 1px solid #efefef;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+  padding: 16px;
+  border-bottom: 1px solid #efefef;
 }
 
 .userSelfieBox {
-    display: block;
-    height: fit-content;
-    width: fit-content;
-    position: relative;
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
 }
 
 .userSelfieComp {
-    align-items: center;
-    align-self: center;
-    display: block;
-    flex: none;
-    justify-content: center;
-    -webkit-box-flex: 0;
-    -webkit-box-pack: center;
-    border: 0 solid #000;
+  align-items: center;
+  align-self: center;
+  display: block;
+  flex: none;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-box-pack: center;
+  border: 0 solid #000;
 }
 
 .userSelfieFrame {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: 42px;
-    height: 42px;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 42px;
+  height: 42px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .userSelfieLink {
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    background-color: #fafafa;
-    border-radius: 50%;
-    box-sizing: border-box;
-    display: block;
-    flex: 0 0 auto;
-    overflow: hidden;
-    position: relative;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .userSelfieImg {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .userSelfieLink ::after {
-    border: 1px solid rgba(0,0,0,.0975);
-    border-radius: 50%;
-    bottom: 0;
-    content: '';
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .userProfileBox {
-    margin-left: 14px;
-    align-items: flex-start;
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    overflow: hidden;
-    bottom: -2px
+  margin-left: 14px;
+  align-items: flex-start;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  bottom: -2px;
 }
 
 .userNameBox {
-    max-width: 220px;
+  max-width: 220px;
 }
 
 .useNameWrap {
-    align-items: center;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-shrink: 1;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 2px;
-    top: 1px;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2px;
+  top: 1px;
 }
 
 .userName {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .userNameLink {
-    color: #262626;
-    border: 0;
-    display: inline;
-    padding: 0;
-    position: relative;
-    background-color: transparent;
-    appearance: none;
-    background: 0 0;
-    cursor: pointer;
-    font-weight: 600;
-    text-align: center;
-    text-transform: inherit;
-    text-overflow: ellipsis;
-    width: auto;
-    font: inherit;
+  color: #262626;
+  border: 0;
+  display: inline;
+  padding: 0;
+  position: relative;
+  background-color: transparent;
+  appearance: none;
+  background: 0 0;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  width: auto;
+  font: inherit;
 }
 
 .userLocationBox {
-    bottom: 1px;
-    display: block;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 2px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  bottom: 1px;
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .userLocationLink {
-    color: #262626;
-    font-size: 12px;
-    line-height: 15px;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  color: #262626;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .feedOptionContainer {
-    justify-content: center;
-    position: absolute;
-    height: 60px;
-    top: 0;
-    bottom: 0;
-    right: 4px;
+  justify-content: center;
+  position: absolute;
+  height: 60px;
+  top: 0;
+  bottom: 0;
+  right: 4px;
 }
 
 .feedOptionButton {
-    align-items: center;
-    background: 0 0;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
-    margin: 0;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  margin: 0;
 }
 
 .feedOptionWrap {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .feedOptionIcon {
-    height: 24px;
-    width: 24px;
-    flex: 0 0 auto;
-    justify-content: center;
-    align-content: stretch;
+  height: 24px;
+  width: 24px;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-content: stretch;
 }
 
 .feedPhotoBoxInner {
-    background-color: #efefef;
-    display: block;
-    width: 100%;
+  background-color: #efefef;
+  display: block;
+  width: 100%;
 }
 
 .feedPhotoWrap {
-    padding-bottom: 100%;
-    display: block;
-    overflow: hidden;
+  padding-bottom: 100%;
+  display: block;
+  overflow: hidden;
 }
 
 .userPhoto {
-    object-fit: cover;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+  object-fit: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .feedPhotoCover {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .feedAppContainer {
-    padding: 0;
+  padding: 0;
 }
 
 .feedButtonBox {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 4px;
-    flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 4px;
+  flex-direction: row;
 }
 
 .likeButtonWrap {
-    margin-left: -8px;
+  margin-left: -8px;
 }
 
-.likeButton, .commentButton, .shareButton, .saveButton {
-    align-items: center;
-    background: 0 0;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 8px;
+.likeButton,
+.commentButton,
+.shareButton,
+.saveButton {
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
 }
 
-.likeIconWrap, .commentIconWrap, .shareIconWrap, .saveIconWrap {
-    align-items: center;
-    justify-content: center;
+.likeIconWrap,
+.commentIconWrap,
+.shareIconWrap,
+.saveIconWrap {
+  align-items: center;
+  justify-content: center;
 }
 
-.likeButtonWrap, .commentButtonWrap, .shareButtonWrap, .saveButtonWrap {
-    display: inline-block;
+.likeButtonWrap,
+.commentButtonWrap,
+.shareButtonWrap,
+.saveButtonWrap {
+  display: inline-block;
 }
 
 .saveButtonWrap {
-    margin-left: auto;
-    margin-right: -10px;
+  margin-left: auto;
+  margin-right: -10px;
 }
 
 .likeCountContainer {
-    padding-left: 16px;
-    padding-right: 16px;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 8px;
 }
 
 .likeCountBox {
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: stretch;
-    align-content: stretch;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .likeUserImgContainer {
-    margin-right: 4px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: stretch;
+  margin-right: 4px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
 }
 
 .likeUserImgLink {
-    font-weight: 600;
-    color: #262626;
+  font-weight: 600;
+  color: #262626;
 }
 
 .likeUserImgBox {
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-content: stretch;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-content: stretch;
 }
 
 .likeUserImgWrap {
-    border-color: #fff;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    box-sizing: content-box;
+  border-color: #fff;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: content-box;
 }
 
 .likeUserImgFrame {
-    background-color: #fafafa;
-    border-radius: 50%;
-    box-sizing: border-box;
-    display: block;
-    flex: 0 0 auto;
-    overflow: hidden;
-    position: relative;
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .likeUserImgFrame::after {
-    border: 1px solid rgba(0,0,0,.0975);
-    border-radius: 50%;
-    bottom: 0;
-    content: '';
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .likeUserImg {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .likeUserParaContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-    justify-content: flex-start;
-    align-items: center;
-    white-space: pre;
-    font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: pre;
+  font-size: 14px;
 }
 
 .likeUserPara {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .majorLikeUserLink {
-    color: #262626;
-    font-weight: 600;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-left: 5px;
-    margin-left: -5px;
+  color: #262626;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  margin-left: -5px;
 }
 
 .totalLikeUserLink {
-    font-weight: 600;
-    color: #262626;
+  font-weight: 600;
+  color: #262626;
 }
 
 .feedParaContainer {
-    margin: 0 0 auto;
-    padding: 0 16px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    min-height: 0;
-    overflow: auto;
+  margin: 0 0 auto;
+  padding: 0 16px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: 0;
+  overflow: auto;
 }
 
 .feedParaBox {
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: stretch;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .feedParaMain {
-    margin-bottom: 4px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  margin-bottom: 4px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .paraContentWrap {
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    justify-content: flex-start;
-    align-content: stretch;
-    display: block;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  justify-content: flex-start;
+  align-content: stretch;
+  display: block;
 }
 
 .paraContent {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .postingUser {
-    color: #262626;
-    font-weight: 600;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-left: 5px;
-    margin-left: -5px;
-    font-size: 14px;
+  color: #262626;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  margin-left: -5px;
+  font-size: 14px;
 }
 
 .mainPara {
-    overflow-wrap: break-word;
-    font-size: 14px;
+  overflow-wrap: break-word;
+  font-size: 14px;
 }
 
 .morePara {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .moreButton {
-    background: 0 0;
-    border: 0;
-    color: #8e8e8e;
-    cursor: pointer;
-    line-height: inherit;
-    margin: 0;
-    padding: 0;
+  background: 0 0;
+  border: 0;
+  color: #8e8e8e;
+  cursor: pointer;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .feedParaSub {
-    margin-bottom: 4px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-content: stretch;
+  margin-bottom: 4px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-content: stretch;
 }
 
 .paraCommentWrap {
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    display: block;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  display: block;
 }
 
 .commentContent {
-    display: inline;
-    position: relative;
+  display: inline;
+  position: relative;
 }
 
 .commentLikeIcon {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    line-height: inherit;
-    outline: 0;
-    overflow: hidden;
-    padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: inherit;
+  outline: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 .commentLikeButton {
-    padding: 0;
-    align-items: center;
-    background: 0 0;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
+  padding: 0;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .commentLikeIconWrap {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .feedPostingTimeBox {
-    padding-left: 16px;
-    display: block;
-    margin-bottom: 4px;
+  padding-left: 16px;
+  display: block;
+  margin-bottom: 4px;
 }
 
 .feedPostingTImeLink {
-    text-transform: uppercase;
-    color: #8e8e8e;
-    margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  margin-bottom: 5px;
 }
 
 .feedPostingTime {
-    font-size: 10px;
-    line-height: 18px;
-    color: #8e8e8e;
-    letter-spacing: .2px;
-    cursor: pointer;
+  font-size: 10px;
+  line-height: 18px;
+  color: #8e8e8e;
+  letter-spacing: 0.2px;
+  cursor: pointer;
 }
 
 .feedCommentContainer {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 4px;
-    border-top: 1px solid #efefef;
-    color: #8e8e8e;
-    flex-shrink: 0;
-    font-size: 14px;
-    line-height: 18px;
-    min-height: 56px;
-    justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 4px;
+  border-top: 1px solid #efefef;
+  color: #8e8e8e;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 18px;
+  min-height: 56px;
+  justify-content: center;
 }
 
 .feedCommentForm {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-shrink: 1;
-    position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
 }
 
 .imogeButton {
-    padding: 8px 16px 8px 0;
-    align-items: center;
-    background: 0 0;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
+  padding: 8px 16px 8px 0;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .imogeIcon {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .postingTextarea {
-    background: 0 0;
-    border: 0;
-    color: #262626;
-    display: flex;
-    flex-grow: 1;
-    font-size: inherit;
-    height: 18px;
-    max-height: 80px;
-    outline: 0;
-    padding: 0;
-    resize: none;
-    width: 0;
+  background: 0 0;
+  border: 0;
+  color: #262626;
+  display: flex;
+  flex-grow: 1;
+  font-size: inherit;
+  height: 18px;
+  max-height: 80px;
+  outline: 0;
+  padding: 0;
+  resize: none;
+  width: 0;
+  overflow: hidden;
 }
 
 .postingButton {
-    opacity: .3;
-    border: 0;
-    color: #0095f6;
-    display: inline;
-    padding: 0;
-    position: relative;
-    appearance: none;
-    background: 0 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 600;
-    text-align: center;
-    text-transform: inherit;
-    text-overflow: ellipsis;
-    user-select: none;
-    width: auto;
+  opacity: 0.3;
+  border: 0;
+  color: #0095f6;
+  display: inline;
+  padding: 0;
+  position: relative;
+  appearance: none;
+  background: 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  user-select: none;
+  width: auto;
 }
 
 .recommandContainer {
-    left: 692px;
-    top: 88px;
-    position: fixed;
-    height: 100vh;
-    margin-bottom: 30px;
-    padding: 0;
-    max-width: 293px;
-    right: 0;
-    width: 100%;
+  left: 692px;
+  top: 88px;
+  position: fixed;
+  height: 100vh;
+  margin-bottom: 30px;
+  padding: 0;
+  max-width: 293px;
+  right: 0;
+  width: 100%;
 }
 
 .profileContainer {
-    height: auto;
-    margin-bottom: 10px;
-    margin-top: 18px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 18px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
 }
 
 .profileBox {
-    width: 100%;
-    margin-right: 4px;
-    flex: 0 0 auto;
-    align-items: stretch;
-    align-content: stretch;
-    justify-content: flex-start;
+  width: 100%;
+  margin-right: 4px;
+  flex: 0 0 auto;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: flex-start;
 }
 
 .profileWrap {
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    align-content: stretch;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
 }
 
 .myselfieBox {
-    margin-right: 12px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch;
+  margin-right: 12px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
 }
 
 .myselfieWrap {
-    align-items: center;
-    align-self: center;
-    display: block;
-    flex: none;
-    justify-content: center;
-    width: 50px;
+  align-items: center;
+  align-self: center;
+  display: block;
+  flex: none;
+  justify-content: center;
+  width: 50px;
 }
 
 .myselfieFrame {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: 66px;
-    height: 66px;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 66px;
+  height: 66px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .myselfieLink {
-    width: 56px;
-    height: 56px;
-    cursor: pointer;
-    background-color: #fafafa;
-    border-radius: 50%;
-    box-sizing: border-box;
-    display: block;
-    flex: 0 0 auto;
-    overflow: hidden;
-    position: relative;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .myselfieLink::after {
-    border: 1px solid rgba(0,0,0,.0975);
-    border-radius: 50%;
-    bottom: 0;
-    content: '';
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .myselfie {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .myIdBox {
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
 }
 
 .mainIdContainer {
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .mainIdBox {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: #262626;
-    font-weight: 400;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #262626;
+  font-weight: 400;
 }
 
 .mainIdWrap {
-    margin-left: 12px;
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: stretch;
+  margin-left: 12px;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 .mainIdLink {
-    color: #262626;
-    font-weight: 600;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+  color: #262626;
+  font-weight: 600;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 .subIdContainer {
-    margin-top: 8px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  margin-top: 8px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .subIdBox {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: #8e8e8e;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    margin: -3px 0 -4px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: -3px 0 -4px;
 }
 
 .subIdWrap {
-    margin-left: 12px;
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    align-items: stretch;
-    align-content: stretch;
+  margin-left: 12px;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .subId {
-    display: inline!important;
-    margin: 0!important;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: #8e8e8e;
-    font-weight: 400;
-    font-size: 14px;
+  display: inline !important;
+  margin: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .changeButtonContainer {
-    margin-left: 8px;
-    flex: 0 0 auto;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
+  margin-left: 8px;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
 
 .changeButton {
-    border: 0;
-    color: #0095f6;
-    display: inline;
-    padding: 0;
-    position: relative;
-    appearance: none;
-    background: 0 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 600;
-    text-align: center;
-    text-transform: inherit;
-    text-overflow: ellipsis;
-    user-select: none;
-    width: auto;
+  border: 0;
+  color: #0095f6;
+  display: inline;
+  padding: 0;
+  position: relative;
+  appearance: none;
+  background: 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  user-select: none;
+  width: auto;
 }
 
 .changeButtonText {
-    display: block;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    margin: -2px 0 -3px;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  margin: -2px 0 -3px;
 }
 
 .storyContainer {
-    background-color: #fff;
-    margin: 0 0 12px;
-    width: 100%;
-    border: 1px solid #DBDBDB;
+  background-color: #fff;
+  margin: 0 0 12px;
+  width: 100%;
+  border: 1px solid #dbdbdb;
 }
 
 .storyTitleBox {
-    padding-bottom: 4px;
-    padding-top: 4px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 12px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: stretch;
-    flex-direction: row;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 12px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  flex-direction: row;
 }
 
 .storyTitleWrap {
-    flex: 1 1 auto;
-    min-height: 0;
-    min-width: 0;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .storyTitle {
-    display: block;
-    color: #8e8e8e;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    margin: -3px 0 -4px;
+  display: block;
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  margin: -3px 0 -4px;
 }
 
 .seeAllBox {
-    color: #262626;
-    border: 0;
-    display: inline;
-    padding: 0;
-    position: relative;
-    background-color: transparent;
-    user-select: auto;
-    appearance: none;
-    background: 0 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-weight: 600;
-    text-align: center;
-    text-transform: inherit;
-    text-overflow: ellipsis;
-    width: auto;
+  color: #262626;
+  border: 0;
+  display: inline;
+  padding: 0;
+  position: relative;
+  background-color: transparent;
+  user-select: auto;
+  appearance: none;
+  background: 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  width: auto;
 }
 
 .seeAllText {
-    display: block;
-    color: #262626;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 14px;
-    margin: -2px 0 -3px;
+  display: block;
+  color: #262626;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  margin: -2px 0 -3px;
 }
 
 .storyMainBox {
-    margin-left: 4px;
-    margin-bottom: 4px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .storyMainWrap {
-    padding-bottom: 8px;
-    padding-top: 8px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .storyListsBox {
-    height: auto;
-    overflow: hidden auto;
-    align-items: stretch;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin: 0;
-    padding: 0;
-    position: relative;
+  height: auto;
+  overflow: hidden auto;
+  align-items: stretch;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .storyLists {
-    flex-direction: column;
-    padding-bottom: 0px;
-    padding-top: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .storyList {
-    padding-bottom: 8px;
-    padding-top: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    flex: 0 0 auto;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    align-content: stretch;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
 }
 
 .storySelfieContainer {
-
+  margin-right: 12px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .storySelfieBox {
-
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
 }
 
 .storySelfieWrap {
+  align-items: center;
+  align-self: center;
+  display: block;
+  flex: none;
+  justify-content: center;
+}
 
+.storySelfieFrame {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 42px;
+  height: 42px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.storySelfieLink {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.storySelfieImg {
+  width: 100%;
+  height: 100%;
+}
+
+.storyUserNameContainer {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.storyUserNameBox {
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+
+.storyUserNameWrap {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #262626;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: -3px 0 -4px;
+}
+
+.storyUserName {
+  display: inline;
+  position: relative;
+}
+
+.storyUserNameLink {
+  color: #262626;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  margin-left: -5px;
+}
+
+.storyUserLogintimeBox {
+  margin-top: 8px;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.storyUserLogintime {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin: -2px 0 -3px;
+}
+
+.storyFollowContainer {
+  margin-left: 8px;
+  flex: 0 0 auto;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: stretch;
+}
+
+.storyFollowButton {
+  border: 0;
+  color: #0095f6;
+  display: inline;
+  padding: 0;
+  position: relative;
+  appearance: none;
+  background: 0 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  user-select: none;
+  width: auto;
+}
+
+.followButtonText {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  margin: -2px 0 -3px;
 }
