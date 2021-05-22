@@ -1,36 +1,33 @@
-const mainRight = document.querySelector('#main-right');
-const inputComment = document.querySelectorAll('.article-bottom-input-commnet');
-const inputButton = document.querySelectorAll('.article-bottom-input-posting');
-const commentText = document.querySelectorAll('.article-bottom-commnet.last');
+const mainRight = document.querySelector("#main-right");
+const inputComment = document.querySelectorAll(".article-bottom-input-comment");
+const inputButton = document.querySelectorAll(".article-bottom-input-posting");
+const commentText = document.querySelectorAll(".article-bottom-comment-box");
 
 //mainRight fixed move left
-mainRight.style.left = `${167 + (window.innerWidth / 2)}px`;
+mainRight.style.left = `${167 + window.innerWidth / 2}px`;
 
-window.addEventListener('resize', () => {
-    mainRight.style.left = `${167 + (window.innerWidth / 2)}px`;
-})
+window.addEventListener("resize", () => {
+  mainRight.style.left = `${167 + window.innerWidth / 2}px`;
+});
 
 //inputcomment click button undisabled
 for (let i = 0; i < inputComment.length; i++) {
-    inputComment[i].addEventListener('keyup', () => {
-        if (inputComment[i].value) {
-            inputButton[i].disabled = false;
-        } else inputButton[i].disabled = true;
-    })
+  inputComment[i].addEventListener("keyup", () => {
+    inputButton[i].disabled = !inputComment[i].value;
+  });
 }
 
 //comment input
-
 for (let i = 0; i < inputButton.length; i++) {
-    inputButton[i].addEventListener('click', () => {
-        postButton(i);
-    })
+  inputButton[i].addEventListener("click", () => {
+    postButton(i);
+  });
 }
 
-const postButton = (i) => {
-    let divEl = document.createElement('div');
-    divEl.innerHTML = `
-            <div class="article-bottom-commnet text">
+function postButton(i) {
+  commentText[i].insertAdjacentHTML(
+    "afterend",
+    `   <div class="article-bottom-comment text">
             raing_8<span> ${inputComment[i].value}</span>
             <span>
                 <svg aria-label="좋아요" fill="#262626" height="12" viewBox="0 0 48 48" width="12">
@@ -39,16 +36,16 @@ const postButton = (i) => {
                     </path>
                 </svg>
             </span>
-            </div>`;
-    commentText[i].appendChild(divEl);
-    inputComment[i].value = "";
-    inputButton[i].disabled = true;
+            </div>`
+  );
+  inputComment[i].value = "";
+  inputButton[i].disabled = true;
 }
 
 for (let i = 0; i < inputComment.length; i++) {
-    inputComment[i].addEventListener('keypress', (e) => {
-        if (e.code == 'Enter' && inputComment[i].value) {
-            postButton(i);
-        }
-    })
+  inputComment[i].addEventListener("keypress", (e) => {
+    if (e.code == "Enter" && inputComment[i].value.length !== 0) {
+      postButton(i);
+    }
+  });
 }
