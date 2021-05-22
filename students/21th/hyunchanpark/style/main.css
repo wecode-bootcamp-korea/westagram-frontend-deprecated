@@ -1,18 +1,18 @@
 body {
   width: 100%;
-  height: auto;
   background-color: #fafafa;
   overflow-y: scroll;
 }
 
 /* -------------nav--------------- */
 .nav-container {
-  display: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 54px;
-  background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .nav-contents {
@@ -21,14 +21,14 @@ body {
   align-items: center;
   max-width: 975px;
   height: 100%;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .nav-logo a {
+  color: rgb(38, 38, 38);
   font-size: 24px;
   font-family: "Lobster", cursive;
-  color: rgb(38, 38, 38);
 }
 
 .nav-search-bar {
@@ -38,19 +38,19 @@ body {
 }
 
 .nav-search-bar .active-input {
-  font-size: 16px;
-  color: #8e8e8e;
-  background: #fafafa;
-  height: 100%;
   width: 100%;
+  height: 100%;
   padding: 3px 10px 3px 26px;
   border: solid 1px #dbdbdb;
   border-radius: 3px;
+  color: #8e8e8e;
+  font-size: 16px;
+  background: #fafafa;
   outline: none;
 }
 
 /* :placeholder-shown :placeholder?????  */
-.nav-search-bar input:placeholder-shown {
+.nav-search-bar input::placeholder {
   font-size: 14px;
 }
 
@@ -81,9 +81,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fafafa;
   border: solid 1px #dbdbdb;
   border-radius: 3px;
+  background: #fafafa;
   cursor: text;
   z-index: -1;
 }
@@ -124,48 +124,51 @@ body {
 }
 
 .user-icon {
+  border: 1px solid #b6b6b6;
+  border-radius: 50%;
   background: url("../image/user-icon.jpg");
   background-size: cover;
   width: 22px;
   height: 22px;
-  border: 1px solid #b6b6b6;
-  border-radius: 50%;
 }
 
-.nav-icons li i {
-  font-size: 22px;
+.nav-icons li .fas,
+.nav-icons li .far {
   color: rgb(38, 38, 38);
+  font-size: 22px;
 }
 
 /* --------------main--------------- */
 main {
   height: 100%;
+  margin-top: 70px;
 }
 
 section {
   width: 100%;
   height: 100%;
   max-width: 935px;
-  padding-top: 30px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .left-contents {
   float: left;
-  margin-right: 28px;
-  max-width: 614px;
   width: 100%;
+  max-width: 614px;
+  margin-right: 28px;
   background-color: #fafafa;
 }
 
+/* --------------story------------- */
 .stories {
   height: 118px;
-  background: #fff;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   margin-bottom: 24px;
   margin-top: 0;
   padding: 16px 0;
+  background: #fff;
 }
 
 .story-container {
@@ -202,33 +205,32 @@ section {
   margin: 0 auto;
 }
 
-/* .story .link-background img {
-  background-color: blue;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  overflow: hidden;
-} */
-
 .image-container {
-  background-color: gray;
   width: 56px;
   height: 56px;
   border: none;
   border-radius: 50%;
 }
 
+.image-container div {
+  width: 100%;
+  height: 100%;
+}
+
 .link-background .image-link {
-  background-color: black;
-  background: url("../image/insta-sprite.png") no-repeat -373px -1px;
-  width: 56px;
-  height: 56px;
+  position: relative;
+  top: -4px;
+  left: -4px;
+  background: url("../image/insta-sprite.png") no-repeat -306px 0;
+  width: 64px;
+  height: 64px;
 }
 
 .story .story-name {
   font-size: 14px;
 }
 
+/* ---------------feed--------------- */
 .feeds {
   display: flex;
   flex-direction: column;
@@ -237,20 +239,20 @@ section {
 }
 
 .feed {
-  background: #fff;
   margin-bottom: 60px;
-  border-radius: 3px;
   border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fff;
 }
 
 .feed header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
   height: 60px;
   padding: 16px;
   border-bottom: 1px solid #efefef;
+  background-color: #fff;
 }
 
 .header-contents-align {
@@ -267,9 +269,6 @@ section {
 }
 
 .user-image {
-  /* background: url('../images/insta-sprite.png') no-repeat -306px 0;
-	width: 64px;
-	height: 64px; */
   width: 100%;
   height: 100%;
   background-color: #8e8e8e;
@@ -286,9 +285,9 @@ section {
 }
 
 .user-info-container .user-info .user-name {
+  color: #262626;
   font-size: 14px;
   font-weight: 600;
-  color: #262626;
 }
 .user-info-container .user-info .city {
   font-size: 12px;
@@ -300,9 +299,8 @@ section {
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #fff;
-  cursor: pointer;
   border: none;
+  background-color: #fff;
 }
 
 .feed-image {
@@ -336,8 +334,6 @@ section {
 .comments-icons button {
   width: 40px;
   height: 40px;
-
-  cursor: pointer;
   border: none;
   background: #fff;
 }
@@ -353,11 +349,11 @@ section {
   font-weight: 600;
 }
 
-.comments-icons .like-counts a {
-  font-weight: 600;
-}
-
-.user-comment-container {
+.user-comment,
+.all-comments-show,
+.other-comments,
+.other-comments .comment {
+  margin-bottom: 4px;
 }
 
 .comment-id {
@@ -374,8 +370,8 @@ section {
 }
 
 .time-container a {
-  color: #8e8e8e;
   margin-bottom: 5px;
+  color: #8e8e8e;
 }
 
 .time-container a time {
@@ -386,12 +382,12 @@ section {
 .post-comment {
   display: flex;
   align-items: center;
-  color: #8e8e8e;
+  min-height: 56px;
+  margin-top: 4px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-top: 4px;
   border-top: 1px solid #efefef;
-  min-height: 56px;
+  color: #8e8e8e;
 }
 
 .comment-form {
@@ -407,7 +403,6 @@ section {
   padding: 8px 16px 8px 0;
   border: none;
   background: #fff;
-  cursor: pointer;
 }
 
 .emoji-button .svg {
@@ -415,14 +410,14 @@ section {
   height: 24px;
 }
 .comment-form .comment-input {
-  color: #262626;
+  flex-grow: 1;
   width: 512px;
   height: 18px;
   max-height: 80px;
-  border: 0;
-  flex-grow: 1;
-  outline: 0;
   padding: 0;
+  border: 0;
+  color: #262626;
+  outline: 0;
   resize: none;
   overflow-y: auto;
 }
@@ -431,19 +426,211 @@ section {
   color: #8e8e8e;
 }
 
-/* 새 댓글 기능 달기할 때 여기 소스 참고해서 만들기 */
 .comment-form .post-button {
   width: auto;
   height: 18px;
   border: 0;
-  font-weight: 600;
   color: #0095f6;
+  font-weight: 600;
   background-color: #fff;
-  cursor: pointer;
   opacity: 1;
 }
 
 .post-button:disabled {
   pointer-events: none;
   opacity: 0.3;
+}
+
+/* -------------right-contens------------ */
+.right-contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 293px;
+}
+
+.right-contents > div {
+  position: fixed;
+  background-color: #fafafa;
+}
+.transparent {
+  background: transparent;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile .userid-link {
+  width: 56px;
+  height: 56px;
+}
+
+.profile a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile .userinfo-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  background-color: transparent;
+}
+
+.profile .userinfo-text a {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile .userinfo-text span {
+  color: #8e8e8e;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.profile-container button {
+  color: #0095f6;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  border: 0;
+}
+
+.recommend-container {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recommend span {
+  margin: -3px 0 -4px;
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.recommend a {
+  margin: -2px 0 -3px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.recommend-list {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.recommend-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.item {
+  display: flex;
+}
+
+.item .item-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.item img {
+  object-fit: none;
+  object-position: -376px -241px;
+  width: 40px;
+  height: 40px;
+}
+
+.item .username {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  background-color: #fafafa;
+}
+
+.item .username a {
+  font-weight: 600;
+}
+
+.item .username span {
+  display: block;
+  width: 201px;
+  margin-top: 2px;
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recommend-item .follow-button {
+  color: #0095f6;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  margin: -2px 0 -3px;
+  border: none;
+}
+
+/* ------------footer--------------- */
+footer {
+  width: 293px;
+}
+
+footer ul {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+footer ul li {
+  display: inline;
+  white-space: nowrap;
+}
+footer ul li a {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+footer ul li a::after {
+  content: "\00B7";
+  margin: 0 0.25em 0 0.25em;
+  color: #c7c7c7;
+}
+
+footer ul li:last-child a:after {
+  content: none;
+}
+
+footer span {
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: uppercase;
 }

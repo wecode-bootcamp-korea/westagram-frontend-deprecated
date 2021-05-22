@@ -106,6 +106,7 @@
               </div>
             </div>
           </div>
+
           <div class="feeds">
             <article class="feed">
               <header>
@@ -130,12 +131,14 @@
                 </div>
                 <button>•••</button>
               </header>
+
               <div class="feed-image">
                 <img
                   src="https://images.unsplash.com/photo-1621419079793-73020baef9eb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                   alt=""
                 />
               </div>
+
               <div class="comments">
                 <div class="comments-icons">
                   <div>
@@ -155,6 +158,7 @@
                         </svg>
                       </div>
                     </button>
+
                     <button>
                       <div class="icon-reply">
                         <svg
@@ -173,6 +177,7 @@
                         </svg>
                       </div>
                     </button>
+
                     <button>
                       <div class="icon-share">
                         <svg
@@ -190,6 +195,7 @@
                       </div>
                     </button>
                   </div>
+
                   <button class="button-bookmark">
                     <div class="icon-bookmark">
                       <svg
@@ -217,13 +223,11 @@
 
                 <div class="user-comment-container">
                   <div class="user-comment">
-                    <div class="comment">
-                      <a href="" class="comment-id">instagram</a>
-                      <span>My freestyle riding represents who I am. </span>
-                    </div>
+                    <a href="" class="comment-id">instagram</a>
+                    <span>My freestyle riding represents who I am. </span>
                   </div>
 
-                  <div class="all-comments-isshow">
+                  <div class="all-comments-show">
                     <a href="">댓글 <span>12,739</span>개 모두 보기</a>
                   </div>
 
@@ -251,49 +255,148 @@
                     </a>
                   </div>
                 </div>
-              </div>
-              <div class="post-comment">
-                <div class="comment-form-container">
-                  <form class="comment-form" >
-                    <button class="emoji-button" type="button">
-                      <div class="svg">
-                        <svg
-                          aria-label="이모티콘"
-                          class=""
-                          fill="#262626"
-                          height="24"
-                          viewBox="0 0 48 48"
-                          width="24"
-                        >
-                          <path
-                            d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"
-                          ></path>
-                          <path
-                            d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </button>
-                    <input
-                      type="text"
-                      class="comment-input"
-                      aria-label="댓글 달기..."
-                      placeholder="댓글 달기..."
-                      autocomplete="off"
-                      autocorrect="off"
-                    />
-                    <button class="post-button" type="submit" disabled>게시</button>
-                  </form>
+
+                <div class="post-comment">
+                  <div class="comment-form-container">
+                    <form class="comment-form">
+                      <button class="emoji-button">
+                        <div class="svg">
+                          <svg
+                            aria-label="이모티콘"
+                            class=""
+                            fill="#262626"
+                            height="24"
+                            viewBox="0 0 48 48"
+                            width="24"
+                          >
+                            <path
+                              d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"
+                            ></path>
+                            <path
+                              d="M34.9 24c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5zm-21.8 0c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5-2.5-1.1-2.5-2.5zM24 37.3c-5.2 0-8-3.5-8.2-3.7-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2.1.1 2.1 2.5 5.8 2.5 3.7 0 5.8-2.5 5.8-2.5.5-.6 1.5-.7 2.1-.2.6.5.7 1.5.2 2.1 0 .2-2.8 3.7-8 3.7z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                      <input
+                        type="text"
+                        class="comment-input"
+                        aria-label="댓글 달기..."
+                        placeholder="댓글 달기..."
+                        autocomplete="off"
+                        autocorrect="off"
+                      />
+                      <button class="post-button" type="submit" disabled>
+                        게시
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </article>
-
           </div>
         </div>
-        <!-- <aside class="right-contents">
-        <div class="userInfo"></div>
-        <div class="recommend"></div>
-      </aside> -->
+
+        <aside class="right-contents">
+          <div>
+            <div class="profile-container transparent">
+              <div class="profile transparent">
+                <a class="userid-link" href="#"
+                  ><img src="./image/user-icon.jpg" alt="user님의 프로필 사진"
+                /></a>
+                <div class="userinfo-text">
+                  <a href="">userId</a>
+                  <span>username</span>
+                </div>
+              </div>
+              <button class="transparent">전환</button>
+            </div>
+
+            <div class="recommend-container transparent">
+              <div class="recommend transparent">
+                <span>회원님을 위한 추천</span>
+                <a class="suggest" href="">모두 보기</a>
+              </div>
+              <ul class="recommend-list">
+                <li class="recommend-item">
+                  <div class="item">
+                    <a class="item-link" href=""
+                      ><img src="./image/insta-sprite.png" alt="" />
+                    </a>
+                    <div class="username">
+                      <a href="">imsj208</a>
+                      <span>kingwoobinkim님 외 6명이 팔로우합니다</span>
+                    </div>
+                  </div>
+                  <button class="follow-button transparent">팔로우</button>
+                </li>
+                <li class="recommend-item">
+                  <div class="item">
+                    <a class="item-link" href=""
+                      ><img src="./image/insta-sprite.png" alt=""
+                    /></a>
+                    <div class="username">
+                      <a href="">jinhyung.lee.5832</a>
+                      <span>ycw12495님 외 1명이 팔로우합니다</span>
+                    </div>
+                  </div>
+                  <button class="follow-button transparent">팔로우</button>
+                </li>
+                <li class="recommend-item">
+                  <div class="item">
+                    <a class="item-link" href=""
+                      ><img src="./image/insta-sprite.png" alt=""
+                    /></a>
+                    <div class="username">
+                      <a href="">msc_940216</a>
+                      <span>회원님을 팔로우합니다</span>
+                    </div>
+                  </div>
+                  <button class="follow-button transparent">팔로우</button>
+                </li>
+              </ul>
+            </div>
+
+            <footer>
+              <ul>
+                <li>
+                  <a href=""><span>소개</span> </a>
+                </li>
+                <li>
+                  <a href=""><span>도움말</span></a>
+                </li>
+                <li>
+                  <a href=""><span>홍보센터</span></a>
+                </li>
+                <li>
+                  <a href=""><span>API</span></a>
+                </li>
+                <li>
+                  <a href=""><span>채용정보</span></a>
+                </li>
+                <li>
+                  <a href=""><span>개인정보처리방침</span> </a>
+                </li>
+                <li>
+                  <a href=""><span>약관</span> </a>
+                </li>
+                <li>
+                  <a href=""><span>위치</span> </a>
+                </li>
+                <li>
+                  <a href=""><span>인기계정</span> </a>
+                </li>
+                <li>
+                  <a href=""><span>해시태그</span></a>
+                </li>
+                <li>
+                  <a href=""><span>언어</span> </a>
+                </li>
+              </ul>
+              <span>© 2021 Instagram from Facebook</span>
+            </footer>
+          </div>
+        </aside>
       </section>
     </main>
     <script src="./main.js"></script>
