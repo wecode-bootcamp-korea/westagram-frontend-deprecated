@@ -5,36 +5,36 @@ const commentList = document.querySelector(".js-comment-list"),
 
 function handleSubmit(event) {
   event.preventDefault();
+
   const textareaValue = commentTextarea.value;
   paintComment(textareaValue);
   commentTextarea.value = "";
   commentButton.disabled = true;
+  commentButton.style.color = "";
 }
 
 function handleEnter(event) {
-  const text = event;
-
-  if (commentTextarea.value.length !== 0) {
-    commentButton.disabled = false;
-  }
-  if (text.keyCode === 13) {
-    if (commentTextarea.value.length !== 0) {
-      event.preventDefault();
-      commentButton.click();
-    }
+  commentButton.style.color = "#0095f6";
+  commentButton.disabled = false;
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    commentButton.click();
   }
 }
 
 function paintComment(text) {
   const li = document.createElement("li"),
     span = document.createElement("span"),
-    delButton = document.createElement("button");
-  heartButton = document.createElement("button");
+    b = document.createElement("b");
+  (delButton = document.createElement("button")),
+    (heartButton = document.createElement("button"));
   delButton.innerText = "✖️";
-  heartButton.innerHTML = "좋아요";
+  heartButton.innerText = "좋아요";
   delButton.addEventListener("click", deleteComment);
-  heartButton.addEventListener("click", heartComment);
+  heartButton.addEventListener("click", heartLike);
   span.innerHTML = text;
+  b.innerText = "myxxjun";
+  li.appendChild(b);
   li.appendChild(span);
   li.appendChild(heartButton);
   li.appendChild(delButton);
@@ -47,12 +47,12 @@ function deleteComment(event) {
   commentList.removeChild(li);
 }
 
-function heartComment(event) {
-  let buttonColor = event.target;
-  if (buttonColor.style.color === "none") {
-    buttonColor.style.color = "tomato";
+function heartLike(event) {
+  let likeButton = event.target;
+  if (likeButton.style.color === "") {
+    likeButton.style.color = "tomato";
   } else {
-    buttonColor.style.color = "none";
+    likeButton.style.color = "";
   }
 }
 

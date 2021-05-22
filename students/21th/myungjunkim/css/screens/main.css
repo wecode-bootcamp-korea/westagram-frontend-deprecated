@@ -9,7 +9,7 @@
   justify-content: center;
   position: fixed;
   width: 100vw;
-  margin-top: -10px;
+  margin-top: 10px;
   background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
   z-index: 2;
@@ -271,10 +271,18 @@ b {
   margin-right: 10px;
 }
 
+.comment-container li b {
+  margin-right: 5px;
+}
+
 .comment-container li button {
   float: right;
+  margin-left: 2px;
+  margin-right: 5px;
   cursor: pointer;
   outline: none;
+  border: none;
+  background-color: #fff;
 }
 
 .comment-input-container {
@@ -315,10 +323,12 @@ b {
   border: none;
   background-color: #fff;
   color: #0095f6;
+  cursor: pointer;
 }
 
 .comment-input-container button:disabled {
   color: #5fbdfc;
+  cursor: default;
 }
 
 .main-right {

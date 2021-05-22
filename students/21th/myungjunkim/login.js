@@ -1,17 +1,17 @@
-const loginContainer = document.querySelector(".js__login-input");
-const loginButton = document.querySelector(".js__login-button");
+const loginContainer = document.querySelector(".login-input");
+const loginButton = document.querySelector(".login-button");
 
 loginContainer.addEventListener("keyup", function () {
   const id = document.getElementById("js__input-id"),
-    password = document.getElementById("js__input-password"),
-    button = document.querySelector(".js__login-button");
+    password = document.getElementById("js__input-password");
 
   function checkValue() {
     loginButton.classList.add("not-disabled");
-    button.disabled = false;
+    loginButton.style.backgroundColor = "#0295f6";
+    loginButton.disabled = false;
   }
 
-  id.value.length > 4 && password.value.length > 4
+  id.value.indexOf("@") > 0 && password.value.length > 4
     ? checkValue()
     : loginButton.classList.remove("not-disabled");
 });

@@ -14,10 +14,7 @@ html body {
   text-align: center;
   height: 380px;
   width: 350px;
-  padding-top: 30px;
-  padding-right: 37px;
-  padding-bottom: 20px;
-  padding-left: 37px;
+  padding: 30px 37px 20px 37px
   background-color: #fff;
   border: 1px solid #dbdbdb;
 }
@@ -45,7 +42,6 @@ html body {
 }
 
 .not-disabled {
-  background-color: #0295f6;
   cursor: pointer;
 }
 
