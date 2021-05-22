@@ -17,46 +17,43 @@
     padding: 30px;
 }
 
-#login-wrap .login-area h1.title {
-    /*margin:22px auto 25px;
-    background-repeat: no-repeat;
-    background-position: 0 -130px;*/
-    font-family: Billabong;
+.login-area h1.title {
     height: 51px;
     width: 100%;
+    font-family: Billabong;
     text-align: center;
 }
 
-#login-wrap .login-area input {
+.login-area input {
     margin: 5px;
     padding: 15px;
-    border-radius: 5px;
     background-color: #fafafa;
     border: 1px solid #efefef;
+    border-radius: 5px;
 }
 
-#login-wrap .login-area button {
+.login-area button {
+    margin: 15px 5px;
+    padding: 15px;
     background-color: #0f76dc;
     border: 1px solid #0566c7;
     color: white;
-    margin: 15px 5px;
-    padding: 15px;
     border-radius: 5px;
     font-size: 15px;
 }
 
-#login-wrap .login-area button.inactive {
+.login-area button.inactive {
     opacity: .3;
 }
 
-#login-wrap .login-area button:not(.inactive):hover {
+.login-area button:not(.inactive):hover {
+    opacity: .7;
     cursor: pointer;
-    opacity: 70%;
 }
 
-#login-wrap .login-area .find-passwd-str {
+.find-passwd-str {
+    align-self: center;
+    padding-top: 100px;
     color: #003469;
     cursor: pointer;
-    padding-top: 100px;
-    align-self: center;
 }

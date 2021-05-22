@@ -3,18 +3,20 @@
         <title>Westagram</title>
         <link href="./css/common.css" type="text/css" rel="stylesheet"/>
         <link href="./css/main.css" type="text/css" rel="stylesheet"/>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     </head>
     <body>
-        <div id="wrapper">
+        <div class="wrapper">
             <nav class="header">
+                <div>
                 <hgroup>
-                    <h1 class="logo-icon"></h1>
-                    <h1>|</h1>
-                    <h1 class="logo-title logo-text">Westagram</h1>
+                    <a href="main.html"><h1 class="logo-title">Westagram</h1></a>
                 </hgroup>
                 <div id="search-box">
                     <input type="text" placeholder="검색" id="txtFindPoeple" />
-
                     <div id="head-search-wrap" class="display-none">
                         
                         <div class="head-search-box">
@@ -23,32 +25,77 @@
                         
                     </div>
                 </div>
-                <ul class="list-icon">
-                    <li class="icon">
-                        <svg aria-label="Direct" fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
-                    </li>
-                    <li class="icon">
-                        <svg aria-label="활동 피드" fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
-                    </li>
-                    <li class="icon">
+                <div class="header-icon-list">
+                    <span>
+                        <a href="">
+                            <svg aria-label="Direct" fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
+                            <svg aria-label="활동 피드" fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">
                         <svg aria-label="사람 찾기" fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M20 40C9 40 0 31 0 20S9 0 20 0s20 9 20 20-9 20-20 20zm0-37C10.6 3 3 10.6 3 20s7.6 17 17 17 17-7.6 17-17S29.4 3 20 3z"></path><path d="M46.6 48.1c-.4 0-.8-.1-1.1-.4L32 34.2c-.6-.6-.6-1.5 0-2.1s1.5-.6 2.1 0l13.5 13.5c.6.6.6 1.5 0 2.1-.2.3-.6.4-1 .4z"></path></svg>
-                    </li>
-                    <li>
-                        <div class="box"><img src="img/profile_img.jpeg" class="profile" alt="프로필 사진" /></div>
-                    </li>
-                </ul>
+                        </a>
+                    </span>
+                    <span class="profile-popup-button">
+                        <a href="javascript::">
+                            <div class="profile-box"><img src="img/profile_img.jpeg" class="profile-box-img" alt="프로필 사진" /></div>
+                        </a>
+                        <div class="profile-popup display-none">
+                            <div class="pofile-popup-wrap">
+                                <a href="#" onclick="alert('aa');">
+                                    <div class="profile-popup-item">
+                                        <div class="profile-popup-item-icon">
+                                            <svg aria-label="프로필" fill="#262626" height="16" viewBox="0 0 32 32" width="16"><path d="M16 0C7.2 0 0 7.1 0 16c0 4.8 2.1 9.1 5.5 12l.3.3C8.5 30.6 12.1 32 16 32s7.5-1.4 10.2-3.7l.3-.3c3.4-3 5.5-7.2 5.5-12 0-8.9-7.2-16-16-16zm0 29c-2.8 0-5.3-.9-7.5-2.4.5-.9.9-1.3 1.4-1.8.7-.5 1.5-.8 2.4-.8h7.2c.9 0 1.7.3 2.4.8.5.4.9.8 1.4 1.8-2 1.5-4.5 2.4-7.3 2.4zm9.7-4.4c-.5-.9-1.1-1.5-1.9-2.1-1.2-.9-2.7-1.4-4.2-1.4h-7.2c-1.5 0-3 .5-4.2 1.4-.8.6-1.4 1.2-1.9 2.1C4.2 22.3 3 19.3 3 16 3 8.8 8.8 3 16 3s13 5.8 13 13c0 3.3-1.2 6.3-3.3 8.6zM16 5.7c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7zm0 11c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path></svg>
+                                        </div>
+                                        <div class="profile-popup-item-title">프로필</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="profile-popup-item">
+                                        <div class="profile-popup-item-icon">
+                                            <svg aria-label="저장됨" fill="#262626" height="16" viewBox="0 0 32 32" width="16"><path d="M28.7 32c-.4 0-.8-.2-1.1-.4L16 19.9 4.4 31.6c-.4.4-1.1.6-1.6.3-.6-.2-.9-.8-.9-1.4v-29C1.8.7 2.5 0 3.3 0h25.4c.8 0 1.5.7 1.5 1.5v29c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM4.8 3v23.9l9.4-9.4c.9-.9 2.6-.9 3.5 0l9.4 9.4V3H4.8z"></path></svg>
+                                        </div>
+                                        <div class="profile-popup-item-title">저장됨</div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="profile-popup-item">
+                                        <div class="profile-popup-item-icon">
+                                            <svg aria-label="설정" fill="#262626" height="16" viewBox="0 0 32 32" width="16"><path d="M31.2 13.4l-1.4-.7c-.1 0-.2-.1-.2-.2v-.2c-.3-1.1-.7-2.1-1.3-3.1v-.1l-.2-.1v-.3l.5-1.5c.2-.5 0-1.1-.4-1.5l-1.9-1.9c-.4-.4-1-.5-1.5-.4l-1.5.5H23l-.1-.1h-.1c-1-.5-2-1-3.1-1.3h-.2c-.1 0-.1-.1-.2-.2L18.6.9c-.2-.5-.7-.9-1.2-.9h-2.7c-.5 0-1 .3-1.3.8l-.7 1.4c0 .1-.1.2-.2.2h-.2c-1.1.3-2.1.7-3.1 1.3h-.1l-.1.2h-.3l-1.5-.5c-.5-.2-1.1 0-1.5.4L3.8 5.7c-.4.4-.5 1-.4 1.5l.5 1.5v.5c-.5 1-1 2-1.3 3.1v.2c0 .1-.1.1-.2.2l-1.4.7c-.6.2-1 .7-1 1.2v2.7c0 .5.3 1 .8 1.3l1.4.7c.1 0 .2.1.2.2v.2c.3 1.1.7 2.1 1.3 3.1v.1l.2.1v.3l-.5 1.5c-.2.5 0 1.1.4 1.5l1.9 1.9c.3.3.6.4 1 .4.2 0 .3 0 .5-.1l1.5-.5H9l.1.1h.1c1 .5 2 1 3.1 1.3h.2c.1 0 .1.1.2.2l.7 1.4c.2.5.7.8 1.3.8h2.7c.5 0 1-.3 1.3-.8l.7-1.4c0-.1.1-.2.2-.2h.2c1.1-.3 2.1-.7 3.1-1.3h.1l.1-.1h.3l1.5.5c.1 0 .3.1.5.1.4 0 .7-.1 1-.4l1.9-1.9c.4-.4.5-1 .4-1.5l-.5-1.5V23l.1-.1v-.1c.5-1 1-2 1.3-3.1v-.2c0-.1.1-.1.2-.2l1.4-.7c.5-.2.8-.7.8-1.3v-2.7c0-.5-.4-1-.8-1.2zM16 27.1c-6.1 0-11.1-5-11.1-11.1S9.9 4.9 16 4.9s11.1 5 11.1 11.1-5 11.1-11.1 11.1z"></path></svg>
+                                        </div>
+                                        <div class="profile-popup-item-title">설정</div>
+                                    </div>
+                                </a>
+                                <hr class="line">
+                                <a href="login.html">
+                                    <div class="profile-popup-item">
+                                        <div class="profile-popup-item-title">로그아웃</div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </span>
+                </div>
+                </div>
             </nav>
-            <div id="container">
+            <div class="container">
                 <main>
                     <section>
                         <div class="feeds">
                             <article>
                                 <header>
-                                    <div class="box"><img src="img/profile_img.jpeg" class="profile" alt="프로필 사진" /></div>
+                                    <div class="profile-box"><img src="img/profile_img.jpeg" class="profile-box-img" alt="프로필 사진" /></div>
                                     <div class="bold">jemizem</div>
                                 </header>
                                 <div class="feeds-picture">
-                                    <img src="img/main_img1.jpeg" alt="main image" />
+                                    <img alt="main image" src="img/main_img1.jpeg"  />
                                 </div>
                                 <div class="feeds-navigation">
                                     <ul class="list-style-none">
@@ -68,13 +115,13 @@
                                     </ul>
                                 </div>
                                 <div class="feeds-likes">
-                                    <div class="box">
-                                        <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                    <div class="profile-box">
+                                        <img src="img/profile_img.jpeg" class="profile-box-img" alt="프로필 사진">
                                     </div>
                                     <span class="bold">kimjimin</span> 님 외 10명이 좋아합니다.
                                 </div>
                                 <div class="feeds-content">
-                                    <span class="bold">jemizem.k</span> 인스타 그램 클론 코딩... <span class="gray more">더 보기</span>
+                                    <span class="bold">jemizem</span> 인스타 그램 클론 코딩... <span class="gray more">더 보기</span>
                                 </div>
                                 <div class="feeds-comment-list">
                                     <ul class="list-style-none" id="commentList01"></ul>
@@ -88,7 +135,7 @@
                             </article>
                             <article>
                                 <header>
-                                    <div class="box"><img src="img/profile_img.jpeg" class="profile" alt="프로필 사진" /></div>
+                                    <div class="profile-box"><img src="img/profile_img.jpeg" class="profile-box-img" alt="프로필 사진" /></div>
                                     <div class="bold">jemizem</div>
                                 </header>
                                 <div class="feeds-picture">
@@ -112,13 +159,13 @@
                                     </ul>
                                 </div>
                                 <div class="feeds-likes">
-                                    <div class="box">
-                                        <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                    <div class="profile-box">
+                                        <img src="img/profile_img.jpeg" class="profile-box-img" alt="프로필 사진">
                                     </div>
                                     <span class="bold">cookie_is_love</span> 님 외 239명이 좋아합니다.
                                 </div>
                                 <div class="feeds-content">
-                                    <span class="bold">jemizem.k</span> 저희집 멍멍이 쿠키입니다 💖... <span class="gray more">더 보기</span>
+                                    <span class="bold">jemizem</span> 저희집 멍멍이 쿠키입니다 💖... <span class="gray more">더 보기</span>
                                 </div>
                                 <div class="feeds-comment-list">
                                     <ul class="list-style-none" id="commentList02"></ul>
@@ -134,67 +181,84 @@
                             <div class="main-right-wrap">
                             <div class="main-right">
                                 <header>
-                                    <div class="box"><img src="img/profile_img.jpeg" class="profile" alt="프로필 사진" /></div>
+                                    <div class="profile-box"><img src="img/profile_img.jpeg" class="profile-box-img" alt="프로필 사진" /></div>
                                     <div class="bold">jemizem</div>
-                                    <div class="gray">jemizem</div>
+                                    <div class="gray">Wecode 21기 김지민입니다</div>
                                 </header>
 
                                 <div class="main-right-story-box">
                                     <h3>스토리</h3>
                                     <div class="all_view gray">모두 보기</div>
-                                    <ul class="list-style-none">
+                                    <ul>
                                         <li>
-                                            <div class="box live-view">
-                                                <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                            <div class="profile-box live-view">
+                                                <img src="https://picsum.photos/200" class="profile-box-img" alt="프로필 사진">
                                             </div>
-                                            <div class="bold">_yum_s</div>
-                                            <div class="gray">16분 전</div>
+                                            <div class="proflie-box-desc">
+                                                <div class="bold">_yum_s</div>
+                                                <div class="gray">방금 전</div>
+                                            </div>
                                         </li>
+
                                         <li>
-                                            <div class="box live-view">
-                                                <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                            <div class="profile-box live-view">
+                                                <img src="https://picsum.photos/300" class="profile-box-img" alt="프로필 사진">
                                             </div>
-                                            <div class="bold">_yum_s</div>
-                                            <div class="gray">16분 전</div>
+                                            <div class="proflie-box-desc">
+                                                <div class="bold">coffee_holic</div>
+                                                <div class="gray">16분 전</div>
+                                            </div>
                                         </li>
+
                                         <li>
-                                            <div class="box live-view">
-                                                <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                            <div class="profile-box live-view">
+                                                <img src="https://picsum.photos/400" class="profile-box-img" alt="프로필 사진">
                                             </div>
-                                            <div class="bold">_yum_s</div>
-                                            <div class="gray">16분 전</div>
+                                            <div class="proflie-box-desc">
+                                                <div class="bold">bg_yuyu</div>
+                                                <div class="gray">3시간 전</div>
+                                            </div>
                                         </li>
+
                                     </ul>
                                 </div>
                                 <div class="main-right-friend-box">
                                     <h3>회원님을 위한 추천</h3>
                                     <div class="all_view gray">모두 보기</div>
-                                    <ul class="list-style-none">
+                                    <ul>
+
                                         <li>
-                                            <div class="box">
-                                                <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                            <div class="profile-box">
+                                                <img src="https://picsum.photos/250" class="profile-box-img" alt="프로필 사진">
                                             </div>
-                                            <div class="bold">_yum_s</div>
-                                            <div class="gray">16분 전</div>
+                                            <div class="proflie-box-desc">
+                                                <div class="bold">i_wish_friend</div>
+                                                <div class="gray">Westagram 신규가입</div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="profile-box">
+                                                <img src="https://picsum.photos/260" class="profile-box-img" alt="프로필 사진">
+                                            </div>
+                                            <div class="proflie-box-desc">
+                                                <div class="bold">study_funfun</div>
+                                                <div class="gray">_wecode님이 팔로우합니다.</div>
+                                            </div>
                                         </li>
                                         <li>
-                                            <div class="box">
-                                                <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                            <div class="profile-box">
+                                                <img src="https://picsum.photos/270" class="profile-box-img" alt="프로필 사진">
                                             </div>
-                                            <div class="bold">_yum_s</div>
-                                            <div class="gray">16분 전</div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <img src="img/profile_img.jpeg" class="profile" alt="프로필 사진">
+                                            <div class="proflie-box-desc">
+                                                <div class="bold">_mongmoung_good</div>
+                                                <div class="gray">i_love_cookie님이 팔로우합니다.</div>
                                             </div>
-                                            <div class="bold">_yum_s</div>
-                                            <div class="gray">16분 전</div>
                                         </li>
                                     </ul>
                                 </div>
                                 <footer>
-                                    <ul class="list-style-none">
+                                    <ul>
                                         <li>Instagram 정보</li>
                                         <li>지원</li>
                                         <li>홍보 센터</li>

@@ -1,340 +1,360 @@
-#main-wrap {
-    margin: auto;
-    height: 100%;
-}
-
-#wrapper nav.header {
+nav.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 54px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #e6e6e6;
-    background-color: white;
-    z-index: 9;
-}
-/*
-#wrapper nav.header div {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     justify-content: center;
-    max-width: 975px;
-    width: 100%;
-    position: relative;
+    height: 54px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    z-index: 1;
 }
-*/
-#wrapper nav.header hgroup {
-    width: 200px;
+
+nav.header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 920px;
+}
+
+nav.header hgroup {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#wrapper nav.header hgroup h1.logo-icon {
-    background-repeat: no-repeat;
-    background-position: -371px -279px;
-    height: 40px;
-    width: 42px;
-}
-
-#wrapper nav.header hgroup h1.logo-title {
-    background-repeat: no-repeat;
-    background-position: -120px -224px;
-    height: 33px;
-    width: 110px;
-}
-
-#wrapper nav.header #search-box {
-    width: 200px;
+#search-box {
     position: relative;
+    width: 200px;
 }
 
-#wrapper nav.header #search-box input {
+#search-box input {
     width: 100%;
     height: 30px;
-    border: 1px solid #8e8e8e;
     background-color: #fafafa;
+    border: 1px solid #8e8e8e;
     border-radius: 3px;
 }
 
-
-#wrapper nav.header #search-box input::-webkit-input-placeholder {
+#search-box input::-webkit-input-placeholder {
     text-align: center;
 }
 
-#wrapper nav.header ul.list-icon li {
-    display: inline;
+.header-icon-list {
+    display: flex;
+}
+
+.header-icon-list > span {
+    position: relative;
+    display: block;
     padding: 0 10px;
  }
 
- #wrapper nav.header ul.list-icon li div {
-    display: inline-block;
- }
-
-#wrapper nav.header ul.list-icon li .box,
-#wrapper nav.header ul.list-icon li .box img {
+.header-icon-list .profile-box,
+.header-icon-list .profile-box img {
     width: 25px;
     height: 25px;
- }
+}
 
- #wrapper #container {
-     padding-top: 54px;
- }
+.profile-popup {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
+}
+ 
+.pofile-popup-wrap {
+    display: flex;
+    flex-direction: column;
+}
 
- #wrapper #container main {
-     background-color: #fafafa;
-     height: 100%;
- }
+.profile-popup-item {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 16px;
+}
 
- #wrapper #container main section {
+.profile-popup-item-icon {
+    margin-right: 12px;
+}
+
+.profile-popup-item-title {
+    width: 170px;
+    height: 28px;
+    margin: -3px 0 -4px;
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.container {
+    padding-top: 54px;
+}
+
+.container main {
+    background-color: #fafafa;
+}
+
+.container main section {
     display: flex;
     justify-content: center; 
     position: relative;
 }
- 
- #wrapper #container main div.feeds {
-    max-width: 614px;
-    width: 100%;
-}
 
-#wrapper #container main div.feeds article {
+.feeds {
     max-width: 600px;
-    background-color: white;
-    border: 1px solid #e6e6e6;
-    flex-basis: 600px;
-    margin: 35px 0;
 }
 
-#wrapper #container main div.feeds article header {
+.feeds article {
+    margin: 35px 0;
+    background-color: fff;
+    border: 1px solid #e6e6e6;
+}
+
+.feeds article header {
     display: flex;
     align-items: center;
     margin: 10px;
 }
 
-#wrapper #container main div.feeds article header .box,
-#wrapper #container main div.feeds article header .box img {
+.feeds article header .profile-box,
+.feeds article header .profile-box img {
     width: 42px;
     height: 42px;
     margin: 0 10px 0 0;
 }
 
-#wrapper #container main div.feeds article .feeds-picture,
-#wrapper #container main div.feeds article .feeds-navigation,
-#wrapper #container main div.feeds article .feeds-likes,
-#wrapper #container main div.feeds article .feeds-content,
-#wrapper #container main div.feeds article .feeds-date,
-#wrapper #container main div.feeds article .feeds-comment,
-#wrapper #container main div.feeds article .feeds-comment-list {
-    width: 100%;
+.feeds-picture,
+.feeds-navigation,
+.feeds-likes,
+.feeds-content,
+.feeds-date,
+.feeds-comment,
+.feeds-comment-list {
     padding: 5px 20px;
 }
 
-#wrapper #container main div.feeds article .feeds-picture {
-    width: 600px;
-    height: 600px;
+.feeds-picture {
+    position: relative;
     align-items: stretch;
     flex-shrink: 0;
-    position: relative;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
 }
 
-#wrapper #container main div.feeds article .feeds-picture img {
+.feeds-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
     object-fit: cover;
 }
 
-#wrapper #container main div.feeds article .feeds-navigation {
+.feeds-navigation {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
 }
 
-#wrapper #container main div.feeds article .feeds-likes {
-    height: 30px;
+.feeds-likes {
     display: flex;
     align-items: center;
+    height: 30px;
 }
 
-#wrapper #container main div.feeds article .feeds-likes .box,
-#wrapper #container main div.feeds article .feeds-likes .box img {
+.feeds-likes .profile-box,
+.feeds-likes .profile-box img {
     width: 22px;
     height: 22px;
     margin: 0 10px 0 0;
 }
 
-#wrapper #container main div.feeds article .feeds-comment {
-    line-height: 18px;
-    min-height: 56px;
-    border-top: 1px solid rgba(var(--ce3, 239,239,239),1);
+.feeds-comment {
+    position: relative;
     display: flex;
     align-items: center;
+    min-height: 56px;
+    border-top: 1px solid rgba(var(--ce3, 239,239,239),1);
+    line-height: 18px;
+}
+
+.feeds-comment-list ul li {
     position: relative;
 }
 
-#wrapper #container main div.feeds article .feeds-comment-list ul li {
-    position: relative;
-}
-
-#wrapper #container main div.feeds article .feeds-comment-list ul li .comment {
+.feeds-comment-list ul li .comment {
     flex-grow: 1;
     padding: 0 0 0 10px;   
     overflow-wrap: break-word;
 }
 
-#wrapper #container main div.feeds article .feeds-comment-list ul li .button-list {  
+.feeds-comment-list ul li .button-list {  
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-#wrapper #container main div.feeds article .feeds-comment-list ul li .button-list button {  
+.feeds-comment-list ul li .button-list button {  
     width: 15px;
     background: 0 0;
     border: 0;
 }
 
-#wrapper #container main div.feeds article .feeds-comment-list ul li .button-list button:not(:last-of-type) {
+.feeds-comment-list ul li .button-list button:not(:last-of-type) {
     margin-right: 3px;
 }
 
-#wrapper #container main div.feeds article .feeds-comment .emoji {
+.feeds-comment .emoji {
     padding: 8px 16px 8px 0;
 }
 
-#wrapper #container main div.feeds article .feeds-comment textarea {
-    background: 0 0 ;
-    border: 0;
+.feeds-comment textarea {
     display: flex;
     flex-grow: 1;
+    width: 0;
     height: 18px;
     max-height: 80px;
+    background: 0 0;
+    border: 0;
     outline: 0;
-    width: 0;
     resize: none;
 }
 
-#wrapper #container main div.feeds article .feeds-comment button {
-    background: 0 0;
-    border: 0;
-    color: rgba(var(--d69,0,149,246),1);
+.feeds-comment button {
+    position: relative;
     display: inline;
     padding: 0 5px;
+    color: rgba(var(--d69,0,149,246),1);
+    background: 0 0;
+    border: 0;
     cursor: pointer;
-    position: relative;
 }
 
-#wrapper #container main div.main-right-wrap {
-    width: 300px;
-
-}
 /* main-right */
-#wrapper #container main div.main-right {
-    height: 700px;
+.main-right-wrap {
     width: 300px;
-    max-width: 530px;
-    background-color: #fafafa;
-    padding: 41px 5px 10px;
+    margin-left: 20px;
+}
+
+.main-right {
     position: fixed;
     top: 54px;
+    width: 300px;
+    max-width: 530px;
+    padding: 41px 5px 10px;
+    background-color: #fafafa;
+    font-size: 14px;
 }
 
-#wrapper #container main div.main-right header .box {
+.main-right header .profile-box {
     float: left;
 }
 
-#wrapper #container main div.main-right header .box,
-#wrapper #container main div.main-right header .box img {
+.main-right header .profile-box,
+.main-right header .profile-box img {
     width: 42px;
     height: 42px;
     margin: 0 10px 0 0;
 }
 
-#wrapper #container main div.main-right .main-right-story-box,
-#wrapper #container main div.main-right .main-right-friend-box {
+.main-right-story-box,
+.main-right-friend-box {
+    position: relative;
     width: 100%;
     min-height: 185px;
     max-height: 320px;
+    padding: 10px 12px;
+    margin: 18px 0 0 0;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 3px;
-    margin: 18px 0 0 0;
-    padding: 10px 12px;
-    position: relative;
 }
 
-#wrapper #container main div.main-right .main-right-story-box h3,
-#wrapper #container main div.main-right .main-right-friend-box h3 {
-    font-size: 14px;
+.main-right-story-box h3,
+.main-right-friend-box h3 {
     padding-bottom: 3px;
+    font-size: 14px;
 }
 
-#wrapper #container main div.main-right .main-right-story-box div.all_view,
-#wrapper #container main div.main-right .main-right-friend-box div.all_view {
-    font-size: 14px;
+.main-right-story-box div.all_view,
+.main-right-friend-box div.all_view {
     position: absolute;
     top: 0;
     right: 10px;
     padding-top: 10px;
+    font-size: 14px;
     cursor: pointer;
 }
 
-#wrapper #container main div.main-right .main-right-story-box .box,
-#wrapper #container main div.main-right .main-right-story-box .box img,
-#wrapper #container main div.main-right .main-right-friend-box .box,
-#wrapper #container main div.main-right .main-right-friend-box .box img {
+.main-right-story-box .profile-box,
+.main-right-story-box .profile-box img,
+.main-right-friend-box .profile-box,
+.main-right-friend-box .profile-box img {
     width: 42px;
     height: 42px;
     margin: 0 12px 0 0;
 }
 
-#wrapper #container main div.main-right .main-right-story-box .box,
-#wrapper #container main div.main-right .main-right-friend-box .box {
-    float: left;
+.main-right-story-box .profile-box,
+.main-right-friend-box .profile-box {
+    display: flex;
+    flex-direction: column;
 }
 
-#wrapper #container main div.main-right .main-right-story-box ul li,
-#wrapper #container main div.main-right .main-right-friend-box ul li {
-    clear: both;
-    padding: 7px 0;
+.proflie-box-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px 0;
 }
 
-#wrapper #container main div.main-right footer {
+.proflie-box-desc div {
+    padding: 3px 2px;
+}
+
+.main-right-story-box ul li,
+.main-right-friend-box ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 2px;
+}
+
+.main-right footer {
     width: 100%;
+    padding-top: 10px; 
     color: #d0d0d0;  
     font-size: 11px;
     font-weight: 400;
     line-height: 13px;
     text-transform: none;
-    padding-top: 10px; 
 }
 
-#wrapper #container main div.main-right footer ul {
+.main-right footer ul {
     color: #d0d0d0;  
 }
 
-#wrapper #container main div.main-right footer ul li {
+.main-right footer ul li {
     display: inline;
 }
 
-#wrapper #container main div.main-right footer ul li:not(:last-of-type)::after {
+.main-right footer ul li:not(:last-of-type)::after {
     content: '\00B7';
     margin: 0 .25em;
 }
 
-#wrapper #container main div.main-right footer .copylight {
+.main-right footer .copylight {
+    display: block;
    padding-top: 20px; 
-   display: block;
 }
 
 .live-view {
+    position: relative;
     width: 52px !important;
     height: 52px !important;
     border-style: solid;
@@ -342,7 +362,6 @@
     border-image-slice: 1;
     border-radius: 70%;
     border-spacing: 3px;
-    position: relative;
 }
 
 .live-view img {
@@ -360,14 +379,13 @@
     left: -15px;
 }
 
-#head-search-wrap .head-search-box {
+.head-search-box {
     width: 230px;
     height: 100%;
     max-height: 300px;
-    min-height: 80px;
-    box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
-    background: #ffffff;
+    min-height: 80px;    
     background-color: #ffffff;
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
 }
 
 .head-search-box ul li {
@@ -395,7 +413,7 @@
     padding-bottom: 20px;
 }
 
-#head-search-wrap .head-search-box .box {
+.head-search-box .profile-box {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -403,7 +421,18 @@
     height: 42px;
 }
 
-#head-search-wrap .head-search-box .box img {
+.head-search-box .profile-box img {
     width: 42px;
     height: 42px;
+}
+
+@media only screen and (max-width: 980px) {
+    
+    .main-right {
+        display: none;
+    }
+
+    .main-right-wrap {
+        width: 0;
+    }
 }

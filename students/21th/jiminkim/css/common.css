@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-html, body, #wrapper {
+html, body, .wrapper {
     background-color: #fafafa;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -ms-overflow-style: none;
 }
-::-webkit-scrollbar { display: none; }
 
 textarea {
     text-rendering: auto;
@@ -39,35 +38,49 @@ textarea {
     padding: 2px;
 }
 
-.logo-title, .logo-icon {
-    background-image: url('../img/images.png');
+a, a:visited {
+    color: #00376b;
+    text-decoration: none;
 }
 
-.logo-text {
-    overflow: hidden;
-    text-indent: 110%
-}
-
-.box {
-    border-radius: 70%;
-    overflow: hidden;
-}
-
-.profile {
-    object-fit: cover;
-}
-
-ul.list-style-none {
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-ul.list-style-none li.icon {
+::-webkit-scrollbar { display: none; }
+
+.line {
+    background-color: rgba(var(--b38,219,219,219),1);
+    border: 0;
+    height: 1px;
+    margin: 0;
+    width: 100%;
+}
+
+.logo-icon {
+    background-image: url('../img/images.png');
+}
+
+.logo-title {
+    color: #000;
+}
+
+.profile-box {
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.profile-box-img {
+    object-fit: cover;
+}
+
+li.icon {
     display: inline;
 }
 
-ul.list-style-none li.icon:not(:last-of-type) {
+li.icon:not(:last-of-type) {
     padding: 0 10px 0 0;
 }
  
@@ -89,8 +102,4 @@ ul.list-style-none li.icon:not(:last-of-type) {
 
 .display-none {
     display: none;
-}
-
-div {
-    position: relative;
 }

@@ -1,14 +1,38 @@
 const loginId = `jemizem`;
 
-
 const txtFindPoeple = document.getElementById('txtFindPoeple');
-
-var searchBox = document.getElementById('head-search-wrap');
+const searchBox = document.getElementById('head-search-wrap');
 const ulElement = document.getElementById('ulFindedPeopleList');
+const buttonProfilePopup = document.getElementsByClassName('profile-popup-button')[0];
+const wrapProfilePopup = document.getElementsByClassName('profile-popup')[0];
+const commentButtons = document.getElementsByClassName('commentButton');
+const commentTextareas = document.getElementsByClassName('commentTextarea');
 
+const people = [
+    {
+      name: 'Wecode',
+      type: 'user',
+      img: 'https://picsum.photos/200',
+      description: 'wecode!'
+    }
+    , {
+      name: 'Wenaldo',
+      type: 'user',
+      img: 'https://picsum.photos/300',
+      description: 'nice~~'
+    }
+    , {
+      name: 'Kim jimin',
+      type: 'user',
+      img: 'https://picsum.photos/400',
+      description: 'hihi'
+    }
+];
+
+// 댓글 달기 
 const appendComment = (event) => {
     
-    let commentId = event.target.id.substr(-2);
+    const commentId = event.target.id.substr(-2);
     const commentTextarea = document.getElementById('textComment'+commentId);
     const commentAddButton = document.getElementById('commentButton'+commentId);
     const commentList = document.getElementById('commentList'+commentId);
@@ -16,7 +40,7 @@ const appendComment = (event) => {
     let commentStr = commentTextarea.value;
     commentStr = commentStr.replace(/(?:\r\n|\r|\n)/g,'');
 
-    if (commentStr == '' ) {
+    if (commentStr === '' ) {
         commentAddButton.classList.add("inactive");
         return;
     } else {
@@ -24,7 +48,7 @@ const appendComment = (event) => {
     }
 
     if (event.target.nodeName === 'TEXTAREA') {
-        if (event.key != 'Enter') return;
+        if (event.key !== 'Enter') return;
     }
 
     let commentLi = document.createElement('li')
@@ -50,9 +74,7 @@ const appendComment = (event) => {
     commentDeleteButton.innerHTML = "✖️";
     commentDeleteButton.className = "comment-delete-button";
     commentDeleteButton.addEventListener('click',(event)=>{ 
-        const parentUl = event.target.parentElement.parentElement.parentElement;
-        const deleteLi = event.target.parentElement.parentElement;
-        parentUl.removeChild(deleteLi);
+        commentLi.remove();
     });
     commentButtonDiv.appendChild(commentDeleteButton);
     
@@ -60,7 +82,7 @@ const appendComment = (event) => {
     commentHeartButton.innerHTML = "♡";
     commentHeartButton.className = "comment-heart-button";
     commentHeartButton.addEventListener('click',(event)=>{ 
-        if (event.target.innerHTML == '♡') {
+        if (event.target.innerHTML === '♡') {
             event.target.innerHTML = "♥︎";
         } else {
             event.target.innerHTML = "♡";
@@ -70,50 +92,14 @@ const appendComment = (event) => {
     commentAddButton.classList.add("inactive");
 } 
 
-
-
-var commentButtons = document.getElementsByClassName('commentButton');
-
-for(var i = 0; i < commentButtons.length; i++) {
-    commentButtons[i].addEventListener('click', appendComment);
-}
-
-var commentTextareas = document.getElementsByClassName('commentTextarea');
-
-for(var i = 0; i < commentTextareas.length; i++) {
-    commentTextareas[i].addEventListener('keyup', appendComment);
-}
-
-
-const people = [
-    {
-      name: 'Wecode',
-      type: 'user',
-      img: 'https://picsum.photos/200',
-      description: 'wecode!'
-    }
-    , {
-      name: 'Wenaldo',
-      type: 'user',
-      img: 'https://picsum.photos/300',
-      description: 'nice~~'
-    }
-    , {
-      name: 'Kim jimin',
-      type: 'user',
-      img: 'https://picsum.photos/400',
-      description: 'hihi'
-    }
-  ];
-
-  
+// 검색 이벤트
 const findPeople = (event) => {
     
     // 초기화
     ulElement.innerHTML = '';
     searchBox.classList.add("display-none");
 
-    if (txtFindPoeple.value == '')  return;
+    if (txtFindPoeple.value === '')  return;
     
     people.filter(person => person.name.toUpperCase().includes(txtFindPoeple.value.toUpperCase()))
     .map((per)=>
@@ -126,11 +112,11 @@ const findPeople = (event) => {
         });
         
         const divElement = document.createElement('div');
-        divElement.className = "box";
+        divElement.className = "profile-box";
         liElement.appendChild(divElement);
 
         const imgElement = document.createElement('img');
-        imgElement.className = "profile";
+        imgElement.className = "profilebox-img";
         imgElement.src = per.img;
         imgElement.alt = `${per.name}님의 프로필 사진`
         divElement.appendChild(imgElement);
@@ -153,6 +139,20 @@ const findPeople = (event) => {
     });
 }
 
+// 프로필 메뉴 팝업 열기
+const openProfilePopup = (event) => {
+    wrapProfilePopup.classList.remove('display-none');
+}
 
+for(let i = 0; i < commentButtons.length; i++) {
+    commentButtons[i].addEventListener('click', appendComment);
+}
 
+for(let i = 0; i < commentTextareas.length; i++) {
+    commentTextareas[i].addEventListener('keyup', appendComment);
+}
 txtFindPoeple.addEventListener('keyup', findPeople);
+buttonProfilePopup.addEventListener('click', openProfilePopup);
+buttonProfilePopup.addEventListener('focusout',(e)=>{
+    wrapProfilePopup.classList.add('display-none');
+});
