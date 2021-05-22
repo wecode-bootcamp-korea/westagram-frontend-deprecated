@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/css/login.css" rel="stylesheet" />
+        <title>westagram</title>
+    </head>
+    <body>
+        <div class="total_container">
+            <header class="logo_container">
+                <h1 class="logo">westagram</h1>
+            </header>
+            <main class="form-area">
+                <div class="input_container">
+                    <input type="text" class="id" id="id" placeholder="전화번호, 사용자 이름 또는 이메일" />
+                    <input type="password" class="password" id="password" placeholder="비밀번호" />
+                    <button type="submit" class="log_in_button" onclick="location.href='/html/main.html' " disabled>로그인</button>
+                </div>
+                <div class="junk_wrap">
+                    <div class="junk_line"></div>
+                    <div class="junk_p">또는</div>
+                    <div class="junk_line"></div>
+                </div>
+            </main>
+            <aside class="second_way">
+                <a href="" aria-label="find password">
+                    <span class="forgot_password">비밀번호를 잊으셨나요?</span>
+                </a>
+            </aside>
+        </div>
+        <script src="/js/login.js"></script>
+    </body>
+</html>
