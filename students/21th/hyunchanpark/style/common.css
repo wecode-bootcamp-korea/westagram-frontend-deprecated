@@ -12,7 +12,8 @@ div {
   background-color: #fff;
 }
 
-main {
+main,
+section {
   display: flex;
 }
 
