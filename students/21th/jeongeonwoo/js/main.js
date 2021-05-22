@@ -26,7 +26,7 @@ for (let i = 0; i < inputButton.length; i++) {
 
 function postButton(i) {
   commentText[i].insertAdjacentHTML(
-    "afterend",
+    "beforeend",
     `   <div class="article-bottom-comment text">
             raing_8<span> ${inputComment[i].value}</span>
             <span>
