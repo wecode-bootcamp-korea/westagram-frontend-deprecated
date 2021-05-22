@@ -12,6 +12,10 @@ div {
   background-color: #fff;
 }
 
+main {
+  display: flex;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -27,6 +31,9 @@ textarea {
   color: #262626;
 }
 
+button {
+  cursor: pointer;
+}
 ul,
 ol,
 li {
