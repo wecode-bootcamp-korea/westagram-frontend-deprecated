@@ -4,7 +4,6 @@ body {
   overflow-y: scroll;
 }
 
-/* -------------nav--------------- */
 .nav-container {
   position: fixed;
   top: 0;
@@ -49,7 +48,6 @@ body {
   outline: none;
 }
 
-/* :placeholder-shown :placeholder?????  */
 .nav-search-bar input::placeholder {
   font-size: 14px;
 }
@@ -138,7 +136,6 @@ body {
   font-size: 22px;
 }
 
-/* --------------main--------------- */
 main {
   height: 100%;
   margin-top: 70px;
@@ -158,7 +155,6 @@ section {
   background-color: #fafafa;
 }
 
-/* --------------story------------- */
 .stories {
   height: 118px;
   border: 1px solid #dbdbdb;
@@ -228,7 +224,6 @@ section {
   font-size: 14px;
 }
 
-/* ---------------feed--------------- */
 .feeds {
   display: flex;
   flex-direction: column;
@@ -358,9 +353,22 @@ section {
   font-weight: 600;
 }
 
+.all-comments-show a {
+  color: #8e8e8e;
+}
+
 .other-comments {
   display: flex;
   flex-direction: column;
+}
+
+.other-comments .comment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-comments .comment .fas {
+  color: red;
 }
 
 .time-container {
@@ -439,7 +447,6 @@ section {
   opacity: 0.3;
 }
 
-/* -------------right-contens------------ */
 .right-contents {
   position: relative;
   display: flex;
@@ -595,7 +602,6 @@ section {
   border: none;
 }
 
-/* ------------footer--------------- */
 footer {
   width: 293px;
 }
