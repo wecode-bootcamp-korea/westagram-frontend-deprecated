@@ -7,11 +7,8 @@ const loginEventTrue = () => {
     logInButton.disabled = false;
     logInButton.style.cursor = "pointer";
     logInButton.style.backgroundColor = "#0095f6";
-    inputItems.addEventListener("key", (e) => {
-        if (e.key === "Enter") {
-        }
-    });
 };
+
 const loginEventFalse = () => {
     logInButton.disabled = true;
     logInButton.style.cursor = "default";
