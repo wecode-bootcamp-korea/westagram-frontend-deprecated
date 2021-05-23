@@ -24,8 +24,8 @@ section {
 
 .content {
   padding: 10px 0;
-  border: 1px solid #dbdbdb;
   margin: 0 0 10px;
+  border: 1px solid #dbdbdb;
 }
 
 .login_container {
@@ -37,12 +37,12 @@ section {
 }
 
 .login_container h1 {
-  font-family: "Lobster", cursive;
-  font-size: 40px;
-  font-weight: 100;
   width: 175px;
   height: 51px;
   margin: 22px auto 12px;
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .form_container {
@@ -63,12 +63,11 @@ section {
   padding: 9px 0 7px 8px;
   margin: 0 0 7px 0;
   border: 1px solid #dbdbdb;
-
-  font-size: 12px;
+  background: #fafafa;
   color: #8e8e8e;
+  font-size: 12px;
   line-height: 36px;
   overflow: hidden;
-  background: #fafafa;
   outline: 0;
   text-overflow: ellipsis;
 }
@@ -78,17 +77,17 @@ section {
   height: 30px;
   margin: 9px 0 18px;
   background-color: rgba(0, 149, 246);
-  opacity: 0.3;
   border: 0px solid transparent;
   border-radius: 4px;
   color: #fff;
-  font-weight: 600;
   font-size: 14px;
+  font-weight: 600;
+  opacity: 0.3;
   cursor: pointer;
 }
 
 .form-contents .login-button:disabled {
-  cursor: initial;
+  cursor: none;
 }
 
 .line_container {
@@ -100,8 +99,8 @@ section {
   position: relative;
   top: 0.45em;
   height: 1px;
-  background-color: #dbdbdb;
   flex-grow: 1;
+  background-color: #dbdbdb;
 }
 
 .line_container .line-word {
@@ -114,10 +113,10 @@ section {
 
 .social-login-button {
   display: inline;
+  margin-bottom: 20px;
+  border: none;
   color: rgb(56, 81, 133);
   background-color: #fff;
-  border: none;
-  margin-bottom: 20px;
 }
 
 .social-login-button:hover {
@@ -126,17 +125,17 @@ section {
 
 .social-login-button span {
   font-size: 14x;
-  line-height: 18px;
   font-weight: 600;
+  line-height: 18px;
 }
 
 .social-login-button img {
+  position: relative;
+  top: 3px;
   display: inline-block;
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  position: relative;
-  top: 3px;
 }
 
 .search-password {
@@ -153,20 +152,19 @@ section {
   align-items: center;
   color: #262626;
   font-size: 14px;
-  text-align: center;
   line-height: 63px;
+  text-align: center;
 }
 
 .entire_bottom p {
   color: #262626;
-  color: rgba(var(--i1d, 38, 38, 38), 1);
   font-size: 14px;
 }
 
 .entire_bottom p a {
   color: #0095f6;
   font-size: 14px;
-  line-height: 18px;
   font-weight: 600;
+  line-height: 18px;
   text-decoration: none;
 }

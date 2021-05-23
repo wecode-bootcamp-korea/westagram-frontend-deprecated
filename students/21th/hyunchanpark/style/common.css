@@ -27,15 +27,15 @@ body,
 button,
 input,
 textarea {
+  color: #262626;
   font-size: 14px;
   line-height: 18px;
-  color: #262626;
 }
 
 button {
-  cursor: pointer;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 ul,
 ol,
