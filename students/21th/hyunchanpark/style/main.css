@@ -70,7 +70,7 @@ body {
   height: 14px;
 }
 
-.nav-search-inactive-container {
+.inactive-input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,6 @@ body {
   border-radius: 3px;
   background: #fafafa;
   cursor: text;
-  z-index: -1;
 }
 
 .inactive-search-icon {
@@ -134,6 +133,73 @@ body {
 .nav-icons li .far {
   color: rgb(38, 38, 38);
   font-size: 22px;
+}
+
+.search-results-container {
+  visibility: hidden;
+  width: 375px;
+  height: 362px;
+  position: relative;
+  top: 12px;
+  margin-left: -80px;
+}
+
+.rotate {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 10%);
+  border-left: 1px solid rgba(0, 0, 0, 10%);
+  transform: rotate(45deg);
+}
+
+.search-results {
+  width: 100%;
+  height: 100%;
+  padding: 12px 0 0 0;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.result-content {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.result {
+  display: flex;
+}
+
+.result > img {
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.result > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result .searched-user .searched-username {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.searched-user > span {
+  color: #8e8e8e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 main {
