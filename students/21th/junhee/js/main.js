@@ -46,4 +46,4 @@ const addCommentEnter = (event) => {
 
 }
 
-commentContent.addEventListener('keydown',addCommentEnter);
+commentContent.addEventListener('keypress',addCommentEnter);

@@ -52,7 +52,7 @@ h1{
     margin-bottom: 5px;
 }
 
-#userId, #userPassword{
+.userId, .userPassword{
     width: 250px;
     height: 30px;
     margin-left: 10px;
@@ -61,27 +61,31 @@ h1{
     background-color: #fafafa;
 }
 
-#userId::placeholder, #userPassword::placeholder{
+.userId::placeholder, .userPassword::placeholder{
     font-weight: 400;
     font-size: 12px;
     color:#9a9a9a 
 }
 
-#loginButton{
+.loginButton{
     width: 268px;
     height: 30px;
     margin-top: 10px;
     outline-style: none;
     border: none;
     border-radius: 4px;
-    background-color: #0195F6;
     color: white;
+    background-color: #0195F6;
     font-size: 14px;
     font-weight: 600;
 }
 
-#loginButton:hover{
+.loginButton:hover{
     cursor: pointer;
+}
+
+.loginButton:disabled{
+    background-color: #d3d3d3;
 }
 
 .orContainer{
