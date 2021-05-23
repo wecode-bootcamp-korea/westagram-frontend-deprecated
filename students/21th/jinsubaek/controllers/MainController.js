@@ -112,6 +112,7 @@ export default {
       isLiked: false,
     });
     CommentView.renderComments(CommentModel.comments);
+    CommentView.activateUploadButton();
     this.bindEventOnDeleteButton();
     this.bindEventOnLikedButton();
   },
