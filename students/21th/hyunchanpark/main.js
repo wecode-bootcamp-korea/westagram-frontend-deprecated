@@ -132,7 +132,7 @@ const toggleSearchInput = (e) => {
 
 const searchInputWord = (e) => {
   let word = e.target.value;
-  let regExp = new RegExp("([a-zA-Z0-9]+)?" + word + "([a-zA-Z0-9]+)?");
+  let regExp = new RegExp("([a-zA-Z0-9]*)?" + word + "([a-zA-Z0-9]+)?");
 
   let newWords = wordList.filter((word) => regExp.test(word) === true);
   console.log(newWords);
