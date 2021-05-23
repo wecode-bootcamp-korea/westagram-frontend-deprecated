@@ -97,44 +97,6 @@ body {
   color: #8e8e8e;
 }
 
-.nav-icons ul {
-  display: flex;
-}
-
-.nav-icons li {
-  font-size: 22px;
-  width: 22px;
-  height: 22px;
-  margin-left: 22px;
-}
-
-.message-box-icon {
-  background: url("../image/insta-sprite.png") no-repeat -229px -158px;
-  width: 22px;
-  height: 19px;
-}
-
-.heart-icon {
-  background: url("../image/insta-sprite.png") no-repeat -254px -157px;
-  width: 24px;
-  height: 21px;
-}
-
-.user-icon {
-  border: 1px solid #b6b6b6;
-  border-radius: 50%;
-  background: url("../image/user-icon.jpg");
-  background-size: cover;
-  width: 22px;
-  height: 22px;
-}
-
-.nav-icons li .fas,
-.nav-icons li .far {
-  color: rgb(38, 38, 38);
-  font-size: 22px;
-}
-
 .search-results-container {
   visibility: hidden;
   width: 375px;
@@ -200,6 +162,81 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.nav-icons-container {
+  display: flex;
+  position: relative;
+}
+
+.profile-menu-container {
+  display: flex;
+  position: absolute;
+  top: 36px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
+}
+
+.profile-menu {
+  width: 100%;
+}
+.rectangle {
+  left: 202px;
+}
+
+.user-profile {
+  display: flex;
+  padding: 8px 16px;
+}
+
+.user-profile svg {
+  margin-right: 12px;
+}
+
+.user-profile div {
+  width: 170px;
+  height: 28px;
+}
+
+.profile-menu ul li:last-child {
+  margin-bottom: 4px;
+}
+.nav-icons ul {
+  display: flex;
+}
+
+.nav-icons li {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+.message-box-icon {
+  background: url("../image/insta-sprite.png") no-repeat -229px -158px;
+  width: 22px;
+  height: 19px;
+}
+
+.heart-icon {
+  background: url("../image/insta-sprite.png") no-repeat -254px -157px;
+  width: 24px;
+  height: 21px;
+}
+
+.user-icon {
+  border: 1px solid #b6b6b6;
+  border-radius: 50%;
+  background: url("../image/user-icon.jpg");
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+}
+
+.nav-icons li .fas,
+.nav-icons li .far {
+  color: rgb(38, 38, 38);
+  font-size: 22px;
 }
 
 main {
