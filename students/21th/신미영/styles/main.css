@@ -6,17 +6,13 @@ nav {
     position: fixed;
     top: 0;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 54px;
     padding: 0 15px;
     background-color: #ffffff;
-    border-bottom: 1px solid rgb(230, 230, 230);
-}
-
-nav div {
-    width: 100%;
-    display: flex;
-    align-items: center;
+    z-index: 1;
 }
 
 .title {
@@ -31,12 +27,11 @@ nav div {
     display: none;
 }
 
-.nav-icons {
-    display: flex;
-    justify-content: flex-end;
+.navIcons {
+    width: auto;
 }
 
-nav div .nav-icons img {
+.navIcons img {
     width: 22px;
     height: 22px;
     margin: 0 10px;
@@ -47,41 +42,46 @@ nav div .nav-icons img {
 }
 
 section {
-    position: fixed;
+    position: absolute;
     top: 54px;
-}
-
-article, aside{
-    margin: 15px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid rgb(230, 230, 230);
 }
 
 .stories {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 110px;
-    padding: 0 10px;
+    overflow: hidden;
 }
 
 .stories .story {
-    margin: 10px 15px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .story .storyProfile {
     width: 60px;
     height: 60px;
-    margin-top: 2.5px;
     border: 3px solid #ffffff;
     border-radius: 50%;
 }
 
 .story .storyBg {
-    width: 65px;
-    height: 65px;
-    margin: 3px;
-    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    margin-bottom: 5px;
     border-radius: 50%;
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
 }
 
 .feeds {
@@ -93,57 +93,58 @@ article, aside{
     width: 100%;
 }
 
-.feed-head {
+.feedHead {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
     padding: 20px;
-    background-color: #ffffff;
     border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: #ffffff;
 }
 
-.feed-head #account {
+.feedHead #account {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.feed-head #account div {
+.feedHead #account div {
     padding-left: 10px;
 }
 
-.feed-head img {
+.feedHead img {
     width: 32px;
     height: 32px;;
     border-radius: 50%;
 }
 
-.feed-head #account-more {
+.feedHead #accountMore {
     font-size: 20px;
     font-weight: 600;
     text-align: right;
+    cursor: pointer;
 }
 
-.feed-picture {
+.feedPicture {
     max-width: 100%;
 }
 
-.feed-reaction {
+.feedReaction {
     padding: 15px;
     margin-bottom: 20px;
 }
 
-.feed-reaction img {
+.feedReaction img {
     width: 22px;
     margin: 0 5px 3px 5px;
 }
 
-.float-left {
+.floatLeft {
     float:left;
 }
 
-.float-right {
+.floatRight {
     float: right;
 }
 
@@ -151,52 +152,69 @@ article, aside{
     padding: 0 20px;
 }
 
-.feedInfo-likes {
+.feedLikes {
     clear: both;
+    margin-bottom: 10px;
     font-weight: bolder;
 }
 
-.feedInfo-date {
+.feedDate {
+    padding-bottom: 10px;
     color: rgb(145, 145, 145);
     font-size: 11px;
 }
 
-.feedInfo-commentsList ul {
+.feedCommentsList ul {
     padding-left: 0;
     list-style: none;
 }
 
-.feedInfo-commentsList ul li {
+.feedCommentsList ul li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .commentId {
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 .commentText {
     flex: 2;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
-.commentHeartIcon img{
+.commentUl button {
+    color:rgb(145, 145, 145);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.commentLikesButton {
     width: 12px;
     height: 12px;
     margin-left: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
-.main-right {
+.mainRight {
     display: none;
 }
 
-.feed-comment {
+.feedComment {
     display: none;
 }
 
 @media screen and (min-width: 501px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
     .search {
         display: flex;
+        align-items: center;
         flex-shrink: 0;
         position: relative;
         width: 215px;
@@ -207,43 +225,66 @@ article, aside{
         font-size: 15px;
     }
 
-    .search input {
-        width: 95%;
-    }
-
-    .search input::placeholder {
-        color:rgb(145, 145, 145);
-        text-align: center;
-        font-size: 14px;
-        font-weight: 100;
-        text-indent: 20px;
-    }
-
-    .search i {
+    .searchLabel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        left: 45px;
-        margin-left: 25px;
+        left: 0;
+        width: 100%;
+        cursor: text;
         opacity: 0.4;
     }
-}
 
-@media screen and (min-width: 512px) {
-    nav {
-        display: flex;
-        justify-content: center;
+    .searchLabelText {
+        margin-left: 3px;
     }
 
-    nav div {
-        display: flex;
-        justify-content: center;
+    .searchLabelFocus {
+        position: absolute;
+        left: 3px;
+        opacity: 0.4;
+        z-index: 1;
+    }
+
+    .searchInput {
         width: 85%;
+    }
+
+    .searchFocus {
+        position: absolute;
+        top: 3px;
+        left: 20px;
+        width: 75%;
+        border: 1px solid black;
+    }
+
+    .searchDeleteButton {
+        display: none;
+    }
+
+    .searchDeleteButtonOn {
+        display: inline;
+        position:absolute;
+        right: 5px;
+        top: 3px;
+        color: rgb(145, 145, 145);
+        background-color: rgb(250, 250, 250);
     }
 }
 
 @media screen and (min-width: 640px) {
+    nav {
+        justify-content: space-between;
+    }
+
     section {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+    }
+
+    article {
+        margin: 15px;
     }
 
     .stories {
@@ -265,25 +306,25 @@ article, aside{
 }
 
 @media screen and (min-width: 736px) {
-    .feed-comment {
+    .feedComment {
         display: flex;
         align-items: center;
         padding: 20px 20px;
         border-top: 1px solid rgb(230, 230, 230);; 
     }
 
-    .feed-comment input {
+    .feedComment input {
         width: 90%;
         background-color: #ffffff;
         font-size: 15px;
     }
 
-    .feed-comment img {
+    .feedComment img {
         width: 22px;
         margin-right: 15px;
     }
 
-    .feed-comment button {
+    .feedComment button {
         background-color: #ffffff;
         font-size: 15px;
     }
@@ -295,7 +336,7 @@ article, aside{
 }
 
 @media screen and (min-width: 1000px) {
-    nav div {
+    nav {
         width: 920px;
     }
     
@@ -304,7 +345,8 @@ article, aside{
         flex-direction: row;
     }
 
-    .main-right {
+    .mainRight {
+        margin: 15px;
         display: inline-block;
         width: 295px;
     }
@@ -322,7 +364,7 @@ article, aside{
         text-align: left;
     }
 
-    .myAccount-id {
+    .myAccountId {
         width: 170px;
         font-weight: bolder;
     }
@@ -340,22 +382,18 @@ article, aside{
         margin-right: 20px;
     }
 
-    .suggestions div{
+    .suggestions {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .suggestionTitle {
         display: flex;
-        margin-top: 35px;
+        justify-content: space-between;
+        margin-top: 15px;
         color: rgb(145, 145, 145);
         font-size: 16px;
         font-weight: 700;
-
-    }
-
-    .suggestionTitle div {
-        flex-grow: 1;
     }
 
     .suggestionTitle button {
@@ -365,35 +403,36 @@ article, aside{
         cursor: pointer;
     }
 
-    .suggestedList {
+    .suggestedLists {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
         margin: 15px 0;
     }
-    .suggestedList img {
+
+    .suggestedUser {
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .suggestedUser img {
         width: 32px;
         height: 32px;
         border-radius: 50%;
         margin-right: 15px;
     }
 
-    .suggestedList div {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+    .suggestedUser div{
         flex-grow: 1;
     }
 
-    .suggestedList div div{
-        margin: 0;
-    }
-
-    .suggestedList div .suggestedId {
+    .suggestedUser div .suggestedId {
+        font-size: 13px;
         font-weight: 700;
     }
 
-    .suggestedList div .suggestedText {
+    .suggestedUser div .suggestedText {
         color: rgb(145, 145, 145);
+        font-size: 12px;
     }
 }

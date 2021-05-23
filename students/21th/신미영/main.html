@@ -12,100 +12,84 @@
     </head>
     <body>
         <nav>
-            <div>
-                <div class="title">Westagram</div>
-                <div class="search">
-                    <i class="fas fa-search fa-sm search-icon"></i>
-                    <input type="text" placeholder="Search" />
-                </div>
-                <div class="nav-icons">
-                    <img src="./images/main/icon/home_black.png" alt="home icon" />
-                    <img src="./images/main/icon/send.png" alt="send icon"/>
-                    <img src="./images/main/icon/compass.png" alt="compass icon"/>
-                    <img src="./images/main/icon/heart.png" alt="heart icon" />
-                    <img id="myProfile-img" src="./images/main/profile/my-profile.jpeg" alt="my profile image"/>
-                </div>
+            <h1 class="title">Westagram</h1>
+            <div class="search">
+                <label class="searchLabel">
+                    <i class="fas fa-search"></i>
+                    <span class="searchLabelText">Search</span>
+                </label>
+                <input class="searchInput" type="text" />
+                <button class="searchDeleteButton">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="navIcons">
+                <img src="./images/main/icon/home_black.png" alt="home icon" />
+                <img src="./images/main/icon/send.png" alt="send icon"/>
+                <img src="./images/main/icon/compass.png" alt="compass icon"/>
+                <img src="./images/main/icon/heart.png" alt="heart icon" />
+                <img id="myProfile-img" src="./images/main/profile/my-profile.jpeg" alt="my profile image"/>
             </div>
         </nav>
         <section>
             <article>
                 <div class="stories">
-                    <div class="story">
-                        <div class="storyBg">
-                            <img class="storyProfile" src="./images/main/profile/dlwlrma-profile.jpeg" alt="dlwlrma profile image" />
-                        </div>
-                        <div class="storyId">dlwlrma</div>
-                    </div>
                 </div>
                 <div class="feeds">
-                    <div class="feed-head">
+                    <div class="feedHead">
                         <div id="account">
                             <img src="./images/main/profile/my-profile.jpeg" alt="my profile image" />
                             <div>my_sshin</div>
                         </div>
-                        <div id="account-more">・・・</div>
+                        <div id="accountMore">・・・</div>
                     </div>
-                    <div class="feed-body">
-                        <img class="feed-picture" src="./images/main/feed-image.JPG" alt="feed picture" />
-                        <div class="feed-reaction">
-                            <img class="float-left" src="./images/main/icon/heart.png" alt="heart icon" />
-                            <img class="float-left" src="./images/main/icon/chat.png" alt="chat icon" />
-                            <img class="float-left" src="./images/main/icon/send.png" alt="send icon" />
-                            <img class="float-right" src="./images/main/icon/bookmark_white.png" alt="bookmark icon" />
+                    <div class="feedBody">
+                        <img class="feedPicture" src="./images/main/feed-image.JPG" alt="feed picture" />
+                        <div class="feedReaction">
+                            <img class="floatLeft" src="./images/main/icon/heart.png" alt="heart icon" />
+                            <img class="floatLeft" src="./images/main/icon/chat.png" alt="chat icon" />
+                            <img class="floatLeft" src="./images/main/icon/send.png" alt="send icon" />
+                            <img class="floatRight" src="./images/main/icon/bookmark_white.png" alt="bookmark icon" />
                         </div>
                         <div class="feedInfo">
-                            <div class="feedInfo-likes">
+                            <div class="feedLikes">
                                 15 likes
                             </div>
-                            <div class="feedInfo-contents">
-                                <span class="myAccount-id">my_sshin</span> 어딜가나 그림같은 카페
+                            <div class="feedContents">
+                                <span class="myAccountId">my_sshin</span>  그림같은 카페
                             </div>
-                            <div class="feedInfo-commentsList">
-                                <ul>
-                                    <li>
-                                        <span class="commentId">xsnxmxik </span>
-                                        <sapn class="commentText">너무 예뻐</sapn>
-                                        <span class="commentDeleteButton">delete</span>
-                                        <span class="commentHeartIcon"><img src="./images/main/icon/heart.png" alt="heart icon"/></span>
-                                    </li>
+                            <div class="feedCommentsList">
+                                <ul class="commentUl">
                                 </ul>
                             </div>
-                            <div class="feedInfo-date">
+                            <div class="feedDate">
                                 42 MINUTES AGO
                             </div>
                         </div>
                     </div>
-                    <div class="feed-comment">
+                    <div class="feedComment">
                         <img src="./images/main/icon/smile.png" alt="emoticon button" />
                         <input id="commentInput" type="text" placeholder="Add a comment..."/>
                         <button id="postButton" disabled="disabled">Post</button>
                     </div>
                 </div>
             </article>
-            <article>
-                <div class="main-right">
-                    <div class="myAccount">
-                        <img src="./images/main/profile/my-profile.jpeg" alt="my profile image" />
-                        <div class="myAccount-id">my_sshin</div>
-                        <button class="sideButton">Swicth</button>
+            <aside class="mainRight">
+                <div class="myAccount">
+                    <img src="./images/main/profile/my-profile.jpeg" alt="my profile image" />
+                    <div class="myAccount-id">my_sshin</div>
+                    <button class="sideButton">Swicth</button>
+                </div>
+                <div class="suggestions">
+                    <div class="suggestionTitle">
+                        <div>Suggestions For You</div>
+                        <button>See All</button>
                     </div>
-                    <div class="suggestions">
-                        <div class="suggestionTitle">
-                            <div>Suggestions For You</div>
-                            <button>See All</button>
-                        </div>
-                        <div class="suggestedList">
-                            <img src="./images/main/profile/my-profile.jpeg" alt="suggested User's profile image" />
-                            <div>
-                                <div class="suggestedId">my_sshin</div>
-                                <div class="suggestedText">Suggested for you</div>
-                            </div>
-                            <button class="sideButton">Follow</button>
-                        </div>
+                    <div class="suggestedLists">
                     </div>
                 </div>
-            </article>
+            </aside>
         </section>
-    <script src="./js/main.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>

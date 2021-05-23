@@ -24,7 +24,11 @@ id.addEventListener('keyup', checkValidation);
 password.addEventListener('keyup', checkValidation);
 
 function checkValidation() {
-  if(id.value.indexOf('@') !== -1 && password.value.length > 5) {
+  const userId = id.value;
+  const userPassword = password.value;
+  const isUserInfoValid = userId.includes('@') && userPassword.length > 5;
+
+  if(isUserInfoValid) {
     logInButton.disabled = false;
     logInButton.classList.add('logInButtonOn');
   } else {
