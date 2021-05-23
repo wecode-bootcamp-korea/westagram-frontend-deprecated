@@ -5,10 +5,9 @@ const inputPassword = document.querySelector("input[type=password]");
 
 const emailRegExp =
   /[a-zA-Z0-9.-_+!]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{2,}(?:.[a-zA-Z0-9]{2,3})?/;
-
 const passwordRegExp = /[a-zA-Z0-9]{5,100}/;
 
-const isValidateEmailAndPassword = (email, password) => {
+const validateEmailAndPassword = (email, password) => {
   let isValidEmail = false;
   let isValidPassword = false;
 
@@ -16,12 +15,6 @@ const isValidateEmailAndPassword = (email, password) => {
   if (password.match(passwordRegExp)) isValidPassword = true;
 
   return isValidEmail && isValidPassword;
-};
-
-const buttonCondition = () => {
-  if (isValidateEmailAndPassword(inputId.value, inputPassword.value)) {
-    return true;
-  } else return false;
 };
 
 const opacityAndDisableButton = (value, boolean) => {
@@ -32,7 +25,7 @@ const opacityAndDisableButton = (value, boolean) => {
 const handleInputChange = (event) => {
   event.preventDefault();
 
-  buttonCondition()
+  validateEmailAndPassword(inputId.value, inputPassword.value)
     ? opacityAndDisableButton(1, false)
     : opacityAndDisableButton(0.3, true);
 };
