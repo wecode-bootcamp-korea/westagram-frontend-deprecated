@@ -21,7 +21,7 @@ export default {
   },
 
   bindEventOnMenuBox() {
-    window.addEventListener("click", (e) => {
+    document.addEventListener("click", (e) => {
       if (e.target.className === "menu-list") return;
       if (e.target.parentNode.className === "menu-list") return;
       if (!this.state.isClickedImage) return;
@@ -31,11 +31,11 @@ export default {
   },
 
   handleClickProfileImage() {
-    this.renderMenuBox();
+    this.emit(this.DOM.profileImage, "@click");
   },
 
   hadleClickOutsideOfMenuBox() {
-    this.renderMenuBox();
+    this.emit(document, "@click");
   },
 
   renderMenuBox() {

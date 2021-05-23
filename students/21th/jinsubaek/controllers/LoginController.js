@@ -21,20 +21,12 @@ export default {
   },
 
   handleSubmitLoginForm(infoData = {}) {
-    this.setMyInfo(infoData);
+    LoginModel.setInfo(infoData);
 
     if (LoginModel.myInfo.isLogined) {
-      this.moveToMainPage();
+      View.hide(View.element.login);
+      View.show(View.element.main);
+      MainController.init();
     }
-  },
-
-  setMyInfo(infoValue) {
-    LoginModel.setInfo(infoValue);
-  },
-
-  moveToMainPage() {
-    View.hide(View.element.login);
-    View.show(View.element.main);
-    MainController.init();
   },
 };

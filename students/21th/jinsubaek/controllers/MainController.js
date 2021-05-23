@@ -16,7 +16,7 @@ export default {
   },
 
   mainPageSetup() {
-    this.renderComment();
+    CommentView.renderComments(CommentModel.comments);
     CommentView.initialSetup();
     SearchView.initialSetup();
     ProfileView.initialSetup();
@@ -25,6 +25,22 @@ export default {
     this.bindEventOnResetButton();
     this.bindEventOnDeleteButton();
     this.bindEventOnLikedButton();
+    this.bindEventOnProfileImage();
+    this.bindEventOnMenuBox();
+  },
+
+  bindEventOnProfileImage() {
+    ProfileView.DOM.profileImage.addEventListener(
+      "@click",
+      this.handleClickProfileImage.bind(this)
+    );
+  },
+
+  bindEventOnMenuBox() {
+    document.addEventListener(
+      "@click",
+      this.handleClickOutsideOfMenuBox.bind(this)
+    );
   },
 
   bindEventOnSearchInput() {
@@ -54,7 +70,7 @@ export default {
     CommentView.DOM.commentDeleteButtons.forEach((deleteButton) => {
       deleteButton.addEventListener("@click", (e) => {
         if (!deleteButton === e.target) return;
-        this.deleteComment(e.detail);
+        this.handleClickCDeleteButton(e.detail);
       });
     });
   },
@@ -67,53 +83,49 @@ export default {
     CommentView.DOM.commentLikedButtons.forEach((likedButton) => {
       likedButton.addEventListener("@click", (e) => {
         if (!likedButton === e.target) return;
-        this.likeComment(e.detail);
+        this.handleClickLikeButton(e.detail);
       });
     });
   },
 
+  handleClickProfileImage() {
+    ProfileView.renderMenuBox();
+  },
+
+  handleClickOutsideOfMenuBox() {
+    ProfileView.renderMenuBox();
+  },
+
   handleKeyupSearchInput(id = "") {
-    this.renderSearchResult(id);
-  },
-
-  handleClickResetButton() {
-    this.renderSearchResult();
-  },
-
-  handleSubmitUploadForm(contents = "") {
-    this.addComment(contents);
-    this.bindEventOnDeleteButton();
-    this.bindEventOnLikedButton();
-  },
-
-  renderSearchResult(id = "") {
     SearchView.renderSearchResult(SearchModel.searchUser(id));
   },
 
-  renderComment() {
-    CommentView.renderComments(CommentModel.comments);
+  handleClickResetButton() {
+    SearchView.renderSearchResult(SearchModel.searchUser());
   },
 
-  addComment(contents = "") {
+  handleSubmitUploadForm(contents = "") {
     CommentModel.addComment({
       name: LoginModel.myInfo.id,
       contents,
       creationTime: utils.createDate(),
       isLiked: false,
     });
-    this.renderComment();
-  },
-
-  deleteComment(contents = "") {
-    CommentModel.removeComment(contents);
-    this.renderComment();
+    CommentView.renderComments(CommentModel.comments);
     this.bindEventOnDeleteButton();
     this.bindEventOnLikedButton();
   },
 
-  likeComment(contents = "") {
+  handleClickCDeleteButton(contents = "") {
+    CommentModel.removeComment(contents);
+    CommentView.renderComments(CommentModel.comments);
+    this.bindEventOnDeleteButton();
+    this.bindEventOnLikedButton();
+  },
+
+  handleClickLikeButton(contents = "") {
     CommentModel.likeComment(contents);
-    this.renderComment();
+    CommentView.renderComments(CommentModel.comments);
     this.bindEventOnDeleteButton();
     this.bindEventOnLikedButton();
   },
