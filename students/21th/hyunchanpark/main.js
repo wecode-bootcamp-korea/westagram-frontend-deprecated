@@ -4,6 +4,21 @@ const otherComments = document.querySelector(".other-comments");
 const postButton = document.querySelector(".post-button");
 const heartButtons = document.querySelectorAll(".fa-heart");
 const removeButtons = document.querySelectorAll("fa-trash-alt");
+const searchInput = document.querySelector(".nav-search-bar");
+const activeInput = document.querySelector(".active-input");
+const inactiveInput = document.querySelector(".inactive-input");
+const activeInputCancleButton = document.querySelector(".input-cancle");
+const searchInputResult = document.querySelector(".search-results-container");
+const searchResultsContainer = document.querySelector(".results-container");
+
+const wordList = [
+  "wecode_bootcamp",
+  "wecoffee__",
+  "we",
+  "jiwoo",
+  "hyun",
+  "chan",
+];
 
 const disabledButton = () => {
   let isAbleButton = false;
@@ -74,6 +89,71 @@ const handleFormSubmit = (e) => {
   }
 };
 
+// const activeInputFocus = (bool) => {
+//   bool ? activeInput.focus() : activeInput.blur();
+// };
+
+// const toggleFocusInput = () => {
+//   console.log(document.activeElement.nodeName);
+//   if (document.activeElement.nodeName === "BODY" || "INPUT") {
+//     activeInput.focus();
+//   } else {
+//     activeInput.blur();
+//   }
+//   activeInput.focus();
+// };
+// console.log(document.activeElement.nodeName);
+
+const changeZIndex = (value) => {
+  inactiveInput.style.zIndex = value;
+  // toggleFocusInput();
+};
+
+const showActiveInput = (bool) => {
+  const isbool = bool;
+  isbool ? changeZIndex("-5") : changeZIndex("0");
+  activeInput.value = "";
+};
+
+const toggleShowSearchInputResult = () => {
+  const isvisibility = searchInputResult.style.visibility;
+  isvisibility === "visible"
+    ? (searchInputResult.style.visibility = "hidden")
+    : (searchInputResult.style.visibility = "visible");
+};
+const toggleSearchInput = (e) => {
+  const isActive = inactiveInput.style.zIndex;
+  isActive >= 0
+    ? (showActiveInput(true), activeInput.focus())
+    : (showActiveInput(false), activeInput.blur());
+
+  toggleShowSearchInputResult();
+};
+
+const searchInputWord = (e) => {
+  let word = e.target.value;
+  let regExp = new RegExp("([a-zA-Z0-9]+)?" + word + "([a-zA-Z0-9]+)?");
+
+  let newWords = wordList.filter((word) => regExp.test(word) === true);
+  console.log(newWords);
+  searchResultsContainer.innerHTML = "";
+  newWords.forEach((word) => {
+    searchResultsContainer.insertAdjacentHTML(
+      "beforeend",
+      `<li class="results">
+        <div class="result">
+        <img src="./image/user-icon.jpg" alt="user님의 프로필 사진" />
+          <div class="searched-user">
+            <a class="searched-username" href="">
+              ${word}
+            </a>
+          </div>
+        </div>
+      </li>`
+    );
+  });
+};
+
 commentForm.addEventListener("submit", handleFormSubmit);
 
 commentInput.addEventListener("keyup", disabledButton);
@@ -83,3 +163,7 @@ postButton.addEventListener("click", addComment);
 heartButtons.forEach((heartButton) =>
   heartButton.addEventListener("click", toggleHeart(heartButton))
 );
+
+searchInput.addEventListener("click", toggleSearchInput);
+
+activeInput.addEventListener("keyup", searchInputWord);

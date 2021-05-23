@@ -164,7 +164,7 @@ body {
   overflow-y: scroll;
 }
 
-.result-content {
+.results {
   padding: 8px 16px;
   cursor: pointer;
 }
