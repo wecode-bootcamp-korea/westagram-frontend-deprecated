@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Document</title>
 </head>
@@ -14,11 +14,11 @@
             <h1>Westagram</h1>
         </header>
         <main class="login-page">
-            <div class="login-form">
+            <form class="login-form">
                 <input type="text" class="login-input-id" placeholder="전화번호, 사용자 이름 또는 이메일">
-                <input type="number" class="login-input-password" placeholder="비밀번호">
-                <button class="login-button">로그인</button>
-            </div>
+                <input type="password" class="login-input-password" placeholder="비밀번호">
+                <button type='submit' class="login-button">로그인</button>
+            </form>
         </main>
         <footer class="forgot-password">
             <a href="#">비밀번호를 잊으셨나요?</a>
@@ -31,29 +31,50 @@
                <div class="home-bar">|</div>
                <a href="#" class="home-title">Westagram</a>
            </div>
-           <form class="search-input">
+           <form class="search-form">
                <input type="text">
                <button type="reset">
                    <span>X</span>
                </button>
-               <i class="fas fa-search"></i> 
+               <i class="fas fa-search"></i>
+               <div class="search-form-result"></div> 
            </form>
            <div class="menu-icon">
-               <div></div>
-               <div></div>
-               <div></div>
+               <div class="menu-navigation"></div>
+               <div class="menu-liked"></div>
+               <div class="menu-profile"></div>
+               <div class="menu-profile-image">
+                 <img alt="my profile" src="./images/profile6.jpeg">
+               </div>
+               <ul class="menu-box" style="display: none;">
+                 <li class="menu-list">
+                   <i class="far fa-user-circle"></i>
+                   <span>프로필</span>
+                 </li>
+                 <li class="menu-list">
+                   <i class="far fa-bookmark"></i>
+                   <span>저장됨</span>
+                 </li>
+                 <li class="menu-list">
+                   <i class="fas fa-cog"></i>
+                   <span>설정</span>
+                 </li>  
+                 <li class="menu-list">
+                    <span>로그아웃</span>
+                 </li>
+                </ul>
            </div>  
         </nav>
         <main>
-            <div class="feeds">
-                <article>
+            <section>
+                <div class="feeds">
                     <div class="feeds-title">
-                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="profile">
+                        <img  alt="canon-mj's profile" src="./images/profile1.jpeg">
                         <span class="feeds-title-id">canon-mj</span>
                         <i class="fas fa-ellipsis-h"></i>
                     </div>
                     <div class="feeds-image">
-                        <img src="http://cdn.sheknows.com/articles/2013/05/woman-baking-in-kitchen-vert.jpg" alt="baking">
+                        <img alt="baking" src="./images/baking.jpeg">
                     </div>
                     <div class="feeds-tab">
                         <i class="fas fa-heart fa-lg"></i>
@@ -62,7 +83,7 @@
                         <i class="far fa-bookmark fa-lg"></i>
                     </div>
                     <div class="feeds-like">
-                        <img src="https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg" alt="profile">
+                        <img alt="aineworld's profile" src="./images/profile2.jpeg">
                         <div><span>aineworld</span>님 외 <span>10명</span>이 좋아합니다</div>
                     </div>
                     <div class="feeds-description">
@@ -74,14 +95,14 @@
                     </div>
                     <form class="feeds-comment-form">
                         <input type="text" placeholder="댓글 달기...">
-                        <button>게시</button>
+                        <button type='submit' class="feeds-comment-upload">게시</button>
                     </form>
-                </article>
-            </div>
-            <div class="main-right">
+                </div>
+            </section>
+            <aside>
                 <div class="wecode">
                     <div class="wecode-profile">
-                        <img src="https://media.vlpt.us/images/inyong_pang/post/f0ea605d-c2d9-460c-aedc-a0ec77e6759f/wecode.png" alt="profile">
+                        <img alt="wecode's profile" src="https://media.vlpt.us/images/inyong_pang/post/f0ea605d-c2d9-460c-aedc-a0ec77e6759f/wecode.png">
                     </div>
                     <div class="wecode-description">
                         <span>wecode_bootcamp</span>
@@ -93,54 +114,54 @@
                         <span>스토리</span>
                         <span>모두 보기</span>
                     </div>
-                    <div class="story-lists">
-                        <div class="story-list">
+                    <ul class="story-lists">
+                        <li class="story-list">
                             <div class="story-profile">
-                                <img src="http://www.mandysam.com/img/random.jpg" alt="profile">
+                                <img alt="_yum_s's profile" src="./images/profile3.jpeg">
                             </div>
                             <div class="story-description">
                                 <span>_yum_s</span>
                                 <span>16분 전</span>
                             </div>
-                        </div>
-                        <div class="story-list">
+                        </li>
+                        <li class="story-list">
                             <div class="story-profile">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxD9usOwVzRuZI3KTmkwoV9MIUfkgpNvJ2Mu_YRRyIOEyXm_5p3K3jXuZuluDoUybt-8&usqp=CAU" alt="profile">
+                                <img alt="drink_eat_drink's profile" src="./images/profile4.jpeg">
                             </div>
                             <div class="story-description"> 
                                 <span>drink_eat_drink</span>
                                 <span>3시간 전</span>
                             </div>
-                        </div>
-                        <div class="story-list">
+                        </li>
+                        <li class="story-list">
                             <div class="story-profile">
-                                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Among-Us-Random-Name-Generator.jpg" alt="profile">
+                                <img alt="hyukyc's profile" src="./images/profile5.jpeg">
                             </div>
                             <div class="story-description">
                                 <span>hyukyc</span>
                                 <span>20시간 전</span>
                             </div>
-                        </div>
-                        <div class="story-list">
+                        </li>
+                        <li class="story-list">
                             <div class="story-profile">
-                                <img src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg" alt="profile">
+                                <img alt="jminkeek's profile" src="./images/profile6.jpeg">
                             </div>
                             <div class="story-description">
                                 <span>jminkeek</span>
                                 <span>2일 전</span>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="recommend">
                     <div class="recommend-header">
                         <span>회원님을 위한 추천</span>
                         <span>모두 보기</span>
                     </div>
-                    <div class="recommend-lists">
-                        <div class="recommend-list">
+                    <ul class="recommend-lists">
+                        <li class="recommend-list">
                             <div class="recommend-profile">
-                                <img src="https://picsum.photos/id/237/536/354" alt="profile">
+                                <img alt="joaaaaahye's profile" src="./images/profile7.jpeg">
                             </div>
                             <div class="recommend-description">
                                 <span>joaaaaahye</span>
@@ -149,10 +170,10 @@
                             <div class="recommend-follow">
                                 <span>팔로우</span>
                             </div>
-                        </div>
-                        <div class="recommend-list">
+                        </li>
+                        <li class="recommend-list">
                             <div class="recommend-profile">
-                                <img src="https://phillipbrande.files.wordpress.com/2013/10/random-pic-14.jpg" alt="profile">
+                                <img alt="rampart81's profile" src="./images/profile4.jpeg">
                             </div>
                             <div class="recommend-description">
                                 <span>rampart81</span>
@@ -161,10 +182,10 @@
                             <div class="recommend-follow">
                                 <span>팔로우</span>
                             </div>
-                        </div>
-                        <div class="recommend-list">
+                        </li>
+                        <li class="recommend-list">
                             <div class="recommend-profile">
-                                <img src="https://i.pinimg.com/originals/12/46/9c/12469c8a50bcb6e344589c43eb7db72c.jpg" alt="profile">
+                                <img alt="shawnjjoo's profile" src="./images/profile5.jpeg">
                             </div>
                             <div class="recommend-description">
                                 <span>shawnjjoo</span>
@@ -173,14 +194,14 @@
                             <div class="recommend-follow">
                                 <span>팔로우</span>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-                <footer><span>instagram 정보 · 지원 · 홍보 센터 · API · 채용 정보 · 개인정보처리방침 · 약관 · 디렉터리 · 프로필 · 해시태그 · 언어 <br/> © 2019 INSTAGRAM</span></footer>
-            </div>
+                <div class="info">instagram 정보 · 지원 · 홍보 센터 · API · 채용 정보 · 개인정보처리방침 · 약관 · 디렉터리 · 프로필 · 해시태그 · 언어 <br/> © 2019 INSTAGRAM</div>
+            </aside>
         </main>
     </div>
     <script src="https://kit.fontawesome.com/8047cee532.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>

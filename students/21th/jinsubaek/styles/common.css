@@ -1,0 +1,20 @@
+@import url("./login.css");
+@import url("./main.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  background: none;
+  border: none;
+  list-style: none;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
