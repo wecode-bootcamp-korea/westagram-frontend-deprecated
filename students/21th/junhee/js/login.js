@@ -10,6 +10,9 @@ const login = () => {
     if(inputId && inputPassword){
         loginButton.removeAttribute('disabled');
     }
+    else{
+        loginButton.setAttribute('disabled','disabled');
+    }
 }
 
 userId.addEventListener('keyup',login);
