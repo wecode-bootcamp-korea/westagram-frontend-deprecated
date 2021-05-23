@@ -1,18 +1,17 @@
-const loginId = document.getElementsByClassName('id')[0];
-const loginPassword = document.getElementsByClassName('password')[0];
-const loginButton = document.getElementsByClassName('button')[0];
+const loginId = document.querySelector('.id');
+const loginPassword = document.querySelector('.password');
+const loginButton = document.querySelector('.button');
+const loginMain = document.querySelector('main');
 
+function keyUpLogin(){
+  const inputId = loginId.value;
+  const inputPassword = loginPassword.value;
 
-function keyUpId(event){
-    const inputId = event.target.value;
-    inputId!='' && loginPassword.value != '' ? loginButton.disabled = false : loginButton.disabled = true
+  if(inputId && inputPassword){
+    loginButton.disabled = false;
+  }else{
+    loginButton.disabled = true;
+  }
 }
 
-function keyUpPassword(event){
-    const inputPassword = event.target.value;
-    loginId.value != '' && inputPassword != '' ? loginButton.disabled = false : loginButton.disabled = true
-}
-
-
-loginId.addEventListener('keyup',keyUpId);
-loginPassword.addEventListener('keyup',keyUpPassword);
+loginMain.addEventListener("keyup", keyUpLogin);

@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/login.css" type="text/css"/>
-        <link rel="stylesheet" href="style/common.css" type="text/css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <title>Westagram</title>
-    </head>
-    <body>
-        <div class = "login_container">
-            <header>
-                <p class="mainLogo">westagram</p>
-            </header>
-            <main>
-                <input class="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
-                <input class ="password" type="password" placeholder="비밀번호"/>
-                <div class="movePage" onclick="location.href='main.html'">
-                    <button class="button" disabled>로그인</button>
-                </div>
-            </main>
-            <div class="findPassword">
-                <a href="">비밀번호를 잊으셨나요?</a>
-            </div>
-        </div>
-        <script src="js/login.js"></script>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/login.css" type="text/css" />
+  <link rel="stylesheet" href="style/common.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR:wght@300;700&display=swap" rel="stylesheet">
+  <title>Westagram</title>
+</head>
+
+<body>
+  <div class="login_container">
+    <header>
+      <p class="mainLogo">westagram</p>
+    </header>
+    <main>
+      <input class="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+      <input class="password" type="password" placeholder="비밀번호" />
+      <a href="main.html">
+        <button class="button" disabled>로그인</button>
+      </a>
+    </main>
+    <div class="findPassword">
+      <a href="">비밀번호를 잊으셨나요?</a>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+
 </html>

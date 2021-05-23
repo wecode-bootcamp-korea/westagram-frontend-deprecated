@@ -3,10 +3,12 @@ body{
 }
 
 nav{
-    width:100%;
-    background-color: white;
     position:fixed;
     top:0;
+   
+    background-color: white;
+    border-bottom: 1px solid gray;
+    z-index:2;
 }
 
 .mainLogo,.searchWrapper,.iconWrapper{
@@ -19,63 +21,60 @@ nav{
     width:24px;
 }
 
-.navWrapper{
-    border-bottom: 1px solid gray;
-    height:56px;
-}
 
-.navBox{
+.navWrapper{
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
     margin:0 150px;
-    height: 100%;
+    padding:15px;
 }
 
 .mainLogo span{
+    margin-right:80px;
     font-size:30px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster';
+}
+
+.searchWrapper{
+  position:relative;
+  margin:0 200px;
 }
 
 .search{
     width: 200px;
     height:25px;
-    text-align: center;
     background-color: #fafafa;
     border:1px solid #e0e0e0;
     border-radius: 3px;
+    text-align: center;
 }
 
 .searchWrapper i{
+    position:absolute;
+    left: 70px;
     color:gray;
     font-size:13px;
 }
 
 .iconWrapper{
-    width:200px;
     display:flex;
     justify-content: space-between;
+    width:200px;
+    margin-left:85px;
 }
 
 .iconWrapper .myProfile{
     border-radius: 50%;
 }
 
-/*main*/
-
-
 .mainWrapper{
     display:flex;
-    flex-direction: row;
     margin: 100px 100px;
 }
 
 .main-left{
-    width: 800px;
     margin:0 40px;
 }
-
-/*스토리부분*/
 
 .storyBox, article{
     border: 1px solid #e0e0e0;
@@ -97,10 +96,9 @@ nav{
 
 .storyBox ul{
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
-    list-style: none;
     margin:20px 20px 15px 20px;
+    list-style: none;
 }
 
 .storyBox li{
@@ -108,17 +106,14 @@ nav{
 }
 
 .storyBox i{
-    color:#e0e0e0;
     margin-top:20px;
+    color:#e0e0e0;
 }
 
 .storyBox p{
     margin-top:5px;
 }
 
-
-
-/*피드부분*/
 article{
     border-radius: 5px;
 }
@@ -129,38 +124,27 @@ article{
 
 .feedUpper{
     display:flex;
-    flex-direction: row;
-    height: 60px;
-}
-
-.feedUpper img{
-    margin:18px;
 }
 
 .mainProfile{
     width:24px;
     height:24px;
+    margin:18px;
     border-radius: 50%;
     border: 1px solid #ddd;
     box-shadow: 0 0 0 3px #fff, 0 0 0 5px palevioletred;
 }
 
 .feedProfile{
-    width:100%;
     display:flex;
     justify-content: space-between;
-    
+    width:100%;
 }
 
 .feedUpper strong{
     margin:18px 0;
 }
 
-.feedImage{
-    width:100%;
-}
-
-/*feedlower*/
 .contentWrapper, .iconSpace{
     margin-left:15px;
 }
@@ -177,9 +161,9 @@ article{
 }
 
 .iconSpace{
-    width:100%;
     display:flex;
     justify-content: space-between;
+    width:100%;
 }
 
 .icon-right{
@@ -188,53 +172,60 @@ article{
 }
 
 .contentWrapper .clickGood{
-    margin: 10px 0;
     display:flex;
     align-items: center;
+    margin: 10px 0;
 }
 
 .contentWrapper img{
     width:18px;
-    border-radius: 50%;
     margin-right:5px;
+    border-radius: 50%;
 }
 
-.myContent, .contentWrapper a, .firstComment, .secondComment{
+.myContent, .contentWrapper a, .commentList li{
     margin-bottom:4px;
 }
 
 .contentWrapper a{
     display:block;
-    text-decoration: none;
     color:gray;
+    text-decoration: none;
 }
 
 .contentWrapper p{
-    font-size: 11px;
     margin: 10px 0;
     color:gray;
+    font-size: 11px;
 }
 
-form{
+.contentWrapper ul{
+    list-style: none;
+}
+
+.inputWrapper{
+    display:flex;
     height:55px;
     border-top:1px solid #e0e0e0;
-    display:flex;
-    flex-direction: row;
 }
 
-form img{
+.inputWrapper img{
     width:20px;
     height:20px;
     margin:18px 15px;
 }
 
-form .inputBox{
-    width:100%;
+.inputWrapper .inputBox{
     display:flex;
+    width:100%;
 }
 
 .inputBox input, .inputBox button{
-    margin:20px 0;
+    margin:15px 0;
+}
+
+.inputBox input{
+    padding:10px 0;
 }
 
 .inputBox input{
@@ -256,40 +247,34 @@ form .inputBox{
     cursor: pointer;
 }
 
-/*main-rigth*/
 .main-right{
-    width:420px;
     margin-left:60px;
 }
 
 .profileBox{
-    display:flex;
-    flex-direction: row;
+  display:flex;
 }
 
-.profileBox .imageContainer{
-    display:inline-block;
-    flex:2;
+.profileBox .imageBox{
+  width: 30px;
 }
 
 .profileBox img{
+    display:inline-block;
     width:60px;
     height:60px;
     border-radius: 50%;
 }
 
-.columnBox{
+.profileBox .nameBox{
     display:flex;
     flex-direction: column;
-}
-
-.profileBox .columnBox{
-    flex:7;
-    padding-top:7px;
+    width:250px;
+    margin-left:45px;
 }
 
 .profileBox button{
-    flex:1;
+    width:50px;
     border:none;
     background-color: #fafafa;
     color:#1182d9;
@@ -318,20 +303,22 @@ form .inputBox{
 }
 
 .followBox li{
-    height:50px;
     position:relative;
+    height:50px;
 }
 
 .followBox img{
+    position:absolute;
+    left:0;
     width:24px;
     height:24px;
     margin-top:5px;
     border-radius: 50%;
-    position:absolute;
-    left:0;
 }
 
 .followBox .columnBox{
+    display:flex;
+    flex-direction: column;
     position:absolute;
     left:35px;
 }
