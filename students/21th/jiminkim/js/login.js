@@ -3,7 +3,7 @@ const textLoginPw = document.getElementById('txtLoginPw');
 const buttonLogin = document.getElementById('buttonLogin');
 
 // 로그인 버튼 활성화 이벤트
-let setLoginButtonActive = (event) => {
+const setLoginButtonActive = (event) => {
 
    buttonLogin.className = (textLoginId.value !== '' && textLoginPw.value !== '' ) ? "" : "inactive";
 
@@ -17,10 +17,10 @@ let setLoginButtonActive = (event) => {
 } 
 
 // 로그인 버튼 클릭 이벤트
-let clickLoginButton = () => {
+const clickLoginButton = () => {
 
-    let txtLoginId = textLoginId.value;
-    let txtLoginPw = textLoginPw.value;
+    const txtLoginId = textLoginId.value;
+    const txtLoginPw = textLoginPw.value;
 
     if (txtLoginId === '') {
         alert('Id를 입력해 주세요.');

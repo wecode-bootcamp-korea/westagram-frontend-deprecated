@@ -214,7 +214,6 @@ nav.header hgroup {
 }
 
 .feeds-comment textarea {
-    display: flex;
     flex-grow: 1;
     width: 0;
     height: 18px;
@@ -314,7 +313,7 @@ nav.header hgroup {
 }
 
 .proflie-box-desc div {
-    padding: 3px 2px;
+    padding: 3px 2px 0;
 }
 
 .main-right-story-box ul li,

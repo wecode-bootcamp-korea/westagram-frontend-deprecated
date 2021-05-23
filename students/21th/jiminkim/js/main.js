@@ -37,8 +37,7 @@ const appendComment = (event) => {
     const commentAddButton = document.getElementById('commentButton'+commentId);
     const commentList = document.getElementById('commentList'+commentId);
 
-    let commentStr = commentTextarea.value;
-    commentStr = commentStr.replace(/(?:\r\n|\r|\n)/g,'');
+    const commentStr = commentTextarea.value.replace(/(?:\r\n|\r|\n)/g,'');
 
     if (commentStr === '' ) {
         commentAddButton.classList.add("inactive");
@@ -51,41 +50,41 @@ const appendComment = (event) => {
         if (event.key !== 'Enter') return;
     }
 
-    let commentLi = document.createElement('li')
+    const commentLi = document.createElement('li')
     commentList.appendChild(commentLi);
 
     // 댓글 element 만들기 프로필사진 / 아이디 / 댓글내용 / 삭제 / 하트
-    let commenter = document.createElement('span');
-    commenter.innerHTML = `${loginId}`;
+    const commenter = document.createElement('span');
+    commenter.innerText = loginId;
     commenter.className = "nickname bold";
     commentLi.appendChild(commenter);
 
-    let commentContent = document.createElement('span');
-    commentContent.innerHTML = commentTextarea.value;
+    const commentContent = document.createElement('span');
+    commentContent.innerText = commentTextarea.value;
     commentContent.className = "comment";
     commentLi.appendChild(commentContent);
     commentTextarea.value = "";
     
-    let commentButtonDiv = document.createElement('div');
+    const commentButtonDiv = document.createElement('div');
     commentButtonDiv.className = "button-list";
     commentLi.appendChild(commentButtonDiv);
 
-    let commentDeleteButton = document.createElement('button');
-    commentDeleteButton.innerHTML = "✖️";
+    const commentDeleteButton = document.createElement('button');
+    commentDeleteButton.innerText = "✖️";
     commentDeleteButton.className = "comment-delete-button";
     commentDeleteButton.addEventListener('click',(event)=>{ 
         commentLi.remove();
     });
     commentButtonDiv.appendChild(commentDeleteButton);
     
-    let commentHeartButton = document.createElement('button');
-    commentHeartButton.innerHTML = "♡";
+    const commentHeartButton = document.createElement('button');
+    commentHeartButton.innerText = "♡";
     commentHeartButton.className = "comment-heart-button";
     commentHeartButton.addEventListener('click',(event)=>{ 
-        if (event.target.innerHTML === '♡') {
-            event.target.innerHTML = "♥︎";
+        if (event.target.innerText === '♡') {
+            event.target.innerText = "♥︎";
         } else {
-            event.target.innerHTML = "♡";
+            event.target.innerText = "♡";
         }
      });
     commentButtonDiv.appendChild(commentHeartButton);
@@ -96,7 +95,7 @@ const appendComment = (event) => {
 const findPeople = (event) => {
     
     // 초기화
-    ulElement.innerHTML = '';
+    ulElement.innerText = '';
     searchBox.classList.add("display-none");
 
     if (txtFindPoeple.value === '')  return;
@@ -127,12 +126,12 @@ const findPeople = (event) => {
 
         const divNicknameElement = document.createElement('div');
         divNicknameElement.className = "bold";
-        divNicknameElement.innerHTML = per.name;
+        divNicknameElement.innerText = per.name;
         divDescElement.appendChild(divNicknameElement);
 
         const divDetailElement = document.createElement('div');
         divDetailElement.className = "gray";
-        divDetailElement.innerHTML = per.description;
+        divDetailElement.innerText = per.description;
         divDescElement.appendChild(divDetailElement);
 
         ulElement.appendChild(liElement);
