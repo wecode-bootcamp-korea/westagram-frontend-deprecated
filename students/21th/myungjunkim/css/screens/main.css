@@ -8,8 +8,8 @@
   display: flex;
   justify-content: center;
   position: fixed;
+  top: 0;
   width: 100vw;
-  margin-top: 10px;
   background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
   z-index: 2;

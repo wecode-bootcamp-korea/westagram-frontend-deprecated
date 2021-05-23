@@ -5,7 +5,6 @@ const commentList = document.querySelector(".js-comment-list"),
 
 function handleSubmit(event) {
   event.preventDefault();
-
   const textareaValue = commentTextarea.value;
   paintComment(textareaValue);
   commentTextarea.value = "";
@@ -14,11 +13,15 @@ function handleSubmit(event) {
 }
 
 function handleEnter(event) {
-  commentButton.style.color = "#0095f6";
-  commentButton.disabled = false;
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    commentButton.click();
+  let text = commentTextarea.value.replace(/\n/gi, "");
+
+  if (text[0] !== ("" || " ") && text.length !== 0) {
+    commentButton.style.color = "#0095f6";
+    commentButton.disabled = false;
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      commentButton.click();
+    }
   }
 }
 
