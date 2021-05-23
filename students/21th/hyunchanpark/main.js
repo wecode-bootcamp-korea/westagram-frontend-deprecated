@@ -1,37 +1,27 @@
 const commentForm = document.querySelector(".comment-form");
-
 const commentInput = document.querySelector(".comment-input");
-
 const otherComments = document.querySelector(".other-comments");
-
 const postButton = document.querySelector(".post-button");
+const heartButtons = document.querySelectorAll(".fa-heart");
+const removeButtons = document.querySelectorAll("fa-trash-alt");
 
-let heartButtons = document.querySelectorAll(".fa-heart");
-
-let removeButtons = document.querySelectorAll("fa-trash-alt");
-
-const isDisabledButton = () => {
+const disabledButton = () => {
   let isAbleButton = false;
-  if (commentInput.value.length !== 0) {
-    postButton.disabled = false;
-    isAbleButton = true;
-  } else {
-    postButton.disabled = true;
-    isAbleButton = false;
-  }
+  const isCommentInputValid = commentInput.value.length > 0;
+
+  postButton.disabled = !isCommentInputValid;
+  isAbleButton = isCommentInputValid;
 
   return isAbleButton;
 };
 
 const toggleHeart = (node) => {
   node.addEventListener("click", () => {
-    if (node.classList.contains("fas")) {
-      node.classList.add("far");
-      node.classList.remove("fas");
-    } else if (node.classList.contains("far")) {
-      node.classList.add("fas");
-      node.classList.remove("far");
-    }
+    const classToAdd = node.classList.contains("fas") ? "far" : "fas";
+    const classToRemove = node.classList.contains("fas") ? "fas" : "far";
+
+    node.classList.add(classToAdd);
+    node.classList.remove(classToRemove);
   });
 };
 
@@ -56,7 +46,7 @@ const addComment = (e) => {
   );
 
   commentInput.value = "";
-  isDisabledButton();
+  disabledButton();
 
   const heartButtons = document.querySelectorAll(".fa-heart");
   const newHeartButton = heartButtons[heartButtons.length - 1];
@@ -77,7 +67,7 @@ const addComment = (e) => {
 const handleFormSubmit = (e) => {
   e.preventDefault();
 
-  const isUpload = isDisabledButton();
+  const isUpload = disabledButton();
 
   if (isUpload) {
     postButton.click();
@@ -86,7 +76,7 @@ const handleFormSubmit = (e) => {
 
 commentForm.addEventListener("submit", handleFormSubmit);
 
-commentInput.addEventListener("keyup", isDisabledButton);
+commentInput.addEventListener("keyup", disabledButton);
 
 postButton.addEventListener("click", addComment);
 
