@@ -24,14 +24,14 @@ nav{
     z-index: 2;
 }
 
-.nav_container{
+.navContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 920px;
 }
 
-.search-wrapper{
+.searchWrapper{
     display: flex;
     justify-content: center;
     background-color: #FAFAFA ;
@@ -41,7 +41,7 @@ nav{
     border-radius: 4px;
 }
 
-.icon_wrapper{
+.iconWrapper{
     display: flex;
     justify-content: space-between;
     width: 200px;
@@ -54,7 +54,7 @@ nav{
     text-decoration: none;
 }
 
-#search-input{
+#searchInput{
     background-color:#FAFAFA ;
     width: 160px;
     height: 25px;
@@ -63,7 +63,7 @@ nav{
     outline: none;
 }
 
-#search-input::placeholder{
+#searchInput::placeholder{
     text-align: center;
     color: rgb(138, 138, 138);
     font-weight: 300;
@@ -77,7 +77,7 @@ nav{
     margin-right: 30px;
 }
 
-article{
+.feedsWrapper{
     display: flex;
 }
 
@@ -108,6 +108,7 @@ main{
     height:27px;
     background-color: white;
     border: 1px solid #dbdbdb;
+    border-bottom: none;
     display: flex;
     padding:16px;
 }
@@ -148,15 +149,6 @@ main{
 }
 
 
-
-#comment_num{
-    margin: 5px 0px;
-}
-
-.moreIcon{
-    width:24px;
-}
-
 .articlePhoto{
     width:600px;
     height: 600px;
@@ -168,46 +160,42 @@ main{
     border: 1px solid #dbdbdb;
 }
 
-/*  */
+/* Comments */
 
 
-.comment_iconWrapper{
+.commentIconWrapper{
     display: flex;
     justify-content: space-between;
     height: 20px;
     padding: 10px 16px;
 }
 
-.left-icon{
+.leftIcon{
     display: flex;
     justify-content: space-between;
     width: 100px;
 }
 
-#heart-icon, #explore-icon, #message-icon, #home-icon {
-    width:24px;
-}
-
-#heart-icon2, #message-icon2, #comment-icon, #bookmark-icon{
+.iconSet {
     width: 24px;
     height: 24px;
 }
 
 
-
 .writtenCommentsContainer{
     width: 600px;
-    height: 100%;
     border: 1px solid #dbdbdb;
+    border-top: none;
     background-color: white;
     position:relative;
 }
 
-#comment_num{
+#commentNum{
     font-size: 13px;
     color: gray;
+    margin-bottom: 10px;
 }
-.user-comment{
+.userComment{
     margin: 5px 0px;
 }
 
@@ -222,65 +210,73 @@ main{
     text-decoration: underline;
 }
 
-.otheruser-comment{
-    margin: 4px 0px;
-}
-
-#comment-time{
-    font-size: 11px;
-    color: rgb(156, 156, 156);
-    text-decoration: none;
-    margin: 5px 0px;
-}
-
 #smileEmoji{
     width: 24px;
     height: 24px;
     margin: 12px;
 }
 
+.commentContainer{
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    border: 1px solid #dbdbdb;
+    border-top:none;
+    background-color: white;
+}
+
+
 .commentInputWrapper{
     display: inline;
 }
 
 .commentText{
-    resize: none;
     width: 500px ;
     border: none;
     outline: none;
-    margin-top: 1px;
+    margin-left: 14px;
+}
+
+.commentContent{
+    display: inline;
+    margin-bottom:5px;
+    font-weight: 400;
+    color: #252529;
+}
+
+.myCommentId{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #252529;
+    font-weight: 600;
+}
+
+.myCommentId:hover{
+    text-decoration: underline;
+}
+
+.myCommentWrapper{
+    margin-bottom: 5px;
 }
 
 .commentText::placeholder{
     color: rgb(139, 139, 139);
 }
 
-.commentContainer{
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #dbdbdb;
-    position:absolute;
-    bottom:0px;
-    width:100%;
-}
-
-.list-container{
-    margin-left: 0px;
+.listContainer{
+    margin-bottom: 15px;
     list-style: none;
 }
 
-
-
-.uploadBtn{
-    position: absolute;
-    right:16px;
+.uploadButton{
     background-color: white;
     border: none;
     color: #0095F6;
     font-weight: 600;
+    margin-left: 8px;
 }
 
-.uploadBtn:hover{
+.uploadButton:hover{
     cursor: pointer;
 }
 
@@ -291,7 +287,7 @@ main{
 
 /* aside */
 
-.aside-right{
+.asideRight{
     width: 293px;
     height: 500px;
     display: flex;
@@ -300,7 +296,7 @@ main{
     
 }
 
-.recommend_text_Wrapper{
+.recommendTextWrapper{
     display: flex;
     justify-content: space-between;
     padding: 16px 0px 0px 0px;
@@ -323,7 +319,7 @@ main{
     border-radius: 50%;
 }
 
-#myNametext{
+.myNameText{
     color:#252529;
     text-decoration: none;
     font-size: 14px;
@@ -331,57 +327,57 @@ main{
     margin-left:16px;
 }
 
-#recommend_text{
+#recommendText{
     display: inline-block;
     color:rgb(133, 133, 133);
     font-weight:600;
 }
 
-#seeall{
+#seeAll{
     color:#252529;
     text-decoration: none;
     font-size: 12px;
     font-weight: 600;
 }
 
-.user-recommend{
+.userRecommend{
     position: relative;
     list-style: none;
     padding: 10px 0px;
     width:100%;
 }
 
-.user-list{
+.userList{
     display: flex;
     align-items: center;
     padding: 8px 0px;
 }
 
-.recommend_list_wrapper{
+.recommendListWrapper{
     display: inline-block;
 }
 
-#user1-profile{
+#user1Profile{
     width: 32px;
     margin-right:12px;
 }
 
-.recommend_id{
+.recommendId{
     font-weight: 600;
     text-decoration: none;
     color: #262626;
 }
 
-.recommend_id:hover{
+.recommendId:hover{
     text-decoration: underline;
 }
 
-.follower_info{
+.followerInfo{
     font-size: 12px;
     color: rgb(139, 139, 139);
 }
 
-.followBtn, .swtichBtn{
+.followButton, .switchButton{
     position: absolute;
     right: 0px;
     background-color: #fafafa;
@@ -391,13 +387,14 @@ main{
     font-size: 12px;
 }
 
-.followBtn:hover, .swtichBtn:hover{
+.followButton:hover, .switchButton:hover{
     cursor: pointer;
 }
 
-.footer_text{
+.footerText{
     font-size: 11px;
     color: rgb(196, 196, 196);
     line-height: 160%;
     padding: 10px 0px;
 }
+

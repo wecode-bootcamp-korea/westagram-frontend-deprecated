@@ -16,7 +16,7 @@ main{
 }
 
 
-.login-logo{
+.loginLogo{
     margin-bottom: 30px;
 }
 
@@ -27,7 +27,7 @@ h1{
     font-size: 35px;
 }
 
-.login-container{
+.loginContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,8 +88,7 @@ h1{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin: 5px 0px 15px 0px;
 }
 
 .leftLine, .rightLine{
@@ -118,7 +117,7 @@ h1{
     color: #1777f2;
 }
 
-#facebook-logo{
+#facebookLogo{
     width: 20px;
     margin-right: 10px;
 }
@@ -143,7 +142,7 @@ h1{
     color: #0195F6;
 }
 
-.join-container{
+.joinContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +183,7 @@ h1{
 
 /* footer */
 
-.footer-container{
+.footerContainer{
     display: flex;
     justify-content: center;
     align-items: center;
