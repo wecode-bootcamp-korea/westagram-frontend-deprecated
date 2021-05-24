@@ -62,25 +62,6 @@ function removeComment() {
   }
 }
 
-function likesComment() {
-  const commentLikesButton = document.querySelectorAll('.commentLikesButton');
-
-  for(let i=0; i<commentLikesButton.length; i++) {
-    const buttonOff = './images/main/icon/heart.png';
-    const buttonOn = './images/main/icon/heart_black.png';
-    const clickedButton = commentLikesButton[i];
-    const isLikesButtonOff = commentLikesButton[i].getAttribute('src') === buttonOff;
-
-    clickedButton.addEventListener('click', () => {
-      if(isLikesButtonOff) {
-        clickedButton.setAttribute('src', buttonOn);
-      } else {
-        clickedButton.setAttribute('src', buttonOff);
-      }
-    });
-  }
-}
-
 showStoryList();
 
 function showStoryList() {
@@ -114,7 +95,24 @@ function showSuggestedList() {
     );
   }
 }
-/* 사용자 검색 기능 구현 중...
+/*
+
+function likesComment() {
+  const commentLikesButton = document.querySelectorAll('.commentLikesButton');
+
+  for(let i=0; i<commentLikesButton.length; i++) {
+    const clickedButton = commentLikesButton[i];
+
+    clickedButton.addEventListener('click', () => {
+      if(clickedButton.getAttribute('src') === './images/main/icon/heart.png') {
+        clickedButton.setAttribute('src', './images/main/icon/heart_black.png');
+      } else {
+        clickedButton.setAttribute('src', './images/main/icon/heart.png');
+      }
+    });
+  }
+}
+
 searchLabel.addEventListener('click', () => {
   searchInput.focus();
   searchInput.classList.add('searchFocus');

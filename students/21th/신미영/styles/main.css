@@ -1,438 +1,444 @@
 body {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 54px;
-    padding: 0 15px;
-    background-color: #ffffff;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 54px;
+  padding: 0 15px;
+  border-top: 1px solid rgb(230, 230, 230);
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  z-index: 1;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 25px;
-    font-family: 'Lobster', cursive;
-    font-weight: 100;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
+  font-family: "Lobster", cursive;
+  font-weight: 100;
 }
 
 .search {
-    display: none;
+  display: none;
 }
 
 .navIcons {
-    width: auto;
+  width: auto;
 }
 
 .navIcons img {
-    width: 22px;
-    height: 22px;
-    margin: 0 10px;
+  width: 22px;
+  height: 22px;
+  margin: 0 10px;
 }
 
 #myProfile-img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 section {
-    position: absolute;
-    top: 54px;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid rgb(230, 230, 230);
+  position: absolute;
+  top: 54px;
+  left: 0;
+  width: 100%;
 }
 
 .stories {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 110px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
 }
 
 .stories .story {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .story .storyProfile {
-    width: 60px;
-    height: 60px;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
 }
 
 .story .storyBg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 66px;
-    height: 66px;
-    margin-bottom: 5px;
-    border-radius: 50%;
-    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
 }
 
 .feeds {
-    width: 100vw;
-    border-top: 1px solid rgb(230, 230, 230);
+  width: 100vw;
+  border-top: 1px solid rgb(230, 230, 230);
 }
 
 .feeds div {
-    width: 100%;
+  width: 100%;
 }
 
 .feedHead {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-    padding: 20px;
-    border-bottom: 1px solid rgb(230, 230, 230);
-    background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  background-color: #ffffff;
 }
 
 .feedHead #account {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .feedHead #account div {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .feedHead img {
-    width: 32px;
-    height: 32px;;
-    border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
 
 .feedHead #accountMore {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: right;
-    cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  cursor: pointer;
 }
 
 .feedPicture {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .feedReaction {
-    padding: 15px;
-    margin-bottom: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .feedReaction img {
-    width: 22px;
-    margin: 0 5px 3px 5px;
+  width: 22px;
+  margin: 0 5px 3px 5px;
 }
 
 .floatLeft {
-    float:left;
+  float: left;
 }
 
 .floatRight {
-    float: right;
+  float: right;
 }
 
 .feedInfo {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .feedLikes {
-    clear: both;
-    margin-bottom: 10px;
-    font-weight: bolder;
+  clear: both;
+  margin-bottom: 10px;
+  font-weight: bolder;
 }
 
 .feedDate {
-    padding-bottom: 10px;
-    color: rgb(145, 145, 145);
-    font-size: 11px;
+  padding-bottom: 10px;
+  color: rgb(145, 145, 145);
+  font-size: 11px;
 }
 
 .feedCommentsList ul {
-    padding-left: 0;
-    list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
 
 .feedCommentsList ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .commentId {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .commentText {
-    flex: 2;
-    padding-left: 5px;
+  flex: 2;
+  padding-left: 5px;
 }
 
 .commentUl button {
-    color:rgb(145, 145, 145);
-    background-color: #ffffff;
-    cursor: pointer;
+  color: rgb(145, 145, 145);
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .commentLikesButton {
-    width: 12px;
-    height: 12px;
-    margin-left: 10px;
-    background-color: #ffffff;
-    cursor: pointer;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .mainRight {
-    display: none;
+  display: none;
 }
 
 .feedComment {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 501px) {
-    nav {
-        display: flex;
-        justify-content: center;
-    }
+  nav div {
+    display: flex;
+    justify-content: center;
+  }
 
-    .search {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-        position: relative;
-        width: 215px;
-        height: 28px;
-        border: 1px solid rgb(230, 230, 230);
-        border-radius: 3px;
-        background-color: rgb(250, 250, 250);
-        font-size: 15px;
-    }
+  .search {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    width: 215px;
+    height: 28px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    font-size: 15px;
+  }
 
-    .searchLabel {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        cursor: text;
-        opacity: 0.4;
-    }
+  .searchLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    cursor: text;
+    opacity: 0.4;
+  }
 
-    .searchLabelText {
-        margin-left: 3px;
-    }
+  .searchLabelText {
+    margin-left: 3px;
+  }
 
-    .searchLabelFocus {
-        position: absolute;
-        left: 3px;
-        opacity: 0.4;
-        z-index: 1;
-    }
+  .searchLabelFocus {
+    position: absolute;
+    left: 3px;
+    opacity: 0.4;
+    z-index: 1;
+  }
 
-    .searchInput {
-        width: 85%;
-    }
+  .searchInput {
+    width: 85%;
+  }
 
-    .searchFocus {
-        position: absolute;
-        top: 3px;
-        left: 20px;
-        width: 75%;
-        border: 1px solid black;
-    }
+  .searchFocus {
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    width: 75%;
+    border: 1px solid black;
+  }
 
-    .searchDeleteButton {
-        display: none;
-    }
+  .searchDeleteButton {
+    display: none;
+  }
 
-    .searchDeleteButtonOn {
-        display: inline;
-        position:absolute;
-        right: 5px;
-        top: 3px;
-        color: rgb(145, 145, 145);
-        background-color: rgb(250, 250, 250);
-    }
+  .searchDeleteButtonOn {
+    display: inline;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    color: rgb(145, 145, 145);
+    background-color: rgb(250, 250, 250);
+  }
 }
 
 @media screen and (min-width: 640px) {
-    nav {
-        justify-content: space-between;
-    }
+  nav div {
+    justify-content: space-between;
+  }
 
-    section {
-        display: flex;
-        justify-content: center;
-    }
+  section {
+    display: flex;
+    justify-content: center;
+  }
 
-    article {
-        margin: 15px;
-    }
+  article {
+    margin: 15px;
+  }
 
-    .stories {
-        height: 110px;
-        margin-bottom: 15px;
-        border: 1px solid rgb(230, 230, 230);
-        background-color: #ffffff;
-    }
+  .stories {
+    height: 110px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: #ffffff;
+  }
 
-    .feeds {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 600px;
-        border: 1px solid rgb(230, 230, 230);
-        background-color: #ffffff;
-    }
+  .feeds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    border: 1px solid rgb(230, 230, 230);
+    background-color: #ffffff;
+  }
 }
 
 @media screen and (min-width: 736px) {
-    .feedComment {
-        display: flex;
-        align-items: center;
-        padding: 20px 20px;
-        border-top: 1px solid rgb(230, 230, 230);; 
-    }
+  .feedComment {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-top: 1px solid rgb(230, 230, 230);
+  }
 
-    .feedComment input {
-        width: 90%;
-        background-color: #ffffff;
-        font-size: 15px;
-    }
+  .feedComment input {
+    width: 90%;
+    background-color: #ffffff;
+    font-size: 15px;
+  }
 
-    .feedComment img {
-        width: 22px;
-        margin-right: 15px;
-    }
+  .feedComment img {
+    width: 22px;
+    margin-right: 15px;
+  }
 
-    .feedComment button {
-        background-color: #ffffff;
-        font-size: 15px;
-    }
+  .feedComment button {
+    background-color: #ffffff;
+    font-size: 15px;
+  }
 
-    .postButtonOn {
-        color: #4D95F6;
-        cursor: pointer;
-    }
+  .postButtonOn {
+    color: #4d95f6;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    nav {
-        width: 920px;
-    }
-    
-    section {
-        display: flex;
-        flex-direction: row;
-    }
+  nav div {
+    width: 920px;
+  }
 
-    .mainRight {
-        margin: 15px;
-        display: inline-block;
-        width: 295px;
-    }
+  section {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .myAccount {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 15px 0;
-    }
+  .mainRight {
+    margin: 15px;
+    display: inline-block;
+    width: 295px;
+  }
 
-    .myAccount div {
-        font-weight: 700;
-        flex-grow: 1;
-        text-align: left;
-    }
+  .myAccount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
 
-    .myAccountId {
-        width: 170px;
-        font-weight: bolder;
-    }
+  .myAccount div {
+    font-weight: 700;
+    flex-grow: 1;
+    text-align: left;
+  }
 
-    .sideButton {
-        color: #4d95f6;
-        background-color: rgb(250, 250, 250);
-        font-weight: 700;
-        cursor: pointer;
-    }
+  .myAccountId {
+    width: 170px;
+    font-weight: bolder;
+  }
 
-    .myAccount img {
-        width: 56px;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
+  .sideButton {
+    color: #4d95f6;
+    background-color: rgb(250, 250, 250);
+    font-weight: 700;
+    cursor: pointer;
+  }
 
-    .suggestions {
-        display: flex;
-        flex-direction: column;
-    }
+  .myAccount img {
+    width: 56px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
 
-    .suggestionTitle {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 15px;
-        color: rgb(145, 145, 145);
-        font-size: 16px;
-        font-weight: 700;
-    }
+  .suggestions {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .suggestionTitle button {
-        color: black;
-        background-color: rgb(250, 250, 250);
-        font-weight: 700;
-        cursor: pointer;
-    }
+  .suggestionTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color: rgb(145, 145, 145);
+    font-size: 16px;
+    font-weight: 700;
+  }
 
-    .suggestedLists {
-        display: flex;
-        flex-direction: column;
-        margin: 15px 0;
-    }
+  .suggestionTitle button {
+    color: black;
+    background-color: rgb(250, 250, 250);
+    font-weight: 700;
+    cursor: pointer;
+  }
 
-    .suggestedUser {
-        display: flex;
-        align-items: center;
-        margin: 5px 0;
-    }
+  .suggestedLists {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
 
-    .suggestedUser img {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        margin-right: 15px;
-    }
+  .suggestedUser {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
 
-    .suggestedUser div{
-        flex-grow: 1;
-    }
+  .suggestedUser img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
 
-    .suggestedUser div .suggestedId {
-        font-size: 13px;
-        font-weight: 700;
-    }
+  .suggestedUser div {
+    flex-grow: 1;
+  }
 
-    .suggestedUser div .suggestedText {
-        color: rgb(145, 145, 145);
-        font-size: 12px;
-    }
+  .suggestedUser div .suggestedId {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .suggestedUser div .suggestedText {
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+  }
 }
