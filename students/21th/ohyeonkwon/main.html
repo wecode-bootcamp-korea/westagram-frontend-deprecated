@@ -2,25 +2,28 @@
     <head>
         <meta http-equiv="Cache-Control" content="no-cache">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="styles/main.css">
         
         <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
         <title>
             Westagram
         </title>
     </head>
-        
+
         <body>
             <nav>
+                <div class="nav-warp">
                 <div class="logo">
                     <img class="logo-icon" src="https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-instagram-1.png" alt="Instagram_logo" width="22px" height="22px"/>
                     <span></span>
                     <div class="logo-text"><h1>Westagram</h1></div>
                 </div>     
                 <div class="search">
+                    <svg aria-label="search" class="search-icon" viewBox="0 0 20 20" height="16px" >
+                        <path d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"></path>
+                    </svg>
                     <input class="search-bar" placeholder="검색" type="text" />
                 </div>
-                <div class="nav-icons-container">
                 <div class="nav-icons">
                     <div class="home">
                         <svg aria-label="home" class="home-icon" fill="#262626" height="22" viewBox="0 0 48 48" width="22"><path d="M45.3 48H30c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2-4.6-4.6-4.6s-4.6 2-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.5-.6 2.1 0l21.5 21.5c.4.4.6 1.1.3 1.6 0 .1-.1.1-.1.2v22.8c.1.8-.6 1.5-1.4 1.5zm-13.8-3h12.3V23.4L24 3.6l-20 20V45h12.3V34.2c0-4.3 3.3-7.6 7.6-7.6s7.6 3.3 7.6 7.6V45z"></path>
@@ -46,53 +49,98 @@
                         <img></img>
                     </div>
                 </div>
-                </div>
+            </div>
             </div>
             </nav>
             
             
             <main>
+                <section>
                 <div class ="feeds">
                     <article>
-                        <div class="feed-nav">
-                            <div class="feed-profile-img"></div>
-                            <div class="feed-profile-name"></div>
-                            <div class="feed-profile-location"></div>
-                            <div class="feed-option"></div>                            
-                        </div>
-
-                        <div class="feed-img">
-                            <img src="" alt="feed image"/>
-                        </div>
-
-                        <div class="feed-info">
-                            <div class="feed-like"></div>
-                            <div class="feed-all-reple"></div>
-                            <div class="feed-share"></div>
-                            <div class="feed-bookMark"></div>
-                            <div class="feed-like_info">
-                                <div class="like-info-img"></div>
-                                <div class="like-info-text">
-                                    <div class="like-count"></div>
+                        <div class="feeds-nav">
+                            <div class="feeds-profile">
+                            <a class="imgBox"><img class="feeds-profile-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s320x320/130689853_2743696002514149_7606911086237819721_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=vs1HMDNwE20AX_Himy9&edm=ABfd0MgBAAAA&ccb=7-4&oh=c88d95692f3075c5c2437b94ab03118d&oe=60B0BD09&_nc_sid=7bff83"/></a>
+                            <div class="feeds-profile-wrap">
+                            <div class="feeds-profile-name">
+                                <span class="profile-name">groundcover_</span>
+                            </div>
+                            <div class="feeds-profile-location">
+                                <span class="profile-location">무안군</span>
+                            </div>
                                 </div>
                             </div>
-                            <div class="feed-written">
-                            <div class="feed-written-name"></div>
-                            <div class="feed-written-text"></div>
-                            <div class="feed-written-time"></div>
+                            <div class="feeds-option"></div>                            
+                        </div>
+
+                        <div class="feeds-img">
+                            <img src="/img/IMG_7807.jpg" alt="feeds image"/>
+                        </div>
+
+                        <div class="feeds-icon-wrap">
+                            <div class="feeds-icon-left">
+                            <div class="feeds-like-icon">
+                                <svg aria-label="좋아요 취소" class="_8-yf5 " fill="#ed4956" height="24" viewBox="0 0 48 48" width="24"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
                             </div>
-                            <div class="feed-reple">
-                                <input class="input-reple" placeholder="댓글 달기..." type="text" />
-                                <button class="upload-reple"><span>게시</span></button>
+                            <div class="feeds-comment-icon">
+                                <svg aria-label="댓글 달기" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path></svg>
+                            </div>
+                            <div class="feeds-share-icon">
+                                <svg aria-label="게시물 공유" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path></svg>
+                            </div>
+                            </div>
+                            <div class="feeds-icon-right">
+                            <div class="feeds-bookMark-icon">
+                                <svg aria-label="저장" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z"></path></svg>
+                            </div>
+                            </div>
+                        </div>
+                            <div class="feeds-like-info">
+                                <div class="like-info-img">
+                                    <img class="info-img" src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/21690415_849658105189237_7965060341270839296_n.jpg?tp=1&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=w5_0dMXRkQ0AX-DNban&edm=AEF8tYYBAAAA&ccb=7-4&oh=d85c0834fb66aa3ae200780849351c19&oe=60B15EA4&_nc_sid=a9513d"/>
+                                </div>
+                                <div class="like-info-text">
+                                    <span>jayorjaehyeok</span>님&nbsp; <a>외 <span>123</span>명</a>이 좋아합니다.
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="feeds-written">
+                            <div class="feeds-written-name"><span>groundcover_</span></div>
+                            <div class="feeds-written-text"><span>무안 바다를 보며 1박캠핑!</span></div>
+                        </div>
+                        
+                        
+                            <div class="feeds-comment-wrap">
+                                <div class="comment">
+                                    <ul class="comment-ul">
+                                        <li class="comment-li">
+                                            <div class="comment-container">
+                                            <span class="comment-text" >
+                                            <span class="comment-name" >headbingbing__</span>
+                                            ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ줄바꿈ㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="feeds-wrote-time">
+                                    <span id="wrote-time">1일 전</span>
+                                </div>
+                                <div class="feeds-comment">  
+                                <input class="comment-input" placeholder="댓글 달기..." type="text" />
+                                <button class="upload-btn"> <span>게시</span></button>
+                                </div>
                             </div>
                         </div>
                     </article>
                 </div>
-                    <div class="main-right">
-                        <div class="main-right-profile">
-                        <div class="main-right-profile-img"></div>
-                        <div class="main-right-profile-name"></div>
-                        <div class="main-right-profile-index"></div>
+                <div class="main-right-wrap">
+                    <div class="profileBox">
+                        <div class="profilebox-profile">
+                        <div class="profilebox-profile-img"></div>
+                        <div class="profilebox-profile-name"></div>
+                        <div class="porfilebox-profile-index"></div>
                         </div>
                     
                     <div>
@@ -126,8 +174,10 @@
                             <span>footer</span>
                         </div>
                     </div>
+                    </div>
+                </section>
             </main>
-            <script type="text/javascript" src="main.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
         </body>
 
 

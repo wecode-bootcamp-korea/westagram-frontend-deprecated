@@ -88,9 +88,7 @@ h1{
 }
 
 input::placeholder{
-    
     color:gray;
-
     font-weight: bold;
 }
 
