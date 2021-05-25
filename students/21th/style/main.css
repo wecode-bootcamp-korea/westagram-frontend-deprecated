@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 5.4rem;
+  padding: 0.6rem 0;
   background-color: white;
   border: 1px solid #eaeaea;
 }
@@ -21,7 +21,7 @@ nav {
   font-size: 2.8rem;
 }
 
-.serachBox {
+.searchBox {
   display: none;
   width: 21.5rem;
   height: 2.8rem;
@@ -30,17 +30,17 @@ nav {
   background-color: #fafafa;
 }
 
-.serachIcon {
+.searchIcon {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 0.5rem;
-  background: url(.././image/serach.png) no-repeat;
+  background: url(.././image/search.png) no-repeat;
   background-size: 100%;
   background-position: center;
   opacity: 0.5;
 }
 
-.serachText {
+.searchText {
   width: 20%;
   border: 0px;
   background-color: #ffffff00;
@@ -68,7 +68,6 @@ nav {
 }
 
 section {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -131,7 +130,7 @@ section {
   font-size: 1.2rem;
 }
 
-header {
+.contentHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -301,31 +300,31 @@ footer {
   margin-top: 3rem;
 }
 
-footer > ul {
+.footerUl {
   margin: 1rem 0;
 }
 
-footer > ul > li > a,
+.footerA,
 .mainInfo {
-  color: #c7c7c7;
   font-size: 1.1rem;
   font-weight: 400;
+  color: #c7c7c7;
   letter-spacing: -0.08rem;
   line-height: 1;
 }
 
-footer > ul > li > a::after {
+.footerA::after {
   content: '·';
-  font-size: 1.1rem;
   margin-left: 0.5rem;
+  font-size: 1.1rem;
 }
 
-footer > ul > li:nth-last-child(1) > a::after {
+.footerLi:nth-last-child(1) .footerA::after {
   content: '';
 }
 
 @media (min-width: 641px) {
-  .serachBox {
+  .searchBox {
     display: flex;
     justify-content: center;
     align-items: center;

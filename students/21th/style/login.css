@@ -21,36 +21,35 @@ section {
 }
 
 .grayBorder {
+  border: 1px solid #dbdbdb;
+  background-color: white;
   display: flex;
   align-items: center;
   margin: 1rem 0;
-  border: 1px solid #dbdbdb;
-  background-color: white;
 }
 
 .loginSection {
-  flex-direction: column;
   height: 38rem;
   margin-top: 3rem;
+  flex-direction: column;
 }
 
 #logo {
-  margin: 2.6rem 0;
   font-family: 'Lobster', cursive;
   font-size: 4.4rem;
+  margin: 2.6rem 0;
 }
 
 .loginBox {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   width: 78%;
   max-width: 35rem;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .loginCotentsBox {
-  position: relative;
   width: 100%;
   height: 3.8rem;
   padding: 0 1rem;
@@ -58,6 +57,7 @@ section {
   background: #fafafa;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
+  position: relative;
   text-align: left;
 }
 
@@ -68,22 +68,22 @@ section {
 }
 
 .loginCotentsBox > input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  margin: 0 1rem;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0 1rem;
-  font-size: 1.6rem;
   border: 0;
   background-color: #ffffff00;
 }
 
 .passwordViewButton {
   position: absolute;
-  top: 0;
   display: none;
   right: 1rem;
+  top: 0;
   border: 0;
   background: #ffffff00;
   color: #262626;
@@ -94,7 +94,7 @@ section {
 }
 
 .focusActive {
-  border: 1px solid #8e8e8e !important;
+  border: 1px solid #8e8e8e;
 }
 
 .placeholderActive {
@@ -146,10 +146,10 @@ section {
 }
 
 .orText {
-  margin: 0 1.3rem;
   font-weight: bold;
   line-height: 0.2;
   color: #8e8e8e;
+  margin: 0 1.3rem;
 }
 
 .facebookLogin {
@@ -187,14 +187,14 @@ section {
 }
 
 .sign {
-  margin-left: 0.5rem;
   color: #0095f6;
   font-weight: bold;
+  margin-left: 0.5rem;
 }
 
 .downloadApp {
-  margin: 2rem 0;
   text-align: center;
+  margin: 2rem 0;
 }
 
 .appButtons {
@@ -220,8 +220,8 @@ footer {
   margin: 1rem 0;
 }
 
-.link > ul > li > a,
-.detail > ul > li > a {
+.linkTag,
+.detailLinkTag {
   padding: 0.8rem;
   color: #8e8e8e;
   font-size: 1.2rem;
