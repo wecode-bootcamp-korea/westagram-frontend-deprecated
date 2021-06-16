@@ -1,0 +1,524 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.fullPage {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.weHeader {
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #fff;
+}
+
+.headerContents {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 54px;
+    padding: 0 20px;
+}
+
+.headerLogo {
+    width: 360px;
+    min-width: 40px;
+}
+
+.toHome {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    background-image: url('/Users/lee/Desktop/WEB/img/Westagram.png');
+    flex: 0 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 103px;
+    height: 40px;
+    object-fit: contain;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.search {
+    height: 28px;
+    flex: 0 1 auto;
+    min-width: 125px;
+    width: 217px;
+    cursor: text;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 7px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.searchBar {
+    width: 207px;
+    height: 25px;
+    font-size: 16px;
+    border: solid 1px #dbdbdb;
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fafafa;;
+    text-indent: 5px;
+    background-image: url('/Users/lee/Desktop/WEB/img/instasearch.png');
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position-x: 78px;
+    background-position-y: 8px;
+}
+
+.searchBar:focus {
+    background-image: none;
+}
+
+.searchBar::placeholder {
+    font-size: 14px;
+    color: #8e8e8e;
+    text-align: center;
+    font-weight: 300;
+}
+
+.headerIcons {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 106px;
+    align-items: center;
+}
+
+.mainpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fafafa;
+    margin: 0;
+    height: 9999px;
+    padding-top: 54px;
+}
+
+.allIcons {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.allIcons2 {
+    display: flex;
+    margin-left: 22px;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.feedAndStory {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 614px;
+    height: 100%;
+    margin-right: 15px;
+}
+
+.profileInfo {
+    position: sticky;
+    width: 310px;
+    height: fit-content;
+    left: 804px;
+    top: 100px;
+    margin-top: 50px;
+}
+
+.profilePhotoArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+}
+
+.imageArea {
+    display: flex;
+    background-image: url('/Users/lee/Desktop/WEB/img/photo.jpeg');
+    width: 56px;
+    height: 56px;
+    background-size: 100%;
+    border-radius: 70%;
+    margin-right: 18px;
+    margin-left: 9px;
+}
+
+.profileDesc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+    margin-right: 80px;
+    justify-content: center;
+}
+
+.userId {
+    font-size: 15px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.userName {
+    margin-top: 1px;
+    font-size: 14px;
+    color: #8e8e8e;
+    font-weight: 400;
+}
+
+.change {
+    border: 0;
+    background-color: #fafafa;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 14px;
+    color: #0095f6;
+    margin-left: 15px;
+}
+
+.recommand {
+    display: flex;
+    flex-direction: row;
+    margin-top: 27px;
+}
+
+.forU {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-right: 110px;
+    margin-left: 14px;
+    font-weight: 600;
+}
+
+.showAll {
+    border: 0;
+    color: #262626;
+    background-color: #fafafa;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.personPhoto {
+    background-image: url('/Users/lee/Desktop/WEB/img/person1.png');
+    background-size: 100%;
+    border-radius: 70%;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-left: 12px;
+}
+
+.personInfo {
+    display: flex;
+    margin-right: 40px;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.personName {
+    font-size: 15px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.followOrNot {
+    margin-top: 1px;
+    font-size: 12px;
+    color: #8e8e8e;
+    font-weight: 400;
+}
+
+.followButoon {
+    border: 0;
+    background-color: #fafafa;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 14px;
+    color: #0095f6;
+    margin-left: 65px;
+}
+
+.story {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    max-width: 614px;
+}
+
+.storyPlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.buttonBackground {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Instagram_Stories_ring.svg/168px-Instagram_Stories_ring.svg.png");
+    width: 66px;
+    height: 66px;
+    background-size: 100%;
+}
+
+.friendStory {
+    background-color: transparent;
+    border-radius: 70%;
+    width: 66px;
+    height: 66px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 4px 0 0 0;
+    border: transparent;
+}
+
+.userPhoto {
+    width: 58px;
+    height: 58px;
+    background-repeat: no-repeat;
+    border-radius: 70%;
+    background-image: 100%;
+}
+
+.storyUser {
+    font-size: 13px;
+    letter-spacing: .01em;
+    max-width: 74px;
+    color: #262626;
+    text-align: center;
+    text-overflow: ellipsis;
+    margin-top: 3px;
+}
+
+.feeds {
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    max-width: 614px;
+    height: 847px;
+    margin-bottom: 60px;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.feedHeader {
+    display: flex;
+    flex-direction: row;
+    width: 614px;
+}
+
+.feedButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.feedButtonBackground {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Instagram_Stories_ring.svg/168px-Instagram_Stories_ring.svg.png");
+    width: 42px;
+    height: 42px;
+    background-size: 100%;
+}
+
+.friendFeed {
+    background-color: transparent;
+    border-radius: 70%;
+    width: 42px;
+    height: 42px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 3.48px 0px 0px 0px;
+    border: transparent;
+}
+
+.feedUserPhoto {
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    border-radius: 70%;
+    background-image: 100%;
+}
+
+.idAndLocation {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.feedUserId {
+    font-size: 15px;
+    color: #262626;
+    font-weight: 600;
+}
+
+.userLocation {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #262626;
+}
+
+.threeDots {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("/Users/lee/Desktop/WEB/img/dots.png");
+    width: 22px;
+    height: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 27px;
+    margin-left: 400px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.feedContents {
+    display: flex;
+    width: 614px;
+    height: 614px;
+    justify-content: center;
+}
+
+feedContentsPhoto {
+    display: flex;
+    width: 614px;
+    height: 614px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    color: #c7c7c7;
+    font-size: 11px;
+    width: 293px;
+    height: 36px;
+    margin-top: 39px;
+    margin-left: 19px;
+}
+
+.allLinks {
+    display: flex;
+    flex-direction: row;
+    color: #c7c7c7;
+    font-size: 11px;
+    width: 293px;
+    margin-bottom: 7px;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    text-decoration: none;
+    color: #c7c7c7;
+    margin-left: 1px;
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    text-decoration: none;
+    color: #c7c7c7;
+    width: 3.4px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.copyright {
+    color: #c7c7c7;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: 19px;
+    margin-top: 20px;
+    word-spacing: 1px;
+    letter-spacing: 0.3px;
+}
+
+.languageBox {
+    display: flex;
+    color: #c7c7c7;
+    font-size: 11px;
+    margin-top: -1.52px;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    margin-top: -1.52px;
+    color: #c7c7c7;
+    font-size: 11px;
+    background-color: #fafafa;
+    appearance:none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.language:focus {
+    outline-width: 0;
+}

@@ -1,0 +1,422 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginMainPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainPage {
+    max-width: 935px;
+    width: 100%;
+    padding-bottom: 32px;
+    margin: 32px auto 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.homeImg {
+    background-image: url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png');
+    width: 454px;
+    height: 618px;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-left: -35px;
+    margin-right: -15px;
+    background-position: 0 0;
+}
+
+.slidShow {
+    display: flex;
+    margin: 99px 0 0 151px;
+    position: relative;
+}
+
+.screenShot {
+    position: absolute;
+    width: 240px;
+    height: 427px;
+    left: 0;
+    top: 0;
+}
+
+.loginPage {
+    max-width: 350px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login {
+    width: 348px;
+    height: 358px;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.Infoinput {
+    display: flex;
+    position: relative;
+    height: 36px;
+    padding: 0;
+    min-width: 0;
+    margin: 0;
+}
+
+input::placeholder {
+    display: flex;
+    position: absolute;
+    color: #8e8e8e;
+    font-size: 12px;
+    height: 36px;
+    top: 1px;
+    left: 8px;
+    line-height: 36px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0px;
+}
+
+.logo {
+    background-image: url('/Users/lee/Desktop/Westagram/westagram-frontend/students/22th/Jongmin Lee/img/Westagram.png');
+    width: 175px;
+    height: 51px;
+    background-size: 100%;
+    display: flex;
+    margin: 22px 86.5px 12px;
+    background-repeat: no-repeat;
+}
+.loginInfo {
+    width: 348px;
+    height: 263px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.IdPw {
+    width: 348px;
+    height: 213px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Infoinput {
+    width: 268px;
+    height: 38px;
+    background: rgba(var(--b3f,250,250,250),1);
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    margin: 0 40px 6px 40px;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+
+.userinfoID {
+    width: 250px;
+    height: 20px;
+    background: rgba(var(--b3f,250,250,250),1);
+    font-size: 14px;
+    border: 0px;
+    padding: 9px 0 7px 8px;
+}
+
+.userinfoPW {
+    width: 250px;
+    height: 20px;
+    background: rgba(var(--b3f,250,250,250),1);
+    font-size: 14px;
+    border: 0px;
+    padding: 9px 0 7px 8px;
+}
+
+.loginButton {
+    margin: 8px 40px;
+    width: 268px;
+    height: 30px;
+}
+
+.buttonDisable {
+    padding: 5px 9px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,149,246,.3);
+    opacity: 1;
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.OrArea {
+    display: flex;
+    width: 268px;
+    height: 15px;
+    margin: 10px 40px 18px 40px;
+    flex-direction: row;
+}
+
+.line {
+    width: 104.750px;
+    background-color: rgba(var(--b38,219,219,219),1);
+    height: 1px;
+    top: .45em;
+    position: relative;
+}
+
+.or {
+    margin: 0 18px;
+    width: 22.500px;
+    height: 15px;
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.facebookLogin {
+    margin: 8px 40px;
+    width: 268px;
+    height: 20px;
+}
+
+.facebookLogin button {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: white;
+    padding: 0;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.facebookLogo {
+    background-image: url('https://toppng.com/uploads/preview/facebook-logo-11549681668z1ra1h6mmx.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+    width: 16px;
+
+}
+
+.toFacebook {
+    width: auto;
+    height: auto;
+    color: #385185;
+}
+
+.forgetPW {
+    margin-top: 12px;
+    width: 348px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    width: 348px;
+    height: 41px;
+    background-color: white;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    justify-content: center;
+}
+
+.createId {
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3px 0 -4px;
+}
+
+.noid {
+    font-size: 14px;
+    margin: 15px;
+}
+
+.noid a {
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.download {
+    width: 350px;
+    height: 102px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.appDown {
+    border: 0;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.linkStore {
+    width: 350px;
+    height: 44px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.linkStore a, img {
+    width: 136px;
+    height: 40px;
+    border: 0;
+}
+
+.apple {
+    margin-right: 8px;
+}
+
+.loginFooter {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+}
+
+.footerMain {
+    margin-bottom: 52px;
+    display: flex;
+    width: 100%;
+    height: 78px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infolinks {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.allInfo {
+    display: flex;
+    flex-direction: row;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    margin: 0 8px 12px 8px;
+    border: 0;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.lagAndCopy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.language:focus {
+    outline-width: 0;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    text-decoration: none;
+    color: #8e8e8e;
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .homeImg {
+        display: none;
+    }
+}
