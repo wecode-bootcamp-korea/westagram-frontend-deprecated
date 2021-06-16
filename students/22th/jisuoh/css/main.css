@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url("common.css");
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+.main-wrapper .we-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/* header > logo-box */
+.main-wrapper .we-header .logo-box {
+  display: flex;
+}
+
+.main-wrapper .we-header .logo-box .icon-box {
+  display: flex;
+  align-items: center;
+  padding-right: calc(var(--padding-value) - 2px);
+  border-right: 3px solid var(--color-black);
+}
+
+.main-wrapper .we-header .logo-box .icon-box img {
+  width: var(--icon-instagram--width);
+}
+
+.main-wrapper .logo-box h1 {
+  margin-left: calc(var(--padding-value) - 2px);
+  font-size: var(--font-size-large);
+}
+
+/* header > search-box */
+.main-wrapper .we-header .search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: var(--padding-value);
+}
+
+.main-wrapper .we-header .search-box .search {
+  width: var(--search-input--width);
+  height: var(--search-input-height);
+  padding: var(--padding-value--7);
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--color-lightgray);
+  border-color: var(--color-gray2);
+}
+
+.search::placeholder {
+  color: var(--color-font--gray);
+}
+
+.main-wrapper .we-header .search-box img {
+  position: absolute;
+  left: 39%;
+  width: var(--icon-search--width);
+}
+
+/* header > link-box */
+.main-wrapper .we-header .link-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-wrapper .we-header .link-box a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-wrapper .we-header .link-box a::after {
+  content: "";
+  width: 4px;
+  display: inline-block;
+  border-bottom: 4px solid var(--color-red);
+}
+
+.main-wrapper .we-header .link-box a.invisible::after {
+  visibility: hidden;
+}
+
+.main-wrapper .we-header .link-box a img {
+  width: var(--icon-instagram--width);
+  height: var(--icon-instagram--width);
+  margin-bottom: var(--padding-value--7);
+}

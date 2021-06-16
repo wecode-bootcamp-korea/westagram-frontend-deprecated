@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+
+:root {
+  /* min */
+  --body-main-min--width: 960px;
+  /* font-size */
+  --font-size--small: 12px;
+  --font-size--normal: 14px;
+  --font-size-large: 25px;
+  --font-size-xlarge: 40px;
+
+  /* login elements size */
+  --westagram-box--width: 350px;
+  --login-text--width: 266px;
+  --body-min--height: 810px;
+  --icon-width: 16px;
+  --banner-width: 300px;
+
+  --westagram-box--height: 418px;
+  --login-text--height: 36px;
+  --login-submit--height: 30px;
+  --banner-height: 618px;
+
+  /* main elements size */
+  --icon-instagram--width: 22px;
+  --icon-search--width: 10px;
+  --search-input--width: 215px;
+  --img-profile--width: 32px;
+  --img-profile-aside--width: 56px;
+
+  --search-input-height: 28px;
+
+  /* margin & padding */
+  --margin-value: 25px;
+  --padding-value: 16px;
+
+  --padding-value--7: 7px;
+
+  /* color */
+  --color-red: #ed4956;
+  --color-gray: #939393;
+  --color-lightgray: #fafafa;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-darkgray: rgb(59, 59, 59);
+  --color-gray2: #dbdbdb;
+  --color-gray3: #909090;
+  --color-font--gray: #b8b8b8;
+  --color-facebook: #385185;
+  --color-facebooklight: #687185;
+  --color-blue: #21a3f7;
+  --color-activate-blue: #0195f6;
+  --color-skyblue: #c0dffd;
+  --color-darkblue: #00376b;
+  --color-darklightblue: #43525f;
+  --color-font--main: #262626;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: var(--font-size--normal);
+}
+
+input {
+  border: 1px solid black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lobster", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-gray);
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}

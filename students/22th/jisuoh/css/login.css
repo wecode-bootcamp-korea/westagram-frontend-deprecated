@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import url("./common.css");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-lightgray);
+}
+
+.westagram-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 850px;
+}
+
+.westagram-wrapper .weatagram__main {
+  display: flex;
+  justify-content: center;
+  max-width: 893px;
+  padding-bottom: calc(var(--margin-value) + 4em);
+}
+
+.westagram-wrapper .weatagram__main .banner {
+  flex: 0 0 40%;
+  text-align: center;
+  padding-right: var(--margin-value);
+}
+
+.westagram-wrapper .weatagram__main .banner img {
+  width: var(--banner-width);
+  height: var(--banner-height);
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .login-box {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray2);
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .login-box .logo {
+  text-align: center;
+  padding: var(--margin-value);
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .login-box .logo .logo__h1 {
+  font-size: var(--font-size-xlarge);
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .login-box .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  font-size: var(--font-size--small);
+  padding: var(--padding-value);
+  border: 1px solid var(--color-gray2);
+  border-radius: 5px;
+  background-color: var(--color-lightgray);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5px var(--color-darkgray);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .id-box {
+  width: var(--login-text--width);
+  height: var(--login-text--height);
+  margin: 0 40px 6px;
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .pw-box {
+  width: var(--login-text--width);
+  height: var(--login-text--height);
+  margin: 0 var(--padding-value) var(--padding-value);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .btn-box {
+  width: var(--login-text--width);
+  height: var(--login-text--height);
+  margin-bottom: var(--padding-value);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .btn-box
+  .btn-login {
+  width: 100%;
+  padding: calc(var(--padding-value) - 8px);
+  border-radius: 5px;
+  background-color: var(--color-activate-blue);
+  color: var(--color-white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .btn-box
+  .btn-login:disabled {
+  background-color: var(--color-skyblue);
+  cursor: default;
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .line-or-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: var(--padding-value);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .line-or-box
+  div {
+  flex: 0 0 30%;
+  height: 8px;
+  border-bottom: 1px solid var(--color-gray2);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .line-or-box
+  span {
+  font-size: var(--font-size--small);
+  color: var(--color-gray);
+  font-weight: bold;
+  margin: 0 var(--margin-value);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .facebook-login-box {
+  width: 100%;
+}
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .facebook-btn {
+  background-color: transparent;
+  padding: var(--padding-value);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .facebook-btn
+  span:active {
+  color: var(--color-facebooklight);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .facebook-btn
+  .facebook-icon {
+  width: var(--icon-width);
+  margin-right: calc(var(--padding-value) / 2);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .login-form
+  .facebook-btn
+  span {
+  color: var(--color-facebook);
+  font-weight: bold;
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .forget-password {
+  width: 100%;
+  padding-top: var(--padding-value);
+  padding-bottom: var(--margin-value);
+  text-align: center;
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .forget-password
+  a {
+  font-size: var(--font-size--small);
+  color: var(--color-darkblue);
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .login-box
+  .forget-password
+  a:active {
+  color: var(--color-darklightblue);
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .sign-up-box {
+  flex: 0 0 10%;
+  margin-top: calc(var(--margin-value) / 2);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray2);
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .sign-up-box .signup-link {
+  color: var(--color-blue);
+  font-weight: bold;
+}
+
+.westagram-wrapper
+  .weatagram__main
+  .sign-and-login
+  .sign-up-box
+  .signup-link:active {
+  color: var(--color-skyblue);
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .download-box {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.westagram-wrapper .weatagram__main .sign-and-login .download-box .badge {
+  display: inline-block;
+  margin-top: var(--margin-value);
+}
+
+.westagram-wrapper .westagram__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 0 0 10%;
+  padding: 0 var(--padding-value);
+}
+
+.westagram-wrapper .westagram__footer .meta-link {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.westagram-wrapper .westagram__footer .meta-link a {
+  margin-right: var(--padding-value);
+  color: var(--color-gray);
+}
+
+.westagram-wrapper .westagram__footer .lan-copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: var(--padding-value);
+}
+
+.westagram-wrapper .westagram__footer .lan-copyright .copyright {
+  color: var(--color-gray);
+}
