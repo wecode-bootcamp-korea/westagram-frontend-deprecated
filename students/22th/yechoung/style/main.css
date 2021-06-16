@@ -5,6 +5,7 @@
   align-items: center;
   padding-bottom: 50px;
 }
+
 .user-img {
   border-radius: 50%;
 }
@@ -18,19 +19,25 @@ em.user-name {
 }
 
 /* HEADER */
-.top-header {
+.top-header-container {
   width: 100%;
-  padding: 12px 50px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #DBDBDB;
+  margin-bottom: 30px;
+}
+.top-header-container .top-header {
+  width: 934px;
+  padding: 12px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #DBDBDB;
 }
 
 h1 {
   font-size: 26px;
   cursor: pointer;
+  margin-right: 82px;
 }
 .search-container {
   position: relative;
@@ -71,43 +78,68 @@ nav .my-profile-btn {
   position: relative;
 }
 nav .my-profile-btn .my-profile-menu {
-  border: 1px solid red;
   background: white;
+  border-radius: 5px;
   width: 200px;
-  display: flex;
   flex-direction: column;
   position: absolute;
-  top: 100px;
-  left: -200px;
-  border-radius: 3px;
-  padding: 10px 20px;
+  top: 30px;
+  right: -5px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 13px;
+  cursor: default;
+  z-index: 9999;
 }
 nav .my-profile-btn .my-profile-menu ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #DBDBDB;
+  /* position: relative; */
 }
+/* 
+box-shadow 부분 어떻게 할지 생각하기
+  nav .my-profile-btn .my-profile-menu ul::before {
+  content: '';
+  width: 1px;
+  height: 1px;
+  border: 15px solid white;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  top: -30px;
+  right: 20px;
+} */
 nav .my-profile-btn .my-profile-menu ul li {
+  display: flex;
+  align-items: center;
   margin: 5px 0;
+  font-size: 14px;
 }
 nav .my-profile-btn .my-profile-menu ul li i {
-  border: 1px solid red;
   width: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
+}
+nav .my-profile-btn .my-profile-menu div {
+  padding: 10px 20px;
+}
+nav .my-profile-btn .my-profile-menu div span {
+  cursor: pointer;
 }
 
 
 /* MAIN */
 main {
-  /* border: 1px solid blue; */
   display: flex;
+  justify-content: center;
 }
 
 /* contents container */
 .contents-container {
-  /* border: 1px solid palegreen; */
   margin-right: 28px;
   width: 612px;
 }
@@ -187,7 +219,6 @@ main {
 
 /* contents-container > feed > feed-contents */
 .feed-contents {
-  /* border: 1px solid lightseagreen; */
   border-bottom: 1px solid #DBDBDB;
 }
 
@@ -218,7 +249,6 @@ main {
 }
 
 .post-desc-container .feed-details {
-  /* border: 1px solid red; */
   position: relative;
 }
 .post-desc-container .feed-details .detail-text {
@@ -229,7 +259,6 @@ main {
   margin-right: 7px;
 }
 .post-desc-container .feed-details .detail-text span {
-  /* border: 1px solid red; */
   height: 18px;
   overflow: hidden;
   margin-top: -1px;
@@ -244,7 +273,6 @@ main {
 }
 
 .post-desc-container .feed-details .detail-comments .comment {
-  /* border: 1px solid indianred; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -264,7 +292,6 @@ main {
   margin-left: 8px;
 }
 
-
 /* feed-comments-input */
 .feed-comments-input {
   display: flex;
@@ -277,19 +304,13 @@ main {
 
 
 /* aside */
-aside {
-  /* border: 1px solid red; */
-}
-
 /* aside > .my-container */
 .my-container {
-  /* border: 1px solid lightgreen; */
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 .my-container .img-container {
-  /* border: 1px solid indianred; */
   margin-right: 15px;
 } 
 .my-container .my-info p {
@@ -368,4 +389,62 @@ footer ul li:nth-child(7) {
 }
 footer ul li:last-of-type::after {
   background: transparent;
+}
+
+
+/* media query */
+
+/* 500px이상 999px이하*/
+@media screen and (max-width: 1129px) {
+  .right-container {
+    display: none;
+  }
+  .contents-container {
+    margin: 0;
+  }
+  .top-header-container .top-header {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 974px) {
+  .top-header-container .top-header {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .top-header-container {
+    margin-bottom: 10px;
+  }
+  .search-container {
+    display: none;
+  }  
+}
+
+@media screen and (max-width: 634px) {
+  .top-header-container {
+    margin-bottom: 2px;
+  }
+  .contents-container .story-container {
+    width: 100vw;
+  }  
+  .contents-container {
+    width: 100%;
+  }
+  .feeds-container .feed {
+    border: none;
+  }
+  .feed-contents {
+    border-bottom: none;
+  }
+  .post-img-container img {
+    width: 100vw;
+  }
+  .post-desc-container {
+    padding: 8px 20px 40px;
+  }
+  .feed-comments-input {
+    display: none;
+  }
 }

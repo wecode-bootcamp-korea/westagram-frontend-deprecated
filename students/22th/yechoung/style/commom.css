@@ -3,10 +3,7 @@
    License: none (public domain)
 */
 
-* {
-  box-sizing: border-box;
-	font-size: 14px;
-}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,8 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	width: 100vw;
-	height: 100vh;
 }
 h1 {
 	font-family: 'Lobster', cursive;
@@ -62,6 +57,12 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* 직접 작성 */
+* {
+  box-sizing: border-box;
+	font-size: 14px;
 }
 button {
 	border: none;

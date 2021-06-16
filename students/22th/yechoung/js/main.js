@@ -3,6 +3,7 @@ const commentInput = document.querySelector('.feed-comments-input input');
 const postBtn = document.querySelector('.feed-comments-input button');
 const commentIconBoxes = document.querySelectorAll('.comment-icons');
 const myProfileBtn = document.querySelector('.my-profile-btn');
+const myProfileMenu = document.querySelector('.my-profile-menu');
 
 let writtenComment = '';
 
@@ -55,13 +56,23 @@ const handleCommentClick = (e) => {
 };
 
 const handleCommentLike = (cmt) => {
-  cmt.style.background === 'red'
-  ? cmt.style.background = 'transparent'
-  : cmt.style.background = 'red'
+  if(cmt.className.includes('far')) {
+      cmt.classList.remove('far');
+      cmt.classList.add('fas');
+  } else {
+    cmt.classList.remove('fas');
+    cmt.classList.add('far')
+  }
 };
 
 const handleCommentDel = (cmt) => {
   cmt.remove();
+};
+
+const handleProfileBtnClick = () => {
+  myProfileMenu.style.display === 'none' 
+  ? myProfileMenu.style.display = 'flex' 
+  : myProfileMenu.style.display = 'none'
 };
 
 
@@ -83,6 +94,6 @@ const handleCommentDel = (cmt) => {
   });
 
   myProfileBtn.addEventListener('click', () => {
-    console.log('a')
+    handleProfileBtnClick()
   })
 })();
