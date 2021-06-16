@@ -1,0 +1,83 @@
+header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  background-color: yellow;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-end;
+  background-color: gray;
+}
+
+.feeds {
+  width: 52vw;
+  height: 100vh;
+  margin-right: 15px;
+  background-color: ivory;
+}
+
+.main-right {
+  width: 33vw;
+  height: 100%;
+  margin-right: 15px;
+  background-color: lawngreen;
+}
+
+.hd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos {
+  height: 100%;
+  flex-basis: 40%;
+  border: 1px solid black;
+}
+
+.serch {
+  height: 100%;
+  flex-basis: 30%;
+  border: 1px solid black;
+}
+
+.nav {
+  height: 100%;
+  flex-basis: 40%;
+  border: 1px solid black;
+}
+
+#cameraLogo {
+  height: 40%;
+  padding-right: 20px;
+  border-right: 2px solid black;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
+#westargramLogo {
+  font-family: "Lobster", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.inputBox {
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+}
+
+#mainSerch {
+  background-image: url(images/serch.png);
+  background-position: center;
+  background-size: contain;
+}
+
+/* #serchIcon {
+    height: 30%;
+    opacity: 0.5;
+} */

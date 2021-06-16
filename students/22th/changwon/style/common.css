@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+input {
+  /* background-color: transparent; */
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  text-align: center;
+}
