@@ -1,0 +1,6 @@
+/*common*/
+html, body, #react-root{height:100%;}
+section{height:100%;}
+#react-root, article, div, footer, header, main, nav, section{display:flex;position:relative;flex-direction:column;}
+/* font-import */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');

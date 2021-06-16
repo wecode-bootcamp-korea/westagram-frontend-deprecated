@@ -1,0 +1,16 @@
+/* login */
+.main-wrap{background:rgba(var(--b3f,250,250,250),1);height:100%;}
+.main-wrap section{min-height:100%;}
+.main-wrap .contetns-wrap{min-height:100%;justify-content: center;;}
+.main-wrap .box-wrap{max-width:350px;margin:0 auto;width:100%;}
+.box-wrap .login-wrap{background:rgba(var(--d87,255,255,255),1);border:1px solid rgba(var(--b6a,219,219,219),1);padding:10px 0;}
+.box-wrap .login-wrap h1{font-size:51px;font-family: 'Lobster', cursive;text-align:center;color:#262626;margin:22px auto 12px;font-weight:400;}
+.login-box > div{border:1px solid rgba(var(--ca6,219,219,219),1);margin:0 40px 6px;overflow:hidden;}
+.box-wrap .login-wrap input[type="text"],
+.box-wrap .login-wrap input[type="password"]{background:rgba(var(--b3f,250,250,250),1);width:100%;font-size:16px;padding:9px 0 7px 8px;overflow:hidden;box-sizing:border-box;color:#000;}
+.main-wrap .login-button-wrap{border:none;}
+.login-button-wrap button{background:rgba(var(--d69,0,149,246),1);color:#fff;line-height:18px;text-align:center;padding:5px 9px;}
+.login-button-wrap button:disabled{background:rgba(var(--d69,0,149,246),.3);color:#fff;line-height:18px;text-align:center;padding:5px 9px;}
+.main-wrap a.find-pw{text-align:center;margin-top:12px;font-size:12px;line-height:14px;color:rgba(var(--fe0,0,55,107),1);}
+.box-wrap .login-wrap input[type="text"]::placeholder,
+.box-wrap .login-wrap input[type="password"]::placeholder{font-size:11px;}
