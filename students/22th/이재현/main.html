@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="common.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5bafb75597.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>westa_main</title>
+  </head>
+  <body>
+    <div id="navMain">
+      <nav id="navBar">
+        <div class="navBarLeft">
+          <i class="fab fa-instagram"></i>
+          <h1>ㅣ</h1>
+          <span class="logoFont">Westagram</span>
+        </div>
+        <div class="navBarCenter">
+          <input
+            onblur="doDisplayBack()"
+            type="text"
+            placeholder="검색"
+            class="realSearchBar"
+            style="display: none"
+          />
+          <div
+            onclick=" doDisplay(); doFocus()"
+            role="button"
+            class="fakeSearchBar"
+            tabindex="0"
+          >
+            <i class="fas fa-search"></i>
+            <span class="fakeSearchValue">검색</span>
+          </div>
+        </div>
+        <div class="navBarRight">
+          <i class="fab fa-safari"></i>
+          <i class="far fa-heart"></i>
+          <i class="fas fa-user"></i>
+        </div>
+      </nav>
+    </div>
+    <main class="mainDiv">
+      <div class="feeds">
+        <article id="article">
+          <div class="feedTop">
+            <div class="whoIsUploader">
+              <img class="profile" src="psa.png" />
+
+              <span>dlwlrma</span>
+            </div>
+
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <article class="feedImage">
+            <img src="iu.jpg" />
+          </article>
+          <div class="feedAddOn">
+            <div class="feedAddOnLeft">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="far fa-comment"></i>
+              <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="feedAddOnRight">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark"></i>
+            </div>
+          </div>
+          <div class="numOfLikesMain">
+            <div class="numOfLikes">
+              <img class="profile" src="psa.png" />
+
+              <span>aineworld님 외 10명이 좋아합니다.</span>
+            </div>
+          </div>
+          <div class="replies">
+            <div class="reply">
+              <p>canon_mj 위워크에서 진행한 베이킹 클래스...</p>
+
+              <input class="deleteReply" placeholder="삭제" />
+            </div>
+            <div class="reply">
+              <p>neceosecius 거봐 좋았잖아~~~~</p>
+              <input class="deleteReply" placeholder="삭제" />
+            </div>
+          </div>
+
+          <form class="ReplyBar">
+            <input
+              class="newReplyInput"
+              type="text"
+              placeholder="댓글 달기..."
+              style="width: 80%"
+            />
+            <input
+              class="uploadReply"
+              style="background-color: red; border: none"
+              placeholder="게시"
+            />
+          </form>
+        </article>
+      </div>
+
+      <div class="mainRight">
+        <div class="myAccount">
+          <img class="profile" src="psa.png" />
+          <div>
+            <p>wecode_bootcamp</p>
+            <p>WeCode | 위코드</p>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            margin-top: 10px;
+            background-color: violet;
+            flex-direction: column;
+          "
+        >
+          <div class="storyTop">
+            <div>스토리</div>
+            <div>모두 보기</div>
+          </div>
+          <div class="story">
+            <div class="otherAccount">
+              <img class="profile" src="psa.png" />
+              <div>
+                <p>wecode_bootcamp</p>
+                <p>WeCode | 위코드</p>
+              </div>
+            </div>
+            <div class="otherAccount">
+              <img class="profile" src="psa.png" />
+              <div>
+                <p>wecode_bootcamp</p>
+                <p>WeCode | 위코드</p>
+              </div>
+            </div>
+            <div class="otherAccount">
+              <img class="profile" src="psa.png" />
+              <div>
+                <p>wecode_bootcamp</p>
+                <p>WeCode | 위코드</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            margin-top: 10px;
+            background-color: violet;
+            flex-direction: column;
+          "
+        >
+          <div class="storyTop">
+            <div>회원님을 위한 추천</div>
+            <div>모두 보기</div>
+          </div>
+          <div class="story">
+            <div class="otherAccount">
+              <img class="profile" src="psa.png" />
+              <div>
+                <p>AAAAAAAAAA</p>
+                <p>......님 외 ...</p>
+              </div>
+            </div>
+            <div class="otherAccount">
+              <img class="profile" src="psa.png" />
+              <div>
+                <p>AAAAAAAAAA</p>
+                <p>......님 외 ...</p>
+              </div>
+            </div>
+            <div class="otherAccount">
+              <img class="profile" src="psa.png" />
+              <div>
+                <p>AAAAAAAAAA</p>
+                <p>......님 외 ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            margin-top: 10px;
+            background-color: violet;
+            flex-direction: column;
+          "
+        >
+          <nav>
+            <ul>
+              <li>intagram 정보</li>
+              <li>지원</li>
+              <li>등등.. 언어</li>
+            </ul>
+          </nav>
+          <span style="margin-top: 10px">카피라이트 인스타램 따로? 마탑?</span>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

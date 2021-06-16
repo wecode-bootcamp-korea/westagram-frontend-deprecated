@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #adff2f;
+  height: 1000vh;
+}
+
+#navMain {
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+}
+
+#navBar {
+  display: flex;
+
+  justify-content: space-between;
+  background-color: pink;
+  margin: 0px;
+  padding: 0px;
+  width: 1000px;
+}
+
+.navBarLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navBarLeft h1 {
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.navBarLeft span {
+  font-size: 25px;
+  letter-spacing: -2px;
+}
+
+.navBarLeft i {
+  font-size: 25px;
+}
+
+.navBarCenter {
+  display: flex;
+  align-items: center;
+}
+
+.navBarRight {
+  display: flex;
+  align-items: center;
+}
+
+.navBarRight i {
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.feeds {
+  border: 3px blue solid;
+  background-color: rgb(174, 173, 255);
+  display: flex;
+  margin-right: 20px;
+}
+
+.mainRight {
+  background-color: #fffb00;
+}
+
+.myAccount {
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.storyTop {
+  display: flex;
+  background-color: darkkhaki;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.story {
+}
+
+.otherAccount {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+#article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.feedImage {
+  width: 820px;
+  height: 820px;
+}
+
+.feedImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.feedTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.whoIsUploader {
+  margin: 5px 0px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.whoIsUploader span {
+  margin-left: 10px;
+}
+
+.feedTop i {
+  margin-right: 10px;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.feedAddOn {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  color: rgb(122, 255, 188);
+  background-color: white;
+}
+
+.feedAddOnLeft {
+  margin-left: 12px;
+}
+
+.feedAddOnRight {
+  margin-right: 12px;
+}
+
+.numOfLikesMain {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background-color: olive;
+  font-size: 20px;
+}
+
+.numOfLikes .profile {
+  width: 20px;
+  height: 20px;
+}
+
+.numOfLikes {
+  margin-left: 12px;
+}
+
+.replies {
+  margin-left: 12px;
+}
+
+.reply {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ReplyBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteReply {
+  background-color: blue;
+}
+
+.delete {
+  background-color: black;
+}

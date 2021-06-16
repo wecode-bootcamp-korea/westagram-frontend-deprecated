@@ -1,0 +1,144 @@
+#or {
+  margin: 0 18px;
+  font-size: 12.2px;
+  color: #dbdbdb;
+  font-weight: bold;
+}
+
+body {
+  background-color: yellow;
+}
+
+input {
+  background-color: rgb(253, 204, 253);
+}
+.beColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.beCenter {
+  display: flex;
+  align-items: center;
+}
+
+.beRow {
+  display: flex;
+  align-items: center;
+}
+
+.beLine {
+  width: 98px;
+  height: 1px;
+  background-color: #dbdbdb;
+
+  position: relative;
+}
+
+.mainLogo {
+  margin: 0px;
+
+  font-size: 60px;
+
+  height: 200px;
+  margin-top: 50px;
+}
+
+.A {
+  width: 550px;
+  height: 70px;
+  margin: 3px 0px;
+  border-style: solid;
+}
+
+.B {
+  border-color: #dbdbdb;
+  border-radius: 5px;
+  border-width: 2px;
+  font-size: 12px;
+}
+
+.A:focus {
+  outline: none;
+}
+
+.B2 {
+  background-color: #b2dffc;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+  outline: none;
+  margin-top: 30px;
+}
+
+.DB {
+  color: #dbdbdb;
+}
+
+.noneBorder {
+  border: none;
+}
+
+.bdRadius {
+  border-radius: 5px;
+}
+
+.txCenter {
+  text-align: center;
+}
+
+.foot_link {
+  color: #8e8e8e;
+  font-size: 12px;
+  line-height: 14px;
+  margin: -2px 0 -3px;
+}
+
+.foot_link_margin {
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-bottom: 12px;
+}
+
+#loginBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black solid;
+  padding: 0px;
+  width: 700px;
+  height: 760px;
+}
+
+#mainBox {
+  display: flex;
+
+  justify-content: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.centerForm {
+  margin-bottom: 200px;
+}
+
+.missPassword {
+  margin-bottom: 40px;
+}
+
+.disabled {
+  button: disabled;
+}
