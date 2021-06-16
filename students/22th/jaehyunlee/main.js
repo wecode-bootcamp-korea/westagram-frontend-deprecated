@@ -47,16 +47,29 @@ function newReplyUpload() {
   reply.appendChild(newReply);
   reply.appendChild(deleteButton);
 
+  if(newInput != ""){
   deleteButton.addEventListener("click", (e) => deleteReply(reply));
   document.getElementsByClassName("replies")[0].appendChild(reply);
+  document.getElementsByClassName("newReplyInput")[0].value = ""; //댓글 내용 초기화...
   //document.getElementsByClassName("replies")[0].appendChild(newReply);
   //document.getElementsByClassName("replies")[0].appendChild(deleteButton);
+                    }
+else{
+  alert("댓글을 입력해주세요");
+}
 }
 
-var newReplyClick = document.getElementsByClassName("newReplyInput")[0];
+var newReplyInput = document.getElementsByClassName("newReplyInput")[0];
 var uploadReply = document.getElementsByClassName("uploadReply")[0];
 
 uploadReply.addEventListener("click", (e) => newReplyUpload());
+newReplyInput.addEventListener("keyup", function(e) {
+
+  if(e.key === "Enter"){
+  newReplyUpload();
+ }
+} );
+
 
 function deleteReply(reply) {
   console.log("삭제테스트");
