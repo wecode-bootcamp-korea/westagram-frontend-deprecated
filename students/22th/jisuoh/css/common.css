@@ -8,7 +8,7 @@
   --font-size--small: 12px;
   --font-size--normal: 14px;
   --font-size-large: 25px;
-  --font-size-xlarge: 40px;
+  --font-size-xlarge: 2em;
 
   /* login elements size */
   --westagram-box--width: 350px;
@@ -91,6 +91,10 @@ a {
 
 a:visited {
   color: var(--color-gray);
+}
+
+button {
+  background-color: transparent;
 }
 
 a:focus,

@@ -10,31 +10,33 @@
 <body>
   <div class="main-wrapper">
     <header class="we-header">
-      <section class="logo-box">
-        <div class="icon-box">
-          <img src="./img/instagram.png" alt="Instagram con" />
-        </div>
-        <h1>Westagram</h1>
-      </section>
-      <section class="search-box">
-        <input type="text" class="search" placeholder="검색" />
-        <img src="./img/search.png" alt="search Icon" class="src" />
-      </section>
-      <nav class="link-box">
-        <a href="" class="explore-link invisible">
-          <img src="./img/explore.png" alt="Explore Icon" class="explore" />
-        </a>
-        <a href="" class="heart-link">
-          <img src="./img/heart.png" alt="Heart Icon" class="heart" />
-        </a>
-        <a href="" class="profile-link invisible">
-          <img src="./img/profile.png" alt="Profile Icon" class="profile" />
-        </a>
-      </nav>
+      <div class="header__div">
+        <section class="logo-box">
+          <div class="icon-box">
+            <img src="./img/instagram.png" alt="Instagram con" />
+          </div>
+          <h1>Westagram</h1>
+        </section>
+        <section class="search-box">
+          <input type="text" class="search" placeholder="검색" />
+          <img src="./img/search.png" alt="search Icon" class="src" />
+        </section>
+        <nav class="link-box">
+          <a href="" class="explore-link invisible">
+            <img src="./img/explore.png" alt="Explore Icon" class="explore" />
+          </a>
+          <a href="" class="heart-link">
+            <img src="./img/heart.png" alt="Heart Icon" class="heart" />
+          </a>
+          <a href="" class="profile-link invisible">
+            <img src="./img/profile.png" alt="Profile Icon" class="profile" />
+          </a>
+        </nav>
+      </div>
     </header>
     <main class="we-main">
-      <article class="feed-box">
-        <section class="feed">
+      <section class="feed-box">
+        <article class="feed">
           <header class="feed__header">
             <div class="profile-box">
               <div class="profile__div">
@@ -47,31 +49,58 @@
             </span>
           </header>
           <section class="feed__photo">
-            <img src="./img/strawberry-dessert-2191973_640.jpg" alt="Feed Photo" class="photo" />
+            <img src="./img/strawberry-dessert-2191973_640.jpg" alt="Feed Photo" />
           </section>
           <section class="feed__like">
-            <section class="icons">
-              <img src="img/heart.png" alt="heart Image">
-              <img src="img/speech-bubble.png" alt="comment Image">
-              <img src="img/send.png" alt="share Image">
+            <section class="like__section">
+              <section class="icons">
+                <button class="heart-btn">
+                  <img src="img/heart.png" alt="heart Image">
+                </button>
+                <button class="heart-btn">
+                  <img src="img/speech-bubble.png" alt="comment Image">
+                </button>
+                <button class="heart-btn">
+                  <img src="img/send.png" alt="share Image">
+                </button>
+                </section>
+                <button class="bookmark">
+                  <img src="./img/bookmark.png" alt="Bookmark Icon">
+                </button>
+              </section>
+            </section>
+            <section class="like-info">
+              <div class="img-box">
+                <img src="" alt="profile" />
+              </div>
+              <span>aineworld님 외 10명이 좋아합니다</span>
             </section>
           </section>
           <section class="feed__comment">
             <section class="comment">
               <span>canon_mj</span>
-              <p>위워크에서 진행항 베이킹 클래스에요~ 정말 먹음직스러워 보이지 않나요?</p>
+              <p>위워크에서 진행할 베이킹 클래스에요~ 정말 먹음직스러워 보이지 않나요?</p>
               <button class="more">더 보기</button>
             </section>
             <section class="comment">
-              <span>ne</span>
-              <p>위워크에서 진행항 베이킹 클래스에요~ 정말 먹음직스러워 보이지 않나요?</p>
+              <span>new</span>
+              <p>거봐 좋았잖아~~</p>
+              <button class="comment-heart">
+                <img src="./img/heart.png" alt="heart Icon">
+              </button>
               <button class="more">더 보기</button>
             </section>
+            <div class="time">42분 전</div>
           </section>
-        </section>
-      </article>
+          <section class="comment-input">
+            <form class="comment__form">
+              <textarea class="comment-area" placeholder="댓글 달기..."></textarea>
+              <button class="post-btn">게시</button>
+            </form>
+          </section>
+        </article>
+      </section>
       <aside class="aside-box">
-
       </aside>
     </main>
   </div>
