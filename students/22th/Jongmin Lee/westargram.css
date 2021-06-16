@@ -109,7 +109,7 @@ input::placeholder {
 }
 
 .logo {
-    background-image: url('/Users/lee/Desktop/Westagram/westagram-frontend/students/22th/Jongmin Lee/img/Westagram.png');
+    background-image: url('img/Westagram.png');
     width: 175px;
     height: 51px;
     background-size: 100%;

@@ -44,7 +44,7 @@ html, body {
 }
 
 .logo {
-    background-image: url('/Users/lee/Desktop/WEB/img/Westagram.png');
+    background-image: url('img/Westagram.png');
     flex: 0 0 auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@ html, body {
     outline: 0;
     background-color: #fafafa;;
     text-indent: 5px;
-    background-image: url('/Users/lee/Desktop/WEB/img/instasearch.png');
+    background-image: url('img/instasearch.png');
     background-size: 5%;
     background-repeat: no-repeat;
     background-position-x: 78px;
@@ -167,7 +167,7 @@ html, body {
 
 .imageArea {
     display: flex;
-    background-image: url('/Users/lee/Desktop/WEB/img/photo.jpeg');
+    background-image: url('img/photo.jpeg');
     width: 56px;
     height: 56px;
     background-size: 100%;
@@ -244,7 +244,7 @@ html, body {
 }
 
 .personPhoto {
-    background-image: url('/Users/lee/Desktop/WEB/img/person1.png');
+    background-image: url('img/person1.png');
     background-size: 100%;
     border-radius: 70%;
     width: 32px;
@@ -420,7 +420,7 @@ html, body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url("/Users/lee/Desktop/WEB/img/dots.png");
+    background-image: url("img/dots.png");
     width: 22px;
     height: 20px;
     background-size: 100%;
