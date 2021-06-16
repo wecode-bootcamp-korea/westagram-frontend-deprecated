@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+ <input type="text" id="text" style="margin-left:"
+      onkeyup="changeColor()">
+   <br><br>
+   <button id="button" style="background:none;">로그인</button>
+  </body>
+  <script type="text/javascript">
+
+    function changeColor() {
+      if (document.getElementById("text").value !== "") {
+         document.getElementById("button").style.background = "skyblue";
+      } else {
+         document.getElementById("button").style.background = "none";
+      }
+    }
+  </script>
+</html>

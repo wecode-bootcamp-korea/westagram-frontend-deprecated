@@ -1,0 +1,57 @@
+
+
+body {
+  margin: 0;
+  background-color:
+}
+
+@font-face{
+  font-family:'Billabong';
+  src:url('./FontsFree-Net-Billabong.ttf') format('woff');
+}
+
+/* #logo{
+    margin:0;
+    padding:10px;
+} */
+.logo{
+  font-family: 'Billabong';
+  font-size: 90px;
+  margin:10px;
+  padding: 10px;
+  height:120px;
+}
+
+.container {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  margin-left: -200px;
+  margin-top: -200px;
+  left: 50%;
+  top: 50%;
+  border-style: solid;
+  border-color: gray;
+}
+
+
+.login-form {
+
+  width: 300px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 140px;
+  width: 380px;
+  margin: 10px;
+}
+
+input{
+  width:300px;
+  height:24px;
+}
+#button{
+  padding:0;
+  height:24px;
+}
