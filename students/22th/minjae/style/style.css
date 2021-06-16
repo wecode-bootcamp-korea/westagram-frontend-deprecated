@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* .iphone {
+    width: 350px;
+    height: 500px;
+    margin-left: 20%;
+    margin-top: 10%;
+} */
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+.loginall {
+    background-color: white;
+    border: 1px solid rgb(201, 201, 201);
+    width: 360px;
+    height: 400px;
+    margin: 20% 10% 14px;
+    padding-top: 26px;
+}
+
+.logo {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #262626;
+}
+
+.form {
+    text-align: center;
+}
+
+.textbox {
+    width: 280px;
+    margin-bottom: 8px;
+}
+
+input {
+    margin: 2px;
+    width: 280px;
+    padding: 12px 8px 12px 8px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 2px;
+    background-color: #FAFAFA;
+}
+
+input::placeholder {
+    color: rgb(152, 152, 152);
+}
+
+input:focus {
+    outline: 1px solid #aaaaaa;
+}
+
+.button {
+    background-color: #bfdffd;
+    width: 280px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+}
+
+.bottom {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 120px;
+    color: #385185;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pw:visited {
+    text-decoration: none;
+    color: #385185;
+}
+
+a:active {
+    opacity: 0.7;
+}
+
+.bla {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(201, 201, 201);
+    width: 360px;
+    height: 68px;
+    margin-left: 10%;
+    padding-top: 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.join {
+    font-weight: bold;
+}
+
+.join:visited {
+    color: #0095F6;
+}

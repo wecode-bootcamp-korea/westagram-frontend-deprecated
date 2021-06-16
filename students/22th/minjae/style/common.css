@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.loginall {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+body {
+    background-color: #FAFAFA
+}
