@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>westagram</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="center">
+        <div class="logoBox">
+          <img src="/images/img_nav_logo.png" alt="logo" class="navLogo" />
+          <p class="companyName">instagram</p>
+        </div>
+        <div class="searchBox">
+          <input type="text" class="navSearch" placeholder="검색"/>
+        </div>
+        <div class="iconBox">
+          <img src="/images/img_nav_explore.png" alt="explore" class="navExplore"/>
+          <img src="/images/img_nav_heart.png" alt="heart" class="navHeart"/>
+          <img src="/images/img_nav_profile.png" alt="profile" class="navProfile"/>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="center">
+        <main id="main">
+            <div class="mainBg">
+                <section class="mainTop">
+                    <div class="profile">
+                      <img src="/images/img_account.jpg" alt="account" class="account"/>
+                      <p>Jacob</p>
+                    </div>
+                    <p class="threeDot">&#x22EF</p>
+                  </section>
+                  <section class="mainImg">
+                  </section>
+                  <section class="mainBottom">
+                    <div class="mbIconWrap">
+                        <div class="mIconLeft">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="mIconRight">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="mbLiked">
+                        <img src="/images/img_account.jpg" alt="profile">
+                        <p> <span>snjndf</span>님 <span>외 10명</span> 이 좋아합니다</p>
+                    </div>
+                    <div class="mbWrittenComments" id="mbWrittenComments">
+                        <!-- <div class="commentSection">
+                            <p class="personalAccount">아이디~<span class="commnets">내용블라블라</span></p>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="commentSection">
+                            <p class="personalAccount">아이디~<span class="commnets">내용블라블라</span></p>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="commentSection">
+                            <p class="personalAccount">아이디~<span class="commnets">내용블라블라</span></p>
+                            <i class="far fa-heart"></i>
+                        </div> -->
+                    </div>
+                    <div class="mbWrittenTime">
+                        <p>42분전</p>
+                    </div>
+                    <form id="form" class="commentInput">
+                        <label for="input"></label>
+                      <input name="input" id="input" type="text" placeholder="댓글 달기..."></input>
+                      <button>게시</button>
+                    </form>
+                  </section>
+            </div>
+          
+        </main>
+        <aside id="aside">
+          <div class="asMyAccount">
+            <img src="/images/img_account.jpg" alt="account" />
+            <div class="asMyProfile">
+              <p>wecode_bootcamp</p>
+              <div class="asMyProfile_bottom">
+                <p>Wecode</p>
+                <p>위코드</p>
+              </div>
+            </div>
+          </div>
+          <div class="asStory">
+            <div class="asStoryTop">
+              <p>스토리</p>
+              <p>모두보기</p>
+            </div>
+            <div class="asStoryListWrap">
+                <div class="asStoryList">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asStoryInfo">
+                        <p>this_is_id</p>
+                        <p>3분전</p>
+                    </div>
+                </div>
+                <div class="asStoryList">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asStoryInfo">
+                        <p>this_is_id</p>
+                        <p>3분전</p>
+                    </div>
+                </div>
+                <div class="asStoryList">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asStoryInfo">
+                        <p>this_is_id</p>
+                        <p>3분전</p>
+                    </div>
+                </div>
+                <div class="asStoryList">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asStoryInfo">
+                        <p>this_is_id</p>
+                        <p>3분전</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="asRecommandation">
+            <div class="asReTop">
+              <p>회원님을 위한 추천</p>
+              <p>모두보기</p>
+            </div>
+            <div class="asReListWrap">
+              <div class="asReList">
+                <div class="asReListLeft">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asReInfo">
+                        <p>this_is_recommanded</p>
+                        <p>who likes u</p>
+                    </div>
+                </div>
+                <p class="asReListfollowBox">팔로우</p>
+              </div>
+              <div class="asReList">
+                <div class="asReListLeft">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asReInfo">
+                        <p>this_is_recommanded</p>
+                        <p>who likes u</p>
+                    </div>
+                </div>
+                <p class="asReListfollowBox">팔로우</p>
+              </div>
+              <div class="asReList">
+                <div class="asReListLeft">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asReInfo">
+                        <p>this_is_recommanded</p>
+                        <p>who likes u</p>
+                    </div>
+                </div>
+                <p class="asReListfollowBox">팔로우</p>
+              </div>
+              <!-- <div class="asReList">
+                <div class="asReListLeft">
+                    <img src="/images/img_account.jpg" alt="account" />
+                    <div class="asReInfo">
+                        <p>this_is_recommanded</p>
+                        <p>who likes u</p>
+                    </div>
+                </div>
+                <p class="asReListfollowBox">팔로우</p>
+              </div> -->
+            </div>
+          </div>
+          <div class="asInfoWrap">
+            <p>Instagram 정보 &#183 지원 &#183 홍보센터 &#183 API &#183</p>
+            <p>채용정보 &#183 개인정보처리방침 &#183 약관 &#183</p>
+            <p>디렉터리 &#183 프로필 &#183 해시태그 &#183 언어</p>
+            <p>© 2019 INSTAGRAM</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
