@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <div class="menuBox">
+                <div class="logo" style="font-family: 'Lobster', cursive;">
+                    <i class="fab fa-instagram"></i>
+                    <h1 class="title">Westagram</h1>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="검색">
+                </div>
+                <div class="icons">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="탐색아이콘">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트아이콘">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="마이페이지">
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="feeds">
+                <article>
+                    <div class="feedTop">
+                        <img class="feedProfile" src="img/feedProfile.jpeg" alt="프로필">
+                        <div class="feedTopRight">
+                            <a href="#" class="userID">somangoi</a>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="feedPhotoContainer">
+                        <img class="feedPic" src="https://images.unsplash.com/photo-1482350325005-eda5e677279b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" alt="업로드사진">
+                    </div>
+                    <div class="contentIcons">
+                        <div class="iconContainerLeft">
+                            <button class="contentBtn">
+                                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="like_img">
+                            </button>
+                            <button class="contentBtn">
+                                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="comment_img">
+                            </button>
+                            <button class="contentBtn">
+                                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="share_img">
+                            </button>
+                        </div>
+                        <div class="iconContainerRight">
+                            <button class="contentBtn">
+                                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="bookmark_img">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="likes">
+                        <img class="likesPic" src="img/likeProfile.jpeg" alt="프로필">
+                        <div class="likesDesc"> 
+                            <a href="#" class="bolder">gleitflug</a>님 <a href="#" class="bolder">외 10명</a>이 좋아합니다.</span>
+                        </div>
+                    </div>
+                    <div class="commentList">
+                        <div class="comment">
+                            <div class="commentBox">
+                                <span class="igID">
+                                    <a href="#">somangoi</a>
+                                </span>
+                                &nbsp;
+                                <span class="commentContent">
+                                    <span>역시 감성터지는 위코드</span>
+                                </span>
+                                <span>
+                                    ...
+                                    <span>
+                                        <button class="moreBtn">더 보기</button>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="commentBox">
+                                <span class="igID">
+                                    <a href="#">bongbongcatcat</a>
+                                </span>
+                                &nbsp;
+                                <span class="commentContent">
+                                    <span>위코드 쩐당</span>
+                                </span>
+                            </div>
+                            <span class="commentHeart">
+                                <i class="far fa-heart"></i>
+                            </span>
+                        </div>
+                        <span class="commentTime">42분 전</span>
+                    </div>
+                    <div class="commentInput">
+                        <input type="text" placeholder="댓글 달기...">
+                        <button class="commentBtn">게시</button>
+                    </div>
+                </article>
+            </div>
+            <aside class="mainRight">
+                <div class="profile">
+                    <img class="manRightProfilePic" src="img/profile.jpeg" alt="프로필">
+                    <div class="profileDesc">
+                        <span class="profileID">wecode_bootcamp</span>
+                        <span class="profileName">WeCode | 위코드</span>
+                    </div>
+                </div>
+                <div class="storyBox">
+                    <div class="storyTop">
+                        <span class="smallTitle">스토리</span>
+                        <span class="seeAll">모두 보기</span>
+                    </div>
+                    <div class="stories">
+                        <div class="story">
+                            <canvas class="circle"></canvas>
+                            <a href="#"><img class="storyPic sideProfile" src="img/story1.jpeg" alt=""></a>
+                            <div class="sideDesc">
+                                <span class="sideId">abcd</span>
+                                <span class="storyTime">16분 전</span>
+                            </div>
+                        </div> 
+                        <div class="story">
+                            <canvas class="circle"></canvas>
+                            <a href="#"><img class="storyPic sideProfile" src="img/story2.jpeg" alt=""></a>
+                            <div class="sideDesc">
+                                <span class="sideId">efg</span>
+                                <span class="storyTime">20분 전</span>
+                            </div>
+                        </div> 
+                        <div class="story">
+                            <canvas class="circle"></canvas>
+                            <a href="#"><img class="storyPic sideProfile" src="img/story3.jpeg" alt=""></a>
+                            <div class="sideDesc">
+                                <span class="sideId">hijk</span>
+                                <span class="storyTime">1시간 전</span>
+                            </div>
+                        </div> 
+                        <div class="story">
+                            <canvas class="circle"></canvas>
+                            <a href="#"><img class="storyPic sideProfile" src="img/story4.jpeg" alt=""></a>
+                            <div class="sideDesc">
+                                <span class="sideId">lmnop</span>
+                                <span class="storyTime">20시간 전</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="recommendationBox">
+                    <div class="recommendationTop">
+                        <span class="smallTitle">회원님을 위한 추천</span>
+                        <span class="seeAll">모두 보기</span>
+                    </div>
+                    <div class="recommendations">
+                        <div class="recommendation">
+                            <a href="#"><img class="sideProfile" src="img/story1.jpeg" alt=""></a>
+                            <div class="sideDesc">
+                                <span class="sideId">abcd</span>
+                                <div class="connection">wecode_bootcamp님 외 1명이 팔로우 하고 있습니다.</div>
+                            </div>
+                            <button clas="followBtn">팔로우</button>
+                        </div> 
+                        <div class="recommendation">
+                            <a href="#"><img class="sideProfile" src="img/story2.jpeg" alt=""></a>
+                            <div class="sideDesc">
+                                <span class="sideId">efg</span>
+                                <div class="connection">bongbongcatcat님 외 1명이 팔로우 하고 있습니다.</div>
+                            </div>
+                            <button clas="followBtn">팔로우</button>
+                        </div> 
+                        <div class="recommendation">
+                            <a href="#"><img class="sideProfile" src="img/story3.jpeg" alt=""></a>
+                            <div class="sideDesc">
+                                <span class="sideId">hijk</span>
+                                <div class="connection">kimchi_chips님 외 1명이 팔로우 하고 있습니다.</div>
+                            </div>
+                            <button clas="followBtn">팔로우</button>
+                        </div> 
+                    </div>
+                </div>
+                <footer>
+                    <p>
+                        Instagram 정보 &middot; 지원 &middot; 홍보 센터 &middot; API &middot; 채용 정보 &middot; 개인정보처리방침 &middot; 약관 &middot; 디렉터리 &middot; 프로필 &middot; 해시태그 &middot; 언어 
+                    </p>
+                    <p class="copyright">
+                        &copy; 2021 INSTAGRAM
+                    </p>
+                </footer>
+            </aside>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

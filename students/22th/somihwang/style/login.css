@@ -1,0 +1,188 @@
+body {
+  height: 100vh;
+  background-color: #fafafa;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 아이폰 이미지 */
+.phoneImg {
+  height: 600px;
+  width: 450px;
+  background-image: url("../img/login.png3");
+  background-size: cover;
+}
+
+.imgBox {
+  position: relative;
+}
+
+.phoneImgs {
+  display: none;
+
+  height: 435px;
+  top: 95px;
+  left: 146px;
+  position: absolute;
+}
+
+.visible {
+  display: block;
+}
+
+/* 오른쪽 부분 */
+.rightBox {
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  width: 370px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 10px 20px 30px 20px;
+}
+/* 로그인 박스 */
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 280px;
+}
+
+.input {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin: 5px;
+  color: black;
+  width: 100%;
+}
+
+.button {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+
+  background-color: #c4e1fb;
+  color: white;
+
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.activate {
+  background-color: #0095f6;
+}
+
+/* or */
+.lineBox {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+}
+.line {
+  flex: 1;
+  flex-grow: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.or {
+  padding: 10px;
+  color: #8e8e8e;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+/* button fb */
+.fb {
+  width: 200px;
+  padding: 10px;
+  background-color: transparent;
+  color: #385185;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+.fb a {
+  color: #385185;
+}
+/* 패스워드 찾기 */
+.findPassword {
+  padding-top: 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.findPassword a {
+  color: #385185;
+  font-weight: bolder;
+}
+
+/* 가입하기 */
+.signUp {
+  width: 200px;
+  height: 100px;
+
+  margin: 10px 0;
+  background-color: white;
+  width: 370px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+
+  font-size: 0.8rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.signUp p,
+.signUp a {
+  padding: 5px;
+  display: inline-block;
+  font-weight: bolder;
+}
+
+.signUp a {
+  color: #0095f6;
+}
+
+/* 어플 버튼 */
+.app {
+  text-align: center;
+  padding: 5px 10px;
+}
+.appLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appLinkBtn {
+  width: 130px;
+  padding: 10px;
+}

@@ -1,0 +1,415 @@
+body {
+  position: relative;
+  height: 100vh;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fafafa;
+  -ms-overflow-style: none;
+}
+
+/* 상단 메뉴 */
+.menu {
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid rgb(237, 237, 237);
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuBox {
+  width: 850px;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.logo i,
+.logo h1 {
+  display: inline-block;
+}
+
+.logo i {
+  font-size: 1.9rem;
+  padding-right: 15px;
+  border-right: 2px solid #000;
+}
+
+.title {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+.search {
+  padding: 5px 30px;
+  width: 220px;
+  height: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.search .fa-search {
+  position: absolute;
+  left: 85px;
+  font-size: 0.9rem;
+  color: #babcbe;
+}
+
+.search input {
+  position: absolute;
+  left: 105px;
+  background-color: none;
+  width: 100px;
+  color: #babcbe;
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* 메인 레이아웃*/
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 100px 0;
+}
+div .feeds {
+  width: 500px;
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 5px;
+}
+div .mainRight {
+  width: 330px;
+}
+
+/* 피드 */
+article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* 피드 상단 */
+.feedTop {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.feedProfile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedTopRight {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 10px;
+}
+
+.feedTopRight .userID {
+  color: black;
+  font-weight: bolder;
+}
+
+/* 피드 사진*/
+.feedPic {
+  height: 498px;
+  width: 498px;
+  object-fit: cover;
+}
+
+/* 피드 하단 */
+/* 피드 사진 */
+.likes {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.likesPic {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.likesDesc {
+  margin-bottom: 5px;
+}
+
+.likes div {
+  padding-left: 10px;
+}
+.bolder {
+  font-weight: 600;
+  color: black;
+}
+
+/* 피드 하단 아이콘 */
+.contentIcons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
+}
+
+.contentBtn {
+  cursor: pointer;
+  height: 25px;
+  padding-right: 5px;
+  background-color: white;
+}
+
+.contentBtn:last-child {
+  padding-right: 0;
+}
+
+.contentBtn img {
+  height: 100%;
+}
+
+/* 피드하단 코멘트 */
+.commentList {
+  padding: 0 10px;
+}
+
+.comment {
+  font-size: 1.1rem;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.igID {
+  font-weight: 600;
+}
+
+.igID a {
+  color: black;
+}
+
+.moreBtn {
+  color: #8e8e8e;
+  background-color: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.commentTime {
+  font-size: 0.9rem;
+  padding: 10px 0;
+  display: inline-block;
+  color: #c8c8c8;
+}
+
+.far.fa-heart {
+  color: #c8c8c8;
+}
+
+/* 댓글달기 */
+.commentInput {
+  border-top: 1px solid rgb(237, 237, 237);
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.commentInput input {
+  flex-grow: 1;
+  font-size: 1.1rem;
+}
+.commentBtn {
+  font-size: 1.1rem;
+  color: #cfe7fc;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* 사이드 */
+.mainRight {
+  height: 100%;
+  width: 100%;
+  padding: 10px 0 0 30px;
+
+  position: sticky;
+  top: 10px;
+}
+.storyBox,
+.recommendationBox {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  border: 1px solid rgb(237, 237, 237);
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+}
+.storyTop,
+.recommendationTop {
+  height: 40px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.stories,
+.recommendations {
+  height: 158px;
+  margin-top: 40px;
+  overflow: scroll;
+}
+
+.story {
+  padding: 3px 10px 6px 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.recommendation {
+  padding: 3px 10px 3px 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sideProfile {
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sideDesc {
+  padding-left: 10px;
+}
+
+.sideDesc span {
+  display: block;
+  padding: 2px;
+  font-size: 0.9rem;
+}
+
+.sideId {
+  font-weight: 600;
+}
+
+.storyTime,
+.connection {
+  color: #bdbdbd;
+  line-height: 130%;
+}
+
+/* 사이드-프로필 */
+.manRightProfilePic {
+  max-width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profileDesc {
+  padding: 10px;
+}
+
+.profileDesc span {
+  display: block;
+}
+
+.profileID {
+  font-weight: 600;
+}
+
+.profileName {
+  color: #c8c8c8;
+}
+
+/* 사이드-스토리 */
+.storyPic {
+  padding: 2px;
+  background-color: white;
+}
+
+.story a {
+  z-index: 1;
+}
+
+canvas {
+  background-image: linear-gradient(#ca1d7e, #e35157, #f2703f);
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  z-index: 0;
+}
+
+.smallTitle {
+  color: #ccc;
+  font-weight: 600;
+}
+
+.seeAll {
+  font-weight: 600;
+}
+
+/* 사이드-추천 */
+.recommendation button {
+  background-color: transparent;
+  width: 60px;
+  color: #459cf0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.connection {
+  width: 170px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+/* footer */
+footer {
+  padding: 10px;
+  line-height: 130%;
+  color: #ccc;
+}
+.copyright {
+  padding-top: 10px;
+}
