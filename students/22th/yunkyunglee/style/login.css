@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login_bd {
+  width: 400px;
+  margin: 80px auto;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.login_bd h1 {
+  font-family: Lobster, cursive;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.loginForm input {
+  background-color: #F2F2F2;
+  width: 300px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  margin: 0 50px 6px;
+  padding-left: 8px;
+  color: gray;
+}
+
+.btn button {
+  color: white;
+  width: 300px;
+  background-color: #A9D0F5;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+footer {
+  font-size: 15px;
+  color: darkblue;
+  margin-top: 70px;
+  padding: 20px;
+}
