@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Westagram Main Page</title>
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+  <nav>
+    <h1>
+      <a href="#" class="iconLogo"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="letterLogo"><span>Westagram</span></a>
+    </h1>
+    <div class="searchBox">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="검색"> 
+      <!--검색 이미지는 어떻게 넣지?, 센터 정렬은 ?search 박스를 새로 만듬. 센터정렬은 고민중..!flex, position-->
+    </div>
+    <ul class="userBtn">
+      <li>
+        <button type="button">
+          <i class="far fa-compass"></i>
+        </button> <!-- 이 형식으로 가져가고 싶은데 : 왜냐하면 버튼을 눌렀을 때 이동하는 것이 아니라 자바스크립트로 작동하게 될거니까..
+      버튼의 속성을 어떻게 바꿀수 있지?-->
+      </li>
+      <li>
+        <button type="button">
+          <i class="far fa-heart"></i>
+        </button>
+      </li>
+      <li>
+        <button type="button">
+          <i class="far fa-user"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  
+</body>
+</html>

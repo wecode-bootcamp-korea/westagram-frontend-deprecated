@@ -1,0 +1,72 @@
+/* * {
+  border : 1px solid blue;
+} */
+
+/* nav */
+nav {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+nav h1 .fab {
+  color: #000;
+}
+
+
+nav h1 .letterLogo {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  color: #000;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 2px solid #000;
+}
+
+nav .searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 214px;
+  padding: 7px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+nav .searchBox .fa-search {
+  color: #dbdbdb;
+}
+
+nav .searchBox input {
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+nav .searchBox input:focus {
+  outline: none;
+}
+
+nav input::placeholder {
+  text-align: center;
+}
+
+nav ul {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .userBtn button {
+  background: none;
+  border: none;
+}
+
+nav .userBtn button:hover {
+  cursor: pointer;
+}

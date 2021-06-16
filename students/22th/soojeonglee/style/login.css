@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /*세로 가운데 정렬하고싶다..*/
+}
+
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 350px;
+  height: 380px;
+  padding: 40px;;
+  border: 1px solid #ccc;
+}
+
+/* header */
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+/* section */
+.loginInputBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginInputBox input {
+  margin-bottom: 5px;
+  padding: 9px 8px 7px;
+  background-color: rgb(250, 250, 250);
+  border: 1px solid rgb(38, 38, 38);
+  border-radius: 3px;
+}
+
+.loginBtn {
+  margin-top: 10px;
+  padding: 9px 8px 7px;
+  background-color: #C0DFFD;
+  border:none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.loginBtn:hover {
+  cursor: pointer;
+}
+
+.loginBtn  .inputIdAndPw {
+  background-color: #0096F6;
+}
+
+/* footer */
+.findPassword {
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  color: #00376b;
+  font-size: 14px;
+}
+

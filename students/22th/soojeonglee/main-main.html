@@ -1,0 +1,127 @@
+<main> <!--flex-->
+  <!--시맨틱 태그로 구획을 나누고 싶어서 작성함. article in article 가능. 의미 전달에도 큰 문제 없을 듯하여 작성함. main 안 article로 구성하고 싶지만 그렇게 작성했을 땐 css스타일링 할때 의미 없는 div가 만들어져야할 수 있음.
+어떤 태그가 의미 전달에 효과적인지 궁금하다...!-->
+  <article>
+    <article>
+      <header>
+        <h1> <!-- flex-->
+          <a href="#">
+            <img src="#" alt="feed user image">
+          </a>
+          <a href="#">
+            <strong>ikeakr</strong>
+            IKEA Korea - 이케아 코리아
+          </a>
+        </h1>
+        <button type="button">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+      </header>
+      <section>
+        <img src="#" alt="feed image" />
+        <ul class="reactions">
+          <li>
+            <button type="button">
+              <!-- 하트 아이콘 -->
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <!-- 댓글 아이콘 -->
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <!-- 공유 아이콘 -->
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <!-- 북마크 아이콘, ~ self ? flex속성 단독으로 속성 줄 수 있는 것 -->
+            </button>
+          </li>
+        </ul>
+        <h2>
+          <a href="#">
+            <img src="#" alt="react user">ikea
+          </a>
+          님 외 <button>7명</button>이 좋아합니다.
+        </h2>
+        <p>
+          암만, 델리, 방콕의 디자이너들과 IKEA가 협업해 만든 새로운 컬렉션을 지금 만나보세요. LOKALT 로칼트 컬렉션은
+          젊은 디자이너들의 현대적인 감각과 현지 장인들의 전통이 어우러져 정성이 깃든 제품이라 더욱 특별하죠. 
+          개성 넘치는 디자인으로 집 안에 이국적인 분위기를 더해보세요!
+          
+          IKEA 매장과 IKEA.kr에서 더 많은 홈퍼니싱 아이디어를 확인하세요.
+          <!-- 어드정도 적다가 말줄임 기능 필요함 -->
+          <span class="postTime">54분 전</span>
+        </p>
+      </section>
+      <footer> <!--댓글 기능을 풋터로 빼야할까? 아니면 section 그도 아니면 기존 section에 input 요소만 추가?-->
+        <input type="text">  <!--댓글 기능은 어떤 태그로 구성하면 좋을지 생각이 필요하다.-->
+      </footer>
+    </article>
+  </article>
+  <aside>
+    <header>
+      <h1> <!-- flex-->
+        <a href="#">
+          <img src="#" alt="feed user image">
+        </a>
+        <a href="#">
+          <strong>ikeakr</strong>
+          IKEA Korea - 이케아 코리아
+        </a>
+      </h1>
+    </header>
+    <section>
+      <h2>스토리</h2>
+      <button type="button">모두 보기</button>
+      <ul>
+        <li>
+          <a href="" target="_blank"><img src="" alt="user id"></a> <!--이 alt가 적절한 alt일까?-->
+          <a href="" target="_blank">userid1</a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="" alt="user id"></a> <!--이 alt가 적절한 alt일까?-->
+          <a href="" target="_blank">userid2</a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="" alt="user id"></a> <!--이 alt가 적절한 alt일까?-->
+          <a href="" target="_blank">userid3</a>
+        </li>
+        <li>
+          <a href="" target="_blank"><img src="" alt="user id"></a> <!--이 alt가 적절한 alt일까?-->
+          <a href="" target="_blank">userid4</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>회원님을 위한 추천</h2>
+      <button type="button">모두 보기</button>
+      <ul>
+        <li>
+          <a href=""><img src="" alt="user id"></a> <!--이 alt가 적절한 alt일까?-->
+          <a href="">userid1</a>
+          <button type="button">팔로우</button> <!--self flex 오른쪽 배치-->
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <ul> 
+        <li><a href="#" target="_blank">소개</a></li> <!-- 가상 요소로 dot 넣어주기 -->
+        <li><a href="#" target="_blank">도움말</a></li>
+        <li><a href="#" target="_blank">홍보 센터</a></li>
+        <li><a href="#" target="_blank">API</a></li>
+        <li><a href="#" target="_blank">채용 정보</a></li>
+        <li><a href="#" target="_blank">개인정보처리방침</a></li>
+        <li><a href="#" target="_blank">약관</a></li>
+        <li><a href="#" target="_blank">위치</a></li>
+        <li><a href="#" target="_blank">인기 계정</a></li>
+        <li><a href="#" target="_blank">해시태그</a></li>
+        <li><a href="#" target="_blank">언어</a></li>
+      </ul>
+      <span>© 2021 INSTAGRAM FROM FACEBOOK</span>
+    </footer>
+  </aside>
+</main>
