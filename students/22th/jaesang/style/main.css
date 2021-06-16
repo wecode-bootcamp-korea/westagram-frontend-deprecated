@@ -1,0 +1,286 @@
+
+body {
+    margin: 1px;
+    background-color: #fafafa;
+}
+.nav {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.content{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 54px;
+    max-width: 935px;;
+    margin: 0px auto;
+}
+
+.item1 img {
+    width: 103px;
+    height: 29px;
+    margin-top: 12px;
+}
+
+.item2 {
+    width:207px;
+    height:54px;
+}
+
+.item2 input::placeholder {
+    text-align: center;
+}
+
+.item2 input {
+    margin-top: 12px;
+    width: 100%;
+    height: 29px;
+}
+
+
+.item3 img {
+    padding: 0 12;
+    width: 22px;
+    margin-top:12px;
+}
+
+.main {
+    display: flex;
+    max-width: 935px;;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.feeds {
+    margin-top: 50px;
+    flex-grow: 1;
+
+}
+
+.feeds_profile {
+    display: flex;
+}
+
+.feeds_profile img {
+    width: 36px;
+    border-radius: 50%
+}
+
+.feeds_profile_item1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-self: center;
+}
+
+.feeds_profile_item2 {
+    flex-grow:1;
+}
+
+
+.feeds_profile_item2_content1 {
+    font-size : 15px;
+    font-weight: bold;
+}
+.feeds_profile_item2_content2 {
+    font-size : 13px;
+}
+
+.feeds_profile_item3{
+    padding-right: 20px;
+    font-size : 20px;
+    align-self: center;
+    font-weight: bold;
+}
+
+
+.main_feed_img {
+    width: 100%;
+    height: 730px;
+
+}
+
+.comment_icon_box {
+    margin-top: 10px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_icon img {
+    padding: 0 3px;
+}
+
+
+.commnet_profile {
+    margin-top: 7px;
+    padding: 0 13px ;
+    display:flex;
+}
+
+.comment_profile_icon img {
+    border-radius: 50%;
+    width: 24px;
+}
+.commnet_profile_text {
+    padding-left: 7px;
+    align-self: center;
+}
+
+.first_comment {
+    margin-top: 10px;
+    padding: 0 13px;
+}
+
+.bold_comment {
+    font-weight:bold;
+}
+
+.grey_comment {
+    color: grey;
+}
+
+.second_comment {
+    padding: 0 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second_comment_right img {
+    width: 12px;
+}
+
+.third_comment {
+    padding: 0 13px;
+    color: grey;
+    font-size: 15px
+}
+
+.fourth_comment {
+    border-top: 1px solid #dbdbdb;
+    padding: 0 13 ;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.fourth_comment_left {
+    padding-right:13px;
+    align-self: center;
+}
+
+.fourth_comment_right {
+
+    align-self: center;
+} 
+
+.fourth_comment_center {
+    align-self: center;
+    flex-grow: 1;
+}
+
+.input_comment {
+    border: 0px;
+    width:100%
+}
+
+.input_comment:focus-visible {
+    outline: 0px;
+}
+
+button {
+    border: 0px;
+    color: #c7e3fb;
+    background-color: white;
+}
+
+
+
+article {
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    width: 614px;
+ 
+}
+
+
+.main-right {
+    margin-top: 50px;
+    width: 293px;
+}
+
+.right_first_box {
+    display: flex;
+}
+
+.profile2 {
+    width: 56px;
+    border-radius: 50%;
+
+}
+
+
+
+
+.right_first_profile_item1 {
+    padding-right:15px;
+}
+
+.right_first_profile_item2 {
+    align-self: center;
+    flex-grow: 1;
+}
+
+.right_first_profile_item3 {
+    align-self: center;
+    font-size: 13px;
+}
+
+.right_second_box {
+    padding-top: 5px;
+    padding-right:5px;
+    padding-left:5px;
+    margin-top: 20px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    height: 225px;
+}
+
+.right_second_box_content1 {
+    display:flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.right_second_box_content1 p {
+    padding: 0px 7px;
+    align-self: center;
+}
+
+.right_second_box_content2 {
+    margin-top:10px;
+    display: flex;
+}
+
+.profile3 {
+    padding-left: 7px;
+    padding-right: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.right_second_box_text1{
+    font-size: 15px;
+    font-weight: bold;
+}
+.right_second_box_text2{
+    color: #959595 ;
+    font-size: 13px;
+}
+
+.right_third_box {
+    font-size: 13px;;
+    margin-top: 10px;
+    color: #c7c7c7
+}

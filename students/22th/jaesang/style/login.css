@@ -1,0 +1,81 @@
+.title {
+  font-family: 'Lobster', cursive;
+  /*border : 1px solid red;*/
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+
+.layout {
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  width : 330px;
+  height : 340px;
+  margin: 0px auto;
+  margin-top: 70px;
+
+}
+
+.inputs {
+  /*border: 1px solid red;*/
+  margin-top: 30px;
+}
+
+.first_box {
+  margin: 0px auto;
+  width: 270px;
+}
+.first_input {
+ width: 100%;
+ padding: 9px 10px;
+ border :1px solid #dbdbdb;
+ border-radius: 3px ;
+ color: #9b9b9b;
+}
+
+.second_box {
+  margin-top: 100px;
+  margin: 0px auto;
+  width: 270px;
+}
+.second_input {
+  margin-top: 10px;
+  width: 100% ;
+  padding: 9px 10px;
+  border :1px solid #dbdbdb;
+  border-radius: 3px;
+  color: #9b9b9b;
+}
+
+.button_box {
+  /*border: 1px solid red;*/
+  margin: 0px auto;
+  width: 270px;
+
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 7px 10px 4px 10px;
+  border-radius: 5px;
+  background-color: #c5e1fc;
+  border: 0px;
+  color: white;
+}
+
+p {
+  /*border: 1px solid red;*/
+  text-align: center;
+  margin-top: 70px;
+  font-size: 15px;
+  color: #4b6c91;
+  font-weight: bold;
+
+}
+
+input:focus-visible {
+    border-radius: 3px;
+    outline: #dbdbdb auto 1px;
+}
