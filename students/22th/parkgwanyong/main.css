@@ -1,0 +1,349 @@
+#navbar {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 12px;
+    align-items: center;
+    border-bottom: 1px solid rgb(229, 230, 231);
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.logo {
+    display: flex;
+    margin: 0 80px;
+}
+
+.instaLogo {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.separator {
+    height: 38px;
+    border-right: 2px solid black;
+    margin-right: 20px;
+}
+
+.title {
+    font-family: "Lobster", cursive;
+}
+
+.searchbarContainer {
+    position: relative;
+}
+.searchbar {
+    width: 220px;
+    height: 12px;
+    padding: 13px;
+    border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+.searchbar:focus {
+    outline: none;
+}
+
+.searchbarContainer i {
+    position: absolute;
+    top: 6px;
+    left: 70px;
+    font-size: 15px;
+    color: rgb(229, 230, 231);
+}
+
+.searchfont {
+    position: absolute;
+    top: 6px;
+    left: 100px;
+    color: rgb(229, 230, 231);
+}
+
+.icons {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons img {
+    width: 22px;
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+#storyContainer {
+    margin-bottom: 24px;
+    margin-right: 22px;
+    padding: 16px 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    border: 1px solid rgb(229, 230, 231);
+}
+
+.storyBackground {
+    width: 66px;
+    height: 66px;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #be28eb 90%
+    );
+
+    border-radius: 50%;
+}
+
+.story {
+    height: fit-content;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.storyImg {
+    width: 56px;
+    height: 56px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.storyId {
+    margin-top: 6px;
+}
+
+.storyImg {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.feedInfo {
+    display: flex;
+    margin: 0 18px;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.writerImg {
+    width: 37px;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+.imgBackground {
+    width: 42px;
+    height: 42px;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #be28eb 90%
+    );
+
+    border-radius: 50%;
+}
+
+.feed {
+    width: 614px;
+    height: 1068px;
+    margin-right: 22px;
+    position: relative;
+    border: 1px solid rgb(229, 230, 231);
+}
+
+.feedImg {
+    width: 612px;
+    height: 767px;
+}
+
+.replyContainer {
+    padding: 0 16px;
+}
+
+.feedIconBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedIconBox i {
+    font-size: 24px;
+    padding: 8px 0px 8px 8px;
+    cursor: pointer;
+}
+
+.userContents {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.writerId {
+    font-weight: bold;
+}
+
+.replyColumn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userInfo {
+    display: flex;
+}
+
+.userId {
+    font-weight: bold;
+}
+
+.replyInputBox {
+    width: 100%;
+    padding: 0 16px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    border-top: 1px solid rgb(229, 230, 231);
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+}
+.inputContainer i {
+    padding: 8px 16px 8px 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.replyInput {
+    width: 500px;
+    height: 36px;
+    border: transparent;
+}
+
+.replyInput:focus {
+    outline: none;
+}
+
+.replyBtn {
+    width: 24px;
+    border: none;
+    background-color: transparent;
+    color: rgb(89, 168, 248);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sideMenu {
+    width: 293px;
+    height: 1010px;
+    position: sticky;
+}
+
+.profileBox {
+    width: 293px;
+    height: 56px;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myInfo {
+    display: flex;
+    align-items: center;
+}
+
+.myImg {
+    width: 56px;
+    margin-right: 18px;
+    border-radius: 50%;
+}
+
+.myId {
+    margin-left: 14px;
+    font-weight: bold;
+}
+.myName {
+    color: #8e8e8e;
+}
+
+.accountChangeBtn {
+    border: none;
+    color: #6aadf7;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.recommendHead {
+    width: 293px;
+    height: 11px;
+    margin-bottom: 14px;
+    padding: 4px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewAll {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.recommendList {
+    padding: 8px 0;
+}
+
+.recommendUser {
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userImg {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.userId {
+    font-size: 14px;
+}
+
+.relation {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.followBtn {
+    border: none;
+    color: #6aadf7;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}

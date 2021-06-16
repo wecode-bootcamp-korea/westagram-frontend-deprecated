@@ -1,0 +1,161 @@
+.container {
+    width: 935px;
+    height: 807px;
+    margin: auto;
+    margin-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rightForm {
+    width: 350px;
+    height: 615px;
+    margin-top: 12px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.title {
+    margin-top: 22px;
+    margin-bottom: 32px;
+    font-size: 34px;
+    font-family: "Lobster", cursive;
+}
+
+#leftForm {
+    width: 454px;
+    height: 618px;
+}
+
+.loginBox {
+    width: 350px;
+    height: 380px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border: 0.8px solid rgba(var(--b6a, 219, 219, 219), 1);
+    text-align: center;
+}
+
+.loginForm {
+    width: 258px;
+    height: 36px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm input {
+    margin-bottom: 7px;
+    padding: 9px 0px 7px 8px;
+    border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    text-align: left;
+}
+
+.loginBtn {
+    height: 30px;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    line-height: 0.3;
+    border: none;
+    background-color: rgb(192, 223, 253);
+    color: white;
+    cursor: pointer;
+}
+
+.option {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.line {
+    height: 1px;
+    position: absolute;
+    top: 5px;
+    border: 0.01px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+
+.option-text {
+    width: 70px;
+    height: 15px;
+    margin: 0 18px;
+    position: absolute;
+    top: 1px;
+    left: 76px;
+    background-color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.facebookLogin {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #385185;
+}
+
+.lostPw {
+    margin-top: 12px;
+    font-size: 12px;
+    color: rgb(1, 55, 106);
+}
+
+#signUp {
+    height: 63px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    border: 0.8px solid rgba(var(--b6a, 219, 219, 219), 1);
+    font-size: 14px;
+}
+
+#signUp a {
+    text-decoration: none;
+}
+.downloadText {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.downloadBtn {
+    margin-top: 10px;
+}
+
+#downloadBtn img {
+    width: 136px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.info {
+    color: rgb(142, 142, 142);
+    font-size: 14px;
+    text-align: center;
+}
+
+.info-text {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    #leftImg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 278px) {
+    #downloadBtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
