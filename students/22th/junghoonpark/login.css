@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+}
+
+.mainLogo {
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  border: 1px solid gray;
+  background-color: rgb(245, 254, 245);
+  height: 469px;
+  display: flex
+  felx-direction: column;
+  justify-content: space-between;
+  /* justify-content: center;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+
+.loginContents {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 330px;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 15px;
+  height: 330px;
+  background-color: khaki;
+}
+
+/* #typingId {
+  position: absoulte;
+  border: none;
+  padding: 10px 5px
+  background-color: yellow;
+} */
+
+.typingId2 {
+  position: absoulte;
+  border: none;
+  padding: 10px 5px
+  background-color: yellow;
+}
+/* input은 스트링 타입이다-사용하기 위해서는 앞뒤로 <div>를 감싸던가 다른 방법? */
+
+#password {
+
+}
+
+.login-btn {
+  padding: 10px 5px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #c5e1fb;
+  width: 250px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+footer {
+  color: rgb(16, 16, 191);
+}
+
+/*
+.login-container {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.login-container input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.login-btn {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #c4e0fc;
+  color: white;
+  border: 1px solid c4e0fc;
+  border-radius: 2px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  opacity: 0.85;
+} */
