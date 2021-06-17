@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  background-color: thistle;
+  display: flex;
+  border: 1px solid black;
+  width: 975px;
+  justify-content: space-around;
+  position: fixed;
+  height: 54px;
+  padding-top: 10px;
+  top: 0;
+}
+
+#searchBar {
+  width: 250px;
+  height: 34px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #dbe3eb;
+  background-color: #fafafa;
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+.weLogo {
+  display: flex;
+  align-items: center;
+}
+
+.westaWord {
+  border-left: 2px solid black;
+  margin-left: 6px;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.weLogo img {
+  width: 29px;
+}
+
+.iconSet {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-around;
+  width: 100px;
+}
+.iconSet img {
+  width: 29px;
+  height: 29px;
+}
+
+main {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  width: 975px;
+  height: 100%;
+  margin-top: 78px;
+}
+
+.feeds {
+  background-color: greenyellow;
+  border: 1px solid black;
+  height: 1002px;
+}
+
+article {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 614px;
+}
+
+.profileSet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bauhausLogo {
+  width: 42px;
+  height: 42px;
+  border-radius: 70%;
+  margin-right: 10px;
+}
+
+/* .bauhausLogo {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  width: 22px;
+} */
+
+.bauhausLogo img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 70%;
+}
+
+.westaId {
+  font-weight: bolder;
+}
+
+.postingImage img {
+  width: 610px;
+  height: 610px;
+  object-fit: cover;
+}
+
+.postingBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart {
+  width: 24px;
+  object-fit: cover;
+}
+
+.commentBtn {
+  width: 22px;
+  object-fit: cover;
+}
+
+.uploadBtn {
+  width: 22px;
+  object-fit: cover;
+}
+
+.bookMarkBtn {
+  width: 22px;
+  object-fit: cover;
+}
+
+.main-right {
+  border: 1px solid black;
+  width: 293px;
+}
+
+/* 프로필 이미지
+42 42 이미지 겉 박스 크기
+32 32 이미지 크기 */

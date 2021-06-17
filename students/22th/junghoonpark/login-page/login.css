@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+}
+
+.mainLogo {
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+  margin-top: 50px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  border: 3px solid #e7e7e7;
+  border-radius: 5px;
+  background-color: #ffffff;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginContents {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 330px;
+  margin: 15px;
+  padding: 5px;
+}
+
+#typingId {
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #dbe3eb;
+  background-color: #fafafa;
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+#password {
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 2px solid #dbe3eb;
+  background-color: #fafafa;
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+.login-btn {
+  padding: 10px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #c5e1fb;
+  width: 250px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+footer {
+  margin-top: 80px;
+  color: #3a638a;
+  font-size: 14px;
+}
