@@ -1,4 +1,4 @@
-const commentButton = document.getElementsByClassName('fourth_comment_right')[0]
+const commentButton = document.getElementsByClassName('push_comment_button')[0]
 
 commentButton.addEventListener('click', function() {
 

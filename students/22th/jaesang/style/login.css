@@ -1,85 +1,78 @@
-body {
-  background-color: #fafafa;
-}
+
 
 .title {
-  font-family: 'Lobster', cursive;
-  /*border : 1px solid red;*/
   text-align: center;
-  font-size: 40px;
   margin-top: 20px;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
 }
 
 
-.layout {
-  border: 1px solid #e7e7e7;
-  border-radius: 3px;
+.log_in_box {
   width : 330px;
   height : 340px;
   margin: 0px auto;
   margin-top: 25%;
-
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
 }
 
-.inputs {
-  /*border: 1px solid red;*/
+.log_in {
   margin-top: 30px;
 }
 
-.first_box {
-  margin: 0px auto;
+.id {
   width: 270px;
+  margin: 0px auto;
 }
-.first_input {
+
+.id_input {
  width: 100%;
  padding: 9px 10px;
  border :1px solid #dbdbdb;
- border-radius: 3px ;
  color: #9b9b9b;
+ border-radius: 3px ;
 }
 
-.second_box {
+.password {
+  width: 270px;
   margin-top: 100px;
   margin: 0px auto;
-  width: 270px;
 }
-.second_input {
-  margin-top: 10px;
+
+.password_input {
   width: 100% ;
   padding: 9px 10px;
+  margin-top: 10px;
   border :1px solid #dbdbdb;
-  border-radius: 3px;
   color: #9b9b9b;
+  border-radius: 3px;
 }
 
 .button_box {
-  /*border: 1px solid red;*/
-  margin: 0px auto;
   width: 270px;
-
+  margin: 0px auto;
 }
 
 button {
-  margin-top: 10px;
   width: 100%;
   padding: 7px 10px 4px 10px;
-  border-radius: 5px;
+  margin-top: 10px;
   background-color: #c5e1fc;
-  border: 0px;
   color: white;
+  border: 0px;
+  border-radius: 5px;
 }
 
 p {
-  /*border: 1px solid red;*/
   text-align: center;
   margin-top: 70px;
-  font-size: 15px;
   color: #4b6c91;
+  font-size: 15px;
   font-weight: bold;
-
 }
 
 input:focus-visible {
-    border-radius: 3px;
     outline: #dbdbdb auto 1px;
+    border-radius: 3px;
 }
