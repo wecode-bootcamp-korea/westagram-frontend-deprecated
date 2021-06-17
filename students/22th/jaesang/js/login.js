@@ -8,7 +8,7 @@ idName.addEventListener('keyup', function(){
     const thisIsButton = document.getElementsByTagName('button')[0]
 
     if (idNameValue && passWordValue) {
-        thisIsButton.style.backgroundColor = "blue";
+        thisIsButton.style.backgroundColor = "#0095f6";
         return;
     }
 

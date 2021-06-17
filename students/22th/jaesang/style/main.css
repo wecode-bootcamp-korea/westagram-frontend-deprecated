@@ -1,11 +1,16 @@
 
 body {
-    margin: 1px;
+    margin: 0px;
     background-color: #fafafa;
+    overflow: hidden;
+
 }
 .nav {
+    width: 100%;
+    position: fixed;
     background-color: #ffffff;
     border-bottom: 2px solid #dbdbdb;
+    top: 0px;
 }
 
 .content{
@@ -17,45 +22,57 @@ body {
     margin: 0px auto;
 }
 
+
 .item1 img {
     width: 103px;
     height: 29px;
-    margin-top: 12px;
+    margin-top: 17px;
 }
 
 .item2 {
-    width:207px;
+    width:215px;
     height:54px;
 }
 
 .item2 input::placeholder {
     text-align: center;
+    color: #a8aaad ;
 }
 
 .item2 input {
     margin-top: 12px;
     width: 100%;
     height: 29px;
+    border: 1px solid #dbdbdb;
 }
+
 
 
 .item3 img {
     padding: 0 12;
     width: 22px;
-    margin-top:12px;
+    margin-top:15px;
 }
 
 .main {
     display: flex;
-    max-width: 935px;;
-    margin: 0px auto;
-    padding: 0px 20px;
+    padding-top: 54px;
+    justify-content: center;
+    overflow: auto;
+    gap: 20px;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+
 }
+
+/* 블로그에 border-box내용, position:sticky 내용정리하기 
+ main을 body대신해서 사용함 (height, width 100%) body scroll을 숨기고 main에 스크롤 사용
+ 그 후 flex item을 중앙에 모은 후 gap으로 사잇값을 줌
+ */
 
 .feeds {
     margin-top: 50px;
-    flex-grow: 1;
-
 }
 
 .feeds_profile {
@@ -205,8 +222,10 @@ article {
 
 
 .main-right {
-    margin-top: 50px;
+    position: sticky;
     width: 293px;
+    top: 50px;
+    margin-top:50px;
 }
 
 .right_first_box {

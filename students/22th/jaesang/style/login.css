@@ -1,3 +1,7 @@
+body {
+  background-color: #fafafa;
+}
+
 .title {
   font-family: 'Lobster', cursive;
   /*border : 1px solid red;*/
@@ -13,7 +17,7 @@
   width : 330px;
   height : 340px;
   margin: 0px auto;
-  margin-top: 70px;
+  margin-top: 25%;
 
 }
 
