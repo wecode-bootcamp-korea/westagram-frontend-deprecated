@@ -8,6 +8,13 @@
 // 5. 닉네임은 따로 지정하자.
 
 const postBtn = document.querySelector(".post-btn");
+const form = document.querySelector(".comment__form");
+
+function checkEnter(e) {
+  if (e.code === "Enter") {
+    getValue();
+  }
+}
 
 function createComment(value) {
   const ul = document.querySelector(".comment__ul");
@@ -33,11 +40,12 @@ function createComment(value) {
   div.appendChild(button);
 }
 
-function getValue(e) {
+function getValue() {
   const commentArea = document.querySelector(".comment-area");
-  const textareaValue = commentArea.value; //넘길 값
+  const textValue = commentArea.value; //넘길 값
 
-  createComment(textareaValue);
+  createComment(textValue);
 }
 
 postBtn.addEventListener("click", getValue);
+form.addEventListener("keypress", checkEnter);

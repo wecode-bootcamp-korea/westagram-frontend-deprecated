@@ -69,10 +69,6 @@
   font-size: var(--font-size--normal);
 }
 
-input {
-  border: 1px solid black;
-}
-
 h1,
 h2,
 h3,
