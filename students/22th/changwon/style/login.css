@@ -78,7 +78,6 @@ a {
   padding-left: 6px;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: rgb(0, 140, 224);
+.loginButtonB {
+  background-color: rgb(41, 128, 186);
 }
