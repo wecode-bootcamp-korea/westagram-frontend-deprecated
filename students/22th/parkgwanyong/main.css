@@ -153,6 +153,7 @@
 .imgBackground {
     width: 42px;
     height: 42px;
+    margin-right: 8px;
     background: radial-gradient(
         circle at 30% 107%,
         #fdf497 0%,
@@ -179,7 +180,9 @@
 }
 
 .replyContainer {
+    max-height: 200px;
     padding: 0 16px;
+    overflow: auto;
 }
 
 .feedIconBox {
@@ -204,6 +207,7 @@
 }
 
 .replyColumn {
+    margin-bottom: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,6 +218,7 @@
 }
 
 .userId {
+    margin-right: 14px;
     font-weight: bold;
 }
 
@@ -246,6 +251,12 @@
 
 .replyInput:focus {
     outline: none;
+}
+
+.replyContent {
+    max-width: 460px;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
 }
 
 .replyBtn {
@@ -285,7 +296,6 @@
 }
 
 .myId {
-    margin-left: 14px;
     font-weight: bold;
 }
 .myName {
