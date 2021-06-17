@@ -151,6 +151,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
     #leftImg {
         display: none;
     }
