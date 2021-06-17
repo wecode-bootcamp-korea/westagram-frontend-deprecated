@@ -12,6 +12,7 @@ replyBtn.addEventListener("click", () => {
 });
 
 insertInput.addEventListener("keyup", (e) => {
+    console.log(insertInput.value);
     if (insertInput.value == "") {
         alert("댓글을 입력해주세요");
         return;
@@ -22,15 +23,6 @@ insertInput.addEventListener("keyup", (e) => {
         }
     }
 });
-
-const removeReply = () => {
-    for (let ele of deleteBtn) {
-        ele.addEventListener("click", (event) => {
-            event.target.parentElement.parentElement.remove();
-        });
-    }
-};
-removeReply();
 
 const insertReplyTag = () => {
     const replyBox = document.querySelector(".replyBox");
@@ -66,8 +58,6 @@ const insertReplyTag = () => {
     spanTag.innerHTML = "댓글다는사람";
 
     trash.addEventListener("click", (e) => {
-        e.target.parentElement.parentElement.remove();
+        divTag.remove();
     });
 };
-
-removeReply();

@@ -1,12 +1,12 @@
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 935px;
     height: 807px;
     margin: auto;
     margin-top: 32px;
     padding-bottom: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #rightForm {
@@ -39,11 +39,11 @@
 }
 
 .loginForm {
+    display: flex;
+    flex-direction: column;
     width: 258px;
     height: 36px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .loginForm input {
@@ -65,6 +65,10 @@
     cursor: pointer;
 }
 
+.changeColor {
+    background-color: rgb(83, 150, 246);
+}
+
 .option {
     position: relative;
     margin-top: 10px;
@@ -72,21 +76,21 @@
 }
 
 .line {
-    height: 1px;
     position: absolute;
     top: 5px;
+    height: 1px;
     border: 0.01px solid rgba(var(--b6a, 219, 219, 219), 1);
 }
 
 .option-text {
-    width: 70px;
-    height: 15px;
-    margin: 0 18px;
     position: absolute;
     top: 1px;
     left: 76px;
-    background-color: white;
     text-align: center;
+    width: 70px;
+    height: 15px;
+    margin: 0 18px;
+    background-color: white;
     font-size: 13px;
 }
 
@@ -118,10 +122,10 @@
     text-decoration: none;
 }
 .downloadText {
-    font-size: 14px;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
-    text-align: center;
+    font-size: 14px;
 }
 
 .downloadBtn {
@@ -137,9 +141,9 @@
 }
 
 .info {
+    text-align: center;
     color: rgb(142, 142, 142);
     font-size: 14px;
-    text-align: center;
 }
 
 .info-text {
