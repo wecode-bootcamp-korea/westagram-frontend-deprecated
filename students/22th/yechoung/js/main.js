@@ -1,11 +1,13 @@
 const commentBox = document.querySelector('.detail-comments');
 const commentInput = document.querySelector('.feed-comments-input input');
 const postBtn = document.querySelector('.feed-comments-input button');
-const commentIconBoxes = document.querySelectorAll('.comment-icons');
+
 const myProfileBtn = document.querySelector('.my-profile-btn');
 const myProfileMenu = document.querySelector('.my-profile-menu');
+
 const feedLikeBtn = document.querySelector('.feed-btns-left button:first-of-type');
 const feedBookmarkBtn = document.querySelector('.feed-btns-right button');
+
 const searchInput = document.querySelector('.search-container input');
 const searchUl = document.querySelector('.search-result');
 
@@ -50,20 +52,21 @@ const userInfoLi = [
 ];
 
 const handleSearchInput = (value) => {
-  if(searchUl.children.length !== 0) {
-    const needDeleteArr = [...searchUl.children];
-    handleDelete(needDeleteArr);
+  if(value === '') {
+    searchUl.style.display = 'none';
+    return
   };
+
+  const needDeleteLis = [...searchUl.childNodes];
+
+  needDeleteLis.forEach((li) => {
+    li.remove();
+  });
 
   const searchResults = userInfoLi.filter(li => {
     return li.userId.includes(value);    
   });
-  
-  if(value === '') {
-    searchUl.style.display = 'none';
-    handleDelete(searchResults);
-  };
-  
+
   printSearchResult(searchResults);
 };
 
@@ -83,59 +86,50 @@ const printSearchResult = (items) => {
 const postComment = (cmt) => {
   if(writtenComment === '') return;
 
-  const article = document.createElement('article');
-  article.classList.add('comment');
-  const iconBox = document.createElement('div');
-  iconBox.classList.add('comment-icons');
-  iconBox.addEventListener('click', e => {
-    handleCommentClick(e)
-  });
-
-  article.innerHTML = ` 
+  const li = document.createElement('li');
+  li.classList.add('comment');
+  li.innerHTML = ` 
     <em class="user-name">im_user</em>
     <span>${cmt}</span>
   `
-  iconBox.innerHTML = `
-    <i class="far fa-heart cmt-like"></i>
-    <i class="fas fa-times cmt-del"></i>
-  `
 
-  commentBox.appendChild(article);
-  article.appendChild(iconBox);
+  const iconBox = document.createElement('div');
+  iconBox.classList.add('comment-icons');
+
+  const iconLike = document.createElement('i');
+  iconLike.classList.add('far', 'fa-heart', 'cmt-like');
+ 
+  const iconDel = document.createElement('i');
+  iconDel.classList.add('fas', 'fa-times', 'cmt-del');
+
+  commentBox.appendChild(li);
+  li.appendChild(iconBox);
+  iconBox.appendChild(iconLike);
+  iconBox.appendChild(iconDel);
+
+  iconLike.addEventListener('click', e => {
+    handleLikeBtn(e.target)
+  });
+  iconDel.addEventListener('click', () => {
+    handleDelete(li)
+  });
 
   commentInput.value = '';
   writtenComment = '';
-}
-
-const handleCommentClick = (e) => {
-  if(e.target.tagName !== 'I') return;
-
-  let btnType = '';
-  let targetComment = e.target.parentElement.parentElement;
-
-  e.target.className.includes('cmt-like') ? btnType = 'cmtLike' : btnType = 'cmtDel';
-  
-  btnType === 'cmtLike' 
-  ? handleLikeBtn(e.target) 
-  : handleDelete(targetComment);
 };
 
-const handleLikeBtn = (likeBtn) => {
-  if(likeBtn.className.includes('far')) {
-      likeBtn.classList.remove('far');
-      likeBtn.classList.add('fas');
+const handleLikeBtn = (btn) => {
+  if(btn.className.includes('far')) {
+      btn.classList.remove('far');
+      btn.classList.add('fas');
   } else {
-    likeBtn.classList.remove('fas');
-    likeBtn.classList.add('far')
+    btn.classList.remove('fas');
+    btn.classList.add('far')
   }
 };
 
 const handleDelete = (item) => {
-  if(item.tagName === 'ARTICLE') {
-    item.remove();
-  } else {
-    item.forEach((i) => {i.remove()})
-  }
+  item.remove();
 };
 
 const handleProfileBtnClick = () => {
@@ -154,12 +148,6 @@ const handleProfileBtnClick = () => {
   
   postBtn.addEventListener('click', () => {
     postComment(writtenComment)
-  });
-
-  commentIconBoxes.forEach( box => {
-    box.addEventListener('click', e => {
-      handleCommentClick(e)
-    });
   });
 
   feedLikeBtn.addEventListener('click', e => {
