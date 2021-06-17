@@ -34,90 +34,101 @@
           </nav>
         </div>
       </header>
-      <main class="we-main">
-        <section class="feed-box">
-          <ul>
-            <li class="feed">
-              <header class="feed__header">
-                <div class="profile-box">
-                  <div class="profile__div">
-                    <img src="./img/photo/profile1.jpeg" alt="Profile Image" />
+      <div class="we-main-wrapper">
+        <main class="we-main">
+          <section class="feed-box">
+            <ul>
+              <li class="feed">
+                <header class="feed__header">
+                  <div class="profile-box">
+                    <div class="profile__div">
+                      <img
+                        src="./img/photo/profile1.jpeg"
+                        alt="Profile Image"
+                      />
+                    </div>
+                    <span class="name">silvia.oh.135</span>
                   </div>
-                  <span class="name">silvia.oh.135</span>
-                </div>
-                <span class="menu-icon">
-                  <img src="./img/menu.png" alt="Menu Icon" class="menu" />
-                </span>
-              </header>
-              <section class="feed__photo">
-                <img
-                  src="./img/strawberry-dessert-2191973_640.jpg"
-                  alt="Feed Photo"
-                />
-              </section>
-              <section class="feed__like">
-                <section class="like__section">
-                  <section class="icons">
+                  <span class="menu-icon">
+                    <img src="./img/menu.png" alt="Menu Icon" class="menu" />
+                  </span>
+                </header>
+                <section class="feed__photo">
+                  <img
+                    src="./img/strawberry-dessert-2191973_640.jpg"
+                    alt="Feed Photo"
+                  />
+                </section>
+                <section class="feed__like">
+                  <section class="like__section">
+                    <section class="icons">
+                      <button class="icon-btn">
+                        <img src="img/heart.png" alt="heart Image" />
+                      </button>
+                      <button class="icon-btn">
+                        <img src="img/speech-bubble.png" alt="comment Image" />
+                      </button>
+                      <button class="icon-btn">
+                        <img src="img/send.png" alt="share Image" />
+                      </button>
+                    </section>
                     <button class="icon-btn">
-                      <img src="img/heart.png" alt="heart Image" />
-                    </button>
-                    <button class="icon-btn">
-                      <img src="img/speech-bubble.png" alt="comment Image" />
-                    </button>
-                    <button class="icon-btn">
-                      <img src="img/send.png" alt="share Image" />
+                      <img src="img/bookmark.png" alt="Bookmark Image" />
                     </button>
                   </section>
-                  <button class="icon-btn">
-                    <img src="img/bookmark.png" alt="Bookmark Image" />
-                  </button>
                 </section>
-              </section>
-              <section class="like-info">
-                <div class="img-box">
-                  <img src="img/photo/profile2.jpeg" alt="profile" />
-                </div>
-                <span>aineworld님 외 10명이 좋아합니다</span>
-              </section>
-              <section class="feed__comment">
-                <section class="comment">
-                  <span>canon_mj</span>
-                  <p>
-                    위워크에서 진행할 베이킹 클래스에요~ 정말 먹음직스러워
-                    보이지 않나요?
-                  </p>
-                  <button class="more">더 보기</button>
+                <section class="like-info">
+                  <div class="img-box">
+                    <img src="img/photo/profile2.jpeg" alt="profile" />
+                  </div>
+                  <span>aineworld님 외 10명이 좋아합니다</span>
                 </section>
-                <section class="comment">
-                  <span>new</span>
-                  <p>거봐 좋았잖아~~</p>
-                  <button class="comment-heart">
-                    <img src="./img/heart.png" alt="heart Icon" />
-                  </button>
-                  <button class="more">더 보기</button>
+                <section class="feed__comment">
+                  <ul>
+                    <li class="comment">
+                      <div class="comment__div">
+                        <span class="nickname">canon_mj</span>
+                        <p>
+                          위워크에서 진행할 베이킹 클래스에요~ 정말 먹음직스러워
+                          보이지 않나요?
+                        </p>
+                        <button class="more">더 보기</button>
+                      </div>
+                    </li>
+                    <li class="comment">
+                      <div class="comment__div">
+                        <span class="nickname">new</span>
+                        <p>거봐 좋았잖아~~</p>
+                        <button class="more">더 보기</button>
+                      </div>
+                      <button class="comment-heart">
+                        <img src="./img/heart.png" alt="heart Icon" />
+                      </button>
+                    </li>
+                  </ul>
+                  <p class="time">42분 전</p>
                 </section>
-                <div class="time">42분 전</div>
-              </section>
-              <section class="comment-input">
-                <form class="comment__form">
-                  <textarea
-                    class="comment-area"
-                    placeholder="댓글 달기..."
-                  ></textarea>
-                  <button class="post-btn">게시</button>
-                </form>
-              </section>
-            </li>
-          </ul>
-        </section>
+                <section class="comment-input">
+                  <form class="comment__form">
+                    <textarea
+                      class="comment-area"
+                      placeholder="댓글 달기..."
+                    ></textarea>
+                    <button class="post-btn">게시</button>
+                  </form>
+                </section>
+              </li>
+            </ul>
+          </section>
+        </main>
         <aside class="aside-box">
           <section class="top-box">
             <div class="img-box">
               <img src="./img/photo/profile3.jpeg" alt="profile" />
             </div>
             <div class="profile-info">
-              <span>wecode_bootcamp</span>
-              <span>WeCode | 위코드</span>
+              <span class="nickname">wecode_bootcamp</span>
+              <span class="introduce">WeCode | 위코드</span>
             </div>
           </section>
           <article class="aside-in-list">
@@ -127,14 +138,18 @@
             </header>
             <ul>
               <li class="aside-list">
-                <div class="profiles">
-                  <div class="profiles__div">
+                <div class="profile-gradient">
+                  <div class="profiles">
                     <img
                       src="./img/photo/profile1.jpeg"
                       alt=""
                       class="img-in"
                     />
                   </div>
+                </div>
+                <div class="profile-info">
+                  <span class="nickname">wecode_bootcamp</span>
+                  <span class="introduce">WeCode | 위코드</span>
                 </div>
               </li>
             </ul>
@@ -146,8 +161,8 @@
             </header>
             <ul>
               <li class="aside-list">
-                <div class="profiles">
-                  <div class="profiles__div">
+                <div class="profile-gradient">
+                  <div class="profiles">
                     <img
                       src="./img/photo/profile1.jpeg"
                       alt=""
@@ -155,14 +170,53 @@
                     />
                   </div>
                 </div>
+                <div class="profile-info">
+                  <span class="nickname">wecode_bootcamp</span>
+                  <span class="introduce">WeCode | 위코드</span>
+                </div>
               </li>
             </ul>
           </article>
-          <article class="follow-box"></article>
-          <nav class="etc-link"></nav>
-          <p class="copyright"></p>
+          <nav class="etc-link">
+            <ul class="links">
+              <li class="links-item">
+                <a href="">Instagram 정보</a>
+              </li>
+              <li class="links-item">
+                <a href="">지원</a>
+              </li>
+              <li class="links-item">
+                <a href="">홍보 센터</a>
+              </li>
+              <li class="links-item">
+                <a href="">API</a>
+              </li>
+              <li class="links-item">
+                <a href="">채용 정보</a>
+              </li>
+              <li class="links-item">
+                <a href="">개인정보처리방침</a>
+              </li>
+              <li class="links-item">
+                <a href="">약관</a>
+              </li>
+              <li class="links-item">
+                <a href="">디렉터리</a>
+              </li>
+              <li class="links-item">
+                <a href="">프로필</a>
+              </li>
+              <li class="links-item">
+                <a href="">해시 태그</a>
+              </li>
+              <li class="links-item">
+                <a href="">언어</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="copyright">&copy; 2021 Westagram</p>
         </aside>
-      </main>
+      </div>
     </div>
   </body>
 </html>

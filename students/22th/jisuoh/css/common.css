@@ -31,6 +31,7 @@
   --img-profile-aside--width: 56px;
 
   --search-input-height: 28px;
+  --textarea-height: 50px;
 
   /* margin & padding */
   --margin-value: 25px;
@@ -96,6 +97,7 @@ a:visited {
 
 button {
   background-color: transparent;
+  cursor: pointer;
 }
 
 a:focus,
