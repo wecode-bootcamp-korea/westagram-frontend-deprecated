@@ -206,13 +206,13 @@ main {
 
 
 /* FOOTER */
-/* footer-top */
 .footer-top {
   margin-bottom: 20px;
 }
 .footer-top ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .footer-top ul li {
   padding: 0 2px;
@@ -221,7 +221,6 @@ main {
   margin-left: 12px;
 }
 
-/* footer-bottom */
 .footer-bottom {
   display: flex;
   justify-content: center;
@@ -234,7 +233,6 @@ main {
   color: #8E8E8E;
   margin-right: 10px;
 }
-
 
 
 /* login-success (임시) */
@@ -251,4 +249,24 @@ main {
   font-weight: 600;
   display: flex;
   justify-content: center;
+}
+
+
+/* media query */
+
+/* 874px 이하 */
+@media screen and (max-width: 874px){
+  .left-container {
+    display: none;
+  }
+}
+
+/* 549px 이하 */
+@media screen and (max-width: 549px){
+  .footer-top {
+    padding: 0 20px;
+  }
+  .footer-top ul li {
+    padding: 0 2px 10px;
+  }
 }

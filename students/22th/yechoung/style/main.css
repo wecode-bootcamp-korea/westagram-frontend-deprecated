@@ -18,22 +18,22 @@ em.user-name {
   border-radius: 50%;
 }
 
+
 /* HEADER */
-.top-header-container {
+.top-header {
   width: 100%;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #DBDBDB;
   margin-bottom: 30px;
 }
-.top-header-container .top-header {
+.top-header .top-header-contents {
   width: 934px;
   padding: 12px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 h1 {
   font-size: 26px;
   cursor: pointer;
@@ -95,22 +95,7 @@ nav .my-profile-btn .my-profile-menu ul {
   justify-content: space-between;
   padding: 10px 20px;
   border-bottom: 1px solid #DBDBDB;
-  /* position: relative; */
 }
-/* 
-box-shadow 부분 어떻게 할지 생각하기
-  nav .my-profile-btn .my-profile-menu ul::before {
-  content: '';
-  width: 1px;
-  height: 1px;
-  border: 15px solid white;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  position: absolute;
-  top: -30px;
-  right: 20px;
-} */
 nav .my-profile-btn .my-profile-menu ul li {
   display: flex;
   align-items: center;
@@ -138,44 +123,49 @@ main {
   justify-content: center;
 }
 
+
 /* contents container */
 .contents-container {
   margin-right: 28px;
   width: 612px;
 }
-
 /* contents-container > story-container */
-.contents-container .story-container {
+.story-container {
   border: 1px solid #DBDBDB;
   border-radius: 3px;
   padding: 16px 0 16px 10px;
   margin-bottom: 24px;
   position: relative;
 }
-.contents-container .story-container ul {
+.story-container ul {
   display: flex;
   overflow: hidden;
+  position: relative;
 }
-.contents-container .story-container ul li {
+.story-container ul li {
   width: 66px;
   margin: 0 7px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
 }
-.contents-container .story-container ul li .gradient-back {
+.story-container ul li .gradient-back {
   width: 64px;
   height: 64px;
   position: relative;
 }
-.contents-container .story-container ul li .gradient-back .user-img {
+.story-container ul li .gradient-back .user-img {
+  width: 59px;
+  height: 59px;
+  object-fit: cover;
+  background: white;
   border: 2px solid white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.contents-container .story-container ul li span {
+.story-container ul li span {
   font-size: 12px;
   margin-top: 5px;
 }
@@ -197,6 +187,10 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 0;
+}
+.feed-header .feed-user img {
+  width: 32px;
+  height: 32px;
 }
 .feed-header .feed-user em {
   margin-left: 14px;
@@ -222,12 +216,13 @@ main {
   border-bottom: 1px solid #DBDBDB;
 }
 
-/* contents-container > feed > feed-contents > .post-img-container*/
 .post-img-container {
   font-size: 0;
 }
+.post-img-container img {
+  width: 100%;
+}
 
-/* contents-container > feed > feed-contents > .post-desc-container*/
 .post-desc-container {
   padding: 8px 16px 40px;
 }
@@ -264,14 +259,12 @@ main {
   margin-top: -1px;
   line-height: 1.4;
 }
-
 .post-desc-container .feed-details .detail-time {
   font-size: 11px;
   position: absolute;
   bottom: -25px;
   left: 0;
 }
-
 .post-desc-container .feed-details .detail-comments .comment {
   display: flex;
   justify-content: space-between;
@@ -303,7 +296,7 @@ main {
 }
 
 
-/* aside */
+/* ASIDE */
 /* aside > .my-container */
 .my-container {
   display: flex;
@@ -313,6 +306,10 @@ main {
 .my-container .img-container {
   margin-right: 15px;
 } 
+.my-container .img-container img {
+  width: 56px;
+  height: 56px;
+}
 .my-container .my-info p {
   margin-top: 3px;
 }
@@ -341,6 +338,10 @@ main {
 }
 .recommend-container .recommend-bottom ul li .img-container {
   margin-right: 8px;
+}
+.recommend-container .recommend-bottom ul li .img-container img {
+  width: 32px;
+  height: 32px;
 }
 .recommend-container .recommend-bottom ul li .recommended-info {
   display: flex;
@@ -394,27 +395,29 @@ footer ul li:last-of-type::after {
 
 /* media query */
 
-/* 500px이상 999px이하*/
+/* 1129px이하*/
 @media screen and (max-width: 1129px) {
-  .right-container {
-    display: none;
-  }
-  .contents-container {
-    margin: 0;
-  }
-  .top-header-container .top-header {
+  .top-header .top-header-contents {
     width: 900px;
   }
 }
 
+/* 974px 이하 */
 @media screen and (max-width: 974px) {
-  .top-header-container .top-header {
+  .contents-container {
+    margin: 0;
+  }
+  .right-container {
+    display: none;
+  }
+  .top-header .top-header-contents {
     width: 90%;
   }
 }
 
+/* 699px 이하 */
 @media screen and (max-width: 699px) {
-  .top-header-container {
+  .top-header {
     margin-bottom: 10px;
   }
   .search-container {
@@ -422,15 +425,16 @@ footer ul li:last-of-type::after {
   }  
 }
 
+/* 634px 이하 */
 @media screen and (max-width: 634px) {
-  .top-header-container {
+  .top-header {
     margin-bottom: 2px;
+  }
+  .contents-container {
+    width: 100%;
   }
   .contents-container .story-container {
     width: 100vw;
-  }  
-  .contents-container {
-    width: 100%;
   }
   .feeds-container .feed {
     border: none;
@@ -439,7 +443,7 @@ footer ul li:last-of-type::after {
     border-bottom: none;
   }
   .post-img-container img {
-    width: 100vw;
+    width: 100%;
   }
   .post-desc-container {
     padding: 8px 20px 40px;

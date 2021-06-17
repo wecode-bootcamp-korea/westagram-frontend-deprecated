@@ -85,3 +85,6 @@ footer {
 .grey-letter {
 	color: #97989b;
 }
+img.user-img {
+	object-fit: cover;
+}
