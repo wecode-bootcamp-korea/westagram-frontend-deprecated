@@ -8,6 +8,8 @@
 
 .user-img {
   border-radius: 50%;
+  border: 1px solid #DBDBDB;
+  object-fit: cover;
 }
 em.user-name {
   font-weight: 600;
@@ -60,6 +62,40 @@ h1 {
   position: absolute;
   top: 10px;
   left: 82px;
+}
+.search-container input:focus::placeholder {
+  left: 38px;
+}
+.search-container input:focus + i {
+  left: 10px;
+}
+.search-container .search-result {
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  background: white;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 9999;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 13px;
+}
+.search-container .search-result li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.search-container .search-result li + li {
+  border-top: 1px solid #DBDBDB;
+}
+.search-container .search-result li img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+.search-container .search-result li em {
+  font-size: 12px;
 }
 nav ul {
   display: flex;
@@ -157,7 +193,6 @@ main {
 .story-container ul li .gradient-back .user-img {
   width: 59px;
   height: 59px;
-  object-fit: cover;
   background: white;
   border: 2px solid white;
   position: absolute;
@@ -189,8 +224,8 @@ main {
   font-size: 0;
 }
 .feed-header .feed-user img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
 }
 .feed-header .feed-user em {
   margin-left: 14px;
