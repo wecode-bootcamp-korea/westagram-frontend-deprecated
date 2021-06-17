@@ -116,6 +116,9 @@ nav .iconBox img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .container .mainImg {
@@ -138,6 +141,12 @@ nav .iconBox img {
   justify-content: space-between;
   align-items: center;
 }
+.container .mbIconLeft i,
+.container .mIconRight i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
 .container .mbLiked {
   width: 100%;
   display: flex;
@@ -163,8 +172,11 @@ nav .iconBox img {
 .container .commentSection i {
   cursor: pointer;
 }
-.container .likedBtn {
-  background-color: #d61438;
+.container .deleteBtn {
+  color: #262626;
+}
+.container .fas:first-child {
+  color: #d61438;
 }
 .container .personalAccount {
   color: #262626;

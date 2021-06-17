@@ -49,6 +49,9 @@ body {
   padding-left: 10px;
   border: 1px solid rgba(219, 219, 219, 1);
 }
+.container input:focus {
+  outline: none;
+}
 .container .inputId,
 .container .inputPassword {
   /* margin-bottom: 10px; */
