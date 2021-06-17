@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
   /* min */
@@ -38,6 +38,7 @@
   --padding-value: 16px;
 
   --padding-value--7: 7px;
+  --padding-value--20: 20px;
 
   /* color */
   --color-red: #ed4956;

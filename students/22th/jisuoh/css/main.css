@@ -121,7 +121,8 @@ html {
 .main-wrapper .we-main-wrapper {
   display: flex;
   justify-content: center;
-  padding: var(--margin-value) 0;
+  height: 100%;
+  padding-top: var(--margin-value);
   overflow: scroll;
 }
 
@@ -130,6 +131,10 @@ html {
 }
 
 /* feed-header */
+.main-wrapper .we-main .feed-box {
+  padding-bottom: var(--margin-value);
+}
+
 .main-wrapper .we-main .feed-box .feed {
   display: flex;
   flex-direction: column;
@@ -243,7 +248,7 @@ html {
   width: var(--img-profile-like--width);
   height: var(--img-profile-like--width);
   border-radius: 50%;
-  border: 0.5px solid var(--color-gray2);
+  border: 1px solid var(--color-gray2);
   overflow: hidden;
   margin-right: var(--padding-value--7);
 }
@@ -336,13 +341,14 @@ html {
   flex: 0 0 30%;
   display: flex;
   flex-direction: column;
-  margin-left: var(--padding-value);
+  margin-left: var(--padding-value--20);
   position: sticky;
   top: 0px;
 }
 
 .aside-box .top-box {
   display: flex;
+  margin-bottom: var(--padding-value--20);
 }
 
 .top-box .img-box {
@@ -364,7 +370,7 @@ html {
   margin-left: var(--padding-value);
 }
 
-.profile-info .nickname {
+.aside-box .top-box .profile-info .nickname {
   font-weight: bold;
 }
 
@@ -376,15 +382,15 @@ html {
 .aside-box .aside-in-list {
   display: flex;
   flex-direction: column;
-  margin-top: var(--padding-value);
+  margin: var(--padding-value--20) 0;
 }
 
 .aside-in-list .aside__header {
+  flex: 0 0 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 var(--padding-value--7) var(--padding-value)
-    var(--padding-value--7);
+  padding: 0 var(--padding-value--7) var(--padding-value);
 }
 
 .aside__header .title {
@@ -396,25 +402,44 @@ html {
   font-weight: bold;
 }
 
+.aside-in-list ul {
+  height: 18vh;
+  overflow: scroll;
+}
+
 .aside-in-list .aside-list {
   display: flex;
+  justify-content: space-between;
+  padding-top: var(--padding-value);
 }
-.profile-gradient {
-  border: 1px solid red;
-  border-radius: 50%;
-  padding: 2px;
+
+.aside-in-list .aside-list .profiles-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.aside-in-list .aside-list .profiles-wrapper .profile-info .nickname {
+  font-weight: bold;
 }
 
 .profiles {
   width: var(--img-profile--width);
   height: var(--img-profile--width);
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 .profiles img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+}
+
+.aside-in-list .aside__header .title {
+  font-weight: bold;
+}
+
+.aside-in-list .aside-list .follow-btn {
+  font-weight: bold;
+  color: var(--color-blue);
 }
 
 /* etc-link */
