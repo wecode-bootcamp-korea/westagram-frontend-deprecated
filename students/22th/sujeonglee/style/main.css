@@ -178,6 +178,8 @@ main .main-right {
 .mainRightProfile {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   margin-right: 10px;
   background-image: url(../images/wecode.jpg);
 }
@@ -193,9 +195,9 @@ main .main-right {
 }
 
 .main-right .userAccount h1 .accountDec{
-  display: inline-block;
-    font-size: 13px;
-    font-weight: normal;
+  display: block;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 .main-right .stroy,
@@ -248,6 +250,8 @@ dssdsddssdht .stroy .btnTextColor,
   display: inline-block;
   width: 35px;
   height: 35px;
+  min-width: 35px;
+  max-width: 35px;
   margin-right: 10px;
   border-radius: 30px;
   border : 2px solid hotpink;

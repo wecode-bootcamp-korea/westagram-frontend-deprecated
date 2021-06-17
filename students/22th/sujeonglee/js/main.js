@@ -13,7 +13,7 @@ submitButton.addEventListener('click', function() {
   commentBox.appendChild(addList); 
 });
 
-InputEnter.addEventListener('keyup', function(event) {
+InputEnter.addEventListener('keypress', function(event) {
 
   if (event.code === 'Enter') {
     const addList = document.createElement('li');
