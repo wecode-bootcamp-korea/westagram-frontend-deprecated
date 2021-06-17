@@ -1,28 +1,36 @@
+body {
+  height: 100%;
+}
+
 header {
   height: 80px;
   width: 100%;
   display: flex;
+  position: sticky;
+  align-self: flex-start;
+  top: 0px;
   background-color: yellow;
 }
 
 main {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  overflow: scroll;
   justify-content: flex-end;
   background-color: gray;
 }
 
 .feeds {
-  width: 52vw;
-  height: 100vh;
+  width: 70vw;
+  /* height: 100%; */
   margin-right: 15px;
   background-color: ivory;
 }
 
 .main-right {
-  width: 33vw;
-  height: 100%;
+  width: 25vw;
+  /* height: 100%; */
   margin-right: 15px;
   background-color: lawngreen;
 }
@@ -51,10 +59,9 @@ main {
   border: 1px solid black;
 }
 
-#cameraLogo {
+.hdLogos {
   height: 40%;
   padding-right: 20px;
-  border-right: 2px solid black;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
@@ -63,21 +70,47 @@ main {
   font-size: 1.5em;
   font-weight: bold;
   padding-left: 20px;
+  border-left: 2px solid black;
 }
 
 .inputBox {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 30%;
   border: 1px solid black;
 }
 
-#mainSerch {
-  background-image: url(images/serch.png);
-  background-position: center;
-  background-size: contain;
+/* #mainSerch {
+  width: ; */
+/* 아이콘을 배경이미지로 써보려 했지만 안됨 */
+
+#serchIcon {
+    height: 10px;
+    opacity: 0.5;
+    position: absolute;
+    padding-right: 40px;
 }
 
-/* #serchIcon {
-    height: 30%;
-    opacity: 0.5;
-} */
+input {
+  width: 100%;
+  background-color: transparent;
+}
+
+.feeds {
+  display: flex;
+  justify-content: flex-end;
+  width: 60vw;
+  background-color: violet;
+}
+
+article { 
+  display: flex;
+  height: 900px;
+  width: 100%;
+  margin-top: 50px;
+  border: 1px solid greenyellow;
+}
+
+.artcl {
+  width: 100%;
+}
+

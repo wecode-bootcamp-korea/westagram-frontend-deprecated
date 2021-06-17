@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-input {
-  /* background-color: transparent; */
-}
-
 input:focus {
   outline: none;
 }
