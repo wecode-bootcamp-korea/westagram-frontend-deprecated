@@ -76,7 +76,7 @@
                             <div class="storyUser">mqimqi333</div>
                         </div>   
                     </div>
-                    <div class="feeds">
+                    <section class="feeds">
                         <div class="feedHeader">
                             <div class="feedButton">
                                 <div class="feedButtonBackground">
@@ -94,7 +94,57 @@
                         <div class="feedContents">
                             <img class="feedContentsPhoto" src="img/feed contents.png" alt="feedphoto">
                         </div>
-                    </div>
+                        <div class="likeContain">
+                            <div class="likeHeart">
+                                <button class="likeButton">
+                                    <img onclick="changeHeart()" class="blackHeart" src="img/instagram black heart.png" alt="Heart">
+                                    <img onclick="returnHeart()"" class="redHeart" src="img/instagram red heart.png" alt="LikeHeart">
+                                </button>
+                            </div>
+                            <div class="replayContain">
+                                <button class="reply">
+                                    <img class="replyImage" src="img/reply.png" alt="reply">
+                                </button>
+                            </div>
+                            <div class="shareContain">
+                                <button class="shareButton">
+                                    <img class="shareImage" src="img/share.png" alt="share">
+                                </button>
+                            </div>
+                            <div class="saveContain">
+                                <button class="saveButton">
+                                    <img class="saveImage" src="img/save.png" alt="save">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mentionLike">
+                            <div class="mentionId">jongmin_8910</div>
+                            <div class="Nim">님</div>
+                            <div class="them">여러 명</div>
+                            <div class="userLikeU">이 좋아합니다</div>
+                        </div>
+                        <div class="userMentionBox">
+                            <div class="feedIdMention">kevinlee1207</div>
+                            <div class="userTalking">좌명규우태현</div>
+                        </div>
+                        <div class="showReply">
+                            <button class="showAllReply">
+                                <div class="showReply1">댓글</div>
+                                <div class="showReply2">6</div>
+                                <div class="showReply3">개 모두 보기</div>
+                            </button>
+                        </div>
+                        <div class="commentArea"></div>
+                        <div class="feedTime">10시간 전</div>
+                        <div class="commentInput">
+                            <button class="emozi">
+                                <img class="smile" src="img/emozi.png" alt="emoticon">
+                            </button>
+                            <input class="write" type="text">
+                            <button onclick="summitComment()" class="summit">게시</button>
+                        </div>
+                    </section>
+                    <script type="text/javascript" src="westagram_main.js"></script>
             </div>
             <div class="profileInfo">
                     <div class="profilePhotoArea">
@@ -189,6 +239,6 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 </html>

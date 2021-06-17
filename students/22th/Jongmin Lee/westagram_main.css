@@ -351,7 +351,7 @@ html, body {
     border: 1px solid #dbdbdb;
     background-color: #fff;
     max-width: 614px;
-    height: 847px;
+    height: 100%;
     margin-bottom: 60px;
     padding: 0;
     vertical-align: baseline;
@@ -407,7 +407,7 @@ html, body {
 .feedUserId {
     font-size: 15px;
     color: #262626;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .userLocation {
@@ -439,10 +439,311 @@ html, body {
     justify-content: center;
 }
 
-feedContentsPhoto {
+.feedContentsPhoto {
     display: flex;
     width: 614px;
     height: 614px;
+}
+
+.likeContain {
+    width: 614px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 4px;
+}
+
+.likeHeart {
+    display: flex;
+}
+
+.likeButton {
+    display: flex;
+    justify-content: center;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 8px;
+    background-size: 100%;
+}
+
+.blackHeart {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+}
+
+.redHeart{
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    display: none;
+}
+
+.replyContain {
+    display: flex;
+}
+
+.reply {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.replyImage {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 1px;
+}
+
+.shareContain {
+    display: flex;
+}
+
+.shareButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.shareImage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    margin-top: 1px;
+}
+
+.saveContain {
+    display: flex;
+}
+
+.saveButton {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 432px;
+}
+
+.saveImage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 28px;
+    height: 23px;
+    margin-bottom: 4px;
+}
+
+.mentionLike {
+    display: flex;
+    width: 614px;
+    height: 18px;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 5px;
+    margin-left: 16px;
+}
+
+.mentionId {
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.Nim {
+    color: #262626;
+    font-size: 14px;
+}
+
+.them {
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.userLikeU {
+    color: #262626;
+    font-size: 14px;
+}
+
+.userMentionBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 614px;
+    height: 18px;
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.feedIdMention {
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+.userTalking {
+    color: #262626;
+    font-size: 14px;
+}
+
+.showAllReply {
+    display: flex;
+    flex-direction: row;
+    width: 614px;
+    height: 18px;
+    font-size: 14px;
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
+.showAllReply {
+    border: 0;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.showReply1 {
+    margin-right: 3px;
+}
+
+.commentArea {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 4px;
+    margin-left: 16px;
+    overflow-wrap: break-word;
+}
+
+.talking {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.commentUserId {
+    display: flex;
+    flex-direction: column;
+    color: #262626;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 3px;
+    width: 86px;
+    overflow-wrap: break-word;
+}
+
+.mentionUserComment {
+    display: flex;
+    flex-direction: column;
+    color: #262626;
+    width: 450px;
+    font-size: 14px;
+    margin-left: 1px;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.deleteReply {
+    font-size: 12px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    width: 40px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.feedTime {
+    font-size: 10px;
+    color: #8E8E8E;
+    margin-top: 7px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+.commentInput {
+    display: flex;
+    flex-direction: row;
+    width: 610px;
+    height: 56px;
+    border-top: 1px solid #efefef;
+}
+
+.emozi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    background-color: transparent; 
+    border: none;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+.smile {
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.write {
+    width: 560px;
+    border: none;
+    margin-left: 6px;
+    margin-top: 11px;
+}
+
+.write:focus {
+    outline: none;
+}
+
+.summit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50px;
+    margin-top: 3px;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    color: rgba(0,149,246,.3);
+    cursor: pointer;
 }
 
 .links {
