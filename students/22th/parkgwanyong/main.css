@@ -222,6 +222,10 @@
     font-weight: bold;
 }
 
+i.activated {
+    color: red;
+}
+
 .replyInputBox {
     display: flex;
     position: absolute;

@@ -12,12 +12,11 @@ replyBtn.addEventListener("click", () => {
 });
 
 insertInput.addEventListener("keyup", (e) => {
-    console.log(insertInput.value);
-    if (insertInput.value == "") {
-        alert("댓글을 입력해주세요");
-        return;
-    } else {
-        if (e.key === "Enter") {
+    if (e.key === "Enter") {
+        if (insertInput.value == "") {
+            alert("댓글을 입력해주세요");
+            return;
+        } else {
             insertReplyTag();
             insertInput.value = "";
         }
@@ -36,6 +35,7 @@ const insertReplyTag = () => {
     const pTag = document.createElement("p");
     const optionIcons = document.createElement("div");
     const heart = document.createElement("i");
+    const redHeart = document.createElement("i");
     const trash = document.createElement("i");
 
     replyBox.appendChild(divTag);
@@ -45,6 +45,7 @@ const insertReplyTag = () => {
     pTag.classList.add("replyContent");
     optionIcons.classList.add("optionIcons");
     heart.classList.add("far", "fa-heart");
+    redHeart.classList.add("fa", "fa-heart");
     trash.classList.add("far", "fa-trash-alt");
 
     pTag.innerHTML = inputText;
@@ -52,10 +53,26 @@ const insertReplyTag = () => {
     divTag.appendChild(userInfoTag);
     divTag.appendChild(optionIcons);
     optionIcons.append(heart);
+    optionIcons.append(redHeart);
     optionIcons.append(trash);
     userInfoTag.prepend(spanTag);
     userInfoTag.append(pTag);
     spanTag.innerHTML = "댓글다는사람";
+
+    redHeart.style.display = "none";
+
+    heart.addEventListener("click", () => {
+        if (!heart.classList.contains("activated")) {
+            redHeart.classList.add("activated");
+            redHeart.style.display = "inline-block";
+            heart.style.display = "none";
+        }
+        redHeart.addEventListener("click", () => {
+            redHeart.classList.remove("activated");
+            heart.style.display = "inline-block";
+            redHeart.style.display = "none";
+        });
+    });
 
     trash.addEventListener("click", (e) => {
         divTag.remove();
