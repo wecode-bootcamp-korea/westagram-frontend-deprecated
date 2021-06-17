@@ -1,5 +1,5 @@
 .main_bd {
-  margin: 10px auto;
+  margin: auto;
   border-radius: 3px;
   align-items: center;
   background-color: #FAFAFA;
@@ -12,7 +12,8 @@ body {
   background-color: lightgray;
 }
 
-/* nav */
+
+/* 메뉴 */
 nav {
   display: flex;
   border-bottom: 1px solid lightgray;
@@ -67,12 +68,13 @@ nav {
   margin: 10px;
 }
 
-/* main */
+
+/* 메인 */
 .main {
   background-color: white;
   display: flex;
   width: 500px;
-  height: 700px;
+  height: 100%;
   border: 1px solid lightgray;
   border-radius: 3px;
   margin-left: 350px;
@@ -81,11 +83,10 @@ nav {
 }
 
 .main div.feeds {
-  height: 63px;
   display: flex;
+  align-content: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
-  border-bottom: 1px solid lightgray;
 }
 
 .main div.feeds .feeds_left {
@@ -101,7 +102,7 @@ nav {
   margin: 10px;
 }
 
-.main div.feeds .feeds_left p {
+.main div.feeds .feeds_left h1 {
   font-size: 18px;
   margin-left: 7px;
 }
@@ -117,7 +118,7 @@ nav {
 }
 
 .main div.feeds .feeds_content img {
-  display: block;
+  display: flex;
   width: 498px;
 }
 
@@ -141,6 +142,11 @@ nav {
   height: 33px;
   margin: 3px;
   margin-left: 315px;
+}
+
+.main div.feeds .feeds_text {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
 }
 
 .main div.feeds .feeds_text_top {
@@ -177,8 +183,30 @@ nav {
   font-size: 15px;
   margin-top: 5px;
   margin-left: 15px;
+  margin-bottom: 15px;
 }
 
+
+/* 댓글 */
+.main div.feeds .reply {
+  display: flex;
+}
+
+.main div.feeds .reply input {
+  display: flex;
+  width: 400px;
+  height: 45px;
+  border: none;
+  margin-left: 20px;
+  border-radius: 2px;
+}
+
+.main div.feeds .reply span {
+  display: flex;
+  align-items: center;
+} 
+
+/* 오른쪽 사이드 타이틀 */
 .main-right .main_right_nav .main_right_title {
   font-size: 7px;
   display: flex;
@@ -190,7 +218,7 @@ nav {
 }
 
 .main-right .main_right_nav .main_right_title h1 p {
-  color: lightgray;
+  color: #BDBDBD;
 }
 
 .main-right .main_right_nav img {
@@ -200,10 +228,12 @@ nav {
   margin-left: 35px;
 }
 
+
+/* 오른쪽 사이드 첫번째 박스 */
 .main-right .main_right_top {
   background-color: white;
   width: 300px;
-  height: 400px;
+  height: 235px;
   border: 1px solid lightgray;
   margin-left: 30px;
   margin-top: 17px;
@@ -218,7 +248,7 @@ nav {
 }
 
 .main-right .main_right_top .title h1 {
-  color: lightgray;
+  color: #A4A4A4;
   margin-right: 130px;
   font-size: 15px;
 }
@@ -235,19 +265,108 @@ nav {
   margin-top: 15px;
 }
 
-.main-right .main_right_top .profile .profile_detail {
-  display: contents;
-}
-
 .main-right .main_right_top .profile img {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 25px;
-  margin-left: 35px;
+  margin-left: 22px;
+  margin-bottom: 10px;
 }
 
-.main-right .main_right_top .profile p {
+.main-right .main_right_top .profile_detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-right .main_right_top .profile_detail h1 {
   font-size: 15px;
   display: flex;
-  margin-left: 35px;
+  margin-left: 10px;
+  margin-bottom: 12px;
+  flex-direction: column;
+}
+
+.main-right .main_right_top .profile_detail p {
+  color:#A4A4A4;
+  font-size: 13px;
+  display: flex;
+}
+
+
+/* 오른쪽 사이드 두번째 박스 */
+.main-right .main_right_bottom {
+  background-color: white;
+  width: 300px;
+  height: 235px;
+  border: 1px solid lightgray;
+  margin-left: 30px;
+  margin-top: 17px;
+}
+
+.main-right .main_right_bottom .title {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.main-right .main_right_bottom .title h1 {
+  color: #A4A4A4;
+  margin-right: 60px;
+  font-size: 15px;
+}
+
+.main-right .main_right_bottom .title p {
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.main-right .main_right_bottom .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.main-right .main_right_bottom .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 25px;
+  margin-left: 22px;
+  margin-bottom: 10px;
+}
+
+.main-right .main_right_bottom .profile_detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-right .main_right_bottom .profile_detail h1 {
+  font-size: 15px;
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.main-right .main_right_bottom .profile_detail p {
+  color:#A4A4A4;
+  font-size: 13px;
+  display: flex;
+}
+
+
+/* 오른쪽 사이드 맨 밑 footer */
+.main-right .main_right_bottom .detail_text h1 {
+  color:lightgray;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.main-right .main_right_bottom .detail_text h2{
+  color: lightgray;
+  font-size: 15px;
 }
