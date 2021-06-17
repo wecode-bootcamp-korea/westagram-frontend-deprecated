@@ -11,6 +11,10 @@ const feedBookmarkBtn = document.querySelector('.feed-btns-right button');
 const searchInput = document.querySelector('.search-container input');
 const searchUl = document.querySelector('.search-result');
 
+const postTextBox = document.querySelector('.detail-text');
+const postText = document.querySelector('.text-contents');
+console.log(postText)
+
 let writtenComment = '';
 const userInfoLi = [
   {
@@ -50,6 +54,36 @@ const userInfoLi = [
     userId: 'usually_summer'
   }
 ];
+
+if(postText.innerText.length > 15) {
+  const originText = postText.innerText;
+  const previewText = originText.slice(0, 16) + '...';
+
+  postText.innerText = previewText; 
+
+  const viewMoreBtn = document.createElement('span');
+  viewMoreBtn.classList.add('post-more-btn');
+  postTextBox.appendChild(viewMoreBtn);
+  viewMoreBtn.innerText = '더보기';
+
+  viewMoreBtn.addEventListener('click', () => {
+    handleViewMore(originText, previewText)
+  })
+};
+
+const handleViewMore = (origin, preview) => {
+  if(postText.style.overflow === 'hidden') {
+    postText.innerText = origin;
+    postText.style.overflow = 'visible';
+    postText.style.height = 'auto';
+    postText.style.width = 'calc(100% - 87px)'    
+  } else {
+    postText.innerText = preview;
+    postText.style.overflow = 'hidden';
+    postText.style.height = '18px';
+    postText.style.width = 'auto'
+  }
+};
 
 const handleSearchInput = (value) => {
   if(value === '') {

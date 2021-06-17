@@ -289,11 +289,15 @@ main {
 .post-desc-container .feed-details .user-name {
   margin-right: 7px;
 }
-.post-desc-container .feed-details .detail-text span {
+.post-desc-container .feed-details .detail-text .text-contents {
   height: 18px;
-  overflow: hidden;
   margin-top: -1px;
   line-height: 1.4;
+}
+.post-desc-container .feed-details .detail-text .post-more-btn {
+  margin-left: 10px;
+  font-weight: 600;
+  cursor: pointer;
 }
 .post-desc-container .feed-details .detail-time {
   font-size: 11px;
