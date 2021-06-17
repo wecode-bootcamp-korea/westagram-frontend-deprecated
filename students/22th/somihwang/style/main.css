@@ -92,20 +92,22 @@ main {
   align-items: stretch;
   padding: 100px 0;
 }
-div .feeds {
+
+.feeds {
   width: 500px;
   border: 1px solid rgb(237, 237, 237);
   border-radius: 5px;
-}
-div .mainRight {
-  width: 330px;
-}
-
-/* 피드 */
-article {
   display: flex;
   flex-direction: column;
   background-color: white;
+}
+
+.mainRight {
+  width: 330px;
+  height: 100%;
+  padding: 10px 0 0 30px;
+  position: sticky;
+  top: 10px;
 }
 
 /* 피드 상단 */
@@ -198,11 +200,17 @@ article {
   padding: 0 10px;
 }
 
-.comment {
+.commentBox {
   font-size: 1.1rem;
   padding-bottom: 3px;
   display: flex;
+}
+
+.commentContent {
+  width: 60%;
+  display: flex;
   justify-content: space-between;
+  padding-left: 5px;
 }
 
 .igID {
@@ -222,7 +230,7 @@ article {
 
 .commentTime {
   font-size: 0.9rem;
-  padding: 10px 0;
+  padding: 5px 0 10px 10px;
   display: inline-block;
   color: #c8c8c8;
 }
@@ -232,13 +240,13 @@ article {
 }
 
 /* 댓글달기 */
-.commentInput {
+.commentInputBox {
   border-top: 1px solid rgb(237, 237, 237);
   padding: 20px 10px;
   display: flex;
   justify-content: space-between;
 }
-.commentInput input {
+.commentInput {
   flex-grow: 1;
   font-size: 1.1rem;
 }
@@ -247,17 +255,14 @@ article {
   color: #cfe7fc;
   background-color: transparent;
   cursor: pointer;
+  margin-left: 5px;
+}
+
+.activate {
+  color: #0095f6;
 }
 
 /* 사이드 */
-.mainRight {
-  height: 100%;
-  width: 100%;
-  padding: 10px 0 0 30px;
-
-  position: sticky;
-  top: 10px;
-}
 .storyBox,
 .recommendationBox {
   width: 100%;
@@ -268,6 +273,7 @@ article {
   margin-top: 10px;
   position: relative;
 }
+
 .storyTop,
 .recommendationTop {
   height: 40px;
@@ -410,6 +416,7 @@ footer {
   line-height: 130%;
   color: #ccc;
 }
+
 .copyright {
   padding-top: 10px;
 }
