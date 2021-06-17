@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="./js/login.js"></script>
-    <title>Westagram</title>
+    <link href="style/common.css" rel="stylesheet">
+    <link href="style/login.css" rel="stylesheet">
+    <title>Westa_login</title>
 </head>
 
 <body>
@@ -21,10 +21,10 @@
             
             <div class="inputWrap">
                 <div class="inputId">
-                    <input class="idInput" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+                    <input class="input" id="idInput" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
                 </div>
                 <div class="inputPassword">
-                    <input class="pwInput" type="password" placeholder="비밀번호" />
+                    <input class="input" id="pwInput" type="password" placeholder="비밀번호 (6자리 이상)" />
                 </div>
             </div>
 
@@ -41,5 +41,6 @@
         </div>
 
     </section>
+    <script src="js/login.js"></script>
 </body>
 </html>

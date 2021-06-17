@@ -1,12 +1,31 @@
-const button = document.getElementsByClassName('loginButton')[0];
-const input = document.getElementsByTagName('input')[0];
-const loginId = document.getElementsByClassName('idInput')[0];
-const loginPw = document.getElementsByClassName('pwInput')[0];
+const idInput = document.querySelector('#idInput');
+const pwInput = document.querySelector('#pwInput');
+const btn = document.querySelector('.loginButton');
 
-input.addEventListener('keyup', function loginButtonOn() {
+function activateBtn() {
+    const user_id = idInput.value;
+    const user_pw = pwInput.value.length;
 
-    if(loginId.value && loginPw.value) {
-        button.removeAttribute('disabled');
-        button.getElementsByClassName.backgroundColor = '#0095f6';
+    if (user_id && user_pw >=6) {
+        btn.removeAttribute('disabled');
     }
-});
+}
+
+idInput.addEventListener('keyup', activateBtn);
+pwInput.addEventListener('keyup', activateBtn);
+
+/* key값을 지우면 다시 버튼 'disabled' -> "error" -> 한 함수에서 구현해야될 것 같음.
+
+function disabledBtn() {
+    const user_id = idInput.value;
+    const user_pw = pwInput.value;
+
+    if (!user_id || !user_pw) {
+        btn.setAttribute('disabled');
+    }
+}
+
+idInput.addEventListener('keyup', disabledBtn);
+pwInput.addEventListener('keyup', disabledBtn);
+
+*/
