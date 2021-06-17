@@ -1,107 +1,168 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Westagram</title>
-  <link rel="stylesheet" href="./css/main.css" type="text/css">
-</head>
-<body>
-  <div class="main-wrapper">
-    <header class="we-header">
-      <div class="header__div">
-        <section class="logo-box">
-          <div class="icon-box">
-            <img src="./img/instagram.png" alt="Instagram con" />
-          </div>
-          <h1>Westagram</h1>
-        </section>
-        <section class="search-box">
-          <input type="text" class="search" placeholder="검색" />
-          <img src="./img/search.png" alt="search Icon" class="src" />
-        </section>
-        <nav class="link-box">
-          <a href="" class="explore-link invisible">
-            <img src="./img/explore.png" alt="Explore Icon" class="explore" />
-          </a>
-          <a href="" class="heart-link">
-            <img src="./img/heart.png" alt="Heart Icon" class="heart" />
-          </a>
-          <a href="" class="profile-link invisible">
-            <img src="./img/profile.png" alt="Profile Icon" class="profile" />
-          </a>
-        </nav>
-      </div>
-    </header>
-    <main class="we-main">
-      <section class="feed-box">
-        <article class="feed">
-          <header class="feed__header">
-            <div class="profile-box">
-              <div class="profile__div">
-                <img src="./img/photo/profile1.jpeg" alt="Profile Image" />
-              </div>
-              <span class="name">silvia.oh.135</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Westagram</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="we-header">
+        <div class="header__div">
+          <section class="logo-box">
+            <div class="icon-box">
+              <img src="./img/instagram.png" alt="Instagram con" />
             </div>
-            <span class="menu-icon">
-              <img src="./img/menu.png" alt="Menu Icon" class="menu" />
-            </span>
-          </header>
-          <section class="feed__photo">
-            <img src="./img/strawberry-dessert-2191973_640.jpg" alt="Feed Photo" />
+            <h1>Westagram</h1>
           </section>
-          <section class="feed__like">
-            <section class="like__section">
-              <section class="icons">
-                <button class="icon-btn">
-                  <img src="img/heart.png" alt="heart Image" />
-                </button>
-                <button class="icon-btn">
-                  <img src="img/speech-bubble.png" alt="comment Image" />
-                </button>
-                <button class="icon-btn">
-                  <img src="img/send.png" alt="share Image" />
-                </button>
+          <section class="search-box">
+            <input type="text" class="search" placeholder="검색" />
+            <img src="./img/search.png" alt="search Icon" class="src" />
+          </section>
+          <nav class="link-box">
+            <a href="" class="explore-link invisible">
+              <img src="./img/explore.png" alt="Explore Icon" class="explore" />
+            </a>
+            <a href="" class="heart-link">
+              <img src="./img/heart.png" alt="Heart Icon" class="heart" />
+            </a>
+            <a href="" class="profile-link invisible">
+              <img src="./img/profile.png" alt="Profile Icon" class="profile" />
+            </a>
+          </nav>
+        </div>
+      </header>
+      <main class="we-main">
+        <section class="feed-box">
+          <ul>
+            <li class="feed">
+              <header class="feed__header">
+                <div class="profile-box">
+                  <div class="profile__div">
+                    <img src="./img/photo/profile1.jpeg" alt="Profile Image" />
+                  </div>
+                  <span class="name">silvia.oh.135</span>
+                </div>
+                <span class="menu-icon">
+                  <img src="./img/menu.png" alt="Menu Icon" class="menu" />
+                </span>
+              </header>
+              <section class="feed__photo">
+                <img
+                  src="./img/strawberry-dessert-2191973_640.jpg"
+                  alt="Feed Photo"
+                />
               </section>
-              <button class="icon-btn">
-                <img src="img/bookmark.png" alt="Bookmark Image" />
-              </button>
-            </section>
-          </section>
-          <section class="like-info">
+              <section class="feed__like">
+                <section class="like__section">
+                  <section class="icons">
+                    <button class="icon-btn">
+                      <img src="img/heart.png" alt="heart Image" />
+                    </button>
+                    <button class="icon-btn">
+                      <img src="img/speech-bubble.png" alt="comment Image" />
+                    </button>
+                    <button class="icon-btn">
+                      <img src="img/send.png" alt="share Image" />
+                    </button>
+                  </section>
+                  <button class="icon-btn">
+                    <img src="img/bookmark.png" alt="Bookmark Image" />
+                  </button>
+                </section>
+              </section>
+              <section class="like-info">
+                <div class="img-box">
+                  <img src="img/photo/profile2.jpeg" alt="profile" />
+                </div>
+                <span>aineworld님 외 10명이 좋아합니다</span>
+              </section>
+              <section class="feed__comment">
+                <section class="comment">
+                  <span>canon_mj</span>
+                  <p>
+                    위워크에서 진행할 베이킹 클래스에요~ 정말 먹음직스러워
+                    보이지 않나요?
+                  </p>
+                  <button class="more">더 보기</button>
+                </section>
+                <section class="comment">
+                  <span>new</span>
+                  <p>거봐 좋았잖아~~</p>
+                  <button class="comment-heart">
+                    <img src="./img/heart.png" alt="heart Icon" />
+                  </button>
+                  <button class="more">더 보기</button>
+                </section>
+                <div class="time">42분 전</div>
+              </section>
+              <section class="comment-input">
+                <form class="comment__form">
+                  <textarea
+                    class="comment-area"
+                    placeholder="댓글 달기..."
+                  ></textarea>
+                  <button class="post-btn">게시</button>
+                </form>
+              </section>
+            </li>
+          </ul>
+        </section>
+        <aside class="aside-box">
+          <section class="top-box">
             <div class="img-box">
-              <img src="img/photo/profile2.jpeg" alt="profile" />
+              <img src="./img/photo/profile3.jpeg" alt="profile" />
             </div>
-            <span>aineworld님 외 10명이 좋아합니다</span>
+            <div class="profile-info">
+              <span>wecode_bootcamp</span>
+              <span>WeCode | 위코드</span>
+            </div>
           </section>
-          <section class="feed__comment">
-            <section class="comment">
-              <span>canon_mj</span>
-              <p>위워크에서 진행할 베이킹 클래스에요~ 정말 먹음직스러워 보이지 않나요?</p>
-              <button class="more">더 보기</button>
-            </section>
-            <section class="comment">
-              <span>new</span>
-              <p>거봐 좋았잖아~~</p>
-              <button class="comment-heart">
-                <img src="./img/heart.png" alt="heart Icon">
-              </button>
-              <button class="more">더 보기</button>
-            </section>
-            <div class="time">42분 전</div>
-          </section>
-          <section class="comment-input">
-            <form class="comment__form">
-              <textarea class="comment-area" placeholder="댓글 달기..."></textarea>
-              <button class="post-btn">게시</button>
-            </form>
-          </section>
-        </article>
-      </section>
-      <aside class="aside-box">
-      </aside>
-    </main>
-  </div>
-</body>
+          <article class="aside-in-list">
+            <header class="aside__header">
+              <span class="title">스토리</span>
+              <button class="all-btn">모두 보기</button>
+            </header>
+            <ul>
+              <li class="aside-list">
+                <div class="profiles">
+                  <div class="profiles__div">
+                    <img
+                      src="./img/photo/profile1.jpeg"
+                      alt=""
+                      class="img-in"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="aside-in-list">
+            <header class="aside__header">
+              <span class="title">스토리</span>
+              <button class="all-btn">모두 보기</button>
+            </header>
+            <ul>
+              <li class="aside-list">
+                <div class="profiles">
+                  <div class="profiles__div">
+                    <img
+                      src="./img/photo/profile1.jpeg"
+                      alt=""
+                      class="img-in"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <article class="follow-box"></article>
+          <nav class="etc-link"></nav>
+          <p class="copyright"></p>
+        </aside>
+      </main>
+    </div>
+  </body>
 </html>
