@@ -1,0 +1,302 @@
+/* nav */
+nav {
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+nav h1 .fab {
+  color: #000;
+}
+
+nav h1 .letterLogo {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  color: #000;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 2px solid #000;
+}
+
+nav .searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 214px;
+  padding: 7px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+nav .searchBox .fa-search {
+  flex: 1;
+  color: #dbdbdb;
+}
+
+nav .searchBox input {
+  flex: 9;
+  background: none;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+
+nav ul {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* main */
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 100px;
+  background-color: #FAFAFA;
+}
+
+/* main - feeds */
+main .feeds {
+  flex: 7;
+  margin-right: 2%;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+}
+
+.feeds article header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
+}
+
+.feeds article header h1{
+  display: flex;
+  align-items: center;
+}
+
+.userProfile.contentHeader {
+  margin-right: 10px;
+  background-image: url(../images/ikea.jpg);
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.feeds header ellipsis {
+  align-self: flex-end;
+}
+
+.feeds header .fa-ellipsis-h {
+  font-weight: 400;
+}
+
+.feeds .feedCon img{
+  width: 100%;
+}
+
+.feeds .feedCon .reactions {
+  display: flex;
+  padding: 10px;
+}
+
+.feeds .feedCon .reactions li {
+  margin-right: 10px;
+}
+
+.userProfile.feedConUser {
+  margin-right: 5px;
+  background-image: url(../images/userImage.jpg);
+}
+
+.feeds .feedCon h2 {
+  display: flex;
+  align-items: center;
+  padding: 0 10px 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.feeds .feedCon h2 button {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.feeds .feedCon .feedText {
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+
+.feeds .feedCon .feedText .postTime {
+  display: block;
+  margin-top: 5px;
+  color: #dbdbdb;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.feeds footer {
+  background-color: #fff;
+  border-top: 1px solid #dbdbdb;
+}
+
+.feeds footer #commnetBox li{
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.feeds footer .inputBox{
+  display: flex;
+  padding: 0 10px;
+}
+
+.feeds footer .comment {
+  flex: 9;
+  padding: 7px 0;
+  border :none;
+  outline: none;
+}
+
+.feeds footer .commentSubmit {
+  flex: 1;
+  text-align: right;
+}
+
+/* main-right */
+main .main-right {
+  flex: 3;
+}
+
+.mainRightProfile {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-image: url(../images/wecode.jpg);
+}
+
+.main-right .userAccount {
+  padding: 10px;
+}
+
+.main-right .userAccount h1{
+  display: flex;
+  font-size: 16px;
+  color: #dbdbdb;
+}
+
+.main-right .userAccount h1 .accountDec{
+  display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.main-right .stroy,
+.main-right .recommand {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+}
+
+.main-right .stroy,
+.main-right .recommand  {
+  margin-bottom: 10px;
+}
+
+.main-right .stroy header,
+.main-right .recommand header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-right .stroy header h2,
+.main-right .recommand header h2 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #dbdbdb;
+}
+
+.main-rig
+dssdsddssdht .stroy .btnTextColor,
+.main-right .recommand .btnTextColor {
+  color: #000;
+  font-weight: bold;
+}
+
+/* aside story */
+.stroy .storyUser li,
+.recommand .recommandUser li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.stroy .storyUser li .otherUserImg,
+.recommand .recommandUser li .otherUserImg {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 30px;
+  border : 2px solid hotpink;
+}
+
+.stroy .storyUser li .otherUserImg img,
+.recommand .recommandUser li .otherUserImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.followReco {
+  display: block;
+  color: #dbdbdb;
+}
+
+.storyUser .postTime,
+.recommand .followReco {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.recommand .follow {
+  font-weight: bold;
+  color: #0096F6;
+}
+
+/* footer */
+.main-right footer .footList {
+  margin-right: 5px;
+}
+
+.main-right footer .footList li {
+  float: left;
+  font-size: 14px;
+}
+
+.main-right footer .footList li::after{
+  content: '·';
+  margin: 5px;
+}
+
+.main-right footer .footList li:last-child:after {
+  content: '';
+}
+
+.main-right footer .copyright {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 14px;
+}

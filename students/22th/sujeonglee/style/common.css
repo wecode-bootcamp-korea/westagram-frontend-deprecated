@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Lobster', cursive;
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+}
+
+.sr-only{
+  position: absolute;
+  z-index: -100;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.far, .fas{
+  font-size: 22px; 
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+}
+
+.userProfile {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  border : 2px solid hotpink;
+}
+
+.postTime {
+  display: block;
+  color: #dbdbdb;
+}
+
