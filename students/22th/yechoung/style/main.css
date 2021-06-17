@@ -4,7 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  min-height: 100vh;
+  padding-bottom: 30px;
 }
 
 .user-img {
@@ -24,32 +25,32 @@ em.user-name {
 
 /* HEADER */
 .top-header {
-  width: 100%;
   display: flex;
   justify-content: center;
+  width: 100%;
   border-bottom: 1px solid #DBDBDB;
   margin-bottom: 30px;
 }
 .top-header .top-header-contents {
-  width: 934px;
-  padding: 12px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 934px;
+  padding: 12px 0;
 }
 h1 {
+  margin-right: 82px;
   font-size: 26px;
   cursor: pointer;
-  margin-right: 82px;
 }
 .search-container {
   position: relative;
 }
 .search-container input {
-  border: 1px solid #DBDBDB;
-  border-radius: 3px;
   width: 215px;
   padding: 7px 0 7px 26px;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
   font-size: 13px;  
 }
 .search-container input::placeholder {
@@ -59,10 +60,10 @@ h1 {
   transform: translate(-40%, -57%);
 }
 .search-container i {
-  font-size: 11px;
   position: absolute;
   top: 10px;
   left: 82px;
+  font-size: 11px;
 }
 .search-container input:focus::placeholder {
   left: 38px;
@@ -71,20 +72,20 @@ h1 {
   left: 10px;
 }
 .search-container .search-result {
-  border: 1px solid #DBDBDB;
-  border-radius: 5px;
-  background: white;
-  width: 100%;
   position: absolute;
   top: 40px;
   left: 0;
+  width: 100%;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  background: white;
   z-index: 9999;
   box-shadow: rgb(0 0 0 / 20%) 0px 5px 13px;
 }
 .search-container .search-result li {
-  padding: 15px;
   display: flex;
   align-items: center;
+  padding: 15px;
   cursor: pointer;
 }
 .search-container .search-result li + li {
@@ -115,13 +116,13 @@ nav .my-profile-btn {
   position: relative;
 }
 nav .my-profile-btn .my-profile-menu {
-  background: white;
-  border-radius: 5px;
-  width: 200px;
   flex-direction: column;
   position: absolute;
   top: 30px;
   right: -5px;
+  width: 200px;
+  border-radius: 5px;
+  background: white;
   box-shadow: rgb(0 0 0 / 20%) 0px 5px 13px;
   cursor: default;
   z-index: 9999;
@@ -140,10 +141,10 @@ nav .my-profile-btn .my-profile-menu ul li {
   font-size: 14px;
 }
 nav .my-profile-btn .my-profile-menu ul li i {
-  width: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 20px;
   margin-right: 10px;
 }
 nav .my-profile-btn .my-profile-menu div {
@@ -160,7 +161,6 @@ main {
   justify-content: center;
 }
 
-
 /* contents container */
 .contents-container {
   margin-right: 28px;
@@ -168,37 +168,37 @@ main {
 }
 /* contents-container > story-container */
 .story-container {
-  border: 1px solid #DBDBDB;
-  border-radius: 3px;
+  position: relative;
   padding: 16px 0 16px 10px;
   margin-bottom: 24px;
-  position: relative;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
 }
 .story-container ul {
+  position: relative;
   display: flex;
   overflow: hidden;
-  position: relative;
 }
 .story-container ul li {
+  display: flex;
+  flex-direction: column;
   width: 66px;
   margin: 0 7px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
 }
 .story-container ul li .gradient-back {
+  position: relative;
   width: 64px;
   height: 64px;
-  position: relative;
 }
 .story-container ul li .gradient-back .user-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 59px;
   height: 59px;
   background: white;
   border: 2px solid white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
 }
 .story-container ul li span {
@@ -235,9 +235,9 @@ main {
   display: flex;
   justify-content: space-between;
   width: 16px;
-  cursor: pointer;
   padding: 15px 6px 10px;
   box-sizing: content-box;
+  cursor: pointer;
 }
 .feed-header .feed-more .dots i {
   display: block;
@@ -300,10 +300,10 @@ main {
   cursor: pointer;
 }
 .post-desc-container .feed-details .detail-time {
-  font-size: 11px;
   position: absolute;
   bottom: -25px;
   left: 0;
+  font-size: 11px;
 }
 .post-desc-container .feed-details .detail-comments .comment {
   display: flex;
@@ -320,9 +320,9 @@ main {
   margin-top: 3px;
 }
 .post-desc-container .feed-details .detail-comments .comment i {
+  margin-left: 8px;
   font-size: 12px;
   cursor: pointer;
-  margin-left: 8px;
 }
 
 /* feed-comments-input */
@@ -368,7 +368,7 @@ main {
   font-weight: 600;
 }
 .recommend-container .recommend-top button {
-  font-weight: inherit;
+  font-weight: 600;
   font-size: 12px;
 }
 .recommend-container .recommend-bottom  ul li {
@@ -413,14 +413,14 @@ footer ul li {
 }
 footer ul li::after {
   content: '';
-  width: 1px;
-  height: 1px;
-  background: #8E8E8E;
-  border-radius: 50%;
   position: absolute;
   top: 50%;
   right: -4px;
   transform: translateY(-50%);
+  width: 1px;
+  height: 1px;
+  background: #8E8E8E;
+  border-radius: 50%;
 }
 footer ul li + li {
   margin-left: 8px;

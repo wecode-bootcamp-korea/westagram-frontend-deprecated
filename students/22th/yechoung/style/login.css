@@ -7,12 +7,12 @@
 
 /* MAIN */
 main {
-  width: 100%;
-  margin: 14px 0 68px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 742px;
+  margin: 14px 0 68px;
 }
 
 
@@ -39,10 +39,10 @@ main {
 
 /* RIGHY-CONTAINER > login-container */
 .login-container {
-  border: 1px solid #DBDBDB;
+  position: relative;
   width: 100%;
   padding: 31px 40px 23px 40px;
-  position: relative;
+  border: 1px solid #DBDBDB;
 }
 .login-container h1 {
   display: flex;
@@ -51,15 +51,15 @@ main {
   font-size: 43px;
 }
 .login-container form {
-  margin-top: 45px;
   display: flex;
   flex-direction: column;
+  margin-top: 45px;
 }
 .login-container form input {
+  margin-bottom: 10px;
   padding: 9px 0px 9px 8px;
   border: 1px solid #DBDBDB;
   border-radius: 2px;
-  margin-bottom: 10px;
 }
 .login-container form input:focus {
   border: 1px solid #b8b8b8;
@@ -68,32 +68,32 @@ main {
   font-size: 12px;
 }
 .login-container form button {
+  margin: 5px 0 60px;
   padding: 5px 0;
+  border-radius: 4px;
   background: #B2DFFC;
   color: white;
   font-weight: 600;
   font-size: 14px;
-  border-radius: 4px;
-  margin: 5px 0 60px;
 }
 .login-container form button.active {
   background: #0095F6;
 }
 .login-container .vld-container {
   display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  width: 270px;
+  padding: 20px 12px;
   background: #0095F6;
   border-radius: 3px;
   color: white;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.6;
-  justify-content: space-around;
-  align-items: center;
-  width: 270px;
-  padding: 20px 12px;
-  position: absolute;
-  bottom: 50px;
-  left: 40px;
   z-index: 9999;
 }
 .login-container .vld-container i {
@@ -105,11 +105,11 @@ main {
 }
 .login-container .vld-container::before {
   content: '';
-  width: 0px;
-  height: 0px;
   position: absolute;
   top: -12px;
   left: 0;
+  width: 0px;
+  height: 0px;
   border: 12px solid #0095F6;
   border-bottom-color: transparent;
   border-right-color: transparent;
@@ -120,22 +120,22 @@ main {
 }
 .login-container .login-facebook::before {
   content: '';
-  border-top: 1px solid #DBDBDB;
-  width: 268px;
   position: absolute;
   top: -33px;
   left: 0;
+  width: 268px;
+  border-top: 1px solid #DBDBDB;
 }
 .login-container .login-facebook span:first-of-type {
   position: absolute;
   top: -40px;
   left: 50%;
   transform: translateX(-50%);
+  padding: 0 20px;
+  background: white;
   color: #8E8E8E;
   font-size: 13px;
   font-weight: 600;
-  background: white;
-  padding: 0 20px;
 }
 .login-container .login-facebook span:last-of-type {
   display: flex;
@@ -143,24 +143,24 @@ main {
 }
 .login-container .login-facebook a {
   padding: 4px 0 4px 24px;
+  color: #385185;
   font-size: 14px;
   font-weight: 600;
-  color: #385185;
 }
 .login-container .login-facebook a::before {
   content: '';
   position: absolute;
-  background-image: url(../images/facebook.png); 
-  background-size: cover;
-  width: 16px;
-  height: 16px;
   top: 3px;
   left: 56px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/facebook.png); 
+  background-size: cover;
 }
 .login-container .find-pw {
-  margin-top: 18px;
   display: flex;
   justify-content: center;
+  margin-top: 18px;
 }
 .login-container .find-pw a{
   font-size: 12px;
@@ -169,16 +169,16 @@ main {
 
 /* join-container */
 .join-container {
-  border: 1px solid #DBDBDB;
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  margin-top: 10px;
+  border: 1px solid #DBDBDB;
 }
 .join-container .joinning span {
-  font-size: 13px;
-  color: #2C2C26;
   margin-right: 1px;
+  color: #2C2C26;
+  font-size: 13px;
   letter-spacing: 1px;
 }
 
@@ -187,14 +187,14 @@ main {
   padding: 21px 36px 0;
 }
 .app-container > p {
+  margin-bottom: 25px;
   text-align: center;
   font-size: 14px;
-  margin-bottom: 25px;
 }
 .app-container .app-btns {
-  width: 280px;
   display: flex;
   justify-content: space-between;
+  width: 280px;
 }
 .app-container .app-btns button {
   width: 135px;
@@ -226,29 +226,29 @@ main {
   justify-content: center;
 }
 .footer-bottom select {
-  font-size: 12px;
-  width: 55px;
-  background: none;
-  border: none;
-  color: #8E8E8E;
   margin-right: 10px;
+  width: 55px;
+  border: none;
+  background: none;
+  font-size: 12px;
+  color: #8E8E8E;
 }
 
 
 /* login-success (임시) */
 .login-success {
-  width: 200px;
-  padding: 20px 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 20px 0;
   background: #0095F6;
   border-radius: 3px;
   color: white;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
 }
 
 

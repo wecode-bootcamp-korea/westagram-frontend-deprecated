@@ -13,8 +13,9 @@ const searchUl = document.querySelector('.search-result');
 
 const postTextBox = document.querySelector('.detail-text');
 const postText = document.querySelector('.text-contents');
-console.log(postText)
+const sumLikeNum = document.querySelector('.sum-like b');
 
+let sumLike = 0;
 let writtenComment = '';
 const userInfoLi = [
   {
@@ -83,6 +84,11 @@ const handleViewMore = (origin, preview) => {
     postText.style.height = '18px';
     postText.style.width = 'auto'
   }
+};
+
+const handleSumLike = (e) => {
+  e.target.className.includes('fas') ? sumLike += 1 : sumLike;
+  sumLikeNum.innerText = sumLike;
 };
 
 const handleSearchInput = (value) => {
@@ -187,6 +193,10 @@ const handleProfileBtnClick = () => {
   feedLikeBtn.addEventListener('click', e => {
     handleLikeBtn(e.target)
   });
+
+  feedLikeBtn.addEventListener('click', e => {
+    handleSumLike(e)
+  })
 
   feedBookmarkBtn.addEventListener('click', e => {
     handleLikeBtn(e.target)
