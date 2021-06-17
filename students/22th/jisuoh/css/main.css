@@ -297,6 +297,7 @@ html {
 .main-wrapper .we-main .feed-box .comment-input {
   display: flex;
   align-items: center;
+  border-top: 1px solid var(--color-gray2);
 }
 
 .main-wrapper .we-main .feed-box .comment-input .comment__form {
@@ -304,7 +305,6 @@ html {
   align-items: center;
   justify-content: center;
   width: 100%;
-  border-top: 1px solid var(--color-gray2);
 }
 
 .main-wrapper .we-main .feed-box .comment-input .comment__form .comment-area {
@@ -320,7 +320,7 @@ html {
   outline: none;
 }
 
-.main-wrapper .we-main .feed-box .comment-input .comment__form .post-btn {
+.comment-input .post-btn {
   flex: 1 1 10%;
   display: inline;
   font-weight: bold;

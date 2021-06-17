@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Westagram</title>
     <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <script src="./src/main.js" defer></script>
   </head>
   <body>
     <div class="main-wrapper">
@@ -84,28 +85,7 @@
                   <span>aineworld님 외 10명이 좋아합니다</span>
                 </section>
                 <section class="feed__comment">
-                  <ul>
-                    <li class="comment">
-                      <div class="comment__div">
-                        <span class="nickname">canon_mj</span>
-                        <p>
-                          위워크에서 진행할 베이킹 클래스에요~ 정말 먹음직스러워
-                          보이지 않나요?
-                        </p>
-                        <button class="more">더 보기</button>
-                      </div>
-                    </li>
-                    <li class="comment">
-                      <div class="comment__div">
-                        <span class="nickname">new</span>
-                        <p>거봐 좋았잖아~~</p>
-                        <button class="more">더 보기</button>
-                      </div>
-                      <button class="comment-heart">
-                        <img src="./img/heart.png" alt="heart Icon" />
-                      </button>
-                    </li>
-                  </ul>
+                  <ul class="comment__ul"></ul>
                   <p class="time">42분 전</p>
                 </section>
                 <section class="comment-input">
@@ -114,8 +94,8 @@
                       class="comment-area"
                       placeholder="댓글 달기..."
                     ></textarea>
-                    <button class="post-btn">게시</button>
                   </form>
+                  <button class="post-btn">게시</button>
                 </section>
               </li>
             </ul>
