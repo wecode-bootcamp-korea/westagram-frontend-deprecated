@@ -145,11 +145,11 @@ html {
 }
 
 .main-wrapper .we-main .feed-box .feed .feed__header {
-  flex: 0 0 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-value);
+  background-color: var(--color-white);
 }
 
 .main-wrapper .we-main .feed-box .feed .feed__header .profile-box {
@@ -185,16 +185,21 @@ html {
 
 /* 피드 사진 */
 .main-wrapper .we-main .feed-box .feed__photo {
-  flex: 0 0 10%;
+  height: 60vh;
 }
 
 .main-wrapper .we-main .feed-box .feed__photo img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 좋아요 */
+.comment-wrapper {
+  background-color: var(--color-white);
+}
+
 .main-wrapper .we-main .feed-box .feed__like {
-  flex: 0 0 30%;
   display: flex;
   flex-direction: column;
   padding: var(--padding-value--7) var(--padding-value);
