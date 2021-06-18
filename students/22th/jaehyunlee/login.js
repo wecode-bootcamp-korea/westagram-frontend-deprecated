@@ -9,11 +9,11 @@ function disableLogInButton() {
     logInPassword.value.length >= 5
   ) {
     logInButton.disabled = false;
-    logInButton.style.backgroundColor = "red";
+    logInButton.style.backgroundColor = "#9ad0ff"
     console.log("둘다 입력됨");
   } else {
     logInButton.disabled = true;
-    logInButton.style.backgroundColor = "blue";
+    logInButton.style.backgroundColor = "#c4e1fb";
   }
 }
 

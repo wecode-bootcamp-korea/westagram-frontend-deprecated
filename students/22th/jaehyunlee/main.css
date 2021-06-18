@@ -7,24 +7,29 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #adff2f;
+  align-items: center;
+  background-color: #fafafa;
   height: 1000vh;
+  width: 100vw;
 }
 
 #navMain {
   display: flex;
   justify-content: center;
-  background-color: brown;
+  background-color: #ffffff;
+  width: 110%;
+  border-bottom: 2px #ececec solid;
 }
 
 #navBar {
   display: flex;
 
   justify-content: space-between;
-  background-color: pink;
-  margin: 0px;
+  background-color: #ffffff;
+
   padding: 0px;
-  width: 1000px;
+  width: 1100px;
+  height: 80px;
 }
 
 .navBarLeft {
@@ -34,16 +39,16 @@ body {
 
 .navBarLeft h1 {
   font-weight: 100;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .navBarLeft span {
-  font-size: 25px;
+  font-size: 40px;
   letter-spacing: -2px;
 }
 
 .navBarLeft i {
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .navBarCenter {
@@ -57,7 +62,7 @@ body {
 }
 
 .navBarRight i {
-  font-size: 25px;
+  font-size: 35px;
   padding: 0px 10px;
 }
 
@@ -65,41 +70,54 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  width: 1100px;
 }
 
 .feeds {
-  border: 3px blue solid;
-  background-color: rgb(174, 173, 255);
+  border: 2px #ececec solid;
+  background-color: #ffffff;
   display: flex;
   margin-right: 20px;
 }
 
 .mainRight {
-  background-color: #fffb00;
 }
 
 .myAccount {
-  background-color: cornflowerblue;
+  background-color: #fafafa;
   display: flex;
   align-items: center;
   height: 60px;
+  padding-left: 12px;
 }
 
-.storyTop {
+.accountName {
+  margin-left: 12px;
+}
+
+.navRightContainer {
+  background-color: white;
+  border: #ececec 2px solid;
+  margin-bottom: 12px;
+  width: 390px;
+}
+
+.navRightTop {
   display: flex;
-  background-color: darkkhaki;
   align-items: center;
   justify-content: space-between;
   height: 40px;
 }
 
-.story {
+.storyBody {
 }
 
 .otherAccount {
   display: flex;
   align-items: center;
   height: 40px;
+  padding-left: 12px;
+  margin-bottom: 12px;
 }
 
 #article {
@@ -160,16 +178,24 @@ body {
 .feedAddOnLeft {
   margin-left: 12px;
 }
+.feedAddOnLeft:hover,
+.feedAddOnRight:hover {
+  cursor: pointer;
+}
 
 .feedAddOnRight {
   margin-right: 12px;
+}
+
+.feedAddOnRight .none {
+  display: none;
 }
 
 .numOfLikesMain {
   display: flex;
   height: 50px;
   align-items: center;
-  background-color: olive;
+  background-color: #ffffff;
   font-size: 20px;
 }
 
@@ -182,13 +208,32 @@ body {
   margin-left: 12px;
 }
 
+.newReplyInput {
+  border: none;
+  height: 60px;
+  text-indent: 15px;
+}
+
+.newReplyInput:focus {
+  outline: none;
+}
+
+.newReplyInput::placeholder {
+  text-indent: 15px;
+}
+
+.uploadReply {
+  margin-right: 10px;
+  color: rgb(0, 153, 255);
+}
+
 .replies {
   margin-left: 12px;
+  border-bottom: 2px #efefef solid;
 }
 
 .reply {
   display: flex;
-  justify-content: space-between;
 }
 
 .ReplyBar {
@@ -201,5 +246,40 @@ body {
 }
 
 .delete {
-  background-color: black;
+  border: none;
+  width: 15px;
+  height: 15px;
+  background-color: inherit;
+}
+
+.forTab {
+  border: none;
+  background-color: inherit;
+}
+
+.forTab:focus {
+  outline: none;
+}
+
+.none {
+  display: none;
+}
+
+.noNone {
+  display: "";
+  border: none;
+  background-color: inherit;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.feedAddOnLeft .none {
+  display: none;
+}
+
+.feedAddOnLeft i,
+.feedAddOnRight i {
+  color: red;
 }

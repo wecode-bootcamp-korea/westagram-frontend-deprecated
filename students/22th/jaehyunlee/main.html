@@ -19,7 +19,7 @@
     <title>westa_main</title>
   </head>
   <body>
-    <div id="navMain">
+    <div id="navMain" style="position: fixed">
       <nav id="navBar">
         <div class="navBarLeft">
           <i class="fab fa-instagram"></i>
@@ -51,7 +51,7 @@
         </div>
       </nav>
     </div>
-    <main class="mainDiv">
+    <main class="mainDiv" style="margin-top: 150px">
       <div class="feeds">
         <article id="article">
           <div class="feedTop">
@@ -64,18 +64,18 @@
             <i class="fas fa-ellipsis-h"></i>
           </div>
           <article class="feedImage">
-            <img src="iu.jpg" />
+            <img src="iu2.jpg" />
           </article>
           <div class="feedAddOn">
             <div class="feedAddOnLeft">
-              <i class="far fa-heart"></i>
-              <i class="fas fa-heart"></i>
+              <i class="far fa-heart likeFeedBtn"></i>
+              <i class="none fas fa-heart hateFeedBtn"></i>
               <i class="far fa-comment"></i>
               <i class="fas fa-share-alt"></i>
             </div>
             <div class="feedAddOnRight">
-              <i class="far fa-bookmark"></i>
-              <i class="fas fa-bookmark"></i>
+              <i class="far fa-bookmark addToFav"></i>
+              <i class="none fas fa-bookmark delOfFav"></i>
             </div>
           </div>
           <div class="numOfLikesMain">
@@ -88,129 +88,107 @@
           <div class="replies">
             <div class="reply">
               <p>canon_mj 위워크에서 진행한 베이킹 클래스...</p>
-
-              <input class="deleteReply" placeholder="삭제" onclick="remove()" />
             </div>
             <div class="reply">
               <p>neceosecius 거봐 좋았잖아~~~~</p>
-              <input class="deleteReply" placeholder="삭제" />
+            </div>
+            <div class="reply">
+              <p>42분 전</p>
             </div>
           </div>
 
-          <form class="ReplyBar">
+          <div class="ReplyBar">
             <input
               class="newReplyInput"
               type="text"
               placeholder="댓글 달기..."
               style="width: 80%"
             />
-            <input
-              class="uploadReply"
-              style="background-color: red; border: none"
-              placeholder="게시"
-            />
-          </form>
+            <button class="forTab uploadReply">
+              <div class="uploadReply">게시</div>
+            </button>
+          </div>
         </article>
       </div>
 
       <div class="mainRight">
         <div class="myAccount">
           <img class="profile" src="psa.png" />
-          <div>
+          <div class="accountName">
             <p>wecode_bootcamp</p>
             <p>WeCode | 위코드</p>
           </div>
         </div>
 
-        <div
-          style="
-            display: flex;
-            margin-top: 10px;
-            background-color: violet;
-            flex-direction: column;
-          "
-        >
-          <div class="storyTop">
+        <div class="navRightContainer">
+          <div class="navRightTop">
             <div>스토리</div>
             <div>모두 보기</div>
           </div>
-          <div class="story">
+          <nav class="storyBody">
             <div class="otherAccount">
               <img class="profile" src="psa.png" />
-              <div>
+              <div class="accountName">
                 <p>wecode_bootcamp</p>
                 <p>WeCode | 위코드</p>
               </div>
             </div>
             <div class="otherAccount">
               <img class="profile" src="psa.png" />
-              <div>
+              <div class="accountName">
                 <p>wecode_bootcamp</p>
                 <p>WeCode | 위코드</p>
               </div>
             </div>
             <div class="otherAccount">
               <img class="profile" src="psa.png" />
-              <div>
+              <div class="accountName">
                 <p>wecode_bootcamp</p>
                 <p>WeCode | 위코드</p>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
 
-        <div
-          style="
-            display: flex;
-            margin-top: 10px;
-            background-color: violet;
-            flex-direction: column;
-          "
-        >
-          <div class="storyTop">
-            <div>회원님을 위한 추천</div>
+        <div class="navRightContainer">
+          <div class="navRightTop">
+            <div>스토리</div>
             <div>모두 보기</div>
           </div>
-          <div class="story">
+          <nav class="storyBody">
             <div class="otherAccount">
               <img class="profile" src="psa.png" />
-              <div>
-                <p>AAAAAAAAAA</p>
-                <p>......님 외 ...</p>
+              <div class="accountName">
+                <p>wecode_bootcamp</p>
+                <p>WeCode | 위코드</p>
               </div>
             </div>
             <div class="otherAccount">
               <img class="profile" src="psa.png" />
-              <div>
-                <p>AAAAAAAAAA</p>
-                <p>......님 외 ...</p>
+              <div class="accountName">
+                <p>wecode_bootcamp</p>
+                <p>WeCode | 위코드</p>
               </div>
             </div>
             <div class="otherAccount">
               <img class="profile" src="psa.png" />
-              <div>
-                <p>AAAAAAAAAA</p>
-                <p>......님 외 ...</p>
+              <div class="accountName">
+                <p>wecode_bootcamp</p>
+                <p>WeCode | 위코드</p>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
-        <div
-          style="
-            display: flex;
-            margin-top: 10px;
-            background-color: violet;
-            flex-direction: column;
-          "
-        >
+        <div>
           <nav>
-            <ul>
-              <li>intagram 정보</li>
-              <li>지원</li>
-              <li>등등.. 언어</li>
+            <ul class="footerRight" style="list-style: none">
+              <li class="floatLeft">intagram 정보</li>
+              <li class="floatLeft">지원</li>
+              <li class="floatLeft">등등.. 언어</li>
+              <li>&nbsp;</li>
             </ul>
           </nav>
-          <span style="margin-top: 10px">카피라이트 인스타램 따로? 마탑?</span>
+          <span style="margin-top: 10px">카피라이트 인스타그램</span>
         </div>
       </div>
     </main>

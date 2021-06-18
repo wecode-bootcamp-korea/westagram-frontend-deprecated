@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: yellow;
+  background-color: #FAFAFA;
 }
 
 input {
-  background-color: rgb(253, 204, 253);
+  background-color: #FFFFFF;
 }
 .beColumn {
   display: flex;
@@ -67,7 +67,7 @@ input {
 }
 
 .B2 {
-  background-color: #b2dffc;
+  background-color:  #c4e1fb;
   color: white;
   font-weight: bold;
   font-size: small;
@@ -111,14 +111,16 @@ input {
   align-items: center;
   border: 1px black solid;
   padding: 0px;
-  width: 700px;
+  width: 700px; 
   height: 760px;
+  background-color: #FFFFFF;
 }
 
 #mainBox {
-  display: flex;
-
-  justify-content: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 95vh;
 }
 
 .login {
