@@ -12,33 +12,32 @@
 </head>
 <body>
   <div class="wrap">
-
     <header class="top-header">
       <div class="top-header-contents">
         <h1>Instagram</h1>
-        <div class="search-container">
-          <input type="text" name="search" placeholder="검색">
+        <article aria-label="유저 검색창" class="search-container">
+          <input type="text" placeholder="검색">
           <i class="fas fa-search grey-letter"></i>
           <ul class="search-result" style="display: none;"></ul>
-        </div>
+        </article>
         <nav>
-          <ul>
-            <li>
+          <ul aria-label="메뉴">
+            <li aria-label="홈" >
               <i class="fas fa-home"></i>
             </li>
-            <li>
+            <li aria-label="다이렉트 메세지">
               <i class="far fa-paper-plane"></i>
             </li>
-            <li>
+            <li aria-label="탐색">
               <i class="far fa-compass"></i>
             </li>
-            <li>
+            <li aria-label="좋아요">
               <i class="far fa-heart"></i>
             </li>
-            <li class="my-profile-btn">
+            <li aria-label="내 프로필" class="my-profile-btn">
               <i class="far fa-user"></i>
-              <div class="my-profile-menu" style="display: none">
-                <ul>
+              <section class="my-profile-menu" style="display: none">
+                <ul aria-label="내 프로필 메뉴">
                   <li>
                     <i class="far fa-user-circle"></i>
                     <span>프로필</span>
@@ -55,76 +54,76 @@
                 <div>
                   <span>로그아웃</span>
                 </div>
-              </div>
+              </section>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="contents-container">
-        <div class="story-container">
+      <article class="contents-container">
+        <article aria-label="스토리" class="story-container">
           <ul>
             <li>
               <div class="gradient-back img-container">
-                <img class="user-img" src="./images/profile7.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile7.jpg" alt="profile">
               </div>
               <span>user-name</span>              
             </li>
             <li>
               <div class="gradient-back">
-                <img class="user-img" src="./images/profile2.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile2.jpg" alt="profile">
               </div>
               <span>user-name</span>
             </li>
             <li>
               <div class="gradient-back">
-                <img class="user-img" src="./images/profile3.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile3.jpg" alt="profile">
               </div>
               <span>user-name</span>
             </li>
             <li>
               <div class="gradient-back">
-                <img class="user-img" src="./images/profile4.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile4.jpg" alt="profile">
               </div>
               <span>user-name</span>
             </li>
             <li>
               <div class="gradient-back">
-                <img class="user-img" src="./images/profile5.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile5.jpg" alt="profile">
               </div>
               <span>user-name</span>
             </li>
             <li>
               <div class="gradient-back">
-                <img class="user-img" src="./images/profile6.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile6.jpg" alt="profile">
               </div>
               <span>user-name</span>
             </li>
             <li>
               <div class="gradient-back">
-                <img class="user-img" src="./images/profile1.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile1.jpg" alt="profile">
               </div>
               <span>user-name</span>
             </li>
             <li>
               <div class="gradient-back">
-                <img class="user-img" src="./images/profile8.jpg" alt="user profile">
+                <img class="user-img" src="./images/profile8.jpg" alt="profile">
               </div>
               <span>user-name</span>
             </li>
           </ul>
-        </div>
-        <div class="feeds-container">
+        </article>
+        <article aria-label="피드" class="feeds-container">
           <article class="feed">
             <header class="feed-header">
               <div class="feed-user">
                 <div>
-                  <img class="user-img" src="./images/profile6.jpg" alt="user profile">
+                  <img alt="프로필"  src="./images/profile6.jpg" class="user-img">
                 </div>
                 <em class="user-name">user_name</em>
               </div>
-              <div class="feed-more">
+              <div aria-label="게시글 기타 메뉴" class="feed-more">
                 <div class="dots">
                   <i></i>
                   <i></i>
@@ -132,125 +131,122 @@
                 </div>
               </div>
             </header>
-            <div class="feed-contents">
-              <div class="post-img-container">
-                <img src="./images/micheile-henderson-6nNJOV8J1B4-unsplash.jpg" alt="feed image">
-              </div>
-              <div class="post-desc-container">
-                <div class="feed-btns">
+            <section class="feed-contents">
+              <section class="post-img-container">
+                <img alt="게시된 이미지" src="./images/micheile-henderson-6nNJOV8J1B4-unsplash.jpg">
+              </section>
+              <section class="post-desc-container">
+                <section aria-label="피드 메뉴" class="feed-btns">
                   <div class="feed-btns-left">
-                    <button>
+                    <button aria-label="좋아요">
                       <i class="far fa-heart"></i>
                     </button>
-                    <button>
+                    <button aria-label="댓글">
                       <i class="far fa-comment"></i>
                     </button>
-                    <button>
+                    <button aria-label="다이렉트 메세지">
                       <i class="far fa-paper-plane"></i>
                     </button>
                   </div>
                   <div class="feed-btns-right">
-                    <button>
+                    <button aria-label="북마크">
                       <i class="far fa-bookmark"></i>
                     </button>
                   </div>
-                </div>
+                </section>
                 <div class="sum-like">
                   <span>좋아요 <b>0</b>개</span>
                 </div>
-                <div class="feed-details">
+                <section class="feed-details">
                   <div class="detail-text">
                     <em class="user-name">user</em>
                     <span class="text-contents" style="overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                   </div>
-                  <div class="detail-time grey-letter">
+                  <div aria-label="게시된 시간" class="detail-time grey-letter">
                     <span><b>20시간</b> 전</span>
                   </div>
-                  <ul class="detail-comments"></ul>
-                </div>
-              </div>
-            </div>
-            <div class="feed-comments-input">
+                  <ul aria-label="달린 댓글" class="detail-comments"></ul>
+                </section>
+              </section>
+            </section>
+            <section aria-label="댓글 작성창" class="feed-comments-input">
               <input type="text" name="writing comments" placeholder="댓글 달기...">
               <button class="blue-letter-btn">게시</button>
-            </div>
+            </section>
           </article>
-        </div>
-      </div>
+        </article>
+      </article>
       <div class="right-container">
         <aside>
-          <div class="my-container">
+          <article aria-label="내 프로필" class="my-container">
             <div class="img-container">
-              <img class="user-img" src="./images/myprofile.jpg" alt="my image">
+              <img alt="프로필" src="./images/myprofile.jpg" class="user-img">
             </div>
             <div class="my-info">
               <em class="user-name">usually_summer</em>
               <p>자기소개</p>
             </div>
-          </div>
-          <div class="recommend-container">
-            <div class="recommend-top">
-              <span class="grey-letter">회원님을 위한 추천</span>
-              <button>모두 보기</button>
-            </div>
-            <div class="recommend-bottom">
-              <ul>
-                <li>
-                  <div class="img-container">
-                    <img class="user-img" src="./images/profile3.jpg" alt="user profile image">
-                  </div>
-                  <div class="recommended-info">
-                    <em class="user-name">user_name</em>
-                    <span class="grey-letter">회원님을 팔로우합니다</span>
-                  </div>
-                  <button class="blue-letter-btn">팔로우</button>
-                </li>
-                <li>
-                  <div class="img-container">
-                    <img class="user-img" src="./images/profile7.jpg" alt="user profile image">
-                  </div>
-                  <div class="recommended-info">
-                    <em class="user-name">user_name</em>
-                    <span class="grey-letter">ballet_rini님 외 1명이 팔로우합니다</span>
-                  </div>
-                  <button class="blue-letter-btn">팔로우</button>
-                </li>
-                <li>
-                  <div class="img-container">
-                    <img class="user-img" src="./images/profile1.jpg" alt="user profile image">
-                  </div>
-                  <div class="recommended-info">
-                    <em class="user-name">user_name</em>
-                    <span class="grey-letter">회원님을 팔로우합니다</span>
-                  </div>
-                  <button class="blue-letter-btn">팔로우</button>
-                </li>
-                <li>
-                  <div class="img-container">
-                    <img class="user-img" src="./images/profile5.jpg" alt="user profile image">
-                  </div>
-                  <div class="recommended-info">
-                    <em class="user-name">user_name</em>
-                    <span class="grey-letter">회원님을 팔로우합니다</span>
-                  </div>
-                  <button class="blue-letter-btn">팔로우</button>
-                </li>
-                <li>
-                  <div class="img-container">
-                    <img class="user-img" src="./images/profile2.jpg" alt="user profile image">
-                  </div>
-                  <div class="recommended-info">
-                    <em class="user-name">user_name</em>
-                    <span class="grey-letter">회원님을 팔로우합니다</span>
-                  </div>
-                  <button class="blue-letter-btn">팔로우</button>
-                </li>
-              </ul>
-            </div>
-          </div>
+          </article>
+          <article class="recommend-container">
+            <span class="grey-letter">회원님을 위한 추천</span> 
+            <!-- h태그를 쓰기는 애매하고 span은 싫음 -->
+            <ul>
+              <li>
+                <div class="img-container">
+                  <img alt="프로필" src="./images/profile3.jpg" class="user-img">
+                </div>
+                <div class="recommended-info">
+                  <em class="user-name">user_name</em>
+                  <span class="grey-letter">회원님을 팔로우합니다</span>
+                </div>
+                <button class="blue-letter-btn">팔로우</button>
+              </li>
+              <li>
+                <div class="img-container">
+                  <img alt="프로필" src="./images/profile7.jpg" class="user-img">
+                </div>
+                <div class="recommended-info">
+                  <em class="user-name">user_name</em>
+                  <span class="grey-letter">ballet_rini님 외 1명이 팔로우합니다</span>
+                </div>
+                <button class="blue-letter-btn">팔로우</button>
+              </li>
+              <li>
+                <div class="img-container">
+                  <img alt="프로필" src="./images/profile1.jpg" class="user-img">
+                </div>
+                <div class="recommended-info">
+                  <em class="user-name">user_name</em>
+                  <span class="grey-letter">회원님을 팔로우합니다</span>
+                </div>
+                <button class="blue-letter-btn">팔로우</button>
+              </li>
+              <li>
+                <div class="img-container">
+                  <img alt="프로필" src="./images/profile5.jpg" class="user-img">
+                </div>
+                <div class="recommended-info">
+                  <em class="user-name">user_name</em>
+                  <span class="grey-letter">회원님을 팔로우합니다</span>
+                </div>
+                <button class="blue-letter-btn">팔로우</button>
+              </li>
+              <li>
+                <div class="img-container">
+                  <img alt="프로필" src="./images/profile2.jpg" class="user-img">
+                </div>
+                <div class="recommended-info">
+                  <em class="user-name">user_name</em>
+                  <span class="grey-letter">회원님을 팔로우합니다</span>
+                </div>
+                <button class="blue-letter-btn">팔로우</button>
+              </li>
+            </ul>
+            <button>모두 보기</button>
+          </article>
         </aside>
         <footer>
-          <ul>
+          <ul aria-label="기타 메뉴">
             <li>
               <a href="#">소개</a>
             </li>
@@ -286,7 +282,6 @@
         </footer>
       </div>
     </main>
-  
   </div>
   <script src="./js/main.js"></script>
 </body>

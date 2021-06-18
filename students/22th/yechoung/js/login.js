@@ -28,11 +28,22 @@ const handleLogin = (e) => {
   const vldCheckResult = checkValidation();
 
   if(!vldCheckResult) {
-    vldBox.classList.add('active');
+    const section = document.createElement('SECTION');
+
+    loginBox.appendChild(section);
+    section.classList.add('vld-container', 'grey-letter');
+    section.setAttribute('aria-label', '유효하지 않은 로그인 정보');
+
+    section.innerHTML = `
+      <i class="fas fa-exclamation-circle"></i>
+      <p>아이디는 '@'를 포함해 5글자 이상이며 특수문자는 '_'와 '.'만 사용 가능합니다<br />비밀번호는 영문과 숫자를 포함해 6글자 이상이어야 합니다</p>    
+    `;
+
     setTimeout(() => {
-      vldBox.classList.remove('active')
-    }, 2500)
+          section.remove()
+        }, 2500)
   } else {
+    // 로그인 성공 확인을 위한 임시 코드
     const wrap = document.querySelector('.wrap');
     const div = document.createElement('div');
     
@@ -40,9 +51,9 @@ const handleLogin = (e) => {
     wrap.appendChild(div);
     div.innerHTML = `<p>로그인 성공</p>`
     setTimeout(() => {
-      wrap.removeChild(div)
+      div.remove()
     }, 500)
-  }  
+  }
 };
 
 const checkValidation = () => {

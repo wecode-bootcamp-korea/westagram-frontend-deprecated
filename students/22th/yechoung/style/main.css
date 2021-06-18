@@ -356,44 +356,44 @@ main {
 
 /* aside > .recommend-container */
 .recommend-container {
+  position: relative;
   padding-bottom: 18px;
 }
-.recommend-container .recommend-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.recommend-container > span {
+  display: block;
   margin-bottom: 8px;
-}
-.recommend-container .recommend-top {
   font-weight: 600;
 }
-.recommend-container .recommend-top button {
+.recommend-container > button {
+  position: absolute;
+  top: 0;
+  right: 0;
   font-weight: 600;
   font-size: 12px;
 }
-.recommend-container .recommend-bottom  ul li {
+.recommend-container ul li {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
 }
-.recommend-container .recommend-bottom ul li .img-container {
+.recommend-container ul li .img-container {
   margin-right: 8px;
 }
-.recommend-container .recommend-bottom ul li .img-container img {
+.recommend-container ul li .img-container img {
   width: 32px;
   height: 32px;
 }
-.recommend-container .recommend-bottom ul li .recommended-info {
+.recommend-container ul li .recommended-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 204px;
   height: 30px;
 }
-.recommend-container .recommend-bottom ul li .recommended-info .grey-letter {
+.recommend-container ul li .recommended-info .grey-letter {
   font-size: 12px;
 }
-.recommend-container .recommend-bottom ul li button {
+.recommend-container ul li button {
   font-size: 12px;
 }
 

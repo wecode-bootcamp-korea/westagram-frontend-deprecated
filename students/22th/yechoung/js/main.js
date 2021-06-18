@@ -138,9 +138,11 @@ const postComment = (cmt) => {
 
   const iconLike = document.createElement('i');
   iconLike.classList.add('far', 'fa-heart', 'cmt-like');
+  iconLike.setAttribute('aria-label', '좋아요');
  
   const iconDel = document.createElement('i');
   iconDel.classList.add('fas', 'fa-times', 'cmt-del');
+  iconDel.setAttribute('aria-label', '삭제');
 
   commentBox.appendChild(li);
   li.appendChild(iconBox);

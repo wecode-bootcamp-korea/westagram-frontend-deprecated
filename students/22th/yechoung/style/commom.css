@@ -88,3 +88,12 @@ footer {
 img.user-img {
 	object-fit: cover;
 }
+.hidden {
+  overflow: hidden;
+  display: inline-block;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px); // for legacy browsers
+  clip-path: inset(50%);
+}
