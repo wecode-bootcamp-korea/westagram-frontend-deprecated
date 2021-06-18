@@ -124,6 +124,7 @@ html {
   height: 100%;
   padding-top: var(--margin-value);
   overflow: scroll;
+  background-color: var(--color-lightgray);
 }
 
 .we-main {
@@ -383,6 +384,9 @@ html {
   display: flex;
   flex-direction: column;
   margin: var(--padding-value--20) 0;
+  padding: var(--padding-value--10);
+  border: 1px solid var(--color-gray2);
+  background-color: var(--color-white);
 }
 
 .aside-in-list .aside__header {
