@@ -298,6 +298,7 @@ main {
   margin-left: 10px;
   font-weight: 600;
   cursor: pointer;
+  min-width: 39px;
 }
 .post-desc-container .feed-details .detail-time {
   position: absolute;

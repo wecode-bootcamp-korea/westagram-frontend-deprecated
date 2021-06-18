@@ -77,7 +77,6 @@ const handleViewMore = (origin, preview) => {
     postText.innerText = origin;
     postText.style.overflow = 'visible';
     postText.style.height = 'auto';
-    postText.style.width = 'calc(100% - 87px)'    
   } else {
     postText.innerText = preview;
     postText.style.overflow = 'hidden';
