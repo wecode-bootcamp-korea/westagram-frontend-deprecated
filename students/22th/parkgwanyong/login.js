@@ -1,12 +1,14 @@
 const userId = document.querySelector(".userId");
 const userPassword = document.querySelector(".userPassword");
 const loginBtn = document.querySelector(".loginBtn");
+const goToMain = document.getElementsByTagName("a")[0];
 
 userId.addEventListener("keyup", (e) => {
     changeBtnColor();
     if (e.key === "Enter") {
         validateId();
         validatePassword();
+        window.location.replace("main.html");
     }
 });
 
@@ -15,12 +17,14 @@ userPassword.addEventListener("keyup", (e) => {
     if (e.key === "Enter") {
         validateId();
         validatePassword();
+        window.location.replace("main.html");
     }
 });
 
 loginBtn.addEventListener("click", (e) => {
     validateId();
     validatePassword();
+    window.location.replace("main.html");
 });
 
 const changeBtnColor = () => {
