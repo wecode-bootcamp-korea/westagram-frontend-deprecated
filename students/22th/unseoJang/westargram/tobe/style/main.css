@@ -8,10 +8,18 @@ nav{position:fixed;top:0;left:0;width:100%;z-index:99;}
 .main-wrap nav .logo{font-size:29px;color:#000;font-family: 'Lobster', cursive;}
 .logo-wrap{justify-content:start;}
 .search-bar-wrap{position:relative;justify-content:center;width:100%;}
-.search-bar-wrap .search-bar{border:solid 1px rgba(var(--b6a,219,219,219),1);background:rgba(var(--b3f,250,250,250),1);width:215px;align-items: center;padding:7px;}
+.search-bar-wrap .search-bar{border:solid 1px rgba(var(--b6a,219,219,219),1);background:rgba(var(--b3f,250,250,250),1);width:215px;align-items: center;padding:7px;color:#262626;}
+.search-bar-wrap .search-bar::placeholder{text-align:center;color:rgba(var(--f52,142,142,142),1);}
+.search-bar-wrap .search-bar:focus::placeholder{text-align:left;}
+.search-bar-wrap .search-bar:focus{padding:7px 7px 7px 26px;width:215px;align-items: center;color:#262626;}
+.search-bar-wrap label{position:relative;display:flex;align-items: center;;}
+.search-bar-wrap .search-icon{background-image: url('../img/insta-icon.png');background-size: 440px 411px;background-position: -428px -241px;display:inline-block;height:10px;width:10px;position:absolute;left:40%;}
 .btn-group ul{display:flex;flex-direction: row;}
 .btn-group ul li{margin-left:22px;}
 .btn-group ul li a{display:block;overflow:hidden;}
+.btn-group ul li a.my-profile-icon{overflow:hidden;border:1px solid rgba(var(--b3f,250,250,250),1);border-radius:50%;display:inline-block;}
+.btn-group ul li a span.icon-wrap{width:22px; height:22px;}
+.btn-group ul li a span.icon-wrap img{width:100%;}
 
 /*main*/
 main{padding-top:54px;background:rgba(var(--b3f,250,250,250),1);width:960px;margin:0 auto;display:block;}
@@ -86,6 +94,11 @@ aside .copyright-wrap .link-wrap ul li a,
 aside .copyright-wrap .link-wrap ul li span{color:rgba(var(--edc,199,199,199),1);font-size:11px;line-height:13px;} 
 aside .copyright-wrap .link-wrap ul li select{cursor: pointer;height: 100%;left: 0;opacity: 0;position: absolute;top: 0;width: 100%;}
 aside .link-wrap{margin-bottom:16px;}
+
+/*speach-bubble*/
+nav .recent-search-speech-wrap .speech-bubble {position: absolute;background: #00aabb;border-radius: .4em;margin-left:-306px;width:375px;height:362px;top:23px;}
+nav .recent-search-speech-wrap .speech-bubble:after {content: '';position: absolute;top: 0;left: 50%;width: 0;height: 0;border: 7px solid transparent;border-bottom-color: #00aabb;border-top: 0;margin-left: -7px;margin-top: -7px;}
+
 
 @media screen and (max-width:641px){
  main{width:100%;}
