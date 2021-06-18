@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WestagramlogInPage</title>
-  <link href="login.css" rel="stylesheet" type="text/css" />
+  <link href="login-page/login.css" rel="stylesheet" type="text/css" />
   <link href="common.css" rel="stylesheet" type="text/css" />
-  <script defer src="login.js"></script>
+  <script defer src="login-page/login.js"></script>
 </head>
 <body>
   <main>
@@ -14,19 +14,14 @@
         <p>Westagram</p>
       </header>
         <section class="loginContents">
-          <div>
-            <input type="text" id="typingId" placeholder="전화번호, 사용자 이름 또는 이메일" />
-          </div>
-          <div>
-            <input type="password" id="password" placeholder="비밀번호" />
-          </div>
+          <div><input type="text" id="typingId" placeholder="전화번호, 사용자 이름 또는 이메일" /></div>
+          <div><input type="password" id="password" placeholder="비밀번호" /></div>
         </section>
-          <div>
-            <button class="login-btn">로그인</button>
-          </div>
+          <div><button class="login-btn" onclick="location.href='main.html'">로그인</button></div>
       <footer>
         <p>비밀번호를 잊으셨나요?</p>
       </footer>
+
   </main>
 </body>
 </html>

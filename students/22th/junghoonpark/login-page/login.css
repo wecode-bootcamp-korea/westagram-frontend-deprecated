@@ -63,10 +63,12 @@ main {
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #c5e1fb;
+  background-color: #0396f7;
   width: 250px;
   font-size: 17px;
   font-weight: bolder;
+  opacity: 0.2;
+  cursor: pointer;
 }
 
 footer {
