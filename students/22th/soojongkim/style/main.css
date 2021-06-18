@@ -216,6 +216,11 @@ article img {
   margin: 0 0 12px 12px;
 }
 
+.new_comment {
+  font-size: 14px;
+  margin: 0 16px 16px 12px;
+}
+
 .comment_time p {
   font-size: 10px;
   color: #8e8e8e;
@@ -323,4 +328,37 @@ article img {
   height: 38px;
   object-fit: cover;
   border-radius: 70%;
+}
+
+.commentbox {
+  position: relative;
+  width: 614px;
+  height: 56px;
+  padding: 0 16px;
+  border-top: 1px solid #dbdbdb;
+
+}
+
+.input_comment {
+
+  width: 520px;
+  height: 40px;
+  border-radius: 0 0 4px 4px;
+  border: none;
+  padding: 0 16px;
+}
+
+.input_comment:focus {
+  outline: none;
+}
+
+.submit_button {
+  position: absolute;
+  width: 70px;
+  height: 40px;
+  border: none;
+
+  cursor: pointer;
+  background-color: white;
+  color: #0095F6;
 }

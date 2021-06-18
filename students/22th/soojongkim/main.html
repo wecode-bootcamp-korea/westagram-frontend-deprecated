@@ -1,148 +1,197 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>westargram</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css" />
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>westargram</title>
-  <link rel="stylesheet" type="text/css" href="style/common.css" />
-  <link rel="stylesheet" type="text/css" href="style/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" />
-</head>
-
-<body>
-  <!-- nav -->
-  <nav class="nav_bar">
-    <div class="container">
-      <div class="logo">
-        <img src="img/instagram.png" class="insta_icon" alt="icon" />
-        <div class="border"></div>
-        <h1 class="logo_text">westagram</h1>
-      </div>
-      <div class="search">
-        <div class="feed_search">
-          <input type="text" id="input_search" name="feedSearch" class="input_search" placeholder="검색" />
-          <i class="fas fa-search"></i>
+  <body>
+    <!-- nav -->
+    <nav class="nav_bar">
+      <div class="container">
+        <div class="logo">
+          <img src="img/instagram.png" class="insta_icon" alt="icon" />
+          <div class="border"></div>
+          <h1 class="logo_text">westagram</h1>
         </div>
-      </div>
-      <div class="icon">
-        <img src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png " alt="explore"
-          class="explore_icon" />
-        <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart"
-          class="heart_icon" />
-        <img src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="mypage"
-          class="mypage_icon" />
-      </div>
-    </div>
-  </nav>
-  <!-- main -->
-  <main>
-    <div class="feed">
-      <article>
-        <div class="article_header">
-          <div class="profile_box">
-            <img src="img/unsplash.jpg" alt="feedprofile" class="feed_profile" />
-          </div>
-          <p>asd_fg</p>
-          <i class="fas fa-ellipsis-h"></i>
-        </div>
-        <img src="img/paris.jpg" alt="paris" />
-
-        <div class="feed_icon">
-          <div class="feed_icon_left">
-            <i class="fas fa-heart fa-lg"></i>
-            <i class="far fa-comment fa-lg"></i>
-            <i class="far fa-share-square fa-lg"></i>
-          </div>
-          <div class="feed_icon_right">
-            <i class="far fa-bookmark fa-lg"></i>
+        <div class="search">
+          <div class="feed_search">
+            <input
+              type="text"
+              id="input_search"
+              name="feedSearch"
+              class="input_search"
+              placeholder="검색"
+            />
+            <i class="fas fa-search"></i>
           </div>
         </div>
-        <div class="like_people">
-          <div class="like_people_profile">
-            <img src="img/user1.jpg" alt="like" />
-          </div>
-          <span class="like_text"><b>ssssss_yyy</b>님 <b>외 10명</b>이 좋아합니다.</span>
-        </div>
-        <div class="user_commentbox">
-          <span class="comment_id">Tiramisu_kung</span>
-          <span class="comment_text">나도 가고싶다! </span>
-        </div>
-        <div class="comment_time">
-          <p>3시간 전</p>
-        </div>
-
-        <div class="comment">
-          <input type="text" class="input_comment" id="input_comment" placeholder="댓글 달기 ..." />
-          <button type="submit" class="comment-submit" id="comment_submit" disabled>
-            게시
-          </button>
-        </div>
-      </article>
-    </div>
-    <div calss="main_right">
-      <div class="myprofile_insta">
-        <div class="myprofile_box">
-          <img src="img/profileImg.jpg" alt="myProfile" class="myprofile_img" />
-        </div>
-        <div class="user_information">
-          <span class="userid_profile">Soox_jk</span>
-          <span class="username">Soojong Kim</span>
+        <div class="icon">
+          <img
+            src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png "
+            alt="explore"
+            class="explore_icon"
+          />
+          <img
+            src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+            alt="heart"
+            class="heart_icon"
+          />
+          <img
+            src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"
+            alt="mypage"
+            class="mypage_icon"
+          />
         </div>
       </div>
+    </nav>
+    <!-- main -->
+    <main>
+      <div class="feed">
+        <article>
+          <div class="article_header">
+            <div class="profile_box">
+              <img
+                src="img/unsplash.jpg"
+                alt="feedprofile"
+                class="feed_profile"
+              />
+            </div>
+            <p>asd_fg</p>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <img src="img/paris.jpg" alt="paris" />
 
-      <div class="section_story">
-        <span class="story_title">
-          <p class="story">스토리</p>
-          <p class="viewall">모두 보기</p>
-        </span>
-        <div class="user_story">
-          <div class="other_profilebox">
-            <img src="img/user1.jpg" alt="otherProfile" class="other_profileimg" />
+          <div class="feed_icon">
+            <div class="feed_icon_left">
+              <i class="fas fa-heart fa-lg"></i>
+              <i class="far fa-comment fa-lg"></i>
+              <i class="far fa-share-square fa-lg"></i>
+            </div>
+            <div class="feed_icon_right">
+              <i class="far fa-bookmark fa-lg"></i>
+            </div>
           </div>
-          <div class="other_userinfo">
-            <span class="other_userid">coco42</span>
-            <span class="other_username">2시간 전</span>
+          <div class="like_people">
+            <div class="like_people_profile">
+              <img src="img/user1.jpg" alt="like" />
+            </div>
+            <span class="like_text"
+              ><b>ssssss_yyy</b>님 <b>외 10명</b>이 좋아합니다.</span
+            >
           </div>
-        </div>
-        <div class="user_story">
-          <div class="other_profilebox">
-            <img src="img/user1.jpg" alt="otherProfile" class="other_profileimg" />
+          <div class="user_commentbox">
+            <span class="comment_id">Tiramisu_kung</span>
+            <span class="comment_text">나도 가고싶다! </span>
           </div>
-          <div class="other_userinfo">
-            <span class="other_userid">coco42</span>
-            <span class="other_username">1시간 전</span>
+          <div class="comment_time">
+            <p>3시간 전</p>
           </div>
-        </div>
-        <div class="user_story">
-          <div class="other_profilebox">
-            <img src="img/user1.jpg" alt="otherProfile" class="other_profileimg" />
-          </div>
-          <div class="other_userinfo">
-            <span class="other_userid">coco42</span>
-            <span class="other_username">13분 전</span>
-          </div>
-        </div>
-        <div class="user_story">
-          <div class="other_profilebox">
-            <img src="img/user1.jpg" alt="otherProfile" class="other_profileimg" />
-          </div>
-          <div class="other_userinfo">
-            <span class="other_userid">coco42</span>
-            <span class="other_username">13분 전</span>
-          </div>
-        </div>
+          <span class="new_comment"></span>
 
-
+          <div class="commentbox">
+            <input
+              type="text"
+              class="input_comment"
+              id="input_comment"
+              placeholder="댓글 달기 ..."
+            />
+            <button type="submit" class="submit_button" id="comment_submit">
+              게시
+            </button>
+          </div>
+        </article>
       </div>
-    </div>
+      <div calss="main_right">
+        <div class="myprofile_insta">
+          <div class="myprofile_box">
+            <img
+              src="img/profileImg.jpg"
+              alt="myProfile"
+              class="myprofile_img"
+            />
+          </div>
+          <div class="user_information">
+            <span class="userid_profile">Soox_jk</span>
+            <span class="username">Soojong Kim</span>
+          </div>
+        </div>
 
-    <div class="sectionRecommend"></div>
-  </main>
+        <div class="section_story">
+          <span class="story_title">
+            <p class="story">스토리</p>
+            <p class="viewall">모두 보기</p>
+          </span>
+          <div class="user_story">
+            <div class="other_profilebox">
+              <img
+                src="img/user1.jpg"
+                alt="otherProfile"
+                class="other_profileimg"
+              />
+            </div>
+            <div class="other_userinfo">
+              <span class="other_userid">coco42</span>
+              <span class="other_username">2시간 전</span>
+            </div>
+          </div>
+          <div class="user_story">
+            <div class="other_profilebox">
+              <img
+                src="img/user1.jpg"
+                alt="otherProfile"
+                class="other_profileimg"
+              />
+            </div>
+            <div class="other_userinfo">
+              <span class="other_userid">coco42</span>
+              <span class="other_username">1시간 전</span>
+            </div>
+          </div>
+          <div class="user_story">
+            <div class="other_profilebox">
+              <img
+                src="img/user1.jpg"
+                alt="otherProfile"
+                class="other_profileimg"
+              />
+            </div>
+            <div class="other_userinfo">
+              <span class="other_userid">coco42</span>
+              <span class="other_username">13분 전</span>
+            </div>
+          </div>
+          <div class="user_story">
+            <div class="other_profilebox">
+              <img
+                src="img/user1.jpg"
+                alt="otherProfile"
+                class="other_profileimg"
+              />
+            </div>
+            <div class="other_userinfo">
+              <span class="other_userid">coco42</span>
+              <span class="other_username">13분 전</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <script src="js/main.js"></script>
-</body>
+      <div class="sectionRecommend"></div>
+    </main>
 
+    <script src="js/main.js"></script>
+  </body>
 </html>
