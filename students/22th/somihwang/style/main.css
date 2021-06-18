@@ -1,35 +1,32 @@
 body {
   position: relative;
   height: 100vh;
-  font-family: "Noto Sans KR", sans-serif;
   background-color: #fafafa;
-  -ms-overflow-style: none;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* 상단 메뉴 */
 .menu {
-  height: 60px;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  height: 60px;
   border-bottom: 1px solid rgb(237, 237, 237);
   background-color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 100;
 }
 
 .menuBox {
-  width: 850px;
-  height: 50px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 10px;
+  width: 850px;
+  height: 50px;
 }
 
 .logo {
@@ -42,25 +39,25 @@ body {
 }
 
 .logo i {
-  font-size: 1.9rem;
   padding-right: 15px;
   border-right: 2px solid #000;
+  font-size: 1.9rem;
 }
 
 .title {
-  font-size: 1.5rem;
   padding-left: 10px;
   padding-top: 0px;
+  font-size: 1.5rem;
 }
 
 .search {
+  position: relative;
   padding: 5px 30px;
   width: 220px;
   height: 25px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fafafa;
-  position: relative;
 }
 
 .search .fa-search {
@@ -73,8 +70,8 @@ body {
 .search input {
   position: absolute;
   left: 105px;
-  background-color: none;
   width: 100px;
+  background-color: none;
   color: #babcbe;
 }
 
@@ -88,35 +85,40 @@ body {
 main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: stretch;
+  justify-content: center;
   padding: 100px 0;
 }
 
 .feeds {
+  flex-direction: column;
   width: 500px;
   border: 1px solid rgb(237, 237, 237);
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
   background-color: white;
 }
 
 .mainRight {
+  position: sticky;
+  top: 100px;
   width: 330px;
   height: 100%;
   padding: 10px 0 0 30px;
-  position: sticky;
-  top: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .mainRight {
+    display: none;
+  }
 }
 
 /* 피드 상단 */
 .feedTop {
   display: flex;
-  height: 60px;
-  width: 100%;
   align-items: center;
   padding: 10px;
+  height: 60px;
+  width: 100%;
 }
 
 .feedProfile {
@@ -127,10 +129,10 @@ main {
 }
 
 .feedTopRight {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -157,8 +159,8 @@ main {
 .likesPic {
   width: 30px;
   height: 30px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .likesDesc {
@@ -168,6 +170,7 @@ main {
 .likes div {
   padding-left: 10px;
 }
+
 .bolder {
   font-weight: 600;
   color: black;
@@ -181,10 +184,10 @@ main {
 }
 
 .contentBtn {
-  cursor: pointer;
   height: 25px;
   padding-right: 5px;
   background-color: white;
+  cursor: pointer;
 }
 
 .contentBtn:last-child {
@@ -201,15 +204,14 @@ main {
 }
 
 .commentBox {
+  display: flex;
   font-size: 1.1rem;
   padding-bottom: 3px;
-  display: flex;
 }
 
 .commentContent {
+  flex: 1;
   width: 60%;
-  display: flex;
-  justify-content: space-between;
   padding-left: 5px;
 }
 
@@ -229,33 +231,42 @@ main {
 }
 
 .commentTime {
-  font-size: 0.9rem;
-  padding: 5px 0 10px 10px;
   display: inline-block;
   color: #c8c8c8;
+  padding: 5px 0 10px 10px;
+  font-size: 0.9rem;
 }
 
 .far.fa-heart {
   color: #c8c8c8;
 }
 
+.deleteBtn {
+  background-color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
 /* 댓글달기 */
 .commentInputBox {
-  border-top: 1px solid rgb(237, 237, 237);
-  padding: 20px 10px;
   display: flex;
   justify-content: space-between;
+  padding: 20px 10px;
+  border-top: 1px solid rgb(237, 237, 237);
 }
+
 .commentInput {
   flex-grow: 1;
   font-size: 1.1rem;
 }
+
 .commentBtn {
-  font-size: 1.1rem;
+  margin-left: 5px;
   color: #cfe7fc;
   background-color: transparent;
+  font-size: 1.1rem;
   cursor: pointer;
-  margin-left: 5px;
 }
 
 .activate {
@@ -265,53 +276,52 @@ main {
 /* 사이드 */
 .storyBox,
 .recommendationBox {
+  position: relative;
   width: 100%;
   height: 200px;
-  background-color: white;
   border: 1px solid rgb(237, 237, 237);
   border-radius: 5px;
   margin-top: 10px;
-  position: relative;
+  background-color: white;
 }
 
 .storyTop,
 .recommendationTop {
-  height: 40px;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
-
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
+  height: 40px;
+  padding: 15px;
 }
 
 .stories,
 .recommendations {
-  height: 158px;
   margin-top: 40px;
+  height: 158px;
   overflow: scroll;
 }
 
 .story {
-  padding: 3px 10px 6px 15px;
   display: flex;
   align-items: center;
   position: relative;
+  padding: 3px 10px 6px 15px;
 }
 
 .recommendation {
-  padding: 3px 10px 3px 15px;
   display: flex;
   align-items: center;
   position: relative;
+  padding: 3px 10px 3px 15px;
 }
 
 .sideProfile {
   width: 40px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .sideDesc {
@@ -338,8 +348,8 @@ main {
 .manRightProfilePic {
   max-width: 50px;
   height: 50px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile {
@@ -374,13 +384,13 @@ main {
 }
 
 canvas {
-  background-image: linear-gradient(#ca1d7e, #e35157, #f2703f);
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
   position: absolute;
   top: 0px;
   left: 12px;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  background-image: linear-gradient(#ca1d7e, #e35157, #f2703f);
   z-index: 0;
 }
 
@@ -395,26 +405,26 @@ canvas {
 
 /* 사이드-추천 */
 .recommendation button {
-  background-color: transparent;
   width: 60px;
   color: #459cf0;
+  background-color: transparent;
   font-size: 1rem;
   font-weight: 600;
 }
 
 .connection {
   width: 170px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-wrap: normal;
   overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* footer */
 footer {
   padding: 10px;
-  line-height: 130%;
   color: #ccc;
+  line-height: 130%;
 }
 
 .copyright {

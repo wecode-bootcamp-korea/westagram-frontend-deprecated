@@ -1,12 +1,21 @@
+//selectors
 const passInput = document.querySelector(".passInput")
 const idInput = document.querySelector(".idInput")
+const loginBtn = document.querySelector(".button");
 
-function active () {
-    const loginBtn = document.querySelector(".button");
-    const idInput = document.getElementsByClassName("idInput")[0].value;
-    const pwInput = document.getElementsByClassName("passInput")[0].value;
 
-    if(idInput && pwInput){
+//event listeners
+passInput.addEventListener('keyup', loginBtnActivate);
+idInput.addEventListener('keyup', loginBtnActivate);
+loginBtn.addEventListener('click', validate);
+
+//functions
+//login button activate
+function loginBtnActivate () {
+    const idInputValue = idInput.value;
+    const pwInputValue = passInput.value;
+
+    if(idInputValue && pwInputValue){
         loginBtn.classList.add("activate")
     }else {
         loginBtn.classList.remove("activate")
@@ -14,7 +23,20 @@ function active () {
         
 }
 
-passInput.addEventListener('keyup', active);
-idInput.addEventListener('keyup', active);
+//id, password validate
+function validate(e) {
+    e.preventDefault();
 
+    const idInputValue = idInput.value;
+    const pwInputValue = passInput.value;
+
+    const idValidator = /@./ //아이디에 @가 포함되어 있는지 검사할 정규식
+
+    if(!idValidator.test(idInputValue) || pwInputValue.length < 5){
+        alert("적합하지 않은 이메일 또는 비밀번호 형식입니다.");
+    }else if(idValidator.test(idInputValue) && pwInputValue.length >= 5){
+        idInput.value = "";
+        passInput.value = "";
+    };
+}
 

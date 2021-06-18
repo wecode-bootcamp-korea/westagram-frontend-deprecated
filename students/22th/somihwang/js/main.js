@@ -3,10 +3,12 @@ const commentBtn = document.querySelector(".commentBtn");
 const commentList = document.querySelector(".commentList");
 const commentInput = document.querySelector(".commentInput");
 const userID = document.querySelector(".profileID").textContent;
+const deleteBtn = document.querySelector(".deleteBtn");
 
 //eventListeners
 commentBtn.addEventListener("click", addComment);
 commentInput.addEventListener("keyup", colorChange);
+commentList.addEventListener("click", deleteComment);
 
 //functions
 //댓글추가기능
@@ -15,7 +17,7 @@ function addComment(e) {
     e.preventDefault();
 
     //add comment box div
-    const commentBox = document.createElement("div");
+    const commentBox = document.createElement("li");
     commentBox.classList.add("commentBox");
 
     //add id
@@ -29,6 +31,11 @@ function addComment(e) {
     newCommentContent.classList.add("commentContent");
     newCommentContent.innerText = commentInput.value;
     commentBox.appendChild(newCommentContent);
+
+    //add bin button
+    const binbutton = document.createElement("i");
+    binbutton.classList.add("deleteBtn", "fal", "fa-trash");
+    commentBox.appendChild(binbutton);
 
     if(commentInput.value){
         //appendchild
@@ -46,3 +53,13 @@ function colorChange(){
         commentBtn.classList.remove("activate")
     }
 };
+
+//댓글 삭제기능
+function deleteComment(e) {
+    const item = e.target;
+    const itemComment = item.parentElement;
+
+    if (item.classList[0] === "deleteBtn"){
+        itemComment.remove();
+    }
+}
