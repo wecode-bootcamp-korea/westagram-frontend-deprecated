@@ -51,8 +51,10 @@ body {
 }
 
 .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  padding: 5px 30px;
   width: 220px;
   height: 25px;
   border: 1px solid #ccc;
@@ -61,24 +63,50 @@ body {
 }
 
 .search .fa-search {
-  position: absolute;
-  left: 85px;
+  display: inline-block;
   font-size: 0.9rem;
   color: #babcbe;
 }
 
 .search input {
-  position: absolute;
-  left: 105px;
-  width: 100px;
-  background-color: none;
-  color: #babcbe;
+  width: 15%;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.search input:focus {
+  flex: 0.9;
+  display: inline-block;
+  outline: none;
+}
+
+.search input:focus::placeholder {
+  color: transparent;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icons a {
+  margin-right: 10px;
 }
 
 .icons img {
   width: 25px;
   height: 25px;
-  margin-right: 10px;
+}
+
+.menuProfile {
+  border-radius: 50%;
+}
+
+/* 프로필 메뉴 박스 */
+.profileBtnBox {
+  background-color: tomato;
+  width: 100px;
 }
 
 /* 메인 레이아웃*/
@@ -259,6 +287,14 @@ main {
 .commentInput {
   flex-grow: 1;
   font-size: 1.1rem;
+}
+
+.commentInput:focus {
+  outline: none;
+}
+
+.commentInput:focus::placeholder {
+  color: transparent;
 }
 
 .commentBtn {

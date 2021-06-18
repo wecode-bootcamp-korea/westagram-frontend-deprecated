@@ -5,9 +5,14 @@ const loginBtn = document.querySelector(".button");
 
 
 //event listeners
+const init=()=>{
 passInput.addEventListener('keyup', loginBtnActivate);
 idInput.addEventListener('keyup', loginBtnActivate);
 loginBtn.addEventListener('click', validate);
+loginBtn.addEventListener("click", success)
+}
+
+init();
 
 //functions
 //login button activate
@@ -20,7 +25,6 @@ function loginBtnActivate () {
     }else {
         loginBtn.classList.remove("activate")
     }
-        
 }
 
 //id, password validate
@@ -40,3 +44,7 @@ function validate(e) {
     };
 }
 
+//로그인 기능
+function success (){
+  location.replace("http://127.0.0.1:5500/students/22th/somihwang/main.html");
+}
