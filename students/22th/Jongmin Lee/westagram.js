@@ -19,10 +19,9 @@ function checkEmail() {
     var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
 
             if(exptext.test(inputId)==false){	
-                alert("이 메일형식이 올바르지 않습니다.");
+                alert("메일형식이 올바르지 않습니다.");
                 return false;      
             } else {
-                alert("로그인 성공")
                 return true;
             }
 }
@@ -37,3 +36,24 @@ function checkPw() {
         return true;
     }
 }
+
+function loginPermit() {
+
+    if (checkEmail() && checkPw()) {
+        alert("로그인 성공")
+        location.replace("westagram_main.html")
+        return true
+
+    } else {
+        return false
+    }
+}
+
+function login(e) {
+    if(e.keyCode === 13) {
+        loginPermit()
+    }
+}
+
+id.addEventListener('keyup',login);
+pw.addEventListener('keyup',login);
