@@ -186,6 +186,12 @@ nav {
   margin-bottom: 15px;
 }
 
+.main div.feeds .feeds_text span {
+  font-size: 14px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+}
+
 
 /* 댓글 */
 .main div.feeds .reply {
