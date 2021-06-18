@@ -1,6 +1,5 @@
 const replyBtn = document.querySelector(".replyBtn");
 const insertInput = document.querySelector(".replyInput");
-const deleteBtn = document.querySelectorAll(".fa-trash-alt");
 
 replyBtn.addEventListener("click", () => {
     if (insertInput.value == "") {
@@ -14,7 +13,6 @@ replyBtn.addEventListener("click", () => {
 insertInput.addEventListener("keyup", (e) => {
     if (e.key === "Enter") {
         if (insertInput.value == "") {
-            alert("댓글을 입력해주세요");
             return;
         } else {
             insertReplyTag();
@@ -57,7 +55,7 @@ const insertReplyTag = () => {
     optionIcons.append(trash);
     userInfoTag.prepend(spanTag);
     userInfoTag.append(pTag);
-    spanTag.innerHTML = "댓글다는사람";
+    spanTag.innerHTML = "gwanyong";
 
     redHeart.style.display = "none";
 
