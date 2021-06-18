@@ -4,78 +4,86 @@
   box-sizing: border-box;
   font-size: 12px;
 }
+
 body {
   background-color: #fafafa;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .container .containerBg {
-  width: 100%;
-  max-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 100px;
   border: 1px solid rgba(219, 219, 219, 1);
   border-radius: 5px;
-  margin-top: 100px;
 }
+
 .container h1 {
+  display: flex;
   margin: 50px auto;
   font-family: 'Lobster', cursive;
   font-size: 50px;
-  display: flex;
 }
+
 .container .loginBox {
-  width: 100%;
   flex: 3;
+  width: 100%;
 }
+
 .container form {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 50px;
 }
+
 .container input {
   width: 50%;
   height: 50px;
   margin: 0 auto;
   margin-bottom: 10px;
-  border-radius: 5px;
   padding-left: 10px;
   border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 5px;
 }
+
 .container input:focus {
   outline: none;
 }
-.container .inputId,
-.container .inputPassword {
-  /* margin-bottom: 10px; */
-}
+
 .container form button {
   width: 50%;
   margin: 0 auto;
   padding: 10px 0;
-  border-radius: 5px;
-  border: none;
   background-color: #c0dffd;
   color: #fff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
+
 .container form button.active {
   background-color: #0095f6;
 }
+
 .container .forgotPassword {
-  margin: 0 auto;
   width: 50%;
-  text-align: center;
+  margin: 0 auto;
   margin-bottom: 50px;
+  text-align: center;
 }
+
 .container .forgotPassword p {
-  cursor: pointer;
   color: #00367b;
+  cursor: pointer;
 }

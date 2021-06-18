@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&family=Varela&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/styles/common.css">
     <link rel="stylesheet" href="/styles/style.css" />
     <title>westagram</title>
@@ -15,16 +17,33 @@
     <nav id="nav">
       <div class="center">
         <div class="logoBox">
-          <img src="/images/img_nav_logo.png" alt="logo" class="navLogo" />
+          <img alt="logo" src="/images/img_nav_logo.png" class="navLogo" />
           <p class="companyName">instagram</p>
         </div>
         <div class="searchBox">
-          <input type="text" class="navSearch" placeholder="검색"/>
+          <input type="text" class="navSearch" id="navSearch" placeholder="검색" />
+          <i class="fas fa-search"></i>
         </div>
         <div class="iconBox">
-          <img src="/images/img_nav_explore.png" alt="explore" class="navExplore"/>
-          <img src="/images/img_nav_heart.png" alt="heart" class="navHeart"/>
-          <img src="/images/img_nav_profile.png" alt="profile" class="navProfile"/>
+          <img alt="explore" src="/images/img_nav_explore.png"  class="navExplore"/>
+          <img alt="heart" src="/images/img_nav_heart.png"  class="navHeart"/>
+          <img alt="profile" src="/images/img_nav_profile.png"  class="navProfile"/>
+          <img alt="account" src="/images/img_account.jpg"  class="account" id="navAccount"/>
+        </div>
+        <div id="miniMenuBox" class="miniMenuBox" >
+          <i class="fas fa-caret-up"></i>
+          <ul class="miniMenuWrap">
+            <li class="miniMenuList">
+              <i class="far fa-user-circle"></i>
+              프로필</li>
+            <li class="miniMenuList">
+              <i class="far fa-bookmark"></i>
+              저장됨</li>
+            <li class="miniMenuList">
+              <i class="fas fa-cog"></i>
+              설정</li>
+            <li class="miniMenuList">로그아웃</li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -34,8 +53,8 @@
             <div class="mainBg">
                 <section class="mainTop">
                     <div class="profile">
-                      <img src="/images/img_account.jpg" alt="account" class="account"/>
-                      <p>Jacob</p>
+                      <img alt="account" src="/images/img_account.jpg"  class="account"/>
+                      <p>jacob</p>
                     </div>
                     <p class="threeDot">&#x22EF</p>
                   </section>
@@ -53,7 +72,7 @@
                         </div>
                     </div>
                     <div class="mbLiked">
-                        <img src="/images/img_account.jpg" alt="profile">
+                        <img alt="profile" src="/images/img_account.jpg" >
                         <p> <span>snjndf</span>님 <span>외 10명</span> 이 좋아합니다</p>
                     </div>
                     <div class="mbWrittenComments" id="mbWrittenComments">
@@ -70,16 +89,15 @@
                     </div>
                     <form id="form" class="commentInput">
                         <label for="input"></label>
-                      <input name="input" id="input" type="text" placeholder="댓글 달기..."></input>
+                      <input name="input" id="input" type="text" placeholder="댓글 달기..." />
                       <button>게시</button>
                     </form>
                   </section>
             </div>
-          
         </main>
         <aside id="aside">
           <div class="asMyAccount">
-            <img src="/images/img_account.jpg" alt="account" />
+            <img alt="account" src="/images/img_account.jpg"  />
             <div class="asMyProfile">
               <p>wecode_bootcamp</p>
               <div class="asMyProfile_bottom">
@@ -95,28 +113,28 @@
             </div>
             <div class="asStoryListWrap">
                 <div class="asStoryList">
-                    <img src="/images/img_account.jpg" alt="account" />
+                    <img alt="account" src="/images/img_account.jpg"  />
                     <div class="asStoryInfo">
                         <p>this_is_id</p>
                         <p>3분전</p>
                     </div>
                 </div>
                 <div class="asStoryList">
-                    <img src="/images/img_account.jpg" alt="account" />
+                    <img alt="account" src="/images/img_account.jpg"  />
                     <div class="asStoryInfo">
                         <p>this_is_id</p>
                         <p>3분전</p>
                     </div>
                 </div>
                 <div class="asStoryList">
-                    <img src="/images/img_account.jpg" alt="account" />
+                    <img alt="account" src="/images/img_account.jpg"  />
                     <div class="asStoryInfo">
                         <p>this_is_id</p>
                         <p>3분전</p>
                     </div>
                 </div>
                 <div class="asStoryList">
-                    <img src="/images/img_account.jpg" alt="account" />
+                    <img alt="account" src="/images/img_account.jpg"  />
                     <div class="asStoryInfo">
                         <p>this_is_id</p>
                         <p>3분전</p>
@@ -132,7 +150,7 @@
             <div class="asReListWrap">
               <div class="asReList">
                 <div class="asReListLeft">
-                    <img src="/images/img_account.jpg" alt="account" />
+                    <img alt="account" src="/images/img_account.jpg"  />
                     <div class="asReInfo">
                         <p>this_is_recommanded</p>
                         <p>who likes u</p>
@@ -142,7 +160,7 @@
               </div>
               <div class="asReList">
                 <div class="asReListLeft">
-                    <img src="/images/img_account.jpg" alt="account" />
+                    <img alt="account" src="/images/img_account.jpg"  />
                     <div class="asReInfo">
                         <p>this_is_recommanded</p>
                         <p>who likes u</p>
@@ -152,7 +170,7 @@
               </div>
               <div class="asReList">
                 <div class="asReListLeft">
-                    <img src="/images/img_account.jpg" alt="account" />
+                    <img alt="account" src="/images/img_account.jpg"  />
                     <div class="asReInfo">
                         <p>this_is_recommanded</p>
                         <p>who likes u</p>

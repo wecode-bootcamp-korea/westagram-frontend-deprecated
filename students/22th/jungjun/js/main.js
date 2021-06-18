@@ -1,9 +1,31 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
-
+const navAccount = document.getElementById('navAccount');
+const miniMenuBox = document.getElementById('miniMenuBox');
+const navSearch = document.getElementById('navSearch');
+const navSearchIcon = document.getElementById('navSearch').nextElementSibling;
 form.addEventListener('submit', e => {
   e.preventDefault();
   addList();
+});
+
+navAccount.addEventListener('click', () => {
+  miniMenuBox.classList.toggle('active');
+});
+
+navSearch.addEventListener('focus', () => {
+  navSearchIcon.classList.add('active');
+});
+navSearch.addEventListener('focusout', () => {
+  navSearchIcon.classList.remove('active');
+});
+navSearch.addEventListener('keydown', () => {
+  navSearchIcon.classList.add('none');
+});
+navSearch.addEventListener('keyup', () => {
+  if (navSearch.value === '') {
+    navSearchIcon.classList.remove('none');
+  }
 });
 
 // form이 subbit안되어도 기본으로 적용될 사항

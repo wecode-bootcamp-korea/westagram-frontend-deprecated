@@ -13,7 +13,6 @@ loginBtn.addEventListener('click', () => {
   let inputIdValue = inputId.value;
   let inputPasswordValue = inputPassword.value;
 
-  console.log(vaildateEmail(inputIdValue));
   if (vaildateEmail(inputIdValue) === false && inputPasswordValue.length < 9) {
     alert('Please check your Email and Password!');
   } else if (vaildateEmail(inputIdValue) === false) {
@@ -34,12 +33,9 @@ function valueCheck() {
   } else {
     loginBtn.classList.remove('active');
   }
-
-  // vaildateEmail('jungzkxm@name.com');
 }
 
 function vaildateEmail(email) {
-  console.log(email);
   const re =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   let check = re.test(String(email).toLowerCase());
