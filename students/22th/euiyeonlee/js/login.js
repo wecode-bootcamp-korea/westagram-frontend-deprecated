@@ -9,6 +9,11 @@ function activateBtn() {
     if (user_id && user_pw >=6) {
         btn.removeAttribute('disabled');
     }
+
+    /* 삼항연산자 조건식
+    let result = (user_id && user_pw >=6) ? btn.removeAttribute('disabled') : 0;
+    return result;
+    */
 }
 
 idInput.addEventListener('keyup', activateBtn);

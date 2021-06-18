@@ -3,16 +3,9 @@
     margin: 0;
     padding: 0;
   }
-  
-  html, body {
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+
+
+  @font-face {
+    src: url("../fonts/Lobster-Regular.ttf");
+    font-family: "westagram";
+}

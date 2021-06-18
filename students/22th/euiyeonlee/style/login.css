@@ -1,3 +1,16 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
 .loginBox {
     display: flex;
     flex-direction: column;
@@ -60,6 +73,7 @@
 
 .logoFont {
     font-size: 50px;
+    font-family: "westagram";
 }
 
 .inputId, .inputPassword {
@@ -75,15 +89,6 @@ input {
     background-color: #EEEEEF;
     border: 1px solid #dbdbdb;
     font-size: inherit;
-}
-
-@font-face {
-    src: url("../fonts/Lobster-Regular.ttf");
-    font-family: "westagram";
-}
-
-.logoFont {
-    font-family: "westagram";
 }
 
 .loginButton {
