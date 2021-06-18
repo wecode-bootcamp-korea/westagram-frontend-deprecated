@@ -5,6 +5,7 @@ const submitButton = document.getElementsByClassName('commentSubmit')[0];
 const InputEnter = document.getElementById('userComment');
 
 
+// Click 
 submitButton.addEventListener('click', function() {
   const addList = document.createElement('li');
   const addComment = document.getElementById('userComment').value; 
@@ -13,8 +14,8 @@ submitButton.addEventListener('click', function() {
   commentBox.appendChild(addList); 
 });
 
+// Enter Press 
 InputEnter.addEventListener('keypress', function(event) {
-
   if (event.code === 'Enter') {
     const addList = document.createElement('li');
     const addComment = document.getElementById('userComment').value; 

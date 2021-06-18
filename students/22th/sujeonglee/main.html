@@ -47,36 +47,28 @@
         <header>
           <h1>
             <a class="userProfile contentHeader" href="#"></a>
-            <a class="userName" href="#">ikea</a>
+            <a class="userName" href="#">eessoo__</a>
           </h1>
           <button class="ellipsis" type="button">
             <i class="fas fa-ellipsis-h"></i>
           </button>
         </header>
-
         <section class="feedCon">
-          <img src="images/feedImage.jpg" alt="feed image" />
-          <ul class="reactions">
-            <li>
+          <img alt="feed image" src="images/feedImage.jpg"/>
+          <ul class="reactionsBox">
+            <li class="reactionsRight">
               <button type="button">
                 <i class="far fa-heart"></i>
               </button>
-            </li>
-            <li>
               <button type="button">
                 <i class="far fa-comment"></i>
               </button>
-            </li>
-            <li>
               <button type="button">
                 <i class="fas fa-external-link-alt"></i>
               </button>
             </li>
-            
-            <li class="bookmark">
-              <button type="button">
-                <i class="far fa-bookmark"></i>
-              </button>
+            <li>
+              <button><i class="far fa-bookmark"></i></button>
             </li>
           </ul>
           <h2>
@@ -84,24 +76,19 @@
             <b>eessoo__</b>님 외 <button><b> 7명</b></button>이 좋아합니다.
           </h2>
           <p class="feedText">
-            암만, 델리, 방콕의 디자이너들과 IKEA가 협업해 만든 새로운 컬렉션을 지금 만나보세요. LOKALT 로칼트 컬렉션은
-            젊은 디자이너들의 현대적인 감각과 현지 장인들의 전통이 어우러져 정성이 깃든 제품이라 더욱 특별하죠. 
-            개성 넘치는 디자인으로 집 안에 이국적인 분위기를 더해보세요! IKEA 매장과 IKEA.kr에서 더 많은 홈퍼니싱 아이디어를 확인하세요.
+            나의 새로운 취미 ✂️
             <span class="postTime">54분 전</span>
           </p>
-        </section>
-
-        <footer>
           <ul id="commnetBox"></ul>
+        </section>
+        <footer>
           <div class="inputBox">
-            <input id="userComment" class="comment" type="text" placeholder="댓글 달기...">
-            <button class="commentSubmit" type="button">게시</button>
+            <input id="userComment" class="comment" type="text" placeholder="댓글 달기..." >
+            <button class="commentSubmit" type="submit">게시</button>
           </div>
         </footer>
-
       </article>
     </div>
-
     <div class="main-right">
       <header class="userAccount">
         <h1>
@@ -120,19 +107,19 @@
         
         <ul class="storyUser"> 
           <li>
-            <a class="otherUserImg" href="#" target="_blank"><img src="images/user1.jpg" alt="User Profile"></a> 
+            <a class="otherUserImg" href="#" target="_blank"><img alt="User Profile" src="images/user1.jpg"/></a> 
             <a href="#" target="_blank">namzieun<span class="postTime">16분 전</span></a>
           </li>
           <li>
-            <a class="otherUserImg" href="#" target="_blank"><img src="images/user2.jpg" alt="User Profile"></a> 
+            <a class="otherUserImg" href="#" target="_blank"><img alt="User Profile" src="images/user2.jpg"/></a> 
             <a href="#" target="_blank">zz_ing94<span class="postTime">40분 전</span></a>
           </li>
           <li>
-            <a class="otherUserImg" href="#" target="_blank"><img src="images/user3.jpg" alt="User Profile"></a>
+            <a class="otherUserImg" href="#" target="_blank"><img alt="User Profile" src="images/user3.jpg"/></a>
             <a href="#" target="_blank">hwayoonci<span class="postTime">2시간 전</span></a>
           </li>
           <li>
-            <a class="otherUserImg" href="#" target="_blank"><img src="images/user4.jpg" alt="User Profile"></a>
+            <a class="otherUserImg" href="#" target="_blank"><img alt="User Profile" src="images/user4.jpg"/></a>
             <a href="#" target="_blank">cosz_zy<span class="postTime">20시간전</span></a>
           </li>
         </ul>
@@ -145,19 +132,25 @@
         </header>
         
         <ul class="recommandUser">
-          <li>
-            <a class="otherUserImg" href="#"><img src="images/user5.jpg" alt="User Profile"></a> 
-            <a href="#">limpack_official<span class="followReco">회원님을 위한 추천</span></a>
+          <li class="otherUserProfile">
+            <span class="profileBox">
+              <a class="otherUserImg" href="#"><img alt="User Profile" src="images/user5.jpg"/></a> 
+              <a href="#">limpack_official<span class="followReco">회원님을 위한 추천</span></a>
+            </span>
             <button class="follow" type="button">팔로우</button>
           </li>
-          <li>
-            <a class="otherUserImg" href="#"><img src="images/user6.jpg" alt="User Profile"></a> 
-            <a href="#">les_photos_de_cat<span class="followReco">geeeeeee____nie님 외 1명이 팔로우합니다.</span></a>
+          <li class="otherUserProfile">
+            <span class="profileBox">
+              <a class="otherUserImg" href="#"><img alt="User Profile" src="images/user6.jpg"/></a> 
+              <a href="#">les_photos_de_cat<span class="followReco">geeeeeee____nie님 외 1명이 팔로우합니다.</span></a>
+            </span>  
             <button class="follow" type="button">팔로우</button> 
           </li>
-          <li>
-            <a class="otherUserImg" href="#"><img src="images/user7.jpg" alt="User Profile"></a>
-            <a href="#">mornstar_nail<span class="followReco">effie_yxz님 외 3명이 팔로우합니다</span></a>
+          <li class="otherUserProfile">
+            <span class="profileBox">
+              <a class="otherUserImg" href="#"><img alt="User Profile" src="images/user7.jpg"/></a>
+              <a href="#">mornstar_nail<span class="followReco">effie_yxz님 외 3명이 팔로우합니다</span></a>
+            </span>  
             <button class="follow" type="button">팔로우</button>
           </li>
         </ul>
