@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="westagram.css">
+    <title></title>
+  </head>
+  <body>
+      <header class="topheader">
+    <nav class="left">
+       
+        <span> <img id="smallIconLogo" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"></span>
+        <span><a id=smallLetterLogo>instagram</a></span>
+        </nav>
+
+        
+        <span><input type="text" id="search" name="search" value=""></span>
+        
+         <form id="iconNav">
+        <img id="compass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="이미지없음">
+        <img id="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="이미지없음">
+        <img id="myPage"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="이미지없음">
+       </form>
+    
+    
+    </header>
+    
+    
+    <main class="mainPageMain">
+      <div class="feeds">
+        <article>
+          <div id="feedTop"></div>
+          <div id="feedImage">
+         <img id="feedImage1" src="https://i.pinimg.com/originals/5d/99/89/5d9989c2ddc5aaa8a8627df55c998b62.jpg">
+          </div>
+           <div id="feedFunction">피드의 여러기능들</div>
+           <div id="howManyLikes">00님외 00명이 좋아합니다</div>
+           <div id="feedContents">오늘 --에서 --을 했다</div>
+           <div id="feedCommentsListContainer">
+           <!-- <div id="feedCommentsList" class="commentlist">ㅎㅎㅎㅎㅎ</div> -->
+           </div>
+           <!-- //<div id="inputFeedComment"> -->
+             <input type="text" id="comment" placeholder="댓글을 입력하세요">
+             <!-- <input type="button" id="inputCommentButton" value="입력"> -->
+           <!-- </div> -->
+        </article>
+      </div>
+      <div class="main-right">
+         <div id="goToMyPage">내프로필 이미지&닉넴 </div>
+          <div id="story">
+            <div id="storyHeader">스토리, 모두보기</div>
+             <div id="storyList">스토리 목록들</div>
+             <div id="recommandedAccount">
+               <a href="recommandedAccountHeader">나를 위한 추천 / 모두보기</a>
+               <div id="recommandedAccountList"> 나를 위한 추천 목록</div>
+              </div>
+          </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="westagramMain.js"></script>
+  </body>
+</html>

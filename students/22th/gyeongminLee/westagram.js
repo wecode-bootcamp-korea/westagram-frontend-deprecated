@@ -1,14 +1,41 @@
 
+//벨로그에 정리하기 
 
 
-const mode = document.getElementsByClassName("text");//이게 문제인가
-mode.addEventListener('keyup',changeColor);
+const mode = document.querySelector(".login-form");
+mode.addEventListener('keyup', changeColor);
 
-//  console.log(changeColor); //함수제대로 전달 되었는지 어떻게 확인 ?
-  function changeColor (e) {
-    if (document.getElementById("login").value !== "" && document.getElementById("password").value!== "") {
-       document.getElementById("button").style.backgroundColor = "skyblue";
-    } else {
-       document.getElementById("button").style.backgroundColor = "none";
-    }
-  };
+function changeColor (e) {
+ // console.log("asdfasd")
+  const id = document.getElementById("id").value;
+  const password=document.getElementById("password").value;
+  const button = document.getElementById("loginButton");
+
+  if (id !== "" && password !== "") {
+   //  if(document.getElementById("password").value!== ""){
+    button.style.backgroundColor = "skyblue";
+   } else {
+    button.style.backgroundColor = "none";
+  }
+};
+// 댓글 추가 기능 
+
+
+
+
+
+
+
+
+
+
+// mode.addEventListener('keyup',function (event) {
+//     if (document.getElementById("login").value !== "") {
+//       if(document.getElementById("password").value!== ""){
+//        document.getElementById("button").style.backgroundColor = "skyblue";
+//      }
+//
+//        document.getElementById("button").style.backgroundColor = "none";
+//     }
+//   }
+// );
