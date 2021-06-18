@@ -59,7 +59,6 @@ function summitComment() {
     makeBtn.addEventListener("click", (event) => {
        
         const btn = event.target;
-        console.log(btn);
         
         const deleteAll = btn.parentNode;
         
