@@ -1,13 +1,4 @@
-/* COMMON & WRAP */
-.wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding-bottom: 30px;
-}
-
+/* COMMON */
 .user-img {
   border-radius: 50%;
   border: 1px solid #DBDBDB;
@@ -27,7 +18,6 @@ em.user-name {
 .top-header {
   display: flex;
   justify-content: center;
-  width: 100%;
   border-bottom: 1px solid #DBDBDB;
   margin-bottom: 30px;
 }
@@ -168,30 +158,26 @@ main {
 }
 /* contents-container > story-container */
 .story-container {
-  position: relative;
+  display: flex;
   padding: 16px 0 16px 10px;
   margin-bottom: 24px;
   border: 1px solid #DBDBDB;
   border-radius: 3px;
-}
-.story-container ul {
-  position: relative;
-  display: flex;
   overflow: hidden;
 }
-.story-container ul li {
+.story-container li {
   display: flex;
   flex-direction: column;
   width: 66px;
   margin: 0 7px;
   cursor: pointer;
 }
-.story-container ul li .gradient-back {
+.story-container li .gradient-back {
   position: relative;
   width: 64px;
   height: 64px;
 }
-.story-container ul li .gradient-back .user-img {
+.story-container li .gradient-back .user-img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -201,7 +187,7 @@ main {
   border: 2px solid white;
   transform: translate(-50%, -50%);
 }
-.story-container ul li span {
+.story-container li span {
   font-size: 12px;
   margin-top: 5px;
 }
@@ -210,6 +196,7 @@ main {
 .feed {
   border: 1px solid #DBDBDB;
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 
 /* contents-container > feed > feed-header */
@@ -468,6 +455,9 @@ footer ul li:last-of-type::after {
 
 /* 634px 이하 */
 @media screen and (max-width: 634px) {
+  .wrap {
+    
+  }
   .top-header {
     margin-bottom: 2px;
   }

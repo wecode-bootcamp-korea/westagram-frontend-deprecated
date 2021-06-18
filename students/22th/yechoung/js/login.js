@@ -1,8 +1,9 @@
-const idInput = document.querySelector('#id-input');
-const pwInput = document.querySelector('#pw-input');
+"use strict"
+
+const idInput = document.getElementById('id-input');
+const pwInput = document.getElementById('pw-input');
 const loginBtn = document.querySelector('form button');
-const loginBox = document.querySelector('.login-container');
-const vldBox = document.querySelector('.vld-container');
+const loginBox = document.getElementsByClassName('login-container')[0];
 
 let loginInfo = {
   userId: '',
@@ -32,7 +33,6 @@ const handleLogin = (e) => {
 
     loginBox.appendChild(section);
     section.classList.add('vld-container', 'grey-letter');
-    section.setAttribute('aria-label', '유효하지 않은 로그인 정보');
 
     section.innerHTML = `
       <i class="fas fa-exclamation-circle"></i>
@@ -44,11 +44,11 @@ const handleLogin = (e) => {
         }, 2500)
   } else {
     // 로그인 성공 확인을 위한 임시 코드
-    const wrap = document.querySelector('.wrap');
     const div = document.createElement('div');
     
     div.classList.add('login-success');
-    wrap.appendChild(div);
+    loginBox.appendChild(div);
+    
     div.innerHTML = `<p>로그인 성공</p>`
     setTimeout(() => {
       div.remove()

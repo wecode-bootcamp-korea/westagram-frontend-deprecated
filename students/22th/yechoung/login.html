@@ -12,16 +12,13 @@
   <link rel="stylesheet" href="./style/login.css">
 </head>
 <body>
-<div class="wrap">
   <main>
-    <div class="left-container">
-      <section aria-label="서비스 화면 예시" class="mobile-display">
-        <img class="iphone"  alt="아이폰" src="./images/43cc71bb1b43.png">
-        <img class="inner-img"  alt="아이폰 화면" src="./images/0a2d3016f375.jpg">
-      </section>
+    <div class="mobile-display">
+      <img class="iphone"  alt="아이폰" src="./images/43cc71bb1b43.png">
+      <img class="inner-img"  alt="아이폰 화면" src="./images/0a2d3016f375.jpg">
     </div>
     <div class="right-container">
-      <article aria-label="로그인" class="login-container">
+      <section class="login-container">
         <h1>Westagram</h1>
         <form action="#" method="POST" name="user-login">
           <input type="text" placeholder="사용자 이름 또는 이메일" id="id-input">
@@ -37,14 +34,14 @@
         <section aria-label="비밀번호 찾기" class="find-pw">
           <a href="#">비밀번호를 잊으셨나요?</a> 
         </section>
-      </article>
-      <article aria-label="회원가입" class="join-container">
+      </section>
+      <section class="join-container">
         <div class="joinning">
           <span>계정이 없으신가요?</span>
           <button class="blue-letter-btn">가입하기</button>
         </div>
-      </article>
-      <article aria-label="앱 다운로드" class="app-container">
+      </section>
+      <section class="app-container">
         <p>앱을 다운로드하세요.</p>
         <div class="app-btns">
           <button aria-label="앱 스토어에서 다운로드하기">
@@ -54,45 +51,43 @@
             <img alt="구글플레이" src="./images/f155b664a93b.png">
           </button>
         </div>
-      </article>
+      </section>
     </div>
   </main>
   <footer>
-    <section aria-label="기타 메뉴" class="footer-top">
-      <ul>
-        <li>
-          <a href="#">소개</a>
-        </li>
-        <li>
-          <a href="#">블로그</a>
-        </li>
-        <li>
-          <a href="#">채용 정보</a>
-        </li>
-        <li>
-          <a href="#">도움말</a>
-        </li>
-        <li>
-          <a href="#">API</a>
-        </li>
-        <li>
-          <a href="#">개인정보처리방침</a>
-        </li>
-        <li>
-          <a href="#">약관</a>
-        </li>
-        <li>
-          <a href="#">인기계정</a>
-        </li>
-        <li>
-          <a href="#">해시태그</a>
-        </li>
-        <li>
-          <a href="#">위치</a>
-        </li>
-      </ul>
-    </section>
-    <section aria-label="언어 설정 및 카피라이트" class="footer-bottom">
+    <ul class="footer-top">
+      <li>
+        <a href="#">소개</a>
+      </li>
+      <li>
+        <a href="#">블로그</a>
+      </li>
+      <li>
+        <a href="#">채용 정보</a>
+      </li>
+      <li>
+        <a href="#">도움말</a>
+      </li>
+      <li>
+        <a href="#">API</a>
+      </li>
+      <li>
+        <a href="#">개인정보처리방침</a>
+      </li>
+      <li>
+        <a href="#">약관</a>
+      </li>
+      <li>
+        <a href="#">인기계정</a>
+      </li>
+      <li>
+        <a href="#">해시태그</a>
+      </li>
+      <li>
+        <a href="#">위치</a>
+      </li>
+    </ul>
+    <div class="footer-bottom">
       <select name="user-language" id="user-language">
         <option value="af">Afrikaans</option>
         <option value="cs">Čeština</option>
@@ -145,9 +140,8 @@
         <option value="uk">Українська</option>
       </select>
       <span>© 2021 Instagram from Facebook</span>
-    </section>
+    </div>
   </footer>
-</div>
 <script src="./js/login.js"></script>
 </body>
 </html>

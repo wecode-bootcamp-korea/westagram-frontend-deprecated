@@ -1,36 +1,26 @@
-.wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
 
 /* MAIN */
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 742px;
   margin: 14px 0 68px;
 }
 
 
-/* MAIN > LEFT-CONTAIENR */
-.left-container {
+/* MAIN > .mobile-display */
+.mobile-display {
+  position: relative;
   display: flex;
   margin-left: -60px;
 }
-.left-container .mobile-display {
-  position: relative;
-}
-.left-container .mobile-display .inner-img {
+.mobile-display .inner-img {
   position: absolute;
   top: 100px;
   left: 150px;
   transform: translateX(0.3%);
 }
-
 
 /* MAIN > RIGHT-CONTAINER */
 .right-container {
@@ -40,7 +30,6 @@ main {
 /* RIGHY-CONTAINER > login-container */
 .login-container {
   position: relative;
-  width: 100%;
   padding: 31px 40px 23px 40px;
   border: 1px solid #DBDBDB;
 }
@@ -120,7 +109,7 @@ main {
   position: absolute;
   top: -33px;
   left: 0;
-  width: 268px;
+  width: 100%;
   border-top: 1px solid #DBDBDB;
 }
 .login-container .login-facebook span:first-of-type {
@@ -204,17 +193,15 @@ main {
 
 /* FOOTER */
 .footer-top {
-  margin-bottom: 20px;
-}
-.footer-top ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20px;
 }
-.footer-top ul li {
+.footer-top li {
   padding: 0 2px;
 }
-.footer-top ul li + li {
+.footer-top li + li {
   margin-left: 12px;
 }
 
@@ -235,9 +222,9 @@ main {
 /* login-success (임시) */
 .login-success {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   width: 200px;
@@ -253,7 +240,7 @@ main {
 
 /* 874px 이하 */
 @media screen and (max-width: 874px){
-  .left-container {
+  .mobile-display {
     display: none;
   }
 }
@@ -263,7 +250,7 @@ main {
   .footer-top {
     padding: 0 20px;
   }
-  .footer-top ul li {
+  .footer-top li {
     padding: 0 2px 10px;
   }
 }

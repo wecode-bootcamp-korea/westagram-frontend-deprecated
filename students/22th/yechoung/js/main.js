@@ -1,3 +1,5 @@
+"use strict"
+
 const commentBox = document.querySelector('.detail-comments');
 const commentInput = document.querySelector('.feed-comments-input input');
 const postBtn = document.querySelector('.feed-comments-input button');
@@ -56,6 +58,8 @@ const userInfoLi = [
   }
 ];
 
+
+// 피드 내용 더보기 기능
 if(postText.innerText.length > 15) {
   const originText = postText.innerText;
   const previewText = originText.slice(0, 16) + '...';
@@ -85,11 +89,13 @@ const handleViewMore = (origin, preview) => {
   }
 };
 
+// 피드 좋아요 버튼 기능
 const handleSumLike = (e) => {
   e.target.className.includes('fas') ? sumLike += 1 : sumLike;
   sumLikeNum.innerText = sumLike;
 };
 
+// 검색창 기능
 const handleSearchInput = (value) => {
   if(value === '') {
     searchUl.style.display = 'none';
@@ -113,7 +119,7 @@ const printSearchResult = (items) => {
   items.length === 0 ?  searchUl.style.display = 'none' : searchUl.style.display = 'block' ;   
 
   items.forEach((item) => {
-    li = document.createElement('li');
+    const li = document.createElement('li');
     searchUl.appendChild(li);
     li.innerHTML = `
       <img class="user-img" src="${item.userImg}" alt="${item.userId}">
@@ -122,6 +128,7 @@ const printSearchResult = (items) => {
   });
 };
 
+// 댓글 달기 기능
 const postComment = (cmt) => {
   if(writtenComment === '') return;
 
@@ -137,11 +144,9 @@ const postComment = (cmt) => {
 
   const iconLike = document.createElement('i');
   iconLike.classList.add('far', 'fa-heart', 'cmt-like');
-  iconLike.setAttribute('aria-label', '좋아요');
  
   const iconDel = document.createElement('i');
   iconDel.classList.add('fas', 'fa-times', 'cmt-del');
-  iconDel.setAttribute('aria-label', '삭제');
 
   commentBox.appendChild(li);
   li.appendChild(iconBox);
@@ -159,6 +164,7 @@ const postComment = (cmt) => {
   writtenComment = '';
 };
 
+// 댓글 좋아요 & 삭제 기능
 const handleLikeBtn = (btn) => {
   if(btn.className.includes('far')) {
       btn.classList.remove('far');
@@ -173,6 +179,7 @@ const handleDelete = (item) => {
   item.remove();
 };
 
+// 상단 프로필 버튼 기능
 const handleProfileBtnClick = () => {
   myProfileMenu.style.display === 'none' 
   ? myProfileMenu.style.display = 'flex' 
