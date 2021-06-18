@@ -2,37 +2,19 @@ body {
   height: 100%;
 }
 
-header {
-  height: 80px;
-  width: 100%;
-  display: flex;
+.headerWrap{
+  height: 54px;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
   position: sticky;
-  align-self: flex-start;
   top: 0px;
-  background-color: yellow;
 }
 
-main {
+header {
   display: flex;
-  width: 100%;
   height: 100%;
-  overflow: scroll;
-  justify-content: flex-end;
-  background-color: gray;
-}
-
-.feeds {
-  width: 70vw;
-  /* height: 100%; */
-  margin-right: 15px;
-  background-color: ivory;
-}
-
-.main-right {
-  width: 25vw;
-  /* height: 100%; */
-  margin-right: 15px;
-  background-color: lawngreen;
+  background-color: yellow;
 }
 
 .hd {
@@ -42,20 +24,24 @@ main {
 }
 
 .logos {
-  height: 100%;
-  flex-basis: 40%;
+  flex: 1;
   border: 1px solid black;
 }
 
 .serch {
-  height: 100%;
-  flex-basis: 30%;
+  flex: 2;
+  width: 20%;
+  border: 1px solid black;
+}
+
+.inputBox {
+  width: 70%;
+  height: 55%;
   border: 1px solid black;
 }
 
 .nav {
-  height: 100%;
-  flex-basis: 40%;
+  flex: 1;
   border: 1px solid black;
 }
 
@@ -67,27 +53,17 @@ main {
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
 #westargramLogo {
   font-family: "Lobster", cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   padding-left: 20px;
   border-left: 2px solid black;
 }
 
-.inputBox {
-  width: 70%;
-  height: 30%;
-  border: 1px solid black;
-}
-
-/* #mainSerch {
-  width: ; */
-/* 아이콘을 배경이미지로 써보려 했지만 안됨 */
-
 #serchIcon {
-    height: 10px;
-    opacity: 0.5;
-    position: absolute;
-    padding-right: 40px;
+  height: 10px;
+  opacity: 0.5;
+  position: absolute;
+  padding-right: 40px;
 }
 
 input {
@@ -95,34 +71,141 @@ input {
   background-color: transparent;
 }
 
-.feeds {
+main {
   display: flex;
-  justify-content: flex-end;
-  width: 60vw;
+  width: 100%;
+  height: 100%;
+  /* overflow: scroll; */
+  justify-content: center;
+  background-color: gray;
+}
+
+.feeds {
+  width: 880px;
+  display: flex;
+  height: 100%;
   background-color: violet;
 }
 
+.main-right {
+  width: 250px;
+  margin-left: auto;
+  background-color: lawngreen;
+}
+
 article { 
-  display: flex;
-  flex-direction: column;
-  height: 900px;
+  height: 700px;
   width: 100%;
+  min-width: 450px;
+  max-width: 610px;
   margin-top: 40px;
   border: 1px solid greenyellow;
 }
 
-.top {
+.contentHead {
   width: 100%;
   display: flex;
   height: 40px;
+  margin-bottom: 10px;
   background-color: orange;
 }
 
-.thumbnail img {
+.contentHeadProfileThum img {
+  margin-top: 5px;
+  margin-left: 15px;
   height: 30px;
 }
 
-.center img {
+.contentHeadProfile {
+  width: 150px;
+  padding-left: 15px;
+  word-wrap: normal;
+}
+
+.contentHeadProfile{
+  align-self: center;
+}
+
+.contentHeadProfile p {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.contentHeadMoreOption {
+  margin-left: auto;
+  margin-right: 5px;
+  align-self: center;
+}
+
+.contentHeadMoreOption button {
+  background: none;
+}
+
+.imgContent {
+  height: 450px;
   width: 100%;
   overflow: hidden;
+}
+
+.imgContent img {
+  /* width: 100%; */
+  /* object-fit:cover;
+  height: auto; */
+}
+
+.bottomBts {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: turquoise;
+}
+
+.bottomBts img {
+  height: 30px;
+  margin-left: 15px;
+}
+
+#bookMark {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+#likeCount {
+  font-weight: bold;
+  margin: 5px 0px 5px 15px;
+}
+
+#comments{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+}
+
+.comment-row { 
+  width: 100%;
+  display: flex;
+  height: 40px;
+}
+
+#commentWrap {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+#new-comment {
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+  padding-left: 15px;
+  resize: none;
+}
+
+.comment-row button {
+  width: 20%;
+}
+
+.comment-content {
+
 }

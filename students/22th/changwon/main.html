@@ -8,7 +8,8 @@
   <title>main page</title>
 </head>
 <body>
-    <header>
+    <div class="headerWrap">
+      <header>
         <div class="hd logos">
             <img src="images/instagram.png" class="hdLogos" alt="인스타그램 로고">
             <span id="westargramLogo">Westagram</span>
@@ -24,30 +25,42 @@
             <img src=" https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" class="hdLogos" alt="하트">
             <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" class="hdLogos" alt="사람">
         </div>
-    </header>
+      </header>
+    </div>
     <main>
         <div class="feeds">
             <article>
-                <div class="artcl top">
-                    <div class="thumbnail"><img src="images/profile.png" alt="작성자 프로필 사진"></div>
-                    <div class="whoWrite"><span>wecode_bootcamp</span><span>wecode - 위코드</span></div>
-                    <div class="dotdotdot"><button>...</button></div>
+                <div class="contentHead">
+                    <div class="contentHeadProfileThum"><img src="images/profile.png" alt="작성자 프로필 사진"></div>
+                    <div class="contentHeadProfile"><p>wecode_bootcamp</p><p>wecode - 위코드</p></div>
+                    <div class="contentHeadMoreOption"><button>...</button></div>
                 </div>
-                <div class="artcl center">
+                <div class="imgContent">
                     <img src="images/main.jpeg" alt="메인 사진">
                 </div>
                 <div class="artcl bottom">
-                    <div class="bottomBt"></div>
-                    <div class="bottomLike"></div>
-                    <div class="bottomText"></div>
-                    <div class="bottomTime"></div>
-                    <div class="addComment"></div>
+                    <div class="bottomBts">
+                        <img alt="hart" src="images/heart.png" />
+                        <img alt="comment" src="images/comment.png" />
+                        <img alt="share" src="images/share.png" />
+                        <img alt="hart" id="bookMark" src="images/bookmark.png" />
+                    </div>
+                    <p id="likeCount">좋아요 1,392개</p>
+                    <div id="comments">
+                        <div class="comment-row">
+                            <div id="commentWrap">
+                                <textarea id="new-comment" name="new_comment"  placeholder="댓글 달기..."></textarea>
+                            </div>
+                            <button type="submit" onclick="submitComment()">게시</button>
+                        </div>
+                    </div>
                 </div>
             </article>
+              <div class="main-right">
+              </div>
         </div>
-        <div class="main-right">
 
-        </div>
     </main>
 </body>
+<script src="js/main.js"></script>
 </html>

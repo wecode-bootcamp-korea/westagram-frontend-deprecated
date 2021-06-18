@@ -14,13 +14,12 @@ logId.addEventListener('keyup', function() {
 });
 
 logPw.addEventListener('keyup', function() {
-    const id = document.getElementById('log').value;
-    const pw = document.getElementById('pwd').value;
+  const id = document.getElementById('log').value;
+  const pw = document.getElementById('pwd').value;
   
-    if (id.length > 0 && pw .length > 0) {
-      logBt.classList.add('loginButtonB');
-    } else {
-      logBt.classList.remove('loginButtonB');
-    }
+  if (id.length > 0 && pw .length > 0) {
+  logBt.classList.add('loginButtonB');
+  } else {
+  logBt.classList.remove('loginButtonB');
+  }
   });
-  
