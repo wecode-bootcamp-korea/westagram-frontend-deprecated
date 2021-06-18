@@ -1,3 +1,5 @@
+"use strict";
+
 const idInput = document.querySelector('#idInput');
 const pwInput = document.querySelector('#pwInput');
 const btn = document.querySelector('.loginButton');

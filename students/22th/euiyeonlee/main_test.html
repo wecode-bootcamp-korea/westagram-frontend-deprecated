@@ -27,38 +27,154 @@
     </nav>
 
     <main>
-        <section>
-            <div class="feeds">
-                <article class="firstArticle">
-                    <div class="feedIdBar">
-                        <div class="feedProfileImg">
-                            <!-- <img alt="프로필사진" class="logosize" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"> -->
+        <div class="container">
+            <section class="articleWrapper">
+                <article class="feed">
+                    <div class="feed_bar">
+                        <div class="feed_profile">
+                            <span class="feed_profile_img">프사</span>
+                            <span class="profile_id">euiyeonlee</span>
                         </div>
-                        <span class="profileId">euiyeonlee</span>
-                        <div class="iconImg"></div>
+                        <div class="view_more_box">
+                            쓰리닷
+                        </div>
                     </div>
-                    <!-- <img alt="피드사진" class="feedImg" src="./images/feedimg.jpg"> -->
-                    <div class="iconBar">여기는 아이콘바
-
-                    </div>
-                    <div class="likeText">ㅇㅇㅇ님 외 10명이 좋아합니다</div>
-                    <div class="postText">아이디: euiyeonlee
-                        <br>어쩌구저쩌구
-                    </div>
-                    <div class="commented">여기엔 등록된 댓글</div>
-                    <div class="comment">
-                        <input class="inputCmt" type="text" placeholder="댓글 달기...">
-                        <button class="commentBtn" type="submit">게시</button>
+                    <!-- <img alt="피드사진" class="feed_img" src="./images/feed.jpg"> -->
+                    <div class="feed_info">
+                        <div class="feed_icon_bar">
+                            <div class="feed_icon_bar_left">
+                                <span>아이콘1</span>
+                                <span>아이콘2</span>
+                                <span>아이콘3</span>
+                            </div>
+                            <span>아이콘4</span>
+                        </div>
+                        <div class="whoIsLike">
+                            <span>프사</span>
+                            <span>aineworld님 외 10명이 좋아합니다</span>
+                        </div>
+                        <div class="posting">
+                            <span class="posting_id">euiyeonlee</span>
+                            <span class="posting_comment">퇴근길...</span>
+                        </div>
+                        <div class="comment_box">
+                            <input class="input_comment" type="text" placeholder="댓글 달기...">
+                            <button class="commentBtn">게시</button>
+                        </div>
                     </div>
                 </article>
-            </div>
-            <aside>
-                <div class="mainRight">
-                    여기는 mainRight
+            </section>
+
+            <aside class="sideWrapper">
+                <div class="sidebar">
+                    <div class="profile_bar">
+                        <div class="profile_wrapper">
+                            <div class="profile_img_wrapper">
+                                이미지
+                            </div>
+                            <div class="profileName_wrapper">
+                                <span class="profile_id">euiyeonlee</span>
+                                <span class="nickname">이의연</span>
+                            </div>
+                        </div>
+                        <div class="storybox">
+                            <div class="storybar">
+                                <span class="storyname">스토리</span>
+                                <span class="storyShowAll">모두 보기</span>
+                            </div>
+                            <ul class="userlist">
+                                <li class="userbox">
+                                    <div class="user_img_wrapper">
+                                        유저이미지
+                                    </div>
+                                    <div class="user_profile_wrapper">
+                                        <span class="user_id">euiyeonlee</span>
+                                        <span class="user_last_login">20분전</span>
+                                    </div>
+                                </li>
+                                <li class="userbox">
+                                    <div class="user_img_wrapper">
+                                        유저이미지
+                                    </div>
+                                    <div class="user_profile_wrapper">
+                                        <span class="user_id">euiyeonlee</span>
+                                        <span class="user_last_login">20분전</span>
+                                    </div>
+                                </li>
+                                <li class="userbox">
+                                    <div class="user_img_wrapper">
+                                        유저이미지
+                                    </div>
+                                    <div class="user_profile_wrapper">
+                                        <span class="user_id">euiyeonlee</span>
+                                        <span class="user_last_login">20분전</span>
+                                    </div>
+                                </li>
+                                <li class="userbox">
+                                    <div class="user_img_wrapper">
+                                        유저이미지
+                                    </div>
+                                    <div class="user_profile_wrapper">
+                                        <span class="user_id">euiyeonlee</span>
+                                        <span class="user_last_login">20분전</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recommend_box">
+                            <div class="recommend_bar">
+                                <span class="recommendForYou">회원님을 위한 추천</span>
+                                <span class="recommendShowAll">모두 보기</span>
+                            </div>
+                            <ul class="recommend_list">
+                                <li class="recommend_user">
+                                    <div class="recommended_user_img_box">
+                                        유저이미지
+                                    </div>
+                                    <div class="user_profile_wrapper">
+                                        <span class="user_id">hihihi</span>
+                                        <span class="howMany">lee님 외 2명</span>
+                                    </div>
+                                    <div class="followBtn_wrapper">
+                                        <button class="followBtn">팔로우</button>
+                                    </div>
+                                </li>
+                                <li class="recommend_user">
+                                    <div class="recommended_user_img_box">
+                                        유저이미지
+                                    </div>
+                                    <div class="user_profile_wrapper">
+                                        <span class="user_id">hihihi</span>
+                                        <span class="howMany">lee님 외 2명</span>
+                                    </div>
+                                    <div class="followBtn_wrapper">
+                                        <button class="followBtn">팔로우</button>
+                                    </div>
+                                </li>
+                                <li class="recommend_user">
+                                    <div class="recommended_user_img_box">
+                                        유저이미지
+                                    </div>
+                                    <div class="user_profile_wrapper">
+                                        <span class="user_id">hihihi</span>
+                                        <span class="howMany">lee님 외 2명</span>
+                                    </div>
+                                    <div class="followBtn_wrapper">
+                                        <button class="followBtn">팔로우</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="insta_info_box">
+                            <span class="insta_info">Instagram 정보 ・ 지원 ・ 홍보 센터 ・ API ・ 채용 정보 ・ 개인정보처리방침 ・ 약관 ・ 디렉터리 ・ 프로필 ・ 해시태그 ・ 언어 </span>
+                            <span class="copyright"> ⓒ 2021 INSTAGRAM</span>
+                        </div>
+                    </div>
                 </div>
             </aside>
-        </section>
+        </div>
     </main>
+    
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

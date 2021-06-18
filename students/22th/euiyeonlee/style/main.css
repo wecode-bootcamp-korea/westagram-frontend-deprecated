@@ -8,7 +8,7 @@ nav, main {
 
 nav {
     display: flex;
-    height: 100px;
+    height: 7vh;
     justify-content: center;
     align-items: center;
 }
@@ -17,7 +17,7 @@ nav .center {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 100%;
     max-width: 1000px;
 }
 
@@ -57,15 +57,34 @@ nav .navMenu {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 100%;
     width: 120px;
 }
 
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 93vh;
     background-color: #FAFAFA;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+section {
+    display: flex;
+    flex: 2;
+}
+
+article {
+    flex: 2;
+}
+
+aside {
+    display: flex;
+    flex: 1;
 }
 
 /* article {
