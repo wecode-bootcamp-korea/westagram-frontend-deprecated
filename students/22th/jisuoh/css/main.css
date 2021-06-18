@@ -419,8 +419,9 @@ html {
   margin-left: var(--padding-value);
 }
 
-.profile-info .nickname {
+.nickname {
   font-weight: bold;
+  margin-right: var(--padding-value--7);
 }
 
 .profile-info .sentence {
