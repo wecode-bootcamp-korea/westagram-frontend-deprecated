@@ -132,6 +132,8 @@ html {
 
 /* 피드 헤더 */
 .main-wrapper .we-main .feed-box {
+  display: flex;
+  justify-content: center;
   padding-bottom: var(--margin-value);
 }
 
@@ -156,32 +158,6 @@ html {
   justify-content: center;
 }
 
-.main-wrapper
-  .we-main
-  .feed-box
-  .feed
-  .feed__header
-  .profile-box
-  .profile__div {
-  width: var(--img-profile--width);
-  height: var(--img-profile--width);
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.main-wrapper
-  .we-main
-  .feed-box
-  .feed
-  .feed__header
-  .profile-box
-  .profile__div
-  img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .main-wrapper .we-main .feed-box .feed .feed__header .menu-icon {
   width: var(--icon-width);
 }
@@ -194,6 +170,17 @@ html {
   padding: var(--padding-value--7);
   font-weight: bold;
   font-size: var(--font-size--normal);
+}
+
+.feed .feed__header .profile-box .profiles {
+  width: var(--img-profile--width);
+  height: var(--img-profile-width);
+  border: 0;
+  margin-left: 0;
+}
+
+.feed__header .profile-box .profiles img {
+  border: 0;
 }
 
 /* 피드 사진 */
@@ -239,23 +226,15 @@ html {
 }
 
 /* 좋아요 정보 */
-.main-wrapper .we-main .feed-box .feed .like-info {
-  display: flex;
-  justify-content: flex-start;
-  margin: 0 var(--padding-value);
-}
-.main-wrapper .we-main .feed-box .feed .like-info .img-box {
+.feed .profiles {
   width: var(--img-profile-like--width);
   height: var(--img-profile-like--width);
-  border-radius: 50%;
-  border: 1px solid var(--color-gray2);
-  overflow: hidden;
   margin-right: var(--padding-value--7);
+  margin-left: var(--padding-value);
 }
 
-.main-wrapper .we-main .feed-box .feed .like-info .img-box img {
-  width: 100%;
-  height: 100%;
+.feed .profiles img {
+  border: 1px solid var(--color-gray2);
 }
 
 /* 피드 댓글 */
@@ -272,17 +251,6 @@ html {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.main-wrapper
-  .we-main
-  .feed-box
-  .feed__comment
-  .comment
-  .comment__div
-  .nickname {
-  font-weight: bold;
-  margin-right: var(--padding-value--7);
 }
 
 .main-wrapper .we-main .feed-box .feed__comment .comment .comment__div .more {
@@ -346,36 +314,9 @@ html {
   margin-left: var(--padding-value--20);
 }
 
-.aside-box .top-box {
-  display: flex;
-  margin-bottom: var(--padding-value--20);
-}
-
-.top-box .img-box {
+.aside-box .profiles-wrapper .profiles {
   width: var(--img-profile-aside--width);
   height: var(--img-profile-aside--width);
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.img-box img {
-  width: 100%;
-  height: 100%;
-}
-
-.profile-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: var(--padding-value);
-}
-
-.aside-box .top-box .profile-info .nickname {
-  font-weight: bold;
-}
-
-.profile-info .introduce {
-  color: var(--color-gray);
 }
 
 /* aside-in-list */
@@ -393,7 +334,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 var(--padding-value--7) var(--padding-value);
+  padding: var(--padding-value--7) var(--padding-value--7);
 }
 
 .aside__header .title {
@@ -416,24 +357,9 @@ html {
   padding-top: var(--padding-value);
 }
 
-.aside-in-list .aside-list .profiles-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.aside-in-list .aside-list .profiles-wrapper .profile-info .nickname {
-  font-weight: bold;
-}
-
-.profiles {
+.aside-in-list .aside-list .profiles-wrapper .profiles {
   width: var(--img-profile--width);
   height: var(--img-profile--width);
-}
-
-.profiles img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
 }
 
 .aside-in-list .aside__header .title {
@@ -461,5 +387,37 @@ html {
 }
 
 .aside-box p {
+  color: var(--color-gray);
+}
+
+/* 공통 CSS */
+.profiles-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.profiles {
+  width: var(--img-profile--width);
+  height: var(--img-profile--width);
+}
+
+.profiles img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: var(--padding-value);
+}
+
+.profile-info .nickname {
+  font-weight: bold;
+}
+
+.profile-info .sentence {
   color: var(--color-gray);
 }
