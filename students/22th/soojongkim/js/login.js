@@ -5,12 +5,22 @@ let inputPw = document.getElementById("userPw");
 let loginBtn = document.getElementById("btn_login");
 
 
-
-
-inputPw.addEventListener("keyup", function (event) {
-  if (inputId.value == "" && inputPw.value == "") {
-    loginBtn.disabled = true;
-  } else {
+inputId.addEventListener("keyup", function () {
+  if (inputId.value.length > 0 && inputPw.value.length > 0) {
     loginBtn.disabled = false;
+
+  } else {
+    loginBtn.disabled = true;
+
+  }
+});
+
+
+inputPw.addEventListener("keyup", function () {
+  if (inputId.value.length > 0 && inputPw.value.length > 0) {
+    loginBtn.disabled = false;
+  } else {
+    loginBtn.disabled = true;
+
   }
 });
