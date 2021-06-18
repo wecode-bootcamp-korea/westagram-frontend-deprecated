@@ -8,18 +8,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fafafa;
 }
 
 nav {
   background-color: thistle;
   display: flex;
   border: 1px solid black;
-  width: 975px;
-  justify-content: space-around;
+  width: 935px;
+  justify-content: space-between;
   position: fixed;
   height: 54px;
   padding-top: 10px;
   top: 0;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 #searchBar {
@@ -30,7 +33,7 @@ nav {
   border: 2px solid #dbe3eb;
   background-color: #fafafa;
   padding-left: 7px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .weLogo {
@@ -47,7 +50,7 @@ nav {
 }
 
 .weLogo img {
-  width: 29px;
+  width: 28px;
 }
 
 .iconSet {
@@ -57,18 +60,17 @@ nav {
   width: 100px;
 }
 .iconSet img {
-  width: 29px;
-  height: 29px;
+  width: 27px;
+  height: 27px;
 }
 
 main {
-  background-color: green;
+  background-color: skyblue;
   display: flex;
   justify-content: center;
   border: 1px solid black;
-  width: 975px;
-  height: 100%;
   margin-top: 78px;
+  width: 935px;
 }
 
 .feeds {
@@ -122,6 +124,8 @@ article {
 .postingBtn {
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .heart {
@@ -144,11 +148,125 @@ article {
   object-fit: cover;
 }
 
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.bauhausLogoSmall img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 70%;
+  margin-right: 3px;
+  margin-left: 10px;
+}
+
+.westaIdSmall {
+  font-weight: bold;
+}
+
+.postingWd {
+  margin: auto 10px auto 10px;
+}
+
+.comment {
+  margin-left: 10px;
+}
+
+.westaIdComment {
+  font-weight: bold;
+}
+
+.commentTime {
+  font-size: 10px;
+  color: #828282;
+}
+
+.comment {
+  font-size: 16px;
+  color: #828282;
+  margin: 10px 10px auto 10px;
+  padding-top: 5px;
+  border-top: 1px solid #828282;
+}
 .main-right {
   border: 1px solid black;
   width: 293px;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.profileSetRight {
+  display: flex;
+  align-content: center;
+}
+
+.bauhausLogoRight img {
+  object-fit: cover;
+  border-radius: 70%;
+  width: 56px;
+}
+
+.westaIdRightSet {
+  font-size: 16px;
+  padding-top: 3px;
+  padding-left: 10px;
+}
+
+.westaIdRight {
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.storyBox {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.storyBoxNav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 10px auto;
+  font-size: 12px;
+}
+
+.storyBoxSeeAll {
+  font-weight: bolder;
+}
+
+.profileSetStory {
+  display: flex;
+  align-content: center;
+}
+
+.bauhausLogoStory {
+  width: 42px;
+  height: 42px;
+  border-radius: 70%;
+  margin-right: 10px;
+}
+
+.bauhausLogoStory img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 70%;
+}
+
+.westaIdStory {
+  font-weight: bolder;
+}
+
+.westaIdStorySet {
+  margin-top: 7px;
 }
 
 /* 프로필 이미지
 42 42 이미지 겉 박스 크기
 32 32 이미지 크기 */
+
+/* 로고 전체 공통속성
+object-fit: cover;
+border-radius: 70%;
+하나로 묶기 */
