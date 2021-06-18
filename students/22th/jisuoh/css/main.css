@@ -3,7 +3,6 @@
 
 body,
 html {
-  width: 100%;
   height: 100%;
 }
 
@@ -11,19 +10,18 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
-/* header */
+/* 헤더 */
 .main-wrapper .we-header {
+  position: sticky;
   display: flex;
   justify-content: center;
   width: 100%;
-  border-bottom: 1px solid var(--color-gray2);
-  position: sticky;
   top: 0px;
+  border-bottom: 1px solid var(--color-gray2);
 }
 
 .main-wrapper .we-header .header__div {
@@ -33,7 +31,7 @@ html {
   width: 100%;
 }
 
-/* header > logo-box */
+/* 헤더 - 로고 박스 */
 .main-wrapper .we-header .logo-box {
   flex: 0 1 15%;
   display: flex;
@@ -42,8 +40,8 @@ html {
 .main-wrapper .we-header .logo-box .icon-box {
   display: flex;
   align-items: center;
-  padding-right: calc(var(--padding-value) - 2px);
-  border-right: 3px solid var(--color-black);
+  padding-right: var(--padding-value--14);
+  border-right: 2px solid var(--color-black);
 }
 
 .main-wrapper .we-header .logo-box .icon-box img {
@@ -51,17 +49,17 @@ html {
 }
 
 .main-wrapper .logo-box h1 {
-  margin-left: calc(var(--padding-value) - 2px);
+  margin-left: var(--padding-value--14);
   font-size: var(--font-size-large);
 }
 
-/* header > search-box */
+/* 헤더 - 검색 박스 */
 .main-wrapper .we-header .search-box {
+  position: relative;
   flex: 0 1 15%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   padding: var(--padding-value);
 }
 
@@ -69,10 +67,10 @@ html {
   width: var(--search-input--width);
   height: var(--search-input-height);
   padding: var(--padding-value--7);
-  text-align: center;
+  border-color: var(--color-gray2);
   border-radius: 5px;
   background-color: var(--color-lightgray);
-  border-color: var(--color-gray2);
+  text-align: center;
 }
 
 .search::placeholder {
@@ -85,7 +83,7 @@ html {
   width: var(--icon-search--width);
 }
 
-/* header > link-box */
+/* 헤더 - 링크 박스 */
 .main-wrapper .we-header .link-box {
   flex: 0 1 15%;
   display: flex;
@@ -117,22 +115,22 @@ html {
   margin-bottom: var(--padding-value--7);
 }
 
-/* main */
+/* 메인 */
 .main-wrapper .we-main-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
   padding-top: var(--margin-value);
-  overflow: scroll;
   background-color: var(--color-lightgray);
+  overflow: scroll;
 }
 
 .we-main {
   flex: 0 0 50%;
 }
 
-/* feed-header */
+/* 피드 헤더 */
 .main-wrapper .we-main .feed-box {
   padding-bottom: var(--margin-value);
 }
@@ -140,8 +138,8 @@ html {
 .main-wrapper .we-main .feed-box .feed {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--color-gray2);
   max-width: 600px;
+  border: 1px solid var(--color-gray2);
 }
 
 .main-wrapper .we-main .feed-box .feed .feed__header {
@@ -198,7 +196,7 @@ html {
   font-size: var(--font-size--normal);
 }
 
-/* feed__photo */
+/* 피드 사진 */
 .main-wrapper .we-main .feed-box .feed__photo {
   flex: 0 0 10%;
 }
@@ -207,7 +205,7 @@ html {
   width: 100%;
 }
 
-/* feed__like */
+/* 좋아요 */
 .main-wrapper .we-main .feed-box .feed__like {
   flex: 0 0 30%;
   display: flex;
@@ -240,7 +238,7 @@ html {
   height: 100%;
 }
 
-/* like-info */
+/* 좋아요 정보 */
 .main-wrapper .we-main .feed-box .feed .like-info {
   display: flex;
   justify-content: flex-start;
@@ -260,7 +258,7 @@ html {
   height: 100%;
 }
 
-/* feed-comment */
+/* 피드 댓글 */
 .main-wrapper .we-main .feed-box .feed__comment {
   margin: var(--padding-value--7) var(--padding-value);
 }
@@ -322,9 +320,9 @@ html {
   flex: 1 1 90%;
   display: flex;
   align-items: center;
-  resize: none;
   max-height: var(--textarea-height);
   padding: var(--padding-value);
+  resize: none;
 }
 
 .comment-area:focus {
@@ -341,11 +339,11 @@ html {
 /* aside */
 .aside-box {
   flex: 0 0 30%;
+  position: sticky;
   display: flex;
   flex-direction: column;
-  margin-left: var(--padding-value--20);
-  position: sticky;
   top: 0px;
+  margin-left: var(--padding-value--20);
 }
 
 .aside-box .top-box {
@@ -449,9 +447,9 @@ html {
 
 /* etc-link */
 .etc-link {
-  width: 100%;
   margin: var(--padding-value) 0;
 }
+
 .links {
   display: flex;
   flex-wrap: wrap;
