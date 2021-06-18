@@ -1,4 +1,3 @@
-/* nav */
 nav {
   height: 53px;
   display: flex;
@@ -12,12 +11,12 @@ nav h1 .fab {
 }
 
 nav h1 .letterLogo {
-  font-family: 'Lobster', cursive;
-  font-weight: 400;
-  color: #000;
   margin-left: 10px;
   padding-left: 15px;
   border-left: 2px solid #000;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  color: #000;
 }
 
 nav .searchBox {
@@ -45,10 +44,10 @@ nav .searchBox input {
 }
 
 nav ul {
-  width: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 120px;
 }
 
 /* main */
@@ -81,16 +80,12 @@ main .feeds {
 
 .userProfile.contentHeader {
   margin-right: 10px;
-  background-image: url(../images/ikea.jpg);
+  background-image: url(../images/userImage.jpg);
 }
 
 .userName {
   font-size: 16px;
   font-weight: 600;
-}
-
-.feeds header ellipsis {
-  align-self: flex-end;
 }
 
 .feeds header .fa-ellipsis-h {
@@ -107,17 +102,9 @@ main .feeds {
   padding: 5px 10px;
 }
 
-.feeds .feedCon .reactionsBox .reactionsRight {
-  display: flex;
-}
-
-.feeds .feedCon .reactionsBox .reactionsRight button {
-  margin-right: 10px;
-}
-
 .userProfile.feedConUser {
   margin-right: 5px;
-  background-image: url(../images/userImage.jpg);
+  background-image: url(../images/user7.jpg);
 }
 
 .feeds .feedCon h2 {
@@ -129,8 +116,8 @@ main .feeds {
 }
 
 .feeds .feedCon h2 button {
-  font-size: 16px;
   margin-left: 4px;
+  font-size: 16px;
 }
 
 .feeds .feedCon .feedText {
@@ -141,6 +128,11 @@ main .feeds {
 .feeds .feedCon #commnetBox li{
   padding: 5px 10px;
   font-size: 14px;
+}
+
+.feeds .feedCon #commnetBox li .commentUserId {
+  margin-right: 5px;
+  font-weight: bold;
 }
 
 .feeds .feedCon .feedText .postTime {
@@ -171,6 +163,11 @@ main .feeds {
 .feeds footer .commentSubmit {
   flex: 1;
   text-align: right;
+  color: #dbdbdb;
+}
+
+.feeds footer .commentSubmit:hover {
+  color: #0096F6;
 }
 
 /* main-right */
@@ -233,8 +230,7 @@ main .main-right {
   color: #dbdbdb;
 }
 
-.main-rig
-dssdsddssdht .stroy .btnTextColor,
+.main-right .stroy .btnTextColor,
 .main-right .recommand .btnTextColor {
   color: #000;
   font-weight: bold;
@@ -268,28 +264,28 @@ dssdsddssdht .stroy .btnTextColor,
   border-radius: 30px;
 }
 
-.profileBox{
+.main-right .profileBox{
   display: flex;
   align-items: center;
 }
 
-.otherUserProfile {
+.main-right .otherUserProfile {
   display: flex;
   justify-content: space-between;
 }
 
-.followReco {
+.main-right .followReco {
   display: block;
   color: #dbdbdb;
 }
 
-.storyUser .postTime,
-.recommand .followReco {
+.main-right .storyUser .postTime,
+.main-right .recommand .followReco {
   font-size: 14px;
   font-weight: normal;
 }
 
-.recommand .follow {
+.main-right .recommand .follow {
   font-weight: bold;
   color: #0096F6;
 }

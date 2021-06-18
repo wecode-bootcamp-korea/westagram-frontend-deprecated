@@ -11,4 +11,3 @@ addEventListener( 'keyup', () => {
   return (loginId !=="") && (loginPw !=="") ? loginBtnColor.backgroundColor = "#0096f6" : loginBtnColor.backgroundColor = "#C0DFFD"; 
 });
 
-// validation
