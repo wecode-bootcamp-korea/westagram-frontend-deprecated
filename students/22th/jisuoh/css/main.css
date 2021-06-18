@@ -121,6 +121,7 @@ html {
 .main-wrapper .we-main-wrapper {
   display: flex;
   justify-content: center;
+  width: 100%;
   height: 100%;
   padding-top: var(--margin-value);
   overflow: scroll;
