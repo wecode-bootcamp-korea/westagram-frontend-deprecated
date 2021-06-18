@@ -11,3 +11,7 @@ input:focus {
 input::placeholder {
   text-align: center;
 }
+
+textarea:focus {
+  outline: none;
+}
