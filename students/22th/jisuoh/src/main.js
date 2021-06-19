@@ -3,6 +3,18 @@
 const postBtn = document.querySelector(".post-btn");
 const form = document.querySelector(".comment__form");
 
+function deleteComment(li) {
+  li.remove();
+}
+
+function createDeleteButton(li) {
+  const button = document.createElement("button");
+  button.innerHTML = "삭제";
+  li.appendChild(button);
+
+  button.addEventListener("click", () => deleteComment(li));
+}
+
 function createComment(value) {
   const ul = document.querySelector(".comment__ul");
   const li = document.createElement("li");
@@ -13,6 +25,8 @@ function createComment(value) {
 
   li.innerHTML = newTags;
   ul.appendChild(li);
+
+  createDeleteButton(li);
 }
 
 function getValue() {
