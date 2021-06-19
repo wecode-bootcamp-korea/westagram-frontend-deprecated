@@ -3,15 +3,28 @@
 const postBtn = document.querySelector(".post-btn");
 const form = document.querySelector(".comment__form");
 
+function changeImage() {
+  const image = document.querySelector(".mini-heart");
+  console.log(image);
+
+  if (image.src.includes("heart-red.png")) {
+    image.src = "./img/heart.png";
+  } else {
+    image.src = "./img/heart-red.png";
+  }
+}
+
 function deleteComment(li) {
   li.remove();
 }
 
-function createDeleteButton(li) {
-  const button = document.createElement("button");
-  button.innerHTML = "삭제";
-  li.appendChild(button);
+function getLikeButton() {
+  const button = document.querySelector(".mini-like-btn");
+  button.addEventListener("click", changeImage);
+}
 
+function getDeleteButton(li) {
+  const button = document.querySelector(".delete-btn");
   button.addEventListener("click", () => deleteComment(li));
 }
 
@@ -21,12 +34,13 @@ function createComment(value) {
   li.setAttribute("class", "comment");
 
   const nickname = "silvia.oh";
-  const newTags = `<div class="comment__div"><span class="nickname">${nickname}</span><p>${value}</p><button class="more">더 보기</button></div>`;
+  const newTags = `<div class="comment__div"><span class="nickname">${nickname}</span><p>${value}</p><button class="more">더 보기</button></div><div class="like-delete"><button class="mini-like-btn"><img alt="Heart" class="mini-heart" src="./img/heart.png" /></button><button class="delete-btn">삭제</button></div>`;
 
   li.innerHTML = newTags;
   ul.appendChild(li);
 
-  createDeleteButton(li);
+  getLikeButton();
+  getDeleteButton(li);
 }
 
 function getValue() {

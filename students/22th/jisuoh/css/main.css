@@ -262,6 +262,24 @@ html {
   color: var(--color-gray);
 }
 
+.main-wrapper .we-main .feed-box .feed__comment .comment .like-delete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-wrapper
+  .we-main
+  .feed-box
+  .feed__comment
+  .comment
+  .like-delete
+  .mini-heart {
+  width: var(--icon-width);
+  height: var(--icon-width);
+  margin-right: var(--padding-value--7);
+}
+
 .main-wrapper .we-main .feed-box .feed__comment .comment .comment-heart {
   width: var(--icon-search--width);
 }
