@@ -30,7 +30,6 @@ body {
 }
 
 .westagram-wrapper .weatagram__main .banner img {
-  width: var(--banner-width);
   height: var(--banner-height);
 }
 
