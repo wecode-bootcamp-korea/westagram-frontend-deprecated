@@ -1,25 +1,26 @@
 "use strict";
 
-const idInput = document.querySelector('#idInput');
-const pwInput = document.querySelector('#pwInput');
-const btn = document.querySelector('.loginButton');
+const idInput = document.querySelector("#idInput");
+const pwInput = document.querySelector("#pwInput");
+const btn = document.querySelector(".loginButton");
 
 function activateBtn() {
-    const user_id = idInput.value;
-    const user_pw = pwInput.value.length;
+  const user_id = idInput.value;
+  const user_pw = pwInput.value.length;
 
-    if (user_id && user_pw >=6) {
-        btn.removeAttribute('disabled');
-    }
-
-    /* 삼항연산자 조건식
+  if (user_id && user_pw >= 6) {
+    btn.removeAttribute("disabled");
+  } else {
+    btn.setAttribute("disabled", "disabled");
+  }
+  /* 삼항연산자 조건식
     let result = (user_id && user_pw >=6) ? btn.removeAttribute('disabled') : 0;
     return result;
     */
 }
 
-idInput.addEventListener('keyup', activateBtn);
-pwInput.addEventListener('keyup', activateBtn);
+idInput.addEventListener("keyup", activateBtn);
+pwInput.addEventListener("keyup", activateBtn);
 
 /* key값을 지우면 다시 버튼 'disabled' -> "error" -> 한 함수에서 구현해야될 것 같음.
 
