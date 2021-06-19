@@ -50,19 +50,22 @@ function getValue() {
   createComment(textValue);
 }
 
-function eraseContent(e) {
-  e.target.value = "";
+function eraseContent() {
+  form[0].value = "";
 }
 
 function checkEnter(e) {
   if (e.code === "Enter") {
     getValue();
-    eraseContent(e);
+    eraseContent();
   }
 }
 
 const init = () => {
-  postBtn.addEventListener("click", getValue);
+  postBtn.addEventListener("click", () => {
+    getValue();
+    eraseContent();
+  });
   form.addEventListener("keypress", checkEnter);
 };
 
