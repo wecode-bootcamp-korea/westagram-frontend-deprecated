@@ -12,6 +12,7 @@ nav {
   height: 7vh;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 nav .center {
