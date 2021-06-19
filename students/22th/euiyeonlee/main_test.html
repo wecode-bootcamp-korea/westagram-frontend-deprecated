@@ -20,6 +20,7 @@
           <p class="logofont">Westagram</p>
         </div>
         <div class="navSearch">
+          <i class="fas fa-search fa-xs" style="color: #8b8b8b"></i>
           <input class="inputSearch" type="text" placeholder="검색" />
         </div>
         <div class="navMenu">
@@ -63,7 +64,7 @@
                   class="profile_img_sm"
                   src="./images/euiyeon.jpg"
                 />
-                <span class="profile_id">aineworld</span>
+                <span class="profile_id_num">aineworld</span>
                 <span>님 외 </span>
                 <span class="profile_id_num">10명</span>
                 <span>이 좋아합니다</span>
@@ -72,14 +73,15 @@
                 <span class="posting_id">euiyeonlee</span>
                 <span class="posting_comment">퇴근길...</span>
               </div>
-              <div class="comment_box">
-                <input
-                  class="input_comment"
-                  type="text"
-                  placeholder="댓글 달기..."
-                />
-                <button class="commentBtn">게시</button>
-              </div>
+              <div class="commented_box"></div>
+            </div>
+            <div class="comment_box">
+              <input
+                class="input_comment"
+                type="text"
+                placeholder="댓글 달기..."
+              />
+              <button class="commentBtn">게시</button>
             </div>
           </article>
         </section>
@@ -88,10 +90,14 @@
           <div class="sidebar">
             <div class="profile_bar">
               <div class="profile_wrapper">
-                <div class="profile_img_wrapper">이미지</div>
+                <img
+                  alt="프사"
+                  class="profile_img_lg"
+                  src="./images/euiyeon.jpg"
+                />
                 <div class="profileName_wrapper">
                   <span class="profile_id">euiyeonlee</span>
-                  <span class="nickname">이의연</span>
+                  <p class="nickname">이의연</p>
                 </div>
               </div>
               <div class="storybox">
@@ -101,31 +107,47 @@
                 </div>
                 <ul class="userlist">
                   <li class="userbox">
-                    <div class="user_img_wrapper">유저이미지</div>
+                    <img
+                      alt="프사"
+                      class="profile_img"
+                      src="./images/euiyeon.jpg"
+                    />
                     <div class="user_profile_wrapper">
-                      <span class="user_id">euiyeonlee</span>
-                      <span class="user_last_login">20분전</span>
+                      <span class="profile_id">euiyeonlee</span>
+                      <p class="nickname">20분전</p>
                     </div>
                   </li>
                   <li class="userbox">
-                    <div class="user_img_wrapper">유저이미지</div>
+                    <img
+                      alt="프사"
+                      class="profile_img"
+                      src="./images/euiyeon.jpg"
+                    />
                     <div class="user_profile_wrapper">
-                      <span class="user_id">euiyeonlee</span>
-                      <span class="user_last_login">20분전</span>
+                      <span class="profile_id">euiyeonlee</span>
+                      <p class="nickname">1시간전</p>
                     </div>
                   </li>
                   <li class="userbox">
-                    <div class="user_img_wrapper">유저이미지</div>
+                    <img
+                      alt="프사"
+                      class="profile_img"
+                      src="./images/euiyeon.jpg"
+                    />
                     <div class="user_profile_wrapper">
-                      <span class="user_id">euiyeonlee</span>
-                      <span class="user_last_login">20분전</span>
+                      <span class="profile_id">euiyeonlee</span>
+                      <p class="nickname">5시간전</p>
                     </div>
                   </li>
                   <li class="userbox">
-                    <div class="user_img_wrapper">유저이미지</div>
+                    <img
+                      alt="프사"
+                      class="profile_img"
+                      src="./images/euiyeon.jpg"
+                    />
                     <div class="user_profile_wrapper">
-                      <span class="user_id">euiyeonlee</span>
-                      <span class="user_last_login">20분전</span>
+                      <span class="profile_id">euiyeonlee</span>
+                      <p class="nickname">14시간전</p>
                     </div>
                   </li>
                 </ul>
@@ -137,34 +159,46 @@
                 </div>
                 <ul class="recommend_list">
                   <li class="recommend_user">
-                    <div class="recommended_user_img_box">유저이미지</div>
                     <div class="user_profile_wrapper">
-                      <span class="user_id">hihihi</span>
-                      <span class="howMany">lee님 외 2명</span>
+                      <img
+                        alt="프사"
+                        class="profile_img"
+                        src="./images/euiyeon.jpg"
+                      />
+                      <div class="user_profile">
+                        <span class="profile_id">hihihi</span>
+                        <p class="nickname">lee님 외 2명</p>
+                      </div>
                     </div>
-                    <div class="followBtn_wrapper">
-                      <button class="followBtn">팔로우</button>
-                    </div>
+                    <button class="commentBtn">팔로우</button>
                   </li>
                   <li class="recommend_user">
-                    <div class="recommended_user_img_box">유저이미지</div>
                     <div class="user_profile_wrapper">
-                      <span class="user_id">hihihi</span>
-                      <span class="howMany">lee님 외 2명</span>
+                      <img
+                        alt="프사"
+                        class="profile_img"
+                        src="./images/euiyeon.jpg"
+                      />
+                      <div class="user_profile">
+                        <span class="profile_id">hihihi</span>
+                        <p class="nickname">lee님 외 2명</p>
+                      </div>
                     </div>
-                    <div class="followBtn_wrapper">
-                      <button class="followBtn">팔로우</button>
-                    </div>
+                    <button class="commentBtn">팔로우</button>
                   </li>
                   <li class="recommend_user">
-                    <div class="recommended_user_img_box">유저이미지</div>
                     <div class="user_profile_wrapper">
-                      <span class="user_id">hihihi</span>
-                      <span class="howMany">lee님 외 2명</span>
+                      <img
+                        alt="프사"
+                        class="profile_img"
+                        src="./images/euiyeon.jpg"
+                      />
+                      <div class="user_profile">
+                        <span class="profile_id">hihihi</span>
+                        <p class="nickname">lee님 외 2명</p>
+                      </div>
                     </div>
-                    <div class="followBtn_wrapper">
-                      <button class="followBtn">팔로우</button>
-                    </div>
+                    <button class="commentBtn">팔로우</button>
                   </li>
                 </ul>
               </div>
@@ -174,7 +208,7 @@
                   개인정보처리방침 ・ 약관 ・ 디렉터리 ・ 프로필 ・ 해시태그 ・
                   언어
                 </span>
-                <span class="copyright"> ⓒ 2021 INSTAGRAM</span>
+                <p class="copyright">ⓒ 2021 INSTAGRAM</p>
               </div>
             </div>
           </div>
