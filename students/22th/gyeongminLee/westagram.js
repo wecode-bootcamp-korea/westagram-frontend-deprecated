@@ -3,19 +3,24 @@
 
 
 const mode = document.querySelector(".login-form");
+//const mode = document.getElementsByClassName("login-form");
+//두번쨰가 안되는 이유는???
 mode.addEventListener('keyup', changeColor);
 
-function changeColor (e) {
+function changeColor (e) { 
  // console.log("asdfasd")
-  const id = document.getElementById("id").value;
-  const password=document.getElementById("password").value;
-  const button = document.getElementById("loginButton");
+  let id = document.getElementById("id").value;
+  let password=document.getElementById("password").value;
+  let button = document.getElementById("loginButton");
 
-  if (id !== "" && password !== "") {
+  if (id !== "" && password !== ""&&id.length>5&&password.length>5) {
+    // 공백 조건 지워도 될듯 
    //  if(document.getElementById("password").value!== ""){
-    button.style.backgroundColor = "skyblue";
+    button.style.backgroundColor = "#0095F6";//그게 아니라 원래 색이 이래야하는듯 
+    button.disabled=false;
    } else {
-    button.style.backgroundColor = "none";
+    button.style.backgroundColor = "#B2DFFC";
+    button.disabled=true;
   }
 };
 // 댓글 추가 기능 

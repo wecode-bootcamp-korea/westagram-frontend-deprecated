@@ -2,24 +2,34 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="westagram.css">
-    <title></title>
+     <!-- 오토 컴플릿 -->
+     
+
+
+    
+     <link rel="stylesheet" href="westagram.css">
+    <title>메인페이지</title>
   </head>
   <body>
       <header class="topheader">
     <nav class="left">
        
-        <span> <img id="smallIconLogo" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"></span>
+        <span> <img class="headIcon" id="smallIconLogo" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png"></span>
         <span><a id=smallLetterLogo>instagram</a></span>
         </nav>
 
-        
-        <span><input type="text" id="search" name="search" value=""></span>
-        
+        <form>
+        <span><input type="text" id="search" name="search"></span>
+        <div id="autoCompleteResultList">
+
+        </div>
+        </form>
+
+
          <form id="iconNav">
-        <img id="compass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="이미지없음">
-        <img id="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="이미지없음">
-        <img id="myPage"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="이미지없음">
+        <img class="headIcon" id="compass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="이미지없음">
+        <img class="headIcon" id="heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="이미지없음">
+        <img class="headIcon" id="myPage"src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="이미지없음">
        </form>
     
     
@@ -29,31 +39,58 @@
     <main class="mainPageMain">
       <div class="feeds">
         <article>
-          <div id="feedTop"></div>
+          <div id="feedTop">
+            <div id="feedProfile">
+              <img id="feedProfilePhoto" src="data:image/jpeg;base64,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" alt="">
+            </div>
+            <div id="feedProfileAccount">glorious_min</div>
+          </div>
           <div id="feedImage">
          <img id="feedImage1" src="https://i.pinimg.com/originals/5d/99/89/5d9989c2ddc5aaa8a8627df55c998b62.jpg">
           </div>
-           <div id="feedFunction">피드의 여러기능들</div>
-           <div id="howManyLikes">00님외 00명이 좋아합니다</div>
-           <div id="feedContents">오늘 --에서 --을 했다</div>
-           <div id="feedCommentsListContainer">
-           <!-- <div id="feedCommentsList" class="commentlist">ㅎㅎㅎㅎㅎ</div> -->
+           <div id="feedFunction">
+             <div>
+               <img class="feedIcon" id="likesIcon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="">
+            </div>
+                <div>
+                  <img class="feedIcon" id="makeCommentIcon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="">
+                </div>
+                <div>
+                  <img class="feedIcon" id="shareIcon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="">
+                </div>
            </div>
-           <!-- //<div id="inputFeedComment"> -->
+           <div id="howManyLikes">00님외 00명이 좋아합니다</div>
+           <div id="feedContents">사진 찍었다.</div>
+           <div id="feedCommentsListContainer">
+            
+           </div>
              <input type="text" id="comment" placeholder="댓글을 입력하세요">
-             <!-- <input type="button" id="inputCommentButton" value="입력"> -->
-           <!-- </div> -->
         </article>
       </div>
       <div class="main-right">
-         <div id="goToMyPage">내프로필 이미지&닉넴 </div>
+         <div id="main-rightFeedProfileContainer">
+        
+         <img id="main-rightFeedProfilePhoto" src="data:image/jpeg;base64,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" alt="">
+         <div id="main-rightFeedProfileAccount">glorious_min</div>
+         </div>
           <div id="story">
-            <div id="storyHeader">스토리, 모두보기</div>
-             <div id="storyList">스토리 목록들</div>
              <div id="recommandedAccount">
-               <a href="recommandedAccountHeader">나를 위한 추천 / 모두보기</a>
-               <div id="recommandedAccountList"> 나를 위한 추천 목록</div>
+               <div href="recommandedAccountHeader">
+                 <div>나를 위한 추천 </div>
+               <div id="recommandedAccountList">
+                 <div class="recommandedAccount">
+                     <img class="recommandedAccountPhoto"src="https://image.shutterstock.com/image-vector/perfect-slogan-colorful-flowers-butterfly-600w-1617104455.jpg" alt="">
+                      <a class="recommandedAccountId" href="">lulu_lala</a>
+                 </div>
+                 <div class="recommandedAccount">
+                      <img class="recommandedAccountPhoto"src="https://image.shutterstock.com/image-vector/pretty-hurts-typography-slogan-girl-600w-1305019120.jpg" alt="">
+                      <a class="recommandedAccountId" href="">huhu_haha</a>
+                 </div>
+                
+                 
+               </div>
               </div>
+           </div> 
           </div>
       </div>
     </main>

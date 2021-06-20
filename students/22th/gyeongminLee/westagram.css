@@ -1,9 +1,10 @@
 *{
-  border:solid;
+  /* border:solid; */
 }
 
 body {
-  margin: 0;
+  width:100%;
+  height:100%;
 }
 
 @font-face{
@@ -64,18 +65,28 @@ input#loginButton.button{
 }
 nav{
   padding:20px;
+  display:flex;
 }
 
 form#iconNav{
   padding:20px;
+  
 }
 
 
 
 a#smallLetterLogo{
-   margin:20px;
+  
    font-family: 'Billabong';
    font-size: 50px;
+}
+
+.headIcon{
+ width:30px;
+}
+
+img#smallIconLogo {
+  padding-top: 15px;
 }
 
 
@@ -83,7 +94,10 @@ a#smallLetterLogo{
   display:flex;
   justify-content:space-between;
   align-items:center;
-
+  height: 60px;
+  border-bottom: 1px #DBDBDB solid;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .topheader nav.left span{
@@ -93,34 +107,143 @@ a#smallLetterLogo{
 
 /*뭔지는 모르겠지만 비율을 맞추어 주어야할듯 */
 div.feeds{
-  width: 60%;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 500px;
-  margin: 10px;
-  float: left;
+  width: 45%;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    min-height: 100px;
+    margin: auto;
+    float: left;
 }
 article{
   width: 100%;
-    height: 95%;
+  height: 100%;
+  border-color: #DBDBDB;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1%;
 }
+
+.commentSpan{
+  padding-right:10px;
+  padding-left:10px;
+}
+
+.commentLi{
+  display:flex;
+  justify-content: space-between;
+}
+/* 글 길게 쓰면 버튼이 아래로 내려가고 위의 댓글과 코멘트가 겹티는 문제 생김  */
+
+
+
+.buttonContainer{
+  
+}
+
+
 main.mainPageMain{
   width:100%;
-  padding:15px;
+  height:100%;
+  padding-left:10%;
   display: inline-block;
+  background-color: #FAFAFA;
 }
 
 div.main-right{
   float: left;
-  height: 500px;
+  height: auto;
+  min-height: 200px;
   width: 30%;
   /* float: right; */
- 
   margin: 10px;
+  border-style: solid;
+  border-color: #DBDBDB;
+  border-width: thin;
+  border-radius: 1%;
+  margin-top: 30px;
 }
 
 img#feedImage1{
-  width:60%;
+  width:100%;
   /* display:inline-block; */
+}
+
+ html,body{
+  padding:0px;
+  
+} 
+
+div#feedTop{
+  display:inline-block;
+   display:flex;
+   /* height:30px; */
+
+}
+
+div#feedProfile{
+  padding:2px;
+   flex:1;
+}
+
+div#feedProfileAccount{
+  flex:4;
+}
+
+#feedProfilePhoto{
+   width:70%;
+   border-radius:70%;
+   border-color: #DBDBDB;
+   border-style: solid;
+   border-width: 1px;
+}
+#main-rightFeedProfileContainer{
+  display:flex;
+}
+#main-rightFeedProfilePhoto{
+  width:60px;
+  border-radius:70%;
+  flex:1;
+  border-color: #DBDBDB;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#main-rightFeedProfileAccount{
+  flex:4;
+  text-align: center;
+  
+}
+
+.recommandedAccount{
+ display:flex;
+ margin: 5px;
+}
+/* 지정한 값으로 시작하면 적용되는 선택자  */
+
+.recommandedAccountPhoto{
+  width:40px;
+  border-radius: 70%;
+  border-color: #DBDBDB;
+  border-style: solid;
+  border-width: 1px;
+}
+.recommandedAccountId{
+   /* text-align: center; */
+} 
+
+
+#feedFunction{
+  display:flex;
+}
+
+.feedIcon{
+    width:25px;
+}
+
+li{
+  list-style: none;
+  line-height: 1px;
+  padding-left: 1px;
 }
