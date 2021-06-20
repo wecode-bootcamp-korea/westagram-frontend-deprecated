@@ -60,21 +60,23 @@ const userInfoLi = [
 
 
 // 피드 내용 더보기 기능
-if(postText.innerText.length > 15) {
-  const originText = postText.innerText;
-  const previewText = originText.slice(0, 16) + '...';
-
-  postText.innerText = previewText; 
-
-  const viewMoreBtn = document.createElement('span');
-  viewMoreBtn.classList.add('post-more-btn');
-  postTextBox.appendChild(viewMoreBtn);
-  viewMoreBtn.innerText = '더보기';
-
-  viewMoreBtn.addEventListener('click', () => {
-    handleViewMore(originText, previewText)
-  })
-};
+const makeViewMoreBtn = () => {
+  if(postText.innerText.length > 15) {
+    const originText = postText.innerText;
+    const previewText = originText.slice(0, 16) + '...';
+  
+    postText.innerText = previewText; 
+  
+    const viewMoreBtn = document.createElement('span');
+    viewMoreBtn.classList.add('post-more-btn');
+    postTextBox.appendChild(viewMoreBtn);
+    viewMoreBtn.innerText = '더보기';
+  
+    viewMoreBtn.addEventListener('click', () => {
+      handleViewMore(originText, previewText)
+    })
+  };  
+}
 
 const handleViewMore = (origin, preview) => {
   if(postText.style.overflow === 'hidden') {
@@ -217,4 +219,6 @@ const handleProfileBtnClick = () => {
   searchInput.addEventListener('keyup', (e) => {
     handleSearchInput(e.target.value)
   })
+
+  makeViewMoreBtn();
 })();
