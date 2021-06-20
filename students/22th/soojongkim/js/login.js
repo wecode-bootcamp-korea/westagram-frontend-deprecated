@@ -5,7 +5,7 @@ let inputPw = document.getElementById("userPw");
 let loginBtn = document.getElementById("btn_login");
 
 
-inputId.addEventListener("keyup", function () {
+inputId.addEventListener("keyup", () => {
   if (inputId.value.length > 0 && inputPw.value.length > 0) {
     loginBtn.disabled = false;
 
@@ -16,7 +16,7 @@ inputId.addEventListener("keyup", function () {
 });
 
 
-inputPw.addEventListener("keyup", function () {
+inputPw.addEventListener("keyup", () => {
   if (inputId.value.length > 0 && inputPw.value.length > 0) {
     loginBtn.disabled = false;
   } else {

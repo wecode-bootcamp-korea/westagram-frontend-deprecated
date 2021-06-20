@@ -98,21 +98,26 @@
 
 /* main */
 main {
+  width: 935px;
+  margin: 0 auto;
   display: flex;
-  margin: 80px auto;
-  max-width: 935px;
-  height: 850px;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+.feed {
+  display: inline-block;
+  width: 614px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-right: 28px;
 }
 
 /* article */
 article {
   display: flex;
   flex-direction: column;
-  width: 614px;
-  border: 1px solid #dbdbdb;
-  border-radius: 4px;
-  background-color: #ffffff;
-  margin-right: 28px;
 }
 
 article img {
@@ -126,8 +131,6 @@ article img {
   width: 612px;
   height: 60px;
   padding: 16px;
-  border-radius: 4px;
-  background-color: #ffffff;
 }
 
 .article_header p {
@@ -227,9 +230,12 @@ article img {
 }
 
 /* main right */
-.main-right {
-  display: inline-block;
+.main_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 650px;
   width: 320px;
+  position: fixed;
 }
 
 /* myProfile  */
@@ -237,7 +243,6 @@ article img {
   display: flex;
   align-items: center;
   margin: 0 0 30px 10px;
-  position: fixed;
 }
 
 .myprofile_box {
@@ -280,8 +285,7 @@ article img {
   border-radius: 4px;
   padding: 8px 16px;
   overflow: hidden;
-  position: fixed;
-  margin-top: 90px;
+  margin-top: 30px;
 }
 
 .story_title {
@@ -331,16 +335,16 @@ article img {
 }
 
 .commentbox {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 614px;
   height: 56px;
   padding: 0 16px;
   border-top: 1px solid #dbdbdb;
-
 }
 
 .input_comment {
-
   width: 520px;
   height: 40px;
   border-radius: 0 0 4px 4px;
@@ -353,12 +357,10 @@ article img {
 }
 
 .submit_button {
-  position: absolute;
   width: 70px;
   height: 40px;
   border: none;
-
   cursor: pointer;
   background-color: white;
-  color: #0095F6;
+  color: #0095f6;
 }
