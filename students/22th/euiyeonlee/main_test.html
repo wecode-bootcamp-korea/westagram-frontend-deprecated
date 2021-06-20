@@ -70,10 +70,23 @@
                 <span>이 좋아합니다</span>
               </div>
               <div class="posting">
-                <span class="posting_id">euiyeonlee</span>
+                <span class="posting_id" id="postId">euiyeonlee</span>
                 <span class="posting_comment">퇴근길...</span>
               </div>
-              <div class="commented_box"></div>
+              <div class="commented_box">
+                <ul class="comment_ul_list" id="cmt_ul">
+                  <li class="comment_list">
+                    <div class="comment_info_box">
+                      <span class="posting_id">lee</span>
+                      <span class="posting_comment">한강 이쁘네요</span>
+                    </div>
+                    <div class="comment_mod_box">
+                      <i class="far fa-heart fa-xs"></i>
+                      <i class="far fa-trash-alt fa-xs"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="comment_box">
               <input
@@ -81,7 +94,14 @@
                 type="text"
                 placeholder="댓글 달기..."
               />
-              <button class="commentBtn">게시</button>
+              <button
+                class="commentBtn"
+                type="submit"
+                onclick="submitComment()"
+                disabled
+              >
+                게시
+              </button>
             </div>
           </article>
         </section>

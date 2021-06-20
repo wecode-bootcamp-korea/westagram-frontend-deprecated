@@ -139,18 +139,13 @@ aside {
   max-width: 320px;
 }
 
-.fas {
+.fas,
+.far {
   color: #0f0f0f;
-  padding-right: 20px;
 }
 
 .fa-ellipsis-h {
   padding-right: 0;
-}
-
-.far {
-  color: #0f0f0f;
-  padding-right: 20px;
 }
 
 #bookmark {
@@ -166,7 +161,7 @@ aside {
 .feed_info {
   display: flex;
   flex-direction: column;
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
 }
 
 .feed_icon_bar {
@@ -183,6 +178,7 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 140px;
 }
 
 .whoIsLike {
@@ -234,6 +230,10 @@ aside {
   background-color: white;
   color: #0095f6;
   font-size: 15px;
+}
+
+.commentBtn:disabled {
+  color: #b2dffc;
 }
 
 .profile_bar {
@@ -316,4 +316,22 @@ li {
 
 .copyright {
   margin-top: 20px;
+}
+
+.commented_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.comment_list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.comment_mod_box {
+  display: flex;
+  justify-content: space-between;
+  width: 30px;
 }
