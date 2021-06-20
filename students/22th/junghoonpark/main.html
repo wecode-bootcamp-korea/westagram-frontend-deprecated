@@ -6,7 +6,8 @@
   <title>WestagramMainPage</title>
   <link href="main-page/main.css" rel="stylesheet" type="text/css" />
   <link href="common.css" rel="stylesheet" type="text/css" />
-  <script defer src="main-page/main.jsgit"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <script defer src="main-page/main.js"></script>
 </head>
 <body>
   <nav>
@@ -59,19 +60,24 @@
           <span>The Bauhaus Cooperation Berlin Dessau Weimar invites online to the "Workshops for the Whole Earth" on June 4 and 5, 2021.</span>
           <p class="commentTime">54분전</p>
         </div>
+        <ul class="items">
+          <li class="item">
+          </li>
+        </ul>
         <div class="comment">
-          <p>댓글달기</p>
+          <input class="input" type="text" id="commentBoard" placeholder="댓글 달기..."/>
+          <button class="itemAdd"><i class="fas fa-plus"></i></button>
         </div>
       </article>
     </div>
     <div class="main-right">
       <div class="profileSetRight">
-        <div class="bauhausLogoRight">
-          <img src="data:image/png;base64,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" alt="Bauhaus Dessau Logo">
+        <div class="dieterRamsRight">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_pcQ9Q1D3JOFDrDeZfWB8hNPQLUBrLJv85pPyaF85njqOPgMQI97xDJITAqQIR-t6G9Q&usqp=CAU" alt="Dieter Rams Profile">
         </div>
         <div class="westaIdRightSet">
-          <p class="westaIdRight">bauhaus_dessau_foundation</p>
-          <p>Bauhaus Dessau-Dessau</p>
+          <p class="westaIdRight">dieter_rams</p>
+          <p>Braun-Dessau-Germany</p>
         </div>
       </div>
       <div class="storyBox">
@@ -81,19 +87,77 @@
         </div>
         <div class="profileSetStory">
           <div class="bauhausLogoStory">
-            <img src="data:image/png;base64,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" alt="Bauhaus Dessau Logo">
+            <img alt="wassily kandinsky" src="https://artpil.com/wp-content/uploads/2017/06/Wassily-Kandinsky-350bio.jpg"/>
           </div>
           <div class="westaIdStorySet">
-            <p class="westaIdStory">bauhaus_dessau_foundation</p>
-            <p>Bauhaus Dessau-Dessau</p>
+            <p class="westaIdStory">wassily_kandinsky</p>
+            <p class="westaStoryTime">10분전</p>
+          </div>
+        </div>
+        <div class="profileSetStory">
+          <div class="bauhausLogoStory">
+            <img  alt="Bauhaus Dessau" src="https://i.pinimg.com/originals/15/56/76/155676b92c6c2e44108a8ed51a3056dc.jpg" />
+          </div>
+          <div class="westaIdStorySet">
+            <p class="westaIdStory">dessau_foundation</p>
+            <p>16분전</p>
+          </div>
+        </div>
+        <div class="profileSetStory">
+          <div class="bauhausLogoStory">
+            <img alt="Sebastian Weiss" src="https://64.media.tumblr.com/57e5fb741979e549ac8c6f52651407b3/tumblr_nibmrlWFQi1sdyz7uo1_1280.jpg"/>
+          </div>
+          <div class="westaIdStorySet">
+            <p class="westaIdStory">sebastian_weiss</p>
+            <p>20분전</p>
+          </div>
+        </div>
+        <div class="profileSetStory">
+          <div class="bauhausLogoStory">
+            <img alt="post poetics" src="https://i2.wp.com/postpoetics.kr/ppwp/wp-content/uploads/2020/05/COVER-36.jpg?fit=1200%2C1707&ssl=1"/>
+          </div>
+          <div class="westaIdStorySet">
+            <p class="westaIdStory">post_poetics</p>
+            <p>30분전</p>
           </div>
         </div>
       </div>
       <div class="followRecommendBox">
-        프로필 이미지/로고 (변수로 각각 다른 이미지 줄 수 있는지 공부)
+        <div class="storyBoxNav">
+          <p class="storyBoxTitle">회원님을 위한 추천</p>
+          <p class="storyBoxSeeAll">모두 보기</p>
+        </div>
+        <div class="profileSetStory">
+          <div class="bauhausLogoStory">
+            <img alt="musk" src="https://tago.kr/images/sub/TG300-D02_img01.png"/>
+          </div>
+          <div class="westaIdStorySet">
+            <p class="westaIdStory">nylonMusk</p>
+            <p class="westaStoryTime">으이~</p>
+          </div>
+        </div>
+        <div class="profileSetStory">
+          <div class="bauhausLogoStory">
+            <img  alt="dodge" src="https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=20210505102219067819ecba8d8b8617764132.jpg" />
+          </div>
+          <div class="westaIdStorySet">
+            <p class="westaIdStory">dodge</p>
+            <p>멍멍~</p>
+          </div>
+        </div>
+        <div class="profileSetStory">
+          <div class="bauhausLogoStory">
+            <img alt="Let's Go" src="https://image.edaily.co.kr/images/Photo/files/NP/S/2021/04/PS21042001209.jpg"/>
+          </div>
+          <div class="westaIdStorySet">
+            <p class="westaIdStory">Let's go~</p>
+            <p>갈끄니까~</p>
+          </div>
+        </div>
       </div>
       <footer>
-        저작권 및 회색글씨 정보
+        <span>Westagram 정보 · 지원 · 홍보 센터 · API · <br>채용 정보 · 개인정보처리방침 · 약관 ·<br>디렉터리 · 프로필 · 해시태그 · 언어<br><br>ⓒ 2021 WESTAGRAM
+        </span>
       </footer>
     </div>
   </main>

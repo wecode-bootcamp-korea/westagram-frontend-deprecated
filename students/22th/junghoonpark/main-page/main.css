@@ -12,10 +12,8 @@ body {
 }
 
 nav {
-  background-color: thistle;
   display: flex;
-  border: 1px solid black;
-  width: 935px;
+  width: 965px;
   justify-content: space-between;
   position: fixed;
   height: 54px;
@@ -23,6 +21,8 @@ nav {
   top: 0;
   padding-left: 14px;
   padding-right: 14px;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #fafafa;
 }
 
 #searchBar {
@@ -30,7 +30,7 @@ nav {
   height: 34px;
   border: none;
   border-radius: 5px;
-  border: 2px solid #dbe3eb;
+  border: 2px solid #ebebeb;
   background-color: #fafafa;
   padding-left: 7px;
   font-size: 14px;
@@ -65,24 +65,21 @@ nav {
 }
 
 main {
-  background-color: skyblue;
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   margin-top: 78px;
   width: 935px;
 }
 
 .feeds {
-  background-color: greenyellow;
-  border: 1px solid black;
   height: 1002px;
 }
 
 article {
-  background-color: yellow;
-  border: 1px solid black;
-  width: 614px;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  width: 616px;
 }
 
 .profileSet {
@@ -110,8 +107,8 @@ article {
 }
 
 .postingImage img {
-  width: 610px;
-  height: 610px;
+  width: 614px;
+  height: 614px;
   object-fit: cover;
 }
 
@@ -120,6 +117,7 @@ article {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 5px;
 }
 
 .heart {
@@ -145,6 +143,7 @@ article {
 .like {
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }
 
 .bauhausLogoSmall img {
@@ -161,11 +160,37 @@ article {
 }
 
 .postingWd {
-  margin: auto 10px auto 10px;
+  margin: 5px 10px auto 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 7px;
 }
 
 .comment {
   margin-left: 10px;
+}
+
+#commentBoard {
+  border: 3px solid #ebebeb;
+  background-color: #fafafa;
+  border: none;
+  width: 590px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.itemAdd {
+  border: none;
+  background-color: #fafafa;
+  padding-bottom: 10px;
+  padding-right: 7px;
+  color: #ababab;
+}
+
+.itemDel {
+  border: none;
+  background-color: #fafafa;
+  color: #ababab;
+  margin-left: 15px;
 }
 
 .westaIdComment {
@@ -173,20 +198,25 @@ article {
 }
 
 .commentTime {
-  font-size: 10px;
-  color: #828282;
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #8d8d8d;
+}
+
+.items {
+  margin: auto 10px auto 10px;
+  list-style: none;
 }
 
 .comment {
+  display: flex;
   font-size: 16px;
   color: #828282;
   margin: 10px 10px auto 10px;
-  padding-top: 5px;
-  border-top: 1px solid #828282;
 }
 .main-right {
-  border: 1px solid black;
-  width: 293px;
+  width: 320px;
   font-size: 12px;
   margin-left: 30px;
 }
@@ -196,10 +226,11 @@ article {
   align-content: center;
 }
 
-.bauhausLogoRight img {
+.dieterRamsRight img {
   object-fit: cover;
   border-radius: 70%;
   width: 56px;
+  height: 56px;
 }
 
 .westaIdRightSet {
@@ -214,8 +245,15 @@ article {
 }
 
 .storyBox {
+  margin-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 320px;
+  height: 240px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
 .storyBoxNav {
@@ -225,13 +263,21 @@ article {
   font-size: 12px;
 }
 
+.storyBoxTitle {
+  font-weight: bolder;
+  color: #828282;
+  font-size: 14px;
+}
+
 .storyBoxSeeAll {
   font-weight: bolder;
+  font-size: 15px;
 }
 
 .profileSetStory {
   display: flex;
   align-content: center;
+  margin-top: 15px;
 }
 
 .bauhausLogoStory {
@@ -252,15 +298,28 @@ article {
   font-weight: bolder;
 }
 
+.westaStoryTime {
+  margin-top: 2px;
+}
+
 .westaIdStorySet {
   margin-top: 7px;
 }
 
-/* 프로필 이미지
-42 42 이미지 겉 박스 크기
-32 32 이미지 크기 */
+.followRecommendBox {
+  margin-top: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 320px;
+  height: 220px;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  overflow: hidden;
+}
 
-/* 로고 전체 공통속성
-object-fit: cover;
-border-radius: 70%;
-하나로 묶기 */
+footer {
+  color: #828282;
+  margin-top: 15px;
+  font-weight: bold;
+}
