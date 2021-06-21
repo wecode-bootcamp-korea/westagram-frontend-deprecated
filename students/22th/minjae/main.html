@@ -2,28 +2,66 @@
   <head>
     <meta charset="utf-8" />
       <link rel="shortcut icon" href="img/favicon.ico" />
+      <script src="https://kit.fontawesome.com/e0a876ba77.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="style/main.css" type="text/css" />
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="nav">
-      <h1 class="nav_logo">Westagram</h1>
-      <input type="nav_search" class="search" name="q" placeholder="검색" />
-      <ul class="nav_menu">
-        <li><a href="#"><span class=""></span>icon1</a></li>
-        <li><a href="#"><span class=""></span>icon2</a></li>
-        <li><a href="#"><span class=""></span>icon3</a></li>
-      </ul>
-    </nav>
-    <main class="main">                 
-      <article class="main_space">
-        <p class="main_peed">article</p>
-        <form class="comment">
-          <textarea class="comment_box" placeholder="댓글 달기.."></textarea>
-          <button class="comment_btn">게시</button>
-        </form>
-      </article>
-      <aside class="main_side">aside</aside>
-    </main>
+    <div class="container">
+      <nav class="nav">
+        <h1 class="navLogo">Westagram</h1>
+        <input type="search" class="navSearch" name="q" placeholder="검색" />
+        <ul class="navMenu">
+          <li><a href="#"><img aria-label="explore" class="navIcon" src="img/main/explore.png"></a></li>
+          <li><a href="#"><img aria-label="heart" class="navIcon" src="img/main/heart.png"></a></li>
+          <li><a href="#"><img aria-label="profile" class="navIcon" src="img/main/profile.png"></a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="mainInner">
+          <article class="mainSpace">
+            <div class="articleHeader">
+              <img class="profileIcon" src="img/main/icon_profile.PNG">
+              <span class="nickName">wecode_22th</span>
+            </div>
+            <img class="mainFeed" src="img/main/feed.png">
+            <div class="feedIcon">
+              <span class="fi"><i class="far fa-heart"></i></span>
+              <span class="fi"><i class="far fa-comment"></i></span>
+              <span class="fi"><i class="fas fa-share-square"></i></span>
+            </div>
+            <ul class="feedComment"></ul>
+            <form class="comment">
+              <input class="commentBox" placeholder="댓글 달기.." />
+              <button class="commentBtn">게시</button>
+            </form>
+          </article>
+          <aside class="mainSide">
+            <div class="profile">
+              <img class="profileIcon2" src="img/main/icon_profile.PNG">
+              <div class="profileText">
+                <span class="nickName2">wecode_22th_bootcamp</span>
+                <span class="company">WeCode | 위코드</span>
+              </div>
+            </div>
+            <div class="asideContainer">
+              <div class="story">
+                <h2>스토리</h2>
+                <p class="asideName"><img src="img/main/icon_profile.PNG">닉네임</p>
+                <p class="asideName"><img src="img/main/icon_profile.PNG">닉네임</p>
+                <p class="asideName"><img src="img/main/icon_profile.PNG">닉네임</p>
+              </div>
+              <div class="recommend">
+                <h2>회원님을 위한 추천</h2>
+                <p class="asideName"><img src="img/main/icon_profile.PNG">닉네임</p>
+                <p class="asideName"><img src="img/main/icon_profile.PNG">닉네임</p>
+                <p class="asideName"><img src="img/main/icon_profile.PNG">닉네임</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
