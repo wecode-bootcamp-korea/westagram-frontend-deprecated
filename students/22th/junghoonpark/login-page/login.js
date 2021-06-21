@@ -7,15 +7,25 @@ westagramId.addEventListener('keyup', function(){
   if(westagramId.value !== "" && westagramPw.value.length > 5 ){
     logInBtn.style.opacity = '1';
     logInBtn.disabled = false;
+  }else{
+    logInBtn.style.opacity = '0.2';
+    logInBtn.disabled = true;
   }
 })
 
 westagramPw.addEventListener('keyup', function(){
-  if(westagramPw.value !== "" && westagramId.value.length > 5)
-  logInBtn.style.opacity = '1';
-  logInBtn.disabled = false;
+  if(westagramPw.value !== "" && westagramId.value.length > 5){
+    logInBtn.style.opacity = '1';
+    logInBtn.disabled = false;
+  }else{
+    logInBtn.style.opacity = '0.2';
+    logInBtn.disabled = true;
+  }
 })
 
+function checkValid(){
+  
+}
 
 // const loginContainer = document.querySelector('#loginWrapper')
 // console.log("여기있어요")
@@ -34,3 +44,5 @@ westagramPw.addEventListener('keyup', function(){
 //         logInBtn.disabled = true;
 //       }
 // }
+
+// const inits = document.getElementById('loginWrapper');

@@ -65,8 +65,6 @@ nav {
 }
 
 main {
-  display: flex;
-  justify-content: center;
   margin-top: 78px;
   width: 935px;
 }
@@ -218,7 +216,9 @@ article {
 .main-right {
   width: 320px;
   font-size: 12px;
-  margin-left: 30px;
+  margin-left: 630px;
+  position: fixed;
+  top: 69px;
 }
 
 .profileSetRight {

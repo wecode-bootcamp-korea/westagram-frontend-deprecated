@@ -42,3 +42,6 @@ input.addEventListener('keypress', (event) => {
   }
   return;
 })
+
+//처음 시작하기 전에 구현해야할 기능 차례대로 정리한 다음 함수별로 나누기
+//그리고 그 함수를 차례대로 구현하면서 console.log 찍어보면서 확인하기
