@@ -4,7 +4,7 @@ const commentBox = document.getElementById('commnetBox');
 const submitButton = document.getElementsByClassName('commentSubmit')[0];
 const InputEnter = document.getElementById('userComment');
 
-// Click 
+// Click - Commnet
 submitButton.addEventListener('click', function addCommnetClick() {
   const addList = document.createElement('li');
   const addComment = document.getElementById('userComment').value;
@@ -14,7 +14,7 @@ submitButton.addEventListener('click', function addCommnetClick() {
   document.getElementById('userComment').value='';
 });
 
-// Enter Press 
+// Enter Press - Commnet
 InputEnter.addEventListener('keypress', function addCommentEnter(event) {
   const addList = document.createElement('li');
   const addComment = document.getElementById('userComment').value; 
@@ -24,7 +24,5 @@ InputEnter.addEventListener('keypress', function addCommentEnter(event) {
     commentBox.appendChild(addList);
     document.getElementById('userComment').value='';
   }
-
 });
-
 

@@ -23,7 +23,8 @@ nav .searchBox {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 214px;
+  width: 250px;
+  margin: 0 20px;
   padding: 7px;
   background-color: #fafafa;
   border: 1px solid #dbdbdb;
@@ -107,7 +108,13 @@ main .feeds {
 }
 
 .feeds .feedCon .reactionsBox .reactionsLeft button {
+  position: relative;
   margin-right: 10px;
+}
+
+.feeds .feedCon .reactionsBox .reactionsLeft button .fullHeart {
+  display: none;
+  color :red;
 }
 
 .userProfile.feedConUser {
@@ -323,9 +330,29 @@ main .main-right {
   font-size: 14px;
 }
 
-/* 추가 기능 구현 9 */
+/* media query */
 @media screen and (max-width: 900px) {
+  nav .h1 .iconLogo {
+    display: none;
+  }
+  
   .main-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav h1 .iconLogo {
+    display: none;
+  }
+
+  nav h1 .letterLogo {
+    border : none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav .searchBox {
     display: none;
   }
 }
