@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import "./variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// font
+$font-stack-L: "Lobster Two", "sans-serif";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: $font-size--normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack-L;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-gray;
+
+  &:visited {
+    color: $color-gray;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

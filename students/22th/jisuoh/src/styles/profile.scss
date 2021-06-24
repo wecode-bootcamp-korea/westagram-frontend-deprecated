@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@mixin box {
+  display: flex;
+  align-items: center;
+}
+
+@mixin profiles-size($profile-width, $profile-height) {
+  width: $profile-width;
+  height: $profile-height;
+  margin-right: $padding-value--7;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@mixin Image {
+  width: 100%;
+  height: 100%;
+}
+
+.profiles-wrapper {
+  @include box;
+
+  .profiles {
+    @include profiles-size($img-profile--width, $img-profile--width);
+  }
+
+  img {
+    @include Image;
+  }
+}
