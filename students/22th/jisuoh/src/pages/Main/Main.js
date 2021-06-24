@@ -19,17 +19,17 @@ class Main extends React.Component {
                 <img alt="Search" src="images/search.png" className="src" />
               </section>
               <nav className="link-box">
-                <a href="" className="explore-link invisible">
+                <a href="#!!" className="explore-link invisible">
                   <img
                     alt="Explore"
                     src="images/explore.png"
                     className="explore"
                   />
                 </a>
-                <a href="" className="heart-link">
+                <a href="#!!" className="heart-link">
                   <img alt="Heart" src="images/heart.png" className="heart" />
                 </a>
-                <a href="" className="profile-link invisible">
+                <a href="#!!" className="profile-link invisible">
                   <img
                     alt="Profile"
                     src="images/profile.png"
@@ -232,37 +232,37 @@ class Main extends React.Component {
               <nav className="etc-link">
                 <ul className="links">
                   <li className="links-item">
-                    <a href="#">Instagram 정보</a>
+                    <a href="#!">Instagram 정보</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">지원</a>
+                    <a href="#!">지원</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">홍보 센터</a>
+                    <a href="#!">홍보 센터</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">API</a>
+                    <a href="#!">API</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">채용 정보</a>
+                    <a href="#!">채용 정보</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">개인정보처리방침</a>
+                    <a href="#!">개인정보처리방침</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">약관</a>
+                    <a href="#!">약관</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">디렉터리</a>
+                    <a href="#!">디렉터리</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">프로필</a>
+                    <a href="#!">프로필</a>
                   </li>
                   <li className="links-item">
-                    <a href="#">해시 태그</a>
+                    <a href="#!">해시 태그</a>
                   </li>
                   <li>
-                    <a href="#">언어</a>
+                    <a href="#!">언어</a>
                   </li>
                 </ul>
               </nav>
