@@ -102,6 +102,14 @@ main .feeds {
   padding: 5px 10px;
 }
 
+.feeds .feedCon .reactionsBox .reactionsLeft {
+  display: flex;
+}
+
+.feeds .feedCon .reactionsBox .reactionsLeft button {
+  margin-right: 10px;
+}
+
 .userProfile.feedConUser {
   margin-right: 5px;
   background-image: url(../images/user7.jpg);

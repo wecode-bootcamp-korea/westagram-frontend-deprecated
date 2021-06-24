@@ -11,16 +11,18 @@ submitButton.addEventListener('click', function addCommnetClick() {
 
   addList.innerHTML = `<span class="commentUserId">eessoo__</span>${addComment}`; 
   commentBox.appendChild(addList);
+  document.getElementById('userComment').value='';
 });
 
 // Enter Press 
 InputEnter.addEventListener('keypress', function addCommentEnter(event) {
-  if (event.code === 'Enter') {
-    const addList = document.createElement('li');
-    const addComment = document.getElementById('userComment').value; 
+  const addList = document.createElement('li');
+  const addComment = document.getElementById('userComment').value; 
 
+  if (event.code === 'Enter') {
     addList.innerHTML = `<span class="commentUserId">eessoo__</span>${addComment}`; 
     commentBox.appendChild(addList);
+    document.getElementById('userComment').value='';
   }
 
 });
