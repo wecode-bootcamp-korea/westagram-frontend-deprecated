@@ -22,7 +22,7 @@ class Loginbox extends React.Component {
     } else if (this.state.pw < 5) {
       alert("비밀번호는 5글자 이상이여야 합니다!");
     } else {
-      this.props.go();
+      this.props.goToMain();
     }
   };
 
