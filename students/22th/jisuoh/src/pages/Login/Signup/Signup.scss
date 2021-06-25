@@ -1,0 +1,21 @@
+@import "../../../styles/variable.scss";
+
+.sign-up-box {
+  flex: 0 0 10%;
+  margin-top: calc($margin-value / 2);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;
+  border: 1px solid $color-gray2;
+
+  .signup-link {
+    color: $color-blue;
+    font-weight: bold;
+
+    &:active {
+      color: $color-skyblue;
+    }
+  }
+}

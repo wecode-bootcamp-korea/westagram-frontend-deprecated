@@ -1,0 +1,28 @@
+@import "../../../styles/variable.scss";
+
+.westagram__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: $padding-value;
+
+  .meta-link {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      margin-right: $padding-value;
+      color: $color-gray;
+    }
+  }
+
+  .lan-copyright {
+    margin-top: $padding-value;
+
+    .copyright {
+      color: $color-gray;
+    }
+  }
+}
