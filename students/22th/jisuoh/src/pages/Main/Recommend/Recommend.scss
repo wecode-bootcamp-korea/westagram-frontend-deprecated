@@ -1,0 +1,30 @@
+@import "../../../styles/variable.scss";
+
+.aside-in-list {
+  ul {
+    height: 20vh;
+    overflow: scroll;
+
+    .aside-list {
+      margin: $padding-value 0;
+    }
+
+    /* 팔로우 */
+
+    .aside-follow-list {
+      display: flex;
+      justify-content: space-between;
+      margin: $padding-value 0;
+
+      .sentence {
+        font-size: $font-size--small;
+      }
+
+      .follow-btn {
+        font-size: $font-size--small;
+        font-weight: bold;
+        color: $color-blue;
+      }
+    }
+  }
+}

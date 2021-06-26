@@ -1,0 +1,24 @@
+@import "../../../styles/variable.scss";
+
+.aside-in-list {
+  margin: $padding-value 0;
+
+  .aside__header {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      color: $color-darkgray;
+      font-weight: bold;
+    }
+
+    .all-btn {
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    height: 20vh;
+    overflow: scroll;
+  }
+}

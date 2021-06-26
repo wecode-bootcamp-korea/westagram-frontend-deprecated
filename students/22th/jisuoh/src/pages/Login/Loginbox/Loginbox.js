@@ -1,6 +1,5 @@
 import React from "react";
 import "./Loginbox.scss";
-import { withRouter } from "react-router-dom";
 
 class Loginbox extends React.Component {
   constructor() {
