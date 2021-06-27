@@ -113,54 +113,18 @@
     /* 몇 분 전  */
     .feed__comment {
       padding: $padding-value--7 $padding-value;
-    }
 
-    .comment {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
+      .comment__ul {
+        margin-bottom: $padding-value--7;
+      }
 
-    .comment__div {
-      display: flex;
-      align-items: center;
-    }
-
-    .nickname {
-      font-weight: bold;
-      margin-right: $padding-value--7;
-    }
-
-    .more {
-      margin-left: $padding-value--7;
-      color: $color-gray;
-    }
-
-    .time {
-      font-size: $font-size--small;
-      color: $color-gray;
+      .time {
+        font-size: $font-size--small;
+        color: $color-gray;
+      }
     }
 
     /* 댓글 내역 */
-
-    .comment__ul {
-      margin-bottom: $padding-value--7;
-    }
-
-    .like-delete {
-      display: flex;
-      align-items: center;
-    }
-
-    .mini-like-btn {
-      width: $icon-search--width;
-      margin-right: $padding-value;
-    }
-
-    .mini-heart {
-      width: 100%;
-    }
 
     /* 댓글 입력 */
     .comment-input {
