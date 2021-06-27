@@ -1,11 +1,11 @@
 import React from "react";
 import "./Feed.scss";
+import CommentList from "../CommentList/CommentList";
 
 class Feed extends React.Component {
   constructor() {
     super();
     this.state = {
-      id: 0,
       comment: "",
       nickname: "love8080",
       comments: [],
@@ -15,7 +15,6 @@ class Feed extends React.Component {
 
   addComment = (e) => {
     e.preventDefault();
-
     this.setState({
       comments: this.state.comments.concat({
         id: this.state.comments.length + 1,
@@ -24,7 +23,7 @@ class Feed extends React.Component {
         btn: this.state.btn,
       }),
     });
-    console.log(this.state.comments);
+    this.setState({ comment: "" });
   };
 
   handleChange = (e) => {
@@ -78,17 +77,7 @@ class Feed extends React.Component {
           </section>
           <section className="feed__comment">
             <ul className="comment__ul">
-              {this.state.comments.map((content) => {
-                return (
-                  <li className="comment" key={content.id}>
-                    <div className="comment__div">
-                      <span className="nickname">{content.nickname}</span>
-                      <p>{content.comment}</p>
-                      <button className="more">{content.btn}</button>
-                    </div>
-                  </li>
-                );
-              })}
+              <CommentList comments={this.state.comments} />
             </ul>
             <p className="time">42분 전</p>
           </section>
