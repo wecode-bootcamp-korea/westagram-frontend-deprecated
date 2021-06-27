@@ -16,6 +16,7 @@ class Feed extends React.Component {
   addComment = (e) => {
     e.preventDefault();
     this.setState({
+      id: this.state.comments.length + 1,
       comments: this.state.comments.concat({
         id: this.state.comments.length + 1,
         nickname: this.state.nickname,
@@ -24,6 +25,12 @@ class Feed extends React.Component {
       }),
     });
     this.setState({ comment: "" });
+  };
+
+  deleteComment = (id) => {
+    this.setState({
+      comments: this.state.comments.filter((content) => content.id !== id),
+    });
   };
 
   handleChange = (e) => {
@@ -77,7 +84,10 @@ class Feed extends React.Component {
           </section>
           <section className="feed__comment">
             <ul className="comment__ul">
-              <CommentList comments={this.state.comments} />
+              <CommentList
+                comments={this.state.comments}
+                deleteComment={this.deleteComment}
+              />
             </ul>
             <p className="time">42분 전</p>
           </section>

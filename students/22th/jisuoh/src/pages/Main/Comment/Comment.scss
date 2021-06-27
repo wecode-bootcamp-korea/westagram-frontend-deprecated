@@ -20,19 +20,19 @@
       margin-left: $padding-value--7;
       color: $color-gray;
     }
+  }
 
-    .like-delete {
-      display: flex;
-      align-items: center;
-    }
+  .like-delete {
+    display: flex;
+    align-items: center;
 
     .mini-like-btn {
       width: $icon-search--width;
       margin-right: $padding-value;
-    }
 
-    .mini-heart {
-      width: 100%;
+      .mini-heart {
+        width: 100%;
+      }
     }
   }
 }
