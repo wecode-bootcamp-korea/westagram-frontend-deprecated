@@ -2,7 +2,10 @@
   {
     "feedId": 1,
     "nickname": "uffiy",
-    "src": "images/aurora.jpg",
+    "profileSrc": "images/photo/profile2.jpeg",
+    "likeSrc": "images/photo/profile1.jpeg",
+    "likeNickname": "jisuoh",
+    "feedSrc": "images/aurora.jpg",
     "comments": [
       {
         "id": 1,
@@ -23,12 +26,52 @@
   },
   {
     "feedId": 2,
-    "nickname": "todk213",
-    "src": "images/night.jpg"
+    "nickname": "jisuoh",
+    "profileSrc": "images/photo/profile1.jpeg",
+    "likeSrc": "images/photo/profile6.jpeg",
+    "likeNickname": "soohyun",
+    "feedSrc": "images/night.jpg",
+    "comments": [
+      {
+        "id": 1,
+        "nickname": "woo",
+        "comment": "React 하다가 죽겠다..."
+      },
+      {
+        "id": 2,
+        "nickname": "fukw231",
+        "comment": "죽지마..."
+      },
+      {
+        "id": 3,
+        "nickname": "whithine13",
+        "comment": "화이팅...!!!!"
+      }
+    ]
   },
   {
     "feedId": 3,
     "nickname": "PoYs",
-    "src": "images/tree.jpg"
+    "profileSrc": "images/photo/profile4.jpeg",
+    "likeSrc": "images/photo/profile5.jpeg",
+    "likeNickname": "hyejin",
+    "feedSrc": "images/tree.jpg",
+    "comments": [
+      {
+        "id": 1,
+        "nickname": "bgbe123",
+        "comment": "오 나무다!"
+      },
+      {
+        "id": 2,
+        "nickname": "hoonuje",
+        "comment": "불타라아"
+      },
+      {
+        "id": 3,
+        "nickname": "sky423",
+        "comment": "돗자리 깔고 누워 자고 싶다"
+      }
+    ]
   }
 ]

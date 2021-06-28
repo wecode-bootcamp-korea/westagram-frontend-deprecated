@@ -9,13 +9,9 @@ class Feed extends React.Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3000/data/commentData.json", { method: "GET" })
-      .then((res) => res.json())
-      .then((data) => {
-        this.setState({
-          comments: data,
-        });
-      });
+    this.setState({
+      comments: this.props.feedData.comments,
+    });
   }
 
   addComment = (e) => {
@@ -25,7 +21,6 @@ class Feed extends React.Component {
         id: this.state.comments.length + 1,
         nickname: "love8080",
         comment: this.state.comment,
-        btn: this.state.btn,
       }),
     });
     this.setState({ comment: "" });
@@ -47,16 +42,16 @@ class Feed extends React.Component {
         <header className="feed__header">
           <div className="profile-box">
             <div className="profiles">
-              <img alt="Profile" src="images/photo/profile1.jpeg" />
+              <img alt="Profile" src={this.props.feedData.profileSrc} />
             </div>
-            <span className="name">jisuoh</span>
+            <span className="name">{this.props.feedData.nickname}</span>
           </div>
           <span className="menu-icon">
             <img alt="Menu" src="images/menu.png" className="menu" />
           </span>
         </header>
         <section className="feed__photo">
-          <img alt="Feed" src="images/aurora.jpg" />
+          <img alt="Feed" src={this.props.feedData.feedSrc} />
         </section>
         <div className="comment-wrapper">
           <section className="feed__like">
@@ -79,11 +74,11 @@ class Feed extends React.Component {
           </section>
           <section className="profiles-wrapper">
             <div className="profiles">
-              <img alt="Profile" src="images/photo/profile2.jpeg" />
+              <img alt="Profile" src={this.props.feedData.likeSrc} />
             </div>
             <span>
-              <span className="weight">aineworld</span>님 외{" "}
-              <span className="weight">10명</span>이 좋아합니다
+              <span className="weight">{this.props.feedData.likeNickname}</span>
+              님 외 <span className="weight">10명</span>이 좋아합니다
             </span>
           </section>
           <section className="feed__comment">

@@ -5,6 +5,20 @@ import Story from "./Story/Story";
 import Recommend from "./Recommend/Recommend";
 
 class Main extends React.Component {
+  state = {
+    feeds: [],
+  };
+
+  componentDidMount() {
+    fetch("http://localhost:3000/data/feedData.json", { method: "GET" })
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          feeds: data,
+        });
+      });
+  }
+
   render() {
     return (
       <div className="main-wrapper">
@@ -47,7 +61,9 @@ class Main extends React.Component {
           <main className="we-main">
             <section className="feed-box">
               <ul>
-                <Feed />
+                {this.state.feeds.map((el) => (
+                  <Feed feedData={el} key={el.feedId} />
+                ))}
               </ul>
             </section>
           </main>
