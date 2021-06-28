@@ -1,0 +1,34 @@
+[
+  {
+    "feedId": 1,
+    "nickname": "uffiy",
+    "src": "images/aurora.jpg",
+    "comments": [
+      {
+        "id": 1,
+        "nickname": "wecode",
+        "comment": "Welcome to world best coding bootcamp!"
+      },
+      {
+        "id": 2,
+        "nickname": "joonsikyang",
+        "comment": "Hi there."
+      },
+      {
+        "id": 3,
+        "nickname": "jayPark",
+        "comment": "Hey."
+      }
+    ]
+  },
+  {
+    "feedId": 2,
+    "nickname": "todk213",
+    "src": "images/night.jpg"
+  },
+  {
+    "feedId": 3,
+    "nickname": "PoYs",
+    "src": "images/tree.jpg"
+  }
+]

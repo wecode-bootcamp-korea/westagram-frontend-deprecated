@@ -3,23 +3,27 @@ import "./Feed.scss";
 import CommentList from "../CommentList/CommentList";
 
 class Feed extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      comment: "",
-      nickname: "love8080",
-      comments: [],
-      btn: "더 보기",
-    };
+  state = {
+    comment: "",
+    comments: [],
+  };
+
+  componentDidMount() {
+    fetch("http://localhost:3000/data/commentData.json", { method: "GET" })
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          comments: data,
+        });
+      });
   }
 
   addComment = (e) => {
     e.preventDefault();
     this.setState({
-      id: this.state.comments.length + 1,
       comments: this.state.comments.concat({
         id: this.state.comments.length + 1,
-        nickname: this.state.nickname,
+        nickname: "love8080",
         comment: this.state.comment,
         btn: this.state.btn,
       }),
@@ -45,14 +49,14 @@ class Feed extends React.Component {
             <div className="profiles">
               <img alt="Profile" src="images/photo/profile1.jpeg" />
             </div>
-            <span className="name">silvia.oh.135</span>
+            <span className="name">jisuoh</span>
           </div>
           <span className="menu-icon">
             <img alt="Menu" src="images/menu.png" className="menu" />
           </span>
         </header>
         <section className="feed__photo">
-          <img alt="Feed" src="images/ice-cream-2934210_1280.jpg" />
+          <img alt="Feed" src="images/aurora.jpg" />
         </section>
         <div className="comment-wrapper">
           <section className="feed__like">
