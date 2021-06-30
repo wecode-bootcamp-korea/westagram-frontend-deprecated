@@ -40,7 +40,7 @@ class Feed extends React.Component {
 
   render() {
     const { feedData } = this.props;
-    const { comments } = this.state;
+    const { comments, comment } = this.state;
     const { handleChange, deleteComment, addComment } = this;
     return (
       <li className="feed">
