@@ -2,20 +2,14 @@ import React from "react";
 import "./Loginbox.scss";
 
 class Loginbox extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      id: "",
-      pw: "",
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.checkIdAndPassword = this.checkIdAndPassword.bind(this);
-  }
+  state = {
+    id: "",
+    pw: "",
+  };
 
   checkIdAndPassword = (e) => {
     const { id, pw } = this.state;
+    const { goToMain } = this.props;
 
     e.preventDefault();
 
@@ -24,7 +18,7 @@ class Loginbox extends React.Component {
     } else if (pw < 5) {
       alert("비밀번호는 5글자 이상이여야 합니다!");
     } else {
-      this.props.goToMain();
+      goToMain();
     }
   };
 
@@ -47,6 +41,7 @@ class Loginbox extends React.Component {
           <div className="id-box">
             <input
               type="text"
+              name="id"
               className="text-id"
               value={id}
               onChange={handleChange}
@@ -56,9 +51,10 @@ class Loginbox extends React.Component {
           <div className="pw-box">
             <input
               type="password"
+              name="pw"
+              className="pw"
               value={pw}
               onChange={handleChange}
-              className="pw"
               placeholder="비밀번호"
             />
           </div>

@@ -9,8 +9,9 @@ class Feed extends React.Component {
   };
 
   componentDidMount() {
+    const { feedData } = this.props;
     this.setState({
-      comments: this.props.feedData.comments,
+      comments: feedData.comments,
     });
   }
 
