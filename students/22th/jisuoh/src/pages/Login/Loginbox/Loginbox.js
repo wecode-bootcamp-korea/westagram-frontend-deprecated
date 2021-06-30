@@ -15,10 +15,13 @@ class Loginbox extends React.Component {
   }
 
   checkIdAndPassword = (e) => {
+    const { id, pw } = this.state;
+
     e.preventDefault();
-    if (!this.state.id.includes("@")) {
+
+    if (!id.includes("@")) {
       alert("@를 포함시켜 주세요!");
-    } else if (this.state.pw < 5) {
+    } else if (pw < 5) {
       alert("비밀번호는 5글자 이상이여야 합니다!");
     } else {
       this.props.goToMain();
@@ -26,12 +29,15 @@ class Loginbox extends React.Component {
   };
 
   handleChange = (e) => {
-    e.target.className === "text-id"
-      ? this.setState({ id: e.target.value })
-      : this.setState({ pw: e.target.value });
+    const { name, value } = e.target;
+    this.setState({
+      [name]: value,
+    });
   };
 
   render() {
+    const { id, pw } = this.state;
+    const { handleChange, checkIdAndPassword } = this;
     return (
       <section className="login-box">
         <section className="logo">
@@ -42,16 +48,16 @@ class Loginbox extends React.Component {
             <input
               type="text"
               className="text-id"
-              value={this.state.id}
-              onChange={this.handleChange}
+              value={id}
+              onChange={handleChange}
               placeholder="전화번호, 사용자 이름 또는 이메일"
             />
           </div>
           <div className="pw-box">
             <input
               type="password"
-              value={this.state.pw}
-              onChange={this.handleChange}
+              value={pw}
+              onChange={handleChange}
               className="pw"
               placeholder="비밀번호"
             />
@@ -59,8 +65,8 @@ class Loginbox extends React.Component {
           <div className="btn-box">
             <button
               className="btn-login"
-              onClick={this.checkIdAndPassword}
-              disabled={!this.state.id || !this.state.pw}
+              onClick={checkIdAndPassword}
+              disabled={!id || !pw}
             >
               로그인
             </button>

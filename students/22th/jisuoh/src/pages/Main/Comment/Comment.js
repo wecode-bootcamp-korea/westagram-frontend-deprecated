@@ -3,11 +3,12 @@ import "./Comment.scss";
 
 class Comment extends React.Component {
   render() {
+    const { comments, deleteComment } = this.props;
     return (
       <li className="comment">
         <div className="comment__div">
-          <span className="nickname">{this.props.comments.nickname}</span>
-          <p>{this.props.comments.comment}</p>
+          <span className="nickname">{comments.nickname}</span>
+          <p>{comments.comment}</p>
           <button className="more">더 보기</button>
         </div>
         <div className="like-delete">
@@ -16,7 +17,7 @@ class Comment extends React.Component {
           </button>
           <button
             className="delete-btn"
-            onClick={() => this.props.deleteComment(this.props.comments.id)}
+            onClick={() => deleteComment(comments.id)}
           >
             X
           </button>
