@@ -1,8 +1,9 @@
 import React from "react";
-import "../Main/Main.scss";
 import Feed from "./Feed/Feed";
 import Story from "./Story/Story";
 import Recommend from "./Recommend/Recommend";
+import { MAININFO } from "../data/footerData.js";
+import "../Main/Main.scss";
 
 class Main extends React.Component {
   state = {
@@ -10,7 +11,7 @@ class Main extends React.Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3001/data/feedData.json", { method: "GET" })
+    fetch("http://localhost:3000/data/feedData.json", { method: "GET" })
       .then((res) => res.json())
       .then((data) => {
         this.setState({
@@ -82,39 +83,13 @@ class Main extends React.Component {
               <Recommend />
               <div className="etc-link">
                 <ul className="links">
-                  <li className="links-item">
-                    <a href="#!">Instagram 정보</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">지원</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">홍보 센터</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">API</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">채용 정보</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">개인정보처리방침</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">약관</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">디렉터리</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">프로필</a>
-                  </li>
-                  <li className="links-item">
-                    <a href="#!">해시 태그</a>
-                  </li>
-                  <li>
-                    <a href="#!">언어</a>
-                  </li>
+                  {MAININFO.map((el) => {
+                    return (
+                      <li className="links-item" key={el.id}>
+                        <a href="#!">{el.content}</a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
               <p className="copyright">&copy; 2021 Westagram</p>
