@@ -58,25 +58,30 @@
         display: flex;
         min-width: 150px;
         flex-basis: $search-input--width;
-      }
 
-      .search-box .search {
-        flex-grow: 1;
-        width: $search-input--width;
-        height: $search-input-height;
-        font-weight: lighter;
-        text-align: center;
-        border: 1px solid $color-gray2;
-        border-radius: 3px;
-        background-color: $color-lightgray;
-      }
+        .search {
+          flex-grow: 1;
+          width: $search-input--width;
+          height: $search-input-height;
+          font-weight: lighter;
+          color: $color-darkgray;
+          text-align: center;
+          border: 1px solid $color-gray2;
+          border-radius: 3px;
+          background-color: $color-lightgray;
 
-      .search-box img {
-        position: absolute;
-        left: 30%;
-        top: 30%;
-        width: $icon-search--width;
-        height: $icon-search--width;
+          &:focus {
+            outline: 0;
+          }
+        }
+
+        img {
+          position: absolute;
+          left: 30%;
+          top: 30%;
+          width: $icon-search--width;
+          height: $icon-search--width;
+        }
       }
 
       /* 네비게이션 */
