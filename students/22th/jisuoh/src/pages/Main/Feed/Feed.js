@@ -1,6 +1,6 @@
 import React from "react";
-import "./Feed.scss";
 import CommentList from "../CommentList/CommentList";
+import "./Feed.scss";
 
 class Feed extends React.Component {
   state = {

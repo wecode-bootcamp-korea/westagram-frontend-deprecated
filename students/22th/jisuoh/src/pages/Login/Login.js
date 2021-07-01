@@ -1,9 +1,9 @@
 import React from "react";
-import "../Login/Login.scss";
 import Loginbox from "./Loginbox/Loginbox";
 import Signup from "./Signup/Signup";
 import Downloadbox from "./Downloadbox/Downloadbox";
 import Footer from "./Footer/Footer";
+import "../Login/Login.scss";
 
 class Login extends React.Component {
   goToMain = () => {
