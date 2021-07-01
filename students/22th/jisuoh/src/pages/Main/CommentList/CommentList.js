@@ -3,7 +3,8 @@ import Comment from "../Comment/Comment";
 
 class CommentList extends React.Component {
   render() {
-    const { comments, deleteComment } = this.props;
+    const { comments, deleteComment, changeHeartImage, imagesPath } =
+      this.props;
     if (!comments) {
       return "";
     } else {
@@ -14,6 +15,8 @@ class CommentList extends React.Component {
             comments={content}
             commentsArr={comments}
             deleteComment={deleteComment}
+            changeHeartImage={changeHeartImage}
+            imagesPath={imagesPath}
           />
         );
       });

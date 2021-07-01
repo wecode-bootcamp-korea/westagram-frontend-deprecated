@@ -6,6 +6,7 @@ class Feed extends React.Component {
   state = {
     comment: "",
     comments: [],
+    isLiked: false,
   };
 
   componentDidMount() {
@@ -41,7 +42,7 @@ class Feed extends React.Component {
 
   render() {
     const { feedData } = this.props;
-    const { comments, comment } = this.state;
+    const { comments, comment, imagesPath } = this.state;
     const { handleChange, deleteComment, addComment } = this;
     return (
       <li className="feed">
@@ -89,7 +90,11 @@ class Feed extends React.Component {
           </section>
           <section className="feed__comment">
             <ul className="comment__ul">
-              <CommentList comments={comments} deleteComment={deleteComment} />
+              <CommentList
+                comments={comments}
+                deleteComment={deleteComment}
+                imagesPath={imagesPath}
+              />
             </ul>
             <p className="time">42분 전</p>
           </section>

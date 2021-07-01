@@ -10,17 +10,20 @@
       {
         "id": 1,
         "nickname": "wecode",
-        "comment": "Welcome to world best coding bootcamp!"
+        "comment": "Welcome to world best coding bootcamp!",
+        "isLiked": false
       },
       {
         "id": 2,
         "nickname": "joonsikyang",
-        "comment": "Hi there."
+        "comment": "Hi there.",
+        "isLiked": false
       },
       {
         "id": 3,
         "nickname": "jayPark",
-        "comment": "Hey."
+        "comment": "Hey.",
+        "isLiked": false
       }
     ]
   },
