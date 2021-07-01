@@ -9,9 +9,9 @@ class Footer extends React.Component {
         <nav className="meta-link">
           {INFO.map((el) => {
             return (
-              <a href="#!" key={el.id}>
+              <Link to="#!" key={el.id}>
                 {el.content}
-              </a>
+              </Link>
             );
           })}
         </nav>

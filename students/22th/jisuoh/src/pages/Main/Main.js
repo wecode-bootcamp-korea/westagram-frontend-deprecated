@@ -86,7 +86,7 @@ class Main extends React.Component {
                   {MAININFO.map((el) => {
                     return (
                       <li className="links-item" key={el.id}>
-                        <a href="#!">{el.content}</a>
+                        <Link to="#!">{el.content}</Link>
                       </li>
                     );
                   })}
