@@ -2,6 +2,7 @@ import React from "react";
 import Feed from "./Feed/Feed";
 import Story from "./Story/Story";
 import Recommend from "./Recommend/Recommend";
+import { Link } from "react-router-dom";
 import { MAININFO } from "../data/footerData.js";
 import "../Main/Main.scss";
 
